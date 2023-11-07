@@ -1,5 +1,69 @@
 {
   "basicInfo": {
+    "act25side": {
+      "id": "act25side",
+      "type": "TYPE_ACT25SIDE",
+      "displayType": "NONE",
+      "name": "론 트레일",
+      "startTime": 1699340400,
+      "endTime": 1701111599,
+      "rewardEndTime": 1701716399,
+      "displayOnHome": true,
+      "hasStage": true,
+      "templateShopId": "shop_act25side",
+      "medalGroupId": "medalGroupActivity25side",
+      "ungroupedMedalIds": null,
+      "isReplicate": false,
+      "needFixedSync": false
+    },
+    "act1checkin": {
+      "id": "act1checkin",
+      "type": "CHECKIN_ALL_PLAYER",
+      "displayType": "NONE",
+      "name": "미래서곡 출석 이벤트",
+      "startTime": 1699340400,
+      "endTime": 1700506799,
+      "rewardEndTime": 1700506799,
+      "displayOnHome": false,
+      "hasStage": false,
+      "templateShopId": null,
+      "medalGroupId": null,
+      "ungroupedMedalIds": null,
+      "isReplicate": false,
+      "needFixedSync": true
+    },
+    "act15login": {
+      "id": "act15login",
+      "type": "LOGIN_ONLY",
+      "displayType": "NONE",
+      "name": "로그인하여 보상 수령",
+      "startTime": 1699340400,
+      "endTime": 1700506799,
+      "rewardEndTime": 1700506799,
+      "displayOnHome": false,
+      "hasStage": false,
+      "templateShopId": null,
+      "medalGroupId": null,
+      "ungroupedMedalIds": null,
+      "isReplicate": false,
+      "needFixedSync": false
+    },
+    "act4mine": {
+      "id": "act4mine",
+      "type": "GRID_GACHA_V2",
+      "displayType": "NONE",
+      "name": "포니 밸리 광산 로그인 이벤트",
+      "startTime": 1699340400,
+      "endTime": 1700506799,
+      "rewardEndTime": 1700506799,
+      "displayOnHome": false,
+      "hasStage": false,
+      "templateShopId": null,
+      "medalGroupId": null,
+      "ungroupedMedalIds": null,
+      "isReplicate": false,
+      "needFixedSync": false
+    },
     "act24side": {
       "id": "act24side",
       "type": "TYPE_ACT24SIDE",
@@ -2042,6 +2106,27 @@
     }
   },
   "homeActConfig": {
+    "act1checkin": {
+      "actId": "act1checkin",
+      "isPopupAfterCheckin": false,
+      "showTopBarMenu": true,
+      "actTopBarColor": "f86828",
+      "actTopBarText": "미래서곡 출석 이벤트"
+    },
+    "act15login": {
+      "actId": "act15login",
+      "isPopupAfterCheckin": false,
+      "showTopBarMenu": true,
+      "actTopBarColor": "cfd340",
+      "actTopBarText": "미래서곡 로그인 이벤트"
+    },
+    "act4mine": {
+      "actId": "act4mine",
+      "isPopupAfterCheckin": false,
+      "showTopBarMenu": true,
+      "actTopBarColor": "cb271f",
+      "actTopBarText": "한정 채굴 허가증"
+    },
     "act1flip": {
       "actId": "act1flip",
       "isPopupAfterCheckin": false,
@@ -2492,6 +2577,9 @@
     }
   },
   "zoneToActivity": {
+    "act25side_zone1": "act25side",
+    "act25side_zone2": "act25side",
+    "act25side_zone3": "act25side",
     "act24side_zone1": "act24side",
     "act24side_zone2": "act24side",
     "act16sre_zone1": "act16sre",
@@ -2608,6 +2696,1031 @@
     "A001_zone2": "1stact"
   },
   "missionData": [
+    {
+      "id": "25sideActivity_1",
+      "sortId": 1,
+      "description": "CW-1 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_01",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 50
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_2",
+      "sortId": 2,
+      "description": "CW-2 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_02",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 50
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_3",
+      "sortId": 3,
+      "description": "CW-3 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_03",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 50
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_4",
+      "sortId": 4,
+      "description": "CW-4 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_04",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_5",
+      "sortId": 5,
+      "description": "CW-5 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_05",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        },
+        {
+          "type": "CHAR",
+          "id": "char_1031_slent2",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_6",
+      "sortId": 6,
+      "description": "CW-6 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_06",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_7",
+      "sortId": 7,
+      "description": "3★ 평가로 CW-6 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_06",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "MATERIAL",
+          "id": "mod_unlock_token",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_8",
+      "sortId": 8,
+      "description": "CW-7 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_07",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_9",
+      "sortId": 9,
+      "description": "3★ 평가로 CW-7 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_07",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_cultureroom_ceilingLight_01",
+          "count": 2
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_10",
+      "sortId": 10,
+      "description": "CW-8 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_08",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 120
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_11",
+      "sortId": 11,
+      "description": "3★ 평가로 CW-8 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_08",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_cultureroom_wallpaper_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_12",
+      "sortId": 12,
+      "description": "CW-9 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_09",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 120
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_13",
+      "sortId": 13,
+      "description": "3★ 평가로 CW-9 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_09",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_cultureroom_floor_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_14",
+      "sortId": 14,
+      "description": "CW-10 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_10",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 120
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_15",
+      "sortId": 15,
+      "description": "3★ 평가로 CW-10 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_10",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "MATERIAL",
+          "id": "mod_unlock_token",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_16",
+      "sortId": 16,
+      "description": "CW-EX-1 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex01",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 40
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_17",
+      "sortId": 17,
+      "description": "CW-EX-2 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex02",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 40
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_18",
+      "sortId": 18,
+      "description": "CW-EX-3 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex03",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_19",
+      "sortId": 19,
+      "description": "CW-EX-4 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex04",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_20",
+      "sortId": 20,
+      "description": "CW-EX-5 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex05",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_21",
+      "sortId": 21,
+      "description": "CW-EX-6 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex06",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_22",
+      "sortId": 22,
+      "description": "CW-EX-7 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex07",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_23",
+      "sortId": 23,
+      "description": "CW-EX-8 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex08",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_24",
+      "sortId": 24,
+      "description": "CW-EX-8 하드 모드 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_ex08#f#",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_dropS034_fall_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_25",
+      "sortId": 25,
+      "description": "3★ 평가로 CW-S-1-A 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s01_a",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 40
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_26",
+      "sortId": 26,
+      "description": "3★ 평가로 CW-S-1-B 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s01_b",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 40
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_27",
+      "sortId": 27,
+      "description": "3★ 평가로 CW-S-2-A 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s02_a",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_28",
+      "sortId": 28,
+      "description": "3★ 평가로 CW-S-2-B 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s02_b",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_29",
+      "sortId": 29,
+      "description": "3★ 평가로 CW-S-3-A 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s03_a",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_30",
+      "sortId": 30,
+      "description": "3★ 평가로 CW-S-3-B 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s03_b",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_31",
+      "sortId": 31,
+      "description": "3★ 평가로 CW-S-4 클리어",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteAnyStage",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_s04",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_32",
+      "sortId": 32,
+      "description": "이벤트 스테이지 15회 클리어 (튜토리얼 스테이지 제외)",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_01^act25side_02^act25side_03^act25side_04^act25side_05^act25side_06^act25side_07^act25side_08^act25side_09^act25side_10^act25side_ex01^act25side_ex01#f#^act25side_ex02^act25side_ex02#f#^act25side_ex03^act25side_ex03#f#^act25side_ex04^act25side_ex04#f#^act25side_ex05^act25side_ex05#f#^act25side_ex06^act25side_ex06#f#^act25side_ex07^act25side_ex07#f#^act25side_ex08^act25side_ex08#f#^act25side_s01_a^act25side_s01_b^act25side_s02_a^act25side_s02_b^act25side_s03_a^act25side_s03_b^act25side_s04^act25side_s04#f#",
+        "15"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_33",
+      "sortId": 33,
+      "description": "이벤트 스테이지 45회 클리어 (튜토리얼 스테이지 제외)",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_01^act25side_02^act25side_03^act25side_04^act25side_05^act25side_06^act25side_07^act25side_08^act25side_09^act25side_10^act25side_ex01^act25side_ex01#f#^act25side_ex02^act25side_ex02#f#^act25side_ex03^act25side_ex03#f#^act25side_ex04^act25side_ex04#f#^act25side_ex05^act25side_ex05#f#^act25side_ex06^act25side_ex06#f#^act25side_ex07^act25side_ex07#f#^act25side_ex08^act25side_ex08#f#^act25side_s01_a^act25side_s01_b^act25side_s02_a^act25side_s02_b^act25side_s03_a^act25side_s03_b^act25side_s04^act25side_s04#f#",
+        "45"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "25sideActivity_34",
+      "sortId": 34,
+      "description": "이벤트 스테이지 85회 클리어 (튜토리얼 스테이지 제외)",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act25side_01^act25side_02^act25side_03^act25side_04^act25side_05^act25side_06^act25side_07^act25side_08^act25side_09^act25side_10^act25side_ex01^act25side_ex01#f#^act25side_ex02^act25side_ex02#f#^act25side_ex03^act25side_ex03#f#^act25side_ex04^act25side_ex04#f#^act25side_ex05^act25side_ex05#f#^act25side_ex06^act25side_ex06#f#^act25side_ex07^act25side_ex07#f#^act25side_ex08^act25side_ex08#f#^act25side_s01_a^act25side_s01_b^act25side_s02_a^act25side_s02_b^act25side_s03_a^act25side_s03_b^act25side_s04^act25side_s04#f#",
+        "85"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act25side",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act25side_token_fdrchips",
+          "count": 120
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
     {
       "id": "24sideActivity_1",
       "sortId": 1,
@@ -42525,6 +43638,52 @@
   ],
   "missionGroup": [
     {
+      "id": "act25side",
+      "title": null,
+      "type": "ACTIVITY",
+      "preMissionGroup": null,
+      "period": null,
+      "rewards": [],
+      "missionIds": [
+        "25sideActivity_1",
+        "25sideActivity_2",
+        "25sideActivity_3",
+        "25sideActivity_4",
+        "25sideActivity_5",
+        "25sideActivity_6",
+        "25sideActivity_7",
+        "25sideActivity_8",
+        "25sideActivity_9",
+        "25sideActivity_10",
+        "25sideActivity_11",
+        "25sideActivity_12",
+        "25sideActivity_13",
+        "25sideActivity_14",
+        "25sideActivity_15",
+        "25sideActivity_16",
+        "25sideActivity_17",
+        "25sideActivity_18",
+        "25sideActivity_19",
+        "25sideActivity_20",
+        "25sideActivity_21",
+        "25sideActivity_22",
+        "25sideActivity_23",
+        "25sideActivity_24",
+        "25sideActivity_25",
+        "25sideActivity_26",
+        "25sideActivity_27",
+        "25sideActivity_28",
+        "25sideActivity_29",
+        "25sideActivity_30",
+        "25sideActivity_31",
+        "25sideActivity_32",
+        "25sideActivity_33",
+        "25sideActivity_34"
+      ],
+      "startTs": 1699340400,
+      "endTs": 1701716399
+    },
+    {
       "id": "act24side",
       "title": null,
       "type": "ACTIVITY",
@@ -50666,7 +51825,246 @@
         "extraCheckinList": null
       }
     },
-    "CHECKIN_ALL_PLAYER": {},
+    "CHECKIN_ALL_PLAYER": {
+      "act1checkin": {
+        "checkInList": {
+          "0": {
+            "itemList": [
+              {
+                "id": "ap_supply_lt_120",
+                "count": 1,
+                "type": "AP_SUPPLY"
+              },
+              {
+                "id": "4001",
+                "count": 30000,
+                "type": "GOLD"
+              }
+            ],
+            "order": 1,
+            "keyItem": false,
+            "showItemOrder": 0
+          },
+          "1": {
+            "itemList": [
+              {
+                "id": "4003",
+                "count": 200,
+                "type": "DIAMOND_SHD"
+              },
+              {
+                "id": "7001",
+                "count": 5,
+                "type": "TKT_RECRUIT"
+              }
+            ],
+            "order": 2,
+            "keyItem": true,
+            "showItemOrder": 0
+          },
+          "2": {
+            "itemList": [
+              {
+                "id": "32001",
+                "count": 1,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "3301",
+                "count": 30,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 3,
+            "keyItem": false,
+            "showItemOrder": 0
+          },
+          "3": {
+            "itemList": [
+              {
+                "id": "mod_update_token_1",
+                "count": 10,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "3401",
+                "count": 300,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 4,
+            "keyItem": false,
+            "showItemOrder": 0
+          },
+          "4": {
+            "itemList": [
+              {
+                "id": "char_278_orchid@boc#6",
+                "count": 1,
+                "type": "CHAR_SKIN"
+              },
+              {
+                "id": "2003",
+                "count": 20,
+                "type": "CARD_EXP"
+              }
+            ],
+            "order": 5,
+            "keyItem": true,
+            "showItemOrder": 1
+          },
+          "5": {
+            "itemList": [
+              {
+                "id": "4003",
+                "count": 200,
+                "type": "DIAMOND_SHD"
+              },
+              {
+                "id": "3003",
+                "count": 20,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 6,
+            "keyItem": true,
+            "showItemOrder": 0
+          },
+          "6": {
+            "itemList": [
+              {
+                "id": "mod_update_token_2",
+                "count": 3,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "3302",
+                "count": 20,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 7,
+            "keyItem": false,
+            "showItemOrder": 0
+          },
+          "7": {
+            "itemList": [
+              {
+                "id": "3303",
+                "count": 8,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "4001",
+                "count": 30000,
+                "type": "GOLD"
+              }
+            ],
+            "order": 8,
+            "keyItem": false,
+            "showItemOrder": 0
+          },
+          "8": {
+            "itemList": [
+              {
+                "id": "mod_unlock_token",
+                "count": 1,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "7002",
+                "count": 5,
+                "type": "TKT_INST_FIN"
+              }
+            ],
+            "order": 9,
+            "keyItem": false,
+            "showItemOrder": 0
+          },
+          "9": {
+            "itemList": [
+              {
+                "id": "4003",
+                "count": 200,
+                "type": "DIAMOND_SHD"
+              },
+              {
+                "id": "2003",
+                "count": 20,
+                "type": "CARD_EXP"
+              }
+            ],
+            "order": 10,
+            "keyItem": true,
+            "showItemOrder": 0
+          }
+        },
+        "apSupplyOutOfDateDict": {
+          "ap_supply_lt_120": 1701025199
+        },
+        "pubBhvs": {
+          "act1checkin_all_1": {
+            "sortId": 1,
+            "allBehaviorId": "act1checkin_all_1",
+            "displayOrder": 1,
+            "allBehaviorDesc": "박사의 CW-ST-1 누적 클리어",
+            "requiringValue": 1000000,
+            "requireRepeatCompletion": false,
+            "rewardReceivedDesc": "고개 숙이지 마",
+            "rewards": [
+              {
+                "id": "bg_rhine_1",
+                "count": 1,
+                "type": "HOME_BACKGROUND"
+              }
+            ]
+          },
+          "act1checkin_all_2": {
+            "sortId": 2,
+            "allBehaviorId": "act1checkin_all_2",
+            "displayOrder": 2,
+            "allBehaviorDesc": "박사의 CW-10 누적 클리어",
+            "requiringValue": 10000000,
+            "requireRepeatCompletion": true,
+            "rewardReceivedDesc": "걸음 멈추지 마",
+            "rewards": [
+              {
+                "id": "furni_act38d0_Galleria_01",
+                "count": 1,
+                "type": "FURN"
+              }
+            ]
+          }
+        },
+        "personalBhvs": {
+          "act1checkin_1": {
+            "sortId": 1,
+            "personalBehaviorId": "act1checkin_1",
+            "displayOrder": 1,
+            "requireRepeatCompletion": false,
+            "desc": "개인 클리어 상태:"
+          },
+          "act1checkin_2": {
+            "sortId": 2,
+            "personalBehaviorId": "act1checkin_2",
+            "displayOrder": 2,
+            "requireRepeatCompletion": true,
+            "desc": "개인 누적 클리어 횟수:"
+          },
+          "act1checkin_3": {
+            "sortId": 3,
+            "personalBehaviorId": "act1checkin_3",
+            "displayOrder": 2,
+            "requireRepeatCompletion": true,
+            "desc": "개인 지원 횟수:"
+          }
+        },
+        "constData": {
+          "characterName": "오키드",
+          "skinName": "지난 날의 옷자락"
+        }
+      }
+    },
     "TYPE_ACT3D0": {
       "act11d7": {
         "campBasicInfo": {
@@ -84033,6 +85431,17 @@
       }
     },
     "LOGIN_ONLY": {
+      "act15login": {
+        "description": "<color value=#898989>해당 물품 유효 기간</color>\n<color value=#54d600>2023/11/21 03:59</color>",
+        "itemList": [
+          {
+            "id": "LIMITED_TKT_GACHA_10_3801",
+            "count": 1,
+            "type": "LIMITED_TKT_GACHA_10"
+          }
+        ],
+        "apSupplyOutOfDateDict": {}
+      },
       "act14login": {
         "description": "<color value=#898989>해당 물품 유효 기간</color>\n<color value=#54d600>2023/09/21 03:59</color>",
         "itemList": [
@@ -94805,10 +96214,2101 @@
         }
       }
     },
-    "TYPE_ACT25SIDE": {},
+    "TYPE_ACT25SIDE": {
+      "act25side": {
+        "tokenItemId": "act25side_token_fdrchips",
+        "constData": {
+          "getDailyCount": 2,
+          "costName": "조사 승인 허가증",
+          "costDesc": "특별 조사가 개방된 후, 매일 <color=#CC6E3B>04:00</color>시에 조사 승인 허가증을 <color=#CC6E3B>2</color>매 획득할 수 있습니다.\n조사 승인 허가증은 최대 <color=#CC6E3B>4</color>매까지 누적되며, 최대 수량을 초과한 조사 승인 허가증은 획득할 수 없습니다.\n특별 조사 경우 매번 조사 승인 허가증을 <color=#CC6E3B>1</color>매 소모합니다.",
+          "costLimit": 4,
+          "rewardLimit": 16,
+          "researchUnlockText": "CW-TR-1 클리어 후 개방",
+          "harvestReward": {
+            "id": "randomMaterial_rhine2",
+            "count": 1,
+            "type": "VOUCHER_MGACHA"
+          },
+          "costCount": 1,
+          "costCountLimit": 20,
+          "basicProgress": 100,
+          "harvestDesc": "현재의 기술 조사 전환율은 단일 기술 조사의 완료 시간에 영향 줍니다.\n기술 조사 전환율은 특별 조사 시스템 개방 및 조사 진행도에 따라 증가하며, 전환율 증가의 적용 시간은 다음 날 <color=#CC6E3B>04:00</color>시 입니다.\n기술 전환을 통해 획득한 [기술 조사 보급]은 최대 <color=#CC6E3B>16</color>개까지 누적되며, 최대 수량 달성 시 기술 전환이 일시적으로 정지합니다.\n한 구역을 개방할 때마다 [기술 조사 보급]을 <color=#CC6E3B>2</color>개 획득할 수 있습니다. (구역 개방을 통해 획득한 보급은 최대 수량에 포함되지 않음)"
+        },
+        "zoneDescList": {
+          "act25side_zone1": {
+            "zoneId": "act25side_zone1",
+            "unlockText": "미개방",
+            "displayStartTime": 1699340400
+          },
+          "act25side_zone2": {
+            "zoneId": "act25side_zone2",
+            "unlockText": "[미래의 도래] 완료 후 개방",
+            "displayStartTime": 1699340400
+          },
+          "act25side_zone3": {
+            "zoneId": "act25side_zone3",
+            "unlockText": "[미래의 도래] 완료 후 개방",
+            "displayStartTime": 1699340400
+          }
+        },
+        "archiveItemData": {
+          "act25side_pic_1": {
+            "itemId": "act25side_pic_1",
+            "itemType": "PIC",
+            "itemUnlockType": "STAGE",
+            "itemUnlockParam": "act25side_st04",
+            "unlockDesc": null,
+            "iconId": null,
+            "itemName": "론 트레일"
+          },
+          "act25side_pic_2": {
+            "itemId": "act25side_pic_2",
+            "itemType": "PIC",
+            "itemUnlockType": "STAGE",
+            "itemUnlockParam": "act25side_st04",
+            "unlockDesc": null,
+            "iconId": null,
+            "itemName": "뒤엉킨 소용돌이"
+          },
+          "act25side_pic_3": {
+            "itemId": "act25side_pic_3",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_1",
+            "unlockDesc": "새로운 자료 <만남의 선물>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "만남의 선물"
+          },
+          "act25side_pic_4": {
+            "itemId": "act25side_pic_4",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_3",
+            "unlockDesc": "새로운 자료 <조롱>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "조롱"
+          },
+          "act25side_pic_5": {
+            "itemId": "act25side_pic_5",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_3",
+            "unlockDesc": "새로운 자료 <참회>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "참회"
+          },
+          "act25side_pic_6": {
+            "itemId": "act25side_pic_6",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_4",
+            "unlockDesc": "새로운 자료 <어깨를 스치며>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "어깨를 스치며"
+          },
+          "act25side_pic_7": {
+            "itemId": "act25side_pic_7",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_4",
+            "unlockDesc": "새로운 자료 <전조>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "전조"
+          },
+          "act25side_pic_8": {
+            "itemId": "act25side_pic_8",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_4",
+            "unlockDesc": "새로운 자료 <동행자>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "동행자"
+          },
+          "act25side_pic_9": {
+            "itemId": "act25side_pic_9",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_4",
+            "unlockDesc": "새로운 자료 <도화선>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "도화선"
+          },
+          "act25side_pic_10": {
+            "itemId": "act25side_pic_10",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_4",
+            "unlockDesc": "새로운 자료 <구름을 뚫은 빛>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "구름을 뚫은 빛"
+          },
+          "act25side_pic_11": {
+            "itemId": "act25side_pic_11",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_1",
+            "unlockDesc": "새로운 자료 <촉박한 시간>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "촉박한 시간"
+          },
+          "act25side_pic_12": {
+            "itemId": "act25side_pic_12",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_3",
+            "unlockDesc": "새로운 자료 <호통>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "호통"
+          },
+          "act25side_pic_13": {
+            "itemId": "act25side_pic_13",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_1",
+            "unlockDesc": "새로운 자료 <운명>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "운명"
+          },
+          "act25side_pic_14": {
+            "itemId": "act25side_pic_14",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_4",
+            "unlockDesc": "새로운 자료 <잘못된 항성도>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "잘못된 항성도"
+          },
+          "act25side_pic_15": {
+            "itemId": "act25side_pic_15",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_4",
+            "unlockDesc": "새로운 자료 <하늘 높이 치솟은 기둥>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "하늘 높이 치솟은 기둥"
+          },
+          "act25side_pic_16": {
+            "itemId": "act25side_pic_16",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_4",
+            "unlockDesc": "새로운 자료 <하늘의 진실>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "하늘의 진실"
+          },
+          "act25side_pic_17": {
+            "itemId": "act25side_pic_17",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_3",
+            "unlockDesc": "새로운 자료 <고개를 들어>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "고개를 들어"
+          },
+          "act25side_pic_18": {
+            "itemId": "act25side_pic_18",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_4",
+            "unlockDesc": "새로운 자료 <컬럼비아의 비밀>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "컬럼비아의 비밀"
+          },
+          "act25side_pic_19": {
+            "itemId": "act25side_pic_19",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_4",
+            "unlockDesc": "새로운 자료 <고독한 엘프>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "외로운 엘프"
+          },
+          "act25side_pic_20": {
+            "itemId": "act25side_pic_20",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_4",
+            "unlockDesc": "새로운 자료 <굿바이, 테라>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "굿바이, 테라"
+          },
+          "act25side_pic_21": {
+            "itemId": "act25side_pic_21",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_5",
+            "unlockDesc": "새로운 자료 <에너지 우물>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "에너지 우물"
+          },
+          "act25side_pic_22": {
+            "itemId": "act25side_pic_22",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_5",
+            "unlockDesc": "새로운 자료 <초점 발생기>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "초점 발생기"
+          },
+          "act25side_pic_23": {
+            "itemId": "act25side_pic_23",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_5",
+            "unlockDesc": "새로운 자료 <스텔라리아>을 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "스텔라리아"
+          },
+          "act25side_pic_24": {
+            "itemId": "act25side_pic_24",
+            "itemType": "PIC",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_5",
+            "unlockDesc": "새로운 자료 <스테이시스>를 받았습니다",
+            "iconId": "act25side_pic_1",
+            "itemName": "스테이시스"
+          },
+          "act25side_file_1": {
+            "itemId": "act25side_file_1",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_1",
+            "unlockDesc": "새로운 조사 보고 <임무 보고>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "임무 보고"
+          },
+          "act25side_file_2": {
+            "itemId": "act25side_file_2",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_2",
+            "unlockDesc": "새로운 조사 보고 <과거의 인터뷰>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "과거의 인터뷰"
+          },
+          "act25side_file_3": {
+            "itemId": "act25side_file_3",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_5",
+            "unlockDesc": "새로운 조사 보고 <콘래드 잭슨>을 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "콘래드 잭슨"
+          },
+          "act25side_file_4": {
+            "itemId": "act25side_file_4",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_1",
+            "unlockDesc": "새로운 조사 보고 <일기장 한 페이지>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "일기장 한 페이지"
+          },
+          "act25side_file_5": {
+            "itemId": "act25side_file_5",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_2",
+            "unlockDesc": "새로운 조사 보고 <회의록>을 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "회의록"
+          },
+          "act25side_file_6": {
+            "itemId": "act25side_file_6",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_5",
+            "unlockDesc": "새로운 조사 보고 <대화>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "대화"
+          },
+          "act25side_file_7": {
+            "itemId": "act25side_file_7",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_1",
+            "unlockDesc": "새로운 조사 보고 <안내>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "안내"
+          },
+          "act25side_file_8": {
+            "itemId": "act25side_file_8",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_2",
+            "unlockDesc": "새로운 조사 보고 <몽매>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "몽매"
+          },
+          "act25side_file_9": {
+            "itemId": "act25side_file_9",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_5",
+            "unlockDesc": "새로운 조사 보고 <영구불변>을 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "영구불변"
+          },
+          "act25side_file_10": {
+            "itemId": "act25side_file_10",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_1",
+            "unlockDesc": "새로운 조사 보고 <유일한 단서>를 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "유일한 단서"
+          },
+          "act25side_file_11": {
+            "itemId": "act25side_file_11",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_2",
+            "unlockDesc": "새로운 조사 보고 <메일>을 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "메일"
+          },
+          "act25side_file_12": {
+            "itemId": "act25side_file_12",
+            "itemType": "STORY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_5",
+            "unlockDesc": "새로운 조사 보고 <진리가 있는 곳>을 받았습니다",
+            "iconId": "act25side_file_1",
+            "itemName": "진리가 있는 곳"
+          },
+          "act25side_tech1_1": {
+            "itemId": "act25side_tech1_1",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_3",
+            "unlockDesc": "특별 작전 지령: <과중력 α> 적용 중",
+            "iconId": "act25side_tech1_1",
+            "itemName": "과중력 α"
+          },
+          "act25side_tech1_2": {
+            "itemId": "act25side_tech1_2",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_5",
+            "unlockDesc": "특별 작전 지령: <과중력 β> 강화 완료",
+            "iconId": "act25side_tech1_2",
+            "itemName": "과중력 β"
+          },
+          "act25side_tech2_1": {
+            "itemId": "act25side_tech2_1",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_3",
+            "unlockDesc": "특별 작전 지령: <중력 인지 α> 적용 중",
+            "iconId": "act25side_tech2_1",
+            "itemName": "중력 인지 α"
+          },
+          "act25side_tech2_2": {
+            "itemId": "act25side_tech2_2",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_5",
+            "unlockDesc": "특별 작전 지령: <중력 인지 β> 강화 완료",
+            "iconId": "act25side_tech2_2",
+            "itemName": "중력 인지 β"
+          },
+          "act25side_tech3_1": {
+            "itemId": "act25side_tech3_1",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_3",
+            "unlockDesc": "특별 작전 지령: <무중력 α> 적용 중",
+            "iconId": "act25side_tech3_1",
+            "itemName": "무중력 α"
+          },
+          "act25side_tech3_2": {
+            "itemId": "act25side_tech3_2",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_5",
+            "unlockDesc": "특별 작전 지령: <무중력 β> 강화 완료",
+            "iconId": "act25side_tech3_2",
+            "itemName": "무중력 β"
+          },
+          "act25side_tech4_1": {
+            "itemId": "act25side_tech4_1",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_3",
+            "unlockDesc": "특별 작전 지령: <초기 속도 α> 적용 중",
+            "iconId": "act25side_tech4_1",
+            "itemName": "초기 속도 α"
+          },
+          "act25side_tech4_2": {
+            "itemId": "act25side_tech4_2",
+            "itemType": "BATTLE_PERFORMANCE",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_5",
+            "unlockDesc": "특별 작전 지령: <초기 속도 β> 강화 완료",
+            "iconId": "act25side_tech4_2",
+            "itemName": "초기 속도 β"
+          },
+          "act25side_token_key1_01": {
+            "itemId": "act25side_token_key1_01",
+            "itemType": "KEY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_1_2",
+            "unlockDesc": "비밀 구역의 특수 작전 허가증 α 획득",
+            "iconId": "act25side_token_key01",
+            "itemName": "특수 작전 허가증·α"
+          },
+          "act25side_token_key1_02": {
+            "itemId": "act25side_token_key1_02",
+            "itemType": "KEY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_3_2",
+            "unlockDesc": "비밀 구역의 특수 작전 허가증 α 획득",
+            "iconId": "act25side_token_key01",
+            "itemName": "특수 작전 허가증·α"
+          },
+          "act25side_token_key2_01": {
+            "itemId": "act25side_token_key2_01",
+            "itemType": "KEY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_2_2",
+            "unlockDesc": "비밀 구역의 특수 작전 허가증 β 획득",
+            "iconId": "act25side_token_key02",
+            "itemName": "특수 작전 허가증·β"
+          },
+          "act25side_token_key2_02": {
+            "itemId": "act25side_token_key2_02",
+            "itemType": "KEY",
+            "itemUnlockType": "MISSION",
+            "itemUnlockParam": "mission_4_2",
+            "unlockDesc": "비밀 구역의 특수 작전 허가증 β 획득",
+            "iconId": "act25side_token_key02",
+            "itemName": "특수 작전 허가증·β"
+          }
+        },
+        "arcMapInfoData": {
+          "act25side_file_1": {
+            "objectId": "act25side_file_1",
+            "type": "STORY",
+            "numberId": "01",
+            "areaId": "act25side_area_1",
+            "sortId": 1,
+            "position": 80,
+            "hasDot": true
+          },
+          "act25side_pic_3": {
+            "objectId": "act25side_pic_3",
+            "type": "PIC",
+            "numberId": "02",
+            "areaId": "act25side_area_1",
+            "sortId": 2,
+            "position": 319,
+            "hasDot": false
+          },
+          "act25side_file_2": {
+            "objectId": "act25side_file_2",
+            "type": "STORY",
+            "numberId": "03",
+            "areaId": "act25side_area_1",
+            "sortId": 3,
+            "position": 738,
+            "hasDot": true
+          },
+          "act25side_token_key1_01": {
+            "objectId": "act25side_token_key1_01",
+            "type": "KEY",
+            "numberId": "04",
+            "areaId": "act25side_area_1",
+            "sortId": 4,
+            "position": 1097,
+            "hasDot": false
+          },
+          "act25side_tech1_1": {
+            "objectId": "act25side_tech1_1",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "05",
+            "areaId": "act25side_area_1",
+            "sortId": 5,
+            "position": 1516,
+            "hasDot": true
+          },
+          "act25side_pic_5": {
+            "objectId": "act25side_pic_5",
+            "type": "PIC",
+            "numberId": "06",
+            "areaId": "act25side_area_1",
+            "sortId": 6,
+            "position": 1755,
+            "hasDot": false
+          },
+          "act25side_pic_6": {
+            "objectId": "act25side_pic_6",
+            "type": "PIC",
+            "numberId": "07",
+            "areaId": "act25side_area_1",
+            "sortId": 7,
+            "position": 2474,
+            "hasDot": true
+          },
+          "act25side_pic_7": {
+            "objectId": "act25side_pic_7",
+            "type": "PIC",
+            "numberId": "08",
+            "areaId": "act25side_area_1",
+            "sortId": 8,
+            "position": 2833,
+            "hasDot": false
+          },
+          "act25side_tech1_2": {
+            "objectId": "act25side_tech1_2",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "09",
+            "areaId": "act25side_area_1",
+            "sortId": 9,
+            "position": 3552,
+            "hasDot": true
+          },
+          "act25side_file_3": {
+            "objectId": "act25side_file_3",
+            "type": "STORY",
+            "numberId": "10",
+            "areaId": "act25side_area_1",
+            "sortId": 10,
+            "position": 3911,
+            "hasDot": false
+          },
+          "act25side_pic_21": {
+            "objectId": "act25side_pic_21",
+            "type": "PIC",
+            "numberId": "11",
+            "areaId": "act25side_area_1",
+            "sortId": 11,
+            "position": 4330,
+            "hasDot": false
+          },
+          "act25side_file_4": {
+            "objectId": "act25side_file_4",
+            "type": "STORY",
+            "numberId": "01",
+            "areaId": "act25side_area_2",
+            "sortId": 1,
+            "position": 680,
+            "hasDot": true
+          },
+          "act25side_file_5": {
+            "objectId": "act25side_file_5",
+            "type": "STORY",
+            "numberId": "02",
+            "areaId": "act25side_area_2",
+            "sortId": 2,
+            "position": 1099,
+            "hasDot": true
+          },
+          "act25side_token_key2_01": {
+            "objectId": "act25side_token_key2_01",
+            "type": "KEY",
+            "numberId": "03",
+            "areaId": "act25side_area_2",
+            "sortId": 3,
+            "position": 1338,
+            "hasDot": false
+          },
+          "act25side_tech2_1": {
+            "objectId": "act25side_tech2_1",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "04",
+            "areaId": "act25side_area_2",
+            "sortId": 4,
+            "position": 2057,
+            "hasDot": true
+          },
+          "act25side_pic_4": {
+            "objectId": "act25side_pic_4",
+            "type": "PIC",
+            "numberId": "05",
+            "areaId": "act25side_area_2",
+            "sortId": 5,
+            "position": 2296,
+            "hasDot": false
+          },
+          "act25side_pic_8": {
+            "objectId": "act25side_pic_8",
+            "type": "PIC",
+            "numberId": "06",
+            "areaId": "act25side_area_2",
+            "sortId": 6,
+            "position": 3015,
+            "hasDot": true
+          },
+          "act25side_pic_9": {
+            "objectId": "act25side_pic_9",
+            "type": "PIC",
+            "numberId": "07",
+            "areaId": "act25side_area_2",
+            "sortId": 7,
+            "position": 3374,
+            "hasDot": false
+          },
+          "act25side_pic_10": {
+            "objectId": "act25side_pic_10",
+            "type": "PIC",
+            "numberId": "08",
+            "areaId": "act25side_area_2",
+            "sortId": 8,
+            "position": 3613,
+            "hasDot": false
+          },
+          "act25side_tech2_2": {
+            "objectId": "act25side_tech2_2",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "09",
+            "areaId": "act25side_area_2",
+            "sortId": 9,
+            "position": 4332,
+            "hasDot": true
+          },
+          "act25side_file_6": {
+            "objectId": "act25side_file_6",
+            "type": "STORY",
+            "numberId": "10",
+            "areaId": "act25side_area_2",
+            "sortId": 10,
+            "position": 4691,
+            "hasDot": false
+          },
+          "act25side_pic_22": {
+            "objectId": "act25side_pic_22",
+            "type": "PIC",
+            "numberId": "11",
+            "areaId": "act25side_area_2",
+            "sortId": 11,
+            "position": 5050,
+            "hasDot": false
+          },
+          "act25side_file_7": {
+            "objectId": "act25side_file_7",
+            "type": "STORY",
+            "numberId": "01",
+            "areaId": "act25side_area_3",
+            "sortId": 1,
+            "position": 190,
+            "hasDot": true
+          },
+          "act25side_pic_11": {
+            "objectId": "act25side_pic_11",
+            "type": "PIC",
+            "numberId": "02",
+            "areaId": "act25side_area_3",
+            "sortId": 2,
+            "position": 429,
+            "hasDot": false
+          },
+          "act25side_file_8": {
+            "objectId": "act25side_file_8",
+            "type": "STORY",
+            "numberId": "03",
+            "areaId": "act25side_area_3",
+            "sortId": 3,
+            "position": 1148,
+            "hasDot": true
+          },
+          "act25side_token_key1_02": {
+            "objectId": "act25side_token_key1_02",
+            "type": "KEY",
+            "numberId": "04",
+            "areaId": "act25side_area_3",
+            "sortId": 4,
+            "position": 1507,
+            "hasDot": false
+          },
+          "act25side_tech3_1": {
+            "objectId": "act25side_tech3_1",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "05",
+            "areaId": "act25side_area_3",
+            "sortId": 5,
+            "position": 1926,
+            "hasDot": true
+          },
+          "act25side_pic_12": {
+            "objectId": "act25side_pic_12",
+            "type": "PIC",
+            "numberId": "06",
+            "areaId": "act25side_area_3",
+            "sortId": 6,
+            "position": 2165,
+            "hasDot": false
+          },
+          "act25side_pic_14": {
+            "objectId": "act25side_pic_14",
+            "type": "PIC",
+            "numberId": "07",
+            "areaId": "act25side_area_3",
+            "sortId": 7,
+            "position": 2884,
+            "hasDot": true
+          },
+          "act25side_pic_15": {
+            "objectId": "act25side_pic_15",
+            "type": "PIC",
+            "numberId": "08",
+            "areaId": "act25side_area_3",
+            "sortId": 8,
+            "position": 3243,
+            "hasDot": false
+          },
+          "act25side_pic_16": {
+            "objectId": "act25side_pic_16",
+            "type": "PIC",
+            "numberId": "09",
+            "areaId": "act25side_area_3",
+            "sortId": 9,
+            "position": 3602,
+            "hasDot": false
+          },
+          "act25side_tech3_2": {
+            "objectId": "act25side_tech3_2",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "10",
+            "areaId": "act25side_area_3",
+            "sortId": 10,
+            "position": 4021,
+            "hasDot": true
+          },
+          "act25side_file_9": {
+            "objectId": "act25side_file_9",
+            "type": "STORY",
+            "numberId": "11",
+            "areaId": "act25side_area_3",
+            "sortId": 11,
+            "position": 4260,
+            "hasDot": false
+          },
+          "act25side_pic_23": {
+            "objectId": "act25side_pic_23",
+            "type": "PIC",
+            "numberId": "12",
+            "areaId": "act25side_area_3",
+            "sortId": 12,
+            "position": 4679,
+            "hasDot": false
+          },
+          "act25side_file_10": {
+            "objectId": "act25side_file_10",
+            "type": "STORY",
+            "numberId": "01",
+            "areaId": "act25side_area_4",
+            "sortId": 1,
+            "position": 570,
+            "hasDot": true
+          },
+          "act25side_pic_13": {
+            "objectId": "act25side_pic_13",
+            "type": "PIC",
+            "numberId": "02",
+            "areaId": "act25side_area_4",
+            "sortId": 2,
+            "position": 929,
+            "hasDot": false
+          },
+          "act25side_file_11": {
+            "objectId": "act25side_file_11",
+            "type": "STORY",
+            "numberId": "03",
+            "areaId": "act25side_area_4",
+            "sortId": 3,
+            "position": 1648,
+            "hasDot": true
+          },
+          "act25side_token_key2_02": {
+            "objectId": "act25side_token_key2_02",
+            "type": "KEY",
+            "numberId": "04",
+            "areaId": "act25side_area_4",
+            "sortId": 4,
+            "position": 1887,
+            "hasDot": false
+          },
+          "act25side_tech4_1": {
+            "objectId": "act25side_tech4_1",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "05",
+            "areaId": "act25side_area_4",
+            "sortId": 5,
+            "position": 2606,
+            "hasDot": true
+          },
+          "act25side_pic_17": {
+            "objectId": "act25side_pic_17",
+            "type": "PIC",
+            "numberId": "06",
+            "areaId": "act25side_area_4",
+            "sortId": 6,
+            "position": 2845,
+            "hasDot": false
+          },
+          "act25side_pic_18": {
+            "objectId": "act25side_pic_18",
+            "type": "PIC",
+            "numberId": "07",
+            "areaId": "act25side_area_4",
+            "sortId": 7,
+            "position": 3564,
+            "hasDot": true
+          },
+          "act25side_pic_19": {
+            "objectId": "act25side_pic_19",
+            "type": "PIC",
+            "numberId": "08",
+            "areaId": "act25side_area_4",
+            "sortId": 8,
+            "position": 3803,
+            "hasDot": false
+          },
+          "act25side_pic_20": {
+            "objectId": "act25side_pic_20",
+            "type": "PIC",
+            "numberId": "09",
+            "areaId": "act25side_area_4",
+            "sortId": 9,
+            "position": 4042,
+            "hasDot": false
+          },
+          "act25side_tech4_2": {
+            "objectId": "act25side_tech4_2",
+            "type": "BATTLE_PERFORMANCE",
+            "numberId": "10",
+            "areaId": "act25side_area_4",
+            "sortId": 10,
+            "position": 4761,
+            "hasDot": true
+          },
+          "act25side_file_12": {
+            "objectId": "act25side_file_12",
+            "type": "STORY",
+            "numberId": "11",
+            "areaId": "act25side_area_4",
+            "sortId": 11,
+            "position": 5000,
+            "hasDot": false
+          },
+          "act25side_pic_24": {
+            "objectId": "act25side_pic_24",
+            "type": "PIC",
+            "numberId": "12",
+            "areaId": "act25side_area_4",
+            "sortId": 12,
+            "position": 5239,
+            "hasDot": false
+          }
+        },
+        "areaInfoData": {
+          "act25side_area_1": {
+            "areaId": "act25side_area_1",
+            "sortId": 1,
+            "areaIcon": "area_1",
+            "areaName": "에너지 우물",
+            "unlockText": "미공개 구역",
+            "preposedStage": "act25side_tr01",
+            "areaInitialDesc": "통칭 '에너지 우물', '프로젝트 호라이즌 아크'의 일환이다.\n작용은 에너지를 모으고 위에 있는 초점 발생기로 방출하는 것이다. 이것이 저장할 수 있는 에너지는 한 나라의 모든 이동도시를 상당 기간 운영하는데 충분하다.",
+            "areaEndingDesc": "크리스틴은 이것으로 하늘을 겨누었는데, 우리는 무엇을 겨눠야 할까?",
+            "areaEndingAud": "ON_ACT25SIDE_BROADCAST2",
+            "reward": {
+              "id": "randomMaterial_rhine2",
+              "count": 2,
+              "type": "VOUCHER_MGACHA"
+            },
+            "finalId": "mission_1_5"
+          },
+          "act25side_area_2": {
+            "areaId": "act25side_area_2",
+            "sortId": 2,
+            "areaIcon": "area_2",
+            "areaName": "초점 발생기",
+            "unlockText": "미공개 구역",
+            "preposedStage": "act25side_st02",
+            "areaInitialDesc": "통칭 '초점 발생기', '프로젝트 호라이즌 아크'의 일환이다.\n작용은 지상에서 보내온 에너지를 흡수하고 목표를 지정한 뒤 발사하는 것이다. 그 타격 범위는 테라인의 상상을 초월할 정도로 넓다.",
+            "areaEndingDesc": "별에 다가가는 첫 단계는 하늘을 정복하는 것, 그리고 우리는 이미 그 길을 걷고 있다.",
+            "areaEndingAud": "ON_ACT25SIDE_BROADCAST3",
+            "reward": {
+              "id": "randomMaterial_rhine2",
+              "count": 2,
+              "type": "VOUCHER_MGACHA"
+            },
+            "finalId": "mission_2_5"
+          },
+          "act25side_area_3": {
+            "areaId": "act25side_area_3",
+            "sortId": 3,
+            "areaIcon": "area_3",
+            "areaName": "스텔라리아",
+            "unlockText": "미공개 구역",
+            "preposedStage": "act25side_07",
+            "areaInitialDesc": "크리스틴 라이트의 개인 취향에 맞게 설계한 관측실.\n중앙의 플라네타륨은 최첨단 기술을 사용하여 정확도가 매우 높다. 다만, 테라인들이 익히 아는 별들의 궤적은 아닌 것 같다.",
+            "areaEndingDesc": "우리가 별을 동경해 온 지 수천 년, 이제 그들에게 손을 내밀 때가 됐다.",
+            "areaEndingAud": "ON_ACT25SIDE_BROADCAST4",
+            "reward": {
+              "id": "randomMaterial_rhine2",
+              "count": 2,
+              "type": "VOUCHER_MGACHA"
+            },
+            "finalId": "mission_3_5"
+          },
+          "act25side_area_4": {
+            "areaId": "act25side_area_4",
+            "sortId": 4,
+            "areaIcon": "area_4",
+            "areaName": "스테이시스",
+            "unlockText": "미공개 구역",
+            "preposedStage": "act25side_09",
+            "areaInitialDesc": "네모난 것들이 잔뜩 있는 싸늘한 분위기의 묘지.\n여기서 무슨 일이 있었는지는 아무도 모른다.",
+            "areaEndingDesc": "언젠가는 이곳의 비밀을 밝혀내겠지만, 그때가 되면 더 이상 중요하지 않을지도 모른다.",
+            "areaEndingAud": "ON_ACT25SIDE_BROADCAST5",
+            "reward": {
+              "id": "randomMaterial_rhine2",
+              "count": 2,
+              "type": "VOUCHER_MGACHA"
+            },
+            "finalId": "mission_4_5"
+          }
+        },
+        "areaMissionData": {
+          "mission_1_1": {
+            "id": "mission_1_1",
+            "areaId": "act25side_area_1",
+            "preposedMissionId": null,
+            "sortId": 1,
+            "isZone": false,
+            "stageId": "act25side_03",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 20,
+            "progressPicId": "progress_1",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-3 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "4001",
+                "count": 10000,
+                "type": "GOLD"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_3",
+              "act25side_file_1"
+            ]
+          },
+          "mission_1_2": {
+            "id": "mission_1_2",
+            "areaId": "act25side_area_1",
+            "preposedMissionId": "mission_1_1",
+            "sortId": 2,
+            "isZone": false,
+            "stageId": "act25side_05",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 40,
+            "progressPicId": "progress_2",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-5 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "2003",
+                "count": 10,
+                "type": "CARD_EXP"
+              },
+              {
+                "id": "act25side_token_key01",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_file_2",
+              "act25side_token_key1_01"
+            ]
+          },
+          "mission_1_3": {
+            "id": "mission_1_3",
+            "areaId": "act25side_area_1",
+            "preposedMissionId": "mission_1_2",
+            "sortId": 3,
+            "isZone": false,
+            "stageId": "act25side_07",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 60,
+            "progressPicId": "progress_3",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-7 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "30053",
+                "count": 3,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_5",
+              "act25side_tech1_1"
+            ]
+          },
+          "mission_1_4": {
+            "id": "mission_1_4",
+            "areaId": "act25side_area_1",
+            "preposedMissionId": "mission_1_3",
+            "sortId": 4,
+            "isZone": false,
+            "stageId": "act25side_07",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 80,
+            "progressPicId": "progress_4",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-7 1회 클리어, '행성 파편'이 적과 최소 15회 충돌",
+            "param": null,
+            "rewards": [
+              {
+                "id": "mod_update_token_1",
+                "count": 10,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_6",
+              "act25side_pic_7"
+            ]
+          },
+          "mission_1_5": {
+            "id": "mission_1_5",
+            "areaId": "act25side_area_1",
+            "preposedMissionId": "mission_1_4",
+            "sortId": 5,
+            "isZone": true,
+            "stageId": "act25side_07",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 100,
+            "progressPicId": "progress_5",
+            "template": null,
+            "templateType": -1,
+            "desc": "이벤트 스테이지 5회 클리어 (튜토리얼, 스토리, 비밀 구역의 스테이지 제외)",
+            "param": null,
+            "rewards": [
+              {
+                "id": "30135",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_21",
+              "act25side_file_3",
+              "act25side_tech1_2"
+            ]
+          },
+          "mission_2_1": {
+            "id": "mission_2_1",
+            "areaId": "act25side_area_2",
+            "preposedMissionId": null,
+            "sortId": 1,
+            "isZone": false,
+            "stageId": "act25side_04",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 20,
+            "progressPicId": "progress_1",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-4 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "4001",
+                "count": 10000,
+                "type": "GOLD"
+              }
+            ],
+            "archiveItems": [
+              "act25side_file_4"
+            ]
+          },
+          "mission_2_2": {
+            "id": "mission_2_2",
+            "areaId": "act25side_area_2",
+            "preposedMissionId": "mission_2_1",
+            "sortId": 2,
+            "isZone": false,
+            "stageId": "act25side_04",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 40,
+            "progressPicId": "progress_2",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-4 1회 클리어, 아크라이트 돌격대의 이륙 저지",
+            "param": null,
+            "rewards": [
+              {
+                "id": "2003",
+                "count": 10,
+                "type": "CARD_EXP"
+              },
+              {
+                "id": "act25side_token_key02",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_file_5",
+              "act25side_token_key2_01"
+            ]
+          },
+          "mission_2_3": {
+            "id": "mission_2_3",
+            "areaId": "act25side_area_2",
+            "preposedMissionId": "mission_2_2",
+            "sortId": 3,
+            "isZone": false,
+            "stageId": "act25side_06",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 60,
+            "progressPicId": "progress_3",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-6 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "30073",
+                "count": 3,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_4",
+              "act25side_tech2_1"
+            ]
+          },
+          "mission_2_4": {
+            "id": "mission_2_4",
+            "areaId": "act25side_area_2",
+            "preposedMissionId": "mission_2_3",
+            "sortId": 4,
+            "isZone": true,
+            "stageId": "act25side_06",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 80,
+            "progressPicId": "progress_4",
+            "template": null,
+            "templateType": -1,
+            "desc": "이벤트 스테이지 5회 클리어 (튜토리얼, 스토리, 비밀 구역의 스테이지 제외)",
+            "param": null,
+            "rewards": [
+              {
+                "id": "mod_update_token_2",
+                "count": 5,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_8",
+              "act25side_pic_9",
+              "act25side_pic_10"
+            ]
+          },
+          "mission_2_5": {
+            "id": "mission_2_5",
+            "areaId": "act25side_area_2",
+            "preposedMissionId": "mission_2_4",
+            "sortId": 5,
+            "isZone": false,
+            "stageId": "act25side_ex01",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 100,
+            "progressPicId": "progress_5",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-EX-1 1회 클리어, '행성 파편'이 적과 최소 20회 충돌",
+            "param": null,
+            "rewards": [
+              {
+                "id": "30115",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_22",
+              "act25side_file_6",
+              "act25side_tech2_2"
+            ]
+          },
+          "mission_3_1": {
+            "id": "mission_3_1",
+            "areaId": "act25side_area_3",
+            "preposedMissionId": null,
+            "sortId": 1,
+            "isZone": false,
+            "stageId": "act25side_08",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 20,
+            "progressPicId": "progress_1",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-8 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "4001",
+                "count": 10000,
+                "type": "GOLD"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_11",
+              "act25side_file_7"
+            ]
+          },
+          "mission_3_2": {
+            "id": "mission_3_2",
+            "areaId": "act25side_area_3",
+            "preposedMissionId": "mission_3_1",
+            "sortId": 2,
+            "isZone": false,
+            "stageId": "act25side_08",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 40,
+            "progressPicId": "progress_2",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-8 1회 클리어, '행성 파편'이 적과 최소 20회 충돌",
+            "param": null,
+            "rewards": [
+              {
+                "id": "2003",
+                "count": 10,
+                "type": "CARD_EXP"
+              },
+              {
+                "id": "act25side_token_key01",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_file_8",
+              "act25side_token_key1_02"
+            ]
+          },
+          "mission_3_3": {
+            "id": "mission_3_3",
+            "areaId": "act25side_area_3",
+            "preposedMissionId": "mission_3_2",
+            "sortId": 3,
+            "isZone": false,
+            "stageId": "act25side_09",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 60,
+            "progressPicId": "progress_3",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-9 1회 클리어, 중력 방향 최대 2회 변경",
+            "param": null,
+            "rewards": [
+              {
+                "id": "31043",
+                "count": 3,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_12",
+              "act25side_tech3_1"
+            ]
+          },
+          "mission_3_4": {
+            "id": "mission_3_4",
+            "areaId": "act25side_area_3",
+            "preposedMissionId": "mission_3_3",
+            "sortId": 4,
+            "isZone": false,
+            "stageId": "act25side_ex03",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 80,
+            "progressPicId": "progress_4",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-EX-3 1회 클리어, '행성 파편'에 의해 쓰러진 아군 유닛 없음",
+            "param": null,
+            "rewards": [
+              {
+                "id": "mod_update_token_2",
+                "count": 5,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_14",
+              "act25side_pic_15",
+              "act25side_pic_16"
+            ]
+          },
+          "mission_3_5": {
+            "id": "mission_3_5",
+            "areaId": "act25side_area_3",
+            "preposedMissionId": "mission_3_4",
+            "sortId": 5,
+            "isZone": false,
+            "stageId": "act25side_ex05",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 100,
+            "progressPicId": "progress_5",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-EX-5 1회 클리어, 중력 방향 최대 3회 변경",
+            "param": null,
+            "rewards": [
+              {
+                "id": "30145",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_23",
+              "act25side_file_9",
+              "act25side_tech3_2"
+            ]
+          },
+          "mission_4_1": {
+            "id": "mission_4_1",
+            "areaId": "act25side_area_4",
+            "preposedMissionId": null,
+            "sortId": 1,
+            "isZone": false,
+            "stageId": "act25side_10",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 20,
+            "progressPicId": "progress_1",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-10 1회 클리어",
+            "param": null,
+            "rewards": [
+              {
+                "id": "4001",
+                "count": 10000,
+                "type": "GOLD"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_13",
+              "act25side_file_10"
+            ]
+          },
+          "mission_4_2": {
+            "id": "mission_4_2",
+            "areaId": "act25side_area_4",
+            "preposedMissionId": "mission_4_1",
+            "sortId": 2,
+            "isZone": false,
+            "stageId": "act25side_10",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 40,
+            "progressPicId": "progress_2",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-10 1회 클리어, 크리스틴이 탈취한 '행성 파편' 수량 최대 5개",
+            "param": null,
+            "rewards": [
+              {
+                "id": "2003",
+                "count": 10,
+                "type": "CARD_EXP"
+              },
+              {
+                "id": "act25side_token_key02",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_file_11",
+              "act25side_token_key2_02"
+            ]
+          },
+          "mission_4_3": {
+            "id": "mission_4_3",
+            "areaId": "act25side_area_4",
+            "preposedMissionId": "mission_4_2",
+            "sortId": 3,
+            "isZone": false,
+            "stageId": "act25side_ex02",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 60,
+            "progressPicId": "progress_3",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-EX-2 1회 클리어, 아크라이트 돌격대의 이륙 저지",
+            "param": null,
+            "rewards": [
+              {
+                "id": "31063",
+                "count": 3,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_17",
+              "act25side_tech4_1"
+            ]
+          },
+          "mission_4_4": {
+            "id": "mission_4_4",
+            "areaId": "act25side_area_4",
+            "preposedMissionId": "mission_4_3",
+            "sortId": 4,
+            "isZone": false,
+            "stageId": "act25side_ex04",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 80,
+            "progressPicId": "progress_4",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-EX-4 1회 클리어, 중력 방향 최소 5회 변경",
+            "param": null,
+            "rewards": [
+              {
+                "id": "mod_unlock_token",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_18",
+              "act25side_pic_19",
+              "act25side_pic_20"
+            ]
+          },
+          "mission_4_5": {
+            "id": "mission_4_5",
+            "areaId": "act25side_area_4",
+            "preposedMissionId": "mission_4_4",
+            "sortId": 5,
+            "isZone": false,
+            "stageId": "act25side_ex06",
+            "costCount": 0,
+            "transform": 15,
+            "progress": 100,
+            "progressPicId": "progress_5",
+            "template": null,
+            "templateType": -1,
+            "desc": "3★ 평가로 CW-EX-6 1회 클리어, 중력 방향 최대 3회 변경",
+            "param": null,
+            "rewards": [
+              {
+                "id": "30155",
+                "count": 1,
+                "type": "MATERIAL"
+              }
+            ],
+            "archiveItems": [
+              "act25side_pic_24",
+              "act25side_file_12",
+              "act25side_tech4_2"
+            ]
+          }
+        },
+        "battlePerformanceData": {
+          "act25side_tech1_1": {
+            "itemId": "act25side_tech1_1",
+            "sortId": 1,
+            "itemName": "과중력 α",
+            "itemIcon": "act25side_tech1_1",
+            "itemDesc": "'행성 파편'이 적에게 주는 대미지가 증가, 기절 효과 부여",
+            "itemTechType": "TECH_1",
+            "runeData": {
+              "id": "act25side_tech1_1",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편이 적에게 주는 대미지가 증가, 기절 효과 부여",
+              "runes": [
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitEnemy.damage_scale",
+                      "value": 0.9,
+                      "valueStr": null
+                    }
+                  ]
+                },
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitEnemy.stun",
+                      "value": 1.5,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech1_2": {
+            "itemId": "act25side_tech1_2",
+            "sortId": 2,
+            "itemName": "과중력 β",
+            "itemIcon": "act25side_tech1_2",
+            "itemDesc": "'행성 파편'이 적에게 주는 대미지가 추가로 증가, 기절 시간 연장",
+            "itemTechType": "TECH_1",
+            "runeData": {
+              "id": "act25side_tech1_2",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편이 적에게 주는 대미지가 증가, 기절 효과 부여",
+              "runes": [
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitEnemy.damage_scale",
+                      "value": 0.5,
+                      "valueStr": null
+                    }
+                  ]
+                },
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitEnemy.stun",
+                      "value": 1.5,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech2_1": {
+            "itemId": "act25side_tech2_1",
+            "sortId": 1,
+            "itemName": "중력 인지 α",
+            "itemIcon": "act25side_tech2_1",
+            "itemDesc": "'행성 파편'이 적에 대한 추진력이 증가, 아군에게 주는 대미지 감소",
+            "itemTechType": "TECH_2",
+            "runeData": {
+              "id": "act25side_tech2_1",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편이 적에 대한 추진력이 증가, 아군에게 주는 대미지 감소",
+              "runes": [
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitAlly.damage_scale",
+                      "value": -0.3,
+                      "valueStr": null
+                    }
+                  ]
+                },
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitEnemy.force",
+                      "value": 1.0,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech2_2": {
+            "itemId": "act25side_tech2_2",
+            "sortId": 2,
+            "itemName": "중력 인지 β",
+            "itemIcon": "act25side_tech2_2",
+            "itemDesc": "'행성 파편'이 적에 대한 추진력이 추가로 증가, 아군에게 주는 대미지 추가로 감소",
+            "itemTechType": "TECH_2",
+            "runeData": {
+              "id": "act25side_tech2_2",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편이 적에 대한 추진력이 증가, 아군에게 주는 대미지 감소",
+              "runes": [
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitAlly.damage_scale",
+                      "value": -0.3,
+                      "valueStr": null
+                    }
+                  ]
+                },
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitEnemy.force",
+                      "value": 1.0,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech3_1": {
+            "itemId": "act25side_tech3_1",
+            "sortId": 1,
+            "itemName": "무중력 α",
+            "itemIcon": "act25side_tech3_1",
+            "itemDesc": "'행성 파편'을 움직이는 데 필요한 공격 횟수가 감소",
+            "itemTechType": "TECH_3",
+            "runeData": {
+              "id": "act25side_tech3_1",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편을 움직이는 데 필요한 공격 횟수가 감소",
+              "runes": [
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitCounter.max_hit_count",
+                      "value": -5.0,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech3_2": {
+            "itemId": "act25side_tech3_2",
+            "sortId": 2,
+            "itemName": "무중력 β",
+            "itemIcon": "act25side_tech3_2",
+            "itemDesc": "'행성 파편'을 움직이는 데 필요한 공격 횟수가 추가로 감소",
+            "itemTechType": "TECH_3",
+            "runeData": {
+              "id": "act25side_tech3_2",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편을 움직이는 데 필요한 공격 횟수가 감소",
+              "runes": [
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitCounter.max_hit_count",
+                      "value": -5.0,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech4_1": {
+            "itemId": "act25side_tech4_1",
+            "sortId": 1,
+            "itemName": "초기 속도 α",
+            "itemIcon": "act25side_tech4_1",
+            "itemDesc": "'행성 파편'을 움직이는 데 필요한 추진력이 감소, 역중력에서의 이동 거리가 증가",
+            "itemTechType": "TECH_4",
+            "runeData": {
+              "id": "act25side_tech4_1",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편을 움직이는 데 필요한 추진력이 감소, 역중력에서의 이동 거리가 증가",
+              "runes": [
+                {
+                  "key": "enemy_weight_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "value",
+                      "value": -1.0,
+                      "valueStr": null
+                    },
+                    {
+                      "key": "enemy",
+                      "value": 0.0,
+                      "valueStr": "enemy_1334_ristar"
+                    }
+                  ]
+                },
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitCounter.anti_duration",
+                      "value": 1.0,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "act25side_tech4_2": {
+            "itemId": "act25side_tech4_2",
+            "sortId": 2,
+            "itemName": "초기 속도 β",
+            "itemIcon": "act25side_tech4_2",
+            "itemDesc": "'행성 파편'을 움직이는 데 필요한 추진력이 추가로 감소, 역중력에서의 이동 거리가 추가로 증가",
+            "itemTechType": "TECH_4",
+            "runeData": {
+              "id": "act25side_tech4_2",
+              "points": 0.0,
+              "mutexGroupKey": null,
+              "description": "행성 파편을 움직이는 데 필요한 추진력이 감소, 역중력에서의 이동 거리가 증가",
+              "runes": [
+                {
+                  "key": "enemy_weight_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "value",
+                      "value": -1.0,
+                      "valueStr": null
+                    },
+                    {
+                      "key": "enemy",
+                      "value": 0.0,
+                      "valueStr": "enemy_1334_ristar"
+                    }
+                  ]
+                },
+                {
+                  "key": "enemy_talent_blackb_add",
+                  "selector": {
+                    "professionMask": "NONE",
+                    "buildableMask": "NONE",
+                    "charIdFilter": null,
+                    "enemyIdFilter": null,
+                    "enemyIdExcludeFilter": null,
+                    "skillIdFilter": null,
+                    "tileKeyFilter": null,
+                    "groupTagFilter": null,
+                    "filterTagFilter": null
+                  },
+                  "blackboard": [
+                    {
+                      "key": "HitCounter.anti_duration",
+                      "value": 1.5,
+                      "valueStr": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "keyData": {
+          "act25side_token_key1_01": {
+            "keyId": "act25side_token_key1_01",
+            "keyName": "특수 작전 허가증·α",
+            "keyIcon": "act25side_token_key01",
+            "toastText": "비밀 구역에 들어갈 때 필요한 허가증. 안에 있는 장치가 어딘가 좀 달라 보이는데?"
+          },
+          "act25side_token_key1_02": {
+            "keyId": "act25side_token_key1_02",
+            "keyName": "특수 작전 허가증·α",
+            "keyIcon": "act25side_token_key01",
+            "toastText": "비밀 구역에 들어갈 때 필요한 허가증. 안에 있는 장치가 어딘가 좀 달라 보이는데?"
+          },
+          "act25side_token_key2_01": {
+            "keyId": "act25side_token_key2_01",
+            "keyName": "특수 작전 허가증·β",
+            "keyIcon": "act25side_token_key02",
+            "toastText": "비밀 구역에 들어갈 때 필요한 허가증. 안에 있는 장치가 어딘가 좀 달라 보이는데?"
+          },
+          "act25side_token_key2_02": {
+            "keyId": "act25side_token_key2_02",
+            "keyName": "특수 작전 허가증·β",
+            "keyIcon": "act25side_token_key02",
+            "toastText": "비밀 구역에 들어갈 때 필요한 허가증. 안에 있는 장치가 어딘가 좀 달라 보이는데?"
+          }
+        },
+        "fogUnlockData": {
+          "act25side_lock01": {
+            "lockId": "act25side_lock01",
+            "lockedCollectionIconId": "act25side_token_key01_lock",
+            "unlockedCollectionIconId": "act25side_token_key01"
+          },
+          "act25side_lock02": {
+            "lockId": "act25side_lock02",
+            "lockedCollectionIconId": "act25side_token_key02_lock",
+            "unlockedCollectionIconId": "act25side_token_key02"
+          }
+        },
+        "farmList": [
+          {
+            "transform": -1,
+            "unitTime": 0
+          },
+          {
+            "transform": 0,
+            "unitTime": 43200
+          },
+          {
+            "transform": 15,
+            "unitTime": 37560
+          },
+          {
+            "transform": 30,
+            "unitTime": 33180
+          },
+          {
+            "transform": 45,
+            "unitTime": 29760
+          },
+          {
+            "transform": 60,
+            "unitTime": 27000
+          },
+          {
+            "transform": 75,
+            "unitTime": 24660
+          },
+          {
+            "transform": 90,
+            "unitTime": 22680
+          },
+          {
+            "transform": 105,
+            "unitTime": 21060
+          },
+          {
+            "transform": 120,
+            "unitTime": 19620
+          },
+          {
+            "transform": 135,
+            "unitTime": 18360
+          },
+          {
+            "transform": 150,
+            "unitTime": 17280
+          },
+          {
+            "transform": 165,
+            "unitTime": 16260
+          },
+          {
+            "transform": 180,
+            "unitTime": 15420
+          },
+          {
+            "transform": 195,
+            "unitTime": 14640
+          },
+          {
+            "transform": 210,
+            "unitTime": 13920
+          },
+          {
+            "transform": 225,
+            "unitTime": 13260
+          },
+          {
+            "transform": 240,
+            "unitTime": 12660
+          },
+          {
+            "transform": 255,
+            "unitTime": 12120
+          },
+          {
+            "transform": 270,
+            "unitTime": 11640
+          },
+          {
+            "transform": 285,
+            "unitTime": 11220
+          },
+          {
+            "transform": 300,
+            "unitTime": 10800
+          }
+        ]
+      }
+    },
     "TYPE_ACT38D1": {}
   },
   "activityItems": {
+    "act25side": [
+      "act25side_token_fdrchips"
+    ],
     "act24side": [
       "act24side_melding_1",
       "act24side_melding_2",
@@ -95252,6 +98752,16 @@
         "허가 없이 사적으로 채굴하거나 몰래 채굴하는 행위는 금지되어 있으며, 적발 시엔 엄중히 처벌됩니다.",
         "이상 채굴 규칙의 최종 해석권은 카우투스 밸리 광산에 있습니다."
       ]
+    },
+    "act4mine": {
+      "criticalCount": "500~800",
+      "grandCount": "1000",
+      "name1": "오리지늄 광맥",
+      "name2": "오리지늄 광석",
+      "name3": "오리지늄 원석",
+      "normalCount": "400",
+      "ruleText": "    채굴 전 광산 밖에서 비콘을 사출하면, 비콘이 착지 된 위치에서 채굴작업을 진행할 수 있습니다.\n\n    채굴할 수 있는 광물 종류는 <color=#ff4e4e>오리지늄 원석</color>, <color=#ff4e4e>오리지늄 광석</color>, <color=#ff4e4e>오리지늄 광맥</color>이 있으며, 광물 위치는 지도에 표기됩니다. <color=#ff4e4e>원석</color> 가치는 <color=#ff4e4e>400</color> 합성옥, <color=#ff4e4e>광맥</color> 가치는 <color=#ff4e4e>1000</color> 합성옥, <color=#ff4e4e>오리지늄 광석</color> 가치는 <color=#ff4e4e>원석</color>과 <color=#ff4e4e>광맥</color> 사이의 가치로 책정되며, 실제 획득하는 합성옥 수량은 가공 프로세스가 완료되면 표시됩니다.\n\n    광산 구역이 개방되면 지도상 세 곳에 광물 신호가 표기됩니다.\n    만약, 비콘이 광물의 신호 지점에 발사되지 못했을 경우, 지도에 <color=#ff4e4e>두 곳</color>의 광물 신호가 추가로 표기됩니다.\n    비콘이 광물 신호 지점에 발사될 경우, 해당 광물 지점은 <color=#ff4e4e>사라</color>집니다. (단, 지도상 이곳에만 신호가 존재하면 채굴 후에도 <color=#ff4e4e>사라지지 않음</color>)\n\n    매일 비콘을 <color=#ff4e4e>1회</color> 사출할 수 있으며, 횟수는 매일 새벽 <color=#ff4e4e>4:00</color>에 초기화됩니다.\n\n    이번 개방은 <color=#ff4e4e>1~5일 차</color>, <color=#ff4e4e>6~10일 차</color>, <color=#ff4e4e>11~14일 차</color> 총 세 단계로 구분됩니다.\n\n    단계별 마지막 날 전까지 광물을 채굴하지 못했을 경우, 마지막 날, 즉 5일 차, 10일 차, 14일 차에 담당자가 직접 광물 신호 지점으로 안내해 드립니다.\n\n    미허가 채굴은 엄격히 금지되며, 적발 즉시 엄하게 처벌합니다.\n    본 규칙에 대한 최종적인 해석 권한은 포니 밸리 광산에 있습니다.",
+      "ruleTitle": "포니 밸리 광산 채굴 규칙:"
     },
     "act3mine": {
       "criticalCount": "500~800",
@@ -97748,6 +101258,29 @@
         }
       ],
       "startTs": 1698112800
+    },
+    {
+      "id": "dis_side_25",
+      "type": "ACTIVITY",
+      "funcId": "act25side",
+      "endTs": 1701111599,
+      "sortId": 50,
+      "itemId": "act25side_token_fdrchips",
+      "timeNodes": [
+        {
+          "title": "<론 트레일> 이벤트 개방 중",
+          "ts": 1699340400
+        },
+        {
+          "title": "'과거의 미련' 내 스테이지 개방 중",
+          "ts": 1699945200
+        },
+        {
+          "title": "'현재의 추구' 내 스테이지 개방 중",
+          "ts": 1700550000
+        }
+      ],
+      "startTs": 1699340400
     }
   ],
   "actFunData": {
@@ -106638,7 +110171,22 @@
       }
     }
   },
-  "dynEntrySwitchData": {},
+  "dynEntrySwitchData": {
+    "act25side": {
+      "entrySwitchInfo": {
+        "act25side_entry_01": {
+          "entryId": "act25side_entry_01",
+          "sortId": 1,
+          "stageId": null
+        },
+        "act25side_entry_02": {
+          "entryId": "act25side_entry_02",
+          "sortId": 2,
+          "stageId": "act25side_st04"
+        }
+      }
+    }
+  },
   "hiddenStageData": [
     {
       "stageId": "act19side_s01",
@@ -106710,6 +110258,12 @@
     }
   ],
   "stringRes": {
+    "act25side": {
+      "TEXT_PROGRESS_FORMAT_CAN_CLAIM": "<color=#EAE2CE>{0}/{1}</color>",
+      "TEXT_PROGRESS_FORMAT_CANNOT_CLAIM": "<color=#333333>{0}/{1}</color>",
+      "TEXT_DETAIL_COLOR_CAN_CLAIM": "<color=#EAE2CE>{0}</color>",
+      "TEXT_DETAIL_COLOR_CANNOT_CLAIM": "<color=#333333>{0}</color>"
+    },
     "act21side": {
       "TEXT_PROGRESS_FORMAT_CAN_CLAIM": "<color=#A4352B>{0}</color><color=#888584>/{1}</color>",
       "TEXT_PROGRESS_FORMAT_CANNOT_CLAIM": "<color=#BFBFB6>{0}</color><color=#888584>/{1}</color>",
