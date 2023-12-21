@@ -10737,6 +10737,104 @@
           ]
         }
       ]
+    },
+    "char_1032_excu2": {
+      "charId": "char_1032_excu2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd[030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "manu_formula_spd[031]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_limit[020]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4015_spuria": {
+      "charId": "char_4015_spuria",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd&addition[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "power_rec_spd&addition[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd&cost[010]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_498_inside": {
+      "charId": "char_498_inside",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "hire_spd&clue[110]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_single&oneself[040]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11316,6 +11414,18 @@
       "roomType": "POWER",
       "description": "When this Operator is assigned to a Power Plant, reduces the Morale consumed each hour by <@cc.vup>-0.52</>"
     },
+    "power_rec_spd&cost[010]": {
+      "buffId": "power_rec_spd&cost[010]",
+      "buffName": "Take-Away Fruit Tarts",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd&cost",
+      "sortId": 2004,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "When this Operator is assigned to a Power Plant, reduces the Morale consumed each hour by <@cc.vup>-0.3</>"
+    },
     "power_rec_spd[000]": {
       "buffId": "power_rec_spd[000]",
       "buffName": "Backup Energy",
@@ -11555,6 +11665,30 @@
       "buffCategory": "OUTPUT",
       "roomType": "POWER",
       "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>; for every other <$cc.g.rh><@cc.kw>Rhine Lab</></> Operator in the Base (excluding assistants, max <@cc.kw>5</>), additional drone recovery rate <@cc.vup>+3%</>"
+    },
+    "power_rec_spd&addition[000]": {
+      "buffId": "power_rec_spd&addition[000]",
+      "buffName": "Technology Exchange α",
+      "buffIcon": "power",
+      "skillIcon": "bskill_power_rec_spd&addition1",
+      "sortId": 2200,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "When this Operator is assigned to a Power Plant, drone recovery rate is <@cc.vup>+10%</> in the first hour and thereafter <@cc.vup>+1%</> per hour, up to <@cc.vup>+15%</>"
+    },
+    "power_rec_spd&addition[001]": {
+      "buffId": "power_rec_spd&addition[001]",
+      "buffName": "Technology Exchange β",
+      "buffIcon": "power",
+      "skillIcon": "bskill_power_rec_spd&addition2",
+      "sortId": 2201,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "When this Operator is assigned to a Power Plant, drone recovery rate is <@cc.vup>+15%</> in the first hour and thereafter <@cc.vup>+1%</> per hour, up to <@cc.vup>+20%</>"
     },
     "manu_bd_to_bd[000]": {
       "buffId": "manu_bd_to_bd[000]",
@@ -11976,6 +12110,18 @@
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, capacity limit is increased by <@cc.vup>+15</> when producing <@cc.kw>Battle Records</>"
     },
+    "manu_formula_limit[020]": {
+      "buffId": "manu_formula_limit[020]",
+      "buffName": "Reasonable Utilization",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_exp&limit3",
+      "sortId": 3303,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, capacity limit is increased by <@cc.vup>+4</> when producing <@cc.kw>Battle Records</>"
+    },
     "manu_prod_spd&limit&cost[000]": {
       "buffId": "manu_prod_spd&limit&cost[000]",
       "buffName": "Craftsmanship Spirit α",
@@ -12215,6 +12361,30 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+35%</>"
+    },
+    "manu_formula_spd[030]": {
+      "buffId": "manu_formula_spd[030]",
+      "buffName": "Notarial Hall Instructor α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_exp4",
+      "sortId": 3821,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+20%</>"
+    },
+    "manu_formula_spd[031]": {
+      "buffId": "manu_formula_spd[031]",
+      "buffName": "Notarial Hall Instructor β",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_exp2",
+      "sortId": 3822,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+30%</>"
     },
     "manu_prod_spd&trade[000]": {
       "buffId": "manu_prod_spd&trade[000]",
@@ -15132,6 +15302,18 @@
       "roomType": "DORMITORY",
       "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.5</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour <@cc.vup>+0.25</>"
     },
+    "dorm_rec_single&oneself[040]": {
+      "buffId": "dorm_rec_single&oneself[040]",
+      "buffName": "Donut Party",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_single&one12",
+      "sortId": 5124,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.4</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour <@cc.vup>+0.4</>"
+    },
     "dorm_rec_all&oneself[000]": {
       "buffId": "dorm_rec_all&oneself[000]",
       "buffName": "Laziness",
@@ -15503,6 +15685,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
       "description": "When this Operator is assigned to the HR Office, increases HR contacting speed by <@cc.vup>+35%</>, and increases Clue collection speed in the Reception Room by <@cc.vup>+5%</> for each additional Recruitment slot (does not count default slots)."
+    },
+    "hire_spd&clue[110]": {
+      "buffId": "hire_spd&clue[110]",
+      "buffName": "Networking",
+      "buffIcon": "hire",
+      "skillIcon": "bskill_hire_spd&clue2",
+      "sortId": 8402,
+      "buffColor": "#565656",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "HIRE",
+      "description": "When this Operator is assigned to the HR Office, increases HR contacting speed by <@cc.vup>+30%</>, and increases Clue collection speed in the Reception Room by <@cc.vup>+5%</> for each additional Recruitment slot (does not count default slots)."
     },
     "hire_spd&clue2[230]": {
       "buffId": "hire_spd&clue2[230]",
@@ -15890,7 +16084,7 @@
     },
     "meet_spd&team[031]": {
       "buffId": "meet_spd&team[031]",
-      "buffName": "B.P.R.S",
+      "buffName": "B.P.R.S.",
       "buffIcon": "meeting",
       "skillIcon": "bskill_meet_blacksteel2",
       "sortId": 6322,
@@ -48542,7 +48736,7 @@
         "groupId": "furni_set_bookshop_3",
         "width": 16,
         "depth": 8,
-        "height": 0,
+        "height": 1,
         "comfort": 190,
         "usage": "Used in the dorm to improve the ambience.",
         "description": "This soft-knitted rug is comfortable to walk on, with shoes or barefoot. When Emperor came to visit, he stuffed one of his limited-edition albums under it when nobody noticed, and the detective's inability to find who did it has proven a great annoyance for her.",
@@ -51151,7 +51345,7 @@
         "themeId": "furni_set_boxing",
         "groupId": "furni_set_boxing_4",
         "width": 13,
-        "depth": 0,
+        "depth": 1,
         "height": 7,
         "comfort": 155,
         "usage": "Used in the dorm to improve the ambience.",
@@ -51202,7 +51396,7 @@
         "iconId": "furni_boxing_scoreboard_01",
         "interactType": "NONE",
         "type": "WALLDECO",
-        "subType": "POSTER",
+        "subType": "BOARD_WD",
         "location": "WALL",
         "category": "FURNITURE",
         "validOnRotate": false,
@@ -51211,7 +51405,7 @@
         "themeId": "furni_set_boxing",
         "groupId": "furni_set_boxing_2",
         "width": 4,
-        "depth": 0,
+        "depth": 1,
         "height": 5,
         "comfort": 130,
         "usage": "Used in the dorm to improve the ambience.",
@@ -52935,6 +53129,546 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_LAbbey_woodPillar_01": {
+        "id": "furni_LAbbey_woodPillar_01",
+        "sortId": 1247,
+        "name": "Wooden Arch Pillar",
+        "iconId": "furni_LAbbey_woodPillar_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 6,
+        "depth": 1,
+        "height": 10,
+        "comfort": 265,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A pillar with sloppy woodworking. Its arch truss improves its load-bearing capacity. Cutting down trees and woodworking are nothing out of the ordinary to any Sarkaz used to life in the wilderness.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_LAbbey_chandelier_01": {
+        "id": "furni_LAbbey_chandelier_01",
+        "sortId": 1248,
+        "name": "Monastery Chandelier",
+        "iconId": "furni_LAbbey_chandelier_01",
+        "interactType": "NONE",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 80,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A normal chandelier in Sanctilaminium Ambrosii. Its wing-like frame elevates a holy light. Raimund took down the candles and his eyes collided with Fortuna's. He is struck by his chair height. How else could he explain his sudden agitation?",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_LAbbey_statueBox_01": {
+        "id": "furni_LAbbey_statueBox_01",
+        "sortId": 1249,
+        "name": "Wooden Statue Cabinet",
+        "iconId": "furni_LAbbey_statueBox_01",
+        "interactType": "NONE",
+        "type": "WALLDECO",
+        "subType": "ART_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 3,
+        "depth": 1,
+        "height": 4,
+        "comfort": 95,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A stable, wall-mounted cabinet. Though crudely made, the avatar of faith silently watches His followers behind the diagonal squares all the same. The cabinet wasn't originally locked, until a resident found her husband hiding money in it.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_plants_01": {
+        "id": "furni_LAbbey_plants_01",
+        "sortId": 1250,
+        "name": "'Cultivating Hope'",
+        "iconId": "furni_LAbbey_plants_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 3,
+        "depth": 3,
+        "height": 5,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A potted plant well looked after by someone. Its fresh green and pale purple colors are climbing up the copper flower stand. Clément once wrote down detailed instructions on its upkeep, but what he treasured has already gone up in flames.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_bed_01": {
+        "id": "furni_LAbbey_bed_01",
+        "sortId": 1251,
+        "name": "Wooden Four Poster Bed",
+        "iconId": "furni_LAbbey_bed_01",
+        "interactType": "NONE",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 8,
+        "depth": 3,
+        "height": 7,
+        "comfort": 425,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A somewhat old Lateran poster bed. The bed is neatly made and its sheets as white as could be. For countless nights, Tuna and Fina lay down on this bed, letting their imaginations run unfettered as they dreamt of a beautiful future.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_prayerTable_01": {
+        "id": "furni_LAbbey_prayerTable_01",
+        "sortId": 1252,
+        "name": "Wooden Prayer Altar",
+        "iconId": "furni_LAbbey_prayerTable_01",
+        "interactType": "NONE",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 4,
+        "depth": 2,
+        "height": 6,
+        "comfort": 195,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "With the kneeler polished, the altar's wooden grandeur is now on full display. Is there any secrets it is oblivious to? The children often gathered around Avus Stefano, not for communion, but for blessings and candies. Mainly the candies.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_chair_01": {
+        "id": "furni_LAbbey_chair_01",
+        "sortId": 1253,
+        "name": "'Chair of Meditation'",
+        "iconId": "furni_LAbbey_chair_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_2",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 115,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "One of the lounge's chairs, with an accompanying desk as a set. It's much heavier than it looks. Don't try to move alone! If you strain your back, all you can do is pray for the communion to be over soon so that someone can come and help!",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_LAbbey_desk_01": {
+        "id": "furni_LAbbey_desk_01",
+        "sortId": 1254,
+        "name": "'Table of Resolution'",
+        "iconId": "furni_LAbbey_desk_01",
+        "interactType": "NONE",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_2",
+        "width": 6,
+        "depth": 3,
+        "height": 5,
+        "comfort": 290,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A desk filled with Lateran scriptures. Turn the pages. Their teachings await your interpretation. Hear my prayers, grant me knowledge, and witness my deeds.—<i>The Saints' Travels</i>",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_carpet_01": {
+        "id": "furni_LAbbey_carpet_01",
+        "sortId": 1255,
+        "name": "Ambrosii Patterned Rug",
+        "iconId": "furni_LAbbey_carpet_01",
+        "interactType": "NONE",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 6,
+        "depth": 5,
+        "height": 1,
+        "comfort": 70,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A rug with Ambrosii's distinctive floral patterns. The residents weaved its patterns as they sat together and chatted. Hyman secretly learned some of the patterns only to make a few nice, new outfits for her kids.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_skewBox_01": {
+        "id": "furni_LAbbey_skewBox_01",
+        "sortId": 1256,
+        "name": "'Record of Suffering'",
+        "iconId": "furni_LAbbey_skewBox_01",
+        "interactType": "NONE",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 4,
+        "depth": 2,
+        "height": 5,
+        "comfort": 195,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A white, slanted countertop cabinet. Not only is it a record of the past, it is also the preservation of an ideal. 'We will never forget our Sankta brother or his firearm.' The message was written on the sheet of paper by the Sarkaz leader.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_standLight_01": {
+        "id": "furni_LAbbey_standLight_01",
+        "sortId": 1257,
+        "name": "'Light of Clarity'",
+        "iconId": "furni_LAbbey_standLight_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_2",
+        "width": 1,
+        "depth": 1,
+        "height": 5,
+        "comfort": 100,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A candle stand that doesn't look very stable at all. Be careful. Don't knock it over. Once the 'tea party' is over, silence falls upon the lounge once again. With the candle blown out, the residents bid farewell to tonight's gathering.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_statue_01": {
+        "id": "furni_LAbbey_statue_01",
+        "sortId": 1258,
+        "name": "'Witness of Friendship'",
+        "iconId": "furni_LAbbey_statue_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 4,
+        "depth": 4,
+        "height": 9,
+        "comfort": 300,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The copper branch-shaped light fixtures support both the statue and light. Its vines entwined around the grill form a display stand. The young Raimund fought with a Sankta. But they finally hugged before the statue, urged by the adults.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_door_01": {
+        "id": "furni_LAbbey_door_01",
+        "sortId": 1259,
+        "name": "'Purge of Flaws'",
+        "iconId": "furni_LAbbey_door_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 5,
+        "depth": 2,
+        "height": 7,
+        "comfort": 205,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "An archway destroyed during an enemy ambush. A plant is creeping up its broken pillar, compensating for its incompleteness. After rescuing the Sarkaz from the hellish battle, the Sankta who came to their rescue were mercilessly slayed.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_longBench_01": {
+        "id": "furni_LAbbey_longBench_01",
+        "sortId": 1260,
+        "name": "Kinda Wide Bench",
+        "iconId": "furni_LAbbey_longBench_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 5,
+        "depth": 2,
+        "height": 3,
+        "comfort": 230,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A bench that can be found just about anywhere. The Sankta like to maintain their guns and share sweets here. The back of the bench used to read 'Sankta only,' but that has since been scraped away.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_shortBench_01": {
+        "id": "furni_LAbbey_shortBench_01",
+        "sortId": 1261,
+        "name": "Not Very Wide Bench",
+        "iconId": "furni_LAbbey_shortBench_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 2,
+        "depth": 3,
+        "height": 3,
+        "comfort": 170,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A bench that can be found just about anywhere. Just the right size for a Sarkaz to lie down to take a nap. The back of the bench used to read 'Sarkaz only,' but that has since been scraped away.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_bell_01": {
+        "id": "furni_LAbbey_bell_01",
+        "sortId": 1262,
+        "name": "'Audible Redemption'",
+        "iconId": "furni_LAbbey_bell_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 3,
+        "depth": 2,
+        "height": 7,
+        "comfort": 195,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A replica monastery bell. Though small in size, it produces a deep, resonant chime, just like the one Eileen is so fond of. Gerald spent a lot of time to prepare this gift. Alas, it was never delivered.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_wallpaper_01": {
+        "id": "furni_LAbbey_wallpaper_01",
+        "sortId": 1263,
+        "name": "Panoramic Display (Flower Garden)",
+        "iconId": "furni_LAbbey_wallpaper_01",
+        "interactType": "NONE",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A panoramic display showing the beauty of the monastery courtyard. Even when far from the real courtyard, the memories of Ambrosii have already taken root within our hearts.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_floor_01": {
+        "id": "furni_LAbbey_floor_01",
+        "sortId": 1264,
+        "name": "Church Mason Tiles",
+        "iconId": "furni_LAbbey_floor_01",
+        "interactType": "NONE",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Floor tiles laid according to the monastery's design. Not aligned all that well. The weeds in the gaps between the bricks are just like those of the monastery. No one knows who planted their seeds here.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -53376,6 +54110,66 @@
         "comfort": 240,
         "usage": "Used in the dorm to improve the ambience.",
         "description": "A bed shaped like a dragon's head that's teeming with the festive atmosphere of a traditional Yan holiday. Can be joined with the other half. The tail sweeps downward, keeping landscapes far and wide from doom.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_duanwu_sweetZongzi_01": {
+        "id": "furni_duanwu_sweetZongzi_01",
+        "sortId": 10012,
+        "name": "Dragon Boat Festival Zongzi Chair (Sweet)",
+        "iconId": "furni_duanwu_sweetZongzi_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "ORTHER_S",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 6,
+        "depth": 5,
+        "height": 3,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A comfortable chair in the shape of a traditional Yanese food item at the end of a long table. Finely pounded glutinous rice is filled with red bean paste, making up three to five entire meals. Then to the boats to seize victory.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_duanwu_saltedZongzi_01": {
+        "id": "furni_duanwu_saltedZongzi_01",
+        "sortId": 10013,
+        "name": "Dragon Boat Festival Zongzi Chair (Savory)",
+        "iconId": "furni_duanwu_saltedZongzi_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "ORTHER_S",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 6,
+        "depth": 5,
+        "height": 3,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A comfortable chair in the shape of a traditional Yanese food item at the end of a long table.\nFinely pounded glutinous rice meets oily egg yolk for you to fill your belly. Then to sleep, until the moons vanish.",
         "obtainApproach": "Event Reward",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -57345,6 +58139,36 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_dropS034_ascension_01": {
+        "id": "furni_dropS034_ascension_01",
+        "sortId": 11074,
+        "name": "Plaque - Expectation Future",
+        "iconId": "furni_dropS034_ascension_01",
+        "interactType": "NONE",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "'I will be the first meteor to fall from the lands to the skies.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -58008,7 +58832,7 @@
       "furni_annihilation_s11_01": {
         "id": "furni_annihilation_s11_01",
         "sortId": 13009,
-        "name": "Echoes of Yan (Shu's Paths) ",
+        "name": "Echoes of Yan (Shu's Paths)",
         "iconId": "furni_annihilation_s11_01",
         "interactType": "NONE",
         "type": "WALLDECO",
@@ -58176,6 +59000,36 @@
         "comfort": 105,
         "usage": "Used in the dorm to improve the ambience.",
         "description": "A souvenir awarded for completing the Leithanien Rest Avenue Annihilation mission and submitting the mission report. The echoes of Rest Avenue yet reverberate in your ears.",
+        "obtainApproach": "Annihilation Mission Award",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_annihilation_s17_01": {
+        "id": "furni_annihilation_s17_01",
+        "sortId": 13015,
+        "name": "Echoes of Victoria (Marsh)",
+        "iconId": "furni_annihilation_s17_01",
+        "interactType": "NONE",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A souvenir awarded for completing Victoria's Ashy Marsh Annihilation mission and submitting the mission report. The echoes of Ashy Marsh yet reverberate in your ears.",
         "obtainApproach": "Annihilation Mission Award",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -70183,6 +71037,167 @@
           "furni_cultureroom_wallpaper_01",
           "furni_cultureroom_floor_01"
         ]
+      },
+      "furni_set_LAbbey": {
+        "id": "furni_set_LAbbey",
+        "sortId": 74,
+        "name": "Ambulacrum Ambrosii",
+        "themeType": "EVENT",
+        "desc": "Abbey room recreated from the description of Executor Richele. Residents sometimes come here to share blessings and a quiet time together.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_LAbbey_woodPillar_01",
+            "pos0": 0,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_woodPillar_01",
+            "pos0": 28,
+            "pos1": 5,
+            "dir": 2
+          },
+          {
+            "furnitureId": "furni_LAbbey_chandelier_01",
+            "pos0": 3,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_chandelier_01",
+            "pos0": 27,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_statueBox_01",
+            "pos0": 9,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_plants_01",
+            "pos0": 8,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_bed_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_prayerTable_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_chair_01",
+            "pos0": 9,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_chair_01",
+            "pos0": 13,
+            "pos1": 3,
+            "dir": 1
+          },
+          {
+            "furnitureId": "furni_LAbbey_desk_01",
+            "pos0": 11,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_carpet_01",
+            "pos0": 25,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_skewBox_01",
+            "pos0": 15,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_standLight_01",
+            "pos0": 23,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_statue_01",
+            "pos0": 18,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_door_01",
+            "pos0": 22,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_longBench_01",
+            "pos0": 25,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_shortBench_01",
+            "pos0": 32,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_bell_01",
+            "pos0": 30,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_LAbbey_1",
+          "furni_set_LAbbey_2",
+          "furni_set_LAbbey_3",
+          "furni_set_LAbbey_4"
+        ],
+        "furnitures": [
+          "furni_LAbbey_woodPillar_01",
+          "furni_LAbbey_chandelier_01",
+          "furni_LAbbey_statueBox_01",
+          "furni_LAbbey_plants_01",
+          "furni_LAbbey_bed_01",
+          "furni_LAbbey_prayerTable_01",
+          "furni_LAbbey_chair_01",
+          "furni_LAbbey_desk_01",
+          "furni_LAbbey_carpet_01",
+          "furni_LAbbey_skewBox_01",
+          "furni_LAbbey_standLight_01",
+          "furni_LAbbey_statue_01",
+          "furni_LAbbey_door_01",
+          "furni_LAbbey_longBench_01",
+          "furni_LAbbey_shortBench_01",
+          "furni_LAbbey_bell_01",
+          "furni_LAbbey_wallpaper_01",
+          "furni_LAbbey_floor_01"
+        ]
       }
     },
     "groups": {
@@ -74333,6 +75348,64 @@
           "furni_cultureroom_culturedish_01",
           "furni_cultureroom_wallpaper_01",
           "furni_cultureroom_floor_01"
+        ]
+      },
+      "furni_set_LAbbey_1": {
+        "id": "furni_set_LAbbey_1",
+        "sortId": 1,
+        "name": "Revelation",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 260,
+        "count": 5,
+        "furniture": [
+          "furni_LAbbey_plants_01",
+          "furni_LAbbey_skewBox_01",
+          "furni_LAbbey_statue_01",
+          "furni_LAbbey_door_01",
+          "furni_LAbbey_bell_01"
+        ]
+      },
+      "furni_set_LAbbey_2": {
+        "id": "furni_set_LAbbey_2",
+        "sortId": 2,
+        "name": "Witness",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 150,
+        "count": 3,
+        "furniture": [
+          "furni_LAbbey_desk_01",
+          "furni_LAbbey_chair_01",
+          "furni_LAbbey_standLight_01"
+        ]
+      },
+      "furni_set_LAbbey_3": {
+        "id": "furni_set_LAbbey_3",
+        "sortId": 3,
+        "name": "Reverence",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 310,
+        "count": 4,
+        "furniture": [
+          "furni_LAbbey_bed_01",
+          "furni_LAbbey_prayerTable_01",
+          "furni_LAbbey_woodPillar_01",
+          "furni_LAbbey_statueBox_01"
+        ]
+      },
+      "furni_set_LAbbey_4": {
+        "id": "furni_set_LAbbey_4",
+        "sortId": 4,
+        "name": "Meditation",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 210,
+        "count": 6,
+        "furniture": [
+          "furni_LAbbey_chandelier_01",
+          "furni_LAbbey_wallpaper_01",
+          "furni_LAbbey_floor_01",
+          "furni_LAbbey_longBench_01",
+          "furni_LAbbey_shortBench_01",
+          "furni_LAbbey_carpet_01"
         ]
       }
     },
