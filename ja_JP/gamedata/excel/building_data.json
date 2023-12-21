@@ -10737,6 +10737,104 @@
           ]
         }
       ]
+    },
+    "char_1032_excu2": {
+      "charId": "char_1032_excu2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd[030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "manu_formula_spd[031]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_limit[020]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4015_spuria": {
+      "charId": "char_4015_spuria",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd&addition[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "power_rec_spd&addition[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd&cost[010]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_498_inside": {
+      "charId": "char_498_inside",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "hire_spd&clue[110]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_single&oneself[040]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11316,6 +11414,18 @@
       "roomType": "POWER",
       "description": "発電所配置時、1時間ごとの体力消費量<@cc.vup>-0.52</> "
     },
+    "power_rec_spd&cost[010]": {
+      "buffId": "power_rec_spd&cost[010]",
+      "buffName": "スイーツタイム",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd&cost",
+      "sortId": 2004,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "発電所配置時、1時間ごとの体力消費量<@cc.vup>-0.3</> "
+    },
     "power_rec_spd[000]": {
       "buffId": "power_rec_spd[000]",
       "buffName": "予備電源",
@@ -11556,6 +11666,30 @@
       "roomType": "POWER",
       "description": "発電所配置時、ドローンの回復速度<@cc.vup>+10%</>。基地内の自身以外の<$cc.g.rh><@cc.kw>ライン生命</></>オペレーター1人につき（最大<@cc.kw>5</>人まで）、追加でドローン回復速度<@cc.vup>+3%</>"
     },
+    "power_rec_spd&addition[000]": {
+      "buffId": "power_rec_spd&addition[000]",
+      "buffName": "技術交流α",
+      "buffIcon": "power",
+      "skillIcon": "bskill_power_rec_spd&addition1",
+      "sortId": 2200,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "発電所配置後から1時間の間、ドローンの回復速度<@cc.vup>+10%</>。その後、1時間ごとに<@cc.vup>+1%</>（最大<@cc.vup>+15%</>まで上昇可能）"
+    },
+    "power_rec_spd&addition[001]": {
+      "buffId": "power_rec_spd&addition[001]",
+      "buffName": "技術交流β",
+      "buffIcon": "power",
+      "skillIcon": "bskill_power_rec_spd&addition2",
+      "sortId": 2201,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "発電所配置後から1時間の間、ドローンの回復速度<@cc.vup>+15%</>。その後、1時間ごとに<@cc.vup>+1%</>（最大<@cc.vup>+20%</>まで上昇可能）"
+    },
     "manu_bd_to_bd[000]": {
       "buffId": "manu_bd_to_bd[000]",
       "buffName": "古の巫術",
@@ -11722,7 +11856,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "製造所配置時、製造所の<$cc.sk.manu1><@cc.kw>標準化系スキル</></>の発動数1につき、製造効率<@cc.vup>+5%</>"
+      "description": "製造所配置時、配置製造所の<$cc.sk.manu1><@cc.kw>標準化系スキル</></>の発動数1につき、製造効率<@cc.vup>+5%</>"
     },
     "manu_skill_spd1[010]": {
       "buffId": "manu_skill_spd1[010]",
@@ -11976,6 +12110,18 @@
       "roomType": "MANUFACTURE",
       "description": "製造所で<@cc.kw>作戦記録</>を製造時、保管上限<@cc.vup>+15</>"
     },
+    "manu_formula_limit[020]": {
+      "buffId": "manu_formula_limit[020]",
+      "buffName": "合理的運用",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_exp&limit3",
+      "sortId": 3303,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所で<@cc.kw>作戦記録</>を製造時、保管上限<@cc.vup>+4</>"
+    },
     "manu_prod_spd&limit&cost[000]": {
       "buffId": "manu_prod_spd&limit&cost[000]",
       "buffName": "職人魂α",
@@ -12215,6 +12361,30 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、<@cc.kw>作戦記録</>製造の製造効率<@cc.vup>+35%</>"
+    },
+    "manu_formula_spd[030]": {
+      "buffId": "manu_formula_spd[030]",
+      "buffName": "公証人役場教習α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_exp4",
+      "sortId": 3821,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、<@cc.kw>作戦記録</>製造の製造効率<@cc.vup>+20%</>"
+    },
+    "manu_formula_spd[031]": {
+      "buffId": "manu_formula_spd[031]",
+      "buffName": "公証人役場教習β",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_exp2",
+      "sortId": 3822,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、<@cc.kw>作戦記録</>製造の製造効率<@cc.vup>+30%</>"
     },
     "manu_prod_spd&trade[000]": {
       "buffId": "manu_prod_spd&trade[000]",
@@ -13846,7 +14016,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "訓練室で協力者として配置時、基地の<$cc.tag.knight><@cc.kw>騎士</></>オペレーター1人につき、訓練速度<@cc.vup>+5%</>（最大<@cc.kw>5</>人まで）"
+      "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.tag.knight><@cc.kw>騎士</></>オペレーター1人につき、訓練速度<@cc.vup>+5%</>（最大<@cc.kw>5</>人まで）"
     },
     "train_spd_tag[010]": {
       "buffId": "train_spd_tag[010]",
@@ -13858,7 +14028,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "訓練室で協力者として配置時、基地の<$cc.tag.knight><@cc.kw>騎士</></>オペレーター1人につき、訓練速度<@cc.vup>+5%</>（最大<@cc.kw>8</>人まで）"
+      "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.tag.knight><@cc.kw>騎士</></>オペレーター1人につき、訓練速度<@cc.vup>+5%</>（最大<@cc.kw>8</>人まで）"
     },
     "train_spd_doubleProf[000]": {
       "buffId": "train_spd_doubleProf[000]",
@@ -15132,6 +15302,18 @@
       "roomType": "DORMITORY",
       "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.5</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.25</>"
     },
+    "dorm_rec_single&oneself[040]": {
+      "buffId": "dorm_rec_single&oneself[040]",
+      "buffName": "ドーナツパーティー",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_single&one12",
+      "sortId": 5124,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.4</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.4</>"
+    },
     "dorm_rec_all&oneself[000]": {
       "buffId": "dorm_rec_all&oneself[000]",
       "buffName": "怠惰",
@@ -15503,6 +15685,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
       "description": "事務室配置時、事務連絡速度<@cc.vup>+35%</>。公開求人の最大同時求人可能数が2より1多いごとに、応接室の手がかり捜索速度<@cc.vup>+5%</>"
+    },
+    "hire_spd&clue[110]": {
+      "buffId": "hire_spd&clue[110]",
+      "buffName": "広い人脈",
+      "buffIcon": "hire",
+      "skillIcon": "bskill_hire_spd&clue2",
+      "sortId": 8402,
+      "buffColor": "#565656",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "HIRE",
+      "description": "事務室配置時、事務連絡速度<@cc.vup>+30%</>。公開求人の最大同時求人可能数が2より1多いごとに、応接室の手がかり捜索速度<@cc.vup>+5%</>"
     },
     "hire_spd&clue2[230]": {
       "buffId": "hire_spd&clue2[230]",
@@ -15890,7 +16084,7 @@
     },
     "meet_spd&team[031]": {
       "buffId": "meet_spd&team[031]",
-      "buffName": "B.P.R.S",
+      "buffName": "B.P.R.S.",
       "buffIcon": "meeting",
       "skillIcon": "bskill_meet_blacksteel2",
       "sortId": 6322,
@@ -48542,7 +48736,7 @@
         "groupId": "furni_set_bookshop_3",
         "width": 16,
         "depth": 8,
-        "height": 0,
+        "height": 1,
         "comfort": 190,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "柔らかな絨毯。裸足でも靴を履いていても踏み心地抜群。エンペラーの絶版アルバムをこっそり下に忍ばせたのがエンペラー本人だとは知らない探偵は、いまだに誰の仕業かわからずイライラしている。",
@@ -51151,7 +51345,7 @@
         "themeId": "furni_set_boxing",
         "groupId": "furni_set_boxing_4",
         "width": 13,
-        "depth": 0,
+        "depth": 1,
         "height": 7,
         "comfort": 155,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
@@ -51202,7 +51396,7 @@
         "iconId": "furni_boxing_scoreboard_01",
         "interactType": "NONE",
         "type": "WALLDECO",
-        "subType": "POSTER",
+        "subType": "BOARD_WD",
         "location": "WALL",
         "category": "FURNITURE",
         "validOnRotate": false,
@@ -51211,7 +51405,7 @@
         "themeId": "furni_set_boxing",
         "groupId": "furni_set_boxing_2",
         "width": 4,
-        "depth": 0,
+        "depth": 1,
         "height": 5,
         "comfort": 130,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
@@ -52935,6 +53129,546 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_LAbbey_woodPillar_01": {
+        "id": "furni_LAbbey_woodPillar_01",
+        "sortId": 1247,
+        "name": "木製アーチ柱",
+        "iconId": "furni_LAbbey_woodPillar_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 6,
+        "depth": 1,
+        "height": 10,
+        "comfort": 265,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "雑な切り口の木製の柱。柱と一体化したアーチ状の斜梁により、全体の耐荷重性が向上している。\n荒野での生活に慣れたサルカズにとって、木を伐ることや大工仕事は日常茶飯事だ。柱の設計については、サンクタに任せておけばいい。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_LAbbey_chandelier_01": {
+        "id": "furni_LAbbey_chandelier_01",
+        "sortId": 1248,
+        "name": "修道院のシャンデリア",
+        "iconId": "furni_LAbbey_chandelier_01",
+        "interactType": "NONE",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 80,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "アンブロシウス修道院でよく見かける天井照明。翼の形のフレームが、聖なる光を支えている。\nライムントがロウソクを外そうとした時、ちょうどフォルトゥナと目が合った。すると彼は突然慌てふためいて、誤ってフォルトゥナの髪に火をつけてしまった。椅子が高すぎて、高所恐怖症にでもなったのだろうか？でなければそこまで慌てるはずもないのだから。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_LAbbey_statueBox_01": {
+        "id": "furni_LAbbey_statueBox_01",
+        "sortId": 1249,
+        "name": "木製の壁掛け祭壇",
+        "iconId": "furni_LAbbey_statueBox_01",
+        "interactType": "NONE",
+        "type": "WALLDECO",
+        "subType": "ART_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 3,
+        "depth": 1,
+        "height": 4,
+        "comfort": 95,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "しっかりと壁に固定された、少々雑な作りの壁掛け祭壇。斜め格子の向こうでは、信仰の化身が静かに信徒を見守っている。\nかつては扉が開く造りになっていたが、とある住民の夫がそこにへそくりを隠したことがあったため、今ははめ殺しになっている。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_plants_01": {
+        "id": "furni_LAbbey_plants_01",
+        "sortId": 1250,
+        "name": "「希望を培うもの」",
+        "iconId": "furni_LAbbey_plants_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 3,
+        "depth": 3,
+        "height": 5,
+        "comfort": 200,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "丁寧に手入れされている鉢植え。新緑と淡い紫の植物が銅製のフレームに絡みつき、希望を求めるように太陽に向かって伸びている。\nクレマンはその手入れ方法を細かく書き留めていたが、彼の大切にしていたものはすべて炎の中に消えた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_bed_01": {
+        "id": "furni_LAbbey_bed_01",
+        "sortId": 1251,
+        "name": "木製の四柱式ベッド",
+        "iconId": "furni_LAbbey_bed_01",
+        "interactType": "NONE",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 8,
+        "depth": 3,
+        "height": 7,
+        "comfort": 425,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "少し古びたラテラーノ風の四柱式ベッド。きれいなシーツの敷かれたベッドは、信徒の祈りを静かに聞く聖堂の高い壁のようだ。\nかつてフォルとフィーナは幾夜もここで寝転がり、ひそひそ話をしながら、皆の明るい未来に思いを馳せていた。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_prayerTable_01": {
+        "id": "furni_LAbbey_prayerTable_01",
+        "sortId": 1252,
+        "name": "木製の祈祷台",
+        "iconId": "furni_LAbbey_prayerTable_01",
+        "interactType": "NONE",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_3",
+        "width": 4,
+        "depth": 2,
+        "height": 6,
+        "comfort": 195,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "随分使い古されて、木材本来の色が現れている祈祷台。この台が知らぬ秘密などないだろう。\n祈祷台のそばでステファノおじいさんの周りに子供たちが集まっているのは、聖餐のためでなく、祝福とキャンディーを――主にキャンディーのほうをもらうためである。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_chair_01": {
+        "id": "furni_LAbbey_chair_01",
+        "sortId": 1253,
+        "name": "「熟考の椅子」",
+        "iconId": "furni_LAbbey_chair_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_2",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 115,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "休憩室の机とセットで特注された椅子。見た目よりかなり重いので、注意しなければいけない。\n絶対に一人で運ばないこと！万が一、腰を痛めてしまった時は、聖餐の儀式が早めに終わって誰かが助けに来てくれるよう祈るしかない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_LAbbey_desk_01": {
+        "id": "furni_LAbbey_desk_01",
+        "sortId": 1254,
+        "name": "「解釈の机」",
+        "iconId": "furni_LAbbey_desk_01",
+        "interactType": "NONE",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_2",
+        "width": 6,
+        "depth": 3,
+        "height": 5,
+        "comfort": 290,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ラテラーノについて多くが書かれた書籍が置かれている机。ページをめくれば、教えが解釈を待っている。\n我の願いを聞き、我に知識を与え、我が行いを見よ。——『聖徒行記』",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_carpet_01": {
+        "id": "furni_LAbbey_carpet_01",
+        "sortId": 1255,
+        "name": "アンブロシウス絨毯",
+        "iconId": "furni_LAbbey_carpet_01",
+        "interactType": "NONE",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 6,
+        "depth": 5,
+        "height": 1,
+        "comfort": 70,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "アンブロシウス特有の模様が施された絨毯。住民たちはその模様を織りながら、座って語り合う。そうして、修道院の物語とそのデザインは後世へと伝えられていった。\nハイマンは子供たちに新しく素敵な洋服を作るため、この模様の織り方をこっそりと盗んだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_skewBox_01": {
+        "id": "furni_LAbbey_skewBox_01",
+        "sortId": 1256,
+        "name": "「苦厄を記すもの」",
+        "iconId": "furni_LAbbey_skewBox_01",
+        "interactType": "NONE",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 4,
+        "depth": 2,
+        "height": 5,
+        "comfort": 195,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "傾斜のある台が付いた純白の棚。そこには過去だけでなく、理想もまた大切に保管されている。\n「我々はあのサンクタの兄弟を、彼の銃のことを決して忘れない」これはサルカズの代表が紙に記したメッセージであり、「銃」の文字には訂正した跡があった。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_standLight_01": {
+        "id": "furni_LAbbey_standLight_01",
+        "sortId": 1257,
+        "name": "「深慮の灯り」",
+        "iconId": "furni_LAbbey_standLight_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_2",
+        "width": 1,
+        "depth": 1,
+        "height": 5,
+        "comfort": 100,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "かなり不安定な燭台。火事を避けるためにも、倒さないよう注意しなければならない。\n「お茶会」が終わると、休憩室は再び静寂に包まれる。住民たちはロウソクの火を消して、今夜の楽しい集いに別れを告げた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_statue_01": {
+        "id": "furni_LAbbey_statue_01",
+        "sortId": 1258,
+        "name": "「友情を見届けるもの」",
+        "iconId": "furni_LAbbey_statue_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 4,
+        "depth": 4,
+        "height": 9,
+        "comfort": 300,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "銅製の枝状になった照明が光と聖像を支え、花のつるが柵に巻き付いて、全体が彫像の展示台のようになっている。\n10歳のライムントはほかの幼いサンクタと喧嘩をしていたが、大人に言われて仕方なく、聖像の前で嫌々抱擁を交わして和解した。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_door_01": {
+        "id": "furni_LAbbey_door_01",
+        "sortId": 1259,
+        "name": "「隙間を埋めるもの」",
+        "iconId": "furni_LAbbey_door_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 5,
+        "depth": 2,
+        "height": 7,
+        "comfort": 205,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "敵の襲撃を受け破壊されたアーチ状の門。折れた柱には植物のツルが巻き付き、その生命力が門の欠けた部分を補っている。\n苛烈な戦いの中からサルカズを救い出したあと、救援に駆け付けたサンクタは容赦ない敵の猛攻を受け瓦礫に飲まれた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_longBench_01": {
+        "id": "furni_LAbbey_longBench_01",
+        "sortId": 1260,
+        "name": "少し長いベンチ",
+        "iconId": "furni_LAbbey_longBench_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 5,
+        "depth": 2,
+        "height": 3,
+        "comfort": 230,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "よく見るタイプのベンチ。サンクタはここで銃の手入れをしたり、お菓子を分け与えたりしている。\nベンチの背もたれには「サンクタ専用」と書かれていたが、その後、文字の上からナイフで線が引かれた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_shortBench_01": {
+        "id": "furni_LAbbey_shortBench_01",
+        "sortId": 1261,
+        "name": "長くないベンチ",
+        "iconId": "furni_LAbbey_shortBench_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 2,
+        "depth": 3,
+        "height": 3,
+        "comfort": 170,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "よく見るタイプのベンチ。サルカズ一人がちょうど横になれるような大きさ。\nベンチの背もたれには「サルカズ専用」と書かれていたが、その後、文字の上からナイフで線が引かれた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_bell_01": {
+        "id": "furni_LAbbey_bell_01",
+        "sortId": 1262,
+        "name": "「救いを聞くもの」",
+        "iconId": "furni_LAbbey_bell_01",
+        "interactType": "NONE",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_1",
+        "width": 3,
+        "depth": 2,
+        "height": 7,
+        "comfort": 195,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "修道院の鐘のレプリカ。大きさは控えめだが、いつまでも響き渡るその重厚な鐘の音は、エイリーンが最も愛する鐘の音と同じだ。\nジェラルドは長い時間をかけてこのプレゼントを用意したが、実際にプレゼントすることはできなかった。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_wallpaper_01": {
+        "id": "furni_LAbbey_wallpaper_01",
+        "sortId": 1263,
+        "name": "花庭の景色",
+        "iconId": "furni_LAbbey_wallpaper_01",
+        "interactType": "NONE",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "修道院の風景を映し出したウォールディスプレイ。\n花の庭に身を置くことができずとも、アンブロシウスの思い出はいつも心の中にある。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_LAbbey_floor_01": {
+        "id": "furni_LAbbey_floor_01",
+        "sortId": 1264,
+        "name": "聖堂のタイル",
+        "iconId": "furni_LAbbey_floor_01",
+        "interactType": "NONE",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_LAbbey",
+        "groupId": "furni_set_LAbbey_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "聖堂を模して敷かれたタイルは、ところどころに隙間がある。\nタイルの隙間から顔を出す青草は、修道院のものと同じく、誰かが勝手に蒔いた種が芽吹いたものだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -53376,6 +54110,66 @@
         "comfort": 240,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "炎国の伝統的な祝い日にふさわしい雰囲気をまとう、舟をかたどったベッド。首と組み合わせて使用することができる。その尾は四方をあまねく払い、山河を鎮める。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_duanwu_sweetZongzi_01": {
+        "id": "furni_duanwu_sweetZongzi_01",
+        "sortId": 10012,
+        "name": "ちまき椅子（甘）",
+        "iconId": "furni_duanwu_sweetZongzi_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "ORTHER_S",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 6,
+        "depth": 5,
+        "height": 3,
+        "comfort": 200,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "炎国の伝統的な食べ物の形をした、人をダメにするイスその1。机のそばに置かれている。\nもち米を丁寧にうすでついて、ちまきの葉にいっぱいの小豆を入れる。お腹いっぱい食べて、午後の競漕での優勝を目指そう。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_duanwu_saltedZongzi_01": {
+        "id": "furni_duanwu_saltedZongzi_01",
+        "sortId": 10013,
+        "name": "ちまき椅子（塩）",
+        "iconId": "furni_duanwu_saltedZongzi_01",
+        "interactType": "NONE",
+        "type": "SEATING",
+        "subType": "ORTHER_S",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 6,
+        "depth": 5,
+        "height": 3,
+        "comfort": 200,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "炎国の伝統的な食べ物の形をした、人をダメにするイスその2。机のそばに置かれている。\nもち米を丁寧にうすでついて、油の滴る黄身をその中に包み込む。お腹いっぱい食べて、月が昇るまで寝てしまおう。",
         "obtainApproach": "イベント報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -57345,6 +58139,36 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_dropS034_ascension_01": {
+        "id": "furni_dropS034_ascension_01",
+        "sortId": 11074,
+        "name": "パネル「飛揚」",
+        "iconId": "furni_dropS034_ascension_01",
+        "interactType": "NONE",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "「私は大地から空へと駆け上がる最初の流星となる」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -58176,6 +59000,36 @@
         "comfort": 105,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "リターニアフェルマーテ通りの殲滅を完了し、その報告をするともらえる記念品。フェルマーテ通りの余韻がいまだ耳元でこだましているようだ。",
+        "obtainApproach": "殲滅作戦報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_annihilation_s17_01": {
+        "id": "furni_annihilation_s17_01",
+        "sortId": 13015,
+        "name": "ヴィクトリアの残響（泥沼）",
+        "iconId": "furni_annihilation_s17_01",
+        "interactType": "NONE",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ヴィクトリア薄暗い泥沼の殲滅を完了し、その報告をするともらえる記念品。薄暗い泥沼の風声がまだ耳元でこだましているようだ。",
         "obtainApproach": "殲滅作戦報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -67647,7 +68501,7 @@
       "furni_set_rhineLab": {
         "id": "furni_set_rhineLab",
         "sortId": 59,
-        "name": "ライン生命培養室",
+        "name": "ライン生命培養実験室",
         "themeType": "EVENT",
         "desc": "ドロシーたちの説明に基づいて再現されたライン生命の実験室。カプセル内で培養された夢は、人に恩を返してくれるが、時には仇で返すこともある。",
         "quickSetup": [
@@ -69951,7 +70805,7 @@
         "sortId": 72,
         "name": "料理研究センター",
         "themeType": "NORMAL",
-        "desc": "前衛的な料理を開発しているロドスの調理研究室。科学技術の進歩に伴い、食材の調理法も進化している。",
+        "desc": "前衛的なメニューの開発を行う調理研究室。科学技術の進歩に伴って、食材を調理する方法も進化している。",
         "quickSetup": [
           {
             "furnitureId": "furni_molKitchen_longBench_01",
@@ -70105,7 +70959,7 @@
       "furni_set_cultureroom": {
         "id": "furni_set_cultureroom",
         "sortId": 73,
-        "name": "ライン生命科学生態園",
+        "name": "ライン生命生態研究園",
         "themeType": "EVENT",
         "desc": "ミュルジスの説明と資料をもとに再現したライン生命の生態研究園。ここは彼女のラボでもあり、我が家でもある。",
         "quickSetup": [
@@ -70242,6 +71096,167 @@
           "furni_cultureroom_waterbox_01",
           "furni_cultureroom_wallpaper_01",
           "furni_cultureroom_floor_01"
+        ]
+      },
+      "furni_set_LAbbey": {
+        "id": "furni_set_LAbbey",
+        "sortId": 74,
+        "name": "アンブロシウス集会室",
+        "themeType": "EVENT",
+        "desc": "執行人リケーレの説明をもとに再現された修道院の一室。聖餐の後、余暇のある者は集会室に集まり、共に豊かな恵みを分かち合い、静かで心地よいひとときを過ごすそうだ。",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_LAbbey_woodPillar_01",
+            "pos0": 0,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_woodPillar_01",
+            "pos0": 28,
+            "pos1": 5,
+            "dir": 2
+          },
+          {
+            "furnitureId": "furni_LAbbey_chandelier_01",
+            "pos0": 3,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_chandelier_01",
+            "pos0": 27,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_statueBox_01",
+            "pos0": 9,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_plants_01",
+            "pos0": 8,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_bed_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_prayerTable_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_chair_01",
+            "pos0": 9,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_chair_01",
+            "pos0": 13,
+            "pos1": 3,
+            "dir": 1
+          },
+          {
+            "furnitureId": "furni_LAbbey_desk_01",
+            "pos0": 11,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_carpet_01",
+            "pos0": 25,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_skewBox_01",
+            "pos0": 15,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_standLight_01",
+            "pos0": 23,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_statue_01",
+            "pos0": 18,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_door_01",
+            "pos0": 22,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_longBench_01",
+            "pos0": 25,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_shortBench_01",
+            "pos0": 32,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_bell_01",
+            "pos0": 30,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_LAbbey_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_LAbbey_1",
+          "furni_set_LAbbey_2",
+          "furni_set_LAbbey_3",
+          "furni_set_LAbbey_4"
+        ],
+        "furnitures": [
+          "furni_LAbbey_woodPillar_01",
+          "furni_LAbbey_chandelier_01",
+          "furni_LAbbey_statueBox_01",
+          "furni_LAbbey_plants_01",
+          "furni_LAbbey_bed_01",
+          "furni_LAbbey_prayerTable_01",
+          "furni_LAbbey_chair_01",
+          "furni_LAbbey_desk_01",
+          "furni_LAbbey_carpet_01",
+          "furni_LAbbey_skewBox_01",
+          "furni_LAbbey_standLight_01",
+          "furni_LAbbey_statue_01",
+          "furni_LAbbey_door_01",
+          "furni_LAbbey_longBench_01",
+          "furni_LAbbey_shortBench_01",
+          "furni_LAbbey_bell_01",
+          "furni_LAbbey_wallpaper_01",
+          "furni_LAbbey_floor_01"
         ]
       }
     },
@@ -74393,6 +75408,64 @@
           "furni_cultureroom_culturedish_01",
           "furni_cultureroom_wallpaper_01",
           "furni_cultureroom_floor_01"
+        ]
+      },
+      "furni_set_LAbbey_1": {
+        "id": "furni_set_LAbbey_1",
+        "sortId": 1,
+        "name": "啓示",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 260,
+        "count": 5,
+        "furniture": [
+          "furni_LAbbey_plants_01",
+          "furni_LAbbey_skewBox_01",
+          "furni_LAbbey_statue_01",
+          "furni_LAbbey_door_01",
+          "furni_LAbbey_bell_01"
+        ]
+      },
+      "furni_set_LAbbey_2": {
+        "id": "furni_set_LAbbey_2",
+        "sortId": 2,
+        "name": "黙想",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 150,
+        "count": 3,
+        "furniture": [
+          "furni_LAbbey_desk_01",
+          "furni_LAbbey_chair_01",
+          "furni_LAbbey_standLight_01"
+        ]
+      },
+      "furni_set_LAbbey_3": {
+        "id": "furni_set_LAbbey_3",
+        "sortId": 3,
+        "name": "祈祷",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 310,
+        "count": 4,
+        "furniture": [
+          "furni_LAbbey_bed_01",
+          "furni_LAbbey_prayerTable_01",
+          "furni_LAbbey_woodPillar_01",
+          "furni_LAbbey_statueBox_01"
+        ]
+      },
+      "furni_set_LAbbey_4": {
+        "id": "furni_set_LAbbey_4",
+        "sortId": 4,
+        "name": "熟考",
+        "themeId": "furni_set_LAbbey",
+        "comfort": 210,
+        "count": 6,
+        "furniture": [
+          "furni_LAbbey_chandelier_01",
+          "furni_LAbbey_wallpaper_01",
+          "furni_LAbbey_floor_01",
+          "furni_LAbbey_longBench_01",
+          "furni_LAbbey_shortBench_01",
+          "furni_LAbbey_carpet_01"
         ]
       }
     },
