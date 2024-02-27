@@ -69,8 +69,15 @@ require "Feature/Operation/Returnning/ReturnMainDlg"
 require "Feature/Operation/Returnning/ReturnWelcomeDlg"
 require "Feature/Operation/Returnning/ReturnRewardsDlg"
 
-require "Feature/Operation/ActFun/ActFunModule"
 
 require "Feature/Activity/SwitchOnly/SwitchOnlyDefine"
 require "Feature/Activity/SwitchOnly/SwitchOnlyDlg"
 require "Feature/Activity/SwitchOnly/SwitchOnlyItemView"
+
+require "Feature/Activity/UniqueOnly/UniqueOnlyDefine"
+require "Feature/Activity/UniqueOnly/UniqueOnlyDlg"
+require "Feature/Activity/UniqueOnly/UniqueOnlyUtil"
+
+require "Feature/Activity/MainlineBp/MainlineBpDefine";
+require "Feature/Activity/MainlineBp/MainlineBpUtil";
+require "Feature/Activity/MainlineBp/MainlineBpMainDlg";

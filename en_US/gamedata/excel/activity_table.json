@@ -1,5 +1,72 @@
 {
   "basicInfo": {
+    "act35sign": {
+      "id": "act35sign",
+      "type": "CHECKIN_ONLY",
+      "displayType": "NONE",
+      "name": "Moonlight Invite - Mooncake-Making Tutorial",
+      "startTime": 1709636400,
+      "endTime": 1710845999,
+      "rewardEndTime": 1710845999,
+      "displayOnHome": false,
+      "hasStage": false,
+      "templateShopId": null,
+      "medalGroupId": null,
+      "ungroupedMedalIds": null,
+      "isReplicate": false,
+      "needFixedSync": false
+    },
+    "act1unique": {
+      "id": "act1unique",
+      "type": "UNIQUE_ONLY",
+      "displayType": "NONE",
+      "name": "Nine-Colored Deer Onboarding Event Retrospective",
+      "startTime": 1710759600,
+      "endTime": 1711969199,
+      "rewardEndTime": 1711969199,
+      "displayOnHome": false,
+      "hasStage": false,
+      "templateShopId": null,
+      "medalGroupId": null,
+      "ungroupedMedalIds": null,
+      "isReplicate": false,
+      "needFixedSync": false
+    },
+    "act19sre": {
+      "id": "act19sre",
+      "type": "TYPE_ACT9D0",
+      "displayType": "SIDESTORY",
+      "name": "Dorothy's Vision - Retrospection",
+      "startTime": 1709658000,
+      "endTime": 1710500399,
+      "rewardEndTime": 1710845999,
+      "displayOnHome": true,
+      "hasStage": true,
+      "templateShopId": "shop_act19sre",
+      "medalGroupId": "medalGroupActivity19side",
+      "ungroupedMedalIds": null,
+      "isReplicate": true,
+      "needFixedSync": false
+    },
+    "act15mini": {
+      "id": "act15mini",
+      "type": "MINISTORY",
+      "displayType": "MINISTORY",
+      "name": "The Black Forest Wills A Dream",
+      "startTime": 1709035200,
+      "endTime": 1709636399,
+      "rewardEndTime": 1709895599,
+      "displayOnHome": true,
+      "hasStage": true,
+      "templateShopId": "shop_act15mini",
+      "medalGroupId": null,
+      "ungroupedMedalIds": [
+        "medal_activity_15mini_01",
+        "medal_activity_15mini_02"
+      ],
+      "isReplicate": false,
+      "needFixedSync": false
+    },
     "act20sre": {
       "id": "act20sre",
       "type": "TYPE_ACT20SIDE",
@@ -2291,6 +2358,20 @@
     }
   },
   "homeActConfig": {
+    "act35sign": {
+      "actId": "act35sign",
+      "isPopupAfterCheckin": false,
+      "showTopBarMenu": true,
+      "actTopBarColor": "ff6801",
+      "actTopBarText": "Moonlight Invite Login Event"
+    },
+    "act1unique": {
+      "actId": "act1unique",
+      "isPopupAfterCheckin": false,
+      "showTopBarMenu": true,
+      "actTopBarColor": "DB8B1F",
+      "actTopBarText": "Immemorial Bright Collaboration Event"
+    },
     "act16login": {
       "actId": "act16login",
       "isPopupAfterCheckin": false,
@@ -2790,6 +2871,9 @@
     }
   },
   "zoneToActivity": {
+    "act19sre_zone1": "act19sre",
+    "act19sre_zone2": "act19sre",
+    "act15mini_zone1": "act15mini",
     "act20sre_zone1": "act20sre",
     "act20sre_zone2": "act20sre",
     "act20sre_zone3": "act20sre",
@@ -2927,6 +3011,772 @@
     "A001_zone2": "1stact"
   },
   "missionData": [
+    {
+      "id": "19sreActivity_1",
+      "sortId": 1,
+      "description": "Clear DV-1",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_01",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 50
+        },
+        {
+          "type": "FURN",
+          "id": "furni_rhineLab_folder_T_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_2",
+      "sortId": 2,
+      "description": "Clear DV-2",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_02",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 50
+        },
+        {
+          "type": "FURN",
+          "id": "furni_rhineLab_accessControl_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_3",
+      "sortId": 3,
+      "description": "Clear DV-3",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_03",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 50
+        },
+        {
+          "type": "FURN",
+          "id": "furni_rhineLab_stool_01",
+          "count": 2
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_4",
+      "sortId": 4,
+      "description": "Clear DV-4",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_04",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 70
+        },
+        {
+          "type": "CHAR",
+          "id": "char_135_halo",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_5",
+      "sortId": 5,
+      "description": "Clear DV-5",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_05",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 70
+        },
+        {
+          "type": "FURN",
+          "id": "furni_rhineLab_table_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_6",
+      "sortId": 6,
+      "description": "Clear DV-5 with a 3-star rating.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_05",
+        "1",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "MATERIAL",
+          "id": "mod_unlock_token",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_7",
+      "sortId": 7,
+      "description": "Clear DV-6",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_06",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_8",
+      "sortId": 8,
+      "description": "Clear DV-6 with a 3-star rating.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_06",
+        "1",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_rhineLab_folder_O_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_9",
+      "sortId": 9,
+      "description": "Clear DV-7",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_07",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_10",
+      "sortId": 10,
+      "description": "Clear DV-7 with a 3-star rating.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_07",
+        "1",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_rhineLab_stand_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_11",
+      "sortId": 11,
+      "description": "Clear DV-8",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_08",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_12",
+      "sortId": 12,
+      "description": "Clear DV-8 with a 3-star rating.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_08",
+        "1",
+        "3"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "MATERIAL",
+          "id": "mod_unlock_token",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_13",
+      "sortId": 13,
+      "description": "Clear DV-EX-1",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex01",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_14",
+      "sortId": 14,
+      "description": "Clear DV-EX-2",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex02",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 60
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_15",
+      "sortId": 15,
+      "description": "Clear DV-EX-3",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex03",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_16",
+      "sortId": 16,
+      "description": "Clear DV-EX-4",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex04",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_17",
+      "sortId": 17,
+      "description": "Clear DV-EX-5",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex05",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_18",
+      "sortId": 18,
+      "description": "Clear DV-EX-6",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex06",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_19",
+      "sortId": 19,
+      "description": "Clear DV-EX-7",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex07",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_20",
+      "sortId": 20,
+      "description": "Clear DV-EX-8",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex08",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_21",
+      "sortId": 21,
+      "description": "Clear DV-EX-8 Challenge Mode",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "1",
+      "param": [
+        "1",
+        "act19side_ex08#f#",
+        "1",
+        "2"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "FURN",
+          "id": "furni_dropS026_greed_01",
+          "count": 1
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_22",
+      "sortId": 22,
+      "description": "Clear event stages 10 times, not including tutorial stages.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act19side_01^act19side_02^act19side_03^act19side_04^act19side_05^act19side_06^act19side_07^act19side_08^act19side_ex01^act19side_ex01#f#^act19side_ex02^act19side_ex02#f#^act19side_ex03^act19side_ex03#f#^act19side_ex04^act19side_ex04#f#^act19side_ex05^act19side_ex05#f#^act19side_ex06^act19side_ex06#f#^act19side_ex07^act19side_ex07#f#^act19side_ex08^act19side_ex08#f#",
+        "10"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 80
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_23",
+      "sortId": 23,
+      "description": "Clear event stages 25 times, not including tutorial stages.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act19side_01^act19side_02^act19side_03^act19side_04^act19side_05^act19side_06^act19side_07^act19side_08^act19side_ex01^act19side_ex01#f#^act19side_ex02^act19side_ex02#f#^act19side_ex03^act19side_ex03#f#^act19side_ex04^act19side_ex04#f#^act19side_ex05^act19side_ex05#f#^act19side_ex06^act19side_ex06#f#^act19side_ex07^act19side_ex07#f#^act19side_ex08^act19side_ex08#f#",
+        "25"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 100
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
+    {
+      "id": "19sreActivity_24",
+      "sortId": 24,
+      "description": "Clear event stages 40 times, not including tutorial stages.",
+      "type": "ACTIVITY",
+      "itemBgType": "COMMON",
+      "preMissionIds": null,
+      "template": "CompleteStageAct",
+      "templateType": "0",
+      "param": [
+        "0",
+        "act19side_01^act19side_02^act19side_03^act19side_04^act19side_05^act19side_06^act19side_07^act19side_08^act19side_ex01^act19side_ex01#f#^act19side_ex02^act19side_ex02#f#^act19side_ex03^act19side_ex03#f#^act19side_ex04^act19side_ex04#f#^act19side_ex05^act19side_ex05#f#^act19side_ex06^act19side_ex06#f#^act19side_ex07^act19side_ex07#f#^act19side_ex08^act19side_ex08#f#",
+        "40"
+      ],
+      "unlockCondition": null,
+      "unlockParam": null,
+      "missionGroup": "act19sre",
+      "toPage": null,
+      "periodicalPoint": 0,
+      "rewards": [
+        {
+          "type": "ACTIVITY_ITEM",
+          "id": "act19side_token_reagents_rep_1",
+          "count": 120
+        }
+      ],
+      "backImagePath": null,
+      "foldId": null,
+      "haveSubMissionToUnlock": false
+    },
     {
       "id": "20sreActivity_1",
       "sortId": 1,
@@ -3808,7 +4658,7 @@
     {
       "id": "20sreActivity_29",
       "sortId": 29,
-      "description": "Complete 1 design and equip at least 1 Blue or higher rarity piece of gear",
+      "description": "Complete 1 design and equip at least 1 Blue or higher rarity piece of gear in Engine Club",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -3838,7 +4688,7 @@
     {
       "id": "20sreActivity_30",
       "sortId": 30,
-      "description": "Complete 1 design and equip at least 6 Blue or higher rarity pieces of gear",
+      "description": "Complete 1 design and equip at least 6 Blue or higher rarity pieces of gear in Engine Club",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -3899,7 +4749,7 @@
     {
       "id": "20sreActivity_32",
       "sortId": 32,
-      "description": "Clear IC-EX-2, and prevent the Amalgam Surfing Instructor from intercepting a Self-Driving Cart",
+      "description": "Clear IC-EX-2, and prevent the Alloy Surfing Instructor from intercepting a Self-Driving Cart",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -4029,7 +4879,7 @@
     {
       "id": "20sreActivity_36",
       "sortId": 36,
-      "description": "Clear IC-EX-6, and use at least 10 Self-Driving Cart One-Way Roads",
+      "description": "Clear IC-EX-6, and use at least 10 Self-Driver One-Way Roads",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43620,7 +44470,7 @@
     {
       "id": "0D5Activity_1",
       "sortId": 1,
-      "description": "Consume a total of 100 Sanity",
+      "description": "累计消耗100点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43649,7 +44499,7 @@
     {
       "id": "0D5Activity_2",
       "sortId": 2,
-      "description": "Consume a total of 300 Sanity",
+      "description": "累计消耗300点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43678,7 +44528,7 @@
     {
       "id": "0D5Activity_3",
       "sortId": 3,
-      "description": "Consume a total of 500 Sanity",
+      "description": "累计消耗500点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43707,7 +44557,7 @@
     {
       "id": "0D5Activity_4",
       "sortId": 4,
-      "description": "Consume a total of 1000 Sanity",
+      "description": "累计消耗1000点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43736,7 +44586,7 @@
     {
       "id": "0D5Activity_5",
       "sortId": 5,
-      "description": "Defeat a total of 200 enemies",
+      "description": "累计击败任意200名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43765,7 +44615,7 @@
     {
       "id": "0D5Activity_6",
       "sortId": 6,
-      "description": "Defeat a total of 600 enemies",
+      "description": "累计击败任意600名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43794,7 +44644,7 @@
     {
       "id": "0D5Activity_7",
       "sortId": 7,
-      "description": "Defeat a total of 1000 enemies",
+      "description": "累计击败任意1000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43823,7 +44673,7 @@
     {
       "id": "0D5Activity_8",
       "sortId": 8,
-      "description": "Defeat a total of 2000 enemies",
+      "description": "累计击败任意2000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43852,7 +44702,7 @@
     {
       "id": "0D5Activity_9",
       "sortId": 9,
-      "description": "Spend a total of 20000 LMD",
+      "description": "累计消耗20000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43881,7 +44731,7 @@
     {
       "id": "0D5Activity_10",
       "sortId": 10,
-      "description": "Spend a total of 50000 LMD",
+      "description": "累计消耗50000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43910,7 +44760,7 @@
     {
       "id": "0D5Activity_11",
       "sortId": 11,
-      "description": "Spend a total of 100000 LMD",
+      "description": "累计消耗100000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43939,7 +44789,7 @@
     {
       "id": "0D5Activity_12",
       "sortId": 12,
-      "description": "Spend a total of 150000 LMD",
+      "description": "累计消耗150000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43968,7 +44818,7 @@
     {
       "id": "0D5Activity_13",
       "sortId": 13,
-      "description": "Have your Operators gain a total of 10000 EXP",
+      "description": "累计提升10000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -43997,7 +44847,7 @@
     {
       "id": "0D5Activity_14",
       "sortId": 14,
-      "description": "Have your Operators gain a total of 20000 EXP",
+      "description": "累计提升20000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -44026,7 +44876,7 @@
     {
       "id": "0D5Activity_15",
       "sortId": 15,
-      "description": "Have your Operators gain a total of 50000 EXP",
+      "description": "累计提升50000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -44055,7 +44905,7 @@
     {
       "id": "0D5Activity_16",
       "sortId": 16,
-      "description": "Have your Operators gain a total of 75000 EXP",
+      "description": "累计提升75000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45480,7 +46330,7 @@
     {
       "id": "9D4Activity_1",
       "sortId": 1,
-      "description": "Spend 600 Sanity.",
+      "description": "累计消耗600点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45509,7 +46359,7 @@
     {
       "id": "9D4Activity_2",
       "sortId": 2,
-      "description": "Spend 1200 Sanity.",
+      "description": "累计消耗1200点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45538,7 +46388,7 @@
     {
       "id": "9D4Activity_3",
       "sortId": 3,
-      "description": "Spend 1800 Sanity.",
+      "description": "累计消耗1800点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45567,7 +46417,7 @@
     {
       "id": "9D4Activity_4",
       "sortId": 4,
-      "description": "Use 35000 EXP to upgrade operators.",
+      "description": "累计提升35000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45596,7 +46446,7 @@
     {
       "id": "9D4Activity_5",
       "sortId": 5,
-      "description": "Use 70000 EXP to upgrade operators.",
+      "description": "累计提升70000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45625,7 +46475,7 @@
     {
       "id": "9D4Activity_6",
       "sortId": 6,
-      "description": "Use 100000 EXP to upgrade operators.",
+      "description": "累计提升100000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45654,7 +46504,7 @@
     {
       "id": "9D4Activity_7",
       "sortId": 7,
-      "description": "Spend 60000 LMD on operators' upgrades and promotions.",
+      "description": "在干员升级和晋升中累计消耗60000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45683,7 +46533,7 @@
     {
       "id": "9D4Activity_8",
       "sortId": 8,
-      "description": "Spend 120000 LMD on operators' upgrades and promotions.",
+      "description": "在干员升级和晋升中累计消耗120000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45712,7 +46562,7 @@
     {
       "id": "9D4Activity_9",
       "sortId": 9,
-      "description": "Spend 200000 LMD on operators' upgrades and promotions.",
+      "description": "在干员升级和晋升中累计消耗200000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45741,7 +46591,7 @@
     {
       "id": "9D4Activity_10",
       "sortId": 10,
-      "description": "Spend 800 Credits in the Credit Store.",
+      "description": "在信用商店中累计消费800点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45770,7 +46620,7 @@
     {
       "id": "9D4Activity_11",
       "sortId": 11,
-      "description": "Spend 1600 Credits in the Credit Store.",
+      "description": "在信用商店中累计消费1600点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45799,7 +46649,7 @@
     {
       "id": "9D4Activity_12",
       "sortId": 12,
-      "description": "Spend 2400 Credits in the Credit Store.",
+      "description": "在信用商店中累计消费2400点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45828,7 +46678,7 @@
     {
       "id": "9D4Activity_13",
       "sortId": 13,
-      "description": "Send 4 Clues to friends.",
+      "description": "向好友赠送4份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45857,7 +46707,7 @@
     {
       "id": "9D4Activity_14",
       "sortId": 14,
-      "description": "Send 8 Clues to friends.",
+      "description": "向好友赠送8份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45886,7 +46736,7 @@
     {
       "id": "9D4Activity_15",
       "sortId": 15,
-      "description": "Send 12 Clues to friends.",
+      "description": "向好友赠送12份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45915,7 +46765,7 @@
     {
       "id": "9D4Activity_16",
       "sortId": 16,
-      "description": "During this mission period, defeat a total of 1000 enemies in Annihilation stages.",
+      "description": "任务期间累计在剿灭作战中击杀1000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45944,7 +46794,7 @@
     {
       "id": "9D4Activity_17",
       "sortId": 17,
-      "description": "During this mission period, defeat a total of 2000 enemies in Annihilation stages.",
+      "description": "任务期间累计在剿灭作战中击杀2000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -45973,7 +46823,7 @@
     {
       "id": "9D4Activity_18",
       "sortId": 18,
-      "description": "During this mission period, defeat a total of 3000 enemies in Annihilation stages.",
+      "description": "任务期间累计在剿灭作战中击杀3000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46092,7 +46942,7 @@
     {
       "id": "9D4Activity_22",
       "sortId": 22,
-      "description": "Clear any Supplies stage 8 times.",
+      "description": "完成任意Supplies中的关卡8次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46122,7 +46972,7 @@
     {
       "id": "9D4Activity_23",
       "sortId": 23,
-      "description": "Clear any Supplies stage 16 times.",
+      "description": "完成任意Supplies中的关卡16次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46152,7 +47002,7 @@
     {
       "id": "9D4Activity_24",
       "sortId": 24,
-      "description": "Clear any Supplies stage 24 times.",
+      "description": "完成任意Supplies中的关卡24次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46182,7 +47032,7 @@
     {
       "id": "9D4Activity_25",
       "sortId": 25,
-      "description": "Defeat a total of 3000 enemies.",
+      "description": "累计击败任意3000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46211,7 +47061,7 @@
     {
       "id": "9D4Activity_26",
       "sortId": 26,
-      "description": "Defeat a total of 6000 enemies.",
+      "description": "累计击败任意6000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46240,7 +47090,7 @@
     {
       "id": "9D4Activity_27",
       "sortId": 27,
-      "description": "Defeat a total of 10000 enemies.",
+      "description": "累计击败任意10000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46359,7 +47209,7 @@
     {
       "id": "9D4Activity_31",
       "sortId": 31,
-      "description": "Assign 100 Operators to restore Morale in the Dormitory",
+      "description": "让100名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46388,7 +47238,7 @@
     {
       "id": "9D4Activity_32",
       "sortId": 32,
-      "description": "Assign 200 Operators to restore Morale in the Dormitory",
+      "description": "让200名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46417,7 +47267,7 @@
     {
       "id": "9D4Activity_33",
       "sortId": 33,
-      "description": "Assign 300 Operators to restore Morale in the Dormitory",
+      "description": "让300名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46446,7 +47296,7 @@
     {
       "id": "9D4Activity_34",
       "sortId": 34,
-      "description": "Complete 50 orders.",
+      "description": "完成50笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46475,7 +47325,7 @@
     {
       "id": "9D4Activity_35",
       "sortId": 35,
-      "description": "Complete 100 orders.",
+      "description": "完成100笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46504,7 +47354,7 @@
     {
       "id": "9D4Activity_36",
       "sortId": 36,
-      "description": "Complete 150 orders.",
+      "description": "完成150笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46533,7 +47383,7 @@
     {
       "id": "9D4Activity_37",
       "sortId": 37,
-      "description": "Produce 100 Pure Gold in the Factory.",
+      "description": "在制造站生产100件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46563,7 +47413,7 @@
     {
       "id": "9D4Activity_38",
       "sortId": 38,
-      "description": "Produce 200 Pure Gold in the Factory.",
+      "description": "在制造站生产200件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46593,7 +47443,7 @@
     {
       "id": "9D4Activity_39",
       "sortId": 39,
-      "description": "Produce 300 Pure Gold in the Factory.",
+      "description": "在制造站生产300件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46623,7 +47473,7 @@
     {
       "id": "9D4Activity_40",
       "sortId": 40,
-      "description": "During this mission period, conduct 1 Clue Exchanges.",
+      "description": "任务期间累积举行1次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46652,7 +47502,7 @@
     {
       "id": "9D4Activity_41",
       "sortId": 41,
-      "description": "During this mission period, conduct 2 Clue Exchanges.",
+      "description": "任务期间累积举行2次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46681,7 +47531,7 @@
     {
       "id": "9D4Activity_42",
       "sortId": 42,
-      "description": "During this mission period, conduct 3 Clue Exchanges.",
+      "description": "任务期间累积举行3次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46710,7 +47560,7 @@
     {
       "id": "9D4Activity_43",
       "sortId": 43,
-      "description": "Interact with Operators in the Base to increase their trust 60 times.",
+      "description": "在基建内与干员进行60次增加信赖的互动",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46739,7 +47589,7 @@
     {
       "id": "9D4Activity_44",
       "sortId": 44,
-      "description": "Interact with Operators in the Base to increase their trust 120 times.",
+      "description": "在基建内与干员进行120次增加信赖的互动",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46768,7 +47618,7 @@
     {
       "id": "9D4Activity_45",
       "sortId": 45,
-      "description": "Interact with Operators in the Base to increase their trust 200 times.",
+      "description": "在基建内与干员进行200次增加信赖的互动",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46797,7 +47647,7 @@
     {
       "id": "6D8Activity_1",
       "sortId": 1,
-      "description": "Spend 600 Sanity.",
+      "description": "累计消耗600点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46826,7 +47676,7 @@
     {
       "id": "6D8Activity_2",
       "sortId": 2,
-      "description": "Spend 1200 Sanity.",
+      "description": "累计消耗1200点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46855,7 +47705,7 @@
     {
       "id": "6D8Activity_3",
       "sortId": 3,
-      "description": "Spend 1800 Sanity.",
+      "description": "累计消耗1800点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46884,7 +47734,7 @@
     {
       "id": "6D8Activity_4",
       "sortId": 4,
-      "description": "Have Operators gain a total of 35000 EXP.",
+      "description": "累计提升35000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46913,7 +47763,7 @@
     {
       "id": "6D8Activity_5",
       "sortId": 5,
-      "description": "Have Operators gain a total of 70000 EXP.",
+      "description": "累计提升70000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46942,7 +47792,7 @@
     {
       "id": "6D8Activity_6",
       "sortId": 6,
-      "description": "Have Operators gain a total of 100000 EXP.",
+      "description": "累计提升100000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -46971,7 +47821,7 @@
     {
       "id": "6D8Activity_7",
       "sortId": 7,
-      "description": "Spend 60000 LMD on Operators' upgrades and promotions.",
+      "description": "在干员升级和晋升中累计消耗60000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47000,7 +47850,7 @@
     {
       "id": "6D8Activity_8",
       "sortId": 8,
-      "description": "Spend 120000 LMD on Operators' upgrades and promotions.",
+      "description": "在干员升级和晋升中累计消耗120000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47029,7 +47879,7 @@
     {
       "id": "6D8Activity_9",
       "sortId": 9,
-      "description": "Spend 200000 LMD on Operators' upgrades and promotions.",
+      "description": "在干员升级和晋升中累计消耗200000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47058,7 +47908,7 @@
     {
       "id": "6D8Activity_10",
       "sortId": 10,
-      "description": "Spend 800 Credits in the Credit Store.",
+      "description": "在信用商店中累计消费800点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47087,7 +47937,7 @@
     {
       "id": "6D8Activity_11",
       "sortId": 11,
-      "description": "Spend 1600 Credits in the Credit Store.",
+      "description": "在信用商店中累计消费1600点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47116,7 +47966,7 @@
     {
       "id": "6D8Activity_12",
       "sortId": 12,
-      "description": "Spend 2400 Credits in the Credit Store.",
+      "description": "在信用商店中累计消费2400点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47145,7 +47995,7 @@
     {
       "id": "6D8Activity_13",
       "sortId": 13,
-      "description": "Send 4 Clues to friends.",
+      "description": "向好友赠送4份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47174,7 +48024,7 @@
     {
       "id": "6D8Activity_14",
       "sortId": 14,
-      "description": "Send 8 Clues to friends.",
+      "description": "向好友赠送8份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47203,7 +48053,7 @@
     {
       "id": "6D8Activity_15",
       "sortId": 15,
-      "description": "Send 12 Clues to friends.",
+      "description": "向好友赠送12份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47232,7 +48082,7 @@
     {
       "id": "6D8Activity_16",
       "sortId": 16,
-      "description": "Defeat a total of 1000 enemies in Annihilation missions during the assignment period.",
+      "description": "任务期间累计在剿灭作战中击杀1000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47261,7 +48111,7 @@
     {
       "id": "6D8Activity_17",
       "sortId": 17,
-      "description": "Defeat a total of 2000 enemies in Annihilation missions during the assignment period.",
+      "description": "任务期间累计在剿灭作战中击杀2000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47290,7 +48140,7 @@
     {
       "id": "6D8Activity_18",
       "sortId": 18,
-      "description": "Defeat a total of 3000 enemies in Annihilation missions during the assignment period.",
+      "description": "任务期间累计在剿灭作战中击杀3000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47409,7 +48259,7 @@
     {
       "id": "6D8Activity_22",
       "sortId": 22,
-      "description": "Clear any Supplies stage 8 time(s).",
+      "description": "完成任意Supplies中的关卡8次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47439,7 +48289,7 @@
     {
       "id": "6D8Activity_23",
       "sortId": 23,
-      "description": "Clear any Supplies stage 16 time(s).",
+      "description": "完成任意Supplies中的关卡16次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47469,7 +48319,7 @@
     {
       "id": "6D8Activity_24",
       "sortId": 24,
-      "description": "Clear any Supplies stage 24 time(s).",
+      "description": "完成任意Supplies中的关卡24次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47499,7 +48349,7 @@
     {
       "id": "6D8Activity_25",
       "sortId": 25,
-      "description": "Defeat a total of 3000 enemies.",
+      "description": "累计击败任意3000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47528,7 +48378,7 @@
     {
       "id": "6D8Activity_26",
       "sortId": 26,
-      "description": "Defeat a total of 6000 enemies.",
+      "description": "累计击败任意6000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47557,7 +48407,7 @@
     {
       "id": "6D8Activity_27",
       "sortId": 27,
-      "description": "Defeat a total of 10000 enemies.",
+      "description": "累计击败任意10000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47676,7 +48526,7 @@
     {
       "id": "6D8Activity_31",
       "sortId": 31,
-      "description": "Assign 100 Operators to restore Morale in the Dormitory",
+      "description": "让100名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47705,7 +48555,7 @@
     {
       "id": "6D8Activity_32",
       "sortId": 32,
-      "description": "Assign 200 Operators to restore Morale in the Dormitory",
+      "description": "让200名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47734,7 +48584,7 @@
     {
       "id": "6D8Activity_33",
       "sortId": 33,
-      "description": "Assign 300 Operators to restore Morale in the Dormitory",
+      "description": "让300名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47763,7 +48613,7 @@
     {
       "id": "6D8Activity_34",
       "sortId": 34,
-      "description": "Complete 50 orders.",
+      "description": "完成50笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47792,7 +48642,7 @@
     {
       "id": "6D8Activity_35",
       "sortId": 35,
-      "description": "Complete 100 orders.",
+      "description": "完成100笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47821,7 +48671,7 @@
     {
       "id": "6D8Activity_36",
       "sortId": 36,
-      "description": "Complete 150 orders.",
+      "description": "完成150笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47850,7 +48700,7 @@
     {
       "id": "6D8Activity_37",
       "sortId": 37,
-      "description": "Produce 100 Pure Gold in the Factory.",
+      "description": "在制造站生产100件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47880,7 +48730,7 @@
     {
       "id": "6D8Activity_38",
       "sortId": 38,
-      "description": "Produce 200 Pure Gold in the Factory.",
+      "description": "在制造站生产200件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47910,7 +48760,7 @@
     {
       "id": "6D8Activity_39",
       "sortId": 39,
-      "description": "Produce 300 Pure Gold in the Factory.",
+      "description": "在制造站生产300件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47940,7 +48790,7 @@
     {
       "id": "6D8Activity_40",
       "sortId": 40,
-      "description": "Conduct 1 Clue Exchanges during this event.",
+      "description": "任务期间累积举行1次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47969,7 +48819,7 @@
     {
       "id": "6D8Activity_41",
       "sortId": 41,
-      "description": "Conduct 2 Clue Exchanges during this event.",
+      "description": "任务期间累积举行2次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -47998,7 +48848,7 @@
     {
       "id": "6D8Activity_42",
       "sortId": 42,
-      "description": "Conduct 3 Clue Exchanges during this event.",
+      "description": "任务期间累积举行3次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48027,7 +48877,7 @@
     {
       "id": "6D8Activity_43",
       "sortId": 43,
-      "description": "Interact with Operators in the Base to increase their trust 60 time(s).",
+      "description": "在基建内与干员进行60次增加信赖的互动",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48056,7 +48906,7 @@
     {
       "id": "6D8Activity_44",
       "sortId": 44,
-      "description": "Interact with Operators in the Base to increase their trust 120 time(s).",
+      "description": "在基建内与干员进行120次增加信赖的互动",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48085,7 +48935,7 @@
     {
       "id": "6D8Activity_45",
       "sortId": 45,
-      "description": "Interact with Operators in the Base to increase their trust 200 time(s).",
+      "description": "在基建内与干员进行200次增加信赖的互动",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48114,7 +48964,7 @@
     {
       "id": "3D5Activity_1",
       "sortId": 1,
-      "description": "Spend a total of 800 Sanity",
+      "description": "累计消耗800点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48143,7 +48993,7 @@
     {
       "id": "3D5Activity_2",
       "sortId": 2,
-      "description": "Spend a total of 1600 Sanity",
+      "description": "累计消耗1600点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48172,7 +49022,7 @@
     {
       "id": "3D5Activity_3",
       "sortId": 3,
-      "description": "Spend a total of 2400 Sanity",
+      "description": "累计消耗2400点理智",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48201,7 +49051,7 @@
     {
       "id": "3D5Activity_4",
       "sortId": 4,
-      "description": "Gain a total of 50000 Operator EXP through training",
+      "description": "累计提升50000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48230,7 +49080,7 @@
     {
       "id": "3D5Activity_5",
       "sortId": 5,
-      "description": "Gain a total of 100000 Operator EXP through training",
+      "description": "累计提升100000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48259,7 +49109,7 @@
     {
       "id": "3D5Activity_6",
       "sortId": 6,
-      "description": "Gain a total of 150000 Operator EXP through training",
+      "description": "累计提升150000点干员经验值",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48288,7 +49138,7 @@
     {
       "id": "3D5Activity_7",
       "sortId": 7,
-      "description": "Spend a total of 80000 LMD to train or promote Operators",
+      "description": "在干员升级和晋升中累计消耗80000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48317,7 +49167,7 @@
     {
       "id": "3D5Activity_8",
       "sortId": 8,
-      "description": "Spend a total of 150000 LMD to train or promote Operators",
+      "description": "在干员升级和晋升中累计消耗150000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48346,7 +49196,7 @@
     {
       "id": "3D5Activity_9",
       "sortId": 9,
-      "description": "Spend a total of 250000 LMD to train or promote Operators",
+      "description": "在干员升级和晋升中累计消耗250000龙门币",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48375,7 +49225,7 @@
     {
       "id": "3D5Activity_10",
       "sortId": 10,
-      "description": "Spend a total of 1000 Credit at the Credit Store",
+      "description": "在信用商店中累计消费1000点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48404,7 +49254,7 @@
     {
       "id": "3D5Activity_11",
       "sortId": 11,
-      "description": "Spend a total of 2000 Credit at the Credit Store",
+      "description": "在信用商店中累计消费2000点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48433,7 +49283,7 @@
     {
       "id": "3D5Activity_12",
       "sortId": 12,
-      "description": "Spend a total of 3000 Credit at the Credit Store",
+      "description": "在信用商店中累计消费3000点信用点",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48462,7 +49312,7 @@
     {
       "id": "3D5Activity_13",
       "sortId": 13,
-      "description": "Send 6 Clues to friends",
+      "description": "向好友赠送6份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48491,7 +49341,7 @@
     {
       "id": "3D5Activity_14",
       "sortId": 14,
-      "description": "Send 12 Clues to friends",
+      "description": "向好友赠送12份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48520,7 +49370,7 @@
     {
       "id": "3D5Activity_15",
       "sortId": 15,
-      "description": "Send 18 Clues to friends",
+      "description": "向好友赠送18份线索",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48549,7 +49399,7 @@
     {
       "id": "3D5Activity_16",
       "sortId": 16,
-      "description": "Defeat a total of 1000 enemies in Annihilation stages",
+      "description": "任务期间累计在剿灭作战中击杀1000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48578,7 +49428,7 @@
     {
       "id": "3D5Activity_17",
       "sortId": 17,
-      "description": "Defeat a total of 2000 enemies in Annihilation stages",
+      "description": "任务期间累计在剿灭作战中击杀2000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48607,7 +49457,7 @@
     {
       "id": "3D5Activity_18",
       "sortId": 18,
-      "description": "Defeat a total of 3000 enemies in Annihilation stages",
+      "description": "任务期间累计在剿灭作战中击杀3000个敌人",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48636,7 +49486,7 @@
     {
       "id": "3D5Activity_19",
       "sortId": 19,
-      "description": "Clear any stage a total of 40 times",
+      "description": "通关任意关卡40次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48665,7 +49515,7 @@
     {
       "id": "3D5Activity_20",
       "sortId": 20,
-      "description": "Clear any stage a total of 80 times",
+      "description": "通关任意关卡80次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48694,7 +49544,7 @@
     {
       "id": "3D5Activity_21",
       "sortId": 21,
-      "description": "Clear any stage a total of 120 times",
+      "description": "通关任意关卡120次",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48723,7 +49573,7 @@
     {
       "id": "3D5Activity_22",
       "sortId": 22,
-      "description": "Defeat a total of 3000 enemies",
+      "description": "累计击败任意3000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48752,7 +49602,7 @@
     {
       "id": "3D5Activity_23",
       "sortId": 23,
-      "description": "Defeat a total of 6000 enemies",
+      "description": "累计击败任意6000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48781,7 +49631,7 @@
     {
       "id": "3D5Activity_24",
       "sortId": 24,
-      "description": "Defeat a total of 10000 enemies",
+      "description": "累计击败任意10000名敌兵",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48900,7 +49750,7 @@
     {
       "id": "3D5Activity_28",
       "sortId": 28,
-      "description": "Assign 100 Operators to restore Morale in the Dormitory",
+      "description": "让100名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48929,7 +49779,7 @@
     {
       "id": "3D5Activity_29",
       "sortId": 29,
-      "description": "Assign 200 Operators to restore Morale in the Dormitory",
+      "description": "让200名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48958,7 +49808,7 @@
     {
       "id": "3D5Activity_30",
       "sortId": 30,
-      "description": "Assign 300 Operators to restore Morale in the Dormitory",
+      "description": "让300名干员在宿舍中恢复心情",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -48987,7 +49837,7 @@
     {
       "id": "3D5Activity_31",
       "sortId": 31,
-      "description": "Complete 50 orders",
+      "description": "完成50笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49016,7 +49866,7 @@
     {
       "id": "3D5Activity_32",
       "sortId": 32,
-      "description": "Complete 100 orders",
+      "description": "完成100笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49045,7 +49895,7 @@
     {
       "id": "3D5Activity_33",
       "sortId": 33,
-      "description": "Complete 150 orders",
+      "description": "完成150笔订单",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49074,7 +49924,7 @@
     {
       "id": "3D5Activity_34",
       "sortId": 34,
-      "description": "Produce 100 Pure Gold in the Factory",
+      "description": "在制造站生产100件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49104,7 +49954,7 @@
     {
       "id": "3D5Activity_35",
       "sortId": 35,
-      "description": "Produce 200 Pure Gold in the Factory",
+      "description": "在制造站生产200件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49134,7 +49984,7 @@
     {
       "id": "3D5Activity_36",
       "sortId": 36,
-      "description": "Produce 300 Pure Gold in the Factory",
+      "description": "在制造站生产300件Pure Gold",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49164,7 +50014,7 @@
     {
       "id": "3D5Activity_37",
       "sortId": 37,
-      "description": "Conduct 1 Clue Exchanges",
+      "description": "任务期间累积举行1次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49193,7 +50043,7 @@
     {
       "id": "3D5Activity_38",
       "sortId": 38,
-      "description": "Conduct 2 Clue Exchanges",
+      "description": "任务期间累积举行2次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49222,7 +50072,7 @@
     {
       "id": "3D5Activity_39",
       "sortId": 39,
-      "description": "Conduct 3 Clue Exchanges",
+      "description": "任务期间累积举行3次线索交流",
       "type": "ACTIVITY",
       "itemBgType": "COMMON",
       "preMissionIds": null,
@@ -49250,6 +50100,42 @@
     }
   ],
   "missionGroup": [
+    {
+      "id": "act19sre",
+      "title": null,
+      "type": "ACTIVITY",
+      "preMissionGroup": null,
+      "period": null,
+      "rewards": [],
+      "missionIds": [
+        "19sreActivity_1",
+        "19sreActivity_2",
+        "19sreActivity_3",
+        "19sreActivity_4",
+        "19sreActivity_5",
+        "19sreActivity_6",
+        "19sreActivity_7",
+        "19sreActivity_8",
+        "19sreActivity_9",
+        "19sreActivity_10",
+        "19sreActivity_11",
+        "19sreActivity_12",
+        "19sreActivity_13",
+        "19sreActivity_14",
+        "19sreActivity_15",
+        "19sreActivity_16",
+        "19sreActivity_17",
+        "19sreActivity_18",
+        "19sreActivity_19",
+        "19sreActivity_20",
+        "19sreActivity_21",
+        "19sreActivity_22",
+        "19sreActivity_23",
+        "19sreActivity_24"
+      ],
+      "startTs": 1709658000,
+      "endTs": 1710845999
+    },
     {
       "id": "act20sre",
       "title": null,
@@ -49600,7 +50486,7 @@
         "act1mainbuff_9",
         "act1mainbuff_10"
       ],
-      "startTs": 1696935600,
+      "startTs": -1,
       "endTs": 1699354799
     },
     {
@@ -51448,6 +52334,416 @@
       }
     },
     "CHECKIN_ONLY": {
+      "act35sign": {
+        "checkInList": {
+          "0": {
+            "itemList": [
+              {
+                "id": "32001",
+                "count": 1,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "4001",
+                "count": 30000,
+                "type": "GOLD"
+              }
+            ],
+            "order": 1,
+            "color": 0,
+            "keyItem": 0,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "1": {
+            "itemList": [
+              {
+                "id": "4003",
+                "count": 200,
+                "type": "DIAMOND_SHD"
+              },
+              {
+                "id": "7001",
+                "count": 5,
+                "type": "TKT_RECRUIT"
+              }
+            ],
+            "order": 2,
+            "color": 0,
+            "keyItem": 0,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "2": {
+            "itemList": [],
+            "order": 3,
+            "color": 0,
+            "keyItem": 1,
+            "showItemOrder": 1,
+            "isDynItem": true
+          },
+          "3": {
+            "itemList": [
+              {
+                "id": "mod_update_token_1",
+                "count": 10,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "3301",
+                "count": 30,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 4,
+            "color": 0,
+            "keyItem": 0,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "4": {
+            "itemList": [
+              {
+                "id": "4003",
+                "count": 200,
+                "type": "DIAMOND_SHD"
+              },
+              {
+                "id": "3401",
+                "count": 300,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 5,
+            "color": 0,
+            "keyItem": 1,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "5": {
+            "itemList": [
+              {
+                "id": "3302",
+                "count": 20,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "3003",
+                "count": 20,
+                "type": "MATERIAL"
+              }
+            ],
+            "order": 6,
+            "color": 0,
+            "keyItem": 0,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "6": {
+            "itemList": [
+              {
+                "id": "3303",
+                "count": 8,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "2004",
+                "count": 10,
+                "type": "CARD_EXP"
+              }
+            ],
+            "order": 7,
+            "color": 0,
+            "keyItem": 0,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "7": {
+            "itemList": [
+              {
+                "id": "4003",
+                "count": 200,
+                "type": "DIAMOND_SHD"
+              },
+              {
+                "id": "4001",
+                "count": 30000,
+                "type": "GOLD"
+              }
+            ],
+            "order": 8,
+            "color": 0,
+            "keyItem": 1,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "8": {
+            "itemList": [
+              {
+                "id": "mod_update_token_2",
+                "count": 3,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "7002",
+                "count": 5,
+                "type": "TKT_INST_FIN"
+              }
+            ],
+            "order": 9,
+            "color": 0,
+            "keyItem": 0,
+            "showItemOrder": 0,
+            "isDynItem": false
+          },
+          "9": {
+            "itemList": [
+              {
+                "id": "mod_unlock_token",
+                "count": 1,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "2003",
+                "count": 20,
+                "type": "CARD_EXP"
+              }
+            ],
+            "order": 10,
+            "color": 0,
+            "keyItem": 1,
+            "showItemOrder": 0,
+            "isDynItem": false
+          }
+        },
+        "apSupplyOutOfDateDict": {
+          "ap_supply_lt_120_2023_1": 1711364399,
+          "ap_supply_lt_120_2023_2": 1711364399,
+          "ap_supply_lt_120_2023_3": 1711364399,
+          "ap_supply_lt_120_2023_4": 1711364399
+        },
+        "dynCheckInData": {
+          "dynCheckInDict": {
+            "Options0": {
+              "questionDesc": "Doctor, the ingredients for the crust have been mixed together. You just need to knead the dough till it's soft and shiny!\nKnead the Crust Dough?",
+              "preOption": "Options0",
+              "optionList": [
+                "Options1",
+                "Options2"
+              ],
+              "showDay": 0,
+              "spOrderIconId": "num_1",
+              "spOrderDesc": "Crust Dough Kneading",
+              "spOrderCompleteDesc": "Crust Kneading completed"
+            },
+            "Options1": {
+              "questionDesc": "Doctor, don't be too greedy with the filling. It could easily burst while it's baking!\nSelect Filling",
+              "preOption": "Options1",
+              "optionList": [
+                "Options3",
+                "Options4"
+              ],
+              "showDay": 1,
+              "spOrderIconId": "num_2",
+              "spOrderDesc": "Filling Mixing",
+              "spOrderCompleteDesc": "Filling Mixing completed"
+            },
+            "Options2": {
+              "questionDesc": "Doctor, don't be too greedy with the filling. It could easily burst while it's baking!\nSelect Filling",
+              "preOption": "Options2",
+              "optionList": [
+                "Options5",
+                "Options6"
+              ],
+              "showDay": 1,
+              "spOrderIconId": "num_2",
+              "spOrderDesc": "Filling Mixing",
+              "spOrderCompleteDesc": "Filling Mixing completed"
+            },
+            "Options3": {
+              "questionDesc": "Doctor, let's put the mooncakes in the mold together!",
+              "preOption": "Options3",
+              "optionList": [
+                "Options7"
+              ],
+              "showDay": 2,
+              "spOrderIconId": "num_3",
+              "spOrderDesc": "Mooncake Making",
+              "spOrderCompleteDesc": "Mooncake Making completed"
+            },
+            "Options4": {
+              "questionDesc": "Doctor, let's put the mooncakes in the mold together!",
+              "preOption": "Options4",
+              "optionList": [
+                "Options8"
+              ],
+              "showDay": 2,
+              "spOrderIconId": "num_3",
+              "spOrderDesc": "Mooncake Making",
+              "spOrderCompleteDesc": "Mooncake Making completed"
+            },
+            "Options5": {
+              "questionDesc": "Doctor, let's put the mooncakes in the oven together!",
+              "preOption": "Options5",
+              "optionList": [
+                "Options9"
+              ],
+              "showDay": 2,
+              "spOrderIconId": "num_3",
+              "spOrderDesc": "Mooncake Baking",
+              "spOrderCompleteDesc": "Mooncake Baking successful"
+            },
+            "Options6": {
+              "questionDesc": "Doctor, let's put the mooncakes in the oven together!",
+              "preOption": "Options6",
+              "optionList": [
+                "Options10"
+              ],
+              "showDay": 2,
+              "spOrderIconId": "num_3",
+              "spOrderDesc": "Mooncake Baking",
+              "spOrderCompleteDesc": "Mooncake Baking successful"
+            }
+          },
+          "dynOptionDict": {
+            "Options0": {
+              "optionDesc": null,
+              "showImageId1": null,
+              "showImageId2": null,
+              "optionCompleteDesc": null,
+              "isStart": true
+            },
+            "Options1": {
+              "optionDesc": "Snowskin Mooncake",
+              "showImageId1": "cake_2",
+              "showImageId2": "furni_MA_mooncake_B_01",
+              "optionCompleteDesc": "<color=#FF4200>Snowskin Mooncake</color> Crust Dough completed",
+              "isStart": false
+            },
+            "Options2": {
+              "optionDesc": "Glazed Mooncake",
+              "showImageId1": "cake_1",
+              "showImageId2": "furni_MA_mooncake_T_01",
+              "optionCompleteDesc": "<color=#FF4200>Glazed Mooncake</color> Crust Dough completed",
+              "isStart": false
+            },
+            "Options3": {
+              "optionDesc": "Mango Coconut",
+              "showImageId1": "cake_2",
+              "showImageId2": "furni_MA_mooncake_B_01",
+              "optionCompleteDesc": "<color=#FF4200>Mango Coconut</color> Filling completed",
+              "isStart": false
+            },
+            "Options4": {
+              "optionDesc": "Meat Floss",
+              "showImageId1": "cake_2",
+              "showImageId2": "furni_MA_mooncake_B_01",
+              "optionCompleteDesc": "<color=#FF4200>Meat Floss</color> Filling completed",
+              "isStart": false
+            },
+            "Options5": {
+              "optionDesc": "Osmanthus Bean Paste",
+              "showImageId1": "cake_1",
+              "showImageId2": "furni_MA_mooncake_T_01",
+              "optionCompleteDesc": "<color=#FF4200>Osmanthus Bean Paste</color> Filling completed",
+              "isStart": false
+            },
+            "Options6": {
+              "optionDesc": "Salted Egg Yolk",
+              "showImageId1": "cake_1",
+              "showImageId2": "furni_MA_mooncake_T_01",
+              "optionCompleteDesc": "<color=#FF4200>Salted Egg Yolk</color> Filling completed",
+              "isStart": false
+            },
+            "Options7": {
+              "optionDesc": "Confirm",
+              "showImageId1": "cake_2",
+              "showImageId2": "furni_MA_mooncake_B_01",
+              "optionCompleteDesc": "Mooncake Making completed",
+              "isStart": false
+            },
+            "Options8": {
+              "optionDesc": "Confirm",
+              "showImageId1": "cake_2",
+              "showImageId2": "furni_MA_mooncake_B_01",
+              "optionCompleteDesc": "Mooncake Making completed",
+              "isStart": false
+            },
+            "Options9": {
+              "optionDesc": "Confirm",
+              "showImageId1": "cake_1",
+              "showImageId2": "furni_MA_mooncake_T_01",
+              "optionCompleteDesc": "Mooncake Baking successful",
+              "isStart": false
+            },
+            "Options10": {
+              "optionDesc": "Confirm",
+              "showImageId1": "cake_1",
+              "showImageId2": "furni_MA_mooncake_T_01",
+              "optionCompleteDesc": "Mooncake Baking successful",
+              "isStart": false
+            }
+          },
+          "dynItemDict": {
+            "Options7": [
+              {
+                "id": "furni_MA_mooncake_B_01",
+                "count": 1,
+                "type": "FURN"
+              },
+              {
+                "id": "ap_supply_lt_120_2023_1",
+                "count": 1,
+                "type": "AP_SUPPLY"
+              }
+            ],
+            "Options8": [
+              {
+                "id": "furni_MA_mooncake_B_02",
+                "count": 1,
+                "type": "FURN"
+              },
+              {
+                "id": "ap_supply_lt_120_2023_2",
+                "count": 1,
+                "type": "AP_SUPPLY"
+              }
+            ],
+            "Options9": [
+              {
+                "id": "furni_MA_mooncake_T_01",
+                "count": 1,
+                "type": "FURN"
+              },
+              {
+                "id": "ap_supply_lt_120_2023_3",
+                "count": 1,
+                "type": "AP_SUPPLY"
+              }
+            ],
+            "Options10": [
+              {
+                "id": "furni_MA_mooncake_T_02",
+                "count": 1,
+                "type": "FURN"
+              },
+              {
+                "id": "ap_supply_lt_120_2023_4",
+                "count": 1,
+                "type": "AP_SUPPLY"
+              }
+            ]
+          },
+          "constData": {
+            "firstQuestionDesc": "Choose a mooncake to make!\nThere are only enough ingredients to make one type.",
+            "firstQuestionTipsDesc": "*Cannot obtain mooncakes and furniture that you did not select",
+            "expirationDesc": "Mooncakes expire {0}",
+            "firstQuestionConfirmDesc": "Confirm"
+          },
+          "initOption": "Options0"
+        },
+        "extraCheckinList": null
+      },
       "act34sign": {
         "checkInList": {
           "0": {
@@ -70654,6 +71950,28 @@
       }
     },
     "TYPE_ACT9D0": {
+      "act19sre": {
+        "tokenItemId": "act19side_token_reagents_rep_1",
+        "zoneDescList": {
+          "act19sre_zone1": {
+            "zoneId": "act19sre_zone1",
+            "unlockText": "Locked",
+            "displayStartTime": 1709658000
+          },
+          "act19sre_zone2": {
+            "zoneId": "act19sre_zone2",
+            "unlockText": "Unlocks after completing 'Research Base'",
+            "displayStartTime": 1709658000
+          }
+        },
+        "favorUpList": {},
+        "subMissionInfo": null,
+        "hasSubMission": false,
+        "apSupplyOutOfDateDict": {},
+        "newsInfoList": null,
+        "newsServerInfoList": null,
+        "miscHub": {}
+      },
       "act26side": {
         "tokenItemId": "act26side_token_fragmenta",
         "zoneDescList": {
@@ -89598,7 +90916,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89644,7 +90963,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89665,7 +90985,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89701,7 +91022,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89742,7 +91064,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89783,7 +91106,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89819,7 +91143,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89860,7 +91185,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89906,7 +91232,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -89952,7 +91279,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -90028,7 +91356,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -100889,7 +102218,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -100935,7 +102265,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -100956,7 +102287,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -100992,7 +102324,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101033,7 +102366,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101074,7 +102408,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101110,7 +102445,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101151,7 +102487,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101197,7 +102534,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101243,7 +102581,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -101319,7 +102658,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -103439,6 +104779,42 @@
     },
     "SWITCH_ONLY": {},
     "MINISTORY": {
+      "act15mini": {
+        "tokenItemId": "act15mini_token_figurine",
+        "zoneDescList": {
+          "act15mini_zone1": {
+            "zoneId": "act15mini_zone1",
+            "unlockText": "Clear Main Story 1-10 to unlock"
+          }
+        },
+        "favorUpList": {},
+        "extraDropZoneList": [
+          "main_0",
+          "main_1",
+          "main_2",
+          "main_3",
+          "main_4",
+          "main_5",
+          "main_6",
+          "main_7",
+          "main_8",
+          "main_9",
+          "main_10",
+          "main_11",
+          "main_12",
+          "weekly_1",
+          "weekly_2",
+          "weekly_3",
+          "weekly_4",
+          "weekly_5",
+          "weekly_6",
+          "weekly_7",
+          "weekly_8",
+          "weekly_9",
+          "weekly_10",
+          "act15mini_zone1"
+        ]
+      },
       "act14mini": {
         "tokenItemId": "act14mini_token_fu",
         "zoneDescList": {
@@ -106008,7 +107384,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106034,7 +107411,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106076,7 +107454,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106112,7 +107491,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106143,7 +107523,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106185,7 +107566,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106211,7 +107593,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -106284,7 +107667,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106328,7 +107712,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106372,7 +107757,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106421,7 +107807,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106442,7 +107829,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106463,7 +107851,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106497,7 +107886,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106518,7 +107908,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106539,7 +107930,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106573,7 +107965,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106594,7 +107987,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106615,7 +108009,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106654,7 +108049,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106685,7 +108081,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106719,7 +108116,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106750,7 +108148,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106784,7 +108183,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106815,7 +108215,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106854,7 +108255,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106895,7 +108297,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106929,7 +108332,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -106970,7 +108374,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -107004,7 +108409,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -107045,7 +108451,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -107532,7 +108939,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -107566,7 +108974,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -107600,7 +109009,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -108834,7 +110244,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -108886,7 +110297,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -108943,7 +110355,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -108969,7 +110382,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -109000,7 +110414,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -109083,7 +110498,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109109,7 +110525,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109148,7 +110565,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109174,7 +110592,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109213,7 +110632,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109239,7 +110659,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109283,7 +110704,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109337,7 +110759,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109391,7 +110814,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109450,7 +110874,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109471,7 +110896,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109510,7 +110936,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109531,7 +110958,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109570,7 +110998,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109591,7 +111020,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109635,7 +111065,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109661,7 +111092,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109700,7 +111132,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109726,7 +111159,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109765,7 +111199,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -109791,7 +111226,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -110283,7 +111719,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -110317,7 +111754,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -110351,7 +111789,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -111647,7 +113086,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -111701,7 +113141,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -111755,7 +113196,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -111843,7 +113285,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -111877,7 +113320,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -111898,7 +113342,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -111937,7 +113382,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -111958,7 +113404,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -111984,7 +113431,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112023,7 +113471,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112057,7 +113506,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112078,7 +113528,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112112,7 +113563,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112133,7 +113585,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112154,7 +113607,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112193,7 +113647,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112219,7 +113674,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112253,7 +113709,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112279,7 +113736,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112300,7 +113758,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112334,7 +113793,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112360,7 +113820,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112381,7 +113842,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112402,7 +113864,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112441,7 +113904,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112462,7 +113926,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112496,7 +113961,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112517,7 +113983,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112538,7 +114005,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112572,7 +114040,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112593,7 +114062,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112614,7 +114084,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -112635,7 +114106,8 @@
                         "skillIdFilter": null,
                         "tileKeyFilter": null,
                         "groupTagFilter": null,
-                        "filterTagFilter": null
+                        "filterTagFilter": null,
+                        "subProfessionExcludeFilter": null
                       },
                       "blackboard": [
                         {
@@ -113132,7 +114604,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -113166,7 +114639,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -113200,7 +114674,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -113234,7 +114709,8 @@
                   "skillIdFilter": null,
                   "tileKeyFilter": null,
                   "groupTagFilter": null,
-                  "filterTagFilter": null
+                  "filterTagFilter": null,
+                  "subProfessionExcludeFilter": null
                 },
                 "blackboard": [
                   {
@@ -114915,7 +116391,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -114955,7 +116432,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -114995,7 +116473,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -115035,7 +116514,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118442,7 +119922,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118463,7 +119944,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118500,7 +119982,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118521,7 +120004,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118558,7 +120042,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118579,7 +120064,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118616,7 +120102,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118637,7 +120124,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118674,7 +120162,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118711,7 +120200,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118748,7 +120238,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118774,7 +120265,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118811,7 +120303,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -118837,7 +120330,8 @@
                     "skillIdFilter": null,
                     "tileKeyFilter": null,
                     "groupTagFilter": null,
-                    "filterTagFilter": null
+                    "filterTagFilter": null,
+                    "subProfessionExcludeFilter": null
                   },
                   "blackboard": [
                     {
@@ -122934,9 +124428,19 @@
           "campaignEnemyCnt": 200
         }
       }
-    }
+    },
+    "TYPE_ACT42D0": {}
+  },
+  "extraData": {
+    "MAINLINE_BP": {}
   },
   "activityItems": {
+    "act19sre": [
+      "act19side_token_reagents_rep_1"
+    ],
+    "act15mini": [
+      "act15mini_token_figurine"
+    ],
     "act20sre": [
       "act20side_token_book_rep_1"
     ],
@@ -123216,6 +124720,10 @@
       1611154800,
       1612004399
     ],
+    "act19sre": [
+      1709658000,
+      1710500399
+    ],
     "act26side": [
       1703160000,
       1704365999
@@ -123335,6 +124843,10 @@
     "act11d0": [
       1603886400,
       1605092399
+    ],
+    "act15mini": [
+      1709035200,
+      1709636399
     ],
     "act14mini": [
       1692723600,
@@ -123474,6 +124986,30 @@
       "showPrizeId": [
         "prize_16",
         "prize_15"
+      ]
+    },
+    "act1unique": {
+      "itemList": [
+        {
+          "itemNameIconId": "name_ncdeer",
+          "needStorageCheck": true,
+          "rewardItem": {
+            "count": 1,
+            "id": "char_4019_ncdeer",
+            "type": "CHAR"
+          },
+          "useItemNameIcon": true
+        },
+        {
+          "itemNameIconId": "name_furni_dunhuang",
+          "needStorageCheck": true,
+          "rewardItem": {
+            "count": 1,
+            "id": "furni_act24d0_dunhuang_01",
+            "type": "FURN"
+          },
+          "useItemNameIcon": true
+        }
       ]
     }
   },
@@ -126083,6 +127619,51 @@
         }
       ],
       "startTs": 1707238800
+    },
+    {
+      "id": "dis_mini_15",
+      "type": "ACTIVITY",
+      "funcId": "act15mini",
+      "endTs": 1709636399,
+      "sortId": 54,
+      "itemId": "act15mini_token_figurine",
+      "timeNodes": [
+        {
+          "title": "<The Black Forest Wills A Dream> is now open",
+          "ts": 1709035200
+        }
+      ],
+      "startTs": 1709035200
+    },
+    {
+      "id": "dis_rogue_3",
+      "type": "ROGUELIKE",
+      "funcId": "rogue_3_entry_display_1",
+      "endTs": 1710932399,
+      "sortId": 55,
+      "itemId": null,
+      "timeNodes": [
+        {
+          "title": "Integrated Strategies Theme <Expeditioner's Jǫklumarkar> is now open",
+          "ts": 1709658000
+        }
+      ],
+      "startTs": 1709658000
+    },
+    {
+      "id": "dis_side_19_sre",
+      "type": "ACTIVITY",
+      "funcId": "act19sre",
+      "endTs": 1710500399,
+      "sortId": 56,
+      "itemId": "act19side_token_reagents_rep_1",
+      "timeNodes": [
+        {
+          "title": "Event <Dorothy's Vision - Retrospection> is now open",
+          "ts": 1709658000
+        }
+      ],
+      "startTs": 1709658000
     }
   ],
   "actFunData": {
@@ -127568,7 +129149,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127594,7 +129176,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127623,7 +129206,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127649,7 +129233,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127678,7 +129263,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127704,7 +129290,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127730,7 +129317,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127759,7 +129347,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127785,7 +129374,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127811,7 +129401,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127840,7 +129431,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127866,7 +129458,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127895,7 +129488,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127921,7 +129515,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127947,7 +129542,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -127976,7 +129572,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128002,7 +129599,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128028,7 +129626,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128057,7 +129656,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128083,7 +129683,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128112,7 +129713,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128138,7 +129740,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128167,7 +129770,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128193,7 +129797,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128219,7 +129824,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128248,7 +129854,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128274,7 +129881,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128300,7 +129908,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128329,7 +129938,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128355,7 +129965,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128384,7 +129995,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128420,7 +130032,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128449,7 +130062,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128485,7 +130099,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128514,7 +130129,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128548,7 +130164,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128582,7 +130199,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128616,7 +130234,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128642,7 +130261,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128668,7 +130288,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128697,7 +130318,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128723,7 +130345,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128749,7 +130372,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128778,7 +130402,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128804,7 +130429,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128830,7 +130456,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128859,7 +130486,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128885,7 +130513,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128911,7 +130540,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128940,7 +130570,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128971,7 +130602,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -128997,7 +130629,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129026,7 +130659,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129057,7 +130691,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129083,7 +130718,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129112,7 +130748,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129143,7 +130780,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129169,7 +130807,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129198,7 +130837,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129234,7 +130874,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129260,7 +130901,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129289,7 +130931,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129325,7 +130968,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129351,7 +130995,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129380,7 +131025,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129416,7 +131062,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129442,7 +131089,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129471,7 +131119,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129507,7 +131156,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129533,7 +131183,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129562,7 +131213,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129593,7 +131245,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129619,7 +131272,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129648,7 +131302,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129679,7 +131334,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129705,7 +131361,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129734,7 +131391,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129765,7 +131423,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129791,7 +131450,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129820,7 +131480,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129851,7 +131512,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129877,7 +131539,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129906,7 +131569,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129937,7 +131601,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129963,7 +131628,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -129992,7 +131658,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130023,7 +131690,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130049,7 +131717,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130078,7 +131747,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130109,7 +131779,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130138,7 +131809,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130169,7 +131841,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130198,7 +131871,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130229,7 +131903,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130258,7 +131933,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130292,7 +131968,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130326,7 +132003,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130360,7 +132038,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130394,7 +132073,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130428,7 +132108,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130462,7 +132143,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130496,7 +132178,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130530,7 +132213,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130564,7 +132248,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130598,7 +132283,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130632,7 +132318,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130666,7 +132353,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -130700,7 +132388,8 @@
               "skillIdFilter": null,
               "tileKeyFilter": null,
               "groupTagFilter": null,
-              "filterTagFilter": null
+              "filterTagFilter": null,
+              "subProfessionExcludeFilter": null
             },
             "blackboard": [
               {
@@ -135091,6 +136780,12 @@
       "TEXT_PROGRESS_FORMAT_CANNOT_CLAIM": "<color=#BFBFB6>{0}</color><color=#888584>/{1}</color>",
       "TEXT_DETAIL_COLOR_CAN_CLAIM": "<color=#242424>{0}</color>",
       "TEXT_DETAIL_COLOR_CANNOT_CLAIM": "<color=#BFBFB6>{0}</color>"
+    },
+    "act19sre": {
+      "HIDDEN_MISSION_COMPLETE": "Encrypted record <color=#79a51c>has been decrypted</color>",
+      "HIDDEN_MISSION_UPDATE": "Record decryption progress <color=#79a51c>{0}/{1}</color>",
+      "HIDDEN_STAGE_UNLOCK": "Discovered Rhine Lab <color=#79a51c>encrypted records</color>",
+      "HIDDEN_STAGE_UPDATE": "Record data <color=#79a51c>has been updated</color>"
     },
     "act19side": {
       "HIDDEN_MISSION_COMPLETE": "Encrypted record <color=#79a51c>has been decrypted</color>",
