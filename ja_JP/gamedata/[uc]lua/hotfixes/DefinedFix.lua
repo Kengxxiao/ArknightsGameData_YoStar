@@ -2,11 +2,7 @@
 local list = 
 {
   
-  "HotFixes/ShopHotfixer",
-  "HotFixes/BattleConverterHotfixer",
-  "HotFixes/UIBattleClearStateHotfixer",
-  "HotFixes/StickerPanelHotfixer",
-  "HotFixes/TemplateShopRarityStateHotfixer"
+  "HotFixes/ShopHotfixer"
 };
 
 return list;
