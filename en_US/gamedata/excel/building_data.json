@@ -10480,6 +10480,34 @@
         }
       ]
     },
+    "char_4091_ulika": {
+      "charId": "char_4091_ulika",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&wt[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_Owned[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 30
+              }
+            }
+          ]
+        }
+      ]
+    },
     "char_4087_ines": {
       "charId": "char_4087_ines",
       "maxManpower": 8640000,
@@ -11037,6 +11065,90 @@
           ]
         }
       ]
+    },
+    "char_1034_jesca2": {
+      "charId": "char_1034_jesca2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&limit[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_bd_spd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4105_almond": {
+      "charId": "char_4105_almond",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4104_coldst": {
+      "charId": "char_4104_coldst",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost[009]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&single[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11087,6 +11199,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "When this Operator is assigned together with other <$cc.tag.mh><@cc.kw>Soubo Adventurers</></> Operators to the Control Center, all Trading Posts' order efficiency <@cc.vup>+7%</> (Only the strongest effect of this type takes place)"
+    },
+    "control_bd_spd[000]": {
+      "buffId": "control_bd_spd[000]",
+      "buffName": "Reunion of Old Friends",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_bd_spd",
+      "sortId": 1600,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>+0.5</>; for each <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator assigned to Factories, productivity <@cc.vup>+5%</>"
     },
     "control_pow_bot[000]": {
       "buffId": "control_pow_bot[000]",
@@ -11322,6 +11446,18 @@
       "buffIcon": "control",
       "skillIcon": "bskill_ctrl_cost",
       "sortId": 1109,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
+    },
+    "control_mp_cost[009]": {
+      "buffId": "control_mp_cost[009]",
+      "buffName": "Million Dollar Smile",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost",
+      "sortId": 1110,
       "buffColor": "#005752",
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
@@ -12636,6 +12772,30 @@
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> formula related productivity <@cc.vup>+35%</>"
     },
+    "manu_formula_spd&cost[000]": {
+      "buffId": "manu_formula_spd&cost[000]",
+      "buffName": "Little Whims",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold3",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+25%</>, and Morale consumed per hour <@cc.vdown>+0.25</>"
+    },
+    "manu_formula_spd&cost_bd[000]": {
+      "buffId": "manu_formula_spd&cost_bd[000]",
+      "buffName": "Big Responsibilities",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold&blacksteel",
+      "sortId": 3704,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, for each <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator in the Base (excluding Assistants, max <@cc.kw>3</>), <@cc.kw>Precious Metal</> productivity <@cc.vup>+2%</> and Morale consumed per hour <@cc.vup>-0.15</>"
+    },
     "manu_formula_spd[200]": {
       "buffId": "manu_formula_spd[200]",
       "buffName": "Originium Work α",
@@ -13295,6 +13455,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
       "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+5%</>, order limit <@cc.vup>+2</>, plus an additional order acquisition efficiency <@cc.vup>+3%</> for every <$cc.bd_felyne><@cc.rem>Felvine</></>"
+    },
+    "trade_ord_spd&wt[000]": {
+      "buffId": "trade_ord_spd&wt[000]",
+      "buffName": "Naive Negotiator",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd&wt1",
+      "sortId": 4111,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+10%</>, but all <@cc.kw>Pure Gold</> orders in that Trading Post will only trade <@cc.kw>2</> <@cc.kw>Pure Gold</> (not considered as defaulted trade)"
     },
     "trade_ord_limit&cost_P[010]": {
       "buffId": "trade_ord_limit&cost_P[010]",
@@ -15468,6 +15640,18 @@
       "roomType": "DORMITORY",
       "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
+    "dorm_rec_all&single[000]": {
+      "buffId": "dorm_rec_all&single[000]",
+      "buffName": "Wet Your Whistles",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all&single",
+      "sortId": 5440,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.8</> Morale per hour distributed evenly to Operators assigned to that Dormitory whose Morale is not full (When this skill is in effect on a single or multiple Operators, only the strongest effect of this type respectively applies)"
+    },
     "dorm_powToRecAll[000]": {
       "buffId": "dorm_powToRecAll[000]",
       "buffName": "Glimmering Glow α",
@@ -16583,6 +16767,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
+    },
+    "meet_spd_Owned[000]": {
+      "buffId": "meet_spd_Owned[000]",
+      "buffName": "Conspicuous Investigator",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spdOwned1",
+      "sortId": 6901,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are already on the Clue Board."
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -57661,6 +57857,564 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_BSsafehouse_ceilingLamp_01": {
+        "id": "furni_BSsafehouse_ceilingLamp_01",
+        "sortId": 1342,
+        "name": "Ceiling Subsistence Equipment",
+        "iconId": "furni_BSsafehouse_ceilingLamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 19,
+        "depth": 5,
+        "height": 1,
+        "comfort": 280,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "An all-in-one life support device that provides functions such as cooling, electricity, fire-fighting, and indoor lighting all at once. Laura has noted that she owes her popularity among the mercs partly to the device's high failure rate.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_floorlamp_01": {
+        "id": "furni_BSsafehouse_floorlamp_01",
+        "sortId": 1343,
+        "name": "Connected Standing Lights",
+        "iconId": "furni_BSsafehouse_floorlamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 2,
+        "depth": 2,
+        "height": 7,
+        "comfort": 160,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A standing lamp holder formed by connecting multiple components. Can be easily taken apart for transport and reassembly, although it is rarely mounted with three lamps.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_whiteboard_01": {
+        "id": "furni_BSsafehouse_whiteboard_01",
+        "sortId": 1344,
+        "name": "'Necessary Preparations'",
+        "iconId": "furni_BSsafehouse_whiteboard_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "BOARD_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 5,
+        "depth": 6,
+        "height": 9,
+        "comfort": 445,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A pinboard full of documents and data. Exclusively for Blacksteel Worldwide use, it has had a shooting target thoughtfully attached ever since the design stage. The documents rarely saw use until the target became unusable.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_01": {
+        "id": "furni_BSsafehouse_chair_01",
+        "sortId": 1345,
+        "name": "Multipurpose Folding Chair (Left)",
+        "iconId": "furni_BSsafehouse_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 3,
+        "depth": 3,
+        "height": 3,
+        "comfort": 135,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A standard folding chair in the safehouse, made with reinforced steel and special fabric. It has many functions besides seating. It is primarily used to open beer bottles or help Laura fix the ceiling lights.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_03": {
+        "id": "furni_BSsafehouse_chair_03",
+        "sortId": 1346,
+        "name": "Multipurpose Folding Chair (Right)",
+        "iconId": "furni_BSsafehouse_chair_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 3,
+        "depth": 3,
+        "height": 3,
+        "comfort": 135,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A standard folding chair in the safehouse, made with reinforced steel and special fabric. It has many functions besides seating. It is primarily used to fend off intruders or block flying weapons.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_carpet_01": {
+        "id": "furni_BSsafehouse_carpet_01",
+        "sortId": 1347,
+        "name": "Bulletproof Rug",
+        "iconId": "furni_BSsafehouse_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 6,
+        "depth": 3,
+        "height": 1,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "After repeated upgrades, this old anti-slip rug is bulletproof and can also warm and massage its users' feet. Everyone is satisfied after Laura added all the features they requested, although she herself remains perplexed.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_cabinet_01": {
+        "id": "furni_BSsafehouse_cabinet_01",
+        "sortId": 1348,
+        "name": "'Office Supplies'",
+        "iconId": "furni_BSsafehouse_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 9,
+        "depth": 2,
+        "height": 10,
+        "comfort": 380,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Stored inside the cabinet are Blacksteel Worldwide's standard issue equipment and weapons. To mercenaries, these are the tools of their trade. When necessary, they can also aid those who brave the flames in their quest for self-realization.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_table_01": {
+        "id": "furni_BSsafehouse_table_01",
+        "sortId": 1349,
+        "name": "'Time of Peace'",
+        "iconId": "furni_BSsafehouse_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 320,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A standard work desk assembled from steel parts. The mercenaries' equipment is set neatly upon it. In the past, everyone would gather and drink soda pop around the table after missions. The documents always got stuck to the table.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_pipeline_01": {
+        "id": "furni_BSsafehouse_pipeline_01",
+        "sortId": 1350,
+        "name": "Pipe Mobile Lighting",
+        "iconId": "furni_BSsafehouse_pipeline_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 5,
+        "depth": 1,
+        "height": 10,
+        "comfort": 205,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A light Laura put together using parts left over. The lightbulbs can be freely removed and reinserted. Franka once plugged a smoke generator into it. Liskarm, kept in the dark, still feels guilty about not properly storing her smoke grenades.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_wardrobe_01": {
+        "id": "furni_BSsafehouse_wardrobe_01",
+        "sortId": 1351,
+        "name": "'Private Space'",
+        "iconId": "furni_BSsafehouse_wardrobe_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 3,
+        "depth": 6,
+        "height": 10,
+        "comfort": 345,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "An open standing shelf made from stainless steel. Can maintain structural integrity even through high heat and explosions, though it provides no protection to its contents. Jessica used to hide inside and quietly contemplated to herself.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_pottedplant_01": {
+        "id": "furni_BSsafehouse_pottedplant_01",
+        "sortId": 1352,
+        "name": "'Settle In'",
+        "iconId": "furni_BSsafehouse_pottedplant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 125,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A canister filled with soil and a carefully growing plant, which was entrusted with the hope that it would vigorously grow and thrive. Today, its roots have already reached its edges. It realized that it does not belong in this place.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_carpet_02": {
+        "id": "furni_BSsafehouse_carpet_02",
+        "sortId": 1353,
+        "name": "'Advance Patchwork'",
+        "iconId": "furni_BSsafehouse_carpet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 7,
+        "depth": 5,
+        "height": 1,
+        "comfort": 245,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Flooring made of multiple layers of special steel plates. Laura insisted on installing it inside. It was only when a heavy weapon misfired and its bullet landed on the ground that everyone realized its significance.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_02": {
+        "id": "furni_BSsafehouse_chair_02",
+        "sortId": 1354,
+        "name": "Reinforced Work Chair",
+        "iconId": "furni_BSsafehouse_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 100,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A work chair made from special materials. Satisfies all of the mercenaries' testing requirements after their weapon modifications. Its only downside is that it accumulates heat easily. 'Who was it? Who used a thermite blade on the chair?'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_workbench_01": {
+        "id": "furni_BSsafehouse_workbench_01",
+        "sortId": 1355,
+        "name": "Assembly Workbench",
+        "iconId": "furni_BSsafehouse_workbench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 4,
+        "depth": 5,
+        "height": 7,
+        "comfort": 290,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The safehouse's standard assembly workbench. Good for the assembly and modification needs of most portable equipment. Once, Liskarm activated a flash shield while in testing. She quickly cleaned up the place as though nothing ever happened.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_ceilingLamp_02": {
+        "id": "furni_BSsafehouse_ceilingLamp_02",
+        "sortId": 1356,
+        "name": "Explosion-proof Fluorescent Lamp",
+        "iconId": "furni_BSsafehouse_ceilingLamp_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 1,
+        "depth": 5,
+        "height": 2,
+        "comfort": 60,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A fluorescent lamp crafted with special workmanship. Can maintain lighting even in the most extreme circumstances. As part of the safehouse's standard lighting equipment, its ability to withstand bullet damage is its most basic feature.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_column_01": {
+        "id": "furni_BSsafehouse_column_01",
+        "sortId": 1357,
+        "name": "Shock-proof Pillar",
+        "iconId": "furni_BSsafehouse_column_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 2,
+        "depth": 1,
+        "height": 10,
+        "comfort": 150,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A thick, sturdy pillar with excellent vibration-resistant capabilities. It is capable of keeping this small home standing even through the tremendous shaking of a nomadic plate being towed.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_wallpaper_01": {
+        "id": "furni_BSsafehouse_wallpaper_01",
+        "sortId": 1358,
+        "name": "Standard Protective Interior Wall",
+        "iconId": "furni_BSsafehouse_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The safehouse's standard interior wall. Its thickness has been increased in accordance with the third revision of the fortification requirements. Sometimes, Liskarm comes back and gazes into the distance through the glass pane on the wall.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_floor_01": {
+        "id": "furni_BSsafehouse_floor_01",
+        "sortId": 1359,
+        "name": "Standard Fire-resistant Flooring",
+        "iconId": "furni_BSsafehouse_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The safehouse's standard flooring. It has been painted with heat-resistant paint to satisfy the third revision of the fortification requirements. Neither fallen bullet casings nor tears can leave any mark on this floor.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -60234,6 +60988,68 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_act42d0_window_01": {
+        "id": "furni_act42d0_window_01",
+        "sortId": 10214,
+        "name": "Poplar on the Sands Windowsill",
+        "iconId": "furni_act42d0_window_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ORTHER_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 3,
+        "themeId": "",
+        "groupId": "",
+        "width": 5,
+        "depth": 2,
+        "height": 7,
+        "comfort": 120,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Carried by the endless winds, the sand sweeps through the desert until the dunes are covered with poplars. Life is full of shades of gentle greens and golds.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_act42d0_books_01": {
+        "id": "furni_act42d0_books_01",
+        "sortId": 10215,
+        "name": "Stone Beach Pop-Up Book Pile",
+        "iconId": "furni_act42d0_books_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 3,
+        "themeId": "",
+        "groupId": "",
+        "width": 5,
+        "depth": 4,
+        "height": 2,
+        "comfort": 120,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The flowers atop the tall mountains try their hardest to release their fragrance and attract bees and butterflies to spread their pollen. As you open the book, the words and knowledge within emerge from its pages and await your eyes.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_dropS001_theLittleMermaid_01": {
         "id": "furni_dropS001_theLittleMermaid_01",
         "sortId": 11001,
@@ -62550,6 +63366,37 @@
         "comfort": 75,
         "usage": "Used in the dorm to improve the ambience.",
         "description": "'Careful. This pen can take your life without making any noise whatsoever.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terratimes_BSW_01": {
+        "id": "furni_terratimes_BSW_01",
+        "sortId": 11077,
+        "name": "Plaque - Ambitions",
+        "iconId": "furni_terratimes_BSW_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Hold that bullet tight in your hand.",
         "obtainApproach": "Event Reward",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -76455,6 +77302,149 @@
           "furni_coastCottage_wallpaper_01",
           "furni_coastCottage_floor_01"
         ]
+      },
+      "furni_set_BSsafehouse": {
+        "id": "furni_set_BSsafehouse",
+        "sortId": 79,
+        "name": "BSW Safehouse",
+        "themeType": "EVENT",
+        "desc": "A standard safehouse from Blacksteel Worldwide. Its crew may have changed, but everything else remains the same, so there won't be too much of a surprise when she comes in here.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_BSsafehouse_ceilingLamp_01",
+            "pos0": 4,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_floorlamp_01",
+            "pos0": 0,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_whiteboard_01",
+            "pos0": 2,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_01",
+            "pos0": 8,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_03",
+            "pos0": 20,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_carpet_01",
+            "pos0": 7,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_cabinet_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_table_01",
+            "pos0": 11,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_pipeline_01",
+            "pos0": 19,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_wardrobe_01",
+            "pos0": 24,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_pottedplant_01",
+            "pos0": 24,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_carpet_02",
+            "pos0": 27,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_02",
+            "pos0": 27,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_workbench_01",
+            "pos0": 29,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_ceilingLamp_02",
+            "pos0": 31,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_column_01",
+            "pos0": 32,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_BSsafehouse_1",
+          "furni_set_BSsafehouse_2",
+          "furni_set_BSsafehouse_3",
+          "furni_set_BSsafehouse_4"
+        ],
+        "furnitures": [
+          "furni_BSsafehouse_ceilingLamp_01",
+          "furni_BSsafehouse_floorlamp_01",
+          "furni_BSsafehouse_whiteboard_01",
+          "furni_BSsafehouse_chair_01",
+          "furni_BSsafehouse_chair_03",
+          "furni_BSsafehouse_carpet_01",
+          "furni_BSsafehouse_cabinet_01",
+          "furni_BSsafehouse_table_01",
+          "furni_BSsafehouse_pipeline_01",
+          "furni_BSsafehouse_wardrobe_01",
+          "furni_BSsafehouse_pottedplant_01",
+          "furni_BSsafehouse_carpet_02",
+          "furni_BSsafehouse_chair_02",
+          "furni_BSsafehouse_workbench_01",
+          "furni_BSsafehouse_ceilingLamp_02",
+          "furni_BSsafehouse_column_01",
+          "furni_BSsafehouse_wallpaper_01",
+          "furni_BSsafehouse_floor_01"
+        ]
       }
     },
     "groups": {
@@ -80900,6 +81890,64 @@
           "furni_coastCottage_outsidetable_01",
           "furni_coastCottage_armchair_01",
           "furni_coastCottage_surfboard_01"
+        ]
+      },
+      "furni_set_BSsafehouse_1": {
+        "id": "furni_set_BSsafehouse_1",
+        "sortId": 1,
+        "name": "Operational Memory",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 285,
+        "count": 4,
+        "furniture": [
+          "furni_BSsafehouse_floorlamp_01",
+          "furni_BSsafehouse_whiteboard_01",
+          "furni_BSsafehouse_carpet_01",
+          "furni_BSsafehouse_cabinet_01"
+        ]
+      },
+      "furni_set_BSsafehouse_2": {
+        "id": "furni_set_BSsafehouse_2",
+        "sortId": 2,
+        "name": "Mercenary Life",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 235,
+        "count": 4,
+        "furniture": [
+          "furni_BSsafehouse_ceilingLamp_01",
+          "furni_BSsafehouse_pipeline_01",
+          "furni_BSsafehouse_wardrobe_01",
+          "furni_BSsafehouse_pottedplant_01"
+        ]
+      },
+      "furni_set_BSsafehouse_3": {
+        "id": "furni_set_BSsafehouse_3",
+        "sortId": 3,
+        "name": "Safehouse Decor",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 230,
+        "count": 5,
+        "furniture": [
+          "furni_BSsafehouse_chair_01",
+          "furni_BSsafehouse_chair_03",
+          "furni_BSsafehouse_table_01",
+          "furni_BSsafehouse_wallpaper_01",
+          "furni_BSsafehouse_floor_01"
+        ]
+      },
+      "furni_set_BSsafehouse_4": {
+        "id": "furni_set_BSsafehouse_4",
+        "sortId": 4,
+        "name": "Standard Issue",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 195,
+        "count": 5,
+        "furniture": [
+          "furni_BSsafehouse_carpet_02",
+          "furni_BSsafehouse_chair_02",
+          "furni_BSsafehouse_workbench_01",
+          "furni_BSsafehouse_ceilingLamp_02",
+          "furni_BSsafehouse_column_01"
         ]
       }
     },
