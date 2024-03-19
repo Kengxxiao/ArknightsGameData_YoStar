@@ -10480,6 +10480,34 @@
         }
       ]
     },
+    "char_4091_ulika": {
+      "charId": "char_4091_ulika",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&wt[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_Owned[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 30
+              }
+            }
+          ]
+        }
+      ]
+    },
     "char_4087_ines": {
       "charId": "char_4087_ines",
       "maxManpower": 8640000,
@@ -11037,6 +11065,90 @@
           ]
         }
       ]
+    },
+    "char_1034_jesca2": {
+      "charId": "char_1034_jesca2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&limit[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_bd_spd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4105_almond": {
+      "charId": "char_4105_almond",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4104_coldst": {
+      "charId": "char_4104_coldst",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost[009]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&single[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11087,6 +11199,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "<$cc.tag.mh><@cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+    },
+    "control_bd_spd[000]": {
+      "buffId": "control_bd_spd[000]",
+      "buffName": "旧友との再会",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_bd_spd",
+      "sortId": 1600,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、自身の1時間ごとの体力消費量<@cc.vdown>+0.5</>、製造所に配置された<$cc.g.bs><@cc.kw>BSW</></>オペレーター1人につき、製造効率<@cc.vup>+5%</>"
     },
     "control_pow_bot[000]": {
       "buffId": "control_pow_bot[000]",
@@ -11322,6 +11446,18 @@
       "buffIcon": "control",
       "skillIcon": "bskill_ctrl_cost",
       "sortId": 1109,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<@cc.vup>+0.05</>回復"
+    },
+    "control_mp_cost[009]": {
+      "buffId": "control_mp_cost[009]",
+      "buffName": "癒しの微笑み",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost",
+      "sortId": 1110,
       "buffColor": "#005752",
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
@@ -12636,6 +12772,30 @@
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、<@cc.kw>金属</>製造の製造効率<@cc.vup>+35%</>"
     },
+    "manu_formula_spd&cost[000]": {
+      "buffId": "manu_formula_spd&cost[000]",
+      "buffName": "小さな発想",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold3",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、<@cc.kw>金属</>製造の製造効率<@cc.vup>+25%</>、1時間ごとの体力消費量<@cc.vdown>+0.25</>"
+    },
+    "manu_formula_spd&cost_bd[000]": {
+      "buffId": "manu_formula_spd&cost_bd[000]",
+      "buffName": "大きな責任",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold&blacksteel",
+      "sortId": 3704,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、基地に配置された（補佐を除く）<$cc.g.bs><@cc.kw>BSW</></>オペレーター1人につき（最大<@cc.kw>3</>人まで）、<@cc.kw>金属</>製造の製造効率<@cc.vup>+2%</>、体力消費が1時間ごと<@cc.vup>-0.15</>"
+    },
     "manu_formula_spd[200]": {
       "buffId": "manu_formula_spd[200]",
       "buffName": "源石工芸α",
@@ -13295,6 +13455,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
       "description": "貿易所配置時、受注効率<@cc.vup>+5%</>、注文上限<@cc.vup>+2</>、<$cc.bd_felyne><@cc.rem>マタタビ</></>1個につき、受注効率<@cc.vup>+3%</>"
+    },
+    "trade_ord_spd&wt[000]": {
+      "buffId": "trade_ord_spd&wt[000]",
+      "buffName": "未熟な交渉人",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd&wt1",
+      "sortId": 4111,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "貿易所配置時、受注効率<@cc.vup>+10%</>。配置貿易所の<@cc.kw>金属オーダー</>の<@cc.kw>純金</>の納品数が必ず<@cc.kw>2</>になる（違約オーダーと見なされない）"
     },
     "trade_ord_limit&cost_P[010]": {
       "buffId": "trade_ord_limit&cost_P[010]",
@@ -15468,6 +15640,18 @@
       "roomType": "DORMITORY",
       "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
     },
+    "dorm_rec_all&single[000]": {
+      "buffId": "dorm_rec_all&single[000]",
+      "buffName": "甘美な一杯",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all&single",
+      "sortId": 5440,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "配置宿舎内、体力が満タンではない全員の1時間ごとの体力回復量が合計で<@cc.vup>+0.8</>になる（単体/複数オペレーターに有効となる時、同種の効果はそれぞれ高いほうのみ適応）"
+    },
     "dorm_powToRecAll[000]": {
       "buffId": "dorm_powToRecAll[000]",
       "buffName": "優しい光α",
@@ -16583,6 +16767,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "応接室配置時、ボード上未入手の手がかりを入手しやすい"
+    },
+    "meet_spd_Owned[000]": {
+      "buffId": "meet_spd_Owned[000]",
+      "buffName": "目立つ調査人",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spdOwned1",
+      "sortId": 6901,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "応接室配置時、ボード上入手済の手がかりを入手しやすい"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -57661,6 +57857,564 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_BSsafehouse_ceilingLamp_01": {
+        "id": "furni_BSsafehouse_ceilingLamp_01",
+        "sortId": 1342,
+        "name": "天井式生命維持装置",
+        "iconId": "furni_BSsafehouse_ceilingLamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 19,
+        "depth": 5,
+        "height": 1,
+        "comfort": 280,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "セーフハウスの基本的な環境を整えるために取り付けられた、換気や電力供給、消火、室内照明などの機能がひとつになった生命維持装置。\nこの設備の故障頻度の高さが、自分が傭兵たちの間で人気な理由のひとつであることを、ローラも薄々気がついているようだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_floorlamp_01": {
+        "id": "furni_BSsafehouse_floorlamp_01",
+        "sortId": 1343,
+        "name": "組み立て式ライト",
+        "iconId": "furni_BSsafehouse_floorlamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 2,
+        "depth": 2,
+        "height": 7,
+        "comfort": 160,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "組み立て式のスタンドライト。解体と組み立てがとても簡単で、持ち運びしやすい。それでも一本のスタンドにランプソケットを三つ取りつける者はなかなかいない。\nジェシカが組立てを担当したこのライトは、彼女が去った後も変わらない姿でセーフハウス内に佇んでいる。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_whiteboard_01": {
+        "id": "furni_BSsafehouse_whiteboard_01",
+        "sortId": 1344,
+        "name": "「必要な準備」",
+        "iconId": "furni_BSsafehouse_whiteboard_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "BOARD_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 5,
+        "depth": 6,
+        "height": 9,
+        "comfort": 445,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "資料が満遍なく貼られた作業ボード。BSWの特注品であり、図面の段階ですでに親切にも射撃の的がデザインされていた。\n紙の資料など普段はなんの役にも立たないが、射撃的が使えなくなった瞬間からその重要性は爆発的に上がる。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_01": {
+        "id": "furni_BSsafehouse_chair_01",
+        "sortId": 1345,
+        "name": "多機能折り畳み椅子A",
+        "iconId": "furni_BSsafehouse_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 3,
+        "depth": 3,
+        "height": 3,
+        "comfort": 135,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "セーフハウスに標準配備されている折りたたみの椅子。強化スチールと特殊な布地から作られ、椅子としての機能以外にも様々な用途がある。\nこちらは穏やかな性格をしているため、右側の仲間とは役割が少し異なるようだ。主にビール瓶の蓋を開けるのと、ローラの天井修理のサポートに使われている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_03": {
+        "id": "furni_BSsafehouse_chair_03",
+        "sortId": 1346,
+        "name": "多機能折り畳み椅子B",
+        "iconId": "furni_BSsafehouse_chair_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 3,
+        "depth": 3,
+        "height": 3,
+        "comfort": 135,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "セーフハウスに標準配備されている折りたたみの椅子。強化スチールと特殊な布地から作られ、椅子としての機能以外にも様々な用途がある。\nこちらは強気な性格をしているため、左側の仲間とは役割が少し異なるようだ。主に不法侵入者を殴るのと、飛び道具を防ぐのに使われている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_carpet_01": {
+        "id": "furni_BSsafehouse_carpet_01",
+        "sortId": 1347,
+        "name": "防弾マット",
+        "iconId": "furni_BSsafehouse_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 6,
+        "depth": 3,
+        "height": 1,
+        "comfort": 200,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "転倒防止マットにいよいよ防弾機能も追加された。これまで繰り返し行われてきた改良で発熱や足底マッサージ機能等は既に完備されている。\n自分たちの要望を聞き入れてくれたローラにみんな感謝しているが、彼女自身は納得していないようだ。そこに関してはどうか気にしないでもらいたい。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_cabinet_01": {
+        "id": "furni_BSsafehouse_cabinet_01",
+        "sortId": 1348,
+        "name": "「仕事道具」",
+        "iconId": "furni_BSsafehouse_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 9,
+        "depth": 2,
+        "height": 10,
+        "comfort": 380,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "キャビネット内には、傭兵たちの必需品ともいえるBSWの標準装備と武器が収納されている。\nいざという時、この武器たちは、信念を貫くために険しい道のりを歩む者の心強い味方になってくれるだろう。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_table_01": {
+        "id": "furni_BSsafehouse_table_01",
+        "sortId": 1349,
+        "name": "「くつろぎタイム」",
+        "iconId": "furni_BSsafehouse_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 320,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "スチール製の部品を組み合わせて作られた標準的な作業デスク。傭兵たちの装備がきれいに並べられている。\nかつては任務終わりにここに集まってサイダーを飲んでいたので、机がベタベタして資料などが張り付いてしまい、整理整頓とは程遠い状態だった。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_pipeline_01": {
+        "id": "furni_BSsafehouse_pipeline_01",
+        "sortId": 1350,
+        "name": "可動式パイプライト",
+        "iconId": "furni_BSsafehouse_pipeline_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 5,
+        "depth": 1,
+        "height": 10,
+        "comfort": 205,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ローラがセーフハウスの余った建築材料で作ったライト。電球は取り外し可能で、好きな場所に配置できる。\nフランカが思い付きでローラの発煙器を取り付けたことがあるが、それを知らないリスカムは今でも発煙弾をきちんと仕舞っていればと自分を責めている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_wardrobe_01": {
+        "id": "furni_BSsafehouse_wardrobe_01",
+        "sortId": 1351,
+        "name": "「プライベート空間」",
+        "iconId": "furni_BSsafehouse_wardrobe_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 3,
+        "depth": 6,
+        "height": 10,
+        "comfort": 345,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "精錬した一枚の鋼鉄板で作られたオープンクローゼット。高温や爆発にも耐えることができるが、中身を保護することはできない。\n昔のジェシカはよくクローゼットの服の間に隠れては、膝をぎゅっと抱え込み考え込んでいた。彼女の服は今も中にしまわれている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_pottedplant_01": {
+        "id": "furni_BSsafehouse_pottedplant_01",
+        "sortId": 1352,
+        "name": "「定められた場所」",
+        "iconId": "furni_BSsafehouse_pottedplant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 125,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "土が入ったガソリン缶の中で、植物がそっと葉を伸ばしている。この植物は植え付けられたその日から、立派に育つようにと期待を寄せられていた。\nしかし根が壁に触れるまで伸び広がった今、植物はようやくここが自分のいるべき場所ではないと気付いてしまった。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_carpet_02": {
+        "id": "furni_BSsafehouse_carpet_02",
+        "sortId": 1353,
+        "name": "「事前の備え」",
+        "iconId": "furni_BSsafehouse_carpet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 7,
+        "depth": 5,
+        "height": 1,
+        "comfort": 245,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "特殊な鋼の板を何枚も重ねた床。ローラがどうしても室内に設置すると譲らなかったものだ。初めて見た人は板の下には大きな穴があると思いがちだが、そんなものはない。\nある日、大型銃器の誤射により銃弾が床に直撃した瞬間、皆はその板の存在意義に気付かされた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_02": {
+        "id": "furni_BSsafehouse_chair_02",
+        "sortId": 1354,
+        "name": "強化作業椅子",
+        "iconId": "furni_BSsafehouse_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 100,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "特殊な素材で作られた作業用の椅子。傭兵たちが改造を終えた武器の試用の際に使う。唯一の欠点は、熱伝導が高いこと。\n「さっき椅子にテルミットレイピアを当てたやつがいるだろ！？」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_workbench_01": {
+        "id": "furni_BSsafehouse_workbench_01",
+        "sortId": 1355,
+        "name": "組み立て作業台",
+        "iconId": "furni_BSsafehouse_workbench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 4,
+        "depth": 5,
+        "height": 7,
+        "comfort": 290,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "セーフハウスに標準配備されている作業台。ほとんどの装備の組み立てや改造はここで行うことができる。\nリスカムが誤って改造中の盾を起動させてしまったことがあるが、素早く現場を片付け、何事もなかったかのように取り繕った。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_ceilingLamp_02": {
+        "id": "furni_BSsafehouse_ceilingLamp_02",
+        "sortId": 1356,
+        "name": "防爆蛍光灯",
+        "iconId": "furni_BSsafehouse_ceilingLamp_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 1,
+        "depth": 5,
+        "height": 2,
+        "comfort": 60,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "特殊な工程を経て作られた蛍光灯。過酷な環境下でも明かりを提供してくれる。\nセーフハウスの標準配備として、流れ弾による損傷を防ぐ防弾機能はそれにとって満たすべき基準の中で最も基本的なものに過ぎない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_column_01": {
+        "id": "furni_BSsafehouse_column_01",
+        "sortId": 1357,
+        "name": "耐震柱",
+        "iconId": "furni_BSsafehouse_column_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 2,
+        "depth": 1,
+        "height": 10,
+        "comfort": 150,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "耐久性と優れた耐震性を持つ、とても頑丈な柱。\n移動区画の牽引中に強い揺れが発生しても、この柱は建物が崩れないよう守ってくれるだろう。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_wallpaper_01": {
+        "id": "furni_BSsafehouse_wallpaper_01",
+        "sortId": 1358,
+        "name": "標準仕様の防壁",
+        "iconId": "furni_BSsafehouse_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "セーフハウスに標準配備されている壁。防御基準第3版に則ったうえ、壁をさらに厚くしたことで優れた防御性能を実現した。\nリスカムは時折ここに戻ってきては、ガラス越しに見える夕陽をずっと眺めていることがある。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_floor_01": {
+        "id": "furni_BSsafehouse_floor_01",
+        "sortId": 1359,
+        "name": "標準仕様の防火床",
+        "iconId": "furni_BSsafehouse_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "セーフハウスに標準配備されている床。防御基準第3版に則ったうえ、耐熱塗料を使用したことで優れた耐熱性を実現した。\n思い出に浸り、気が緩んでも心配することはない。弾丸の殻が床に落ちても跡を残すことはないし、涙とて同じことだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -60234,6 +60988,68 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_act42d0_window_01": {
+        "id": "furni_act42d0_window_01",
+        "sortId": 10214,
+        "name": "胡楊の窓",
+        "iconId": "furni_act42d0_window_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ORTHER_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 3,
+        "themeId": "",
+        "groupId": "",
+        "width": 5,
+        "depth": 2,
+        "height": 7,
+        "comfort": 120,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "胡楊が一面を覆いつくすまで、風は砂を巻き上げ続ける｡命はもえぎの色であり、黄金の色でもあるのだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_act42d0_books_01": {
+        "id": "furni_act42d0_books_01",
+        "sortId": 10215,
+        "name": "飛び出す石の本",
+        "iconId": "furni_act42d0_books_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 3,
+        "themeId": "",
+        "groupId": "",
+        "width": 5,
+        "depth": 4,
+        "height": 2,
+        "comfort": 120,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "山の頂に咲く花は、蝶や蜂を呼び寄せるために懸命に香りを放つ。本は知識を文章にして綴り、そのページを開いて、あなたを待っている。\n",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_dropS001_theLittleMermaid_01": {
         "id": "furni_dropS001_theLittleMermaid_01",
         "sortId": 11001,
@@ -62550,6 +63366,37 @@
         "comfort": 75,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "「気を付けて。このペン一つで、あなたの命を音もなく奪い去ってしまえるから」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terratimes_BSW_01": {
+        "id": "furni_terratimes_BSW_01",
+        "sortId": 11077,
+        "name": "パネル「野心」",
+        "iconId": "furni_terratimes_BSW_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "銃弾を手のひらに握りしめて。",
         "obtainApproach": "イベント報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -76517,6 +77364,149 @@
           "furni_coastCottage_wallpaper_01",
           "furni_coastCottage_floor_01"
         ]
+      },
+      "furni_set_BSsafehouse": {
+        "id": "furni_set_BSsafehouse",
+        "sortId": 79,
+        "name": "BSWセーフハウス",
+        "themeType": "EVENT",
+        "desc": "規定の資機材を一式配備したBSWのセーフハウス。人員の変動はあるが、ここの全ては当時のまま。いつか彼女がまた立ち寄っても、さほど戸惑いを感じないだろう。",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_BSsafehouse_ceilingLamp_01",
+            "pos0": 4,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_floorlamp_01",
+            "pos0": 0,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_whiteboard_01",
+            "pos0": 2,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_01",
+            "pos0": 8,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_03",
+            "pos0": 20,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_carpet_01",
+            "pos0": 7,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_cabinet_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_table_01",
+            "pos0": 11,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_pipeline_01",
+            "pos0": 19,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_wardrobe_01",
+            "pos0": 24,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_pottedplant_01",
+            "pos0": 24,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_carpet_02",
+            "pos0": 27,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_02",
+            "pos0": 27,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_workbench_01",
+            "pos0": 29,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_ceilingLamp_02",
+            "pos0": 31,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_column_01",
+            "pos0": 32,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_BSsafehouse_1",
+          "furni_set_BSsafehouse_2",
+          "furni_set_BSsafehouse_3",
+          "furni_set_BSsafehouse_4"
+        ],
+        "furnitures": [
+          "furni_BSsafehouse_ceilingLamp_01",
+          "furni_BSsafehouse_floorlamp_01",
+          "furni_BSsafehouse_whiteboard_01",
+          "furni_BSsafehouse_chair_01",
+          "furni_BSsafehouse_chair_03",
+          "furni_BSsafehouse_carpet_01",
+          "furni_BSsafehouse_cabinet_01",
+          "furni_BSsafehouse_table_01",
+          "furni_BSsafehouse_pipeline_01",
+          "furni_BSsafehouse_wardrobe_01",
+          "furni_BSsafehouse_pottedplant_01",
+          "furni_BSsafehouse_carpet_02",
+          "furni_BSsafehouse_chair_02",
+          "furni_BSsafehouse_workbench_01",
+          "furni_BSsafehouse_ceilingLamp_02",
+          "furni_BSsafehouse_column_01",
+          "furni_BSsafehouse_wallpaper_01",
+          "furni_BSsafehouse_floor_01"
+        ]
       }
     },
     "groups": {
@@ -80962,6 +81952,64 @@
           "furni_coastCottage_outsidetable_01",
           "furni_coastCottage_armchair_01",
           "furni_coastCottage_surfboard_01"
+        ]
+      },
+      "furni_set_BSsafehouse_1": {
+        "id": "furni_set_BSsafehouse_1",
+        "sortId": 1,
+        "name": "作戦の記憶",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 285,
+        "count": 4,
+        "furniture": [
+          "furni_BSsafehouse_floorlamp_01",
+          "furni_BSsafehouse_whiteboard_01",
+          "furni_BSsafehouse_carpet_01",
+          "furni_BSsafehouse_cabinet_01"
+        ]
+      },
+      "furni_set_BSsafehouse_2": {
+        "id": "furni_set_BSsafehouse_2",
+        "sortId": 2,
+        "name": "傭兵生活",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 235,
+        "count": 4,
+        "furniture": [
+          "furni_BSsafehouse_ceilingLamp_01",
+          "furni_BSsafehouse_pipeline_01",
+          "furni_BSsafehouse_wardrobe_01",
+          "furni_BSsafehouse_pottedplant_01"
+        ]
+      },
+      "furni_set_BSsafehouse_3": {
+        "id": "furni_set_BSsafehouse_3",
+        "sortId": 3,
+        "name": "セーフハウスの内装",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 230,
+        "count": 5,
+        "furniture": [
+          "furni_BSsafehouse_chair_01",
+          "furni_BSsafehouse_chair_03",
+          "furni_BSsafehouse_table_01",
+          "furni_BSsafehouse_wallpaper_01",
+          "furni_BSsafehouse_floor_01"
+        ]
+      },
+      "furni_set_BSsafehouse_4": {
+        "id": "furni_set_BSsafehouse_4",
+        "sortId": 4,
+        "name": "標準設備",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 195,
+        "count": 5,
+        "furniture": [
+          "furni_BSsafehouse_carpet_02",
+          "furni_BSsafehouse_chair_02",
+          "furni_BSsafehouse_workbench_01",
+          "furni_BSsafehouse_ceilingLamp_02",
+          "furni_BSsafehouse_column_01"
         ]
       }
     },
