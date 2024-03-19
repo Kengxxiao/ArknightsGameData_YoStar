@@ -10480,6 +10480,34 @@
         }
       ]
     },
+    "char_4091_ulika": {
+      "charId": "char_4091_ulika",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&wt[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_Owned[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 30
+              }
+            }
+          ]
+        }
+      ]
+    },
     "char_4087_ines": {
       "charId": "char_4087_ines",
       "maxManpower": 8640000,
@@ -11037,6 +11065,90 @@
           ]
         }
       ]
+    },
+    "char_1034_jesca2": {
+      "charId": "char_1034_jesca2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&limit[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_bd_spd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4105_almond": {
+      "charId": "char_4105_almond",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4104_coldst": {
+      "charId": "char_4104_coldst",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost[009]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&single[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11087,6 +11199,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "<$cc.tag.mh><@cc.kw>아이루와 유쾌한 친구들</></> 오퍼레이터와 함께 제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <@cc.vup>+7%</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "control_bd_spd[000]": {
+      "buffId": "control_bd_spd[000]",
+      "buffName": "옛 친구 모임",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_bd_spd",
+      "sortId": 1600,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 자신의 시간당 컨디션 소모 <@cc.vdown>+0.5</>, 제조소에 배치한 <$cc.g.bs><@cc.kw>블랙스틸 월드와이드</></> 오퍼레이터 1명당 생산력 <@cc.vup>+5%</>"
     },
     "control_pow_bot[000]": {
       "buffId": "control_pow_bot[000]",
@@ -11322,6 +11446,18 @@
       "buffIcon": "control",
       "skillIcon": "bskill_ctrl_cost",
       "sortId": 1109,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>"
+    },
+    "control_mp_cost[009]": {
+      "buffId": "control_mp_cost[009]",
+      "buffName": "봄날 같은 웃음",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost",
+      "sortId": 1110,
       "buffColor": "#005752",
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
@@ -12636,6 +12772,30 @@
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, <@cc.kw>귀금속</>류에 대한 생산력 <@cc.vup>+35%</>"
     },
+    "manu_formula_spd&cost[000]": {
+      "buffId": "manu_formula_spd&cost[000]",
+      "buffName": "기발한 생각",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold3",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, <@cc.kw>귀금속</>류에 대한 생산력<@cc.vup>+25%</>, 시간당 컨디션 소모 <@cc.vdown>+0.25</>"
+    },
+    "manu_formula_spd&cost_bd[000]": {
+      "buffId": "manu_formula_spd&cost_bd[000]",
+      "buffName": "중요한 역할",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold&blacksteel",
+      "sortId": 3704,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <$cc.g.bs><@cc.kw>블랙스틸 월드와이드</></> 오퍼레이터(최대 <@cc.kw>3</>명) 1명당 <@cc.kw>귀금속</>류의 생산력 <@cc.vup>+2%</>, 시간당 컨디션 소모 <@cc.vup>-0.15</>"
+    },
     "manu_formula_spd[200]": {
       "buffId": "manu_formula_spd[200]",
       "buffName": "오리지늄공예 α",
@@ -13295,6 +13455,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
       "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+5%</>, 오더 상한 <@cc.vup>+2</>, <$cc.bd_felyne><@cc.rem>아이룰루</></>가 1개 늘어날 때마다 오더 수주 효율 <@cc.vup>+3%</>"
+    },
+    "trade_ord_spd&wt[000]": {
+      "buffId": "trade_ord_spd&wt[000]",
+      "buffName": "순진한 협상가",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd&wt1",
+      "sortId": 4111,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+10%</>, 해당 무역소가 수주한 <@cc.kw>순금 오더</>가 <@cc.kw>순금</> <@cc.kw>2</> 확정 납품 (위약 오더로 간주하지 않음)"
     },
     "trade_ord_limit&cost_P[010]": {
       "buffId": "trade_ord_limit&cost_P[010]",
@@ -15468,6 +15640,18 @@
       "roomType": "DORMITORY",
       "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용) "
     },
+    "dorm_rec_all&single[000]": {
+      "buffId": "dorm_rec_all&single[000]",
+      "buffName": "소작의 즐거움",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all&single",
+      "sortId": 5440,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "숙소에 배치 시, 해당 숙소 내 컨디션이 가득 차지 않은 오퍼레이터가 시간당 컨디션 회복 <@cc.vup>+0.8</> 버프 획득 (한 명 또는 여러 명에게 적용 시, 동종 효과 중 각기 가장 높은 수치만 적용)"
+    },
     "dorm_powToRecAll[000]": {
       "buffId": "dorm_powToRecAll[000]",
       "buffName": "부드러운 불빛 α",
@@ -16583,6 +16767,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "응접실에 배치 시, 단서 보드 중 미보유 단서를 더 쉽게 획득"
+    },
+    "meet_spd_Owned[000]": {
+      "buffId": "meet_spd_Owned[000]",
+      "buffName": "눈에 띄는 조사가",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spdOwned1",
+      "sortId": 6901,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "응접실에 배치 시, 단서 보드 중 보유 중인 단서를 더 쉽게 획득"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -57661,6 +57857,564 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_BSsafehouse_ceilingLamp_01": {
+        "id": "furni_BSsafehouse_ceilingLamp_01",
+        "sortId": 1342,
+        "name": "천장형 생명 유지 장치",
+        "iconId": "furni_BSsafehouse_ceilingLamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 19,
+        "depth": 5,
+        "height": 1,
+        "comfort": 280,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "안전가옥의 기본적인 주거 기능을 제공하기 위한 설비. 환풍, 전력 공급, 소방, 실내조명 등의 기능을 통합한 일체형 유지 관리 설비이다.\n로라는 자신이 용병들 사이에서 인기 높은 이유가 이 설비의 높은 고장률에 있다는 사실을 어렴풋이 알아차렸다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_floorlamp_01": {
+        "id": "furni_BSsafehouse_floorlamp_01",
+        "sortId": 1343,
+        "name": "연결식 스탠드 조명",
+        "iconId": "furni_BSsafehouse_floorlamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 2,
+        "depth": 2,
+        "height": 7,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "여러 부품을 조립하여 만든 입식 스탠드. 분리할 수 있어서 운송 후 쉽게 재조립이 가능하지만, 한 번에 세 개의 등을 다는 사람은 극히 드물다.\n안전가옥을 세팅할 때 스탠드를 조립했던 제시카가 떠난 뒤에도, 계속 원래의 모습을 유지하고 있다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_whiteboard_01": {
+        "id": "furni_BSsafehouse_whiteboard_01",
+        "sortId": 1344,
+        "name": "'필요한 준비'",
+        "iconId": "furni_BSsafehouse_whiteboard_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "BOARD_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 5,
+        "depth": 6,
+        "height": 9,
+        "comfort": 445,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "문서와 자료로 가득 찬 작업 보드. 블랙스틸 월드와이드용으로 디자인 초기에 사격 표적지가 추가됐다.\n붙어 있던 문서와 자료는 평소엔 딱히 별 쓸모가 없었지만, 표적지를 더 이상 사용할 수 없게 된 시점부터 그 중요성이 빠르게 상승했다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_01": {
+        "id": "furni_BSsafehouse_chair_01",
+        "sortId": 1345,
+        "name": "다용도 접이식 의자 (좌)",
+        "iconId": "furni_BSsafehouse_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 3,
+        "depth": 3,
+        "height": 3,
+        "comfort": 135,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "안전가옥에 설치된 표준 접이식 의자. 강화 소재와 특수 섬유로 제작된 덕에 앉는 것 외에도 다양한 용도로 사용된다.\n약간 부드러운 성격으로, 오른쪽 파트너와는 다르게 주로 맥주병을 열거나 로라가 천장을 수리할 때의 발받침 용도로 사용된다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_03": {
+        "id": "furni_BSsafehouse_chair_03",
+        "sortId": 1346,
+        "name": "다용도 접이식 의자 (우)",
+        "iconId": "furni_BSsafehouse_chair_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 3,
+        "depth": 3,
+        "height": 3,
+        "comfort": 135,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "안전가옥에 설치된 표준 접이식 의자. 강화 소재와 특수 섬유로 제작된 덕에 앉는 것 외에도 다양한 용도로 사용된다.\n약간 강경한 성격으로, 외쪽 파트너와는 다르게 주로 불법 침입자에 대한 타격 및 비행형 무기를 저지하는 용도로 사용된다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_carpet_01": {
+        "id": "furni_BSsafehouse_carpet_01",
+        "sortId": 1347,
+        "name": "방탄 카펫",
+        "iconId": "furni_BSsafehouse_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 6,
+        "depth": 3,
+        "height": 1,
+        "comfort": 200,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "과거 미끄럼 방지 역할이었던 카펫은 여러 차례 개량한 끝에 방탄 기능이 추가됐으며, 지금은 발열 기능과 발바닥 안마 기능까지 추가되었다.\n모두 로라가 요구사항을 듣고 추가한 기능으로, 사람들은 만족했지만 막상 로라는 탐탁지 않아 했다. 뭐, 그건 별로 중요하지 않을지도.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_cabinet_01": {
+        "id": "furni_BSsafehouse_cabinet_01",
+        "sortId": 1348,
+        "name": "'사무용품'",
+        "iconId": "furni_BSsafehouse_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_1",
+        "width": 9,
+        "depth": 2,
+        "height": 10,
+        "comfort": 380,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "보관 캐비닛에는 블랙스틸 월드와이드 표준 작전 장비와 무기가 들어 있으며, 용병들은 주로 이것에 의존해 밥을 벌어 먹고산다.\n하지만 필요할 때, 특히 위험한 상황에 맞닥뜨렸을 때 이것들은 크나큰 도움을 주곤 한다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_table_01": {
+        "id": "furni_BSsafehouse_table_01",
+        "sortId": 1349,
+        "name": "'평온한 한때'",
+        "iconId": "furni_BSsafehouse_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 320,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "강철로 만들어진 표준형 작업 테이블. 용병들의 장비가 가지런히 놓여 있다.\n과거에는 임무가 끝나면 다 같이 둘러앉아 음료수를 마시곤 했다. 서류가 테이블에 흩어져 있는 탓에 어수선한 분위기를 풍긴다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_pipeline_01": {
+        "id": "furni_BSsafehouse_pipeline_01",
+        "sortId": 1350,
+        "name": "이동식 파이프 전등",
+        "iconId": "furni_BSsafehouse_pipeline_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 5,
+        "depth": 1,
+        "height": 10,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "로라가 안전가옥의 남은 부품을 이용해 만든 램프. 전구를 파이프에서 자유롭게 이동하거나 뺄 수 있다.\n프란카는 창의적인 발상으로 로라의 연기 발생기를 파이프에 꽂았고, 지금까지도 리스캄은 진실을 모른 채 연막탄을 제대로 회수하지 못한 것에 대해 죄책감을 가지고 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_wardrobe_01": {
+        "id": "furni_BSsafehouse_wardrobe_01",
+        "sortId": 1351,
+        "name": "'개인 공간'",
+        "iconId": "furni_BSsafehouse_wardrobe_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 3,
+        "depth": 6,
+        "height": 10,
+        "comfort": 345,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "일체형 성형 공법으로 만들어진 고품질 개방식 캐비닛. 고온 및 폭발에도 구조적 안정성을 유지할 수 있으나, 그 안에 들어 있는 물건은 보호할 수 없다.\n과거, 제시카는 종종 캐비닛 안에 숨어 조용히 어떤 생각을 하곤 했다. 제시카의 옷은 지금도 여전히 캐비닛 안에 걸려 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_pottedplant_01": {
+        "id": "furni_BSsafehouse_pottedplant_01",
+        "sortId": 1352,
+        "name": "'안치'",
+        "iconId": "furni_BSsafehouse_pottedplant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_2",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 125,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "빈 통에 흙이 채워지고, 녹색 식물이 천천히 자라난다. 식물은 심어진 그날, 무럭무럭 자랄 거라는 기대를 한몸에 받았다.\n현재, 무성하게 뻗은 뿌리는 통의 벽에 닿았다. 그리고 식물은 마침내 자신이 이곳에 속할 수 없다는 사실을 깨달았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_carpet_02": {
+        "id": "furni_BSsafehouse_carpet_02",
+        "sortId": 1353,
+        "name": "'사전 준비'",
+        "iconId": "furni_BSsafehouse_carpet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 7,
+        "depth": 5,
+        "height": 1,
+        "comfort": 245,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "특수한 강철판을 겹겹이 쌓아 올린 바닥. 이는 로라가 안전가옥에 설치해야 한다고 줄기차게 주장한 것으로, 때문에 처음에는 사람들 모두 밑에 커다란 구멍이 있는 줄로만 알았지만, 사실은 아무것도 없었다고 한다.\n어느 날 대형 탄환 한 발이 땅으로 떨어진 후에야 사람들은 이 바닥의 존재 의미를 깨닫게 됐다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_chair_02": {
+        "id": "furni_BSsafehouse_chair_02",
+        "sortId": 1354,
+        "name": "강화된 작업용 의자",
+        "iconId": "furni_BSsafehouse_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 100,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "특수 재료로 만든 작업용 의자. 용병들의 무기 개조 후 테스트 용도로 사용된다. 유일한 단점은 비교적 쉽게 열이 쌓인다는 것이다.\n“누구야? 대체 누가 작업용 의자에 테르밋 블레이드를 사용한 거냐고?!”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_workbench_01": {
+        "id": "furni_BSsafehouse_workbench_01",
+        "sortId": 1355,
+        "name": "조립 작업대",
+        "iconId": "furni_BSsafehouse_workbench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 4,
+        "depth": 5,
+        "height": 7,
+        "comfort": 290,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "안전가옥에 설치된 표준형 작업대. 대부분의 휴대용 설비의 조합 및 개조 요구를 충족할 수 있다.\n리스캄이 개조 테스트 중에 실수로 섬광 방패를 작동시킨 적이 있었다. 물론 리스캄은 아무 일도 일어나지 않았다는 듯이 조용히, 그리고 신속하게 현장을 정리했다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_ceilingLamp_02": {
+        "id": "furni_BSsafehouse_ceilingLamp_02",
+        "sortId": 1356,
+        "name": "방폭 형광등",
+        "iconId": "furni_BSsafehouse_ceilingLamp_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 1,
+        "depth": 5,
+        "height": 2,
+        "comfort": 60,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "특수 공법으로 제작된 형광등. 극한 상황에서도 정상적으로 조명을 유지할 수 있다.\n안전가옥의 표준 조명 장치 중 하나로, 최소한 유탄으로부터의 손상을 견딜 수 있어야 한다는 조건이 붙어 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_column_01": {
+        "id": "furni_BSsafehouse_column_01",
+        "sortId": 1357,
+        "name": "내진 기둥",
+        "iconId": "furni_BSsafehouse_column_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_4",
+        "width": 2,
+        "depth": 1,
+        "height": 10,
+        "comfort": 150,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "두껍고 견고한 하중 지지 기둥. 매우 우수한 내진 성능을 가지고 있다.\n이동도시가 움직이며 발생하는 거대한 진동에서 이 작은 집을 안전하게 지켜준다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_wallpaper_01": {
+        "id": "furni_BSsafehouse_wallpaper_01",
+        "sortId": 1358,
+        "name": "표준형 방호벽",
+        "iconId": "furni_BSsafehouse_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "안전가옥에 설치된 표준형 내벽. 세 번째 버전의 방호 니즈에 따라 벽 두께를 늘렸고, 방호 성능이 매우 우수하다.\n리스캄은 가끔씩 이곳으로 돌아와 조용히 유리벽 너머의 노을빛을 감상하곤 한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_BSsafehouse_floor_01": {
+        "id": "furni_BSsafehouse_floor_01",
+        "sortId": 1359,
+        "name": "표준형 방염 바닥",
+        "iconId": "furni_BSsafehouse_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_BSsafehouse",
+        "groupId": "furni_set_BSsafehouse_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "안전가옥에 설치된 표준형 바닥. 세 번째 버전의 방호 니즈에 따라 내열 코팅을 진행하였고, 난연성이 매우 우수하다.\n추억에 빠진 사람은 신경 쓸 필요가 없다. 바닥에 떨어진 탄피가 흔적을 남기지 않듯이, 눈물 역시 마찬가지다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -60234,6 +60988,68 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_act42d0_window_01": {
+        "id": "furni_act42d0_window_01",
+        "sortId": 10214,
+        "name": "사시나무목 모래막이 창틀",
+        "iconId": "furni_act42d0_window_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ORTHER_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 3,
+        "themeId": "",
+        "groupId": "",
+        "width": 5,
+        "depth": 2,
+        "height": 7,
+        "comfort": 120,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "끝없이 불어오는 모래바람이 사막을 덮친다. 사막에는 수없이 많은 사시나무들이 자라나 있다. 생명은 푸른 빛을 내지만, 황금빛을 내기도 한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_act42d0_books_01": {
+        "id": "furni_act42d0_books_01",
+        "sortId": 10215,
+        "name": "입체 암석 책더미",
+        "iconId": "furni_act42d0_books_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 3,
+        "themeId": "",
+        "groupId": "",
+        "width": 5,
+        "depth": 4,
+        "height": 2,
+        "comfort": 120,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "높은 산 위 한 송이 꽃은 최선을 다해 향기를 뿜어내고, 벌과 나비를 꾀어내며, 꽃가루를 퍼뜨린다. 책은 당신을 향해 펼쳐져 있으며, 지식은 문자로 나열되어 당신이 읽어주기만을 기다리고 있다.\n",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_dropS001_theLittleMermaid_01": {
         "id": "furni_dropS001_theLittleMermaid_01",
         "sortId": 11001,
@@ -62550,6 +63366,37 @@
         "comfort": 75,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "“조심해, 이 펜은 소리소문없이 네 목숨을 앗아갈 수 있어.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terratimes_BSW_01": {
+        "id": "furni_terratimes_BSW_01",
+        "sortId": 11077,
+        "name": "플레이트 《야심》",
+        "iconId": "furni_terratimes_BSW_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "총탄을 손바닥으로 잡아 쥔다.",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -76455,6 +77302,149 @@
           "furni_coastCottage_wallpaper_01",
           "furni_coastCottage_floor_01"
         ]
+      },
+      "furni_set_BSsafehouse": {
+        "id": "furni_set_BSsafehouse",
+        "sortId": 79,
+        "name": "블랙스틸 월드와이드 안전가옥",
+        "themeType": "EVENT",
+        "desc": "블랙스틸 월드와이드의 기준으로 세팅된 안전가옥. 인원 변동에도 불구하고 모든 것이 그때의 모습 그대로라, 그녀가 문을 열고 들어와도 크게 놀라지 않을 것이다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_BSsafehouse_ceilingLamp_01",
+            "pos0": 4,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_floorlamp_01",
+            "pos0": 0,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_whiteboard_01",
+            "pos0": 2,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_01",
+            "pos0": 8,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_03",
+            "pos0": 20,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_carpet_01",
+            "pos0": 7,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_cabinet_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_table_01",
+            "pos0": 11,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_pipeline_01",
+            "pos0": 19,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_wardrobe_01",
+            "pos0": 24,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_pottedplant_01",
+            "pos0": 24,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_carpet_02",
+            "pos0": 27,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_chair_02",
+            "pos0": 27,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_workbench_01",
+            "pos0": 29,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_ceilingLamp_02",
+            "pos0": 31,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_column_01",
+            "pos0": 32,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_BSsafehouse_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_BSsafehouse_1",
+          "furni_set_BSsafehouse_2",
+          "furni_set_BSsafehouse_3",
+          "furni_set_BSsafehouse_4"
+        ],
+        "furnitures": [
+          "furni_BSsafehouse_ceilingLamp_01",
+          "furni_BSsafehouse_floorlamp_01",
+          "furni_BSsafehouse_whiteboard_01",
+          "furni_BSsafehouse_chair_01",
+          "furni_BSsafehouse_chair_03",
+          "furni_BSsafehouse_carpet_01",
+          "furni_BSsafehouse_cabinet_01",
+          "furni_BSsafehouse_table_01",
+          "furni_BSsafehouse_pipeline_01",
+          "furni_BSsafehouse_wardrobe_01",
+          "furni_BSsafehouse_pottedplant_01",
+          "furni_BSsafehouse_carpet_02",
+          "furni_BSsafehouse_chair_02",
+          "furni_BSsafehouse_workbench_01",
+          "furni_BSsafehouse_ceilingLamp_02",
+          "furni_BSsafehouse_column_01",
+          "furni_BSsafehouse_wallpaper_01",
+          "furni_BSsafehouse_floor_01"
+        ]
       }
     },
     "groups": {
@@ -80900,6 +81890,64 @@
           "furni_coastCottage_outsidetable_01",
           "furni_coastCottage_armchair_01",
           "furni_coastCottage_surfboard_01"
+        ]
+      },
+      "furni_set_BSsafehouse_1": {
+        "id": "furni_set_BSsafehouse_1",
+        "sortId": 1,
+        "name": "작전 메모리",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 285,
+        "count": 4,
+        "furniture": [
+          "furni_BSsafehouse_floorlamp_01",
+          "furni_BSsafehouse_whiteboard_01",
+          "furni_BSsafehouse_carpet_01",
+          "furni_BSsafehouse_cabinet_01"
+        ]
+      },
+      "furni_set_BSsafehouse_2": {
+        "id": "furni_set_BSsafehouse_2",
+        "sortId": 2,
+        "name": "용병 생활",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 235,
+        "count": 4,
+        "furniture": [
+          "furni_BSsafehouse_ceilingLamp_01",
+          "furni_BSsafehouse_pipeline_01",
+          "furni_BSsafehouse_wardrobe_01",
+          "furni_BSsafehouse_pottedplant_01"
+        ]
+      },
+      "furni_set_BSsafehouse_3": {
+        "id": "furni_set_BSsafehouse_3",
+        "sortId": 3,
+        "name": "안전가옥 장식",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 230,
+        "count": 5,
+        "furniture": [
+          "furni_BSsafehouse_chair_01",
+          "furni_BSsafehouse_chair_03",
+          "furni_BSsafehouse_table_01",
+          "furni_BSsafehouse_wallpaper_01",
+          "furni_BSsafehouse_floor_01"
+        ]
+      },
+      "furni_set_BSsafehouse_4": {
+        "id": "furni_set_BSsafehouse_4",
+        "sortId": 4,
+        "name": "표준 장치",
+        "themeId": "furni_set_BSsafehouse",
+        "comfort": 195,
+        "count": 5,
+        "furniture": [
+          "furni_BSsafehouse_carpet_02",
+          "furni_BSsafehouse_chair_02",
+          "furni_BSsafehouse_workbench_01",
+          "furni_BSsafehouse_ceilingLamp_02",
+          "furni_BSsafehouse_column_01"
         ]
       }
     },
