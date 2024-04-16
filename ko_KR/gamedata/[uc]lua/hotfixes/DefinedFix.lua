@@ -2,7 +2,9 @@
 local list = 
 {
   
-  "HotFixes/ShopHotfixer"
+  "HotFixes/ShopHotfixer",
+  "HotFixes/BasicSkillHotfixer",
+  "HotFixes/RoguelikeTrackTriggerUtilHotfixer"
 };
 
 return list;

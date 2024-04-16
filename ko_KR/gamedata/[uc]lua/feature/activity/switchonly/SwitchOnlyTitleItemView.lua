@@ -7,20 +7,14 @@ local luaUtils = CS.Torappu.Lua.Util;
 
 
 
-
-
-
-
 local SwitchOnlyTitleItemView = Class("SwitchOnlyTitleItemView", UIWidget)
 
 
 
 
-function SwitchOnlyTitleItemView:Refresh(unlocked, rewardTitle, k)
-  self.m_des = {self._des1, self._des2}
+function SwitchOnlyTitleItemView:Refresh(unlocked, rewardTitle)
   luaUtils.SetActiveIfNecessary(self._iconGot,unlocked)
   self._textTitle.text = rewardTitle
-  self._textDesConst.text = self.m_des[k]
   local textColor = nil
 
   if unlocked then
