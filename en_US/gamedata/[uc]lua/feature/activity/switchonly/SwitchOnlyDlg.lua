@@ -49,7 +49,6 @@ function SwitchOnlyDlg:_RefreshUI()
   self._textRule.text = CS.Torappu.FormatUtil.FormatRichTextFromData(actData.constData.activityRule);
   self._textTime.text = actData.constData.activityTime;
 
-  local idx = 1
   
   for k,v in pairs(rewardsDict) do
     local suc, playerData = playerRewards:TryGetValue(k);
@@ -69,7 +68,6 @@ function SwitchOnlyDlg:_RefreshUI()
     if not suc then
       titleText = "";
     end
-    title:Refresh(unlocked, titleText, idx);
-    idx = idx + 1 
+    title:Refresh(unlocked, titleText);
   end
 end
