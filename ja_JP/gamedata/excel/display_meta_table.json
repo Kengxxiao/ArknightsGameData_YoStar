@@ -76,7 +76,7 @@
         "avatarId": "avatar_special_07",
         "avatarType": "SPECIAL",
         "avatarIdSort": 7,
-        "avatarIdDesc": "パック購入特典\n「落葉は紅炎を追って」",
+        "avatarIdDesc": "パック購入して獲得\n「落葉は紅炎を追って」",
         "avatarItemName": "「落葉は紅炎を追って」",
         "avatarItemDesc": "「あなたはあの炎に向き合わねばならない。」",
         "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
@@ -129,6 +129,26 @@
         "avatarIdDesc": "パック購入して獲得\n「白ウサギ」",
         "avatarItemName": "「白ウサギ」",
         "avatarItemDesc": "彼女の氷霜は炎よりも熱い。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "特殊報酬"
+      },
+      {
+        "avatarId": "avatar_special_17",
+        "avatarType": "SPECIAL",
+        "avatarIdSort": 17,
+        "avatarIdDesc": "パック購入して獲得\n「2024音律聯覚」",
+        "avatarItemName": "「2024音律聯覚」",
+        "avatarItemDesc": "瞼を閉じれば、あの日のステージがありありと蘇る。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "特殊報酬"
+      },
+      {
+        "avatarId": "avatar_special_18",
+        "avatarType": "SPECIAL",
+        "avatarIdSort": 18,
+        "avatarIdDesc": "パック購入して獲得\n「星に祈りを」",
+        "avatarItemName": "「星に祈りを」",
+        "avatarItemDesc": "はるか先まで続く道を、きらめく星空を見上げながら、穏やかに、賑やかに、彼女と共に歩んでいく。",
         "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
         "obtainApproach": "特殊報酬"
       },
@@ -463,6 +483,16 @@
         "obtainApproach": "記録復元"
       },
       {
+        "avatarId": "avatar_activity_EP13",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 35,
+        "avatarIdDesc": "メインテーマ「悪兆渦流」\n「巨骸渦流」",
+        "avatarItemName": "「巨骸渦流」",
+        "avatarItemDesc": "古の哀慟が渦流にこだます。戦場には既に角笛の音が響き渡っていた。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "メインテーマ「悪兆渦流」報酬"
+      },
+      {
         "avatarId": "avatar_def_01",
         "avatarType": "DEFAULT",
         "avatarIdSort": 1,
@@ -636,7 +666,9 @@
           "avatar_special_09",
           "avatar_special_10",
           "avatar_special_12",
-          "avatar_special_13"
+          "avatar_special_13",
+          "avatar_special_17",
+          "avatar_special_18"
         ]
       },
       "ACTIVITY": {
@@ -675,7 +707,8 @@
           "avatar_activity_RL3_1",
           "avatar_activity_DH",
           "avatar_activity_TB",
-          "avatar_activity_NL"
+          "avatar_activity_NL",
+          "avatar_activity_EP13"
         ]
       },
       "DEFAULT": {
@@ -897,10 +930,49 @@
         "obtainApproach": "デフォルト",
         "unlockDesList": [],
         "isLimitObtain": false
+      },
+      {
+        "id": "tm_rhodes_night",
+        "type": "MAINLINE",
+        "sortId": 2,
+        "startTime": -1,
+        "tmName": "夜",
+        "tmDes": "双月がベールをめくり、あなたと共に眠りにつく。",
+        "tmUsage": "機能を一切変更することなく、PRTS画面のデザインを一新しました。",
+        "obtainApproach": "デフォルト",
+        "unlockDesList": [
+          "ドクターレベルがLv.50に到達"
+        ],
+        "isLimitObtain": false
+      },
+      {
+        "id": "tm_mainline_1",
+        "type": "ACTIVITY",
+        "sortId": 4,
+        "startTime": 1713232800,
+        "tmName": "混迷の城",
+        "tmDes": "薄霧には硝煙が混じり、戦いには陰謀が潜む。",
+        "tmUsage": "機能を一切変更することなく、PRTS画面のデザインを一新しました。",
+        "obtainApproach": "作戦支援報酬",
+        "unlockDesList": [
+          "作戦支援報酬"
+        ],
+        "isLimitObtain": true
       }
     ],
-    "themeLimitData": {},
+    "themeLimitData": {
+      "tm_mainline_1": {
+        "id": "tm_mainline_1",
+        "limitInfos": [
+          {
+            "startTime": 1713232800,
+            "endTime": 1714417199,
+            "invalidObtainDesc": "現在入手できません"
+          }
+        ]
+      }
+    },
     "defaultBgMusicId": "music_bg_default",
-    "themeStartTime": 1713236400
+    "themeStartTime": 1713232800
   }
 }
