@@ -26372,6 +26372,145 @@
       ],
       "invisibleDetail": false
     },
+    "enemy_6018_carrier": {
+      "enemyId": "enemy_6018_carrier",
+      "enemyIndex": "DL18",
+      "enemyTags": null,
+      "sortId": 886,
+      "name": "「根なしの恨み」",
+      "enemyLevel": "BOSS",
+      "description": "農業ドローンの空中司令塔。長年実験畑の作物を熱心に育ててきた結果、徐々に自分もその一部であると思い込むようになった。しかしその一方、文字通り「根なし」の存在であることに孤独を感じていたようだ。邪悪なプログラムを書き込まれたことで、そうした感情が地上に生きる物すべてに対する恨みへと歪められている。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "飛行ユニット",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "周期的に自身のいるマスに【ドローン】を数体召喚する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "周囲にドローンが存在する場合、<$ba.invisible>ステルス</>状態になる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【「憎しみの種」】：<種まきドローン>を数体召喚し、一定範囲内のすべてのドローンの攻撃力とHPを一定時間上昇させる。スキル終了時、範囲内に<種まきドローン>が存在しない場合、移動を停止し一定時間<$ba.fragile>脆弱</>状態になる",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_6019_escort",
+        "enemy_1005_yokai_2",
+        "enemy_1041_lazerd",
+        "enemy_1106_byokai"
+      ],
+      "damageType": [
+        "NO_DAMAGE"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_6019_escort": {
+      "enemyId": "enemy_6019_escort",
+      "enemyIndex": "DL19",
+      "enemyTags": null,
+      "sortId": 887,
+      "name": "種まきドローン",
+      "enemyLevel": "NORMAL",
+      "description": "種まき用の農業ドローン。種まきのほかにも灌漑、施肥など複数の機能を持っている。自身に与えられた役目を誇りに思っており、天然肥料発酵システムが特に自慢。「みんな大好き、出来立てほやほや天然肥料ですよ！」",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "2回攻撃後、次の攻撃で対象を数秒間<$ba.stun>スタン</>させる",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_6018_carrier"
+      ],
+      "damageType": [
+        "PHYSIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_6020_orang": {
+      "enemyId": "enemy_6020_orang",
+      "enemyIndex": "DL20",
+      "enemyTags": null,
+      "sortId": 888,
+      "name": "鉄人スピリッツ号",
+      "enemyLevel": "BOSS",
+      "description": "スピリッツ愛好家協会が数多のエンジニアの力を結集して開発した「完璧な自律式ロボ」。同時に10個の缶を潰すほどの脅威的なパワーの持ち主。アカフラとの環境保護協定に従い、装甲はリサイクル缶で作られている。今回の大会において最有力の優勝候補だったが、決勝前に開けたシャンパンでコントロールチップが水没し、本番中に暴走してしまった。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "<$ba.stun>スタン</>、<$ba.frozen>凍結</>、<$ba.levitate>浮遊</>、<$ba.sleep>睡眠</>無効。ただし、<「ミード万歳！」>の爆発を受けると、この特性を一定時間失う",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "攻撃するたびに攻撃力が上昇する（上限あり）。しばらく攻撃せずにいると効果がリセットされる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【ミードの樽】：HPを一定割合を失うたびに、味方オペレーター1体に<ミードの樽>を投げつけ、それが撃破されるまで対象を<$ba.stun>スタン</>状態にする。<ミードの樽>は攻撃で撃破することができ、撃破すると「ミード万歳！」が配置待機エリアに追加される",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "周期的に味方1体に狙いを定め、一定時間チャージ後に対象に空き缶を投げつけ範囲物理ダメージを与え、<$ba.stun>スタン</>させる",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_6021_cask"
+      ],
+      "damageType": [
+        "PHYSIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_6021_cask": {
+      "enemyId": "enemy_6021_cask",
+      "enemyIndex": "DL21",
+      "enemyTags": null,
+      "sortId": 889,
+      "name": "ミードの樽",
+      "enemyLevel": "NORMAL",
+      "description": "10年以上樽で保管されていた上質なミード酒。花の香りがする。ミード愛好家協会の影響力を弱めるべく、スピリッツ愛好家協会が盗み出したもの。だが、これをきっかけに一部メンバーが離反し、結果として血で血を洗う一大事となってしまった。なお、今はスピリッツ愛好家協会の復讐の道具として使われている。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "味方ユニットから狙われやすい。撃破されるまで、滞在マスの味方ユニットを<$ba.stun>スタン</>させ続ける。撃破すると、<「ミード万歳！」>として配置待機エリアに追加される",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_6020_orang"
+      ],
+      "damageType": [
+        "NO_DAMAGE"
+      ],
+      "invisibleDetail": false
+    },
     "enemy_7001_blwzad": {
       "enemyId": "enemy_7001_blwzad",
       "enemyIndex": "SD1",
