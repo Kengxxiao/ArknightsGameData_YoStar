@@ -8610,7 +8610,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터 물리 회피율 +25%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터의 물리 회피율 +25%",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -8630,7 +8630,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터 물리 회피율 +30%<@ba.talpu>(+5%)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터의 물리 회피율 +30%<@ba.talpu>(+5%)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -8739,7 +8739,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터 물리 회피율 +30%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터의 물리 회피율 +30%",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -8759,7 +8759,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터 물리 회피율 +35%<@ba.talpu>(+5%)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [뱅가드] 오퍼레이터의 물리 회피율 +35%<@ba.talpu>(+5%)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -17622,7 +17622,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터 공격력 +9%, 공격 속도 +3",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터의 공격력 +9%, 공격 속도 +3",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -17646,7 +17646,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터 공격력 +11%<@ba.talpu>(+2%)</>, 공격 속도 +3",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터의 공격력 +11%<@ba.talpu>(+2%)</>, 공격 속도 +3",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -17754,7 +17754,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터 공격력 +9%, 공격 속도 +5",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터의 공격력 +9%, 공격 속도 +5",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -17778,7 +17778,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터 공격력 +11%<@ba.talpu>(+2%)</>, 공격 속도 +5",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [서포터] 오퍼레이터의 공격력 +11%<@ba.talpu>(+2%)</>, 공격 속도 +5",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -22160,6 +22160,297 @@
       }
     ]
   },
+  "uniequip_002_shu": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "shu_equip_1_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "HP가 50% 미만인 아군 유닛 치료 시 치유량 <@ba.kw>+15%</>",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "heal_scale",
+                      "value": 1.15
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.5
+                    }
+                  ],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 160.0
+          },
+          {
+            "key": "atk",
+            "value": 30.0
+          },
+          {
+            "key": "def",
+            "value": 30.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "shu_equip_1_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "HP가 50% 미만인 아군 유닛 치료 시 치유량 <@ba.kw>+15%</>",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "heal_scale",
+                      "value": 1.15
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.5
+                    }
+                  ],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "오퍼레이터 치료 시 대상이 있는 칸 및 주변 4칸에 파종하여 다음 효과 부여: 초당 HP 80 회복, 10%의 <$ba.protect>가호</> 획득",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "백곡장청",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_recovery_per_sec",
+                      "value": 80.0
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.1
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "오퍼레이터 치료 시 대상이 있는 칸 및 주변 4칸에 파종하여 다음 효과 부여: 초당 HP 85<@ba.talpu>(+5)</> 회복, 12%<@ba.talpu>(+2%)</>의 <$ba.protect>가호</> 획득",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "백곡장청",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_recovery_per_sec",
+                      "value": 85.0
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.12
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 210.0
+          },
+          {
+            "key": "atk",
+            "value": 40.0
+          },
+          {
+            "key": "def",
+            "value": 40.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "shu_equip_1_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "HP가 50% 미만인 아군 유닛 치료 시 치유량 <@ba.kw>+15%</>",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "heal_scale",
+                      "value": 1.15
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.5
+                    }
+                  ],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "오퍼레이터 치료 시 대상이 있는 칸 및 주변 4칸에 파종하여 다음 효과 부여: 초당 HP 80 회복, 15%의 <$ba.protect>가호</> 획득, 배치 즉시 배치한 칸에 해당 파종 효과 부여",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "백곡장청",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_recovery_per_sec",
+                      "value": 80.0
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.15
+                    },
+                    {
+                      "key": "born_range_id",
+                      "valueStr": "0-1"
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "오퍼레이터 치료 시 대상이 있는 칸 및 주변 4칸에 파종하여 다음 효과 부여: 초당 HP 85<@ba.talpu>(+5)</> 회복, 17%<@ba.talpu>(+2%)</>의 <$ba.protect>가호</> 획득, 배치 즉시 배치한 칸에 해당 파종 효과 부여",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "백곡장청",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_recovery_per_sec",
+                      "value": 85.0
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.17
+                    },
+                    {
+                      "key": "born_range_id",
+                      "valueStr": "0-1"
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 270.0
+          },
+          {
+            "key": "atk",
+            "value": 50.0
+          },
+          {
+            "key": "def",
+            "value": 50.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
   "uniequip_002_hmau": {
     "phases": [
       {
@@ -26031,7 +26322,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치 후 즉시 SP 5와 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 7 획득",
+                  "upgradeDescription": "배치 후 즉시 SP 5 및 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 7 획득",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -26055,7 +26346,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치 후 즉시 SP 5와 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 9<@ba.talpu>(+2)</> 획득",
+                  "upgradeDescription": "배치 후 즉시 SP 5 및 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 9<@ba.talpu>(+2)</> 획득",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -26167,7 +26458,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치 후 즉시 SP 9와 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 7 획득",
+                  "upgradeDescription": "배치 후 즉시 SP 9 및 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 7 획득",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -26191,7 +26482,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치 후 즉시 SP 9와 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 9<@ba.talpu>(+2)</> 획득",
+                  "upgradeDescription": "배치 후 즉시 SP 9 및 <$ba.shield>실드</> 1회 획득, 실드가 파괴된 후 SP 9<@ba.talpu>(+2)</> 획득",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -35199,7 +35490,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 아군 [메딕] 오퍼레이터 공격 속도 +15",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [메딕] 오퍼레이터의 공격 속도 +15",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -35219,7 +35510,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 아군 [메딕] 오퍼레이터 공격 속도 +17<@ba.talpu>(+2)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [메딕] 오퍼레이터의 공격 속도 +17<@ba.talpu>(+2)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -35296,7 +35587,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 아군 [메딕] 오퍼레이터 공격 속도 +17",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [메딕] 오퍼레이터의 공격 속도 +17",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -35316,7 +35607,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 아군 [메딕] 오퍼레이터 공격 속도 +19<@ba.talpu>(+2)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [메딕] 오퍼레이터의 공격 속도 +19<@ba.talpu>(+2)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -39554,7 +39845,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 아군 [디펜더] 오퍼레이터 방어력 +9%, 자신의 방어력 추가로 +4%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 방어력 +9%, 자신의 방어력 추가로 +4%",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -39574,7 +39865,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 아군 [디펜더] 오퍼레이터 방어력 +11%<@ba.talpu>(+2%)</>, 자신의 방어력 추가로 +4%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 방어력 +11%<@ba.talpu>(+2%)</>, 자신의 방어력 추가로 +4%",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -39703,7 +39994,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 아군 [디펜더] 오퍼레이터 방어력 +11%, 자신의 방어력 추가로 +6%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 방어력 +11%, 자신의 방어력 추가로 +6%",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -39723,7 +40014,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 아군 [디펜더] 오퍼레이터 방어력 +13%<@ba.talpu>(+2%)</>, 자신의 방어력 추가로 +6%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 방어력 +13%<@ba.talpu>(+2%)</>, 자신의 방어력 추가로 +6%",
                   "talentIndex": 1,
                   "unlockCondition": {
                     "phase": 2,
@@ -58394,7 +58685,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때 아군 [스나이퍼] 오퍼레이터 배치 코스트 -2, 스킬 발동 시 아군 [스나이퍼] 오퍼레이터의 공격 속도 +23",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [스나이퍼] 오퍼레이터의 배치 코스트 -2, 스킬 발동 시 모든 [스나이퍼] 오퍼레이터의 공격 속도 +23",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -58418,7 +58709,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때 아군 [스나이퍼] 오퍼레이터 배치 코스트 -2, 스킬 발동 시 아군 [스나이퍼] 오퍼레이터의 공격 속도 +26<@ba.talpu>(+3)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [스나이퍼] 오퍼레이터의 배치 코스트 -2, 스킬 발동 시 모든 [스나이퍼] 오퍼레이터의 공격 속도 +26<@ba.talpu>(+3)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -58499,7 +58790,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때 아군 [스나이퍼] 오퍼레이터 배치 코스트 -2, 스킬 발동 시 아군 [스나이퍼] 오퍼레이터의 공격 속도 +25",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [스나이퍼] 오퍼레이터의 배치 코스트 -2, 스킬 발동 시 모든 [스나이퍼] 오퍼레이터의 공격 속도 +25",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -58523,7 +58814,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때 아군 [스나이퍼] 오퍼레이터 배치 코스트 -2, 스킬 발동 시 아군 [스나이퍼] 오퍼레이터의 공격 속도 +28<@ba.talpu>(+3)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [스나이퍼] 오퍼레이터의 배치 코스트 -2, 스킬 발동 시 모든 [스나이퍼] 오퍼레이터의 공격 속도 +28<@ba.talpu>(+3)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -60879,7 +61170,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때 모든 [어비설 헌터스] 오퍼레이터의 공격 대미지 +3%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [어비설 헌터스] 오퍼레이터의 공격 대미지 +3%",
                   "talentIndex": -1,
                   "unlockCondition": {
                     "phase": 2,
@@ -60956,7 +61247,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때 모든 [어비설 헌터스] 오퍼레이터의 공격 대미지 +5%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [어비설 헌터스] 오퍼레이터의 공격 대미지 +5%",
                   "talentIndex": -1,
                   "unlockCondition": {
                     "phase": 2,
@@ -64940,7 +65231,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 디펜더 오퍼레이터의 공격력 +25%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 공격력 +25%",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -64960,7 +65251,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 디펜더 오퍼레이터의 공격력 +28%<@ba.talpu>(+3%)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 공격력 +28%<@ba.talpu>(+3%)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -65037,7 +65328,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 디펜더 오퍼레이터의 공격력 +28%",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 공격력 +28%",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -65057,7 +65348,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "배치되어 있을 때, 모든 디펜더 오퍼레이터의 공격력 +31%<@ba.talpu>(+3%)</>",
+                  "upgradeDescription": "배치되어 있을 때, 모든 [디펜더] 오퍼레이터의 공격력 +31%<@ba.talpu>(+3%)</>",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -68167,7 +68458,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "마법 저항 +12, 주위 8칸에 아군 오퍼레이터 존재 시 추가로 마법 저항 +4",
+                  "upgradeDescription": "마법 저항 +12, 주위 8칸에 아군 오퍼레이터 존재 시 추가로 자신과 아군 오퍼레이터의 마법 저항 +4",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -68280,7 +68571,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "마법 저항 +14, 주위 8칸에 아군 오퍼레이터 존재 시 추가로 마법 저항 +5",
+                  "upgradeDescription": "마법 저항 +14, 주위 8칸에 아군 오퍼레이터 존재 시 추가로 자신과 아군 오퍼레이터의 마법 저항 +5",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -72935,6 +73226,3053 @@
           {
             "key": "def",
             "value": 38.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_grabds": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "공격 범위에 적이 있을 경우 SP 자연 회복 속도 +0.2/초",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "grabds_equip_1_1_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.2
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 90.0
+          },
+          {
+            "key": "atk",
+            "value": 33.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "공격 범위에 적이 있을 경우 SP 자연 회복 속도 +0.2/초",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "grabds_equip_1_2_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.2
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 속도 +12, 목표가 [야생동물]일 경우 특성의 <$ba.sluggish>정지</> 효과 지속 시간 증가",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "말을 잘 들어라",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 12.0
+                    },
+                    {
+                      "key": "sluggish_addition",
+                      "value": 0.6
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 속도 +14<@ba.talpu>(+2)</>, 목표가 [야생동물]일 경우 특성의 <$ba.sluggish>정지</> 효과 지속 시간 증가",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "말을 잘 들어라",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 14.0
+                    },
+                    {
+                      "key": "sluggish_addition",
+                      "value": 0.6
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 110.0
+          },
+          {
+            "key": "atk",
+            "value": 38.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "공격 범위에 적이 있을 경우 SP 자연 회복 속도 +0.2/초",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "grabds_equip_1_3_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.2
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 속도 +14, 목표가 [야생동물]일 경우 특성의 <$ba.sluggish>정지</> 효과 지속 시간 더 많이 증가",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "말을 잘 들어라",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 14.0
+                    },
+                    {
+                      "key": "sluggish_addition",
+                      "value": 0.8
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 속도 +16<@ba.talpu>(+2)</>, 목표가 [야생동물]일 경우 특성의 <$ba.sluggish>정지</> 효과 지속 시간 더 많이 증가",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "말을 잘 들어라",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 16.0
+                    },
+                    {
+                      "key": "sluggish_addition",
+                      "value": 0.8
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 41.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_zuole": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "HP가 50% 미만 시 25%의 <$ba.protect>가호</> 효과 획득",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "value",
+                      "value": 70.0
+                    }
+                  ],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "zuole_equip_1_1_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.5
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.25
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 55.0
+          },
+          {
+            "key": "def",
+            "value": 40.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "HP가 50% 미만 시 25%의 <$ba.protect>가호</> 효과 획득",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "value",
+                      "value": 70.0
+                    }
+                  ],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "zuole_equip_1_2_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.5
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.25
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "배치되어 있을 때, 자신이 최대 공격 속도 +60 및 SP 자연 회복 속도 +2.2/초의 <$ba.berserk>인내</> 획득 (HP가 60% 감소 시 최대 효과 적용)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "지촉조영",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "min_hp_ratio",
+                      "value": 0.4
+                    },
+                    {
+                      "key": "min_attack_speed",
+                      "value": 60.0
+                    },
+                    {
+                      "key": "min_sp_recovery_per_sec",
+                      "value": 2.2
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 75.0
+          },
+          {
+            "key": "def",
+            "value": 50.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "HP가 50% 미만 시 25%의 <$ba.protect>가호</> 효과 획득",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "value",
+                      "value": 70.0
+                    }
+                  ],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "zuole_equip_1_3_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.5
+                    },
+                    {
+                      "key": "damage_resistance",
+                      "value": 0.25
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "배치되어 있을 때, 자신이 최대 공격 속도 +70 및 SP 자연 회복 속도 +2.3/초의 <$ba.berserk>인내</> 획득 (HP가 50% 감소 시 최대 효과 적용)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "지촉조영",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "min_hp_ratio",
+                      "value": 0.5
+                    },
+                    {
+                      "key": "min_attack_speed",
+                      "value": 70.0
+                    },
+                    {
+                      "key": "min_sp_recovery_per_sec",
+                      "value": 2.3
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 90.0
+          },
+          {
+            "key": "def",
+            "value": 60.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_rfalcn": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "최초 배치 시 배치 코스트 -4",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "rfalcn_equip_1_1_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "20_root",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "runtime_cost",
+                      "value": -4.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 150.0
+          },
+          {
+            "key": "atk",
+            "value": 14.0
+          },
+          {
+            "key": "def",
+            "value": 12.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "최초 배치 시 배치 코스트 -4",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "rfalcn_equip_1_2_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "20_root",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "runtime_cost",
+                      "value": -4.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "rfalcn_equip_1_2_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "생존 연산 [사막 이야기] 중, SP 자연 회복 속도 +0.2/초, 스킬 발동 시 소지한 자원을 배낭으로 수납",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": "습관적",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.2
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 170.0
+          },
+          {
+            "key": "atk",
+            "value": 24.0
+          },
+          {
+            "key": "def",
+            "value": 18.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "최초 배치 시 배치 코스트 -4",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "rfalcn_equip_1_3_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "20_root",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "runtime_cost",
+                      "value": -4.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "rfalcn_equip_1_3_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "생존 연산 [사막 이야기] 중, SP 자연 회복 속도 +0.3/초, 스킬 발동 시 소지한 자원을 배낭으로 수납",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": "습관적",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.3
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 180.0
+          },
+          {
+            "key": "atk",
+            "value": 30.0
+          },
+          {
+            "key": "def",
+            "value": 20.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_wanqin": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "wanqin_equip_1_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "block_cnt",
+                      "value": 1.0
+                    }
+                  ],
+                  "overrideDescripton": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경, 전방에 있는 오퍼레이터의 저지 가능 수 <@ba.kw>+1</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 105.0
+          },
+          {
+            "key": "def",
+            "value": 45.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "wanqin_equip_1_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "block_cnt",
+                      "value": 1.0
+                    }
+                  ],
+                  "overrideDescripton": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경, 전방에 있는 오퍼레이터의 저지 가능 수 <@ba.kw>+1</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "주변 8칸 내 아군 오퍼레이터의 최대 HP +7%, 배치 방향이 완칭과 같을 경우 +11%로 변경",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "천시",
+                  "description": null,
+                  "rangeId": "x-4",
+                  "blackboard": [
+                    {
+                      "key": "wanqin_t_1[hp_common].max_hp",
+                      "value": 0.07
+                    },
+                    {
+                      "key": "wanqin_t_1[hp_common].wanqin_t_1[hp_extra].max_hp",
+                      "value": 0.04
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "주변 8칸 내 아군 오퍼레이터의 최대 HP +8%<@ba.talpu>(+1%)</>, 배치 방향이 완칭과 같을 경우 +12%<@ba.talpu>(+1%)</>로 변경",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "천시",
+                  "description": null,
+                  "rangeId": "x-4",
+                  "blackboard": [
+                    {
+                      "key": "wanqin_t_1[hp_common].max_hp",
+                      "value": 0.08
+                    },
+                    {
+                      "key": "wanqin_t_1[hp_common].wanqin_t_1[hp_extra].max_hp",
+                      "value": 0.04
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "def",
+            "value": 55.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "wanqin_equip_1_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "block_cnt",
+                      "value": 1.0
+                    }
+                  ],
+                  "overrideDescripton": "스킬 지속 시간 동안 저지 가능 수가 0으로 변경, 전방에 있는 오퍼레이터의 저지 가능 수 <@ba.kw>+1</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "주변 8칸 내 아군 오퍼레이터의 최대 HP +9%, 배치 방향이 완칭과 같을 경우 +13%로 변경",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "천시",
+                  "description": null,
+                  "rangeId": "x-4",
+                  "blackboard": [
+                    {
+                      "key": "wanqin_t_1[hp_common].max_hp",
+                      "value": 0.09
+                    },
+                    {
+                      "key": "wanqin_t_1[hp_common].wanqin_t_1[hp_extra].max_hp",
+                      "value": 0.04
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "주변 8칸 내 아군 오퍼레이터의 최대 HP +10%<@ba.talpu>(+1%)</>, 배치 방향이 완칭과 같을 경우 +14%<@ba.talpu>(+1%)</>로 변경",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "천시",
+                  "description": null,
+                  "rangeId": "x-4",
+                  "blackboard": [
+                    {
+                      "key": "wanqin_t_1[hp_common].max_hp",
+                      "value": 0.1
+                    },
+                    {
+                      "key": "wanqin_t_1[hp_common].wanqin_t_1[hp_extra].max_hp",
+                      "value": 0.04
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 135.0
+          },
+          {
+            "key": "def",
+            "value": 60.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_chyue": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "chyue_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.15
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, 물리 회피 <@ba.kw>15%</> 획득",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 210.0
+          },
+          {
+            "key": "atk",
+            "value": 25.0
+          },
+          {
+            "key": "def",
+            "value": 20.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "chyue_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.15
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, 물리 회피 <@ba.kw>15%</> 획득",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "스킬 1회 시전하는 동안 1명 이상의 적 처치 시 SP +4",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "2",
+                  "name": "만상위빈",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp",
+                      "value": 4.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 240.0
+          },
+          {
+            "key": "atk",
+            "value": 35.0
+          },
+          {
+            "key": "def",
+            "value": 25.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "chyue_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.15
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, 물리 회피 <@ba.kw>15%</> 획득",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "스킬 1회 시전하는 동안 1명 이상의 적 처치 시 SP +4, 처치하지 못하면 SP +1로 변경",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "2",
+                  "name": "만상위빈",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp",
+                      "value": 4.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "chyue_equip_2_3_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp",
+                      "value": 1.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 260.0
+          },
+          {
+            "key": "atk",
+            "value": 45.0
+          },
+          {
+            "key": "def",
+            "value": 30.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_dagda": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "dagda_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 35.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "dagda_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 시 30% 확률로 해당 공격의 공격력이 156%까지 상승, 배치되어 있을 때 [글래스고 패거리] 오퍼레이터 주변 4칸의 적이 쓰러질 때마다 공격력이 추가로 6% 상승 (최대 240%까지 상승)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "글래스고 스피릿",
+                  "description": null,
+                  "rangeId": "x-5",
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.3
+                    },
+                    {
+                      "key": "atk_scale",
+                      "value": 1.56
+                    },
+                    {
+                      "key": "atk_up_max_value",
+                      "value": 2.4
+                    },
+                    {
+                      "key": "atk_up_each_time",
+                      "value": 0.06
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 170.0
+          },
+          {
+            "key": "atk",
+            "value": 45.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "dagda_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 시 30% 확률로 해당 공격의 공격력이 162%까지 상승, 배치되어 있을 때 [글래스고 패거리] 오퍼레이터 주변 4칸의 적이 쓰러질 때마다 공격력이 추가로 6% 상승 (최대 240%까지 상승)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "글래스고 스피릿",
+                  "description": null,
+                  "rangeId": "x-5",
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.3
+                    },
+                    {
+                      "key": "atk_scale",
+                      "value": 1.62
+                    },
+                    {
+                      "key": "atk_up_max_value",
+                      "value": 2.4
+                    },
+                    {
+                      "key": "atk_up_each_time",
+                      "value": 0.06
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 200.0
+          },
+          {
+            "key": "atk",
+            "value": 50.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_jaksel": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "jaksel_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.15
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, 물리 회피 <@ba.kw>15%</> 획득",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 20.0
+          },
+          {
+            "key": "def",
+            "value": 10.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "jaksel_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.15
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, 물리 회피 <@ba.kw>15%</> 획득",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "물리 회피 +35%, 회피 성공 시 공격 속도 +12 (5초간 지속, 중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "급속 회피",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.35
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.attack_speed",
+                      "value": 12.0
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.duration",
+                      "value": 5.0
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "물리 회피 +38%<@ba.talpu>(+3%)</>, 회피 성공 시 공격 속도 +12 (5초간 지속, 중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "급속 회피",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.38
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.attack_speed",
+                      "value": 12.0
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.duration",
+                      "value": 5.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 130.0
+          },
+          {
+            "key": "atk",
+            "value": 25.0
+          },
+          {
+            "key": "def",
+            "value": 15.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "jaksel_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.15
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, 물리 회피 <@ba.kw>15%</> 획득",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "물리 회피 +37%, 회피 성공 시 공격 속도 +12 (5초간 지속, 중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "급속 회피",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.37
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.attack_speed",
+                      "value": 12.0
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.duration",
+                      "value": 5.0
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "물리 회피 +40%<@ba.talpu>(+3%)</>, 회피 성공 시 공격 속도 +12 (5초간 지속, 중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "급속 회피",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "prob",
+                      "value": 0.4
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.attack_speed",
+                      "value": 12.0
+                    },
+                    {
+                      "key": "charge_atk_speed_on_evade.duration",
+                      "value": 5.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 140.0
+          },
+          {
+            "key": "atk",
+            "value": 30.0
+          },
+          {
+            "key": "def",
+            "value": 20.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_f12yin": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "f12yin_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 160.0
+          },
+          {
+            "key": "atk",
+            "value": 35.0
+          },
+          {
+            "key": "def",
+            "value": 15.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "f12yin_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 시 23% 확률로 공격력이 165%까지 상승, 동시에 목표의 공격력을 3초간 15% 감소 (중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "거력중권",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.65
+                    },
+                    {
+                      "key": "prob",
+                      "value": 0.23
+                    },
+                    {
+                      "key": "atk",
+                      "value": -0.15
+                    },
+                    {
+                      "key": "duration",
+                      "value": 3.0
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 시 23% 확률로 공격력이 170%<@ba.talpu>(+5%)</>까지 상승, 동시에 목표의 공격력을 3초간 15% 감소 (중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "거력중권",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.7
+                    },
+                    {
+                      "key": "prob",
+                      "value": 0.23
+                    },
+                    {
+                      "key": "atk",
+                      "value": -0.15
+                    },
+                    {
+                      "key": "duration",
+                      "value": 3.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 175.0
+          },
+          {
+            "key": "atk",
+            "value": 50.0
+          },
+          {
+            "key": "def",
+            "value": 20.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "f12yin_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 시 25% 확률로 공격력이 170%까지 상승, 동시에 목표의 공격력을 3초간 15% 감소 (중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "거력중권",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.7
+                    },
+                    {
+                      "key": "prob",
+                      "value": 0.25
+                    },
+                    {
+                      "key": "atk",
+                      "value": -0.15
+                    },
+                    {
+                      "key": "duration",
+                      "value": 3.0
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "공격 시 25% 확률로 공격력이 175%<@ba.talpu>(+5%)</>까지 상승, 동시에 목표의 공격력을 3초간 15% 감소 (중첩 불가)",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "거력중권",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.75
+                    },
+                    {
+                      "key": "prob",
+                      "value": 0.25
+                    },
+                    {
+                      "key": "atk",
+                      "value": -0.15
+                    },
+                    {
+                      "key": "duration",
+                      "value": 3.0
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 200.0
+          },
+          {
+            "key": "atk",
+            "value": 60.0
+          },
+          {
+            "key": "def",
+            "value": 20.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_tiger": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "tiger_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 35.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "tiger_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "30% 확률로 근거리 물리 공격 회피, 회피 성공 시 다음 공격의 공격력 +110%",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "호권순격",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "tiger_t_1[evade].prob",
+                      "value": 0.3
+                    },
+                    {
+                      "key": "charge_on_evade.atk",
+                      "value": 1.1
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "33%<@ba.talpu>(+3%)</> 확률로 근거리 물리 공격 회피, 회피 성공 시 다음 공격의 공격력 +110%",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "호권순격",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "tiger_t_1[evade].prob",
+                      "value": 0.33
+                    },
+                    {
+                      "key": "charge_on_evade.atk",
+                      "value": 1.1
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 170.0
+          },
+          {
+            "key": "atk",
+            "value": 45.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "tiger_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "30% 확률로 근거리 물리 공격 회피, 회피 성공 시 다음 공격의 공격력 +120%",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "호권순격",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "tiger_t_1[evade].prob",
+                      "value": 0.3
+                    },
+                    {
+                      "key": "charge_on_evade.atk",
+                      "value": 1.2
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "33%<@ba.talpu>(+3%)</> 확률로 근거리 물리 공격 회피, 회피 성공 시 다음 공격의 공격력 +120%",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "호권순격",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "tiger_t_1[evade].prob",
+                      "value": 0.33
+                    },
+                    {
+                      "key": "charge_on_evade.atk",
+                      "value": 1.2
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 200.0
+          },
+          {
+            "key": "atk",
+            "value": 50.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_flint": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "flint_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 150.0
+          },
+          {
+            "key": "atk",
+            "value": 30.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "flint_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "자신이 저지하고 있지 않은 적 공격 시 대미지 +45%",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "상처 하나 없는 가벼운 몸",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "damage_scale",
+                      "value": 1.45
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "자신이 저지하고 있지 않은 적 공격 시 대미지 +50% <@ba.talpu>(+5%)</>",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "상처 하나 없는 가벼운 몸",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "damage_scale",
+                      "value": 1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 170.0
+          },
+          {
+            "key": "atk",
+            "value": 45.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "flint_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "자신이 저지하고 있지 않은 적 공격 시 대미지 +50%",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "상처 하나 없는 가벼운 몸",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "damage_scale",
+                      "value": 1.5
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "자신이 저지하고 있지 않은 적 공격 시 대미지 +55% <@ba.talpu>(+5%)</>",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "상처 하나 없는 가벼운 몸",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "damage_scale",
+                      "value": 1.55
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 185.0
+          },
+          {
+            "key": "atk",
+            "value": 55.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_brownb": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": "brownb_equip_2_1_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 30.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": "brownb_equip_2_2_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "같은 목표를 연속으로 공격 시 공격력 +6%, 최대 5회 중첩, 목표 변경 시 중첩 효과 초기화",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "복서의 집중력",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.06
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "같은 목표를 연속으로 공격 시 공격력 +7%<@ba.talpu>(+1%)</>, 최대 5회 중첩, 목표 변경 시 중첩 효과 초기화",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "복서의 집중력",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.07
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 145.0
+          },
+          {
+            "key": "atk",
+            "value": 40.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": "brownb_equip_2_3_p1",
+            "target": "TRAIT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "attack_speed",
+                      "value": 10.0
+                    }
+                  ],
+                  "overrideDescripton": "적 1명 저지 가능, HP가 50%보다 높을 때 공격 속도 <@ba.vup>+{attack_speed}</>",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "같은 목표를 연속으로 공격 시 공격력 +7%, 최대 5회 중첩, 목표 변경 시 중첩 효과 초기화",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "복서의 집중력",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.07
+                    }
+                  ]
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "같은 목표를 연속으로 공격 시 공격력 +8%<@ba.talpu>(+1%)</>, 최대 5회 중첩, 목표 변경 시 중첩 효과 초기화",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "복서의 집중력",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.08
+                    }
+                  ]
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 170.0
+          },
+          {
+            "key": "atk",
+            "value": 45.0
           }
         ],
         "tokenAttributeBlackboard": {}
