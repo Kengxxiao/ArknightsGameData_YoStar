@@ -46,6 +46,7 @@
     -5,
     -10
   ],
+  "trainingBonusMax": 3,
   "roomUnlockConds": {
     "CONTROL#1": {
       "id": "CONTROL#1",
@@ -11601,6 +11602,146 @@
           ]
         }
       ]
+    },
+    "char_2025_shu": {
+      "charId": "char_2025_shu",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_cost[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd_bd[300]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4121_zuole": {
+      "charId": "char_4121_zuole",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_bd&reduceTime[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4122_grabds": {
+      "charId": "char_4122_grabds",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_single[1010]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all[025]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4119_wanqin": {
+      "charId": "char_4119_wanqin",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_proc_probability[032]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_formula_cost3[400]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4023_rfalcn": {
+      "charId": "char_4023_rfalcn",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_dorm_rec[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost[011]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11940,6 +12081,18 @@
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>"
     },
+    "control_mp_cost[011]": {
+      "buffId": "control_mp_cost[011]",
+      "buffName": "수호의 길",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost",
+      "sortId": 1112,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>"
+    },
     "control_allCost_condChar[000]": {
       "buffId": "control_allCost_condChar[000]",
       "buffName": "한가하고 덧없는 인생",
@@ -12207,6 +12360,18 @@
     "control_dorm_rec[000]": {
       "buffId": "control_dorm_rec[000]",
       "buffName": "지도자",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_leader",
+      "sortId": 1400,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "control_dorm_rec[001]": {
+      "buffId": "control_dorm_rec[001]",
+      "buffName": "전투의 결",
       "buffIcon": "control",
       "skillIcon": "bskill_ctrl_leader",
       "sortId": 1400,
@@ -12922,7 +13087,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "제조소에 배치하여 <@cc.kw>작전기록</> 생산 시 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "제조소에 배치 시, <@cc.kw>작전기록</> 생산의 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "manu_formula_limit[0000]": {
       "buffId": "manu_formula_limit[0000]",
@@ -12934,7 +13099,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "제조소에 배치하여 <@cc.kw>작전기록</> 생산 시 창고 용량 상한 <@cc.vup>+12</>"
+      "description": "제조소에 배치 시, <@cc.kw>작전기록</> 생산의 창고 용량 상한 <@cc.vup>+12</>"
     },
     "manu_formula_limit[010]": {
       "buffId": "manu_formula_limit[010]",
@@ -12946,7 +13111,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "제조소에 배치하여 <@cc.kw>작전기록</> 생산 시 창고 용량 상한 <@cc.vup>+15</>"
+      "description": "제조소에 배치 시, <@cc.kw>작전기록</> 생산의 창고 용량 상한 <@cc.vup>+15</>"
     },
     "manu_formula_limit[020]": {
       "buffId": "manu_formula_limit[020]",
@@ -12958,7 +13123,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "제조소에 배치하여 <@cc.kw>작전기록</> 생산 시 창고 용량 상한 <@cc.vup>+4</>"
+      "description": "제조소에 배치 시, <@cc.kw>작전기록</> 생산의 창고 용량 상한 <@cc.vup>+4</>"
     },
     "manu_prod_spd&limit&cost[000]": {
       "buffId": "manu_prod_spd&limit&cost[000]",
@@ -13163,6 +13328,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, <$cc.bd_C><@cc.rem>주술 결정</></> <@cc.vup>1</>점당 생산력 <@cc.vup>+2%</>"
+    },
+    "manu_prod_spd_bd[300]": {
+      "buffId": "manu_prod_spd_bd[300]",
+      "buffName": "두툼한 이삭, 기쁨의 추수",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd_bd7",
+      "sortId": 3732,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, <$cc.bd_b1><@cc.rem>속세의 화식</></> <@cc.vup>3</>점당 생산력 <@cc.vup>+1%</>"
     },
     "manu_formula_spd[000]": {
       "buffId": "manu_formula_spd[000]",
@@ -13392,6 +13569,18 @@
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, 해당 제조소 내의 모든 오퍼레이터 <@cc.kw>본인</>이 컨디션 소모로 인해 받는 영향 <@cc.kw>제거</>"
     },
+    "manu_cost[000]": {
+      "buffId": "manu_cost[000]",
+      "buffName": "봄의 천둥, 자라는 만물",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_cost_room1",
+      "sortId": 3002,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, 해당 제조소 내의 모든 오퍼레이터의 시간당 컨디션 소모 <@cc.vup>-0.1</>"
+    },
     "trade_cost[000]": {
       "buffId": "trade_cost[000]",
       "buffName": "분위기 업",
@@ -13510,7 +13699,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시 해당 무역소 내 다른 인원이 제공하는 오더 수주 효율이 <@cc.vdown>전부 0이 되고</>, 각 인원의 오더 수주 효율 <@cc.vup>+45%</>, 모든 인원의 시간당 컨디션 소모 <@cc.vdown>+0.25</>"
+      "description": "무역소에 배치 시, 해당 무역소 내 다른 인원이 제공하는 오더 수주 효율이 <@cc.vdown>전부 0이 되고</>, 각 인원의 오더 수주 효율 <@cc.vup>+45%</>, 모든 인원의 시간당 컨디션 소모 <@cc.vdown>+0.25</>"
     },
     "trade_ord_spd_variable[000]": {
       "buffId": "trade_ord_spd_variable[000]",
@@ -13558,7 +13747,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 해당 무역소 내의 오퍼레이터가 제공한 오더 상한 <@cc.vup>5</>개당 오더 수주 효율 <@cc.vup>25%</> 제공, 최대 <@cc.vup>100%</> 제공"
+      "description": "무역소에 배치 시, 해당 무역소 내의 오퍼레이터가 제공한 오더 상한 <@cc.vup>500%</>개당 오더 수주 효율 <@cc.vup>25%</> 제공, 최대 <@cc.vup>100%</> 제공"
     },
     "trade_ord_spd&dorm&lv[000]": {
       "buffId": "trade_ord_spd&dorm&lv[000]",
@@ -13846,7 +14035,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <@cc.kw>1</>명당 <$cc.bd_a1><@cc.rem>감지 정보</></> <@cc.vup>+1</>, 이와 동시에, <$cc.bd_a1><@cc.rem>감지 정보</></> <@cc.vup>1</>점당 <$cc.bd_B><@cc.rem>침묵의 공명</></> <@cc.vup>1</>점으로 전환"
+      "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <@cc.kw>1</>명당 <$cc.bd_a1><@cc.rem>감지 정보</></> <@cc.vup>+1</>, 이와 동시에, <$cc.bd_a1><@cc.rem>감지 정보</></> <@cc.vup>1</>점당 <$cc.bd_B><@cc.rem>무성의 공명</></> <@cc.vup>1</>점으로 전환"
     },
     "trade_ord_spd_bd_n2[000]": {
       "buffId": "trade_ord_spd_bd_n2[000]",
@@ -13858,7 +14047,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <@cc.kw>1</>명당 <$cc.bd_b1><@cc.rem>속세의 불꽃</></> <@cc.vup>+1</>, <$cc.bd_b1><@cc.rem>속세의 불꽃</></> <@cc.vup>1</>점당 오더 수주 효율 <@cc.vup>+1%</>"
+      "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <@cc.kw>1</>명당 <$cc.bd_b1><@cc.rem>속세의 화식</></> <@cc.vup>+1</>, <$cc.bd_b1><@cc.rem>속세의 불꽃</></> <@cc.vup>1</>점당 오더 수주 효율 <@cc.vup>+1%</>"
     },
     "trade_ord_spd_bd[000]": {
       "buffId": "trade_ord_spd_bd[000]",
@@ -13870,7 +14059,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, <$cc.bd_B><@cc.rem>침묵의 공명</></> <@cc.vup>4</>점당 오더 수주 효율 <@cc.vup>+1%</>"
+      "description": "무역소에 배치 시, <$cc.bd_B><@cc.rem>무성의 공명</></> <@cc.vup>4</>점당 오더 수주 효율 <@cc.vup>+1%</>"
     },
     "trade_ord_spd_bd[010]": {
       "buffId": "trade_ord_spd_bd[010]",
@@ -13882,7 +14071,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, <$cc.bd_B><@cc.rem>침묵의 공명</></> <@cc.vup>2</>점당 오더 수주 효율 <@cc.vup>+1%</>"
+      "description": "무역소에 배치 시, <$cc.bd_B><@cc.rem>무성의 공명</></> <@cc.vup>2</>점당 오더 수주 효율 <@cc.vup>+1%</>"
     },
     "trade_ord_limit&cost[000]": {
       "buffId": "trade_ord_limit&cost[000]",
@@ -14086,7 +14275,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 후, 다음 <@cc.kw>순금 오더</>의 납품 수가 <@cc.kw>3</> 초과할 경우(위약 오더는 순금 오더로 간주하지 않음), 용문폐 수익 <@cc.kw>+250</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "무역소에 배치 시, 다음 <@cc.kw>순금 오더</>의 납품 수가 <@cc.kw>3</> 초과할 경우(위약 오더는 순금 오더로 간주하지 않음), 용문폐 수익 <@cc.kw>+250</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "trade_ord_long[010]": {
       "buffId": "trade_ord_long[010]",
@@ -14098,7 +14287,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 후, 다음 <@cc.kw>순금 오더</>의 납품 수가 <@cc.kw>3</> 초과할 경우(위약 오더는 순금 오더로 간주하지 않음), 용문폐 수익 <@cc.kw>+500</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "무역소에 배치 시, 다음 <@cc.kw>순금 오더</>의 납품 수가 <@cc.kw>3</> 초과할 경우(위약 오더는 순금 오더로 간주하지 않음), 용문폐 수익 <@cc.kw>+500</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "trade_ord_law[000]": {
       "buffId": "trade_ord_law[000]",
@@ -14182,7 +14371,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>40%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>40%</>"
     },
     "workshop_proc_probability[020]": {
       "buffId": "workshop_proc_probability[020]",
@@ -14194,7 +14383,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>60%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>60%</>"
     },
     "workshop_proc_probability[010]": {
       "buffId": "workshop_proc_probability[010]",
@@ -14206,7 +14395,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
     },
     "workshop_proc_probability[011]": {
       "buffId": "workshop_proc_probability[011]",
@@ -14218,7 +14407,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
     },
     "workshop_proc_probability[012]": {
       "buffId": "workshop_proc_probability[012]",
@@ -14230,7 +14419,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
     },
     "workshop_proc_probability[013]": {
       "buffId": "workshop_proc_probability[013]",
@@ -14242,7 +14431,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</>"
     },
     "workshop_proc_probability[021]": {
       "buffId": "workshop_proc_probability[021]",
@@ -14254,7 +14443,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>60%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>60%</>"
     },
     "workshop_proc_probability[030]": {
       "buffId": "workshop_proc_probability[030]",
@@ -14266,7 +14455,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>65%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>65%</>"
     },
     "workshop_proc_probability[031]": {
       "buffId": "workshop_proc_probability[031]",
@@ -14278,7 +14467,19 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>65%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>65%</>"
+    },
+    "workshop_proc_probability[032]": {
+      "buffId": "workshop_proc_probability[032]",
+      "buffName": "천사부의 공예",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_p4",
+      "sortId": 7133,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>65%</>"
     },
     "workshop_proc_probability[040]": {
       "buffId": "workshop_proc_probability[040]",
@@ -14290,7 +14491,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</>"
     },
     "workshop_proc_cost[000]": {
       "buffId": "workshop_proc_cost[000]",
@@ -14302,7 +14503,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>8</> 소모하는 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</> 상승"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>8</> 소모하는 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</> 상승"
     },
     "workshop_formula_lolxh[000]": {
       "buffId": "workshop_formula_lolxh[000]",
@@ -14314,7 +14515,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 컨디션 소모가 <@cc.kw>4</> 이상인 항목의 컨디션이 전부 <@cc.vup>4</>로 나누어져 소모"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 컨디션 소모가 <@cc.kw>4</> 이상인 항목의 컨디션이 전부 <@cc.vup>4</>로 나누어져 소모"
     },
     "workshop_formula_bonus1[000]": {
       "buffId": "workshop_formula_bonus1[000]",
@@ -14350,7 +14551,19 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 컨디션 소모가 <@cc.kw>4</>이상인 항목의 컨디션 소모 <@cc.vup>-2</>"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 컨디션 소모가 <@cc.kw>4</>이상인 항목의 컨디션 소모 <@cc.vup>-2</>"
+    },
+    "workshop_formula_cost3[400]": {
+      "buffId": "workshop_formula_cost3[400]",
+      "buffName": "열정적인 공부",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_all_cost1",
+      "sortId": 7114,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>임의류 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_recovery[000]": {
       "buffId": "workshop_formula_recovery[000]",
@@ -14362,7 +14575,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 미산출 <@cc.vup>2</>회당 <@cc.kw>자신의 컨디션 1회 회복</>. 회복량은 <@cc.kw>재료 가공에 소모되는 컨디션량에 상응.</> (가공 완료 후 합산)"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 미산출 <@cc.vup>2</>회당 <@cc.kw>자신의 컨디션 1회 회복</>. 회복량은 <@cc.kw>재료 가공에 소모되는 컨디션량에 상응.</> (가공 완료 후 합산)"
     },
     "workshop_formula_frost[000]": {
       "buffId": "workshop_formula_frost[000]",
@@ -14374,7 +14587,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</> 상승, <$cc.bd_ash><@cc.rem>정보 저장</></> <@cc.vup>1</>점당 부산물 산출 확률 <@cc.vup>5%</> 추가 상승, <$cc.bd_tachanka><@cc.rem>우르수스 특제 음료</></> 수량이 <@cc.vup>4</>병에 도달 시 부산물 산출 확률 <@cc.vup>15%</> 추가 상승"
+      "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>50%</> 상승, <$cc.bd_ash><@cc.rem>정보 저장</></> <@cc.vup>1</>점당 부산물 산출 확률 <@cc.vup>5%</> 추가 상승, <$cc.bd_tachanka><@cc.rem>우르수스 특제 음료</></> 수량이 <@cc.vup>4</>병에 도달 시 부산물 산출 확률 <@cc.vup>15%</> 추가 상승"
     },
     "workshop_formula_cost4[000]": {
       "buffId": "workshop_formula_cost4[000]",
@@ -14386,7 +14599,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <@cc.vup>2</> 소모"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <@cc.vup>2</> 소모"
     },
     "workshop_formula_cost2[000]": {
       "buffId": "workshop_formula_cost2[000]",
@@ -14398,7 +14611,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률이 <@cc.vup>40%</> 상승하고, 컨디션 소모가 <@cc.kw>8</> 이상인 모든 항목의 컨디션 소모 <@cc.vup>-4</>"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률이 <@cc.vup>40%</> 상승하고, 컨디션 소모가 <@cc.kw>8</> 이상인 모든 항목의 컨디션 소모 <@cc.vup>-4</>"
     },
     "workshop_formula_cost[010]": {
       "buffId": "workshop_formula_cost[010]",
@@ -14410,7 +14623,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 대응되는 모든 항목의 컨디션 소모 <@cc.vdown>+2</>"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 대응되는 모든 항목의 컨디션 소모 <@cc.vdown>+2</>"
     },
     "workshop_formula_cost3[100]": {
       "buffId": "workshop_formula_cost3[100]",
@@ -14422,7 +14635,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[110]": {
       "buffId": "workshop_formula_cost3[110]",
@@ -14434,7 +14647,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[111]": {
       "buffId": "workshop_formula_cost3[111]",
@@ -14446,7 +14659,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[112]": {
       "buffId": "workshop_formula_cost3[112]",
@@ -14458,7 +14671,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[120]": {
       "buffId": "workshop_formula_cost3[120]",
@@ -14470,7 +14683,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-2</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 컨디션 소모 <@cc.vup>-2</>"
     },
     "workshop_formula_cost3[220]": {
       "buffId": "workshop_formula_cost3[220]",
@@ -14482,7 +14695,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>기반시설 재료</> 가공 시 컨디션 소모 <@cc.vup>-2</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>기반시설 재료</> 가공 시, 컨디션 소모 <@cc.vup>-2</>"
     },
     "workshop_formula_cost3[221]": {
       "buffId": "workshop_formula_cost3[221]",
@@ -14494,7 +14707,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>기반시설 재료</> 가공 시 컨디션 소모 <@cc.vup>-2</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>4</> 소모하는 <@cc.kw>기반시설 재료</> 가공 시, 컨디션 소모 <@cc.vup>-2</>"
     },
     "workshop_formula_cost3[200]": {
       "buffId": "workshop_formula_cost3[200]",
@@ -14506,7 +14719,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>기반시설 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>기반시설 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[300]": {
       "buffId": "workshop_formula_cost3[300]",
@@ -14518,7 +14731,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>칩</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>칩</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[000]": {
       "buffId": "workshop_formula_cost3[000]",
@@ -14530,7 +14743,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>스킬개론</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>스킬개론</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost3[101]": {
       "buffId": "workshop_formula_cost3[101]",
@@ -14542,7 +14755,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 컨디션 소모 <@cc.vup>-1</>"
     },
     "workshop_formula_cost4[010]": {
       "buffId": "workshop_formula_cost4[010]",
@@ -14554,7 +14767,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <@cc.vup>4</> 소모"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <@cc.vup>4</> 소모"
     },
     "workshop_formula_cost4[011]": {
       "buffId": "workshop_formula_cost4[011]",
@@ -14566,7 +14779,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <@cc.vup>3</> 소모"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 대응되는 항목의 컨디션 <@cc.vup>3</> 소모"
     },
     "workshop_formula_cost&dorm[000]": {
       "buffId": "workshop_formula_cost&dorm[000]",
@@ -14578,7 +14791,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>12</> 이하인 오퍼레이터 <@cc.kw>10</>명당 컨디션 <@cc.kw>4</> 소모하는 항목의 컨디션 소모가 전부 <@cc.vup>-1</>"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>12</> 이하인 오퍼레이터 <@cc.kw>10</>명당 컨디션 <@cc.kw>4</> 소모하는 항목의 컨디션 소모가 전부 <@cc.vup>-1</>"
     },
     "workshop_formula_probability[000]": {
       "buffId": "workshop_formula_probability[000]",
@@ -14590,7 +14803,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
     },
     "workshop_formula_probability[010]": {
       "buffId": "workshop_formula_probability[010]",
@@ -14602,7 +14815,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[011]": {
       "buffId": "workshop_formula_probability[011]",
@@ -14614,7 +14827,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[020]": {
       "buffId": "workshop_formula_probability[020]",
@@ -14626,7 +14839,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[030]": {
       "buffId": "workshop_formula_probability[030]",
@@ -14638,7 +14851,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>스킬개론</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[100]": {
       "buffId": "workshop_formula_probability[100]",
@@ -14650,7 +14863,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
     },
     "workshop_formula_probability[115]": {
       "buffId": "workshop_formula_probability[115]",
@@ -14662,7 +14875,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[119]": {
       "buffId": "workshop_formula_probability[119]",
@@ -14674,7 +14887,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[129]": {
       "buffId": "workshop_formula_probability[129]",
@@ -14686,7 +14899,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[139]": {
       "buffId": "workshop_formula_probability[139]",
@@ -14698,7 +14911,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[113]": {
       "buffId": "workshop_formula_probability[113]",
@@ -14710,7 +14923,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[123]": {
       "buffId": "workshop_formula_probability[123]",
@@ -14722,7 +14935,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[110]": {
       "buffId": "workshop_formula_probability[110]",
@@ -14734,7 +14947,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[120]": {
       "buffId": "workshop_formula_probability[120]",
@@ -14746,7 +14959,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[111]": {
       "buffId": "workshop_formula_probability[111]",
@@ -14758,7 +14971,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[121]": {
       "buffId": "workshop_formula_probability[121]",
@@ -14770,7 +14983,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[112]": {
       "buffId": "workshop_formula_probability[112]",
@@ -14782,7 +14995,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[122]": {
       "buffId": "workshop_formula_probability[122]",
@@ -14794,7 +15007,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[114]": {
       "buffId": "workshop_formula_probability[114]",
@@ -14806,7 +15019,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[124]": {
       "buffId": "workshop_formula_probability[124]",
@@ -14818,7 +15031,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[160]": {
       "buffId": "workshop_formula_probability[160]",
@@ -14830,7 +15043,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>100%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>100%</> 상승"
     },
     "workshop_formula_probability[221]": {
       "buffId": "workshop_formula_probability[221]",
@@ -14842,7 +15055,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[116]": {
       "buffId": "workshop_formula_probability[116]",
@@ -14854,7 +15067,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[126]": {
       "buffId": "workshop_formula_probability[126]",
@@ -14866,7 +15079,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_dorm[000]": {
       "buffId": "workshop_formula_dorm[000]",
@@ -14878,7 +15091,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>4</> 이하인 오퍼레이터 <@cc.kw>1</>명당 부산물 산출 확률 <@cc.vup>5%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>4</> 이하인 오퍼레이터 <@cc.kw>1</>명당 부산물 산출 확률 <@cc.vup>5%</> 상승"
     },
     "workshop_formula_dorm[001]": {
       "buffId": "workshop_formula_dorm[001]",
@@ -14890,7 +15103,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>20</> 이하인 오퍼레이터 <@cc.kw>1</>명당 부산물 산출 확률 <@cc.vup>5%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>20</> 이하인 오퍼레이터 <@cc.kw>1</>명당 부산물 산출 확률 <@cc.vup>5%</> 상승"
     },
     "workshop_formula_dorm[002]": {
       "buffId": "workshop_formula_dorm[002]",
@@ -14902,7 +15115,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>12</> 이하인 오퍼레이터 <@cc.kw>1</>명당 부산물 산출 확률 <@cc.vup>5%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 숙소 내 컨디션이 <@cc.vup>12</> 이하인 오퍼레이터 <@cc.kw>1</>명당 부산물 산출 확률 <@cc.vup>5%</> 상승"
     },
     "workshop_formula_drop[020]": {
       "buffId": "workshop_formula_drop[020]",
@@ -14914,7 +15127,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 시, <@cc.kw>정예화 재료</>를 가공하여 <@cc.kw>T3</> 등급의 부산물 획득할 경우 <@cc.kw>폴리에스테르 번들</> 확정 획득"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</>를 가공하여 <@cc.kw>T3</> 등급의 부산물 획득 시, <@cc.kw>폴리에스테르 번들</> 확정 획득"
     },
     "workshop_formula_drop[030]": {
       "buffId": "workshop_formula_drop[030]",
@@ -14926,7 +15139,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 시, <@cc.kw>정예화 재료</>를 가공하여 <@cc.kw>T3</> 등급의 부산물 획득할 경우 <@cc.kw>이철 번들</> 확정 획득"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</>를 가공하여 <@cc.kw>T3</> 등급의 부산물 획득 시, <@cc.kw>이철 번들</> 확정 획득"
     },
     "workshop_formula_drop[040]": {
       "buffId": "workshop_formula_drop[040]",
@@ -14938,7 +15151,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 시, <@cc.kw>정예화 재료</>를 가공하여 <@cc.kw>T3</> 등급의 부산물 획득할 경우 <@cc.kw>원암 큐브 번들</> 확정 획득"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</>를 가공하여 <@cc.kw>T3</> 등급의 부산물 획득 시, <@cc.kw>원암 큐브 번들</> 확정 획득"
     },
     "workshop_formula_free[000]": {
       "buffId": "workshop_formula_free[000]",
@@ -14950,7 +15163,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>정예화 재료</> 가공 시, 소모하는 용문폐 절감"
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 소모하는 용문폐 절감"
     },
     "workshop_formula_probability[200]": {
       "buffId": "workshop_formula_probability[200]",
@@ -14962,7 +15175,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
     },
     "workshop_formula_probability[210]": {
       "buffId": "workshop_formula_probability[210]",
@@ -14974,7 +15187,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_probability[220]": {
       "buffId": "workshop_formula_probability[220]",
@@ -14986,7 +15199,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>기반시설 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>75%</> 상승"
     },
     "workshop_formula_probability[300]": {
       "buffId": "workshop_formula_probability[300]",
@@ -14998,7 +15211,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>칩</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>칩</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
     },
     "workshop_formula_probability[310]": {
       "buffId": "workshop_formula_probability[310]",
@@ -15010,7 +15223,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>칩</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>칩</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_device[000]": {
       "buffId": "workshop_formula_device[000]",
@@ -15022,7 +15235,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>장치</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>장치</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
     },
     "workshop_formula_device[020]": {
       "buffId": "workshop_formula_device[020]",
@@ -15034,7 +15247,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>이철</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>이철</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
     },
     "workshop_formula_device[030]": {
       "buffId": "workshop_formula_device[030]",
@@ -15046,7 +15259,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>폴리에스테르</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>폴리에스테르</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
     },
     "workshop_formula_device[050]": {
       "buffId": "workshop_formula_device[050]",
@@ -15058,7 +15271,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>원암</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>원암</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>90%</> 상승"
     },
     "workshop_formula_device[111]": {
       "buffId": "workshop_formula_device[111]",
@@ -15070,7 +15283,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>열합금 팩</> 재료 가공 시, 부산물 산출 확률 <@cc.vup>100%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>열합금 팩</> 재료 가공 시, 부산물 산출 확률 <@cc.vup>100%</> 상승"
     },
     "workshop_formula_device[060]": {
       "buffId": "workshop_formula_device[060]",
@@ -15082,7 +15295,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 <@cc.kw>아케톤 응집체</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
+      "description": "가공소에 배치해 <@cc.kw>아케톤 응집체</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
     },
     "workshop_formula_rub[000]": {
       "buffId": "workshop_formula_rub[000]",
@@ -15094,7 +15307,19 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률이 추가로 <@cc.vup>40%</>"
+      "description": "가공소에 배치해 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률이 추가로 <@cc.vup>40%</>"
+    },
+    "train_spd[001]": {
+      "buffId": "train_spd[001]",
+      "buffName": "'수재' α",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_all",
+      "sortId": 9912,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+25%</>"
     },
     "train_spd[000]": {
       "buffId": "train_spd[000]",
@@ -15227,6 +15452,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
       "description": "훈련실에 배치 시, 오퍼레이터의 훈련 협조 시간이 <@cc.vup>5</>시간에 도달한 경우, 해당 오퍼레이터의 다음 훈련 시간이 <@cc.vup>-50%</> (어느 쪽이든 훈련실을 이탈하면 효과가 사라짐)"
+    },
+    "train_spd_bd&reduceTime[000]": {
+      "buffId": "train_spd_bd&reduceTime[000]",
+      "buffName": "심사숙고",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_accmu_guard1",
+      "sortId": 9906,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 스킬 마스터리 훈련을 1회 협조 및 완료할 때마다 일정량의 <$cc.t.accmuguard1><@cc.rem>무도</></> 획득, <$cc.t.accmuguard1><@cc.rem>무도</></>가 최대치인 상태에서 <@cc.kw>가드</> 오퍼레이터의 스킬 마스터리 훈련 협조 시 즉시 <@cc.kw>1</>레벨 도달, 동시에 보유한 <$cc.t.accmuguard1><@cc.rem>무도</></>를 전부 소모"
     },
     "train_spd&profession[010]": {
       "buffId": "train_spd&profession[010]",
@@ -15934,7 +16171,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "훈련실에 배치하여 <@cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <@cc.vup>1</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
+      "description": "훈련실에 배치해 <@cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <@cc.vup>1</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
     },
     "train_cost&profession[320]": {
       "buffId": "train_cost&profession[320]",
@@ -15946,7 +16183,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "훈련실에 배치하여 <@cc.kw>가드</> 오퍼레이터의 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
+      "description": "훈련실에 배치해 <@cc.kw>가드</> 오퍼레이터의 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
     },
     "train_cost&profession[340]": {
       "buffId": "train_cost&profession[340]",
@@ -15958,7 +16195,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "훈련실에 배치하여 <@cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
+      "description": "훈련실에 배치해 <@cc.kw>스나이퍼</> 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
     },
     "train_cost&profession[360]": {
       "buffId": "train_cost&profession[360]",
@@ -15970,7 +16207,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "훈련실에 배치 시, <@cc.kw>서포터</> 오퍼레이터의 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
+      "description": "훈련실에 배치해 <@cc.kw>서포터</> 오퍼레이터의 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
     },
     "train_cost&profession[380]": {
       "buffId": "train_cost&profession[380]",
@@ -15982,7 +16219,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
-      "description": "훈련실에 배치하여 <@cc.kw>스페셜리스트</> 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
+      "description": "훈련실에 배치해 <@cc.kw>스페셜리스트</> 훈련 마스터리 스킬이 <@cc.vup>3</>레벨까지 도달한 경우, 시간당 컨디션 소모 <@cc.vdown>+1</>"
     },
     "dorm_rec_oneself[000]": {
       "buffId": "dorm_rec_oneself[000]",
@@ -16070,6 +16307,18 @@
     },
     "dorm_rec_single[010]": {
       "buffId": "dorm_rec_single[010]",
+      "buffName": "자상함",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_single1",
+      "sortId": 5201,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "dorm_rec_single[1010]": {
+      "buffId": "dorm_rec_single[1010]",
       "buffName": "자상함",
       "buffIcon": "dormitory",
       "skillIcon": "bskill_dorm_single1",
@@ -16222,7 +16471,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_bd_n1_n2[000]": {
       "buffId": "dorm_rec_bd_n1_n2[000]",
@@ -16258,7 +16507,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[011]": {
       "buffId": "dorm_rec_all[011]",
@@ -16270,7 +16519,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[012]": {
       "buffId": "dorm_rec_all[012]",
@@ -16282,7 +16531,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[013]": {
       "buffId": "dorm_rec_all[013]",
@@ -16294,7 +16543,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[014]": {
       "buffId": "dorm_rec_all[014]",
@@ -16306,7 +16555,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[020]": {
       "buffId": "dorm_rec_all[020]",
@@ -16318,7 +16567,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[021]": {
       "buffId": "dorm_rec_all[021]",
@@ -16330,7 +16579,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[022]": {
       "buffId": "dorm_rec_all[022]",
@@ -16342,7 +16591,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&single[000]": {
       "buffId": "dorm_rec_all&single[000]",
@@ -16522,7 +16771,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&oneself[001]": {
       "buffId": "dorm_rec_all&oneself[001]",
@@ -16534,7 +16783,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.25</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vdown>-0.1</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.25</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&oneself[010]": {
       "buffId": "dorm_rec_all&oneself[010]",
@@ -16570,7 +16819,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&oneself[021]": {
       "buffId": "dorm_rec_all&oneself[021]",
@@ -16582,7 +16831,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&oneself[042]": {
       "buffId": "dorm_rec_all&oneself[042]",
@@ -16594,7 +16843,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&oneself[022]": {
       "buffId": "dorm_rec_all&oneself[022]",
@@ -16606,7 +16855,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all&profession[000]": {
       "buffId": "dorm_rec_all&profession[000]",
@@ -16618,7 +16867,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <@cc.kw>방랑 메딕</> 1명당 해당 숙소의 모든 오퍼레이터의 시간당 컨디션 회복 속도<@cc.vup>+6%</> (최대 <@cc.kw>4</>명 적용)"
+      "description": "숙소에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <@cc.kw>방랑 메딕</> 1명당 해당 숙소의 모든 오퍼레이터의 시간당 컨디션 회복 속도 <@cc.vup>+0.06</> (최대 <@cc.kw>4</>명 적용, 동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_exchangeAp[000]": {
       "buffId": "dorm_exchangeAp[000]",
@@ -16666,7 +16915,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_rec_all[024]": {
       "buffId": "dorm_rec_all[024]",
@@ -16678,7 +16927,19 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용) "
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "dorm_rec_all[025]": {
+      "buffId": "dorm_rec_all[025]",
+      "buffName": "시골의 피리 소리",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all2",
+      "sortId": 5426,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "dorm_bd_num[000]": {
       "buffId": "dorm_bd_num[000]",
@@ -63312,6 +63573,1711 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_TempleFair_ceilingLamp_01": {
+        "id": "furni_TempleFair_ceilingLamp_01",
+        "sortId": 1474,
+        "name": "나무 벽걸이 등",
+        "iconId": "furni_TempleFair_ceilingLamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_1",
+        "width": 6,
+        "depth": 3,
+        "height": 4,
+        "comfort": 165,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "100% 수작업으로 만든 목제 조명. 부드러운 조명과 새로운 스타일을 한데 모아 접이식 나무창을 통해 풍량을 조절할 수 있게 만들었다.\n아직 이별하지 않은 사람의 뒷모습을 비추고 있다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 150,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_table_01": {
+        "id": "furni_TempleFair_table_01",
+        "sortId": 1475,
+        "name": "묘회용 노점 테이블",
+        "iconId": "furni_TempleFair_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_1",
+        "width": 6,
+        "depth": 3,
+        "height": 5,
+        "comfort": 295,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "묘회 곳곳에서 볼 수 있는 작은 탁자. 최근 인기 있는 물품으로 가득 차 있으며, 그중 이삭 램프는 오랫동안 랭킹 1위의 자리를 차지하고 있었다.\n전설에 따르면 최초의 이삭 램프는 신농이 만들었다고 한다. 잎 부분은 약하지만 이삭 부분은 약간의 빛을 내뿜으며 사람들의 손에 꼭 쥐어져 있다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 218,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_cabinet_01": {
+        "id": "furni_TempleFair_cabinet_01",
+        "sortId": 1476,
+        "name": "흩어져 있는 상품들",
+        "iconId": "furni_TempleFair_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_1",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 170,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "묘회에서 팔고 있는 자그마한 상품들. 탁자 위의 공간은 제한되어 있기에 손님들이 직접 고를 수 있도록 바닥에 놓여 있지만, 똑같이 잘 팔리고 있다.\n“밭에 걸어 놨을 때 어떤 등이 더 예뻐 보일까?” 기억 속의 친구가 몸을 숙여 마음에 드는 등불을 고르자, 머리 위에 장식된 꽃이 마치 불이 타오르는 것처럼 환하게 보였다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 155,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_bookshelf_01": {
+        "id": "furni_TempleFair_bookshelf_01",
+        "sortId": 1477,
+        "name": "'중생을 만나다'",
+        "iconId": "furni_TempleFair_bookshelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_1",
+        "width": 2,
+        "depth": 6,
+        "height": 7,
+        "comfort": 290,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "기원패가 잔뜩 걸려 있는 나무틀. 다양한 글씨체가 순탄과 평안을 빌고 있다.\n그 사람은 수많은 기원 패를 손가락으로 훑고 지나가며 사람들의 소원을 들었으나, 위를 향한 눈빛은 하늘의 구름을 꿰뚫지는 못했다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 215,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_chair_01": {
+        "id": "furni_TempleFair_chair_01",
+        "sortId": 1478,
+        "name": "접이식 원목 계단",
+        "iconId": "furni_TempleFair_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_1",
+        "width": 3,
+        "depth": 4,
+        "height": 4,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정교하게 만들어진 계단식 의자. 측면에 등롱을 설치해 어두컴컴한 밤에도 사용할 수 있다.\n한 걸음, 두 걸음, 꼭대기 층에 올라온 후 그 사람은 손을 머리 위로 올리며 예전에 들었던 꿈을 떠올렸다. “언젠가 우리가 심은 씨앗이 이만큼 커질 거야, 네 키보다도 더.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 153,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_cabinet_02": {
+        "id": "furni_TempleFair_cabinet_02",
+        "sortId": 1479,
+        "name": "'원하면 이루어지리라'",
+        "iconId": "furni_TempleFair_cabinet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_1",
+        "width": 5,
+        "depth": 1,
+        "height": 10,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "사람들은 가장 간절한 소원을 상자 안에 넣고 밤낮없이 모시며 진심으로 믿는다면 소원이 현실이 될 것이라고 굳게 믿고 있다.\n아무도 없는 시간. 한 소녀가 까치발을 들고 오래된 나무패를 새로운 나무패로 바꿨다. 나무패에는 울창한 밭 옆을 거닐고 있는 가축이 새겨져 있다. 소녀는 이 모든 것을 눈에 담았다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 168,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_lamp_01": {
+        "id": "furni_TempleFair_lamp_01",
+        "sortId": 1480,
+        "name": "'긴 밤을 바라보며'",
+        "iconId": "furni_TempleFair_lamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_2",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 135,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "황동을 이용해 통째로 주조한 소박한 형태의 향유등. 대황성 건설 초기에 만들어진 이 등은 지금까지 기나긴 밤을 지켜봤다.\n조용한 밤, 그 사람이 뒤를 돌아봤다. 동생이 불빛 근처에 앉아 비단을 짜고 있는 것처럼 느껴졌지만, 현실은 아무것도 없는 텅 빈 공간만이 보일 뿐이었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 113,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_ceilingLights_01": {
+        "id": "furni_TempleFair_ceilingLights_01",
+        "sortId": 1481,
+        "name": "'먹는 것이 중요하다'",
+        "iconId": "furni_TempleFair_ceilingLights_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_2",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 105,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "신농제 묘회에서 사용하기 위한 맞춤형 천장등. 등갓에는 이삭 문양이 그려져 있으며, 아래로 쏟아지는 살구색 불빛은 마음을 따스하게 만들어 준다.\n“먹는 게 제일 중요하다.” 영원히 변하지 않을 이 진리야말로 대황성 장인들의 설계 이념이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 95,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_chair_02": {
+        "id": "furni_TempleFair_chair_02",
+        "sortId": 1482,
+        "name": "차가운 나무 의자",
+        "iconId": "furni_TempleFair_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "ORTHER_S",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_3",
+        "width": 2,
+        "depth": 2,
+        "height": 1,
+        "comfort": 95,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "별 볼 일 없어 보이는 의자. 하지만 귀중한 목재를 이용해 만들어진 것으로, 앉은 사람에게 시원함을 선사한다.\n그레인버즈의 집에서 찾은 의자로, 앉으면 매우 편한 느낌이 들어서 모두와 함께 사용하기 위해 묘회로 가져왔다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 88,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_carpet_01": {
+        "id": "furni_TempleFair_carpet_01",
+        "sortId": 1483,
+        "name": "'청옥 자리'",
+        "iconId": "furni_TempleFair_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_3",
+        "width": 7,
+        "depth": 5,
+        "height": 1,
+        "comfort": 80,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "투박한 모습의 대나무 카펫. 어떻게 보아도 평범한 카펫이지만, 누워만 있어도 피로가 싹 사라진다고 해서 엄청난 별명을 가지고 있다.\n한 외국의 상인이 묘회에 가져와 고가에 팔아치웠는데, 화생에게 평범한 대나무 카펫이라는 사실을 들키고 말았다. 상인은 도망갔지만, 대나무 카펫은 남아서 지친 여행객들의 쉼터가 되어 주었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 73,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_tapestry_01": {
+        "id": "furni_TempleFair_tapestry_01",
+        "sortId": 1484,
+        "name": "명절 등롱 세트",
+        "iconId": "furni_TempleFair_tapestry_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_4",
+        "width": 8,
+        "depth": 6,
+        "height": 4,
+        "comfort": 235,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "대황성의 축제에서 자주 볼 수 있는 등롱. 풍습에 따라 집마다 문 앞에 등롱을 높게 걸어 두며, 축제 분위기를 띄우는 역할을 한다.\n모든 집의 등불이 늦은 밤까지 켜져 있으면, 늦은 밤 집으로 들어가는 사람은 길을 잃지 않을 것이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 175,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_pool_01": {
+        "id": "furni_TempleFair_pool_01",
+        "sortId": 1485,
+        "name": "'흘러간 삶'",
+        "iconId": "furni_TempleFair_pool_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_2",
+        "width": 12,
+        "depth": 6,
+        "height": 3,
+        "comfort": 640,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "꽃등이 수면 한쪽에 떠 있다. 새로운 꽃등이 놓아질 때마다, 수면 위의 등불이 가볍게 흔들린다.\n강 기슭의 여인들이 미래에 대한 기대를 적어 등불과 함께 물 위로 흘려보낸다. 하지만 그 사람은 이 꽃등에 하나둘 흘러간 이름들을 적어 놓았다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 473,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_incense_01": {
+        "id": "furni_TempleFair_incense_01",
+        "sortId": 1486,
+        "name": "자동 분향기",
+        "iconId": "furni_TempleFair_incense_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_3",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 170,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "천사들이 연구 개발한 최신형 자동 분향기, 다양한 분향 모드가 설정되어 있다. 개인의 취향에 맞춘 커스텀이 가능하고, 개인 단말기로 원격 분향이 가능하다.\n몸이 불편한 이웃 할머니가 멀리 있는 절에 분향을 하고 싶어 했기에, 그레인버즈는 믿음직한 조수로 파울비스트를 찾았다. 할머니는 곧 대황성 분향 랭킹에서 남들을 크게 따돌리고 선두를 달리게 되었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 155,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_stand_01": {
+        "id": "furni_TempleFair_stand_01",
+        "sortId": 1487,
+        "name": "탕후루 판매기",
+        "iconId": "furni_TempleFair_stand_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_4",
+        "width": 2,
+        "depth": 2,
+        "height": 6,
+        "comfort": 150,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "최근 묘회에 나타난 자동 탕후루 판매기. 복고적인 겉모습과는 다르게 최신형 스마트 스피커가 탑재되어 있으며, 손님을 감지하면 자동으로 광고를 내보낸다.\n매일 저녁 탕후루를 전부 판매한 후에 화생은 이걸 밭으로 옮긴 후, 스마트 허수아비로 사용한다. 천사들은 이 발명품에 매우 만족하고 있지만, 자판기는 그렇게 생각하지 않을 것이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 123,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_basket_01": {
+        "id": "furni_TempleFair_basket_01",
+        "sortId": 1488,
+        "name": "엄선된 공물 바구니",
+        "iconId": "furni_TempleFair_basket_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_3",
+        "width": 3,
+        "depth": 2,
+        "height": 2,
+        "comfort": 150,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "신농제를 위해 헌상된 공물 바구니, 그해의 가장 훌륭한 농산물을 넣어 내년의 풍년을 기원한다.\n축제가 끝난 후 바구니에 담긴 공물은 곁을 지키는 아이들에게 나눠 주는 것이 대황성의 전통이다. 사람들은 신농이 이 모습을 보고 기뻐할 것이라 굳게 믿는다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 135,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_shelf_01": {
+        "id": "furni_TempleFair_shelf_01",
+        "sortId": 1489,
+        "name": "'많은 일'",
+        "iconId": "furni_TempleFair_shelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_4",
+        "width": 5,
+        "depth": 2,
+        "height": 8,
+        "comfort": 275,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "가지 끝에 달린 황금빛 감을 모티브로 만든 수제 촛대, 아름다운 의미를 담고 있다.\n그 사람은 가지 끝에 회색과 푸른색 과일만이 달렸던 세월, 지금까지 지나온 드넓은 황무지와 굴곡, 그리고 쓴맛이 어떻게 달콤한 희망으로 변화하는지를 여전히 기억하고 있다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 203,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_table_02": {
+        "id": "furni_TempleFair_table_02",
+        "sortId": 1490,
+        "name": "'액땜'",
+        "iconId": "furni_TempleFair_table_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_4",
+        "width": 4,
+        "depth": 3,
+        "height": 4,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "예전에 묘회에서 매우 인기를 끌었던 고리 던지기 가판대. 한 푼으로 고리 10개를 바꿀 수 있으며, 고리를 던져 넣으면 즉시 경품을 획득할 수 있다. 고리는 가벼운 재질로 되어있어 다루기 까다롭기에, 고리를 넣지 못한 사람은 '액땜했다'라고 말한다.\n외지인 차림의 소년이 비검을 던지는 손놀림으로 고리를 던져 백발백중을 달성했다는 소문이 전해져 내려온다. 그 사람은 수많은 가판대를 돌아다니며 격전을 벌이다가 이 가판대에서 소리 없이 자취를 감췄다고 한다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 153,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_wallpaper_01": {
+        "id": "furni_TempleFair_wallpaper_01",
+        "sortId": 1491,
+        "name": "'대황성의 길일'",
+        "iconId": "furni_TempleFair_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "대황성의 축제 풍경을 보여 주는 디스플레이. 소원을 가득 담은 등불이 바람을 타고 하늘 끝까지 올라간다.\n수많은 등불 중, 그 사람의 소원은 유난히 밝게 빛나고 있었다. “백성들이 굶주리지 않는 것이 내 유일한 소원이야.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 198,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TempleFair_floor_01": {
+        "id": "furni_TempleFair_floor_01",
+        "sortId": 1492,
+        "name": "북쪽 국경풍 바닥",
+        "iconId": "furni_TempleFair_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_TempleFair",
+        "groupId": "furni_set_TempleFair_2",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "매끄러운 질감의 청석 바닥. 튼튼하고 내구성이 좋아 염국 북부 성의 바닥재로 광범위하게 사용된다.\n땅을 두들겨 흙을 파니, 푸른 산이 마침내 평탄해졌고, 수많은 사람들의 발걸음을 지탱하고 있도다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 198,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_minilight_01": {
+        "id": "furni_TianshiMansion_minilight_01",
+        "sortId": 1493,
+        "name": "소형 두공등",
+        "iconId": "furni_TianshiMansion_minilight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_1",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 70,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "소형 두공식 천장등. 새로운 장부 구조를 사용해 조명이 필요한 곳이라면 어디든 설치할 수 있다.\n건설 초기, 천사들은 이동식 판잣집의 받침대에 조명 설비를 테이프로 고정하여 기나긴 북쪽의 겨울을 보냈다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_bookshelf_01": {
+        "id": "furni_TianshiMansion_bookshelf_01",
+        "sortId": 1494,
+        "name": "'장경각'",
+        "iconId": "furni_TianshiMansion_bookshelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_1",
+        "width": 2,
+        "depth": 6,
+        "height": 8,
+        "comfort": 300,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "많은 참고 서적과 설계도를 수납할 수 있는 책장. 천사가 있는 곳이라면 책장도 있다.\n자신의 과제를 받은 학생들은 대부분 책장 앞을 배회하며 선배들이 남긴 가르침을 찾아 헤맨다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_floorlamp_01": {
+        "id": "furni_TianshiMansion_floorlamp_01",
+        "sortId": 1495,
+        "name": "센서형 스탠드",
+        "iconId": "furni_TianshiMansion_floorlamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_1",
+        "width": 2,
+        "depth": 1,
+        "height": 6,
+        "comfort": 145,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "심플하고 우아한 다이오드 스탠드. 사람의 소리를 감지하여 밝기를 자동으로 조절한다.\n철야로 책상에 쓰러진 천사들이 코를 고는 소리에 불이 켜지면, 천사들은 '말짱한 정신'으로 꿈에서 깨게 된다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_decoratelamp_01": {
+        "id": "furni_TianshiMansion_decoratelamp_01",
+        "sortId": 1496,
+        "name": "'우수작'",
+        "iconId": "furni_TianshiMansion_decoratelamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_1",
+        "width": 5,
+        "depth": 2,
+        "height": 5,
+        "comfort": 225,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "제1회 대황 천사원 설계 대회 초급 조에서 우수상을 받은 작품.\n대회 참가자는 병풍과 조명을 중첩된 다변형 프레임으로 감싸 염국의 천사와 일맥상통하는 처세의 이념과 '모서리가 있어야 원을 알 수 있다'라는 이념을 담아 제출했다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_carpet_01": {
+        "id": "furni_TianshiMansion_carpet_01",
+        "sortId": 1497,
+        "name": "'만 리를 지나'",
+        "iconId": "furni_TianshiMansion_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_2",
+        "width": 20,
+        "depth": 4,
+        "height": 1,
+        "comfort": 165,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "오염 및 소음 흡수에 강한 카펫, 중요 건설 공정의 천사원에서 흔히 볼 수 있다.\n분쇄된 슬래그, 딱딱하게 굳은 모래와 자갈, 녹아내린 눈, 이 모든 것이 만 리를 걸어온 증거이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_database_01": {
+        "id": "furni_TianshiMansion_database_01",
+        "sortId": 1498,
+        "name": "정보 통합 단말기",
+        "iconId": "furni_TianshiMansion_database_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DEVICE_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_2",
+        "width": 12,
+        "depth": 6,
+        "height": 4,
+        "comfort": 315,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "신형 천사의가 보급됨에 따라 정보 통합 단말기도 공학부의 강력한 지원을 받을 수 있게 되었다.\n한 선생이 개인적으로 몰래 화생을 찾아가 선물을 건네며 젊은 세대가 만들어 낸 새로운 설비에 대한 사용법을 알려 달라고 요청했다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_table_01": {
+        "id": "furni_TianshiMansion_table_01",
+        "sortId": 1499,
+        "name": "종합 연산 테이블",
+        "iconId": "furni_TianshiMansion_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_2",
+        "width": 10,
+        "depth": 4,
+        "height": 5,
+        "comfort": 505,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정보 통합 단말기와 세트인 종합 연산 플랫폼, 환경 변수와 설계 도면을 시뮬레이션하고 시각화 모델로 출력할 수 있다.\n천사들이 사적으로 작성한 전자 마작 프로그램을 출력한 팀이 있었는데, 결과적으로 팀 전체가 경고 처분을 받게 되었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_stonecutoff_01": {
+        "id": "furni_TianshiMansion_stonecutoff_01",
+        "sortId": 1500,
+        "name": "각석 칸막이 촛대",
+        "iconId": "furni_TianshiMansion_stonecutoff_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_3",
+        "width": 7,
+        "depth": 2,
+        "height": 10,
+        "comfort": 425,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "업무와 휴식 구역을 분리하는 각석 촛대, 투박하지만 현대적인 디자인이다.\n하지만 기진맥진한 천사들은 허리를 굽혀 사이를 지나갈지언정, 결코 돌아서 가려고 하지 않아 설계자들의 화를 돋웠다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_bench_01": {
+        "id": "furni_TianshiMansion_bench_01",
+        "sortId": 1501,
+        "name": "다기능 천사 의자",
+        "iconId": "furni_TianshiMansion_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_2",
+        "width": 5,
+        "depth": 2,
+        "height": 2,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "장부 구조를 가진 나무 의자, 필요에 따라 행군용 침대, 선반, 심지어 사다리로도 만들 수 있다.\n“응? 이건 내 특허잖아? 내가 만든 건 인정 안 된다고? 됐어, 나한테 훠궈만 사 준다면 딱히 너희 책벌레들이랑은 싸우지 않을 테니까!”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_cabinet_01": {
+        "id": "furni_TianshiMansion_cabinet_01",
+        "sortId": 1502,
+        "name": "자동화 도면 수납함",
+        "iconId": "furni_TianshiMansion_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_3",
+        "width": 3,
+        "depth": 5,
+        "height": 10,
+        "comfort": 375,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "공정도면을 스마트 수납, 출력할 수 있는 자동화 거치대, 천사들이 가장 귀중한 지혜의 결정체를 이곳에 맡겼다.\n수확량을 늘린 밭이든, 황무지를 공략하는 도시든, 그것은 조금씩 현실이 되어가고 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_chair_01": {
+        "id": "furni_TianshiMansion_chair_01",
+        "sortId": 1503,
+        "name": "소형 천사 의자",
+        "iconId": "furni_TianshiMansion_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_2",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 125,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "소형 천사 의자, 긴 의자와 함께 사용할 수 있는 천사들의 충실한 동료이다.\n숙소, 실험실, 시공 현장, 공공 회당 등 중요한 장소에서 흔하게 볼 수 있다. 잊지 말고 자신의 이름을 새겨 넣자.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_walllamp_01": {
+        "id": "furni_TianshiMansion_walllamp_01",
+        "sortId": 1504,
+        "name": "'야여의'",
+        "iconId": "furni_TianshiMansion_walllamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLLAMP",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_4",
+        "width": 1,
+        "depth": 3,
+        "height": 5,
+        "comfort": 85,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "심플하고 소박한 모습의 천사원 벽등.\n이런 엉뚱한 '별명'이 생긴 이유는, 언제든지 벽에서 떼어내 휴대용 조명 기구로 사용할 수 있기 때문이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_datashelf_01": {
+        "id": "furni_TianshiMansion_datashelf_01",
+        "sortId": 1505,
+        "name": "'관계자 외 출입금지'",
+        "iconId": "furni_TianshiMansion_datashelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_4",
+        "width": 5,
+        "depth": 2,
+        "height": 6,
+        "comfort": 280,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "회의록, 육부의 공지, 인사 서류로 가득 차 있는 선반이다. 대부분의 천사들이 꺼려하지만 피할 수 없는 곳이기도 하다.\n“허허, 이곳은 천사원 행정부와 후방 지원부의 성이며, 관계자 외 출입 금지입니다.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_largelight_01": {
+        "id": "furni_TianshiMansion_largelight_01",
+        "sortId": 1506,
+        "name": "조합식 두공등",
+        "iconId": "furni_TianshiMansion_largelight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_4",
+        "width": 6,
+        "depth": 1,
+        "height": 3,
+        "comfort": 95,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "조합식 대형 두공 천장등, 여러 개의 소형 두공등을 이어서 만들었다.\n천사들 사이에서 크게 의견이 나뉘는 조명이다. 조명 효율과 유지 보수의 편리성 사이에 수많은 논쟁이 있었지만, 천사원의 등불은 바뀌지 않았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_armchair_01": {
+        "id": "furni_TianshiMansion_armchair_01",
+        "sortId": 1507,
+        "name": "천사원 벤치",
+        "iconId": "furni_TianshiMansion_armchair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_4",
+        "width": 2,
+        "depth": 4,
+        "height": 3,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "부드러운 방석과 쿠션이 있는 벤치, 등받이가 낮기에 천사들은 두 의자를 하나로 묶어 침대로 만드는 걸 선호한다.\n기술적인 난관이 잠에서 깨어난다고 해서 없어지지는 않지만, 계속되는 밤샘으로 인해 발생하는 두통과 근육통은 없앨 수 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_querydevice_01": {
+        "id": "furni_TianshiMansion_querydevice_01",
+        "sortId": 1508,
+        "name": "구색 2.0",
+        "iconId": "furni_TianshiMansion_querydevice_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 140,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "구색 2.0 정보 검색 단말기, 천사원 데이터베이스와 데이터를 공유한다. 단말기는 천사가 문서를 검색하는 데 드는 시간과 비용을 줄이며, 막대한 양의 종이 데이터에 파묻힐 리스크를 줄여 준다.\n“기본으로 설정되어 있는 아홉 칸의 패널은 선배들을 배려하기 위한 것이며, 천사의와 연결해야 합니다.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_wallpaper_01": {
+        "id": "furni_TianshiMansion_wallpaper_01",
+        "sortId": 1509,
+        "name": "천사원 방화벽",
+        "iconId": "furni_TianshiMansion_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "천사원 표준 방화벽. 오리지늄 격리 층을 확장해 대부분의 위험 환경의 위협을 효과적으로 막아 낼 수 있다.\n농업천사와 말싸움이 벌어질 때면, 이 방화벽은 토목천사의 든든한 벽이 되어 준다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_TianshiMansion_floor_01": {
+        "id": "furni_TianshiMansion_floor_01",
+        "sortId": 1510,
+        "name": "천사원 바닥",
+        "iconId": "furni_TianshiMansion_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_TianshiMansion",
+        "groupId": "furni_set_TianshiMansion_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "천사원 표준 바닥, 규격은 벽면과 비슷하다.\n토목천사가 끝없이 자기 자랑을 할 때마다 농업천사는 바닥을 밟으며 대황성의 새로운 땅이 그림자조차 찾아볼 수 없었을 시절에 먹은 음식은 누가 기른 것인지 되묻는다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_woodenchandelier_01": {
+        "id": "furni_SargonFair_woodenchandelier_01",
+        "sortId": 1511,
+        "name": "조각된 등 받침대",
+        "iconId": "furni_SargonFair_woodenchandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_1",
+        "width": 7,
+        "depth": 3,
+        "height": 5,
+        "comfort": 150,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "사르곤 전통 수예인의 손으로 만들어진 천장등.\n아슬란에 대한 존경으로 가득 차 있는 조각이 새겨져 있으며, 에메랄드 블루색의 등갓은 그들이 가진 미래에 대한 상상력을 덮고 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_yarncutoff_01": {
+        "id": "furni_SargonFair_yarncutoff_01",
+        "sortId": 1512,
+        "name": "천으로 된 칸막이",
+        "iconId": "furni_SargonFair_yarncutoff_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_1",
+        "width": 2,
+        "depth": 9,
+        "height": 10,
+        "comfort": 395,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "천과 기둥을 결합해서 만든 칸막이, 큰바람이 불 때면 얇은 천 위에 아래로 이동하면서 터지는 기포가 생겨난다.\n수천 년 동안 아르살란의 하늘을 맴돌던 바람은 사라지지 않았다. 비록 보이지도, 만질 수도 없지만, 각 시대를 살아가는 사람들은 자신들만의 방식으로 바람을 기록해 나가고 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_bed_01": {
+        "id": "furni_SargonFair_bed_01",
+        "sortId": 1513,
+        "name": "'보금자리'",
+        "iconId": "furni_SargonFair_bed_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_1",
+        "width": 9,
+        "depth": 4,
+        "height": 9,
+        "comfort": 540,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "푹신한 매트리스, 아름다운 베개, 딱 맞는 커튼.\n체력이 소모되는 황무지에는 여기처럼 생각을 멈추고 쉴 수 있는 공간이 필요하다. 이곳에 누우면 다음날로 빠르게 넘어갈 수 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_table_01": {
+        "id": "furni_SargonFair_table_01",
+        "sortId": 1514,
+        "name": "나무 액세서리 테이블",
+        "iconId": "furni_SargonFair_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_1",
+        "width": 4,
+        "depth": 3,
+        "height": 4,
+        "comfort": 125,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "어디서든 볼 수 있는 그루터기로 만든 장식구 테이블, 위에는 화려하게 빛나는 장신구들이 아무렇게나 놓여 있다.\n유넥티스가 자주 앉는다. 아무리 험난한 환경에 놓인다 할지라도, 아름다움에 대한 욕구는 변하지 않는 사람의 열망이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_gemlight_01": {
+        "id": "furni_SargonFair_gemlight_01",
+        "sortId": 1515,
+        "name": "보석 조명등",
+        "iconId": "furni_SargonFair_gemlight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_2",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 135,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "현지의 강 퇴적지에서 채집한 보석으로 기둥을 장식했으며, 불을 켜지 않아도 은은한 빛을 내뿜는다.\n사르곤의 기나긴 역사에서 보석은 한때 일세를 풍미한 존재이자, 단순한 장식으로 사용되는 걸 넘어서는 경우도 많았다. 유행이란 이렇게 돌고 도는 것일지도 모르겠다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_gemcactus_01": {
+        "id": "furni_SargonFair_gemcactus_01",
+        "sortId": 1516,
+        "name": "'파수꾼'",
+        "iconId": "furni_SargonFair_gemcactus_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_2",
+        "width": 3,
+        "depth": 4,
+        "height": 8,
+        "comfort": 215,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "말이 없는 식물과 과묵한 탁자가 서로 기대고 있다.\n투예가 가장 좋아하는 장식품으로, 물이 희귀한 곳에서는 살아 있는 식물보다 이러한 장식품이 미래에 대한 믿음을 가지게 만든다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_ceiling_01": {
+        "id": "furni_SargonFair_ceiling_01",
+        "sortId": 1517,
+        "name": "천으로 된 천장",
+        "iconId": "furni_SargonFair_ceiling_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_3",
+        "width": 20,
+        "depth": 7,
+        "height": 3,
+        "comfort": 460,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "천장등과 결합한 '기본 구조'. 칸막이로 사용하는 것과 같은 천으로 보인다.\n투예는 반나절 동안 이걸 걸기 위해서 악전고투했으며, 다시 내리기 위해 반나절을 사용했다. 떠날 시간이 되었기 때문이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_chair_01": {
+        "id": "furni_SargonFair_chair_01",
+        "sortId": 1518,
+        "name": "코르크 나무 벤치",
+        "iconId": "furni_SargonFair_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_3",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 155,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "흔하게 볼 수 있는 나무 의자, 부드러운 방석을 덧대어 놓았다.\n창문을 통해 들어온 햇빛이 의자에 내려앉아, 막사와 의자에 앉은 사람의 마음을 밝게 비춘다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_stocktable_01": {
+        "id": "furni_SargonFair_stocktable_01",
+        "sortId": 1519,
+        "name": "'작은 가판대'",
+        "iconId": "furni_SargonFair_stocktable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_3",
+        "width": 9,
+        "depth": 4,
+        "height": 4,
+        "comfort": 355,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "아르살란의 경계를 걷다 보면 길을 지나는 방문객들을 만날 수 있다. 방문객들은 가판대에서 주인이 무엇을 파는지 보곤 한다.\n작은 가판대는 사르곤의 광활한 황무지에서 자주 볼 수 있는 형식의 상점이다. 가끔씩은 전문적인 상점이 아니라 자신의 물건을 파는 가게도 볼 수 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_carpet_01": {
+        "id": "furni_SargonFair_carpet_01",
+        "sortId": 1520,
+        "name": "내열 카펫",
+        "iconId": "furni_SargonFair_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_3",
+        "width": 9,
+        "depth": 6,
+        "height": 1,
+        "comfort": 95,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "오퍼레이터 케스트럴의 고향 특산품, 부드럽고 습기에 강하다.\n“카펫이 소용없다는 생각을 한 적이 있어, 한 번은 막사 바닥에서 자그마한 원석충이 나오는 걸 봤거든.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_clothshelf_01": {
+        "id": "furni_SargonFair_clothshelf_01",
+        "sortId": 1521,
+        "name": "베틀",
+        "iconId": "furni_SargonFair_clothshelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DRESSING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_4",
+        "width": 6,
+        "depth": 2,
+        "height": 7,
+        "comfort": 235,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "베틀은 사르곤에서 옷감을 만드는 데 사용되며, 여기에선 건조대로 쓰이고 있다.\n장소에 따라 같은 물건이라도 다른 역할을 수행하곤 한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_brokencarpet_01": {
+        "id": "furni_SargonFair_brokencarpet_01",
+        "sortId": 1522,
+        "name": "'과거의 증거'",
+        "iconId": "furni_SargonFair_brokencarpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_4",
+        "width": 4,
+        "depth": 8,
+        "height": 1,
+        "comfort": 65,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "세월의 흔적이 느껴지는 오래된 카펫에서 과거를 엿볼 수 있다.\n투예의 캠핑카는 황무지를 지나가다가 유사에 빠진 적이 있는데, 이 카펫의 나머지 절반이 차량에 탄 사람들의 목숨을 구한 적이 있었다. 때문에 감사함을 표하는 의미에서 카펫이 평화롭게 지낼 수 있도록 이곳에 깔아놓았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_stoneshelf_01": {
+        "id": "furni_SargonFair_stoneshelf_01",
+        "sortId": 1523,
+        "name": "전시대",
+        "iconId": "furni_SargonFair_stoneshelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 150,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "전시대에는 깊숙한 황야에서 가져온 반짝반짝 빛나는 보석이 놓여 있다.\n“아르살란에는 이상한 게 참 많아. 우리한테 뭐 좀 찾아달라고 했던 그 아가씨 기억나?”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_stockcart_01": {
+        "id": "furni_SargonFair_stockcart_01",
+        "sortId": 1524,
+        "name": "'베푸는 자'",
+        "iconId": "furni_SargonFair_stockcart_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_4",
+        "width": 3,
+        "depth": 6,
+        "height": 7,
+        "comfort": 290,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "작아 보아지만 많은 '짐'을 실을 수 있다.\n원래는 사르곤인들이 이사하는 데 사용하는 도구이지만, 유넥티스가 캠프의 오퍼레이터들에게 식사를 나누어 주는 식사 차량으로 사용되곤 한다. “먹어야 일할 수 있는 법이야.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_chandelier_01": {
+        "id": "furni_SargonFair_chandelier_01",
+        "sortId": 1525,
+        "name": "천장 펜던트 조명",
+        "iconId": "furni_SargonFair_chandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 110,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "이론적으로는 천장에 설치해서 사용해야 하지만, 좀처럼 사용할 기회는 없었다. 여행 중엔 시간이 빠듯하기 때문이다.\n“걸기 너무 힘들어!” 투예는 등을 설치하면서 투덜거렸다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_ceilingbasket_01": {
+        "id": "furni_SargonFair_ceilingbasket_01",
+        "sortId": 1526,
+        "name": "잡동사니 바구니",
+        "iconId": "furni_SargonFair_ceilingbasket_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DECORATION_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_2",
+        "width": 2,
+        "depth": 3,
+        "height": 4,
+        "comfort": 90,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "막사 한편에 걸려 있는 바구니, 안에는 일상생활에 필요한 물건들과 어디서 가져왔는지 모를 잡동사니들로 가득하다.\n투예가 차를 몰고 임무를 수행하러 나갈 때마다 캠프의 아이들은 잡동사니를 가지고 나와 누가 더 많이 집어넣을 수 있는지 시합을 하기도 한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_wallpaper_01": {
+        "id": "furni_SargonFair_wallpaper_01",
+        "sortId": 1527,
+        "name": "황량한 광야 벽지",
+        "iconId": "furni_SargonFair_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "황야와 같은 톤을 가진 벽지, 심플한 무늬가 소박한 아름다움을 선사한다.\n“솔직히 말해서 물이 많은 곳이 더 좋지만, 물이 많은 곳이 어떨지 상상할 수가 없어서 이렇게 그려 버렸어.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_SargonFair_floor_01": {
+        "id": "furni_SargonFair_floor_01",
+        "sortId": 1528,
+        "name": "모래 방지 카펫",
+        "iconId": "furni_SargonFair_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_SargonFair",
+        "groupId": "furni_set_SargonFair_2",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "부잣집에서나 사용할 법한 모래 방지 바닥, 정교하고 아름다운 꽃무늬로 만들어졌다.\n이 바닥재는 원래 캠프의 일부분이 아니었다. 돈이 없는데 누가 캠프에 바닥을 깔 생각을 하겠는가?",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -65752,6 +67718,37 @@
         "comfort": 100,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "독특한 아름다움의 검 보관대. 원래는 검으로 베어 낸 마른 매화나무의 가지였다. 과거는 중요하지 않다. 보검이 검집 안에 숨겨져 있으니, 고목에는 또다시 새순이 피어난다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_SF2024_blessingPic_01": {
+        "id": "furni_SF2024_blessingPic_01",
+        "sortId": 10108,
+        "name": "염국 명절 장식",
+        "iconId": "furni_SF2024_blessingPic_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ORTHER_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 3,
+        "depth": 1,
+        "height": 7,
+        "comfort": 100,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "명절 분위기를 한껏 끌어올리는 염국 장식품, 이런 날에는 축복의 말은 아낄 필요도 없으며, 고향으로 돌아가는 사람이 적지 않을 것이다.",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -68520,10 +70517,41 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_terratimes_Yan_01": {
+        "id": "furni_terratimes_Yan_01",
+        "sortId": 11082,
+        "name": "플레이트 《번영》",
+        "iconId": "furni_terratimes_Yan_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "강과 산은 빛나고, 신은 어디에도 보이지 않는다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
-        "name": "황무지의 깃발",
+        "name": "황무지 깃발",
         "iconId": "furni_contract_s0_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68554,7 +70582,7 @@
       "furni_contract_s1_01": {
         "id": "furni_contract_s1_01",
         "sortId": 12002,
-        "name": "파이라이트의 깃발",
+        "name": "파이라이트 깃발",
         "iconId": "furni_contract_s1_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68585,7 +70613,7 @@
       "furni_contract_s2_01": {
         "id": "furni_contract_s2_01",
         "sortId": 12003,
-        "name": "칼날의 깃발",
+        "name": "칼날 깃발",
         "iconId": "furni_contract_s2_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68647,7 +70675,7 @@
       "furni_contract_s4_01": {
         "id": "furni_contract_s4_01",
         "sortId": 12005,
-        "name": "리드씰의 깃발",
+        "name": "리드씰 깃발",
         "iconId": "furni_contract_s4_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68678,7 +70706,7 @@
       "furni_contract_s5_01": {
         "id": "furni_contract_s5_01",
         "sortId": 12006,
-        "name": "스펙트럼의 깃발",
+        "name": "스펙트럼 깃발",
         "iconId": "furni_contract_s5_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68771,7 +70799,7 @@
       "furni_contract_s8_01": {
         "id": "furni_contract_s8_01",
         "sortId": 12009,
-        "name": "돈시커의 깃발",
+        "name": "돈시커 깃발",
         "iconId": "furni_contract_s8_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68802,7 +70830,7 @@
       "furni_contract_s9_01": {
         "id": "furni_contract_s9_01",
         "sortId": 12010,
-        "name": "딥니스의 깃발",
+        "name": "딥니스 깃발",
         "iconId": "furni_contract_s9_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68833,7 +70861,7 @@
       "furni_contract_s10_01": {
         "id": "furni_contract_s10_01",
         "sortId": 12011,
-        "name": "애쉬링의 깃발",
+        "name": "애쉬링 깃발",
         "iconId": "furni_contract_s10_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68895,7 +70923,7 @@
       "furni_contract_s12_01": {
         "id": "furni_contract_s12_01",
         "sortId": 12013,
-        "name": "베이스포인트의 깃발",
+        "name": "베이스포인트 깃발",
         "iconId": "furni_contract_s12_01",
         "interactType": "NONE",
         "musicId": "",
@@ -68957,7 +70985,7 @@
       "furni_contract2_s1_01": {
         "id": "furni_contract2_s1_01",
         "sortId": 12015,
-        "name": "파이롤리시스의 깃발",
+        "name": "파이롤리시스 깃발",
         "iconId": "furni_contract2_s1_01",
         "interactType": "NONE",
         "musicId": "",
@@ -69534,6 +71562,37 @@
         "comfort": 105,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "염국 산속 관문 섬멸을 완료하고 보고를 제출하면 획득 가능한 기념품. 산속 관문의 소리가 아직도 귓가에 남아 울리는 듯하다.",
+        "obtainApproach": "섬멸 의뢰 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_annihilation_s21_01": {
+        "id": "furni_annihilation_s21_01",
+        "sortId": 13019,
+        "name": "시에스타의 메아리 (애비뉴)",
+        "iconId": "furni_annihilation_s21_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "시에스타 뉴호텔 애비뉴 섬멸을 완료하고 보고를 제출하면 획득할 수 있는 기념품, 뉴호텔 거리의 소리가 아직도 귓가에 남아 울리는 듯하다.",
         "obtainApproach": "섬멸 의뢰 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -83725,6 +85784,442 @@
           "furni_shuttle_wallpaper_01",
           "furni_shuttle_floor_01"
         ]
+      },
+      "furni_set_TempleFair": {
+        "id": "furni_set_TempleFair",
+        "sortId": 86,
+        "name": "신농제 묘회",
+        "themeType": "NORMAL",
+        "desc": "소만과 화생의 설명에 따라 대황성 신농제묘회를 재현한 컨셉룸. 모든 것이 떠들썩하니, 사람들이 바라는 대로 이루어지리라.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_TempleFair_ceilingLamp_01",
+            "pos0": 0,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_table_01",
+            "pos0": 0,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_cabinet_01",
+            "pos0": 4,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_bookshelf_01",
+            "pos0": 8,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_chair_01",
+            "pos0": 10,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_cabinet_02",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_lamp_01",
+            "pos0": 12,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_ceilingLights_01",
+            "pos0": 15,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_chair_02",
+            "pos0": 15,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_carpet_01",
+            "pos0": 14,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_tapestry_01",
+            "pos0": 21,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_pool_01",
+            "pos0": 14,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_incense_01",
+            "pos0": 17,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_stand_01",
+            "pos0": 27,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_basket_01",
+            "pos0": 23,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_shelf_01",
+            "pos0": 29,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_table_02",
+            "pos0": 30,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TempleFair_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_TempleFair_1",
+          "furni_set_TempleFair_2",
+          "furni_set_TempleFair_3",
+          "furni_set_TempleFair_4"
+        ],
+        "furnitures": [
+          "furni_TempleFair_ceilingLamp_01",
+          "furni_TempleFair_table_01",
+          "furni_TempleFair_cabinet_01",
+          "furni_TempleFair_bookshelf_01",
+          "furni_TempleFair_chair_01",
+          "furni_TempleFair_cabinet_02",
+          "furni_TempleFair_lamp_01",
+          "furni_TempleFair_ceilingLights_01",
+          "furni_TempleFair_chair_02",
+          "furni_TempleFair_carpet_01",
+          "furni_TempleFair_tapestry_01",
+          "furni_TempleFair_pool_01",
+          "furni_TempleFair_incense_01",
+          "furni_TempleFair_stand_01",
+          "furni_TempleFair_basket_01",
+          "furni_TempleFair_shelf_01",
+          "furni_TempleFair_table_02",
+          "furni_TempleFair_wallpaper_01",
+          "furni_TempleFair_floor_01"
+        ]
+      },
+      "furni_set_TianshiMansion": {
+        "id": "furni_set_TianshiMansion",
+        "sortId": 87,
+        "name": "대황천사원",
+        "themeType": "EVENT",
+        "desc": "대황성의 천사원을 정확하게 재현했다. 신농이 산과 강의 피부에 키워낸 첫 옥토와 비견할 만한 곳으로, 이곳에서 천사들의 이상이 싹트고, 자라고, 결실을 맺는다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_TianshiMansion_minilight_01",
+            "pos0": 0,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_bookshelf_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_floorlamp_01",
+            "pos0": 4,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_decoratelamp_01",
+            "pos0": 4,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_carpet_01",
+            "pos0": 4,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_database_01",
+            "pos0": 6,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_table_01",
+            "pos0": 7,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_stonecutoff_01",
+            "pos0": 17,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_bench_01",
+            "pos0": 9,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_cabinet_01",
+            "pos0": 24,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_chair_01",
+            "pos0": 18,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_walllamp_01",
+            "pos0": 28,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_datashelf_01",
+            "pos0": 29,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_largelight_01",
+            "pos0": 28,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_armchair_01",
+            "pos0": 32,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_querydevice_01",
+            "pos0": 25,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_TianshiMansion_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_TianshiMansion_1",
+          "furni_set_TianshiMansion_2",
+          "furni_set_TianshiMansion_3",
+          "furni_set_TianshiMansion_4"
+        ],
+        "furnitures": [
+          "furni_TianshiMansion_minilight_01",
+          "furni_TianshiMansion_bookshelf_01",
+          "furni_TianshiMansion_floorlamp_01",
+          "furni_TianshiMansion_decoratelamp_01",
+          "furni_TianshiMansion_carpet_01",
+          "furni_TianshiMansion_database_01",
+          "furni_TianshiMansion_table_01",
+          "furni_TianshiMansion_stonecutoff_01",
+          "furni_TianshiMansion_bench_01",
+          "furni_TianshiMansion_cabinet_01",
+          "furni_TianshiMansion_chair_01",
+          "furni_TianshiMansion_walllamp_01",
+          "furni_TianshiMansion_datashelf_01",
+          "furni_TianshiMansion_largelight_01",
+          "furni_TianshiMansion_armchair_01",
+          "furni_TianshiMansion_querydevice_01",
+          "furni_TianshiMansion_wallpaper_01",
+          "furni_TianshiMansion_floor_01"
+        ]
+      },
+      "furni_set_SargonFair": {
+        "id": "furni_set_SargonFair",
+        "sortId": 88,
+        "name": "아르살란 여행용 막사",
+        "themeType": "EVENT",
+        "desc": "푄 고온지대와 가까운 아르살란 지역을 여행할 때, 이렇게 생긴 막사는 필수품이다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_SargonFair_woodenchandelier_01",
+            "pos0": 2,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_yarncutoff_01",
+            "pos0": 9,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_bed_01",
+            "pos0": 0,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_table_01",
+            "pos0": 2,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_gemlight_01",
+            "pos0": 11,
+            "pos1": 8,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_gemcactus_01",
+            "pos0": 11,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_ceiling_01",
+            "pos0": 14,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_chair_01",
+            "pos0": 14,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_stocktable_01",
+            "pos0": 16,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_carpet_01",
+            "pos0": 13,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_clothshelf_01",
+            "pos0": 21,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_brokencarpet_01",
+            "pos0": 29,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_stoneshelf_01",
+            "pos0": 27,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_stockcart_01",
+            "pos0": 31,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_chandelier_01",
+            "pos0": 29,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_ceilingbasket_01",
+            "pos0": 11,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_SargonFair_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_SargonFair_1",
+          "furni_set_SargonFair_2",
+          "furni_set_SargonFair_3",
+          "furni_set_SargonFair_4"
+        ],
+        "furnitures": [
+          "furni_SargonFair_woodenchandelier_01",
+          "furni_SargonFair_yarncutoff_01",
+          "furni_SargonFair_bed_01",
+          "furni_SargonFair_table_01",
+          "furni_SargonFair_gemlight_01",
+          "furni_SargonFair_gemcactus_01",
+          "furni_SargonFair_ceiling_01",
+          "furni_SargonFair_chair_01",
+          "furni_SargonFair_stocktable_01",
+          "furni_SargonFair_carpet_01",
+          "furni_SargonFair_clothshelf_01",
+          "furni_SargonFair_brokencarpet_01",
+          "furni_SargonFair_stoneshelf_01",
+          "furni_SargonFair_stockcart_01",
+          "furni_SargonFair_chandelier_01",
+          "furni_SargonFair_ceilingbasket_01",
+          "furni_SargonFair_wallpaper_01",
+          "furni_SargonFair_floor_01"
+        ]
       }
     },
     "groups": {
@@ -88641,6 +91136,181 @@
           "furni_shuttle_ringstand_01",
           "furni_shuttle_frame_01"
         ]
+      },
+      "furni_set_TempleFair_1": {
+        "id": "furni_set_TempleFair_1",
+        "sortId": 1,
+        "name": "명절의 풍경",
+        "themeId": "furni_set_TempleFair",
+        "comfort": 320,
+        "count": 6,
+        "furniture": [
+          "furni_TempleFair_ceilingLamp_01",
+          "furni_TempleFair_table_01",
+          "furni_TempleFair_cabinet_01",
+          "furni_TempleFair_bookshelf_01",
+          "furni_TempleFair_cabinet_02",
+          "furni_TempleFair_chair_01"
+        ]
+      },
+      "furni_set_TempleFair_2": {
+        "id": "furni_set_TempleFair_2",
+        "sortId": 2,
+        "name": "북방의 경치",
+        "themeId": "furni_set_TempleFair",
+        "comfort": 310,
+        "count": 5,
+        "furniture": [
+          "furni_TempleFair_lamp_01",
+          "furni_TempleFair_ceilingLights_01",
+          "furni_TempleFair_pool_01",
+          "furni_TempleFair_wallpaper_01",
+          "furni_TempleFair_floor_01"
+        ]
+      },
+      "furni_set_TempleFair_3": {
+        "id": "furni_set_TempleFair_3",
+        "sortId": 3,
+        "name": "한 해의 축복",
+        "themeId": "furni_set_TempleFair",
+        "comfort": 100,
+        "count": 4,
+        "furniture": [
+          "furni_TempleFair_chair_02",
+          "furni_TempleFair_carpet_01",
+          "furni_TempleFair_basket_01",
+          "furni_TempleFair_incense_01"
+        ]
+      },
+      "furni_set_TempleFair_4": {
+        "id": "furni_set_TempleFair_4",
+        "sortId": 4,
+        "name": "가지와 열매",
+        "themeId": "furni_set_TempleFair",
+        "comfort": 220,
+        "count": 4,
+        "furniture": [
+          "furni_TempleFair_tapestry_01",
+          "furni_TempleFair_stand_01",
+          "furni_TempleFair_shelf_01",
+          "furni_TempleFair_table_02"
+        ]
+      },
+      "furni_set_TianshiMansion_1": {
+        "id": "furni_set_TianshiMansion_1",
+        "sortId": 1,
+        "name": "개천공",
+        "themeId": "furni_set_TianshiMansion",
+        "comfort": 170,
+        "count": 4,
+        "furniture": [
+          "furni_TianshiMansion_minilight_01",
+          "furni_TianshiMansion_bookshelf_01",
+          "furni_TianshiMansion_decoratelamp_01",
+          "furni_TianshiMansion_floorlamp_01"
+        ]
+      },
+      "furni_set_TianshiMansion_2": {
+        "id": "furni_set_TianshiMansion_2",
+        "sortId": 2,
+        "name": "제민술",
+        "themeId": "furni_set_TianshiMansion",
+        "comfort": 310,
+        "count": 5,
+        "furniture": [
+          "furni_TianshiMansion_database_01",
+          "furni_TianshiMansion_table_01",
+          "furni_TianshiMansion_bench_01",
+          "furni_TianshiMansion_chair_01",
+          "furni_TianshiMansion_carpet_01"
+        ]
+      },
+      "furni_set_TianshiMansion_3": {
+        "id": "furni_set_TianshiMansion_3",
+        "sortId": 3,
+        "name": "산천고",
+        "themeId": "furni_set_TianshiMansion",
+        "comfort": 330,
+        "count": 5,
+        "furniture": [
+          "furni_TianshiMansion_stonecutoff_01",
+          "furni_TianshiMansion_cabinet_01",
+          "furni_TianshiMansion_querydevice_01",
+          "furni_TianshiMansion_wallpaper_01",
+          "furni_TianshiMansion_floor_01"
+        ]
+      },
+      "furni_set_TianshiMansion_4": {
+        "id": "furni_set_TianshiMansion_4",
+        "sortId": 4,
+        "name": "강하주",
+        "themeId": "furni_set_TianshiMansion",
+        "comfort": 140,
+        "count": 4,
+        "furniture": [
+          "furni_TianshiMansion_walllamp_01",
+          "furni_TianshiMansion_datashelf_01",
+          "furni_TianshiMansion_largelight_01",
+          "furni_TianshiMansion_armchair_01"
+        ]
+      },
+      "furni_set_SargonFair_1": {
+        "id": "furni_set_SargonFair_1",
+        "sortId": 1,
+        "name": "'아라키슈투 정글'",
+        "themeId": "furni_set_SargonFair",
+        "comfort": 305,
+        "count": 4,
+        "furniture": [
+          "furni_SargonFair_woodenchandelier_01",
+          "furni_SargonFair_yarncutoff_01",
+          "furni_SargonFair_bed_01",
+          "furni_SargonFair_table_01"
+        ]
+      },
+      "furni_set_SargonFair_2": {
+        "id": "furni_set_SargonFair_2",
+        "sortId": 2,
+        "name": "'나루타바팀 알칼리스'",
+        "themeId": "furni_set_SargonFair",
+        "comfort": 180,
+        "count": 5,
+        "furniture": [
+          "furni_SargonFair_gemlight_01",
+          "furni_SargonFair_gemcactus_01",
+          "furni_SargonFair_ceilingbasket_01",
+          "furni_SargonFair_wallpaper_01",
+          "furni_SargonFair_floor_01"
+        ]
+      },
+      "furni_set_SargonFair_3": {
+        "id": "furni_set_SargonFair_3",
+        "sortId": 3,
+        "name": "'에클루무 오아시스'",
+        "themeId": "furni_set_SargonFair",
+        "comfort": 270,
+        "count": 4,
+        "furniture": [
+          "furni_SargonFair_ceiling_01",
+          "furni_SargonFair_chair_01",
+          "furni_SargonFair_stocktable_01",
+          "furni_SargonFair_carpet_01"
+        ]
+      },
+      "furni_set_SargonFair_4": {
+        "id": "furni_set_SargonFair_4",
+        "sortId": 4,
+        "name": "'옛 왕좌'",
+        "themeId": "furni_set_SargonFair",
+        "comfort": 200,
+        "count": 5,
+        "furniture": [
+          "furni_SargonFair_clothshelf_01",
+          "furni_SargonFair_brokencarpet_01",
+          "furni_SargonFair_stoneshelf_01",
+          "furni_SargonFair_stockcart_01",
+          "furni_SargonFair_chandelier_01"
+        ]
       }
     },
     "types": {
@@ -89132,6 +91802,9 @@
         },
         {
           "skinId": "char_4054_malist@summer#14"
+        },
+        {
+          "skinId": "char_341_sntlla@summer#15"
         }
       ]
     },
