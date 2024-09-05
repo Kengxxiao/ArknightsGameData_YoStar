@@ -133,6 +133,26 @@
         "obtainApproach": "特殊報酬"
       },
       {
+        "avatarId": "avatar_special_15",
+        "avatarType": "SPECIAL",
+        "avatarIdSort": 15,
+        "avatarIdDesc": "パック購入して獲得\n「防衛」",
+        "avatarItemName": "「防衛」",
+        "avatarItemDesc": "侵攻を阻め、停滞させよ。冷静さを失うな。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "特殊報酬"
+      },
+      {
+        "avatarId": "avatar_special_16",
+        "avatarType": "SPECIAL",
+        "avatarIdSort": 16,
+        "avatarIdDesc": "パック購入して獲得\n「進撃」",
+        "avatarItemName": "「進撃」",
+        "avatarItemDesc": "勢いを削ぎ、突破を図れ。思考を止めるな。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "特殊報酬"
+      },
+      {
         "avatarId": "avatar_special_17",
         "avatarType": "SPECIAL",
         "avatarIdSort": 17,
@@ -563,6 +583,16 @@
         "obtainApproach": "生息演算報酬"
       },
       {
+        "avatarId": "avatar_activity_CR",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 42,
+        "avatarIdDesc": "スタンプラリー報酬\n「監視中」",
+        "avatarItemName": "「監視中」",
+        "avatarItemDesc": "見定めることも一種の力。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "スタンプラリー報酬"
+      },
+      {
         "avatarId": "avatar_def_01",
         "avatarType": "DEFAULT",
         "avatarIdSort": 1,
@@ -737,6 +767,8 @@
           "avatar_special_10",
           "avatar_special_12",
           "avatar_special_13",
+          "avatar_special_15",
+          "avatar_special_16",
           "avatar_special_17",
           "avatar_special_18"
         ]
@@ -785,7 +817,8 @@
           "avatar_activity_IW",
           "avatar_activity_AW",
           "avatar_activity_GA",
-          "avatar_activity_XB1_1"
+          "avatar_activity_XB1_1",
+          "avatar_activity_CR"
         ]
       },
       "DEFAULT": {
@@ -993,6 +1026,34 @@
         "unlockDesList": [
           "統合戦略「ミヅキと紺碧の樹」報酬"
         ]
+      },
+      {
+        "bgId": "bg_rainbowsix_1",
+        "bgType": "ACTIVITY",
+        "bgSortId": 14,
+        "bgStartTime": 1725519600,
+        "bgName": "「Prestige」",
+        "bgMusicId": "music_bg_rainbowsix",
+        "bgDes": "このような場所を訪れる人間の目的は、大きく分けて二つある。一つは富で、もう一つは名声だ。",
+        "bgUsage": "一枚の写真、ひと時の思い出、テラの大地でのある瞬間が凝縮されている。",
+        "obtainApproach": "パック購入",
+        "unlockDesList": [
+          "[購買部]で安全演習記念パックを購入して獲得"
+        ]
+      },
+      {
+        "bgId": "bg_rogue_3",
+        "bgType": "ACTIVITY",
+        "bgSortId": 13,
+        "bgStartTime": 1727722800,
+        "bgName": "始点",
+        "bgMusicId": "music_rogue_3_12",
+        "bgDes": "古の氷原の最果て、そして先駆者たちの起点。未来を見つめる目が、そこにある。",
+        "bgUsage": "一枚の写真、ひと時の思い出、テラの大地でのある瞬間が凝縮されている。",
+        "obtainApproach": "統合戦略報酬",
+        "unlockDesList": [
+          "統合戦略「探索者と銀氷の果て」報酬"
+        ]
       }
     ],
     "themeList": [
@@ -1053,6 +1114,21 @@
         ],
         "isLimitObtain": true,
         "hideWhenLimit": false
+      },
+      {
+        "id": "tm_rainbowsix_1",
+        "type": "ACTIVITY",
+        "sortId": 5,
+        "startTime": 1725519600,
+        "tmName": "「Siege」",
+        "tmDes": "戦局は目まぐるしく変化する。耳をそばだて、目を凝らせ。",
+        "tmUsage": "機能を一切変更することなく、PRTS画面のデザインを一新しました。",
+        "obtainApproach": "購買部パック",
+        "unlockDesList": [
+          "[購買部]で安全演習記念パックを購入して獲得"
+        ],
+        "isLimitObtain": true,
+        "hideWhenLimit": true
       }
     ],
     "themeLimitData": {
@@ -1062,6 +1138,16 @@
           {
             "startTime": 1713232800,
             "endTime": 1714417199,
+            "invalidObtainDesc": "現在入手できません"
+          }
+        ]
+      },
+      "tm_rainbowsix_1": {
+        "id": "tm_rainbowsix_1",
+        "limitInfos": [
+          {
+            "startTime": 1725519600,
+            "endTime": 1727895599,
             "invalidObtainDesc": "現在入手できません"
           }
         ]
@@ -1131,6 +1217,28 @@
         "skinApproach": "デフォルト",
         "unlockConditionCnt": 0,
         "unlockDescList": [],
+        "fixedModuleList": [
+          "module_background",
+          "module_illust",
+          "module_collect",
+          "module_avatar"
+        ],
+        "isTimeLimit": false,
+        "timeLimitInfoList": []
+      },
+      "nc_rhodes_light": {
+        "id": "nc_rhodes_light",
+        "name": "決意",
+        "type": "MAINLINE",
+        "sortId": 2,
+        "skinStartTime": 1725519600,
+        "skinDesc": "昔日の秘密は未だ迷霧に包まれているが、あなたは意思を固めた。",
+        "usageDesc": "機能性を損なうことなく、PRTSのインターフェイスを一新しました。",
+        "skinApproach": "特定のレベルに達すると解放",
+        "unlockConditionCnt": 1,
+        "unlockDescList": [
+          "レベルが80に到達"
+        ],
         "fixedModuleList": [
           "module_background",
           "module_illust",

@@ -11742,6 +11742,118 @@
           ]
         }
       ]
+    },
+    "char_4123_ela": {
+      "charId": "char_4123_ela",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[020]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_clue_cost&faction[990]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4124_iana": {
+      "charId": "char_4124_iana",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4125_rdoc": {
+      "charId": "char_4125_rdoc",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[1020]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all[026]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4126_fuze": {
+      "charId": "char_4126_fuze",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[1030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -12176,6 +12288,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "制御中枢配置時、制御中枢内の<$cc.g.R6><@cc.kw>レインボー小隊</></>所属オペレーター1人につき、中枢内全員の体力が1時間ごとに<@cc.vup>+0.05</>回復"
+    },
+    "control_clue_cost&faction[990]": {
+      "buffId": "control_clue_cost&faction[990]",
+      "buffName": "反抗者",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_ela",
+      "sortId": 1005,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、ボード上未入手の手がかりを入手しやすいが、自身を除く制御中枢内全員の1時間ごとの体力消費量<@cc.vdown>+0.25</>"
     },
     "control_mp_cost&bd1[000]": {
       "buffId": "control_mp_cost&bd1[000]",
@@ -12884,6 +13008,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、配属オペレーター全員の<$cc.sk.manu2><@cc.kw>ラインテク系</></>、<$cc.sk.manu3><@cc.kw>レッドパイン系</></>スキルがすべて<@cc.kw>標準化系</>スキルと見なされる"
+    },
+    "manu_prod_bd[000]": {
+      "buffId": "manu_prod_bd[000]",
+      "buffName": "寡黙な仕事人",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_fuze",
+      "sortId": 3900,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、製造効率<@cc.vup>+20%</>。<$cc.bd_tachanka><@cc.rem>ウルサスドリンク</></><@cc.vup>1</>本につき、保管上限<@cc.vup>+2</>"
     },
     "manu_prod_spd_addition[030]": {
       "buffId": "manu_prod_spd_addition[030]",
@@ -15381,6 +15517,54 @@
       "roomType": "TRAINING",
       "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.tag.knight><@cc.kw>騎士</></>オペレーター1人につき、訓練速度<@cc.vup>+5%</>（最大<@cc.kw>8</>人まで）"
     },
+    "train_spd_tag[020]": {
+      "buffId": "train_spd_tag[020]",
+      "buffName": "戦術指導・防衛",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_defense",
+      "sortId": 9930,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.g.Defence><@cc.kw>防衛側</></>オペレーター1人につき、訓練速度<@cc.vup>+10%</>（最大<@cc.kw>4</>人まで）"
+    },
+    "train_spd_tag[1020]": {
+      "buffId": "train_spd_tag[1020]",
+      "buffName": "戦術指導・防衛",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_defense",
+      "sortId": 9931,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.g.Defence><@cc.kw>防衛側</></>オペレーター1人につき、訓練速度<@cc.vup>+10%</>（最大<@cc.kw>4</>人まで）"
+    },
+    "train_spd_tag[030]": {
+      "buffId": "train_spd_tag[030]",
+      "buffName": "﻿戦術指導・攻撃",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_attack",
+      "sortId": 9932,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.g.Attack><@cc.kw>攻撃側</></>オペレーター1人につき、訓練速度<@cc.vup>+10%</>（最大<@cc.kw>4</>人まで）"
+    },
+    "train_spd_tag[1030]": {
+      "buffId": "train_spd_tag[1030]",
+      "buffName": "﻿戦術指導・攻撃",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_attack",
+      "sortId": 9933,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、基地に配置された（補佐を除く）<$cc.g.Attack><@cc.kw>攻撃側</></>オペレーター1人につき、訓練速度<@cc.vup>+10%</>（最大<@cc.kw>4</>人まで）"
+    },
     "train_spd_doubleProf[000]": {
       "buffId": "train_spd_doubleProf[000]",
       "buffName": "剣とハンドキャノン",
@@ -16941,6 +17125,18 @@
       "roomType": "DORMITORY",
       "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
     },
+    "dorm_rec_all[026]": {
+      "buffId": "dorm_rec_all[026]",
+      "buffName": "利他主義",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all3",
+      "sortId": 5426,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+    },
     "dorm_bd_num[000]": {
       "buffId": "dorm_bd_num[000]",
       "buffName": "声なき協奏",
@@ -17876,6 +18072,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "応接室配置時、ボード上入手済の手がかりを入手しやすい"
+    },
+    "meet_spd_bd[000]": {
+      "buffId": "meet_spd_bd[000]",
+      "buffName": "情報エキスパート",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_iana",
+      "sortId": 6990,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "応接室配置時、手がかり捜索速度<@cc.vup>+5%</>。また、<$cc.bd_ash><@cc.rem>情報備蓄</></><@cc.vup>1</>につき、さらに<@cc.vup>+5%</>"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -65278,6 +65486,626 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_artmuseum_headset_01": {
+        "id": "furni_artmuseum_headset_01",
+        "sortId": 1529,
+        "name": "ギャラリー音声ガイド",
+        "iconId": "furni_artmuseum_headset_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 160,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "最新の視線追跡装置が搭載された音声ガイド。鑑賞者が視線を止めた位置に応じて自動で展示品の解説を行う。\nしかし、現時点では解説データが一切導入されていないため、装着してもβテストの際に使用していたロックミュージックしか流れてこない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_weirdexhibit_01": {
+        "id": "furni_artmuseum_weirdexhibit_01",
+        "sortId": 1530,
+        "name": "「波を破る」",
+        "iconId": "furni_artmuseum_weirdexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 5,
+        "depth": 4,
+        "height": 10,
+        "comfort": 405,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はイベリアに住むエーギル人である。\n発表された当初は、人類が海を征服する決意を表現していると讃えられたが、後にあの災難の兆しであると非難を浴びた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_brochure_01": {
+        "id": "furni_artmuseum_brochure_01",
+        "sortId": 1531,
+        "name": "ギャラリーのラック",
+        "iconId": "furni_artmuseum_brochure_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 4,
+        "depth": 2,
+        "height": 2,
+        "comfort": 130,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "パンフレットやガイドブックがいっぱいに並べられたフリーペーパー用ラック。発行日はどれもギャラリーの開館日のままになっている。\n日付など気にする必要はない。展示品に目を奪われた人々が、このラックに目を向けることはないのだから。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_fence_01": {
+        "id": "furni_artmuseum_fence_01",
+        "sortId": 1532,
+        "name": "ギャラリーのフェンス",
+        "iconId": "furni_artmuseum_fence_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 2,
+        "depth": 3,
+        "height": 2,
+        "comfort": 140,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "通行止め用のフェンスに見えるが、両脇ががら空きなので、迂回すれば普通に通れる。\nレイネルがこのような設計にした意図は至極単純である。これを見て進むことを躊躇うような者は、そもそも中へ入る資格がないと判断したからだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_chandelier_01": {
+        "id": "furni_artmuseum_chandelier_01",
+        "sortId": 1533,
+        "name": "ギャラリーの天井照明",
+        "iconId": "furni_artmuseum_chandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 9,
+        "depth": 8,
+        "height": 2,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーの一部の展示ホールで使用されているメイン天井照明。芸術館全体の内装と比べるとやや華やかさに欠ける。\nこだわり抜いたランプシェードは、光を想定外の角度に屈折させ、ほんのり不気味な雰囲気を作り出している。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_sculpture_01": {
+        "id": "furni_artmuseum_sculpture_01",
+        "sortId": 1534,
+        "name": "「授賞式」",
+        "iconId": "furni_artmuseum_sculpture_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 6,
+        "depth": 5,
+        "height": 8,
+        "comfort": 460,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はレイネル・コワルスキー。レイネルの初期の作品と同じテーマで製作されている。\n「落選者は結果発表を聞いた瞬間に下を向いた。彼の手には、僕の心を酷く揺さぶった作品が握られていた。その瞬間、僕は初めて『公平、公正、公開性』の意味を理解したよ。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_notouch_01": {
+        "id": "furni_artmuseum_notouch_01",
+        "sortId": 1535,
+        "name": "秘蔵展示品「さわるな」",
+        "iconId": "furni_artmuseum_notouch_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 5,
+        "depth": 1,
+        "height": 1,
+        "comfort": 130,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はレイネル・コワルスキー。「さわるな」の標識以外は、すべて市場のどこにでもある量産品だ。\n「ミウォシュ、あの標識にタッチパネルを付け加えるのはどうかね？」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_whaleexhibit_01": {
+        "id": "furni_artmuseum_whaleexhibit_01",
+        "sortId": 1536,
+        "name": "「解体、或いは解剖」",
+        "iconId": "furni_artmuseum_whaleexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DECORATION_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 170,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者不明。\n作品の裏に小さな文字でこう書かれている――「我々は肌と筋肉の繊維に沿ってこれを正確に解剖したのかもしれないし、ただこれを醜い塊に解体しただけかもしれない。」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_pepperexhibit_01": {
+        "id": "furni_artmuseum_pepperexhibit_01",
+        "sortId": 1537,
+        "name": "「光と熱」",
+        "iconId": "furni_artmuseum_pepperexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 130,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者は炎国の尚蜀に住むラテラーノ人である。\nこの展示台は光るだけでなく、作者がこよなく愛するラー油とドーナツをブレンドした香りを放つ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_stoneexhibit_01": {
+        "id": "furni_artmuseum_stoneexhibit_01",
+        "sortId": 1538,
+        "name": "「連鎖する音」",
+        "iconId": "furni_artmuseum_stoneexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 165,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はリターニアの絵本作家。\nこの作品は本来、作者自身の子供のために作ったオモチャだという。銅のパーツを様々な方法で組み合わせることにより、叩き方によって異なる音色が響く。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_fossil_01": {
+        "id": "furni_artmuseum_fossil_01",
+        "sortId": 1539,
+        "name": "「現代史」",
+        "iconId": "furni_artmuseum_fossil_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 2,
+        "depth": 1,
+        "height": 3,
+        "comfort": 60,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はヴィクトリアの考古学者。\n長年の発掘調査が徒労に終わったことへの怒りに、彼は手を使って粘土板に鱗獣の形を作り、さらに夕飯に出される予定だった鱗獣を使って「手形」を取った。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_bench_01": {
+        "id": "furni_artmuseum_bench_01",
+        "sortId": 1540,
+        "name": "ギャラリーのベンチ",
+        "iconId": "furni_artmuseum_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 6,
+        "depth": 3,
+        "height": 2,
+        "comfort": 205,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "片側に一本の溝が入ったベンチ。コレクションではないが、レイネルが自身でデザインを手がけたものである。\n「短いほうには座るな、ミウォシュ。そっちは共にギャラリーを巡る親しい者を持たない人が、孤独を嚙みしめるための席だ。」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_carpet_01": {
+        "id": "furni_artmuseum_carpet_01",
+        "sortId": 1541,
+        "name": "ギャラリーの絨毯",
+        "iconId": "furni_artmuseum_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 7,
+        "depth": 4,
+        "height": 1,
+        "comfort": 65,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "白黒模様の絨毯。黒い部分はごく普通の布の生地でできているが、白い部分は金属製の糸を編み込んでできている。\n「これも立派な芸術品となり得たのだが、残念ながら裸足でギャラリーに訪れる客は恐らくいないだろう。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_twistexhibit_01": {
+        "id": "furni_artmuseum_twistexhibit_01",
+        "sortId": 1542,
+        "name": "「力の先」",
+        "iconId": "furni_artmuseum_twistexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 4,
+        "depth": 3,
+        "height": 10,
+        "comfort": 295,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はレム・ビリトンの鉱山王。\n「初めてレム・ビリトンに足を踏み入れた時、私の所持品はたった一本の錆びついたバールだけであった」――作者の回顧録一行目より抜粋。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_pillar_01": {
+        "id": "furni_artmuseum_pillar_01",
+        "sortId": 1543,
+        "name": "「脱線」",
+        "iconId": "furni_artmuseum_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 7,
+        "depth": 2,
+        "height": 10,
+        "comfort": 350,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はドッソレスの職人。\n職人は反骨精神から、わざとまっすぐ作るように依頼された柱をこのような形に仕上げた。だがレイネルは快くそれを受け入れ、自身のギャラリーに展示した。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_blackexhibit_01": {
+        "id": "furni_artmuseum_blackexhibit_01",
+        "sortId": 1544,
+        "name": "「ご自由にどうぞ」",
+        "iconId": "furni_artmuseum_blackexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 4,
+        "depth": 3,
+        "height": 5,
+        "comfort": 200,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーのコレクションの一つ。作者はレイネル・コワルスキー。ある親族の日常生活から着想を得たらしい。\n酒も果物も偽物だが、底の部分は本当に下水道と繋がっている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_droplight_01": {
+        "id": "furni_artmuseum_droplight_01",
+        "sortId": 1545,
+        "name": "ギャラリーのライト",
+        "iconId": "furni_artmuseum_droplight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 70,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "コレクションに溶け込むようにデザインされたライト。丸いカバーはランプシェードに見えるが、実はライト本体である。\n展示ホール全体のバランスが崩れてしまうからと、レイネルは同じ照明を二つ設置することを拒んだ。そして、彼の判断は正しかった。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_plant_01": {
+        "id": "furni_artmuseum_plant_01",
+        "sortId": 1546,
+        "name": "ギャラリーの観葉植物",
+        "iconId": "furni_artmuseum_plant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 3,
+        "depth": 3,
+        "height": 6,
+        "comfort": 200,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "青々と生い茂った観葉植物。クリスタウォワギャラリーに飾られているものはすべて模造品だが、ここに置かれているのは紛れもなく生きた植物だ。\nこの部屋に存在する唯一の「本物」。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_wallpaper_01": {
+        "id": "furni_artmuseum_wallpaper_01",
+        "sortId": 1547,
+        "name": "ギャラリーの一角",
+        "iconId": "furni_artmuseum_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリーから見える風景を映したウォールディスプレイ。ガラス窓にこびりついた水垢や埃まで丁寧に再現されている。\nしかし残念なことに、大量のゴルフボールを浮かべたプールは映し出されていない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_floor_01": {
+        "id": "furni_artmuseum_floor_01",
+        "sortId": 1548,
+        "name": "ギャラリーの床",
+        "iconId": "furni_artmuseum_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クリスタウォワギャラリー内の広範囲に渡って使用されている床。ギャラリー全体の内装と比べるとやや華やかさに欠ける。\n明るい色の大理石が人々に与えるのは安らぎではなく、ほのかな孤独感である。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -71004,6 +71832,37 @@
         "comfort": 120,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "激しく燃え上がる野原が描かれた軍旗。炎が収まったあと、生存者は塵をかき集めて墨に混ぜ、目の前に広がる荒廃した景色を描いて記録した。",
+        "obtainApproach": "危機契約限定報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_contract2_s2_01": {
+        "id": "furni_contract2_s2_01",
+        "sortId": 12016,
+        "name": "潮曦の旗",
+        "iconId": "furni_contract2_s2_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "CONTRACT_2",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 5,
+        "comfort": 120,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "海から昇る朝日を描いた旗。人々は波が大地に刻んだ模様を踏みしめ、海と朝陽が交じり合う瞬間の美しさに人々は感嘆し、記念としてその絶景を描き留めた。",
         "obtainApproach": "危機契約限定報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -86282,6 +87141,163 @@
           "furni_SargonFair_wallpaper_01",
           "furni_SargonFair_floor_01"
         ]
+      },
+      "furni_set_artmuseum": {
+        "id": "furni_set_artmuseum",
+        "sortId": 89,
+        "name": "クリスタウォワ展示室",
+        "themeType": "EVENT",
+        "desc": "クリスタウォワギャラリー内のとあるプライベート展示ホールを復元したコンセプトルーム。中の展覧品はすべて現存する美術品のレプリカだ。",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_artmuseum_headset_01",
+            "pos0": 0,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_weirdexhibit_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_brochure_01",
+            "pos0": 3,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_fence_01",
+            "pos0": 7,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_chandelier_01",
+            "pos0": 5,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_sculpture_01",
+            "pos0": 8,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_notouch_01",
+            "pos0": 9,
+            "pos1": 8,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_whaleexhibit_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_pepperexhibit_01",
+            "pos0": 15,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_stoneexhibit_01",
+            "pos0": 17,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_fossil_01",
+            "pos0": 21,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_bench_01",
+            "pos0": 20,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_carpet_01",
+            "pos0": 27,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_twistexhibit_01",
+            "pos0": 22,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_pillar_01",
+            "pos0": 24,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_blackexhibit_01",
+            "pos0": 30,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_droplight_01",
+            "pos0": 28,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_plant_01",
+            "pos0": 31,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_artmuseum_1",
+          "furni_set_artmuseum_2",
+          "furni_set_artmuseum_3",
+          "furni_set_artmuseum_4"
+        ],
+        "furnitures": [
+          "furni_artmuseum_headset_01",
+          "furni_artmuseum_weirdexhibit_01",
+          "furni_artmuseum_brochure_01",
+          "furni_artmuseum_fence_01",
+          "furni_artmuseum_chandelier_01",
+          "furni_artmuseum_sculpture_01",
+          "furni_artmuseum_notouch_01",
+          "furni_artmuseum_whaleexhibit_01",
+          "furni_artmuseum_pepperexhibit_01",
+          "furni_artmuseum_stoneexhibit_01",
+          "furni_artmuseum_fossil_01",
+          "furni_artmuseum_bench_01",
+          "furni_artmuseum_carpet_01",
+          "furni_artmuseum_twistexhibit_01",
+          "furni_artmuseum_pillar_01",
+          "furni_artmuseum_blackexhibit_01",
+          "furni_artmuseum_droplight_01",
+          "furni_artmuseum_plant_01",
+          "furni_artmuseum_wallpaper_01",
+          "furni_artmuseum_floor_01"
+        ]
       }
     },
     "groups": {
@@ -91372,6 +92388,66 @@
           "furni_SargonFair_stoneshelf_01",
           "furni_SargonFair_stockcart_01",
           "furni_SargonFair_chandelier_01"
+        ]
+      },
+      "furni_set_artmuseum_1": {
+        "id": "furni_set_artmuseum_1",
+        "sortId": 1,
+        "name": "「当惑」",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 280,
+        "count": 6,
+        "furniture": [
+          "furni_artmuseum_headset_01",
+          "furni_artmuseum_weirdexhibit_01",
+          "furni_artmuseum_brochure_01",
+          "furni_artmuseum_fence_01",
+          "furni_artmuseum_wallpaper_01",
+          "furni_artmuseum_floor_01"
+        ]
+      },
+      "furni_set_artmuseum_2": {
+        "id": "furni_set_artmuseum_2",
+        "sortId": 2,
+        "name": "「逆説」",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 225,
+        "count": 4,
+        "furniture": [
+          "furni_artmuseum_chandelier_01",
+          "furni_artmuseum_sculpture_01",
+          "furni_artmuseum_notouch_01",
+          "furni_artmuseum_pepperexhibit_01"
+        ]
+      },
+      "furni_set_artmuseum_3": {
+        "id": "furni_set_artmuseum_3",
+        "sortId": 3,
+        "name": "「試論」",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_artmuseum_twistexhibit_01",
+          "furni_artmuseum_whaleexhibit_01",
+          "furni_artmuseum_stoneexhibit_01",
+          "furni_artmuseum_fossil_01",
+          "furni_artmuseum_bench_01"
+        ]
+      },
+      "furni_set_artmuseum_4": {
+        "id": "furni_set_artmuseum_4",
+        "sortId": 4,
+        "name": "「エポケー」",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_artmuseum_carpet_01",
+          "furni_artmuseum_pillar_01",
+          "furni_artmuseum_blackexhibit_01",
+          "furni_artmuseum_droplight_01",
+          "furni_artmuseum_plant_01"
         ]
       }
     },
