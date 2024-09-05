@@ -133,6 +133,26 @@
         "obtainApproach": "특별 보상"
       },
       {
+        "avatarId": "avatar_special_15",
+        "avatarType": "SPECIAL",
+        "avatarIdSort": 15,
+        "avatarIdDesc": "패키지 구매 획득\n'방어'",
+        "avatarItemName": "'방어'",
+        "avatarItemDesc": "차단, 저지, 그리고 냉정함 유지.",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "특별 보상"
+      },
+      {
+        "avatarId": "avatar_special_16",
+        "avatarType": "SPECIAL",
+        "avatarIdSort": 16,
+        "avatarIdDesc": "패키지 구매 획득\n'공격'",
+        "avatarItemName": "'공격'",
+        "avatarItemDesc": "돌파, 제압, 그리고 임기응변.",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "특별 보상"
+      },
+      {
         "avatarId": "avatar_special_17",
         "avatarType": "SPECIAL",
         "avatarIdSort": 17,
@@ -563,6 +583,16 @@
         "obtainApproach": "생존 연산에서 획득"
       },
       {
+        "avatarId": "avatar_activity_CR",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 42,
+        "avatarIdDesc": "시즈 출석 이벤트 획득\n'모든 게 한눈에'",
+        "avatarItemName": "'모든 게 한눈에'",
+        "avatarItemDesc": "관찰이 곧 힘이다.",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "출석 이벤트 획득"
+      },
+      {
         "avatarId": "avatar_def_01",
         "avatarType": "DEFAULT",
         "avatarIdSort": 1,
@@ -737,6 +767,8 @@
           "avatar_special_10",
           "avatar_special_12",
           "avatar_special_13",
+          "avatar_special_15",
+          "avatar_special_16",
           "avatar_special_17",
           "avatar_special_18"
         ]
@@ -785,7 +817,8 @@
           "avatar_activity_IW",
           "avatar_activity_AW",
           "avatar_activity_GA",
-          "avatar_activity_XB1_1"
+          "avatar_activity_XB1_1",
+          "avatar_activity_CR"
         ]
       },
       "DEFAULT": {
@@ -993,6 +1026,34 @@
         "unlockDesList": [
           "[통합 전략] 미즈키 & 카이룰라 아버 보상"
         ]
+      },
+      {
+        "bgId": "bg_rainbowsix_1",
+        "bgType": "ACTIVITY",
+        "bgSortId": 14,
+        "bgStartTime": 1725519600,
+        "bgName": "명성",
+        "bgMusicId": "music_bg_rainbowsix",
+        "bgDes": "사람들은 보통 두 가지 목적을 가지고 이곳에 옵니다. 하나는 부, 다른 하나는 명성입니다.",
+        "bgUsage": "한 장의 사진, 한 편의 추억. 테라의 어느 순간이 담겨 있습니다.",
+        "obtainApproach": "패키지 구매",
+        "unlockDesList": [
+          "[구매센터]에서 보안 훈련 기념 패키지 구매 시 획득"
+        ]
+      },
+      {
+        "bgId": "bg_rogue_3",
+        "bgType": "ACTIVITY",
+        "bgSortId": 13,
+        "bgStartTime": 1727722800,
+        "bgName": "시작",
+        "bgMusicId": "music_rogue_3_12",
+        "bgDes": "오래된 빙원의 끝, 선구자의 출발점, 미래를 내다보는 눈.",
+        "bgUsage": "한 장의 사진, 한 편의 추억. 테라의 어느 순간이 담겨 있습니다.",
+        "obtainApproach": "통합 전략 보상",
+        "unlockDesList": [
+          "[통합 전략] 탐험가의 은빛 서리 끝자락 보상"
+        ]
       }
     ],
     "themeList": [
@@ -1053,6 +1114,21 @@
         ],
         "isLimitObtain": true,
         "hideWhenLimit": false
+      },
+      {
+        "id": "tm_rainbowsix_1",
+        "type": "ACTIVITY",
+        "sortId": 5,
+        "startTime": 1725519600,
+        "tmName": "시즈",
+        "tmDes": "전세는 순식간에 변합니다. 눈을 크게 뜨고 정신을 바짝 차려야 합니다.",
+        "tmUsage": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
+        "obtainApproach": "구매센터 패키지",
+        "unlockDesList": [
+          "[구매센터]에서 보안 훈련 기념 패키지 구매 시 획득"
+        ],
+        "isLimitObtain": true,
+        "hideWhenLimit": true
       }
     ],
     "themeLimitData": {
@@ -1062,6 +1138,16 @@
           {
             "startTime": 1713232800,
             "endTime": 1714417199,
+            "invalidObtainDesc": "획득처 미개방"
+          }
+        ]
+      },
+      "tm_rainbowsix_1": {
+        "id": "tm_rainbowsix_1",
+        "limitInfos": [
+          {
+            "startTime": 1725519600,
+            "endTime": 1727895599,
             "invalidObtainDesc": "획득처 미개방"
           }
         ]
@@ -1131,6 +1217,28 @@
         "skinApproach": "기본 지급",
         "unlockConditionCnt": 0,
         "unlockDescList": [],
+        "fixedModuleList": [
+          "module_background",
+          "module_illust",
+          "module_collect",
+          "module_avatar"
+        ],
+        "isTimeLimit": false,
+        "timeLimitInfoList": []
+      },
+      "nc_rhodes_light": {
+        "id": "nc_rhodes_light",
+        "name": "결의",
+        "type": "MAINLINE",
+        "sortId": 2,
+        "skinStartTime": 1725519600,
+        "skinDesc": "과거의 비밀은 여전히 베일에 싸여있지만, 당신은 이미 결심을 내렸습니다.",
+        "usageDesc": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
+        "skinApproach": "특정 레벨 달성 시 개방",
+        "unlockConditionCnt": 1,
+        "unlockDescList": [
+          "Lv.80 달성"
+        ],
         "fixedModuleList": [
           "module_background",
           "module_illust",

@@ -11742,6 +11742,118 @@
           ]
         }
       ]
+    },
+    "char_4123_ela": {
+      "charId": "char_4123_ela",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[020]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_clue_cost&faction[990]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4124_iana": {
+      "charId": "char_4124_iana",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4125_rdoc": {
+      "charId": "char_4125_rdoc",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[1020]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all[026]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4126_fuze": {
+      "charId": "char_4126_fuze",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[1030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -12176,6 +12288,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 제어 센터 내 <$cc.g.R6><@cc.kw>레인보우 팀</></> 오퍼레이터가 1명 증가할 때마다 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>"
+    },
+    "control_clue_cost&faction[990]": {
+      "buffId": "control_clue_cost&faction[990]",
+      "buffName": "반항자",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_ela",
+      "sortId": 1005,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 단서 보드 중 미보유 단서를 더 쉽게 획득, 제어 센터 내 자신을 제외한 기타 오퍼레이터의 시간당 컨디션 소모 <@cc.vdown>+0.25</>"
     },
     "control_mp_cost&bd1[000]": {
       "buffId": "control_mp_cost&bd1[000]",
@@ -12884,6 +13008,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, 해당 제조소 내 모든 <$cc.sk.manu2><@cc.kw>라인테크류</></>, <$cc.sk.manu3><@cc.kw>피누스 실베스트리스류</></> 스킬을 전부 <@cc.kw>표준화류</> 스킬로 간주"
+    },
+    "manu_prod_bd[000]": {
+      "buffId": "manu_prod_bd[000]",
+      "buffName": "착실하고 과묵한 자",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_fuze",
+      "sortId": 3900,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, 생산력 <@cc.vup>+20%</>, <$cc.bd_tachanka><@cc.rem>우르수스 특제 음료</></> <@cc.vup>1</>병당 창고 용량 <@cc.vup>+2</>"
     },
     "manu_prod_spd_addition[030]": {
       "buffId": "manu_prod_spd_addition[030]",
@@ -15381,6 +15517,54 @@
       "roomType": "TRAINING",
       "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <$cc.tag.knight><@cc.kw>기사</></> 오퍼레이터 1명당 훈련 중인 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+5%</> (최대 <@cc.kw>8</>명 적용)"
     },
+    "train_spd_tag[020]": {
+      "buffId": "train_spd_tag[020]",
+      "buffName": "전술 지도: 방어",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_defense",
+      "sortId": 9930,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <$cc.g.Defence><@cc.kw>방어팀</></> 오퍼레이터 1명당 훈련 중인 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+10%</> (최대 <@cc.kw>4</>명 적용)"
+    },
+    "train_spd_tag[1020]": {
+      "buffId": "train_spd_tag[1020]",
+      "buffName": "전술 지도: 방어",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_defense",
+      "sortId": 9931,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <$cc.g.Defence><@cc.kw>방어팀</></> 오퍼레이터 1명당 훈련 중인 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+10%</> (최대 <@cc.kw>4</>명 적용)"
+    },
+    "train_spd_tag[030]": {
+      "buffId": "train_spd_tag[030]",
+      "buffName": "전술 지도: 공격",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_attack",
+      "sortId": 9932,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <$cc.g.Attack><@cc.kw>공격팀</></> 오퍼레이터 1명당 훈련 중인 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+10%</> (최대 <@cc.kw>4</>명 적용)"
+    },
+    "train_spd_tag[1030]": {
+      "buffId": "train_spd_tag[1030]",
+      "buffName": "전술 지도: 공격",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_attack",
+      "sortId": 9933,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 기반시설(어시스턴트 미포함) 내 배치된 <$cc.g.Attack><@cc.kw>공격팀</></> 오퍼레이터 1명당 훈련 중인 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+10%</> (최대 <@cc.kw>4</>명 적용)"
+    },
     "train_spd_doubleProf[000]": {
       "buffId": "train_spd_doubleProf[000]",
       "buffName": "검과 핸드캐논",
@@ -16941,6 +17125,18 @@
       "roomType": "DORMITORY",
       "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
+    "dorm_rec_all[026]": {
+      "buffId": "dorm_rec_all[026]",
+      "buffName": "이타주의",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all3",
+      "sortId": 5426,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
     "dorm_bd_num[000]": {
       "buffId": "dorm_bd_num[000]",
       "buffName": "무성의 공명",
@@ -17876,6 +18072,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "응접실에 배치 시, 단서 보드 중 보유 중인 단서를 더 쉽게 획득"
+    },
+    "meet_spd_bd[000]": {
+      "buffId": "meet_spd_bd[000]",
+      "buffName": "정보 전문가",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_iana",
+      "sortId": 6990,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "응접실에 배치 시, 단서 수집 속도 <@cc.vup>5%</> 상승, <$cc.bd_ash><@cc.rem>정보 저장</></> <@cc.vup>1</>점당 추가로 <@cc.vup>5%</> 상승"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -65278,6 +65486,626 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_artmuseum_headset_01": {
+        "id": "furni_artmuseum_headset_01",
+        "sortId": 1529,
+        "name": "갤러리아 해설 시스템",
+        "iconId": "furni_artmuseum_headset_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "최신식 시선 추적 장치가 설치된 해설 시스템, 관광객들의 시선이 멈추는 곳에 위치한 작품을 자동으로 해설하기 시작한다.\n이 시스템 안에는 그 어떤 해설 문서도 존재하지 않으며, 관광객들은 기술 테스트 당시 사용된 로큰롤 음악만 들을 수 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_weirdexhibit_01": {
+        "id": "furni_artmuseum_weirdexhibit_01",
+        "sortId": 1530,
+        "name": "'파도를 헤치며'",
+        "iconId": "furni_artmuseum_weirdexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 5,
+        "depth": 4,
+        "height": 10,
+        "comfort": 405,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 이베리아에 거주하고 있는 에기르인이다.\n해당 작품이 공개될 당시, 이 작품은 바다를 정복하고자 하는 인류의 정복심을 대표했다. 하지만 이후에는 그 재난의 징조로 폄하되었다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_brochure_01": {
+        "id": "furni_artmuseum_brochure_01",
+        "sortId": 1531,
+        "name": "갤러리아 광고 선반",
+        "iconId": "furni_artmuseum_brochure_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 4,
+        "depth": 2,
+        "height": 2,
+        "comfort": 130,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "홍보 책자와 안내 가이드가 가득 꽂혀 있는 책꽂이, 위에 쓰여 있는 날짜는 갤러리아가 개관했던 날짜에 멈춰있다.\n날짜는 사실 중요하지 않다. 손님들은 화려한 전시품에 시선을 빼앗겨 눈길 하나 주지 않으니까.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_fence_01": {
+        "id": "furni_artmuseum_fence_01",
+        "sortId": 1532,
+        "name": "갤러리아 울타리",
+        "iconId": "furni_artmuseum_fence_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 2,
+        "depth": 3,
+        "height": 2,
+        "comfort": 140,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "통로를 막고 있는 듯한 울타리, 사실 겉의 공간이 넓어서 돌아가기만 하면 된다.\n이 물건의 제작 의도는 사실 매우 단순하다. 레이넬은 이 물건을 보고 앞으로 나아가길 두려워하는 사람은 이 안으로 들어올 자격이 없다고 말했다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_chandelier_01": {
+        "id": "furni_artmuseum_chandelier_01",
+        "sortId": 1533,
+        "name": "갤러리아 조명 시스템",
+        "iconId": "furni_artmuseum_chandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 9,
+        "depth": 8,
+        "height": 2,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 일부 전시장에서 사용되는 메인 조명 시스템, 전체적으로 화려한 갤러리아의 스타일과는 다르게 소박한 느낌을 준다.\n정교하게 설계된 등불은 파악하기 어려운 각도로 빛을 굴절시켜 관람객에게 혼란스러운 분위기를 자아낸다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_sculpture_01": {
+        "id": "furni_artmuseum_sculpture_01",
+        "sortId": 1534,
+        "name": "'시상식'",
+        "iconId": "furni_artmuseum_sculpture_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 6,
+        "depth": 5,
+        "height": 8,
+        "comfort": 460,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 레이넬 코발스키다. 이는 레이넬이 과거 제작했던 어떤 연습작과 같은 주제를 지니고 있다.\n“탈락자는 결과를 듣고는 고개를 숙였다. 그가 손에 들고 있는 작품은 내게 큰 인상을 남겼고, 그때 나는 처음으로 '공평, 공정, 공개'가 무엇인지 깨달았다.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_notouch_01": {
+        "id": "furni_artmuseum_notouch_01",
+        "sortId": 1535,
+        "name": "히든 전시품 “손대지 마시오”",
+        "iconId": "furni_artmuseum_notouch_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 5,
+        "depth": 1,
+        "height": 1,
+        "comfort": 130,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 레이나르 코발스키다. 금지 표지판을 제외하고, 다른 물건들은 전부 시장에서 파는 양산형 제품이다.\n“미워시, 저 '손대지 마시오' 표지판에 터치스크린을 하나 추가하는 건 어떻게 생각하나?”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_whaleexhibit_01": {
+        "id": "furni_artmuseum_whaleexhibit_01",
+        "sortId": 1536,
+        "name": "'해체 혹은 분해'",
+        "iconId": "furni_artmuseum_whaleexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DECORATION_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 170,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 알 수 없다.\n작품 뒤에 작은 글씨로 문장이 쓰여 있다. “우리는 결을 따라 이것을 정교하게 분해한 것일 수도 있고, 단순히 못난 덩어리로 잘라버린 것일 수도 있다.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_pepperexhibit_01": {
+        "id": "furni_artmuseum_pepperexhibit_01",
+        "sortId": 1537,
+        "name": "'빛과 열'",
+        "iconId": "furni_artmuseum_pepperexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 130,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나. 원작자는 염국 상촉에서 여행 겸 거주하고 있는 라테라노인이다.\n전시대는 빛을 내고 있을 뿐만 아니라, 원작자가 가장 좋아하는 고추기름과 도넛이 섞인 냄새도 난다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_stoneexhibit_01": {
+        "id": "furni_artmuseum_stoneexhibit_01",
+        "sortId": 1538,
+        "name": "'사운드 체인'",
+        "iconId": "furni_artmuseum_stoneexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 165,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 라이타니엔의 그림책 작가다.\n원래는 미술가들이 아이들을 위해 제작한 장난감이다. 구리로 만들어진 조립품들을 다른 방식으로 조립 가능하며, 조립 방식에 따라 두드릴 때마다 다른 소리가 들린다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_fossil_01": {
+        "id": "furni_artmuseum_fossil_01",
+        "sortId": 1539,
+        "name": "'현대사'",
+        "iconId": "furni_artmuseum_fossil_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 2,
+        "depth": 1,
+        "height": 3,
+        "comfort": 60,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 빅토리아 출신의 고고학자다.\n다년간의 발굴이 헛된 노력이었다는 사실이 밝혀진 후, 분개한 그는 저녁으로 먹을 린수를 진흙판 위에 올린 다음, 그것을 손으로 눌러 진흙판에 린수의 “손도장”을 만들었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_bench_01": {
+        "id": "furni_artmuseum_bench_01",
+        "sortId": 1540,
+        "name": "갤러리아 벤치",
+        "iconId": "furni_artmuseum_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 6,
+        "depth": 3,
+        "height": 2,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "한쪽 부분에 계곡 모양의 흠이 파여 있는 벤치. 전시품이 아니지만 레이넬이 직접 제작한 물건이다.\n“짧은 부분에는 앉지 않도록 하게, 미워시. 짧은 쪽은 혼자 갤러리를 찾아온 녀석들이 고독을 즐기라고 준비해 둔 것이니 말이야.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_carpet_01": {
+        "id": "furni_artmuseum_carpet_01",
+        "sortId": 1541,
+        "name": "갤러리아 카펫",
+        "iconId": "furni_artmuseum_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 7,
+        "depth": 4,
+        "height": 1,
+        "comfort": 65,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "흑백 무늬를 가지고 있는 카펫, 검은 부분은 평범한 직물이지만, 하얀 부분은 금속 철사로 이루어져 있다.\n“이 물건도 원래는 예술품이었어. 하지만 안타깝게도 갤러리에 맨발로 들어오는 관광객은 없겠지.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_twistexhibit_01": {
+        "id": "furni_artmuseum_twistexhibit_01",
+        "sortId": 1542,
+        "name": "'힘의 확산'",
+        "iconId": "furni_artmuseum_twistexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 4,
+        "depth": 3,
+        "height": 10,
+        "comfort": 295,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 림 빌리턴의 광업계 거물이다.\n“내가 림 빌리턴에 발을 들일 당시에는 녹슨 크로우바가 내가 가진 전부였어.” 이건 그가 회고록에 남긴 첫마디이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_pillar_01": {
+        "id": "furni_artmuseum_pillar_01",
+        "sortId": 1543,
+        "name": "'탈선'",
+        "iconId": "furni_artmuseum_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 7,
+        "depth": 2,
+        "height": 10,
+        "comfort": 350,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 도솔레스의 장인이다.\n장인들은 반감 때문에 주문이 들어온 일자 기둥을 이런 모습으로 제작했다. 그러나 레이넬은 기꺼이 이 기둥을 받아들였고, 자신의 갤러리에 들여놓았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_blackexhibit_01": {
+        "id": "furni_artmuseum_blackexhibit_01",
+        "sortId": 1544,
+        "name": "“자유롭게 사용해 주세요”",
+        "iconId": "furni_artmuseum_blackexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 4,
+        "depth": 3,
+        "height": 5,
+        "comfort": 200,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 소장품 중 하나, 원작자는 레이넬 코발스키다. 작품의 소재는 그가 본 어떤 친척의 생활에서 가져온 것이다.\n술과 과일은 가짜지만, 전시품 밑은 실제로 하수도와 연결되어 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_droplight_01": {
+        "id": "furni_artmuseum_droplight_01",
+        "sortId": 1545,
+        "name": "갤러리아 천장등",
+        "iconId": "furni_artmuseum_droplight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 70,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "실내 인테리어와 잘 어울리게 설계된 등, 전등 갓처럼 보이는 원통은 사실 발광 유닛이다.\n레이넬은 천장에 두 가지 광원을 설치하고 싶지 않았다. 전시장의 전체적인 리듬감을 흐리고 싶지 않아서라는 것이 그의 이유였는데, 그의 말이 맞았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_plant_01": {
+        "id": "furni_artmuseum_plant_01",
+        "sortId": 1546,
+        "name": "갤러리아 분재",
+        "iconId": "furni_artmuseum_plant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 3,
+        "depth": 3,
+        "height": 6,
+        "comfort": 200,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "훌륭하게 성장한 분재, 갤러리아 크리슈타와에서 사용하는 것은 모방품이고, 이곳에 있는 분재는 실제로 살아있는 관엽 식물이다.\n이 방 안에 있는 유일한 '진품'이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_wallpaper_01": {
+        "id": "furni_artmuseum_wallpaper_01",
+        "sortId": 1547,
+        "name": "갤러리아 디스플레이",
+        "iconId": "furni_artmuseum_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와의 벽 너머 풍경이 담겨있는 전경 모니터, 유리 외벽에 보이는 물 얼룩과 먼지까지 재현했다.\n그러나 골프공이 가득 떠다니는 수영장까지 보여 주지는 않았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_floor_01": {
+        "id": "furni_artmuseum_floor_01",
+        "sortId": 1548,
+        "name": "갤러리아 바닥",
+        "iconId": "furni_artmuseum_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "갤러리아 크리슈타와 내부에서 흔하게 사용되는 바닥, 전체적으로 화려한 갤러리의 스타일과는 다르게 소박한 느낌을 준다.\n연한 색의 대리석 바닥은 사람의 마음을 편안하게 만들지 않는다. 되려 은은한 위화감을 준다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -71004,6 +71832,37 @@
         "comfort": 120,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "어떤 들불이 타오르는 듯한 풍경을 묘사한 깃발. 불은 꺼졌지만, 생존자들은 늪지대에 떠있는 잿가루를 먹 삼아 이 순간을 기념하고자 한다.",
+        "obtainApproach": "위기 협약 시즌 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_contract2_s2_01": {
+        "id": "furni_contract2_s2_01",
+        "sortId": 12016,
+        "name": "언더던 깃발",
+        "iconId": "furni_contract2_s2_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "CONTRACT_2",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 5,
+        "comfort": 120,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "바다 위의 아침 풍경을 담은 깃발, 땅 위에서 부서진 파도를 밟으며 사람들은 아침 햇살을 품은 파도의 아름다움에 감탄했고, 그 찬란한 장면을 그려내 기념으로 삼았다.",
         "obtainApproach": "위기 협약 시즌 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -86220,6 +87079,163 @@
           "furni_SargonFair_wallpaper_01",
           "furni_SargonFair_floor_01"
         ]
+      },
+      "furni_set_artmuseum": {
+        "id": "furni_set_artmuseum",
+        "sortId": 89,
+        "name": "갤러리아 크리슈타와",
+        "themeType": "EVENT",
+        "desc": "갤러리아 크리슈타와 내부의 한 개인 전시실을 복원한 콘셉트룸. 안에 있는 전시품은 모두 현존하는 예술품의 복제품이다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_artmuseum_headset_01",
+            "pos0": 0,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_weirdexhibit_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_brochure_01",
+            "pos0": 3,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_fence_01",
+            "pos0": 7,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_chandelier_01",
+            "pos0": 5,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_sculpture_01",
+            "pos0": 8,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_notouch_01",
+            "pos0": 9,
+            "pos1": 8,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_whaleexhibit_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_pepperexhibit_01",
+            "pos0": 15,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_stoneexhibit_01",
+            "pos0": 17,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_fossil_01",
+            "pos0": 21,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_bench_01",
+            "pos0": 20,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_carpet_01",
+            "pos0": 27,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_twistexhibit_01",
+            "pos0": 22,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_pillar_01",
+            "pos0": 24,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_blackexhibit_01",
+            "pos0": 30,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_droplight_01",
+            "pos0": 28,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_plant_01",
+            "pos0": 31,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_artmuseum_1",
+          "furni_set_artmuseum_2",
+          "furni_set_artmuseum_3",
+          "furni_set_artmuseum_4"
+        ],
+        "furnitures": [
+          "furni_artmuseum_headset_01",
+          "furni_artmuseum_weirdexhibit_01",
+          "furni_artmuseum_brochure_01",
+          "furni_artmuseum_fence_01",
+          "furni_artmuseum_chandelier_01",
+          "furni_artmuseum_sculpture_01",
+          "furni_artmuseum_notouch_01",
+          "furni_artmuseum_whaleexhibit_01",
+          "furni_artmuseum_pepperexhibit_01",
+          "furni_artmuseum_stoneexhibit_01",
+          "furni_artmuseum_fossil_01",
+          "furni_artmuseum_bench_01",
+          "furni_artmuseum_carpet_01",
+          "furni_artmuseum_twistexhibit_01",
+          "furni_artmuseum_pillar_01",
+          "furni_artmuseum_blackexhibit_01",
+          "furni_artmuseum_droplight_01",
+          "furni_artmuseum_plant_01",
+          "furni_artmuseum_wallpaper_01",
+          "furni_artmuseum_floor_01"
+        ]
       }
     },
     "groups": {
@@ -91310,6 +92326,66 @@
           "furni_SargonFair_stoneshelf_01",
           "furni_SargonFair_stockcart_01",
           "furni_SargonFair_chandelier_01"
+        ]
+      },
+      "furni_set_artmuseum_1": {
+        "id": "furni_set_artmuseum_1",
+        "sortId": 1,
+        "name": "'미혹'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 280,
+        "count": 6,
+        "furniture": [
+          "furni_artmuseum_headset_01",
+          "furni_artmuseum_weirdexhibit_01",
+          "furni_artmuseum_brochure_01",
+          "furni_artmuseum_fence_01",
+          "furni_artmuseum_wallpaper_01",
+          "furni_artmuseum_floor_01"
+        ]
+      },
+      "furni_set_artmuseum_2": {
+        "id": "furni_set_artmuseum_2",
+        "sortId": 2,
+        "name": "'역설'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 225,
+        "count": 4,
+        "furniture": [
+          "furni_artmuseum_chandelier_01",
+          "furni_artmuseum_sculpture_01",
+          "furni_artmuseum_notouch_01",
+          "furni_artmuseum_pepperexhibit_01"
+        ]
+      },
+      "furni_set_artmuseum_3": {
+        "id": "furni_set_artmuseum_3",
+        "sortId": 3,
+        "name": "'시론'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_artmuseum_twistexhibit_01",
+          "furni_artmuseum_whaleexhibit_01",
+          "furni_artmuseum_stoneexhibit_01",
+          "furni_artmuseum_fossil_01",
+          "furni_artmuseum_bench_01"
+        ]
+      },
+      "furni_set_artmuseum_4": {
+        "id": "furni_set_artmuseum_4",
+        "sortId": 4,
+        "name": "'에포케'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_artmuseum_carpet_01",
+          "furni_artmuseum_pillar_01",
+          "furni_artmuseum_blackexhibit_01",
+          "furni_artmuseum_droplight_01",
+          "furni_artmuseum_plant_01"
         ]
       }
     },
