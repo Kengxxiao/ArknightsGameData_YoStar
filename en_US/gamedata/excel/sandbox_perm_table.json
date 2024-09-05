@@ -32385,6 +32385,79 @@
               }
             ]
           },
+          "sandbox_1_monthly_2": {
+            "id": "sandbox_1_monthly_2",
+            "points": 0.0,
+            "mutexGroupKey": null,
+            "description": "Enemies gain increased Movement Speed, friendly Operators receive +20% Healing and Regeneration",
+            "runes": [
+              {
+                "key": "enemy_attribute_mul",
+                "selector": {
+                  "professionMask": "NONE",
+                  "buildableMask": "NONE",
+                  "charIdFilter": null,
+                  "enemyIdFilter": null,
+                  "enemyIdExcludeFilter": null,
+                  "enemyLevelTypeFilter": null,
+                  "skillIdFilter": null,
+                  "tileKeyFilter": null,
+                  "groupTagFilter": null,
+                  "filterTagFilter": null,
+                  "filterTagExcludeFilter": null,
+                  "subProfessionExcludeFilter": null,
+                  "mapTagFilter": null
+                },
+                "blackboard": [
+                  {
+                    "key": "move_speed",
+                    "value": 1.5,
+                    "valueStr": null
+                  },
+                  {
+                    "key": "disable_in_sandbox_build",
+                    "value": 1.0,
+                    "valueStr": null
+                  }
+                ]
+              },
+              {
+                "key": "env_gbuff_new_with_verify",
+                "selector": {
+                  "professionMask": 639,
+                  "buildableMask": "ALL",
+                  "charIdFilter": null,
+                  "enemyIdFilter": null,
+                  "enemyIdExcludeFilter": null,
+                  "enemyLevelTypeFilter": null,
+                  "skillIdFilter": null,
+                  "tileKeyFilter": null,
+                  "groupTagFilter": null,
+                  "filterTagFilter": null,
+                  "filterTagExcludeFilter": null,
+                  "subProfessionExcludeFilter": null,
+                  "mapTagFilter": null
+                },
+                "blackboard": [
+                  {
+                    "key": "key",
+                    "value": 0.0,
+                    "valueStr": "heal_scale"
+                  },
+                  {
+                    "key": "heal_scale",
+                    "value": 1.2,
+                    "valueStr": null
+                  },
+                  {
+                    "key": "disable_in_sandbox_build",
+                    "value": 1.0,
+                    "valueStr": null
+                  }
+                ]
+              }
+            ]
+          },
           "sandbox_1_warrior_lv01": {
             "id": "sandbox_1_warrior_lv01",
             "points": 0.0,
@@ -47455,6 +47528,47 @@
             "nodeId": "n12B9",
             "conditionGroup": "server_sandbox_1_monthly_1",
             "conditionDesc": "Operators gain +1 Block\nEnemies gain Movement Speed when Invisible",
+            "rewardItemList": [
+              {
+                "id": "mod_unlock_token",
+                "count": 1,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "32001",
+                "count": 1,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "2004",
+                "count": 20,
+                "type": "CARD_EXP"
+              },
+              {
+                "id": "3303",
+                "count": 20,
+                "type": "MATERIAL"
+              },
+              {
+                "id": "4001",
+                "count": 30000,
+                "type": "GOLD"
+              }
+            ]
+          },
+          {
+            "monthlyRushId": "sandbox_1_challenge_02",
+            "startTime": 1727780400,
+            "endTime": 1730458799,
+            "isLast": false,
+            "sortId": 2,
+            "rushGroupKey": "monthly_2",
+            "monthlyRushName": "Surge of Beasts",
+            "monthlyRushDes": "What crushed our camp could have been a Catastrophe, a flood, a motorcade, or maybe a horde of rampaging beasts. Of course, the worst case scenario would be to face all of those at once.",
+            "weatherId": "weather_thunder",
+            "nodeId": "n12B9",
+            "conditionGroup": "server_sandbox_1_monthly_2",
+            "conditionDesc": "Operators receive increased healing effectiveness\nEnemies have increased Movement Speed",
             "rewardItemList": [
               {
                 "id": "mod_unlock_token",

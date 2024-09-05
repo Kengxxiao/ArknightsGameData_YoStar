@@ -11742,6 +11742,118 @@
           ]
         }
       ]
+    },
+    "char_4123_ela": {
+      "charId": "char_4123_ela",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[020]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_clue_cost&faction[990]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4124_iana": {
+      "charId": "char_4124_iana",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4125_rdoc": {
+      "charId": "char_4125_rdoc",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[1020]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all[026]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4126_fuze": {
+      "charId": "char_4126_fuze",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_tag[1030]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_bd[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -12176,6 +12288,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "When this Operator is assigned to the Control Center, each Operator from <$cc.g.R6><@cc.kw>Team Rainbow</></> increases the Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour"
+    },
+    "control_clue_cost&faction[990]": {
+      "buffId": "control_clue_cost&faction[990]",
+      "buffName": "Resister",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_ela",
+      "sortId": 1005,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, increases the likelihood of obtaining clues that are not on the Clue Board, but increases the Morale consumed per hour of all Operators (excluding self) in the Control Center by <@cc.vdown>+0.25</>"
     },
     "control_mp_cost&bd1[000]": {
       "buffId": "control_mp_cost&bd1[000]",
@@ -12884,6 +13008,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, all <$cc.sk.manu2><@cc.kw>Rhine Lab</></> and <$cc.sk.manu3><@cc.kw>Pinus Sylvestris</></> skills in the Factory are considered <@cc.kw>Standardization</> skills"
+    },
+    "manu_prod_bd[000]": {
+      "buffId": "manu_prod_bd[000]",
+      "buffName": "Silent and Hardworking",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_fuze",
+      "sortId": 3900,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</>; for every <@cc.vup>1</> <$cc.bd_tachanka><@cc.rem>Ursus Specialty Beverage</></>, capacity limit <@cc.vup>+2</>"
     },
     "manu_prod_spd_addition[030]": {
       "buffId": "manu_prod_spd_addition[030]",
@@ -15381,6 +15517,54 @@
       "roomType": "TRAINING",
       "description": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.tag.knight><@cc.kw>Knight</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+5%</> (caps at <@cc.kw>8</> Operators)"
     },
+    "train_spd_tag[020]": {
+      "buffId": "train_spd_tag[020]",
+      "buffName": "Tactic Guidance: Defense",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_defense",
+      "sortId": 9930,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+    },
+    "train_spd_tag[1020]": {
+      "buffId": "train_spd_tag[1020]",
+      "buffName": "Tactic Guidance: Defense",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_defense",
+      "sortId": 9931,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+    },
+    "train_spd_tag[030]": {
+      "buffId": "train_spd_tag[030]",
+      "buffName": "Tactic Guidance: Offense",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_attack",
+      "sortId": 9932,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+    },
+    "train_spd_tag[1030]": {
+      "buffId": "train_spd_tag[1030]",
+      "buffName": "Tactic Guidance: Offense",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_attack",
+      "sortId": 9933,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+    },
     "train_spd_doubleProf[000]": {
       "buffId": "train_spd_doubleProf[000]",
       "buffName": "Sword and Handcannon",
@@ -16941,6 +17125,18 @@
       "roomType": "DORMITORY",
       "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
+    "dorm_rec_all[026]": {
+      "buffId": "dorm_rec_all[026]",
+      "buffName": "Altruism",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all3",
+      "sortId": 5426,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
     "dorm_bd_num[000]": {
       "buffId": "dorm_bd_num[000]",
       "buffName": "Soundless Resonance",
@@ -17876,6 +18072,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are already on the Clue Board."
+    },
+    "meet_spd_bd[000]": {
+      "buffId": "meet_spd_bd[000]",
+      "buffName": "Intel Expert",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_iana",
+      "sortId": 6990,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>5%</>, with an additional <@cc.vup>5%</> for every <@cc.vup>1</> <$cc.bd_ash><@cc.rem>Intelligence Reserve</></>"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -65278,6 +65486,626 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_artmuseum_headset_01": {
+        "id": "furni_artmuseum_headset_01",
+        "sortId": 1529,
+        "name": "Galería Audio Tour System",
+        "iconId": "furni_artmuseum_headset_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 160,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Audio tour system with eye tracking feature, which offers commentary based on where the visitor is looking. No commentary file has been installed, though, so all it plays is the test music track.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_weirdexhibit_01": {
+        "id": "furni_artmuseum_weirdexhibit_01",
+        "sortId": 1530,
+        "name": "'Breaking the Wave'",
+        "iconId": "furni_artmuseum_weirdexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 5,
+        "depth": 4,
+        "height": 10,
+        "comfort": 405,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, created by an Ægir who lived in Iberia. At first, it was seen as embodying the determination of humanity to conquer the oceans; later, it was seen as premonition of the disaster.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_brochure_01": {
+        "id": "furni_artmuseum_brochure_01",
+        "sortId": 1531,
+        "name": "Galería Brochure Stand",
+        "iconId": "furni_artmuseum_brochure_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 4,
+        "depth": 2,
+        "height": 2,
+        "comfort": 130,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Filled with advertising brochures and guide booklets, dated to the museum's opening day. The date matters little. The exhibits are so brilliant that visitors' eyes barely have time to linger upon the brochures.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_fence_01": {
+        "id": "furni_artmuseum_fence_01",
+        "sortId": 1532,
+        "name": "Galería Barrier",
+        "iconId": "furni_artmuseum_fence_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 2,
+        "depth": 3,
+        "height": 2,
+        "comfort": 140,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The fence seems to block the path, but there is plenty of space to go around. The concept is simple: Reynell believes that anyone who gets turned away by this does not deserve to enter.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_chandelier_01": {
+        "id": "furni_artmuseum_chandelier_01",
+        "sortId": 1533,
+        "name": "Galería Lighting",
+        "iconId": "furni_artmuseum_chandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 9,
+        "depth": 8,
+        "height": 2,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The lighting system used in some Galería Krysztauowa galleries. It seems a little simple compared to the overall style of the museum. The lampshade is designed to deflect light in an unexpected manner, creating a confusing atmosphere.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_sculpture_01": {
+        "id": "furni_artmuseum_sculpture_01",
+        "sortId": 1534,
+        "name": "'Awards Ceremony'",
+        "iconId": "furni_artmuseum_sculpture_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 6,
+        "depth": 5,
+        "height": 8,
+        "comfort": 460,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the collection, made by Reynell Kowalski in the theme of his earlier work. 'He looked down when he heard the result. Seeing the striking work in his hands, I understood for the first time the meaning of 'open and fair'.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_notouch_01": {
+        "id": "furni_artmuseum_notouch_01",
+        "sortId": 1535,
+        "name": "Secret Exhibit 'Do Not Touch'",
+        "iconId": "furni_artmuseum_notouch_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 5,
+        "depth": 1,
+        "height": 1,
+        "comfort": 130,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, made by Reynell Kowalski. Everything besides the Do Not Touch sign was purchased on the retail market. 'My dear Miłosz, what do you say to adding a touchscreen to the Do Not Touch sign?'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_whaleexhibit_01": {
+        "id": "furni_artmuseum_whaleexhibit_01",
+        "sortId": 1536,
+        "name": "'Destruction or Deconstruction'",
+        "iconId": "furni_artmuseum_whaleexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DECORATION_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 170,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, artist unknown. There is a line of text in the back: 'Perhaps we have carefully deconstructed it along the lines it was built on; perhaps we have simply crudely cut it apart.'",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_pepperexhibit_01": {
+        "id": "furni_artmuseum_pepperexhibit_01",
+        "sortId": 1537,
+        "name": "'Light and Heat'",
+        "iconId": "furni_artmuseum_pepperexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_2",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 130,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, made by a Lateran who lived in Shangshu, Yan. The glowing stand also gives off the scent of chili oil mixed with donuts, the artist's favorite smell.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_stoneexhibit_01": {
+        "id": "furni_artmuseum_stoneexhibit_01",
+        "sortId": 1538,
+        "name": "'Chain of Sound'",
+        "iconId": "furni_artmuseum_stoneexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 165,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, made by a Leithanian picture book artist. Originally intended as a children's toy, it makes different sounds when you assemble it in different ways.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_fossil_01": {
+        "id": "furni_artmuseum_fossil_01",
+        "sortId": 1539,
+        "name": "'Modern History'",
+        "iconId": "furni_artmuseum_fossil_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 2,
+        "depth": 1,
+        "height": 3,
+        "comfort": 60,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the collection, made by a Victorian archaeologist. Upon learning that his decades of digging were in vain, he angrily drew a scalecis on a mud tablet, and use the scalecis he was going to have for dinner to leave a 'handprint'.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_bench_01": {
+        "id": "furni_artmuseum_bench_01",
+        "sortId": 1540,
+        "name": "Galería Bench",
+        "iconId": "furni_artmuseum_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 6,
+        "depth": 3,
+        "height": 2,
+        "comfort": 205,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Bench with a deep ditch on one side. Not part of the collection, but made by Reynell himself. 'Not the short side, my dear Miłosz. That's for people without friends to come with them to savor their own loneliness.'",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_carpet_01": {
+        "id": "furni_artmuseum_carpet_01",
+        "sortId": 1541,
+        "name": "Galería Carpet",
+        "iconId": "furni_artmuseum_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 7,
+        "depth": 4,
+        "height": 1,
+        "comfort": 65,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A black-and-white striped rug. The black part is fabric; the white part is woven metal threads. 'This could have been a work of art, but unfortunately we don't have any barefooted guests.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_twistexhibit_01": {
+        "id": "furni_artmuseum_twistexhibit_01",
+        "sortId": 1542,
+        "name": "'Extension of Power'",
+        "iconId": "furni_artmuseum_twistexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_3",
+        "width": 4,
+        "depth": 3,
+        "height": 10,
+        "comfort": 295,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, made by a Rim Billiton mogul. His memoirs start with this sentence: 'All I had on me when I first set foot in Rim Billiton was a rusty crowbar.'",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_pillar_01": {
+        "id": "furni_artmuseum_pillar_01",
+        "sortId": 1543,
+        "name": "'Off the Rails'",
+        "iconId": "furni_artmuseum_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 7,
+        "depth": 2,
+        "height": 10,
+        "comfort": 350,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, made by a Dossoles craftsman. The craftsman disliked Reynell and made the pole crooked on purpose, but Reynell gladly accepted it and put it on display regardless.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_blackexhibit_01": {
+        "id": "furni_artmuseum_blackexhibit_01",
+        "sortId": 1544,
+        "name": "'Help Yourself'",
+        "iconId": "furni_artmuseum_blackexhibit_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 4,
+        "depth": 3,
+        "height": 5,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Part of the Galería Krysztauowa collection, made by Reynell Kowalski based on the life of one of his relatives. The wine is fake, and so is the fruit, but the sewer the exhibit connects to is real.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_droplight_01": {
+        "id": "furni_artmuseum_droplight_01",
+        "sortId": 1545,
+        "name": "Galería Lamp",
+        "iconId": "furni_artmuseum_droplight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 70,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Hanging lights that blend into the interior design. What looks like a lampshade is in fact the light source. Reynell did not want two identical lights on the ceiling because he thought it would compromise the gallery's tempo. He was right.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_plant_01": {
+        "id": "furni_artmuseum_plant_01",
+        "sortId": 1546,
+        "name": "Galería Plant",
+        "iconId": "furni_artmuseum_plant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_4",
+        "width": 3,
+        "depth": 3,
+        "height": 6,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The actual Galería Krysztauowa uses fake plants, but this one is real and living. The only authentic thing in this room.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_wallpaper_01": {
+        "id": "furni_artmuseum_wallpaper_01",
+        "sortId": 1547,
+        "name": "Galería Panoramic Display",
+        "iconId": "furni_artmuseum_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Panoramic display that shows the exterior of the Galería Krysztauowa, even simulating the water stains and dust on the glass wall. It does not show the pool full of golf balls, however.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_artmuseum_floor_01": {
+        "id": "furni_artmuseum_floor_01",
+        "sortId": 1548,
+        "name": "Galería Flooring",
+        "iconId": "furni_artmuseum_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_artmuseum",
+        "groupId": "furni_set_artmuseum_1",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Flooring used in the Galería Krysztauowa, somewhat modest compared to the rest of the furnishing. The light-colored marble does not help one relax, but instead makes things seem more distant.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -71004,6 +71832,37 @@
         "comfort": 120,
         "usage": "Used in the dorm to improve the ambience.",
         "description": "A pennant depicting the scene of a raging wildfire. The flames have been extinguished, and the survivors mix the ashes of the quagmire into ink, to remember these forsaken sights in art.",
+        "obtainApproach": "Contingency Contract season reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_contract2_s2_01": {
+        "id": "furni_contract2_s2_01",
+        "sortId": 12016,
+        "name": "Ocean Sunrise Pennant",
+        "iconId": "furni_contract2_s2_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "CONTRACT_2",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 5,
+        "comfort": 120,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Pennant that depicts the sun rising from the sea. Those who have tread the broken waves painted it to commemorate the sight of the waters meeting the first light of dawn.",
         "obtainApproach": "Contingency Contract season reward",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -86220,6 +87079,163 @@
           "furni_SargonFair_wallpaper_01",
           "furni_SargonFair_floor_01"
         ]
+      },
+      "furni_set_artmuseum": {
+        "id": "furni_set_artmuseum",
+        "sortId": 89,
+        "name": "Galería Krysztauowa",
+        "themeType": "EVENT",
+        "desc": "Concept room that recreates a private gallery in the Galería Krysztauowa, displaying replicas of the artwork there.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_artmuseum_headset_01",
+            "pos0": 0,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_weirdexhibit_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_brochure_01",
+            "pos0": 3,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_fence_01",
+            "pos0": 7,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_chandelier_01",
+            "pos0": 5,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_sculpture_01",
+            "pos0": 8,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_notouch_01",
+            "pos0": 9,
+            "pos1": 8,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_whaleexhibit_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_pepperexhibit_01",
+            "pos0": 15,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_stoneexhibit_01",
+            "pos0": 17,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_fossil_01",
+            "pos0": 21,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_bench_01",
+            "pos0": 20,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_carpet_01",
+            "pos0": 27,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_twistexhibit_01",
+            "pos0": 22,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_pillar_01",
+            "pos0": 24,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_blackexhibit_01",
+            "pos0": 30,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_droplight_01",
+            "pos0": 28,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_plant_01",
+            "pos0": 31,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_artmuseum_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_artmuseum_1",
+          "furni_set_artmuseum_2",
+          "furni_set_artmuseum_3",
+          "furni_set_artmuseum_4"
+        ],
+        "furnitures": [
+          "furni_artmuseum_headset_01",
+          "furni_artmuseum_weirdexhibit_01",
+          "furni_artmuseum_brochure_01",
+          "furni_artmuseum_fence_01",
+          "furni_artmuseum_chandelier_01",
+          "furni_artmuseum_sculpture_01",
+          "furni_artmuseum_notouch_01",
+          "furni_artmuseum_whaleexhibit_01",
+          "furni_artmuseum_pepperexhibit_01",
+          "furni_artmuseum_stoneexhibit_01",
+          "furni_artmuseum_fossil_01",
+          "furni_artmuseum_bench_01",
+          "furni_artmuseum_carpet_01",
+          "furni_artmuseum_twistexhibit_01",
+          "furni_artmuseum_pillar_01",
+          "furni_artmuseum_blackexhibit_01",
+          "furni_artmuseum_droplight_01",
+          "furni_artmuseum_plant_01",
+          "furni_artmuseum_wallpaper_01",
+          "furni_artmuseum_floor_01"
+        ]
       }
     },
     "groups": {
@@ -91310,6 +92326,66 @@
           "furni_SargonFair_stoneshelf_01",
           "furni_SargonFair_stockcart_01",
           "furni_SargonFair_chandelier_01"
+        ]
+      },
+      "furni_set_artmuseum_1": {
+        "id": "furni_set_artmuseum_1",
+        "sortId": 1,
+        "name": "'Confusion'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 280,
+        "count": 6,
+        "furniture": [
+          "furni_artmuseum_headset_01",
+          "furni_artmuseum_weirdexhibit_01",
+          "furni_artmuseum_brochure_01",
+          "furni_artmuseum_fence_01",
+          "furni_artmuseum_wallpaper_01",
+          "furni_artmuseum_floor_01"
+        ]
+      },
+      "furni_set_artmuseum_2": {
+        "id": "furni_set_artmuseum_2",
+        "sortId": 2,
+        "name": "'Paradox'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 225,
+        "count": 4,
+        "furniture": [
+          "furni_artmuseum_chandelier_01",
+          "furni_artmuseum_sculpture_01",
+          "furni_artmuseum_notouch_01",
+          "furni_artmuseum_pepperexhibit_01"
+        ]
+      },
+      "furni_set_artmuseum_3": {
+        "id": "furni_set_artmuseum_3",
+        "sortId": 3,
+        "name": "'Hypothesis'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_artmuseum_twistexhibit_01",
+          "furni_artmuseum_whaleexhibit_01",
+          "furni_artmuseum_stoneexhibit_01",
+          "furni_artmuseum_fossil_01",
+          "furni_artmuseum_bench_01"
+        ]
+      },
+      "furni_set_artmuseum_4": {
+        "id": "furni_set_artmuseum_4",
+        "sortId": 4,
+        "name": "'Conundrum'",
+        "themeId": "furni_set_artmuseum",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_artmuseum_carpet_01",
+          "furni_artmuseum_pillar_01",
+          "furni_artmuseum_blackexhibit_01",
+          "furni_artmuseum_droplight_01",
+          "furni_artmuseum_plant_01"
         ]
       }
     },
