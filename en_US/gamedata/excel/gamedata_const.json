@@ -877,7 +877,7 @@
   "reMax": 100.0,
   "diamondToShdRate": 180,
   "requestSameFriendCD": 14400,
-  "baseMaxFriendNum": 15,
+  "baseMaxFriendNum": 65,
   "hardDiamondDrop": 1,
   "instFinDmdShdCost": 80,
   "easyCrystalBonus": 0,
@@ -985,6 +985,18 @@
     "lv.mhtx": "<color=#1B1B1B>{0}</color>",
     "lv.mhfs": "<color=#A57F5B>{0}</color>",
     "cc.miu": "<color=#8F7156>{0}</color>",
+    "ping.low": "<color=#7fa826>{0}</color>",
+    "ping.medium": "<color=#ec7a00>{0}</color>",
+    "ping.high": "<color=#ff3d3d>{0}</color>",
+    "match.success": "<color=#36BBCC>{0}</color>",
+    "map.normal": "<color=#36BBCC>{0}</color>",
+    "map.football": "<color=#36BBCC>{0}</color>",
+    "map.defence": "<color=#36BBCC>{0}</color>",
+    "milestone": "<color=#D4133C>{0}</color>",
+    "dm.award": "<color=#36BBCC>{0}</color>",
+    "dm.condition": "<color=#C9C9C9>{0}</color>",
+    "tutor": "<color=#36BBCC>{0}</color>",
+    "lv.muitem": "<color=#D4133C>{0}</color>",
     "ba.grt": "<color=#FFAB27>{0}</color>",
     "ba.exl": "<color=#14F0AF>{0}</color>",
     "ba.hrd": "<color=#DA2536>{0}</color>",
@@ -1235,6 +1247,11 @@
       "termName": "Arts Fragility",
       "description": "Amplifies all Arts damage taken by the corresponding amount (only the strongest effect of this type applies)"
     },
+    "ba.elementfragile": {
+      "termId": "ba.elementfragile",
+      "termName": "Elemental Fragility",
+      "description": "Amplifies all Elemental damage taken by the corresponding amount (only the strongest effect of this type applies)"
+    },
     "ba.dying": {
       "termId": "ba.dying",
       "termName": "Critically Wounded",
@@ -1420,6 +1437,11 @@
       "termName": "Ursus Student Self-Governing Group",
       "description": "Includes the following Operators:\nRosa, Zima, Istina, Gummy, Leto"
     },
+    "cc.g.A1": {
+      "termId": "cc.g.A1",
+      "termName": "A1 Detachment",
+      "description": "Includes the following Operators:\nHibiscus, Lava, Beagle, Fang, Kroos"
+    },
     "cc.g.R6": {
       "termId": "cc.g.R6",
       "termName": "Team Rainbow",
@@ -1523,7 +1545,7 @@
     "cc.c.sui2_1": {
       "termId": "cc.c.sui2_1",
       "termName": "Special comparison rules",
-      "description": "Compare hourly Morale recovery totals of <$cc.c.room2><@cc.kw>other buildings</></> provided by other Operator skills in the Control Center. The strongest effect applies."
+      "description": "The highest hourly Morale recovery of <$cc.c.room2><@cc.kw>other buildings</></> provided by <@cc.kw>Business Is Business</>, <@cc.kw>Solitary Light</>, or <@cc.kw>Banner of Babel</> will take effect"
     },
     "cc.m.pow1": {
       "termId": "cc.m.pow1",
@@ -1583,7 +1605,7 @@
     "cc.tag.op": {
       "termId": "cc.tag.op",
       "termName": "Operation Platform",
-      "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3"
+      "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, 'Justice Knight', Friston-3, PhonoR-0"
     },
     "cc.tag.knight": {
       "termId": "cc.tag.knight",
@@ -1607,8 +1629,8 @@
     }
   },
   "storyReviewUnlockItemLackTip": "Insufficient Information Fragments. Acquire more from the Purchase Certificates Store or the Event Store.",
-  "dataVersion": "39.2.0",
-  "resPrefVersion": "48d0d0",
+  "dataVersion": "40.1.0",
+  "resPrefVersion": "49d0d0",
   "announceWebBusType": "ak_announcement",
   "defaultMinContinuousBattleTimes": 1,
   "defaultMaxContinuousBattleTimes": 6,
@@ -1678,7 +1700,8 @@
     "ritualist": "MAGICAL",
     "hunter": "PHYSICAL",
     "primcaster": "MAGICAL",
-    "loopshooter": "PHYSICAL"
+    "loopshooter": "PHYSICAL",
+    "hammer": "PHYSICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",
