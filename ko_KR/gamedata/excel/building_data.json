@@ -11854,6 +11854,125 @@
           ]
         }
       ]
+    },
+    "char_4132_ascln": {
+      "charId": "char_4132_ascln",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_train_spd[010]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_tra_spd[030]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_446_aroma": {
+      "charId": "char_446_aroma",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd_addition[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4131_odda": {
+      "charId": "char_4131_odda",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd&cost_condChar[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "meet_spd&cost_condChar[011]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd&condChar_mustget[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4130_luton": {
+      "charId": "char_4130_luton",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_formula_cost3[100]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_formula_probability[101]",
+              "cond": {
+                "phase": "PHASE_1",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11977,6 +12096,18 @@
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <@cc.vup>+7%</> (동종 효과 중 가장 높은 수치만 적용)"
     },
+    "control_tra_spd[030]": {
+      "buffId": "control_tra_spd[030]",
+      "buffName": "정보의 수뇌",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_t_spd",
+      "sortId": 1505,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 모든 무역소의 오더 수주 효율 <@cc.vup>+7%</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
     "control_tra_limit&spd[000]": {
       "buffId": "control_tra_limit&spd[000]",
       "buffName": "정밀 계산",
@@ -12011,7 +12142,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "제어 센터에 배치 시, 응접실의 단서 수집 속도 <@cc.vup>+25%</>"
+      "description": "제어 센터에 배치 시, 응접실의 단서 수집 속도 <@cc.vup>+25%</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "control_clue_cost[000]": {
       "buffId": "control_clue_cost[000]",
@@ -12504,6 +12635,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "control_train_spd[010]": {
+      "buffId": "control_train_spd[010]",
+      "buffName": "S.W.E.E.P. 리더",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_train_spd1",
+      "sortId": 1402,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 훈련실에서 스킬 마스터리 훈련 중인 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+5%</> (동종 효과 중 가장 높은 수치만 적용)"
     },
     "control_tra_limit&spd[010]": {
       "buffId": "control_tra_limit&spd[010]",
@@ -13069,6 +13212,18 @@
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, 첫 시간 생산력<@cc.vup>+15%</>, 그 이후 시간당 <@cc.vup>+2%</>, 최대 <@cc.vup>+25%</>"
     },
+    "manu_prod_spd_addition[100]": {
+      "buffId": "manu_prod_spd_addition[100]",
+      "buffName": "정기 청소",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd_add3",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, 시간당 생산력 <@cc.vup>+2%</>, 최대 <@cc.vup>+20%</>"
+    },
     "manu_prod_spd_reduce[000]": {
       "buffId": "manu_prod_spd_reduce[000]",
       "buffName": "흐려진 시야",
@@ -13597,6 +13752,18 @@
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, <@cc.kw>귀금속</>류에 대한 생산력<@cc.vup>+25%</>, 시간당 컨디션 소모 <@cc.vdown>+0.25</>"
     },
+    "manu_formula_spd&cost[001]": {
+      "buffId": "manu_formula_spd&cost[001]",
+      "buffName": "깨끗함의 향기",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold4",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, <@cc.kw>귀금속</>류에 대한 생산력<@cc.vup>+25%</>, 시간당 컨디션 소모 <@cc.vdown>+0.25</>"
+    },
     "manu_formula_spd&cost_bd[000]": {
       "buffId": "manu_formula_spd&cost_bd[000]",
       "buffName": "중요한 역할",
@@ -13859,7 +14026,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 해당 무역소 내의 모든 오퍼레이터가 제공한 오더 수주 효율 <@cc.vup>5%</>당, <@cc.vup>5%</>효율 추가 제공. 최대 <@cc.vup>25%</>효율 제공"
+      "description": "무역소에 배치 시, 해당 무역소 내의 오퍼레이터가 제공한 오더 수주 효율 <@cc.vup>5%</>당 효율 <@cc.vup>5%</> 추가 제공, 최대 <@cc.vup>25%</> 제공"
     },
     "trade_ord_spd_variable2[001]": {
       "buffId": "trade_ord_spd_variable2[001]",
@@ -13871,7 +14038,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 해당 무역소 내의 모든 오퍼레이터가 제공한 오더 수주 효율 <@cc.vup>5%</>당, <@cc.vup>5%</>효율 추가 제공. 최대 <@cc.vup>35%</>효율 제공"
+      "description": "무역소에 배치 시, 해당 무역소 내의 오퍼레이터가 제공한 오더 수주 효율 <@cc.vup>5%</>당 효율 <@cc.vup>5%</> 추가 제공, 최대 <@cc.vup>35%</> 제공"
     },
     "trade_ord_spd_variable3[000]": {
       "buffId": "trade_ord_spd_variable3[000]",
@@ -13883,7 +14050,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 해당 무역소 내의 오퍼레이터가 제공한 오더 상한 <@cc.vup>500%</>개당 오더 수주 효율 <@cc.vup>25%</> 제공, 최대 <@cc.vup>100%</> 제공"
+      "description": "무역소에 배치 시, 해당 무역소 내의 오퍼레이터가 제공한 오더 상한 <@cc.vup>5</>개당 오더 수주 효율 <@cc.vup>25%</> 제공, 최대 <@cc.vup>100%</> 제공"
     },
     "trade_ord_spd&dorm&lv[000]": {
       "buffId": "trade_ord_spd&dorm&lv[000]",
@@ -14183,7 +14350,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
-      "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <@cc.kw>1</>명당 <$cc.bd_b1><@cc.rem>속세의 화식</></> <@cc.vup>+1</>, <$cc.bd_b1><@cc.rem>속세의 불꽃</></> <@cc.vup>1</>점당 오더 수주 효율 <@cc.vup>+1%</>"
+      "description": "무역소에 배치 시, 숙소 내 오퍼레이터 <@cc.kw>1</>명당 <$cc.bd_b1><@cc.rem>속세의 화식</></> <@cc.vup>+1</>, <$cc.bd_b1><@cc.rem>속세의 화식</></> <@cc.vup>1</>점당 오더 수주 효율 <@cc.vup>+1%</>"
     },
     "trade_ord_spd_bd[000]": {
       "buffId": "trade_ord_spd_bd[000]",
@@ -14995,6 +15162,18 @@
       "buffIcon": "workshop",
       "skillIcon": "bskill_ws_evolve1",
       "sortId": 7511,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "가공소에 배치해 <@cc.kw>정예화 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승"
+    },
+    "workshop_formula_probability[101]": {
+      "buffId": "workshop_formula_probability[101]",
+      "buffName": "고효율 재활용",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_evolve1",
+      "sortId": 7512,
       "buffColor": "#e3eb00",
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
@@ -18107,7 +18286,19 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
-      "description": "응접실에 배치 시, 응접실에서 자신만 업무 중이고 연속으로 <@cc.kw>16</> 이상의 컨디션을 소모했을 때, 다음에 <@cc.kw>반드시</> <@cc.kw>라인 랩</> 단서 획득"
+      "description": "응접실에 배치 시, 응접실에서 자신만 업무 중이고 연속으로 소모한 컨디션이 <@cc.kw>16</> 초과 경우, 다음에 <@cc.kw>라인 랩</> 단서를 <@cc.kw>확정</> 획득"
+    },
+    "meet_spd&condChar_mustget[100]": {
+      "buffId": "meet_spd&condChar_mustget[100]",
+      "buffName": "비밀 연락원",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spd&condChar_mustget2",
+      "sortId": 6113,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "응접실에 배치 시, 응접실에서 자신만 업무 중이고 연속으로 소모한 컨디션이 <@cc.kw>16</> 초과 경우, 다음에 <@cc.kw>로도스 아일랜드 제약회사</> 단서를 <@cc.kw>확정</> 획득"
     }
   },
   "workshopBonus": {
@@ -28896,7 +29087,7 @@
         "height": 3,
         "comfort": 205,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "헬시한 장식판. \"고객한테 색깔만 따라 움직이게 하는 건 너무 재미없지 않아?\"",
+        "description": "헬시한 장식판. “고객한테 색깔만 따라 움직이게 하는 건 너무 재미없지 않아?”",
         "obtainApproach": "일부 스테이지 럭키 보상",
         "processedProductId": "3401",
         "processedProductCount": 5,
@@ -37483,7 +37674,7 @@
         "height": 4,
         "comfort": 210,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "짜임새가 좋은 낮은 협탁. 협탁 위엔 스탠드 하나를 놓을 수 있는 공간이 있다. 눈에 잘 띄는 색을 사용해 분위기가 새롭다.",
+        "description": "짜임새가 좋은 낮은 협탁. 위에 스탠드를 하나 놓을 공간이 있다. 눈에 잘 띄는 색을 사용해 분위기가 새롭다.",
         "obtainApproach": "일부 스테이지 럭키 보상",
         "processedProductId": "3401",
         "processedProductCount": 5,
@@ -38271,7 +38462,7 @@
       "furni_abyssal_sofa_01": {
         "id": "furni_abyssal_sofa_01",
         "sortId": 651,
-        "name": "푹신한 소파",
+        "name": "리조트 소파",
         "iconId": "furni_abyssal_sofa_01",
         "interactType": "NONE",
         "musicId": "",
@@ -42939,7 +43130,7 @@
         "height": 6,
         "comfort": 220,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "사장 전용 수납장이지만, 간혹 저장고에서 막 꺼내온 호송주나 운료주도 올려놓는다.\n묵은해가 가면 걱정도 사라지니, 새해가 밝아 오면 술이나 마시자꾸나.",
+        "description": "사장 전용 수납장, 간혹 저장고에서 막 꺼내온 호송주나 운료주도 올려놓는다.\n묵은해가 가면 걱정도 사라지니, 새해가 밝아 오면 술이나 마시자꾸나.",
         "obtainApproach": "가구상점 한정 구매",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -59078,7 +59269,7 @@
         "musicId": "",
         "type": "WALLDECO",
         "subType": "POSTER",
-        "location": "WALL",
+        "location": "POSTER",
         "category": "FURNITURE",
         "validOnRotate": false,
         "enableRotate": false,
@@ -59524,7 +59715,7 @@
         "height": 2,
         "comfort": 150,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "벽돌을 쌓아 만든 긴 의자. 만들고 나서야 너무 낮다는 사실을 깨달았고, 그리하여 어쩔 수 없이 화분으로 사용하는 중이다.\n나무판의 틈새 사이에서 작은 이끼가 자라났다는 사실은, 아이들만이 알고 있을 것이다.",
+        "description": "벽돌을 쌓아 만든 긴 의자. 만들고 나서야 너무 낮다는 사실을 깨달았고, 어쩔 수 없이 화분으로 사용하는 중이다.\n나무판의 틈새 사이에서 작은 이끼가 자라났다는 사실은 아이들만이 알고 있을 것이다.",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -66106,6 +66297,688 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_ScarMarket_shortstick_01": {
+        "id": "furni_ScarMarket_shortstick_01",
+        "sortId": 1549,
+        "name": "아래로 휜 마른 가지",
+        "iconId": "furni_ScarMarket_shortstick_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 7,
+        "depth": 2,
+        "height": 5,
+        "comfort": 130,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "굵고 메마른 나무줄기 토막. 길이는 전체의 1/3가량 된다.\n“우리는 마른 가지를 머리 위에 매달아 놓는다. 살카즈, 즉 죽음이 그대를 지켜보고 있다는 것을 모두에게 알리기 위해.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ironbasket_01": {
+        "id": "furni_ScarMarket_ironbasket_01",
+        "sortId": 1550,
+        "name": "'망자 공양'",
+        "iconId": "furni_ScarMarket_ironbasket_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "철조각을 용접해 만든 분재 울타리, 가운데에 생기 없는 나뭇가지가 놓여 있다.\n사이클롭스는 이 생기 없는 장식품 속에서 생명이 탄생하는 모습을 볼 수 있다고 한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_storagetable_01": {
+        "id": "furni_ScarMarket_storagetable_01",
+        "sortId": 1551,
+        "name": "주술 작업대",
+        "iconId": "furni_ScarMarket_storagetable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 2,
+        "depth": 3,
+        "height": 4,
+        "comfort": 155,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "긁힌 흔적이 가득한 철제 책상. 아래에 매달린 바구니 안에는 기이한 도구들이 잔뜩 들어있다.\n똑똑한 용병들은 모두 이 도구들의 용도를 묻지 말아야 한다는 것을 잘 알고 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_longstick_01": {
+        "id": "furni_ScarMarket_longstick_01",
+        "sortId": 1552,
+        "name": "긴 마른 가지",
+        "iconId": "furni_ScarMarket_longstick_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 13,
+        "depth": 3,
+        "height": 4,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "굵고 메마른 나무줄기 토막. 길이는 전체의 2/3가량 된다.\n마른 가지는 죽은 자의 상징이다. 나무의 시체는 마치 동포가 죽었을 때의 모습처럼 비틀리고 초췌한 모습이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_collectioncabinet_01": {
+        "id": "furni_ScarMarket_collectioncabinet_01",
+        "sortId": 1553,
+        "name": "진귀한 진열장",
+        "iconId": "furni_ScarMarket_collectioncabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 5,
+        "depth": 2,
+        "height": 8,
+        "comfort": 230,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "위에는 용병이 테라 각지에서 가져온 싸구려 물건이 놓여있다.\n'진기'하다고 할만한 것은 이런 장난감 따위가 아니다. 살아남아서 이것들을 가져온 용병 본인이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ironbox_01": {
+        "id": "furni_ScarMarket_ironbox_01",
+        "sortId": 1554,
+        "name": "이어 붙인 수납함",
+        "iconId": "furni_ScarMarket_ironbox_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 3,
+        "depth": 3,
+        "height": 5,
+        "comfort": 175,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "철조각을 용접해 만든 상자 속에는 살카즈의 전리품들이 보관되어 있다.\n“빼앗은 물건은 모두 여기에 가져왔다. 여러 곳을 다니는 동안 좋은 가격에 팔리길 바라지.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_partitionwall_01": {
+        "id": "furni_ScarMarket_partitionwall_01",
+        "sortId": 1555,
+        "name": "하중 기둥",
+        "iconId": "furni_ScarMarket_partitionwall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 1,
+        "depth": 7,
+        "height": 10,
+        "comfort": 260,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "흉터의 상점 내부에 우뚝 솟아있는 거대한 기둥의 모조품, 천장을 받치고 있다.\n“폐기된 이동 도시 부품은 계속 일할 수 있는 기회가 있지만, 폐기된 용병에겐 그런 기회조차 없지.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_storagewall_01": {
+        "id": "furni_ScarMarket_storagewall_01",
+        "sortId": 1556,
+        "name": "'업무와 생활'",
+        "iconId": "furni_ScarMarket_storagewall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 9,
+        "depth": 1,
+        "height": 10,
+        "comfort": 310,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "벽 선반. 위에는 생활용품 몇 개와 수배 전단 몇 장, 그리고 회수한 군번줄이 여러 개 놓여있다.\n주: 군번줄은 장식일 뿐, 수집 당시 다친 살카즈 용병은 아무도 없었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_roundtable_01": {
+        "id": "furni_ScarMarket_roundtable_01",
+        "sortId": 1557,
+        "name": "'비싼 오락'",
+        "iconId": "furni_ScarMarket_roundtable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ENTERTAINMENT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 5,
+        "depth": 4,
+        "height": 4,
+        "comfort": 235,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "너덜너덜한 테이블보와 오래된 책들이 낡은 테이블 위에서 구형 TV를 받치고 있다.\n용병들은 수시로 TV를 둘러싸고 카즈델의 문맹 퇴치 프로그램을 시청했지만, 다른 사람이 군번줄을 전달해 줄 때까지도 대다수의 용병은 오래된 책의 이름조차 알아볼 수 없었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ceilinglamp_01": {
+        "id": "furni_ScarMarket_ceilinglamp_01",
+        "sortId": 1558,
+        "name": "레일 천장등",
+        "iconId": "furni_ScarMarket_ceilinglamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 8,
+        "depth": 3,
+        "height": 6,
+        "comfort": 185,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "희미한 천장등이 걸레와 찻주전자, 술잔과 이름조차 모르는 책을 견디고 있다.\n“나는 되는대로 물건을 위에 걸어놔, 마치 내 목숨을 파는 것처럼 편리하다고 생각하거든, 그리고 돈이 충분히 실용적이라고 생각하기 때문이야.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_storagecabinet_01": {
+        "id": "furni_ScarMarket_storagecabinet_01",
+        "sortId": 1559,
+        "name": "난잡한 술 진열대",
+        "iconId": "furni_ScarMarket_storagecabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 5,
+        "depth": 3,
+        "height": 5,
+        "comfort": 225,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "난잡한 선반 위에는 몇 개의 술잔과 어디에서 가져왔는지 모르는 술병 하나가 놓여있다.\n곡물로 빚은 독한 술은 용병들이 가장 사랑하는 것이고, 싸고 독한 '한 방에 골로 보내는' 술이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_stovetable_01": {
+        "id": "furni_ScarMarket_stovetable_01",
+        "sortId": 1560,
+        "name": "화로 테이블",
+        "iconId": "furni_ScarMarket_stovetable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 340,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "조잡한 재료를 긁어모아 만든 얇고 긴 테이블 아래에 화로가 연결되어 있다.\n“아마도 이 테이블을 '발명'한 사람은 분명 여러 재료의 열전도율이 다 다르다는 사실을 잊은 게 틀림없겠지만, 다행히 우리는 테이블 표면의 온도를 제어할 수 있는 오리지늄 아츠를 갖고 있지.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_shortstick_02": {
+        "id": "furni_ScarMarket_shortstick_02",
+        "sortId": 1561,
+        "name": "위로 휜 마른 가지",
+        "iconId": "furni_ScarMarket_shortstick_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 6,
+        "depth": 2,
+        "height": 4,
+        "comfort": 110,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "굵고 메마른 나무줄기 토막. 길이는 전체의 1/3가량 된다.\n“우리는 마른 가지를 바라보며 그것을 모든 생명의 정해진 결말이라 여기고, 이를 통해 죽음과 파멸을 더 이상 두려워하지 않게 된다.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_table_01": {
+        "id": "furni_ScarMarket_table_01",
+        "sortId": 1562,
+        "name": "현상금 거래 테이블",
+        "iconId": "furni_ScarMarket_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 6,
+        "depth": 3,
+        "height": 3,
+        "comfort": 205,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "용병들이 현상금을 받는 데 쓰이는 증표로 가득 차 있다.\n“대부분의 경우, 목표의 일부만 잘라 오면 현상금을 받을 수 있지. 가장 중요한 건 편리함, 그리고 신속함이다.”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_carbonfirebox_01": {
+        "id": "furni_ScarMarket_carbonfirebox_01",
+        "sortId": 1563,
+        "name": "숯불 상자",
+        "iconId": "furni_ScarMarket_carbonfirebox_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "WARM",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 3,
+        "height": 2,
+        "comfort": 125,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "숯불이 조용히 '타오르며', 심홍색 불빛이 잿빛 상자를 비춘다.\n사실 상자 속 '숯불'은 색이 다른 몇 가지 램프인데, 이는 오퍼레이터들이 실내에서 중독되는 것을 막기 위한 것이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ironcabinet_01": {
+        "id": "furni_ScarMarket_ironcabinet_01",
+        "sortId": 1564,
+        "name": "범용 작업대",
+        "iconId": "furni_ScarMarket_ironcabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 3,
+        "height": 6,
+        "comfort": 155,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "밝은 광원이 있는 작업대. 하단부를 수납장으로 사용할 수 있다.\n“작업대를 대문 앞에 둔 것은 우리가 언제 어디서나 자신의 무기를 수리하는 습관이 있기 때문, 또는 그럴 수밖에 없기 때문이다.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_bench_01": {
+        "id": "furni_ScarMarket_bench_01",
+        "sortId": 1565,
+        "name": "접이식 벽걸이 의자",
+        "iconId": "furni_ScarMarket_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 6,
+        "depth": 2,
+        "height": 2,
+        "comfort": 95,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "언제든지 접을 수 있는 벤치. 침대로도 사용 가능하다.\n접히며 변형된 것은 벤치뿐만 아니라, 그것이 견디고 있던 꿈과 이상이었다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_stool_01": {
+        "id": "furni_ScarMarket_stool_01",
+        "sortId": 1566,
+        "name": "사각 철제 의자",
+        "iconId": "furni_ScarMarket_stool_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 100,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "각종 건축 자재를 대충 짜 맞춰 만든 의자. 카즈델 곳곳에서 볼 수 있다.\n흉터의 상점처럼 폐기물을 이용한 모범이라 할 수 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_carpet_01": {
+        "id": "furni_ScarMarket_carpet_01",
+        "sortId": 1567,
+        "name": "철판 매트",
+        "iconId": "furni_ScarMarket_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 5,
+        "depth": 9,
+        "height": 1,
+        "comfort": 80,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "강철 조각으로 만든 매트. 견고하고 듬직하다.\n충분히 튼튼한 '고급품'만이 흉터의 상점을 오가는 용병의 거친 발걸음을 견딜 수 있다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_shoerack_01": {
+        "id": "furni_ScarMarket_shoerack_01",
+        "sortId": 1568,
+        "name": "'제한된 예술적 상상'",
+        "iconId": "furni_ScarMarket_shoerack_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 115,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "살카즈들은 한정된 재료로 아름다우면서 풍부한 디자인이 돋보이는 선반을 만들었다.\n이토록 열악한 환경 속에서도 미를 추구하는 용병들은 창작의 재능을 펼칠 수 있는 기회를 포기하지 않았다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_wallpaper_01": {
+        "id": "furni_ScarMarket_wallpaper_01",
+        "sortId": 1569,
+        "name": "차가운 조립형 벽지",
+        "iconId": "furni_ScarMarket_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "그 어떤 건축 자재도 흉터의 상점 벽의 일부가 될 수 있다.\n로도스 아일랜드에서는 너무 조잡한 건축 자재를 찾을 수 없었고, 그래서 다들 '아쉬운 대로' 반듯한 제식 건축 자재를 쓸 수밖에 없었다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_floor_01": {
+        "id": "furni_ScarMarket_floor_01",
+        "sortId": 1570,
+        "name": "울퉁불퉁한 바닥",
+        "iconId": "furni_ScarMarket_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "나무 바닥과 돌바닥은 바람처럼 오고 가는 살카즈 용병들의 발걸음 아래에서 빠르게 망가지는 희생양일 뿐이다.\n“클로저는 우리가 그 너덜너덜한 바닥을 다시 만드는 것을 허락하지 않았어. '시공 요건에 부합하지 않아'라고 하던데.”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -66716,7 +67589,7 @@
         "height": 3,
         "comfort": 200,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "염국 전통 음식 형태의 의자.\n찹쌀을 곱게 찧어 팥을 가득 채운 이것을 든든하게 서너 개 먹으면 오후의 보트 경주에서 1등을 차지할 수 있을 것이다.",
+        "description": "염국의 전통 음식 모양으로 디자인한 안락의자. 찻상 뒤에 놓여있다.\n찹쌀에 단팥을 소로, 서너 개만 먹어도 보트 경주에서 우승을 차지한다.",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -68775,7 +69648,7 @@
       "furni_act40d0_starGate_01": {
         "id": "furni_act40d0_starGate_01",
         "sortId": 10216,
-        "name": "'미래'",
+        "name": "'앞날'",
         "iconId": "furni_act40d0_starGate_01",
         "interactType": "NONE",
         "musicId": "",
@@ -71347,7 +72220,7 @@
       },
       "furni_terratimes_Yan_01": {
         "id": "furni_terratimes_Yan_01",
-        "sortId": 11082,
+        "sortId": 11083,
         "name": "플레이트 《번영》",
         "iconId": "furni_terratimes_Yan_01",
         "interactType": "NONE",
@@ -71367,6 +72240,37 @@
         "comfort": 75,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "강과 산은 빛나고, 신은 어디에도 보이지 않는다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terracommericials_CoffeePlainsCoffeeCandy_01": {
+        "id": "furni_terracommericials_CoffeePlainsCoffeeCandy_01",
+        "sortId": 11084,
+        "name": "플레이트 《고락》",
+        "iconId": "furni_terracommericials_CoffeePlainsCoffeeCandy_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "커피 플레인 커피 캔디의 삶의 궤적: 고진감래",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -71583,7 +72487,7 @@
         "height": 4,
         "comfort": 75,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "희귀한 짐승의 비늘무늬를 본뜬 깃발. 세상에 단 하나밖에 없어 무한한 값어치를 가지고 있다고만 알려졌으며, 그걸 얻지 못한 사람들은 무늬를 훈장에 새겨 기념한다.",
+        "description": "희귀한 짐승의 비늘무늬를 본뜬 깃발. 세상에 단 하나뿐이기에 무한한 값어치를 가지고 있다고만 알려졌으며, 그걸 얻지 못한 사람들은 무늬를 훈장에 새겨 기념한다.",
         "obtainApproach": "위기 협약 시즌 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -72451,7 +73355,38 @@
         "height": 4,
         "comfort": 105,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "시에스타 뉴호텔 애비뉴 섬멸을 완료하고 보고를 제출하면 획득할 수 있는 기념품, 뉴호텔 거리의 소리가 아직도 귓가에 남아 울리는 듯하다.",
+        "description": "시에스타 뉴호텔 애비뉴 섬멸을 완료하고 보고를 제출하면 획득 가능한 기념품, 뉴호텔 거리의 소리가 아직도 귓가에 남아 울리는 듯하다.",
+        "obtainApproach": "섬멸 의뢰 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_annihilation_s22_01": {
+        "id": "furni_annihilation_s22_01",
+        "sortId": 13020,
+        "name": "컬럼비아의 메아리 (실험실)",
+        "iconId": "furni_annihilation_s22_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "컬럼비아 '이심률' 실험실 섬멸을 완료하고 보고를 제출하면 획득 가능한 기념품. '이심률' 실험실의 여운이 아직도 귓가에 남아 울리는 듯하다.",
         "obtainApproach": "섬멸 의뢰 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -87236,6 +88171,177 @@
           "furni_artmuseum_wallpaper_01",
           "furni_artmuseum_floor_01"
         ]
+      },
+      "furni_set_ScarMarket": {
+        "id": "furni_set_ScarMarket",
+        "sortId": 90,
+        "name": "'흉터의 상점 추억'",
+        "themeType": "EVENT",
+        "desc": "살카즈 용병의 설명에 따라 복원시킨 흉터의 상점 스타일 방. 과거 흉터의 상점은 무질서함과 난잡함으로 유명했으며, 그 시각적인 양식은 수십 년 동안 그곳을 관리했던 사이클롭스가 정한 것이다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_ScarMarket_shortstick_01",
+            "pos0": 2,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ironbasket_01",
+            "pos0": 5,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_storagetable_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_longstick_01",
+            "pos0": 12,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_collectioncabinet_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ironbox_01",
+            "pos0": 5,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_partitionwall_01",
+            "pos0": 9,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_storagewall_01",
+            "pos0": 10,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_roundtable_01",
+            "pos0": 10,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ceilinglamp_01",
+            "pos0": 21,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_storagecabinet_01",
+            "pos0": 19,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_stovetable_01",
+            "pos0": 10,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_shortstick_02",
+            "pos0": 28,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_table_01",
+            "pos0": 21,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_carbonfirebox_01",
+            "pos0": 28,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ironcabinet_01",
+            "pos0": 32,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_bench_01",
+            "pos0": 26,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_stool_01",
+            "pos0": 18,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_carpet_01",
+            "pos0": 27,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_shoerack_01",
+            "pos0": 32,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_ScarMarket_1",
+          "furni_set_ScarMarket_2",
+          "furni_set_ScarMarket_3",
+          "furni_set_ScarMarket_4"
+        ],
+        "furnitures": [
+          "furni_ScarMarket_shortstick_01",
+          "furni_ScarMarket_ironbasket_01",
+          "furni_ScarMarket_storagetable_01",
+          "furni_ScarMarket_longstick_01",
+          "furni_ScarMarket_collectioncabinet_01",
+          "furni_ScarMarket_ironbox_01",
+          "furni_ScarMarket_partitionwall_01",
+          "furni_ScarMarket_storagewall_01",
+          "furni_ScarMarket_roundtable_01",
+          "furni_ScarMarket_ceilinglamp_01",
+          "furni_ScarMarket_storagecabinet_01",
+          "furni_ScarMarket_stovetable_01",
+          "furni_ScarMarket_shortstick_02",
+          "furni_ScarMarket_table_01",
+          "furni_ScarMarket_carbonfirebox_01",
+          "furni_ScarMarket_ironcabinet_01",
+          "furni_ScarMarket_bench_01",
+          "furni_ScarMarket_stool_01",
+          "furni_ScarMarket_carpet_01",
+          "furni_ScarMarket_shoerack_01",
+          "furni_ScarMarket_wallpaper_01",
+          "furni_ScarMarket_floor_01"
+        ]
       }
     },
     "groups": {
@@ -90449,7 +91555,7 @@
       "furni_set_rhineLab_2": {
         "id": "furni_set_rhineLab_2",
         "sortId": 2,
-        "name": "엄선",
+        "name": "필터",
         "themeId": "furni_set_rhineLab",
         "comfort": 155,
         "count": 4,
@@ -92386,6 +93492,68 @@
           "furni_artmuseum_blackexhibit_01",
           "furni_artmuseum_droplight_01",
           "furni_artmuseum_plant_01"
+        ]
+      },
+      "furni_set_ScarMarket_1": {
+        "id": "furni_set_ScarMarket_1",
+        "sortId": 1,
+        "name": "신비한 장식",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 130,
+        "count": 4,
+        "furniture": [
+          "furni_ScarMarket_shortstick_01",
+          "furni_ScarMarket_shortstick_02",
+          "furni_ScarMarket_longstick_01",
+          "furni_ScarMarket_ironbasket_01"
+        ]
+      },
+      "furni_set_ScarMarket_2": {
+        "id": "furni_set_ScarMarket_2",
+        "sortId": 2,
+        "name": "기이한 정비 구역",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 275,
+        "count": 6,
+        "furniture": [
+          "furni_ScarMarket_storagetable_01",
+          "furni_ScarMarket_collectioncabinet_01",
+          "furni_ScarMarket_ironbox_01",
+          "furni_ScarMarket_partitionwall_01",
+          "furni_ScarMarket_wallpaper_01",
+          "furni_ScarMarket_floor_01"
+        ]
+      },
+      "furni_set_ScarMarket_3": {
+        "id": "furni_set_ScarMarket_3",
+        "sortId": 3,
+        "name": "시끄러운 업무 구역",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 380,
+        "count": 6,
+        "furniture": [
+          "furni_ScarMarket_storagewall_01",
+          "furni_ScarMarket_roundtable_01",
+          "furni_ScarMarket_ceilinglamp_01",
+          "furni_ScarMarket_storagecabinet_01",
+          "furni_ScarMarket_stovetable_01",
+          "furni_ScarMarket_table_01"
+        ]
+      },
+      "furni_set_ScarMarket_4": {
+        "id": "furni_set_ScarMarket_4",
+        "sortId": 4,
+        "name": "초라한 생활 구역",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 140,
+        "count": 6,
+        "furniture": [
+          "furni_ScarMarket_stool_01",
+          "furni_ScarMarket_carbonfirebox_01",
+          "furni_ScarMarket_bench_01",
+          "furni_ScarMarket_ironcabinet_01",
+          "furni_ScarMarket_shoerack_01",
+          "furni_ScarMarket_carpet_01"
         ]
       }
     },
