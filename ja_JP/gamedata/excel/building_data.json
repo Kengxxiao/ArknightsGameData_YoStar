@@ -11854,6 +11854,125 @@
           ]
         }
       ]
+    },
+    "char_4132_ascln": {
+      "charId": "char_4132_ascln",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_train_spd[010]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_tra_spd[030]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_446_aroma": {
+      "charId": "char_446_aroma",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_formula_spd&cost[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd_addition[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4131_odda": {
+      "charId": "char_4131_odda",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd&cost_condChar[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "meet_spd&cost_condChar[011]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd&condChar_mustget[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4130_luton": {
+      "charId": "char_4130_luton",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_formula_cost3[100]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_formula_probability[101]",
+              "cond": {
+                "phase": "PHASE_1",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -11977,6 +12096,18 @@
       "roomType": "CONTROL",
       "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
     },
+    "control_tra_spd[030]": {
+      "buffId": "control_tra_spd[030]",
+      "buffName": "情報中枢",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_t_spd",
+      "sortId": 1505,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+    },
     "control_tra_limit&spd[000]": {
       "buffId": "control_tra_limit&spd[000]",
       "buffName": "緻密な研究者",
@@ -12011,7 +12142,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+25%</>"
+      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+25%</>（同種の効果は高いほうのみ適応）"
     },
     "control_clue_cost[000]": {
       "buffId": "control_clue_cost[000]",
@@ -12504,6 +12635,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適応）"
+    },
+    "control_train_spd[010]": {
+      "buffId": "control_train_spd[010]",
+      "buffName": "S.W.E.E.P.責任者",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_train_spd1",
+      "sortId": 1402,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、訓練室で訓練を行っているオペレーターがいる場合、当該オペレーターの訓練速度<@cc.vup>+5%</>（同種の効果は高いほうのみ適応）"
     },
     "control_tra_limit&spd[010]": {
       "buffId": "control_tra_limit&spd[010]",
@@ -13069,6 +13212,18 @@
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、最初の1時間製造効率<@cc.vup>+15%</>、その後まで1時間ごと更に<@cc.vup>+2%</>、最終的に<@cc.vup>+25%</>になる"
     },
+    "manu_prod_spd_addition[100]": {
+      "buffId": "manu_prod_spd_addition[100]",
+      "buffName": "清掃日課",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd_add3",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、製造効率は1時間ごとに<@cc.vup>+2%</>、最大<@cc.vup>+20%</>まで"
+    },
     "manu_prod_spd_reduce[000]": {
       "buffId": "manu_prod_spd_reduce[000]",
       "buffName": "霞む視界",
@@ -13590,6 +13745,18 @@
       "buffName": "小さな発想",
       "buffIcon": "manufacture",
       "skillIcon": "bskill_man_gold3",
+      "sortId": 3700,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、<@cc.kw>金属</>製造の製造効率<@cc.vup>+25%</>、1時間ごとの体力消費量<@cc.vdown>+0.25</>"
+    },
+    "manu_formula_spd&cost[001]": {
+      "buffId": "manu_formula_spd&cost[001]",
+      "buffName": "消臭ミスト",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_gold4",
       "sortId": 3700,
       "buffColor": "#ffd800",
       "textColor": "#333333",
@@ -15001,6 +15168,18 @@
       "roomType": "WORKSHOP",
       "description": "加工所で<@cc.kw>昇進素材</>を加工時、副産物の入手確率<@cc.vup>+70%</>"
     },
+    "workshop_formula_probability[101]": {
+      "buffId": "workshop_formula_probability[101]",
+      "buffName": "効率的再利用",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_evolve1",
+      "sortId": 7512,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "加工所で<@cc.kw>昇進素材</>を加工時、副産物の入手確率<@cc.vup>+70%</>"
+    },
     "workshop_formula_probability[115]": {
       "buffId": "workshop_formula_probability[115]",
       "buffName": "必修科目",
@@ -15431,7 +15610,7 @@
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
       "roomType": "WORKSHOP",
-      "description": "加工所で<@cc.kw>初級アケトン</>を加工時、副産物の入手確率<@cc.vup>+80%</>"
+      "description": "加工所で<@cc.kw>アケトン</>系素材を加工時、副産物の入手確率<@cc.vup>+80%</>"
     },
     "workshop_formula_rub[000]": {
       "buffId": "workshop_formula_rub[000]",
@@ -18108,6 +18287,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "応接室配置時、自身だけが仕事中の状態にある場合、連続で<@cc.kw>16</>を超える体力を消費した後、次で<@cc.kw>必ず</><@cc.kw>ライン生命</>の手がかりを入手できる"
+    },
+    "meet_spd&condChar_mustget[100]": {
+      "buffId": "meet_spd&condChar_mustget[100]",
+      "buffName": "諜報員",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spd&condChar_mustget2",
+      "sortId": 6113,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "応接室配置時、自身だけが仕事中であると、連続で<@cc.kw>16</>を超える体力を消費した後、次で<@cc.kw>必ず</><@cc.kw>ロドス</>の手がかりを入手できる"
     }
   },
   "workshopBonus": {
@@ -37483,7 +37674,7 @@
         "height": 4,
         "comfort": 210,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
-        "description": "コンパクトな引き出し。上のスペースにちょうど卓上スタンドを置ける。適切な色使いは新鮮さを与える。",
+        "description": "コンパクトな引き出し。上のスペースは卓上ライトが一台ちょうど収まる。的確に雰囲気を捉えた色使いが、目新しさを感じさせてくれる。",
         "obtainApproach": "ラッキードロップ",
         "processedProductId": "3401",
         "processedProductCount": 5,
@@ -38271,7 +38462,7 @@
       "furni_abyssal_sofa_01": {
         "id": "furni_abyssal_sofa_01",
         "sortId": 651,
-        "name": "ふかふかソファ",
+        "name": "リゾートカウチ",
         "iconId": "furni_abyssal_sofa_01",
         "interactType": "NONE",
         "musicId": "",
@@ -42939,7 +43130,7 @@
         "height": 6,
         "comfort": 220,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
-        "description": "番頭の手近にある棚。時折売り出したばかりの湖松酒と雲遼酒が置いてある。 \n暮れに愁いを悉く匣へつめ、新年の訪れに樽を開く。 ",
+        "description": "番頭の手近にある棚。時折売り出したばかりの湖松酒と雲遼酒が置いてある。\n暮れに愁いを悉く匣へつめ、新年の訪れに樽を開く。",
         "obtainApproach": "購買部期間限定",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -59078,7 +59269,7 @@
         "musicId": "",
         "type": "WALLDECO",
         "subType": "POSTER",
-        "location": "WALL",
+        "location": "POSTER",
         "category": "FURNITURE",
         "validOnRotate": false,
         "enableRotate": false,
@@ -59524,7 +59715,7 @@
         "height": 2,
         "comfort": 150,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
-        "description": "タイルを敷き詰めて作られたベンチ。出来上がって初めて、ベンチとしては低すぎることがわかったため、今は鉢植え置きとして使われている。\n木板の隙間からコケが少し生えていることに気付いたのは、子供たちだけだった。",
+        "description": "タイルを敷き詰めて作ったベンチ。完成してから、座るには低すぎることに気づいたため、植木鉢置きとして使うことにした。\n板の間からコケが少し生えていることに偶然気付いたのは、子供たちだけだった。",
         "obtainApproach": "イベント報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -66106,6 +66297,688 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_ScarMarket_shortstick_01": {
+        "id": "furni_ScarMarket_shortstick_01",
+        "sortId": 1549,
+        "name": "下に伸びた枯れ枝",
+        "iconId": "furni_ScarMarket_shortstick_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 7,
+        "depth": 2,
+        "height": 5,
+        "comfort": 130,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "逞しい枯れ枝。元の長さの三分の一に切ったもの。\n「我々が枯れ枝を頭上に吊るすのは、死が今もこちらを見つめていることを、すべてのサルカズに心に留めてもらうためだ。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ironbasket_01": {
+        "id": "furni_ScarMarket_ironbasket_01",
+        "sortId": 1550,
+        "name": "「死者への弔い」",
+        "iconId": "furni_ScarMarket_ironbasket_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 160,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "鉄の棒を溶接して作られた柵に、生気を全く感じられない木の枝が置かれている。\nサイクロプスは、このどんよりとした雰囲気を放つインテリアに、生命誕生の情景を見るらしい。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_storagetable_01": {
+        "id": "furni_ScarMarket_storagetable_01",
+        "sortId": 1551,
+        "name": "巫術作業台",
+        "iconId": "furni_ScarMarket_storagetable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 2,
+        "depth": 3,
+        "height": 4,
+        "comfort": 155,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ひっかき傷にまみれた鉄製の作業台。下に吊るされた籠には奇妙な道具がたくさん入っている。\n賢い傭兵は決して、その用途を詮索しない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_longstick_01": {
+        "id": "furni_ScarMarket_longstick_01",
+        "sortId": 1552,
+        "name": "横に伸びた枯れ枝",
+        "iconId": "furni_ScarMarket_longstick_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 13,
+        "depth": 3,
+        "height": 4,
+        "comfort": 205,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "逞しい枯れ枝。元の長さの三分の一に切ったもの。\n枯れ枝は死者の象徴である。枯れ朽ちてねじ曲がった木の亡骸は、死にゆく同胞の姿そのものだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_collectioncabinet_01": {
+        "id": "furni_ScarMarket_collectioncabinet_01",
+        "sortId": 1553,
+        "name": "貴重なショーケース",
+        "iconId": "furni_ScarMarket_collectioncabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 5,
+        "depth": 2,
+        "height": 8,
+        "comfort": 230,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "傭兵たちがテラの各地から持ち帰った安っぽい置物が飾られている。\n「貴重」なのはそのくだらないガラクタではなく、それを生きて持って帰ってきた傭兵のほうだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ironbox_01": {
+        "id": "furni_ScarMarket_ironbox_01",
+        "sortId": 1554,
+        "name": "ツギハギ収納",
+        "iconId": "furni_ScarMarket_ironbox_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 3,
+        "depth": 3,
+        "height": 5,
+        "comfort": 175,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "薄い鉄板を融かして作ったボックスには、サルカズたちの戦利品が詰め込まれている。\n「少しでも良い値で買ってもらえるように、奪ったもんはいつも同業者が集まるここに持ってくるんだ。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_partitionwall_01": {
+        "id": "furni_ScarMarket_partitionwall_01",
+        "sortId": 1555,
+        "name": "高耐荷重支柱",
+        "iconId": "furni_ScarMarket_partitionwall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 1,
+        "depth": 7,
+        "height": 10,
+        "comfort": 260,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "スカーモールにそびえ立つ巨大支柱のレプリカ。天井を支えている。\n「壊れた移動都市のパーツなら、まだ仕事を続けるチャンスを得られるかもしれない。だが、傭兵はひと度壊れればもう終わりだ。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_storagewall_01": {
+        "id": "furni_ScarMarket_storagewall_01",
+        "sortId": 1556,
+        "name": "「仕事と暮らし」",
+        "iconId": "furni_ScarMarket_storagewall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 9,
+        "depth": 1,
+        "height": 10,
+        "comfort": 310,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "一面物置棚になっている壁。生活用品と、懸賞の張り紙が数枚、さらに回収してきたドッグタグが大量にしまってある。\n※ドッグタグはあくまでもインテリアであり、その回収時に負傷したサルカズ傭兵はいない。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_roundtable_01": {
+        "id": "furni_ScarMarket_roundtable_01",
+        "sortId": 1557,
+        "name": "「金では買えない喜び」",
+        "iconId": "furni_ScarMarket_roundtable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ENTERTAINMENT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 5,
+        "depth": 4,
+        "height": 4,
+        "comfort": 235,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ぼろぼろの机の上には、ぼろぼろのテーブルクロスが敷かれ、ぼろぼろの本がぼろぼろのテレビの台代わりに使われている。\n傭兵たちはいつもこのテレビを囲み、カズデルで放送される読み書きの教育番組を見ていた。だが、彼らのドッグタグが他人の手で持ち帰られる日まで、結局大半の者はぼろぼろの本のタイトルすら読めなかった。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ceilinglamp_01": {
+        "id": "furni_ScarMarket_ceilinglamp_01",
+        "sortId": 1558,
+        "name": "鉄骨の天井ランプ",
+        "iconId": "furni_ScarMarket_ceilinglamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 8,
+        "depth": 3,
+        "height": 6,
+        "comfort": 185,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "薄暗い天井ランプには、雑巾やティーポット、グラス、そして誰にもタイトルの読めない本が引っ掛けられている。\n「そっちのほうが便利だと思って、適当に物を引っかけたんだ。俺が命を売る理由は、金ってもんに十分な使い道がある理由と同じようなもんだよ。」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_storagecabinet_01": {
+        "id": "furni_ScarMarket_storagecabinet_01",
+        "sortId": 1559,
+        "name": "乱雑な酒棚",
+        "iconId": "furni_ScarMarket_storagecabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 5,
+        "depth": 3,
+        "height": 5,
+        "comfort": 225,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "乱雑な収納棚にはいくつかのグラスと、どこから調達してきたのか分からない酒が置かれている。\n穀物で醸造した度数の高いスピリッツは、安価かつ強烈で「一発ノックアウト」できることから、傭兵たちの間で人気の一品となっている。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_stovetable_01": {
+        "id": "furni_ScarMarket_stovetable_01",
+        "sortId": 1560,
+        "name": "暖炉付きテーブル",
+        "iconId": "furni_ScarMarket_stovetable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 9,
+        "depth": 3,
+        "height": 5,
+        "comfort": 340,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "粗悪な材料で組み立てられた細長いテーブルの下に、暖炉が取り付けられている。\n「このテーブルを『発明』した者が、素材ごとの熱伝導率を忘れていたのは明らかだ。幸い、私たちはアーツでテーブルの表面温度をコントロールすることができるが。」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_shortstick_02": {
+        "id": "furni_ScarMarket_shortstick_02",
+        "sortId": 1561,
+        "name": "上に伸びた枯れ枝",
+        "iconId": "furni_ScarMarket_shortstick_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "ORTHER_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_1",
+        "width": 6,
+        "depth": 2,
+        "height": 4,
+        "comfort": 110,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "逞しい枯れ枝。元の長さの三分の一に切ったもの。\n「あらゆる命は、必ずこの枯れ枝と同じ結末へと至る。これを見上げれば、死と滅びへの恐怖も消えゆくのだ。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_table_01": {
+        "id": "furni_ScarMarket_table_01",
+        "sortId": 1562,
+        "name": "賞金受け取り場",
+        "iconId": "furni_ScarMarket_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_3",
+        "width": 6,
+        "depth": 3,
+        "height": 3,
+        "comfort": 205,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "傭兵たちが懸賞金を受け取るための「証拠品」で溢れかえっている。\n「基本的には、ターゲットの一部を切り落として持ってくれば懸賞金と交換できるようになっている。ここで何より求められるのはわかりやすさだ。」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_carbonfirebox_01": {
+        "id": "furni_ScarMarket_carbonfirebox_01",
+        "sortId": 1563,
+        "name": "炭ストーブ",
+        "iconId": "furni_ScarMarket_carbonfirebox_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "WARM",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 3,
+        "height": 2,
+        "comfort": 125,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "炭が静かに「燃えて」、赤く薄暗い光を無機質な灰色のストーブに落としている。\nオペレーターが室内で一酸化炭素中毒を起こさないよう、炭の代わりに色の異なる複数のライトを使っている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_ironcabinet_01": {
+        "id": "furni_ScarMarket_ironcabinet_01",
+        "sortId": 1564,
+        "name": "共用作業台",
+        "iconId": "furni_ScarMarket_ironcabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 3,
+        "height": 6,
+        "comfort": 155,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "明かりが取り付けられた作業台。下の部分は収納として使うこともできる。\n「作業台を入口前に置いていたのは、そのほうがいつでも武器の手入れをしやすいからだ。癖というよりも、そうせざるを得ないからかもな。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_bench_01": {
+        "id": "furni_ScarMarket_bench_01",
+        "sortId": 1565,
+        "name": "壁掛けベンチ",
+        "iconId": "furni_ScarMarket_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 6,
+        "depth": 2,
+        "height": 2,
+        "comfort": 95,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "簡単に折り畳めるベンチ。ベッドとして使うこともできる。\n折り畳まれ形を変えられたのはベンチだけではない。そこにいつか腰かけた夢と希望もまた同じだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_stool_01": {
+        "id": "furni_ScarMarket_stool_01",
+        "sortId": 1566,
+        "name": "四角い鉄製スツール",
+        "iconId": "furni_ScarMarket_stool_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 100,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "様々な建築素材を寄せ集めて作ったスツール。カズデルの至るところでこういったものを見かける。\n廃棄物再利用のお手本。まるでスカーモールそのものを表現しているようだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_carpet_01": {
+        "id": "furni_ScarMarket_carpet_01",
+        "sortId": 1567,
+        "name": "ブリキ製マット",
+        "iconId": "furni_ScarMarket_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 5,
+        "depth": 9,
+        "height": 1,
+        "comfort": 80,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "精錬した鉄の余りで作られたマット。確かな丈夫さを誇る。\nある程度頑丈な「高級品」でなければ、スカーモールの粗野な傭兵の乱暴な足取りには耐えられない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_shoerack_01": {
+        "id": "furni_ScarMarket_shoerack_01",
+        "sortId": 1568,
+        "name": "「制限ある芸術」",
+        "iconId": "furni_ScarMarket_shoerack_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_4",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 115,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "サルカズたちが限りある素材を組み合わせて作った、美しく個性的なラック。\nこれほど厳しい環境下でも、美への追求を持つ傭兵は、創作の才能を発揮できる場を見逃さない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_wallpaper_01": {
+        "id": "furni_ScarMarket_wallpaper_01",
+        "sortId": 1569,
+        "name": "継ぎ接ぎの壁紙",
+        "iconId": "furni_ScarMarket_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "どんな建築素材でも、スカーモールの壁の一部になれる。\nだが、ロドスには粗悪すぎる建築材料はなかったため、皆は形の整った建材で「妥協」するしかなかった。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_ScarMarket_floor_01": {
+        "id": "furni_ScarMarket_floor_01",
+        "sortId": 1570,
+        "name": "常にでこぼこだった床",
+        "iconId": "furni_ScarMarket_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_ScarMarket",
+        "groupId": "furni_set_ScarMarket_2",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "木の床板にしろ、石のタイルにしろ、訪れてはすぐ去っていくサルカズ傭兵からすれば、足早に駆け抜ける時間中で消耗していく物でしかない。\n「だけどクロージャは、あのボロボロの床を再現させてはくれなかった。なんでも『建築基準を満たしてないから』らしい。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -67677,7 +68550,7 @@
         "height": 4,
         "comfort": 90,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
-        "description": "ビーチらしさにあふれた扇風機。ドッソレスから大量に輸出されている商品でもある。扇風機の羽が回る旅、液体に浸かった砂も揺らめいて、絶えず打ち寄せる波を思い起こさせる。",
+        "description": "ビーチらしい風情に溢れた扇風機。ドッソレスから大量に輸出されている商品でもある。扇風機の羽が回るたび、中の砂が液体と共に揺らめき、絶えず打ち寄せる波を思い起こさせる。",
         "obtainApproach": "イベント報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -71347,7 +72220,7 @@
       },
       "furni_terratimes_Yan_01": {
         "id": "furni_terratimes_Yan_01",
-        "sortId": 11082,
+        "sortId": 11083,
         "name": "パネル「繁栄」",
         "iconId": "furni_terratimes_Yan_01",
         "interactType": "NONE",
@@ -71367,6 +72240,37 @@
         "comfort": 75,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "燦たる山河に、神の姿はない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terracommericials_CoffeePlainsCoffeeCandy_01": {
+        "id": "furni_terracommericials_CoffeePlainsCoffeeCandy_01",
+        "sortId": 11084,
+        "name": "パネル「甘苦」",
+        "iconId": "furni_terracommericials_CoffeePlainsCoffeeCandy_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "プレインコーヒーキャンディーの命の軌跡――苦さを越えた先の甘さ。",
         "obtainApproach": "イベント報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -71583,7 +72487,7 @@
         "height": 4,
         "comfort": 75,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
-        "description": "とある獣の鱗紋が描かれた旗。この獣は、目に映す可能性すら皆無に等しく、値がつけられないほどの価値があるということだけが人々には知られている。かの獣を得られない人々は、その文様を旗に刻むことで記念とした。",
+        "description": "とある獣の鱗紋が描かれた旗。この獣は、目に映す可能性すら皆無に等しく、値がつけられないほどの価値があるということだけが人々には知られている。かの獣を得られない人々は、その文様を復元することで記念とした。",
         "obtainApproach": "危機契約限定報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -72461,6 +73365,37 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_annihilation_s22_01": {
+        "id": "furni_annihilation_s22_01",
+        "sortId": 13020,
+        "name": "クルビアの残響（ラボ）",
+        "iconId": "furni_annihilation_s22_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クルビア「離心率」ラボの殲滅を完了し、その報告をするともらえる記念品。「離心率」ラボの残響がまだ耳元でこだましているようだ。",
+        "obtainApproach": "殲滅作戦報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_taptap_arcadegame_01": {
         "id": "furni_taptap_arcadegame_01",
         "sortId": 14001,
@@ -73134,7 +74069,7 @@
         "comfort": 250,
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "特殊な技術で組み上げられた柱時計。針が進み鐘の音が鳴り響く。あの人の命はとうに尽き果てた。",
-        "obtainApproach": "信頼達成記念・S.W.E.E.P",
+        "obtainApproach": "信頼達成記念・S.W.E.E.P.",
         "processedProductId": "3401",
         "processedProductCount": 0,
         "processedByProductPercentage": 0,
@@ -73925,7 +74860,7 @@
         "sortId": 1,
         "name": "貨物倉庫",
         "themeType": "INITIAL",
-        "desc": "物流会社の倉庫がテーマ。",
+        "desc": "各物流会社倉庫の基本的なレイアウト。",
         "quickSetup": [
           {
             "furnitureId": "furni_warehouse_storageshelf_01",
@@ -74026,7 +74961,7 @@
         "sortId": 2,
         "name": "ミニマル/モノクロ",
         "themeType": "NORMAL",
-        "desc": "クラシカルな家具シリーズ。モノクロがメイン。",
+        "desc": "サーミの有名家具ブランドから出ているクラシカルシリーズ。コンセプトとしてモノクロをメインとして使っている。",
         "quickSetup": [
           {
             "furnitureId": "furni_s1_bed_01",
@@ -74154,7 +75089,7 @@
         "sortId": 3,
         "name": "ミニマル/オレンジ",
         "themeType": "NORMAL",
-        "desc": "クラシカルな家具シリーズ。オレンジがメイン。",
+        "desc": "サーミの有名家具ブランドから出ているクラシカルシリーズ。新たにオレンジ色を取り入れた。",
         "quickSetup": [
           {
             "furnitureId": "furni_s1_bed_02",
@@ -74280,9 +75215,9 @@
       "furni_set_specimen": {
         "id": "furni_set_specimen",
         "sortId": 4,
-        "name": "生物学博物館風",
+        "name": "幻想生物ドキュメント",
         "themeType": "NORMAL",
-        "desc": "ケルシー達によって造られた近未来的な博物館がテーマ。",
+        "desc": "ケルシー主導で設けられた休憩エリア、シュールレアリスムな博物館というコンセプト。",
         "quickSetup": [
           {
             "furnitureId": "furni_specimen_wallpaper_01",
@@ -74422,9 +75357,9 @@
       "furni_set_cabin": {
         "id": "furni_set_cabin",
         "sortId": 5,
-        "name": "SFキャビン",
+        "name": "12号生命維持循環船室",
         "themeType": "NORMAL",
-        "desc": "ケルシー達によって造られた特注の部屋がテーマ。",
+        "desc": "ケルシー主導で造られたモデル船室。仕事に必要な各種機能が備え付けられている。",
         "quickSetup": [
           {
             "furnitureId": "furni_cabin_desk_01",
@@ -74532,7 +75467,7 @@
         "sortId": 6,
         "name": "カフェラウンジ",
         "themeType": "NORMAL",
-        "desc": "クルビアにあるカフェがテーマ。",
+        "desc": "クルビア風のカフェ。",
         "quickSetup": [
           {
             "furnitureId": "furni_cafe_bar_01",
@@ -74704,7 +75639,7 @@
         "sortId": 7,
         "name": "近衛局休憩室",
         "themeType": "NORMAL",
-        "desc": "現代的で重厚な、龍門近衛局風の休憩室がテーマ。",
+        "desc": "龍門近衛局の休憩室、モダン的でありながら重厚さを感じさせる。",
         "quickSetup": [
           {
             "furnitureId": "furni_s2_bed_01",
@@ -74832,7 +75767,7 @@
         "sortId": 8,
         "name": "龍門風休憩室",
         "themeType": "NORMAL",
-        "desc": "龍門式のインテリアで占めた休憩室がテーマ。",
+        "desc": "龍門の内装スタイルにならって設計された休憩室。",
         "quickSetup": [
           {
             "furnitureId": "furni_s2_bed_02",
@@ -74960,7 +75895,7 @@
         "sortId": 9,
         "name": "ピザチェーン店",
         "themeType": "EVENT",
-        "desc": "今どきのピザチェーン店がテーマ。",
+        "desc": "今時流行りのピザチェーン店。",
         "quickSetup": [
           {
             "furnitureId": "furni_pizza_priceList_01",
@@ -75178,7 +76113,7 @@
         "sortId": 10,
         "name": "田園別荘",
         "themeType": "LUCKY",
-        "desc": "サーミ伝統のログハウスがテーマ。",
+        "desc": "サーミの昔ながらのログハウスを模して造られた部屋。倉庫の隅に眠って久しい装飾が色々と使われた。",
         "quickSetup": [
           {
             "furnitureId": "furni_wooden_loftBed_01",
@@ -75337,7 +76272,7 @@
         "sortId": 11,
         "name": "モダンホテル",
         "themeType": "LUCKY",
-        "desc": "モダン時代のホテルがテーマ。瞬く間に消え去ったクルビアの黄金期を思い出させる。",
+        "desc": "近代のホテルのスタンダードルームを模して造られた部屋。クルビアが発展の歩みを現代に進める前の、一瞬だけ花開いた華やかさを思い起こさせる。",
         "quickSetup": [
           {
             "furnitureId": "furni_artdeco_barCeiling_01",
@@ -75498,7 +76433,7 @@
         "sortId": 12,
         "name": "チェンの執務室",
         "themeType": "NORMAL",
-        "desc": "龍門近衛局のチェンの執務室がテーマ。",
+        "desc": "チェンの龍門近衛局での執務室を模して造られた部屋。使用権は彼女に託されているが、どうやらロドスで奇妙な作用を発揮しているようだ。",
         "quickSetup": [
           {
             "furnitureId": "furni_chen_showcase_01",
@@ -75668,7 +76603,7 @@
         "sortId": 13,
         "name": "シエスタ風コテージ",
         "themeType": "NORMAL",
-        "desc": "内海の町・シエスタでのバカンスがテーマ。パーティの始まりだ！",
+        "desc": "海浜都市・シエスタの風景を再現した部屋。パーティタイムはまだ？",
         "quickSetup": [
           {
             "furnitureId": "furni_beach_cabinet_01",
@@ -75817,7 +76752,7 @@
         "sortId": 14,
         "name": "ロドス音楽スタジオ",
         "themeType": "EVENT",
-        "desc": "ロドスの現代音楽スタジオがテーマ。ギター無料貸出中。",
+        "desc": "ロドスの現代的な音楽の練習室の一つ。ギター好きなオペレーターたちに対し無料開放されている。",
         "quickSetup": [
           {
             "furnitureId": "furni_guitar_guitar1_01",
@@ -76030,7 +76965,7 @@
         "sortId": 15,
         "name": "気密性化学防護室",
         "themeType": "NORMAL",
-        "desc": "化学防護設備を揃えたバイオセーフティ施設がテーマ。",
+        "desc": "化学防護設備を揃えたバイオセーフティ船室。緊急時や特に危険な任務時のみ開放される。",
         "quickSetup": [
           {
             "furnitureId": "furni_safetyZone_gate_01",
@@ -76193,7 +77128,7 @@
         "sortId": 16,
         "name": "バンケットホール",
         "themeType": "LUCKY",
-        "desc": "遠い小国・ランセラーの王家の城のバンケットホールがテーマ。山々を照らす一点の光。",
+        "desc": "辺ぴな地域にある小国・ランセラーの王宮のバンケットホールを再現した部屋。山間を照らす一点の光。",
         "quickSetup": [
           {
             "furnitureId": "furni_rococo_cabinet_01",
@@ -76384,7 +77319,7 @@
         "sortId": 17,
         "name": "ウィッチハウス",
         "themeType": "NORMAL",
-        "desc": "特別に飾り付けられた小屋がテーマ。いかにも何か出てきそう。",
+        "desc": "特別仕様に飾り付けられた船室。本職が見ても唸るような仕上がりだ。",
         "quickSetup": [
           {
             "furnitureId": "furni_spirit_tree_01",
@@ -76632,9 +77567,9 @@
       "furni_set_penguin": {
         "id": "furni_set_penguin",
         "sortId": 19,
-        "name": "ペンギン急便秘密基地",
+        "name": "ペンギン急便セーフハウス",
         "themeType": "EVENT",
-        "desc": "協力組織ペンギン急便特注の秘密基地。設計図と施工図はロドスに提出済み。",
+        "desc": "ロドスの協力組織・ペンギン急便特注のセーフハウス。設計図と施工図はロドスに提出済み。",
         "quickSetup": [
           {
             "furnitureId": "furni_penguin_recordPlayer_01",
@@ -76755,7 +77690,7 @@
         "sortId": 20,
         "name": "ロドス作業室",
         "themeType": "NORMAL",
-        "desc": "ロドスの作業室。主にエリートオペレーター達が各開発や設計、メンテナンスの任務を進めるための部屋。",
+        "desc": "ロドスの作業室。主にエリートオペレーターのために開放されており、ここで様々な開発や設計、メンテナンスが行われる。",
         "quickSetup": [
           {
             "furnitureId": "furni_elite_ceiling_01",
@@ -76869,7 +77804,7 @@
         "sortId": 21,
         "name": "龍門食坊",
         "themeType": "NORMAL",
-        "desc": "龍門式料理店「食坊」を再現した部屋。なんともめでたいこの良き日、お客様に最高のおもてなしを。",
+        "desc": "龍門の食坊を再現した部屋。なんともめでたいこの良き日、お客様に最高のおもてなしを。",
         "quickSetup": [
           {
             "furnitureId": "furni_restaurant_ceiling1_01",
@@ -77061,7 +77996,7 @@
         "sortId": 22,
         "name": "ヘルシーフード店",
         "themeType": "LUCKY",
-        "desc": "新しいコンセプトのファストフード店。店員募集中。美味と健康は両立できる。",
+        "desc": "新しいコンセプトのファストフード店。店員募集中。美味しさと健康は両立できる。",
         "quickSetup": [
           {
             "furnitureId": "furni_lightFood_priceList_01",
@@ -77226,7 +78161,7 @@
       "furni_set_beerhouse": {
         "id": "furni_set_beerhouse",
         "sortId": 23,
-        "name": "七都風レストラン",
+        "name": "七都レストラン",
         "themeType": "EVENT",
         "desc": "七都のレストランを忠実に再現した部屋。お味はいかが？",
         "quickSetup": [
@@ -77369,7 +78304,7 @@
         "sortId": 24,
         "name": "サルカズ傭兵休憩室",
         "themeType": "NORMAL",
-        "desc": "サルカズ風にリフォームした休憩室。危険と快適は紙一重。",
+        "desc": "サルカズ向けに造られた休憩室。危険さと快適さは紙一重。",
         "quickSetup": [
           {
             "furnitureId": "furni_dormW_weaponRack_01",
@@ -77544,7 +78479,7 @@
         "sortId": 25,
         "name": "ウルサス自治団本部",
         "themeType": "NORMAL",
-        "desc": "5名のウルサスの学生が給料で購入した活動拠点の部屋。握手は友達の始まり。",
+        "desc": "五名のウルサスの学生が給料を叩いてあつらえた活動拠点用の部屋。友情は握手から始まるものだ。",
         "quickSetup": [
           {
             "furnitureId": "furni_community_bookshelf_01",
@@ -77684,7 +78619,7 @@
         "sortId": 26,
         "name": "リターニアの夜",
         "themeType": "EVENT",
-        "desc": "リターニアの夜をイメージして再現した部屋。夜の帳が下りれば、メロディーが寄り添う。",
+        "desc": "リターニアの夜を再現した部屋。夜の帳が下りれば、メロディーが響き出す。",
         "quickSetup": [
           {
             "furnitureId": "furni_nightView_recordPlayer_01",
@@ -77826,7 +78761,7 @@
         "sortId": 27,
         "name": "ロドス人事部事務室",
         "themeType": "LUCKY",
-        "desc": "ロドス人事部が使用している執務室。日々人材のふるい分けでせわしない。",
+        "desc": "ロドス人事部が使用しているオフィスの一つ。皆日々人材の選出に勤しんでいる。",
         "quickSetup": [
           {
             "furnitureId": "furni_office_table_01",
@@ -77991,7 +78926,7 @@
         "sortId": 28,
         "name": "雨林部族風宿屋",
         "themeType": "EVENT",
-        "desc": "雨林に住む部族の宿屋を再現したコンセプトルーム。ここは拳で語る世界。",
+        "desc": "雨林に住む部族の宿屋を再現した部屋。ここでは拳がものを語る。",
         "quickSetup": [
           {
             "furnitureId": "furni_bolivar_sofa_01",
@@ -78142,7 +79077,7 @@
         "sortId": 29,
         "name": "炎式広間",
         "themeType": "NORMAL",
-        "desc": "炎国の祭日の雰囲気を再現したコンセプトルーム。満月が昇り、祭日が訪れた。",
+        "desc": "炎国の祝祭日の雰囲気を再現した部屋。満月が昇り、団欒の時が訪れた。",
         "quickSetup": [
           {
             "furnitureId": "furni_midAutumn_screen_01",
@@ -78302,7 +79237,7 @@
         "sortId": 30,
         "name": "ニアール家の客間",
         "themeType": "EVENT",
-        "desc": "ゾフィアがマリアに資金援助して作った客間。昔の家とはちょっと違う。",
+        "desc": "ゾフィアがマリアに資金援助して作った客間。とはいえ、昔住んでいた家とはやはりどこか違っている。",
         "quickSetup": [
           {
             "furnitureId": "furni_fNearl_cabinet_H_01",
@@ -78642,7 +79577,7 @@
         "sortId": 32,
         "name": "白色荒野",
         "themeType": "LUCKY",
-        "desc": "とあるデザイン大賞の作品から製作されたテーマ。受賞者は黙して何も語らない。すべては沈黙の中に。",
+        "desc": "とあるデザイン大賞の作品を模して造られた部屋。受賞者は一切のコメントをしなかった。言葉に出さずとも伝わるものがある。",
         "quickSetup": [
           {
             "furnitureId": "furni_kitchen_bed_01",
@@ -87298,6 +88233,177 @@
           "furni_artmuseum_wallpaper_01",
           "furni_artmuseum_floor_01"
         ]
+      },
+      "furni_set_ScarMarket": {
+        "id": "furni_set_ScarMarket",
+        "sortId": 90,
+        "name": "「スカーモール」",
+        "themeType": "EVENT",
+        "desc": "サルカズ傭兵による説明をもとに再現したスカーモール風の部屋。かつてのスカーモールは無秩序さと、その雑然とした光景で知られていた。それは、その場所を何十年も管理してきたとあるサイクロプスが確立させたスタイルである。",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_ScarMarket_shortstick_01",
+            "pos0": 2,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ironbasket_01",
+            "pos0": 5,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_storagetable_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_longstick_01",
+            "pos0": 12,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_collectioncabinet_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ironbox_01",
+            "pos0": 5,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_partitionwall_01",
+            "pos0": 9,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_storagewall_01",
+            "pos0": 10,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_roundtable_01",
+            "pos0": 10,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ceilinglamp_01",
+            "pos0": 21,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_storagecabinet_01",
+            "pos0": 19,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_stovetable_01",
+            "pos0": 10,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_shortstick_02",
+            "pos0": 28,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_table_01",
+            "pos0": 21,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_carbonfirebox_01",
+            "pos0": 28,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_ironcabinet_01",
+            "pos0": 32,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_bench_01",
+            "pos0": 26,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_stool_01",
+            "pos0": 18,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_carpet_01",
+            "pos0": 27,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_shoerack_01",
+            "pos0": 32,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_ScarMarket_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_ScarMarket_1",
+          "furni_set_ScarMarket_2",
+          "furni_set_ScarMarket_3",
+          "furni_set_ScarMarket_4"
+        ],
+        "furnitures": [
+          "furni_ScarMarket_shortstick_01",
+          "furni_ScarMarket_ironbasket_01",
+          "furni_ScarMarket_storagetable_01",
+          "furni_ScarMarket_longstick_01",
+          "furni_ScarMarket_collectioncabinet_01",
+          "furni_ScarMarket_ironbox_01",
+          "furni_ScarMarket_partitionwall_01",
+          "furni_ScarMarket_storagewall_01",
+          "furni_ScarMarket_roundtable_01",
+          "furni_ScarMarket_ceilinglamp_01",
+          "furni_ScarMarket_storagecabinet_01",
+          "furni_ScarMarket_stovetable_01",
+          "furni_ScarMarket_shortstick_02",
+          "furni_ScarMarket_table_01",
+          "furni_ScarMarket_carbonfirebox_01",
+          "furni_ScarMarket_ironcabinet_01",
+          "furni_ScarMarket_bench_01",
+          "furni_ScarMarket_stool_01",
+          "furni_ScarMarket_carpet_01",
+          "furni_ScarMarket_shoerack_01",
+          "furni_ScarMarket_wallpaper_01",
+          "furni_ScarMarket_floor_01"
+        ]
       }
     },
     "groups": {
@@ -92448,6 +93554,68 @@
           "furni_artmuseum_blackexhibit_01",
           "furni_artmuseum_droplight_01",
           "furni_artmuseum_plant_01"
+        ]
+      },
+      "furni_set_ScarMarket_1": {
+        "id": "furni_set_ScarMarket_1",
+        "sortId": 1,
+        "name": "謎のオブジェ",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 130,
+        "count": 4,
+        "furniture": [
+          "furni_ScarMarket_shortstick_01",
+          "furni_ScarMarket_shortstick_02",
+          "furni_ScarMarket_longstick_01",
+          "furni_ScarMarket_ironbasket_01"
+        ]
+      },
+      "furni_set_ScarMarket_2": {
+        "id": "furni_set_ScarMarket_2",
+        "sortId": 2,
+        "name": "異様な物置き場",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 275,
+        "count": 6,
+        "furniture": [
+          "furni_ScarMarket_storagetable_01",
+          "furni_ScarMarket_collectioncabinet_01",
+          "furni_ScarMarket_ironbox_01",
+          "furni_ScarMarket_partitionwall_01",
+          "furni_ScarMarket_wallpaper_01",
+          "furni_ScarMarket_floor_01"
+        ]
+      },
+      "furni_set_ScarMarket_3": {
+        "id": "furni_set_ScarMarket_3",
+        "sortId": 3,
+        "name": "喧噪な作業エリア",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 380,
+        "count": 6,
+        "furniture": [
+          "furni_ScarMarket_storagewall_01",
+          "furni_ScarMarket_roundtable_01",
+          "furni_ScarMarket_ceilinglamp_01",
+          "furni_ScarMarket_storagecabinet_01",
+          "furni_ScarMarket_stovetable_01",
+          "furni_ScarMarket_table_01"
+        ]
+      },
+      "furni_set_ScarMarket_4": {
+        "id": "furni_set_ScarMarket_4",
+        "sortId": 4,
+        "name": "簡素な生活エリア",
+        "themeId": "furni_set_ScarMarket",
+        "comfort": 140,
+        "count": 6,
+        "furniture": [
+          "furni_ScarMarket_stool_01",
+          "furni_ScarMarket_carbonfirebox_01",
+          "furni_ScarMarket_bench_01",
+          "furni_ScarMarket_ironcabinet_01",
+          "furni_ScarMarket_shoerack_01",
+          "furni_ScarMarket_carpet_01"
         ]
       }
     },

@@ -877,7 +877,7 @@
   "reMax": 100.0,
   "diamondToShdRate": 180,
   "requestSameFriendCD": 14400,
-  "baseMaxFriendNum": 15,
+  "baseMaxFriendNum": 65,
   "hardDiamondDrop": 1,
   "instFinDmdShdCost": 80,
   "easyCrystalBonus": 0,
@@ -985,6 +985,18 @@
     "lv.mhtx": "<color=#1B1B1B>{0}</color>",
     "lv.mhfs": "<color=#A57F5B>{0}</color>",
     "cc.miu": "<color=#8F7156>{0}</color>",
+    "ping.low": "<color=#7fa826>{0}</color>",
+    "ping.medium": "<color=#ec7a00>{0}</color>",
+    "ping.high": "<color=#ff3d3d>{0}</color>",
+    "match.success": "<color=#36BBCC>{0}</color>",
+    "map.normal": "<color=#36BBCC>{0}</color>",
+    "map.football": "<color=#36BBCC>{0}</color>",
+    "map.defence": "<color=#36BBCC>{0}</color>",
+    "milestone": "<color=#D4133C>{0}</color>",
+    "dm.award": "<color=#36BBCC>{0}</color>",
+    "dm.condition": "<color=#C9C9C9>{0}</color>",
+    "tutor": "<color=#36BBCC>{0}</color>",
+    "lv.muitem": "<color=#D4133C>{0}</color>",
     "ba.grt": "<color=#FFAB27>{0}</color>",
     "ba.exl": "<color=#14F0AF>{0}</color>",
     "ba.hrd": "<color=#DA2536>{0}</color>",
@@ -1231,6 +1243,11 @@
       "termName": "対術脆弱",
       "description": "術の被ダメージが効果値分上昇（同名の状態は効果値が高いほうのみ適用）"
     },
+    "ba.elementfragile": {
+      "termId": "ba.elementfragile",
+      "termName": "対元素脆弱",
+      "description": "元素の被ダメージが効果値分上昇（同名の状態は効果値が高いほうのみ適用）"
+    },
     "ba.dying": {
       "termId": "ba.dying",
       "termName": "重傷",
@@ -1416,6 +1433,11 @@
       "termName": "ウルサス学生自治団",
       "description": "対象オペレーター：\nロサ、ズィマー、イースチナ、グム、リェータ"
     },
+    "cc.g.A1": {
+      "termId": "cc.g.A1",
+      "termName": "A1小隊",
+      "description": "対象オペレーター：\nハイビスカス、ラヴァ、ビーグル、フェン、クルース"
+    },
     "cc.g.R6": {
       "termId": "cc.g.R6",
       "termName": "レインボー小隊",
@@ -1519,7 +1541,7 @@
     "cc.c.sui2_1": {
       "termId": "cc.c.sui2_1",
       "termName": "特殊比較方式",
-      "description": "制御中枢内の他の配属オペレーターのスキル効果がもたらす<$cc.c.room2><@cc.kw>他の施設</></>に対する1時間ごとの体力回復量の合計値と比較し、高い方のみが適用される"
+      "description": "<@cc.kw>事務仕事</>、<@cc.kw>孤光共に照らす</>、<@cc.kw>バベルの旗印</>による<$cc.c.room2><@cc.kw>他の施設</></>の1時間ごとの体力回復量のうち、効果値が高いもののみが適用される"
     },
     "cc.m.pow1": {
       "termId": "cc.m.pow1",
@@ -1579,7 +1601,7 @@
     "cc.tag.op": {
       "termId": "cc.tag.op",
       "termName": "作業用プラットフォーム",
-      "description": "対象オペレーター：\nLancet-2、Castle-3、THRM-EX、ジャスティスナイト、Friston-3"
+      "description": "対象オペレーター：\nLancet-2、Castle-3、THRM-EX、ジャスティスナイト、Friston-3、PhonoR-0"
     },
     "cc.tag.knight": {
       "termId": "cc.tag.knight",
@@ -1603,8 +1625,8 @@
     }
   },
   "storyReviewUnlockItemLackTip": "事象の欠片の数が足りません。購買資格証ショップあるいはイベントショップで購入してください",
-  "dataVersion": "39.2.0",
-  "resPrefVersion": "48d0d0",
+  "dataVersion": "40.1.0",
+  "resPrefVersion": "49d0d0",
   "announceWebBusType": "ak_announcement",
   "defaultMinContinuousBattleTimes": 1,
   "defaultMaxContinuousBattleTimes": 6,
@@ -1674,7 +1696,8 @@
     "ritualist": "MAGICAL",
     "hunter": "PHYSICAL",
     "primcaster": "MAGICAL",
-    "loopshooter": "PHYSICAL"
+    "loopshooter": "PHYSICAL",
+    "hammer": "PHYSICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",
