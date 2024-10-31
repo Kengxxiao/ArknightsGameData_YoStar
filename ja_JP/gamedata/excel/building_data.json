@@ -11973,6 +11973,160 @@
           ]
         }
       ]
+    },
+    "char_1035_wisdel": {
+      "charId": "char_1035_wisdel",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_meeting&ord[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "control_meeting&ord[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_expand_double[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4133_logos": {
+      "charId": "char_4133_logos",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_doubleProf[200]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_reduceTime[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4134_cetsyr": {
+      "charId": "char_4134_cetsyr",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost_double[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "control_mp_cost_double[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_upMeetingSpeed[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_1036_fang2": {
+      "charId": "char_1036_fang2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd[1000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd&fraction[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4136_phonor": {
+      "charId": "char_4136_phonor",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd[004]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd_P[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 30
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -12143,6 +12297,42 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+25%</>（同種の効果は高いほうのみ適応）"
+    },
+    "control_upMeetingSpeed[100]": {
+      "buffId": "control_upMeetingSpeed[100]",
+      "buffName": "希望の集い",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_spd1",
+      "sortId": 1402,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+15%</>（同種の効果は高いほうのみ適応）"
+    },
+    "control_meeting&ord[000]": {
+      "buffId": "control_meeting&ord[000]",
+      "buffName": "共犯者α",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_babel",
+      "sortId": 1403,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、<@cc.kw>イネス</>が応接室に配置されているとき、応接室の手がかり捜索速度<@cc.vup>+5%</>。<@cc.kw>ヘドリー</>が貿易所に配置されているとき、ヘドリーのいる貿易所の注文上限<@cc.vup>+1</>"
+    },
+    "control_meeting&ord[001]": {
+      "buffId": "control_meeting&ord[001]",
+      "buffName": "共犯者β",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_babel2",
+      "sortId": 1404,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、<@cc.kw>イネス</>が応接室に配置されているとき、応接室の手がかり捜索速度<@cc.vup>+5%</>。<@cc.kw>ヘドリー</>が貿易所に配置されているとき、ヘドリーのいる貿易所の注文上限<@cc.vup>+2</>"
     },
     "control_clue_cost[000]": {
       "buffId": "control_clue_cost[000]",
@@ -12336,6 +12526,30 @@
       "roomType": "CONTROL",
       "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<@cc.vup>+0.05</>回復"
     },
+    "control_mp_cost_double[000]": {
+      "buffId": "control_mp_cost_double[000]",
+      "buffName": "魔王の継承",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_amiya",
+      "sortId": 1000,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "<@cc.kw>アーミヤ</>と共に制御中枢に配置時、自身と<@cc.kw>アーミヤ</>の体力が1時間ごとに<@cc.vup>+0.05</>回復"
+    },
+    "control_mp_cost_double[001]": {
+      "buffId": "control_mp_cost_double[001]",
+      "buffName": "「未完の物語」",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_amiya1",
+      "sortId": 1000,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "<@cc.kw>アーミヤ</>と共に制御中枢に配置時、自身と<@cc.kw>アーミヤ</>の体力が1時間ごとに<@cc.vup>+0.1</>回復"
+    },
     "control_allCost_condChar[000]": {
       "buffId": "control_allCost_condChar[000]",
       "buffName": "忙中有閑",
@@ -12479,6 +12693,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "制御中枢配置時、<$cc.c.room2><@cc.kw>他の施設</></>内で仕事中のオペレーターの体力が1時間ごとに<@cc.vup>+0.05</>回復し、<$cc.bd_b1><@cc.rem>俗世之憂</></><@cc.vup>20</>につき、体力が追加で<@cc.vup>+0.05</>回復（制御中枢内の他のスキル間とは<$cc.c.sui2_1><@cc.rem>特殊比較方式</></>が適用される）"
+    },
+    "control_mp_expand_double[000]": {
+      "buffId": "control_mp_expand_double[000]",
+      "buffName": "バベルの旗印",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost_expand",
+      "sortId": 1004,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "制御中枢配置時、<$cc.c.room2><@cc.kw>他の施設</></>内で仕事中のオペレーターの体力が1時間ごとに<@cc.vup>+0.1</>回復し、<@cc.kw>シヴィライト・エテルナ</>を配置した場合は追加で<@cc.vup>+0.1</>回復（制御中枢内の他のスキル間とは<$cc.c.sui2_1><@cc.rem>特殊比較方式</></>が適用される）"
     },
     "control_mp_cost&bd2[010]": {
       "buffId": "control_mp_cost&bd2[010]",
@@ -12864,6 +13090,18 @@
       "roomType": "POWER",
       "description": "発電所配置時、ドローンの回復速度<@cc.vup>+15%</>"
     },
+    "power_rec_spd[004]": {
+      "buffId": "power_rec_spd[004]",
+      "buffName": "挽歌充電α",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd1",
+      "sortId": 2105,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "発電所配置時、ドローンの回復速度<@cc.vup>+10%</>"
+    },
     "power_rec_drone[000]": {
       "buffId": "power_rec_drone[000]",
       "buffName": "配電工事",
@@ -12911,6 +13149,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "POWER",
       "description": "発電所配置時、<@cc.kw>ケルシー</>が制御中枢に配置されている場合、ドローンの回復速度<@cc.vup>+5%</>"
+    },
+    "power_rec_spd_P[001]": {
+      "buffId": "power_rec_spd_P[001]",
+      "buffName": "呪文共鳴",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd_P1",
+      "sortId": 2000,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "発電所配置時、<@cc.kw>ロゴス</>が訓練室で協力者として配置されている場合、ドローンの回復速度<@cc.vup>+5%</>"
     },
     "power_rec_rhine[000]": {
       "buffId": "power_rec_rhine[000]",
@@ -13002,6 +13252,18 @@
       "buffIcon": "manufacture",
       "skillIcon": "bskill_man_spd1",
       "sortId": 3531,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、製造効率<@cc.vup>+15%</>"
+    },
+    "manu_prod_spd[1000]": {
+      "buffId": "manu_prod_spd[1000]",
+      "buffName": "標準化α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd1",
+      "sortId": 3631,
       "buffColor": "#ffd800",
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
@@ -13271,6 +13533,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、保管上限<@cc.vup>+10</>、製造効率<@cc.vup>+10%</>"
+    },
+    "manu_prod_spd&fraction[000]": {
+      "buffId": "manu_prod_spd&fraction[000]",
+      "buffName": "再会のひととき",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_A1",
+      "sortId": 3400,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、配置製造所の<$cc.g.A1><@cc.kw>A1小隊</></>のオペレーター数1につき、製造効率<@cc.vup>+10%</>"
     },
     "manu_prod_spd&limit&bd[000]": {
       "buffId": "manu_prod_spd&limit&bd[000]",
@@ -15768,6 +16042,18 @@
       "roomType": "TRAINING",
       "description": "訓練室で協力者として配置時、<@cc.kw>術師</>と<@cc.kw>医療</>の訓練速度<@cc.vup>+30%</>"
     },
+    "train_spd_doubleProf[200]": {
+      "buffId": "train_spd_doubleProf[200]",
+      "buffName": "バンシーの力",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_caster&supporter1",
+      "sortId": 9906,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、<@cc.kw>術師</>と<@cc.kw>補助</>の訓練速度<@cc.vup>+30%</>"
+    },
     "train_spd_doubleProf[110]": {
       "buffId": "train_spd_doubleProf[110]",
       "buffName": "赤龍の血",
@@ -15807,6 +16093,18 @@
     "train_spd_reduceTime[000]": {
       "buffId": "train_spd_reduceTime[000]",
       "buffName": "精神鍛錬",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_reduceTime",
+      "sortId": 9901,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置し、一度の訓練時間が<@cc.vup>5</>時間に達した時、協力対象の次の訓練に必要な時間が<@cc.vup>-50%</>（どちらか一方が訓練室を離れると効果が消える）"
+    },
+    "train_spd_reduceTime[001]": {
+      "buffId": "train_spd_reduceTime[001]",
+      "buffName": "言葉の義",
       "buffIcon": "training",
       "skillIcon": "bskill_train_reduceTime",
       "sortId": 9901,
@@ -66979,6 +67277,533 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_Airship_pillar_01": {
+        "id": "furni_Airship_pillar_01",
+        "sortId": 1571,
+        "name": "船内支柱",
+        "iconId": "furni_Airship_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 265,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "がっしりした巨大な支柱。上部に重たいブレーカーが取り付けられているが、実際に使うことはできない。\nここを通り過ぎると、誰もがブレーカーのハンドルを動かしたい衝動に駆られてしまう。なぜかって？それがそこに存在しているからだ。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_decklocker_01": {
+        "id": "furni_Airship_decklocker_01",
+        "sortId": 1572,
+        "name": "スチール製ラック",
+        "iconId": "furni_Airship_decklocker_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 215,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "純度の高い鋼板の切れ端で作った小さなラック。細々とした小物を置くのに使われている。\n「ティンカー」「テーラー」「ソルジャー」「セーラー」――今小物を置いてあるスペースにはどれも、かつてそれぞれの名前があった。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_catalogstand_01": {
+        "id": "furni_Airship_catalogstand_01",
+        "sortId": 1573,
+        "name": "船内作業台",
+        "iconId": "furni_Airship_catalogstand_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 4,
+        "depth": 4,
+        "height": 10,
+        "comfort": 335,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "頑丈な作業台。底のほうに古サルカズ語の上製本や図案資料が数多くしまわれている。\nここでは、ロゴス先生がしばしば静かに研究に没頭している――かと思えば、ある日唐突に声を出して笑い始めた。そこで皆は初めて、彼がずっとそこで『絶対に滑らないダジャレ大全』を読んでいたという事実を知った。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_telescope_01": {
+        "id": "furni_Airship_telescope_01",
+        "sortId": 1574,
+        "name": "双眼望遠鏡",
+        "iconId": "furni_Airship_telescope_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 3,
+        "depth": 6,
+        "height": 5,
+        "comfort": 275,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "遠くまで見える大きな望遠鏡。\n「高い空から眺めた景色は、なんて美しいのだろう。今よりもっと高いところから見たら、眼前にはどんな光景が広がるのだろうか？」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_ceilingtrumpet_01": {
+        "id": "furni_Airship_ceilingtrumpet_01",
+        "sortId": 1575,
+        "name": "船内ラジオ",
+        "iconId": "furni_Airship_ceilingtrumpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 60,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ラジオ番組と音楽を放送するスピーカー。作りこそ粗く見えるが、その音質は見事なものだ。\n色々な曲を繰り返し聞いた結果、PhonoR-0の歌う子守歌が人気の曲に選ばれた。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_chair_01": {
+        "id": "furni_Airship_chair_01",
+        "sortId": 1576,
+        "name": "スチール製スツール",
+        "iconId": "furni_Airship_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 115,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "重く頑丈なスツール。船が揺れてもぴくりとも動かない。\nかつてこのスツールを取り巻いていたのは、憎しみと怒りだった。だが今、それは友情と希望を見届けている。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_bench_01": {
+        "id": "furni_Airship_bench_01",
+        "sortId": 1577,
+        "name": "スチール製ベンチ",
+        "iconId": "furni_Airship_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 2,
+        "depth": 7,
+        "height": 5,
+        "comfort": 250,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "頑丈なベンチ。直近二百年の王庭スタイルが鮮明に表れたデザインをしている。\nこの華やかだが冷たいベンチに明るい色を添えようと、オペレーターたちはテレジアの手編みの織物を敷いてあげた。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_ceilinglamp_01": {
+        "id": "furni_Airship_ceilinglamp_01",
+        "sortId": 1578,
+        "name": "「影を照らす光」",
+        "iconId": "furni_Airship_ceilinglamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 11,
+        "depth": 6,
+        "height": 3,
+        "comfort": 255,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "独特な造形をした照明フレームの下に、強烈な光を発する無骨な蛍光灯が取り付けられている。\nレヴァナントの影に覆われる中で、飛空船の船員たちはこの一抹の明かりを頼りに、己を現実に引き留めようとした。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_controldesk_01": {
+        "id": "furni_Airship_controldesk_01",
+        "sortId": 1579,
+        "name": "測定器制御パネル",
+        "iconId": "furni_Airship_controldesk_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 4,
+        "depth": 7,
+        "height": 7,
+        "comfort": 400,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "複雑なダッシュボードやボタンが配置された制御台。噂によれば、飛空船の船員たちはこれを使って、飛空船の航行以外のあらゆる機能を瞬時に調節していたらしい。\n「つまり、貴様らのPRTSというのは、どこぞの名も知れぬレヴァナントのことか？」――レヴァナントにこの制御台ではロドスを操ることができない理由を説明した際、レヴァナントはそう聞き返した。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_faxmachine_01": {
+        "id": "furni_Airship_faxmachine_01",
+        "sortId": 1580,
+        "name": "暗号化通信機",
+        "iconId": "furni_Airship_faxmachine_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 265,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "暗号化通信を送受信するための装置。タイプライターとしても使える。\nへドリーから手渡されたスピーチ原稿を覚えるため、ウィシャデルはありったけの知恵を絞って、誰にも読めない発音記号を通信機のそばのノートいっぱいに書き綴った。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_table_01": {
+        "id": "furni_Airship_table_01",
+        "sortId": 1581,
+        "name": "スチール製ローテーブル",
+        "iconId": "furni_Airship_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 160,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "純度の高い鋼で作られたローテーブル。サルカズらしいデザインが「侵略的」な印象を醸し出している。\nアーミヤは、誰かが机の角にぶつかったら大変なので、デザインを少しだけ変えましょうと提案していた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_partitionwall_01": {
+        "id": "furni_Airship_partitionwall_01",
+        "sortId": 1582,
+        "name": "スチール製仕切り",
+        "iconId": "furni_Airship_partitionwall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 1,
+        "depth": 5,
+        "height": 10,
+        "comfort": 220,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "サルカズ王庭風の紋様があしらわれた分厚い鋼板。中心に時計がはめ込まれている。\nほとんどの音を遮断できるが、唯一PhonoR-0の歌声だけは差しさわりなく突き抜けてくる。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_bunkbed_01": {
+        "id": "furni_Airship_bunkbed_01",
+        "sortId": 1583,
+        "name": "スチール製二段ベッド",
+        "iconId": "furni_Airship_bunkbed_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 8,
+        "depth": 4,
+        "height": 9,
+        "comfort": 510,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "壁に取り付けられた、典型的な軍用スタイルの二段ベッド。\nサルカズの船員は昼間眠る必要がないため、カーテンレールが取り付けられていない。その特徴も忠実に再現しているので、日差し対策は各自で行ってもらわなければならない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_partitiondesk_01": {
+        "id": "furni_Airship_partitiondesk_01",
+        "sortId": 1584,
+        "name": "スチール製パネルデスク",
+        "iconId": "furni_Airship_partitiondesk_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 3,
+        "depth": 2,
+        "height": 10,
+        "comfort": 210,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "スチール製の仕切りは、廊下とベッドの境界線の役割を果たしてくれている。\nこの飛空船は戦争のために作られたものではあるが、それでも当時の設計者は船員のために、少しばかりのプライベート空間を残してくれた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_carpet_01": {
+        "id": "furni_Airship_carpet_01",
+        "sortId": 1585,
+        "name": "「魂の投影」",
+        "iconId": "furni_Airship_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 5,
+        "depth": 2,
+        "height": 1,
+        "comfort": 35,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "精巧な絨毯。模様はレヴァナントからインスピレーションを得たものである。\nこの絨毯の上に立っていると、周りの空間が微かに「揺れ動いている」ような感覚に陥るかもしれない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_wallpaper_01": {
+        "id": "furni_Airship_wallpaper_01",
+        "sortId": 1586,
+        "name": "空の風景",
+        "iconId": "furni_Airship_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "空の景色を映し出したウォールディスプレイ。じっと眺めていると、雲の上を飛んでいるような気分にさせてくれる。\n注意：高所恐怖症のオペレーターは近づかないように。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_floor_01": {
+        "id": "furni_Airship_floor_01",
+        "sortId": 1587,
+        "name": "制式金属床",
+        "iconId": "furni_Airship_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "頑丈なスチール製の床。踏みつけるだけでも、心強い丈夫さが伝わる。\n滑り止めのデコボコがついた板は摩擦力を大幅に向上させ、船体が激しく揺れた時でも乗員たちの転倒を防いでくれる。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -72280,6 +73105,68 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_terratimes_Babel_01": {
+        "id": "furni_terratimes_Babel_01",
+        "sortId": 11085,
+        "name": "パネル「理想」",
+        "iconId": "furni_terratimes_Babel_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "今ある廃墟を育もう。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terracommericials_WrankwoodFilmFestival_01": {
+        "id": "furni_terracommericials_WrankwoodFilmFestival_01",
+        "sortId": 11086,
+        "name": "パネル「映画」",
+        "iconId": "furni_terracommericials_WrankwoodFilmFestival_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "残影と残響は長き歳月を彷徨う。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -74845,6 +75732,37 @@
         "usage": "宿舎に飾れば、雰囲気を良くする。",
         "description": "人為的に形成された観賞用の源石氷晶。とても冷たいが、触れられることを拒んではいない。\n冬の終わりを迎えようとしている雪花が友人たちの残した贈り物。それはいつか融けて消えてしまうかもしれないが、今はまだその時ではない。",
         "obtainApproach": "特典",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_act50d0_hourGlass_01": {
+        "id": "furni_act50d0_hourGlass_01",
+        "sortId": 20004,
+        "name": "感謝祭記念砂時計",
+        "iconId": "furni_act50d0_hourGlass_01",
+        "interactType": "ANIMATOR",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 8,
+        "depth": 9,
+        "height": 8,
+        "comfort": 300,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "大感謝祭を記念すべく、オーダーメイドされた砂時計。流れ揺蕩うのは共に歩んできた過去であり、キラキラと輝くのはいつまでも留めておきたい美しい思い出だ。",
+        "obtainApproach": "イベント報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
         "processedByProductPercentage": 0,
@@ -88404,6 +89322,142 @@
           "furni_ScarMarket_wallpaper_01",
           "furni_ScarMarket_floor_01"
         ]
+      },
+      "furni_set_Airship": {
+        "id": "furni_set_Airship",
+        "sortId": 91,
+        "name": "飛空船室風宿舎",
+        "themeType": "EVENT",
+        "desc": "テレジアが残した資料をもとに再現した飛空船内部の光景。宿舎として使用できるように、ある程度改造が施されている。サルカズの冷酷な兵器は、この場所では少しばかりの温もりを感じさせてくれる。",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_Airship_pillar_01",
+            "pos0": 5,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_decklocker_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_catalogstand_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_telescope_01",
+            "pos0": 11,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_ceilingtrumpet_01",
+            "pos0": 10,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_chair_01",
+            "pos0": 19,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_bench_01",
+            "pos0": 14,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_ceilinglamp_01",
+            "pos0": 13,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_controldesk_01",
+            "pos0": 21,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_faxmachine_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_table_01",
+            "pos0": 22,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_partitionwall_01",
+            "pos0": 25,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_bunkbed_01",
+            "pos0": 26,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_partitiondesk_01",
+            "pos0": 31,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_carpet_01",
+            "pos0": 26,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_Airship_1",
+          "furni_set_Airship_2",
+          "furni_set_Airship_3",
+          "furni_set_Airship_4"
+        ],
+        "furnitures": [
+          "furni_Airship_pillar_01",
+          "furni_Airship_decklocker_01",
+          "furni_Airship_catalogstand_01",
+          "furni_Airship_telescope_01",
+          "furni_Airship_ceilingtrumpet_01",
+          "furni_Airship_chair_01",
+          "furni_Airship_bench_01",
+          "furni_Airship_ceilinglamp_01",
+          "furni_Airship_controldesk_01",
+          "furni_Airship_faxmachine_01",
+          "furni_Airship_table_01",
+          "furni_Airship_partitionwall_01",
+          "furni_Airship_bunkbed_01",
+          "furni_Airship_partitiondesk_01",
+          "furni_Airship_carpet_01",
+          "furni_Airship_wallpaper_01",
+          "furni_Airship_floor_01"
+        ]
       }
     },
     "groups": {
@@ -93616,6 +94670,63 @@
           "furni_ScarMarket_ironcabinet_01",
           "furni_ScarMarket_shoerack_01",
           "furni_ScarMarket_carpet_01"
+        ]
+      },
+      "furni_set_Airship_1": {
+        "id": "furni_set_Airship_1",
+        "sortId": 1,
+        "name": "船員作業エリア",
+        "themeId": "furni_set_Airship",
+        "comfort": 210,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_pillar_01",
+          "furni_Airship_decklocker_01",
+          "furni_Airship_catalogstand_01",
+          "furni_Airship_ceilingtrumpet_01"
+        ]
+      },
+      "furni_set_Airship_2": {
+        "id": "furni_set_Airship_2",
+        "sortId": 2,
+        "name": "観測予報エリア",
+        "themeId": "furni_set_Airship",
+        "comfort": 220,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_telescope_01",
+          "furni_Airship_chair_01",
+          "furni_Airship_bench_01",
+          "furni_Airship_faxmachine_01"
+        ]
+      },
+      "furni_set_Airship_3": {
+        "id": "furni_set_Airship_3",
+        "sortId": 3,
+        "name": "作戦策定エリア",
+        "themeId": "furni_set_Airship",
+        "comfort": 275,
+        "count": 5,
+        "furniture": [
+          "furni_Airship_ceilinglamp_01",
+          "furni_Airship_controldesk_01",
+          "furni_Airship_table_01",
+          "furni_Airship_wallpaper_01",
+          "furni_Airship_floor_01"
+        ]
+      },
+      "furni_set_Airship_4": {
+        "id": "furni_set_Airship_4",
+        "sortId": 4,
+        "name": "生活休憩エリア",
+        "themeId": "furni_set_Airship",
+        "comfort": 245,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_partitionwall_01",
+          "furni_Airship_bunkbed_01",
+          "furni_Airship_partitiondesk_01",
+          "furni_Airship_carpet_01"
         ]
       }
     },
