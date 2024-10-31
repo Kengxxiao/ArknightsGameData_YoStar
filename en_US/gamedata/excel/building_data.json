@@ -11973,6 +11973,160 @@
           ]
         }
       ]
+    },
+    "char_1035_wisdel": {
+      "charId": "char_1035_wisdel",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_meeting&ord[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "control_meeting&ord[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_expand_double[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4133_logos": {
+      "charId": "char_4133_logos",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_doubleProf[200]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_reduceTime[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4134_cetsyr": {
+      "charId": "char_4134_cetsyr",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost_double[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "control_mp_cost_double[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_upMeetingSpeed[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_1036_fang2": {
+      "charId": "char_1036_fang2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd[1000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd&fraction[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4136_phonor": {
+      "charId": "char_4136_phonor",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd[004]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd_P[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 30
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -12143,6 +12297,42 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+25%</> (Only the strongest effect of this type takes place)."
+    },
+    "control_upMeetingSpeed[100]": {
+      "buffId": "control_upMeetingSpeed[100]",
+      "buffName": "Convergence of Hope",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_spd1",
+      "sortId": 1402,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+15%</> (Only the strongest effect of this type takes place)."
+    },
+    "control_meeting&ord[000]": {
+      "buffId": "control_meeting&ord[000]",
+      "buffName": "Conspirator α",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_babel",
+      "sortId": 1403,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center: if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is assigned to a Trading Post, that Trading Post's order limit <@cc.vup>+1</>."
+    },
+    "control_meeting&ord[001]": {
+      "buffId": "control_meeting&ord[001]",
+      "buffName": "Conspirator β",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_babel2",
+      "sortId": 1404,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center: if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is assigned to a Trading Post, that Trading Post's order limit <@cc.vup>+2</>."
     },
     "control_clue_cost[000]": {
       "buffId": "control_clue_cost[000]",
@@ -12336,6 +12526,30 @@
       "roomType": "CONTROL",
       "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
     },
+    "control_mp_cost_double[000]": {
+      "buffId": "control_mp_cost_double[000]",
+      "buffName": "King's Legacy",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_amiya",
+      "sortId": 1000,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center with <@cc.kw>Amiya</>, self and <@cc.kw>Amiya</>'s Morale recovered per hour <@cc.vup>+0.05</>."
+    },
+    "control_mp_cost_double[001]": {
+      "buffId": "control_mp_cost_double[001]",
+      "buffName": "'Unfinished Story'",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_amiya1",
+      "sortId": 1000,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center with <@cc.kw>Amiya</>, self and <@cc.kw>Amiya</>'s Morale recovered per hour <@cc.vup>+0.1</>."
+    },
     "control_allCost_condChar[000]": {
       "buffId": "control_allCost_condChar[000]",
       "buffName": "Moment of Respite",
@@ -12479,6 +12693,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "When this Operator is assigned to the Control Center, Operators working in <$cc.c.room2><@cc.kw>other buildings</></> recover <@cc.vup>+0.05</> Morale per hour, with an additional <@cc.vup>+0.05</> for every <@cc.vup>20</> <$cc.bd_b1><@cc.rem>Worldly Plight</></> (<$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> apply with Control Center bonus)"
+    },
+    "control_mp_expand_double[000]": {
+      "buffId": "control_mp_expand_double[000]",
+      "buffName": "Banner of Babel",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost_expand",
+      "sortId": 1004,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, Operators working in <$cc.c.room2><@cc.kw>other buildings</></> recover <@cc.vup>+0.1</> Morale per hour, with an additional <@cc.vup>+0.1</> when <@cc.kw>Civilight Eterna</> is also assigned to the Control Center (<$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> apply with Control Center bonus)."
     },
     "control_mp_cost&bd2[010]": {
       "buffId": "control_mp_cost&bd2[010]",
@@ -12864,6 +13090,18 @@
       "roomType": "POWER",
       "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+15%</>"
     },
+    "power_rec_spd[004]": {
+      "buffId": "power_rec_spd[004]",
+      "buffName": "Elegy Charge α",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd1",
+      "sortId": 2105,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
+    },
     "power_rec_drone[000]": {
       "buffId": "power_rec_drone[000]",
       "buffName": "Line Patrol Frame",
@@ -12911,6 +13149,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "POWER",
       "description": "When this Operator is assigned to a Power Plant, if <@cc.kw>Kal'tsit</> is assigned to the Control Center, increases the drone recovery rate by <@cc.vup>+5%</>."
+    },
+    "power_rec_spd_P[001]": {
+      "buffId": "power_rec_spd_P[001]",
+      "buffName": "Incantation Resonance",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd_P1",
+      "sortId": 2000,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "When this Operator is assigned to a Power Plant, if <@cc.kw>Logos</> is assigned to be the Trainer in the Training Room, increases the drone recovery rate by <@cc.vup>+5%</>."
     },
     "power_rec_rhine[000]": {
       "buffId": "power_rec_rhine[000]",
@@ -13002,6 +13252,18 @@
       "buffIcon": "manufacture",
       "skillIcon": "bskill_man_spd1",
       "sortId": 3531,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, productivity <@cc.vup>+15%</>"
+    },
+    "manu_prod_spd[1000]": {
+      "buffId": "manu_prod_spd[1000]",
+      "buffName": "Standardization α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd1",
+      "sortId": 3631,
       "buffColor": "#ffd800",
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
@@ -13271,6 +13533,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+10</> and productivity <@cc.vup>+10%</>"
+    },
+    "manu_prod_spd&fraction[000]": {
+      "buffId": "manu_prod_spd&fraction[000]",
+      "buffName": "Time of Reunion",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_A1",
+      "sortId": 3400,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, gain <@cc.vup>+10%</> productivity for each <$cc.g.A1><@cc.kw>A1 Detachment</></> Operator in the same Factory."
     },
     "manu_prod_spd&limit&bd[000]": {
       "buffId": "manu_prod_spd&limit&bd[000]",
@@ -15768,6 +16042,18 @@
       "roomType": "TRAINING",
       "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
+    "train_spd_doubleProf[200]": {
+      "buffId": "train_spd_doubleProf[200]",
+      "buffName": "The Power of a Banshee",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_caster&supporter1",
+      "sortId": 9906,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Supporter</> Operators' Specialization training speed <@cc.vup>+30%</>."
+    },
     "train_spd_doubleProf[110]": {
       "buffId": "train_spd_doubleProf[110]",
       "buffName": "Red Dragon's Blood",
@@ -15807,6 +16093,18 @@
     "train_spd_reduceTime[000]": {
       "buffId": "train_spd_reduceTime[000]",
       "buffName": "Mental Training",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_reduceTime",
+      "sortId": 9901,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "When this Operator is assigned to the Training Room to train an Operator for <@cc.vup>5</> hours, that Operator's next training time <@cc.vup>-50%</> (effect expires if either Operator leaves the Training Room)"
+    },
+    "train_spd_reduceTime[001]": {
+      "buffId": "train_spd_reduceTime[001]",
+      "buffName": "The Meaning of Words",
       "buffIcon": "training",
       "skillIcon": "bskill_train_reduceTime",
       "sortId": 9901,
@@ -66979,6 +67277,533 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_Airship_pillar_01": {
+        "id": "furni_Airship_pillar_01",
+        "sortId": 1571,
+        "name": "In-Ship Pillar",
+        "iconId": "furni_Airship_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 265,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A large, sturdy pillar with a power switch that has no practical function. Everyone gets the urge to pull it when they pass it by. Why, you ask? Because it's there.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_decklocker_01": {
+        "id": "furni_Airship_decklocker_01",
+        "sortId": 1572,
+        "name": "Steel Storage Rack",
+        "iconId": "furni_Airship_decklocker_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 215,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A small rack made with scrap steel plates, used to store an assortment of things. 'Tinker,' 'Tailor,' 'Soldier,' and 'Sailor.' Each occupied position once had its own name.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_catalogstand_01": {
+        "id": "furni_Airship_catalogstand_01",
+        "sortId": 1573,
+        "name": "Ship Workbench",
+        "iconId": "furni_Airship_catalogstand_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 4,
+        "depth": 4,
+        "height": 10,
+        "comfort": 335,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Workbench with ancient Sarkaz tomes and diagrams stored beneath. Logos often came here to study in silence. That is, until he burst out laughing one day, and everyone found out he was reading the <i>Cheesy Jokes and Puns Collection</i>.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_telescope_01": {
+        "id": "furni_Airship_telescope_01",
+        "sortId": 1574,
+        "name": "Binoculars",
+        "iconId": "furni_Airship_telescope_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 3,
+        "depth": 6,
+        "height": 5,
+        "comfort": 275,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A large pair of binoculars capable of seeing afar. 'The scenery is so beautiful when you look at it from so high up. What will the sights before us look like if we stand even further up?'",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_ceilingtrumpet_01": {
+        "id": "furni_Airship_ceilingtrumpet_01",
+        "sortId": 1575,
+        "name": "PA Speaker",
+        "iconId": "furni_Airship_ceilingtrumpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 60,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Equipment used to play PA broadcasts and music. It may look crude, but its sound is top notch. After being played so many times, PhonoR-0's lullabies have become the hottest songs coming out of this thing.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_chair_01": {
+        "id": "furni_Airship_chair_01",
+        "sortId": 1576,
+        "name": "Steel Stool",
+        "iconId": "furni_Airship_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 115,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A firm and steady chair. Doesn't wobble one bit even when the entire cabin is shaking. In the past, it was surrounded by hatred and anger. Now, it is a witness to friendship and hope.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_bench_01": {
+        "id": "furni_Airship_bench_01",
+        "sortId": 1577,
+        "name": "Steel Bench",
+        "iconId": "furni_Airship_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 2,
+        "depth": 7,
+        "height": 5,
+        "comfort": 250,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A sturdy bench with a design that clearly harkens to the Royal Court style of the past two centuries. The operators placed Theresa's fabrics on top to give the ice-cold, dull-looking bench a splash of color.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_ceilinglamp_01": {
+        "id": "furni_Airship_ceilinglamp_01",
+        "sortId": 1578,
+        "name": "'Light Within Shadows'",
+        "iconId": "furni_Airship_ceilinglamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 11,
+        "depth": 6,
+        "height": 3,
+        "comfort": 255,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A peculiarly-shaped lamp rack installed with a fluorescent light that emits a strong glow. In the revenant's shadow, this light is what the airship crew uses to keep themselves grounded in reality.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_controldesk_01": {
+        "id": "furni_Airship_controldesk_01",
+        "sortId": 1579,
+        "name": "Equipment Control Panel",
+        "iconId": "furni_Airship_controldesk_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 4,
+        "depth": 7,
+        "height": 7,
+        "comfort": 400,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Workbench covered in bewildering buttons. Airship crews can control much more than flight from it. When told why it couldn't use this to control Rhodes Island, the revenant replied, 'So is this PRTS another revenant I don't know about?'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_faxmachine_01": {
+        "id": "furni_Airship_faxmachine_01",
+        "sortId": 1580,
+        "name": "Encrypted Communicator",
+        "iconId": "furni_Airship_faxmachine_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 265,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A device used to send encrypted messages, also a typewriter. To memorize the speech Hoederer handed her, Wiš'adel racked her brains and wrote a bunch of notations that no one else can read on the notebook next to it.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_table_01": {
+        "id": "furni_Airship_table_01",
+        "sortId": 1581,
+        "name": "Steel Low Table",
+        "iconId": "furni_Airship_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 160,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A table made of metal. Its Sarkaz aesthetics imparts a sense of aggressiveness. Amiya suggested modifying it. It wouldn't be nice if someone bumped into its sharp corners.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_partitionwall_01": {
+        "id": "furni_Airship_partitionwall_01",
+        "sortId": 1582,
+        "name": "Solid Steel Partition",
+        "iconId": "furni_Airship_partitionwall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 1,
+        "depth": 5,
+        "height": 10,
+        "comfort": 220,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A thick, steel plate with a Sarkaz Royal Court motif, inlaid with a clock in the center. Can effectively block most sound, but that means nothing to PhonoR-0's song.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_bunkbed_01": {
+        "id": "furni_Airship_bunkbed_01",
+        "sortId": 1583,
+        "name": "Steel Bunkbed",
+        "iconId": "furni_Airship_bunkbed_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 8,
+        "depth": 4,
+        "height": 9,
+        "comfort": 510,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A wall-mounted bunk bed in classic military fashion. Sleeping at night suffices for Sarkaz crews, so porthole beds don't come with curtains. In keeping with the original style, those wishing to block the sun must bring their own solutions.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_partitiondesk_01": {
+        "id": "furni_Airship_partitiondesk_01",
+        "sortId": 1584,
+        "name": "Steel Bed Partition",
+        "iconId": "furni_Airship_partitiondesk_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 3,
+        "depth": 2,
+        "height": 10,
+        "comfort": 210,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A steel partition used to divide corridors from beds. Though airships are built for combat, their designers still left crews a precious sliver of personal space.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_carpet_01": {
+        "id": "furni_Airship_carpet_01",
+        "sortId": 1585,
+        "name": "'Projection of Souls'",
+        "iconId": "furni_Airship_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 5,
+        "depth": 2,
+        "height": 1,
+        "comfort": 35,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A fine handmade rug, inspired by revenants. Step on it, and you might just feel space 'ripple' a bit around you.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_wallpaper_01": {
+        "id": "furni_Airship_wallpaper_01",
+        "sortId": 1586,
+        "name": "Panoramic Display",
+        "iconId": "furni_Airship_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A panoramic display showing the beauty of the skies. Viewers would feel as though they are soaring above the clouds. Friendly reminder: if you are scared of heights, stay away from the display.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_floor_01": {
+        "id": "furni_Airship_floor_01",
+        "sortId": 1587,
+        "name": "Standard-Issue Metal Flooring",
+        "iconId": "furni_Airship_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Sturdy steel flooring. Gives a sense of security when you step on it. Its anti-slip patterns greatly increase friction, helping passengers maintain their footing when the ship runs into turbulence.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -72280,6 +73105,68 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_terratimes_Babel_01": {
+        "id": "furni_terratimes_Babel_01",
+        "sortId": 11085,
+        "name": "Plaque 'Ideals'",
+        "iconId": "furni_terratimes_Babel_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Nourish those ruins.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terracommericials_WrankwoodFilmFestival_01": {
+        "id": "furni_terracommericials_WrankwoodFilmFestival_01",
+        "sortId": 11086,
+        "name": "Plaque 'Brilliance'",
+        "iconId": "furni_terracommericials_WrankwoodFilmFestival_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Voice and visage, left to linger through the endless years ahead.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -74783,6 +75670,37 @@
         "usage": "Used in the dorm to improve the ambience.",
         "description": "An Originium ice crystal crafted via unnatural means for viewing purposes. Its temperature is low, but it has no qualms with being touched. A gift left behind by snowflakes that departed in the cold winter.",
         "obtainApproach": "Obtain from Special Pack",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_act50d0_hourGlass_01": {
+        "id": "furni_act50d0_hourGlass_01",
+        "sortId": 20004,
+        "name": "Anniversary Celebration Hourglass",
+        "iconId": "furni_act50d0_hourGlass_01",
+        "interactType": "ANIMATOR",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 8,
+        "depth": 9,
+        "height": 8,
+        "comfort": 300,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A made-to-order hourglass ornament to commemorate the 5th anniversary of the launch of Arknights. Rocked in its flow is a solitary past; astral in its flicker is a trove of treasured memories.",
+        "obtainApproach": "Event Reward",
         "processedProductId": "3401",
         "processedProductCount": 0,
         "processedByProductPercentage": 0,
@@ -88342,6 +89260,142 @@
           "furni_ScarMarket_wallpaper_01",
           "furni_ScarMarket_floor_01"
         ]
+      },
+      "furni_set_Airship": {
+        "id": "furni_set_Airship",
+        "sortId": 91,
+        "name": "Airship Abode",
+        "themeType": "EVENT",
+        "desc": "A recreation of the airship's interiors, based on documents left behind by Theresa, with certain modifications made to meet the requirements of a dormitory. Here, a hint of warmth can be felt from the Sarkaz's ice-cold weapon of war.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_Airship_pillar_01",
+            "pos0": 5,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_decklocker_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_catalogstand_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_telescope_01",
+            "pos0": 11,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_ceilingtrumpet_01",
+            "pos0": 10,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_chair_01",
+            "pos0": 19,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_bench_01",
+            "pos0": 14,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_ceilinglamp_01",
+            "pos0": 13,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_controldesk_01",
+            "pos0": 21,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_faxmachine_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_table_01",
+            "pos0": 22,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_partitionwall_01",
+            "pos0": 25,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_bunkbed_01",
+            "pos0": 26,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_partitiondesk_01",
+            "pos0": 31,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_carpet_01",
+            "pos0": 26,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_Airship_1",
+          "furni_set_Airship_2",
+          "furni_set_Airship_3",
+          "furni_set_Airship_4"
+        ],
+        "furnitures": [
+          "furni_Airship_pillar_01",
+          "furni_Airship_decklocker_01",
+          "furni_Airship_catalogstand_01",
+          "furni_Airship_telescope_01",
+          "furni_Airship_ceilingtrumpet_01",
+          "furni_Airship_chair_01",
+          "furni_Airship_bench_01",
+          "furni_Airship_ceilinglamp_01",
+          "furni_Airship_controldesk_01",
+          "furni_Airship_faxmachine_01",
+          "furni_Airship_table_01",
+          "furni_Airship_partitionwall_01",
+          "furni_Airship_bunkbed_01",
+          "furni_Airship_partitiondesk_01",
+          "furni_Airship_carpet_01",
+          "furni_Airship_wallpaper_01",
+          "furni_Airship_floor_01"
+        ]
       }
     },
     "groups": {
@@ -93554,6 +94608,63 @@
           "furni_ScarMarket_ironcabinet_01",
           "furni_ScarMarket_shoerack_01",
           "furni_ScarMarket_carpet_01"
+        ]
+      },
+      "furni_set_Airship_1": {
+        "id": "furni_set_Airship_1",
+        "sortId": 1,
+        "name": "Crew Work Area",
+        "themeId": "furni_set_Airship",
+        "comfort": 210,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_pillar_01",
+          "furni_Airship_decklocker_01",
+          "furni_Airship_catalogstand_01",
+          "furni_Airship_ceilingtrumpet_01"
+        ]
+      },
+      "furni_set_Airship_2": {
+        "id": "furni_set_Airship_2",
+        "sortId": 2,
+        "name": "Early Warning Area",
+        "themeId": "furni_set_Airship",
+        "comfort": 220,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_telescope_01",
+          "furni_Airship_chair_01",
+          "furni_Airship_bench_01",
+          "furni_Airship_faxmachine_01"
+        ]
+      },
+      "furni_set_Airship_3": {
+        "id": "furni_set_Airship_3",
+        "sortId": 3,
+        "name": "Operation Prep Area",
+        "themeId": "furni_set_Airship",
+        "comfort": 275,
+        "count": 5,
+        "furniture": [
+          "furni_Airship_ceilinglamp_01",
+          "furni_Airship_controldesk_01",
+          "furni_Airship_table_01",
+          "furni_Airship_wallpaper_01",
+          "furni_Airship_floor_01"
+        ]
+      },
+      "furni_set_Airship_4": {
+        "id": "furni_set_Airship_4",
+        "sortId": 4,
+        "name": "Lifestyle Rest Area",
+        "themeId": "furni_set_Airship",
+        "comfort": 245,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_partitionwall_01",
+          "furni_Airship_bunkbed_01",
+          "furni_Airship_partitiondesk_01",
+          "furni_Airship_carpet_01"
         ]
       }
     },
