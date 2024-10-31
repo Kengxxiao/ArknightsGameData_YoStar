@@ -11973,6 +11973,160 @@
           ]
         }
       ]
+    },
+    "char_1035_wisdel": {
+      "charId": "char_1035_wisdel",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_meeting&ord[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "control_meeting&ord[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_expand_double[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4133_logos": {
+      "charId": "char_4133_logos",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_doubleProf[200]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd_reduceTime[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4134_cetsyr": {
+      "charId": "char_4134_cetsyr",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost_double[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "control_mp_cost_double[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_upMeetingSpeed[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_1036_fang2": {
+      "charId": "char_1036_fang2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd[1000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd&fraction[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4136_phonor": {
+      "charId": "char_4136_phonor",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd[004]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "power_rec_spd_P[001]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 30
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -12143,6 +12297,42 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 응접실의 단서 수집 속도 <@cc.vup>+25%</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "control_upMeetingSpeed[100]": {
+      "buffId": "control_upMeetingSpeed[100]",
+      "buffName": "모여진 희망",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_spd1",
+      "sortId": 1402,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 응접실의 단서 수집 속도 <@cc.vup>+15%</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "control_meeting&ord[000]": {
+      "buffId": "control_meeting&ord[000]",
+      "buffName": "공모 α",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_babel",
+      "sortId": 1403,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, <@cc.kw>이네스</>가 응접실에 있으면 응접실의 단서 수집 속도 <@cc.vup>+5%</>, <@cc.kw>외드레르</>가 무역소에 있으면 해당 무역소의 오더 상한 <@cc.vup>+1</>"
+    },
+    "control_meeting&ord[001]": {
+      "buffId": "control_meeting&ord[001]",
+      "buffName": "공모 β",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_c_babel2",
+      "sortId": 1404,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, <@cc.kw>이네스</>가 응접실에 있으면 응접실의 단서 수집 속도 <@cc.vup>+5%</>, <@cc.kw>외드레르</>가 무역소에 있으면 해당 무역소의 오더 상한 <@cc.vup>+2</>"
     },
     "control_clue_cost[000]": {
       "buffId": "control_clue_cost[000]",
@@ -12336,6 +12526,30 @@
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>"
     },
+    "control_mp_cost_double[000]": {
+      "buffId": "control_mp_cost_double[000]",
+      "buffName": "마왕의 전승",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_amiya",
+      "sortId": 1000,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "<@cc.kw>아미야</>와 함께 제어 센터에 배치 시, 자신과 <@cc.kw>아미야</>의 시간당 컨디션 회복 <@cc.vup>+0.05</>"
+    },
+    "control_mp_cost_double[001]": {
+      "buffId": "control_mp_cost_double[001]",
+      "buffName": "'끝나지 않은 이야기'",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_amiya1",
+      "sortId": 1000,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "<@cc.kw>아미야</>와 함께 제어 센터에 배치 시, 자신과 <@cc.kw>아미야</>의 시간당 컨디션 회복 <@cc.vup>+0.1</>"
+    },
     "control_allCost_condChar[000]": {
       "buffId": "control_allCost_condChar[000]",
       "buffName": "한가하고 덧없는 인생",
@@ -12479,6 +12693,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, <$cc.c.room2><@cc.kw>기타 시설</></>의 작업 중인 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>, 동시에 <$cc.bd_b1><@cc.rem>속세의 화식</></> <@cc.vup>20</>당 추가로 <@cc.vup>+0.05</> (제어 센터의 버프와 <$cc.c.sui2_1><@cc.rem>특별 비교 규칙</></> 적용)"
+    },
+    "control_mp_expand_double[000]": {
+      "buffId": "control_mp_expand_double[000]",
+      "buffName": "바벨의 깃발",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost_expand",
+      "sortId": 1004,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, <$cc.c.room2><@cc.kw>기타 시설</></>의 작업 중인 오퍼레이터의 시간당 컨디션 회복<@cc.vup>+0.1</>, <@cc.kw>시빌라이트 에테르나</>가 제어 센터에 배치 시 추가로 <@cc.vup>+0.1</> (제어 센터의 버프와 <$cc.c.sui2_1><@cc.rem>특별 비교 규칙</></> 적용)"
     },
     "control_mp_cost&bd2[010]": {
       "buffId": "control_mp_cost&bd2[010]",
@@ -12864,6 +13090,18 @@
       "roomType": "POWER",
       "description": "발전소에 배치 시, 드론 회복 <@cc.vup>+15%</>"
     },
+    "power_rec_spd[004]": {
+      "buffId": "power_rec_spd[004]",
+      "buffName": "엘레지 충전 α",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd1",
+      "sortId": 2105,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "발전소에 배치 시, 드론 회복 <@cc.vup>+10%</>"
+    },
     "power_rec_drone[000]": {
       "buffId": "power_rec_drone[000]",
       "buffName": "점검 매뉴얼",
@@ -12911,6 +13149,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "POWER",
       "description": "발전소에 배치 시, <@cc.kw>켈시</>가 제어 센터에 배치되어 있으면 드론 회복 속도 <@cc.vup>+5%</>"
+    },
+    "power_rec_spd_P[001]": {
+      "buffId": "power_rec_spd_P[001]",
+      "buffName": "주술 공명",
+      "buffIcon": "power",
+      "skillIcon": "bskill_pow_spd_P1",
+      "sortId": 2000,
+      "buffColor": "#8fc31f",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "POWER",
+      "description": "발전소에 배치 시, 만약 <@cc.kw>로고스</>가 훈련실의 협조 위치에 배치되어 있으면 드론 회복 속도 <@cc.vup>+5%</>"
     },
     "power_rec_rhine[000]": {
       "buffId": "power_rec_rhine[000]",
@@ -13002,6 +13252,18 @@
       "buffIcon": "manufacture",
       "skillIcon": "bskill_man_spd1",
       "sortId": 3531,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, 생산력 <@cc.vup>+15%</>"
+    },
+    "manu_prod_spd[1000]": {
+      "buffId": "manu_prod_spd[1000]",
+      "buffName": "표준화 α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd1",
+      "sortId": 3631,
       "buffColor": "#ffd800",
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
@@ -13271,6 +13533,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "제조소에 배치 시, 창고 용량 상한 <@cc.vup>+10</>, 생산력 <@cc.vup>+10%</>"
+    },
+    "manu_prod_spd&fraction[000]": {
+      "buffId": "manu_prod_spd&fraction[000]",
+      "buffName": "재회의 시간",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_A1",
+      "sortId": 3400,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "제조소에 배치 시, 해당 제조소 내 <$cc.g.A1><@cc.kw>예비작전팀 A1</></> 오퍼레이터 1명당 자신의 생산력 <@cc.vup>+10%</>"
     },
     "manu_prod_spd&limit&bd[000]": {
       "buffId": "manu_prod_spd&limit&bd[000]",
@@ -15768,6 +16042,18 @@
       "roomType": "TRAINING",
       "description": "훈련실에 배치 시, <@cc.kw>캐스터</> 및 <@cc.kw>메딕</> 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+30%</>"
     },
+    "train_spd_doubleProf[200]": {
+      "buffId": "train_spd_doubleProf[200]",
+      "buffName": "밴시의 힘",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_caster&supporter1",
+      "sortId": 9906,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, <@cc.kw>캐스터</>와 <@cc.kw>서포터</> 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+30%</>"
+    },
     "train_spd_doubleProf[110]": {
       "buffId": "train_spd_doubleProf[110]",
       "buffName": "드라코 혈통",
@@ -15807,6 +16093,18 @@
     "train_spd_reduceTime[000]": {
       "buffId": "train_spd_reduceTime[000]",
       "buffName": "정신 단련",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_reduceTime",
+      "sortId": 9901,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "훈련실에 배치 시, 오퍼레이터의 훈련 협조 시간이 <@cc.vup>5</>시간에 도달한 경우, 해당 오퍼레이터의 다음 훈련 시간이 <@cc.vup>-50%</> (어느 쪽이든 훈련실을 이탈하면 효과가 사라짐)"
+    },
+    "train_spd_reduceTime[001]": {
+      "buffId": "train_spd_reduceTime[001]",
+      "buffName": "언어의 의미",
       "buffIcon": "training",
       "skillIcon": "bskill_train_reduceTime",
       "sortId": 9901,
@@ -66979,6 +67277,533 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_Airship_pillar_01": {
+        "id": "furni_Airship_pillar_01",
+        "sortId": 1571,
+        "name": "선내 기둥",
+        "iconId": "furni_Airship_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 265,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "거대하고 튼튼한 기둥. 위에는 실질적인 기능이 없는 무거운 스위치가 설치되어 있다.\n지나가는 사람이라면 누구나 스위치를 누르고 싶다는 충동을 느끼지. 왜냐고? 스위치가 있으니까.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_decklocker_01": {
+        "id": "furni_Airship_decklocker_01",
+        "sortId": 1572,
+        "name": "강철 선반",
+        "iconId": "furni_Airship_decklocker_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 3,
+        "depth": 3,
+        "height": 4,
+        "comfort": 215,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "강철판을 잘라 만든 작은 선반. 잡동사니를 올려놓는 데 사용된다.\n'땜장이', '병사', '선원' 등, 놓여 있는 잡동사니의 위치마다 자신만의 이름이 있었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_catalogstand_01": {
+        "id": "furni_Airship_catalogstand_01",
+        "sortId": 1573,
+        "name": "선내 작업대",
+        "iconId": "furni_Airship_catalogstand_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 4,
+        "depth": 4,
+        "height": 10,
+        "comfort": 335,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "견고한 작업대. 아래에는 고대 살카즈어로 쓰인 양장본과 자료 도면이 잔뜩 놓여있다.\n로고스 씨는 언제나 이곳에 와서 조용히 연구를 하곤 했어. 한 번은 로고스 씨가 갑자기 웃음을 터뜨렸고, 다들 로고스 씨가 읽고 있던 게 《썰렁한 농담과 언어유희》였단 걸 로고스 씨 본인을 통해 알게 됐지.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_telescope_01": {
+        "id": "furni_Airship_telescope_01",
+        "sortId": 1574,
+        "name": "쌍안경",
+        "iconId": "furni_Airship_telescope_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 3,
+        "depth": 6,
+        "height": 5,
+        "comfort": 275,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "거대한 망원경. 먼 곳까지 볼 수 있다.\n“높은 곳에서 먼 곳을 바라보니 정말 멋진 풍경이 보이는군. 좀 더 높은 곳에 서게 된다면 눈앞에 어떤 풍경이 펼쳐질까?”",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_ceilingtrumpet_01": {
+        "id": "furni_Airship_ceilingtrumpet_01",
+        "sortId": 1575,
+        "name": "스피커",
+        "iconId": "furni_Airship_ceilingtrumpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_1",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 60,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "방송과 음악을 수신해 재생하는 장치, 조잡해 보이지만 음질은 뛰어나다.\n오퍼레이터들의 반복적인 청취로 PhonoR-0이 부르는 자장가는 해당 장치의 히트곡이 되었다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_chair_01": {
+        "id": "furni_Airship_chair_01",
+        "sortId": 1576,
+        "name": "1인용 철제 의자",
+        "iconId": "furni_Airship_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 115,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "무겁고 튼튼한 의자, 선실이 흔들려도 움직이지 않는다.\n과거 의자는 원한과 분노에 둘러싸였으나, 지금 의자는 사랑과 희망을 보고 있다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_bench_01": {
+        "id": "furni_Airship_bench_01",
+        "sortId": 1577,
+        "name": "강철 벤치",
+        "iconId": "furni_Airship_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "BENCH",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 2,
+        "depth": 7,
+        "height": 5,
+        "comfort": 250,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "튼튼한 의자. 근 200년 동안의 왕정 스타일로 만들어졌다.\n오퍼레이터들은 테레시아의 손으로 짜인 천을 이곳에 두어 차갑고 단조로운 의자에 산뜻한 색을 덧입혔다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_ceilinglamp_01": {
+        "id": "furni_Airship_ceilinglamp_01",
+        "sortId": 1578,
+        "name": "'그늘 속의 빛'",
+        "iconId": "furni_Airship_ceilinglamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 11,
+        "depth": 6,
+        "height": 3,
+        "comfort": 255,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "특이한 모양의 등 아래에 강렬한 빛을 내뿜는 램프가 설치되어 있다.\n레버넌트의 그림자 아래, 비행정 승무원들은 이 빛에 의지해 자신을 현실 세계에 고정시킨다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_controldesk_01": {
+        "id": "furni_Airship_controldesk_01",
+        "sortId": 1579,
+        "name": "장치 제어기",
+        "iconId": "furni_Airship_controldesk_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 4,
+        "depth": 7,
+        "height": 7,
+        "comfort": 400,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "각종 복잡한 계기판과 제어 버튼이 있는 작업대. 비행정 승무원들이 비행 조종을 제외한 다른 기능을 빠르게 제어할 수 있다고 한다.\n“그러니까, 너희가 말하는 그 PRTS라는 게 사실은 내가 모르는 일종의 레버넌트라는 건가?” 오퍼레이터들이 레버넌트에게 어째서 이 제어기로 로도스 아일랜드를 조종할 수는 없는지에 대해 설명하자, 레버넌트는 이렇게 물었다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_faxmachine_01": {
+        "id": "furni_Airship_faxmachine_01",
+        "sortId": 1580,
+        "name": "보안 통신기",
+        "iconId": "furni_Airship_faxmachine_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_2",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 265,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "암호문을 전달하는 기계. 타자기로도 사용할 수 있다.\n외드레르가 자신에게 건네준 연설문 초고를 외우기 위해 위셔델은 머리를 쥐어짰고, 통신기 옆의 공책을 다른 사람은 알아볼 수 없는 발음 기호로 가득 채웠다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_table_01": {
+        "id": "furni_Airship_table_01",
+        "sortId": 1581,
+        "name": "작은 강철 선반",
+        "iconId": "furni_Airship_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "철로 만든 작은 탁자. 살카즈 스타일은 보는 이로 하여금 극도의 '침략감'을 느끼게 한다.\n누군가 모서리에 부딪히면 큰일이 날 듯했기에, 아미야는 탁자를 개조하자고 제안했다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_partitionwall_01": {
+        "id": "furni_Airship_partitionwall_01",
+        "sortId": 1582,
+        "name": "일체형 강철 칸막이",
+        "iconId": "furni_Airship_partitionwall_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 1,
+        "depth": 5,
+        "height": 10,
+        "comfort": 220,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "살카즈 왕정 스타일 문양으로 장식된 두터운 강철판. 정 가운데에 시계가 박혀있다.\n대부분의 소리를 효과적으로 차단할 수 있지만, PhonoR-0의 노랫소리는 막을 수 없다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_bunkbed_01": {
+        "id": "furni_Airship_bunkbed_01",
+        "sortId": 1583,
+        "name": "강철 2층 침대",
+        "iconId": "furni_Airship_bunkbed_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 8,
+        "depth": 4,
+        "height": 9,
+        "comfort": 510,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "벽에 매달린 이층 침대. 클래식한 밀리터리 스타일.\n살카즈 승무원은 낮잠을 잘 필요가 없기에 침대에 커튼 봉을 달 필요가 없다. 이 가구는 원래 모습을 고스란히 유지하고 있으며, 햇빛을 가리고 싶은 오퍼레이터는 방법을 찾아야 한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_partitiondesk_01": {
+        "id": "furni_Airship_partitiondesk_01",
+        "sortId": 1584,
+        "name": "강철 책상 칸막이",
+        "iconId": "furni_Airship_partitiondesk_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 3,
+        "depth": 2,
+        "height": 10,
+        "comfort": 210,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "철제 칸막이는 복도와 침대 사이의 공간을 나누기에 충분하다.\n비행선은 전쟁을 위해 만들어진 것이라고 하지만, 당시 설계사들은 승무원을 위한 개인 공간 또한 조금 남겨두었다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_carpet_01": {
+        "id": "furni_Airship_carpet_01",
+        "sortId": 1585,
+        "name": "'영혼의 투영'",
+        "iconId": "furni_Airship_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_4",
+        "width": 5,
+        "depth": 2,
+        "height": 1,
+        "comfort": 35,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정교하고 아름다운 카펫. 레버넌트에서 디자인을 따왔다.\n카펫을 밟으면 주위 공간이 조금 '출렁'이는 것을 느낄 수 있을지도.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_wallpaper_01": {
+        "id": "furni_Airship_wallpaper_01",
+        "sortId": 1586,
+        "name": "파노라마 디스플레이 (하늘)",
+        "iconId": "furni_Airship_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "하늘의 풍경을 보여주는 파노라마 디스플레이. 바라보는 사람에게 자신이 구름 위에 있다는 느낌을 들게 한다.\n주의: 고소 공포증이 있는 오퍼레이터는 해당 디스플레이를 멀리하시길 바랍니다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_Airship_floor_01": {
+        "id": "furni_Airship_floor_01",
+        "sortId": 1587,
+        "name": "제식 금속 바닥",
+        "iconId": "furni_Airship_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_Airship",
+        "groupId": "furni_set_Airship_3",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "견고한 철제 바닥. 밟으면 상당한 안정감을 느낄 수 있다.\n미끄럼 방지 문양은 마찰력을 극대화시켜 선체가 흔들릴 때에도 승무원이 안정감을 유지할 수 있게 도와준다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -72280,6 +73105,68 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_terratimes_Babel_01": {
+        "id": "furni_terratimes_Babel_01",
+        "sortId": 11085,
+        "name": "플레이트 《이상》",
+        "iconId": "furni_terratimes_Babel_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "폐허에 영양을 공급한다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_terracommericials_WrankwoodFilmFestival_01": {
+        "id": "furni_terracommericials_WrankwoodFilmFestival_01",
+        "sortId": 11086,
+        "name": "플레이트 《빛나는 그림자》",
+        "iconId": "furni_terracommericials_WrankwoodFilmFestival_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "사진과 녹음을 남기고, 오랜 세월을 유유히 거닌다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -74783,6 +75670,37 @@
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "비자연적으로 생성된 관상용 오리지늄 얼음 결정으로, 매우 차갑지만 손으로 만지지 못할 정도는 아니다.\n겨울에 내린 눈꽃이 친구에게 주는 선물. 언젠간 사라지겠지만, 그게 지금은 아니다.",
         "obtainApproach": "특전에서 획득",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_act50d0_hourGlass_01": {
+        "id": "furni_act50d0_hourGlass_01",
+        "sortId": 20004,
+        "name": "모래시계",
+        "iconId": "furni_act50d0_hourGlass_01",
+        "interactType": "ANIMATOR",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 8,
+        "depth": 9,
+        "height": 8,
+        "comfort": 300,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "특별 제작된 장식용 모래시계. 넘실거리며 흘러가는 것은 서로 의지해온 과거이고, 별처럼 반짝이는 것은 아름다운 추억의 소중함이다.",
+        "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
         "processedByProductPercentage": 0,
@@ -88342,6 +89260,142 @@
           "furni_ScarMarket_wallpaper_01",
           "furni_ScarMarket_floor_01"
         ]
+      },
+      "furni_set_Airship": {
+        "id": "furni_set_Airship",
+        "sortId": 91,
+        "name": "비행선 스타일 숙소",
+        "themeType": "EVENT",
+        "desc": "테레시아가 남긴 자료를 토대로 복원시킨 비행선 내부의 모습. 숙소의 요구에 맞게 개조했다. 살카즈의 차가운 전쟁 병기는 이곳에서 따스함을 선사한다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_Airship_pillar_01",
+            "pos0": 5,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_decklocker_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_catalogstand_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_telescope_01",
+            "pos0": 11,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_ceilingtrumpet_01",
+            "pos0": 10,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_chair_01",
+            "pos0": 19,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_bench_01",
+            "pos0": 14,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_ceilinglamp_01",
+            "pos0": 13,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_controldesk_01",
+            "pos0": 21,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_faxmachine_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_table_01",
+            "pos0": 22,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_partitionwall_01",
+            "pos0": 25,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_bunkbed_01",
+            "pos0": 26,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_partitiondesk_01",
+            "pos0": 31,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_carpet_01",
+            "pos0": 26,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_Airship_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_Airship_1",
+          "furni_set_Airship_2",
+          "furni_set_Airship_3",
+          "furni_set_Airship_4"
+        ],
+        "furnitures": [
+          "furni_Airship_pillar_01",
+          "furni_Airship_decklocker_01",
+          "furni_Airship_catalogstand_01",
+          "furni_Airship_telescope_01",
+          "furni_Airship_ceilingtrumpet_01",
+          "furni_Airship_chair_01",
+          "furni_Airship_bench_01",
+          "furni_Airship_ceilinglamp_01",
+          "furni_Airship_controldesk_01",
+          "furni_Airship_faxmachine_01",
+          "furni_Airship_table_01",
+          "furni_Airship_partitionwall_01",
+          "furni_Airship_bunkbed_01",
+          "furni_Airship_partitiondesk_01",
+          "furni_Airship_carpet_01",
+          "furni_Airship_wallpaper_01",
+          "furni_Airship_floor_01"
+        ]
       }
     },
     "groups": {
@@ -93554,6 +94608,63 @@
           "furni_ScarMarket_ironcabinet_01",
           "furni_ScarMarket_shoerack_01",
           "furni_ScarMarket_carpet_01"
+        ]
+      },
+      "furni_set_Airship_1": {
+        "id": "furni_set_Airship_1",
+        "sortId": 1,
+        "name": "승무원 업무 구역",
+        "themeId": "furni_set_Airship",
+        "comfort": 210,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_pillar_01",
+          "furni_Airship_decklocker_01",
+          "furni_Airship_catalogstand_01",
+          "furni_Airship_ceilingtrumpet_01"
+        ]
+      },
+      "furni_set_Airship_2": {
+        "id": "furni_set_Airship_2",
+        "sortId": 2,
+        "name": "관찰 경보 구역",
+        "themeId": "furni_set_Airship",
+        "comfort": 220,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_telescope_01",
+          "furni_Airship_chair_01",
+          "furni_Airship_bench_01",
+          "furni_Airship_faxmachine_01"
+        ]
+      },
+      "furni_set_Airship_3": {
+        "id": "furni_set_Airship_3",
+        "sortId": 3,
+        "name": "작전 준비 구역",
+        "themeId": "furni_set_Airship",
+        "comfort": 275,
+        "count": 5,
+        "furniture": [
+          "furni_Airship_ceilinglamp_01",
+          "furni_Airship_controldesk_01",
+          "furni_Airship_table_01",
+          "furni_Airship_wallpaper_01",
+          "furni_Airship_floor_01"
+        ]
+      },
+      "furni_set_Airship_4": {
+        "id": "furni_set_Airship_4",
+        "sortId": 4,
+        "name": "생활 휴식 구역",
+        "themeId": "furni_set_Airship",
+        "comfort": 245,
+        "count": 4,
+        "furniture": [
+          "furni_Airship_partitionwall_01",
+          "furni_Airship_bunkbed_01",
+          "furni_Airship_partitiondesk_01",
+          "furni_Airship_carpet_01"
         ]
       }
     },
