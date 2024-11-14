@@ -1,0 +1,33 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+これが【競技用格納式高台】ですね。メンテナンスすれば高台として利用できるはず。
+[Tutorial(dialogHead="$avatar_stward")]これも他と同じように、展開するまでに三回のメンテナンスが必要なんだ。
+[Tutorial(dialogHead="$avatar_stward")]そうそう、格納式高台はオペレーターを配置できるだけでなく、敵の進行ルートを遮ることもできるからね。
+[CooperateBattle.CameraFocusTo(offsetX=11, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ではあの施設は……
+[Tutorial(dialogHead="$avatar_stward")]【競技用格納式防壁】だね。一回のメンテナンスで展開できるよ。
+[Tutorial(dialogHead="$avatar_stward")]メンテナンスすると【競技用防壁】が展開されて、敵の進行を妨害してくれるんだ。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1.5)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]ちなみに、ドクターと協力者はどちらも整備員を配置することができるよ。
+[Tutorial(dialogHead="$avatar_stward")]さっき展開した整備車が整備士を連れてきてくれたみたいだ。残りのメンテナンスはドクターに任せたよ！
+[Tutorial(dialogHead="$avatar_adnach")]休憩フェーズの主な任務は装置をメンテナンスすることですので、このタイミングでオペレーターを配置することはできません。
+[Tutorial(dialogHead="$avatar_adnach")]次のWAVEに入ったら、オレたち遠距離オペレーターも展開済みの高台に上って防衛しますね。
+[CooperateBattle.CameraFocusTo(offsetX=10, offsetY=4, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

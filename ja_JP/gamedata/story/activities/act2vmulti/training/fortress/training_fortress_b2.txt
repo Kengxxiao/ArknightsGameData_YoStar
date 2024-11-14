@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b2
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=1.2, time=1.5)]
+[Battle.Delay(time=4)]
+[Battle.pause]
+[Tutorial(dialogHead="$avatar_melan")]新たなWAVEが始まりました……みなさん、気をつけて！
+[Tutorial(dialogHead="$avatar_stward")]いよいよ展開した装置たちの出番だね！
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=0.6, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=160, focusY=120, focusWidth=240, focusHeight=240, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+あれ、あの二人はどうして直接支援所を狙ってるんでしょうか？
+[Tutorial(dialogHead="$avatar_stward")]石頭ランニングバックと豪腕ピッチャーは、僕らの装置を破壊してくるんだ。
+[Tutorial(dialogHead="$avatar_stward")]どうやら、下にある支援所しか目に入っていないみたいだね。
+[Tutorial(dialogHead="$avatar_melan")]今後の試合では、奴らの動きにも注意したほうが良さそうですね。
+[CooperateBattle.CameraFocusTo(offsetX=8, offsetY=4, scale=1, time=1.5)]
+[Delay(time=1)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

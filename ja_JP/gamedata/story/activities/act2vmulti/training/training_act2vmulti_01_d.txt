@@ -1,0 +1,19 @@
+[HEADER(is_tutorial=true, is_skippable=false)]  联机教学关1d
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[Tutorial(target="slider_progress_basic",\
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+試合の勝敗は、ステージに設けられた目標を達成したかどうかで決まるため、必ずしも全ての敵を倒す必要はありません。
+[Tutorial(focusX=350, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ステージ1をクリアすると、私たちの耐久値はどちらも回復します。これでまたドクターと一緒に戦えます！
+[Battle.Pause(pause=false)]
+[Delay(time=7)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=-30, focusY=190, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+また、このタイミングで<@tu.kw>補給員</>が出現します。
+[PopupDialog(dialogHead="$avatar_amiya")]制限時間内に<@tu.kw>補給員を倒せば</>、物資を獲得して<@tu.kw>強化効果</>を得ることができますよ。
