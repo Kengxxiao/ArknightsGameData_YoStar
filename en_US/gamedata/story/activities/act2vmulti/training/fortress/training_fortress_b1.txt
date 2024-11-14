@@ -1,0 +1,33 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+This is a Foldable Bastion that can be built into a Bastion Platform.
+[Tutorial(dialogHead="$avatar_stward")]It also needs three work shifts to be completed.
+[Tutorial(dialogHead="$avatar_stward")]Right, you can deploy high ground operators on Bastion Platforms, and they can also alter the enemy's path.
+[CooperateBattle.CameraFocusTo(offsetX=11, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+That facility in front...
+[Tutorial(dialogHead="$avatar_stward")]That's a Foldable Defensive Barricade. It only needs one work shift to be activated.
+[Tutorial(dialogHead="$avatar_stward")]Once complete, it will turn into a Defensive Barricade that can obstruct the enemy's advance.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1.5)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]You and your partner can activate Facilities together.
+[Tutorial(dialogHead="$avatar_stward")]The vehicle from earlier has brought us more maintainers, so we'll leave the rest of the Facilities to you, Doctor!
+[Tutorial(dialogHead="$avatar_adnach")]The Rest Phase is the prime time for activating Facilities. Operators do not need to go on the field during this time.
+[Tutorial(dialogHead="$avatar_adnach")]When the next wave begins, we can deploy onto activated platforms and prepare for our bastion defense.
+[CooperateBattle.CameraFocusTo(offsetX=10, offsetY=4, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b2
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=1.2, time=1.5)]
+[Battle.Delay(time=4)]
+[Battle.pause]
+[Tutorial(dialogHead="$avatar_melan")]Next wave incoming... Be careful, everyone!
+[Tutorial(dialogHead="$avatar_stward")]Our facilities are operational now!
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=0.6, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=160, focusY=120, focusWidth=240, focusHeight=240, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Wait, why are those two enemies heading straight for our Logistics Hub?
+[Tutorial(dialogHead="$avatar_stward")]Ironhead Forwards and Long-Armed Pitchers will destroy our constructed facilities.
+[Tutorial(dialogHead="$avatar_stward")]It seems like their attention is focused on our Hub.
+[Tutorial(dialogHead="$avatar_melan")]Make sure to keep an eye on their movements in subsequent Bastion Defenses.
+[CooperateBattle.CameraFocusTo(offsetX=8, offsetY=4, scale=1, time=1.5)]
+[Delay(time=1)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]
