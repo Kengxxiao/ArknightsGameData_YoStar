@@ -476,7 +476,7 @@
         "avatarId": "avatar_activity_RL3_2",
         "avatarType": "ACTIVITY",
         "avatarIdSort": 31,
-        "avatarIdDesc": "[탐험가의 은빛 서리 끝자락] 탐험 기록\n'영원'",
+        "avatarIdDesc": "[탐험가의 은빛 서리 끝자락] 탐험 기록\n'요원'",
         "avatarItemName": "'요원'",
         "avatarItemDesc": "느리고 긴 시간 속 시작과 끝이 이어지는 그때, 우리는 어디로 가야할 지 알게 된다.",
         "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
@@ -585,7 +585,7 @@
       {
         "avatarId": "avatar_activity_CR",
         "avatarType": "ACTIVITY",
-        "avatarIdSort": 42,
+        "avatarIdSort": 43,
         "avatarIdDesc": "시즈 출석 이벤트 획득\n'모든 게 한눈에'",
         "avatarItemName": "'모든 게 한눈에'",
         "avatarItemDesc": "관찰이 곧 힘이다.",
@@ -595,7 +595,7 @@
       {
         "avatarId": "avatar_activity_SN",
         "avatarType": "ACTIVITY",
-        "avatarIdSort": 43,
+        "avatarIdSort": 44,
         "avatarIdDesc": "[스툴티페라 나비스] 기록 복원\n'스툴티페라 나비스'",
         "avatarItemName": "'스툴티페라 나비스'",
         "avatarItemDesc": "다시금 불이 밝혀진 해안의 등대, 과거의 황금이 물속으로 가라앉는 것을 지켜본다.",
@@ -605,12 +605,22 @@
       {
         "avatarId": "avatar_activity_EP14",
         "avatarType": "ACTIVITY",
-        "avatarIdSort": 44,
+        "avatarIdSort": 45,
         "avatarIdDesc": "메인 스토리 《자비의 등대》\n'숨겨진 생명선'",
         "avatarItemName": "'숨겨진 생명선'",
         "avatarItemDesc": "황야를 달리며 생명과 희망의 씨앗을 흩뿌린다.",
         "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
         "obtainApproach": "'비밀 전선' 획득"
+      },
+      {
+        "avatarId": "avatar_activity_LE",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 46,
+        "avatarIdDesc": "[링거링 에코스] 기록 복원\n'링거링 에코스'",
+        "avatarItemName": "'링거링 에코스'",
+        "avatarItemDesc": "석양은 눈이 부시지만, 운명 앞에서 고개를 숙일 사람은 없다.",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "기록 복원 획득"
       },
       {
         "avatarId": "avatar_def_01",
@@ -667,7 +677,7 @@
         "avatarType": "DEFAULT",
         "avatarIdSort": 6,
         "avatarIdDesc": "디폴트 프로필 \n'3min'",
-        "avatarItemName": "“3min”",
+        "avatarItemName": "'3min'",
         "avatarItemDesc": "\\",
         "avatarItemUsage": "\\",
         "obtainApproach": "디폴트 프로필"
@@ -677,7 +687,7 @@
         "avatarType": "DEFAULT",
         "avatarIdSort": 7,
         "avatarIdDesc": "디폴트 프로필 \n'Good Game'",
-        "avatarItemName": "“Good Game”",
+        "avatarItemName": "'Good Game'",
         "avatarItemDesc": "\\",
         "avatarItemUsage": "\\",
         "obtainApproach": "디폴트 프로필"
@@ -687,7 +697,7 @@
         "avatarType": "DEFAULT",
         "avatarIdSort": 8,
         "avatarIdDesc": "디폴트 프로필 \n'PRTS'",
-        "avatarItemName": "“PRTS”",
+        "avatarItemName": "'PRTS'",
         "avatarItemDesc": "\\",
         "avatarItemUsage": "\\",
         "obtainApproach": "디폴트 프로필"
@@ -757,7 +767,7 @@
         "avatarType": "DEFAULT",
         "avatarIdSort": 15,
         "avatarIdDesc": "디폴트 프로필 \n'WARNING'",
-        "avatarItemName": "“WARNING”",
+        "avatarItemName": "'WARNING'",
         "avatarItemDesc": "\\",
         "avatarItemUsage": "\\",
         "obtainApproach": "디폴트 프로필"
@@ -840,7 +850,8 @@
           "avatar_activity_XB1_1",
           "avatar_activity_CR",
           "avatar_activity_SN",
-          "avatar_activity_EP14"
+          "avatar_activity_EP14",
+          "avatar_activity_LE"
         ]
       },
       "DEFAULT": {
@@ -1213,6 +1224,10 @@
       "module_avatar": {
         "id": "module_avatar",
         "type": "AVATAR"
+      },
+      "module_avatar_simple": {
+        "id": "module_avatar_simple",
+        "type": "AVATAR_SIMPLE"
       }
     },
     "removableModuleData": {
@@ -1251,6 +1266,10 @@
         "name": "기본 테마",
         "type": "MAINLINE",
         "sortId": 1,
+        "isSpTheme": false,
+        "defaultShowDetail": true,
+        "themeName": "",
+        "themeEnName": "",
         "skinStartTime": 1725519600,
         "skinDesc": "앞뒤 모두 기나긴 여정인데, 당신은 과연 어디에서 자신의 사명을 찾을 것입니까?",
         "usageDesc": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
@@ -1261,7 +1280,8 @@
           "module_background",
           "module_illust",
           "module_collect",
-          "module_avatar"
+          "module_avatar",
+          "module_avatar_simple"
         ],
         "rarity": 4,
         "isTimeLimit": false,
@@ -1272,6 +1292,10 @@
         "name": "결의",
         "type": "MAINLINE",
         "sortId": 2,
+        "isSpTheme": false,
+        "defaultShowDetail": true,
+        "themeName": "",
+        "themeEnName": "",
         "skinStartTime": 1725519600,
         "skinDesc": "과거의 비밀은 여전히 베일에 싸여있지만, 당신은 이미 결심을 내렸습니다.",
         "usageDesc": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
@@ -1284,7 +1308,8 @@
           "module_background",
           "module_illust",
           "module_collect",
-          "module_avatar"
+          "module_avatar",
+          "module_avatar_simple"
         ],
         "rarity": 4,
         "isTimeLimit": false,
@@ -1295,6 +1320,10 @@
         "name": "MVP",
         "type": "ACTIVITY",
         "sortId": 3,
+        "isSpTheme": false,
+        "defaultShowDetail": true,
+        "themeName": "",
+        "themeEnName": "",
         "skinStartTime": 1731567600,
         "skinDesc": "동료와 함께 경기장을 누빈 덕분에 오랫동안 무거웠던 몸이 모처럼 가벼워졌습니다.",
         "usageDesc": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
@@ -1307,7 +1336,8 @@
           "module_background",
           "module_illust",
           "module_collect",
-          "module_avatar"
+          "module_avatar",
+          "module_avatar_simple"
         ],
         "rarity": 4,
         "isTimeLimit": true,
@@ -1324,6 +1354,10 @@
         "name": "험로",
         "type": "ACTIVITY",
         "sortId": 4,
+        "isSpTheme": false,
+        "defaultShowDetail": true,
+        "themeName": "",
+        "themeEnName": "",
         "skinStartTime": 1730401200,
         "skinDesc": "모래알이 흩날리기 시작했을 때부터, 당신은 이번 여정이 결코 순탄치 않을 것임을 알았습니다.",
         "usageDesc": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
@@ -1336,7 +1370,8 @@
           "module_background",
           "module_illust",
           "module_collect",
-          "module_avatar"
+          "module_avatar",
+          "module_avatar_simple"
         ],
         "rarity": 4,
         "isTimeLimit": false,
