@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 造成元素损伤c
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[PopupDialog(dialogHead="$avatar_threye")] 제가 장애물을 없애 드릴게요.
+[PopupDialog(dialogHead="$avatar_threye")] 저는 <@tu.kw>의식술사</>입니다. 적에게 원소 피해를 입힐 수 있어요.
+[Battle.EnsureMinSp(charId="char_4102_threye", sp=100)]
+[InputBlocker(blockInput=true, validX=100, validY=100, validWidth=85, validHeight=85)]
+[Tutorial(focusX=100, focusY=100, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center", \
+          protectTime=0.5, dialogHead="$avatar_threye")] 저들의 운명, 제가 이미 꿰뚫어 보았습니다.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_threye")] 
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_sys")] 오퍼레이터 발라크빈의 스킬은 <@tu.kw>쇠약 피해</>를 입힐 수 있습니다. 쇠약 피해가 폭발하면 적에게 <@tu.kw>지속해서 소량의 원소 피해를 입히고</>, 일시적으로 적에게 점차 감소하는 <@tu.kw>약화</>효과를 부여합니다.
+[PopupDialog(dialogHead="$avatar_sys")] 약화 상태의 적은 <@tu.kw>공격력이 감소</>합니다.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

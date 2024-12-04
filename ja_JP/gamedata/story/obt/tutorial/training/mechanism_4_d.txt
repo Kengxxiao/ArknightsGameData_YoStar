@@ -1,0 +1,26 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 异常状态与抗性d
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="char_346_aosta", sp=100)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[PopupDialog(dialogHead="$avatar_stward")] また来た！
+[PopupDialog(dialogHead="$avatar_stward")] でもテキサスさんはまだスキルが使えない、どうしたら……
+[PopupDialog(dialogHead="$avatar_stward")] このままだと逃してしまう！
+[PopupDialog(dialogHead="$avatar_aosta")] 僕に試させてください。
+[Battle.EnsureMinSp(charId="char_346_aosta", sp=100)]
+[InputBlocker(blockInput=true, tileX=6, tileY=2, validWidth=85, validHeight=85)]
+[Tutorial(tileX=6, tileY=2, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_aosta", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] ここは通させません。
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=283, focusY=-130, focusWidth=382, focusHeight=72, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_sys")] アオスタはバインドを付与することができ、バインドした敵は移動不能になります。
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_aosta")] 今です。一斉にかかりましょう。
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_stward")] わかった、合わせるね。
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]

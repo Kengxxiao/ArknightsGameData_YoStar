@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=false)] 2023愚人节教学关1_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.LockFunction(mask="BATTLE_STATUS")]
 [Battle.Pause]
 [Tutorial(protectTime=0.5, dialogHead="$avatar_cammou", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
@@ -31,6 +32,7 @@ Tap here to get ready to <@tu.kw>start shooting</>.
           protectTime=0.5, dialogHead="$avatar_cammou")] \
 Once your skill is ready, you can film <@tu.kw>passersby</> and use them as material to chat with your audience in future streams.
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

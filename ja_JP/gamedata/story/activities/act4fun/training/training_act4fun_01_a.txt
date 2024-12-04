@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=false)] 2023愚人节教学关1_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.LockFunction(mask="BATTLE_STATUS")]
 [Battle.Pause]
 [Tutorial(protectTime=0.5, dialogHead="$avatar_cammou", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
@@ -31,6 +32,7 @@
           protectTime=0.5, dialogHead="$avatar_cammou")] \
 スキルの準備が整ったら、この後の配信でリスナーとシェアできるネタとして、範囲内にいる<@tu.kw>通行人</>を写真に収めることができるよ。
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

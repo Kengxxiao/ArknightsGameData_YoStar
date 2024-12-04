@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_stward")] 障害物を回避するために、セルカーの進行方向を変える方法があるみたいだ。付属の説明書を見てみよう……
 [PopupDialog(dialogHead="$avatar_ardign")] スチュワードくん、そんなの簡単だよっ！　セルカーが<@tu.kw>味方ユニット上を通れば</>、<@tu.kw>配置した方向に沿って進む</>んだよっ！
@@ -11,6 +12,7 @@
           startX=315, startY=-70, endX=40, endY=-90)] \
 私を<@tu.kw>左方向に配置</>してねっ！
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=1)]
 [Battle.Pause(pause=true)]

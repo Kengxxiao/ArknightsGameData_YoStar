@@ -1,0 +1,680 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_desert_3",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[PlaySound(key="$d_avg_truckengine", volume=0, loop=true, channel="bgs")]
+[SoundVolume(channel="bgs", volume=0.7, fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[name="ヘレナ"]ふぅーー！
+[name="ヘレナ"]風が気持ちいわね！　こうやって思いっきり風を切って走ったのは久しぶりよ！
+[name="ヘレナ"]それにしてもジェシカ、こんなイカした車を持ってるのに、どうして普段は乗らないの？
+[name="ヘレナ"]今回、あなたの車に乗せてもらって大正解だったわ。開拓地事務所に着くまでの短いドライブっていうのが残念だけどね。そうだ、任務に向かう前に、まずあたしにこのまま野営地まで運転させてよ。
+[Dialog]
+[playsound(key="$d_avg_devicebeep")]
+[playsound(key="$d_avg_devicebeep",channel="a",delay=0.2)]
+[playsound(key="$d_avg_devicebeep",channel="b",delay=0.4)]
+[Delay(time=1)]
+[name="ヘレナ"]あら、赤いランプが光ったわ。ねぇ、ジェシカ、これってどういう――どうしたの？　顔が真っ青じゃない？
+[name="ジェシカ"]さ……
+[name="ヘレナ"]サードギア？　ダメよ、それでも遅すぎるわ。
+[name="ジェシカ"]ニ、一……
+[musicvolume(volume=0, fadetime=1)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=1)]
+[PlaySound(key="$d_avg_engingivup",volume=1)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_desert_3", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_smkedspte", volume=1)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_4104_coldst_1#2$1", duration=1)]
+[charslot(slot = "l", name = "avg_1034_jesca2_1#7$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "l", name = "avg_1034_jesca2_1#7$1", focus="l")]
+[name="ジェシカ"]……
+[name="ジェシカ"]ヘレナさん……
+[charslot(slot = "r", name = "avg_4104_coldst_1#2$1",focus="r")]
+[name="ヘレナ"]はいはい、わかってるわ。ほらそこ、壊れたのはトランスミッションね。
+[name="ヘレナ"]ジャンパを繋いで、レンチを何回か回せば直るわ。二分もかからないわよ。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#9$1", focus="l")]
+[name="ジェシカ"]はい……
+[charslot(slot = "r", name = "avg_4104_coldst_1#1$1",focus="r")]
+[name="ヘレナ"]もう、そう暗い顔をしないの。急ぎの任務があるのはわかるけど、あたしのおかげで時間を無駄にすることもなかったじゃない。
+[name="ヘレナ"]あなたが持ってたマニュアル通りの速度で運転してたら、今の半分も進めてなかったかもしれないわ。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#1$1", focus="l")]
+[name="ジェシカ"]安全マニュアルの指示速度は、道路状況や気候など様々な要因を元に算出されたものです……参考価値は十分にあります。
+[charslot(slot = "r", name = "avg_4104_coldst_1#1$1",focus="r")]
+[name="ヘレナ"]こんなにイカした車を、ハガネガニ以下のスピードで走らせるなんて、心が痛まないわけ？　それに、あたしが節約してあげた時間があれば、たっぷり十回は修理できるわよ。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#16$1", focus="l")]
+[name="ジェシカ"]えっ？　わたしが修理するんですか？
+[charslot(slot = "r", name = "avg_4104_coldst_1#1$1",focus="r")]
+[name="ヘレナ"]「他人の懐とボンネットの中身は探るべからず」――これが荒野のルールよ。
+[name="ヘレナ"]それに修理の技術なら、もう全部教えたはずでしょ？　保安官が他人に車を修理させてたなんて、そんな恥ずかしいことはないわよ。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#16$1", focus="l")]
+[name="ジェシカ"]でも、車が壊れたのは……
+[charslot(slot = "r", name = "avg_4104_coldst_1#1$1",focus="r")]
+[name="ヘレナ"]いいから、さっさとレンチを手に取って。時間がないんでしょ？　こんなとこ長居するもんじゃないわ。あとで事務所の手前にある酒場についたら、最高のお酒を奢ってあげるから。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#1$1", focus="l")]
+[name="ジェシカ"]いえ、お気持ちだけ受け取っておきます。この後任務があるので、お酒は飲めません。
+[charslot(slot = "r", name = "avg_4104_coldst_1#1$1",focus="r")]
+[name="ヘレナ"]何を心配してるのかはわかってるわ。あそこのお酒はうちの野営地の手作り酒よりずっと上等だから、この前みたいにひと舐めで酔ったりしないわよ。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#15$1", focus="l")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ジェシカ"]そ、そこまで弱くありません！
+[charslot(slot = "l", name = "avg_1034_jesca2_1#3$1", focus="l")]
+[name="ジェシカ"]ああ、パーツがすっかり緩んじゃってます。やっぱり、さっきのスピードが原因で……
+[charslot(slot = "r", name = "avg_4104_coldst_1#11$1",focus="r")]
+[name="ヘレナ"]その言い方、あたしがスピードを出しすぎたせいだとでも言いたげね？　じゃあ、後でもっと速く走れるか試してみる？
+[charslot(slot = "l", name = "avg_1034_jesca2_1#15$1", focus="l")]
+[name="ジェシカ"]あはは……ヘレナさんは、とりあえず座って休んでてください。トランクから部品を取ってきますね。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="l",name="avg_1034_jesca2_1#15$1",afrom=1,ato=0,duration=0.7)]
+[Delay(time=1.5)]
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]そうそう、その調子よ！　保安官なら、車くらい自分で修理できなくっちゃ。
+[Dialog]
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="n")]
+[PlaySound(key="$d_avg_dropspanner",volume=0.6,delay=0.4)]
+[PlaySound(key="$d_avg_metalcollar", volume=0.6,delay=0.5)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#8$1",focus="m")]
+[name="ヘレナ"]嘘でしょジェシカ！　トランクパンパンに部品を詰め込んでたなんて！？　どうりでさっき運転してる時に、車の重心に違和感があったはずだわ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#8$1",focus="n")]
+[name="ジェシカ"]ですが、これはすべてマニュアルに書かれていた予備部品です。これでも、タイヤ交換用の道具をいくつか減らしたんですよ。あとでパンクしなければいいのですが……
+[charslot(slot = "m", name = "avg_4104_coldst_1#11$1",focus="m")]
+[multiline(name="ヘレナ")]……なんだかウッディにバッジをもらってからのあなた、どんどん堅物になってきてるわね。
+[charslot(slot = "m", name = "avg_4104_coldst_1#2$1",focus="m")]
+[multiline(name="ヘレナ")]まあ、好きにやりなさい。あたしは日陰でのんびり景色を眺めながら涼んでるから、修理が終わったら声をかけて。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(duration=0.7)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="遠くから響く声"]♪彼女は十輪の夕陽を引き連れ、荒野の中心へと駆け出す♪
+[name="遠くから響く声"]♪風を振り払い、影すらも置き去りにして♪
+[name="遠くから響く声"]♪彼女は決して止まらない、決して帰らない♪
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_laccolith", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,duration=0.7)]
+[charslot(slot="r",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="l")]
+[name="顔に傷跡のある開拓者"]エンジンを止めろ。
+[charslot(slot="r",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="r")]
+[name="慌てる開拓者"]この歌声、あの女ですか？　もう何年も経つのに、まさかまたここに姿を見せるなんて。
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="l")]
+[name="顔に傷跡のある開拓者"]黙ってろ！　今確かめてんだ。
+[Dialog]
+[PlaySound(key="$d_avg_wind", volume=1)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="l")]
+[name="顔に傷跡のある開拓者"]ああ、あの女で間違いねぇ。
+[Dialog]
+[PlaySound(key="$d_avg_attack_ready",volume=0.8)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="l")]
+[name="顔に傷跡のある開拓者"]お前ら、騒ぐな！　あの時のことをもう忘れたのか？
+[name="顔に傷跡のある開拓者"]お前、その望遠鏡をきれいに拭いて、奴が隠れてる場所を探せ。
+[charslot(slot="r",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="r")]
+[name="慌てる開拓者"]いましたぜ、下の曲がり角のとこです。車の下にもう一人隠れてるみたいです……車が壊れたのか？
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="l")]
+[name="顔に傷跡のある開拓者"]仕掛けるんだったら、まず下の奴からだな。
+[charslot(slot="r",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="r")]
+[name="慌てる開拓者"]で、これからどうします？　このまま待つんですかい？
+[charslot(slot="l",name="avg_npc_534_1#1$1",bstart=0.2,bend=0.7,focus="l")]
+[name="顔に傷跡のある開拓者"]ああ、だがナイフとクロスボウはしまうな。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_desert_3", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[name="ヘレナ"]♪彼女は決して止まらない、決して帰らない♪
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[multiline(name="ヘレナ")]はあ、歌いすぎて喉がカラカラだわ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#11$1",focus="m")]
+[multiline(name="ヘレナ")]ねえ、ジェシカ！　まだ直らないの？　もう日が暮れてきたわよ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#11$1",focus="n")]
+[name="ジェシカ"]あともう少しです。
+[charslot(slot = "m", name = "avg_4104_coldst_1#11$1",focus="m")]
+[name="ヘレナ"]ほんとに手伝わなくて平気？
+[charslot(slot = "m", name = "avg_4104_coldst_1#11$1",focus="n")]
+[name="ジェシカ"]はい、もうほとんど作業は終わりましたので。最後に溶接部分をもう少し補強すれば……
+[name="ジェシカ"]そうだ、ヘレナさん。次はわたしが運転をしてもいいですか？　安心してください、免許を取ってからずっと無事故無違反を守っているんです。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]ダメダメ！　あたし、ノロい車に乗ると酔っちゃうの。
+[name="ヘレナ"]それに、あたしは途中まで乗せてもらうだけで、別に一緒に任務に行くわけじゃないでしょ。事務所に着いたら、あとはあなたの好きに運転できるんだから。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="n")]
+[name="ジェシカ"]そうですか……あの、もう少し待ってくれませんか？　もう一回点検したい場所を思い出しまして……
+[charslot(slot = "m", name = "avg_4104_coldst_1#2$1",focus="m")]
+[name="ヘレナ"]もう、じれったいわね。前に野営地で見せた勢いは一体どこにいっちゃったの？
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]まあいいわ、ならもう少しこの美しい夕焼けを楽しませてもらうわね。この岩に登れば、もっとはっきり見えそうなのよ。
+[name="ヘレナ"]沈みゆく日に照らされた荒野の岩壁は、様々な色を見せてくれるの……ほんと何度見ても飽きないわ。
+[Dialog]
+[charslot(slot = "m", name = "avg_4104_coldst_1#2$1",focus="m")]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#8$1",focus="m")]
+[name="ヘレナ"]あら、あそこにいるのは……
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_1034_jesca2_1#4$1", duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1034_jesca2_1#4$1", focus="m")]
+[multiline(name="ジェシカ")]直りましたよ。これで先を急げ……
+[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1", focus="m")]
+[multiline(name="ジェシカ")]うわっ、ヘレナさん！？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_gunload", volume=1)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_gunshot", volume=0.9)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1", focus="m")]
+[name="ジェシカ"]どうしたんですか！？
+[charslot(slot = "m", name = "avg_4104_coldst_1#6$1",focus="m")]
+[name="ヘレナ"]薄汚い奴らが、匂いを嗅ぎつけてやってきたのよ。
+[name="ヘレナ"]フフッ、威嚇射撃をしても逃げる気はないようね。かと言って、崖の上に立ってこちらをコソコソ伺うことしかできない。ずいぶんな腰抜けさんたちねえ。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#12$1", focus="m")]
+[name="ジェシカ"]せ、戦闘準備ってことですか？　銃はシートの下に隠してるので、すぐに取ってきます。
+[charslot(slot = "m", name = "avg_4104_coldst_1#2$1",focus="m")]
+[name="ヘレナ"]待って、ジェシカ……その必要はないわ。
+[Dialog]
+[charslot]
+ヘレナは目を細め、沈みゆく真っ赤な夕陽、仄かに紫色帯びた崖下の影、そして袖口の汚れた少女へと順番に視線を移す。
+少女の瞳には微かに緊張の色が浮かんでいるものの、その奥底は彼女の胸元に留められたバッジと同じくらい、揺るぎない決意に輝いていた。
+[charslot(slot = "m", name = "avg_4104_coldst_1#2$1",focus="m")]
+[name="ヘレナ"]だってあなた、大切な任務があるのでしょう？　あんな虫けらたちに時間を費やす必要はないわ。
+[name="ヘレナ"]車はちゃんと直せた？
+[charslot(slot = "m", name = "avg_1034_jesca2_1#1$1", focus="m")]
+[name="ジェシカ"]はい、いつでも出発できます。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]なら、エンジンをかけなさい。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#1$1", focus="m")]
+[name="ジェシカ"]はい。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=0.5)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_4104_coldst_1#11$1",focus="r")]
+[charslot(slot = "l", name = "avg_1034_jesca2_1#1$1", focus="r")]
+[name="ヘレナ"]ちょっと、なに助手席に座ろうとしてるのよ。まさか、あたしにスコープを覗きながらハンドルを握らせようっていうの？　さっさとカギを持って反対側に行って。
+[charslot(slot = "l", name = "avg_1034_jesca2_1#16$1", focus="l")]
+[name="ジェシカ"]わたしが運転するんですか？　でも……
+[Dialog]
+[charslot(slot = "l", name = "avg_1034_jesca2_1#16$1", focus="all")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#1$1",duration=0.5)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#2$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#2$1",focus="l")]
+[name="ヘレナ"]今回はちゃんとスピード出しなさいよ、冗談抜きでね。
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot]
+[playsound(key="$d_avg_cardoorc",volume=1)]
+[PlaySound(key="$d_avg_cardoorc", volume=0.6, loop=false, channel="kk",delay=0.4)]
+[Delay(time=0.6)]
+[PlaySound(key="$sportscarstart", volume=0.4)]
+[Delay(time=1.5)]
+[PlayMusic(intro="$chasing_intro", key="$chasing_loop", volume=0.6)]
+[PlaySound(key="$d_avg_truckengine", volume=0, loop=true, channel="caro")]
+[SoundVolume(channel="caro", volume=0.7, fadetime=1)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11, fadetime=1.5)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11, fadetime=1.5)]
+[Delay(time=1.5)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="r")]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#12$1",focus="r")]
+[name="ジェシカ"]背後の崖から、車に乗った集団が駆け下りてきました！　あの車も……改造済みのようですね。
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]どれどれ……ああ、大したことないわ。この車よりずっとダサいから、安心しなさい。
+[name="ヘレナ"]それに、あいつらの運転技術も改造のセンスと同じくらい冴えないわ。あんな緩やかな坂でブレーキを踏むなんてね。あなたは運転に集中すればいいわ。狙撃はこっちに任せて。
+[charslot(slot = "r", name = "avg_1034_jesca2_1#16$1",focus="r")]
+[name="ジェシカ"]あの人たちのこと……知ってるんですか？
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]色んな人から恨まれてるから、誰なのかは思い出せないけど、誰でもどうせ似たようなものよ。大体向こうが先にケンカを売ってきてたわ。
+[Dialog]
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="n")]
+[playsound(key="$d_avg_arrowshot")]
+[playsound(key="$d_avg_arrowshot",delay=0.3,channel="a")]
+[Delay(time=0.6)]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing1",delay=0.2,channel="a1",volume=0.8,block=true)]
+[PlaySound(key="$d_avg_axehitscrape",delay=0.6,channel="a2",volume=0.8,block=true)]
+[PlaySound(key="$swordtsing2",delay=0.8,channel="a3",volume=0.8,block=true)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="l")]
+[name="ヘレナ"]頭を下げて！
+[Dialog]
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="n")]
+[PlaySound(key="$d_avg_arrow_rain", volume=1)]
+[Delay(time=1)]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing1",delay=0.2,channel="c1",volume=0.8,block=true)]
+[PlaySound(key="$d_avg_axehitscrape",delay=0.6,channel="c2",volume=0.8,block=true)]
+[PlaySound(key="$swordtsing2",delay=0.8,channel="c3",volume=0.8,block=true)]
+[PlaySound(key="$d_avg_axehitscrape",delay=1,channel="c4",volume=1,block=true)]
+[PlaySound(key="$swordtsing1",channel="c5",volume=1,block=true)]
+[PlaySound(key="$d_avg_axehitscrape",delay=0.4,channel="c6",volume=0.6,block=true)]
+[delay(time=2.5)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]ちゃんとスピードを出しなさいって言ったでしょ！　何をチンタラ走ってるの！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#12$1",focus="r")]
+[name="ジェシカ"]リミッターを取りつけたんです！
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="l")]
+[name="ヘレナ"]なんですって？
+[charslot(slot = "r", name = "avg_1034_jesca2_1#12$1",focus="r")]
+[name="ジェシカ"]その……ヘレナさんがまた無茶な運転をするんじゃないかって思って、スピードリミッターを取りつけたんです！　だからマニュアルに書いてある以上のスピードは出せません！
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]……
+[Dialog]
+[charslot(duration=0.3)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=0.15, block=false)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_gunshot")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=0.15, block=false)]
+[CameraShake(duration=0.4, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_gunshot",channel="2")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=0.15, block=false)]
+[CameraShake(duration=0.4, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_gunshot",channel="3")]
+[delay(time=0.5)]
+ヘレナは窓から勢いよく身を乗り出し、ネイル砲を後方の立ち込める土ぼこりに向けた。獰猛なトゲのついた車の輪郭が、その中から浮かび上がってきたかと思うと、ヘレナの手元から轟音が響く。
+一発、また一発と致命的な攻撃が、舞い上がる土埃の向こうに消えていった。弾薬が切れ、爆発音が風に吹き飛ばされる頃には、追撃者の姿もずいぶんと減っていた。
+[Dialog]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#3$1",focus="all")]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#3$1",focus="r")]
+[name="ジェシカ"]あの人たちは……
+[charslot(slot = "l", name = "avg_4104_coldst_1#2$1",focus="l")]
+[name="ヘレナ"]あいつらは一度獲物に食らいついたらそう簡単には放さないわ。マニュアルだの上限だの言ってないで、アクセルをしっかり踏み込んで、限界までスピードを出しなさい！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#3$1",focus="r")]
+[multiline(name="ジェシカ")]は、はい！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#11$1",focus="r")]
+[multiline(name="ジェシカ")]でも……これはどう考えても危険運転ですからね！
+[Dialog]
+[PlaySound(key="$d_avg_kneelsnow_s", volume=1)]
+[delay(time=0.7)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="l")]
+[name="ヘレナ"]こんな時に、まだギアなんかをチェンジしてるの？
+[charslot(slot = "r", name = "avg_1034_jesca2_1#12$1",focus="r")]
+[name="ジェシカ"]大変です！　あの人たち、また追いついてきましたよ。今のスピードじゃ……ど、どうしましょう？
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="l")]
+[name="ヘレナ"]トランクを開けなさい！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#16$1",focus="r")]
+[name="ジェシカ"]えっ？
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="l")]
+[name="ヘレナ"]今も後ろでジャラジャラ鳴ってる、無駄に重い部品よ！
+[name="ヘレナ"]トランクを開けて、全部捨てちゃいなさい！
+[name="ヘレナ"]はやく……あたしを信じて！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_hitwheel", volume=0.7)]
+[PlaySound(key="$gavel2", volume=1,delay=0.4)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_collapse", volume=0.7, loop=false, channel="car")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+トランクの蓋が弾けるようにして開き、巨大な合金製の工具箱が勢いよく地面に叩きつけられ、跳ね上がり、転がりながら土埃の中へと消えていった。
+歪んだ留め具は、もはやその機能を失い、ネジやらドリルやらレンチやらが、我先にと工具箱から踊り出し、怒りの嵐となって相手の車に襲い掛かった。
+ほどなくして、金属と金属がぶつかり合う音、タイヤが砂利に擦れる音、そして慌てふためく叫び声と罵声が響いてきた。
+[Dialog]
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="r")]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#3$1",focus="r")]
+[name="ジェシカ"]効果てきめんみたいです！
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]まだよ。捨てられるものを全部、あいつらのフロントガラスにぶつけてやらなくっちゃ！　あたしに任せて！
+[name="ヘレナ"]この箱の中身は何？
+[charslot(slot = "r", name = "avg_1034_jesca2_1#16$1",focus="r")]
+[name="ジェシカ"]ロドスの後方支援部で印刷した安全運転のマニュアルです。持って帰ろうと……
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]あのマニュアルって、自分でわざわざ印刷したものだったの！？　しかもひと箱も！　全部捨てるわよ！
+[name="ヘレナ"]あとはこの盾……
+[charslot(slot = "r", name = "avg_1034_jesca2_1#12$1",focus="r")]
+[name="ジェシカ"]それは捨てちゃダメです！
+[charslot(slot = "l", name = "avg_4104_coldst_1#6$1",focus="l")]
+[name="ヘレナ"]わかってるわよ！　あとはこのシートも……
+[name="ヘレナ"]チッ、後ろのシートは全部ネジでがっちり留められてるわ。レンチを貸して！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#11$1",focus="r")]
+[name="ジェシカ"]レンチは……さっきので全部捨ててしまいました！　もう余っていません！
+[name="ジェシカ"]でも、こうすれば！
+[Dialog]
+[charslot]
+ジェシカは片手でハンドルをしっかりと握りしめ、もう片方の手で銃を抜くと、後部座席に振り返り、太いネジに狙いを定めて引き金を引いた。
+[Dialog]
+[PlaySound(key="$pistol", volume=0.6)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+バンッ――車台に穴が空いた瞬間に、ネジとシートが外へ投げ出される。
+[Dialog]
+[charslot(slot = "l", name = "avg_4104_coldst_1#5$1",focus="l")]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#9$1",focus="l")]
+[name="ヘレナ"]次は声をかけてから撃ってよね。鼓膜が破れるかと思ったわ。
+[charslot(slot = "r", name = "avg_1034_jesca2_1#9$1",focus="r")]
+[name="ジェシカ"]すみません、焦っていたもので……
+[charslot(slot = "l", name = "avg_4104_coldst_1#11$1",focus="l")]
+[name="ヘレナ"]車内で銃をぶっ放すのは、安全マニュアルには違反しないの？　まあ、なかなか悪くないエイムだったわよ……
+[name="ヘレナ"]車台の部品や装置を、ちゃんと避けて撃ったのでしょ？
+[Dialog]
+[charslot]
+ジェシカは何かを言おうとしたが、開きかけた口をぎゅっときつく結び、ヘレナに向かって力強い視線を素早く投げた。一方、ヘレナもそれだけで、彼女の考えをしっかりと汲み取った。
+すでに車のパーツがあちこち緩み始めている。金属同士が擦れる不快な音が響く中、鉄の塊が次々と振り落とされ、車台に空いた穴から飛び出ていく。
+[charslot(slot = "l", name = "avg_4104_coldst_1#11$1",focus="r")]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#1$1",focus="r")]
+[name="ジェシカ"]急いで装填をお願いします……この車が、あとどれだけ持つのか、わかりませんので。
+[Dialog]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#1$1",focus="all")]
+[playsound(key="$d_avg_carjolt", volume=0.5)]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.7)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#8$1",focus="l")]
+[name="ヘレナ"]待って、今の揺れは何？　突然加速したのは気のせい？
+[name="ヘレナ"]ずいぶん軽くなったとはいえ、こんなに一気に加速するのはあり得ないわ……もしかして、リミッターが振り落とされたとか？
+[charslot(slot = "r", name = "avg_1034_jesca2_1#9$1",focus="r")]
+[name="ジェシカ"]……
+[charslot(slot = "r", name = "avg_1034_jesca2_1#10$1",focus="r")]
+[name="ジェシカ"]……いえ。
+[Dialog]
+[charslot]
+ジェシカはチラリと足元を見てから、今度は首を横に振った。
+ヘレナが彼女のほうに目をやる。そして、真っ先にその額に吹き出た玉のような汗に気づいた。
+続いて、スピードメーターの針が、目盛りマックスのところで小刻みに揺れているのが目に入った。同じく、ハンドルをギュッと握りしめているジェシカの両手も、小刻みに震えていた。
+[Dialog]
+[charslot(slot = "l", name = "avg_4104_coldst_1#11$1",focus="l")]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#9$1",focus="l")]
+[name="ヘレナ"]……ジェシカ？
+[charslot(slot = "r", name = "avg_1034_jesca2_1#7$1",focus="r")]
+[name="ジェシカ"]アクセルが……戻らないんです……ブレーキも効きません。
+[multiline(name="ジェシカ")]たぶん……さっき、ブレーキの配線ごと……
+[charslot(slot = "r", name = "avg_1034_jesca2_1#8$1",focus="r")]
+[multiline(name="ジェシカ")]うわあ！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#8$1",focus="n")]
+ヘレナは一瞬固まったが、すぐに肩を震わせて笑い出した。今ここで起きている何もかもが、突然可笑しく思えてたまらなかった。
+[charslot(slot = "l", name = "avg_4104_coldst_1#10$1",focus="l")]
+[name="ヘレナ"]あはっ、ははははっ……ほんっと、最高ね！
+[charslot(slot = "l", name = "avg_4104_coldst_1#1$1",focus="l")]
+[name="ヘレナ"]このイカれたカーチェイスを思う存分楽しみましょ、ジェシカ！　安全運転だの、コースだのは忘れてね！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#3$1",focus="r")]
+[name="ジェシカ"]えっ、忘れるって……
+[charslot(slot = "l", name = "avg_4104_coldst_1#1$1",focus="l")]
+[name="ヘレナ"]なあにぽかんとしてるの？　シャキッとしなさい！　後ろのひっつき虫どもを撒いて、全部丸ごと忘れちゃうのよ！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#11$1",focus="r")]
+[name="ジェシカ"]はい！
+[name="ジェシカ"]あの人たちは、わたしには追い付けません！
+[charslot(slot = "l", name = "avg_4104_coldst_1#1$1",focus="l")]
+[name="ヘレナ"]ええ！　こっちのテールランプすら見えやしないわ！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#1$1",focus="r")]
+[name="ジェシカ"]テールランプはもうとっくに取れちゃってますけど……その通りですね！
+[charslot(slot = "l", name = "avg_4104_coldst_1#1$1",focus="l")]
+[name="ヘレナ"]いいわね！　この瞬間の気持ちを、湧き上がる思いをよく覚えておきなさい！
+[name="ヘレナ"]これはウッディからは学べない、あなただけが味わえる人生のひと時よ！　風のような、夕陽のようなね！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#4$1",focus="r")]
+[name="ジェシカ"]なんだか……感じたような気がします！
+[charslot(slot = "l", name = "avg_4104_coldst_1#1$1",focus="l")]
+[name="ヘレナ"]誰もあなたが進む道を指図することなんてできない。だって、ハンドルはあなたが握っているのだから！
+[name="ヘレナ"]今目の前に見える道こそが、あなたの先に広がる未来よ！
+[charslot(slot = "r", name = "avg_1034_jesca2_1#3$1",focus="r")]
+[name="ジェシカ"]え？
+[name="ジェシカ"]……わたしの未来って、崖っぷち？
+[charslot(slot = "l", name = "avg_4104_coldst_1#8$1",focus="l")]
+[name="ヘレナ"]え？
+[charslot(slot = "l", name = "avg_4104_coldst_1#7$1",focus="l")]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ヘレナ"]車から飛び降りて！　はやく！
+[Dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="caro", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[charslot]
+[Background(image="bg_snowconutryinside", screenadapt="coverall", block=true)]
+[delay(time=2)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[PlaySound(key="$d_avg_doorbell",volume=0.7,delay=0.6)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4104_coldst_1#1$1",duration=1)]
+[charslot(slot = "r", name = "avg_1034_jesca2_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot]
+[delay(time=0.2)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]マスター、起きなさい！　お客さんが来たわよ！
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]誰だようるせぇな……
+[name="酒場の店主"]おお、ヘレナ！　今日はやけに早いな。顔がホコリだらけだけど、何してたんだ？
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]盗賊団に追い回されて、車ごとペシャンコになるとこだったのよ。ほら、こんな惨めなあたしを慰めるためにも、早く二十年物のヴィンテージを二杯、出してくださらない？
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]あんたなら、うちに置いてある在庫を全部把握してるだろ。一ヶ月物でよけりゃ、カウンターから勝手に注いできな。
+[name="酒場の店主"]こっちのお嬢ちゃんは初めて見る顔だな。ちょっくらおしゃべりしようぜ。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#15$1",focus="m")]
+[name="ジェシカ"]初めまして、おじいさん……わたしはお水で大丈夫ですので。
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]「おじいさん」だって？　俺、そんなに老けてるのか？　フン、ヘレナに免じて許してやるが、そうじゃなきゃ……
+[charslot(slot = "m", name = "avg_1034_jesca2_1#15$1",focus="m")]
+[name="ジェシカ"]ご、ごめんなさい！
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]こーら、あまりからかわないの。あたしが今こうして生きているのも、その子のおかげなのよ。
+[name="ヘレナ"]いつもここに置いてある氷は？　このお酒、ロックにしなきゃ飲めたもんじゃないわよ。
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]一週間前くらいから製氷機が壊れてんだよ。もうちょい頻繁に通ってくれてりゃ、とっくに知ってただろうに。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]先週は、開拓地にいなかったのよ。あちこち駆け回って、クタクタだってのに、誰も心配してくれないのね。
+[name="ヘレナ"]じゃあこうしましょ。店の前に繋いでる駄獣をプレゼントしてくれたら、製氷機を直してあげる。どう？
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]遠慮しとくぜ。レッドのことは諦めな。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1",focus="m")]
+[name="ジェシカ"]大変！　時間が……ヘレナさん、急いで事務所へ戻らないと！
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[name="ヘレナ"]大丈夫よ、一杯飲む時間はちゃんとあるわ。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#1$1",focus="m")]
+[name="ジェシカ"]今はまだお酒を飲んでいい時じゃないですよ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]お酒はいつだって飲んでいいものよ。ね、「おじいさん」？
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]俺の前で可愛い子ぶるんじゃねぇ。お嬢ちゃん、酒ってのはな、飲みたいやつは時間関係なく飲むし、飲みたくないやつは一晩説得したって一滴も飲ませられん。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]この一杯はあたしの奢りよ、ジェシカ。飲むか飲まないかは好きにして。ここの最高のお酒を奢るって約束を、守りたかっただけだから。
+[name="ヘレナ"]北に向かってひたすらに二十分歩けば、開拓地の事務所に着くわ。任務に向かう前に、顔を洗う余裕だってあるわよ。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#9$1",focus="m")]
+[name="ジェシカ"]ヘレナさんは？　本当に一緒に来ないんですか？　もしさっきの人たちがまた……
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[name="ヘレナ"]あたしの心配はいらないわ。強盗は、この酒場になんて入ってこれしないんだから。
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]その通りだ。ここは雨も風も防げねぇが、強盗の野郎どもだけは一人たりとも通さねぇぜ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#2$1",focus="m")]
+[name="ヘレナ"]元々あたしは、ついでに車に乗せてもらっただけだから、車がなくなったらここで解散よ。あなたは任務にいってらっしゃい。あたしはここでもう少し飲んだら、野営地に戻るわ。
+[name="ヘレナ"]それに、さっきのやつらはこれくらいじゃ諦めないでしょうね。あたしと一緒にいて、万が一また絡まれたら、もっと任務に遅れちゃうわよ。
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]ハハッ、あんな身の程知らずのヤツどもを相手するのは、ヘレナ一人で十分だ。むしろ、お嬢ちゃんがいると、かえって足手まといになるんじゃねぇかなあ。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#9$1",focus="m")]
+[name="ジェシカ"]そうですか……
+[charslot(slot = "m", name = "avg_1034_jesca2_1#16$1",focus="m")]
+[name="ジェシカ"]でも、わたし足手まといになんてならないはずです。そもそも、荒野の盗賊を片付けるのは、保安官であるわたしの役目ですし……
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]もう、足手まといだなんてあたしは言ってないでしょう。長い間、一人で荒野を駆け回っていたせいで単独行動に慣れてるだけよ。それに、今日は久しぶりに若い頃の感覚を思い出せたわ……
+[name="ヘレナ"]あたしのせいで、ジェシカが任務に遅刻しちゃったら、それこそ申し訳が立たないもの。だから、用事をちゃんと済ませてきなさい。自分が起こした面倒は、自分で片をつけるわ。
+[name="ヘレナ"]まさか、たかが悪ガキどもにあたしが手こずるだなんて思ってないわよね？
+[charslot(slot = "m", name = "avg_1034_jesca2_1#1$1",focus="m")]
+[name="ジェシカ"]たしかに、ヘレナさんの言うことは、どれも筋が通っているように聞こえます。
+[name="ジェシカ"]でも、自分が何もしないのは、なんだか申し訳なく感じてしまうんです。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]どうしてあなたが申し訳なくなる必要があるの？　保安官になったからといって、自分をその枠に閉じ込める必要はないのよ。
+[name="ヘレナ"]役目だの、信頼だの、借りだの、守るだの……ウッディがそんなことをクドクド言ってるところを見たことある？
+[charslot(slot = "m", name = "avg_1034_jesca2_1#9$1",focus="m")]
+[name="ジェシカ"]でも、わたし……
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]まあそれは彼が元々無口なせいもあるけど。ああ、話が逸れちゃったわ。もう一度思い出してごらん。今日、なりふり構わず、思いっきりアクセルを踏んだ時、どんな気持ちだったの？
+[name="ヘレナ"]ジェシカ、あなたにはルールで決められてない選択を下すこともできるし、そうするのに値する子よ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[name="ヘレナ"]まだ若いんだから、自分のやりたいことをやりなさい。あたしを含め、他人から言われたことじゃなくてね。
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]ああ……若いのって素晴らしいわね……ねえ、マスター！　このお酒、やっぱり氷なしじゃ飲めやしないわ。本当に製氷機を直してもらわなくて平気？
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]ああ、断じてお断りだ！　どうせ飲むのは俺じゃねぇしな！
+[charslot(slot = "m", name = "avg_4104_coldst_1#5$1",focus="m")]
+[name="ヘレナ"]つれないわね。あたしが力になりたいってこんなに頼んでるのに。はあ……知り合ってたったの数年で、もう冷たくなっちゃって。
+[charslot(slot = "m", name = "avg_1034_jesca2_1#15$1",focus="m")]
+[name="ジェシカ"]あの……製氷機の修理、わたしにやらせてください。まだ時間にも余裕はありますし。その……休ませてもらったお礼だと思っていただければ。
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[name="ヘレナ"]あなた儲かったわね。この子の修理の腕は、あたしにも劣らないわよ。
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]じゃあ頼むよ。ついてきな。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1034_jesca2_1#15$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="jw")]
+[stopsound(fadetime=2, channel="jw")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]……
+[charslot(slot = "m", name = "avg_4104_coldst_1#10$1",focus="m")]
+[name="ヘレナ"]さて、そろそろ支度しようかしらね。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_snowconutryinside", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1034_jesca2_1#15$1",focus="m")]
+[name="ジェシカ"]ふぅ……よし、これで大丈夫なはずです。ただ強く叩くのはもうやめてくださいね、マスター。
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]あんた、修理の技術は誰から習ったんだ！？　古新聞とガラスの破片にあんな使い道があったなんてな。おいヘレナ、聞いてくれよ……あれ？　ヘレナは？
+[charslot(slot = "m", name = "avg_1034_jesca2_1#16$1",focus="m")]
+[name="ジェシカ"]グラスの下にお代が置いてあります……本当に一口も飲んでいませんね。そんなに美味しくないのでしょうか？
+[Dialog]
+[PlaySound(key="$d_avg_drinkswllw")]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1034_jesca2_1#3$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ジェシカ"]ゲホッ！　ゲホゲホッ、喉の奥がツンとします！
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]今日のあいつ、やけに思い切りがいいな。ん？　こりゃ二杯分にしちゃ、ずいぶん金額が多いぞ。
+[name="酒場の店主"]妙だな。チップにしたっていつもと比べて気前が良すぎるし……まさか！
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_006",focus="n")]
+[playsound(key="$d_avg_pcknmgrwl")]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_006",focus="m")]
+[name="酒場の店主"]しまった、俺のレッド！
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="酒場の店主"]ヘレナ！　レッドに傷一つでもつけてみやがれ！　これからお前の酒代だけ二倍にするぞ！　いや、注文全部二倍だ！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+ジェシカとマスターが外へ飛び出た時には、駄獣に乗った背中はもう遠くにポツンと見えるだけだった。
+夕陽の残輝のぬくもりは、複雑な表情を浮かべる二人を優しく慰める。荒野を吹き抜ける風に混じって、かすかな口笛の音と歌声が、耳元を掠めては消えていった。
+[Dialog]
+[Subtitle(text="♪彼女は十輪の夕陽を引き連れ、荒野の中心へと駆け出す♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="♪風を振り払い、影すらも置き去りにして♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="♪彼女は決して止まらない、決して帰らない♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="♪その心を温められるのは、弾丸とスピリッツだけ♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="♪その心を温められるのは、弾丸とスピリッツだけ♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_laccolith", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_534_1#1$1")]
+[charslot(slot="r",name="avg_npc_534_1#1$1")]
+[Delay(time=1)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_534_1#1$1",focus="l")]
+[name="顔に傷跡のある開拓者"]まだ見つからねぇのか？
+[charslot(slot="r",name="avg_npc_534_1#1$1",focus="r")]
+[name="慌てる開拓者"]タイヤの跡は崖の手前で消えてるし、足跡もわざと消されてます。
+[charslot(slot="l",name="avg_npc_534_1#1$1",focus="l")]
+[name="顔に傷跡のある開拓者"]*クルビアスラング*、あの女、運がいいな。今後も俺の前に姿を現さねぇのが身のためだ。
+[charslot(slot="r",name="avg_npc_534_1#1$1",focus="r")]
+[name="慌てる開拓者"]えっ、見逃しちまうんすか？
+[charslot(slot="l",name="avg_npc_534_1#1$1",focus="l")]
+[name="顔に傷跡のある開拓者"]じゃあどうしろってんだ？　あの女に追いつけた奴なんて今までいるか？
+[charslot(slot="r",name="avg_npc_534_1#1$1",focus="r")]
+[name="慌てる開拓者"]ああ！　いましたよ！　望遠鏡で見つけました！
+[charslot(slot="l",name="avg_npc_534_1#1$1",focus="l")]
+[name="顔に傷跡のある開拓者"]何人連れてやがる？
+[charslot(slot="r",name="avg_npc_534_1#1$1",focus="r")]
+[name="慌てる開拓者"]一人と、駄獣が一匹だけです。でも……
+[charslot(slot="l",name="avg_npc_534_1#1$1",focus="l")]
+[name="顔に傷跡のある開拓者"]なんだ？
+[charslot(slot="r",name="avg_npc_534_1#1$1",focus="r")]
+[name="慌てる開拓者"]……こっちに向かって、何か合図をしました。
+[name="慌てる開拓者"]ボス、見つかっちまったのはあの女じゃない……俺たちのほうだ。
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[charslot(slot="r",name="avg_npc_534_1#1$1",focus="all")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_crowdrun", volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4104_coldst_1#1$1",focus="m")]
+[name="ヘレナ"]さあ、逃げなさい。道中の無事を……祈っているわ。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

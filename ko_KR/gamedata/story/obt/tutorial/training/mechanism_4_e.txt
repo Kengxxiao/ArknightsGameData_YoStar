@@ -1,0 +1,22 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 异常状态与抗性e
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_texas")] 이 적은 공격력이 매우 높아. 나 오래 못 버틸 것 같아.
+[PopupDialog(dialogHead="$avatar_texas")] 내 스킬로 적의 행동을 잠깐 중단시킬 수 있지만, 그 이후에는……
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.EnsureMinSp(charId="char_338_iris", sp=100)]
+[InputBlocker(blockInput=true, tileX=6, tileY=4, validWidth=85, validHeight=85)]
+[Tutorial(tileX=6, tileY=4, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_iris", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 정말 야만스러운 자로군요. 제가 조용하게 해 드리죠.
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=283, focusY=-140, focusWidth=382, focusHeight=90, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_sys")] 오퍼레이터 아이리스는 적을 <@tu.kw>수면</> 상태에 빠트릴 수 있습니다. 수면 상태인 적은 공격하거나 이동할 수 없지만, 일반적인 상황에서 오퍼레이터에게 피격되지 않습니다.
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_iris")] 꿈나라에 가세요!
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_iris")] 적이 잠든 사이에 다들 재정비하죠.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_c
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_ardign")] Wow, a whole new bunch of Originium slugs showed up! Steward, once they get in front of me, use the Self-Driving Cart to deal with them, and I'll block the rest!
 [PopupDialog(dialogHead="$avatar_stward")] Hold on, Cardigan, we've got an even better option. We can use the <@tu.kw>Self-Driver One-Way Road</> to change our Self-Driving Cart's course, and extend the route it takes.
@@ -11,6 +12,7 @@ Just get the Self-Driver One-Way Road <@tu.kw>deployed right here</>...
           startX=-215, startY=-110, endX=-193, endY=90)] \
 And then <@tu.kw>face it up</>, and we're set.
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [PopupDialog(dialogHead="$avatar_stward")] This way, when the <@tu.kw>Self-Driving Cart</> passes through, it'll change its original direction and travel upward!
 [PopupDialog(dialogHead="$avatar_stward")] But we have to pay attention, because each Self-Driver One-Way Road or allied unit can only turn any one Self-Driving Cart <@tu.kw>once</>.
 [Tutorial(focusX=205, focusY=165, focusWidth=150, focusHeight=150, \

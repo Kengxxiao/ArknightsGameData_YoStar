@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_stward")] It looks like there's a way to make these self-drivers turn so they avoid running into anything. Let me look through the manual they hand out with these...
 [PopupDialog(dialogHead="$avatar_ardign")] Steward, this is super easy! If it <@tu.kw>passes through an allied unit</>, it <@tu.kw>goes straight in the direction they're facing</>!
@@ -11,6 +12,7 @@ Let me drop <@tu.kw>right here</> and give a hands-on demonstration!
           startX=315, startY=-70, endX=40, endY=-90)] \
 Remember to <@tu.kw>face me left</>, okay!
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=1)]
 [Battle.Pause(pause=true)]

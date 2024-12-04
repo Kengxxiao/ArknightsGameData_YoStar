@@ -5,5 +5,12 @@
 [Tutorial(target="btn_battle",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 터치하여 <@tu.kw>작전</> 화면으로 진입하여 주십시오.
 [GotoPage(dest="stage", waitForSignal="stage_routed")]
 [Tutorial(target="weekly_layout", waitForSignal="stage_weekly_zonetype_selected",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 여기를 터치하여 정예화 아이템을 획득할 수 있는 전투를 해 볼까요.
-[PopupDialog(dialogHead="$avatar_amiya")] 정예화 아이템을 획득할 수 있는 작전은 물자 비축 작전과 마찬가지로 날마다 개방되는 스테이지가 달라요. 만약 박사님께서 진행하고 싶으신 작전이 잠금 상태라면, 다른 날에 와 주셔야 해요.
-[PopupDialog(dialogHead="$avatar_sys")] 오퍼레이터의 클래스에 따라 필요한 아이템이 달라지니, 효율적으로 재료를 획득하여 하루라도 더 빨리 승진시켜줄 수 있도록 하여 주십시오.
+[PopupDialog(dialogHead="$avatar_amiya")] 난공불락, 추풍낙엽, 질풍노도, 솔선수범 스테이지는 정기적으로 개방됩니다. 단 로도스 아일랜드 적응 기간에는 해당 스테이지들이 모두 개방됩니다.
+[PopupDialog(dialogHead="$avatar_sys")] 오퍼레이터의 포지션에 따라 필요한 아이템이 다르므로, 효율적으로 재료를 획득하여 하루빨리 승진하여 박사님에게 도움이 되도록 하여주십시오.
+[GotoPage(dest="HOME", waitForSignal="home_routed")]
+[PopupDialog(dialogHead="$avatar_amiya")] 이제 오퍼레이터의 정예화 방법에 대해 알려 드리겠습니다.
+[Tutorial(target="btn_character_repo",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 이곳은 오퍼레이터 관리 화면으로, 여기서 오퍼레이터를 관리하고 훈련시킬 수 있습니다.
+[GotoPage(dest="char_repo", waitForSignal="character_repo_routed")]
+[PopupDialog(dialogHead="$avatar_amiya")] 원하는 오퍼레이터를 선택해주세요.
+[Tutorial(target="pool_btn_char_repo_first_item", waitForSignal="character_info_resumed",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 터치하시면 오퍼레이터의 상세 화면으로 이동합니다.
+[Tutorial(target="btn_evolve",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 오퍼레이터의 레벨이 최대치에 이르면 승진을 시켜 정예화를 진행할 수 있습니다. 정예화 재료가 충분하면 이 버튼을 터치해 정예화를 진행하면 됩니다. 일부 오퍼레이터는 승진 후 새로운 스킬이나 고유 능력을 습득하게 됩니다.

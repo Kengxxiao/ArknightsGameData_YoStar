@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡02_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_scave")] ドーベルマン教官、こちらスカベンジャー。奇襲により負傷した！
 [PopupDialog(dialogHead="$avatar_doberm")] すぐに支援を送る！
@@ -16,7 +17,6 @@
           protectTime=0.5, dialogHead="$avatar_grani")] \
 どうすればいいですか？
 [PopupDialog(dialogHead="$avatar_doberm")] 直ちにスカベンジャーと<@tu.kw>交代</>するんだ。たとえ彼女が倒されても、一定時間内に交代すれば身に着けている戦術装備はすべて引き継げる。
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.EnsureMinCost(cost=11)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_grani", animStyle="Drag", \
@@ -26,7 +26,7 @@
           startX=-70, startY=-50, endX=250, endY=-50)] \
 そうそう！　その調子！
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

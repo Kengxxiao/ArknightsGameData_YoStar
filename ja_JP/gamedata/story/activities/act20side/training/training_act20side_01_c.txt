@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_c
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_ardign")] うわぁ大変っ！　オリジムシがいっぱい現れたよ！　スチュワードくん、オリジムシが私の前まで来たら、セルカーでやっつけて。残りは私がブロックするよっ！
 [PopupDialog(dialogHead="$avatar_stward")] 待ってカーディ、いい方法がある。<@tu.kw>ターンテーブル</>を使えばセルカーの進行方向を変えられて、走行ルートを伸ばすことができるんだ。
@@ -11,6 +12,7 @@
           startX=-215, startY=-110, endX=-193, endY=90)] \
 それから<@tu.kw>上方向に配置</>すればいいんだね。
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [PopupDialog(dialogHead="$avatar_stward")] これで、<@tu.kw>セルカー</>がここを通った時、進行方向が変わって上に進むよ！
 [PopupDialog(dialogHead="$avatar_stward")] ここで注意しなきゃいけないことがあるんだけど、ターンテーブルと味方ユニットはセルカー一台につき<@tu.kw>一回</>ずつしか方向転換させることができないんだ。
 [Tutorial(focusX=205, focusY=165, focusWidth=150, focusHeight=150, \

@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_jesica")] わたしでは敵の装甲を貫けません！　火力支援を要請します！
 [PopupDialog(dialogHead="$avatar_doberm")] ジェシカ、よくやった。多くの作戦演習を経て、お前も少しは成長したようだな。
@@ -19,7 +20,6 @@
 [PopupDialog(dialogHead="$avatar_doberm")] ああ、そこでしっかり身体を休めておけ。準備エリアの人手が足りなくなった時には、休憩エリアで待機するオペレーターも全員補填に向かってもらうことになる。
 [PopupDialog(dialogHead="$avatar_jesica")] 了解しました！
 [PopupDialog(dialogHead="$avatar_doberm")] また、PRTSにより全員に新たな<@tu.kw>戦術装備</>が支給された。それにより、交代したオペレーターが、撤退した側の能力を一部引き継いで<@tu.kw>強化</>されるぞ。
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
@@ -29,7 +29,6 @@
           startX=-70, startY=-50, endX=250, endY=-50)] \
 よし、そのまま<@tu.kw>向きを決めて</>くれ。
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
 [Battle.Pause(pause=false)]
 [Delay(time=6)]
@@ -40,7 +39,6 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 その通り。引き継いだ戦術装備が効力を発揮しているんだ。身体の周りに<@tu.kw>青い装備</>が浮かんでいるだろう？
 [PopupDialog(dialogHead="$avatar_milu")] なるほど。
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
@@ -49,7 +47,7 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 それから、ドクター、ファイヤーウォッチに注目してくれ。
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \

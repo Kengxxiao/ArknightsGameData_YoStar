@@ -1,11 +1,11 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_milu")] Calling Instructor Dobermann, enemy defenders spotted up ahead.
 [Battle.Pause(pause=false)]
 [Delay(time=3)]
 [Battle.Pause(pause=true)]
 [PopupDialog(dialogHead="$avatar_doberm")] Relax. Doctor, we can use a <@tu.kw>Transfer Permit</> to dispatch an Operator from the Preparation Area for backup.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(target="btn_draw_next_card", waitForSignal="draw_card", \
           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",searchBtnInChildren=true, \
@@ -22,7 +22,7 @@ I suggest you let me <@tu.kw>relieve</> Firewatch.
 That's it.
 [InputBlocker(blockInput=true)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

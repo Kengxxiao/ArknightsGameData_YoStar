@@ -1,0 +1,340 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="51_g1_beaconsquare",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="m",name="char_263_skadi#5",duration=1)]
+[Delay(time=2)]
+[name="Skadi"]Did you think we were touring a museum? You were looking at the instruments like they were exhibits.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="The third place I mistook for a museum, then.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Why is gravity reversed in there?;What's with the water flowing around the pillars?;What's that space that warped my fingers?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]There are some things even I can't explain.
+[name="Skadi"]Technology has advanced a lot in five years.
+[Dialog]
+[charslot]
+[Decision(options="Wait, that tower...", values="1")]
+[Predicate(references="1")]
+[Decision(options="There's a launchpad at the heart of the city?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]Good eye, Doctor, that's a beacon launcher. One with plenty of history.
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]You know about it, Shark?
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]My parents took me around the home territories when I was little. There are similar structures in many cities.
+[Dialog]
+[charslot]
+[Decision(options="I thought Ægir children were raised collectively.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]I was, but Shark has a special relationship with her biological parents.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="Specter"]They're more like friends than parents.
+[name="Specter"]They reached a consensus with the Institute of Incubation to bring me along whenever they worked on a new dome project.
+[name="Specter"]I spent most my time in the Institute of Incubation, but I was able to see the cities, learn, and even work alongside them.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="So, what's this beacon launcher for?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]Exactly what it sounds like: it launches beacons to mark the Waterway.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Those are some huge beacons.;How big is this Waterway anyway?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#10$1")]
+[name="Specter"]Ægir had almost mastered the oceans around 300 years ago, efficiently using natural energy in its various forms and recording every seafloor trench in our navigational charts.
+[name="Specter"]Then we cast our sights on another ocean, one brimming with stars.
+[name="Specter"]Our fleets and even our cities were meant to cross that boundary that should never have existed, and light the fires of civilization beyond the barrier.
+[Dialog]
+[charslot]
+[Decision(options="Beyond the barrier...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]The Preserver was right, Doctor. Kristen's achievement is not beyond Ægir's reach.
+[name="Kal'tsit"]The sea and the sky are closer than we thought.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="Specter"]People back then tried plenty of things: surveying and deciphering the electron clouds, developing new technologies and materials, exploring forms of life that can adapt to space...
+[name="Specter"]This beacon launcher is a product of that era.
+[name="Specter"]It was intended to capture even the faintest signals from the stars, and plant beacons that would never fade from our star charts.
+[name="Specter"]Nanomachine swarms would form networks between the beacons, allowing us to traverse vast distances in an instant... or so we dreamed.
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]You never told me any of this before.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]Lucid moments were hard to come by on land.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#10$1")]
+[name="Specter"]But yesterday, I dreamt once again of walking from the Sophontheatrum straight into that epoch.
+[name="Specter"]Then, I saw Laurentina dance.
+[name="Specter"]She leaped from the waves to the stars, stirring up star dust that trailed the hems of her dress. From afar, the voice of the Master of All Creation answered her in song.
+[name="Specter"]The universe and imagination know no bounds, and Laurentina's dances will never cease.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#3$1")]
+Specter closes her eyes, as though sinking back into the dream.
+[charslot(slot="m",name="char_263_skadi#4")]
+[name="Skadi"]Mm...
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]What is it?
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]Just trying to picture it.
+[Dialog]
+[charslot]
+[Decision(options="It's a beautiful dream, Laurentina.;Perhaps that day will really come, Laurentina.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="Specter"]Before pushing open the door to the stars, they wanted to prepare themselves for any threats beyond the barrier... That is, until the Seaborn appeared and interrupted the dream.
+[name="Specter"]We poured all our efforts into studying them, setting aside all else: art, science, and previous visions for the future...
+[name="Specter"]The Seaborn fundamentally changed Ægir.
+[Dialog]
+[charslot]
+[Decision(options="What did you do before becoming a Hunter, Skadi?;What did you do before becoming a Hunter, Specter?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]Me?
+[name="Skadi"]I was the best technician at the Institute of Facility Management. I could keep an entire city's underwater lighting array running on my own.
+[name="Skadi"]The Institute of Development Planning's career proposal was pretty much what I was thinking, so I accepted.
+[name="Skadi"]Working by yourself can be lonely, but it's not such a bad thing playing with the giant fins in the reefs, or lighting up the ocean while daydreaming.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]I was just an apprentice sculptor.
+[name="Specter"]The Institute of Development Planning provides tailored career proposals for each citizen, which are usually in line with our wishes.
+[name="Specter"]I suppose I would have gone into dome design, sculpting, or dance.
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]Say, Kal'tsit and Doctor, we've shared a lot of info during our time together, but we've never talked about our old lives.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Because they've changed.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="Specter"]I guess you're right. Sorry for bringing up something so heavy on a tour.
+[name="Specter"]We have all the waves in the world hanging above our heads. Would you care to share a dance before dealing with all this bother, Doctor?
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$act18d3d0_intro",key="$act18d3d0_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1382_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="Kind Woman"]Gladiia.
+[PlaySound(key="$d_avg_higheldshosfts", volume=0.7)]
+[charslot(duration=1)]
+Gladiia's hand instinctively goes to her weapon as the woman approaches with a ceremonial sword in hand.
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+But all she does is put her arms around Gladiia's shoulders. Gladiia smells stimulants in the air.
+Ægir do not make a habit of greeting each other with physical contact. She could not remember even her mother ever doing so.
+But this woman's action felt completely natural.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]Consul Clementia?
+[name="Gladiia"]I was not aware that this was the standard salute between Chief Designers of Warfare.
+[charslot(slot="m",name="avg_npc_1382_1#1$1")]
+[name="Clementia"]Nothing makes me happier than seeing the Hunters return as lucid as ever.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]Your soldiers' reactions when they first saw me suggested otherwise.
+[charslot(slot="m",name="avg_npc_1382_1#9$1")]
+[name="Clementia"]The operation to eliminate the Firstborn cost Ægir all of its Abyssal Hunters.
+[name="Clementia"]Secunda made many rescue attempts, but was unable to penetrate the rampaging mass of Seaborn that guard the region after the death of the Firstborn.
+[charslot(slot="m",name="avg_npc_1382_1#6$1")]
+[name="Clementia"]Your mother, Horatia, had no choice but to publicly declare you dead.
+[charslot(slot="m",name="avg_npc_1382_1#2$1")]
+[name="Clementia"]But I know her. She doesn't really believe that.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]Or perhaps Consul Horatia, foremost of the Institute of Scientific Development Planning, simply could not accept that I had died for nothing.
+[name="Gladiia"]I know her, too.
+[name="Gladiia"]But I don't think it is appropriate for a meeting between two Chief Designers of Warfare to revolve around a complicated mother-daughter relationship.
+[charslot(slot="m",name="avg_npc_1382_1#2$1")]
+[name="Clementia"]Of course, of course.
+[Dialog]
+[PlaySound(key="$d_avg_higheldshosfts", volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2)]
+[name="Clementia"]Look at the city.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i02",screenadapt="coverall", xScale=1.2, yScale=1.2, y=-70)]
+[ImageTween(yTo=0, xScaleTo=1, yScaleTo=1, duration=60, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=3)]
+The Consul's Pensivarium sits high in the city. The seawater hangs just above their heads.
+The transparent dome serves as a gentle mirror, warding off the deep and foreboding void while granting the Ægir the solace of introspection.
+Beneath the dome, the entire city is bathed in a blue hue. The beacon launchpad stands tall at its center, while ships glide in and out of the distant docks like schools of fins.
+[name="Clementia"]The sea itself has no color, only darkness. Milliarium stands in its murky depths like the vigilant eye of civilization, solitary and luminous.
+[name="Clementia"]We once had many such cities. One by one, the stars in the sea went out, becoming sustenance for the Seaborn.
+[name="Clementia"]All that's left on the seafloor are their colorful, eerie nests.
+[name="Gladiia"]I won't deny that the Abyssal Hunter project was a failed gambit. The death of the Firstborn did not stop their evolution.
+[name="Gladiia"]So I want to know what solution Ægir has come up with next. What you have come up with.
+[name="Gladiia"]What is this Waterway Program?
+[name="Clementia"]Gladiia, I didn't mean...
+[name="Clementia"]I'm simply part of an even bigger gambit, one with even higher stakes.
+[name="Clementia"]The weapon classification scheme remains nothing more than a strict control over weapon usage to delay the evolution of the Seaborn.
+[name="Clementia"]This time, however, we have taken into account every weapon at our disposal or under development.
+[name="Clementia"]A mix of conventional ballistics and Class I weapons initially proved highly effective. The Seaborn were unable to comprehend why they were being burned by the seawater around them.
+[name="Clementia"]But it took them only a year to adapt. 11 months in, we accelerated the adoption of Class II weapons, which operated on completely different principles.
+[name="Clementia"]Et cetera, et cetera.
+[name="Gladiia"]Until their evolution outpaced the ability of the Academy of Technology to innovate.
+[name="Clementia"]Yes. At day's end, all we're doing is merely buying time. Ægir has committed vast resources to study the Seaborn. To eradicate them at their origin, we must first comprehend them at their source.
+[name="Clementia"]The information you've brought back is highly valuable, and Breogan's discovery on land corroborates the Academy of Science's research.
+[name="Gladiia"]The Seaborn and the Feranmuts share the same genesis.
+[name="Gladiia"]Is Ægir coming ashore to seek memories even more ancient?
+[name="Clementia"]Not just that. The Seaborn share a common genesis with the Feranmuts, but much about them is very different. Unnatural, one might say.
+[name="Clementia"]Their recent activity demonstrates a clear sense of purpose. They have quickly abandoned their reliance on the sea and begun to migrate towards land en masse.
+[name="Clementia"]Left unchecked, it is not out of the question that all of Terra could become infested with Seaborn.
+[name="Gladiia"]We already saw hints of that in Iberia.
+[name="Clementia"]Thus, for Ægir, the land is both a source of answers and a solemn responsibility.
+[name="Clementia"]Horatia has issued new war orders on behalf of the Institute of Development Planning, and Milliarium has come bearing new Class IV weapons from the Academy of Technology.
+[name="Clementia"]They are a form of biological weapon, very different from all previous ones. Designed to induce death in nearby Seaborn nests and newborns, while driving away adults from the area.
+[name="Clementia"]We have successfully located most of the nests in the target region. The ones near Iberia are the only ones yet unmarked.
+[name="Clementia"]Once the beacons have been placed and the weapons activated, we will finally have cleared an entire region of Seaborn, and established a route back to Ægir's home territories.
+[Dialog]
+[delay(time=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[image]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1")]
+[charslot(slot = "right", name = "avg_npc_1382_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="Gladiia"]Consul Horatia would not have permitted the possibility of failure. Yet all I see is a city under siege, teetering on the brink.
+[charslot(slot = "right", name = "avg_npc_1382_1#2$1",focus="r")]
+[name="Clementia"]Yes, she did tell me herself that 'the Waterway Program will not fail.'
+[name="Clementia"]I do not know how many other possibilities she considered, and I hope I never do. For me, this city has always been the entirety of the Waterway Program.
+[charslot(slot = "right", name = "avg_npc_1382_1#9$1",focus="r")]
+[name="Clementia"]But that is no longer true. The changes in the past month necessitate a review of our plans.
+[name="Clementia"]The Seaborn have rapidly adapted to our new weapons, even evolving measures to protect their kindred from Class III.
+[name="Clementia"]But a successful extermination operation should have left no opportunity for them to communicate with other individuals. They seem to have obtained their inspiration elsewhere.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="Gladiia"]Almost every mutation of the Seaborn against humanity has been abetted by the twisted efforts of corrupted Ægir.
+[name="Gladiia"]Yet, the Seaborn lack true intelligence. We could toss all our prototype weapons into their nest, and they wouldn't dismantle or study them.
+[name="Gladiia"]The Church of the Deep may be able to train them to attack an army or a city, but bringing about rapid biological changes is another matter entirely.
+[charslot(slot = "right", name = "avg_npc_1382_1#9$1",focus="r")]
+[name="Clementia"]Unless they're not being influenced by the Church of the Deep, but by another Firstborn.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="Gladiia"]I see you've read my belated report.
+[name="Gladiia"]Indeed. Ulpianus claims that the one we eliminated was not the only one.
+[charslot(slot = "right", name = "avg_npc_1382_1#9$1",focus="r")]
+[name="Clementia"]The Abyssal Hunters were the first and last Ægir to enter the Firstborn's lair.
+[name="Clementia"]Even now, the Seaborn defend the ruins with a frenzied fury. We have not found a way to get through.
+[name="Clementia"]Amongst the Hunters, Ulpianus spent the longest time there, enough for him to witness the 'truth.'
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[name="Gladiia"]You're still deliberating on whether to believe him.
+[charslot(slot = "right", name = "avg_npc_1382_1#2$1",focus="r")]
+[name="Clementia"]Yes. It could be the key to solving the mystery of the Seaborn. Or the path that leads us to destruction.
+[name="Clementia"]Could a Hunter survive for months on Seaborn remains and remain lucid? Would a lucid hunter willingly stay with them, rather than returning to civilization?
+[name="Clementia"]There are too many unanswered questions about Ulpianus and that fateful operation.
+[charslot(slot = "right", name = "avg_npc_1382_1#8$1",focus="r")]
+[name="Clementia"]And so, I regret to inform you that Ægir has no choice but to welcome its Hunters home with a tribunal.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]I thought we had designated this area for investigation.
+[name="Secunda"]Madam Irene? From Iberia?
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_4009_irene_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Irene"]May I ask to whom I am speaking?
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="l")]
+[name="Secunda"]Secunda, Praefecta of the Sea Patrol. I regret not being able to greet you personally upon your arrival yesterday.
+[name="Secunda"]The Sea Patrol is currently investigating the disappearance of a citizen. We have not requested assistance from Iberia, and respectfully request that you exit this area as soon as possible.
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="Irene"]I would like to assist as myself, not as an envoy.
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="l")]
+[name="Secunda"]Your offer is appreciated, but unnecessary.
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="Irene"]I want to—
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="l")]
+[name="Secunda"]Any news from the other teams?
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="r")]
+[name="Sea Patroller"]One moment, getting the video feed now.
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#2$1")]
+[name="Irene"]Ma'am—
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="r")]
+[name="Sea Patroller"]No unusual movements at the port.
+[charslot(slot = "left", name = "avg_4137_udflow_1#5$1",focus="l")]
+[name="Secunda"]Tsk.
+[name="Secunda"]Alert the other teams to monitor the closed civilian gates and keep a close watch on the circulation system around town.
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="r")]
+[name="Sea Patroller"]Roger.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[charslot(slot = "right",posfrom = "0,0", posto = "200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#2$1")]
+[name="Irene"]You're okay with talking about this in front of me?
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="Secunda"]This is part of our regular duties. There's no need for confidentiality.
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="Irene"]But you had your Little Handies clear the place out.
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="Secunda"]Only to prevent unnecessary harm to civilians.
+[name="Secunda"]If you insist on staying, you'll be responsible for your own safety.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="Irene"]I'll—
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="Secunda"]The missing civilian is Tullia, a scientist from the Waterway Program, responsible for recording and calibrating data on Seaborn nests.
+[name="Secunda"]She went AWOL 30 hours ago and hasn't been seen since.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="Irene"]Could it be... the Church of the Deep?
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="Secunda"]That's what we intend to find out.
+[name="Secunda"]Her disappearance has not affected the overall progress of the project. As important as recording and calibrating the nest data is, her role was by no means irreplaceable.
+[name="Secunda"]If the Church's goal was to assassinate someone to disrupt our plans, they would not have picked an ordinary data scientist.
+[charslot(slot="m",name="avg_4137_udflow_1#3$1")]
+[name="Secunda"]Unless—
+[charslot(slot="m",name="avg_4137_udflow_1#5$1")]
+[name="Secunda"]She learned something she wasn't supposed to.
+[name="Secunda"]I need to inspect her home.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-200,0",duration = 1.5)]
+[delay(time=1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",posfrom = "150,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_4137_udflow_1#1$1",focus="m")]
+[name="Secunda"]You're sharp, Madam Irene, but I would recommend against coming with us.
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="Irene"]I'm simply investigating our common enemy in my own way.
+[charslot(slot="m",name="avg_4137_udflow_1#1$1",focus="m")]
+[name="Secunda"]...Suit yourself.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

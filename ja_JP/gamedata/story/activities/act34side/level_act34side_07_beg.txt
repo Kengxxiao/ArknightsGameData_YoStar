@@ -1,0 +1,584 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_deepseaamb", volume=1, loop=true, channel="u")]
+ドームからは常に、ひげ状をした無数の生物観測ユニットが海流の微細な動きを解析する際の、鈴のような楽声が聞こえる。
+港からは時折、出入りする船が巨大な鱗獣の如く、重い海水を優雅に突き破る鈍い音が、かすかに響いてくることもある。
+そして時には、スクイーズド状態の物資が空中の光ケーブルを伝って家々へと届けられる最中に立てる、唸るようなわずかな音がするのだ。
+……
+膨大ではあるが乱雑ではない、その多種多様な音に、この孤立した都市が立てる音に、ミリアリウムに住む十万あまりの人々はもはや慣れ親しんでいた。
+しかしこの時、誰もが耳を疑ってその場に立ち止まった。
+[dialog]
+[StopSound(channel="u", fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.3, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.3, fadetime=0.1)]
+[PlayMusic(intro="$m_bat_act17side_03_intro", key="$m_bat_act17side_03_loop", volume=0.6)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Background(image="51_g1_beaconsquare", y=60, xScale=1.3, yScale=1.3, screenadapt="coverall")]
+[backgroundTween(xFrom = 170, xTo = -170, duration=30, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+初めはただ、岩礁の隙間を風が通り過ぎただけのように思われた。
+だがその後、一匹の幼体が温かな母胎から顔を出した。
+続けて群れが、巣穴が、海域が広がっていく。
+[dialog]
+[curtain(direction = 0,fillfrom = 0.3,fillto = 0, fadetime=4)]
+[curtain(direction = 4,fillfrom = 0.3,fillto = 0, fadetime=4)]
+[Background(image="51_g1_beaconsquare", xScale=1.05, yScale=1.05, fadetime=2, screenadapt="coverall")]
+[backgroundTween(xScaleFrom = 1.05, xScaleTo = 1, yScaleFrom = 1.05, yScaleTo = 1, duration=10, block=false)]
+[delay(time=4)]
+[PlaySound(key="$d_avg_ropytissuegrow", volume=1)]
+[Background(image="51_g2_beaconsquare_nest", fadetime=4, screenadapt="coverall")]
+[delay(time=3)]
+……群がる生命の発する異様な音が、はっきりと聞こえる。
+海の子が、今度は海を育んでいく。
+それは文明に口づけし、文明はますます活気にあふれていった。
+[dialog]
+[PlaySound(key="$d_avg_emgseaalarm", volume=1)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0.92, g=0.4, b=0.3, fadetime=0.4, block=true)]
+[delay(time=0.4)]
+[PlaySound(key="$d_avg_emgseaalarm", volume=1)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0.92, g=0.4, b=0.3, fadetime=0.4, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", duration=1, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="緊迫したエーギル人"]見ろ！
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="怪しいエーギル人"]――！
+[charslot]
+都市の中心にそびえる塔はもはや存在せず、それは深海の洞窟でしか見られないような巨大な「石柱」に成り果てていた。
+シーボーンの緻密で多孔質な体組織や、ぬめぬめとした体組織が、ビーコン塔の外壁を幾重にも包み込んでいるのだ。
+それでも、その奥からは照明設備の光が透けて、周囲のすべてを怪しくも美しく染め上げていた。
+石柱からは群体が舞い落ちて、広場へと拡散し、異形の生物へと変貌していく。
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="緊迫したエーギル人"]まだ形を残しているあの彫刻群がなければ、目の前のすべてが本来文明的な場所だったなんて想像もつかないな！
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="怪しいエーギル人"]……「営巣地化」してるんだわ。
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="緊迫したエーギル人"]でも、どうしてシーボーンがここに？　俺たちはまだ……
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="怪しいエーギル人"]何にせよ、期待通りの結果であれば、それが私たちのもたらしたものかなんてどうでもいいわ。
+[name="怪しいエーギル人"]願わくばこれが、衰退していくエーギルの人々にとって、忘れ得ぬ教訓となってほしいものね。
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="緊迫したエーギル人"]それで、どう動く？
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="怪しいエーギル人"]この状況を後押しして、都市側の反撃を阻止しましょう。
+[charslot(slot = "r", focus="n")]
+[name="？？？"]トゥリア氏を殺害するに飽き足らず、内部から都市を完全に破壊しようと？
+[name="？？？"]本来ならば、もうしばしお前たちを泳がせて、ほかの連中ともども一網打尽にするつもりだったのだがな。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1", duration=1.5, isblock=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="セクンダ"]事態は急を要するものだ。よってお前たちを拘束する。
+[name="セクンダ"]今月に入って海巡隊が捕縛した深海教徒はこれで三十四人になる。
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="緊迫したエーギル人"]海巡隊……
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="怪しいエーギル人"]このところ、大勢の兄弟姉妹を傷つけてくれたわね。
+[name="怪しいエーギル人"]既存の秩序に盲従しても意味はないのよ。エーギルに必要なのは、絶望の中で余命を繋ぐことではなく――
+[dialog]
+[charslot(slot = "all", focus="all")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_seagunshoot", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=0.1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_seagunshoot", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot = "r",  posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=0.5, isblock=true)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot = "l",  posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=0.5, isblock=true)]
+[delay(time=0.4)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="セクンダ"]くどい。お前たちと議論している暇はないんだ。
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="海巡隊隊長"]指揮官、市内の生体反応が異常に密集しています。短時間で三倍にまで跳ね上がりました。
+[name="海巡隊隊長"]シーボーンはすでにあの塔に営巣しており、そこから絶えず生まれ出ています……
+[charslot(slot = "m", name = "avg_4137_udflow_1#6$1")]
+[name="セクンダ"]ほかの市街地にまで広げさせるな！
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="セクンダ"]付近の民衆はすでに自主避難を済ませている。お前は、小隊を率いて彼らを避難所まで撤退させろ。
+[name="セクンダ"]途中、路上の補助機械はすべて排除しておくように。もしシーボーンに汚染されれば、敵側の武器となってしまうからな。
+[name="セクンダ"]その他の人間は部隊を編成し、障壁を展開しろ。シーボーンどもをビーコン塔周辺エリアで押しとどめるんだ！
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="海巡隊隊長"]了解！
+[charslot(slot = "m", name = "avg_4137_udflow_1#3$1")]
+[name="セクンダ"]第Ⅳ級兵器は起動したというのに、まさか……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1)]
+[name="クレメンティア"]……ええ、聞こえています。
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]直ちに第Ⅳ級兵器を停止し、最速で兵器システムの全面検査を行いなさい。
+[name="クレメンティア"]すでに帰還している防衛部隊は全員、即座にポートターミナルに再集結を。
+[name="クレメンティア"]また、この時点から、全部隊で通信チャンネルを開いたままにしていなさい。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1382_1#4$1")]
+[name="クレメンティア"]……
+[name="クレメンティア"]…………
+[dialog]
+[charslot]
+[Decision(options="現状はあなたの説明と違っているようだな、閣下。;これは計画にないことだろう？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="ケルシー"]リアルタイム反映式の、この海図をご覧ください。ほんの一時間前までは、シーボーンの生体反応は全体的に概ね安定していましたが――
+[name="ケルシー"]今や、大陸棚すべての巣穴が近付きつつあります。巣穴が移動しているわけではなく、ただ膨張し続けていることによって。
+[name="ケルシー"]白い紙の上で、無数に落とされたインクが滲み広がるかのように。
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="クレメンティア"]海域全体が営巣地化しているのです。
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]点在していた巣穴が一つに繋がっていく中で、ミリアリウムはその中心に置かれています。
+[charslot(slot = "m", name = "avg_003_kalts_1#7$1")]
+[name="ケルシー"]執政官閣下。エーギルが巣穴に投下したのは、奴らを追い払う兵器ですか？　それとも、大量の活性剤ですか？　奴らを滅ぼそうとしているのか、餌付けしているのか、一体どちらなのでしょう。
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="クレメンティア"]……
+[name="クレメンティア"]仮に、ビーコンと兵器の連動システムを書き換えたのがブランドゥスなのであれば、第Ⅳ級兵器の効果を歪めてしまったのも彼なのでしょう。
+[name="クレメンティア"]結果的には……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="エーギルが陸と接触する機会を逆に利用された。;都市はシーボーンが陸を目指すうえでの拠点となった。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="クレメンティア"]航路計画の総戦略設計士として、私は今起きていることの責任を負うこととなるでしょう。ですが、我々はまだこの戦争に負けたわけではありません。
+[name="クレメンティア"]外をご覧いただけばおわかりになるように、市内はまだ静かなものです。ミリアリウムは、パニックに陥ってはいないのです。
+[name="クレメンティア"]シーボーンと戦ってきたこの二百年余り、我々は似たような異変を数え切れない程経験してきました。ミリアリウム陥落を宣言するには、時期尚早です。
+[name="クレメンティア"]お二人とも、今すぐここを離れましょう。港まで護衛いたします。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]執政官はここに残られるものと思っていましたが。
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]今この時、この都市の心臓部にして最も失うべきでない場所はポートターミナルです。
+[name="クレメンティア"]シーボーンがすでに都市へと侵入しているというのに、あの招かれざる客たちが瞑想の間の扉を叩くのを待てとは仰らないでしょう？
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g3_beaconctrlroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[PlaySound(key="$bodyfalldown3", volume=0.4)]
+[charslot(slot = "m", name = "avg_npc_1380_1#9$1", posfrom="0,0", posto="0,-20", afrom=1, ato=1, duration=0.5, isblock=true)]
+[name="ジョディ"]ううっ――
+[name="ジョディ"]湿気が強くなりすぎて、い、息苦しくなってきました……
+[charslot]
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]足元に気をつけろ。身につけた装置を使って浮け。そいつを踏みつけないようにな。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_dripink", volume=0.4)]
+[PlaySound(key="$d_avg_activation", volume=0.8, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=1.5)]
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1", posfrom="0,-20", posto="0,0", afrom=1, ato=1, duration=1.5, isblock=true)]
+[name="ジョディ"]……溟痕？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1")]
+[name="ウルピアヌス"]この溟痕が、シーボーンの持つもう一つの拡張手段だ。奴らはすでに塔の頂上からここまで広がっている。陸でお前が見たものより遥かに速くな。
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="ジョディ"]シーボーンが都市に営巣しているんですか！？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1")]
+[name="ウルピアヌス"]ああ。俺たちの頭上でな。
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="ジョディ"]シーボーンを導いた者がいると仰いましたが……一体なぜ、どのようにしてそんなことを？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#4$1")]
+[name="ウルピアヌス"]そこで死んでいるブランドゥスが……五年間心血を注いで得た成果だろう。
+[name="ウルピアヌス"]あいつのバカげた構想では、この塔が発する信号と、ミリアリウムがシーボーンを駆除するために用いるはずだった兵器が、シーボーンと人類を結ぶ交流の懸け橋となる予定だった。
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#3$1")]
+[name="ウルピアヌス"]ある意味での「懸け橋」を架けることには成功したのだろう。だがシーボーンどもはあいつの善意と大願になど応えはしない。
+[name="ウルピアヌス"]あいつの思い描いた「交流」は、ただこの畜生どもがミリアリウムの位置を特定し、都市防衛のメカニズムを理解するのに役立てられただけだった。
+[name="ウルピアヌス"]軍団はこれまで、力を尽くしてこの海域を制御可能な範囲に分割してきたが、たった今、仕切られていたすべての巣穴がビーコンの信号に導かれ、再び一つになってしまった。
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]本来であれば第Ⅳ級兵器は巣穴を滅ぼし、シーボーンを駆除するはずだった。しかし実際には、兵器の攻撃ルートに沿ってシーボーンの血肉がはびこり、死ぬはずのものが栄養を得るに至った。
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="ジョディ"]……
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]フンッ、あいつは死ぬまで己の傲慢さに気付かなかったようだな。
+[charslot(slot = "m", name = "avg_npc_1380_1#2$1")]
+[name="ジョディ"]あなたが仰っていることはよくわかりません。でも、今は……
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]この塔はすでにシーボーンの新たな巣穴とされ、絶えず幼体を吐き出しては、ほかの巣穴のシーボーンどもを引き寄せている。
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="ジョディ"]その変異を止めることはできますか？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]もう手遅れだ。
+[name="ウルピアヌス"]今からでも間に合わせられるのは、ビーコン塔のある都市ユニットを切り離すことだけだな。
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="ジョディ"]……切り離すというのは？
+[name="ジョディ"]この都市は積み木で出来ているわけではないのですし、どうすれば……
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]お前はまだエーギルを知らないな。
+[name="ウルピアヌス"]巨大な区画を繋ぎ合わせて作られる陸上の移動都市とは違い、エーギルの科学技術は生物の持つような特性に寄せることを重視している。これは、都市の建設においては特に顕著な傾向だ。
+[name="ウルピアヌス"]たとえば、ケガを負った海獣が、毒の回った己の手足を食いちぎることは単に本能による行動であり、何ら難しいことではない。
+[name="ウルピアヌス"]この都市の残された部分は今なお有用だ。ゆえに保持する必要がある。でなければ、海域全体のシーボーンが狂える潮流と化したその時、奴らを止められるものはなくなるだろう。
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[name="ジョディ"]そうなれば、シーボーンは何にも遮られずに陸へと上がり……イベリアに押し寄せてしまう……
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="ジョディ"]ウルピアヌスさん、具体的には何をすればいいですか？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]ミリアリウムの各都市ユニットは、膨大にして緻密なフレームが支えている。ビーコン塔のあるユニットを制御する連動装置の操作システムは、恐らくこの中央制御室内にあるはずだ。
+[name="ウルピアヌス"]それを起動すれば、ビーコン塔全体を海底に沈められるだろう。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g3_beaconctrlroom",screenadapt="coverall")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1", duration=1.5, isblock=true)]
+[name="ジョディ"]……これでしょうか？
+[dialog]
+[PlaySound(key="$keyboard", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_button", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="ジョディ"]操作自体は可能ですが――どうして反応がないんでしょう？
+[name="ジョディ"]操作システムに問題はなさそうですね。となると、連動装置自体に何かが起きているとか……
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#3$1")]
+[name="ウルピアヌス"]設備管理所には、フレームの検査とメンテナンスを担う責任者が置かれている。よって連動装置が故障する確率は、アビサルハンターの武器が錆びつく確率よりも低い。
+[name="ウルピアヌス"]よりによって今、この場所で起きたとなれば……
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="ジョディ"]……
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1")]
+[PlaySound(key="$d_avg_microrobot", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="「リトル・ハンディ」"]読み込みエラー。二度目のエラーメッセージです。
+[name="「リトル・ハンディ」"]トラブルシューティングを実行しますか？
+[charslot]
+[charslot(slot= "r", name="avg_npc_1386_1#1$1")]
+[name="アウィトゥス"]……
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1380_1#1$1",duration = 1)]
+[charslot(slot = "r", name = "avg_npc_1386_1#1$1")]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_1380_1#2$1",focus="l")]
+[name="ジョディ"]アウィトゥスさん、何かお手伝いしましょうか？
+[charslot(slot = "r", name = "avg_npc_1386_1#1$1",focus="r")]
+[name="アウィトゥス"]いいや、大丈夫だよ。この捨てられたリトル・ハンディを観察していただけだから。
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="51_g3_beaconctrlroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="ジョディ"]まさか……
+[name="ジョディ"]あの人は、本当に何かを知っているんじゃ？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#7$1")]
+[name="ウルピアヌス"]ん？
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="ジョディ"]もしかすると、探すべき人がわかったかもしれません。
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1")]
+[name="ウルピアヌス"]……
+[name="ウルピアヌス"]外にいるエーギルの兵士に連絡しろ。あいつらなら、お前がここを去るのを援護してくれるだろう。
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="ジョディ"]……
+[name="ジョディ"]あなたは、一人でここに残られるんですか？
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#7$1")]
+[name="ウルピアヌス"]まだ俺を疑っているな、若造。いいことだ。
+[name="ウルピアヌス"]だが、誰かはここに残らねばならない。
+[name="ウルピアヌス"]ビーコン塔が完全に巣穴と化してしまえば、連動装置を直したところで、この都市ユニットを切り離すことはできなくなる。
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#4$1")]
+[name="ウルピアヌス"]海獣には、己のものではなくなった心臓を吐き出すことなどできないのだからな。
+[name="ウルピアヌス"]俺はこの場を守り、都市ユニットのフレームが復旧するのを確認した上で、ビーコン塔を切り離さねばならないんだ。
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="ジョディ"]ですが、そんなことをしたら……あなたはビーコン塔と一緒に海底へと沈むことになります。そうなれば、無限に湧くシーボーンに取り囲まれて、最後には……
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#7$1")]
+[name="ウルピアヌス"]心配するな。まさか、お前のほうが俺よりも適任だとは言うまい？
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="ジョディ"]……
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#2$1")]
+[name="ウルピアヌス"]時間がないんだ、若造。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="ジョディ"]あ、あなたはどうして……
+[charslot]
+[name="？？？"]ビーコン塔のチャンネルから……？
+[name="？？？"]海巡隊のセクンダです。塔内にいるのはどなたですか？
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g2_beaconsquare_nest",screenadapt="coverall")]
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#8$1", duration = 0)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[name="セクンダ"]では、ブランドゥスは？
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#8$1", duration = 0, switch = true)]
+[name="ウルピアヌス"]あいつは死んだ。
+[charslot(slot = "l", name = "avg_4137_udflow_1#2$1")]
+[interlude(channel = 3, switch = false)]
+[name="セクンダ"]……
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[name="セクンダ"]彼とはずっと連絡を取り合っていたのに、小官は異常に気付けませんでした。後ほど、執政官より処罰を受けるべきですね。
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#1$1", duration = 0)]
+[name="ウルピアヌス"]ミリアリウムはこの塔を放棄せねばならない。俺はこいつが海底に沈むのを見届けよう。
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[interlude(channel = 3, switch = false)]
+[name="セクンダ"]ではその後は？
+[name="セクンダ"]エーギルに戻られるおつもりはありますか？　そもそも、戻れるのですか？
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#1$1", duration = 0)]
+[name="ウルピアヌス"]無益な質問はするな、セクンダ。
+[name="ウルピアヌス"]過去を引きずるあまり、優柔不断になってはならない。
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[interlude(channel = 3, switch = false)]
+[name="セクンダ"]……考えすぎですよ、ウルピアヌス。
+[name="セクンダ"]実はブランドゥスが、あの当時のことを教えてくれたのです。
+[name="セクンダ"]小官の申請を却下したのがあなたであれ、ブランドゥスであれ、小官にとっては違いのないことでした。
+[charslot(slot = "l", name = "avg_4137_udflow_1#10$1")]
+[name="セクンダ"]アビサルハンターになれなかったこと、そしてあなたたちと肩を並べて戦えなかったことを、小官は……とても残念に思っていると、認めるべきなのかもしれませんね。
+[name="セクンダ"]当時、小官は長い間怒りと不満を抱いていましたし……スカジにはいくらか嫉妬すらしていました。
+[charslot(slot = "l", name = "avg_4137_udflow_1#7$1")]
+[name="セクンダ"]ですがその後は、あなた方のため、我々の故郷と文明を守るあらゆる計画のために、海を巡ることに慣れていったのです。
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#2$1", duration = 0)]
+[name="ウルピアヌス"]計画から身を引くと、より多くの犠牲や裏切り、疑わしい人物、軌道を外れた物事を目にすることになるものだ。
+[charslot(slot = "l", name = "avg_4137_udflow_1#5$1")]
+[interlude(channel = 3, switch = false)]
+[name="セクンダ"]今のあなたのように、ですか？
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#4$1", duration = 0)]
+[name="ウルピアヌス"]……
+[name="ウルピアヌス"]己が背負うべきものはわかったか？
+[charslot(slot = "l", name = "avg_4137_udflow_1#5$1")]
+[interlude(channel = 3, switch = false)]
+[name="セクンダ"]仮にあなたが本当にエーギルを裏切り、あのクズどもの仲間になっていたのなら、ビーコン塔には逃亡のために残るのでしょう。その場合、堕落者を見逃した責任は小官が負います。
+[name="セクンダ"]他方であなたが今もアビサルハンターであるのなら、孤独な戦いを強いられることになります……それでも都市やビーコン塔への潜入と評議会の評価を踏まえるに、疑いを晴らすことは困難でしょう。
+[charslot(slot = "l", name = "avg_4137_udflow_1#2$1")]
+[name="セクンダ"]エーギルは、あなたの犠牲を記憶に刻むことなどないかもしれません……トゥリア氏が忘れ去られる定めにあるのと同じように。
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[name="セクンダ"]ですが、今ビーコン塔を切り離すことは、確かにミリアリウムが災いに対処するうえで最大限の援助となりましょう。
+[name="セクンダ"]ゆえに小官は、あなたの選択に同意し、最低限の信頼を置くことにします。
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#4$1", duration = 0)]
+[name="ウルピアヌス"]フン……いいだろう。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[name="セクンダ"]5分ください。小官がその陸からの客人をビーコン塔から連れ出しましょう。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[interlude(clear=true)]
+[Background(image="51_g10_shipinterior",screenadapt="coverall")]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="クレメンティア"]すでに都市内全域において緊急交通調整プランが適用されていますので、これより我々は、闘智場から中軸通路を経由してポートターミナルに入ります。
+[name="クレメンティア"]その後私は、ポートターミナルに残って作戦指揮を執る予定です。この船は海巡隊が引き継いで、あなた方を速やかに陸まで護送いたします。
+[name="クレメンティア"]ドローン部隊もあの灯台へと向かわせ、イベリアの防衛布陣構築を支援させましょう。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]ミリアリウム内の民衆の避難についても手配すべきではありませんか？
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="クレメンティア"]この都市は軍事要塞でもありますので、戦争時に人々を収容することができるように作られております。ですので、戦闘と無関係な民衆はすでに、海巡隊の護送で避難所へ向かいました。
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="クレメンティア"]――
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="執政官閣下、あなたの手から伸びている神経ケーブルは……", values="1")]
+[Predicate(references="1")]
+[Decision(options="そうしてねじ曲がり痙攣することはないはずでは？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="クレメンティア"]仰る通りです。通信がダウンし、私の神経と船の操作システムとの接続まで切断されました……今や私は、船の制御を失いつつあります。
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]リトル・ハンディ、全艦検査プログラムをただちに実行しなさい。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_microrobot", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1", duration=1, isblock=true)]
+[name="「リトル・ハンディ」"]――
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]思っていたよりも深刻なレベルで、システムが侵害されているようですね。
+[name="クレメンティア"]申し訳ありません、お二人とも。これでは、着陸まで持たないかもしれません。
+[name="クレメンティア"]ミリアリウム内の人工重力はまだ機能していますので、今身につけていらっしゃる装置があれば、空中を泳ぐことは可能です。
+[name="クレメンティア"]私についてきてください。恐れることはありません。ハッチから出ましょう。
+[dialog]
+[PlaySound(key="$d_avg_higheldshosfts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[PlaySound(key="$d_avg_glassdooropen", volume=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.1,yScale=1.1)]
+[delay(time=1)]
+[CameraShake(duration=6, xstrength=15, ystrength=15, vibrato=90, randomness=50, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_collapse", volume=1, loop=true, channel="b")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[StopSound(channel="b", fadetime=4)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="クレメンティア"]通信はまだ復旧しません。闘智場全体が、何らかの方法で外界から隔絶されているようですね。
+[dialog]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=0.4)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1382_1#11$1")]
+[name="クレメンティア"]――
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_003_kalts_1#7$1", posfrom="0,0", posto="150,0", duration=0)]
+[name="ケルシー"]――Mon3tr！
+[dialog]
+[PlaySound(key="$fireburst", volume=1)]
+[BackgroundTween(xFrom=0, xTo=-65, duration=1,ease="OutQuad",block=false)]
+[charslot(slot = "l", name = "avg_003_kalts_1#7$1", posfrom="150,0", posto="0,0", afrom=1, ato=0, duration=1)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[charslot(slot = "m", name = "npc_10002", afrom=0, ato=1, duration = 1.5, isblock=true)]
+[name="Mon3tr"]（警戒の雄たけび）
+[charslot]
+Mon3trが漆黒の鋭い爪を広げた瞬間、焼けるような熱が正面から押し寄せた。執政官もそれとほぼ同時に反応し、儀礼刀を抜くや、それを半身に構えてあなたたちを守るように立つ。
+あなたたちは同時に、前方の「敵」に気が付いた。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_seabornbacklair", volume=1, loop=true, channel="u")]
+[PlayMusic(key="$m_avg_opening_intro", volume=0.6)]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.5,yScale=1.5, y=-100, fadetime=2)]
+[backgroundTween(yFrom = -30, yTo = 30, duration=8, block=false)]
+[focusout(type="bg", id="51_g6_aegirarena", from=0, to=1, duration=0.1, block=false)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.6, fadetime=0.1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", posfrom="-60,20", posto="-60,-20", afrom=1, ato=1, duration=3.7)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.3, duration = 0)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.8)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.5,yScale=1.5, fadetime=2)]
+[backgroundTween(yFrom = 0, yTo = 60, duration=8, block=false)]
+[focusout(type="bg", id="51_g6_aegirarena", from=0, to=1, duration=0.1, block=false)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.6, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", posfrom="60,20", posto="60,-20", afrom=1, ato=1, duration=3.7)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.3, duration = 0)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.8)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[charslot]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-50, fadetime=2)]
+[backgroundTween(yFrom = -50, yTo = 0, duration=6)]
+[StopSound(channel="u", fadetime=4)]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", posfrom="0,50", posto="0,0", duration=6)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1, duration = 0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=3)]
+[name="？？？"]……
+異様な形のシーボーンが、あなたたちの前に浮かんでいる。
+それは敵意を見せることなく、Mon3trの雄たけびに邪魔されるまで、ただ静かにそこに浮かんでいた。闘智場の中央にある珊瑚のような端末が、目鼻もないその顔を照らしている。
+シーボーンを取り囲む粒状の細胞小器官が腕のように開き、端末の枝を「さする」と、端末に流れる文字や符号と一体化していく。
+観察しているのだろうか？　何かを感じ取っているのだろうか？　このシーボーンに、人類の感情や理性を理解することができるのだろうか？
+[dialog]
+[PlaySound(key="$d_avg_underwtr", volume=1, loop=true, channel="u")]
+[StopSound(channel="u", fadetime=4)]
+[charslot(slot = "m", afrom=1, ato=0, duration=3)]
+[focusout(type="bg", id="51_g6_aegirarena", from=1, to=0, duration=3, block=false)]
+[Delay(time=3)]
+シーボーンは、あなたたちのほうを向いた。
+[charslot(slot = "m", name = "avg_npc_1382_1#11$1")]
+[name="クレメンティア"]シーボーンが一匹……闘智場の端末からシステムを侵害したのは奴なのでは？　見たことのない能力ですね。
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="奇妙なシーボーン"]（曖昧なエーギル語）ここに正義はなく、ただ前路のみがある。
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]単なるシーボーンが、エーギルの都市に侵入し、先哲が設計した聖地で古代の格言を口にするとは。
+[name="クレメンティア"]私がこの戦争に参与して以来、最も皮肉な光景であり、最も無礼な挑発ですね。
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]奴の言語の使い方も、話し方とその癖も……シーボーンが無理やりに「学習」した結果とは思えません。
+[name="ケルシー"]執政官閣下。恐らくこのシーボーンはかつて人間だったものです。
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="奇妙なシーボーン"]言語。私がそれを忘れたことはなく、それが私を捨て去っていったこともない。
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]では、あなたの思考はどうなのですか？　先哲の言葉を不格好に真似ているそれは、自分が発した言葉の意味を理解してのことだと？
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="奇妙なシーボーン"]理解？　否。この言葉を残した時、私はその本当の意味を理解してはいなかった。
+[name="奇妙なシーボーン"]今になって、改めて理解することができたのだ。
+[charslot(slot = "m", name = "avg_npc_1382_1#7$1")]
+[name="クレメンティア"]この言葉を残した……マルトゥスだと？
+[name="クレメンティア"]……あなたがそうだと言うのですか！？
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="クレメンティア"]マントル遺跡第四観測隊の中心人物にして、人類学者であり先史文明研究者でもあった、二百年以上前に突然失踪したかの先哲、マルトゥスその人であると？
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="奇妙なシーボーン"]……はるか遠き記憶の中では、確かにそう呼ばれていた。
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="奇妙なシーボーン"]だが今、お前はただ現象そのものを理解するだけで構わない。お前たちの眼前にいるのは一匹のシーボーンだ。ゆえに私のことは、ただこう呼べばいい。
+[name="奇妙なシーボーン"]「シーボーン」と。
+[charslot]
+シーボーンがこちらに向かって浮かび上がる。
+透明な頭蓋越しに、不気味な色合いをした核状の物体が集まっては散り、変化し続けているのが見える。
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="「シーボーン」"]エーギル人よ。お前の背後にいる者と、話をさせてくれ。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[charslot(slot = "m", name = "npc_10002")]
+[name="Mon3tr"]（怒りの雄たけび）
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="「シーボーン」"]グッ――そいつに牙をしまわせろ。その炎では、私の血は燃やせない。
+[name="「シーボーン」"]AMa-10――
+[dialog]
+[charslot]
+[Decision(options="お前は何者だ？　なぜケルシーをそう呼ぶ？;ケルシーの正体を知っているのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]……
+[name="ケルシー"]Dr.{@nickname}。君は警戒を保て。私がこのシーボーンと話そう。
+[charslot(slot = "m", name = "avg_npc_1383_1#2$1")]
+[name="「シーボーン」"]Kal-tsit……ケルシー。なるほど。そう呼ばれ慣れているのなら、そう呼んでも構わない。
+[name="「シーボーン」"]ケルシー。お前を、お前たちを待っていた。長らくの間。
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

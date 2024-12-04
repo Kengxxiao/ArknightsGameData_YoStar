@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=false)] 2023愚人节教学关1_c
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.EnsureMinSp(charId="trap_116_stdurk", sp=5)]
 [Battle.Pause(pause=true)]
 [InputBlocker(blockInput=false)]
@@ -16,6 +17,7 @@ Start shooting!
 [Delay(time=3)]
 [Battle.Pause(pause=true)]
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [PopupDialog(dialogHead="$avatar_cammou")]This material is excellent. The primary subject looks quite unique, so you could even call it <@tu.kw>rare footage</>.
 [PopupDialog(dialogHead="$avatar_cammou")]In addition to these unique characters, some passersby will have interesting interactions. Capturing those scenes will also give you <@tu.kw>rare footage</>.
 [PopupDialog(dialogHead="$avatar_cammou")]Unlike ordinary footage, <@tu.kw>rare footage</> is guaranteed to get the desired response during the stream, which is important for keeping things running smoothly.

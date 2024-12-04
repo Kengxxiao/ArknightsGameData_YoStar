@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡02_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_scave")] 도베르만 교관, 지금 정체불명의 적으로부터 공격받고 있어!
 [PopupDialog(dialogHead="$avatar_doberm")] 곧 지원을 보낼게!
@@ -16,7 +17,6 @@
           protectTime=0.5, dialogHead="$avatar_grani")] \
 나, 어떻게 해야 되지?
 [PopupDialog(dialogHead="$avatar_doberm")] 스캐빈저와 <@tu.kw>릴레이</> 하면 된다. 그러면 스캐빈저가 쓰러지더라도 몸에 지닌 전술 장비를 전부 이어받을 수 있다.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.EnsureMinCost(cost=11)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_grani", animStyle="Drag", \
@@ -26,7 +26,7 @@
           startX=-70, startY=-50, endX=250, endY=-50)] \
 맞아! 그거야!
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

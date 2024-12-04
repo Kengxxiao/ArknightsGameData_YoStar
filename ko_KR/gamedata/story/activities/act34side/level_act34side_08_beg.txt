@@ -1,0 +1,784 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[PlaySound(key="$d_avg_deepseaamb", volume=0.4, loop=true, channel="en")]
+[StopSound(channel="e", fadetime=10)]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1387_1#7$1", duration=1.5, isblock=true)]
+[name="카시아"]콜록콜록……
+[name="카시아"]다행이야. 하마터면 잡힐 뻔했어……
+[charslot(slot = "r", focus="n")]
+[name="???"]카, 카시아, 계속 널 찾고 있었어. 이렇게 오랫동안 어디에 있었던 거야?
+[charslot(slot = "r", name = "avg_npc_1387_1#5$1", focus="r")]
+[name="카시아"]……루실라?
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_4079_haini_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1387_1#8$1", focus="r")]
+[name="카시아"]여기서 멍하니 서서 뭐 해?
+[charslot(slot = "l", name = "avg_4079_haini_1#9$1", focus="l")]
+[name="루실라"]도시 유닛 프레임 점검이 필요해. 이것도 전투의 일부야. 비콘탑 쪽은…… 도시에 대체 무슨 일이 일어난 거지?
+[charslot(slot = "r", name = "avg_npc_1387_1#8$1", focus="r")]
+[name="카시아"]시본이 밀리아리움에 침입했어. 그 탑은 이미 소굴이 됐지.
+[name="카시아"]여긴 내게 맡기고 넌 빨리 피해.
+[charslot(slot = "l", name = "avg_4079_haini_1#2$1", focus="l")]
+[name="루실라"]너무 위험해…… 난 여기 남겠어. 너와 함께 있을 거야.
+[charslot(slot = "r", name = "avg_npc_1387_1#2$1", focus="r")]
+[name="카시아"]괜찮은데, 윽……
+[charslot(slot = "l", name = "avg_4079_haini_1#5$1", focus="l")]
+[name="루실라"]카시아, 다쳤어?!
+[charslot(slot = "r", name = "avg_npc_1387_1#7$1", focus="r")]
+[name="카시아"]응.
+[charslot(slot = "l", name = "avg_4079_haini_1#7$1", focus="l")]
+[multiline(name="루실라")]네가 오는 동안 그 시본들이……
+[charslot(slot = "l", name = "avg_4079_haini_1#6$1", focus="l")]
+[multiline(name="루실라",end=true)]아니, 시본이 이런 찰과상을 입힐 수는 없는데……
+[name="루실라"]누구한테 공격받은 거야?
+[charslot(slot = "r", name = "avg_npc_1387_1#2$1", focus="r")]
+[charslot(slot = "r", action="shake", afrom=1 , focus="r", ato=1, power=3, times=30, duration=0.3)]
+[name="카시아"]콜록콜록!
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", posfrom="0,0", posto="100,0", duration=1.5, afrom=1, ato=0, isblock=true)]
+[delay(time=0.5)]
+[charslot]
+[PlaySound(key="$d_avg_metaldoorclose", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_4079_haini_1#5$1")]
+[name="루실라"]잠깐만, 안전밸브를 왜 빼는 거야?
+[dialog]
+[charslot(slot = "m", posfrom="0,0", posto="100,0", duration=0.5, afrom=1, ato=1, isblock=true)]
+[name="루실라"]잠깐, 앞으로 밀지 마. 그렇게 하면 아래층의 자가 점검 시스템이 차단돼서 이곳의 도시 유닛 프레임이 작동을 멈출 거야……
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]아니지. 넌 당연히 나보다 더 잘 알 텐데……
+[dialog]
+[SoundVolume(volume=0.2, channel="en",fadetime=2)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1.5)]
+[charslot(slot = "m", posfrom="100,0", posto="0,0", duration=1.5, afrom=1, ato=1, isblock=true)]
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]카시아, 이게 네 진짜 목적이야? 너, 넌 심해 교회 사람이었어?
+[name="루실라"]……
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[multiline(name="루실라")]그래서 해양 순찰대가 툴리아를 조사할 때 일부러 툴리아가 의심받도록 유도한 거야? 설마, 툴리아의 실종도 네가……
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[multiline(name="루실라",end=true)]내 목에 뭘 건 거야?
+[charslot(slot = "m", name = "avg_npc_1387_1#1$1")]
+[name="카시아"]긴수염 이빨풀이야. 트랙용 산호 재배를 담당하는 친구의 작품이지. 움직이지 마. 그 촉수에 피부가 찔리면 고통스럽게 죽게 될 거야.
+[name="카시아"]이제, 너는, 콜록…… 여길 떠나. 네가 충분히 멀어지면 그건 저절로 떨어질 거야.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1387_1#7$1")]
+[delay(time=1)]
+[name="카시아"]너, 여기서 벗어나고 싶었지?
+[name="카시아"]사실 우리가 동료가 되기 전에, 발전계획소에서 우연히 네 평가 자료를 본 적이 있어.
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]……
+[charslot(slot = "m", name = "avg_npc_1387_1#7$1")]
+[name="카시아"]네가 그 데이터 분석가를 신경 쓴 건, 밀리아리움의 그 철수가 여전히 마음에 남아있었기 때문이지?
+[name="카시아"]멀리 화산 에너지 스테이션의 불빛이 하나씩 꺼져가는 걸 보면서, 주변엔 끝없는 어둠만 남았지. 어둠 속에선 바다의 파도 소리와 굉음과 바스락거리는 이상한 소리만 남았어……
+[name="카시아"]그게 바로 바다 본연의 모습이야.
+[charslot(slot = "m", name = "avg_npc_1387_1#2$1")]
+[name="카시아"]그 순간, 너는 밀리아리움 통틀어 바다와 가장 가까운 사람이었어. 당신은 돔 사이의 틈새에 서 있었고 주변엔 아무도 없었지.
+[name="카시아"]발전계획소는 당신의 심리적 스트레스가 너무 크다고 평가했기에, 널 돔 시스템에서 지상으로 전환 배치하도록 승인했어. '고소공포증'은 그저 실없는 농담일 뿐이지.
+[charslot(slot = "m", name = "avg_npc_1387_1#7$1")]
+[name="카시아"]네 마음 깊은 곳에 어떤 것이 숨겨져 있는지 어쩌면 너 스스로도 깨닫지 못했던 건지도 모르지……
+[charslot(slot = "m", name = "avg_4079_haini_1#10$1")]
+[name="루실라"]……
+[charslot(slot = "m", name = "avg_npc_1387_1#1$1")]
+[name="카시아"]남은 시본들이 곧 이 길이 아직 통과할 수 있다는 걸 알아챌 거야. 너는 다시 그들과 마주하고 싶지 않겠지.
+[name="카시아"]어서 가, 아직 늦지 않았어.
+[charslot(slot = "m", name = "avg_4079_haini_1#10$1")]
+[name="루실라"]……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_gatecloz", volume=1)]
+카시아는 안전밸브를 잡고 계속 앞으로 밀었다. 옆에 서 있는, 늘 농담을 즐겨하던 후배를 더 이상 쳐다보지 않았다.
+안전밸브가 갑자기 멈추며 귀를 찌르는 듯한 날카로운 소리를 냈고, 카시아는 조금도 더 밀 수 없었다……
+가느다란 손이 반대쪽을 막고 있었다.
+[charslot(slot = "m", name = "avg_npc_1387_1#6$1")]
+[name="카시아"]루실라?
+[charslot(slot = "m", name = "avg_4079_haini_1#2$1")]
+[name="루실라"]하, 평소라면 화를 내며 네게 반박했겠지. 아니면 이런 풀 따위를 내 잉크병에 집어넣다니, 장난이 너무 서투르다고 했을 거야.
+[charslot(slot = "m", name = "avg_4079_haini_1#4$1")]
+[name="루실라"]하지만, 너무 밝아…… 비콘탑이 가라앉는 방향, 우리 머리 위의 돔, 온 대륙붕에 있는 시본들이 모두 밀리아리움으로 몰려오고 있지?
+[name="루실라"]이 기이한 색의 빛 뒤에 있는 건 뭐야?
+[name="루실라"]카시아, 네 말이 맞아. 시본이 우리의 삶을 침식하고 있어. 난 이미 생생히 직접 경험했으니, 잊을 수가 없지.
+[name="루실라"]난 툴리아가 부러워. 우린 비슷한 일을 겪었는데, 툴리아는 처음부터 끝까지 자신이 소중히 여기는 것을 지켜냈어. 정말 대단해!
+[charslot(slot = "m", name = "avg_4079_haini_1#3$1")]
+[name="루실라"]하지만 난 돔에서 지상으로 도망쳤고, 방금 네가 오기 전까지도 이곳에서 도망치고 싶었어……
+[name="루실라"]하지만 난 어디로 가면 되는 걸까?
+[charslot(slot = "m", name = "avg_4079_haini_1#6$1")]
+[name="루실라"]카시아, 난 네가 도시 유닛 프레임을 파괴하도록 놔둘 수 없어. 시본이 밀리아리움의 다른 도시 유닛으로 침투하게 내버려 둘 순 없다고. 이 풀 따위가 정말 내 목숨을 앗아간다 해도!
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]왜냐하면, 왜냐하면 내 뒤에는 길이 없으니까.
+[charslot(slot = "r", action="shake", afrom=1 , ato=1, power=3, times=30, duration=0.3)]
+[charslot(slot = "m", name = "avg_npc_1387_1#2$1")]
+[name="카시아"]콜록콜록……
+[charslot(slot = "m", name = "avg_npc_1387_1#7$1")]
+[name="카시아"]넌, 힘이 정말 세구나……
+[charslot(slot = "m", name = "avg_4079_haini_1#1$1")]
+[name="루실라"]로렌티나 씨의 부모님께서 가르쳐 주셨어. 돔은 분명 아름답지만, 이 투명한 구조물은 사실 에기르 도시의 눈이라고.
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]사실, 난 최근까지도 계속 스스로에게 물었어…… 우리가 전쟁 중이라면, 눈은 위험을 주시해야 하는 게 아닐까?
+[charslot]
+루실라는 꿋꿋이 앞을 바라보았다. 기묘한 빛깔들이 그녀의 눈동자에 비쳤고, 귓가에서는 휘몰아치는 파도 소리와 바다의 아이들이 속삭이는 소리가 들려왔다.
+젊은 에기르인은 안전밸브를 꽉 붙들었다. 루실라는 손을 놓지 않았고, 놓을 수 없었다.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1387_1#2$1")]
+[delay(time=0.2)]
+[charslot(slot = "m", posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[delay(time=1)]
+누군가 루실라의 어깨를 강력한 힘으로 눌렀다. 이미 굳어버린 근육이 거의 강제로 조금씩 풀어지기 시작했다. 그제야 그녀는 정신을 차렸다.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#7$1", duration=1.5, isblock=true)]
+[name="세쿤다"]진정하세요, 루실라 씨.
+[charslot(slot = "m", name = "avg_4079_haini_1#10$1")]
+[name="루실라"]카시아는……
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="세쿤다"]일시적인 마비입니다. 실수로 빗나가는 바람에 살짝 긁히는데 그쳤죠. 그래서 독소 작용이 이렇게 뒤늦게 나타난 겁니다.
+[name="세쿤다"]당신의 안전이 위협받았군요. 죄송합니다.
+[dialog]
+[charslot(duration=0.5, isblock=true)]
+[PlaySound(key="$d_avg_mictest", volume=1)]
+[delay(time=2)]
+[name="클레멘티아"]집정관 클레멘티아가 밀리아리움 전 도시에 명령을 내립니다!
+[name="클레멘티아"]비콘탑이 있는 도시 유닛의 분리가 완료되면, 나머지 도시는 육지 방향으로 이동하여 시본의 포위망에서 빠져나오십시오!
+[name="클레멘티아"]이동 과정에서 도시 유닛 프레임 연동 장치를 재가동하여 구조를 재구성하고, 중력장을 전면 개방하여 육지로 몰려드는 시본을 차단하십시오!
+[name="클레멘티아"]제8군단, 제10군단 및 해양 순찰대 등 이동이 가능한 모든 함선은 교대로 출항하여 도시를 호위하십시오!
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="세쿤다"]루실라 씨. 카시아에 대한 사건 보고서는 당신이 작성하는 게 더 적절할 것 같군요.
+[charslot(slot = "m", name = "avg_4079_haini_1#2$1")]
+[name="루실라"]이대로 허브항으로 가세요. 집정관이 내린 전투 임무가 더 시급하니까요.
+[charslot(slot = "m", name = "avg_4079_haini_1#4$1")]
+[name="루실라"]카시아는 이미 제압됐으니, 먼저 의사에게 데려가요. 그다음에…… 처벌을 받게 해야겠죠.
+[name="루실라"]그리고 도시의 구조를 재구성을 한다면, 돔 시스템을 중력장의 발생원이 되고, 대규모 시본 무리와 정면으로 맞서게 될 거예요. 그쪽 인력이……
+[name="루실라"]긴급 복귀 신청서를 제출해야 할지도 모르겠네요.
+[charslot(slot = "m", name = "avg_4137_udflow_1#7$1")]
+[name="세쿤다"]루실라 씨, 당신은 매우 용감한 분입니다.
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]듣고 있었군요……
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="세쿤다"]네. 그전에 당신도 의사의 진찰을 받아봐야 할 것 같습니다. 긴수염 이빨풀은 신경 독성이 정말 강하니까요.
+[charslot(slot = "m", name = "avg_4079_haini_1#9$1")]
+[name="루실라"]아…… 알겠어요.
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="en", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g9_shipport",screenadapt="coverall")]
+[PlaySound(key="$d_avg_sea", volume=1, loop=true, channel="s")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[StopSound(channel="s", fadetime=2)]
+[PlayMusic(intro="$jealous_intro", key="$jealous_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1398_1#1$1")]
+[name="전투함 조종사"]범퍼 장갑, 함포 탑재, 감시 유닛, 위장 코딩, 추진 시스템…… 전체 시스템 점검 완료. 언제든 출발 가능합니다.
+[name="전투함 조종사"]최대한 빨리 지정된 해역에 도착해 북쪽에서 오는 시본 떼를 막겠습니다.
+[charslot(slot = "m", name = "avg_npc_1396_1#1$1")]
+[name="허브항 관리자"]무기 시스템의 모든 권한이 허가되었으니 망설이지 마라. 시본이 밀리아리움에 가까이 오지 못하게 하도록.
+[charslot(slot = "m", name = "avg_npc_1398_1#1$1")]
+[name="전투함 조종사"]최선을 다하겠습니다.
+[charslot(slot = "m", name = "avg_npc_1396_1#1$1")]
+[name="허브항 관리자"]제군들은 첫 번째일 뿐이다. 뒤이어 작동 가능한 모든 함선이 전투에 투입될 것이다.
+[name="허브항 관리자"]지금부터 교대로 출항하여 재구성 중인 밀리아리움을 호위하고, '높은 벽'을 뒤이어 구축하여 육지로 밀려오는 시본 무리를 막아낼 것이다.
+[name="허브항 관리자"]그러니 명심하라. 교대 지시를 받으면 즉시 귀환해 보급을 받도록.
+[charslot(slot = "m", name = "avg_npc_1398_1#1$1")]
+[name="전투함 조종사"]알겠습니다.
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=0.5, isblock=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_activation", volume=0.8, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_seabornactivity_1", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1389_1#1$1", duration=1.5, isblock=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1396_1#1$1")]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1)]
+[name="허브항 관리자"]……시본 발견!
+[name="허브항 관리자"]도시 내에 남아있던 시본이 허브항에 침입했다. 함선 격납고에 가까이 가지 못하게 하라!
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1389_1#1$1")]
+[delay(time=0.2)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_seabornactivity_intense", volume=1)]
+[charslot(slot = "m", action="shake", power=5, times=30, isblock=true, duration=0.8)]
+[name="시본"](고통스럽게 몸을 뒤튼다)
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "char_263_skadi#8", duration=1, isblock=true)]
+[name="스카디"]시본들이 소굴에서 매복해 우리를 노린 것뿐만 아니라, 도시도 기습한 것 같네.
+[name="스카디"]……정말 짜증 나.
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.05, duration = 0.2)]
+[charslot(duration=0.2)]
+[delay(time=0.2)]
+[charslot(slot = "m", name = "avg_npc_1389_1#1$1")]
+[delay(time=0.2)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Effect(name="$e_bladeline_01_large",x = 50,y=60,roy=0, rox=-30,layer = 1)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_seabornactivity_1", volume=1)]
+[charslot(slot = "m", action="shake", power=10, times=90, isblock=true, duration=0.8)]
+[name="시본"](빠르게 익막을 펄럭인다)
+[dialog]
+[charslot]
+[PlaySound(key="$e_atk_saw_n_1", volume=1)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#5$1", duration=1, isblock=true)]
+[name="스펙터"]조각상을 휘감고 있어요? 뭘까요, 도시에 왔더니 시본에게 미적 감각이라도 생긴 걸까요?
+[name="스펙터"]그래도 《고통을 마시는 자》 조각상은 딱히 걸작이라고 할 순 없죠. 부서져도 딱히 아쉬울 건 없네요.
+[dialog]
+[charslot]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$e_atk_saw_n_2", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[PlaySound(key="$e_atk_saw_n_1", volume=1)]
+[PlaySound(key="$d_avg_tear", volume=0.4, channel="2")]
+[PlaySound(key="$d_avg_bodyfallvalley", volume=1, channel="3")]
+[delay(time=2)]
+[charslot(slot = "m", name = "char_263_skadi#5")]
+[name="스카디"]솔직히, 팔 하나가 없으니 오히려 더 매력적으로 보여.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#13$1")]
+[name="스펙터"]칭찬 고마워요, 스카디. 괜찮아요?
+[charslot(slot = "m", name = "char_263_skadi#3")]
+[name="스카디"]소굴에서 나온 후에는 좀 나아졌어.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]다행이군요.
+[charslot(slot = "m", name = "avg_npc_1396_1#1$1")]
+[name="허브항 관리자"]……헌터들이다!
+[PlaySound(key="$d_avg_cheer_street", volume=1, loop=true, channel="s")]
+[StopSound(channel="s", fadetime=4)]
+[name="허브항 관리자"]어비설 헌터스가 무사히 도시로 돌아왔다!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_474_gladiia_1#5", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="스펙터"]소드피쉬.
+[charslot(slot = "m", name = "char_263_skadi#3")]
+[name="스카디"]제2대 대장, 너도 그 사람을……
+[charslot(slot = "m", name = "avg_474_gladiia_1#1")]
+[name="글래디아"]물론이죠.
+[name="글래디아"]이미 만났어요.
+[name="글래디아"]좋은 타이밍에 돌아왔군요. 여러분도 세쿤다가 긴급 채널에서 한 보고를 들었겠죠?
+[charslot(slot = "m", name = "avg_474_gladiia_1#5")]
+[name="글래디아"]밀리아리움에 은밀히 잠입해 비콘탑 중앙 통제실에 침입했고, 항로 계획의 무기 기술 고문을 처형한 뒤, 결국 시본과 함께 대양으로 돌아가는 걸 선택했죠.
+[name="글래디아"]울피아누스에 대한 혐의는 사라지기 힘들겠군요.
+[name="글래디아"]울피아누스를 체포하고 처형하는 건, 앞으로 어비설 헌터스로서 피할 수 없는 임무가 될 거예요.
+[charslot(slot = "m", name = "char_263_skadi#9")]
+[name="스카디"]제2대 대장……
+[charslot(slot = "m", name = "avg_1023_ghost2_1#10$1")]
+[name="스펙터"]……
+[charslot(slot = "m", name = "avg_474_gladiia_1#2")]
+[name="글래디아"]하지만 지금 이 순간, 우리 임무는 각 도시 유닛에 흩어진 시본들을 수색하고 그 쓰레기들을 모조리 쓸어버리는 겁니다.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena",screenadapt="coverall")]
+[PlayMusic(intro="$act18d3d0_intro", key="$act18d3d0_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="'시본'"]……이야기는 다 끝났다.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="클레멘티아"]마르투스, 당신은 계속 가장 핵심적인 문제에서 회피하고 있습니다.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]가장 핵심적인…… 문제……?
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="클레멘티아"]당신의 설명에 따르면, 유적 아래의 모든 변고, 당신이 저지른 죄 그리고 초래된 악몽은 마치 어떤 신비로운 색채로 둘러싸인 '필연성'에서 비롯된 것 같군요.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="클레멘티아"]하지만 제가 아는 마르투스는 괴팍한 성격의 사려 깊은 사색가였죠. 그는 습관적으로 의심했고 결코 어떤 결정도 독단적으로 내리지 않았어요.
+[name="클레멘티아"]마르투스는 쉽게 이성을 버리고 신비주의의 함정에 빠지 않을 겁니다. 더군다나 자신의 존재를 부정하고 타인의 가치를 무시하지도 않죠.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]……난 선택했고, 결과를 만들어냈다.
+[charslot(slot = "m", name = "avg_npc_1383_1#2$1")]
+[name="'시본'"]과거의 마르투스가 그 결정을 내리기 전에 어떤 생각을 했는지가 뭐가 그렇게 중요하지?
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]마르투스의 과거 선택이 지금의 너를 만들어냈지. 마르투스가 왜 그런 결정을 내렸는지 이해하지 못하면, 네가 어떤 존재인지 이해하는 것도 불가능해.
+[charslot(slot = "m", name = "avg_npc_1383_1#2$1")]
+[name="'시본'"]……켈시, 너마저 이런 사소한 것에 관심을 가지는 건가?
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=1)]
+[name="'시본'"](두개골 속의 핵이 회전한다)
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="'시본'"]알았다.
+[name="'시본'"]너희들은 당연히 신경 쓰이겠지. 그러지 않을 수 없을 것이다.
+[name="'시본'"]예전의 그 인간은 이종의 피와 살을 먹기 전에도 긴 고뇌를 겪었지…… 하루? 아니면 며칠 밤낮이었을까? 유적의 깊은 곳에서는 시간을 측정할 수 없었다.
+[name="'시본'"]그는 두려워했고 의심했다. 모든 가능성을 생각해야만 했지.
+[name="'시본'"]위기는 어디서 오는 것인가? 그것은 언제 테라에 닥칠 것인가? 그는 자신의 평생을 바쳐 배운 모든 수단을 써서, 해독할 수 없는 것을 해독하려 했고, 이해할 수 없는 것을 이해하려 했다.
+[name="'시본'"]만물이 소멸한 우주에서 어떤 생명, 아니 어떤 하나의 생물 개체가 살아남을 수 있다면, 그것은 도대체 어떻게 탄생하는 것일까?
+[name="'시본'"]시간이 무한하다면, 아주 작은 린수라도 단말기에서 궁극의 진리를 도출해 낼 수 있겠지. 하지만 시간이야말로 우리에게 가장 사치스러운 자원이야……
+[charslot(slot = "m", name = "avg_npc_1383_1#4$1")]
+[name="'시본'"]눈앞의 베헤모스가 파멸의 전조를 예견했는데, 그분과 그분의 자손들이 과연 생명의 연속성을 이어갈 수 있을까?
+[name="'시본'"]만약 그렇다면…… 그것들은 얼마나 방대한 개체수와 극단적인 번식의 효율을 가져야, 유한한 시간 내에 본능적으로 파멸을 극복할 답을 찾아낼 수 있을까?
+[name="'시본'"]한 해역, 한 행성, 아니면 한 은하 전체를 갉아먹어야 할까? 그렇다면 그것들의 삶은 얼마나 많은 죽음을 대가로 치러야 할까?
+[name="'시본'"]만약 불가능하다면, 진정한 답은 어디에 있을까? 대양의 이면, 하늘의 저편, 아니면 테라인이 닿을 수 없는 별들 사이?
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]……네 일생을 바쳐도 정확한 결론을 도출할 수 없겠지.
+[name="켈시"]네가 가진 정보로는 모든 가능성을 계산하기에 턱없이 부족하니까.
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="'시본'"]그래, 켈시. 하지만 과거의 마르투스는 추론을 시도할 수밖에 없었다.
+[name="'시본'"]그의 어깨 위에는 위기와 가능성이 동시에 있었고, 그의 발밑에는 보이지 않는 철사가 있었지……
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="클레멘티아"]원래대로라면 당신은 즉시 국가에 보고할 수 있었습니다.
+[name="클레멘티아"]에기르는 당신이 두려워하는 모든 것을 받아들였을 겁니다. 과학원의 가장 오래된 문헌으로 당신이 본 과거를 검증하고, 기술원의 가장 첨단 장비로 당신이 본 미래를 예측할 수 있었을 테죠.
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="'시본'"]선택권을 다른 이에게 넘기는 것은 해방인가? 아니면 도피인가?
+[name="'시본'"]수많은 사람이 내린 선택이 소수의 사람이 내린 선택보다 더 정확한가? 아니면 더 모호한가? 더 신중한가, 아니면 더 자의적인가?
+[name="'시본'"]만약 생명을 지속할 수 있는 수단이 문명이 아니고, 파멸을 극복할 종이 인류가 아니라면, 에기르는 어떤 태도를 취했을 것인가……
+[charslot(slot = "m", name = "avg_npc_1382_1#11$1")]
+[name="클레멘티아"]그만하시죠, 마르투스.
+[name="클레멘티아"]처음부터 이런 모든 가능성을 생각하고 이런 끔찍한 대가를 예견했다면, 당신이 마침내 선택한 타락이란 행위는 더욱 용서받을 수 없습니다.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]에기르인이여, 틀렸다. 난 자신을 변호하는 것이 아니다.
+[name="'시본'"]내가 말하고 싶은 건…… 바로 그때, 한 작은 생명체가 내 헛된 생각을 중단시켰다는 것이다.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background]
+[Image(image="51_i07_1", screenadapt="coverall", x=180, y=100, xScale=1.3, yScale=1.3, fadetime=0)]
+[ImageTween(xFrom=180, xTo=-180, duration=30, block=false)]
+[focusout(type="cg", id="51_i07_1", from=0, to=1, duration=0.1, block=false)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="'시본'"]그것의 촉수는 가늘었고, 몸도 조화롭지 않았으며, 반투명한 피부막으로는 단순한 내장 기관이 선명하게 보였지……
+[name="'시본'"]그것은 이샤-믈라의 체내에서 태어났다. 언제 선체의 벽을 타고 기어올랐는지, 아무 거리낌 없이 내 발목을 핥고 있었지……
+[name="'시본'"]그것은 자신이 곧 죽을 것이란 걸 모르고 있었을까?
+[name="'시본'"]모니터링 패널에는 생체 신호가 빽빽하게 나타났다. 그 작은 생명체는 자신의 결말이 그저 그 무의미한 기호 중 하나로 변할 뿐이란 걸 몰랐을까?
+[name="'시본'"]베헤모스가 길러낸 그 생명체는 베헤모스가 본 그 끔찍한 장면을 보지 못했을까? 종족 전체의 운명이 단지 파멸을 예고하고 파멸을 맞이하는 것뿐이란 걸 몰랐을까?
+[name="'시본'"]아니…… 그것은 그저 정해진 파멸의 결말을 향해 평온하게 꿈틀거리고 있을 뿐이었다. 본능, 오직 본능에 따라서.
+[name="'시본'"]그런데 우리는 어떻지? 하나의 결정을 내리기 전에 항상 수많은 가능성을 저울질하고, 수많은 우려들을 취사선택하지.
+[name="'시본'"]우리는 자신의 결정이 어떤 대가를 치르고, 어떤 결과를 낳으며, 또 어떤 가치를 창출할지 신경 쓸 수밖에 없다…… 그것에 과연 의미가 있는 것인지……
+[name="'시본'"]인간이여. 으음…… 그렇기에 우리는 영원히 자신을 가두어 놓는다. 그렇기에 우리는 영원히 '운명'보다 한 걸음 늦고 말지.
+[name="'시본'"]이것이 시본과 인간의 가장 본질적인 차이다. 이것이야말로 시본이 존속의 사명을 짊어지기에 충분한 이유지.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[focusout(type="cg", id="51_i07_1", from=1, to=0, duration=0.1, block=false)]
+[Background(image="51_g6_aegirarena",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그래서 너는 이종의 피와 살을 먹은 건가?;그래서 너는 지금의 모습이 된 건가?;그래서 너는 문명의 진화에 개입하기로 한 건가?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_npc_1383_1#5$1")]
+[name="'시본'"]그 만물이 소멸한 미래에, 어떤 생명이 어떤 형태로든 살아남을 수 있다면……
+[name="'시본'"]어떤 대가를 치르더라도 그것을 위해 노력할 가치가 있다.
+[name="'시본'"]……“이곳에 정의는 없다, 오직 앞으로 나아갈 길만이 있을 뿐.”
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]지금, 너희는 이해해야 한다. 위매니의 진화를 도와야 한다.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]나와 박사는 많은 존재들과 마주해왔지…… 그중 일부는 더 이상 인간이라고 부를 수조차 없었어. 그들은 모두 비슷한 결단으로 어려운 선택을 내렸지.
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="켈시"]그중 오직 네 결의만이, 나를 소름 끼치게 하는군.
+[name="켈시"]이종의 피와 살을 먹고 시본이 되기 전부터, 넌 이미 인간으로서 사고하는 것을 포기했어.
+[name="켈시"]마지막 순간에 네가 포기해 버린 의심, 걱정, 우려, 그리고 고뇌들이야말로 가장 소중한 것이야……
+[dialog]
+[charslot]
+[charslot(slot = "m", focus="n")]
+[Decision(options="끝이 없기 때문에, 그것들이 소중한 거야.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]……
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="켈시"]시본이 테라의 다른 생명들을 집어삼키고 있어…… 넌 이 사실을 부정하지도, 바꿀 수도 없지. 우리가 어떻게 그걸 '희망'이라고 인정할 수 있지?
+[charslot(slot = "m", name = "avg_npc_1383_1#2$1")]
+[name="'시본'"]켈시, 설마 '오리지늄'을 배양하기로 선택한 건가?
+[name="'시본'"]무너진 스타게이트, 꺼져버린 석관…… 수많은 계획이 이미 무너졌다. 지금 여전히 작동하는 건 오리지늄뿐인가?
+[name="'시본'"]땅과 공기 속의 돌, 침묵하는 돌, 그것들은 고질병이며 육지의 생명에도 해를 끼치고 있지.
+[name="'시본'"]그것들 역시 고대 문명이 남긴 계획의 일부이자, 마지막 순간에 모든 생명과 존재를 보호할 수 있도록 기대받고 있지…… 평범한 사람은 이해하기 힘든 방식으로 말이야.
+[name="'시본'"]으음…… 생존을 위한 사다리는 오직 파멸로만 쌓아 올려질 수 있다.
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="켈시"]아니, 그런 파멸은 일어나선 안 돼.
+[name="켈시"]카이룰라 아버처럼, 오리지늄도 어느 시점에 아무도 모르는, 영원히 돌이킬 수 없는 변화를 겪었어…… 그것이 바로 네가 말한 파멸이지.
+[name="켈시"]이미 일어난 이상, 그것은 저지되어야만 해.
+[name="켈시"]어찌 됐든, 생명으로 생명을 기르고, 파멸로 파멸을 쌓는 것은 생명의 의미를 말살하는 일이야.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[delay(time=1)]
+[name="'시본'"]……켈시, 자료에 나온 AMa-10이여. 너는 나를 놀라게 하는군.
+[name="'시본'"]우리는 서로 다른 길을 가더라도 같은 결론에 이르러야 한다. 아니, 너는 나보다 더 이성적이고 결의에 차 있어야 하지.
+[name="'시본'"]난 그저 우연히 고대 문명의 불씨를 발견해 이를 계승했을 뿐이다. 하나 너는 그 불씨를 위해 태어났지. 너는 이미 나보다 먼저 수만 년 동안 그 불을 지키며 달려왔다.
+[name="'시본'"]너는 아득한 염원과 유산을 지키고, 주어진 사명을 실천했다. 너는 변화를 목격했고, 상실을 견뎌냈지…… 단지 한 명에 불과한 인간이, 이런 고뇌와 헌신을 이뤄낼 수는 없다.
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="'시본'"]하지만 지금 너는……
+[name="'시본'"]켈시, 긴 '수명'이 오히려 널 약하게 만들었나? 인간처럼 되어버린 건가?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="켈시는 항상 변함없었어.;넌 켈시에 대해 전혀 몰라.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="'시본'"]이 자가…… 원인인가?
+[name="'시본'"]{@nickname} 박사, 아니면…… '예언가'라 해야 하나?
+[name="'시본'"]많은 시설, 많은 문, 지문, 얼굴, 목소리…… 그 깊고 푸른 동굴. 유적지들의 수많은 장소에 네 흔적이 남아있다.
+[name="'시본'"]너는 바다 깊은 곳을 방문한 적이 있었지.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그래?;유감스럽지만 기억이 나지 않네……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="'시본'"]널 알아봤다. 하지만 켈시와 대화하는 게 더 효과적이지.
+[name="'시본'"]네가 모를 리 없다. 네 방문에는 분명 이유가 있었을 터. 어쩌면 프로젝트가 왜 정체됐는지 설명할 수 있을지도 모르지.
+[name="'시본'"]하지만 넌 이름을 바꿨다. 네가 무슨 일이 일어난 게 틀림없군……아무 일도 없었다면, 너와 동행한 켈시가 계획의 변동에 의문을 품을 리도 없으니까.
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="켈시"]……어떤 이유로 인해, 박사는 그 당시 일어난 대부분의 일을 기억하지 못해.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=1)]
+[name="'시본'"](두개골 속의 핵이 회전한다)
+[name="'시본'"]기억 상실…… 으음, 놀랍지 않군.
+[name="'시본'"]너희들에게 기억 상실 따윈 아주 사소한 희생에 지나지 않을 수도 있겠지.
+[name="'시본'"]만 년이 넘는 시간. 아무리 강인한 생명체라도 그렇게 긴 시간의 침식에 저항할 수는 없지. 그런데도 네가 지금의 테라에 존재한다는 것 자체가 이미 기적이다.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]내가 본 것, 그분과 그분들이 본 그 끔찍한 장면은 너희에게 절대적인 진실이지.
+[name="'시본'"]너희는 자랑스러워하던 문명과 고향을 잃었고, 대지와 하늘은 빛을 잃었으며, 시간과 공간은 끝없는 감옥이 되었지……
+[name="'시본'"]너희는 절망에 쫓겼고, 테라에서 멈췄으며, 정해진 파멸을 피하지 못했다…… 모든 사람이 사라지고, 모든 일이 무의미해졌지.
+[charslot(slot = "m", name = "avg_npc_1383_1#5$1")]
+[name="'시본'"]그런데도, 너희는 결코 희망을 쟁취하기를 멈추지 않았다. 이 행성에는 너희가 투쟁한 흔적이 영원히 남아 있지…… 물론 대부분 잔해와 폐허만이 남았지만.
+[name="'시본'"]나는 너희가 해온 일들에 경의를 표한다…… 지난 시대의 사람들이여.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="시본이 내 과거를 인정해 준다고?;네가 말한 그 일들에 지금의 '시본'도 포함된다면……;계획이 정체된 건, 참가자가 그 대가에 대해 깨달았기 때문일 수도 있겠네.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_npc_1383_1#5$1")]
+[name="'시본'"]{@nickname} 박사, 긍정해도, 부정해도, 입장을 정하지 않는다 해도 상관없다. 난 애초에 네 말에서 어떠한 이해도 얻고 싶지 않으니.
+[name="'시본'"]나는 네 동의를 구하려는 게 아니다.
+[name="'시본'"]너와 네 동료들은 확실히 바다 깊은 곳에 씨앗을 뿌렸다. 하나의 희망, 하나의 가능성, 한 점의 불씨를.
+[name="'시본'"]당신들은 그것을 잊었거나 포기했을 수 있고. 지금은 그것과 싸워야 할지도 모르지. 무슨 일이 있었든…… 지금은 내가 그 빛을 보살피며 꺼지지 않도록 하고 있어.
+[name="'시본'"]불붙이는 자가 이를 부정한다 해도, 지금의 종족을 흔들 수는 없다.
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'시본'"]무의미한 자기 증명은 버리고, 현실 그 자체로 돌아가자.
+[dialog]
+[PlaySound(key="$d_avg_sea", volume=0, loop=true, channel="s")]
+[SoundVolume(volume=0.3, channel="s",fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1383_1#4$1")]
+[name="'시본'"]종족은 위기를 감지했다. 구름층 너머의 그 눈동자는 이미 테라의 이상을 들여다봤을지도 모른다. 위기는 이제 모든 이들의 머리 위로 다가오고 있다.
+[name="'시본'"]테라는 감옥일 뿐이며, 진실을 모르는 수많은 이들을 가두고 있지.
+[name="'시본'"]지금, '감옥'에 구멍이 생겼다. 이는 위기이며, 기회기도 하지.
+[dialog]
+[SoundVolume(volume=1, channel="s",fadetime=2)]
+[delay(time=1)]
+[name="'시본'"]듣고, 보고, 맡아보고, 만져 보거라. 파도가 환희와 함께 용솟음치고 있다.
+[name="'시본'"]테라의 감옥 안에서, 바다의 아이는 이미 가장 강인한 생명력을 가진 종족이 되었다. 한순간도 진화를 멈추지 않았지……
+[name="'시본'"]너희들도 부정할 수 없을 거다. 위매니는 이미 장대한 기적으로 성장했지. 무리는 빅뱅 이후의 불씨가 되어 전 우주가 다시 피어나는 기점이 될 것이다……
+[name="'시본'"]시본은…… 성공에 가장 가까이 다가간 것이다.
+[charslot(slot = "m", name = "avg_npc_1383_1#5$1")]
+[name="'시본'"]켈시, {@nickname} 박사, 그리고 에기르인이여, 대답해 보거라……
+[name="'시본'"]너희가 지금 지지하는 것은 무엇인가? 인류인가, 오리지늄인가, 아니면 시본인가?
+[dialog]
+[StopSound(channel="s", fadetime=2)]
+[charslot(slot = "m", name = "avg_003_kalts_1#14$1")]
+[name="켈시"]확실히 위기가 다가오고 있어. 그리고 나는 여전히 많은 질문에 답할 수 없고 알지 못하는 진실도 수없이 많지.
+[name="켈시"]하지만 그렇다 해서, 생명이 공허한 개념으로 추상화될 수밖에 없다는 건 아니야. 그건 생명 본연의 의미를 말살하는 것이나 다름없으니까.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]마르투스, 넌 이게 약점이라고 보는군. 하지만 난 이걸, 긴 '수명'이 내게 부여한 일종의 결단이라고 생각해.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="생명의 가치는 생명 스스로가 부여해야 해.;생명의 의미는 생명 스스로가 써 내려가야 해.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#2$1")]
+[name="켈시"]시본은 반드시 제거해야 할 재앙이야.
+[name="켈시"]이 점에서, 나와 박사의 입장은 변하지 않아. 로도스 아일랜드의 입장 역시 변하지 않을 거고.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]……문명 없이는 존속을 논할 수 없는 법이지.
+[charslot(slot = "m", name = "avg_npc_1383_1#5$1")]
+[name="'시본'"]……
+[name="'시본'"]존속 없이 어떻게 문명을 논할 수 있지?
+[dialog]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=0.3)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_seashipshootimp",volume=0.5)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="클레멘티아"]바보 같은 토론은 여기까지입니다, 마르투스.
+[name="클레멘티아"]밀리아리움은 이미 병이 든 기관을 몸 밖으로 제거했고, 도시로 침투한 당신의 동족은 제거되고 있어요……
+[name="클레멘티아"]감옥에서 당신은 모든 것을 반성하고, 아직 밝히지 않은 것들을 밝힐 충분한 시간을 가지게 될 겁니다.
+[dialog]
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[charslot(slot = "m", name = "npc_10002", duration=0.5, isblock=true)]
+[name="Mon3tr"](분노에 찬 울음소리)
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1383_1#5$1", afrom=1, ato=0, duration=10)]
+[name="'시본'"]에기르, 그리고 그 새까만 작은 괴물이여……
+[name="'시본'"]날 붙잡으려 하지 마라. 너희들, 그리고 이 도시만으로는 나를, 이샤-믈라를 죽일 수 없다.
+[name="'시본'"]이 도시가 이미 재구성을 마치고, 해류를 가로지르는 도시의 모습을 상상할 수 있다. 하지만 종족은 그것을 넘어설 것이다.
+[name="'시본'"]우리에게 옳고 그름은 없다. 얼마 남지 않은 시간 동안, 이 싸움을 통해 가장 확고한 증명을 얻는 것으로 하지.
+[name="'시본'"]이제 난 잠든 '퍼스트본'을 깨우고, 종족을 달로 인도할 것이다.
+[name="'시본'"]켈시, 그리고 {@nickname} 박사, 너희들은 이 장엄한 순환의 일부가 될 것이다.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g20_lighthouse_core",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(key="$act17side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_sea", volume=1, loop=true, channel="s")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", duration=1)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1380_1#1$1", duration=1, isblock=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_447_1#7$1")]
+[name="성도 카르멘"]……
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_1380_1#2$1", focus="l")]
+[name="조르디"]선생님.
+[charslot(slot = "r", name = "avg_4009_irene_1#7$1", focus="r")]
+[name="아이린"]성도님, 아이린이 보고 드립니다.
+[charslot]
+[charslot(slot = "m", name = "avg_npc_447_1#1$1")]
+[name="성도 카르멘"]더 말할 필요 없네. 에기르가 이미 수중에서 일어난 모든 일을 우리에게 전달했으니.
+[name="성도 카르멘"]켈시와 로도스 아일랜드의 박사는 어찌 되었는가?
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1")]
+[name="조르디"]아직 그 도시에 있습니다.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_bionicuavs_tech", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_460_1#1$1")]
+[name="재판소 사무원"]……연결되었습니다.
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="조르디"]이, 이건?
+[charslot(slot = "m", name = "avg_npc_447_1#6$1")]
+[name="성도 카르멘"]해수면의 실시간 영상이로군. 에기르의 드론 대열이 거대한 등대의 디스플레이 시스템을 직접 비추고 있어.
+[name="성도 카르멘"]시본 떼와 에기르의 도시가 동시에 육지로 접근 중이네…… 우리에게서 불과 10여 해리 남짓 떨어진 거리로군.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="51_i09_1", screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="조르디"]부글거리는 거품들. 교차되는 물줄기. 전부…… 시본인가요? 바닷물 본연의 색까지 바꿔버렸어요……
+[name="아이린"]이건 해수면에 드러난 일부분일 뿐, 빙산의 일각에 불과해.
+[name="아이린"]시본은 에기르와 육지의 접촉 기회를 이용했어. 해역 전체가 이미 놈들의 소굴이 됐지.
+[name="성도 카르멘"]에기르의 방어선…… 화면 속의 저 뒤틀린 도시는 얼마나 버틸 수 있겠나?
+[name="아이린"]잘 모르겠습니다.
+[name="성도 카르멘"]에기르의 항로 계획이 실패로 끝났다고 봐도 되겠는가?
+[name="조르디"]밀리아리움, 지금 도시 안의 모든 에기르인은…… 아직 포기하지 않고 노력하고 있습니다.
+[name="성도 카르멘"]두 달 동안 징벌군은 이베리아의 해안선에서 항해 가능한 선박을 모두 징발했으며. 이미 그란파로에서 정비를 마치고 출항 준비를 끝냈네.
+[name="성도 카르멘"]내가 직접 징벌군을 이끌고 출발할 것이야. 에기르 방어선을 보강하여 함께 시본의 무리를 막도록 하지.
+[name="성도 카르멘"]아이린, 자네에겐 쉴 시간이 많지 않겠군.
+[name="아이린"]네, 등대 아래에서 대열을 이루고 있는 재판관들을 확인했습니다.
+[name="성도 카르멘"]결국 이베리아는 한 치의 실수조차 허용되지 않게 됐군.
+[name="성도 카르멘"]존속…… 아니면 파멸. 다른 길은 없다.
+[name="성도 카르멘"]만약 에기르의 높은 벽이 무너진다면, 우리가 시본들에게 육지가 존재하는 의미와 그것을 모독한 대가를 알려줄 것이다.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[image]
+[Background(image="27_g20_lighthouse_core",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1")]
+[charslot(slot = "l", name = "avg_npc_1380_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot = "l", name = "avg_npc_1380_1#5$1", focus="l")]
+[name="조르디"]……
+[name="조르디"]저, 저기 선생님, 아이린 님!
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", focus="r")]
+[name="아이린"]조르디, 넌 여기 남아.
+[name="아이린"]이 등대는 우리의 마지막 거점이야. 징벌군은 전장에서의 모든 군사 작전을, 등대에서 보내는 신호에 의존해야 돼. 넌 네가 할 수 있는 일을 해.
+[charslot(slot = "l", name = "avg_npc_1380_1#5$1", focus="l")]
+[name="조르디"]그게 아니라……
+[name="조르디"]창밖을 보세요……
+[name="조르디"]……빛이에요.
+[dialog]
+[PlaySound(key="$d_avg_heartratemonitor", volume=1, loop=true, channel="h")]
+[StopSound(channel="h", fadetime=4)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_npc_1380_1#2$1", focus="l")]
+[name="조르디"]저건…… 등대의 아닌가요?
+[charslot(slot = "r", name = "avg_4009_irene_1#2$1", focus="r")]
+[name="아이린"]하지만 작동되는 이베리아의 눈은, 우리가 있는 이곳 하나뿐 아니었어?
+[name="아이린"]어떻게 된 거지? 왜 갑자기 같은 신호가 이렇게 많이 수신되는 거야?
+[charslot(slot = "l", name = "avg_npc_1380_1#6$1", focus="l")]
+[name="조르디"]아마도, 이미 바다에 삼켜진 해안선에서……
+[name="조르디"]반세기 넘게 죽은 듯이 침묵하던 등대가…… 전부 불을 밝힌 거예요!
+[charslot(slot = "r", name = "avg_4009_irene_1#2$1", focus="r")]
+[name="아이린"]*이베리아 감탄사*!
+[charslot]
+[charslot(slot = "m", name = "avg_npc_447_1#10$1")]
+[name="성도 카르멘"]침묵하던 섬 주민들의 과학기술은 대체 무엇에 반응하는 건가?
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="s", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="49_g12_diving",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_seashipbattleamb", volume=0.3, loop=true, channel="s")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1", duration=1, isblock=true)]
+[name="울피아누스"]……
+[dialog]
+[charslot]
+[StopSound(channel="s", fadetime=2)]
+[PlaySound(key="$d_avg_towercllps", volume=0.8)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_underwtr", volume=1, loop=true, channel="u")]
+울피아누스는 도시 재구성의 굉음이 머리 위에서 울리는 것을 들었고, 빛을 잃은 비콘탑이 천천히 바다 깊숙이 가라앉는 것을 지켜보았다.
+한때 수많은 동포의 위대한 염원을 품었던 그곳은 이제 시본의 새로운 번식지로 전락했다.
+노화된 개체들은 자신의 몸을 양분으로 변화시켜 소굴에 쏟아부었다. 그들의 여정은 수없이 많은 신생 개체들에 의해 이어질 것이다.
+시본은 항상 그랬다. 동족으로 인정한 이들에게 아낌없이 헌신하고 전력을 다해 양육한다.
+울피아누스는 잠시 메스꺼움을 느꼈다.
+거대한 닻의 무게가 팔을 타고 그의 어깨로 선명하게 전해졌다. 자신이 영원히 인정받지 못하고 기억되지 않을 것임을 깨달은 그 순간, 울피아누스는 그 어느 때보다도 머리가 맑아졌다.
+그는 아직 자신과 시본 사이의 역겨운 연결고리를 끊어낼 수 없었지만, 도시로 밀려가는 광란의 물결을 막아낼 여력이 남아 있었다.
+글래디아의 말이 맞았다. 급격히 부화하는 소굴에서 싸우면 자신도 곧 시본에 동화될 수 있다. 그렇다면 자신을 기다리는 건 죽음일까, 아니면……
+울피아누스가 힘껏 닻을 휘둘렀다.
+[dialog]
+[PlaySound(key="$d_avg_ironchaindrop", volume=1)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_swimdeepsea", volume=1)]
+[delay(time=1)]
+마치 울피아누스의 움직임을 예측한 듯, 작은 새 생명체는 가볍게 그의 공격을 피하고는 태연히 닻을 스쳐 지나간다. 울리아누스는 호흡을 가다듬고 방향을 조준해 다시 한번 휘두른다……
+[name="새로 태어난 생명체"](극히 미약한 기계음)
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="울피아누스"]……!
+[dialog]
+[StopSound(channel="u", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background]
+[PlayMusic(key="$m_avg_opening_intro", volume=0.6)]
+[Image(image="51_i10", screenadapt="coverall", x=-200, y=30, xScale=1.6, yScale=1.6)]
+[ImageTween(xFrom=-200, xTo=-350, yFrom=30, yTo=-80, duration=15, block=false)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_swimdeepsea", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+새로 태어난 어린 생명체가 울피아누스의 눈앞을 스쳐 지나갔다. 우아하게 몸을 뒤집자, 배 속의 작고 정교한 기계 구조가 비쳤다.
+[dialog]
+[Image(image="51_i10", screenadapt="coverall", x=380, y=220, xScale=1.6, yScale=1.6, fadetime=3)]
+[ImageTween(xFrom=380, xTo=0, yFrom=220, yTo=-20, duration=30, block=false)]
+[delay(time=0.1)]
+[PlaySound(key="$d_avg_swimdeepsea", volume=1)]
+[PlaySound(key="$d_avg_divebubble", channel="1", volume=1)]
+[delay(time=3)]
+그리고 두 마리, 세 마리…… 새로 태어난 무리가 연속적으로 가느다란 빛의 길을 만들며 혼돈의 파도를 밝혔다.
+다양한 형상의 성체 시본들이 작은 생명체들을 빽빽이 에워싸고, 갓 태어난 생명체들을 위해 파도를 일으키며 먼 곳으로 헤엄치도록 보호했다.
+[name="울피아누스"]시본, 너희는 무엇을 에워싸고, 무엇을 보호하는 거지?
+[name="멈춰 선 시본"]……
+[name="멈춰 선 시본"]양분.
+[name="멈춰 선 시본"]생명.
+[name="멈춰 선 시본"]동족.
+[name="멈춰 선 시본"]그리고 너, 울-피아누스……
+[name="멈춰 선 시본"]위매니, 하나로 연결……
+[name="울피아누스"]……
+[dialog]
+[Image(image="51_i10", screenadapt="coverall", xScale=1.05, yScale=1.05, fadetime=3)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[delay(time=3)]
+기술원에서 가장 뛰어났던 집정관 중 한 명이었던 울피아누스는 자신이 틀리지 않았다고 확신했다. 눈앞에서 끊임없이 비콘탑에서 떨어져 나오는 이 기이한 개체들……
+한때 비콘탑에 머물렀던 초소형 부유 기계들. 그것은 중단된 역사의 한 조각, 실패했던 꿈이었다.
+그리고 어비설 헌터스로서, 울피아누스는 자신의 후각을 믿었다…… 그것들의 냄새는 시본과 다르지 않았다.
+200년 전에 이미 태어나기도 전에 죽은 그 '비콘'들이 다시 생명을 얻었다. 그들은 시본에 의해 다시 부화되어 시본과 함께 광란의 파도가 모이는 해수면을 향해 헤엄쳤다.
+[name="울피아누스"]에기르, 자멸을 택한 에기르여. 아직도 승부를 포기하지 않았나, 아니면 이것도 계산되어 있었던 것인가?
+[dialog]
+[StopSound(channel="u", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+처음에는 그저 희미한 빛이었다.
+이윽고, 흐르는 한 줄기 선이 되었다.
+곧이어, 가벼운 그물망이 되어 해수면 위로 펼쳐졌다.
+……
+[dialog]
+[bgeffect(name="$eb_sea_bg", layer = 1)]
+[PlaySound(key="$d_avg_lightconvergefairway", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Effect(name="$e_route",layer = 2)]
+[delay(time=7)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="s")]
+[SoundVolume(volume=1, channel="s",fadetime=2)]
+[delay(time=4)]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[bgeffect]
+[delay(time=1)]
+[PlayMusic(key="$m_avg_opening_loop", volume=0.6)]
+[Effect(name="$e_clouds_open",layer = 1)]
+[delay(time=1)]
+[Image(image="51_i11", screenadapt="showall")]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3,yScaleTo=1.3, duration=50, ease="OutCirc",block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=2)]
+[imagerotate(angle=-24,fadetime=60,isblock=false)]
+[SoundVolume(volume=1, channel="s",fadetime=2)]
+[delay(time=6)]
+수십억 개의 초소형 부유 기계들이 바다의 아이들과 함께 몸을 흔들며 파도에 휩쓸리며 넘실댄다.
+그들의 빛은 미세하지만 선명했고, 희미하지만 확고했다. 빛의 통로가 시본의 몸 사이에서 도약했다.
+해류는 대양 곳곳에 흩어진 모든 소굴을 연결했고, 시본들은 끊임없이 바다 곳곳에서 육지로 모여들며, 빛의 통로에 아름다운 연장선을 그려냈다……
+종횡으로 교차하고 호응하며 빛의 통로로 짜인 그물은 마치 은하수가 해수면에 펼쳐진 것 같았으며, 밀리아리움을 기점으로 바다의 깊은 곳까지, 무한히 먼 곳을 향해 구불구불하게 뻗어져 있었다.
+항로…… 바닷속의 네트워크는 육지와 바다를 연결하고, 광기 어린 무질서한 공간과 고요히 흐르는 시간을 넘어갔다.
+그것은 위매니와 함께 존재한다.
+[dialog]
+[StopSound(channel="s", fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

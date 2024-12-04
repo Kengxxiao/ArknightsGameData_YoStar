@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true, is_autoable=false)] 活动25side教学关02_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [InputBlocker(blockInput=true, black=0.2)]
 [Tutorial(focusX=-90, focusY=-45, focusWidth=100, focusHeight=100, \
@@ -13,7 +14,6 @@
 [PopupDialog(dialogHead="$avatar_jesica")]ニェンさん！　天師たちが新しいポンプを届けてくれました！
 [PopupDialog(dialogHead="$avatar_nian", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]仕事は早ぇな。それじゃ、私の指示に従えよ。
 [InputBlocker(blockInput=false)]
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.EnsureMinCost(cost=10)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_nian", animStyle="Drag", \
           startX=-60, startY=60, startAnchor="BottomRight", endX=230, endY=45)] \
@@ -21,7 +21,7 @@
 [Tutorial(waitForSignal="select_direction", dialogHead="$avatar_nian", animStyle="Drag", \
           startX=230, startY=45, endX=230, endY=-100)] \
 <@tu.kw>下向きに配置</>するんだ。
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=true, black=0.2)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [PopupDialog(dialogHead="$avatar_nian")]こうすりゃ、私もここに立ってることだし、ここらの水田はもう心配いらねーな。
 [PopupDialog(dialogHead="$avatar_nian")]んじゃ、さっさと残りの敵を片づけるぞ！

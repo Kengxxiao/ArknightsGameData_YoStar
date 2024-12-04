@@ -1,0 +1,601 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=true)]
+[PlaySound(key="$rungeneral", volume=1)]
+[Delay(time=0.5)]
+[name="？？？"]はぁ、はぁ――急がなきゃ！
+[name="？？？"]！
+[name="？？？"]古代毬藻？ どうしてこんな所に？ まさか、ほかにもミリアリウムで絶滅危惧種の藻類を育ててる人がいるのかな？
+[dialog]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_1385_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="？？？"]……
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "80,0",duration = 1)]
+[delay(time=1.15)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot = "m",posfrom = "80,0", posto = "80,-30",duration = 0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1385_1#1$1")]
+[name="？？？"]団窓藻、石花膜、紫苔……
+[dialog]
+[charslot(slot = "m",posfrom = "80,-30", posto = "50,-30",duration = 0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_1385_1#4$1")]
+[name="？？？"]あれ、この千灯英……私が育てたのと同じ色だ……
+[name="？？？"]道の上で頑張ってるけど……干からびすぎて死にかけてる。
+[name="？？？"]ここで何があったの？　誰かに何かされた？
+[Dialog]
+[CameraShake(duration=0.3, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "50,-30", posto = "100,0",duration = 0.3)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1385_1#8$1")]
+[name="？？？"]どこに行こうとしてるの？　誰かいる……？
+[name="？？？"]ま、待って！
+[Dialog]
+[charslot(slot = "m",posfrom = "100,0", posto = "-200,0",duration = 1.5,afrom=1,ato=0)]
+[PlaySound(key="$rungeneral", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.2)]
+[charslot]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1385_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="？？？"]消えた？
+[charslot(slot="m",name="avg_npc_1385_1#3$1")]
+[name="？？？"]この配管は……
+[charslot(slot="m",name="avg_npc_1385_1#7$1")]
+[name="？？？"]うわっ！
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-150",duration = 1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Dialog]
+[playsound(key="$d_avg_jump_water")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[charslot]
+[playsound(key="$d_avg_sea", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=3)]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[focusout(duration=3, type="bg", from=1, to=0, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1385_1#5$1",duration=1)]
+[delay(time=1.5)]
+[name="？？？"]ここは……
+[CameraShake(duration=0.2, xstrength=10, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_1385_1#7$1")]
+[name="？？？"]げほごほっ、うっ……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_divebubble",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1385_1#7$1")]
+[name="？？？"]（誰？　一体何のために？）
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_rampartclose",volume=0.1)]
+[CameraShake(duration=3.5, xstrength=3, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1385_1#5$1")]
+[name="？？？"]（すごい音……都市が動き出してるのかな？）
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_divebubble",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1385_1#6$1")]
+[name="？？？"]（何かが動いてる……そこにいるのは誰？）
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[focusout(duration=2.5, type="char", from=1, to=1)]
+[charslot(slot="m",name="avg_npc_1388_1#1$1",afrom=0,ato=0,posfrom = "0,-200", posto = "0,-200")]
+[charslot(slot = "m",action="zoom", poszoom = "0.5,0.5", scale=0.8,duration = 0)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.18,fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.18,fadetime=0.01)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",afrom=0,ato=1,duration=2)]
+[focusout(duration=2, type="char", from=1, to=0.5)]
+[focusout(duration=3, type="bg", from=0, to=1)]
+[charslot(slot = "m",action="zoom", poszoom = "0.5,0.5", scale=0.8,duration = 2)]
+[charslot(slot = "m",posfrom = "0,-200", posto = "0,-100",duration = 2)]
+[delay(time=3)]
+[focusout(duration=2, type="char", from=0.5, to=0)]
+[charslot(slot = "m",action="zoom", poszoom = "0.5,0.5", scale=1,duration = 2)]
+[charslot(slot = "m",posfrom = "0,-100", posto = "0,50",duration = 2)]
+[delay(time=2.5)]
+[playsound(key="$d_avg_seabornattack",volume=0.5)]
+[name="シーボーン"]（嬉しげに液胞を膨らませる）
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.7, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[focusout(type="char", from=0, to=0)]
+[focusout(type="bg", from=0, to=0)]
+[delay(time=1)]
+[curtain]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$nervous_intro",key="$nervous_loop", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4137_udflow_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="セクンダ"]お時間を取らせてすみません。お二人の業務に遅れが出なければいいのですが。
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_4079_haini_1#2$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1387_1#1$1",focus="r")]
+[name="カシア"]大丈夫ですよ。私たちは都市ユニットのフレームの定期検査とメンテナンスをしているだけですから。急ぐことではありません。
+[charslot(slot = "left", name = "avg_4079_haini_1#9$1",focus="l")]
+[name="ルシーラ"]……それで、トゥリアの行方はまだわからないの？
+[charslot(slot = "right", name = "avg_npc_1387_1#5$1",focus="r")]
+[name="カシア"]ルシーラ、私たちが通報してからまだそんなに経ってないのよ。
+[charslot]
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]お二人はご友人を気にかけておられるのですね。では早速ですが、トゥリア氏について伺わせてください。近頃何かトラブルを抱えている様子はありませんでしたか？
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]彼女はとても臆病な子だし、人の恨みを買うようなことなんてしないと思うわ。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]ふむ。確かに、プロファイルにも一致しますね。彼女が航路計画やビーコンのデータについて何か話していたことはありませんか？
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]いいえ、何も。
+[name="ルシーラ"]実を言うと、わたしたちはたまに話すくらいのもので、友達と呼べるほどの仲じゃないの。あの子って、いつも一人で自分の私物をいじってるようなタイプだしね。
+[charslot(slot="m",name="avg_4079_haini_1#5$1")]
+[name="ルシーラ"]あっ、もしかしてあなたたち、トゥリアを疑ってるの？
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]ごめんなさい、わたしの説明だと、ちょっと変な人みたいに聞こえるかもしれないけど……
+[name="ルシーラ"]で、でもほら、ミリアリウムが本つ域を離れてからこの半年の間、毎日のように戦闘が起きてみんな気を張ってるでしょ。あの子も、ストレスが大きかったのかもって。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]ですが現に、深海教会は今なお航路計画の妨害を諦めていません。ここしばらくの間にも、我々は相当数の深海教徒を排除しているほどです。
+[name="セクンダ"]堕落者たちは、正体を見せるまでの間は、ごく普通の同胞にまぎれて過ごしているのですよ。
+[charslot(slot="m",name="avg_4079_haini_1#10$1")]
+[name="ルシーラ"]でも、あの子にそんなことをする理由なんて……
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1387_1#3$1")]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1387_1#4$1")]
+[name="カシア"]ううん……確かに、正直なことを言うと、あの子がどうして航路計画に加わることにしたのかが、私にはよくわからなくて。
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="アイリーニ"]と言いますと？
+[charslot(slot = "m", name = "avg_npc_1387_1#1$1")]
+[name="カシア"]トゥリアが以前ミリアリウムの生態芸術創作所に勤めていたことはご存知ですよね？
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]ええ。生態芸術創作所といえば、この都市が元の停泊地点から撤退し、新たな作戦配置を命じられた時に、すぐさま他の都市へ拠点を移していましたよね。
+[charslot(slot = "m", name = "avg_npc_1387_1#5$1")]
+[name="カシア"]本来なら彼女は、創作局と共に他の都市へと移って、元の業務を続けることもできたはずなのに、そうはしなかった……
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="アイリーニ"]お話中にごめんなさい。今言っていた「撤退」というのは？
+[charslot(slot = "m", name = "avg_npc_1387_1#6$1")]
+[name="カシア"]その件はあなたのほうがよく覚えているわよね、ルシーラ？　あの時まだドームで働いていたあなたなら、あの一部始終を見ていたはずだもの。
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]……ええ。
+[charslot(slot="m",name="avg_4079_haini_1#4$1")]
+[name="ルシーラ"]事件が起きたのは、エーギル最大の火山エネルギーステーションの一つ。それは無数の科学研究施設を支えるものとして作られたんだけど、当時ミリアリウムはその建設と防衛を担っていたの。
+[name="ルシーラ"]その頃は、都市がエネルギーステーションの下に停泊していてね。ドーム越しに見上げれば、赤い光が数十海里にも及ぶ水域をいつも照らしていたものよ。
+[charslot(slot = "m", name = "avg_npc_1387_1#1$1")]
+[name="カシア"]エネルギーステーションが発する熱は、様々な種類の生物を引き寄せました。それであの場所には、エーギル最大の絶滅危惧植物の繁殖基地があったんです。
+[name="カシア"]ミリアリウムの生態芸術事業も、そうした恵まれた環境のおかげで大きく発展していきました。
+[charslot(slot="m",name="avg_4079_haini_1#10$1")]
+[name="ルシーラ"]けれどその輝きは、闇に閉ざされてしまった……
+[charslot(slot = "m", name = "avg_4009_irene_1#2$1")]
+[name="アイリーニ"]シーボーンのせいですか？
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]そうよ。
+[charslot(slot = "m", name = "avg_npc_1387_1#7$1")]
+[name="カシア"]一年前、海流に乗ったシーボーンが潮流の如く押し寄せて、ミリアリウムは緊急撤退を強いられたんです。
+[name="カシア"]一番重要な環境条件を失ったことで、生態芸術創作所も関連機関と共に他の都市へ移らざるを得なくなりました。
+[name="カシア"]ですが当時は、市内に軍隊が駐屯していましたから、エネルギーステーションを奪還するチャンスはあったはずです。
+[charslot(slot="m",name="avg_4137_udflow_1#3$1")]
+[name="セクンダ"]あの時は航路計画が発令したばかりでしたので、実のところミリアリウムの撤退は戦略的移動だったのです。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]小官もその後、軍と共にミリアリウムへ異動となりました。
+[charslot(slot = "m", name = "avg_npc_1387_1#5$1")]
+[name="カシア"]その影響で、多くの同胞の暮らしが一変しました……ルシーラもその一人です。
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]ええと、わたしが仕事を変えてドームから降りたのは、高所恐怖症が原因で……ごめんなさい、そんなのどうでもよかったわね。
+[charslot(slot="m",name="avg_4137_udflow_1#5$1")]
+[multiline(name="セクンダ")]カシア殿は、トゥリア氏が航路計画に加わったのは不純な動機によるものだと仰りたいのですか？
+[multiline(name="セクンダ")]　だとすれば、重大な告発となりますよ。
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]わたしもそんなの信じられないわ。
+[charslot(slot = "m", name = "avg_npc_1387_1#6$1")]
+[name="カシア"]私はただ、知っていることをお伝えしただけのことですよ。
+[charslot(slot = "m", name = "avg_npc_1387_1#5$1")]
+[name="カシア"]指揮官さん。今、この都市には十数万人の軍人と民間人がいるわけですが、その全員が真の意味で航路計画に参加しているわけではないということは……否定できませんよね？
+[name="カシア"]多くの人は、ただいつも通り生活しているだけで、我々が海に切り開こうとしているのが一体どんな道なのかを理解してはいません。
+[name="カシア"]そちらのお客人も、航路計画を理解するためにこそ、陸から海までいらしたのでは？
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="アイリーニ"]……
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]トゥリア氏が深海教会と繋がっているかはともかく、無断で航路計画のデータをコピーしたことは事実です。
+[name="セクンダ"]すべての疑問を解決するには、彼女を見つけ出すしかありません。
+[charslot(slot="m",name="avg_4079_haini_1#9$1")]
+[name="ルシーラ"]で、でもミリアリウムはそんなに大きくないし、ドームの中層や循環システムの隅に隠れたとしても、今頃は見つかってるはずよね？
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]仰る通りです。それを思うに、トゥリア氏はすでに都市内にはいないと考えるべきでしょう。ですが都市周辺の水域でも、彼女の生体反応を感知できていないのです。
+[name="セクンダ"]ポートターミナルには予定外の船の出入りはありませんでしたし、民間向けの深海潜水装置では、たった数十時間のうちに我々の探知範囲を抜けることは不可能です。
+[charslot(slot="m",name="avg_4137_udflow_1#3$1")]
+[name="セクンダ"]しかし……30時間以上前、この都市はイベリア使節団を迎えるべく一度短距離移動を行っています。そう考えると……
+[charslot(slot = "m", name = "avg_4009_irene_1#7$1")]
+[name="アイリーニ"]トゥリアさんはその時に……都市を離れたってこと？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="クレメンティア"]……つまり、あのクリステンというクルビアの科学者が、長きにわたりテラを封じ込めてきた阻隔層を突破した、ということですね。
+[name="クレメンティア"]以来一年以上、あの穴は完全に閉じることなく存在しています。この間、エーギルは宇宙の観測を続けてきましたが、阻隔層の外には現状、目に見えた異常はありません。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]我々はクリステンを止めようと試みましたが、それは失敗に終わりました。
+[name="ケルシー"]まだ時間は残されていますが……恐らく、あまり猶予はないでしょう。
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="クレメンティア"]高密度のエネルギーで電子雲層を無理やり引き裂くとは、力づくと表現して差し支えない手段ですね。ですが我々はこれまで、陸上でこれを実行するに足るエネルギー源を発見したことはありません。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]クリステンの用いた手段は、エーギルの技術と源流を同じくするものです。あなた方はどちらも、先史文明の助けや啓発を受けているのですから。
+[name="ケルシー"]彼女はトリマウンツの地下で先史文明がその火種を保存すべく用いていた石棺群を発見し、その管理者の信頼を得て、これを実行に移しました。
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="クレメンティア"]ケルシー医師。本つ域を離れる前には、あなたほどエーギルと先史を理解している賢人が陸にいらっしゃることなど、予想もしていませんでした。
+[name="クレメンティア"]テラに対する我々の理解が今もって不十分であることが、あなたの存在で再度証明されたと言えましょう。
+[name="クレメンティア"]海淵に長年閉じ込められた鱗獣は、光を感知する能力を失うものです。この国にもはや大規模な開拓計画を支える力が残されておらずとも、我々は未知への探究を止めるべきではないようですね。
+[name="クレメンティア"]スターゲートや、双月、空の阻隔層、マントル内の遺跡群など……この星にはいまだ、自然的でないものがあまりにも多く存在しています。
+[charslot(slot = "m", name = "avg_npc_1382_1#4$1")]
+[name="クレメンティア"]あまつさえ、我々の遠洋艦隊はかつて、惑星の反対側にある漆黒の濃霧の中で、極めて特殊な地形を遠隔的に探知しています。
+[name="クレメンティア"]その場所は、まるで大海の果てであるかの如く、海流が突然そこで断ち切られていたとか。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]それは、とうに冷めた温床でしかありません。先史文明の中核を担う最も核心的な遺産がエーギルの奥地に眠っていることはあなたもよくご存じでしょう、執政官閣下。
+[name="ケルシー"]海底下の先史遺跡は、エーギルに対する海からの贈り物です。それはあなたたちの文明を育み、陸上諸国をはるかに凌ぐ視野と能力を与えたことでしょう。
+[name="ケルシー"]……無論同時に、責任も。
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="クレメンティア"]確かに、「責任」があるというのは仰る通りです。
+[name="クレメンティア"]陸の人々は、いつから自らを「人類」と呼ぶようになったのでしょう？　源石で最初のかがり火を灯した時か、あるいは土と石とを用いて最初の都市を築いた時でしょうか？
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]大地における自己認識とアイデンティティは、長い時間の中で自然と確立されたものです。そして今日に至るまで、人々は依然、「人類」を狭い範囲で定義してしまいがちな傾向にあるのです。
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="クレメンティア"]しかし、エーギルの人類としてのアイデンティティは与えられたものです。我々は先史人類と同族ではありませんが、その知恵を継承すると同時に、アイデンティティをも継承したのですから。
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="クレメンティア"]ゆえにこそ、エーギルはその誕生より、人類に対する責任を負っているのです。シーボーンの脅威によってエーギルがそれを放棄することなどなく、むしろその重みは増す一方です。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]あなたは確かに、ミリアリウムを率いるには誰より相応しい執政官でいらっしゃるようですね。
+[charslot(slot = "m", name = "avg_npc_1382_1#7$1")]
+[name="クレメンティア"]どうされたのですか、突然……
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]根拠はあなたの性格です。あなたは辛抱強く、友好的なエーギル人でいらっしゃる。
+[name="ケルシー"]ですが、それでもあなたの思考が傲慢であることに変わりはありません。ここで指しているのは、エーギルの傲慢のことです。
+[charslot(slot = "m", name = "avg_003_kalts_1#14$1")]
+[name="ケルシー"]ゆえに私は、先ほどお話しした阻隔層の空洞や、マントルの遺跡、そして人類文明の将来に関する話が単なるアイスブレイクとしての話題だとは思っていません。
+[name="ケルシー"]エーギルが受け身の方法で問題解決に当たるとは思えません。ミリアリウムが固く守っていた本つ域を離れたのは、新たな防衛線を築くためのことでしょう。
+[name="ケルシー"]執政官閣下。あなた方の航路開拓には、より深い目的があるのではありませんか？
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="クレメンティア"]……エーギルの出した傲慢なる答えは、すでにグレイディーアには伝えました。あなたにも知る権利がおありでしょう。
+[name="クレメンティア"]「この星にはいまだ、自然的でないものがあまりにも多く存在している」こと――エーギルはそうしたものの間に、関連性がないとは決して思いません。
+[name="クレメンティア"]スターゲートや双月のような壮大な存在にせよ、源石やシーボーンのような災いにせよ、単なる思い付きで作られたものではない。すべてに何かしらの関係があるはずです。
+[charslot(slot = "m", name = "avg_npc_1382_1#3$1")]
+[name="クレメンティア"]シーボーンの問題を根本的に解決し、テラが直面する危険を根絶するには、テラ全体の本質を明らかにしなければなりません。陸に埋もれている秘密も、その一部と呼べるでしょう。
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="クレメンティア"]しかし、そうした話はあくまでも後々のことです。あなたがお聞きになりたいのが、単に私の答えであるのなら……
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="クレメンティア"]私がこの航路に託す唯一の希望は、都市内の十万余人の軍人及び民間人と、グランファーロにいる数万人の懲罰軍の戦士たちに、エーギルの主力部隊が戦場に入るさまを生きて見届けさせることです。
+[dialog]
+[charslot]
+[stopmusic(fadetime=1)]
+[playsound(key="$d_avg_emgseaalarm",volume=0.7)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[charslot]
+[delay(time=0.5)]
+[playsound(key="$d_avg_microrobot")]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1",duration = 0.2)]
+[charslot(slot = "m",posfrom = "-150,0", posto = "0,0",duration = 0.8)]
+[delay(time=1)]
+[name="「リトル・ハンディ」"]緊急救援信号が入りました。
+[name="「リトル・ハンディ」"]第37号営巣地へ、ビーコン投下のために向かった艦隊からです。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",duration=1)]
+[delay(time=1.3)]
+[name="ウルピアヌス"]鋭いな、お前は。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ここにいたのか、探す手間が省けた。;君はいつもこうして急に現れたり消えたりするのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]ミリアリウムは、航路計画についてお前たちにどれだけ明かしてきた？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="もっとグレイディーアたちを気にかけるものかと。;君はもう少し己の立場を意識するかと思っていた。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#8$1")]
+[name="ウルピアヌス"]あの評議で彼女たちの潔白は証明された。加えて、助けになってくれるだろう人間もいるからな。
+[name="ウルピアヌス"]そもそも、エーギルに戻り、計略や陰謀の中に再び身を置くことはグレイディーア自身が望んでいたことだ。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#8$1")]
+[name="ウルピアヌス"]お前も俺も、尾行もされていなければ監視もいない。つまり、俺の足取りはまだ露見していないということだ。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]闘智場で語り切れなかった話の続きをするとしよう。
+[name="ウルピアヌス"]シーボーンとエーギルの戦争は、すでに二百年余り行われている。だがその中で、両者はほぼ同時にその関心を海から陸へと移した。
+[name="ウルピアヌス"]種族を挙げての突然の大移動と、国を挙げての戦略方針の転換。双方の行動の背後には、同一の深い理由があるのかもしれない。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="君はエーギルのあらゆる計画を信用していないようだな。;ウルピアヌスは、今も我々を信じ切ってはいないらしいな。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]確かに俺は、グレイディーアに共有した発見以外の事情も知っている。それゆえに、エーギルで起きたことや今起きていること、すべてを慎重に扱わねばならない。
+[name="ウルピアヌス"]だが、そうした情報はグレイディーアが知るには時期尚早であり、お前には知る権利もない。
+[name="ウルピアヌス"]目下のところは、航路計画にのみ注意を払っておけ。
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="ウルピアヌス"]「海と陸を繋ぐ航路」を作るという言葉を……あの医者もイベリア裁判所も、完全には信用していないのだろう。でなければ、お前たちがここに現れるはずもない。
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]――等級の高い兵器で海域を一掃し、本つ域の主力艦隊の航行時間を稼ぐ。エーギルの戦争設計は、一貫してシンプルで効率的だ。
+[name="ウルピアヌス"]しかし、都市内にはすでに、看過できない異常事態が発生した。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="深海教会か？;失踪者が出たと聞いた。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]あの執政官はなかなかのやり手だ。
+[name="ウルピアヌス"]ミリアリウムの航行中に、都市内の堕落者たちは次々と排除され、今のところ実質的な被害は出ていない。随行している軍団二つが受けた損失も、予想よりはるかに少なかった。
+[name="ウルピアヌス"]だが、顧みてみるに、航路計画は少々順調に進みすぎている。
+[name="ウルピアヌス"]この重要な時期に航路計画の関係者が突如失踪したことは、恐らく始まりに過ぎない。
+[name="ウルピアヌス"]調査にはすでに着手している。潜在的な危険はすべて俺が取り除こう。
+[name="ウルピアヌス"]通常の場所であれば、立ち入ることはそう難しくもない。海巡隊の定期パトロールを避けることもな。
+[name="ウルピアヌス"]だが、俺が懸念しているのは、問題が都市の核心部で発生することだ。
+[name="ウルピアヌス"]計画が大詰めになる前に、重要なプロジェクトの研究所や執政官の瞑想の間に押し入ることは、できればしたくないのでな。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="これでもただの伝言役ではないのだが。;ロドスとしては、君との協力関係を保ちたい。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="ウルピアヌス"]……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="君は都市内では動きが取りづらいのだろう？;君はエーギルの潜在的脅威と見なされているのだろう？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]協力者にして監視者となるか。いいだろう。
+[name="ウルピアヌス"]では、それともう一点。
+[name="ウルピアヌス"]……スカジのことだ。
+[name="ウルピアヌス"]お前が本当にアビサルハンターを気にかけているというのなら、あいつから目を離すな。
+[dialog]
+[charslot(duration=1)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g9_shipport",screenadapt="coverall")]
+[playsound(key="$d_avg_sea", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.3, channel="bgs",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="char_263_skadi#3",duration=1)]
+[delay(time=2)]
+[name="スカジ"]156隻、157隻……
+[name="スカジ"]こんなに緊張感に満ちたポートターミナルは見たことないわ。
+[name="スカジ"]これって、前線の状況は楽観視できないってことかしら？
+[charslot(slot="m",name="avg_1023_ghost2_1#3$1")]
+[name="スペクター"]ふん、ふふん……♪
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]よく鼻歌なんて歌ってられるわね。
+[charslot(slot="m",name="avg_1023_ghost2_1#1$1")]
+[name="スペクター"]このくらい、いいじゃない。
+[name="スペクター"]私たちだって、すぐ忙しくなるかもしれないんだし。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_474_gladiia_1#1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]第二隊長。
+[charslot(slot="m",name="avg_1023_ghost2_1#1$1")]
+[name="スペクター"]評議会のあと、ケルシー先生を連れてそそくさとクレメンティア執政官の所へ行ってたみたいだけど、そっちの結果はどうだったの？
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]順調よ。ただ、私は引き合わせただけなの。あの二人は交換すべき情報が多いから、それに付き合う必要もないと判断したわ。
+[name="グレイディーア"]それと、アビサルハンターの今後の方針について、クレメンティアと軽く話し合ってきたの。
+[name="グレイディーア"]結論として、エーギルの航路はもうじき、正式に開かれることになるから、それまではミリアリウムに随行して前線へ来ている軍団二つとの共同作戦に当たることになっていてよ。
+[charslot(slot="m",name="avg_1023_ghost2_1#1$1")]
+[name="スペクター"]ほーら、私の予感通りでしょ？
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]そうね。
+[name="スカジ"]闘智場であなたたちの口論を聞いているよりも、あの雑魚集団を相手にしてるほうが気楽だわ。
+[name="スカジ"]具体的にはどうするの？　それと、出発はいつ？
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]具体的な指揮権の在り処と、戦術立案については各軍の指揮官と話し合ったうえで決めるわ。
+[name="グレイディーア"]実際のところ、スカジには――
+[dialog]
+[charslot]
+[stopmusic(fadetime=1)]
+[StopSound(channel="bgs", fadetime=1)]
+[playsound(key="$d_avg_emgseaalarm")]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[charslot(slot="r",name="avg_npc_1398_1#1$1",duration=0.3)]
+[charslot(slot = "r",posfrom = "-150,0", posto = "100,0",duration = 0.9)]
+[delay(time=0.5)]
+[charslot(slot="l",name="char_263_skadi#8",duration=0.3,posfrom = "0,0", posto = "120,0")]
+[delay(time=0.2)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=20, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown2",volume=0.6)]
+[delay(time=0.1)]
+[charslot(slot = "r",posfrom = "100,0", posto = "80,0",duration = 0.2)]
+[delay(time=0.3)]
+[charslot(slot="l",name="char_263_skadi#8",focus="l")]
+[name="スカジ"]あら、この音、緊急軍事警報じゃない？
+[name="スカジ"]何が起きたの？　シーボーンが都市に侵入してきたのかしら？
+[charslot(slot="r",name="avg_npc_1398_1#1$1",focus="r")]
+[name="軍団兵士"]……
+[charslot]
+[charslot(slot="m",name="avg_474_gladiia_1#5")]
+[name="グレイディーア"]執政官グレイディーアよ。現在の状況報告を頂戴。
+[playMusic(intro="$tense_intro",key="$tense_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1398_1#1$1")]
+[name="軍団兵士"]はい。
+[name="軍団兵士"]本日、第37号営巣地のビーコン投下任務が、第十軍団の二個艦隊によって計画通り開始いたしました。
+[name="軍団兵士"]ですが、たった今緊急通信があり、営巣地――巣穴へ向かう途中でシーボーンの襲撃を受けたとのことでした。
+[charslot(slot="m",name="char_263_skadi#8")]
+[name="スカジ"]奴らは計画を知っていたの？
+[charslot(slot="m",name="avg_npc_1398_1#1$1")]
+[name="軍団兵士"]現状では、そこまでは何とも。取り急ぎの情報伝達でしたため、技術アカデミーの分析がまだ出ておりませんもので。
+[charslot(slot="m",name="avg_474_gladiia_1#5")]
+[name="グレイディーア"]港内に、待機中の小型戦闘艦は置いてあって？
+[charslot(slot="m",name="avg_npc_1398_1#1$1")]
+[name="軍団兵士"]はい。端末にログインすれば、いつでも利用可能です。
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]感謝するわ。今後の戦闘においては、襲撃された艦隊の座標を常に私へ共有なさい。アビサルハンターは途中で舟を離れ、戦場を泳いで向かう予定だから。
+[charslot(slot="m",name="avg_npc_1398_1#1$1")]
+[name="軍団兵士"]わかりました。
+[dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]ローレンティーナ、行くわよ。
+[name="グレイディーア"]……スカジ、あなたは都市に残りなさい。
+[charslot(slot="m",name="char_263_skadi#9")]
+[name="スカジ"]……
+[name="スカジ"]どうして？
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]考えすぎる必要はなくてよ。
+[name="グレイディーア"]今回の陸海の接触は極めて重要なもの。ケルシーには、他のことにまで手を回す余裕などないわ。あなたが残って、ドクターの安全を守りなさい。
+[name="グレイディーア"]これは命令よ。
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]わかったわ。
+[Stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="51_g9_shipport",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_4009_irene_1#2$1",focus="r")]
+[name="アイリーニ"]向こうにいるのは……
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]ローレンティーナさんたちよね。戻ってきたばかりなのに、もう戦いに向かうの？
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="セクンダ"]状況は把握しました。先ほどの警報に関係があるようです。第37号営巣地へとビーコン投下作戦で赴いた艦隊が、シーボーンの襲撃を受け、その救援のために彼女たちが出立の準備をしていると。
+[name="セクンダ"]貴殿はアビサルハンターとお知り合いなのですか？
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]ええ。
+[name="アイリーニ"]陸にいた時に、短い間ではあったけど、協力関係になったの。一緒に色々な経験をして、敵を……シーボーンを倒したりもしたわ。
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="セクンダ"]彼女たちの性格と戦闘スタイルを鑑みるに、肩を並べて共に戦うことができるというのは……珍しいことです。
+[name="セクンダ"]こうした緊急事態でなければ、小官もグレイディーア執政官のもとにご挨拶に伺うべきだったのですが。お三方がエーギルに戻られて以来、まだそんな時間さえないままですね。
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]エーギルの人は、みんなアビサルハンターと知り合いなの？
+[charslot(slot = "left", name = "avg_4137_udflow_1#3$1",focus="l")]
+[name="セクンダ"]……無論そのようなことはありません。小官は単に、以前あの方々と共に働いていたことがあり、アビサルハンターの一員になりたいと望んでいたものでして。
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]そういえば、あなたの部下が、以前のあなたは研究者だったと言っていたものね。
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="セクンダ"]小官がアビサルハンター計画の研究者として選ばれたのは、遺伝子工学分野での成果を買われてのことでした。我が師はこの計画の責任者であり、エーギル初のアビサルハンターでもあります。
+[charslot(slot = "left", name = "avg_4137_udflow_1#3$1",focus="l")]
+[name="セクンダ"]当時は条件を満たす人材が少なく、改造手術に成功した人はそこからさらに限られていました。ですが、師とグレイディーア執政官はそんな中でも皆を率いて驚くべき戦果を挙げておられたのです。
+[name="セクンダ"]中でも印象に残っているのは、海底熱泉での戦いですね。あの場で狩人たちは、二つのエネルギー探査都市を撤退させるべく、丸三日間もシーボーンと戦って時間を稼いだのです。
+[name="セクンダ"]シーボーンの形態が日々変化していくことを受けて、武器の使用はすでに厳しく管理されていましたので、当時は彼らこそが何よりも有効で確実な軍事力でした。
+[charslot(slot = "left", name = "avg_4137_udflow_1#10$1",focus="l")]
+[name="セクンダ"]小官は毎日、そんな狩人たちが発ち、そして戻るのを見ていたものです。
+[name="セクンダ"]そうして、疲れ果てた彼らが休眠用ゾルに横たわる様を眺めては、データを取り、機能テストをし、彼らの身体を修復していると、勝利の吉報などもはや彼らには無関係に見えました……
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="セクンダ"]やがてある日、その時何を思ったのかはもはや忘れてしまいましたが――小官は展望研究所に、アビサルハンター改造手術を希望する申請を出したのです。
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]……私でもきっとそうするわ。
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="セクンダ"]今、なんと？
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]だから、もし私があなたの立場だったら、同じように自分から申請を出したと思うって言ったの。
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="アイリーニ"]自分の師や、周りの人たちが皆死地に飛び込んでいくのを見たら……誰だってそれを追いかけたくなると思うわ。
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]それに、あなたは身体能力が高そうだし、そのプロジェクトの研究員だから、アビサルハンターの能力や戦い方にも詳しいでしょうし……ん？　それなら、どうして今ここに？
+[charslot(slot = "left", name = "avg_4137_udflow_1#2$1",focus="l")]
+[name="セクンダ"]その申請が却下されたからです。
+[charslot(slot = "right", name = "avg_4009_irene_1#2$1",focus="r")]
+[name="アイリーニ"]ええと、理由は？
+[charslot(slot = "left", name = "avg_4137_udflow_1#3$1",focus="l")]
+[name="セクンダ"]（首を横に振る）
+[name="セクンダ"]尋ねはしませんでした。小官の師も、その問いには答えてくださらなかったでしょう。
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]だから海巡隊に入ったの？
+[name="アイリーニ"]確か海巡隊って、戦場でアビサルハンターと一番密接に連携する作戦集団なのよね？
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="セクンダ"]はい……それと同時に、彼らの監視役でもあります。
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="アイリーニ"]……
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1391_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[name="海巡隊隊員"]巡視船の準備が整いました。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]よし。
+[name="セクンダ"]突然場違いな話をしてしまって申し訳ありませんでした、アイリーニ殿。
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="アイリーニ"]気にしないで。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]雑談はここまでとしましょう。今、軍団の艦隊は前線でシーボーンと交戦していますが、航路計画のデータエンジニアの失踪も重要な案件です。ゆえに、海巡隊は当初の予定通り行動いたします。
+[name="セクンダ"]アイリーニ殿、貴殿はこちらに残ってください。
+[charslot(slot="m",name="avg_4009_irene_1#2$1")]
+[name="アイリーニ"]どうして？
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]我々の向かう場所は前線からは離れていますが、それでも危険であることに変わりはありません。海巡隊には、貴殿の安全を保障する責務がありますので。
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="アイリーニ"]心配しすぎよ、指揮官さん。
+[name="アイリーニ"]審問官の手は、シーボーンの血に染まっているもの。私は奴らを恐れはしないわ。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]皆様の資料は拝見しましたが、小官の記憶違いでなければ、貴殿はすでに審問官の職を辞しておられるはずでしょう。
+[name="セクンダ"]調査へのご協力には感謝いたします。先にも申し上げました通り、貴殿は非常に鋭い嗅覚をお持ちであるうえに……勇敢な方だと感じました。
+[name="セクンダ"]しかし、貴殿がエーギルへお出でになられたのは、戦闘に参加するためではないはずです。ほかの使節の方々と合流してください。
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="アイリーニ"]陸から来た私にとって、エーギルとシーボーンとの戦いは、理解を超えるものだと言いたいのね？
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]……はい。
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="アイリーニ"]あなたの言うことは間違っていないけれど、今回の旅の目的はまさしくそれを「理解」することなの。
+[name="アイリーニ"]私はエーギルを、シーボーンを、本当の戦争を、深い海で今まさに起きているすべてを理解する必要があるの……一人のイベリア人としてね。
+[name="アイリーニ"]この場所はすでに、陸地の近くよ。ここにあるエーギルの都市は一つだけど、イベリアは一国家すべてをかけて臨んでいるの。
+[name="アイリーニ"]安心して。無理はしないわ。訳もわからず海の中で力尽きるわけにはいかないもの。
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]……貴殿はまだお若いでしょうに、それほどの覚悟をお持ちなのですね……さぞかし良き師をお持ちなのでしょう。
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="アイリーニ"]そうね、聞く限りではあなたの師匠といい勝負じゃないかしら？
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="セクンダ"]……アイリーニ殿に深海潜水装置をご用意しろ。
+[name="セクンダ"]では、調査の続きと参りましょう。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

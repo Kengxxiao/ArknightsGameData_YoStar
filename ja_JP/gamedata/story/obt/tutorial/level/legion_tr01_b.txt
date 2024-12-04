@@ -1,11 +1,11 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_milu")] ドーベルマン教官、前方に重装兵を確認。
 [Battle.Pause(pause=false)]
 [Delay(time=3)]
 [Battle.Pause(pause=true)]
 [PopupDialog(dialogHead="$avatar_doberm")] 問題ない。いいかドクター、<@tu.kw>召集票</>を消費することで、準備エリアからオペレーターを１名支援に召集することができる。
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(target="btn_draw_next_card", waitForSignal="draw_card", \
           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",searchBtnInChildren=true, \
@@ -22,7 +22,7 @@
 それでいい。
 [InputBlocker(blockInput=true)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

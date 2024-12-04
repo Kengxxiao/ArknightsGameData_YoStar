@@ -1,10 +1,14 @@
 [HEADER(is_skippable=false, is_tutorial=true)] 第二次角色升级引导
 [PopupDialog(dialogHead="$avatar_amiya")] Doctor, our enemies are only going to get stronger from here on out.
-[PopupDialog(dialogHead="$avatar_amiya")] We need to improve our Operators to make sure that our future operations continue smoothly.
-[PopupDialog(dialogHead="$avatar_amiya")] If you still haven't upgraded your Operators, I will guide you through the process one more time.
+[PopupDialog(dialogHead="$avatar_amiya")] Improving the Operators will make missions easier to complete.
+[PopupDialog(dialogHead="$avatar_amiya")] I'll help you learn more about your Operators and walk you through the process of developing them.
 [GotoPage(dest="char_repo", waitForSignal="character_repo_routed")]
 [Delay(time="$f_delay_single_frame")]
 [Tutorial(target="pool_btn_char_repo_first_item", waitForSignal="character_info_resumed",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] Select an Operator to enter their profile page.
 [PopupDialog(dialogHead="$avatar_amiya")] I am sure you've noticed that our victories are not due to one single Operator, but rather everyone working together as a team.
 [PopupDialog(dialogHead="$avatar_amiya", protectTime=0.5)] Therefore, I'd highly recommend that you <@tu.kw>improve all your Operators</>.
-[Tutorial(target="panel_hotspot", waitForSignal="character_info_lvlup_resumed",           abortForSignal="character_info_lvlup_abort",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] Tap here to play battle records so your Operators can earn EXP.
+[Tutorial(target="btn_evolve",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] After reaching a certain level, Operators can be <@tu.kw>Promoted</>, and some of them will obtain new Talents and Skills.
+[Tutorial(target="btn_potential",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys")] Give Operators their corresponding Tokens to increase their <@tu.kw>Potential</>, improving their base stats and Talent effects.
+[Tutorial(target="friend_show",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys")] This is the Operator's <@tu.kw>Trust</>. Increasing Trust also improves their base stats and combat ability.
+[Tutorial(target="panel_hotspot",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] Here you can play Battle Records for your Operators to increase their EXP.
+[Tutorial(target="hotspot_skill",            animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys")] Enter the Skill Upgrade page from here.

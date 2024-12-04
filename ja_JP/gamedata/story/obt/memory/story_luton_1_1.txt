@@ -1,0 +1,677 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_battlefield",screenadapt="showall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=0)]
+[Delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+ここに飛び交っている醜い羽獣たちは、私と同じくらいの背丈をしている。
+悪臭を放つくちばしに、鋭い爪を持ち、死体の服をかき分けては、食糧をついばんで持ち去ったり、あるいは直接死体を食らう。実のところ、私はその羽獣たちと何も変わらない。
+大人になってから、羽獣たちを追い払って、先んじて死体の懐を物色できるようになった。報酬に換えられそうな物資やドッグタグ、値打ちのありそうな装備、食べられそうな食糧……
+ああ、今日の収穫はあまり芳しくありませんね。困ったものです。とてもお腹が空きました……
+[Dialog]
+[Delay(time=0.5)]
+[name="？？？"]あ……あんた、頼みを聞いてくれるか……？
+――あっ、まだ生きている方が……
+[name="？？？"]こ、この種を植えて……花を咲かせたいんだ……
+[Dialog]
+[PlaySound(key="$d_avg_pcket", volume=1)]
+汚れた小さな紙包みを押し付けられた。彼が胸ポケットから取り出した物だ。
+それから腕が、一本、また一本と……どこからともなく、数え切れないほど伸びてきて、私にしがみ付く。聞こえてくる声もどんどん増えていき、私の頭は埋め尽くされて――
+「肉が食べたい……」「ダンスを踊りたい……」「俺はまだ……」「私はまだ……」
+[name="？？？"]私はまだ……！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_infirmary", screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4130_luton_1#7$1", duration=1)]
+[charslot(slot = "r", name = "avg_npc_501_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "l", name = "avg_4130_luton_1#7$1",focus="l")]
+[name="ルトナダ"]はっ……！
+[charslot(slot = "l", name = "avg_4130_luton_1#10$1",focus="l")]
+[name="ルトナダ"]……自分のやりたいことを見つけるべきだと皆さんはおっしゃいますが、私には何をすればいいのか分かりませんし、頭の中の声も止まなくて……
+[charslot(slot = "r", name = "avg_npc_501_1#1$1",focus="r")]
+[name="医療オペレーター"]心配しないで、ルトナダさん。慣れた環境を離れて、何をしたらいいか分からなくなるのはよくあることだから。ほら、カンタービレさんやフロストリーフさんも乗り越えたことだし、きっと大丈夫。
+[name="医療オペレーター"]あなたの悩みについては前に人事部から相談があったの。もう彼らから聞いてると思うけど、ひとまず頭の中の声を全部書き出してみたらどうかしら？
+[name="医療オペレーター"]いつもやってるような、物品を整理整頓するようなイメージでね。
+[name="医療オペレーター"]それ用のノートを用意しましょうか？　もちろん、他にもっと好みのやり方があるなら、それでも構わないけど。
+[name="医療オペレーター"]とにかく、その頭の中の声を全部書き出してみれば、これからやりたいことも自ずと見つかるかもしれないわ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_infirmary", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4130_luton_1#8$1",focus="r")]
+[charslot(slot = "r", name = "avg_npc_501_1#1$1",focus="r")]
+[name="医療オペレーター"]ルトナダさん、なんだかまだ調子悪そうね……例の声、書いてみてもまだ聞こえてくる？　それとも、他に何か悩み事でもあるのかしら？
+[charslot(slot = "l", name = "avg_4130_luton_1#8$1",focus="l")]
+[name="ルトナダ"]分かりません……声をすべて書き出してみても、何も感じないのです。声の主が考えていることも、よく分からなくて……
+[name="ルトナダ"]なぜ彼らは、今際の際にああいったことを望むのでしょう……そんなに大切なことなのでしょうか？　生き延びることよりも……？
+[charslot(slot = "l", name = "avg_4130_luton_1#13$1",focus="l")]
+[name="ルトナダ"]実際に彼らの願いを叶えてみたら……分かってくるんでしょうか？
+[charslot(slot = "r", name = "avg_npc_501_1#1$1",focus="r")]
+[name="医療オペレーター"]（小声）ふぅ……いい感じね。
+[name="医療オペレーター"]ルトナダさん、気付いてないかしら？　今のあなたには「生き延びる」こと以外に、気になることができたのよ。
+[name="医療オペレーター"]なら簡単ね。それをやってみればいいわ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cher_3", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]気になったことを、やってみる……
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]あっ、このお花屋さんの名前、どこかで見かけたような……
+[Dialog]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]「花屋『はなやか』、サードアヴェニューの曲がり角」。そうでした、これに入っていたメモに……この種の包みを託してきた人は、確かこう言っていました……
+[name="ルトナダ"]「この種を植えて……花を咲かせたいんだ……」と。
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]しかし、花を咲かせるには……どうしたらいいでしょう。
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_033",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_033",focus="m")]
+[name="花屋の店主"]こら、そこに突っ立ってなにしてんだ？　今閉店作業中なんだよ。運び出しに邪魔だからどいてくれよな。
+[charslot(slot = "m", name = "avg_4130_luton_1#7$1",focus="m")]
+[name="ルトナダ"]閉店？　あっ、申し訳ありません、でしたらまた今度で……
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step1",loop=false)]
+[stopsound(channel="step1",fadetime=2)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_033",focus="m")]
+[name="花屋の店主"]待った。その手に持ってる包みはなんかの種？　植木鉢を買いに来たの？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",duration=0.3)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]いえ……
+[charslot(slot = "m", name = "avg_npc_033",focus="m")]
+[name="花屋の店主"]そうか、まあいい。この通りは爆撃でほとんど焼けちゃってな、うちみたいな花屋はもうやっていけないんだ。この花たちも持っていけないからさ、気に入ったのがあったらやるよ。
+[charslot(slot = "m", name = "avg_4130_luton_1#7$1",focus="m")]
+[name="ルトナダ"]え？　いや、その……
+[charslot(slot = "m", name = "avg_npc_033",focus="m")]
+[name="花屋の店主"]心配すんな、タダでやる。仕入れたもんでもないしね。何年か前にある男がうちに預けたんだが、あれっきり来なくなってさ。お得意さんだったから引き受けたってのに。
+[name="花屋の店主"]もうずいぶんと経つし、きっといらなくなったんだろ。だから好きにしてくれていいぜ。
+[name="花屋の店主"]そういうことだ、じゃあな！
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_4130_luton_1#7$1",focus="m")]
+[name="ルトナダ"]えっ、あの……
+[Dialog]
+[charslot]
+荒廃した通りの階段に、花の鉢植えがいくつも置かれてあった。ルトナダは鉢の一つを取り上げ、その中で小さな花が風に揺れる様を見つめた。
+あの兵士が種を渡してきた時の表情だけは、かすかに覚えている。その顔に満ちていた感情は……「憧れ」か、それとも「安らぎ」と言うべきだろうか……？
+彼の最期の言葉は、目の前に広がる悪臭漂う戦場とは相容れない、まるでのどかな午後にふと口から滑り落ちたような、軽やかな願望だった。
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]「この種を植えて……花を咲かせたいんだ……」
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]花を咲かせる……あの時、彼が思い浮かべていたのは、たったこれだけのことだというのでしょうか？
+[name="ルトナダ"]死にゆく間際でも、気にかけるものがあるのは、一体どういう気持ちなのでしょう……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_cher_3", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]（ここから通りを二本越えればもう事務所。このお花たちを一旦あそこに移し、育ててみることにしよう）
+[charslot(slot = "m", name = "avg_4130_luton_1#7$1",focus="m")]
+[name="ルトナダ"]これは？　植木鉢にラベルが……この筆跡は、花屋の住所を書いたメモと一緒のようですね……
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]「バーベキューハウス『バックヤード』」……
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_battlefield", screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="瀕死の兵士"]も……もう一度、肉が食べたい……
+[name="瀕死の兵士"]外はカリカリで、中はまだしっとりとジューシーな肉……ブロック肉を丸ごと一気に食いたい……
+[name="瀕死の兵士"]どうしても、どうしてもだ……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_cher_3", screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1")]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]……それを食べに、行ってみよう。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_indoor_u", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_plateplace", volume=1)]
+[delay(time=1)]
+香ばしく焼き上がった肉がルトナダの目の前に置かれた。溢れる肉汁に、スパイスの効いた脂の香りが、鼻孔をくすぐる。
+戦場において、彼女は何でも口にしてきた。生きるために、革のベルトで腹を満たしたこともある。胃の中の明らかな異物感に恐怖を覚えたものだった。
+ロドスでは、毎食衛生的で栄養豊富な料理が出される。それを食べて満腹になると、彼女の心は安らいだ。
+そして今、目の前の肉は食欲をそそる香りを放っている。一切れ残らず平らげた彼女は……幸福に浸った。
+しかし、そんな気持ちも、あの人が懐かしそうに「もう一度肉を食べたい」と言った時の……あの筆舌に尽くしがたい表情とは、何かが違うような気がした。
+あれは何だったのだろう？　肉は確かに美味しいが、たかが一度の食事に過ぎない。死の間際になっても恋しく思う気持ち、未だ感じたことのないそれは、一体どういう気持ちなのだろうか？
+[Dialog]
+[charslot(slot = "m", name = "avg_4130_luton_1#9$1",focus="m")]
+[name="ルトナダ"]……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]植木鉢を抱えてバーベキューを食いに来るとは、嬢ちゃん、妙なことをするな。こんなおかしな組み合わせを最後に見たのは、もう何年も前のことだ。
+[name="BBQハウスのマスター"]どうだい、味は？　味付けがちょいと濃かったかな？　もう少し野菜を追加しようか？
+[charslot(slot = "m", name = "avg_4130_luton_1#9$1",focus="m")]
+[name="ルトナダ"]……
+[Dialog]
+[charslot]
+ルトナダは首を横に振った。
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]おっと、話すのは苦手か。気にしないでくれ！　そこで俺の話を聞いてるだけでいいからよ。
+[name="BBQハウスのマスター"]うちも繁盛してた頃は、一日に五十キロ以上もの肉が売れたもんだが、今や見る影もねぇ。外でドンパチ始まっちゃあ、誰も外食なんてする気分にゃならねぇわな。
+[name="BBQハウスのマスター"]あんたもその口だろ？　眉間にしわ寄せて、何か悩み事か？　俺に話してみな。
+[charslot(slot = "m", name = "avg_4130_luton_1#10$1",focus="m")]
+[name="ルトナダ"]……私は……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]ははっ、言いたくねぇならいいんだ。ちょっと聞いてみただけさ。
+[name="BBQハウスのマスター"]今じゃ、うちに食事に来る客は皆、何かしら悩みを抱えてる。肉でも食って、誰かと話でもすりゃ、気が晴れるのかもしれねぇな。
+[name="BBQハウスのマスター"]あんたもひいきにしてくれりゃ、ちょっとしたつまみくらいはサービスしてやるからよ！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]いえ、私はただ……
+[name="ルトナダ"]お肉はとても美味しいですし、お花もとても綺麗です。けれど、死ぬ前にもう一度お肉を食べたいだとか、花を植えたいだとか、どうしてそのようなことを望む人がいるのでしょうか？
+[name="ルトナダ"]それがよく分からなくて……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]はぁ？　ハハハッ、なんだ！　しかめっ面で何を考え込んでんのかと思ったら、そんなことか！　そんなの、自分が死ぬほど好きなものは何かってだけの話だろ？
+[name="BBQハウスのマスター"]例えば俺なんかは、死ぬ前になったら肉をたらふく食いたいって思うだろうな。それからは、そうさなぁ、全身の力を使い果たすまで思い存分踊ってやる！
+[name="BBQハウスのマスター"]最後に地面にドカッとぶっ倒れたら、まさに死んでも悔いはねぇって思うだろうよ！
+[name="BBQハウスのマスター"]そういうことだろ、嬢ちゃん。
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]……ダンス、ですか？
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_battlefield", screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="瀕死の兵士"]悔しいな……もう一度……ストンプダンスを……踊りたかった……
+[name="瀕死の兵士"]ダンス用のドレスなんて……もうずっと着てない……
+[name="瀕死の兵士"]もう一度、たった一度でいいから……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_indoor_u", screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1")]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]それは……ストンプダンスのことでしょうか？
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]おっと、あんたどうしてそれを？　その顔、ここの人間じゃあなさそうだが、まさかストンプを知ってるとはな！
+[name="BBQハウスのマスター"]昔はこの店のテラスによ、肉や酒を平らげた客が大勢集まっては踊り明かしたもんだ。今は……爆撃だのなんだので、人もほとんど集まんねぇがな。
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]テラス……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]おっ、見てみるかい？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_courtyard", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#9$1",focus="m")]
+[name="ルトナダ"]誰もいません。ひっそりとしていますね……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]ああ、そうさ。そこらじゅう草ぼうぼうだ。にしてもテラスなんて久々に出たな。ストンプダンスの踊り方なんざほとんど忘れちまった。
+[name="BBQハウスのマスター"]確かこう……手を高く上げて、左足、右足をトントン鳴らしたら、クルッと回って、ピョンと跳ねる、だったかな！
+[Dialog]
+[charslot(slot="m",action="jump",times=1,power=10,duration=0.4)]
+[PlaySound(key="$d_avg_runstop", volume=0.7,delay=0.5)]
+[delay(time=0.7)]
+[name="BBQハウスのマスター"]はぁ、はぁ……久々に踊ってみれば疲れるもんだな。そういや昔、このダンスが上手な娘っ子がいてよ。ドレスを着てさ……肉の串焼きみてぇにクルクル回って、綺麗だったなぁ。
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]肉の、串焼き……？
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]こほん……すみません、そのストンプダンスの踊り方を、私に教えていただけませんか？
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]ああいいぜ、どのみち客はあんただけだしな。俺がさっきやったみたいに、手を高く上げて、左足、右足をトントンと鳴らしたら、クルッと回って、ピョンと跳ぶのさ！
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]……手を高く上げて、左足、右足をトントン。それでクルッと回って、ピョン……
+[Dialog]
+[charslot(slot="m",action="jump",times=1,power=6,duration=0.5)]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="stp",loop=false)]
+[stopsound(channel="stp",fadetime=1)]
+[delay(time=0.6)]
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]これがストンプダンス……？　やはり特に何も感じませんが……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]そうか？　何度も踊ってりゃ、そのうち気に入るかもしんねぇからよ、続けてみな！
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[name="ルトナダ"]はい……けれど、今日はこの辺にしておきます。お花を運ばなければなりませんから。ありがとうございました。
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]……おう、そりゃ引き留めるわけにもいかんな。暇な時はいつでも食いに来いよ！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_safehouseindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+その晩、私は夢の中で、またあの声たちを聞いた。
+[Dialog]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[Delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=1)]
+[Background(image="bg_battlefield",screenadapt="coverall",fadetime=1, block=true)]
+[focusout(duration=2, type="bg" , from=1, to=0, block=true)]
+[Delay(time=0.5)]
+あの人たちは私の手を引き、あのような……「憧れ」？　それとも「郷愁」？　あるいは「幸せ」だろうか、そんな表情で、最期の瞬間に想うことを口にした。
+それはどういう気持ちなのだろう？
+死体から物資を見つけた時の気持ちとも、ようやくお腹を満たせた時の気持ちとも違う。自分がロドスに来て、特に何もしなくても生きていけると知って驚いたような気持ちでもない。
+死にたくないという思いすら上回るそれは、彼らにあんな表情をさせるのは、一体どういう気持ちなのだろう。
+[Dialog]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[Delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=1)]
+[Background(image="bg_safehouseindoor",screenadapt="coverall",fadetime=1, block=true)]
+[focusout(duration=1.5, type="bg" , from=1, to=0, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]六月七日。お花の育て方を勉強しています。催芽は少し難しいけれど、いくつかの種が発芽したので、植木鉢に植え替えました。
+[name="ルトナダ"]花屋さんにもらったお花も頑張ってお世話していますが、なぜか多くはだんだんと萎びてきました。お水はちゃんとあげているのに、どうしてでしょう？
+[name="ルトナダ"]それから、ストンプダンスの踊り方も勉強しています。いつかうまく踊れるようになりたいものです。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_safehouseindoor", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]六月十九日。お花が多すぎて、事務所には置いておけなくなりました。マスターのところへ行って、いくつかお店のテラスに置いてもらいました。新しい環境で健やかに育ってくれると嬉しいです。
+[name="ルトナダ"]種の方も引き続き頑張っています。いくつかの芽は順調に育っているけれど、枯れてしまったものもあります。
+[name="ルトナダ"]またマスターからストンプダンスの踊り方を教わりました。まだまだうまく踊れないし、とても疲れます。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_safehouseindoor", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#13$1",focus="m")]
+[name="ルトナダ"]七月二日。ますます多くのお花がしおれてしまいました。お花を育てるのは地道な努力が必要なうえ、とても難しいです。
+[name="ルトナダ"]ダンスもコツを掴めないでいます。手足をリズムに乗せて動かすのがどうもうまくいきませんし、思い通りに手足を動かして綺麗なステップを踏むこともできません。
+[name="ルトナダ"]マスターもあまり上手ではないけれど、あの人が踊っている時はとても楽しそうに見えます……どうしてでしょう？
+[charslot(slot = "m", name = "avg_4130_luton_1#10$1",focus="m")]
+[name="ルトナダ"]私はやはり……こういったことから、何かを感じ取ることができないみたいです。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_safehouseindoor", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4130_luton_1#10$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[charslot(slot = "m", name = "avg_4130_luton_1#10$1",focus="m")]
+[name="ルトナダ"]七月十五日。
+[name="ルトナダ"]色々なことを試してきました。お花を植えたり、お肉を食べたり、踊ったり……だけど私にはまったく感じられません……最期の瞬間になっても何かに思いを馳せるというあの感覚を理解することも。
+[name="ルトナダ"]相変わらず、自分が何をすべきか分かりません。私は戦場で生き延びてきた気もするけれど……そうではないような気もします。自分が何を気にかければいいのか、一向に分かりません。
+[name="ルトナダ"]所詮どれも他人の思い出だから、私がなぞっても何も感じられないのでしょうか……自分で感じるには、一体どうすれば……
+[charslot(slot = "m", name = "avg_4130_luton_1#9$1",focus="m")]
+[name="ルトナダ"]このままでは、きっと何も変われませんね。
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_safehouseindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_005",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]嬢ちゃん！　鉢植え抱えて肉食いに来たあの嬢ちゃんは、ここにいるんだよな？
+[charslot(slot = "m", name = "avg_4130_luton_1#7$1",focus="m")]
+[name="ルトナダ"]……はい？
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]よお、前にあんたにもらった花、みんな咲いたぜ。今やうちのテラスもすっかり綺麗になったんだ！　来なよ、見せてやる！
+[charslot(slot = "m", name = "avg_4130_luton_1#7$1",focus="m")]
+[name="ルトナダ"]い、今からですか？
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]ああ！　って、ゴホッゴホッ……あんた、一人でここに住んでるのか？　なんだか廃品回収所みてぇだな。こういう商売でもしてるのかい？　バタ屋にゃ見えんが……
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]あ、いえ……これは以前からの習慣で。ただ、この頃は何したらいいのか分からなくて、それで……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]そうかそうか。まあ、生きていけるんなら何でもいいさ！　とにかく、行こうか。こんな日も当たらねぇ部屋に籠ってないでよ。見違えるほど綺麗になったから、きっと驚くぜ！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]いえ、私は……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]いいからいいから！
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=1)]
+[charslot(slot="m",posfrom="0,0",posto="-150,0",afrom=1,ato=0,duration=0.5)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ルトナダ"]えっ……あっ！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_courtyard", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",loop=true, channel="crwd", volume=0)]
+[SoundVolume(channel="crwd", volume=0.4, fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]ほら、あたしがちょくちょく水やりに来た甲斐あって、どれも見事に生き返ったでしょ？　綺麗よね！
+[charslot(slot = "m", name = "avg_npc_002",focus="m")]
+[name="客B"]マスターはいつ帰ってくんだ？　ちょっと人を探してくるつって店番を頼まれたけどよ。これ以上戻らねぇなら、俺がこの店もらっちまおうかな！　わっはは……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="客C"]はぁー、まさかここでまたストンプを踊れる日が来るなんて。今は皆、誰かと集まって踊る気分になんてならないだろうなって思ってたのに。
+[charslot(slot = "m", name = "avg_npc_001",focus="m")]
+[name="客D"]まったくだ。ここがバーベキューを食って踊る場所だってことも忘れるとこだった。
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]嬢ちゃん、見てくれよ！　何もかも、あんたがうちに肉を食いに来て、ダンスの話をしてくれたおかげさ。ストンプなんて単語を誰かが口にしたのは本当に久しぶりだったんだぜ。
+[name="BBQハウスのマスター"]外じゃ戦争続きでうんざりだから、暇がありゃテラスで踊ることにしてたんだ。そしたら、たまに店に来るお客がそれを見て、ダンスなんて久々だって一緒に踊り始めてな。
+[name="BBQハウスのマスター"]それに花をたくさん置いてってくれたろ。皆すっかり気に入って、よく水やりに来るようになったんだ。それでどんどん人が増え、今じゃこの賑やかさだ！　こんなに活気づいたのは何年ぶりだか！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]たくさん人が来てらっしゃいますね……
+[name="ルトナダ"]皆さん……なんだかとても楽しそうです。
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]そうさ、全部あんたのおかげだぜ、嬢ちゃん！
+[Dialog]
+[charslot]
+[SoundVolume(channel="crwd", volume=0, fadetime=2)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]あっ！　マスターのお帰りだよ！
+[charslot(slot = "m", name = "avg_npc_002",focus="m")]
+[name="客B"]お、そんじゃ早速ダンスといこうか？
+[Dialog]
+[PlaySound(key="$d_avg_electricguitar",volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]ほら、嬢ちゃんも。皆で踊りたかったんだろ？　あんだけ熱心に練習してきた成果を見せてやんな！
+[charslot(slot = "m", name = "avg_4130_luton_1#5$1",focus="m")]
+[name="ルトナダ"]い、いえ、私は……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]まあまあ、恥ずかしがらずに、行ってこい！
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="客C"]まあ、初めて見る子ね。さ、一緒に踊ろ？
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]いや、その……！
+[Dialog]
+[PlaySound(key="$d_avg_clothmovementsp",volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[Dialog]
+[SoundVolume(channel="crwd", volume=0.3, fadetime=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]そんなに難しく考えずに、皆で楽しく踊ればいいのよ。手を高く上げて、左足、右足をトントン、クルッと回って、ピョンってね！
+[name="客A"]ほら、一緒に踊りましょ！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]ひ、左足、右足……あっ、踏みつけてしまいました！
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]あははっ、いいっていいって。さあさあ続けて！
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]クルッと回って！　ピョン！　だぜ。
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[charslot(slot="m",action="jump",times=2,power=6,duration=0.3)]
+[multiline(name="ルトナダ")]クルッと回って、ピョン……
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[multiline(name="ルトナダ")]あっ！　また踏んでしまいました……！
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="客C"]きゃっ！　あら、足跡ついちゃったわ。でも大丈夫。ストンプダンスって、こういうものだから～。
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]腕を上げて、手を振って！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]腕を上げて、手を振る……
+[name="ルトナダ"]左足、右足……わっ！　す、すみません……！
+[charslot(slot = "m", name = "avg_npc_002",focus="m")]
+[name="客B"]おおっと！　いい蹴りが入ったねぇ、お嬢ちゃん。ここの肉を食ってスタミナつけたおかげかな？
+[name="客B"]気を付けな、後でお返しさせてもらうかもしれねぇぜ！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]ご、ごめんなさい！
+[charslot(slot = "m", name = "avg_npc_001",focus="m")]
+[name="客D"]おい、怖がってるだろ！
+[name="客D"]気にするな、マスターの下手な踊りを見てみなよ。あんなんでも心の底から楽しそうだろ？　好きなように踊ればいいのさ！
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]ほら、あたしの手を取って、リードしてあげるから！　手を高く上げて、左足、右足をトントン、クルッと回って、ピョン！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]……手を高く上げて、左足、右足をトントン……
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]そうそう、その調子！　じゃあもう一度、左足、右足をトントン、クルッと回って、ピョン！
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[charslot(slot="m",action="jump",times=1,power=8,duration=0.5)]
+[name="ルトナダ"]クルッと回って、ピョン……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="客C"]そうそう、上達が早いわね！　リズムに乗って、楽しく踊ればそれでいいのよ！
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]はい……
+[Dialog]
+[charslot(slot = "m", name = "avg_4130_luton_1#6$1",focus="m")]
+[multiline(name="ルトナダ")]はい！
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[PlaySound(key="$d_avg_runstop", volume=0.9)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",posfrom="0,0",posto="0,-30",afrom=1,ato=0,duration=0.5)]
+[multiline(name="ルトナダ")]――わあ！
+[Dialog]
+[delay(time=0.5)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4130_luton_1#8$1",focus="m")]
+[name="ルトナダ"]いたっ、自分で自分の足を踏みつけてしまいました……
+[charslot(slot = "m", name = "avg_4130_luton_1#6$1",focus="m")]
+[name="ルトナダ"]……ふふっ！
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]あははっ！　ね、言った通りでしょ！
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]おっ、あんた、ようやく笑ったな。
+[name="BBQハウスのマスター"]ここもすっかり賑やかさを取り戻してくれてよ。本当に、こんなに楽しいのは久しぶりだぜ……嬢ちゃんが鉢植え抱えて店に来た日から、毎日がガラッと変わったみたいだ。
+[name="BBQハウスのマスター"]そういや前にも、あんたと同じように鉢植えを抱えて店に来た若造がいたんだ。食事中も大事な花を手放さない奴で、あの日あんたを見た時すぐに思い出した。もう何年も会ってないがな。
+[name="BBQハウスのマスター"]そいつには連れが二人いてよ。でっけぇブロック肉を一気に丸ごと食っちまう奴と、もう一人は前に話した、ストンプダンスの上手な娘っ子だ。咲いた花のようなドレス姿だった……
+[name="BBQハウスのマスター"]あいつらがよく店に来てた頃は、そりゃあ楽しかった……ははっ、今のあんたらはあん時の三人組と同じくらい楽しそうだぜ！
+[name="BBQハウスのマスター"]嬢ちゃんもだ。ようやく笑顔を見せてくれたな。今は楽しいかい？
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[name="ルトナダ"]「楽しい」……
+[charslot(slot = "m", name = "avg_4130_luton_1#6$1",focus="m")]
+[name="ルトナダ"]はい、とても「楽しい」です。
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[stopSound(channel="crwd", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_courtyard", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+まだ先ほどのダンスの疲れから回復しておらず、息を切らせたルトナダは、胸を激しく高鳴らせていた。
+眩しい日差しの下、目の前の人々はまだ踊り続けていた。彼女の耳元には再び例の声が響いてきたが、脳裏に浮かぶ光景はあの陰鬱な戦場ではなくなった。
+彼女はぼんやりした三つの人影を見た気がした。花の鉢植えを抱えた影に、大口を開けて肉にかぶりつく影と、ドレスの裾をたくし上げて舞い踊る影。
+空っぽだった彼女の胸の中に、どこか温かな気持ちが流れ込んだ。
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[name="ルトナダ"]お肉に、お花に、ダンス……貴方たちだったのですね……
+[name="ルトナダ"]……その瞬間を思い浮かべるだけで、思わず微笑みがこぼれてしまう、これが「満ち足りる」という感覚なのですね。周りの人たちが皆楽しそうにしていると、自分も……「幸せ」と感じる……
+[name="ルトナダ"]どういう感覚なのか、分かったような気がします。
+[name="ルトナダ"]……その瞬間をずっと心に刻んでおきたいと思う感覚。何だかむずがゆくて、温かい気持ち……
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]けれど……
+[Dialog]
+[charslot]
+ルトナダは眼前に広がる光景を見つめていた。咲き誇る花、脂の滴る肉、そして一曲また一曲と踊り続ける人々。やがてあの三つの人影がだんだんと消えていった。
+彼女はほんのおぼろげにしか覚えていない。ぬかるみと戦火に倒れた彼らを後目に、生き延びるため物資を漁っていた時、彼らがか細い声で最期の願いを口にした光景を。
+彼らはどんな姿をしていただろう？　名は何と言っただろう？　他に何か自分に話したことはあっただろうか？　そのどれもが、記憶に残ってはいなかった。
+[charslot(slot = "m", name = "avg_4130_luton_1#1$1",focus="m")]
+[name="ルトナダ"]……
+[charslot(slot = "m", name = "avg_4130_luton_1#9$1",focus="m")]
+[name="ルトナダ"]ごめんなさい……
+[name="ルトナダ"]あの時、私は生き延びるために、皆さんが身に着けていた物をお金や食糧に換え……今は皆さんに代わって、皆さんが抱いていた喜びを感じています……
+[name="ルトナダ"]ですが、皆さんはもう……その上、私は何一つ覚えていなくて……
+[charslot(slot = "m", name = "avg_4130_luton_1#3$1",focus="m")]
+[name="ルトナダ"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopSound(channel="crwd", fadetime=1)]
+[charslot]
+[Background(image="bg_courtyard", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",loop=true, channel="crwd1", volume=0.4)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_032",focus="m")]
+[name="客A"]お肉焼けた？　もうちょっと食べたいな！
+[charslot(slot = "m", name = "avg_npc_002",focus="m")]
+[name="客B"]ああ、今日は最高の日だな……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="客C"]さっきの女の子、ダンス上手だったし、上達も早かったね。また来てくれるといいな。あれ……？　そういえば、ちょっと見ないうちにどこ行っちゃったんだろ？
+[charslot(slot = "m", name = "avg_npc_001",focus="m")]
+[name="客D"]酒だ、酒！
+[Dialog]
+[stopSound(channel="crwd1", fadetime=2)]
+[charslot]
+盛り上がる人々の横をそっと通り抜け、ルトナダは自分が持ってきた鉢植えの前にやって来た。花たちは日差しの下で小さな花びらを揺らしていた。
+腰をかがめてそのうちの一つを持ち上げると、彼女は静かにその場を後にした。
+[Dialog]
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]おい、嬢ちゃん！　どうしたんだ？　急に行っちまうなんて！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+半月後
+[Dialog]
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]なぁ、ルトナダちゃんよ。俺らが何度もダンスに誘ってんのに、どうしていつも来ないんだ？
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[name="ルトナダ"]それは……事務所でずっとお花を育てていたもので……
+[charslot(slot = "m", name = "avg_npc_005",focus="m")]
+[name="BBQハウスのマスター"]花？　そりゃ確かに花の世話も大事だが、ちっとも時間が作れねぇこたぁねぇだろ？　お前も時には肉食ったりダンスを楽しまんと……
+[name="BBQハウスのマスター"]……まあいいか。そんじゃさ、前に置いてった花たちを見に来ねぇか？　うちの客たちには大好評でよ、三食バーベキューにしてまで眺めてたいってくらいなんだぜ！
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[name="ルトナダ"]わかりました……お誘い、ありがとうございます。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step1",loop=false)]
+[stopsound(channel="step1",fadetime=1.5)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_courtyard", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+花々で埋め尽くされたテラスでは、何人かの客が肉の焼ける香りの中でストンプダンスを踊っていた。彼らは誰もルトナダのことを知らず、ただ単純に花の美しさに感嘆した。
+その一角に樹皮がまだらに剥げた木があり、剥がれた部分に三つの名前が刻まれていた。ルトナダは持ってきた花を木の下に置いた。それはあの種から育てた花で、鉢には彼女が描いた模様があった。
+[charslot(slot = "m", name = "avg_4130_luton_1#14$1",focus="m")]
+[name="ルトナダ"]……ひと鉢のお花、大きなブロック肉に、踊る娘。
+[name="ルトナダ"]マスターが言っていました。踊りに来た人たちは貴方のお花がすっかり気に入ったと。だから、もっともっとたくさんのお花を植えれば、もっと多くの人がここへ踊りに来てくれると思いました……
+[name="ルトナダ"]そうなれば、貴方たちの愛していた賑やかで、楽しい光景が、以前のように消えてしまうことはないでしょう。
+[name="ルトナダ"]お花屋さんはもう店を畳んでしまいましたが、私が代わりに街角に花筒を一本置いておきました。中には私が育てた新鮮なお花が入っていて、道行く人が好きに持っていけるのです。
+[charslot(slot = "m", name = "avg_4130_luton_1#2$1",focus="m")]
+[name="ルトナダ"]今では毎日たくさんの人がここへ踊りに来ています。皆さん、お花を見るととても楽しそうな笑顔を見せてくれます。今日は大きなブロック肉を丸ごと一気に食べるのに挑戦する人もいました……
+[name="ルトナダ"]貴方たちが好きだったことを、ますますたくさんの人が好きになり始めています……
+[Dialog]
+[charslot(slot = "m", name = "avg_4130_luton_1#2$1",focus="n")]
+ルトナダは鉢植えの花をそっと撫でながら、心地よい日差しの下、深く吐息をもらした。
+[charslot(slot = "m", name = "avg_4130_luton_1#15$1",focus="m")]
+[name="ルトナダ"]これで私は……皆さんの願いを叶えられたのでしょうか……？
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

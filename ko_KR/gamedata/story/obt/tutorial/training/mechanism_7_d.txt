@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 造成元素损伤d
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[PopupDialog(dialogHead="$avatar_kaitou")] 당신과 약속한 시간이 되었습니다. 저는 이미 위치에 도착했어요.
+[PopupDialog(dialogHead="$avatar_kaitou")] 저는 <@tu.kw>프라이멀 캐스터</>, 적이 쇠약 피해 폭발 상태면 더 높은 대미지를 입힐 수 있습니다.
+[Battle.EnsureMinSp(charId="char_499_kaitou", sp=100)]
+[InputBlocker(blockInput=true, validX=0, validY=100, validWidth=110, validHeight=110)]
+[Tutorial(focusX=0, focusY=100, focusWidth=110, focusHeight=110, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center", \
+          protectTime=0.5, dialogHead="$avatar_kaitou")] 지시를.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_kaitou")]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_sys")] 오퍼레이터 디아만테의 스킬은 적이 쇠약 피해 폭발 상태 동안에 추가 원소 피해를 입힐 수 있습니다.
+[PopupDialog(dialogHead="$avatar_sys")] 따라서 발라크빈의 스킬과 연계한다면 더욱 효과적인 작전을 펼칠 수 있습니다.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

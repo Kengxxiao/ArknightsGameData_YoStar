@@ -1,0 +1,606 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[PlaySound(key="$d_gen_soldiersrun")]
+[Delay(time=2)]
+[playsound(key="$d_gen_transmissionget")]
+[Delay(time=2)]
+[name="해양 순찰대 대장"]모두 주목, 루실라는 현재 심해 신도의 탈출을 돕고 있다.
+[name="해양 순찰대 대장"]루실라를 새로운 용의자로 간주하고 추적한다.
+[name="해양 순찰대 대장"]루실라의 행동은…… 에기르를 배신할 의도가 있다 보기에 충분하다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="bg_light",screenadapt="coverall")]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+12시간 전, 해양 순찰대 사무실
+[name="루실라"]안냐가 화산 에너지 스테이션을 점령한 시본을 도시로 끌어들이려는 '시도'를 했다고? 풉, 안냐가 심해 신도라니, 무슨 그런 질 나쁜 농담을.
+[name="해양 순찰대 대장"]이곳은 농담하는 곳이 아니다. 도난당한 시본 유도 페로몬, 출항 시간 등 모든 단서가 안냐와 안냐의 멘토를 가리키고 있지. 그러니 조사에 협조해 주길 바란다.
+[name="루실라"]애초에 우리 도시는 시본을 피하기 위해 이동을 시작한 거 아니었어? 안냐가 우리를 따라잡지 못한 시본을 다시 도시로 불러들인다고? 하, 안냐가 그럴 이유가 대체 어딨는데?
+[name="루실라"]안냐는 지금 어떻게 됐어? 어딨는 거야?
+[name="해양 순찰대 대장"]안냐의 바이탈 사인은 사건 발생 당시 사라졌다.
+[name="루실라"]안냐가…… 죽었다고?
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+투명한 돔의 층 사이에 앉아 조용히 돔 밖의 풍경을 감상할 때면, 마치 자신은 바다 한가운데서 떠있고 투명한 바닷물로 둘러싸여 있는 듯한 착각이 든다.
+[name="안냐"]후…… 조금 어지럽네.
+[Dialog]
+[charslot(slot="m",name="avg_4079_haini_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="m")]
+[name="루실라"]신경안정제 좀 먹을래? 고소공포증으로 인한 어지럼증을 억제하는 효과가 있어. 특별히 널 위해 준비한 거야. 쓴 게 싫으면 이것도 있는데——
+[Dialog]
+루실라가 주머니에서 화려하게 감미료를 '바꿔' 꺼내자, 안냐는 웃었다.
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="m")]
+[name="루실라"]오늘 아침에 네 생물 탐사 장치가 또 시본 때문에 파괴되었다는 말을 들어서, 일이 마무리되면 네가 올 거라고 예상했지.
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="none")]
+[name="안냐"]응. 재설치하러 갔을 때, 시본 몇 마리와 마주쳤어.
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]또…… 이번엔 얼마나 가까웠는데?
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="none")]
+[name="안냐"]……
+[charslot(slot="m",name="avg_4079_haini_1#4$1",focus="m")]
+[name="루실라"]최근 반년 동안, 점점 더 자주 오는 거 아니야? 너, 여기 올 때마다 항상 많이 피곤해 보이는데.
+[charslot(slot="m",name="avg_4079_haini_1#4$1",focus="none")]
+[name="안냐"]……
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]잠들었어?
+[Dialog]
+[charslot]
+루실라가 돌아보았다. 안냐는 그녀의 어깨에 머리를 기댄 채, 조용히 돔 밖의 맑은 바다를 감상하고 있었다.
+[charslot(slot="m",name="avg_4079_haini_1#4$1",focus="m")]
+[name="루실라"]안냐…… 말해줘, 바다 밖이 정말 그렇게나 무서워?
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"]난…… 난 매일 바다와 가장 가까운 곳에서 일하지만, 여태껏 그것들을 본 적은 없거든.
+[name="루실라"]내가 볼 수 있는 건 그저 끊임없이 출항하는 군대와, 매일 바다 생태계를 회복하기 위해 노력하고 있는 너와 네 멘토뿐이야.
+[name="루실라"]가끔씩 이런 생각을 해…… 최전선의 전장은 과연 어떤 모습일까? 내가 돔에서 보는 평화는 대체 어떻게 얻어진 것일까……
+[Dialog]
+[charslot]
+안냐가 작은 목소리로 무엇인가를 말하자, 루실라는 자기도 모르게 고개를 돌려 그녀의 눈을 쳐다볼 수밖에 없었다.
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[Delay(time=2)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[playMusic(intro="$distressed_intro",key="$distressed_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_4079_haini_1#4$1",duration=1.5)]
+[delay(time=2.5)]
+루실라는 해양 순찰대 사무실에서 나설 때까지도 여전히 정신을 차리지 못했다. 그녀는 막막한 심정으로 안냐에게 계속 연락했지만, 대답은 끝내 돌아오지 않았다.
+[Dialog]
+[PlaySound(key="$phone",volume=1,channel="1")]
+[charslot(slot="m",name="avg_4079_haini_1#2$1")]
+[name="루실라"]이건……?!
+[Dialog]
+[stopsound(channel="1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", multi = true, text="루실라,", x=300,y=250, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n\n너도 분명 해양 순찰대의 조사를 받았겠지, 그리고 네게, 안냐가 에너지 스테이션의 시본을 유도해서, 후퇴 중인 우리 도시를 추격하게 만들었다고 했겠지.",block = true)]
+[Sticker(id="st1", multi = true, text="\n안냐가 죽은 진짜 이유에 대해서, 내가 중요한 사실을 알려주지.",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="부디 안냐를 생각해서라도, 메시지를 확인하는 즉시 나를 만나러 와라.", x=300,y=300, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n넌 친구로서 그냥 지나치지 않을 테니까, 그렇지?",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n\n파푸스",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4079_haini_1#6$1")]
+[name="루실라"](안냐의 멘토…… 사건 발생 당일 그녀와 함께 있었던 사람!)
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g1_beaconsquare",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[playsound(key="$rungeneral")]
+[charslot(slot="l",name="avg_4079_haini_1#2$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1396_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_4079_haini_1#2$1",focus="l")]
+[name="루실라"]후우…… 후우……
+[name="루실라"]이제 해양 순찰대 녀석들은 따돌린 걸까?
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]쿨럭…… 이제는 놈들의 제복이 더 이상 안 보이는군……
+[name="파푸스"]너 진짜…… 내가 말했듯이 놈들은 날 쫓고 있는 거다, 넌 대체 왜 도망친 거냐…… 해양 순찰대가 널 공범으로 취급하는 게 두렵지도 않나?
+[charslot(slot="l",name="avg_4079_haini_1#2$1",focus="l")]
+[name="루실라"]난 진실을 알아야 해, 그때까진 그 누구도 당신을 붙잡게 둘 수 없어.
+[charslot(slot="l",name="avg_4079_haini_1#10$1",focus="l")]
+[name="루실라"]말해줘, 안냐는 정말 이미……？
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]맞아. 희생당했지.
+[charslot(slot="l",name="avg_4079_haini_1#10$1",focus="l")]
+[name="루실라"]……
+[name="루실라"]함께 전시회를 보러 가기로 약속했는데 안냐가 갑자기 약속을 어겼었어, 당신과 함께 출항하기 위해서 말이야. 도대체 무슨 일이 있었던 거야? 당신이 해양 순찰대에 쫓기는 게 관련이 있는 거야?
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]놈들은 날 심해 신도라고 의심하고 있다. 하지만 증명할 방법이 없지.
+[charslot(slot="l",name="avg_4079_haini_1#2$1",focus="l")]
+[name="루실라"]사실이 맞아?
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]난 그 호칭을 좋아하지 않는다. 난 어떤 교리도 믿지 않고, 오직 내가 믿는 것을 믿을 뿐.
+[charslot(slot="l",name="avg_4079_haini_1#9$1",focus="l")]
+[name="루실라"]…… 어쨌든 '맞다'는 거네. 그럼, 안냐……는?
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]안냐는…… 학문뿐만 아니라, 시본을 대하는 태도에서도 내가 가르친 이들 중 최고의 학생이었다. 안냐가 네게 아무런 것도 말해주지 않았나?
+[charslot(slot="l",name="avg_4079_haini_1#9$1",focus="l")]
+[name="루실라"]……
+[Dialog]
+[charslot]
+[name="해양 순찰대 대장"]놈들은 아직 도망치지 않았다. 거리를 유지하고, 우리가 추적을 포기했다고 생각하게 만들도록.
+[name="해양 순찰대 대원"]파푸스가 접촉한 그 여성의 신원을 확인했습니다…… 기술원 시설관리소의 돔 유지관리원 루실라입니다.
+[name="해양 순찰대 대장"]알고 있는 녀석이야. 방금 조사해 봤는데, 차라리 자신이 타락할지언정 안냐가 그럴 리는 없다고 했다더군.
+[name="해양 순찰대 대장"]가장 가까운 거리에 있는 카메라를 수거해서, 놈들이 무슨 말을 하는지 확인해 봐.
+[Dialog]
+[charslot(slot="l",name="avg_4079_haini_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="l")]
+[name="루실라"]거짓말이지. 내게 진실을 말해준다고 해놓고, 당신도 해양 순찰대와 똑같은 말을 하고 있잖아.
+[charslot(slot="l",name="avg_4079_haini_1#7$1",focus="l")]
+[name="루실라"]“안냐가 심해 신도고, 시본을 유도해 이 도시를 추격하게 만들었다.”라니. 그 애의 죽음은 뜻밖의 사고가 아니라, 당연한 업보라고 하는 거나 마찬가지잖아.
+[name="루실라"]녀석들이랑 뭐가 다른데? 이게 무슨 진실이라는 거야?
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]루실라, 냉정해져야 해. 큰 소리 내지 마.
+[charslot(slot="l",name="avg_4079_haini_1#7$1",focus="l")]
+[name="루실라"]난 지금 충분히 냉정해. 이렇게 터무니없는 일이 터지는 와중엔 내가 제일 냉정하다고!
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]내가 널 찾아온 건, 안냐의 진정한 소원을 들어주기 위해서다. 오직 너만이 할 수 있는 일이지.
+[name="파푸스"]내가 암초 속에 숨겨놓은 안냐의 시신을 네가 도시 안으로 운반해줬으면 한다. 시신을 보면, 너도 모든 걸 알게 될 거야.
+[charslot(slot="l",name="avg_4079_haini_1#9$1",focus="l")]
+[name="루실라"]안냐의…… 시신?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g11_aegirroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="l",name="avg_4079_haini_1#2$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1396_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]좋아, 여기서 이야기하는 게 더 안전하겠군.
+[name="파푸스"]루실라, 단짝친구가 어느 날 갑자기 '시신'이라 불리게 되는 일이 네게 얼마나 큰 충격일지 나도 잘 안다. 하지만 안냐가 생전에 갈망하던 꿈을 이루기 위해 얼마나 장렬한 희생을 했는지, 너는 반드시 알아야 해.
+[charslot(slot="l",name="avg_4079_haini_1#2$1",focus="l")]
+[name="루실라"]이 모든 게 걔가 스스로 내린 선택이라는 거야?
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]나와 안냐가 내린 결론은 이미 수많은 논박과 논증을 거친 것이다. 인류는 원래 먹이사슬의 일부이고, 인류가 해양 생태계의 바닥으로 전락하지 않기 위해 남은 유일한 길은 오직 진화뿐이야.
+[name="파푸스"]그리고 진화의 정점인 시본이, 우리에게 그 문을 열어준 거지.
+[name="파푸스"]그런데도 그 인류의 존엄성이라는 것 때문에 진화의 흐름에 참가하기를 거부한다는 건, 일종의 오만이자 인류라는 종족에 대한 책임회피가 아닐까? 그리고……
+[charslot(slot="l",name="avg_4079_haini_1#9$1",focus="l")]
+[name="루실라"]그만, 진화니, 오만이니, 당신이 무슨 말을 하는지 하나도 못 알아듣겠어……
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]아…… 네 의심도 이해할 수 있다. 분명 안냐도 너처럼 처음에는 내 의견에 대해 반감을 가졌었으니.
+[name="파푸스"]하지만 너도 이미 어렴풋이 사실을 알고 있잖나. 안냐는 심지어 마지막엔 내 손에 있는 페로몬을 빼앗아 직접 시본을 유도하기까지 했지.
+[name="파푸스"]인류 전체의 운명을 짊어지려면, 응당 그에 따라오는 고통과 도덕적 비난을 감당할 인식이 필요하지. 네가 알고 있는 안냐가 바로 이런 사람 아닌가?
+[charslot(slot="l",name="avg_4079_haini_1#10$1",focus="l")]
+루실라는 눈앞의 노인을 노려보았다. 그녀는 자기가 들은 모든 것을 부정하고 싶었지만, 드러난 모든 사실이 가리키는 바가 그녀의 마음을 끌어당겼다.
+[charslot(slot="l",name="avg_4079_haini_1#9$1",focus="l")]
+[name="루실라"]……당신은 아직 안냐의 시신이 어떻게 됐는지 말 안 했어.
+[charslot(slot="r",name="avg_npc_1396_1#1$1",focus="r")]
+[name="파푸스"]안냐는 떠나기 전에, 계획이 실패하더라도 시본의 살아있는 세포를 가지고 오겠노라 약속했었지.
+[name="파푸스"]나는 사력을 다해 안냐의 남은 손이나마 회수했고, 안냐의 손엔 약속했던 물건이 꽉 쥐어져 있더군.
+[name="파푸스"]알다시피 난 정상적인 경로로 그걸 갖고 들어올 수 없다. 그래서 생각한 방법이 돔 위의 청소 로봇 출입구를 이용하는 거였지. 크기도 딱 맞고.
+[name="파푸스"]돔의 유지관리원인 네가 솜씨를 발휘해서, 놈들의 감시를 속이기만 하면 된다.
+[charslot(slot="l",name="avg_4079_haini_1#10$1",focus="l")]
+[name="루실라"]안냐의 소원……
+[name="루실라"]……
+[charslot(slot="l",name="avg_4079_haini_1#9$1",focus="l")]
+[name="루실라"]만약, 이게 정말 안냐의 소원이라면…… 걔를 집에 데려가기만 하면 되는 거잖아, 그렇지?
+[name="루실라"]이제 알려줘, 안냐의…… 시신을 숨긴 암초가 어딘지.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g10_shipinterior",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4079_haini_1#10$1",focus="m")]
+[name="루실라"](에너지 스테이션 부근의 암초들 안에, 안냐와 안냐의 소원이 숨겨져 있을 거다……)
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_npc_1390_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1391_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_1390_1#1$1",focus="l")]
+[name="해양 순찰대 대장"]사건이 발생하고 벌써 24시간이 경과했으니, 네 친구의 시신은 아마 형태를 알아보기조차 힘들겠지. 마음의 준비를 하도록, 루실라.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4079_haini_1#10$1",focus="m")]
+[name="루실라"]괜찮아, 난 단지 안냐의 마지막 소원을 직접 보고 싶을 뿐이야.
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]너는 이전 조사 도중 자신도 타락할 생각을 한 적이 있다고 언급했었지. 하지만 넌 우리에게 파푸스를 신고하기로 결심했고, 이는 올바른 선택이었다.
+[charslot(slot="m",name="avg_4079_haini_1#10$1",focus="m")]
+[name="루실라"]난 단지 시본이 이 도시를 추격하게 만든 일이, 안냐의 소원이라 생각하지 않았을 뿐이야.
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]그렇다 해도, 다시 한번 우리의 제안을 고려해 줬으면 좋겠군. 파푸스는 어딘가에 숨어버렸으니, 네가 놈을 불러내 준다면 훨씬 수월할 거야.
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"]난……
+[charslot(slot="m",name="avg_npc_1391_1#1$1",focus="m")]
+[name="해양 순찰대 대원"]표시된 지역에서 인간의 손 발견. 지금 기술자에게 분석을 요청했습니다.
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]!
+[Dialog]
+[charslot]
+해양 순찰대 대원은 투명한 용기를 넘겨주었고, 안에는 물 때문에 창백하게 부어오른 신체 부위가 담겨있었다.
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"]……
+[Dialog]
+루실라는 그 손을 가만히 지켜보았다.
+[charslot(slot="m",name="avg_npc_1391_1#1$1",focus="m")]
+[name="해양 순찰대 대원"]괜찮나?
+[charslot(slot="m",name="avg_4079_haini_1#10$1",focus="m")]
+괜찮지 않다. 머리는 깨질 것만 같고, 모든 이성이 차단되어 가는 듯하다. 루실라는 뻣뻣이 서 있다가, 한참이 지나서야 겨우 소리를 낼 수 있었다.
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"]이건 분명 안냐의 손이야…… 우리는 항상 같은 조작 패널을 보고 있었고, 그 아이는 패널 위에서 손을 바쁘게 움직였었지…… 익숙한 손톱이네.
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]손에 쥐고 있는 건 뭐지?
+[Dialog]
+[charslot]
+기술자는 손에서 액체를 저장하는 데 쓰이는 작은 밀폐형 병을 신중하게 빼냈다.
+[charslot(slot="m",name="avg_4079_haini_1#5$1",focus="m")]
+[name="루실라"](이건……!)
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"](이렇게 된 거였구나. 이제 알겠어…… 네가 꽉 쥐고 있던 이 작은 병, 이게 바로 네 소원이었구나, 안냐.)
+[name="루실라"]……그거 알아? 나 방금 결정했어. 파푸스를 불러내는 데 협력할게.
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[PlayMusic(intro="$suspenseful_intro", key="$suspenseful_loop", volume=0.6)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4079_haini_1#2$1",duration=1.5)]
+[delay(time=2)]
+[playsound(key="$d_gen_transmissionget")]
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="none")]
+[name="해양 순찰대 대장"]루실라, 약속까지 5분 남았다. 파푸스 녀석이 언제 나타나도 이상하지 않아. 건물 쪽에 좀 더 다가오도록. 지금 조금씩 잘못된 방향으로 걸어가고 있다. 무슨 일이 생기면 우리가 제때 도착하기 어려워.
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",posfrom="0,0",posto="100,0",duration=1.5)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[delay(time=2.5)]
+[charslot]
+[name="해양 순찰대 대장"]루실라?
+[name="해양 순찰대 대장"]응답이 없군. 각 팀, 루실라가 협조하지 않는 상황에 대비하도록.
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1396_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="파푸스"]……
+[charslot(slot="m",name="avg_npc_1396_1#1$1",focus="none")]
+[name="해양 순찰대 대장"]파푸스 출현.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="r",name="avg_4079_haini_1#2$1",posfrom="300,0",posto="100,0",duration=1.5)]
+[charslot(slot="r",afrom=0,ato=1,duration=1)]
+[delay(time=2.5)]
+[charslot(slot="r",focus="r")]
+[name="루실라"]날 따라와, 어서. 해양 순찰대는 이미 계획을 눈치챘어. 도망칠 수 있도록 도와줄게.
+[charslot(slot="m",name="avg_npc_1396_1#1$1",focus="m")]
+[name="파푸스"]뭐라고? 좀 더 자세히 설명을……
+[charslot(slot="r",focus="r")]
+[name="루실라"]시간이 없다고, 뛰어!
+[Dialog]
+[PlaySound(key="$rungeneral",volume=1)]
+[charslot(slot="r",posfrom="100,0",posto="0,0",duration=1.5)]
+[charslot(slot="r",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="-100,0",duration=1.5)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1390_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="해양 순찰대 대장"]역시나 괜한 걱정이 아니었군.
+[name="해양 순찰대 대장"]모두 주목, 루실라는 현재 심해 신도의 탈출을 돕고 있다.
+[name="해양 순찰대 대장"]루실라를 새로운 용의자로 간주하고 추적한다.
+[name="해양 순찰대 대장"]루실라의 행동은…… 에기르를 배신할 의도가 있다 보기에 충분하다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[playsound(key="$rungeneral")]
+[charslot(slot="l",name="avg_npc_1396_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_4079_haini_1#2$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[name="파푸스"]이곳은…… 도시 물 순환 시스템?
+[charslot(slot="r",name="avg_4079_haini_1#2$1",focus="r")]
+[name="루실라"]도시 유입 수도관과 돔은 서로 연결되어 있고, 모두 내 관할 범위 안이지. 내 권한으로 잠글 수 있는 문은 모두 잠갔으니, 녀석들이 쫓아오려면 시간이 좀 걸릴 거야.
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[name="파푸스"]이건 우리가 말한 것과는 다르군, 루실라.
+[charslot(slot="r",name="avg_4079_haini_1#4$1",focus="r")]
+[name="루실라"]도시 이동 중에는 경비대의 돔에 대한 감시가 평소보다 더 심해져서, 오직 도시 유입 수도관만이 녀석들 감시 범위 밖에 있게 돼. 때문에 거길 통해서 누군가 수도관에 들어와 물건을 탈취하는 것밖에는 방법이 없지.
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[name="파푸스"]잠깐, 잠시 생각 좀 하지.
+[charslot(slot="r",name="avg_4079_haini_1#2$1",focus="r")]
+[name="루실라"]왜 그래, 위험할까 봐 걱정돼? 안냐가 가장 존경하던 멘토가 바로 당신인데, 설마 안냐보다 겁쟁이인 건 아니지?
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[name="파푸스"]아니, 상황이 갑자기 이렇게 변했는데, 널 어떻게 완전히 믿을 수 있지?
+[charslot(slot="r",name="avg_4079_haini_1#2$1",focus="r")]
+[name="루실라"]우리가 서로 믿어야 할 필요는 없어. 당신은 당신이 원하는 물건을 얻고, 난 안냐의 마지막 소원을 이룬다, 단지 그것뿐이야.
+[Dialog]
+[charslot]
+파푸스가 루실라의 두 눈을 주시하며 잠깐 생각에 잠긴다.
+만약 그를 배신할 거였다면, 루실라가 쓸데없이 그를 데리고 도망갈 리가 없다. 그 누구도 이렇게 비효율적으로 행동하진 않을 테니. 파푸스는 안도의 한숨을 쉬었다.
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_4079_haini_1#2$1",focus="l")]
+[name="파푸스"]어제 만났을 때만 해도 네 눈동자가 망설임으로 가득했었는데, 지금은 네 눈을 가리던 흐릿한 안개가 사라졌군. 선택을 한 거 같구나, 아주 좋아.
+[charslot(slot="r",name="avg_4079_haini_1#2$1",focus="r")]
+[name="루실라"]그럼 서둘러, 지금 바로 수도관으로 들어가야 하니까.
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[name="파푸스"]지금……? 난 아무런 보호 장비도 없는데.
+[charslot(slot="r",name="avg_4079_haini_1#2$1",focus="r")]
+[name="루실라"]뭐 하는 거야? 안냐는 아무런 망설임 없이 당신 손안에 있는 유도 페로몬을 가져갔는데, 정작 당신은 그런 사소한 문제를 신경 쓰고 있는 거야?
+[charslot(slot="r",name="avg_4079_haini_1#6$1",focus="r")]
+[name="루실라"]빨리, 투입구를 이미 열었어, 얼마 못 버티니까 어서 가!
+[charslot(slot="l",name="avg_npc_1396_1#1$1",focus="l")]
+[name="파푸스"]잠깐, 이 안에는……!
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_punch")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[stopmusic(fadetime=1.5)]
+파푸스는 이상한 것을 발견함과 동시에, 등이 밀리는 것을 느끼며 수도관으로 곧장 떨어졌다.
+루실라는 곧바로 하수 처리용 투입구를 닫았다. 그녀는 허공을 노려보며 손잡이를 잡은 손을 떨고 있었다.
+이내 정신을 차린 그녀는 내심 고소해하며 웃었다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_avg_jump_water")]
+[Delay(time=2)]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4079_haini_1#2$1",duration=1.5)]
+[delay(time=2)]
+[playsound(key="$d_gen_transmissionget")]
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="none")]
+[name="파푸스"]윽! 지독한 냄새! 이건, 윽, 온 사방이 폐수잖아!
+[name="파푸스"]루실라, 거기 있나?
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]물건은 찾았어?
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="none")]
+[name="파푸스"]물줄기가 너무 격렬하다! 파이프 벽은 미끄럽고, 물살에 떠밀려서 균형을 잡을 수가 없어! 아……!
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]참아야 해, 물속을 최대한 더듬어봐. 이건 도시 전체의 미래를 위해서라고.
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="none")]
+[name="파푸스"]도시로 유입되는 수도관에 어찌 이리 오수가?! 우! 퉤! 우웩……
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="m")]
+[name="루실라"]하, 말해준다는 걸 까먹었네, 여기는 도시의 내부 순환 수도관이고, 조류 발효 찌꺼기를 처리하는 데 사용하는 곳이야. 도시 유입 수도관이 얼마나 중요한데, 당신을 그렇게 쉽게 들어가게 할 리가 없잖아.
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="none")]
+[name="파푸스"]루실라, 날 농락하다니…… 왜…… 우웩! 윽…… 콜록콜록콜록!
+[name="파푸스"]……열어라, 날 내보내줘.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]파푸스, 안냐에 대해 말해. 걔가 마지막에 당신에게 뭐라고 했어?
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]윽…… 콜록콜록! 여기 공기 때문에 숨을 못 쉬겠단 말이다……
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]대답해, 아니면 계속 질질 끌어 보시든가.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]이미 네겐 알려줘야 할 모든 걸 말해줬다.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]……
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]좋아, 굳이 듣고 싶다면…… 윽, 콜록콜록! 시본이 에너지 스테이션을 공격해서 점령했을 때, 난 이게 내게 주어진 유일한 기회인 걸 깨달았지…… 도시가 아직 너무 멀리 철수하지 않은 틈을 타, 시본을 데리고 올 기회 말이야.
+[name="파푸스"]하지만 에너지 스테이션 근처에 도착하고 나서야, 안냐가 급히 오고 있는 걸 발견했다. 서둘러 출항한 탓에 조종석 에너지도 미처 다 채우지 못한 상태로…… 이건 나중에야 알게 된 거지만.
+[name="파푸스"]우린 에너지 스테이션에서 가까웠고, 이미 시본은 우리를 발견한 상태였다……우린 이야기할 틈도 없었지, 적어도 페로몬만은 성공적으로 방출해야 시본을 도시로 유도할 수 있었으니까……
+[name="파푸스"]그때 안냐가 내 손에 있던 페로몬을 빼앗았고, 자신이 임무를 완수하기로 약속했다. 나더러 바로 도시로 돌아가도록 했기에, 난 조종석에 들어갔지…… 누군가는 다음 계획을 세워야 하니까.
+[name="파푸스"]하지만 조종석 동력이 부족한 탓에, 끝내 시본에게 붙잡히게 되었다. 최후의 순간까지 난 조종석에서 통신으로 안냐가 말하는 것을 계속 들었지, 반드시 붙잡고 있을 거라고 말하더군. 콜록콜록콜록! 우웩……
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]붙잡고 있다니, 뭘?
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="none")]
+[name="파푸스"]시본의 생체 샘플, 그것 말고는 없지. 안냐에게도 내 계획을 말했었으니까 말이야. 이전에 우리 꽤나 다퉜었지만, 그때만큼은 서로 말하지 않아도 마음이 통했거든.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]안냐의 시신은, 내가 이미 해양 순찰대에게 부탁해서 찾았어.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]……해양 순찰대에게 비밀을 말했다고? 루실라 너…… 정말 안냐를 이해하긴 하는 건가?
+[name="파푸스"]훗, 그래, 넌 항상 시본이 보이지 않는 돔에 숨어있었지. 거기에서 맑은 수역을 바라보는 네가 어떻게 이해하겠나. 안냐의 감정을, 나의 감정을 말이야.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]난 안냐의 손에 있는 걸 두 눈으로 봤어, 시본에 의해 찢겨서 나눠 먹히더라도 꼭 '결코 놓지 않았던' 걸 말이야.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]안냐가 필사적으로 남긴 것을 네가……
+[charslot(slot="m",name="avg_4079_haini_1#3$1",focus="m")]
+[name="루실라"]그건 개봉되지 않은 유도 페로몬이었어, 파푸스.
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4079_haini_1#4$1",focus="m")]
+[name="루실라"]안냐…… 말해줘, 바다 밖이 정말 그렇게나 무서워?
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"]난…… 난 매일 바다와 가장 가까운 곳에서 일하지만, 여태껏 그것들을 본 적은 없거든.
+[name="루실라"]내가 볼 수 있는 건 그저 끊임없이 출항하는 군대와, 매일 바다 생태계를 회복하기 위해 노력하고 있는 너와 네 멘토뿐이야.
+[name="루실라"]가끔씩 이런 생각을 해…… 최전선의 전장은 과연 어떤 모습일까? 내가 돔에서 보는 평화는 대체 어떻게 얻어진 것일까……
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="none")]
+[name="안냐"]바보.
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="m")]
+[name="루실라"]응?
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="none")]
+[name="안냐"]넌 알 필요 없어, 모르는 게…… 제일 좋은 거거든.
+[Dialog]
+[charslot]
+안냐는 눈을 살짝 크게 뜨고는, 손을 들어 올렸다. 루실라는 안냐의 손가락이 가리키는 방향을 따라 바다를 바라보며 숨을 죽였다.
+이때 마침 화산의 마그마가 도시 아래서부터 해저로 솟구쳤고, 방사형으로 퍼지면서 해저의 암초와 생물들을 밝히고 있었다. 루실라로선 몇 번을 보더라도 질리지 않는 풍경이었다.
+[charslot(slot="m",name="avg_4079_haini_1#9$1",focus="none")]
+[name="안냐"]해저의 석양이라니. 정말 운이 좋네! 늦게 왔다면 보지 못했을 거야.
+[Dialog]
+[charslot]
+루실라는 무심코 고개를 돌려 안냐의 눈을 쳐다보았다. 안냐의 기뻐하는 눈에는 그녀들이 사랑하는 바다와, 에기르인의 터전이 비치고 있었다.
+[charslot(slot="m",name="avg_4079_haini_1#4$1",focus="m")]
+[name="루실라"]희망을 품은 자…… 갑자기 머릿속에서 이 단어가 떠올랐어. 맞다, 분명 최근에 열릴 미술 전시회의 이름이었지, 언제 전시하더라……
+[charslot(slot="m",name="avg_4079_haini_1#5$1",focus="m")]
+[name="루실라"]……아, 내일모레네!
+[charslot(slot="m",name="avg_4079_haini_1#5$1",focus="none")]
+[name="안냐"]내일모레 일 끝나고 일정이 생겼네? 우리 같이 그 '희망을 품은 자'의 작품을 감상하러 가보자, 어때?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Delay(time=2)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[name="루실라"]난 안냐가 마지막까지도 유도 페로몬을 열지 않았다는 걸, 시본을 도시로 유인하지 않았다는 걸 알고 있어.
+[name="루실라"]그런데 당신…… 어리석고 나약한 당신 때문에……
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]……루실라, 밀리아리움이 그 시본들을 충분히 막을 수 있었음에도, 왜 되려 후퇴했는지 아나?
+[name="파푸스"]밀리아리움은…… 후퇴가 아니라, 육지로 간 거였어. 에기르인은 쓸데없이 발버둥을 치고 있던 거라고……
+[charslot(slot="m",name="avg_4079_haini_1#7$1",focus="m")]
+[name="루실라"]또 시작하셨네, 난 네가 무슨 말을 하는지 도무지 이해가 안 되거든!
+[name="루실라"]시본과 마주쳐서 살기 위해 도망치려는 걸 보고, 쓸데없이 발버둥을 치고 있다고 하지 않나. 시본과 목숨 걸고 싸운 뒤에 맑은 바다를 보기 위해 돌아오는 걸 보고 또 쓸데없는 발버둥이라고 하지 않나.
+[charslot(slot="m",name="avg_4079_haini_1#7$1",focus="m")]
+[name="루실라"]그럼 네 눈에는 안냐가 널 구한 행동마저도 마찬가지로 쓸데없는 발버둥으로 보였겠네?! 하, 이것 봐, 내 말이 맞았다니까!
+[charslot(slot="m",name="avg_4079_haini_1#7$1",focus="none")]
+[name="파푸스"]그만해. 날 여기서 익사시킨들, 옳고 그름은 증명할 수 없고, 미래엔 더더욱 도움이 되질 않을……
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]……
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]너…… 정말 그럴 작정인가, 루실라……?
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]……
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="none")]
+[name="파푸스"]좋다. 그게 네가 믿는 미래라면……
+[Dialog]
+[playsound(key="$transmission")]
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[Delay(time=1.5)]
+루실라가 분노를 담아 통신을 끊자, 파푸스의 목소리가 끊겼다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_npc_1390_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1391_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1391_1#1$1",focus="r")]
+[name="해양 순찰대 대원"]도시 안 순환 입구에서 루실라를 발견했습니다. 파푸스의 행적은 발견하지 못했습니다.
+[charslot(slot="l",name="avg_npc_1390_1#1$1",focus="l")]
+[name="해양 순찰대 대장"]2팀, 3팀은 파푸스의 행적을 찾아보고, 1팀은 날 따라오도록!
+[name="해양 순찰대 대장"]루실라, 꼼짝 마라.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]이렇게 주목받는 건 처음이네.
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]파푸스는 어디에 있지?
+[charslot(slot="m",name="avg_4079_haini_1#3$1",focus="m")]
+[name="루실라"]난 잘 몰라, 내가 무슨 공공 양육소 소장도 아니고, 사람 없어진 걸 왜 나한테 물어봐?
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]놈은 중요 참고인이다, 아직 죽어선 안 돼. 수도관 안에 있는 거 맞지? 어느 위치에 있나?
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]해양 순찰대는 정말 자기 말만 하는구나, 남의 설명은 하나도 안 듣고 말이야.
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]루실라, 네 눈에 분노가 서려 있군. 이런 사건을 여러 번 다뤄왔지만, 대개 피해자의 친구들 눈에 모두 이렇게 응어리진 분노가 서려 있더군.
+[charslot(slot="m",name="avg_4079_haini_1#6$1",focus="m")]
+[name="루실라"]……
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]네게 남은 시간은 그리 많지 않아. 너희가 여기 온 지 벌써 5분이 지났다. 만약 파푸스가 정말로 수도관 어딘가에 있는 거라면, 이미 생물학적으로 한계에 도달했을 거야.
+[charslot(slot="m",name="avg_4079_haini_1#3$1",focus="m")]
+[name="루실라"]훗, 폐수 수도관에서 익사라니, 녀석에게 아주 걸맞은 죽음이라고 생각하지 않아?
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]놈의 위치를 말해, 어서.
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="m")]
+[name="루실라"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral",volume=1)]
+[charslot(slot="m",name="avg_npc_1391_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1391_1#1$1",focus="m")]
+[name="해양 순찰대 대원"]대장님, 용의자 파푸스를 찾았습니다! 구조 로봇에게 서둘러 이곳으로 오라고 알리는 중입니다!
+[Dialog]
+[charslot]
+저 멀리 온몸에서 악취를 풍기는 파푸스가 안색이 창백해진 채 꼼작도 하지 않고 그대로 누워있었다.
+[charslot(slot="l",name="avg_npc_1390_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1391_1#1$1",focus="l")]
+[name="해양 순찰대 대장"]어디 보자……
+[Dialog]
+[charslot]
+[name="파푸스"]쿨럭……
+[charslot(slot="l",name="avg_npc_1390_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1391_1#1$1",focus="l")]
+[name="해양 순찰대 대장"]아직 살아있군……
+[charslot(slot="r",name="avg_npc_1391_1#1$1",focus="r")]
+[name="해양 순찰대 대원"]다행히 이곳 수도관 입구가 열려있어서, 신선한 공기가 유입되었습니다. 저희가 발견했을 땐 거의 의식을 잃은 상태였지만, 여전히 위로 올라가려고 시도하고 있었습니다.
+[Dialog]
+[charslot]
+수도관 입구가 열려있었다는 소리에 해양 순찰대 대장이 뭔가 눈치채고 루실라를 바라보자, 루실라는 자조적으로 웃으며 눈시울을 적셨다.
+[charslot(slot="m",name="avg_4079_haini_1#3$1",focus="m")]
+[name="루실라"]정말 이상하네, 애초에 난 하지 못할 일이었어. 안냐의 마지막 소원을 망칠 순 없지. 걔가 목숨을 바쳐서라도 구하고자 했던 사람이니까…… 그러니까 봐줄게.
+[charslot(slot="m",name="avg_npc_1390_1#1$1",focus="m")]
+[name="해양 순찰대 대장"]넌 다시 한번 옳은 선택을 한 거다, 루실라. 부디 이번 선택은 네 진심에서 나왔길 바라지.
+[charslot(slot="m",name="avg_4079_haini_1#2$1",focus="m")]
+[name="루실라"]타락한 돔 유지관리원을 처형할 일은 없어졌으니 안심해.
+[charslot(slot="m",name="avg_4079_haini_1#3$1",focus="m")]
+[name="루실라"]해양 순찰대에게 이만큼이나 폐를 끼친 것에 대한 처벌은 기꺼이 받도록 할게. 다만 서둘러줬으면 해. 아직 봐야 할 전시회가 있거든.
+[charslot(slot="m",name="avg_4079_haini_1#1$1",focus="m")]
+[name="루실라"]비록 이제 나와 함께 갈 사람은 곁에 없지만, 안냐에게 약속했었거든. 그 사람들을, 그들이 품고 있는 희망을 보러 가겠다고.
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[delay(time=2)]
+말을 마친 루실라는 이내 해양 순찰대의 함정으로 향했지만, 표정은 왔을 때보다 오히려 개운했고, 발걸음 또한 더욱 가벼웠다. 그녀가 고개를 숙여 자신의 손을 바라봤고, 마치 그 익숙한 손을 다시 맞잡은 듯한 기분을 느꼈다.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

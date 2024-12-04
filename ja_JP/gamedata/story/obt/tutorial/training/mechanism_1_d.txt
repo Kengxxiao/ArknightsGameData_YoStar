@@ -1,0 +1,22 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 敌方索敌教学d
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[PopupDialog(dialogHead="$avatar_myrrh")] あっ、砲弾が……
+[Battle.EnsureMinSp(charId="char_381_bubble", sp=100)]
+[InputBlocker(blockInput=true, tileX=5, tileY=4, validWidth=108, validHeight=111)]
+[Tutorial(tileX=5, tileY=4, focusWidth=108, focusHeight=111, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center", \
+          protectTime=0.5, dialogHead="$avatar_bubble")] ボクに任せるんだぞ！
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(focusX=283, focusY=-140, focusWidth=382, focusHeight=90, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_bubble")] へへん、こうして敵の注意を引きつけちゃうんだから！
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_bubble")] 
+[PopupDialog(dialogHead="$avatar_sys")] 敵は<@tu.kw>攻撃されやすくなる</>効果を持つオペレーターを<@tu.kw>優先的に攻撃</>します。
+[InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

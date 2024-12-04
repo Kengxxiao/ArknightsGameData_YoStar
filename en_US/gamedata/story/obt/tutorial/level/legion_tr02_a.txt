@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡02_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_scave")] Calling Instructor Dobermann, we're under attack by unknown hostiles!
 [PopupDialog(dialogHead="$avatar_doberm")] Calling for backup!
@@ -16,7 +17,6 @@ This is Grani. I've arrived at the designated area and located Scavenger. She's 
           protectTime=0.5, dialogHead="$avatar_grani")] \
 What do I do?
 [PopupDialog(dialogHead="$avatar_doberm")] <@tu.kw>Relieve</> Scavenger. That way, even if she's defeated, her Tactical Equipment will be carried over!
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.EnsureMinCost(cost=11)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_grani", animStyle="Drag", \
@@ -26,7 +26,7 @@ Doctor, deploy me on Scavenger's location immediately!
           startX=-70, startY=-50, endX=250, endY=-50)] \
 Good! That's it!
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

@@ -8,11 +8,49 @@
 
 
 
+
+
+
+local CollectionTimedTaskItem = require("Feature/Activity/Collection/CollectionTimedTaskItem")
+local CollectionDailyTaskItem = require("Feature/Activity/Collection/CollectionDailyTaskItem")
+ 
+local SimpleWidget = Class("CollectionTaskListSimpleWidget", UIWidget);
 CollectionTaskListDlg = DlgMgr.DefineDialog("CollectionTaskListDlg", "Activity/Collection/task_list_dlg");
 
+CollectionTaskItemType = {
+  DAILTY_TITLE = 1,
+  DAILTY_ITEM = 2,
+  TIMED_TITLE = 3,
+  TIMED_ITEM = 4,
+}
+Readonly(CollectionTaskItemType);
+
+local itemSizeTable = {}
+itemSizeTable[CollectionTaskItemType.DAILTY_TITLE] = 43;
+itemSizeTable[CollectionTaskItemType.DAILTY_ITEM] = 110;
+itemSizeTable[CollectionTaskItemType.TIMED_TITLE] = 43;
+itemSizeTable[CollectionTaskItemType.TIMED_ITEM] = 131;
+
 function CollectionTaskListDlg:OnInit()
-  self.m_limitItems = {}
-  self.m_dailyItem = self:CreateWidgetByGO(CollectionDailyTaskItem, self._dailyItem);
+  local viewDefineTable = {};
+  viewDefineTable[CollectionTaskItemType.DAILTY_TITLE] = {
+    prefab = self._dailyTitlePrefab,
+    cls = SimpleWidget
+  };
+  viewDefineTable[CollectionTaskItemType.DAILTY_ITEM] = {
+    prefab = self._dailyItemPrefab,
+    cls = CollectionDailyTaskItem
+  };
+  viewDefineTable[CollectionTaskItemType.TIMED_TITLE] = {
+    prefab = self._timedTitlePrefab,
+    cls = SimpleWidget
+  };
+  viewDefineTable[CollectionTaskItemType.TIMED_ITEM] = {
+    prefab = self._timedItemPrefab,
+    cls = CollectionTimedTaskItem
+  };
+
+  self.m_adapter = self:CreateCustomComponent(UIVirtualViewAdapter, self, self._recycleGroup, viewDefineTable,self._RefreshListItem)
 end
 
 function CollectionTaskListDlg:OnClose()
@@ -27,9 +65,7 @@ function CollectionTaskListDlg:Refresh(activityId, close)
   self.m_activityId = activityId;
   self.m_close = close;
 
-  local actcfg = CollectionActModel.me:GetActCfg(activityId);
-
-  self.m_dailyItem:Refresh(activityId, actcfg);
+  self.m_actCfg = CollectionActModel.me:GetActCfg(activityId);
 
   
   local missionGrp = CollectionActModel.me:GetMissionGroup(activityId);
@@ -38,56 +74,95 @@ function CollectionTaskListDlg:Refresh(activityId, close)
   end
 
   
-  local list = {};
-  for idx = 0, missionGrp.missionIds.Length -1 do
-    local missionId = missionGrp.missionIds[idx];
-    local missionData = CollectionActModel.me:FindMission(missionId);
-    
-    if missionData then
-      local item = null;
-      if idx < #self.m_limitItems then
-        item = self.m_limitItems[idx+1];
-      else
-        item = self:CreateWidgetByPrefab(CollectionTimedTaskItem, self._limitItemPrefab);
-        table.insert(self.m_limitItems, item);
-      end
-
-      item:Refresh(missionData, actcfg);
-      table.insert(list, item);
-    end
-      
+  local csMissionList = CS.Torappu.Lua.Util.GetActMissionListByActId(activityId);
+  if csMissionList == nil then
+    return;
   end
 
-  table.sort(list, function(a, b)
-    if a:Finished() == b:Finished() then
-      return a:SortId() < b:SortId();
-    end
-    return b:Finished();
-  end);
+  self.m_missionList = {};
+  for idx = 0, csMissionList.Count - 1 do
+    table.insert(self.m_missionList, csMissionList[idx]);
+  end
 
-  local co = coroutine.create(function()
-    for _, item in ipairs(list) do
-      item:CreateRewardIcon(actcfg);
-      item:RootGameObject().transform:SetParent(self._limitContainer, false);
-      coroutine.yield();
-    end
-  end);
-  self:Frame(#list, self._RunCoroutine, co);
+  local playerMissions = CS.Torappu.PlayerData.instance.data.mission.missions;
+  local suc, typeMissions = playerMissions:TryGetValue(CS.Torappu.MissionPlayerDataGroup.MissionTypeString.ACTIVITY);
+  if not suc then
+    return;
+  end
 
-  self:_SynTime();
+  local comp = function(a, b) 
+    local a_finish = self:_CheckMissionFinished(typeMissions, a.id);
+    local b_finish = self:_CheckMissionFinished(typeMissions, b.id);
+
+    if a_finish == b_finish then
+      return a.sortId < b.sortId;
+    end
+    return b_finish;
+  end;
+    
+  table.sort(self.m_missionList, comp);
+  self:_RebuildVirtualViews();
+  self.m_adapter:NotifyRebuildAll();
 end
 
-function CollectionTaskListDlg:_RunCoroutine(co)
-  coroutine.resume(co);
+
+
+
+function CollectionTaskListDlg:_CheckMissionFinished(playerMissionDict, missionId) 
+  local suc, state = playerMissionDict:TryGetValue(missionId);
+  return suc and state.state == CS.Torappu.MissionHoldingState.FINISHED;
 end
 
-function CollectionTaskListDlg:_SynTime()
-  
-  local time = CS.Torappu.DateTimeUtil.currentTime:AddHours(-1 * CS.Torappu.SharedConsts.GAME_DAY_DIVISION_HOUR);
-  local zero = CS.System.DateTime(time.Year, time.Month, time.Day, 0, 0, 0):AddDays(1);
-  self._dailyTaskTimeLabel.text = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.SHOP_REMAIN_COUNT, CS.Torappu.FormatUtil.FormatTimeDelta(zero - time));
-  
-  local endTime = CS.Torappu.DateTimeUtil.TimeStampToDateTime(CollectionActModel.me:FindBasicInfo(self.m_activityId).endTime);
-  local timeRemain = endTime - CS.Torappu.DateTimeUtil.currentTime;
-  self._limitTaskTimeLabel.text = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.SHOP_REMAIN_COUNT, CS.Torappu.FormatUtil.FormatTimeDelta(timeRemain));
+function CollectionTaskListDlg:_RebuildVirtualViews()
+  self.m_adapter:RemoveAllViews();
+  self.m_adapter:AddView({
+    viewType = CollectionTaskItemType.DAILTY_TITLE,
+    data = {},
+    size = itemSizeTable[CollectionTaskItemType.DAILTY_TITLE]
+  });
+  self.m_adapter:AddView({
+    viewType = CollectionTaskItemType.DAILTY_ITEM,
+    data = {},
+    size = itemSizeTable[CollectionTaskItemType.DAILTY_ITEM]
+  });
+  self.m_adapter:AddView({
+    viewType = CollectionTaskItemType.TIMED_TITLE,
+    data = {},
+    size = itemSizeTable[CollectionTaskItemType.TIMED_TITLE]
+  });
+
+  for idx = 1, #self.m_missionList do
+    self.m_adapter:AddView({
+      viewType = CollectionTaskItemType.TIMED_ITEM,
+      data = self.m_missionList[idx],
+      size = itemSizeTable[CollectionTaskItemType.TIMED_ITEM]
+    });
+  end
+end
+
+
+
+
+function CollectionTaskListDlg:_RefreshListItem(viewType, widget, model)
+  if viewType == CollectionTaskItemType.DAILTY_TITLE then
+    local time = CS.Torappu.DateTimeUtil.currentTime:AddHours(-1 * CS.Torappu.SharedConsts.GAME_DAY_DIVISION_HOUR);
+    local zero = CS.System.DateTime(time.Year, time.Month, time.Day, 0, 0, 0):AddDays(1);
+    widget._timeLabel.text = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.SHOP_REMAIN_COUNT, CS.Torappu.FormatUtil.FormatTimeDelta(zero - time));
+    return;
+  elseif viewType == CollectionTaskItemType.DAILTY_ITEM then
+    
+    local dailyItem = widget;
+    dailyItem:Refresh(self.m_activityId, self.m_actCfg);
+    return;
+  elseif viewType == CollectionTaskItemType.TIMED_TITLE then
+    local endTime = CS.Torappu.DateTimeUtil.TimeStampToDateTime(CollectionActModel.me:FindBasicInfo(self.m_activityId).endTime);
+    local timeRemain = endTime - CS.Torappu.DateTimeUtil.currentTime;
+    widget._timeLabel.text = CS.Torappu.Lua.Util.Format(CS.Torappu.StringRes.SHOP_REMAIN_COUNT, CS.Torappu.FormatUtil.FormatTimeDelta(timeRemain));
+    return;
+  elseif viewType == CollectionTaskItemType.TIMED_ITEM then
+    
+    local timedItem = widget;
+    timedItem:Refresh(model, self.m_actCfg);
+    return;
+  end
 end

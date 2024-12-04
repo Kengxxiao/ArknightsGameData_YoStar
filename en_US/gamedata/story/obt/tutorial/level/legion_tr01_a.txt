@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_jesica")] Unable to break through the enemy's armor! Requesting backup!
 [PopupDialog(dialogHead="$avatar_doberm")] Well done, Jessica. After all those simulated battles, you're showing pretty solid improvement.
@@ -19,7 +20,6 @@ Straight to the <@tu.kw>Recuperation Area</>?
 [PopupDialog(dialogHead="$avatar_doberm")] That's right. Make sure you recuperate with the time you have. If we run low on manpower at the Preparation Area, we need send everyone at the Recuperation Area back.
 [PopupDialog(dialogHead="$avatar_jesica")] Understood!
 [PopupDialog(dialogHead="$avatar_doberm")] Also, PRTS has prepared all-new <@tu.kw>Tactical Equipment</> for everyone. It allows the Relieving Operator to inherit some of the Relieved Operator's abilities and <@tu.kw>enhances</> the former's combat capabilities.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
@@ -29,7 +29,6 @@ Doctor, go ahead and deploy Firewatch on Jessica's position.
           startX=-70, startY=-50, endX=250, endY=-50)] \
 Good. Now, <@tu.kw>select a direction</>.
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
 [Battle.Pause(pause=false)]
 [Delay(time=6)]
@@ -40,7 +39,6 @@ Good. Now, <@tu.kw>select a direction</>.
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 That's right. Your Tactical Equipment has been activated. Take a closer look at the <@tu.kw>darker colored equipment</> around you.
 [PopupDialog(dialogHead="$avatar_milu")] I see.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
@@ -49,7 +47,7 @@ That's right. Your Tactical Equipment has been activated. Take a closer look at 
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 Now, Doctor, focus on Firewatch.
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \

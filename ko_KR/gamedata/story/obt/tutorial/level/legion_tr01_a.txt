@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_jesica")] 저로서는 적의 장갑을 뚫을 수 없습니다! 화력지원 요청합니다!
 [PopupDialog(dialogHead="$avatar_doberm")] 잘했다, 제시카. 수많은 모의 작전을 통해 너도 많이 성장했다.
@@ -19,7 +20,6 @@
 [PopupDialog(dialogHead="$avatar_doberm")] 그렇다. 거기서 재정비하고 준비구역에 인력이 부족할 때, 바로 투입해서 충원해야 한다.
 [PopupDialog(dialogHead="$avatar_jesica")] 알겠습니다!
 [PopupDialog(dialogHead="$avatar_doberm")] 그리고, PRTS가 모두에게 새로운 '<@tu.kw>전술 장비</>'를 준비했다. 릴레이 한 오퍼레이터는 철수한 오퍼레이터의 능력을 일부 이어받아 자신의 능력치가 '<@tu.kw>강화</>'되는 것이다.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
@@ -29,7 +29,6 @@
           startX=-70, startY=-50, endX=250, endY=-50)] \
 그렇지, <@tu.kw>방향을 선택</>하고.
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
 [Battle.Pause(pause=false)]
 [Delay(time=6)]
@@ -40,7 +39,6 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 맞다. 네가 이어받은 전술 장비가 가동하고 있다. 몸 주위를 맴도는 <@tu.kw>파란색 장비</>를 잘 봐.
 [PopupDialog(dialogHead="$avatar_milu")] 그렇네.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
@@ -49,7 +47,7 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 그리고 박사, 파이어워치를 터치해.
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \

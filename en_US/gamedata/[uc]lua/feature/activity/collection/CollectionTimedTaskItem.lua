@@ -18,7 +18,7 @@ local ColorRes = CS.Torappu.ColorRes;
 
 
 
-CollectionTimedTaskItem = Class("CollectionTimedTaskItem", UIWidget);
+local CollectionTimedTaskItem = Class("CollectionTimedTaskItem", UIWidget);
 
 
 
@@ -96,24 +96,26 @@ end
 
 
 function CollectionTimedTaskItem:CreateRewardIcon(cfg)
-  local rewardData = self.m_rewardData;
-  local itemCard = CS.Torappu.UI.UIAssetLoader.instance.staticOutlinks.uiItemCard;
-  local itemCell = CS.UnityEngine.GameObject.Instantiate(itemCard, self._rewardIconRoot):GetComponent("Torappu.UI.UIItemCard");
-  itemCell.isCardClickable = not self.m_finish;
-  itemCell.showBackground = false;
-  itemCell:CloseBtnTransition();
-  itemCell:Render(0, rewardData);
-  self:AsignDelegate(itemCell, "onItemClick", function(this, index)
-    CS.Torappu.UI.UIItemDescFloatController.ShowItemDesc(itemCell.gameObject, rewardData);
-  end);
-  if self.m_finish then
-    local grp = self._rewardIconRoot.gameObject:AddComponent(typeof(CS.UnityEngine.CanvasGroup));
-    grp.alpha = 0.5;
+  if not self.m_itemCell then
+    local itemCard = CS.Torappu.UI.UIAssetLoader.instance.staticOutlinks.uiItemCard;
+    self.m_itemCell = CS.UnityEngine.GameObject.Instantiate(itemCard, self._rewardIconRoot):GetComponent("Torappu.UI.UIItemCard");
+    self.m_itemCell.isCardClickable = not self.m_finish;
+    self.m_itemCell.showBackground = false;
+    self.m_itemCell:CloseBtnTransition();
+    local scaler = self.m_itemCell:GetComponent("Torappu.UI.UIScaler");
+    self.m_grp = self._rewardIconRoot.gameObject:AddComponent(typeof(CS.UnityEngine.CanvasGroup));
+    if scaler then
+      scaler.scale = cfg.taskItemScale;
+    end
   end
 
-  local scaler = itemCell:GetComponent("Torappu.UI.UIScaler");
-  if scaler then
-    scaler.scale = cfg.taskItemScale;
+  local rewardData = self.m_rewardData;
+  self.m_itemCell:Render(0, rewardData);
+  self:AsignDelegate(self.m_itemCell, "onItemClick", function(this, index)
+    CS.Torappu.UI.UIItemDescFloatController.ShowItemDesc(self.m_itemCell.gameObject, rewardData);
+  end);
+  if self.m_finish and self.m_grp ~= nil then
+    self.m_grp.alpha = 0.5;
   end
 end
 
@@ -124,3 +126,5 @@ end
 function CollectionTimedTaskItem:SortId()
   return self.m_sortId;
 end
+
+return CollectionTimedTaskItem;

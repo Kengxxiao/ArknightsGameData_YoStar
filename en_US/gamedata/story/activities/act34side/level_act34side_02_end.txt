@@ -1,0 +1,337 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="51_g6_aegirarena",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1400_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="Legion Commander"]Consul Gladiia, is it in your opinion that the issue does not lie with the battle itself?
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]Correct. What you see before you is a projection of the battle plan. If anyone here notices a flaw I haven't, I'd expect it to be pointed out.
+[charslot(slot="m",name="avg_npc_1400_1#1$1")]
+[name="Legion Commander"]No, I have no objections to the battle plan. It was the most suitable one, given what we knew at the time.
+[name="Legion Commander"]However, I would like your opinion on what we knew at the time.
+[charslot(slot="m",name="avg_474_gladiia_1#5")]
+[name="Gladiia"]I have to admit that Ægir's knowledge of the Seaborn back then was deeply flawed. As such...
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "left", name = "avg_1023_ghost2_1#12$1")]
+[charslot(slot = "right", name = "char_263_skadi#4")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "right", name = "char_263_skadi#4",focus="r")]
+[name="Skadi"]What are they trying to say?
+[charslot(slot = "left", name = "avg_1023_ghost2_1#12$1",focus="l")]
+[name="Specter"]Still not used to their way of thinking, are you? You never did like thinking much, even back home.
+[name="Specter"]They mean no ill will. They're simply seeking the truth they need.
+[name="Specter"]Identify every flaw and question all perfections. The most heated debates will uncover truth in its full beauty and reveal the right way forward.
+[name="Specter"]Just leave it to Swordfish.
+[name="Specter"]If you don't want to listen, just take a nap.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Gladiia"]...In conclusion, our greatest error when designing the warfare five years ago was failing to make allowance for flaws in our knowledge.
+[name="Gladiia"]Until every last truth of Terra is revealed, we must admit that our understanding of the Seaborn will remain flawed. Our warfare design must reflect this revelation.
+[charslot(slot="m",name="avg_npc_1400_1#1$1")]
+[name="Legion Commander"]I concur. Your conclusion should be incorporated into our future battle plans.
+[name="Legion Commander"]It has been an honor to reflect upon this critical battle and reach a fruitful conclusion with you.
+[charslot(slot="m",name="avg_npc_1397_1#1$1")]
+[name="Academy of Science Researcher"]That said, the battle five years ago is not our only concern.
+[name="Academy of Science Researcher"]We have more pressing issues to worry about.
+[name="Academy of Science Researcher"]Your physical examination has revealed mutations that cannot be ignored. The same goes for Skadi and Laurentina.
+[name="Academy of Science Researcher"]I do not doubt your loyalty, but we need to know how assimilation by Seaborn genes will affect your behavior.
+[name="Academy of Science Researcher"]Apologies for my candor.
+[name="Academy of Science Researcher"]Milliarium will soon identify the locations of the remaining nests. Then, the Seaborn will be driven out by Class IV weapons, opening up a Waterway.
+[name="Academy of Science Researcher"]Is there any possibility that the Abyssal Hunters will become an enemy of Ægir, and of yourselves?
+[dialog]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_4145_Ulpia_1#1$1",posfrom = "0,0", posto = "200,0")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",bstart=0.2,bend=0.5,focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[StopSound(channel="bgs", fadetime=2)]
+[name="???"]Hunters out of control pose a greater risk to Ægir than the Seaborn.
+[name="???"]The Abyssal Hunters are the flipside of Ægir. Created in Ægir's most despicable attempt at salvation, they are now both feared and pitied by their creators.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[charslot(slot = "l", focus = "n")]
+[Decision(options="Abyssal Hunter Ulpianus, I presume?", values="1")]
+[Predicate(references="1")]
+[Decision(options="Shouldn't you be down there too?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",duration=1,focus="m")]
+[delay(time=2)]
+[charslot(slot="l",name="avg_4145_Ulpia_1#1$1",afrom=0,ato=0)]
+[name="Ulpianus"]You're much calmer than I expected. And you know who I am.
+[name="Ulpianus"]It seems Gladiia has built a relationship on land with more than just the one doctor.
+[name="Ulpianus"]I've never seen you in any of the operations. You're not an Inquisitor, nor an Islander.
+[name="Ulpianus"]The doctor from Rhodes Island brought you to Ægir, but kept your identity a secret.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I'm just Kal'tsit's colleague.;I'm also from Rhodes Island.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]You may introduce yourself however you like.
+[name="Ulpianus"]However, the point is that you can help the Hunters.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Why don't you just go to Skadi?;Why don't you just go to Specter?;Why don't you just go to Gladiia?", values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]This is not her forte.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]You mean Laurentina?
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]This is not her forte.
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]Now is not the time.
+[Predicate(references="1;2;3")]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You don't trust the Hunters?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#2$1")]
+[name="Ulpianus"]On the contrary. I do trust them. But I also know them all too well.
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]Skadi acts before thinking. Laurentina has not been lucid for long. Gladiia will inevitably be the one to make decisions.
+[name="Ulpianus"]I've already shared much of what I know with her. She <i>should</i> be on guard. She knows the potential restrictions, but nevertheless decided to return to Ægir.
+[name="Ulpianus"]Overeager to return to a familiar environment, she is oblivious to the fact that she has placed herself in the spotlight, where all that can and cannot be trusted have the power to scrutinize her.
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]Now is not the best time for the Abyssal Hunters to come home. Their decision is a big gamble.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Why did you sneak into the city, then?;Sounds like you care about them, after all.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]Gladiia and the others are not in a good situation.
+[name="Ulpianus"]They underwent modifications, but unlike me, they were not part of the Abyssal Hunter project's core research. Explaining the changes in their bodies will be difficult for them.
+[name="Ulpianus"]I'll pass on some information to you, and I'll need you to help Gladiia if necessary. Convey my warning to her later.
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]As for the rest—
+[stopmusic(fadetime=2)]
+[charslot(slot = "m", focus = "n")]
+[name="Blandus"]May I say I few things?
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]...Blandus. He's here too?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Gladiia"]Blandus?
+[charslot]
+[dialog]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_1381_1#8$1",duration=1)]
+[delay(time=2)]
+[name="Blandus"]Isn't this just like the old days? You and Ulpianus used to get into arguments with the research staff while I was napping.
+[charslot(slot="m",name="avg_npc_1382_1#1$1")]
+[name="Clementia"]Your comments would be much appreciated, Advisor.
+[charslot(slot="m",name="avg_npc_1381_1#8$1")]
+[name="Blandus"]You flatter me, Consul.
+[charslot(slot="m",name="avg_npc_1381_1#1$1")]
+[name="Blandus"]I was the technical advisor for the Abyssal Hunter project, responsible for the gene splicing research used in the modification process.
+[charslot(slot="m",name="avg_npc_1381_1#5$1")]
+[name="Blandus"]In other words, at this exact moment and in this exact place, I am the leading authority on Abyssal Hunters.
+[name="Blandus"]Gladiia, Laurentina, and Skadi have been fighting on dry land too frequently and for too long. It is indeed cause for concern regarding their physical condition.
+[multiline(name="Blandus")]As such, your concerns are not without reason. But my answer is this:
+[charslot(slot="m",name="avg_npc_1381_1#8$1")]
+[multiline(name="Blandus")]No—
+[name="Blandus"]They will not become Seaborn.
+[charslot]
+The hall goes silent.
+Blandus clears his throat.
+[charslot(slot="m",name="avg_npc_1381_1#8$1")]
+[name="Blandus"]Let me try to explain this in layman's terms.
+[charslot(slot="m",name="avg_npc_1381_1#1$1")]
+[name="Blandus"]Under ordinary circumstances, Seaborn genes exhibit abnormal dominance and will irreversibly overwrite any preexisting traits in their host.
+[name="Blandus"]In Abyssal Hunters, however, we have managed to extend the timeline of this process until it far exceeds the natural lifespan of any given Hunter.
+[name="Blandus"]Furthermore, the Academy of Technology made a critical breakthrough, allowing us to implant an 'auto-adaptive junction' in all the Hunters before their deployment to eradicate the Firstborn.
+[name="Blandus"]The auto-adaptive junction was implanted at the splice point between human and Seaborn DNA to assist the Hunters in more closely monitoring their Seaborn genes.
+[name="Blandus"]If the Seaborn genes exhibited abnormal dominance, the junction would signal the body to resist their attempt at taking over.
+[name="Blandus"]While there has undoubtedly been some degree of decay of their auto-adaptive junctions after five years without maintenance, the changes they've undergone remain well within acceptable ranges.
+[charslot(slot="m",name="avg_npc_1397_1#1$1")]
+[name="Academy of Science Researcher"]So you say, Advisor, but there is a record of a failed auto-adaptive junction surgery in the Abyssal Hunter Lab archives.
+[dialog]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=0.5)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=3)]
+[charslot(slot="m",name="avg_npc_1381_1#2$1")]
+[name="Blandus"]...That was Ulpianus.
+[charslot(slot="m",name="avg_npc_1381_1#1$1")]
+[name="Blandus"]The archives should also note that multiple clinical trials have demonstrated that the incident did not produce any adverse effects.
+[name="Blandus"]For this, I gladly take full responsibility and will answer any queries.
+[name="Blandus"]Now that the Abyssal Hunters have returned to Ægir, their condition will be under control.
+[charslot(slot="m",name="avg_npc_1397_1#1$1")]
+[name="Academy of Science Researcher"]Am I to infer that you already have an effective means to contain their mutation?
+[charslot(slot="m",name="avg_npc_1381_1#1$1")]
+[name="Blandus"]There is an Abyssal Hunter Lab in the city we can reactivate. I will personally perform maintenance on their auto-adaptive junctions.
+[charslot(slot="m",name="avg_npc_1397_1#1$1")]
+[name="Academy of Science Researcher"]What of Ulpianus?
+[charslot(slot="m",name="avg_npc_1381_1#1$1")]
+[name="Blandus"]...
+[charslot(slot="m",name="avg_npc_1397_1#1$1")]
+[name="Academy of Science Researcher"]How can we be sure that the Hunter who has refused to return to Ægir will not become Seaborn?
+[name="Academy of Science Researcher"]Or that what we fear hasn't already happened?
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=0.5)]
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Decision(options="Sounds like you've just become the target.;Sounds like you're pretty dangerous.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]Hmph.
+[name="Ulpianus"]It's only natural they would be skeptical.
+[name="Ulpianus"]It is both human nature and a hard-learned lesson to be wary of what you cannot control.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="They're not the only ones suspicious of you.;I'm equally curious about your motivations.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Did you really come out of concern for the Hunters?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]Before the sinking of the Stultifera, I shared my discovery with Gladiia: there is more than one entity like Ishar'mla amongst the Seaborn, those known as Firstborn.
+[name="Ulpianus"]The Firstborn are stirring. It, or rather They, are about to awaken.
+[name="Ulpianus"]I don't know how many or how soon... but it's close. Too close.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]This is why the Seaborn have begun migrating towards land. I've ventured into many nests recently, and as a whole, they are feeling a sense of crisis.
+[name="Ulpianus"]Perhaps not even the ocean contains enough nourishment for the awakening of a new god. Will it become another Profound Silence for the land, or another calamity for the seas?
+[name="Ulpianus"]The great migration almost perfectly coincides with Ægir's Waterway Program. One can only speculate about Milliarium's role in all this.
+[name="Ulpianus"]Is that not reason enough for me to visit this city?
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1396_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Academy of Technology Researcher"]The Seaborn have proliferated independently, driven by their instincts. But they came from the Firstborn, and cannot defy their fundamental nature.
+[name="Academy of Technology Researcher"]In other words, even if the death of the Firstborn failed to halt their evolution, it should not have caused the rapid emergence of new, previously undocumented traits.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]I believe I already addressed that in my report.
+[charslot(slot="m",name="avg_npc_1396_1#1$1")]
+[name="Academy of Technology Researcher"]Yes, the Multiple Firstborn hypothesis. A logical enough explanation, but that is exactly why I am skeptical of Ulpianus.
+[name="Academy of Technology Researcher"]Our well-laid plans ended in failure. The three surviving Hunters washed ashore on unfamiliar land, before being reunited with the Hunter who was last to leave the nest.
+[name="Academy of Technology Researcher"]The information Ulpianus brought—that there are more than one Firstborn in the ocean—is more than shocking, it's highly 'effective.'
+[name="Academy of Technology Researcher"]Effective in explaining why the Seaborn's actions have become more disruptive despite your success with the mission objective. Effective in addressing all our questions.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]And why does that make you skeptical?
+[charslot(slot="m",name="avg_npc_1396_1#1$1")]
+[name="Academy of Technology Researcher"]Because it's an answer so perfect that it's either the incontrovertible truth, or was designed specifically to put our questions to rest.
+[dialog]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=0.5)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=3)]
+[name="Academy of Technology Researcher"]Whether or not to believe the information he gave you will have an enormous impact on our warfare design.
+[name="Academy of Technology Researcher"]If Ulpianus lives, then the most effective way to verify his claims would be to track him down, perhaps even question him directly.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]...
+[charslot(slot="m",name="avg_npc_1382_1#2$1")]
+[name="Clementia"]You have been quiet, Advisor Blandus.
+[name="Clementia"]Do you have anything to add regarding Ulpianus?
+[name="Clementia"]You were once students under the same mentor, and it was your trust in him that led you to join the Abyssal Hunter project despite your reservations.
+[name="Clementia"]But I also trust your knowledge and ethics as an Ægir. You need not recuse yourself.
+[charslot(slot="m",name="avg_npc_1381_1#1$1")]
+[name="Blandus"]...
+[charslot(slot="m",name="avg_npc_1381_1#5$1")]
+[name="Blandus"]All I can say, Madame Consul, is that I can be accountable for every word I say here at this tribunal.
+[name="Blandus"]I will not intentionally put forward a hypothesis in his favor, nor will I make any conjectures that could hurt him.
+[charslot(slot="m",name="avg_npc_1381_1#2$1")]
+[name="Blandus"]That is all.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Decision(options="Sounds like you two are pretty close.;I guess even a loner has friends.", values="1;2")]
+[Predicate(references="1;2")]
+Ulpianus does not answer. The questioning continues, but Blandus says no more. Suddenly, he looks up towards you, as though he's sensed something.
+You meet his weary gaze across the length of the Sophontheatrum.
+He seems to have noticed something. The consul next to him and several other Ægir catch that peculiar moment, and some of them follow his gaze.
+[dialog]
+[Decision(options="...;Em...", values="1;2")]
+[Predicate(references="1;2")]
+You look to your side and find the seat empty.
+[dialog]
+[Decision(options="Don't mind me. Just a landlubber here to watch.;Sorry, am I interrupting?;Do I need to speak?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1382_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="Clementia"]The tribunal has arrived at an adequate conclusion.
+[charslot(slot="m",name="avg_npc_1382_1#9$1")]
+[name="Clementia"]Gladiia, Skadi, Laurentina, and the rest of the Abyssal Hunters have made tremendous sacrifices and contributions to Ægir.
+[name="Clementia"]It is a blessing for Ægir that new ideas continue to emerge from their knowledge and experience even after five years.
+[name="Clementia"]They have demonstrated that they are both innocent and safe, and that their return at this stage of the Waterway Program is not a threat, but a reassurance.
+[name="Clementia"]Yet now our attention turns to another of the surviving Hunters, Ulpianus.
+[name="Clementia"]He has concealed his movements for reasons unknown, and has attempted to influence the other Hunters. Both actions clearly contravene his duty.
+[name="Clementia"]Based on our present information, we are unable to determine his motives, goals, or even whether he still qualifies as Ægir.
+[name="Clementia"]Ulpianus must be found. If his intentions are indeed benign, as Gladiia claims, our suspicions must be cleared through proper questioning.
+[charslot(slot="m",name="avg_npc_1382_1#1$1")]
+[name="Clementia"]Those whose questions have been answered may now leave. Those whose questions have not may continue their inquiries.
+[charslot(slot="m",name="avg_npc_1382_1#3$1")]
+[name="Clementia"]Do you have anything to add, Consul Gladiia?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i05",screenadapt="coverall", xScale=1.4, yScale=1.4)]
+[ImageTween(yTo=0, xScaleTo=1, yScaleTo=1, duration=100, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=3)]
+The coral-shaped terminal at the center of the Sophontheatrum slowly closes and sinks into the ground. The space is now flat and empty, like a stage ready for a new play.
+Gladiia stands alone on it.
+[name="Gladiia"]I have told you all I know.
+[name="Gladiia"]I have no objections to the tribunal's conclusion, nor to the suspicions cast upon Ulpianus.
+People begin to file out, many turning to nod towards Gladiia as they reach the exit.
+The remaining audience continue to ask questions, and Gladiia responds to each one, whether she is able to answer or not.
+The water caustics cast by the dome weave a picture of light and shadow with the ring of light surrounding the space, dancing on Gladiia's expressionless face.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[image(image="51_i05",screenadapt="coverall", xScale=1, yScale=1)]
+[ImageTween(yTo=0, xScaleTo=1, yScaleTo=1, duration=100, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="Skadi"]Even as an Ægir, I find this hard to understand sometimes.
+[name="Skadi"]They fling words at her like spears one moment, then thank her for her contributions the next.
+[name="Specter"]They're sincere, you know. Science requires people to separate facts from feelings, and they're good at it.
+[name="Skadi"]I know. I'm just... *sigh* Never mind.
+[name="Specter"]As for Captain Ulpianus, all they have are suspicions. Swordfish, the Doctor, Kal'tsit... someone will think of a way.
+[name="Skadi"]What next?
+[name="Specter"]We wait for Swordfish. Which, unfortunately, will take a while. *sigh*...
+[name="Skadi"]You're sighing too?
+[name="Specter"]She used to visit the Sophontheatrum to watch plays whenever there wasn't a mission. Sometimes I went with her.
+[name="Skadi"]Captain Gladiia...
+[name="Specter"]She's fairly well-versed in the arts. Her mother's influence, supposedly.
+[name="Specter"]Unlike everyone else, however, she liked the highest, furthest seats, so I would always end up having to sit apart from her.
+[name="Skadi"]Why?
+[name="Specter"]For her, keeping the distance helps filter out the noise. Ignoring some of the finer details makes it easier for her to fully immerse herself in the story.
+[name="Specter"]Right now, though, she's the one at center stage.
+[name="Specter"]She’s lost her accustomed sense of distance, becoming the subject of judgment, scrutiny, and discussion. No one in her position can remain unperturbed.
+[name="Skadi"]I'm starting to get why I sighed.
+[name="Specter"]Why?
+[name="Skadi"]Because only now does it really feel like we're back.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

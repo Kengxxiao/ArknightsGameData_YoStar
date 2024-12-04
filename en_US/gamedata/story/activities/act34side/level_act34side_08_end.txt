@@ -1,0 +1,742 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Background(image="51_g6_aegirarena",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1", posfrom="200,0", posto="0,0", duration=0.5, isblock=true)]
+[name="Sea Patrol Captain"]There you are, Consul Clementia.
+[name="Sea Patrol Captain"]We noticed an extremely unusual bio-signature in the Sophontheatrum. I'm glad you're unharmed.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]What's the status of the frontline?
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="Sea Patrol Captain"]Legions VIII and X, alongside the Sea Patrol, have been sending out escort ships alternatively, as per your orders.
+[name="Sea Patrol Captain"]The city's reorganization and the force fields are both complete. Milliarium is holding against the Seaborn tide.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Inform every relevant researcher in the city. I need a minute-by-minute breakdown of the situation of this region of sea.
+[name="Clementia"]We're still being far too passive even with our contingency plan put into motion.
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="Sea Patrol Captain"]Madame Consul, you may want to see what the drone matrix just sent back.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[PlaySound(key="$d_avg_bionicuavs_tech", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1382_1#3$1")]
+[name="Clementia"]Hm?
+[name="Clementia"]These passages of light between the Seaborn...
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]'Waterways'?
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1396_1#1$1", duration=1, isblock=true)]
+[delay(time=0.5)]
+[name="Ægir Technician"]Consul Clementia, we've re-established communication with the home territories! We just got a dispatch from the Institute of Scientific Development Planning.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]......
+[name="Clementia"]Any news from the Hunters?
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="Sea Patrol Captain"]Three of them have returned to Milliarium. They're cleaning up the remaining Seaborn in the eastern city units.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Contact Gladiia. Tell her to come meet us immediately.
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="Sea Patrol Captain"]Yes, Madame Consul.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Let's go, Kal'tsit, Doctor.
+[name="Clementia"]You need to deepen your contact with Ægir.
+[dialog]
+[charslot]
+[Decision(options="I'll go with this captain to inform the Hunters.;Kal'tsit alone will be enough for diplomacy.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#3$1")]
+[name="Kal'tsit"](Whisper) Doctor?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="(Whisper) That Seaborn left and head to the east...;(Whisper) That Seaborn might run into Skadi...", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#3$1")]
+You exchange a quick glance with Kal'tsit.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Madame Consul, the Doctor still has some affairs to settle.
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="Clementia"]...Very well.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_474_gladiia_1#5", duration=1.5, isblock=true)]
+[name="Gladiia"]The final battle for the Waterway Program has concluded with a Seaborn invasion of Milliarium. I require an explanation, Consul Clementia.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Gladiia.
+[name="Kal'tsit"]Were any of you harmed?
+[charslot(slot = "m", name = "avg_474_gladiia_1#5")]
+[name="Gladiia"]I see you're here too, Kal'tsit.
+[name="Gladiia"]We had a few unexpected encounters, but nothing we couldn't handle.
+[name="Gladiia"]I believe that, as an envoy of Iberia, Dr. Kal'tsit also requires an explanation.
+[charslot(slot = "m", name = "avg_npc_1382_1#4$1")]
+[name="Clementia"]I could use one myself, if we're being honest.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]There is someone who wishes to see you all.
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1", duration=1, isblock=true)]
+[name="'Little Handy'"]—
+[dialog]
+[PlaySound(key="$d_avg_microrobot", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=2, isblock=true)]
+[PlaySound(key="$d_avg_holographicholyamb", volume=0, loop=true, channel="h")]
+[SoundVolume(volume=1, channel="h",fadetime=2)]
+The Little Handy moves to the center of the Pensivarium, its projection module emitting cold motes of light, slowly coalescing into the figure of an Ægir woman.
+She sports a smile under her golden hair. Her eyes are focused on everyone in the room, as though she has been waiting for, or perhaps observing, them for a long time.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Image(image="51_i12", screenadapt="coverall")]
+[Delay(time=1)]
+[StopSound(channel="h", fadetime=6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[name="Gladiia"]Consul Horatia.
+[name="Horatia"]Whyever do you look so fatigued, my little Gladiia?
+[name="Horatia"]Though the transmission efficiency of the Waterway is much higher than I anticipated, I fear our simulacra are still unable to transmit my feelings.
+[name="Horatia"]Otherwise I'd stroke your hair and give you a nice, big hug.
+[name="Gladiia"]No need. You know the risks of doing so.
+[name="Gladiia"]The changes on the sea's surface, as well as the sudden appearance of the 'Waterways'. Was this your doing?
+[name="Horatia"]Whether Ægir or Seaborn, we all find ourselves competing over time.
+[name="Horatia"]The Seaborn must keep sending nutrients to every region of sea they conquer. They wish to quickly transform the entire continental shelf into one great nest.
+[name="Horatia"]Every issue has two sides. This disaster has also blessed us with bio-energy beyond measure.
+[name="Horatia"]More than two centuries ago, the beacon launcher would have required a dozen cities' bio-energy systems to continually fabricate the nanomachines comprising the Waterways.
+[name="Horatia"]Now, those nanomachines are being fostered by the Seaborn, who regard them as harmless kin.
+[name="Horatia"]Using the data flow between the nanomachines as a medium, fleets and cities in squeezed state could traverse the oceans in an instant.
+[name="Horatia"]Though these machines cannot take Ægir to the stars as our forebears imagined, they are more than enough to carve a path of life for civilization in its time of need.
+[name="Gladiia"]But that would mean that, for the foreseeable future, Ægir will have no choice but to enter into some kind of <i>symbiosis</i> with the Seaborn, using that... scum, as they in turn use us.
+[name="Gladiia"]Is this another of your so-called 'games'?
+[name="Horatia"]It is how we will break through this siege.
+[name="Horatia"]The term 'Waterway,' the path ahead for Ægir, has never referred only to pure waters.
+[name="Horatia"]You have always had your doubts about the Program, and that is fine. But if that doubt serves only to put you in disarray, then it is useless.
+[name="Horatia"]As Ægir is determined to open a Waterway between sea and land, there was no question that it shall do so.
+[name="Kal'tsit"]I do not doubt your success, but perhaps there is still room for debate as to your methods.
+[name="Horatia"]Dr. Kal'tist, I presume. Consul Horatia, of the Institute of Scientific Development Planning. It's a pleasure.
+[name="Horatia"]It pleases me that there are still those on dry land who have inherited the will of the prehistoric civilization. That Ægir is not alone in our duty.
+[name="Horatia"]I am also glad to see you have begun our discussion with a firm diplomatic stance.
+[name="Horatia"]Then can I take it that you speak for all terrestrial civilizations, and that we can dispense with establishing diplomacy with them one by one?
+[name="Kal'tsit"]I, too, am glad to see Ægir abandon its contentment in isolation and seek out cooperation with the land.
+[name="Kal'tsit"]But I regret to inform you, Madame Consul, that I do not represent it in its entirety. I merely understand it more than most.
+[name="Kal'tsit"]That said, I believe what Ægir needs now is exactly a thorough understanding of the terrestrial civilizations.
+[name="Kal'tsit"]You and I both know that this Waterway will not be used only for resisting the Seaborn. Ægir has its eyes on every unnatural existence in these lands.
+[name="Horatia"]It is the only means for us to ascertain the intrinsic nature of Terra, and to eliminate the disasters hanging above our heads at the source.
+[name="Kal'tsit"]And I am sure you are aware of how such actions will be perceived by the terrestrial nations.
+[name="Kal'tsit"]Compared to the Seaborn, you would be seen as the more direct threat.
+[name="Horatia"]We bear them no ill will. We need not stoop so low.
+[name="Horatia"]The cruelest thing we could do is ignore the need of help of other tottering civilizations we meet on the road to settling this crisis.
+[dialog]
+[StopSound(channel="h", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Horatia"]Of course, we will first help them to learn how to walk.
+[name="Horatia"]Bottlenecks of development, dilemmas of war, barriers of race, clashes of cultures, trends of ideology, changes in the structure of society...
+[name="Horatia"]Over the millennia, Ægir has grown freely beneath the waves. It has faced every issue a country might face.
+[name="Horatia"]We wish to share our experiences, without reservation.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]And how would you do so?
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Using Milliarium as our main port, we would send talent and technology ashore, to aid the Iberians in revitalizing their home.
+[name="Horatia"]Feranmuts perceive the oncoming crisis far more keenly than humanity. That young one will not shelter Kjerag forever.
+[name="Horatia"]We can aid that nation long trapped in snow in breaking through its developmental barriers in a few short years, so that it may stand equal with its neighbors.
+[name="Horatia"]We can aid the Sami in purging the demonic corruption permeating every inch of snow, and restart the abandoned stargate in the north.
+[charslot(slot = "m", name = "avg_npc_1384_1#3$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Ursus? Kazdel? If the flames of war rage, we will calm them. If there are disputes, we will resolve them.
+[name="Horatia"]Bolívar? Higashi? National unity is but a few fruitful negotiations away.
+[name="Horatia"]Ægir will aid them in every predicament. Ægir will guide them towards the only goal they need. Under the leadership of Ægir, the land and sea will share a common future.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Madame Consul, I do not doubt Ægir's sincerity, but... I fear your proposals will not have the effect you expect.
+[name="Kal'tsit"]I am sure you have the means to bring Kjerag up to par with the Core nations in a few years.
+[charslot(slot = "m", name = "avg_003_kalts_1#14$1")]
+[name="Kal'tsit"]But will dialogues between equals necessarily center around peace and development?
+[name="Kal'tsit"]Were Ursus's internal problems to be resolved, who is to say they would not bare their fangs once more, and attack their neighbors to satisfy their regained appetite?
+[name="Kal'tsit"]Bolívar's many regimes might reach a consensus under Ægir's pressure, but how will you eradicate the profound, deliberately provoked hostility?
+[charslot(slot = "m", name = "avg_npc_1384_1#4$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Dr. Kal'tsit, are you saying that Ægir's efforts to aid the terrestrial civilizations will only result in the opposite?
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]I am saying that we can establish a more equal and profound cooperative relationship between us.
+[name="Kal'tsit"]With only your probes, you are unable to understand a civilization's needs. With only your experiences, you are unable to force a nation to skip over its path to development.
+[name="Kal'tsit"]Before you act, you must learn more. Otherwise, the winds you stir on land may become some great storm you cannot turn a blind eye to.
+[charslot(slot = "m", name = "avg_npc_1384_1#3$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]We would be more than happy to hear your suggestions, then.
+[name="Horatia"]On the condition that you do not allow us to be held back by excessive caution and meaningless apprehension.
+[charslot(slot = "m", name = "avg_003_kalts_1#3$1")]
+[name="Kal'tsit"]Seeing the gulf between us, between land and sea, I understand that we will need many more discussions before we can make progress.
+[charslot(slot = "m", name = "avg_npc_1384_1#12$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Once the Waterway opens, I look forward to meeting you in the flesh. Whether on land, or in Ægir's home territories.
+[charslot(slot = "m", name = "avg_003_kalts_1#3$1")]
+[name="Kal'tsit"]I as well, Madame Consul.
+[charslot(slot = "m", name = "avg_npc_1384_1#13$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]What about you, Gladiia?
+[name="Horatia"]Do you agree with Dr. Kal'tsit on this matter?
+[charslot(slot = "m", name = "avg_474_gladiia_1#1")]
+[name="Gladiia"]The IDP need not question Rhodes Island's sincere wish for cooperation, nor Dr. Kal'tsit's ability. I can vouch for both of those.
+[name="Gladiia"]And there are indeed essential differences between Ægir and the nations of the land.
+[name="Gladiia"]The land dwellers are shortsighted and clumsy, which makes them frail. Forcibly removing the differences between them would be no different from destroying them.
+[name="Gladiia"]It is truly necessary to show good faith.
+[charslot(slot = "m", name = "avg_npc_1384_1#6$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Hmm.
+[name="Horatia"]I've never seen Gladiia place so much trust in someone, Dr. Kal'tsit. A feat, to be sure.
+[charslot(slot = "m", name = "avg_npc_1384_1#12$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Perhaps she can be a bridge between our peoples, and aid us in coming to a consensus.
+[name="Horatia"]You will see that Ægir's plans are no mere idle pratter.
+[name="Horatia"]Now, do allow me a moment alone with Consul Clementia.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g10_shipinterior",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[PlaySound(key="$d_avg_seashipbattleamb", volume=1, loop=true, channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_npc_1391_1#1$1")]
+[name="Sea Patroller"]Secunda, a fleet approaches from the land!
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]Iberia.
+[name="Secunda"]Hail them via the drone matrix.
+[dialog]
+[SoundVolume(volume=0.2, channel="a",fadetime=2)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]This is Praefecta Secunda, of the Milliarium Sea Patrol.
+[charslot(slot = "m", focus="n")]
+[name="???"]Err... It's me.
+[dialog]
+[charslot(slot = "m", name = "avg_4137_udflow_1#4$1")]
+[name="Secunda"]Irene?
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]We're currently in a head-on battle against the Seaborn. Don't come any closer.
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]Your ships are too crude. I'm sorry, but they may get sucked into the eddies around Milliarium.
+[charslot(slot = "m", focus="n")]
+[name="Irene"]You're saying that Iberia should just wait quietly on land?
+[name="Irene"]That I should just watch Milliarium get invaded by Seaborn, and let the Waterway transform into some kind of god-knows-what that even you Ægir never foresaw?
+[name="Irene"]We've already talked about this, Secunda. I'll be there in five minutes.
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_emgseaalarm", volume=1)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0.92, g=0.4, b=0.3, fadetime=0.4, block=true)]
+[Delay(time=0.4)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="Secunda"]Halt all attacks.
+[dialog]
+[delay(time=1)]
+[StopSound(channel="a", fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1391_1#1$1")]
+[name="Sea Patroller"]If we are going to pick up the Iberians, we'll just have to open the access channels to the rear. Why stop attacking?
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="Secunda"]Look at the screen.
+[name="Secunda"]The Academy of Technology just sent an urgent communique.
+[charslot(slot = "m", name = "avg_npc_1391_1#1$1")]
+[name="Sea Patroller"]This...
+[name="Sea Patroller"]What do we do?
+[name="Sea Patroller"]Are those light-emitting nanomachines components for the Waterway?
+[name="Sea Patroller"]But the Seaborn are still attacking the city. If they've fused with the nanomachines and bear identical bio-signatures, our weapons won't be able to locate and attack the Seaborn only...
+[name="Sea Patroller"]Don't tell me the Legions want us to halt our covering fire and rely only on Milliarium's force fields to hold them back?
+[charslot(slot = "m", name = "avg_4137_udflow_1#2$1")]
+[name="Secunda"]May as well slit our wrists and be done with it.
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]......
+[dialog]
+[playsound(key="$d_avg_watertechnologyon",volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1391_1#1$1")]
+[name="Sea Patroller"]Scribbling on your device again? You know, sometimes I really admire your ability to keep a cool head.
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="Secunda"]Use the images from the drone matrix to render a 3D model.
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1")]
+[name="'Little Handy'"]Rendering in progress.
+[dialog]
+[PlaySound(key="$d_avg_bionicuavs_tech", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]Perhaps the answer lies within the riddle itself.
+[name="Secunda"]The bio-signatures of the nanomachines and the Seaborn are identical, but we still know clearly that the nanomachines have formed a Waterway.
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="Secunda"]How?
+[charslot(slot = "m", name = "avg_npc_1391_1#1$1")]
+[name="Sea Patroller"]......
+[name="Sea Patroller"]We can see them! Each machine emits a particular light that's clearly visible!
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]Contact the Academy of Technology, and tell them we have a proposal for modifying our weapons' targeting systems.
+[charslot(slot = "m", name = "avg_npc_1391_1#1$1")]
+[name="Sea Patroller"]But... recalibrating two Legions' worth of auxiliary optical systems would take a lot of time.
+[charslot(slot = "m", focus="n")]
+[name="???"]What about using a lighthouse on land?
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", posfrom="200,0", posto="0,0", duration=1)]
+[delay(time=1.1)]
+[charslot(slot = "l", name = "avg_4137_udflow_1#7$1", focus="l")]
+[name="Secunda"]Irene.
+[charslot(slot = "r", name = "avg_4009_irene_1#7$1", focus="r")]
+[name="Irene"]It seems we arrived in the nick of time. A dozen or so lighthouses on the lost coastline have resumed operation. They're... responding to your Waterway.
+[name="Irene"]Combined, they should be enough to illuminate this entire patch of sea. Maybe they could serve as your auxiliary optical systems?
+[name="Irene"]I'm hardly an engineer, but these lighthouses were built with Islander... er, Ægirian technology. They should be compatible with your existing systems.
+[charslot(slot = "l", name = "avg_4137_udflow_1#7$1", focus="l")]
+[name="Secunda"]That should cut the time needed in half. I'll let Consul Clementia know.
+[name="Secunda"]...Thank you, Irene.
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", focus="r")]
+[name="Irene"]The Inquisition would be overjoyed to see these newly unclouded Eyes become part of the combined defenses of land and sea. We're partners now, Secunda.
+[charslot(slot = "r", name = "avg_4009_irene_1#2$1", focus="r")]
+[name="Irene"]Though maybe we should be thanking Breogan instead.
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1", focus="l")]
+[name="Secunda"]Breogan...
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", focus="r")]
+[name="Irene"]He truly dedicated himself to these lighthouses.
+[name="Irene"]A naval architect drifting into a foreign land, striving for the day when land and sea could work together. He foresaw calamity, but left no answers behind.
+[name="Irene"]It's a pity that Ægir saw him as an outsider, while Iberia never truly accepted him. He died alone and miserable. But now, his plans will finally have the chance to become reality.
+[charslot(slot = "l", name = "avg_4137_udflow_1#2$1", focus="l")]
+[name="Secunda"]...We acted far slower than he did.
+[charslot(slot = "r", name = "avg_4009_irene_1#1$1", focus="r")]
+[name="Irene"]Indeed.
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1", focus="l")]
+[name="Secunda"]But it's not too late. Or rather, now is precisely the time.
+[charslot(slot = "l", name = "avg_4137_udflow_1#7$1", focus="l")]
+[name="Secunda"]Let's get started, Irene.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="Clementia"]I'm still more used to you with your veil on, Horatia.
+[charslot(slot = "m", name = "avg_npc_1384_1#3$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Hmm?
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="Clementia"]Did you show off the scar below your ear to let Gladiia know that, as her mother, you will tolerate her setbacks just as you accept the blemish she left on your face?
+[charslot(slot = "m", name = "avg_npc_1384_1#13$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Hah, I'm not <i>that</i> strict a mother.
+[charslot]
+With her left hand on the astrolabe, Horatia's right hand softly strokes her cheek below her right ear, where a thin scar stretches upwards, nearly touching her eye.
+There is a smile on her face.
+[charslot(slot = "m", name = "avg_npc_1384_1#5$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]But this is no blemish. It's beautiful. Trivial for a doctor to erase, but I refuse.
+[name="Horatia"]My little Gladiia was barely five at the time. She was taking her first career development assessment, and through this made her wishes rather clear.
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]You don't know how glad I am to see her grown.
+[charslot(slot = "m", name = "avg_npc_1382_1#2$1")]
+[name="Clementia"]She's certainly more suited for the life of a legionnaire than in the Institute of Societal Programs or Institute of Scientific Development Planning like you expected.
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]No matter. Whatever field she joins, she is sure to excel. She was born for Ægir.
+[charslot(slot = "m", name = "avg_npc_1382_1#1$1")]
+[name="Clementia"]I remember when she was two, the Institute of Incubation said your disposition and the nature of your work made you ill-suited to raise her, and suggested you place her in their care.
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]They said the same when I first decided to raise her myself. Saying that again two years later would not change my mind.
+[charslot(slot = "m", name = "avg_npc_1384_1#10$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]But what truly pleased me was seeing young Gladiia reject it as well.
+[charslot(slot = "m", name = "avg_npc_1382_1#15$1")]
+[name="Clementia"]I wouldn't say you have the best bond as mother and daughter, but you do have an odd kind of rapport.
+[charslot(slot = "m", name = "avg_npc_1384_1#10$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Alright, that's enough, my little manta ray. I suspect we have more pressing matters to discuss than reminiscing about my daughter.
+[charslot(slot = "m", name = "avg_npc_1382_1#3$1")]
+[name="Clementia"]...Can you please not call me that?
+[charslot(slot = "m", name = "avg_npc_1384_1#4$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Very well, Consul Clementia.
+[name="Horatia"]While we spoke, every city in the home territories has been conducting an unprecedented investigation into the Church of the Deep.
+[name="Horatia"]As the core of R&D, Blandus was able to tamper with the Class IV weapons, but his actions should absolutely have been detected at some point before they were put to use.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Meaning there are many behind him fanning the flames.
+[charslot(slot = "m", name = "avg_npc_1384_1#4$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]All members of both Academies who had anything to do with the weapons' design, manufacture, and maintenance are receiving the most thorough investigations possible.
+[name="Horatia"]In response, the Church has brought their full influence to bear. By grasping at a single leaf, we may be able to pull out an entire rotten branch.
+[name="Horatia"]And with Mártus, no doubt we will be able to identify the Church's deepest roots.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]...Ægir itself is undergoing a grand surgery.
+[charslot(slot = "m", name = "avg_npc_1384_1#3$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Surgery to cut out a festering tumor. Isn't it?
+[name="Horatia"]The Waterway is open, and the fallen who corrupt our nation have been revealed. Both are of great value, as I see it.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Are you trying to console me over the superficial Waterway Program's failure? To tell me that the sacrifices Milliarium made were not without meaning?
+[charslot(slot = "m", name = "avg_npc_1384_1#3$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Why do you insist on double negatives? They make you seem weak.
+[name="Horatia"]There is no such thing as a 'superficial' program in Ægir, Consul Clementia.
+[name="Horatia"]If the IDP has approved a program, it means its planning and members are entrusted with the hopes of Ægir.
+[name="Horatia"]We believed you are capable of using the Class IV weapons to purify our waters and open the Waterway. This has always been an official part of the program.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]...Yet it failed.
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]The theoretical success rate of oceanic purification was never high. However, the Waterway Program was a guaranteed success.
+[name="Horatia"]Did I not promise you that, before you set off? Trust in me. Trust in Ægir.
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]I don't doubt that even if this city were to sink, consigning all ten thousand or so Ægir souls in it to the depths, the Waterway would still open without hitch.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]However, of all the possibilities you've accounted for, how many call for sacrifice?
+[name="Clementia"]How I wish this meeting of ours never had to happen, Horatia.
+[charslot(slot = "m", name = "avg_npc_1384_1#8$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Is that why you've worked yourself to the bone, my little manta ray?
+[name="Horatia"]I've read the reports on Milliarium. As consul for the entire city, you need not throw yourself into each and every little affair.
+[name="Horatia"]The stimulants you abuse will not hide the exhaustion on your face.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]You really have thought of everything. As you always do, Horatia.
+[name="Clementia"]All these losses and sacrifices, the falls and the betrayals, even Mártus's secret... Are you not the least bit shaken?
+[charslot(slot = "m", name = "avg_npc_1384_1#5$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Speaking of Mártus... You've reminded me of something.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]Of what?
+[charslot(slot = "m", name = "avg_npc_1384_1#5$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Mártus regards himself as the 'gardener of sin'. At times like these, he is wont to hide himself behind history.
+[name="Horatia"]I can infer why he'd seek cooperation from Dr. Kal'tsit, but from the way you describe it, those 'discussions' quickly devolved into a vapid declaration of war.
+[name="Horatia"]I find it difficult to imagine he would be satisfied with such a failure of negotiations. That is, unless he gained some other information...
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]We will continue to track his whereabouts.
+[charslot(slot = "m", name = "avg_npc_1384_1#12$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Are you hiding something, my little manta ray?
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]......
+[charslot]
+Clementia does not answer. She instead raises her head to look at Horatia, face to face. With the simulacrum erasing the distance between them, she knows that Horatia will be able to see every detail of her expression.
+But the curve of Horatia's lips do not change, her eyes are as gentle as ever, too.
+Clementia hopes that her own expression is as firm as hers.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]I am still the Chief Designer of Warfare on the Waterway Program before you arrive, Horatia.
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Naturally.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]Your calculations may have arrived at the correct outcome, but I had to handle the situation in my own way. The Academy of Science and Academy of Technology each have their own duties.
+[charslot(slot = "m", name = "avg_npc_1384_1#1$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]Hmm... Yes, of course.
+[name="Horatia"]I only hope that this obsession with self-reflection will not cause any complications. Your keen judgment must stay unclouded.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]I won't let that happen.
+[charslot(slot = "m", name = "avg_npc_1384_1#10$1", afrom=0.8, ato=0.8, duration=0)]
+[name="Horatia"]*sigh* Here, come a little closer. We still have some time.
+[name="Horatia"]Kal'tsit, Rhodes Island, Iberia, the Inquisition... You'll be busier than ever soon, so best not keep frowning like that...
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]......
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1384_1#10$1", afrom=0.8, ato=0.8, duration=0, isblock=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_signlntrfrnc", volume=1)]
+[bgeffect(name="$eb_signalInterference", fade = true, fadetime = 1.5,layer=1)]
+[charslot(slot = "m", focus="all")]
+[charslot(slot = "m", afrom=0.8, ato=0.8, duration=0)]
+[delay(time=0.2)]
+[charslot(slot = "m", afrom=0.2, ato=0.2, duration=0)]
+[delay(time=0.2)]
+[charslot(slot = "m", afrom=0.8, ato=0.8, duration=0.2)]
+[delay(time=0.2)]
+[charslot(slot = "m", afrom=0.2, ato=0.2, duration=0)]
+[delay(time=0.2)]
+[charslot(slot = "m", afrom=0.8, ato=0.8, duration=0.5)]
+[delay(time=0.5)]
+[charslot(slot = "m", afrom=0.8, ato=0, duration=1, isblock=true)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_deepseaamb", volume=1, loop=true, channel="w")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "r", name = "avg_npc_1388_1#1$1", duration=1)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1388_1#1$1", duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_seabornactivity_1", volume=1)]
+[charslot(slot = "r", action="shake", focus="r", afrom=1 , ato=1, power=3, times=30, duration=0.3)]
+[name="Seaborn"](Rapidly convulses its gelatinous body)
+[PlaySound(key="$d_avg_seabornactivity_2", volume=1)]
+[charslot(slot = "l", action="shake", focus="l", afrom=1 , ato=1, power=3, times=30, duration=0.3)]
+[name="Seaborn"](Quizzically sways fine tentacles)
+[dialog]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_seabornactivity_1", volume=1)]
+[charslot(slot = "l", action="jump", posto="-100,0", power=20, times=1, duration=0.5)]
+[delay(time=0.5)]
+[charslot(slot = "r", action="jump", posto="-100,0", power=20, times=1, duration=0.5)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_seabornactivity_2", volume=1)]
+[charslot(slot = "l", action="jump", posto="-200,50", power=40, times=1, afrom=1, ato=0, duration=0.5)]
+[delay(time=0.5)]
+[charslot(slot = "r", action="jump", posto="-200,50", power=40, times=1, afrom=1, ato=0, duration=0.5)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "char_263_skadi#8", duration=1.5, isblock=true)]
+[name="Skadi"]Trying to run?
+[name="Skadi"]Smart. Your kin are behind this wall. A lot of them.
+[name="Skadi"]It's the end of the road for you, though. What a pity.
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.05, duration = 0.2)]
+[charslot(duration=0.2)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[PlaySound(key="$swordtsing6", volume=0.7, delay=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[name="???"]Ishar-mla?
+[name="???"]Ishar-mla.
+A sudden voice, tinged with surprise.
+Skadi turns, looking towards its source. A conical creature exuding light leaves the shadows of the buildings, shielding the two cornered Seaborn with its body.
+[dialog]
+[StopSound(channel="w", fadetime=2)]
+[PlayMusic(key="$m_bat_abyssalhunters_loop", volume=0)]
+[musicvolume(volume=0.6, fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", duration=1.5, isblock=true)]
+[name="'Seaborn'"]Leave, kin.
+[name="'Seaborn'"]Through the eddy ahead, return to the sea.
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1388_1#1$1")]
+[charslot(slot = "l", name = "avg_npc_1388_1#1$1")]
+[PlaySound(key="$e_atk_airshipvibe", volume=1)]
+[charslot(slot = "r", posfrom = "0,0", posto = "-100,0", afrom=1, ato=1, duration = 0.5)]
+[delay(time=0.5)]
+[charslot(slot = "l", posfrom = "0,0", posto = "-100,0", afrom=1, ato=1, duration = 0.5)]
+[delay(time=0.8)]
+[PlaySound(key="$e_atk_vibe_n", volume=1)]
+[charslot(slot = "r", action="jump", posto="-200,50", power=20, times=1, afrom=1, ato=0, duration=0.5)]
+[delay(time=0.5)]
+[charslot(slot = "l", action="jump", posto="-200,50", power=20, times=1, afrom=1, ato=0, duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "m", name = "char_263_skadi#8")]
+[name="Skadi"]You're so honestly gentle with them. Disgusting.
+[name="Skadi"]I'm guessing you're the leader?
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'Seaborn'"]Our meeting was preordained, Ishar-mla.
+[charslot(slot = "m", name = "char_263_skadi#6")]
+[name="Skadi"]Huh? You know me?
+[PlaySound(key="$d_avg_swordstone", volume=1)]
+Skadi grips her sword tightly.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Image(image="51_i13", screenadapt="coverall", xScale=1.05, yScale=1.05)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="'Seaborn'"]Ishar-mla.
+[name="Skadi"]From Sal Viento to Gran Faro, from the Stultifera to here. You scum have been watching me this whole time.
+[name="Skadi"]What, do you see your 'god' in me too? Are you here for 'family,' or revenge?
+[PlaySound(key="$d_avg_brainnucleiturn", volume=0.4)]
+[name="'Seaborn'"](The nuclei within its skull rotate slightly)
+[name="'Seaborn'"]No.
+[name="'Seaborn'"]Ishar-mla... Ska-di, you are not nutrients to complete the cycle. You are its end.
+[name="'Seaborn'"]Our kin will not prey on you.
+[name="'Seaborn'"]On the contrary, they respect you. Protect you.
+[name="'Seaborn'"]They await your transformation. They await your evolution.
+[name="Skadi"]......
+Skadi looks at the being's 'eye.' For whatever reason, this monster she has never seen before seems familiar. Very familiar.
+The bizarre organs surrounding the Seaborn disperse and surround her in turn. A shimmering 'umbilical cord' connects her body with the Seaborn's.
+Skadi suddenly remembers when she faced the first Seaborn to talk, in that cave below the church. She also experienced a moment of distraction back then.
+She had just been through a fierce battle, her blood boiling with frenzy. But now, she feels herself uncontrollably responding to the Seaborn's touch... She curses herself for this moment of distraction.
+[name="Skadi"]...Why?
+[name="'Seaborn'"]A natural phenomenon. One I am also helpless to resist. This is the answer, Ska-di.
+[name="'Seaborn'"]I ate of His flesh, and He lives within you.
+[name="'Seaborn'"]You are He. I am He.
+[name="'Seaborn'"]Our hearts connected. Our blood interlinked.
+[name="Skadi"]......
+[name="'Seaborn'"]You need not waver. You need not doubt. The kin will not demand you walk with us.
+[name="'Seaborn'"]Ishar-mla chose you. Chose you to continue His life. Perhaps this is the only way He will witness what He must witness. Travel the road He must travel.
+[dialog]
+[delay(time=1)]
+[name="'Seaborn'"]What did He see in you?
+[name="'Seaborn'"]Perhaps, perhaps...
+[name="'Seaborn'"]Could it be, Ska-di, that in that cold, dark future, in the cosmos where all things are doomed to fade away, you are the one hope, the spark, the possibility...
+[name="'Seaborn'"]Are you the one who bears the final wishes of untold lives?
+[name="Skadi"]—!
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[delay(time=1)]
+[Decision(options="Skadi.;Abyssal Hunter Skadi.;Rhodes Island Operator Skadi.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="Skadi"]......
+[name="Skadi"]Doctor?
+Skadi swings her sword, her grip never once relaxed. It slices through the 'umbilical cord.' She stares coldly at the creature before her.
+[dialog]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.7)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Effect(name="$e_bladeline_01_large",x = 50,y=60,roy=0,rox=-30,layer = 1)]
+[Effect(name="$e_spark_02_mid",x = 50,y=50,layer = 2,delay=0.01)]
+[Effect(name="$e_spark_02_mid",x = 52,y=55,layer = 3,roy=180,delay=0.03)]
+[Effect(name="$e_spark_02_mid",x = 54,y=60,layer = 4,delay=0.05)]
+[Effect(name="$e_spark_02_mid",x = 56,y=65,layer = 5,roy=180,delay=0.07)]
+[Effect(name="$e_spark_02_mid",x = 58,y=70,layer = 6,delay=0.09)]
+[Effect(name="$e_spark_02_mid",x = 60,y=75,layer = 7,delay=0.11)]
+[Effect(name="$e_spark_02_mid",x = 62,y=80,layer = 8,delay=0.13)]
+[Effect(name="$e_spark_02_mid",x = 64,y=85,layer = 9,delay=0.15)]
+[Effect(name="$e_spark_02_mid",x = 66,y=90,layer = 10,delay=0.19)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[image]
+[PlaySound(key="$d_avg_tear", volume=1, channel="2")]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Decision(options="Everyone's looking for you.;Figured you'd be here.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1383_1#2$1")]
+[name="'Seaborn'"]Dr. {@nickname}, Ska-di. You... know each other?
+[charslot(slot = "m", name = "char_263_skadi#3")]
+[name="Skadi"]Is that so strange?
+[dialog]
+[charslot]
+[Decision(options="She's one of my cute little operators.;We met on land.", values="1;2")]
+[Predicate(references="1;2")]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#4$1")]
+[name="'Seaborn'"](The nuclei within its chest pulse)
+[charslot]
+This is the first time something stirs the peace within the Seaborn's chest.
+The oddly-colored nuclei, along with the bizarre organs floating by their side, begin to wave as rhythmically as the tides.
+It does not approach, but both you and Skadi can sense a burst of emotion: joy.
+[charslot(slot = "m", name = "avg_npc_1383_1#4$1")]
+[name="'Seaborn'"]No matter if you personally took part, Dr. {@nickname}, no matter if what took place in the cerulean cave had aught to do with you...
+[name="'Seaborn'"]After countless, countless years, you now stand alongside Ishar-mla.
+[name="'Seaborn'"]The connection between you and the kin cannot be erased. It is you who wrote this instinct into our memories. We depend on one another.
+[name="'Seaborn'"]The wheel of fate still turns. The surviving successors will one day meet, and achieve the most improbable of possibilities—
+[dialog]
+[charslot(duration=2)]
+[PlaySound(key="$d_avg_sea", volume=1, loop=true, channel="s")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="The hardship we suffer is ever present.",delay=0.001, width=800, x=250, y=290, duration=1,alignment="center", size=24)]
+[Sticker(id="st2", text="The life we thirst for is ever present.",delay=0.001, width=800, x=250, y=370, duration=1,alignment="center", size=24)]
+[Sticker(id="st1",duration=1,block = false)]
+[Sticker(id="st2",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[delay(time=1)]
+[Sticker(id="st3", text="I await you at the endpoint of evolution, Dr. {@nickname}, Ska-di. I await you both.",delay=0.001, width=800, x=250, y=335, duration=2, alignment="center", size=24)]
+[Sticker(id="st3",duration=2,block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[Decision(options="Don't give chase, Skadi.;Handle things in the city first.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_263_skadi#8")]
+[name="Skadi"]I couldn't understand that thing at all. What was it talking about?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Some kind of declaration of war.", values="1")]
+[Predicate(references="1")]
+[SoundVolume(volume=0.2, channel="s",fadetime=2)]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[charslot(slot = "m", name = "char_263_skadi#9")]
+[name="Skadi"]Didn't sound like that to me.
+[name="Skadi"]You woke me up just now, Doctor.
+[name="Skadi"]When I was face-to-face with that Seaborn, I remembered something I felt back in Sal Viento.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Nothing good, I presume?;I assume you weren't a fan?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_263_skadi#8")]
+[name="Skadi"]I hated it.
+[name="Skadi"]What good could come from a Seaborn rambling to a human?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Don't worry. I know what happened.;You didn't want to listen, did you?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_263_skadi#3")]
+[name="Skadi"]Good. I couldn't explain even if I wanted to.
+[name="Skadi"]You don't seem surprised, though. No wonder Kal'tsit asked you to come underwater.
+[dialog]
+[Predicate(references="2")]
+[charslot(slot = "m", name = "char_263_skadi#8")]
+[name="Skadi"]Of course not!
+[name="Skadi"]I have no interest in chatting with a Seaborn.
+[dialog]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_263_skadi#3")]
+[name="Skadi"]That thing sounded like it'd been looking for you?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="It's a long story.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_263_skadi#8")]
+[name="Skadi"]...So we were both being watched.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="There won't be a next time.;Next time, I'll be by your side.;It'll be you waking me up next time.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_263_skadi#5")]
+[name="Skadi"]Mm.
+[name="Skadi"]Don't worry, Doctor. I'm Skadi. Abyssal Hunter Skadi. Rhodes Island Operator Skadi. Always have been.
+[name="Skadi"]Doesn't matter if that thing comes looking for me or you.
+[charslot(slot = "m", name = "char_263_skadi#8")]
+[name="Skadi"]I'll cut its vocal cords before it can speak.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="I trust you, Skadi.;Remember who you are, and it'll work out.", values="1;2")]
+[Predicate(references="1;2;3")]
+[SoundVolume(volume=1, channel="s",fadetime=2)]
+[charslot(slot = "m", name = "char_263_skadi#3")]
+[name="Skadi"]...The tide's coming in, outside these walls.
+[name="Skadi"]Sounds like it won't stop for a long while.
+[dialog]
+[StopSound(channel="s", fadetime=2)]
+[stopmusic(fadetime=3)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]  
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_microrobot", volume=1)]
+[charslot(slot = "m",  name = "avg_npc_1401_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5, isblock=true)]
+[name="'Little Handy' at the Street Corner"]—
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

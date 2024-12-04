@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_stward")] 음, 자율차의 주행 방향을 변경하여 장애물을 피할 수도 있다고 했던 것 같은데. 사용 설명서가 어디 있더라……
 [PopupDialog(dialogHead="$avatar_ardign")] 스튜어드, 그건 아주 간단해! 자율차가 <@tu.kw>아군 유닛을 통과</>하면 <@tu.kw>아군의 배치 방향으로 주행</>하게 돼!
@@ -11,6 +12,7 @@
           startX=315, startY=-70, endX=40, endY=-90)] \
 나를 <@tu.kw>왼쪽 방향으로 배치</>해 줘!
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=1)]
 [Battle.Pause(pause=true)]

@@ -1,0 +1,22 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 敌方索敌教学d
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[PopupDialog(dialogHead="$avatar_myrrh")] 앗, 포탄……
+[Battle.EnsureMinSp(charId="char_381_bubble", sp=100)]
+[InputBlocker(blockInput=true, tileX=5, tileY=4, validWidth=108, validHeight=111)]
+[Tutorial(tileX=5, tileY=4, focusWidth=108, focusHeight=111, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center", \
+          protectTime=0.5, dialogHead="$avatar_bubble")] 내게 맡겨!
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(focusX=283, focusY=-140, focusWidth=382, focusHeight=90, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_bubble")] 헤헤, 내가 적의 공격을 유도할 수 있다고!
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_bubble")] 
+[PopupDialog(dialogHead="$avatar_sys")] 적은 <@tu.kw>공격받기 더 쉬운</> 효과가 있는 오퍼레이터를 <@tu.kw>우선으로 공격</>합니다.
+[InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

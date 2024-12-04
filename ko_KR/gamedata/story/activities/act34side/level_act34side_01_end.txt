@@ -1,0 +1,340 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="51_g1_beaconsquare",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="m",name="char_263_skadi#5",duration=1)]
+[Delay(time=2)]
+[name="스카디"]박사, 우리가 방금 둘러본 건물을 박물관으로 착각했지? 그 기기들을 보는 박사의 눈빛은 마치 전시품을 감상하는 것 같았어.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="이게 벌써 내가 박물관으로 오해한 세 번째 건물이야.", values="1")]
+[Predicate(references="1")]
+[Decision(options="건물 내부의 중력이 어떻게 역전될 수 있는 거지?;기둥 사이를 자율적으로 오가는 물줄기들은 뭐지?;저 손가락을 왜곡시키는 공간은 뭐야?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]어떤 원리들은 나도 설명하기 어려워.
+[name="스카디"]지난 5년 동안 우리도 많은 과학 신기술들의 발전을 놓쳤으니까.
+[Dialog]
+[charslot]
+[Decision(options="잠깐, 저 앞에 보이는 높은 탑은……", values="1")]
+[Predicate(references="1")]
+[Decision(options="도시의 핵심 건물이 발사대라고?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]맞아요, 박사님. 저건 비콘 발사대예요. 꽤 오랜 역사를 지녔죠.
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]상어, 네가 알고 있을 줄은 몰랐네.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]아주 어렸을 때 부모님과 함께 본토를 돌아다니며 많은 도시에서 유사한 건물들을 봤죠.
+[Dialog]
+[charslot]
+[Decision(options="에기르인은 모두 집단 양육을 한다고 알고 있었는데.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="스카디"]난 그렇게 자랐어. 하지만 상어는 생물학적 부모와 특별한 관계를 유지해 왔지.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="스펙터"]부모님이라기보단 친구에 더 가깝죠.
+[name="스펙터"]부모님은 공공 양육소와 특별한 합의를 했어요. 기본적인 양육은 공공 양육소에서 담당하지만, 두 사람이 도시의 돔 건축 건설을 맡을 때마다 절 데려가셨죠.
+[name="스펙터"]도시 곳곳을 참관시키고 배우도록 했어요. 때로 두 사람의 작업에도 조금 참여시켰죠…… 물론 대부분의 시간은 여전히 공공 양육소에서 보냈지만요.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그런데 이 비콘 발사대의 용도는 뭐야?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]이름 그대로…… 비콘을 발사해서 항로를 안내하는 거죠.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="일반적인 비콘 발사대가 이 정도 규모는 아닐 텐데.;이 발사대는 도대체 어떤 척도로 항로를 안내하는 걸까?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#10$1")]
+[name="스펙터"]약 300년 전, 에기르의 해양 개발은 거의 완벽에 가까웠어요. 자연적으로 존재하는 각종 에너지원을 활용했고 해저의 모든 골짜기가 해도에 기록되었죠.
+[name="스펙터"]그때 사람들은 또 다른 반짝이는 별들이 가득한 바다로 시선을 돌렸어요.
+[name="스펙터"]당시의 구상으로는, 우리의 함대와 도시가, 본래 존재하지 않았어야 할 경계를 넘어 차단층 밖에서 문명의 불꽃을 밝혀야 했죠.
+[Dialog]
+[charslot]
+[Decision(options="차단층 밖……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]박사, 보존자의 판단이 정확했어. 에기르가 보기에 크리스틴의 계획은 결코 불가능한 일이 아니었던 거야.
+[name="켈시"]해양 국가와 하늘 사이의 거리는 우리가 지금까지 상상했던 것보다 더 가까웠나 봐.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="스펙터"]그 당시 사람들은 엄청난 열정으로 수많은 시도를 했어요…… 전자구름층의 탐사와 해독, 추진 기술 및 재료 기술의 혁신, 우주 환경에 적응할 수 있는 생명체에 대한 탐구……
+[name="스펙터"]우리 앞에 있는 비콘 발사대가 바로 그 당시 결과의 산물이죠.
+[name="스펙터"]적어도 초기 구상에서는 이것으로 밤하늘의 가장 미세한 신호를 포착할 수 있고, 항성도의 특정 좌표에 영원히 꺼지지 않는 비콘을 세울 수 있었어요.
+[name="스펙터"]비콘 신호 사이의 수많은 초소형 부유 기계들의 몸체로 네트워크를 형성하여, 순식간에 에기르가 광활한 공간에서 횡단하도록…… 적어도 사람들은 그렇게 구상했었죠.
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]상어, 너 지금까지 한 번도 이런 얘기 안 했었잖아.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]육지에 있을 때는 내가 정신을 차리고 있던 시간이 별로 없었으니까요, 스카디.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#10$1")]
+[name="스펙터"]바로 어제, 꿈을 꿨어요. 또다시 투지장에서 그 역사 속으로 들어가는 꿈을요.
+[name="스펙터"]그리고 '로렌티나'가 춤추고 있는 걸 봤어요.
+[name="스펙터"]그녀의 춤사위는 파도를 넘어 별하늘로 뛰어올랐고, 별의 먼지가 그 치맛자락을 쫓아갔죠. 아주 먼 곳에서 한 목소리가 들려왔어요. 그건 만물의 주인이었고, 만물의 주인은 노래로 그녀에게 화답했죠.
+[name="스펙터"]우주에는 끝이 없고 상상력은 무한하며 '로렌티나'의 춤은 멈추지 않아요.
+[charslot(slot = "m", name = "avg_1023_ghost2_1#3$1")]
+스펙터는 눈을 감았다. 마치 그 꿈속으로 돌아간 것 같았다.
+[charslot(slot="m",name="char_263_skadi#4")]
+[name="스카디"]음……
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]왜 그러세요?
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]상어, 난 그 장면을 상상하고 있었어.
+[Dialog]
+[charslot]
+[Decision(options="아름다운 꿈이야, 로렌티나.;어쩌면 정말 그런 순간이 있었을지도 몰라, 로렌티나.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#12$1")]
+[name="스펙터"]별바다로 가는 문을 열기 전, 사람들은 늘 차단층 밖의 위협에 대해 더 충분히 준비하려고 했어요…… 시본이 나타나 이 긴 꿈을 끊어내기 전까지는요.
+[name="스펙터"]언제부턴가 '시본'은 우리의 유일한 과제가 되었어요. 예술, 과학기술, 미래를 향한 우리의 모든 상상이 강제로 중단되어 버렸죠.
+[name="스펙터"]시본은 에기르의 많은 것을 바꿨어요.
+[Dialog]
+[charslot]
+[Decision(options="스카디, 어비설 헌터스가 되기 전에는 뭘 하고 있었어?;스펙터, 어비설 헌터스가 되기 전에는 뭘 하고 있었어?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]나?
+[name="스카디"]나는 그때 시설관리소 최고의 기술자였어. 혼자서 도시 전체의 해저 조명 배열을 조정할 수 있었지.
+[name="스카디"]마침 발전계획소에서 들어온 제안이 내 생각과 비슷하길래 받아들였어.
+[name="스카디"]혼자라 좀 외롭긴 했지만, 가끔 산호초에 숨어 있는 거대한 린수들을 놀리면서 멍하니 바다를 밝히는 일은 꽤 만족스러웠어.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]전 조각가 지망생이었어요.
+[name="스펙터"]발전계획소는 실제 상황을 고려해 시민에게 제안하는데, 우리의 의사와도 대체로 잘 맞았어요.
+[name="스펙터"]제가 몸 담고 싶었던 분야는…… 돔 설계, 조각 예술, 아니면 춤 같은 것이었죠.
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]박사님, 켈시 선생님, 그러고 보니 함께한 시간 동안 우리는 수많은 정보를 공유했지만 과거의 삶에 대해서는 이야기하지 않았네요.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그건 이미 바뀌었으니까.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1023_ghost2_1#1$1")]
+[name="스펙터"]그렇네요. 박사님, 도시 구경을 시켜드리려고 했는데 이렇게 무거운 주제로 이야기하게 되었네요. 어울리지 않게 말이죠.
+[name="스펙터"]무한한 파도가 우리 머리 위로 닥쳐올 거예요. 박사님, 불쾌한 일들을 마주하기 전, 여기서 함께 한 곡 추실 시간이 있을까요?
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$act18d3d0_intro",key="$act18d3d0_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1382_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="온화한 여성"]……글래디아.
+[PlaySound(key="$d_avg_higheldshosfts", volume=0.7)]
+[charslot(duration=1)]
+의장용 검을 비스듬히 든 여성이 천천히 다가왔고, 글래디아는 본능적으로 창 자루를 쥐었다.
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+하지만 상대방은 양팔로 부드럽게 그녀의 어깨를 감쌌고, 글래디아는 주변에 퍼지는 신경 활성제의 냄새를 맡았다.
+에기르인은 밀접한 신체 접촉으로 인사를 표현하는 경우가 드물었기에, 글래디아는 어머니가 이렇게 한 적이 있었는지도 기억나지 않았다.
+하지만 지금 상대방의 이 행동은 너무나 자연스럽게 느껴졌다.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="글래디아"]클레멘티아 집정관님?
+[name="글래디아"]총전쟁설계사들 사이에 이런 군례가 있었던 기억은 없는데요.
+[charslot(slot="m",name="avg_npc_1382_1#1$1")]
+[name="클레멘티아"]글래디아, 헌터들이 맑은 정신으로 복귀한 것이 이번 여정의 가장 큰 수확입니다.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="글래디아"]군인들이 저를 보고 당황하는 반응을 보아하니, 여러분은 꽤 많은 곤란을 겪었겠군요.
+[charslot(slot="m",name="avg_npc_1382_1#9$1")]
+[name="클레멘티아"]그 '퍼스트본' 처치작전으로 인해, 에기르는 모든 어비설 헌터스를 잃었습니다.
+[name="클레멘티아"]세쿤다는 여러 번 수색 구조를 시도했지만, '퍼스트본'이 죽은 후 폭주한 시본이 그 해역 전체를 봉쇄했기에, 매번 성과 없이 돌아올 수밖에 없었죠.
+[charslot(slot="m",name="avg_npc_1382_1#6$1")]
+[name="클레멘티아"]호라티아…… 당신의 어머니는 국민들에게 너희의 죽음을 알릴 수밖에 없었습니다.
+[charslot(slot="m",name="avg_npc_1382_1#2$1")]
+[name="클레멘티아"]하지만 글래디아, 호라티아는 그렇게 생각하지 않았습니다. 저는 호라티아를 잘 압니다.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="글래디아"]어쩌면 과학발전계획소의 가장 뛰어난 집정관인 호라티아는 그저, 제 죽음이 에기르의 어떤 문제도 해결하지 못했다는 사실을 받아들일 수 없었을 뿐일지도 모르죠.
+[name="글래디아"]저도 어머니를 잘 알아요.
+[name="글래디아"]클레멘티아, 두 총전쟁설계사 간의 면담에서, 뒤틀린 모녀 관계가 주제가 되어선 안 될 것 같군요.
+[charslot(slot="m",name="avg_npc_1382_1#2$1")]
+[name="클레멘티아"]물론입니다, 글래디아.
+[Dialog]
+[PlaySound(key="$d_avg_higheldshosfts", volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2)]
+[name="클레멘티아"]이 도시를 보세요.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i02",screenadapt="coverall", xScale=1.2, yScale=1.2, y=-70)]
+[ImageTween(yTo=0, xScaleTo=1, yScaleTo=1, duration=60, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=3)]
+집정관의 명상실은 도시 높은 곳에 위치해 있고, 바닷물은 지금 이 순간 두 사람의 머리 바로 위에 있었다.
+이곳에서 보면, 투명한 돔은 부드러운 거울처럼 깊은 혼돈을 차단하고, 에기르인이 에기르를 더 잘 볼 수 있게 해 주었다.
+돔 아래 온 도시가 짙은 푸른빛에 휩싸여 있었다. 비콘 발사대가 도시 중심에 우뚝 솟아있었고, 저 멀리 허브 항의 함선들은 헤엄치는 린수 떼처럼 보였다.
+[name="클레멘티아"]바닷물에는 색은 없고, 오직 어둠뿐이죠. 밀리아리움은 마치 이 대양 속에서 뜨인 문명의 눈과도 같습니다. 고독하고 밝은 눈이죠.
+[name="클레멘티아"]예전에 우리는 이런 도시가 무수히 많았습니다. 하지만 바다를 밝히는 이 수많은 별들은 하나둘 꺼져가며 시본의 자양분이 되었죠.
+[name="클레멘티아"]지금 해저에 흩어진 건 그 기이한 색깔을 띤 소굴들입니다.
+[name="글래디아"]어비설 헌터스 계획이 실패한 도박이었다는 걸 부정하진 않겠어요. '퍼스트본'의 죽음은 시본이 진화하는 추세를 막지 못했으니까요.
+[name="글래디아"]에기르의 현재 대응책을 알고 싶어요. 클레멘티아, 당신의 해결책이요.
+[name="글래디아"]그나저나, 도대체 '항로 계획'은 어떤 것이죠?
+[name="클레멘티아"]글래디아, 당신을 탓할 의도는 없습니다……
+[name="클레멘티아"]저 또한 더 큰 대가를 치러야 하는 또 다른 도박에 참가했을 뿐이죠.
+[name="클레멘티아"]여전히 '무기 등급 분류 계획'은 무기 사용에 대한 엄격한 통제일 뿐이며, 그 목적은 시본의 진화를 늦추는 것입니다.
+[name="클레멘티아"]다만, 이번에는 우리가 보유한 무기와 연구 중인 모든 무기를 계획에 포함시켰죠.
+[name="클레멘티아"]재래식 탄도 무기와 제1급 무기를 혼합해서 사용한 결과 뛰어난 전과를 거뒀습니다. 시본은 왜 바닷물에 의해 화상을 입었는지 이해하지 못했죠.
+[name="클레멘티아"]하지만 놈들은 겨우 1년 만에 미지의 위협에 거의 적응했습니다. 11개월 차에 우린 갱신을 앞당겼고, 살상 방식이 전혀 다른 제2급 무기를 활용했죠.
+[name="클레멘티아"]이런 식으로 계속 되풀이 돼왔습니다.
+[name="글래디아"]시본의 진화 속도가 기술원의 무기 업그레이드 속도를 초과할 때까지 말이죠.
+[name="클레멘티아"]그래요. 우리는 결국 시간을 벌고 있는 겁니다. 에기르는 시본 연구에 엄청난 자원을 투자했어요. 시본의 근원을 이해해야만 시본 문제를 근본적으로 해결할 수 있으니까요.
+[name="클레멘티아"]글래디아, 당신이 가져온 정보는 매우 가치가 있어요. 브레오간이 육지에서 발견한 것은 다른 측면에서 과학원의 추측을 뒷받침해 주었습니다.
+[name="글래디아"]시본과 베헤모스의 근원이 같다는 것 말이죠.
+[name="글래디아"]에기르는 더 오래된 기억을 찾기 위해 육지로 온 건가요?
+[name="클레멘티아"]그뿐만이 아닙니다. 시본은 베헤모스와 기원이 같지만, 베헤모스와는 달리 놈들의 몸에는 너무나 많은 비자연적인 요소가 있죠.
+[name="클레멘티아"]시본의 행동은 분명한 목적성이 있어요. 놈들은 빠르게 바다에 대한 미련을 버리고 대규모 집단으로 육지로 이주하기 시작했죠.
+[name="클레멘티아"]만약 개입하지 않는다면 대륙 전체가 시본의 온상이 되는 것은 시간문제일 겁니다.
+[name="글래디아"]그건 우리가 이베리아에서 본 것과 일치하는군요.
+[name="클레멘티아"]따라서 이 시대를 살아가는 에기르인들에게, 육지는 반드시 밝혀내야 할 진실이자 짊어져야 할 책임이기도 합니다.
+[name="클레멘티아"]호라티아는 발전계획소를 대표해 새로운 전쟁 명령에 서명했고, 밀리아리움은 기술원이 개발한 제4급 무기를 갖고 이곳에 왔습니다.
+[name="클레멘티아"]이전과는 완전히 다른 생물학적 무기죠. 목표 범위 내에 있는 시본 소굴과 유체를 자발적으로 사멸시킬 수 있고 대량의 성체를 목표 해역에서 쫓아낼 수 있어요.
+[name="클레멘티아"]우리는 이미 목표 해역 내 소굴 대부분의 위치를 파악했습니다. 아직 비콘 설치가 되지 않은 곳은 이베리아 근처의 소굴들뿐이죠.
+[name="클레멘티아"]비콘 설치가 완료되고 무기가 가동되면, 우리는 드디어 시본이 없는 맑은 수역…… 에기르 본 구역과 연결되는 항로를 만들어 낼 수 있게 될 겁니다.
+[Dialog]
+[delay(time=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[image]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1")]
+[charslot(slot = "right", name = "avg_npc_1382_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="글래디아"]호라티아 집정관님은 자신의 계획에 어떠한 실패 가능성도 용납하지 않을 거예요. 하지만 제가 본 건 시본의 포위 속에서 금방이라도 무너질 것 같은 위태로운 도시뿐이었죠.
+[charslot(slot = "right", name = "avg_npc_1382_1#2$1",focus="r")]
+[name="클레멘티아"]호라티아는 내게 “항로 계획은 실패하지 않아”라고 했습니다.
+[name="클레멘티아"]호라티아가 얼마나 많은 가능성을 계산했는지는 모릅니다. 그리고 영원히 알 필요 없기를 바라죠. 지금까지 제겐 이 위험한 도시가 항로 계획의 전부였어요.
+[charslot(slot = "right", name = "avg_npc_1382_1#9$1",focus="r")]
+[name="클레멘티아"]하지만 이제는 아닙니다, 글래디아. 지난 한 달 동안 너무 많은 변수가 생겼어요. 이전 계획을 반드시 다시 검토해야 합니다.
+[name="클레멘티아"]시본의 무기 적응력이 폭발적으로 향상되었습니다. 심지어 제3급 무기의 폭격 속에서도 동료를 보호할 수 있도록 진화했죠.
+[name="클레멘티아"]성공적인 섬멸 작전은 시본이 다른 개체에 정보를 전달할 기회를 차단하죠. 하지만, 놈들은 다른 방식으로 깨달음을 얻은 것 같습니다.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="글래디아"]시본이 인류를 상대로 일으킨 모든 변이는 거의 타락한 에기르인이 촉발시킨 것이었어요.
+[name="글래디아"]하지만 시본은 진짜 지능을 갖추고 있지 않죠. 실험실의 모든 무기 원형을 시본 소굴로 던져도 놈들이 그걸 분해해서 연구하진 않을 거예요.
+[name="글래디아"]심해 교회가 시본을 이용해 부대나 도시를 공격하도록 유도할 순 있겠지만, 단시간 내에 급격한 변이를 일으키게 하기는 어려워요.
+[charslot(slot = "right", name = "avg_npc_1382_1#9$1",focus="r")]
+[name="클레멘티아"]시본이 심해 신도의 정보뿐만 아니라 또 다른 '퍼스트본'의 영향을 받지 않는다면요.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="글래디아"]그 뒤늦은 작전 보고서를 이미 읽으셨나 보군요.
+[name="글래디아"]맞습니다. 울피아누스에 의하면 우리가 죽인 게 유일한 '퍼스트본'은 아니었어요.
+[charslot(slot = "right", name = "avg_npc_1382_1#9$1",focus="r")]
+[name="클레멘티아"]글래디아, 당신들은 '퍼스트본'의 서식지에 들어간 최초의 에기르인이자, 최후의 에기르인입니다.
+[name="클레멘티아"]지금 시본은 광기에 가까울 정도로 그 유적을 봉쇄했습니다. 우리는 아직까지도 돌파구를 찾지 못했고요.
+[name="클레멘티아"]헌터 중에서는 울피아누스가 가장 오래 머물렀죠. '진실'을 목격할 만큼 길게요.
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[name="글래디아"]울피아누스의 말을 믿을지 말지 망설이고 계시는군요.
+[charslot(slot = "right", name = "avg_npc_1382_1#2$1",focus="r")]
+[name="클레멘티아"]……네. 이건 에기르가 시본의 수수께끼를 풀 열쇠가 되어 줄 수도 있지만, 에기르를 파멸로 이끌 수도 있으니까요.
+[name="클레멘티아"]시본의 잔해로 몇 달 동안을 간신히 버티던 헌터가 제정신을 유지할 수 있었고, 그 헌터가 문명으로의 복귀를 거절한 채 시본과 동행했습니다.
+[name="클레멘티아"]울피아누스에게는 당시 작전과 관련해 풀리지 않는 의문점들이 아직 너무 많아요.
+[charslot(slot = "right", name = "avg_npc_1382_1#8$1",focus="r")]
+[name="클레멘티아"]죄송합니다, 글래디아. 에기르는 헌터들의 귀환을 평의회를 통해 받아들여야만 합니다.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="세쿤다"]이곳은 이미 수색 대상 구역으로 지정됐습니다만……
+[name="세쿤다"]……이베리아의 아이린 님?
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_4009_irene_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="아이린"]당신을 뭐라고 부르면 될까?
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="l")]
+[name="세쿤다"]세쿤다, 해양 순찰대의 지휘관입니다. 어제 직접 여러분을 밀리아리움에서 맞이하지 못해 유감입니다.
+[name="세쿤다"]해양 순찰대는 현재 시민 실종 사건을 조사 중에 있습니다. 저희는 이베리아 측에 수색 협조 요청을 하지 않았으니, 빨리 이 구역을 떠나 주시길 바랍니다.
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="아이린"]내가 직접 당신들을 지원하고 싶어.
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="l")]
+[name="세쿤다"]호의에 감사드립니다만, 그럴 필요는 없습니다.
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="아이린"]내 생각엔……
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="l")]
+[name="세쿤다"]다른 부대에선 소식이 있나?
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="r")]
+[name="해양 순찰대 대원"]잠시, 영상을 조회 중입니다.
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#2$1")]
+[name="아이린"]지휘관……
+[charslot]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="r")]
+[name="해양 순찰대 대원"]허브항에서 수상한 움직임은 발견되지 않았습니다.
+[charslot(slot = "left", name = "avg_4137_udflow_1#5$1",focus="l")]
+[name="세쿤다"]쳇.
+[name="세쿤다"]그럼 다른 팀에 통보해라. 폐쇄된 민간용 수문들을 확인하고. 도시 가장자리의 순환 시스템도 주의 깊게 살펴보라고 전해.
+[charslot(slot = "right", name = "avg_npc_1391_1#1$1",focus="r")]
+[name="해양 순찰대 대원"]예.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[charslot(slot = "right",posfrom = "0,0", posto = "200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_4009_irene_1#2$1")]
+[name="아이린"]내 앞에서 명령을 내리다니, 정보 유출이 걱정되지는 않아?
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="세쿤다"]아이린 님, 이건 해양 순찰대의 일상적인 업무일 뿐, 기밀로 할 필요는 없습니다.
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="아이린"]조금 전까지 조력자를 시켜 사람들을 이곳에서 내보냈잖아?
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="세쿤다"]그건 무관한 사람들이 불필요한 피해를 입지 않도록 하기 위해서입니다.
+[name="세쿤다"]이곳에 꼭 남아야겠다고 하시면, 본인의 안전은 스스로 책임지셔야 합니다.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="아이린"]나는……
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="세쿤다"]실종자는 툴리아, 항로 계획의 기술자로 시본 소굴의 데이터 기록 및 교정 업무를 담당했습니다.
+[name="세쿤다"]30시간 전 자리를 비운 뒤 행방불명되었죠.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="아이린"]혹시…… 심해 교회의 소행일 가능성은 없을까?
+[charslot(slot="m",name="avg_4137_udflow_1#1$1")]
+[name="세쿤다"]바로 그 점이 의문입니다.
+[name="세쿤다"]툴리아 씨가 실종된 시간 동안 항로 계획의 모든 작업은 정상적으로 진행되고 있었습니다. 소굴의 데이터 기록과 교정은 매우 중요하긴 하지만 최고로 중요한 사항은 결코 아니죠.
+[name="세쿤다"]만약 심해 교회가 관련자를 암살하여 항로 계획을 방해하려 했다면, 가장 절박한 시점에 평범한 데이터 분석가를 선택하진 않았을 것입니다.
+[charslot(slot="m",name="avg_4137_udflow_1#3$1")]
+[name="세쿤다"]다만……
+[charslot(slot="m",name="avg_4137_udflow_1#5$1")]
+[name="세쿤다"]툴리아 씨가 알아서는 안 될 비밀을 알게 된 게 아니라면요.
+[name="세쿤다"]툴리아 씨의 거처에 한번 가봐야겠습니다.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-200,0",duration = 1.5)]
+[delay(time=1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",posfrom = "150,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_4137_udflow_1#1$1",focus="m")]
+[name="세쿤다"]아이린 님, 당신은 꽤 예리하시지만 해양 순찰대와 동행하는 건 여전히 권장드리지 않겠습니다.
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",focus="r")]
+[name="아이린"]난 그저 우리 모두에게 직면한 위협을 내 방식대로 조사하고 있을 뿐이야.
+[charslot(slot="m",name="avg_4137_udflow_1#1$1",focus="m")]
+[name="세쿤다"]……마음대로 하십시오.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

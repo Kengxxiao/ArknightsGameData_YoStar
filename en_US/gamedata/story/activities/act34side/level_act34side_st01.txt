@@ -1,0 +1,490 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="27_g18_lighthouse_square",screenadapt="coverall")]
+[playsound(key="$d_avg_sea", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=3)]
+[Delay(time=3)]
+[Subtitle(text="A hunter is walking on seacoast way♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="With homeland left a mile behind, his path lies ahead♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="From his forebears and children, he was torn♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Into the seas his lover was swept away, floating in the deep, dead♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Subtitle(text="A hunter is walking on seacoast way♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="With homeland left a mile behind, they must lament and pray♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="There is no end to his path♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="The road ahead is shrouded in gray♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=3, block=true)]
+[Subtitle(text="A hunter returns by seacoast way♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="His journey ended, his home close at hand♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Sound of waves past above the spray♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Why do his feet disobey his command♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Why ever does his heart still sway♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Delay(time=3)]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="Long time no see, Skadi.;Hello, Skadi.", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=1)]
+[charslot(slot="m",name="char_263_skadi#3",duration=1.5)]
+[delay(time=2)]
+[name="Skadi"]Been a while, Doctor.
+[name="Skadi"]You were supposed to meet that chatty Liberi, but you don't seem surprised to see me.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You and Elysium are both Rhodes operators.;This is a lot closer to your homeland, after all.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]Hmm. True.
+[name="Skadi"]You're an hour later than Kal'tsit estimated.
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]I guess the Inquisition's review process is strict, even with an official notice from a Saint.
+[name="Skadi"]After only three months, nearly all the town's residents have moved inland, aside from a few workers. Replaced by lots of people from the Penal Battalion.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="They must be preparing for something.;They look pretty tense.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#9")]
+[name="Skadi"]Ægir contacted Iberia a week ago. This forgotten town has become a lot less quiet since.
+[name="Skadi"]Being surrounded by sea scum already sets the young soldiers on edge. Hearing Ægir's voice only made it worse.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="It demands a response, maybe caution.;When the undersea nation finally speaks, you have to listen.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]Turn left at the sculpture, and the sea is a quick ten minute walk.
+[name="Skadi"]We'll head straight to the Eye of Iberia.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_sea", volume=0.7, loop=true, channel="sea")]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]Say, Doctor, do you hear the sound of the waves?
+[charslot(slot = "m", focus = "n")]
+Skadi turns her head slightly into the sea breeze. Her hair dances in the wind, the same color as the shadows in her eyes.
+[charslot(slot="m",name="char_263_skadi#4")]
+[name="Skadi"]Their layering has gotten complex. I hear... the sound of stars drifting across the sky. The never-ending song of nature. And a language, forever incomprehensible...
+[StopSound(channel="sea", fadetime=3)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Sticker(id="st1", text="Ishar-mla.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="I'm here.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="The hardship we suffer is ever present.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="The life we thirst for is ever present.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="char_263_skadi#7")]
+[name="Skadi"]...
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="Are you alright, Skadi?;Did reconnecting with home put you on edge?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]It's like I get more nervous the closer I am... Never mind. It's hard to explain.
+[name="Skadi"]Maybe I'm sleep-deprived. Ever since our last voyage, I feel like I've inherited Shark's nightmares.
+[name="Skadi"]Speaking of the sea, why did Dr. Kal'tsit call you over so urgently?
+[name="Skadi"]I don't remember you having anything to do with the ocean.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I wouldn't recall even if I did.;But it doesn't feel unfamiliar, at least.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]Not much of an answer.
+[name="Skadi"]Right, I forgot about your condition. No wonder you gave such an answer.
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="Skadi"]Oh well. I'm sure she had her reasons.
+[name="Skadi"]Let's go. It'll be dark soon.
+[Dialog]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="27_g24_cloudy_sea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_jump_water", volume=1)]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=0.5)]
+[Effect(name="$e_shuihua",layer = 1,y=-350)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=10, vibrato=15, randomness=70, fadeout=true, block=false)]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="Gladiia"]I would take a step back if I were you. I need to shake myself dry.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="Specter"]Hey there, Dr. Kal'tsit. Not many people can track us Abyssal Hunters. Did Swordfish tell you we'd be coming ashore here in advance?
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Elysium deployed a data collector in these waters. It's had a direct connection to the Eye of Iberia's central control system ever since its calibration.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="Specter"]And it can already track underwater targets? That Liberi's not half-bad.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="Gladiia"]Am I to understand then that Rhodes Island and the Inquisition have deepened their ties?
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]One week ago, the undersea city contacted Iberia via a special comms frequency, informing them that Ægir would be establishing a 'Waterway' between the Ægir home territories and dry land.
+[name="Kal'tsit"]In the face of such a grand project, Iberia could only gather intelligence through the great lighthouse's positioning system.
+[name="Kal'tsit"]Evidently, your position as Chief Designer of Warfare did not afford you any knowledge of this.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="Gladiia"]Tell Kal'tsit what we discovered, Shark.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="Specter"]The captain and I have swum out to where the Stultifera sank three times now. Our last dive was only ten days ago.
+[name="Specter"]The first time, we could still see the exploded wreckage on the sea floor. Under what little light filtered through from the surface, the gilded interior was more like a smudge of paint.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="r")]
+[name="Specter"]But this time around, the entire thing had completely disappeared, replaced by a cluster of coral, thrumming with life.
+[name="Specter"]I may be accustomed to dreaming, but that felt unreal even to me.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="Gladiia"]That monument to a lost civilization and its history stood for but a brief time.
+[name="Gladiia"]The Stultifera Navis has been completely claimed by the sea.
+[name="Gladiia"]Or to be precise, it's become part of a Seaborn nest.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="Kal'tsit"]Their environmental assimilation is accelerating.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="Gladiia"]At a frightening pace.
+[name="Gladiia"]But there was something even more noteworthy. We found traces of battle. Recent ones.
+[name="Gladiia"]A completely barren patch of sea, lacking even marine snow. A warped and shattered stretch of sea floor, clearly pockmarked by micro-singularities.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Only the fleets of Ægir's Legions could be behind that.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="Gladiia"]As a landwalker, Kal'tsit, the knowledge of and interest you hold towards Ægir are nothing less than extraordinary.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Though separated by the boundless seas, Ægir has always been a part of Terra.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#12$1",focus="r")]
+[name="Specter"]Regardless, Gladiia and I have decided to head to that city.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]A risky decision, no doubt.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="Specter"]Perhaps a tad.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="Gladiia"]Considerably.
+[name="Gladiia"]As such, we Hunters have been observing it for a while.
+[name="Gladiia"]Before our final operation, I attended a military conference between the Academy of Science and the Academy of Technology, as the Abyssal Hunters' Chief Designer of Warfare.
+[name="Gladiia"]Among the battle plans they drew up together, I do not recall anyone calling for a military stronghold to approach dry land with, nor any project involving 'Waterways.'
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[name="Gladiia"]Ægir has, without a doubt, undergone great changes.
+[name="Gladiia"]Our contact with the home territories was completely severed after we slew Ishar'mla. It is difficult to determine the truth of the matter from the information we possess.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Yet still hardly reason enough for you to return to Ægir. I don't believe I'm the first to try to dissuade you, either. Didn't your colleague already do so?
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="Gladiia"]Do you mean... Ulpianus?
+[name="Gladiia"]He would understand that the land holds no answers for us. We must return to the sea.
+[name="Gladiia"]If his strategy is to maintain a distance from Ægir, then all the more reason for us to return in an official capacity.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#3$1",focus="r")]
+[name="Specter"]...Ever since I awoke from my dream, the waves would tell me, time and again, that the lost should return home.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="Specter"]The Abyssal Hunters <i>must</i> return.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Very well, I understand.
+[name="Kal'tsit"]Then I'll go with you, Gladiia.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]That would indeed be a rare opportunity for you.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]I will be representing more than myself on this visit. More than Rhodes Island, even.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="Gladiia"]Iberia as well? Even with all that you already bear, they would give you another burden?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]It was also my decision.
+[name="Kal'tsit"]Rhodes Island's cooperation with the Iberian Inquisition has only just begun. Much like our own.
+[charslot(slot="m",name="avg_474_gladiia_1#1",focus="n")]
+Kal'tsit stares at Gladiia. The Hunter's face remains devoid of expression, even the blowing sea wind failed to crease it.
+After a short moment of silence, Gladiia nods her head.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]How many days has it been since we were contacted by Ægir, Irene?
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="Irene"]Eight, Su Santidad.
+[name="Irene"]And outside of the necessary deployments, meetings, and to rest, you've spent those eight days here, watching the sea.
+[name="Irene"]They haven't given us a concrete time frame for their next contact. I understand you don't wish to miss their next move, but...
+[charslot(slot = "left", name = "avg_npc_447_1#7$1",focus="l")]
+[name="Saint Carmen"]Look at the sea before you, Irene.
+[charslot]
+The colors of the deep sea bubble up, nearly indistinguishable from one another. Against the vastness of the ocean surface, the sky seems gloomy.
+The water crash against the reef, whipping up waves several meters tall, their roars dashing against this small corner of the land.
+[StopSound(channel="sea", fadetime=3)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="l")]
+[name="Saint Carmen"]By Iberian standards, an ocean without a hint of Sea Terror flesh is a gentle one, no matter how noisy it may be.
+[name="Saint Carmen"]An old friend of mine was once the most talented bard of the port.
+[charslot(slot = "left", name = "avg_npc_447_1#2$1",focus="l")]
+[name="Saint Carmen"]But after that grand port sank into Silence, he fled north, past the starving masses to the Iberian interior, to the small town that would one day become the capital.
+[charslot(slot = "left", name = "avg_npc_447_1#5$1",focus="l")]
+[name="Saint Carmen"]I saw him kneeling by the broken town gates, weeping uncontrollably. From his weeping, the town obtained its new name: Perdonidora. 'Forgiveness has left us.'
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]However, what people needed at the time was not mourning, but consolation. Many prefer to use the shortened form, Perdoni. 'Forgiveness.'
+[name="Saint Carmen"]And now, the last Eye of Iberia, the final legacy of the Golden Age, shines bright once more. What do you think that signals, Irene?
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="Irene"]Hope and determination.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]'Hope and determination.' Of course.
+[charslot(slot = "left", name = "avg_npc_447_1#8$1",focus="l")]
+[name="Saint Carmen"]Ah, youth. The determination in your eyes is brighter than Dario's when he was your age. Good, good.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]But those words, as inspiring as they are, are often not the fully correct answer.
+[name="Saint Carmen"]After half a century of being pushed back, our front is finally advancing. Soon, this will become the new center of the Inquisition.
+[name="Saint Carmen"]But at the same time, we must necessarily bare everything to the ocean. To Seaborn and Ægir alike.
+[name="Saint Carmen"]Iberia is stretched thin. This country can no longer hide its exhaustion and sickness. It is a simple fact, plain for all to see.
+[charslot(slot = "left", name = "avg_npc_447_1#6$1",focus="l")]
+[name="Saint Carmen"]And there is another fact to consider. We can retreat no further.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1380_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Jordi"]Maestro—Ah, it's been a while, Doña Irene.
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="Irene"]Indeed it has.
+[name="Irene"]Those clothes suit you.
+[charslot(slot="m",name="avg_npc_1380_1#11$1")]
+[multiline(name="Jordi")]Th-Thank you.
+[charslot(slot="m",name="avg_npc_1380_1#2$1")]
+[multiline(name="Jordi")]Ah, right, there's been an emergency. The lighthouse just picked up signals of unknown origin.
+[name="Jordi"]They seem to be coming from not the sea, but the sky.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="Irene"]Jordi. I think we can already seen them...
+[charslot(duration=1)]
+Carmen and Irene are fixated on the distant sky. The young clerk follows suit.
+He freezes on the spot.
+[Stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image(image="51_i01_1",screenadapt="coverall",xScale=1.1,yScale=1.1,y=30)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,yTo=0,duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$faceoff_loop", volume=0.6)]
+[Delay(time=1)]
+[playsound(key="$d_avg_bionicuavs", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+They see a school of fins soaring through the sky.
+[name="Jordi"]What are they?
+[name="Saint Carmen"]Bionic drones. The Islanders brought similar creations to land, all those years ago.
+[StopSound(channel="bgs", fadetime=2)]
+The matrix of drones crosses the sea in the blink of an eye, matching the height of the towering lighthouse. One separates itself from the formation and slowly hovers before the three.
+Its wings open and close like fins, like a speck of light dancing in the void, and soon after an amiable and charismatic female voice resounds from it.
+[PlaySound(key="$d_avg_bionicuavs_tech")]
+[Dialog]
+[image(image="51_i01_2",screenadapt="coverall",fadetime=2)]
+[Delay(time=3)]
+[name="???"](Iberian) People of Iberia. Do not be alarmed.
+[name="???"]Ægir greets you.
+[name="???"]I am Clementia, a technology consul of our Institute of Societal and Administrative Supervision.
+Carmen holds his lantern aloft, looking serenely at the drone before him.
+Two completely different forms of light face each other, as though in a dialogue between two different civilizations—or a confrontation.
+[name="Saint Carmen"]Saint Carmen I Iberia, of the Iberian Inquisition.
+[name="Saint Carmen"]I believe this is the first official communication between our nations.
+[name="Clementia"]Indeed.
+[name="Saint Carmen"]You speak our tongue as well as any Iberian.
+[name="Clementia"]I installed an Iberian language module before leaving the home territories. I hope you'll forgive me if I ever use the wrong expression.
+[name="Clementia"]Moreover, forgive me for having to contact you in this form, Sir... Iberia.
+[name="Saint Carmen"]We have no objections to your appearance, Madame Consul. I only regret that it has taken us so long to begin this conversation.
+[name="Saint Carmen"]Despite your so-called 'Waterway' project being more than half-complete and close at hand, we Iberians find ourselves in complete ignorance of it.
+[name="Clementia"]To make amends, we'd like to invite your envoys to visit our city. Ægir respects the efforts Iberia has made when you were caught up in the Seaborn crisis.
+[name="Saint Carmen"]'Caught up in.' Do you mean to say that everything Iberia has faced was merely the aftermath of <i>your</i> crisis?
+[name="Clementia"]I do.
+[name="Clementia"]Let's not be tied down by formalities, Sir.
+[name="Clementia"]We recognize the power of language. Your name itself, Carmen I Iberia, is a symbol. A symbol of courage and valor.
+[name="Clementia"]This is why we came to you. We hope that by reaching an accord with Iberia and the other terrestrial nations, we will be able to create a Waterway that links directly to land.
+[name="Clementia"]We will clear the stretch of sea between Ægir's home territories and the land, so as to facilitate our forces coming ashore.
+[name="Saint Carmen"]...I hope I need not remind you what sending an army to another nation's border implies on land.
+[name="Clementia"]Given the enormity of the oncoming threat, we will exhaust every means at our disposal to resist it.
+[name="Clementia"]I am more than willing to come explain to you in person if necessary, but it would be easier for you to understand the situation if you were to join us in the depths.
+[name="Clementia"]The fleets of our Legions VIII and X are patrolling and suppressing the Seaborn in these waters. They will soon escort you to our city of Milliarium.
+[name="Clementia"]This drone formation will continue to notify you of any nearby combat or environmental changes until you have safely arrived at the city.
+[name="Clementia"]There may be an unprecedented disaster brewing beneath the waves.
+[name="Clementia"]Sir Inquisitor, I worry that though the earth is vast, it is but an isolated island.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+The lights of the drone matrix cut out, putting a stop to their sudden communication.
+The sea breeze continues to blow as the old man slowly lowers his lantern.
+[Dialog]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4009_irene_1#7$1",duration=0.5)]
+[delay(time=1)]
+[name="Irene"]'A Waterway that links directly to land.' She's eloquent, but...
+[charslot(slot="m",name="avg_npc_447_1#1$1")]
+[name="Saint Carmen"]Arrogant. No doubt.
+[name="Saint Carmen"]A haughty adult wielding a weapon, loathe to use finesse when dealing with an unarmed child.
+[name="Saint Carmen"]Irene, inform our cooperation partners of this most recent communication.
+[name="Saint Carmen"]Kal'tsit has already agreed to serve as Iberia's envoy. The Abyssal Hunters should also have made their decision by now, considering they've always had reservations about the Waterway program.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="Irene"]Right away!
+[name="Irene"]I'll also keep the other Inquisitors in Gran Faro abreast of the situation.
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="Jordi"]I've made a recording of your entire conversation with Ægir, Maestro. Please, take a look.
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="Jordi"]A-As for whether you approve of me going...
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]I recall you submitted your application a week ago.
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="Jordi"]Yes. Since the Ægir fleet is on their way now, I was wondering if...
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]Never hesitate when you've already made up your mind. It only makes you less persuasive.
+[charslot(slot = "right", name = "avg_npc_1380_1#10$1",focus="r")]
+[name="Jordi"]When I was younger, Uncle Thiago was always worrying about me. He'd tell me: 'Jordi, you should leave Gran Faro. Leave Iberia.'
+[charslot(slot = "right", name = "avg_npc_1380_1#3$1",focus="r")]
+[name="Jordi"]But he never told me <i>where</i> to go.
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="Jordi"]Ægir was always my homeland under the sea, but I had no way of approaching it. I'd never heard the voice of Ægir, or seen its cities.
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="Jordi"]But now, it's so, so close.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]The Inquisition has approved your application, Jordi Fontanarossa. You will serve as an envoy of Iberia, and accompany Irene and Kal'tsit to the Ægir city.
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="Jordi"]Thank you, Maestro.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="Saint Carmen"]Don't thank me. This isn't a reward. Your work since joining the Inquisition has not been particularly good.
+[name="Saint Carmen"]I chose Irene because she has already readied herself, even going as far as to renounce her long-standing faith.
+[name="Saint Carmen"]And I chose you because you are still bewildered and frustrated. Your weakness will consume you.
+[name="Saint Carmen"]Joining the Inquisition was a test. Returning to your homeland is another.
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="Jordi"]I... I understand.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_463_1#1$1",duration=1.5)]
+[delay(time=2)]
+[playsound(key="$d_avg_horse")]
+[name="Rocinante"](Agitated whinny)
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="Ulpianus"]—
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]This is the deepest part of the trench.
+[name="Ulpianus"]They hollowed out its sides to make their nest. That's why we never noticed it before, despite circling this place several times.
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[playsound(key="$d_avg_horse")]
+[name="Rocinante"](Wary whinny)
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]Yes. I smell it too.
+[name="Ulpianus"]This scent... After destroying the ocean's native ecosystem, the Seaborn have created a new one that serves only them.
+[name="Ulpianus"]A comprehensive Seaborn ecosystem, where once it only existed in an oceanic abyss.
+[name="Ulpianus"]Return, Rocinante. I will carry on alone.
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[name="Rocinante"](Swaying its neck in annoyance)
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]The entire continental shelf has changed. I must know who churned these waves.
+[name="Ulpianus"]Tell the Knight to continue the hunt.
+[name="Ulpianus"]We will not be parted for long.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[playsound(key="$d_avg_swimdeepsea")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i03",screenadapt="coverall",xScale=1.1,yScale=1.1,x=-20)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,xTo=0,duration=45, block=false)]
+[playsound(key="$d_avg_underwateramb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=20, block=false)]
+[Delay(time=3)]
+[playMusic(intro="$chenandwei_intro",key="$chenandwei_loop", volume=0.6)]
+Ulpianus swims into the nest.
+He chooses not to use stealth. Luminescent vegetative Seaborn light up every corner of the nest. There is nowhere to hide in the first place.
+Atop sets of spiraling blades, minute and curiously-shaped organisms sleep, or perhaps drift along.
+The rocks of the seafloor cannot be seen. The fine tendrils of the nethersea brand slowly sway in the current, catching fragments of organic matter. They weave together into thick mats, drowning out any sound Ulpianius makes.
+He can sense the changes in his own body. His consciousness extends and his body relaxes, as though every cell in his body is trying to respond to something.
+He is clearly an invader, but the entire lair blooms in response to him.
+[name="Seaborn"]Ul... Ul-pian... Guh... Ul-pianus. Kin.
+Ulpianus is nearly able to see through the approaching Seaborn's translucent body. He waits for it to spit out its clumsy words about preying or being preyed on by him, but nothing comes.
+The Seaborn thinks about his thoughts.
+[name="Seaborn"]Finally. You have traveled far.
+[name="Seaborn"]Here. Sufficient nutrients. Shed your cumbersome flesh.
+[name="Seaborn"]Return. Grow. Migrate.
+[name="Ulpianus"]Hmph.
+[name="Seaborn"]For you, I was born, Ul-pianus. Only for you.
+[name="Seaborn"]I untangle your. Doubt. I guide you. Return to the embrace of we many.
+[name="Ulpianus"]Why did you migrate? Where will you go?
+[name="Seaborn"]You still waver, Ul-pianus.
+[name="Seaborn"]You must know we many, kin. You must know.
+[name="Seaborn"]The genesezoic will soon awaken. The genesezoic must return. A new Cycle. Develop the ocean. Leave the ocean.
+[name="Ulpianus"]The genesezoic will awaken? Leave the ocean?
+[name="Seaborn"]We many. See. A new path ahead. We hurry—
+[name="Ulpianus"]...What connection is there between you and the affairs of the city?
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

@@ -1,0 +1,490 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="27_g18_lighthouse_square",screenadapt="coverall")]
+[playsound(key="$d_avg_sea", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=3)]
+[Delay(time=3)]
+[Subtitle(text="헌터가 해안가에 올랐네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="고향은 뒤에 두고 앞길만 바라보네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="부모와 자식 모두와 헤어졌고♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="연인은 이미 바다에 잠겼네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Subtitle(text="헌터가 해안가에 올랐네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="고향을 뒤로 두고 남은 건 슬픔뿐♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="그의 길은 끝이 없고♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="그의 길은 안개로 가득하네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=3, block=true)]
+[Subtitle(text="헌터가 해안가로 돌아왔네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="여정은 끝났고 고향이 눈앞에 있네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="옛 파도 소리가 속삭이네♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="하지만 그는 왜 망설일까♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="왜 또 불안해하나♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Delay(time=3)]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="오랜만이야, 스카디.;안녕, 스카디.", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=1)]
+[charslot(slot="m",name="char_263_skadi#3",duration=1.5)]
+[delay(time=2)]
+[name="스카디"]오랜만이야, 박사.
+[name="스카디"]약속대로라면, 낯 두껍고 말 많은 리베리가 박사를 맞이했을 텐데. 별로 놀라지 않은 것 같네
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="너와 엘리시움 모두 로도스 아일랜드의 오퍼레이터니까.;여긴 네 고향과 더 가깝기도 하고.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]음, 하긴.
+[name="스카디"]켈시가 예상한 것보다 한 시간 정도 늦었네.
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="스카디"]성도가 발급한 공문이 있어도 재판소의 심사 절차는 여전히 빠짐없이 진행되는 모양이야.
+[name="스카디"]겨우 세 달도 안 돼서 쓸만한 노동자를 제외하고는, 이곳 주민들 모두 대륙 도시로 이주했어. 그 자리를 몇 개 부대의 징벌군이 대신했지.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="뭔가를 바쁘게 준비하는 것 같네.;매우 긴장한 것처럼 보였어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#9")]
+[name="스카디"]일주일 전 이베리아가 에기르에서 온 연락을 받은 뒤로, 이 잊혀버린 작은 마을의 평온은 깨졌어.
+[name="스카디"]도처에 있는 해양 잔해가 그 젊은 전사들의 신경을 자극하고 있어. 에기르의 목소리는 불안을 더 키울 뿐이지.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="에기르의 움직임은 확실히 주목하고 경계할 만해.;먼바다의 나라가 갑자기 목소리를 내니, 아무도 무시할 수 없겠지.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="스카디"]조각상 좌측에 있는 길을 따라 빠르게 걸으면, 10분 안에 바다를 볼 수 있어.
+[name="스카디"]우린 곧장 이베리아의 눈으로 갈 거야.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_sea", volume=0.7, loop=true, channel="sea")]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="스카디"]저, 박사. 파도 소리 들려?
+[charslot(slot = "m", focus = "n")]
+스카디가 고개를 살짝 돌려 바닷바람이 불어오는 방향을 바라보았다. 스카디의 긴 머리카락은 바람에 흩날렸고, 눈 속의 어둠과 같은 색을 띠고 있었다.
+[charslot(slot="m",name="char_263_skadi#4")]
+[name="스카디"]파도의 층이 매우 복잡해졌어. 별하늘이 흐르는 소리, 끝없이 이어지는 자연의 노래, 그리고 이해할 수 없는 언어들을 들었어……
+[StopSound(channel="sea", fadetime=3)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Sticker(id="st1", text="이샤-믈라.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="여기에 있다.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="우리가 겪는 고통은 영원하리.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="우리가 갈망하는 삶은 영원하리.", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="char_263_skadi#7")]
+[name="스카디"]……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="스카디, 괜찮아?;고향과 다시 연락이 닿아서 오히려 마음이 불안해진 거야?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="스카디"]고향이 가까워져 불안한 걸까…… 몰라, 이런 감정은 정리하기 어려워.
+[name="스카디"]그냥 잠을 설쳐서 그런 걸 수도 있어. 지난번에 바다에 갔을 때, 상어가 꿈을 나한테 옮긴 것 같아.
+[name="스카디"]그런데, 켈시는 왜 이렇게 급하게 널 부른 걸까?
+[name="스카디"]당신은 바다와 접촉한 적이 없었던 걸로 아는데, 박사
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="꼭 그렇지만은 않아. 다만 기억이 안 나.;그래도 이상하게 낯설지는 않네.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="스카디"]참 애매한 대답이네.
+[name="스카디"]그렇지. 박사의 상황을 잊고 있었어. 정상적인 대답이었네.
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="스카디"]됐어. 켈시가 박사를 불렀다면 이유가 있겠지.
+[name="스카디"]가자, 곧 어두워질 거야.
+[Dialog]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="27_g24_cloudy_sea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_jump_water", volume=1)]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=0.5)]
+[Effect(name="$e_shuihua",layer = 1,y=-350)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=10, vibrato=15, randomness=70, fadeout=true, block=false)]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="글래디아"]물기를 좀 털어낼 테니, 가까이 오지 마세요.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="스펙터"]어머, 켈시 선생님. 어비설 헌터스의 행적을 알아낼 수 있는 사람은 드물죠. 우리가 여기서 상륙한다고 소드피쉬가 미리 알려줬나요?
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]엘리시움이 이 해역에 정보 수집 장치를 설치했어. 지금은 조정이 완료돼서 이베리아의 눈 중앙 통제 시스템과 직접 연결되어 있지.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="스펙터"]이렇게 짧은 시간에 수중 환경용 위치 추적 시스템을 설치하다니. 그 리베리는 정말 능력이 뛰어난 것 같군요.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="글래디아"]로도스 아일랜드와 재판소가 협력을 강화했다고 이해해야 할까요?
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]일주일 전, 수중 도시가 특수 주파수를 통해 이베리아에 알려왔어. 에기르가 에기르 본토와 대륙을 연결하는 '항로'를 개설할 거란 내용이었지.
+[name="켈시"]하지만 이 거대한 계획을 앞두고, 이베리아는 등대의 위치 추적 시스템을 제외하면 정보를 얻을 수 있는 루트가 거의 없었지.
+[name="켈시"]보아하니, 총전쟁설계사인 너도 이에 대해 전혀 모르고 있었겠지.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="글래디아"]상어, 우리가 발견한 것을 켈시에게 알려주세요.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="스펙터"]대장님과 스툴티페라 나비스가 침몰한 곳으로 잠수한 건 이번이 세 번째. 지난번 잠수로부터 열흘 만이죠.
+[name="스펙터"]첫 번째 잠수 때는, 폭발 후 남은 선체가 해저에 박혀 있는 걸 볼 수 있었어요. 해수면에서 들어오는 희미한 빛에 비친 선실 내부의 황금빛은 마치 번지는 물감 같았어요.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="r")]
+[name="스펙터"]그런데 이번엔 거대한 금속 선체 구조물이 완전히 사라졌어요. 대신 생기 넘치는 산호 군락이 자리 잡고 있었죠.
+[name="스펙터"]……꿈을 꾸는 건 익숙했지만, 역시 비현실적으로 느껴졌어요.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="글래디아"]문명과 역사를 애도하는 비석이 세워져 있던 시간은 지극히 짧았습니다.
+[name="글래디아"]이제 '스툴티페라 나비스'는 완전히 바다의 일부가 됐습니다.
+[name="글래디아"]정확히는, 시본 소굴의 일부가 됐죠.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="켈시"]시본이 환경을 동화시키는 속도가 빨라졌군.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="글래디아"]상당히 빨라졌죠.
+[name="글래디아"]하지만 더 주목해야 할 것이 있어요. 우린 전쟁의 흔적을 발견했습니다. 심지어 얼마 전의 것이죠.
+[name="글래디아"]완전한 공백, 해설조차 보이지 않는 해역. 뒤틀리고 부서져 미세한 특이점에 의해 찢긴 것이 분명한 해저……
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이런 짓을 할 수 있는 건 아마 에기르 정규군 함대뿐이겠지.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="글래디아"]켈시, 대륙에서 주로 활동하는 사람이면서도, 에기르에 대해 관심과 이해가 매우 뛰어나시네요.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]광활한 바다 건너에 있지만, 에기르도 여전히 테라의 일부니까.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#12$1",focus="r")]
+[name="스펙터"]저와 글래디아는 그 도시에 가기로 이미 결정했어요.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]명백히 모험적인 결정이군.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="스펙터"]약간 위험하긴 하죠.
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="글래디아"]상당히 위험하죠.
+[name="글래디아"]그래서 어비설 헌터스는 오랫동안 관찰해 왔습니다.
+[name="글래디아"]그 작전 이전에, 전 어비설 헌터스 총전쟁설계사로서 과학원과 기술원의 군사 회의에 참석했었습니다.
+[name="글래디아"]당시 두 원에서 만든 전쟁 계획에 대륙에 가까운 군사 요새나 '항로'와 관련된 계획은 없었어요.
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[name="글래디아"]틀림없이 에기르에 중대한 이변이 있었겠죠.
+[name="글래디아"]이샤믈라를 처치한 후, 우린 본토와의 연락이 완전히 끊겼습니다. 알려진 정보만으로 진실의 퍼즐을 맞추기는 어려워요.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]그걸로는 너희가 에기르로 돌아갈 충분한 이유가 성립되지 않아. 너희들을 먼저 만류한 사람은 내가 아니라 너희의 옛 동료니까.
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="글래디아"]그건…… 울피아누스를 말씀하시는 건가요?
+[name="글래디아"]울피아누스도 분명 알 겁니다. 대륙에는 답이 없다는 걸요. 우린 반드시 바다로 돌아가야 합니다.
+[name="글래디아"]만약 울피아누스의 전략이 의도적으로 에기르와 거리를 두는 거라면, 우린 더욱 공식적인 형태로 에기르로 돌아가야 해요.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#3$1",focus="r")]
+[name="스펙터"]…… 제가 꿈에서 깨어난 이후로, 파도는 끊임없이 속삭이고 있어요. 길 잃은 자들은 집으로 돌아가야 한다고요.
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="스펙터"]어비설 헌터스는 반드시 고향으로 돌아가야 해요.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이해할 수 있어.
+[name="켈시"]글래디아, 나도 너희와 함께 가지.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="글래디아"]당신에게 이건 정말 흔치 않은 기회인 건 확실해요.
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이번 동행은 그저 나 자신을 대표하는 것도, 로도스 아일랜드만을 대표하는 것도 아니야.
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="글래디아"]이베리아인가요? 이미 감당하기 힘든 당신의 어깨에 자신들의 짐을 하나 더 지게 했나 보군요?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이것 역시 내 선택이야.
+[name="켈시"]로도스 아일랜드와 이베리아 재판소의 협력은 이제 막 첫 발을 내디뎠어. 우리 사이의 협력도 겨우 시작에 불과하지.
+[charslot(slot="m",name="avg_474_gladiia_1#1",focus="n")]
+켈시는 글래디아를 응시했다. 바닷바람에도 상대방의 무표정한 얼굴은 찌푸려지지 않았다.
+잠깐의 침묵이 지나고, 글래디아가 고개를 끄덕였다.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]아이린, 우리가 에기르한테서 연락받은 지 며칠이나 지났지?
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="아이린"]8일째입니다, 성도님.
+[name="아이린"]8일 동안 필요한 배치와, 회의, 휴식 시간을 제외하고는 계속 여기 서서 바다를 관찰하고 계셨습니다.
+[name="아이린"]에기르 측에서는 정확한 접촉 시간을 알려주지 않았습니다. 상대방의 움직임을 놓칠까 봐 걱정하시는 건 이해하지만……
+[charslot(slot = "left", name = "avg_npc_447_1#7$1",focus="l")]
+[name="성도 카르멘"]아이린, 눈앞의 바다를 보게.
+[charslot]
+색을 구분하기 힘든 깊고 어두운 바다가 출렁이고 있었다. 바다가 너무 광활해서일까, 하늘이 낮게 보였다.
+바닷물이 암초에 부딪히며 큰 파도를 일으키고, 좁은 공간에서 우렁찬 소리가 울려 퍼졌다.
+[StopSound(channel="sea", fadetime=3)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="l")]
+[name="성도 카르멘"]이베리아에겐, 바다에 시테러의 살과 피가 넘실대지 않는다면 아무리 시끄러워도 자비롭다고 여기겠지.
+[name="성도 카르멘"]내 옛 친구 중 한 명은 항구도시에서 가장 재능 있는 시인이었다네.
+[charslot(slot = "left", name = "avg_npc_447_1#2$1",focus="l")]
+[name="성도 카르멘"]웅장한 항구도시가 고요 속에 잠기고 그 친구는 북쪽으로 도망쳤지. 굶주려 죽은 시체들이 깔린 땅을 밟으며 내륙 깊숙한 곳으로 향했다네. 그곳은 훗날 수도가 될 작은 도시였지.
+[charslot(slot = "left", name = "avg_npc_447_1#5$1",focus="l")]
+[name="성도 카르멘"]그 친구가 허물어진 성문 앞에서 무릎을 꿇고 하염없이 울부짖는 걸 봤다네. 도시는 그 울음소리로 인해 새 이름을 얻었지. 페르도니도라. “용서는 없다”라는 뜻이지.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]하지만 그때 사람들에겐 애도가 아닌 위로가 필요했다네. 많은 이들이 그 이름을 줄여서 페르도니…… '용서'라고 부르는 것에 더 익숙해졌지.
+[name="성도 카르멘"]이제 황금시대의 유산인 마지막 이베리아의 눈이 다시 밝혀졌네. 아이린, 이게 무엇을 의미하는 것 같은가?
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="아이린"]희망과 결의입니다.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]“희망과 결의”라. 물론이지.
+[charslot(slot = "left", name = "avg_npc_447_1#8$1",focus="l")]
+[name="성도 카르멘"]젊은이여, 그대가 대답할 때의 눈빛은 다리오가 젊었을 때보다 더 굳건해 보이는군. 아주 좋아.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]하지만 이런 격려의 말은, 가장 정확한 답변이 되지 못하는 경우가 많지.
+[name="성도 카르멘"]반세기가 지나고 우리가 계속 후퇴시켰던 방어선을 드디어 다시 이 지점까지 전진시켰네. 이곳은 곧 재판소의 새로운 중심이 될 것일세.
+[name="성도 카르멘"]하지만 그러면서 우리는 모든 것을 바다에 드러냈지. 시본, 그리고 에기르의…… 앞에 말일세.
+[name="성도 카르멘"]이베리아는 이미 궁지에 몰렸다네. 이 나라에 오랫동안 쌓인 피로와 병약함을 더 이상 숨길 수 없는 건 부정할 수 없는 사실이지.
+[charslot(slot = "left", name = "avg_npc_447_1#6$1",focus="l")]
+[name="성도 카르멘"]그리고 또 다른 사실은, 우리가 더 이상 물러설 수 없다는 것이네.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1380_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="조르디"]선생…… 아니, 아이린 님. 오랜만입니다.
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="아이린"]오랜만이야.
+[name="아이린"]그 복장이 아주 잘 어울리는걸.
+[charslot(slot="m",name="avg_npc_1380_1#11$1")]
+[multiline(name="조르디")]감, 감사합니다.
+[charslot(slot="m",name="avg_npc_1380_1#2$1")]
+[multiline(name="조르디")]아, 맞다. 긴급 상황입니다…… 등대에서 방금 출처를 알 수 없는 신호들을 포착했어요.
+[name="조르디"]신호의 출처는 해저가 아니라 하늘인 것 같습니다.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="아이린"]조르디, 그건 육안으로도 보이는 것 같은데……
+[charslot(duration=1)]
+카르멘과 아이린이 먼 하늘을 뚫어지게 바라봤고, 젊은 서기도 두 사람의 시선을 따라갔다.
+그는 그 자리에서 얼어붙었다.
+[Stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image(image="51_i01_1",screenadapt="coverall",xScale=1.1,yScale=1.1,y=30)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,yTo=0,duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$faceoff_loop", volume=0.6)]
+[Delay(time=1)]
+[playsound(key="$d_avg_bionicuavs", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+그들은 하늘을 나는 린수 떼를 보았다.
+[name="조르디"]저건?
+[name="성도 카르멘"]생체 드론이네. 일찍이 섬 주민이 육지로 가져온 물건 중에도 비슷한 물건이 있었지.
+[StopSound(channel="bgs", fadetime=2)]
+드론 대열이 순식간에 바다를 건너 우뚝 솟은 등대와 마주했다. 그리고 그중 하나가 편대를 이탈해 천천히 세 사람 앞에서 정지했다.
+날개가 지느러미처럼 움직였고, 빛의 입자들이 허공에서 춤을 추듯 움직였다. 곧이어 친근하면서도 매력적인 여성의 목소리가 들려왔다.
+[PlaySound(key="$d_avg_bionicuavs_tech")]
+[Dialog]
+[image(image="51_i01_2",screenadapt="coverall",fadetime=2)]
+[Delay(time=3)]
+[name="???"](이베리아어) 이베리아 여러분, 긴장하지 마세요.
+[name="???"]이것은 에기르에서 전하는 인사입니다.
+[name="???"]저는 본국 사회행정감찰소의 기술 집정관 중 한 명인 클레멘티아입니다.
+카르멘이 등불을 들어 침착하게 눈앞의 드론을 바라봤다.
+완전히 다른 두 개의 빛은, 마치 완벽히 다른 두 문명의 대화 혹은 대치를 연상시켰다.
+[name="성도 카르멘"]난 이베리아 재판소의 성도, 카르멘 이 이베리아라고 하오.
+[name="성도 카르멘"]아무래도, 이게 두 나라 간의 첫 공식 교류라고 생각해야겠지.
+[name="클레멘티아"]네, 맞습니다.
+[name="성도 카르멘"]이베리아어가 꽤나 능숙하군.
+[name="클레멘티아"]본토를 떠나기 전에 이베리아 언어 모듈을 입력했어요. 제 표현에 부적절한 점이 있다면 이해해 주시기를 바랍니다.
+[name="클레멘티아"]그리고, 지금은 이런 방식으로 당신과 소통할 수밖에 없는 것을 양해 부탁드립니다. 이베리아…… 님.
+[name="성도 카르멘"]이런 소통 방식에 이견은 없지만, 이렇게 늦게 교류가 이루어진 것이 유감스럽군. 집정관님.
+[name="성도 카르멘"]그쪽에서 '항로'라고 일컬어지는 계획이 이미 후반부에 접어든 걸로 알고 있네. 하지만 바로 옆의 이베리아에선, 그 세부 사항에 대해 전혀 모르고 있지.
+[name="클레멘티아"]그래서 우리는 이베리아의 사절단을 우리 도시로 맞이할 것입니다. 시본으로 인한 위기의 여파가 커지는 상황에서, 에기르는 이베리아가 보여준 노력을 존중합니다.
+[name="성도 카르멘"]여파라…… 이베리아가 직면한 건 단지 위기의 여파일 뿐인가?
+[name="클레멘티아"]맞습니다.
+[name="클레멘티아"]외교적 수사에 신경 쓰실 필요는 없습니다, 성도님.
+[name="클레멘티아"]우리는 모두 언어의 힘을 인정합니다. 당신의 이름, 카르멘 이 이베리아 자체가 이미 하나의 상징입니다. 용기와 기개의 상징이죠.
+[name="클레멘티아"]그래서 에기르가 이곳에 온 것입니다. 우리는 이베리아와 대륙의 여러 나라와 협력하여, 육지와 직접 이어지는 항로를 개척하고자 희망합니다.
+[name="클레멘티아"]에기르의 주력 부대가 해안에 도착할 수 있도록, 에기르 본토에서 대륙까지의 넓은 해역을 정리할 예정입니다.
+[name="성도 카르멘"]……대규모 군대를 다른 국가의 국경에 파견하는 행위가, 대륙에서 어떤 의미를 가지는지 제가 굳이 언급할 필요는 없을 것 같습니다만.
+[name="클레멘티아"]곧 닥쳐올 거대한 위협에 맞서기 위해 우린 할 수 있는 모든 것을 다하겠다는 의미입니다.
+[name="클레멘티아"]필요하다면, 제가 대륙으로 가 성도님을 직접 만나 뵙고 모든 것을 상세히 설명해 드리겠습니다. 하지만, 심해로 오신다면 여러분들께선 현재 상황을 더 잘 이해하실 수 있을 겁니다.
+[name="클레멘티아"]제8군단과 제10군단의 함대가 지금 차례대로 시본을 소탕하고 있습니다. 이후, 그들이 여러분을 우리 도시 '밀리아리움'으로 안내할 것입니다.
+[name="클레멘티아"]여러분이 무사히 도착할 때까지, 드론 편대가 지속적으로 여러분께 전투 진행 상황과 환경 변화를 동기화할 겁니다.
+[name="클레멘티아"]바다에선 어쩌면 유래 없는 재앙이 잉태되고 있을지도 모릅니다.
+[name="클레멘티아"]그리고 재판관님. 저는 대지가 아무리 광활해도 결국 또 다른 고립된 섬에 불과할까 우려스럽습니다.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+드론 대열의 불이 꺼졌고, 이 갑작스러운 통신은 종료되었다.
+바닷바람은 여전히 불어왔고, 노인은 천천히 손에 든 등불을 내려놓았다.
+[Dialog]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4009_irene_1#7$1",duration=0.5)]
+[delay(time=1)]
+[name="아이린"]육지와 직접 이어지는 항로…… 집정관의 표현은 아주 적절하나……
+[charslot(slot="m",name="avg_npc_447_1#1$1")]
+[name="성도 카르멘"]에기르는 확실히 오만하군.
+[name="성도 카르멘"]무기를 든 오만한 어른은 맨손의 아이에게 술수나 기교를 부릴 가치가 없다고 생각하지.
+[name="성도 카르멘"]아이린, 방금 통신 내용을 우리의 파트너들에게 공유해 주도록 하게.
+[name="성도 카르멘"]켈시는 이미 이베리아의 사절로 에기르를 방문하는 것에 동의했고, 항로 계획에 계속 의구심을 품고 있던 어비설 헌터스도 이제 결정을 내렸을 것일세.
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="아이린"]네!
+[name="아이린"]저도 최대한 빨리 그란파로의 다른 재판관과 업무 인수인계를 마치겠습니다.
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="조르디"]선생님, 방금 에기르와의 통신 내용을 모두 기록했습니다. 확인 부탁드립니다.
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="조르디"]저, 저도 갈수 있도록 허락을 해주실 수 있을까요……
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]서기, 그대는 일주일 전에 신청서를 제출했잖나.
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="조르디"]네. 이제 에기르 함대가 곧 올 텐데, 혹시나……
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]이미 결정했다면, 망설이는 태도는 오히려 자네 입장의 설득력을 떨어뜨릴 뿐이네.
+[charslot(slot = "right", name = "avg_npc_1380_1#10$1",focus="r")]
+[name="조르디"]어렸을 때부터 티아고 아저씨는 늘 걱정이 많았어요. “조르디, 넌 그란파로를 떠나야 해. 이베리아를 떠나야 해.”라고 했죠.
+[charslot(slot = "right", name = "avg_npc_1380_1#3$1",focus="r")]
+[name="조르디"]하지만 아저씨는 제가 어디로 가야 할지 말해 주지 않았어요.
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="조르디"]에기르, 그곳이 제 고향이에요. 제 고향은 바닷속에 있지만 바다에 접근할 수 없었죠. 저는 에기르의 소리를 듣지도, 그 모습도 본 적도 없어요.
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="조르디"]하지만 지금, 에기르가 가까이 있어요.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]조르디 폰타나로사, 재판소는 그대의 신청을 승인했네. 그대는 이베리아의 사절로서 아이린, 켈시와 함께 에기르의 도시로 가게 될 걸세.
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="조르디"]감사합니다.
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="성도 카르멘"]아니, 이건 포상이 아닐세. 그대는 재판소의 업무를 잘 처리했다 할 수 없으니 말이야.
+[name="성도 카르멘"]아이린을 선택한 건 그녀가 준비가 되어 있었고, 심지어 오랫동안 고수해 온 신념까지 버렸기 때문일세.
+[name="성도 카르멘"]그대를 선택한 건, 그대가 여전히 혼란스러워하고 상실감을 느끼고 있기 때문일세. 나약함은 결국 자네를 갉아먹을 테지.
+[name="성도 카르멘"]재판소로 들어온 건 첫 번째 시험이었네. 자신의 고향으로 돌아가는 것 역시 시험이 될 것일세.
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="조르디"]아, 알겠습니다, 선생님.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_463_1#1$1",duration=1.5)]
+[delay(time=2)]
+[playsound(key="$d_avg_horse")]
+[name="로시난테"](흥분한 듯한 울음소리)
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="울피아누스"]……
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="울피아누스"]여긴 이미 해구의 가장 깊은 곳이다.
+[name="울피아누스"]놈들은 해구 양쪽 절벽을 파내고 내부에 소굴을 만들었지. 그래서 우리가 여러 바퀴를 돌았지만 이곳을 발견하지 못한 거야.
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[playsound(key="$d_avg_horse")]
+[name="로시난테"](경계하는 울음소리)
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="울피아누스"]그래. 나도 냄새를 맡았다.
+[name="울피아누스"]이 냄새는…… 시본이 원래의 해양 생태계를 파괴하고 오직 자신들만을 위한 완전히 새로운 생태계를 구축했군.
+[name="울피아누스"]이토록 완벽한 시본 생태계는 원래 바다 깊은 곳에만 존재했는데.
+[name="울피아누스"]돌아가라, 로시난테. 이제부터는 나 혼자 들어갈 거다.
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[name="로시난테"](불만스러운 듯 목을 흔든다)
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="울피아누스"]대륙붕 전체가 변하고 있다. 도대체 누가 파도를 일으키고 있는지 알아야 해.
+[name="울피아누스"]기사에게 사냥을 멈추지 말라고 전해라.
+[name="울피아누스"]우린 잠시 헤어지는 것뿐이야.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[playsound(key="$d_avg_swimdeepsea")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i03",screenadapt="coverall",xScale=1.1,yScale=1.1,x=-20)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,xTo=0,duration=45, block=false)]
+[playsound(key="$d_avg_underwateramb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=20, block=false)]
+[Delay(time=3)]
+[playMusic(intro="$chenandwei_intro",key="$chenandwei_loop", volume=0.6)]
+울피아누스가 소굴로 헤엄쳐 들어갔다.
+울피아누스는 잠행을 선택하지 않았다. 빛나는 식물이 시본 소굴의 구석구석을 밝히고 있어 숨을 곳이 없었기 때문이다.
+회전하는 두꺼운 잎사귀 사이로, 기이한 모양의 미세 생물들이 깊이 잠들어 있어나 헤엄치고 있었다.
+해저에 있던 암석은 보이지 않았다. 명흔이 작은 촉수를 천천히 흔들며 유기물 파편을 포획하여 겹겹이 쌓인 균담을 형성했다. 이로 인해 울피아누스의 헤엄치는 소리가 지워냈다.
+울피아누스는 자신의 몸이 변하고 있음을 확실히 느꼈다. 의식이 확장되고, 육체가 이완되며, 체내의 모든 세포가 무언가에 반응하려 하고 있었다.
+울피아누스는 분명 이곳에 침입한 이방인이었지만, 소굴 전체가 자신을 향해 열려 있었다.
+[name="시본"]울…… 울-피안…… 음…… 울-피아누스. 동포여.
+울피아누스는 시본의 투명에 가까운 몸을 꿰뚫어 볼 수 있었다. 울피아누스는 상대가 포식하겠다거나 포식당하겠다는 헛소리를 내뱉기를 기다렸지만, 그러지는 않았다.
+시본은 그의 사고에 대해 사고하고 있었다.
+[name="시본"]마침내. 긴 길을 걸어왔구나.
+[name="시본"]여기. 영양 충분하다. 쓸모없는 살과 피는 벗어버려라.
+[name="시본"]돌아와라. 번식해라. 이주해라.
+[name="울피아누스"]흥.
+[name="시본"]난 너를 위해 태어났다, 울-피아누스. 오직 너를 위해.
+[name="시본"]풀어준다. 의혹을. 인도한다. 동족의 품으로.
+[name="울피아누스"]너희는 왜 이주하는 거지? 어디로 가려는 거지?
+[name="시본"]울-피아누스, 넌 여전히 동요한다.
+[name="시본"]동포여, 넌 위매니를 알아야 한다. 넌 위매니를 알고 싶어 한다.
+[name="시본"]시대가 곧 깨어난다. 시대는 돌아가야 한다. 새로운 순환. 바다를 만들어. 바다를 떠난다.
+[name="울피아누스"]시대가 깨어난다고? 바다를 떠난다고?
+[name="시본"]위매니. 봤다. 새로운 긴 여정을. 우리는 서둘러야……
+[name="울피아누스"]……그렇다면, 그 도시에서 진행 중인 일은, 너희와 무슨 관련이 있지?
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

@@ -1,0 +1,490 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="27_g18_lighthouse_square",screenadapt="coverall")]
+[playsound(key="$d_avg_sea", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=3)]
+[Delay(time=3)]
+[Subtitle(text="狩人が一人、陸へと上がる……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="彼は故郷を背にして遠く、行くべき道は前にのみ……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="父母と娘とはとうに逸れて……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="恋人は既に海へ葬られた……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Subtitle(text="狩人が一人、陸へと上がる……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="彼は故郷を背にして遠く、その手に残るは哀嘆のみ……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="彼の道は果てなく限りなく……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="彼の道は霧が垂れ込める……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=3, block=true)]
+[Subtitle(text="狩人が一人、岸へと帰る……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="彼の旅は終わり、故郷は目前……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="昔日の波音がささやく……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="それなのになぜ後ずさる……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="なぜ不安を感じている……♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Delay(time=3)]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="久しぶりだな、スカジ。;こんにちは、スカジ。", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=1)]
+[charslot(slot="m",name="char_263_skadi#3",duration=1.5)]
+[delay(time=2)]
+[name="スカジ"]久しぶり、ドクター。
+[name="スカジ"]驚かないのね。約束では、あのツラの皮の厚いお喋りリーベリが迎えに来るはずだったのに。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="君もエリジウム同様、ロドスのオペレーターだしな。;ここは君の故郷のほうにこそ近いからな。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="スカジ"]まあ、そうね。
+[name="スカジ"]それにしても、ケルシーの予測より着くのが遅かったわね。一時間遅れよ。
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]聖徒の発行した公文書があっても、裁判所は審査プロセスを一つも省略しなかったのね。
+[name="スカジ"]――三ヶ月と経たないこの間に、ここの住民は使える労働者を除いて全員、内陸の街に移動したわ。それと入れ違いに、懲罰軍の大部隊がいくつかやってきてる。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="彼らは、随分急いで何かの準備をしているようだ。;とても緊迫した様子に見えた。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#9")]
+[name="スカジ"]一週間前、イベリアがエーギルからの連絡を受け取って以来、この忘れ去られた小さな町は静けさを失ってしまったの。
+[name="スカジ"]至る所に海の残滓があるせいで、あの若い戦士たちは神経を尖らせている。そんな時に届いたエーギルの声が、彼らの不安に拍車をかけているのよ。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="エーギルの行動は、確かに注目と警戒に値する。;遠海の国家が急に声を発すれば、聞き流せはしまい。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]彫刻の左側の通りを行きましょう。少し速足で歩けば、10分くらいで海が見えるわ。
+[name="スカジ"]そのあとは、イベリアの眼に直行するわよ。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_sea", volume=0.7, loop=true, channel="sea")]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]ねぇ、ドクター。波の音が聞こえる？
+[charslot(slot = "m", focus = "n")]
+スカジは海風に向けてわずかに顔を向け、彼女の長い髪がなびく。その髪は、瞳の中の陰りと同じ色をしていた。
+[charslot(slot="m",name="char_263_skadi#4")]
+[name="スカジ"]波が複雑に重なり始めてるわ。それに、流れる星空の音も、決して止まない自然の歌も、理解されようのない言葉も聞こえて……
+[StopSound(channel="sea", fadetime=3)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Sticker(id="st1", text="Ishar-mla。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="私はここにいる。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="我らが苦難は永遠なり。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="我らが望みし生は永遠なり。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="char_263_skadi#7")]
+[name="スカジ"]……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="大丈夫か？　スカジ。;故郷との繋がりを取り戻して、むしろ不安にでもなったのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]長く離れた故郷との距離が近付いたからこそ、思うこともあるのよ……まあいいわ、この気持ちは一言では言い表せないしね。
+[name="スカジ"]あるいは、単によく眠れていないせいなのかも。前回海へ帰った時に、サメから彼女が見ていた夢を移されたような気がするわ。
+[name="スカジ"]ところで、ケルシーはどうして、こんなに急いでドクターを呼び出そうとしてるのかしら？
+[name="スカジ"]あなたは海と接触したことなんてなかったわよね。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="そうとも限らないが、はっきりとは覚えていない。;なんだか、まるで知らないわけでもないように思う。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="スカジ"]すごく曖昧な答えね。
+[name="スカジ"]でも確かに、あなたの事情を忘れていたわ。それを思えば、そんなにおかしな答えでもないわね。
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="スカジ"]まあ、ケルシーがわざわざ呼ぶからには、何か理由があるんでしょう。
+[name="スカジ"]行くわよ。もうじき暗くなるわ。
+[Dialog]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="27_g24_cloudy_sea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_jump_water", volume=1)]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=0.5)]
+[Effect(name="$e_shuihua",layer = 1,y=-350)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=10, vibrato=15, randomness=70, fadeout=true, block=false)]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="グレイディーア"]私が水気を落とすまで、そこでお待ちになって。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="スペクター"]あら、先生。アビサルハンターの足取りを正確に追える人なんてほとんどいないのに、どうしてここに？　カジキからこの岸に上がると連絡を受けていたのかしら？
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]エリジウムがこの海域に配備していた、情報収集装置を利用した。調整はすでに完了し、イベリアの眼の中央制御システムに接続されているのでな。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="スペクター"]この短期間に、水中の測位システムをセットアップしたの？　あのリーベリもなかなかやるわね。
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="グレイディーア"]ロドスは裁判所との協力関係を深めている、と理解してもよろしいかしら？
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]一週間前、かの水中都市が特殊な周波数を通じ、イベリアに向け告げてきた。エーギル本つ域（もとついき）と陸地を結ぶ「航路」を拓く、と。
+[name="ケルシー"]しかし、この巨大な計画を前に、イベリア側には大灯台の測位システムを除けば、情報を入手する手段がほとんどない。
+[name="ケルシー"]言うまでもなく、総戦略設計士の一人である君も、この件については何も知らないだろう。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="グレイディーア"]サメ、我々の発見をケルシーにお伝えして。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="スペクター"]私たちがスタルティフィラの沈没した場所に潜るのは、これで三回目。前回潜ってから、たったの十日しか経っていないんだけどね。
+[name="スペクター"]最初に潜った時はまだ、爆発後に残った船体が海底に突き刺さっているのが見えていたの。船体内部の金色が、海面から届くわずかな光を受けて、水で滲んだ絵の具みたいに光っていたわ。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="r")]
+[name="スペクター"]でも、今回見たのは、巨大な金属の船体構造が完全に消え去って、代わりに鮮やかなサンゴの森が現れている光景だった。
+[name="スペクター"]……夢を見るのは慣れっこだけど、あれが現実だとはとても思えないわ。
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="グレイディーア"]文明と歴史を追悼するあの記念碑が建っていたのは、本当にわずかな時間でしたわね。
+[name="グレイディーア"]「狂人号」はもはや、完全に海の一部と成り果てましたわ。
+[name="グレイディーア"]正確に言うと、シーボーンの巣の一部にね。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="ケルシー"]シーボーンの環境同化速度が加速しているということか。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="グレイディーア"]ええ、それもかなりの速さで。
+[name="グレイディーア"]けれど、それより注目に値することもありますの。私たち、戦争の痕跡を発見しましたのよ。それも、少し前に起きたばかりと思わしきものを。
+[name="グレイディーア"]海雪さえも見当たらないほどの、完全なる空白となった海域。明らかに小型の特異点に引き裂かれ、ねじ曲がったのであろう海底……
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]それほどのことを成せるのは、エーギル正規軍の艦隊以外にないだろう。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="グレイディーア"]陸を歩む者としては、あなたのエーギルに対する関心と理解は並外れたものですわね、ケルシー。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]果てしない海に隔てられていようとも、エーギルがテラの一部であることに変わりはないのでな。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#12$1",focus="r")]
+[name="スペクター"]ともあれ、私とグレイディーアはあの都市へ向かうことにするわ。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]それは紛れもなく、危険な決定だと言えるだろう。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="スペクター"]確かにちょっと危険かもね。
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="グレイディーア"]ええ、相当に危険でしょう。
+[name="グレイディーア"]だからこそ、アビサルハンターは長い間、観察を続けてきたのですもの。
+[name="グレイディーア"]例の作戦より前、私はアビサルハンターの総戦略設計士として、科学アカデミーと技術アカデミーの軍事会議に参加しておりました。
+[name="グレイディーア"]けれど、当時両アカデミーが策定した戦争対応策には、陸に近い軍事要塞など存在せず、「航路」にまつわる計画もありませんでしたのよ。
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[name="グレイディーア"]そう思うと、エーギルには重大な異変が起きたと見て間違いはないでしょうね。
+[name="グレイディーア"]とはいえ、イシャームラを殺した後、本つ域との繋がりが完全に断たれている以上、既知の情報を繋ぎ合わせて真相を追うのは困難ですわ。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]それは君たちがエーギルへと帰還する十分な理由にはなり得ない。そもそも、初めに君たちを思いとどまらせたのは私ではなく、君たちのかつての僚友だ。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="グレイディーア"]……ウルピアヌスのことを仰ってるの？
+[name="グレイディーア"]彼もきっと、陸には答えがないことを理解していたはずでしてよ。ですから、私たちは海に戻らねばなりませんの。
+[name="グレイディーア"]仮に、エーギルと距離を保つことが彼の策ならば、なおさら我々は正式な形でエーギルへ帰還しなければ。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#3$1",focus="r")]
+[name="スペクター"]……目を覚ましてからずっと、波が語りかけてくるの。迷える者は家路につけ、ってね。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="スペクター"]アビサルハンターは、故郷に戻らないといけないのよ。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]理解はできる。
+[name="ケルシー"]ならば私も同行しよう、グレイディーア。
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]確かに、あなたにとっては貴重な機会ですものね。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]この旅は私個人として、あるいはロドスを代表してというだけのものではない。
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="グレイディーア"]では、イベリアも？　すでに負担をかけられすぎたその両肩に、彼らはさらに重荷を背負わせましたの？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]これは私自身が選んだことでもある。
+[name="ケルシー"]我々の協力関係が依然、始まったばかりであるように、ロドスとイベリア裁判所の協力も芽吹いて間もないものだ。
+[charslot(slot="m",name="avg_474_gladiia_1#1",focus="n")]
+ケルシーがグレイディーアを見つめる。視線を向けられたその顔は海風に吹かれようとさざ波も立てず、無表情を貫いていた。
+短い沈黙の後、グレイディーアはうなずいた。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]我々がエーギルからの連絡を受け取って、今日で何日経ったかね？
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="アイリーニ"]八日です、閣下。
+[name="アイリーニ"]この八日間、必要な準備と会議、休憩の時間を除けば、ずっとこちらで海を観察していらっしゃいますね。
+[name="アイリーニ"]エーギル側は明確な接触時間を提示しておりませんので、彼らの動向を見逃がすまいとお思いになるのはわかります。ですが……
+[charslot(slot = "left", name = "avg_npc_447_1#7$1",focus="l")]
+[name="聖徒カルメン"]眼前の海を見てみなさい、アイリーニ。
+[charslot]
+何色ともつかない深い海から、波が打ち寄せている。海面が広すぎるせいか、空はより低く見えていた。
+潮水が岩礁にぶつかり、数メートルの波を起こしては、この狭い場所に轟音を響かせる。
+[StopSound(channel="sea", fadetime=3)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="l")]
+[name="聖徒カルメン"]イベリアにとってこの海は、どれほど騒がしかろうとも、恐魚の血肉が渦巻くことさえなければ、慈悲深きものだ。
+[name="聖徒カルメン"]私の古い友人は、かつて港都で最も才能に富む詩人だった。
+[charslot(slot = "left", name = "avg_npc_447_1#2$1",focus="l")]
+[name="聖徒カルメン"]壮大な港都が静謐に陥った後、彼はもがきながらも北へと逃げた。飢えた人々で埋め尽くされた地面を踏み、内陸深くの小都市に――後に首都となる場所にたどり着いたのだ。
+[charslot(slot = "left", name = "avg_npc_447_1#5$1",focus="l")]
+[name="聖徒カルメン"]私は、彼が朽ち果てた城門の前でひざまずき、泣き叫び続ける様子を目にした。そうしてその都市は、彼の泣き声から新たな名を得るに至った。ペルドニドーラ、「許しは去った」という意味だ。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]だが、当時の人々が必要としたのは哀悼ではなく、慰めだった。ゆえに多くの者たちは、その名をただペルドニ――つまり「許し」と呼ぶようになった。
+[name="聖徒カルメン"]そして今、黄金時代の遺産である、最後のイベリアの眼が再び輝いた。これは何を意味すると思うかね？
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="アイリーニ"]希望と決心です。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]「希望と決心」。無論その答えは正しい。
+[charslot(slot = "left", name = "avg_npc_447_1#8$1",focus="l")]
+[name="聖徒カルメン"]若人よ、それを口にする君の目は、若かりし頃のダリオよりも毅然としているな。実に素晴らしいことだ。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]しかし、そうした心を鼓舞する発言は、往々にして、最も正確な回答とは言えない。
+[name="聖徒カルメン"]我々は、半世紀の間繰り返し後退させてきた防衛線を、今、ついに再びここまで前進させた。この地はすぐに、裁判所の新たな中枢となるだろう。
+[name="聖徒カルメン"]しかし同時に、我々は海の、シーボーンの、そしてエーギルの前にすべてをさらすことにもなった。
+[name="聖徒カルメン"]イベリアにもはや猶予はない。この国が慢性的な疲労と困窮を隠し切れないことは、紛れもない事実だ。
+[charslot(slot = "left", name = "avg_npc_447_1#6$1",focus="l")]
+[name="聖徒カルメン"]同様の事実はもう一つある――我々は二度と、後には引けないということだ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1380_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ジョディ"]先生――あっ、アイリーニさん。お久しぶりです。
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="アイリーニ"]久しぶりね。
+[name="アイリーニ"]その服、よく似合ってるじゃない。
+[charslot(slot="m",name="avg_npc_1380_1#11$1")]
+[multiline(name="ジョディ")]あ、ありがとうございます。
+[charslot(slot="m",name="avg_npc_1380_1#2$1")]
+[multiline(name="ジョディ")]っと、そうだ、緊急のご連絡が。たった今、灯台が発信源不明の信号を検出しました。
+[name="ジョディ"]どうやら出所は海底ではなく、空のようなのですが。
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="アイリーニ"]ジョディ、それならもう肉眼で見えてるわよ……
+[charslot(duration=1)]
+カルメンとアイリーニは遠くの空をじっと見つめていた。若き書記は二人の視線を追ってそちらを見やる。
+そして、呆然と立ち尽くした。
+[Stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image(image="51_i01_1",screenadapt="coverall",xScale=1.1,yScale=1.1,y=30)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,yTo=0,duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$faceoff_loop", volume=0.6)]
+[Delay(time=1)]
+[playsound(key="$d_avg_bionicuavs", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+彼らは、飛翔する鱗獣の群れを見たのだ。
+[name="ジョディ"]あれは、なんでしょう？
+[name="聖徒カルメン"]バイオドローンだ。昔「島民」が陸へ持ってきた物の中にも、似たようなものがあった。
+[StopSound(channel="bgs", fadetime=2)]
+ドローンの隊列は、高くそびえる大灯台に呼応するように、はるか遠くから瞬く間に海を渡ってやってきた。その中の一機が隊列を離れ、ゆっくりと三人の前に近付くと、その場で浮遊する。
+翼はひれのようにはためき、光の微粒子が虚空に舞い、親しみのこもった魅力的な女性の声が響いてきた。
+[PlaySound(key="$d_avg_bionicuavs_tech")]
+[Dialog]
+[image(image="51_i01_2",screenadapt="coverall",fadetime=2)]
+[Delay(time=3)]
+[name="？？？"]（イベリア語）イベリアの皆さま、どうぞ警戒なさらないでください。
+[name="？？？"]エーギルより、謹んでご挨拶申し上げます。
+[name="？？？"]私はクレメンティア。エーギル本国における社会行政監督所、技術執政官の一人です。
+カルメンは灯りを掲げ、目の前のドローンを静かに直視している。
+二つの光のまったく異なる輝きは、まさしく二つのまったく異なる文明同士の対話、あるいは対峙のようだった。
+[name="聖徒カルメン"]私はイベリア裁判所の聖徒、カルメン・イ・イベリアだ。
+[name="聖徒カルメン"]恐らく、これが両国間では初の正式な交流となるだろうな。
+[name="クレメンティア"]左様でございますね。
+[name="聖徒カルメン"]貴女は随分とイベリア語に堪能なようだ。
+[name="クレメンティア"]本つ域を出る前に、イベリアの言語モジュールを自らにインストールしておきましたので。もし不適切な表現がございましたら、どうかご容赦くださいませ。
+[name="クレメンティア"]また、現状はこのような形でしかコミュニケーションが取れないことをお許しいただけますと幸いです、イベリア……閣下。
+[name="聖徒カルメン"]形式に異論はないが、こちらとしては、交流自体がこれほどまでに遅くなったことを遺憾に思っている。
+[name="聖徒カルメン"]そちらが「航路」と呼ぶ計画はすでに後半に差し掛かったと聞き及んでいるが、それが目前に迫っていながら、イベリアはその詳細について何一つ知りえていないのだから。
+[name="クレメンティア"]ゆえに、我々はイベリアの使節をこちらの都市へとご案内すべく、お迎えに上がったのです。シーボーンのもたらす危機が飛び火した際、イベリアが行ってきた努力を、エーギルは尊重しております。
+[name="聖徒カルメン"]「飛び火」か。イベリアが直面しているのは、危機の余波に過ぎないと言うのかね？
+[name="クレメンティア"]はい。
+[name="クレメンティア"]外交辞令にこだわらずお話いたしましょう、閣下。
+[name="クレメンティア"]言葉の力というものは、我々も認めるところです。カルメン・イ・イベリアというあなたの名、それ自体が、勇気と胆力の象徴であるのでしょう。
+[name="クレメンティア"]エーギルがこの地を訪れたのはそのためです。我々はイベリア、並びに陸上諸国との協力を実現し、陸への直通航路の開拓を望んでおります。
+[name="クレメンティア"]我々はエーギル本つ域から陸地へと至る広い海域を掃討し、エーギルの主力が海岸へと到達できるようにするつもりです。
+[name="聖徒カルメン"]……他国との国境まで大量の軍隊を派遣するという行為が、陸において何を意味するか、あえて口にする必要はないと思うのだが。
+[name="クレメンティア"]無論それは、来たる巨大な脅威に対抗すべく、我々が全力を尽くすことを意味するでしょう。
+[name="クレメンティア"]必要とあらば、喜んで陸へお伺いし、すべてを詳しくご説明させていただきます。ですが私は、深海へお越しいただくほうが、我々の現状をより深く理解していただけると考えております。
+[name="クレメンティア"]そのため、現在第八および第十軍団の艦隊が、道中のシーボーンを順番に掃討中です。完了次第、彼らが皆様をお迎えに上がり、我々の都市、ミリアリウムへとお連れする予定です。
+[name="クレメンティア"]無事に到着するまでの間は、このドローン編隊が皆様に戦況と環境の変化を随時共有いたします。
+[name="クレメンティア"]海は今まさに、未曾有の災害に見舞われているのやもしれません。
+[name="クレメンティア"]一方で、大地がどれだけ広大であっても、それは単なる孤島に過ぎないと思うと、私は心配なのです。審問官閣下。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+ドローンの隊列が光を失っていき、突如始まった通信は終了した。
+海風はなおも吹きつけており、老人は手にした灯りをゆっくりと下ろした。
+[Dialog]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4009_irene_1#7$1",duration=0.5)]
+[delay(time=1)]
+[name="アイリーニ"]「陸への直通航路」ですか。言葉遣いこそ丁寧でしたが……
+[charslot(slot="m",name="avg_npc_447_1#1$1")]
+[name="聖徒カルメン"]エーギルの傲慢さは疑いようもない。
+[name="聖徒カルメン"]鋭利な武器を手にした傲慢な大人は、何も持たぬ子供に対しては、謀りごとや策など弄するに値しないと考えるものだ。
+[name="聖徒カルメン"]アイリーニ、今の通信内容を我々の協力者に共有しなさい。
+[name="聖徒カルメン"]ケルシー女史はすでに、イベリアの使節としてエーギルを訪問することに同意している。かねてより航路計画に疑念を抱いていたアビサルハンターも、今頃は決断を下しているだろう。
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="アイリーニ"]はい！
+[name="アイリーニ"]グランファーロの他の審問官たちにも、迅速に伝達します。
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="ジョディ"]先生、先ほどのエーギルとの通信はすべて記録しておきました。どうぞお目通しください。
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="ジョディ"]あの、僕の同行も許可していただくことはできるでしょうか……
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]君は一週間前には申請を出してきていたな。
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="ジョディ"]はい。エーギルの艦隊がもうすぐやってくるのなら、僕は、その……
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]決断を下したのなら、ためらってはならない。君の発言が説得力を失うぞ。
+[charslot(slot = "right", name = "avg_npc_1380_1#10$1",focus="r")]
+[name="ジョディ"]……僕の小さい頃、ティアゴおじさんはいつも、心配そうな顔でこう言っていたんです。「ジョディ、お前はグランファーロを、イベリアを去るべきだ」と。
+[charslot(slot = "right", name = "avg_npc_1380_1#3$1",focus="r")]
+[name="ジョディ"]それでも、どこへ行くべきかは教えてくれませんでした。
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="ジョディ"]エーギルは僕の故郷ですが、海の中にあって、近付くことはできなくて。僕はエーギルの声を聞いたこともなければ、その姿を見たこともありません。
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="ジョディ"]ですが今は、それがすぐ近くに迫っているんです。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]ジョディ・フォンタナロッサ。裁判所は君の申請を承認しよう。イベリアの使節として、アイリーニとケルシー女史と共に、エーギルの都市へ向かいなさい。
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="ジョディ"]ありがとうございます。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒カルメン"]いいや。裁判所としても、君にはまだまだ成長してもらわねばならん。これは単なる帰郷ではない、ということは覚えておくように。
+[name="聖徒カルメン"]アイリーニを選んだのは、彼女がすでに準備を終え、このために自らが長く抱いてきた信念さえも捨てたからだ。
+[name="聖徒カルメン"]そして君を選んだのは、君が今なお困惑と悲嘆を抱えているからこそだ。その弱さは、いずれ君を蝕むことになる。
+[name="聖徒カルメン"]裁判所への加入と同じように、故郷へと戻ることもまた、君への試練となるだろう。
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="ジョディ"]わ、わかりました、先生。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_463_1#1$1",duration=1.5)]
+[delay(time=2)]
+[playsound(key="$d_avg_horse")]
+[name="ロシナンテ"]（興奮したいななき）
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="ウルピアヌス"]――
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="ウルピアヌス"]ここはすでに、海溝の最深部だ。
+[name="ウルピアヌス"]奴らは海溝両面の壁をくり抜き、内側に営巣しているようだな。道理で何度回っても見つけられなかったわけだ。
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[playsound(key="$d_avg_horse")]
+[name="ロシナンテ"]（警戒するようないななき）
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]ああ。俺も嗅ぎ取った。
+[name="ウルピアヌス"]この匂い……シーボーンはここで本来の生態系を破壊した後、自分たちのためだけの生態系を築き上げたようだ。
+[name="ウルピアヌス"]これほど完璧なシーボーンの生態系は、通常、海の深部にしか存在しないものだがな。
+[name="ウルピアヌス"]戻れ、ロシナンテ。この中へは俺一人で行く。
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[name="ロシナンテ"]（不満そうに首を振る）
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="ウルピアヌス"]大陸棚全体が変化している。一体誰が波を騒がせているのかを、知らねばならない。
+[name="ウルピアヌス"]騎士に伝えてくれ。狩りを止めるなとな。
+[name="ウルピアヌス"]これは一時の離別にすぎん。
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[playsound(key="$d_avg_swimdeepsea")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i03",screenadapt="coverall",xScale=1.1,yScale=1.1,x=-20)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,xTo=0,duration=45, block=false)]
+[playsound(key="$d_avg_underwateramb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=20, block=false)]
+[Delay(time=3)]
+[playMusic(intro="$chenandwei_intro",key="$chenandwei_loop", volume=0.6)]
+ウルピアヌスは巣穴へと入っていく。
+彼は潜入を選ぶことはしなかった。というのは、発光する植物性のシーボーンが巣穴を隅々まで照らしており、身を隠す場所がなかったからだ。
+螺旋を描いて上へと伸びる分厚い葉の間に、奇妙な形の微生物が眠り、あるいは泳いでいる。
+元々海底にあったはずの岩は見当たらない。溟痕がゆっくりとその細かな触手を揺り動かし、有機物の欠片を捕らえている。それらは幾重もの菌鞘を形成し、ウルピアヌスの泳ぐ音をかき消した。
+彼は自らの身体の変化をはっきりと感じていた。意識は広がり、肉体は緩み、体内の細胞一つ一つが何かに反応しようとしている。
+彼はこの場所に侵入した異物であるにもかかわらず、巣穴全体が彼に向かって開かれている。
+[name="シーボーン"]Ul……Ul-pian……グ……Ul-pianus、同胞。
+ウルピアヌスはシーボーンの透明に近い身体を見透かせるほどの位置まで接近していた。そして相手が、捕食してやる、あるいは捕食しろというような戯言を吐くのを待ったが、そうはならなかった。
+シーボーンは、ウルピアヌスの思考に思い巡らせていたのだ。
+[name="シーボーン"]つイに。オ前は、長イ道を歩ミ、辿リ着いタ。
+[name="シーボーン"]ここ。栄養、十分。邪魔ナ血肉を、脱ぎ捨テよう。
+[name="シーボーン"]回帰。成長。移動。
+[name="ウルピアヌス"]フン。
+[name="シーボーン"]私ハ、オ前のたメ、生まレた。Ul-pianus、お前ノためダけに。
+[name="シーボーン"]お前ノ、疑問ヲ解く。一族ノ、抱擁に導ク。
+[name="ウルピアヌス"]貴様らはなぜ移動を繰り返す？　一体どこを目指している？
+[name="シーボーン"]Ul-pianus、揺らイでいル、な。
+[name="シーボーン"]同胞、オ前は、大群を知ル必要がアる。大群ヲ、知リたイはズだ。
+[name="シーボーン"]初源ガ、目覚めヨうとシテいル。初源は、帰ラねばナらなイ。新たナ循環。海ノ、構築。海ヲ、去るのダ。
+[name="ウルピアヌス"]初源が目覚める？　海を去る……？
+[name="シーボーン"]大群。見タ。新たナ、長イ道。我ラは、でキるだケ早く――
+[name="ウルピアヌス"]……では、あの都市で今起きていることと、貴様らの間にはどんな関係がある？
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

@@ -1,11 +1,11 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_milu")] 도베르만 교관, 전방에 중장갑 적이 출현했다.
 [Battle.Pause(pause=false)]
 [Delay(time=3)]
 [Battle.Pause(pause=true)]
 [PopupDialog(dialogHead="$avatar_doberm")] 당황할 필요 없다. 박사, <@tu.kw>호출 증표</>을 소비해 준비 구역에서 오퍼레이터 한 명을 바로 투입할 수 있다.
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(target="btn_draw_next_card", waitForSignal="draw_card", \
           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",searchBtnInChildren=true, \
@@ -22,7 +22,7 @@
 바로 그거야.
 [InputBlocker(blockInput=true)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=2)]
 [Battle.Pause(pause=true)]

@@ -1,10 +1,14 @@
 [HEADER(is_skippable=false, is_tutorial=true)] 第二次角色升级引导
 [PopupDialog(dialogHead="$avatar_amiya")] 박사님, 저희 앞에 나타나는 적들이 예전보다 더욱 강해지고 있어요.
-[PopupDialog(dialogHead="$avatar_amiya")] 오퍼레이터들의 능력을 향상시키면 앞으로 어떤 전투가 벌어지더라도 발목을 잡히는 일이 없겠죠.
-[PopupDialog(dialogHead="$avatar_amiya")] 혹시 박사님께서 아직 오퍼레이터의 레벨업을 하신 적이 없다면 제가 도와드릴게요.
+[PopupDialog(dialogHead="$avatar_amiya")] 오퍼레이터의 능력을 향상시키면 앞으로의 전투에서 도움이 될 거에요.
+[PopupDialog(dialogHead="$avatar_amiya")] 박사님께서 오퍼레이터의 상세 정보를 이해하고 오퍼레이터를 육성하실 수 있도록 다시 한 번 안내해 드리겠습니다.
 [GotoPage(dest="char_repo", waitForSignal="character_repo_routed")]
 [Delay(time="$f_delay_single_frame")]
 [Tutorial(target="pool_btn_char_repo_first_item", waitForSignal="character_info_resumed",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 오퍼레이터를 한 명 선택하여, 상세 화면을 표시하여 주십시오.
 [PopupDialog(dialogHead="$avatar_amiya")] 박사님께서도 이제까지 많은 전투를 통해 알고 계시겠지만, 승리는 한 명의 강력한 오퍼레이터를 통해 이루어지는 것이 아니라, 모두가 한마음으로 뭉쳐 팀플레이를 해야만 얻을 수 있는 거예요.
 [PopupDialog(dialogHead="$avatar_amiya", protectTime=0.5)] 그러니 부디, <@tu.kw>모든 오퍼레이터를 골고루 육성</>해 주시길 바랄게요.
-[Tutorial(target="panel_hotspot", waitForSignal="character_info_lvlup_resumed",           abortForSignal="character_info_lvlup_abort",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 여기를 터치하여 오퍼레이터가 작전기록을 열람하고 경험치를 얻도록 지도해 주십시오.
+[Tutorial(target="btn_evolve",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 레벨이 최대치에 이르면 승진을 시켜 <@tu.kw>정예화</>를 진행할 수 있습니다. 일부 오퍼레이터는 승진 후 새로운 스킬이나 고유 능력을 습득하게 됩니다.
+[Tutorial(target="btn_potential",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys")] 또한, 오퍼레이터의 증표를 사용하면 해당하는 오퍼레이터의 <@tu.kw>잠재력</>을 향상시키고 스탯의 고유 능력을 강화할 수 있습니다.
+[Tutorial(target="friend_show",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys")] 이곳에는 박사님과 해당 오퍼레이터 사이의 <@tu.kw>신뢰도</>가 표시됩니다. 신뢰도가 상승하면 오퍼레이터의 스탯도 상승하여 작전 수행 능력이 향상됩니다.
+[Tutorial(target="panel_hotspot",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 이곳에서는 오퍼레이터가 작전기록을 열람하여 경험치를 얻을 수 있습니다.
+[Tutorial(target="hotspot_skill",            animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_sys")] 터치하시면 스킬 랭크 업 화면으로 이동합니다.

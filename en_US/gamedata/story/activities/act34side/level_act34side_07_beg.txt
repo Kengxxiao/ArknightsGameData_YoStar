@@ -1,0 +1,584 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_deepseaamb", volume=1, loop=true, channel="u")]
+There are always chimes like little bells resounding from the dome, the result of countless tentacle-shaped bio-monitors analyzing the most minute changes in the ocean current.
+Occasional dull roars echo faintly from the port, as warships coming to and from the harbor gracefully displace vast amounts of seawater, like gigantic fins.
+The goods, flying through aerial optic cables in squeezed state to every household, emit a near-subsonic buzzing.
+......
+These myriad noises, varied yet not chaotic, have become the ambiance of Milliarium, long since faded into the background for its ten thousand or so residents.
+But now, all those residents stop in their paces. They wonder if their ears are deceiving them.
+[dialog]
+[StopSound(channel="u", fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.3, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.3, fadetime=0.1)]
+[PlayMusic(intro="$m_bat_act17side_03_intro", key="$m_bat_act17side_03_loop", volume=0.6)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Background(image="51_g1_beaconsquare", y=60, xScale=1.3, yScale=1.3, screenadapt="coverall")]
+[backgroundTween(xFrom = 170, xTo = -170, duration=30, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+At first, it was like a wisp of wind sweeping across an angular reef.
+Then, like a newborn who tentatively poked its head out of the warm womb.
+And after that, a colony. A nest. An entire region of sea.
+[dialog]
+[curtain(direction = 0,fillfrom = 0.3,fillto = 0, fadetime=4)]
+[curtain(direction = 4,fillfrom = 0.3,fillto = 0, fadetime=4)]
+[Background(image="51_g1_beaconsquare", xScale=1.05, yScale=1.05, fadetime=2, screenadapt="coverall")]
+[backgroundTween(xScaleFrom = 1.05, xScaleTo = 1, yScaleFrom = 1.05, yScaleTo = 1, duration=10, block=false)]
+[delay(time=4)]
+[PlaySound(key="$d_avg_ropytissuegrow", volume=1)]
+[Background(image="51_g2_beaconsquare_nest", fadetime=4, screenadapt="coverall")]
+[delay(time=3)]
+The thick, bizarre sound of blooming of life could be heard clearly.
+The children of the sea now give back to the ocean.
+They give civilization a kiss, and civilization is now filled to the brim with life.
+[dialog]
+[PlaySound(key="$d_avg_emgseaalarm", volume=1)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0.92, g=0.4, b=0.3, fadetime=0.4, block=true)]
+[delay(time=0.4)]
+[PlaySound(key="$d_avg_emgseaalarm", volume=1)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0.92, g=0.4, b=0.3, fadetime=0.4, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", duration=1, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="Tense Ægir"]Look!
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="Mysterious Ægir"]—!
+[charslot]
+The usual tower looming over the city center is gone, replaced by an enormous stone column, the type seen only in karst caves in the sea.
+Layer upon layer of fine, porous, slimy, and smooth Seaborn tissue encircle the walls of the beacon tower.
+Yet light from the equipment within still permeates, casting an ethereally enchanting glow over its surroundings.
+Microbial colonies float down from the column, blossoming into oddly-shaped lifeforms.
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="Tense Ægir"]If it weren't for the statues I can just barely make out, I'd have thought these were untouched wilds!
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="Mysterious Ægir"]...'Nest conversion.'
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="Tense Ægir"]Why would there be Seaborn in the city? I know we haven't—
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="Mysterious Ægir"]Doesn't matter if we did or not, as long as the results are as expected.
+[name="Mysterious Ægir"]I just hope it's a lesson those ever-sinking Ægir will never forget.
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="Tense Ægir"]What do we do now?
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="Mysterious Ægir"]We keep it growing, and stop the city from pushing it back.
+[charslot(slot = "r", focus="n")]
+[name="???"]Was murdering Tullia not enough? Do you need to destroy the entire city to sate your appetite for chaos?
+[name="???"]At first, I was planning to tail you back to your allies and save myself some effort.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1", duration=1.5, isblock=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]But since it's an emergency, I'll have to haul my net in now.
+[name="Secunda"]You will be the thirty-third and thirty-fourth Church of the Deep's cultists caught by the Sea Patrol this month.
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_1392_1#1$1", focus="l")]
+[name="Tense Ægir"]The Sea Patrol...
+[charslot(slot = "r", name = "avg_npc_1394_1#1$1", focus="r")]
+[name="Mysterious Ægir"]You've harmed a lot of our brothers and sisters lately.
+[name="Mysterious Ægir"]Clinging to the current order will do you no good. What Ægir needs isn't a struggle for its life in despair, it's—
+[dialog]
+[charslot(slot = "all", focus="all")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_seagunshoot", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=0.1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_seagunshoot", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot = "r",  posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=0.5, isblock=true)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot = "l",  posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=0.5, isblock=true)]
+[delay(time=0.4)]
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="Secunda"]Shut up. I'm not here to debate.
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="Sea Patrol Captain"]Praefecta Secunda, an unusual concentration of bio-signatures has been detected. They've tripled in number in a short time.
+[name="Sea Patrol Captain"]It seems the Seaborn have fully converted the tower into their nest, and are now steadily producing more of themselves.
+[charslot(slot = "m", name = "avg_4137_udflow_1#6$1")]
+[name="Secunda"]We cannot allow them to spread to the other city units!
+[charslot(slot = "m", name = "avg_4137_udflow_1#5$1")]
+[name="Secunda"]The nearby civilians have already started evacuating by themselves. Take a squad to guide them to the emergency shelters.
+[name="Secunda"]Remember to clear the roads of all support machines. If the Seaborn contaminate them, they could be used as weapons against us.
+[name="Secunda"]The rest of you, get in formation and deploy barriers. Keep the Seaborn within the perimeter of the beacon tower!
+[charslot(slot = "m", name = "avg_npc_1390_1#1$1")]
+[name="Sea Patrol Captain"]Yes, ma'am!
+[charslot(slot = "m", name = "avg_4137_udflow_1#3$1")]
+[name="Secunda"]I was sure the Class IV weapons had already been activated. Don't tell me...
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g7_consuloffice",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1)]
+[name="Clementia"]...I'm listening.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]Lock down all Class IV weapons immediately. I want a thorough inspection of the entire system, as soon as possible.
+[name="Clementia"]All troops who have fallen back, regroup at the port immediately.
+[name="Clementia"]From now on, all combatants are to remain on standby on the channel.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1382_1#4$1")]
+[name="Clementia"]......
+[name="Clementia"]............
+[dialog]
+[charslot]
+[Decision(options="This isn't quite what you described.;I'm guessing this isn't part of the plan?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="Kal'tsit"]Look at this real-time nautical chart. Just an hour ago, Seaborn bio-signatures were generally stable.
+[name="Kal'tsit"]But now, every nest on the continental shelf is getting closer and closer to each other... No, it's not that the nests are moving. They are expanding endlessly.
+[name="Kal'tsit"]Like countless drops of ink spreading across a sheet of paper.
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="Clementia"]This entire stretch of sea is turning into a nest.
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="Kal'tsit"]The scattered nests are linking together as one, with Milliarium in the middle.
+[charslot(slot = "m", name = "avg_003_kalts_1#7$1")]
+[name="Kal'tsit"]Did Ægir really bring weapons to disperse them, Madame Consul, or a mass of catalysts? Are you annihilating them, or feeding them?
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="Clementia"]......
+[name="Clementia"]If Blandus tampered with the link between the beacons and the weapons, it must have been him who altered their effect as well.
+[name="Clementia"]And as a result...
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Ægir's hopes of landfall have been exploited.;The city's now a foothold for Seaborn expansion.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]As the Waterway Program's Chief Designer of Warfare, I will take full responsibility for this. But we haven't lost the battle quite yet.
+[name="Clementia"]Look outside. Not a hint of disturbance on the streets. Milliarium has not yet sunk into panic.
+[name="Clementia"]We've struggled against the Seaborn for more than two hundred years. We've experienced countless incidents like this. It's far too early to declare Milliarium 'lost to the enemy.'
+[name="Clementia"]Dr. Kal'tsit, Doctor, you must leave the city at once. I'll escort you to the port.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]I had assumed a consul would need to remain at her post.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]As things stand, the port is the heart of the city. A key military installation we cannot afford to lose.
+[name="Clementia"]The Seaborn have already invaded my city. You think I'll wait for our uninvited guests to knock on the Pensivarium's door?
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g3_beaconctrlroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[PlaySound(key="$bodyfalldown3", volume=0.4)]
+[charslot(slot = "m", name = "avg_npc_1380_1#9$1", posfrom="0,0", posto="0,-20", afrom=1, ato=1, duration=0.5, isblock=true)]
+[name="Jordi"]Gah—
+[name="Jordi"]The air's getting more humid the further we go. I-I can barely breathe...
+[charslot]
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]Watch your step. Use your device to float over. Don't step on that.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_dripink", volume=0.4)]
+[PlaySound(key="$d_avg_activation", volume=0.8, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=1.5)]
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1", posfrom="0,-20", posto="0,0", afrom=1, ato=1, duration=1.5, isblock=true)]
+[name="Jordi"]...Nethersea Brand?
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1")]
+[name="Ulpianus"]Indeed. Yet another means for the Seaborn to extend their reach. They've already spread from the top of the tower to here, much faster than you'd see on land.
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="Jordi"]The Seaborn are nesting in the city?!
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1")]
+[name="Ulpianus"]Above our very heads.
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="Jordi"]You said there was someone directing them... Why? How?
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#4$1")]
+[name="Ulpianus"]This is the work of that dead man, Blandus. He spent the last five years on this.
+[name="Ulpianus"]According to his farcical plans, the signals emitted by this tower would, along with the weapons we brought, become a bridge connecting humanity and the Seaborn.
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]He has indeed built a 'bridge' of sorts, but the Seaborn have not reciprocated his ambitious goodwill.
+[name="Ulpianus"]Our connection has only served to alert the beasts to Milliarium's position, and given them an understanding of our defense mechanisms.
+[name="Ulpianus"]The Legions had taken great pains to divide this stretch of sea into manageable regions, but with the nests now converging on the signal, they are whole once more.
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]The Class IV weapons that should have destroyed the nests and repelled the Seaborn have done the exact opposite. Seaborn tissues grow along their firing paths. What should have withered was instead nourished.
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="Jordi"]......
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]Hmph. Even until death, he never realized his own arrogance.
+[charslot(slot = "m", name = "avg_npc_1380_1#2$1")]
+[name="Jordi"]Señor Ulpianus, I don't quite understand what you're saying. But right now...
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]The Seaborn already consider this tower a new nest. It will steadily spawn and attract more from other nests to gather here.
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="Jordi"]Can we reverse the change?
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]It's too late.
+[name="Ulpianus"]We have only one option. Eject the city unit the beacon tower stands on.
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="Jordi"]...Eject?
+[name="Jordi"]But underwater cities aren't built in blocks. How would you—
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]There is still much you do not understand about Ægir.
+[name="Ulpianus"]Unlike the nomadic cities of the land, pieced together from cumbersome plates, Ægir technology focuses on the biological, especially when it comes to city construction.
+[name="Ulpianus"]Biting off a poisoned limb is an instinctual reaction in a seabeast. Nothing difficult.
+[name="Ulpianus"]We must keep the remainder of the city, for it still has use. Otherwise, the Seaborn in the area will eventually unite into one, and no one would ever be able to stop them then.
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[name="Jordi"]They'll come ashore without a hint of resistance. They'll land in... Iberia...
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="Jordi"]What do we have to do exactly?
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#1$1")]
+[name="Ulpianus"]A massive yet precise framework supports each city unit of Milliarium. The operation system controlling the linkage of the tower's unit should be in this control center.
+[name="Ulpianus"]Once activated, it will send the entire tower into the depths.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g3_beaconctrlroom",screenadapt="coverall")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1", duration=1.5, isblock=true)]
+[name="Jordi"]...Is this it?
+[dialog]
+[PlaySound(key="$keyboard", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_button", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="Jordi"]I can operate it—but there's no response.
+[name="Jordi"]It doesn't seem like there's any issue with the system, so it must be the linkage itself...
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#3$1")]
+[name="Ulpianus"]The Institute of Facility Management has specialists dedicated to the maintenance of the framework. It is less likely to malfunction than a Hunter's weapon is to rust.
+[name="Ulpianus"]And yet, here we are. Precisely at a time like this...
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="Jordi"]......
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1")]
+[PlaySound(key="$d_avg_microrobot", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="'Little Handy' from Institute of Facility Management"]Reading error occurred (2).
+[name="'Little Handy' from Institute of Facility Management"]Run fault diagnostics?
+[charslot]
+[charslot(slot= "r", name="avg_npc_1386_1#1$1")]
+[name="Avitus"]......
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1380_1#1$1",duration = 1)]
+[charslot(slot = "r", name = "avg_npc_1386_1#1$1")]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_1380_1#2$1",focus="l")]
+[name="Jordi"]Do you need my help, Mr. Avitus?
+[charslot(slot = "r", name = "avg_npc_1386_1#1$1",focus="r")]
+[name="Avitus"]Oh, no. I was merely observing this abandoned Little Handy.
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="51_g3_beaconctrlroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="Jordi"]Could he...
+[name="Jordi"]Could he know something about this?
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#7$1")]
+[name="Ulpianus"]Hm?
+[charslot(slot = "m", name = "avg_npc_1380_1#6$1")]
+[name="Jordi"]I might know who to look for.
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#8$1")]
+[name="Ulpianus"]......
+[name="Ulpianus"]Contact the Ægir soldiers outside. They'll help you exit this place.
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="Jordi"]......
+[name="Jordi"]Are you going to stay here? Alone?
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#7$1")]
+[name="Ulpianus"]You still have doubts about me, young one. Good.
+[name="Ulpianus"]But someone needs to stay in this control center.
+[name="Ulpianus"]Once the tower completes its conversion, Milliarium will be unable to eject it, even if we manage to repair the linkage.
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#4$1")]
+[name="Ulpianus"]A seabeast cannot spit out its heart, when the heart is no longer its own.
+[name="Ulpianus"]I must remain to confirm that the framework has resumed operation, then eject the tower myself.
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="Jordi"]But if you do that, you'll sink along with it... into the hordes of Seaborn...
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#7$1")]
+[name="Ulpianus"]You needn't worry about that. Or do you mean to say you'd more suited for that duty?
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="Jordi"]......
+[charslot(slot = "m", name = "avg_4145_Ulpia_1#2$1")]
+[name="Ulpianus"]You don't have much time, young one.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="Jordi"]Y-You have already—
+[charslot]
+[name="???"]Isn't this the frequency of the beacon tower?
+[name="???"]Secunda, Sea Patrol. Who's inside the tower?
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g2_beaconsquare_nest",screenadapt="coverall")]
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#8$1", duration = 0)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[name="Secunda"]Then what about Blandus?
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#8$1", duration = 0, switch = true)]
+[name="Ulpianus"]He's dead.
+[charslot(slot = "l", name = "avg_4137_udflow_1#2$1")]
+[interlude(channel = 3, switch = false)]
+[name="Secunda"]......
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]The two of us were in contact, but I never noticed anything unusual. I should submit myself to the consul for discipline once this is settled.
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#1$1", duration = 0)]
+[name="Ulpianus"]Milliarium must abandon the tower. I must see it sink into the abyss with my own eyes.
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[interlude(channel = 3, switch = false)]
+[name="Secunda"]And after that?
+[name="Secunda"]Will you return to Ægir? <i>Can</i> you return to Ægir?
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#1$1", duration = 0)]
+[name="Ulpianus"]I told you not to ask pointless questions, Secunda.
+[name="Ulpianus"]You should not allow the past to render you indecisive.
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[interlude(channel = 3, switch = false)]
+[name="Secunda"]...You're overthinking things.
+[name="Secunda"]Blandus told me what happened back then.
+[name="Secunda"]As far as I'm concerned, it doesn't matter which of you rejected my application.
+[charslot(slot = "l", name = "avg_4137_udflow_1#10$1")]
+[name="Secunda"]Though I'm willing to admit that... I regret not becoming a Hunter and fighting alongside you all. Deeply.
+[name="Secunda"]I'll admit that I felt anger and resentment for a long time. I even envied Skadi.
+[charslot(slot = "l", name = "avg_4137_udflow_1#7$1")]
+[name="Secunda"]But eventually, I became accustomed to patrol work. For your sake. For the sake of the project keeping our home, our civilization, safe.
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#2$1", duration = 0)]
+[name="Ulpianus"]Staying outside of a specific project will allow you to see more sacrifices, more betrayals, more untrustworthy people, more things deviating from their paths.
+[charslot(slot = "l", name = "avg_4137_udflow_1#5$1")]
+[interlude(channel = 3, switch = false)]
+[name="Secunda"]Like you, right now?
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#4$1", duration = 0)]
+[name="Ulpianus"]......
+[name="Ulpianus"]Have you thought through what you should bear?
+[charslot(slot = "l", name = "avg_4137_udflow_1#5$1")]
+[interlude(channel = 3, switch = false)]
+[name="Secunda"]If you truly did betray Ægir, if you really are associated with that scum, then you're in that tower now to plan your escape. I'd bear the guilt of allowing a fallen Ægir to flee.
+[name="Secunda"]If you're still a Hunter, then you'll be fighting alone. However, it's already impossible to wipe your slate clean after infiltrating the city, breaking into the tower... not to mention the outcome of the tribunal.
+[charslot(slot = "l", name = "avg_4137_udflow_1#2$1")]
+[name="Secunda"]Ægir may not remember your sacrifice... Just like how Tullia will inevitably be forgotten.
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]But I agree. Ejecting the tower is the most effective way to help Milliarium respond to this disaster.
+[name="Secunda"]I approve of your choice. I'll afford you some limited amount of trust.
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "250,0", pto="250,0", name = "avg_4145_Ulpia_1#4$1", duration = 0)]
+[name="Ulpianus"]Hmph. Very well.
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "l", name = "avg_4137_udflow_1#1$1")]
+[name="Secunda"]You have five minutes. After that, I'll come rescue that land dweller in the tower.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[interlude(clear=true)]
+[Background(image="51_g10_shipinterior",screenadapt="coverall")]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]The entire city is following the emergency transportation coordination plan. We'll enter the axial channel via the Sophontheatrum and leave for the port.
+[name="Clementia"]I will remain there to direct operations, while the Sea Patrol takes command of this ship and sees you to dry land.
+[name="Clementia"]The drone matrix will also head to the lighthouse and assist Iberia in mounting a defense.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Should the city not organize an evacuation of its citizens as well?
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Milliarium is a military fortress. It is able to accommodate its citizens during battle. All civilians have already been escorted to shelter by the Sea Patrol.
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="Clementia"]—
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Those neural cables by your hand...", values="1")]
+[Predicate(references="1")]
+[Decision(options="Should they be... twitching like that?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1382_1#6$1")]
+[name="Clementia"]No. With communications down, my connection to the ship's operating system has also been cut off... I'm losing control.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]Little Handy, run diagnostics on the entire ship.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_microrobot", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1", duration=1, isblock=true)]
+[name="'Little Handy'"]—
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]The systems breach is more serious than I expected.
+[name="Clementia"]We might not have enough time to land. I'm sorry.
+[name="Clementia"]At least the city's artificial gravity is still functional. The devices you have will help you move freely through the air.
+[name="Clementia"]Now follow me. No need to be scared; all you have to do is walk out the door.
+[dialog]
+[PlaySound(key="$d_avg_higheldshosfts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[PlaySound(key="$d_avg_glassdooropen", volume=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.1,yScale=1.1)]
+[delay(time=1)]
+[CameraShake(duration=6, xstrength=15, ystrength=15, vibrato=90, randomness=50, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_collapse", volume=1, loop=true, channel="b")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[StopSound(channel="b", fadetime=4)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1382_1#9$1")]
+[name="Clementia"]Comms are still down. Looks like someone managed to cut off the entire Sophontheatrum from the outside.
+[dialog]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=0.4)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1382_1#11$1")]
+[name="Clementia"]—
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_003_kalts_1#7$1", posfrom="0,0", posto="150,0", duration=0)]
+[name="Kal'tsit"]—Mon3tr!
+[dialog]
+[PlaySound(key="$fireburst", volume=1)]
+[BackgroundTween(xFrom=0, xTo=-65, duration=1,ease="OutQuad",block=false)]
+[charslot(slot = "l", name = "avg_003_kalts_1#7$1", posfrom="150,0", posto="0,0", afrom=1, ato=0, duration=1)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[charslot(slot = "m", name = "npc_10002", afrom=0, ato=1, duration = 1.5, isblock=true)]
+[name="Mon3tr"](Vigilant screech)
+[charslot]
+Mon3tr spreads its ebon talons as a wave of heat washes over you. At nearly the same time, the consul draws her ceremonial sword and steps to the side to cover you and Kal'tsit.
+You take a good look at the 'enemy' before you.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_seabornbacklair", volume=1, loop=true, channel="u")]
+[PlayMusic(key="$m_avg_opening_intro", volume=0.6)]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.5,yScale=1.5, y=-100, fadetime=2)]
+[backgroundTween(yFrom = -30, yTo = 30, duration=8, block=false)]
+[focusout(type="bg", id="51_g6_aegirarena", from=0, to=1, duration=0.1, block=false)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.6, fadetime=0.1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", posfrom="-60,20", posto="-60,-20", afrom=1, ato=1, duration=3.7)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.3, duration = 0)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.8)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.5,yScale=1.5, fadetime=2)]
+[backgroundTween(yFrom = 0, yTo = 60, duration=8, block=false)]
+[focusout(type="bg", id="51_g6_aegirarena", from=0, to=1, duration=0.1, block=false)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.6, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", posfrom="60,20", posto="60,-20", afrom=1, ato=1, duration=3.7)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.3, duration = 0)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.8)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[charslot]
+[Background(image="51_g6_aegirarena", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-50, fadetime=2)]
+[backgroundTween(yFrom = -50, yTo = 0, duration=6)]
+[StopSound(channel="u", fadetime=4)]
+[PlaySound(key="$d_avg_brainnucleiturn", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1", posfrom="0,50", posto="0,0", duration=6)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1, duration = 0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=3)]
+[name="???"]......
+An unusually-shaped Seaborn bars your way.
+It seems to lack hostility. Before Mon3tr's roar startled it, it simply stood there quietly, its featureless face illuminated by the coral-shaped terminal in the middle of the Sophontheatrum.
+The granular organelles surrounding its body spread out like arms, 'stroking' the branches of the terminal, and fusing with the flowing characters and symbols on it.
+Was it observing? Sensing? Can it even comprehend human perception and reasoning?
+[dialog]
+[PlaySound(key="$d_avg_underwtr", volume=1, loop=true, channel="u")]
+[StopSound(channel="u", fadetime=4)]
+[charslot(slot = "m", afrom=1, ato=0, duration=3)]
+[focusout(type="bg", id="51_g6_aegirarena", from=1, to=0, duration=3, block=false)]
+[Delay(time=3)]
+It turns towards you.
+[charslot(slot = "m", name = "avg_npc_1382_1#11$1")]
+[name="Clementia"]A... Seaborn. Is it the one that breached the terminal? This is unprecedented. And not a good sign.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="Mysterious Seaborn"](Garbled Ægirian) There is no justice here. Only the path ahead.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]A Seaborn trespassing in an Ægirian city, reciting an ancient proverb in a sanctum designed by sages past.
+[name="Clementia"]This might be the most ironic scene I've witnessed since I joined this war. Uncouth, even for a provocation.
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="Kal'tsit"]Its use of language and its manner of speaking... are all unlike the usual outcome of the Seaborn's forced 'learning.'
+[name="Kal'tsit"]I fear this Seaborn was once human, Madame Consul.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="Mysterious Seaborn"]Language. Never have I forgotten it. Never has it abandoned me.
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]What about your thoughts? Do you actually comprehend yourself when you clumsily mimick the sayings of the wise?
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="Mysterious Seaborn"]Comprehend? No. I did not understand their true meaning, even as I left them for posterity.
+[name="Mysterious Seaborn"]Now, I have a new understanding.
+[charslot(slot = "m", name = "avg_npc_1382_1#7$1")]
+[name="Clementia"]Left for posterity... Mártus?
+[name="Clementia"]You're Mártus?!
+[charslot(slot = "m", name = "avg_npc_1382_1#10$1")]
+[name="Clementia"]The key member of the fourth observation team of the mantle ruins, the scholar of anthropology and prehistoric civilization who went missing more than two centuries ago? <i>That</i> Mártus?
+[charslot(slot = "m", name = "avg_npc_1383_1#3$1")]
+[name="Mysterious Seaborn"]...In my most distant memories, I was once, known by that name.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="Mysterious Seaborn"]But now, you need only be cognizant of my appearance. You see before you a Seaborn. Call me as such.
+[name="Mysterious Seaborn"]'Seaborn.'
+[charslot]
+The Seaborn floats towards you.
+Through its transparent skull, you see strangely colored orbs gather and disperse, steadily changing their formation.
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'Seaborn'"]Ægir. Allow me to converse with the one behind you.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[charslot(slot = "m", name = "npc_10002")]
+[name="Mon3tr"](Angry howl)
+[charslot(slot = "m", name = "avg_npc_1383_1#1$1")]
+[name="'Seaborn'"]Glub—Tell your little friend to stow its fangs. Its flames cannot burn my blood.
+[name="'Seaborn'"]AMa-10—
+[dialog]
+[charslot]
+[Decision(options="Who are you? Why did you call Kal'tsit that?;You know who Kal'tsit is?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="Kal'tsit"]......
+[name="Kal'tsit"]Stay vigilant, Dr. {@nickname}. I'll speak with it.
+[charslot(slot = "m", name = "avg_npc_1383_1#2$1")]
+[name="'Seaborn'"]Kal-tsit... Kal'tsit. I see now. If you are accustomed to that name, I can call you by that.
+[name="'Seaborn'"]I have waited for you, Kal'tsit, for the two of you, for a very long time.
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

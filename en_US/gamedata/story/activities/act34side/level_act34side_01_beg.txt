@@ -1,0 +1,482 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$m_dia_street_intro",key="$m_dia_street_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1393_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1395_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left",focus="l")]
+[name="Ægir Researcher A"]Based on geological conditions, it's a promising volcano, but the location is less than optimal.
+[name="Ægir Researcher A"]It would be difficult to establish a lengthy energy transportation pipeline while fending off Seaborn attacks.
+[charslot(slot = "r",focus="r")]
+[name="Ægir Researcher B"]Did you read the Academy of Technology's report?
+[name="Ægir Researcher B"]Hydrogen from seawater can be used to maintain operation of the Legion fleet, but it would be difficult to guarantee uninterrupted energy supply to the beacon.
+[name="Ægir Researcher B"]It alone accounts for half of the entire city's energy consumption.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Researcher A"]It used to be much worse. Our ancestors had to design a bio-energy system for it, maintained through the joint effort of a dozen cities.
+[name="Ægir Researcher A"]In this day and age, a system like that would be attacked by the Seaborn before it could even be activated.
+[charslot(slot = "r",focus="r")]
+[name="Ægir Researcher B"]Regardless, we need to find a way to ensure power supply for the beacon.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Researcher A"]Maybe Appius would know a way. Let me get in... oh!
+[charslot(slot = "r",focus="r")]
+[name="Ægir Researcher B"]Did you forget? He's still in the home territories and our cities are under radio silence.
+[name="Ægir Researcher B"]We can't exactly lay fiber optic cables like we used to, either, what with all the Seaborn out there.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Researcher A"]I miss the days when we could get anyone in the country on a holographic call whenever we wanted.
+[charslot(slot = "r",focus="r")]
+[name="Ægir Researcher B"]Wait.
+[name="Ægir Researcher B"]What if we modified the output mode of the energy converter?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "left", name = "avg_npc_1392_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1394_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left",focus="l")]
+[name="Ægir Doctor"]We have extremely limited experience in this area. There's always a safety risk.
+[charslot(slot = "r",focus="r")]
+[name="Ægir Scholar"]With you in charge of the cognitive link, I believe the risk is reasonable.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Doctor"]Well, I'm glad you're that confident in me, but I'm not. Who knows what an extended conversation via cognitive link with our transformed countrymen would do to both our minds?
+[charslot(slot = "r",focus="r")]
+[name="Ægir Scholar"]There's been plenty of research into this. We'll be good as long as you keep a steady hand.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Doctor"]Even in the home territories, there are very few cases of transformed citizens being granted a final interview. Most are simply euthanized.
+[name="Ægir Doctor"]Consul Clementia's ideas are radical, as always.
+[charslot(slot = "r",focus="r")]
+[name="Ægir Scholar"]Which is exactly why I followed her here.
+[name="Ægir Scholar"]By sorting through the threads of reason via conversation, we can grant them a chance to leave a final trace of their sapience in the world.
+[name="Ægir Scholar"]And what better way to send them off than with a stimulating debate?
+[name="Ægir Scholar"]Sadly, most of the survivors the Sea Patrol brings back are already transformed beyond recognition. Precious few have the opportunity to return to the city to receive a final interview.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Doctor"]Say—
+[charslot(slot = "r",focus="r")]
+[name="Ægir Scholar"]Hm?
+[charslot(slot = "left",focus="l")]
+[name="Ægir Doctor"]We're witnessing history unfold here, aren't we?
+[charslot(slot = "r",focus="r")]
+[name="Ægir Scholar"]Or maybe we're just doing our jobs. I trust that the Institute of Development Planning's faith in you is not misplaced. Make your preparations.
+[charslot(slot = "left",focus="l")]
+[name="Ægir Doctor"]Thanks. See you in the isolation chamber.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1380_1#2$1")]
+[name="Jordi"]Excuse me—
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_seacitytransform", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[CameraShake(duration=3.5, xstrength=8, ystrength=6, vibrato=40, randomness=90, fadeout=true, block=false)]
+[delay(time=2.5)]
+[StopSound(channel="bgs", fadetime=3)]
+[PlaySound(key="$bodyfalldown1", volume=0.6)]
+[delay(time=1)]
+[name="Jordi"]W-What the? A Catastrophe? Under the sea?
+[charslot]
+Taken by surprise, the young man loses balance and falls, but an even stranger sight stifles his cry of surprise—
+[CameraShake(duration=5, xstrength=2, ystrength=8, vibrato=1, randomness=90, fadeout=false, block=false)]
+[playsound(key="$d_avg_seahumansurface",volume=0.5)]
+He sees the passersby float into the air, swimming through it like fins through water, paying little heed to the swaying city below.
+As things return to normal, some land and walk away—continuing their conversations like nothing had happened—while others continue to swim forward through the air.
+He recalls the Ægir rituals the people of Gran Faro had told him about when he was little.
+[name="Jordi"]...
+[charslot(slot = "m", focus = "n")]
+[name="???"]Get up, Jordi.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1",posfrom = "0,-60", posto = "0,0",duration=0.8)]
+[delay(time=1)]
+[name="Jordi"]R-right!
+[charslot(slot = "m", name = "avg_npc_1380_1#5$1")]
+[name="Jordi"]Doña Irene?
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="Irene"]Next time you go out, remember to put on the device that the Sea Patrol gave us when we landed yesterday.
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[name="Jordi"]Right, I remember that from the briefing videos... Which one was it again...?
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]The fourth one. The technicians at the port reminded me.
+[name="Irene"]They make regular adjustments to the gravity settings, as part of what it takes to maintain the low-gravity environment of Milliarium.
+[charslot(slot = "m", name = "avg_4009_irene_1#2$1")]
+[name="Irene"]They said it's like a fin adjusting its swim bladder.
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1")]
+[name="Jordi"]So you went to tour the port.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]Yes. I was interested in their ships and docks, their weapons... those massive ships that sail like fowlbeasts through reefs and cliffs.
+[name="Irene"]I saw traces of the Stultifera Navis in them. Breogan really did recreate Ægir technology in Iberia. Perhaps...
+[charslot(slot = "m", name = "avg_4009_irene_1#7$1")]
+[name="Irene"]Perhaps we should have sailed our proud armada out into the vast oceans, rather than parading our gold-gilded ships along the coasts as a deterrent to those dukes and pashas.
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[name="Jordi"]Breogan...
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]You look nervous, Jordi. So nervous that you missed the point entirely.
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1")]
+[name="Jordi"]I'm just feeling a little out of place...
+[charslot(slot = "m", name = "avg_npc_1380_1#3$1")]
+[name="Jordi"]This place is stranger than I imagined. The air is thick and heavy, the ocean above my head sends a chill up my spine, and the glowing plants along the streets make me dizzy.
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1")]
+[name="Jordi"]Plus what happened just now...
+[name="Jordi"]Physical discomfort, I could deal with, but there are so many oddities here I can't even begin to understand yet.
+[name="Jordi"]The briefing videos Ægir provided were very detailed, but there's still so much that I couldn't comprehend, even after rewatching them so many times.
+[name="Jordi"]Food moves on its own without a fork. Clothes clean themselves without having to be removed. These things make sense, kind of.
+[charslot(slot = "m", name = "avg_npc_1380_1#4$1")]
+[name="Jordi"]But Edible Sagas? Crunchy Theorems? I just can't wrap my head around those. The best I can do for now is print out one of those emergency nutrition supply devices.
+[name="Jordi"]All my life I've known nothing but Gran Faro. Is this what it's like to...?
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]No, it's not quite like an Iberian from a backwater village seeing the capital for the first time. Not that the City of Gold still exists.
+[name="Irene"]The difference here isn't one between a small town and a metropolis, but... almost between two entirely different civilizations.
+[charslot(slot = "m", name = "avg_npc_1380_1#10$1")]
+[name="Jordi"]I tried to ask someone for directions, but couldn't understand what they were saying, or whether I was being rude to interrupt.
+[name="Jordi"]I don't even know how they see me—an Ægir in name only.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]I have my concerns, too.
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1")]
+[name="Jordi"]You're worried too?
+[charslot(slot = "m", name = "avg_4009_irene_1#7$1")]
+[name="Irene"]You of all people know what Iberia did to the Ægir after the Profound Silence.
+[name="Irene"]I don't know what kind of country Ægir is, how its people view that period of bloodshed, or how they view me—an emissary with blood on her hands.
+[charslot(slot = "m", name = "avg_npc_1380_1#2$1")]
+[name="Jordi"]But you didn't—
+[charslot(slot = "m", name = "avg_4009_irene_1#7$1")]
+[name="Irene"]I'm here representing the Iberian Inquisition. I've seen the files on the slaughters... Each report on its own may be thin, but in aggregate...
+[name="Irene"]We committed many injustices while cleansing the influence of the Church of the Deep, and the Islanders were the most affected.
+[name="Irene"]I still believe the Inquisition was in no position to be lenient, not when the country itself teetered on the brink.
+[name="Irene"]It was our collective decision that we should go to any lengths to ensure the nation's survival in a time of extraordinary crisis.
+[name="Irene"]But that does not lessen our crime.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1386_1#1$1",duration=1.5,bstart=0.2,bend=0.5)]
+[delay(time=2)]
+[name="???"]I don't believe you need worry about that.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g9_shipport",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_npc_1381_1#3$1",focus="r")]
+[name="Haggard Scholar"]Growing a massive vesicle to resist a blast from Class III weaponry, and covering the retreat of the other Seaborn into the depths of the trench...
+[charslot(slot = "right", name = "avg_npc_1381_1#10$1",focus="r")]
+[name="Haggard Scholar"]How is it even possible for biological tissue to be made to resist the forces of a micro-singularity?
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Astute Officer"]The Sea Patrol brought back tissue samples. They've already been sent to your lab through the transport tubes.
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",focus="r")]
+[name="Haggard Scholar"]At least they haven't yet developed a collective resistance to Class III weaponry like they have for Classes I and II.
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Astute Officer"]The performance of Class III weaponry is demonstrably superior.
+[charslot(slot = "left", name = "avg_4137_udflow_1#5$1",focus="l")]
+[name="Astute Officer"]But even more concerning is that an individual Seaborn has evolved measures specifically to counter it. They're more... organized than before.
+[name="Astute Officer"]You've been analyzing the Seaborn's adaptation to various weaponry ever since Milliarium set sail. Did you already foresee this?
+[charslot(slot = "right", name = "avg_npc_1381_1#2$1",focus="r")]
+[name="Haggard Scholar"]...
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Astute Officer"]Advisor Blandus?
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",focus="r")]
+[name="Blandus"]To an extent. But we need more time to confirm our theories.
+[charslot(slot = "right", name = "avg_npc_1381_1#8$1",focus="r")]
+[name="Blandus"]Thank you, Secunda.
+[name="Blandus"]Your reports are always so detailed I dare not blink for fear of missing something. Little Handy, get me some eyedrops.
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]Ignore that command, Little Handy. Just a bad joke.
+[name="Secunda"]If there's nothing else, I'll be going. I need to speak to the technicians about the damage suffered by our ships.
+[charslot(slot = "right", name = "avg_npc_1381_1#8$1",focus="r")]
+[name="Blandus"]I'd rather you stay just a while longer, unless you're hurrying to get some rest after work.
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]Isn't it somewhat ironic, considering you've also received numerous health warnings but haven't seen a doctor yet?
+[charslot(slot = "right", name = "avg_npc_1381_1#8$1",focus="r")]
+[name="Blandus"]...Very well. Still, I'd appreciate it if you could hear me out. It won't take long. I just need to confirm something—
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",focus="r")]
+[name="Blandus"]Have you read Gladiia's report?
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]I have.
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",focus="r")]
+[name="Blandus"]Then you should know about Ulpianus. I thought you'd at least show some sort of reaction.
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]Of course I'm concerned about the reappearance of the Abyssal Hunters after five years of silence. Especially when the Waterway Program is at a key juncture.
+[charslot(slot = "left", name = "avg_4137_udflow_1#3$1",focus="l")]
+[name="Secunda"]And Ulpianus's unusual activities are of particular note.
+[name="Secunda"]He clearly made contact with Gladiia's group and is aware of Milliarium, but has made no attempt to reestablish communications with Ægir.
+[name="Secunda"]Meanwhile, we've heard from our Iberian sources that he's also declined to work with Iberia.
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]He may be proud—arrogant even—but he is no fool. He must have his reasons for acting alone.
+[name="Secunda"]Regardless, I intend to find out where he is and what he's planning.
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",focus="r")]
+[name="Blandus"]That utilitarianism, that impatience... he's rubbed off on you. We had hoped you'd be better than that.
+[name="Blandus"]I can only pray your decision-making will be more prudent while tracking him.
+[name="Blandus"]Nevertheless, I have faith that you'll keep me updated on his whereabouts.
+[charslot(slot = "left", name = "avg_4137_udflow_1#9$1",focus="l")]
+[name="Secunda"]What are you talking about, Advisor Blandus?
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[name="Secunda"]Neither of us is part of the Abyssal Hunter program anymore.
+[name="Secunda"]You're the weapons technology advisor for the Waterway Program now. Aren't utilitarian, impatient decisions the usual business in your field?
+[name="Secunda"]And shouldn't you be getting information about Ulpianus from Milliarium's official sources? Why involve me?
+[charslot(slot = "right", name = "avg_npc_1381_1#4$1",focus="r")]
+[name="Blandus"]Of course, of course.
+[charslot(slot = "right", name = "avg_npc_1381_1#1$1",focus="r")]
+[name="Blandus"]Just a momentary lapse in judgment. I can't fault you for carrying out your duty as Praefecta of the Sea Patrol.
+[name="Blandus"]I just ask that you remember what Ulpianus did for us, for Ægir.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4137_udflow_1#1$1",focus="l")]
+[multiline(name="Secunda")]Yes, speaking.
+[charslot(slot = "left", name = "avg_4137_udflow_1#4$1",focus="l")]
+[multiline(name="Secunda")]What? Missing?!
+[charslot(slot = "left", name = "avg_4137_udflow_1#5$1",focus="l")]
+[name="Secunda"]I'm on my way.
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1381_1#10$1",focus="r")]
+[name="Blandus"]Who's missing?
+[charslot(slot = "left", name = "avg_4137_udflow_1#5$1",focus="l")]
+[name="Secunda"]One of the technicians on the Waterway Program has gone AWOL.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g4_aegirstreet_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$victorianormal_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4009_irene_1#2$1")]
+[name="Irene"]And you are...?
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]Avitus, from the Institute of Prehistoric Studies, Academy of Science. We study the documents and artifacts of the prehistoric civilization.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]Irene, emissary of the Iberian Inquisition.
+[charslot(slot = "m", name = "avg_npc_1380_1#2$1")]
+[name="Jordi"]Jordi. Jordi Fontanarossa.
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]A pleasure to make your acquaintance.
+[name="Avitus"]And don't worry, I didn't come to lecture you. I simply felt it was my duty as a citizen of Ægir to free our landbound friends from their needless concerns.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]Needless concerns?
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]What I mean to say is, Ægir understands that Iberia took measures proportionate to the extraordinary nature of the times.
+[name="Avitus"]We can find similar periods in our own history, or even that of the glorious prehistoric civilization.
+[name="Avitus"]The exclusion of outsiders as a necessary means of maintaining social order appears to be an inevitable step in the progress of civilization.
+[name="Avitus"]Besides, we welcome our displaced countrymen to return to the sea, just as we respect the decision of those who have opted to leave.
+[name="Avitus"]The consequences of their choices belong only to them.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]I appreciate Ægir's magnanimity, Avitus, but the 'consequences' they suffered were...
+[name="Irene"]No, it's nothing. Thank you for clarifying.
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]You're welcome—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_microrobot", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1",posfrom = "-200,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[name="'Little Handy'"]Mr. Avitus, our landbound guests, please be informed that this area has been designated for investigation.
+[name="'Little Handy'"]You are advised to proceed to another area unless you have unresolved matters here.
+[charslot(slot = "m", name = "avg_4009_irene_1#2$1")]
+[name="Irene"]A Hand of the Saint?
+[name="Irene"]The Penal Battalion used them to clean up Seaborn remains, but I never knew they could talk.
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]Apparently, our people who brought them to land did not have time to demonstrate their full capabilities.
+[name="Avitus"]Multi-purpose Support Equipment, commonly known as a 'Little Handy.' They currently offer 972 different function modules, excluding obsolete ones.
+[name="Avitus"]One can sometimes tell their affiliation just by looking at the parts and paintjob. This one, for example, belongs to the Sea Patrol.
+[charslot(slot = "m", name = "avg_npc_1380_1#8$1")]
+[name="Jordi"]Er, should I reply?
+[name="Jordi"]Um, we're very sorry, Little Handy, er, sir.
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]That would be unnecessary. It may be equipped with a voice, but that doesn't mean it's intelligent.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]I assumed that with your technology, maybe...
+[charslot(slot = "m", name = "avg_npc_1386_1#1$1")]
+[name="Avitus"]It's true that the topic of simulated personalities has fascinated many a researcher.
+[name="Avitus"]The first attempt was created 230 years ago and continues to operate to this day. In fact, I can put in an application for you, if you wish to talk to it.
+[name="Avitus"]However, whether from the perspective of neuroscience, psychology, sociology, or anthropology, simulated personalities have proven to be rather disappointing in terms of their benefits to research.
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]Perhaps I've gone off topic, though. In short, they've remained the stuff of niche research, and we do not consider them suitable for widespread application.
+[name="Avitus"]The goal of all technological development is to empower humanity. What purpose is there in turning a machine into a human?
+[charslot(slot = "m", name = "avg_npc_1380_1#11$1")]
+[name="Jordi"]I see. Fascinating.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]You said this Little Handy belonged to the Sea Patrol?
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]Only they would fit such powerful loudspeakers onto one, when quieter means of communication are available. I suppose you could consider it retro?
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]What sort of organization are they? Do they frequently undertake such investigations?
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]The Sea Patrol is part of our Legions. They perform a supporting role in combat, as well as regular reconnaissance, patrol, security, and disaster response duties.
+[name="Avitus"]Emergency sweeps like this are rare, but with the Waterway Program at such a critical moment, it's only reasonable for them to be on high alert.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]Little Handy, am I allowed to remain here?
+[charslot(slot = "m", name = "avg_npc_1401_1#1$1")]
+[name="'Little Handy'"]It is not recommended, but not forbidden.
+[charslot(slot = "m", name = "avg_4009_irene_1#1$1")]
+[name="Irene"]Then I'll wait here. I'd like a chance to speak to the Sea Patrol.
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]Very well. And you, Jordi?
+[charslot(slot = "m", name = "avg_npc_1380_1#1$1")]
+[name="Jordi"]I'll be going. Do you mind if I ask you some questions?
+[charslot(slot = "m", name = "avg_npc_1386_1#5$1")]
+[name="Avitus"]Of course not. There's a limit to what I can answer outside of my specialty, though.
+[name="Avitus"]Perhaps I could show you to a place better suited for such a conversation.
+[name="Avitus"]The Sophontheatrum.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="51_g5_aegirstreet_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Kal'tsit"]Did you sleep well, Doctor? You seem a little haggard.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="It's the air pressure. And humidity.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Yes, the Ægir seem to have retained some of their aquatic traits.
+[name="Kal'tsit"]Are you not feeling well?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Just a little short of breath.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Is it serious?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Don't worry, it's nothing.;Kinda, yeah.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Let me know if you feel any discomfort.
+[name="Kal'tsit"]Besides...
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="'Besides'?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#5$1")]
+[name="Kal'tsit"]To be frank, I thought there may be another reason for your reaction.
+[name="Kal'tsit"]Does anything about Ægir or the depths of the ocean seem familiar to you?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="A little, but—no, not here.;...;Maybe, but only vaguely.", values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#4$1")]
+[name="Kal'tsit"]So you do remember something?
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_003_kalts_1#4$1")]
+[name="Kal'tsit"]I'm accustomed to your usual silence, but now it's making me a little uneasy.
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_003_kalts_1#5$1")]
+[name="Kal'tsit"]I know it might be difficult, but remembering even the slightest detail could be of great help to us all.
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Sorry, I can't remember anything else.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]It's okay, just try to relax, Doctor.
+[name="Kal'tsit"]Seeing the Preserver has inevitably hastened the pace at which you recall the truth... Even though I had hoped you would not touch upon what you'd forgotten so quickly.
+[name="Kal'tsit"]No one knows when your path of suffering will end. Not even yourself. In that, we are all powerless.
+[charslot(slot="m",name="avg_003_kalts_1#5$1")]
+[name="Kal'tsit"]What we <i>do</i> know is that you've had an encounter with the abyss. The ocean is yet another path to your past, and we are finally upon it.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You seem excited.;Do I detect... satisfaction?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Yes. I've wanted to set foot in Ægir countless times.
+[name="Kal'tsit"]Until now, I have waited on the shore, and drifted on the waves.
+[name="Kal'tsit"]I have witnessed lighthouses and the armada turn from ideas to reality. Breogan had never given up on reestablishing communication with Ægir through such means.
+[charslot(slot="m",name="avg_003_kalts_1#2$1")]
+[name="Kal'tsit"]But all his efforts ended in failure. Ægir never welcomed home their prodigal son, much less opened their doors to outsiders.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]But now, they are even more eager to cooperate than I had anticipated. We need no longer waste efforts to persuade a proud and aloof giant.
+[name="Kal'tsit"]I can't deny feeling happy about that.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You don't look particularly happy.;Is there something else troubling you?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]I'm afraid there is.
+[name="Kal'tsit"]Ægir's proactive stance indicates that they have a plan for making contact with the land.
+[name="Kal'tsit"]But even the most moderate of their measures may seem too radical for landbound civilization. A single gesture of goodwill could cause a massive storm.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="We should intervene as soon as possible.", values="1")]
+[Predicate(references="1")]
+[Decision(options="The Abyssal Hunters are a good entry point.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="Kal'tsit"]The Hunters' situation warrants concern, too.
+[name="Kal'tsit"]To Ægir, they are neither emissaries nor guests.
+[name="Kal'tsit"]Having participated in the most radical project in Ægir's history, and 'come back to life' after being declared dead for five years... I worry that their return home would only cause—
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "left", name = "avg_1023_ghost2_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "char_263_skadi#3",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "char_263_skadi#3",focus="r")]
+[name="Skadi"]Trouble?
+[charslot(slot = "left", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="Specter"]Controversy?
+[charslot]
+[Dialog]
+[Decision(options="Skadi.;Specter.;You're back.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Where's Gladiia?
+[charslot(slot="m",name="avg_1023_ghost2_1#1$1")]
+[name="Specter"]A somewhat troublesome fellow called her away.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]I thought your priority upon returning would be to get checked up. What could possibly be more urgent?
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]No idea.
+[charslot(slot="m",name="avg_1023_ghost2_1#1$1")]
+[name="Specter"]But once Gladiia's done with her interview, I guess Skadi and I are gonna go do some stupid check-up.
+[charslot(slot="m",name="char_263_skadi#9")]
+[name="Skadi"]Swordfish and I are fine. Shark's changes might be a little problematic.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="There's no Originium in the ocean, is there?;Does Ægir understand Oripathy?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="Skadi"]I read some medical papers before I underwent the surgery.
+[name="Skadi"]Even back then, they had advanced knowledge of medulla regeneration and replacement. They should be able to help her.
+[charslot(slot="m",name="avg_1023_ghost2_1#12$1")]
+[name="Specter"]You needn't worry, Doctor.
+[name="Specter"]I've inspected myself in the mirror on that great ship. On returning, those endless dreams still creep up on me like bubbles, but they've also become as light as bubbles.
+[name="Specter"]Besides, I feel like I'd have more regrets about <i>losing</i> those dreams.
+[name="Specter"]But for now, I'm as lucid as I've ever been. And luckily for you, I'm even in the mood to take you on a tour of the city.
+[charslot(slot="m",name="avg_1023_ghost2_1#1$1")]
+[name="Specter"]Interested?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Yeah!;Let's go!", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
