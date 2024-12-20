@@ -1,0 +1,46 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]秘境に興味があるようだな。あそこには無尽蔵の資源があるが、同時に危険も潜んでいるぞ。
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]数日前、私も秘境に足を運んでみたのだが、どの記録にも記されていない野生生物に遭遇した。現地の人間は、そうした生物を総称して「異獣」と呼んでいるようだ。運のいいことに、我々は奴らの攻撃からうまく逃れて、多くの収穫を得ることができた。
+[additem(itemId="sandbox_1_food_52", itemCount="1")]
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]これは「効果永続食料」の一つだ。これを食べれば、永続的に有用な効果を得ることができる。
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]探索の中で知ったことだが、異獣秘境では、異獣がこうした食料を産出している。これを確保しておけば、食料の効果切れを心配する必要はなくなるだろう。
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]それと、エンジニア部の仲間が新しい狩猟ツールを開発してくれてな――この狩猟用発射台だ！
+[additem(itemId="sandbox_1_tactical_43", itemCount="3")]
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]これまでは捕獲カゴを使用していたので、小型の動物しか捕まえられなかったが、これがある今はもっと大型の生き物も捕まえられるようになったぞ。
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]ただし、この道具は捕縛網発射台を改造して作ったものであって、捕獲カゴとはまったく使い方が違う。
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]ひとまず、異獣秘境を先行探索した際、いくつか現地に用意しておいた。道中で見かけたら、使ってもらって構わない。使い方に関しても書き残しておいたから……
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]おっとそうだ、他にもいくつか伝えたいことが。
+[additem(itemId="sandbox_1_tactical_35", itemCount="5")]
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]ロドスから制式道具が送られてきてな。
+[additem(itemId="sandbox_1_tactical_36", itemCount="5")]
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]いずれも配置する必要はなく、行動前に支援道具欄に並べて装備しておくだけで、自動的に効果を発揮してくれるような物だ。
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]拠点がレベルアップすると、拠点内でこうしたアイテムの製作ができるようになるぞ。
+[additem(itemId="sandbox_1_stamina", itemCount="8")]
+[name="ユーネクテス", avatarId="char_416_zumama", isAvatarRight="FALSE"]さて、大体このくらいだな。では、準備ができたら狩猟ボックスを確認して、異獣の情報を手に入れよう！
+[decision(option1="秘境探索の準備をする", value1="1.1", option2="秘境探索の準備をする", value2="1.2", option3="秘境探索の準備をする", value3="1.3", option4="今はやめておく", value4="1.4")]
+[predicate(references="1.1", visibleCondition="c0&&!c1")]
+<color=#d8d769>依頼を受けました。</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.2", visibleCondition="c4&&c5")]
+<color=#d8d769>依頼を切り替えました。</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.3", visibleCondition="!c6")]
+<color=#d8d769>今は依頼を受けられません。しばらく経ってからまた来てください。</color>
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.4")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[condition(references="c0", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c1", key="checkriftordered")]
+[condition(references="c4", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c5", key="checkriftordered")]
+[condition(references="c6", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
