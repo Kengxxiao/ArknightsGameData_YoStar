@@ -1,0 +1,46 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]보아하니 낯선 지역에 관심이 많나 보네. 그곳에는 무한한 자원이 있지만, 위험도 도사리고 있어.
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]며칠 전에 우리가 그중 한 곳에 갔는데, 도감에 기록되지도 않은 낯선 야생 생물의 공격을 받았어. 현지인들은 그 생물을 '환수'라고 부르더라. 다행히 우리는 잘 따돌렸고, 꽤 좋은 물건도 확보했어.
+[additem(itemId="sandbox_1_food_52", itemCount="1")]
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]이건 '무기한 음식'의 일종이야, 이걸 먹으면 능력치가 영원히 향상돼.
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]우리가 알아낸 바로는 환수를 사냥하면 이런 음식을 얻을 수 있어. 정기적으로 환수를 사냥한다면 앞으로 음식의 유통기한을 걱정 안 해도 되겠지?
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]게다가 엔지니어링부에서 새로운 사냥 도구 '사냥용 발사대'도 만들어줬어!
+[additem(itemId="sandbox_1_tactical_43", itemCount="3")]
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]전에 쓰던 비스트 트랩은 작은 동물밖에 사냥할 수 없는데, 이 사냥용 발사대가 있으면 대형 동물도 사냥할 수 있어.
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]문제는 이게 그물 발사대를 개조해서 만든 거라, 사용법이 비스트 트랩이랑 완전히 달라.
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]우리가 환수 낯선 지역을 떠나면서 일부 사냥용 발사대를 두고 왔는데, 네가 발견하면 계속 써도 돼. 음, 사용법이라면…… 내가 약간의 가이드를 남겨뒀어……
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]맞다, 그 밖에도 다른 소식이 있는데……
+[additem(itemId="sandbox_1_tactical_35", itemCount="5")]
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]로도스 아일랜드 본함에서 제식 도구를 보내왔어.
+[additem(itemId="sandbox_1_tactical_36", itemCount="5")]
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]이건 패시브로 발동하는 도구라서 배치하지 않아도 알아서 작동할 거야. 작전 전에 도구에 편성만 하면 돼.
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]주둔지를 레벨 업 하면 주둔지에서 제식 도구를 만들 수 있어.
+[additem(itemId="sandbox_1_stamina", itemCount="8")]
+[name="유넥티스", avatarId="char_416_zumama", isAvatarRight="FALSE"]자, 전달할 소식은 여기까지야. 준비가 됐다면 사냥 정보함에 가서 환수를 추적해 봐!
+[decision(option1="낯선 지역 탐험을 준비한다", value1="1.1", option2="낯선 지역 탐험을 준비한다", value2="1.2", option3="낯선 지역 탐험을 준비한다", value3="1.3", option4="오늘은 아니다", value4="1.4")]
+[predicate(references="1.1", visibleCondition="c0&&!c1")]
+<color=#d8d769>의뢰 수락 완료!</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.2", visibleCondition="c4&&c5")]
+<color=#d8d769>의뢰 변경 완료!</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.3", visibleCondition="!c6")]
+<color=#d8d769>현재 의뢰를 수락할 수 없습니다. 나중에 다시 방문해 주십시오.</color>
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.4")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[condition(references="c0", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c1", key="checkriftordered")]
+[condition(references="c4", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c5", key="checkriftordered")]
+[condition(references="c6", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
