@@ -1,0 +1,727 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[delay(time=1)]
+밥, 지난번 편지에서 네가 강력히 피력한 그 제안에 대해 한번 진지하게 생각해 봤는데, 호의는 고맙지만 당분간 컬럼비아에 가지 않기로 했어.
+결국엔 우린 카즈델 외곽의 한 마을에 머물고 잠시 쉬기로 했지.
+맞아, 아주아주 먼 길을 걸어온 거야. 카즈델에서 한걸음 떨어진 곳에서 멈췄다가, 다시 되돌아 떠나기로 했어.
+마지막까지 우린 망설였고, 고민하고 또 말다툼했어…… 빙빙 돌기만 하다가 카즈델에는 들어가지도 못하고, 그렇다고 떠나지도 못한 이유는 아무도 몰라.
+아마도 여전히 내 생각이 다 정리되지 않았기 때문일지도 몰라.
+어쩌면 카즈델에 좋은 변화들이 있었다 해도, 크게 달라지지는 않아서일 수도 있지.
+혹은 많은 사람들이, 다시 긴 여정을 시작할 기력을 잃었을 뿐일지도 몰라. 나도 마찬가지고.
+참, 조금 말하기 어려운 일이 있어. 큰일은 아닌데, 어쩌면 네게 좀 폐를 끼칠 수도 있을지도 몰라. 게다가 어느 정도는 내 욕심이 과한 부분도 있어.
+네 업무 범위에 포함되는지를 몰라서, 미리 사과할게…… 내 말은, 만약 괜찮다면 나와 내 동료들은……
+맥주를 좀 사고 싶거든.
+적어도 서우인 축제 날에는, 카즈델 외곽에서 진행되는 변장 퍼레이드에 우리도 참가하고 싶어. 맥주도 같이 마실 수 있으면, 더할 나위 없이 좋을 것 같아.
+[dialog]
+[stopmusic(fadetime=1.5)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]콜록, 콜록…… 숨 막혀 죽겠네.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]가면 쓰고 있으면서.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]가면이 먼지를 막아주진 않는다고. 위르겐, 트집 잡으려거든 리자한테나 가서 얼마나 꼼꼼하게 가렸는지 봐봐.
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_1011_wizard_1",duration=1)]
+[delay(time=2)]
+[name="우르수스 캐스터"]……
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]머드락, 돌아왔구나! 편지는 잘 보냈어? 서우인 축제 전에는 확실히 맥주를 받을 수 있는 거지?
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]머드락, 맥주 건은 어떻게 됐어?
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]머드락?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]전달자가 부재중이라, 로도스 아일랜드의 사무소에다가 넘겨주고 전달해 달라고 할 수밖에 없었어.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]그러면 시간이 더 오래 걸릴 텐데……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]카즈델 주변에선 정말 맥주 한 병도 찾을 수 없는 거야?
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"](어깨를 으쓱한다) 오죽하면 빅 밥에게 머드락이 편지를 썼을까.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]안돼, 서우인 축제에서 맥주를 마시기로 정했으니까, 꼭 그렇게 해야지. 우리가 직접 움직여야겠어.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]우리가 직접 움직이자니…… 양조를 하자는 말이야?
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]헛소리하는 거 듣지 마, 양조하는 게 어디 그리 간단한 줄 알아.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]뭐가 헛소리라는 거야!
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]양조 자체는 그리 어렵지 않아. 보리를 물에 담가 싹을 틔우고, 그다음 맥아를 삶아 걸러낸 뒤, 홉을 넣고 마지막에 발효시키면 돼.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]다른 재료는 다 있다 쳐도, 홉은……
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]근처에 가서 찾아보자. 이 자식이 양조가 어렵지 않다고 했으니까, 홉이 어떤 건지도 분명 알고 있을 거야.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]당연히 알고 있지!
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]근데 너희들 왜 이리 적극적인 거야? 아깐 헛소리라더니……
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]쓸데없는 소리 말고, 위르겐, 내가 가서 모두에게 양조에 대해 말해볼게.
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]위르겐, 들었지? 이미 결정된 거야, 너 네가 한 말은 지켜야 해.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]아, 이거 참, 하하하……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]내가 같이 도와줄게.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]모두 다 같이.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="27_g26_dusk_wild",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+며칠 후
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]……아니야, 이건 홉이랑은 거리가 멀다고.
+[charslot]
+[dialog]
+[PlaySound(key="$leaveshake")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]이건?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"](킁킁)이것도 아니야. 냄새만 맡아도 시큼하잖아.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]여기 카즈델은…… 그러니까 우리가 머물고 있는 이곳은, 네가 길에서 말했었던 거랑은 다르게 주변 식물이 너무나도 척박하다고.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]하지만 나는…… 카즈델에 식물이 무성하다는 말을 한 적이 없는 것 같은데.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]다른 사람이 한 말 아니야? 아마도 윈터위습 산맥 근처, 눈 내리는 밤이었던 것 같은데……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]아니, 아니다.
+[charslot]
+[dialog]
+[PlaySound(key="$leaveshake")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]아, 맞네.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]그날 때마침 눈이 내렸고, 우린 배가 너무 고팠었잖아. 밭의 무는 근처 마을 사람들이 모두 뽑아버려서 없었고……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]황폐한 집에서 떨고 있을 때, 아냐가 아무리 카즈델이라도 야생 무조차 자라지 못하는 곳은 아니라고 했었어. 그 뒤로도 우리가 생각할 수 있는 좋은 점들을 한바탕 늘어놓았었지.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]식물이 울창한 언덕, 밀림, 계곡 사이의 비옥한 토지…… 아, 당연히 밀밭이랑 홉까지. 그게 무슨 카즈델이라고.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_wind", volume=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]위르겐, 만약에 카즈델에 들어가고 싶으면……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]나도 알아, 못 들어가는 게 아니란 걸. 하지만 도둑질처럼 몰래 들어가는 게 무슨 재미야.
+[charslot]
+[dialog]
+[PlaySound(key="$leaveshake")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]이것도 아니고, 저것도 아니고……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]하하, 호랑이도 제 말하면 온다더니!
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]이건…… 무잖아?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]맞아, 게다가 무가 이렇게나 많아! 카즈델에 정말 이런 게 있었구나!
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]*라이타니엔 욕설*, 무도 있는데, 왜 홉은 없는 거야, 정말……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]일단 계속 찾아보자……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]기다려봐, 머드락, 움직이지 마.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]네 머리 위로 조그마한 열매가 떨어졌어. 내가 잡을 테니까 떨어뜨리면 안 돼.
+[dialog]
+[charslot(duration=0.8)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_067",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]잡았어, 냄새 좀 맡아보자…… 이 냄새는……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]이걸로 해보자, 이거 될지도 모르겠어.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+십여 일 후
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]머드락, 여긴 왜 왔어?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]다들 맥주는 어떻게 됐는지 궁금해해서 내가 보러 왔어.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]벌써 뭐가 있겠어, 계속해서 발효시켜야지.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]위르겐 그 자식, 완전 속 빈 강정 같은 놈은 아니었나 봐, 맥아랑 맥즙 끓이는 것도 얼추 그럴듯한 모양새가 됐어. 다만 발효부터는 쩔쩔맬 테니까, 내가 대신해 줘야겠지.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]소대에서 위르겐 혼자만 양조에 대해 알고 있는 줄 알았는데.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]날 잊은 거야?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]너…… 음……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]맞네, 네가 설원에서 맛있는 산딸기주를 빚어줬었지.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]잊어버린 줄 알았는데 용케 기억하네. 산딸기주…… 그게 벌써 몇 년 전이야. 그때 우리는 리유니온이었는데, 맞지?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]응, 넌 그때 '달콤한 입과 붉은 이빨 리자'였었지.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]하, 벌써 다 기억해 냈네.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]그냥 도수 낮은 달콤한 술을 좋아한 것뿐인데, 왜 내가 '달콤한 입'이 된 거지? 내 말솜씨가 그렇게 좋았나?
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]뭐, '붉은 이빨'은 맞긴 한데.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]항상 가면을 쓰긴 했지만, 산딸기 때문에 자주 네 이가 붉게 물들었던 게 기억나.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]하하하, 피차일반이야.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]그래도 서로 별명도 지어주고, 농담도 하고 술 먹고 싸우지도 않으면서, 시간도 금방 지나간 거 같아.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]너도 그때쯤 떠나기로 결정한 거, 맞지?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]응.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]처음에 리유니온은 마치 벽난로 속 불꽃이 훨훨 타오르는 설원 위의 집 같았어. 정말로…… 집 같았지.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]근데 나중에는 오히려 활활 타오르는 전차로 변해버렸지. 눈이든, 나무든, 흙과 돌 모든 걸 태워버리고 앞으로만 나아갔어.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]그것 때문에 네 살카즈 동료 말고도, 평소에 어울린 적 없었던 우르수스인들까지 너와 함께 떠난 거야.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]위르겐이랑 아냐 같은 라이타니엔인들도, 네가 있었기에 비로소 우리와 함께하게 된 거고.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……미안해.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]뭐가 미안해.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]네가 카즈델이 우리 모두의 집이 되길 바랐던 걸 알아. 하지만 현실에서 우린 서우인 축제조차 외곽에서밖에 참여하지 못하는걸.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]하지만 그러면 뭐 어때? 집으로 돌아갈 수 없는 우리 같은 사람들이 아주아주 긴 시간 동안 카즈델에서 지내는 거…… 그것도 나름 좋을 것 같지 않아?
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]이번 서우인 축제도, 결국엔 아냐 때문은……
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_steamburst", volume=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]쳇, 깨진 발효통에서 공기가 새잖아. 내가 때워볼게.
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_steamburst", volume=1)]
+[PlaySound(key="$d_avg_steamburst", volume=1,delay=0.3)]
+[delay(time=2)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]망했다, 공기가 너무 많아!
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]내가 도와줄게!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]안돼, 발효통에 흙이 묻으면 안 된단 말이야! 그냥 내가 하는 게……
+[charslot]
+[dialog]
+[CameraShake(duration=1, ystrength=60, vibrato=50, randomness=100, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[delay(time=2)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]홈부르크 이 자식, 하필 깨진 통을 찾아가지고 와서는!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]머드락, 괜찮아……? 아, 나보다 더 껴입었었지.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]흥, 다음번에는 나도 갑옷을 찾아서 입어야겠어. 우선 가면부터 써야지. 홈부르크 녀석 것도 좋을 것 같긴 한데……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]머드락?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]좋은 냄새.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]그러고 보니…… 그러네, 좋은 냄새야.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]근데, 우리 원료는……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]걱정하지 마, 맥아는 다시 발효하면 되고, 홉을 대체한 것도 위르겐이 많이 숨겨놓았으니까, 내게 다 생각이 있어.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]숨겨 놓았다고? 뭘 하려고?
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]넌 상상도 못 했을 걸…… 그걸 베갯속으로 쓰고 있지 뭐야.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]그 위에서 아주 죽은 듯이 자더라고, 지진 난 것처럼 코까지 골면서.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]맞다, 산딸기 좀 먹을래?
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]산딸기?
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]카라반에서 효모를 사는 김에 바꿨어. 맥주가 다 빚어지고 나면 산딸기주를 만들까 했는데, 전혀 달지 않아서 그냥 먹으려고.
+[charslot]
+[dialog]
+우르수스 여성은 말을 하며 가면을 살짝 들어 올리고는 산딸기 한 알을 입에 넣었다.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]쳇, 아무 맛도 안 나.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]역시 설원의 산딸기가 더 맛있긴 하다.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="27_g26_dusk_wild",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+수십일 후
+서우인 축제 당일
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]머드락, 퍼레이드가 곧 시작하니까 우리도 준비해야 해. 위르겐하고 리자는 뭐래? 맥주는 빚어졌대?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]곧 알게 되겠지.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]혹시 몰라서 그러는데, 빅 밥은?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]아직 소식이 없어.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]……그렇군.
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]왜 아직도 가만히 서 있어?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]생각하고 있었어…… 카즈델을.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]뭐 생각할 게 있다고, 저쪽에 큰 화로가 있네.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]하지만 이 카즈델은…… 우리와 함께 나아갔던 그곳과 정말 같은 걸까?
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]분명히 다르지.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]특히 아냐 그 녀석, 지금 생각하면 카즈델에 대해 얼마나 허풍을 늘어놓던지, 듣고 있는데 내 얼굴이 다 빨개지더군.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]만약 카즈델이 정말 그렇게 변했다면, 한번 이틀 정도 그곳에서 살아보고 싶네……
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]우선 캠프로 돌아가자. 맥주 마시고 싶어서 도저히 못 참겠어.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]……
+[charslot]
+[name="다른 머드락 소대원"]……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……실패했어?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]그건 아닌데, 그러니까, 뭐라고 하면 좋을까……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]아무 말 하지 말고, 바로 우리의 걸작을 꺼내와 봐. 자, 우선 작은 잔으로 맛 좀 보자.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]향기로워……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]윽……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……식초잖아.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]풉.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]웃어?
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]아니면? 울까? 아냐가 너 우는 걸 보고 싶어 할 거 같아?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]아냐는……
+[dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[dialog]
+[charslot]
+[Subtitle(text="“내가 카즈델에서 첫 번째로 죽은 머드락의 소대원이네, 내 집에서 죽을 수 있어서 너무 행복해. 죽은 후에 내 유골은 바다에 뿌려줘……”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="“너네 정말 이베리아에라도 갈 것 같은 모양새다? 이베리아 쪽 소문을 들은 적 있는데, 난 시본의 먹이가 되긴 싫다고!”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“난 그냥 차선책을 택할게, 카프리니로서 모두를 위해 내가 길을 찾고, 영혼 용광로에 들어가겠어.”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“세상에나, 너희들 왜 이렇게 진지한 거야. 설마 진짜 카즈델 전체와 싸울 준비를 하려는 건 아니지?”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“진지하게 말하는 건데, 서우인 축제 날에 카즈델 외곽에서 변장 퍼레이드가 열린대.”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“그날에는 너희가 나를 데리고 거기 이곳저곳을 같이 구경하고, 재밌게 놀고, 다시 맥주 두 모금 마시고…… 그래, 맥주, 카즈델이 보물처럼 여기는 그 냄새 풀풀 나는 맥주가 아니면…… 충분해.”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="……", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……난 맥주 얘기 한 마디 했을 뿐이야. 다들 마시고 싶어 하는 거 봐봐. 머드락, 네 탓이니까, 네가 다 책임져.”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“그래, 웃자, 웃자고.”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="“이렇게 웃어본 건 정말 오랜만인 것 같네.”", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[subtitle]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_067")]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6)]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6,loop=false,channel="1",delay=1)]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6,loop=false,channel="2",delay=2)]
+[Delay(time=2.5)]
+[charslot]
+라이타니엔인은 매섭게 앞에 있는 리유니온 옷차림의 소대원을 쳐다본다……
+……갑자기 머드락 손에 있던 컵을 빼앗아, 단숨에 식초를 마셔 비워버렸다.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]위르겐!
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]머드락, 괜찮아, 나 멀쩡해…… 콜록!
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]리자, 오늘 나 반드시 카즈델에 가야 해. 외곽 퍼레이드 대열에서……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]……스파클링 식초를 마실 거야!
+[dialog]
+[charslot]
+팽팽하던 분위기가 한순간에 풀리면서, 사람들 사이에서 드문드문 웃음이 흘러나왔다.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]머드락?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]위르겐이 말했듯이, 우선 먼저 아냐를 데리고, 우리의 '맥주'를 챙겨서…… 카즈델에 가보자.
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]아쉽네, 진짜 맥주를 마실 수 있을 줄 알았는데 말이야. 빅 밥은?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]날이 곧 어두워질 거야. 빅 밥을 기다릴 시간은 없어.
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]다들, 준비해. 우린 카즈델로 간다.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]오늘은 서우인의 축제야, 외곽엔 변장 퍼레이드가 있으니, 다들 최선을 다해…… 음……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]상상력을 발휘해 봐.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]다른 변장을 한 살 카즈들이 우리한테 어떤 불만이 있을지 모르니, 모두 될 수 있으면 살카즈처럼 변장하는 게 좋을 거 같아.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]나랑 다른 살카즈들이 앞에 서도록 할게.
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.6, loop=true, channel="bse")]
+[charslot]
+[name="필라인 소대원"]내가 한 가짜 뿔 좀 봐봐, 진짜 같지 않아? 자자, 아직 준비 안 됐으면 모두 내 쪽으로 오라고!
+[name="우르수스 소대원"]뭐 이렇게 엉망으로 했어, 귀에다가 걸 수도 없잖아!
+[name="필라인 소대원"]난 잘했거든! 네 귀가 너무 동그래서 그런 거야!
+[name="카프리니 소대원"]그럼 나는 어떡하라고? 뿔 갈기 싫단 말이야! 아프다고!
+[name="살카즈 소대원"]변장, 변장하라고! 후드 같은 거 쓰면 되잖아!
+[name="엘라피아 소대원"]성 안에는 산크타로 변장한 사람도 있다던데. 자, 이 광륜을 머리 위에 달아봐.
+[name="살카즈 소대원"]휴우, *살카즈 욕설*, 이거 꽤 밝은데!
+[stopSound( channel="bse",fadetime=2)]
+[dialog]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[charslot(slot="l",name="avg_npc_932_1#1$1",posfrom="-200,0",posto="-200,0",duration=0)]
+[charslot(slot="m",name="avg_npc_934_1#1$1",posfrom="0,0",posto="0,0",duration=0)]
+[charslot(slot="r",name="avg_npc_933_1#1$1",posfrom="200,0",posto="200,0",duration=0)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.6, loop=true, channel="bse")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="카즈델 외곽 시민 A"]봐봐, 머드락 쪽 사람들도 왔네.
+[charslot(slot="m",name="avg_npc_934_1#1$1")]
+[name="카즈델 외곽 시민 B"]그쪽 사람들 중에 저렇게나 살카즈가 많았었나? 저 사람 머리 위에 뿔…… 삐뚤어진 거 같은데?
+[name="카즈델 외곽 시민 B"]그리고 저 후드 안에서 튀어나온 뿔은, 딱 봐도 카프리니 거네……
+[charslot]
+[name="살카즈 소대원"]야, 쟤들을 보지 말고 날 보라고!
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="카즈델 외곽 시민 A"]아, 너구나, 정통 살카즈! 사람들 틈에서 말도 안 하고, 머리 위에 광륜을 달고 있네!
+[charslot(slot="m",name="avg_npc_934_1#1$1")]
+[name="카즈델 외곽 시민 B"]이건 조금 그렇지 않나……
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="카즈델 외곽 시민 A"]뭐 그리 많은 걸 신경 쓰고 그래, 머리 위에 뿔이 있으니 당연히 살카즈겠지!
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_1011_wizard_1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_934_1#1$1")]
+[name="카즈델 외곽 시민 B"]걘 뿔이 없는데……
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="카즈델 외곽 시민 A"]리유니온 따라 한 것도 정말 똑같은데!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]역시 네가 뭘 좀 알긴 아는구나!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]자, 이거 하나 마셔봐. 분명 턱이 빠질 만큼 놀랄 거야!
+[charslot]
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="카즈델 외곽 시민 A"]맥주? 거품이 이렇게나 많아? 정말 오랫동안 못 마셨었는데, 빨리 한 입 줘봐……
+[name="카즈델 외곽 시민 A"]푸웁…… 시큼해라!
+[charslot]
+[name="퍼레이드의 사람들"]하하하하하하……
+[stopSound( channel="bse",fadetime=2)]
+[dialog]
+[charslot]
+여러 이유로 인해 들어오길 꺼리거나, 혹은 도시에 들어올 수 없는 살카즈들은 이 팀을 눈여겨봤다.
+여건상의 제한으로, 머드락 소대원 대부분의 변장은 너무나 쉽게 간파됐다.
+하지만 그 날밤에는, 아무도 굳이 그 사실을 들추려 하지 않았다.
+그들은 차라리 이 이종족들이 자신들과 똑같이 기나긴 귀향길을 걸어왔고, 마침내 그들의 고향에 돌아온 거라고 믿고 싶어 했다……
+카즈델에 돌아왔다고.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]하하하…… 꺼억!
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]위르겐, 그만해. 뱃속으로 연달아 식초를 들이붓지 말라고.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]식초면 또 어때! 내가 맥주라고 하면, 그건 맥주인 거야!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="머드락"]위르겐……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]이봐, 머드락! 오늘 밤 정말 즐겁다, 그렇지?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]응.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]아냐, 넌 어때?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]시간도 늦었으니, 우리도 마지막으로 해야 할 일을 해야겠군.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]마지막으로…… 해야 할 일?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]우리는…… 카즈델로 가야지.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]됐어, 아냐도 말했잖아, 자기 때문에 도시 전체와 싸우지 말라고.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]괜찮아.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]아냐를…… 내게 줘.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowstormflp", volume=0.8, loop=true, channel="wind")]
+머드락은 라이타니엔인이 건네준 유골 단지를 받았다.
+그녀는 제자리에 서 있었다.
+요란한 밤바람 소리 속에서, 그녀는 바람 속의 바위처럼 그저 묵묵히 그곳에 서 있었다.
+[stopsound(channel="wind",fadetime=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]영원히 멈추지 않는 그 용광로만이 카즈델을 의미한다고, 대체 누가 정했지?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]흙과 돌, 늪, 모래와 자갈…… 아마 더 고요하고, 더 넓은, 더 평안한 그곳이야말로 우리들의 카즈델이고……
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]우리들의 집이야.
+[dialog]
+[charslot]
+사람들은 조용해졌고, 조용히 기다렸다.
+머드락이 유골 단지를 내려놓고 땅을 향해 무언가 조용히 속삭일 때까지.
+땅이 조금 흔들리고 나서, 마치 머드락이 집으로 돌아오는 길에 수없이 부탁했었던 그 모습처럼, 화로 모양으로 쌓아 올려진 흙과 돌들이 들썩이며 그 부르짖음에 응답했다.
+사람 키만한 화로에 장작이 쌓이고 따뜻한 불꽃이 피어오를 때까지, 슬픈 탄식도, 울부짖음도 없이 오직 타닥타닥 장작 타는 소리만 날 뿐이었다.
+[charslot(slot="m",name="avg_npc_010", bstart=0.2,bend=0.7)]
+[name="???"]머드락.
+[name="???"]머드락!
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]이 소리는……?
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_010",duration=1)]
+[delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[name="빅 밥"]너희 여기에 있었구나, 찾느라고 고생했네.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]오랜만이야, 머드락.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]……빅 밥?! 너 정말…… 정말 와줬구나!
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]길에서 시간이 조금 지체되긴 했지만, 간신히 시간 맞춰서 도착했네.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]너희들 캠프에는 한 명도 없길래 난 또 무슨 일 생겼나 걱정했다고. 다행히 내가 아직 바운티 헌터 때의 실력이 전부 무뎌지지 않았기에 망정이지……
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]밥!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]빅 밥, 정말 와줬구나!
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]당연히 와야지. 머드락 소대가 맥주를 마시고 싶다는데, 내가 안 도와주고 배기겠어?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]네가…… 빅 밥? 정말 맥주를…… 가지고 온 거야?
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]여어, 신입인가?
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]그래, 내가 너희들에게 맥주를 주러 왔다고!
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]농장주가 직접 배달하는 밥 농장의 수제 맥주다. 머드락 소대 모두 마실 수 있지.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]근데 지금 보니까 술 마실 때가 아닌 거 같네?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]아니, 아니야……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]밥, 딱 맞아. 지금이…… 마침 맥주 마시기 딱 좋을 때야.
+[dialog]
+[charslot]
+머드락이 유골 단지를 열자, 먼 길을 떠난 전사의 유골이 불속으로 들어갔다.
+그리곤 머드락은 빅 밥에게서 맥주 한 병을 받았다.
+황금빛 술에 거품이 나타나자, 마치 서우인 축제를 오지 못한 동료의 웃음소리같이, 화롯불은 맑게 터지는 소리를 냈다.
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"](훌쩍)
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]숨 막혀 죽겠네, 안 그래?
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]……말했었잖아, 내 마스크는…… 먼지를 막아주진 않는다니까.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]아냐…… 아냐야……
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]흑……
+[dialog]
+[charslot]
+머드락 소대에서 낮게 흐느끼는 소리가 들리자, 아직 흩어지지 않은 퍼레이드 사람들도 모두 화로로 모여들었다.
+훨훨 타오르는 난롯불을 보면서, 저마다 여기 있어야 하지만 이곳에 도착하지 못한 사람을 그렸다.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]……빅 밥, 맥주 더 남았어?
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]아직 더 있지.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]한 병 줘! 아냐 혼자 몰래 마시게 할 순 없지.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]다들…… 술 받으러 와.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="카즈델 외곽 시민 A"]그, 혹시 맥주 더 있으면……
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]자, 가져가!
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]어차피 오리지늄 냉각 장치도 오는 길에 고장 나버렸어. 머드락 소대는 이렇게 많이 마시진 못해서 내심 걱정했었거든.
+[dialog]
+[charslot]
+눈물은 알코올이 뱃속으로 내려가며 가져오는 에너지로 인해 빠르게 말랐다.
+마침내 꾹 닫은 입술이 열렸고, 약간 취한 얼굴이 발그레해지면서, 흐느낌이 노래가 되었고, 노랫소리는 열렬한 대화로 또 변해갔다.
+홉의 향기는 까만 밤, 잠들어 있는 먼 곳에까지 널리 퍼졌다.
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]머드락! 넌 흙과 돌로 피난처와 석상을 만들 수 있으니까, 그럼 흙과 돌로 좀 더…… 음…… 시적인 것도 만들 수 있을까?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]시적인 거?
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]예를 들어…… 카즈델 주변의 황무지를 기름기가 잡힐 정도로 비옥한 검은 흙으로 바꾸고…… 밀밭으로 바꾸는 거지!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]산딸기 과수원으로 바꾸는 거야!
+[charslot(slot="m",name="avg_npc_053")]
+[name="살카즈 전사"]난 밀밭에 한 표!
+[charslot(slot="m",name="avg_npc_067")]
+[name="라이타니엔 감염자"]이거 봐…… 봐봐!
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="우르수스 캐스터"]홈부르크, 좋은 생각이야. 위르겐은 기껏해야 스파클링 식초밖에 못 만드니까, 산딸기 과수원이 있으면, 넌 매일 산딸기주를 마실 수 있을 거야!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwdcheerup", volume=1)]
+[CameraShake(duration=2, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="기뻐하는 사람들"]산딸기주! 산딸기주!
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]밥, 이렇게 와줘서 정말 고마워.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]아니야, 굳이 이 맥주들이 아니더라도, 설령 식초를 마셨더라도 오늘 밤은 따뜻한 서우인 축제였을 거 같네.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]그리고, 미안해. 이전 편지에서 널 보러 컬럼비아로 간다고 했었는데, 결국엔 네가 먼저 카즈델에 와버렸네.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]그것도 좋잖아? 컬럼비아에는 밀밭도 있고, 홉도 있지만, 주류, 담배, 아츠 유닛 및 오리지늄 제품 관리국도 있단 말이지.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]술 담배…… 뭐?
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]한마디로, 세무 조사가 요즘 날이 갈수록 짜증 난다고.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]원래는 너희에게 술을 배달해 줄 사람을 찾으려 했는데, 세무 조사가 너무 짜증 나서 견딜 수가 없는 거야. 그리고 혹시나 다른 사람이 갔다가 사고가 날까 봐 걱정도 되고 해서, 그냥 내가 직접 오게 된 거지.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]아무튼 네게 홉 샘플을 주는 것보다야, 내가 직접 맥주 한 수레를 가져다주는 게 낫지.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]그럼 너 돌아가면……
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]글쎄, 세무 조사가 너무 살벌해서, 돌아가자마자 철창행일지도 몰라, 하하!
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]하하……
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]그럼 너는, 여기에 계속 머무를 거야?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]아니, 언젠가는 떠나겠지, 우린 계속 저항할 테니까.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]누구에게 저항한다는 거야?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]우르수스의 영주, 라이타니엔의 귀족…… 아직 부족해.
+[charslot(slot="m",name="avg_npc_010")]
+[name="빅 밥"]그럼 다행이구만, 혹시 주류, 담배, 아츠 유닛 및 오리지늄 제품 관리국도 거기에 넣어주면 안 되나?
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"](미소를 지으며) 우리가 정말 컬럼비아에 가게 된다면 말이야.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]하지만 우리가 저항해야 하는 것은 보고 만질 수 있는 것보다…… 아마 상대하기 많이 어려울 거야.
+[dialog]
+[charslot]
+두 사람은 침묵했지만, 화로와 가까운 곳에서는 사람들의 웃음소리가 여전히 귓가에 맴돌았다.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]하지만 지금 우리는 기억과 꿈을 품고, 살아가고, 웃고 있어. 이것이야말로 우리의 가장 작은 저항이지.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]우리 모두의 고향.
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="머드락"]카즈델에서.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=3)]
+[Character]
+[Image]

@@ -1,0 +1,765 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="53_g5_museum",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[Delay(time=2)]
+[playsound(key="$d_avg_crowdrun",volume=0.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="다급한 여자"]저 등을 좀 더 높이 올려주세요. 전시품을 비추는 조명의 빛이 구석구석 모두 비출 수 있게요.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="박물관 직원"]네, 관장님!
+[Dialog]
+[playsound(key="$rungeneral", loop=true, channel="a",volume=0.7)]
+[StopSound(channel="a", fadetime=1.2)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-200,0",duration = 0.7,afrom=1,ato=0)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="다급한 여자"]누가 이 무희 흉상을 고력기 암흑시대 조각상 그룹에 둔 건가요? 같은 시대가 아니잖아요. 빨리 꺼내서 제2 전시실로 보내주세요.
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="박물관 직원"]제가 가져다 놓겠습니다!
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 0.7,afrom=1,ato=0)]
+[playsound(key="$rungeneral", loop=true, channel="b",volume=0.7)]
+[StopSound(channel="b", fadetime=1.2)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="다급한 여자"]고력기 영탄시대 제작 기술로 복원한 악기는 어딨나요? 왜 전시대에 나와 있지 않은 거죠?
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "-100,0",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "m",posfrom = "-100,0", posto = "-100,-30",duration = 0.4)]
+[playsound(key="$d_avg_open_woodbox")]
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "-100,-30", posto = "-100,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="다급한 여자"]여기에 없어……
+[Dialog]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[charslot(slot = "m",posfrom = "-100,0", posto = "0,0",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-30",duration = 0.4)]
+[playsound(key="$d_avg_open_woodbox")]
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "0,-30", posto = "0,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="다급한 여자"]여기도 없고……
+[Dialog]
+[charslot(duration=1)]
+[stopmusic(fadetime=1)]
+[delay(time=2)]
+[playsound(key="$d_avg_harppluck", volume=0.5)]
+[delay(time=2)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[name="즐거운 노랫소리"]♪먼 곳에서 온 손님이여, 연꽃 가득한 못의 잔물결이 당신이 왔을 때의 발자취를 어루만지네요♪
+[name="즐거운 노랫소리"]♪나무 그늘 아래, 달콤한 대추야자와 향긋한 맥주를 준비했어요♪
+[name="즐거운 노랫소리"]♪함께 잔을 들어 한여름을 축하하는 건 어떨까요♪
+[Dialog]
+[playsound(key="$d_avg_clapsologirl")]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1484_1#12$1",posfrom = "-100,0", posto = "0,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="l",focus="l")]
+[name="아첨하는 직원"]아, 메제티케티 님의 노래는 마치 천상의 소리 같아요. 계속 귓가에 맴도네요!
+[Dialog]
+[charslot(slot="r",name="avg_npc_1485_1#1$1",posfrom = "100,0", posto = "0,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="r",name="avg_npc_1485_1#1$1",focus="r")]
+[name="아부하는 직원"]와, 메제티케티 님의 연주 소리는 흐르는 물처럼 부드러워요!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1478_1#10$1",duration=1)]
+[delay(time=1.5)]
+[Effect(name="$e_emoji_musicalnote",layer = 1,x=-80,y=170)]
+[name="메제티케티"]당연하지. 이 오래된 노래를 완벽하게 연주하려고 한 달 넘게 열심히 연습했거든.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1",duration=1)]
+[delay(time=2)]
+[name="다급한 여자"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#10$1")]
+[name="다급한 여자"]흥, 말은 입에 꿀을 바른 것처럼 하더니, 일을 시작하려고 하니까 발바닥에 기름을 바른 것처럼 흔적도 없이 사라졌네요.
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="다급한 여자"]티티, 내일 복원한 악기를 전시해야 한다는 거 알고 있나요?
+[charslot(slot="m",name="avg_npc_1478_1#5$1")]
+[name="메제티케티"]오늘은 접객실을 잠시 빌릴게, 아나트. 귀한 손님이 오셨으니 우리 박물관에서 제대로 대접해야지.
+[charslot(slot="m",name="avg_4139_papyrs_1#8$1")]
+[name="아나트"]이건 범람 축제를 위해 준비한 특별 전시회에요, 티티.
+[name="아나트"]지금 저희의 최우선 과제는 전시회의 모든 일정이 차질 없이 진행되도록 하는 거예요.
+[name="아나트"]여기 사람들 눈이 얼마나 까다로운 지는 오래 근무했던 당신이 저보다 더 잘 알잖아요.
+[charslot(slot="m",name="avg_npc_1478_1#4$1")]
+[name="메제티케티"]너무 예민하게 굴지 마, 관.장.님.
+[charslot(slot="m",name="avg_npc_1478_1#9$1")]
+[name="메제티케티"]부임하자마자 중요한 전시회를 기획해야 해서 조금 불안하다는 것은 알아.
+[name="메제티케티"]하지만 날 믿어, 아나트. 마음을 편하게 가져. 우리가 뭘 전시하든 트집 잡는 사람은 있을 거야.
+[name="메제티케티"]메나트 하마이트에는 집집마다 귀중한 소장품들이 있잖아. 우리 전시품을 못마땅하게 여기는 건 당연해.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="아나트"]……내일 공개할 새 전시품을 확인하러 가봐야겠어요.
+[charslot(slot="m",name="avg_npc_1478_1#10$1")]
+[name="메제티케티"]걱정하지 마. 그 남자와의 데이트를 방해하지 않을 테니까.
+[charslot(slot="m",name="avg_4139_papyrs_1#8$1")]
+[name="아나트"]그건 제 연구 대상이지, 데이트 상대가 아니에요.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot="m",posfrom = "0,0", posto = "-200,0",duration = 1.5,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1478_1#5$1")]
+[name="메제티케티"]하지만 바라보는 네 눈빛에는 감정이 듬뿍 담겨 있었는데.
+[Dialog]
+[MusicVolume(volume=0.3, fadetime=1)]
+[charslot(slot="m",name="avg_npc_1478_1#2$1")]
+[playsound(key="$d_avg_harppluck", volume=0.5)]
+[delay(time=1.5)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[charslot(slot="m",name="avg_npc_1478_1#5$1")]
+[name="메제티케티"]이상하네……
+[charslot(slot="m",name="avg_npc_1478_1#3$1")]
+[name="메제티케티"]근데 지금 몇 시야? 아직도 못 데려왔나?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="한가한 시민"]내 생각에 저 여자애는 수리 시설을 관찰해서 도시 수리 발전사에 관한 논문을 쓰려는 것 같아.
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="심심한 시민"]아니면 금석학자일 수도 있지. 강바닥에 있는 비석의 얼룩을 닦고 있을지도 몰라.
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="한가한 시민"]하긴, 뭐가 다르겠어? 결국 역사를 파는 녀석들이니까.
+[name="한가한 시민"]도시의 역사가 너무 오래돼서 그래. 사르곤의 역사학자는 다 여기로 몰려든다니까.
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="심심한 시민"]……그래, 이 400년 된 고대 하천을 봐, 넓고 광활하지. 그리고 이 높고 거대한 건물도 200년이나 됐어.
+[name="심심한 시민"]오래된 역사의 전승? 그게 바로 이거란 말씀.
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="한가한 시민"]그래, 범람 축제만 한 게 어디 있겠어? 천 년 전부터 이어져 온 전통 축제잖아.
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="심심한 시민"]맞아, 강물이 범람하면 나는 강의 신에게 오아시스에서 나는 흰 꽃을 바칠 거야. 신의 숨결이 영원한 향기로 가득하기를 빌겠어.
+[name="심심한 시민"]너는 뭘 준비했어, 친구?
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="한가한 시민"]난 우리 집 전통대로 할 거야. 순금으로 만든 잔과 그릇, 그리고 와인 1병…… 할아버지께서 아버지가 태어났을 때 묻어뒀던 오래된 술이지.
+[name="한가한 시민"]신께서 맛있는 음식을 즐기시고, 우리와 함께 축제의 북적거리는 분위기를 만끽하시기를.
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="심심한 시민"]신께서 인간 세상을 거니시는 모습을 우리의 눈으로 직접 볼 수 있기를, 그리고 신의 축복을 받을 수 있기를.
+[name="심심한 시민"]불멸의 메나트 하마이트, 신께서 영원히 이곳에 머물 수 있기를.
+[Dialog]
+[charslot(slot = "m", focus = "all")]
+[PlaySound(key="$clink")]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1")]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1")]
+[playsound(key="$d_avg_walk_water", loop=true, channel="bgs")]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "left",posfrom = "0,0", posto = "-10,-15",duration = 0.3)]
+[delay(time=0.5)]
+[charslot(slot = "left",posfrom = "-10,-15", posto = "20,-15",duration = 0.5)]
+[delay(time=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "left",posfrom = "20,-15", posto = "0,-15",duration = 0.5)]
+[delay(time=1)]
+[playMusic(key="$m_avg_dailylifeofsargon_loop", volume=0.6)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="강가의 소녀"]언니, 찾았어요?
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="페페"]잠깐만, 방금 뭔가 닿은 것 같아.
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="강가의 소녀"]하지만 언니는 벌써 한 시간 반 동안이나 물속에 있었잖아요. 계속 금방 끝난다고만 하고.
+[charslot(slot = "left", name = "avg_4058_pepe_1#3$1",focus="l")]
+[name="페페"]쉿…… 조용히……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(slot="r",name="avg_npc_1478_1#5$1",duration=1.5)]
+[delay(time=2)]
+[name="메제티케티"]정말이지, 이 아가씨는 또 어디로 간 거야?
+[name="메제티케티"]분명 각 성문 밖에 사람을 배치했는데 아무도 보지 못했다니.
+[charslot(slot="r",name="avg_npc_1478_1#1$1", focus="r")]
+[name="메제티케티"]너를 맞이하기 위해서 얼마나 공을 들였는데, 어떻게 조용히 들어오게 놔둘 수 있겠어?
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1493_1#1$1",posfrom = "-170,0", posto = "0,0",duration = 1.5)]
+[delay(time=2)]
+[charslot(slot = "l", focus="l")]
+[name="즐거운 부인"]안녕하세요, 메제티케티 님. 이렇게 급하게 어디 가세요?
+[charslot(slot="r",name="avg_npc_1478_1#9$1", focus="r")]
+[name="메제티케티"]아, 베크티 부인, 안녕하세요. 오랜 친구를 만나러 가는 중이에요!
+[charslot(slot = "l", focus="l")]
+[name="즐거운 부인"]이건 제가 방금 마당에서 딴 달콤한 오렌지예요. 범람 축제 전에 열린 거라 맛이 정말 좋을 거예요.
+[name="즐거운 부인"]메제티케티 님의 친구에게도 가져다주세요.
+[charslot(slot="r",name="avg_npc_1478_1#9$1", focus="r")]
+[name="메제티케티"]호의를 잘 못 받아들이는 그 손님을 대신해 감사드려요. 그럼 이만, 부인.
+[charslot(slot = "l", focus="l")]
+[name="즐거운 부인"]안녕히 가세요!
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r",posfrom = "0,0", posto = "180,0",duration = 1.5,afrom=1,ato=0)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="r",name="avg_npc_1478_1#9$1", duration=0.5)]
+[delay(time=1)]
+[name="메제티케티"]여기 사람들은 항상 친절하네……
+[charslot(slot="r",name="avg_npc_1478_1#3$1", focus="r")]
+[name="메제티케티"]휴…… 그 녀석은 대체 어디로 갔을까……
+[name="메제티케티"]학교 다닐 때 제일 좋아하던 곳이 어디였더라?
+[Dialog]
+[charslot(slot = "l",name="avg_npc_1486_1#1$1",duration = 0.5)]
+[charslot(slot = "l",posfrom = "-200,0", posto = "0,0",duration = 0.7)]
+[charslot(slot = "r",posfrom = "0,0", posto = "-100,0",duration = 0.7)]
+[delay(time=0.7)]
+[charslot(slot = "l",name="avg_npc_1486_1#4$1")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot="r",name="avg_npc_1478_1#4$1")]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration = 0.5)]
+[charslot(slot = "r",posfrom = "-100,0", posto= "50,0",duration = 0.5)]
+[delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=2, ystrength=5, vibrato=15, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_orangefall", volume=1)]
+[delay(time=1)]
+[charslot(slot = "l",name="avg_npc_1486_1#4$1",focus="l")]
+[name="외지인 여행객"]아, 정말 죄송합니다. 당신을 미처 보지 못했어요. 오렌지가 전부 쏟아져 버렸네요.
+[charslot(slot="r",name="avg_npc_1478_1#4$1", focus="r")]
+[name="메제티케티"]괜찮아? 다치진 않았어?
+[charslot(slot = "l",name="avg_npc_1486_1#1$1",focus="l")]
+[multiline(name="외지인 여행객")]신경 써 주셔서 감사합니다. 정말 친절하시군요.
+[charslot(slot = "l",name="avg_npc_1486_1#5$1",focus="l")]
+[multiline(name="외지인 여행객")]오, 이런……
+[charslot(slot="r",name="avg_npc_1478_1#1$1", focus="r")]
+[name="메제티케티"]왜 갑자기 눈살을 찌푸리는 거야? 어디 다치기라도 했어?
+[charslot(slot = "l",name="avg_npc_1486_1#5$1",focus="l")]
+[name="외지인 여행객"]방금 당신의 이마에 그림자가 스쳐 지나갔어요. 이건 좋지 않은 징조예요. 불운을 만날 거라는 예고죠.
+[charslot(slot = "l",name="avg_npc_1486_1#1$1",focus="l")]
+[name="외지인 여행객"]5디나르만 주시면, 당신에게 다가오는 불운을 없애 드릴 수 있어요.
+[charslot(slot="r",name="avg_npc_1478_1#5$1", focus="r")]
+[name="메제티케티"]어…… 저기, 난 약속이 있어서, 먼저 가볼게!
+[Dialog]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=1)]
+[charslot(slot = "r",posfrom = "50,0", posto = "300,0",duration = 1,afrom=1,ato=0)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=1)]
+[charslot(slot = "l",name="avg_npc_1486_1#4$1",focus="l")]
+[charslot(slot = "l",focus="l",posfrom = "-150,0", posto = "-50,0",duration = 0.5)]
+[delay(time=0.6)]
+[name="외지인 여행객"]잠깐만요! 아! 잠깐만, 2디나르도 괜찮아요!
+[name="외지인 여행객"]거짓말이 아니에요, 정말로 불운을 겪게 될 거예요!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1")]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1")]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="강가의 소녀"]절 속이는 건 아니겠죠……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]안심해, 내가 한 말은 절대 거짓말이 아니야.
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="강가의 소녀"]정말요? 흐윽…… 하지만……
+[charslot(slot = "left", name = "avg_4058_pepe_1#11$1",focus="l")]
+[name="페페"]울지 마, 내가 지금……
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[Dialog]
+[CameraShake(duration=0.5, xstrength=5, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", action="jump",posto = "0,-15",power=1,times=1,duration = 0.3)]
+[delay(time=0.31)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=1,times=1,duration = 0.3)]
+[playsound(key="$d_avg_jump_water",volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="페페"]이런, 안 돼. 또 놓쳐버렸잖아!
+[Dialog]
+[charslot(slot ="r", action="shake", power=10, times=50, duration=0.3)]
+[delay(time=0.31)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="슬퍼하는 소녀"]으앙!!!
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "0,15",power=1,times=1,duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#11$1",focus="l")]
+[name="페페"]울지 마, 울지 마, 장난친 거야! 사실 잡았어. 봐, 내 손안에 있잖아?
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="상처받은 소녀"]언니 나빠요……
+[charslot(slot = "left", name = "avg_4058_pepe_1#10$2",focus="l")]
+[name="페페"]헤…… 평소에 집에서 동생을 괴롭히던 버릇이 있어서 그만……
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="상처받은 소녀"]동생이 불쌍해요……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$2",focus="l")]
+[name="페페"]불쌍하다니? 그 녀석도 날 적잖게 괴롭히거든? 자, 항아리 이리 줘봐. 린수를 넣어줄게.
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="훌쩍이는 소녀"]이 금색 린수를 다시는 못 찾는 줄 알았어요…… 고마워요, 언니.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$2",focus="l")]
+[name="페페"]쯧쯧쯧, 내가 이렇게 힘들게 린수를 잡아줬는데, 목소리가 너무 작잖아. 더 크게 말해봐.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="훌쩍이는 소녀"]고마워요 언니, 언니가 최고예요!
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$2",focus="l")]
+[name="페페"]그렇지, 이 정도는 돼야지.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]좋아, 어서 집에 가. 절대 또 갑자기 남들처럼 밖에서 애완동물을 산책시키겠다는 생각은 하지 마.
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="기뻐하는 소녀"]안녕히 가세요.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.5)]
+[charslot(slot = "right",posfrom = "0,0", posto = "250,0",duration = 1.5,afrom=1,ato=0)]
+[delay(time=2.5)]
+[Effect(name="$e_emoji_shy",layer = 1,x=-210,y=50)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#10$1",focus="l")]
+[name="페페"]강에서 애완 린수 산책시키기? 나만 어릴 때 이렇게 엉뚱한 짓을 했던 게 아니었구나……
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",posfrom = "150,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1478_1#2$1",focus="r")]
+[name="메제티케티"]크흠……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]크흠, 아무래도 한참 동안 물속에서 린수를 잡고 있었더니 결국 누군가 못 참고 나타난 모양이네.
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]너도 내 마음을 알고 있었구나, 페페.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]하아, 박물관에 일찍 가고 싶지 않단 말이야. 가면 아나트가 이것저것 물어보면서 귀찮게 굴 거라 분명 편히 쉴 수 없을 거야.
+[name="페페"]너 혼자만 왔어? 아나트는?
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]그 애는 관장 대행 업무로 바빠. 원래도 일이 많은데, 중요한 전시회까지 겹쳐서 정신이 없어.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]대단하네, 아나트가 오자마자 승진할 줄은 몰랐어. 학교 다닐 때 다들 그 애의 느긋한 성격을 좋게 보지 않았지. 하지만 난 그 애가 열심히 하는 만큼 분명 뭔가 이룰 거라고 생각했어.
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]……내면은 항상 강한 사람이었어.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]넌 어떻게 지내는데? 이 도시에서 오래 지냈잖아, 뭐 변한 거 없어?
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]나? 바쁘지도 한가하지도 않아. 지금은 겨우 부관장 자리를 얻었지.
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="페페"]근데 넌 전에 컬럼비아 박물관에서……
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]그때는 거기서 상업 운영을 맡았었는데, 여긴 다르더라고.
+[name="메제티케티"]메나트 하마이트 박물관은 돈 벌 필요도 없고, 매년 있는 아미르와 파디샤들의 지원만으로도 잘 돌아가니까 내가 할 일이 별로 없어.
+[name="메제티케티"]좋아, 한가해서 좋아.
+[charslot(slot = "left", name = "avg_4058_pepe_1#5$1",focus="l")]
+[name="페페"]하지만 넌…… 늘 가만히 있지를 못했잖아.
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]너는? 이번 여행에서 얻은 게 많겠지?
+[charslot(slot = "left", name = "avg_4058_pepe_1#7$1",focus="l")]
+[name="페페"]상상할 수 없을 만큼 많아.
+[charslot(slot = "right", name = "avg_npc_1478_1#2$1",focus="r")]
+[name="메제티케티"]음…… 그럼 네가 쓸 보고서도 상상할 수 없을 만큼 많겠네.
+[charslot(slot = "left", name = "avg_4058_pepe_1#3$2",focus="l")]
+[name="페페"]이런, 안 되겠어. 너무 더워. 어지러워. 여기서 바람 좀 더 쐬어야겠어.
+[charslot(slot = "right", name = "avg_npc_1478_1#10$1",focus="r")]
+[name="메제티케티"]그만해. 그 변명은 학교 다닐 때 내가 선생님한테 네 조퇴를 신청해 줄 때 몇 번이나 핑계로 썼던 말이야.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1490_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="웨이터"]부인, 이곳에 오래 앉아 계셨습니다. 햇볕이 뜨겁습니다. 음료를 드시는 건 어떠신가요? 저희 가게 대표 메뉴인 신선한 감초 주스가 5디나르입니다.
+[name="웨이터"]애플로젤티는 어떠신가요? 2디나르입니다.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#1$1",duration=1)]
+[delay(time=2)]
+[name="수상한 여자"]됐어.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]그렇다면 살구 주스는 어떠신가요? 1디나르입니다.
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="수상한 여자"]분명 말했어, '됐어'라고.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]알겠습니다……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_804_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="사치스러운 관광객"]잠깐 기다리게, 최고급 커피 하나 부탁하지. 이 지역 특산품인 카다멈과 정향을 넣어줬으면 하는군.
+[name="사치스러운 관광객"]그리고 저 여성분께 감초 주스 한 잔 부탁하지.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]잠시만 기다려 주세요, 손님.
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_804_1#8$1")]
+[name="사치스러운 관광객"]부인, 범람 축제를 즐기러 메나트 하마이트에 오셨는데 예산을 넉넉히 준비하지 않으신 건가요? 여행의 즐거움이 크게 떨어질 겁니다.
+[name="사치스러운 관광객"]무례하게 들리지 않았으면 좋겠지만, 저는 항상 사람들이 벌이 수준에 맞게 소비해야 한다고 생각합니다. 만약 자금이 충분하지 않은 거라면, 휴가를 보내기에 좋은 다른 장소들도 많죠.
+[name="사치스러운 관광객"]볼리바르의 도솔레스가 괜찮다고 들었습니다. 물가도 저렴하고 경치도 좋아서…… 생활이 빠듯한 분들에게 적합하죠.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="수상한 여자"]……일리 있는 말이네. 당신, 견문이 넓은 사람이구나.
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[name="사치스러운 관광객"]과찬입니다. 당신은요? 많은 것을 보기 위해 여행길에 오르신 건가요?
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="수상한 여자"]여행? ……그렇다고 할 수 있겠네. 나만의 길을 찾고 있었어.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1490_1#1$1",duration=1)]
+[playsound(key="$d_gen_walk_n",volume=0.6)]
+[delay(time=1.5)]
+[name="웨이터"]손님, 주문하신 커피입니다.
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[name="사치스러운 관광객"]거기 두게.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]부인, 감초 주스입니다.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="수상한 여자"](단숨에 마신다)
+[name="수상한 여자"]대접해 줘서 고마워.
+[Dialog]
+[playsound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_804_1#7$1")]
+[name="사치스러운 관광객"](작은 목소리로) 쯧……
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[multiline(name="사치스러운 관광객")]이곳 범람 축제에는 어떤 재미있는 것들이 있는지 좀 소개해 줄 수 있을……
+[charslot(slot="m",name="avg_npc_804_1#10$1")]
+[multiline(name="사치스러운 관광객")]표정이 왜 그렇지?
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]아…… 아닙니다. 저 여성분께서 음료값은 안 내고 싶어 하시더니 팁을 많이 주셔서 놀랐을 뿐입니다……
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[name="사치스러운 관광객"]하, 체면치레 때문에 무리하는 가난뱅이를 만난 모양이군.
+[name="사치스러운 관광객"]됐네, 즐길 거리는 내가 직접 나가서 찾아보지. 계산 좀 부탁하겠네.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]총 15디나르입니다. 손님.
+[charslot(slot="m",name="avg_npc_804_1#10$1")]
+[name="사치스러운 관광객"]……
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="웨이터"]손님?
+[charslot(slot="m",name="avg_npc_804_1#10$1")]
+[name="사치스러운 관광객"]어…… 내 지갑이 어디 갔지?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="수상한 여자"]강이 이 도금된 고철을 싹 쓸어가 버렸으면 좋겠네, 그리고 물이 불어날 때 정말 필요한 사람들에게 갔으면 좋겠어.
+[name="수상한 여자"]……시간 낭비했네. 목표를 놓칠 뻔했어.
+[name="수상한 여자"]찬란한 도시엔…… 보석이 잔뜩 있고, 수많은 용사도 찾지 못한 보물도 있다는 얘기를 들었는데.
+[name="수상한 여자"]그런데 멀리 와보니 동전 몇 닢 가지고 따지는 사람들만 자꾸 만나게 되네.
+[Dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[playsound(key="$waterbubble_n",volume=0.7,channel="1")]
+[playsound(key="$d_avg_fallintowater",volume=0.7)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.07, yScaleTo=1.07, duration=0.9)]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall",fadetime=1)]
+먹구름이 몰려와 눈부신 햇빛을 가렸다. 붉은 머리의 여자는 돈주머니에서 동전을 꺼내 하나씩 던져 강물 속 태양의 그림자를 깨뜨렸다.
+곧이어 그녀는 휘파람을 불며 군중 속으로 사라졌다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g10_grandbazaar_d",x=-30,screenadapt="coverall",xScale=1.05, yScale=1.05)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]아…… 그랜드 바자르의 살구 주스는 여전히 맛있네. 학교 다닐 때 먹었던 그대로야!
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]난 네가 여기 올 거라고 생각했는데, 사람들 사이를 한참이나 돌아다녔는데도 네가 안 보이더라고. 나중에야 학교 다닐 때 우리 셋이 함께 왔던 게 생각났지.
+[name="메제티케티"]너는 혼자 있을 때 항상……
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="페페"]강가…… 난 혼자 있을 때 항상 강가에 갔어. 그런데 날 찾으려고 여기저기 돌아다녔다고?
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]넌 귀한 손님이잖아, 페페.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]친구잖아, 그렇게 격식을 차릴 필요는……
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="메제티케티"]……
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="페페"]설마 날 위해 손가락이 오그라들 정도로 민망한 공연이라도 준비한 거야?
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]……
+[name="메제티케티"]그건 당연한 예의지.
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="페페"]거짓말. 네가 무슨 생각을 하는지 훤히 보일 지경이라고.
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="메제티케티"]이번엔 무슨 대단한 걸 가져왔길래?
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]보석.
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="메제티케티"]보석?
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[delay(time=1)]
+[playsound(key="$d_avg_jewelryimpact")]
+[name="보석 상인"]사파이어 팔찌, 사파이어 목걸이, 사파이어 귀걸이, 한 세트로 자유롭게 맞출 수 있습니다. 단돈 2000디나르. 마음에 들면 가져가세요. 할인, 흥정 불가능. 2000디나르입니다.
+[name="거리의 확성기"]고객 여러분 안녕하세요. 저희는 특선 에메랄드 반지를 판매 중입니다. 1상자를 구매하시면 할인해 드립니다.
+[name="거리의 확성기"]품질 보증, 최고의 가성비, 모두 15캐럿입니다. 친척이나 친구들에게 선물하세요. 단 4500디나르입니다.
+[name="TV 광고"]루비 사파이어 크리소베릴, 아메시스트 로즈쿼츠 페리도트, 보석이 필요하시면 그랜드 바자르로 오세요. 상시 도매가, 언제나 저렴한 가격.
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]메나트 하마이트는 각종 보석이 많이 나는 곳이야. 평범한 보석이라면 대단할 건 없어.
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$1",focus="l")]
+[name="페페"]하지만 내가 발굴한 보석은 좀 특별한 거야.
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="메제티케티"]특별하다고?
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[delay(time=1)]
+[name="안목 있는 부인"]저는 최근에 핑크 카이언나이트 하나를 샀어요. 예전에 물을 정화하는 데 썼다고 하더라고요. 새겨진 오리지늄 회로가 정말 정교해서 예술 작품 같아요.
+[name="화려한 옷차림의 남자"]정말 값비싼 것 같군요. 저도 지난달에 비슷한 토르말린 하나를 구했어요. 지팡이에 박아 넣었더니 오리지늄 아츠 시전 능력이 크게 향상됐죠.
+[name="기품 있는 노인"]그런 건 중요하지 않네. 자, 이걸 보라고.
+[name="안목 있는 부인"]작년 한정판 보석 벨트 아닌가요? 판매자가 이 벨트로 피부 개선도 되고, 노화 방지도 된다고 했죠?
+[name="화려한 옷차림의 남자"]어르신, 착용해 보니 어떠세요?
+[name="기품 있는 노인"]확실히 상쾌하고 기분이 좋아진 것 같아……
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="페페"]음…… 그랜드 바자르에서 유통되는 이런 보석들과 비교하면, 내가 발굴한 이 보석은 좀 희귀한 기능이 있어.
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]어떤 점에서 희귀한데? 그랜드 바자르에서 유통되는 이런 오리지늄 회로 보석들도 일반인들은 보기 힘든 거야.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]일단 가자, 티티.
+[charslot(slot = "right", name = "avg_npc_1478_1#4$1",focus="r")]
+[name="메제티케티"]혹시 남이 보면 안 될 비밀이라도 있어?
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]그건 아니야, 안심해. 꼭 너한테 말해줄 거야. 하지만……
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$2",focus="l")]
+[name="페페"]뜨거운 태양이 더 높이 뜨기 전에 칠망성 대로에 가서 기원 조각상을 하나 사야겠어. 연구할 때도 신의 축복이 필요하니까.
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]……그럼 빨리 가봐. 조금 있으면 발이 데일 정도로 뜨거워질 거야.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[Background(image="53_g10_grandbazaar_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[name="수상한 여자"]목표가 도시 중심의 박물관으로 가고 있어……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="수상한 여자"]현지 박물관 부관장이 직접 마중 나올 정도면 소문이 맞는 것 같아. 평범한 신분을 가진 사람은 아니야.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_npc_1478_1#4$1",focus="r")]
+[name="메제티케티"]뭐라고?! 네가 찾은 그 보석이 샤의 유물이라고?
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="페페"]쓰읍…… 발가락 드러나는 샌들 신지 말걸. 샌들 모양 그대로 타겠어.
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="메제티케티"]지금 샌들 생각이나 하고 있을 때야? 그 보석은 도대체 어디서 발견한 거야?
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]스바트 아르살란이라 불리던 땅에서 단서를 발견했어. 우여곡절 끝에 결국 한 아미르의 영지에서 찾아냈지.
+[charslot(slot = "right", name = "avg_npc_1478_1#3$1",focus="r")]
+[name="메제티케티"]“사자들의 옛 왕좌”……
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="페페"]한 수정 동굴에서는 샤 본인이 남긴 고대 영상도 봤어.
+[name="페페"]그리고 여정에서 발견한 걸 전부 이 수첩에 기록했어. 이걸로 보물이 가득한 그 보물창고의 진짜 위치를 밝혀낼 수 있을 거야. 당시 샤가 나이츠모라에게 했던 약속이 단순한 전설이 아니었다는 걸 증명하는 거지.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]생각해 봐, 우리가 보물창고에 들어간다면 그곳에서 어떤 게 우릴 기다리고 있을까?
+[name="페페"]희귀한 보물의 가치는 차치하고, 중요한 건 그곳에 담긴 정보로 당시의 진실을 밝혀낼 수 있다는 거야.
+[name="페페"]티티, 샤가 남긴 모든 수수께끼가 전부 풀리게 될 거야!
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$2",focus="l")]
+[name="페페"]샤는 왜 미치광이처럼 도전장을 내밀었던 걸까? 그리고 카란두 카간과 벌였던 희대의 전투에 대한 진실! 그의 마지막 행방에 대한 것까지 전부 풀릴 거야!
+[charslot(slot = "left", name = "avg_4058_pepe_1#7$2",focus="l")]
+[Effect(name="$e_emoji_proud",layer = 1,x=-170,y=150)]
+[name="페페"]이건 정말 충격적인 발견이 될 거야! 황금의 도시도 우리를 주목하게 될 거라고!
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="메제티케티"]네가 위치를 알고 있다면 직접 사람들을 데리고 가서 발굴하면 되잖아. 그냥……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="페페"]아니, 마지막 단서가 하나 더 필요해. 박물관의 유물 하나를 빌려야 해.
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="메제티케티"]넌 파디샤의 딸이잖아. 전시된 유물뿐만 아니라 박물관 창고 문도 너한텐 언제든 열려 있잖아.
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="페페"]바로 그게 문제야.
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="메제티케티"]잠깐, 설마 네가 노리는 게……
+[charslot(duraiton=1)]
+페페는 박물관 외벽을 바라봤다. 현수막이 천천히 펼쳐지고 있었다.
+현수막에는 금빛 갑옷을 입은 미라가 그려져 있었다. 얼굴은 가면으로 가려져 있었고, 키가 큰 체형이었다.
+현수막 하단에는 눈에 띄는 큰 글씨로 이렇게 쓰여 있었다.
+[Dialog]
+[delay(time=1)]
+바르야반다바드 박물관 특별 기념 전시 - 샤 시대의 이름 없는 장군
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="페페"]장군? 아니, 그는 그 보물창고의 수호자야.
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="메제티케티"]그게 누구든 간에, 아나트가 가장 중요하게 생각하는 전시품이야. 빌리기 쉽지 않을 거야.
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="페페"]단서를 가진 보석 하나만으로는 아무것도 증명할 수 없어. 샤의 보물창고를 찾아야만 아버지와 폐하에게 내 능력을 증명할 수 있어.
+[name="페페"]내가 황금의 도시에 들어가 폐하의 사관이 되어 사르곤의 역사를 기록할 자격이 있다는 걸 보여줘야 해.
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="메제티케티"]페페. 파디샤의 후계자가 되는 게 싫어?
+[charslot(slot = "left", name = "avg_4058_pepe_1#5$1",focus="l")]
+[name="페페"]……그런 부와 권력은 겉모습일 뿐이야. 우리 가문의 진정한 명예는 대대로 이어져 온 사관의 직위야.
+[charslot(slot = "right", name = "avg_npc_1478_1#8$1",focus="r")]
+[name="메제티케티"]하지만 페페…… 아버님은 계속 네 동생이 사관 자리를 맡기를 원하시잖아?
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="페페"]걔한테 있는 품위와 소양은 내게도 있어. 능력으로 따지면 나도 절대 지지 않아.
+[charslot(slot = "right", name = "avg_npc_1478_1#8$1",focus="r")]
+[name="메제티케티"]페페, 2달 후에 사자가 네 동생을 황금의 도시로 데려갈 거야.
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="페페"]충분해, 티티! 네가 날 도와주기만 한다면! 아나트는 여름이 끝나야 그 미라를 빌려줄 수 있댔어.
+[name="페페"]하지만 이번 여름이 내 마지막 기회야. 그렇게 오래 기다릴 순 없어.
+[charslot(slot = "right", name = "avg_npc_1478_1#2$1",focus="r")]
+[name="메제티케티"]너희 남매는 정말…… 어릴 때부터 맨날 싸우더니, 커서는 같은 자리를 놓고 다투는구나.
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="메제티케티"]……내 출입증이야. 가져가.
+[name="메제티케티"]밤에 전시관에 들어가서 몰래 연구할 수 있을 거야.
+[charslot(slot = "left", name = "avg_4058_pepe_1#5$1",focus="l")]
+[name="페페"]너……
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="메제티케티"]너희가 이렇게 다투는 걸 보는 것도 지겨워.
+[name="메제티케티"]한 번 더 도와줄 테니, 만약 이번에 아무 소득도 얻지 못한다면 더 이상 고집부리지 마.
+[charslot(slot = "left", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="페페"]그럴 리 없어. 소득은 분명 있을 거야.
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1)]
+[Dialog]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.05, yScaleTo=1.05, duration=4, yTo=-20,block=false)]
+[delay(time=2)]
+[Background(image="bg_white",screenadapt="coverall",fadetime=2)]
+[delay(time=2)]
+[bgeffect(name="$eb_sunlight_l",layer=1,x=-400,y=100)]
+[image(image="53_i01",screenadapt="coverall",xScale=1.2, yScale=1.2,screenadapt="coverall",fadetime=2)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=45)]
+[delay(time=1)]
+페페의 혼잣말을 무시한 채, 메제티케티는 천천히 몸을 일으켜 수백 년의 세월을 견뎌온 웅장한 건물을 바라봤다.
+태양이 정원과 건물을 밝게 비췄고, 끝없는 푸른 하늘 아래 거대한 사다리꼴 건물이 우뚝 서 있었다.
+[PlaySound(key="$d_avg_breezetree")] 
+옆에 있는 커다란 종려나무가 바람에 흔들리며 소리를 냈다.
+[name="메제티케티"]매일 보는데도 여전히 저 위용에 압도돼.
+[name="메제티케티"]이렇게 오랫동안 이 도시를 조용히 지키면서 세월과 맞서왔지.
+[name="페페"]그래, 이 건물 앞에서는 인생이 아무리 길다 하더라도 순간에 불과하지.
+[name="페페"]눈 깜짝할 사이에…… 지나가 버려.
+[name="메제티케티"]시간이 어느 한순간에 멈춰 버렸으면 좋겠어.
+[name="페페"]응, 그러면 좋겠다.
+[name="메제티케티"]내일 전시회 때 보자. 들키면 내 출입증을 네가 훔쳤다고 해.
+[Dialog]
+[stopmusic(fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=1)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_breezetree")]
+[name="수상한 여자"]내일…… 박물관 전시회……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="수상한 여자"]좋아, 손님의 일정이 확정됐어. 이제 잘 접대만 하면 되겠군.
+[name="수상한 여자"]찬란한 사관 가문의 후계자, 왕과 영웅을 칭송하는 자, 사르곤 전역을 누빈 탐험가, 박학다식한 사람, 고귀한 파디샤의 딸……
+[name="수상한 여자"]제르나페카퍼 사시우트 하트셉수트.
+[charslot(slot="m",name="avg_4138_narant_1#7$1")]
+[name="수상한 여자"]다른 사람이라면 이렇게 많은 사람을 한 번에 기억하지 못한다는 것에 고뇌하겠지, 하지만 이곳에 있는 건 나란투야, 이 모든 직함이 사실은 한 사람의 것이라는 게 아쉬울 뿐이야.
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="나란투야"]……그 여자 하나만 납치해도 내 빚을 갚고도 남을 만큼의 돈을 받아낼 수 있겠어.
+[name="나란투야"]지갑에 남아있는 돈으로 내일 입장권은 살 수 있겠지……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="나란투야"]……됐어.
+[name="나란투야"]줄도 너무 길고, 햇볕도 너무 뜨겁고.
+[name="나란투야"]이 도시에선 금화가 너무 가치가 없어……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$sjoyasorrow_intro",key="$sjoyasorrow_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1477_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="미노스 관광객"]당신은 당신들의 황금빛 태양, 찬란한 보석, 그리고 저 뒤에 있는 박물관에 대해 맹세할 수 있어?
+[name="미노스 관광객"]역사와 문명에 대한 존중을 바탕으로 신중하게 대답할 수 있는지 물어봐도 될까?
+[name="미노스 관광객"]당신의 양심에 물어보고 말해줘, 박물관 입장료는 얼마지?
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="박물관 매표원"]다시 말씀드리지만, 사르곤 유물 전시관이 아닌 곳은 무료입니다. 사르곤 관련 전시관만 금액을 지불하셔야 해요.
+[name="박물관 매표원"]만약 알아보지 못하신 거라면, 앞에 있는 매표소 유리창에 관람 가격표가 있습니다. 박물관의 통역 서비스를 신청하실 수도 있고요.
+[charslot(slot="m",name="avg_npc_1477_1#4$1")]
+[name="미노스 관광객"]미노스 전시관에 무료로 입장할 수 있다고?!
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="박물관 매표원"]다시 말씀드리지만, '미노스 전시관'은 없습니다.
+[name="박물관 매표원"]하지만 '북동지부' 전시관에서 말씀하신 미노스 유물을 가끔 전시하기는 해요.
+[charslot(slot="m",name="avg_npc_1477_1#3$1")]
+[name="미노스 관광객"]……'북동지부'?
+[charslot(slot = "m", focus = "n")]
+이국에서 온 관광객은 깊은숨을 들이쉬었다. 관광객이 주먹을 쥐자 드러난 팔의 근육이 불거졌다.
+매표원은 본능적으로 작은 창구의 판자를 끌어 내리려 했지만, 관광객은 한 손으로 단단히 그 판을 받쳤다.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="미노스 관광객"]역사는 이 땅 위의 모든 사람이 함께 건너온 긴 강이야. 타르사스 고읍의 오리지늄 공방은 가울의 탐험가가 발굴했고, 고대 국가 아가멤의 경전은 미노스의 기능공이 복원했지.
+[name="미노스 관광객"]그런데 미노스의 역사는 강을 거슬러 모래 속에서 흩어져 버렸어. 난 그저 그 남은 조각을 보기 위해 여기까지 왔을 뿐이야.
+[name="미노스 관광객"]역사학자의 사명이란, 사람들이 잊어버린 과거를 찾는 거야. 당신도 이 말에 동의하겠지……
+[name="미노스 관광객"]그렇다면, 권력을 가진 약탈자들이 자신들의 오만함으로 차별적 대우를 하는 걸 막아야 하지 않을까?
+[name="미노스 관광객"]다시 말해서, 만약 사르곤의 역사가 100디나르의 가치가 있다고 생각한다면, 미노스의 역사도 그만큼의 가치가 있어야 하지 않을까?
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="박물관 매표원"]……
+[name="박물관 매표원"]그래서 입장권이 필요하신 건가요?
+[charslot(slot="m",name="avg_npc_1477_1#6$1")]
+[name="미노스 관광객"]……더 중요한 건, 사르곤 사람이 마침 약탈자의 입장에 서 있다는 거야.
+[name="미노스 관광객"]이야기는 여기까지, 당신은 양심적으로 박물관 내 미노스 유물의 가치를 인정하겠어?
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="박물관 매표원"]다음 분!
+[charslot(slot="m",name="avg_npc_1477_1#2$1")]
+[name="미노스 관광객"]잠깐.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="미노스 관광객"]이름은 헤리아스의 아스파시아, 미노스어 철자로 써줘. 사르곤어로 음역하지 말고.
+[name="아스파시아"]표 1장 부탁할게, 고마워.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
