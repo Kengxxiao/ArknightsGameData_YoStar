@@ -1,0 +1,803 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_wilderness_d",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="アデル"]８月２４日、火山警告花栽培ポット内温度：正常 湿度：正常 土壌の各成分量：正常 エリア内の源石活性：未実行
+[name="アデル"]今日はウナ火山付近にあるウナ村へやってきた。新しい移転先を見つけるのに、かなり時間がかかってしまった。村人たちは前の村があった場所から北へ数キロ離れた地点に村を再建していたのだ。
+[name="アデル"]今のウナ村は、どの方向を見渡してもウナ火山の姿は見えない。一番高い建物の屋根に登ってようやく、遥か彼方に旧ウナ村の跡地が見えるだけ。
+[name="アデル"]山道は長く険しいため、今回のフィールドワークで乗り物を申請したのは正解だった。栽培ポットにも損傷はなく、火山警告花の状態も良好である。すぐに実験に取り掛かれるはずだ。
+[name="アデル"]だけど、なぜだろうか……村人たちの態度に少し違和感を覚える。
+[name="アデル"]村に到着した直後は、皆は私を道に迷った旅人だと思って、とても親切に接してくれた。
+[name="アデル"]なのに、火山のフィールドワークに来たのだと説明した途端、すぐに表情を硬くし、会話を切りあげてしまった。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+アデルはペンを置き、遠くを眺めた。数年前のニュース映像では、村は一面の火山灰に覆われていたが、新たなウナ村はすでに生気を取り戻している。
+行き交う村人たち。中には楽器を奏でている者もいて、家の中から音楽がひとしきり聞こえてくる。何人かの子供が楽しそうに太陽の下で駆け回り、好奇心に満ちた眼差しをアデルに投げかけていた。
+それとは反対に、遥か遠くのウナ火山の麓の一部は黒く煤け、生気の失った廃墟のように見えた。それはピタリとその場に張り付いており、真っ黒にも関わらず、やけに目につく。
+あちこち眺めていたアデルの視線は、最終的にそこに注がれた。
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_penrustle",volume=1,channel="wr",loop=false)]
+[name="アデル"]幸いなことに、親切な子供の助けもあって、なんとか村長さんと会うことができた。村長さんは、空いている屋根裏部屋を村での滞在場所として、提供してくれた。
+[Dialog]
+[stopsound(channel="wr",fadetime=1)]
+[Delay(time=1)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_497_1#1$1", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_497_1#1$1",focus="m")]
+[name="村長"]ちょっといいかね、アデルさん。大したおもてなしじゃないが、温かいお茶と夕飯を用意したよ。
+[name="村長"]それと村長として、この前の村人たちの冷たい態度についても話しておかないとね。
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2", duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]ありがとうございます。
+[charslot(slot = "m", name = "avg_npc_497_1#1$1",focus="m")]
+[name="村長"]はっきり言わせてもらうね。あたしたちは、あの火山に関係する話は、どんなに些細なことでも嫌いなんだよ。二度と見たくもなければ、「火山」という言葉すら口にしたくない。
+[name="村長"]あの災害であたしたちは親しい者をたくさん失った。誰も軽率に口になんて出せないんだ。用事が済んだら、さっさと出ていってほしい。今日だけでも、何人もの村人から苦情が届いてんだ。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#11$2",focus="m")]
+[name="アデル"]皆さんに歓迎されなくとも、計画通りにやるべきことを終わらせてから、ここを離れます。
+[name="アデル"]村長さん、私が今取り組んでいることは、火山災害の警報に関わることなんです。それが、村の皆さんを怒らせたり、私に酷い態度を取らせる原因になるとは思えません。
+[charslot(slot = "m", name = "avg_npc_497_1#1$1",focus="m")]
+[name="村長"]……お嬢ちゃん、あんたの言いたいことはわかるよ。
+[name="村長"]……だけど、あたしたちにも、あたしたちなりの火山への向き合い方ってもんがある。それには時間がかかるのさ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_caveentrance", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="アデル"]９月３日、火山警告花栽培ポット内温度：正常 湿度：正常 土壌の各成分量：正常 エリア内の源石活性：未実行
+[name="アデル"]火山の複数ポイントより土壌サンプルを採取し、火山警告花の育苗に適した場所を見つけることができた。苗の生存率は思いのほか高く、ウナ火山の環境にしっかり適応してくれているようだ。
+[name="アデル"]開花期はおよそ半月後である。花の色の変化から源石の活性化が生物の状態に与える影響を探ることができれば、火山災害の予防に新たな可能性が拓かれるだろう。
+[name="アデル"]そうすれば、火山噴火による被災者の数をもっと減らすことができる。
+[name="アデル"]毎日、山腹にある花畑と宿泊先を往復しているうちに、すっかり道にも詳しくなってきた。日が落ちる前に下山できれば、あとは一人で迷うことなく帰ることができる。
+[name="アデル"]作業を切りあげる時間をしっかり決めたほうがいいみたい。日が完全に落ちてしまったら、山道が見えなくなってしまうし。
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="アデル"]……ただ、村人の皆さんの態度は相変わらずで、会話すらまともにできない。そのやり方を批判するつもりはないけど……こんなふうに逃げているだけで、本当にいいのかな……？
+[name="アデル"]そうだ、そろそろ試験田の周りを柵で囲わないと。今日の午後は、柵作りのための材料を探そう。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_caveentrance", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]うん、つぼみがかなり膨らんできましたね。この調子なら、あと数日で咲くはずです……
+[name="アデル"]今日から源石の活性化状態を記録する間隔を縮めて、エリア分けもして、実験エリアごとに活性化のコントロールも始めましょう。
+[name="アデル"]この辺りからマークをつけてっと……
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1)]
+[name="？？？"]うわああああーーっ、ぐへっ！
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[CameraShake(duration=1,xstrength=50,ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[name="？？？"]いったぁー！　なんでこんなとこに柵があるのさ！
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]……！
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_661_1#1$1", duration=1)]
+[Delay(time=1.5)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="興味津々の子供"]あ、火山に登るって言ってたお姉ちゃん……やっぱりここにいた！
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]あなたは……前に村長のところまで案内してくれた……怪我はないですか？　どうして一人でこんなところに？　ここは子供が一人で勝手に来ていい場所ではありませんよ！
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="興味津々の子供"]大丈夫だって……
+[name="興味津々の子供"]パパもママも火山に登っちゃダメっていうし、前の村があった場所にも行かせてくれないけど、そんなの知ったこっちゃないもんね！
+[name="興味津々の子供"]たかが火山でしょ？　わたし一人でも登れるし、大したこと――いたたっ！
+[charslot(slot = "m", name = "avg_1016_agoat2_1#2$2",focus="m")]
+[name="アデル"]やっぱり怪我してるじゃないですか……ほら座って、お薬を塗ってあげますから。
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="興味津々の子供"]こんなの、ただのかすり傷だよ！　それよりも、お姉ちゃんは絶対にここにいると思ったんだ！
+[name="興味津々の子供"]ねえ、どうやったら火山のてっぺんに行けるのか、教えてよ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_caveentrance", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="アデル"]９月２３日、昨日は作業を切りあげるのが遅くなったうえに、雨にも降られてしまい、案の定、下山の途中で転んでしまった。幸い、村人たちがみつけてくれて、宿泊先まで送ってくれた。
+[name="アデル"]悪天候の日に山を登る理由を聞かれ、火山災害の警報を研究しているのだと説明した。皆さん、前ほど私を拒絶することはなく、現地の軟膏まで分けてくれた。とてもよく効く軟膏だった。
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="アデル"]仕事の記録に戻ろう。源石の活性化は火山警告花の色に明確な影響を与える。活性化が一段階上がるごとに、花には肉眼でもわかるほど色彩変化が現れる。
+[name="アデル"]この村での滞在中に、すでに十分の量の植物サンプルを抽出し、グループごとの実験を行ってきた。この現象を引き起こしている物質を特定できるといいのだが。
+[name="アデル"]特定するのが早いほど、これを使って警報の感度と精度を向上させる新たな方法が見つかるのも早くなる。そうすれば、噴火を正確に予測できるようになる日も、そう遠くはないかもしれない。
+[name="アデル"]それと、前に道案内をしてくれた女の子がまたやって来た。花畑で転んで、私が薬を塗ってあげたあの日から、あの子はほぼ毎日私に会いに来ている。
+[name="アデル"]あの子は、いつも両親の言いつけを破って、火山に登ったり麓にある廃墟に行ったりしているらしい。しかも、ウナ火山の頂上に連れていってほしいとも言っていたし……火山に興味津々みたい。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_caveentrance", screenadapt="coverall", block=true)]
+[charslot(slot = "l", name = "avg_1016_agoat2_1#11$2")]
+[charslot(slot = "r", name = "avg_npc_661_1#1$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_1016_agoat2_1#11$2",focus="l")]
+[name="アデル"]ふぅ……ようやくこのエリアのデータ処理が終わりました……
+[charslot(slot = "l", name = "avg_1016_agoat2_1#1$2",focus="l")]
+[name="アデル"]ほら、今日の作業は終わったので、そろそろおうちに帰る時間ですよ。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="興味津々の子供"]お姉ちゃんは火山の研究をしに来たって、みんな言ってたよ。火山を研究するには山頂とかに行って、石を調べたり、シャベルで熔岩を掘ったりするって、本に書いてあった。
+[name="興味津々の子供"]でも、毎日ここに来てるのに、お姉ちゃんは一回も山のてっぺんには行かないで、ここでお花を植えてるだけ。
+[name="興味津々の子供"]なんでなの？　わたしも一緒について行こうと思ってたのに！
+[charslot(slot = "l", name = "avg_1016_agoat2_1#1$2",focus="l")]
+[name="アデル"]……えっと、ホープちゃん、でしたよね？　私が毎日ここに来るのは、実験をするためなんです。
+[name="アデル"]どうしてホープちゃんは山頂に行きたいのですか？　あなたみたいな小さな子には、火山の頂上は危険すぎます。連れていくわけにはいきません。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]……
+[name="ホープ"]……フン！　お姉ちゃんも大人たちと同じことを言うんだね！
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="all")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2)]
+[charslot(slot="r",afrom=1,ato=0,duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_1016_agoat2_1#7$2",focus="l")]
+[name="アデル"]……？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_caveentrance", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[name="アデル"]１０月５日。グループ実験により、一部の物質を候補から除外できた。今の実験段階では、物質の候補を可能な限り絞ることが限界みたい。
+[name="アデル"]サンプルを保存して、実験室に戻ってからもう一度詳細な分析を行わないと。
+[name="アデル"]火山警告花はとてもよく咲いている。サンプル採取が一段落したあとは、移植範囲を広げて、ここの生態系を復元させてもいいかもしれない。
+[name="アデル"]それと昨夜、村人の方が新鮮な山菜を届けるついでに、私の怪我の具合を尋ねていたと村長さんが教えてくれた。山菜炒めはとても美味しくて、両親が持って帰ってきてくれたのと同じ味がした。
+[name="アデル"]あの日から、ホープちゃんは顔を出さなくなった。村長さんに聞いてみると、ホープちゃんは最近火山に近づかなくなったらしい。ついにあきらめちゃったのかな？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n", screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]最後にサンプルの仕分けをもう一度整理して……ラベルもチェックしてっと……よし、問題ありませんね……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]……あっ！　いつの間にか、こんな時間になってしまいました……もう真っ暗で、辺りがよく見えないや……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#11$2",focus="m")]
+[name="アデル"]急げばまだ山を下りられるかな……？
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_sandftsingle",volume=1)]
+[CameraShake(duration=0.7, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アデル"]……うわっ！
+[Dialog]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#2$2",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#2$2",focus="m")]
+[name="アデル"]だめ、懐中電灯の明かりだけじゃ、私の視力では……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]今晩はここに防護テントを張って夜を明かしましょう。事前に用意しておいてよかった……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_flag",volume=0.7)]
+[charslot(slot="m",name="avg_1016_agoat2_1#1$2",posfrom="0,-50",posto="0,0",afrom=0,ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]……ふぅ！　やっとテントが張れました！　あとは防水シートを敷いて……これで寝る時もばっちりですね。
+[name="アデル"]この近くには動物がたくさんいるので、野獣よけスプレーもかけておいたほうがいいかな……
+[Dialog]
+[charslot]
+[musicvolume(volume=0.3, fadetime=1)]
+[PlaySound(key="$d_avg_grass", volume=0.8)]
+[delay(time=1.5)]
+突如、背後からカサカサと物音が聞こえ、アデルはいぶかしげに振り返った。
+草と泥をひっつけた小さな頭が、岩の後ろからひょっこり突き出ている。
+[Dialog]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot = "m", name = "avg_npc_661_1#1$1", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[charslot(slot = "m", action="shake",random=true, power=8, times=80,duration=0.5)]
+[name="ホープ"]うわわ！　また見つかっちゃった！
+[name="ホープ"]にげろにげろ！
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]待ってください！
+[name="アデル"]どうして、こんな時間にまだ山にいるんですか？　火山は危ないんですよ！　そこでじっとしててください。懐中電灯を取ってきますから、村まで一緒に帰りましょう。
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]い、いやだ……！
+[name="ホープ"]火山のてっぺんに行きたいだけなのに、みんなダメだって言うんだもん！　やっとあきらめたフリをして油断させて、抜け出せたとおもったら、お姉ちゃんに見つかっちゃうし……！
+[name="ホープ"]絶対に帰らないからね！　わたしはてっぺんに行くの！
+[charslot(slot = "m", name = "avg_1016_agoat2_1#11$2",focus="m")]
+[name="アデル"]……だったら教えてください。どうして、そんなに山頂に行きたいのですか？
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]話したら連れてってくれる？　わたし……やらなきゃいけないことがあるの……！
+[Dialog]
+[PlaySound(key="$d_avg_hidehaystack", volume=0.6)]
+[Delay(time=1)]
+ホープは懐からヨレヨレの花冠を取り出した。
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]これを、火山のてっぺんまで持っていきたいの……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]花冠……？　どうしてですか？
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]……
+[name="ホープ"]誰にも言わないって約束してくれる？
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]……はい、約束します。誰にも言いません。
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]……
+[name="ホープ"]……わたし……
+[Dialog]
+[Delay(time=1)]
+[name="ホープ"]……わたし……おじいちゃんとおばあちゃんに会いたいの……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#7$2",focus="m")]
+[name="アデル"]おじいちゃんとおばあちゃん……？
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]……小さい時ね、目が覚めたらパパにおぶられていたの。パパもママもずっと走ってて……わたしはすごく眠たかったから、そのまままた寝ちゃった……
+[name="ホープ"]後のことはよく覚えてないけど、突然今までの家に住めなくなったの。毎日テントで生活して、ご飯もおいしくないし、夜もよく眠れなかった。おじいちゃんとおばあちゃんの姿もなかった。
+[name="ホープ"]それから、大人たちは新しい家を建てて、そこで暮らし始めた。でも、やっぱりおじいちゃんとおばあちゃんはいなかった。だからわたし、二人を探しに前の家に行きたいって言ったの！
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+ホープは暗闇のどこかを指さした。
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]でもパパとママは行かせてくれないし、この話をしただけで怒るんだよ。二人とも、おじいちゃんとおばあちゃんは、前の村と同じでもういないんだって言うの。
+[name="ホープ"]でもニュースを見ると、ウナ火山が噴火したってしか言ってなくって。だから、山のてっぺんに行って噴火がなんなのか、見に行こうと思ったんだ……
+[name="ホープ"]あ、あのね……おじいちゃんとおばあちゃんは、いつも花冠編んで一緒に遊んでくれてたの……わたし、絶対に山のてっぺんに行くんだから……！
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+悔しい気持ちでいっぱいだったホープは一気にまくしたて、興奮のあまりに息を切らした。
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]どうしてみんな火山に登らせてくれないの？　なんでこんな遠くにお引越ししなきゃいけなかったの？　なんで理由を聞いちゃいけないの？
+[name="ホープ"]わたし、すっごくおじいちゃんとおばあちゃんに会いたいの！　なのに、なんで……！
+[name="ホープ"]うぅ……
+[Dialog]
+[charslot]
+[Delay(time=1)]
+アデルは懐中電灯を下ろし、山頂のある方を見上げた。そして、手を伸ばしそっと女の子の背中をさする。
+[Dialog]
+[charslot(slot = "l", name = "avg_1016_agoat2_1#1$2",focus="l")]
+[name="アデル"]……ほら、涙を拭いて、私の隣に座ってください。
+[name="アデル"]それほど山頂に行きたいのなら、明日、一緒に村長さんにお願いしてみましょう。私たちと村長さん、それとホープちゃんのお父さんとお母さんで、ちゃんとお話をしましょう、ね？
+[name="アデル"]でも今はもう遅いし、山に登るのは危ないので、今夜はここでいい子で寝るんですよ。こっそり抜け出しちゃダメですからね。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]……
+[name="ホープ"]……ほんと？
+[charslot(slot = "l", name = "avg_1016_agoat2_1#1$2",focus="l")]
+[name="アデル"]ほら、指きりしましょう。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]……うん、約束だよ。
+[Dialog]
+[charslot]
+ホープは顔の涙をごしごし拭うとテントに入り、アデルの隣で横になった。
+二人の間にしばし沈黙が訪れる。アデルは無言で夜空の星を眺めていたが、ホープは石をみつめたり、テントをつついたり、持っていた草の茎をねじったり、丸めたりしていた。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#11$2",focus="m")]
+[name="アデル"]眠れないんですか？
+[charslot(slot = "m", name = "avg_1016_agoat2_1#11$2",focus="n")]
+[name="ホープ"]……うん。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]それなら、お話をしてあげましょうか？
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="n")]
+[name="ホープ"]……どんな……？
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]そうですね……素敵な夢に関するお話です。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=0.7)]
+[Delay(time=1)]
+アデルも一緒に横になり、少女が丸めた茎を受け取ると、それでモコモコした生き物を作った。
+[Dialog]
+[Background(image="38_g21_skystarry_L2",screenadapt="coverall",fadetime=2,block=true)]
+[Delay(time=1)]
+[name="アデル"]知っていますか？　眠っている人のところに、たまにピンク色をしたモコモコのちびめーちゃんがやって来て、夢のゲームへと招待してくれるんです。
+[name="アデル"]そこでは、ちびめーちゃんたちが招待した人の願いを叶えてくれるんです。一緒に街の空を飛んだり、波に乗ってサーフィンしたり、街灯と星をステップにして遊んだり……
+[name="アデル"]私も前に、一回だけそのゲームに招待されたことがあるんです。
+[name="ホープ"]ほんとに……？
+[name="ホープ"]じゃあ……お姉ちゃんはどんなお願いを叶えてもらったの？
+[Dialog]
+[Delay(time=0.5)]
+アデルは完成したちびめーちゃんを女の子に渡すと、今度は地面に落ちていた火山警告花を拾い上げ、それに被せるための小さな花冠を編み始めた。
+[name="アデル"]お父さんとお母さんに会わせてもらいました。
+[name="ホープ"]お父さんとお母さん……？
+[name="アデル"]はい。
+[name="アデル"]私が今ここでこのお花を植えているのは、その素敵な夢のご褒美のおかげなんです。そして、これは私のお父さんとお母さんがやり残したことでもあるんです。
+[name="アデル"]このお花をしっかりと育てられたら、またちびめーちゃんたちに招待しに来てくれるかもしれないから。
+[name="ホープ"]でもお姉ちゃんのパパとママは？　どうして自分たちで最後まで育てないの？
+[Dialog]
+[Background(image="bg_wilderness_n", screenadapt="coverall",fadetime=1, block=true)]
+[Delay(time=1)]
+アデルは花冠を編む手を止め、小さく笑った。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "l", name = "avg_1016_agoat2_1#9$2",duration=0.7)]
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_1016_agoat2_1#9$2",focus="l")]
+[name="アデル"]ホープちゃんのおじいちゃんとおばあちゃんと同じですよ。二人もこの山から、もう戻ってくることはありません。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]……
+[name="ホープ"]じゃあ……お姉ちゃんもパパとママに会いたくなる？　泣いたりしちゃう？
+[charslot(slot = "l", name = "avg_1016_agoat2_1#2$2",focus="l")]
+[name="アデル"]……もちろんですよ。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]……わたしも。でもパパとママ、あとほかの大人たちは、絶対に泣いたりしないよ。
+[name="ホープ"]誰も火山に行こうとしないし、行かせてくれないし。みんなヘンテコな弱虫なんだよ。だから、ちびめーちゃんに招待されることも、お願いを叶えてもらうことも、きっとないんだ。
+[charslot(slot = "l", name = "avg_1016_agoat2_1#11$2",focus="l")]
+[name="アデル"]うーん、それはどうでしょう？
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]えっ？
+[charslot(slot = "l", name = "avg_1016_agoat2_1#9$2",focus="l")]
+[name="アデル"]だって……私も実は弱虫ですから。
+[name="アデル"]この前、なんでずっと山の中でお花を植えてばかりで山頂に向かおうとしないのか、聞いてきたでしょう？
+[name="アデル"]実は私も怖いんです……心の準備もできていません。ようやくこの火山にやって来られたのに、まだ山頂への一歩を踏み出せないんです。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]なんで！？
+[name="ホープ"]なんで大人たちは……みんなそうなの！？　弱虫ばっかり！　お姉ちゃんだけは違うって……
+[charslot(slot = "l", name = "avg_1016_agoat2_1#1$2",focus="l")]
+[name="アデル"]でもほら、それでも私はちびめーちゃんから招待してもらえたんですよ。
+[charslot(slot = "r", name = "avg_npc_661_1#1$1",focus="r")]
+[name="ホープ"]……
+[name="ホープ"]じゃあ、間違ってたのはわたしのほうなの……？
+[Dialog]
+[charslot]
+アデル首を横に振った。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#11$2",focus="m")]
+[name="アデル"]そこに植えた火山警告花が見えますか？　対照実験のために、こっちのは痩せた土に、あっちのは肥えた土に植えてあるんです。
+[name="アデル"]育った環境はまったく違うけど、開花期が訪れると、どちらも綺麗な花を咲かせてくれました。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]私たち人間も同じです。人にはそれぞれ自分の心の整理の仕方があるんです。泣く人もいれば、口にしようとしない人もいるし、勇敢に立ち向かう人もいる……
+[name="アデル"]……でもそれは全部、私たちがまだ忘れていないからです。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=0.7)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[Delay(time=1)]
+アデルは両手を差し出し、今しがた完成したもの――火山警告花の花冠を、ホープに見せた。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]小さい頃、私のお父さんとお母さんも一緒に花冠を編んで遊んでくれましたよ。
+[name="アデル"]私たちが忘れない限り、この絆が消えることはありません。それをちびめーちゃんが見つけてくれるんです。
+[name="アデル"]……ほら、来ましたよ。
+[Dialog]
+[charslot]
+星がきらめく夜空から、いくつものピンク色の雲がふわふわと舞い降りる。
+少女は目をゴシゴシこすった。目の前で、胸元に入っていた花冠とアデルが持っていた花冠が、ふわりと浮かんで飛んでいった。
+[stopmusic(fadetime=2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_661_1#1$1",focus="m")]
+[name="ホープ"]え？　わたしの花冠が……
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ホープ"]飛んでっちゃう！
+[Dialog]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="b")]
+[StopSound(channel="b", fadetime=2)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]待って、ホープちゃん！　勝手に行っちゃダメ！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=0.7)]
+[Delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#2$2",focus="m")]
+[name="アデル"]ここにもいない……どこに行ってしまったのでしょう？
+[name="アデル"]暗すぎて……何も見えません。こんなところで走り回っちゃダメなのに……
+[Dialog]
+[charslot]
+暗闇の中、アデルはモコモコした何かが体にこすりつけられるのを感じた。
+彼女は目を凝らして辺りを見渡す。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1004_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1004_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_bleatone",volume=0.7)]
+[Delay(time=1)]
+[name="小さい生物"]（切羽詰まった鳴き声）
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]ホープちゃんを見かけませんでした？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1008_1#1$1",afrom=0,ato=0,action="zoom",poszoom="0.5,0.5",scale=0.2,duration=0,isblock=false)]
+[Delay(time=0.1)]
+[PlaySound(key="$d_avg_blcksheepborn", volume=1,channel="1")]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.5",scale=1,duration=0.35,isblock=false)]
+[charslot(slot="m",afrom=0,ato=1,duration=0.3,isblock=false)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1008_1#1$1",focus="m")]
+[name="焦る生物"]（アデルを頭で押す）
+[Dialog]
+[charslot]
+[Delay(time=0.1)]
+[charslot(slot="m",name="avg_npc_1012_1#1$1",afrom=0,ato=0,action="zoom",poszoom="0.5,0.5",scale=0.2,duration=0,isblock=false)]
+[Delay(time=0.1)]
+[PlaySound(key="$d_avg_blcksheepborn", volume=1,channel="1")]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.5",scale=1,duration=0.35,isblock=false)]
+[charslot(slot="m",afrom=0,ato=1,duration=0.2,isblock=false)]
+[Delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_1012_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.2)]
+[PlaySound(key="$d_avg_sheeprun", volume=1)]
+[charslot(slot="m",posfrom="0,0",posto="-200,0",duration=0.8)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5,isblock=true)]
+[delay(time=1)]
+[name="ぼんやりしている生物"]（アデルを背中に乗せて走り出す）
+[name="アデル"]どこに行くんですか？
+[CameraShake(duration=2, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アデル"]わあっ、危ない……
+[name="アデル"]落ちちゃいます！
+[Dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_hotel", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=1)]
+[CameraShake(duration=1.5, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[name="アデル"]わあっ、落ちちゃうよー！
+[name="マグナ"]気をつけて！　この子、最近また背が伸びたのよ。もう今までみたいに肩に乗せてたら危ないわ！
+[name="カティア"]わかってる……ほら、アデルはお父さんの肩の上で、お父さんは火山の上。ということは、アデルは今火山の頂上にいるんだ。
+[name="カティア"]今日はアデルの誕生日だよ。お願い事をしてごらん。
+[name="アデル"]お願いごとはね……お父さんとお母さんと一緒に火山のフィールドワークに行けますように！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cave_4", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_sheeprun", volume=1)]
+[CameraShake(duration=1, xstrength=15, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アデル"]もう少しゆっくり走って……！
+[charslot(slot = "m", name = "avg_npc_1008_1#1$1",focus="m")]
+[name="焦る生物"]（火山警告花を頭につける）
+[charslot(slot = "m", name = "avg_npc_1012_1#1$1",focus="m")]
+[name="ぼんやりしている生物"]（鼻息で花びらを吹く）
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1012_1#1$1",focus="n")]
+[name="アデル"]遊んでいる場合じゃないですよ！　ホープちゃんを探さないと！
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1012_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_sheeprun", volume=1)]
+[charslot(slot="m",name="avg_npc_1012_1#1$1",posfrom="0,0",posto="-200,0",duration=0.8)]
+[charslot(slot="m",name="avg_npc_1012_1#1$1",afrom=1,ato=0,duration=0.5,isblock=true)]
+[delay(time=1.5)]
+モコモコの生き物は飛び上がると、前方へ駆け出した。その先には白い湯気の立つ熱泉があった。
+[Dialog]
+[PlaySound(key="$d_avg_spiritwhoosh", volume=0.8)]
+[delay(time=1)]
+[name="アデル"]危ない……！
+モコモコの生き物はアデルの悲鳴を無視し、四本の足をピョーンと伸ばす。丸い体はグツグツ沸き立つ泉を軽やかに飛び越え、しっかりと反対側に着地した。
+そして、満足気に泉のそばで、柔らかな毛をブルブル震わせた。
+小さい生物は嬉しそうに鳴くと、首を振って頭に乗せた花を揺らした。
+[Dialog]
+[charslot]
+[name="アデル"]……私が落ち込んでいるのを見て、来てくれたんですか……？
+[name="アデル"]あなたたちをここへ寄越したのは……ドリーさんです？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1010_1#1$1",focus="m")]
+[Delay(time=0.2)]
+[charslot(slot="m",action="jump",times=3,power=8,duration=1,isblock=true)]
+[name="喜ぶ生物"]（興奮して跳ね回る)
+[Dialog]
+[charslot]
+モコモコの生き物は、返事をするように跳ね回った。
+[Dialog]
+[PlaySound(key="$d_avg_sheeprun", volume=0.7)]
+[PlaySound(key="$d_avg_sheeprun",volume=1,channel="sstep",loop=false,delay=0.6)]
+[PlaySound(key="$d_avg_sheeprun",volume=1,channel="sstep1",loop=false,delay=1)]
+[PlaySound(key="$d_avg_animalrun",volume=0.6,delay=0.1)]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+背中の上の少女が、やっと自分たちの意図を理解してくれたことを察したのか、モコモコたちは興奮気味に地面を蹴り、洞窟の外へ向かって駆け出した。
+[Dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_hotel", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[name="カティア"]よし、ならお前の背がもう少し伸びて、もう少し大きくなったら、一緒に火山のフィールドワークに行こう。その時は、お父さんとお母さんの助手をやってくれ。
+[name="アデル"]ほんと？　早く大きくならなきゃ！
+[name="マグナ"]そうよ、早く大きくなってね。私たちは火山の上で待っているわ。
+[name="マグナ"]あなたと一緒に山を登って、調査をして、火山の美しさと力強さを味わえるその日が来るのを……
+[name="マグナ"]ふふ、もう今から待ちきれないわ！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[name="アデル"]ま、待ってください！
+[name="アデル"]もうちょっとゆっくり――
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="41_g11_volcanomountainside", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[delay(time=0.5)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[name="アデル"]あっ……
+[Dialog]
+[PlaySound(key="$d_avg_sandnmlfts", volume=1)]
+[Delay(time=1.5)]
+モコモコの生き物が速度を落としたのを感じたアデルは、がっしりと綿毛を掴んでいた手を緩めた。
+この生き物たちはいつも自分の周りでイタズラばかりするが、落ち込んでいる時には必ず慰めに来てくれる。だけど、それは今ではないはず。まだ自分にはやらねばならないことがあるのだから。
+火山の上に消えていった女の子を探しに行かなければいけない。だけど、ウナ火山の山頂に足を踏み入れる決心はまだついていなかった。
+アデルは呼吸を整え、そっと目を開く。
+[Dialog]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#4$2",focus="m")]
+[name="アデル"]えっ、ここは……山頂？
+[charslot(slot = "m", name = "avg_1016_agoat2_1#7$2",focus="m")]
+[name="アデル"]どうしてここに連れてきたんですか？　私は……
+[name="アデル"]私はまだ……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_bleatone",volume=0.7)]
+[PlaySound(key="$d_avg_bleatone",volume=1,channel="ss",loop=false,delay=0.4)]
+[PlaySound(key="$d_avg_bleatone",volume=0.9,channel="ss1",loop=false,delay=0.7)]
+[Delay(time=1)]
+メェ～！
+メェ～！　メェ～！！
+モコモコの生き物の興奮気味な鳴き声が、うろたえるアデルの言葉を遮った。下に広がる空はすでに完全な暗闇であったが、山頂のここはまだピンクパープルの残照が微かに見える。
+生き物たちは山頂に向かってひたすら鳴いていた。何かを呼ぶように、何かを催促するように。
+[Dialog]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#7$2",focus="m")]
+[name="アデル"]みんな……一体何がしたいのですか……？
+[Dialog]
+[charslot(slot="r",name="avg_npc_1004_1#1$1",posfrom="60,0",posto="60,0",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="r",action="jump",posto="-100,0",power=8,times=3,duration=1)]
+[Delay(time=1.2)]
+[charslot(slot="r",name="avg_npc_1004_1#1$1",focus="r")]
+[name="小さい生物"]（頭でアデルをつつく）
+[Dialog]
+[charslot]
+彼方の空に花冠が漂っていた。二匹の真っ白なちびめーちゃんが、ぐっすり眠っているホープを囲んでいた。それはまるで慈愛に満ちた抱擁のようだった。
+ホープの寝顔にはまだ涙の痕が残っていたが、その口元には幸せそうな笑みが浮かんでいる。花冠がふわりと彼女の頭に舞い落ちる。
+ホープと二匹は、麓のウナ村までゆっくりと漂っていった。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]よかった……ホープちゃん、ここにいたんですか……
+[name="アデル"]どうやら、ちゃんと招待されたみたいですね。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1004_1#1$1",focus="m")]
+[Delay(time=0.2)]
+[charslot(slot="m",action="jump",times=2,power=5,duration=0.7)]
+[Delay(time=0.4)]
+[name="小さい生物"]（頭でアデルをつつく）
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1008_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_bleatone",volume=1)]
+[Delay(time=0.5)]
+[name="焦る生物"]（大きな鳴き声を上げる）
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]……どうしたんですか？　私も一緒に叫んでほしいってことですか……？
+[charslot(slot = "m", name = "avg_npc_1012_1#1$1",focus="m")]
+[name="ぼんやりしている生物"]（期待の眼差し）
+[charslot(slot = "m", name = "avg_1016_agoat2_1#7$2",focus="m")]
+[name="アデル"]……お、お～～い！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1004_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_bleatone",volume=0.7)]
+[Delay(time=0.5)]
+[name="小さい生物"]（焦ったように鼻を鳴らす）
+[charslot(slot = "m", name = "avg_1016_agoat2_1#7$2",focus="m")]
+[name="アデル"]そうじゃないって？　だったらどうすれば……
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_hotel", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[name="アデル"]でも大きくなるまで、どれくらいかかるのかな……
+[name="マグナ"]じゃあ指きりでもする？　お父さんとお母さんとアデルの約束。アデルが大きくなったら、三人で火山に登って、一緒に山頂の景色を眺めるの。
+[name="マグナ"]この約束は永遠よ。いつでもどこでも成立するわ。
+[name="カティア"]なら、約束を果たす時の合言葉を決めておこうか。それを口にした時、お父さんとお母さんは大きくなったアデルと、火山にフィールドワークをしに行くんだ。
+[name="マグナ"]そうね……「山頂から見た景色はとても美しい」なんてどう？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="41_g11_volcanomountainside", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]……さ……
+[name="アデル"]……山頂から見た景色はとても美しい……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#3$2",focus="m")]
+[name="アデル"]うぅ……
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_hotel", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[name="カティア"]さあ、ロウソクを吹き消して。そしたら、小さな秘密を教えてあげよう。
+[name="アデル"]えっ、なになに？
+[name="マグナ"]あら、ズルしちゃダメよ。秘密を聞くのは、ロウソクの火を消してから！
+[name="アデル"]フー……フゥーー！　全部消したよ！　秘密ってなあに？
+[name="カティア"]じゃあ、ベランダに出よう。ほら、見上げてごらん。空にある双月の下で一等に輝いているあの星は、私たち三人にそっくりだと思わないか？
+[name="マグナ"]去年、気付いたのよ。あの時はただの偶然だと思ってたけど、まさか今年も同じ場所に星が現れるなんてね。
+[name="マグナ"]アデル、あなたの誕生日の夜には、空にある二つの月とその下の星が、私たち三人の姿になるの。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="41_g11_volcanomountainside", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[delay(time=1)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+アデルは夜空を見上げる。双月の下で星がキラキラと輝いていた。
+小さな生き物は親しげにアデルに頭をこすりつけながら、ゆったりとした声で鳴いた。
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]あなたたちが伝えようとしてたのは、これだったんですか……？
+[name="アデル"]今日って私の誕生日だったんですね。自分でも忘れてました……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#9$2",focus="m")]
+[name="アデル"]本当に山頂まで来ちゃったけど、案外……
+[name="アデル"]案外……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#2$2",focus="m")]
+[name="アデル"]……でもやっぱり……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#3$2",focus="m")]
+[name="アデル"]……
+[Dialog]
+[charslot(duration=0.7)]
+アデルはその場にしゃがみ込んだ。火山のにおいを纏わせた少し大きい防護上着が、そっと彼女を抱きしめる。
+足元の岩から立ち昇る熱気が、まるで温かな両手のように、彼女の涙をゆっくりと乾かしてくれた。
+アデルはそっと手を伸ばし、熱を帯びた岩を撫でながら、普段は絶対に口にすることのない言葉を呟いた。
+[name="アデル"]お父さんお母さん、私、今年はまた三つの火山へフィールドワークに行ってきたよ。今いるここを合わせれば、全部で三十以上もの火山に足を運んだことになるんだ。
+[name="アデル"]お父さんとお母さんの研究もケラー先生と一緒に進めてる。空白部分もほとんど埋まって、二人が残していったたくさんの問題も、一個一個解決してるからね……
+[name="アデル"]それと火山警告花を見つけてから、ずっと頑張って育ててるよ。今も植物の特性と源石活性化の関係について研究をしていて……調査の結果、ここが実験に一番適した場所だったの。
+[name="アデル"]だから、火山警告花を持ってきて……あ、今日は突然ちびめーちゃんに連れて来られたから、持ってくる余裕はなかったけど……
+[Dialog]
+[PlaySound(key="$d_avg_sandftsingle",volume=1)]
+[charslot(slot="m",name="avg_npc_1004_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",action="jump",times=5,power=8,duration=1.5,isblock=true)]
+[Dialog]
+[charslot]
+火山警告花の苗が一本、アデルの前に差し出された。
+[name="アデル"]……え？
+小さな生き物が、花の根本をそっと口にくわえていた。その背後では、ほかの仲間たちがボール遊びのように、次々に苗をポンポンとアデルの元へ届ける。
+彼女は自分が丹精込めて育てた花を受け取った。柔らかな茎は生命力に溢れ、残照の中から一筋の日光を懸命に探していた。アデルは腰をかがめ、手で土を掘り始める。
+今回の調査のせいで、薄汚れてしまった防護上着の袖口がさらに灰で黒くなる。彼女はそれを払うよりも、まずはこの小さな苗を植えることに集中した。
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="41_g11_volcanomountainside", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="マグナ"]ほら見て！　火山警告花よ。こんなにたくさん咲いてるなんて。
+[name="カティア"]ここでも見られるとは思わなかったな……
+[name="マグナ"]サンプル用に一株採取する？
+[name="カティア"]ああ、アデルへのお土産にしよう。前回持って帰った山菜炒めもとても気に入ってくれたんだ。
+[name="カティア"]この火山警告花も、きっと気に入ってくれるはず。
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="41_g11_volcanomountainside", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#3$2",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[musicvolume(volume=0.6, fadetime=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1016_agoat2_1#3$2",focus="m")]
+[name="アデル"]ふぅ……
+[charslot(slot = "m", name = "avg_1016_agoat2_1#1$2",focus="m")]
+[name="アデル"]ちびめーちゃん、行きましょうか。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1004_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_bleatone",volume=0.7)]
+[Delay(time=1)]
+[name="小さい生物"]（嬉しそうに鼻を鳴らす）
+[Dialog]
+[PlaySound(key="$d_avg_sheeprun", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=2)]
+アデルは地面に真新しい足跡を残し刻む。モコモコの生き物は嬉しそうに飛び回りながら、その後をついていった。
+[name="アデル"]……もうここまで来たのなら、足を止めるわけにはいきません。
+[name="アデル"]山頂ではきっと、お父さんとお母さんがかつて目にした景色が、私たちを待っているはずなんだ。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

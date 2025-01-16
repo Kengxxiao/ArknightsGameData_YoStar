@@ -1,0 +1,787 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_mictest",volume=1)]
+[Delay(time=2)]
+[name="博物館放送"]チケットご購入の方は列にお並びください、チケットご購入の方は列にお並びください。特別展示会「死から蘇ったシャア時代の将軍との出会い」現在チケット販売中です！
+[name="博物館放送"]チケットご購入の方は列にお並びください、チケットご購入の方は列にお並びください……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1479_1#1$1")]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="a",volume=0)]
+[SoundVolume(volume=0.7, channel="a",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$marketplace_intro",key="$marketplace_loop", volume=0.6)]
+[name="ズバイル"]……
+[SoundVolume(volume=0.5, fadetime=2,channel="a")]
+[charslot(slot = "m", focus = "n")]
+[name="熱狂的な客"]そう、そのまま私を見て。私だけを見るのよ、カメラは見ないで。
+[name="熱狂的な客"]ちょっと待ってて、ウエディングドレスを整えるから！
+[name="熱狂的な客"]徹夜で急ごしらえしたものだけど、私のコレクションであるシャアの伝奇小説三千冊に誓うわ。この衣装は絶対歴史通りだから！
+[charslot(slot="m",name="avg_npc_1479_1#1$1")]
+[name="ズバイル"]文化財の損傷を避けるため、本展示はフラッシュ撮影を禁止している。注意をしてほしい。
+[charslot(slot = "m", focus = "n")]
+[name="熱狂的な客"]えっ？　ほら──二十連写よ！
+[Dialog]
+[charslot(slot = "m", focus = "m")]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[playsound(key="$d_avg_takphtrptly")]
+[delay(time=0.3)]
+[playsound(key="$skill_flash",volume=0.3,channel="x")]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[delay(time=0.2)]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.4, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[playsound(key="$skill_flash",volume=0.3,channel="y")]
+[delay(time=0.5)]
+[name="ズバイル"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="53_g6_museum_core",screenadapt="coverall",xScale=1.05, yScale=1.05,x=30,y=-50)]
+[charslot(slot="m",name="avg_npc_1479_1#1$1",posfrom = "30,-30", posto = "30,-30")]
+[delay(time=0.1)]
+[BackgroundTween(xFrom=30, xTo=-30, duration=6)]
+[charslot(slot = "m",posfrom = "30,-30", posto = "0,-30",duration=6)]
+[delay(time=0.2)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.1)]
+[focusout(type="bg", from=0, to=0.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_201",afrom=0,ato=0)]
+[charslot(slot = "left",action="zoom", poszoom = "0.5,0.5", scale=1.1)]
+[charslot(slot="l",duration=1,posfrom = "0,-250", posto = "150,-250",duration=1,afrom=0,ato=1)]
+[delay(time=1.5)]
+[charslot(slot="l",focus="l")]
+[name="スクーターに乗る客"]皆さんこんにちは。たった今、ついにバルジャバンダバード博物館の最も神秘的な部屋に入りました。
+[name="スクーターに乗る客"]今から私のカメラにより、こちらの将軍の勇ましい姿を三百六十度隅々まで記録し、輝ける都市における死者復活の謎に迫ります。
+[Dialog]
+[charslot(slot="l",duration=2,posfrom = "150,-250", posto = "350,-250",afrom=1,ato=0,duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_1497_1#1$1",posfrom = "100,-70", posto = "100,-70",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="r",focus="r")]
+[name="幼い客"]パパ、この人の足、中が空っぽみたいだよ。
+[Dialog]
+[charslot(slot = "r",posfrom = "100,-70", posto = "70,-70",duration = 0.2)]
+[PlaySound(key="$d_avg_chopsteeltube",volume=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[charslot(slot = "r",posfrom = "70,-70", posto = "100,-70",duration = 0.2)]
+[delay(time=0.5)]
+[charslot(slot="r",focus="r")]
+[name="幼い客"]パパ聞いて、叩いてみると空っぽの音がするよ！
+[charslot(slot="r",focus="n")]
+[name="電話をする客"]ああ、そうだ、その商品はすぐ極東に送るんだ。注文数はそれほど大きくないが、何より相手との信頼関係が重要だ……
+[Dialog]
+[charslot(slot="r",focus="all")]
+[delay(time=0.5)]
+[charslot(slot = "r",posfrom = "100,-70", posto = "70,-70",duration = 0.2)]
+[PlaySound(key="$d_avg_chopsteeltube",volume=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[charslot(slot = "r",posfrom = "70,-70", posto = "100,-70",duration = 0.2)]
+[delay(time=0.21)]
+[charslot(slot = "r",posfrom = "100,-70", posto = "70,-70",duration = 0.2)]
+[PlaySound(key="$d_avg_chopsteeltube",volume=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[charslot(slot = "r",posfrom = "70,-70", posto = "100,-70",duration = 0.2)]
+[delay(time=0.5)]
+[charslot(slot="r",focus="n")]
+[name="博物館職員"]お客様、娘さんをしっかりと見ていただけますか。
+[name="電話をする客"]すまない、ちょっと待っててくれ。少し急用が……おい、こっちへ来なさい！　勝手に触るんじゃない！
+[Dialog]
+[charslot(slot = "r",posfrom = "100,-70", posto = "200,-70",duration = 1,afrom=1,ato=0)]
+[delay(time=1.2)]
+[charslot(slot="r",focus="n")]
+[name="博物館職員"]館内では大声で騒がないようお願いします……
+[name="電話をする客"]おいおい、こんなオープンな展示会を開催し、展示物をウロチョロさせてるのはお前たちだろう！　しかもチケット制限も設けずに。こんなに騒がしいのは自分たちのせいじゃないか！
+[charslot(slot="r",focus="m")]
+[name="ズバイル"]それは本館のアナト館長代理が、「歴史と知識はすべての人に平等に開かれるべき」であり、貴賤による入場券の格差は設けるべきでないと考えているからだ。
+[name="ズバイル"]そして、余がいる展示台の周囲には高さ約六十センチの柵があり、来場者の立ち入りを阻止する機能を有している。そなたの子供が柵を越えたのは違反行為と見なされる。
+[name="ズバイル"]スタッフの指示にご協力願いたい……
+[Dialog]
+[PlaySound(key="$d_avg_mummyhit",volume=1)]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_dropspanner",volume=0.5)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_523_1#1$1", afrom = 0, ato = 0,posfrom = "300,-300", posto = "300,-300")]
+[charslot(slot ="r", name = "avg_npc_524_1#1$1", afrom = 0, ato = 0,posfrom = "200,-300", posto = "200,-300")]
+[delay(time=0.1)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=1.05)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=1.05)]
+[delay(time=0.1)]
+[charslot(slot = "l",afrom = 0, ato = 1,duration=1)]
+[charslot(slot ="r", afrom = 0, ato = 1,duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l",focus="l")]
+[name="観光客"]うわっ、入らなかった！
+[charslot(slot = "r",focus="r")]
+[name="観光客"]ガイドブックには外国のコインでもいいかどうか書いてないわよ。
+[name="観光客"]そもそも、コインを投げれば幸運が訪れるとも書いてないわね。
+[charslot(slot = "l",focus="l")]
+[name="観光客"]やってみなきゃわからないだろ？
+[charslot(slot = "r",focus="r")]
+[name="観光客"]……一枚貸して。あの体の中心に投げればいいのよね？
+[charslot(slot="r",focus="n")]
+[name="博物館職員"]お……おやめください……こちらは重要な歴史的文化財です……！
+[name="博物館職員"]人が多すぎて、全く進めない……
+[Dialog]
+[charslot(slot = "l",afrom = 1, ato = 0,duration=1)]
+[charslot(slot ="r", afrom = 1, ato = 0,duration=1)]
+[delay(time=1.2)]
+[name="ズバイル"]了解した。投擲物は余が武器で弾くとしよう。
+[name="ズバイル"]（手を上げる）
+[Dialog]
+[charslot(slot="l",name="avg_npc_219",duration=0.5,posfrom = "-200,-70", posto = "0,-70")]
+[delay(time=0.51)]
+[charslot(slot="l",duration=0.3,posfrom = "0,-70", posto = "-100,-70",afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$bodyfalldown1", volume=1,channel="1")]
+[name="甲冑を着た客"]うわぁ――！
+[Dialog]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[playsound(key="$d_avg_takphtrptly")]
+[delay(time=0.3)]
+[playsound(key="$skill_flash",volume=0.3,channel="x")]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[delay(time=0.2)]
+[charslot(slot="r",focus="n")]
+[name="甲冑を着た客"]みんな、早くこっちを見ろ！
+[name="甲冑を着た客"]俺が演じているのは千年前のナイツモラの戦士だぞ。今のはそれが倒された場面──歴史が再現された偉大な瞬間だ！
+[charslot(slot="r",focus="m")]
+[name="ズバイル"]余の武器は彼の体に触れていないが。
+[charslot(slot="r",focus="n")]
+[name="甲冑を着た客"]おぉ、シャアの配下の将軍よ！　あなたに敗れた敵に対し何か言葉をくれ！
+[charslot(slot="r",focus="m")]
+[name="ズバイル"]……
+[name="ズバイル"]余が生きていた時代に、各軍が捕らえた敵の首領の首を見せしめで斬り落とす際、最もよく用いられた言葉はこうだ。「貴様の内臓は虫ケラに食い尽くされるだろう」。
+[charslot(slot="r",focus="n")]
+[name="甲冑を着た客"]よし、その言葉、もう一回言ってくれ……
+[Dialog]
+[SoundVolume(volume=0.8, fadetime=3,channel="a")]
+[charslot(slot = "l",bstart=0.8,bend=1 ,name = "avg_npc_1490_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "r",bstart=0.8,bend=1 ,name = "avg_npc_1491_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "l",posfrom = "100,-550", posto = "100,-450",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot = "l",duration = 0.4,afrom=1,ato=0)]
+[charslot(slot = "right",posfrom = "-100,-500", posto = "-100,-400",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot = "r",duration = 0.4,afrom=1,ato=0)]
+[delay(time=0.2)]
+[charslot(slot = "l",bstart=0.8,bend=1 ,name = "avg_npc_1490_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "r",bstart=0.8,bend=1 ,name = "avg_npc_1491_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "l",posfrom = "0,-550", posto = "0,-450",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot = "right",posfrom = "0,-500", posto = "0,-400",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot="r",focus="n")]
+[CameraShake(duration=1, xstrength=10, ystrength=5, vibrato=20, randomness=90, fadeout=true)]
+[name="甲冑を着た客"]おいおい、押すんじゃない。俺がまだ倒れてるんだ！　事故が起きちまうだろ！
+[name="博物館職員"]ダメだ……早く応援を呼ばなければ。
+[name="博物館職員"]まさか……外ではまだ湛水祭が行われているのに、こんなに大勢の人が動くミイラを見に来るなんて想像もしてなかった。
+[stopmusic(fadetime=2)]
+[StopSound(channel="a", fadetime=3)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[focusout(type="bg", from=0, to=0, block=true)]
+[delay(time=1)]
+[Background(image="53_g8_sargondeluxeroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_175",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", focus="r")]
+[name="高貴な身分の女性"]ハトシェプスト様、最近あなたは特別な宝石をお探しになっているとお伺いしましたわ。
+[name="高貴な身分の女性"]ちょうど私の家に大変貴重な宝石がありましたので、お持ちいたしました。これであなたの悩みが解決されれば幸いなのですが。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]ありがとうございます……ぜひ見せてください……
+[charslot(slot = "right", focus="r")]
+[name="高貴な身分の女性"]ところで、近々わが家へ夕食にご招待させていただきたいと思うのですが。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]申し訳ありません。ここのところ多忙でして。
+[name="ぺぺ"]わざわざ宝石をお持ちいただいて、ありがとうございます。ですが残念ながら、私が探しているものではありませんでした。
+[charslot(slot = "right", focus="r")]
+[name="高貴な身分の女性"]まあ、そうですか。ではこの辺で失礼いたしますね。ハトシェプスト様、お時間がございましたらまた。
+[Dialog]
+[charslot(slot = "right",posfrom = "0,0", posto = "150,0",duration = 1,afrom=1,ato=0)]
+[delay(time=1)]
+[PlaySound(key="$doorclosequite", volume=1)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="ぺぺ"]うぅ……外にいるのはあと何人？
+[Dialog]
+[charslot(slot = "right", name = "avg_4139_papyrs_1#1$1",posfrom = "0,0", posto = "0,0",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "right", name = "avg_4139_papyrs_1#2$1",focus="r")]
+[name="アナト"]七十三人です。彼らは皆、あなたが探しているのは自分の宝石かもしれないと言っています。
+[charslot(slot = "left", name = "avg_4058_pepe_1#9$2",focus="l")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ぺぺ"]どうしてそんなにいるんだ──！
+[charslot(slot = "right", name = "avg_4139_papyrs_1#1$1",focus="r")]
+[name="アナト"]もう少し我慢してください。午後になれば休めますから。グランドバザールの宝石商人数名が手がかりを見つけたと言っていたので、午後になったら見に行きましょう。
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$2",focus="l")]
+[name="ぺぺ"]それを休憩と呼ぶのか？
+[charslot(slot = "right", name = "avg_4139_papyrs_1#11$1",focus="r")]
+[name="アナト"]もちろん。午後は人に会わず、宝石を見るだけでいいんですから。
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$2",focus="l")]
+[name="ぺぺ"]あぁ……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g10_grandbazaar_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_jewelryimpact", volume=1)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1495_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4139_papyrs_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left",focus="l")]
+[name="宝石商人"]アナトさん、パーディシャーのご令嬢が浮かない表情で座り込んでもう三時間は経ちますが、残りの宝石はまだご覧になりますか？
+[charslot(slot = "right", name = "avg_4139_papyrs_1#2$1",focus="r")]
+[name="アナト"]あとどれだけありますか？
+[charslot(slot = "left",focus="l")]
+[name="宝石商人"]まだ二百個以上は……
+[charslot(slot = "right", name = "avg_4139_papyrs_1#10$1",focus="r")]
+[name="アナト"]……そこに置いてください。この箱を見終わったらまた考えます。
+[charslot(slot = "left",focus="l")]
+[name="宝石商人"]では失礼します。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "left",posfrom = "0,0", posto = "-200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_4058_pepe_1#12$1",duration = 0.5)]
+[delay(time=0.51)]
+[name="ぺぺ"]アナト……今誰か来てたの？
+[charslot(slot = "m", name = "avg_4139_papyrs_1#1$1")]
+[name="アナト"]また宝石が一箱運ばれました。
+[charslot(slot = "m", name = "avg_4058_pepe_1#2$1")]
+[name="ぺぺ"]……
+[charslot(slot = "m", name = "avg_4058_pepe_1#5$1")]
+[name="ぺぺ"]アナト、なんだか変だよ。君の頭どうして四角錐になってるの……
+[Effect(name="$e_emoji_matter",layer = 1,x=50,y=140)]
+[charslot(slot = "m", name = "avg_4058_pepe_1#12$1")]
+[name="ぺぺ"]周りの装飾品も全部四角錐になって……しかもキラキラして……
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-80",duration = 0.5,afrom=1,ato=0)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=30, vibrato=15, randomness=90, fadeout=true, block=false)]
+[delay(time=0.8)]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=35, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4139_papyrs_1#6$1")]
+[name="アナト"]ペペ！！！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="35_g17_deserttown_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1477_1#8$1",duration=1)]
+[delay(time=2)]
+[name="アスパシア"]博物館がついに開いたのか？
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ホテルの受付係"]はい。ですが今は特別展示会のチケットが入手困難なんですよ！　昨日の夜に噂を聞いて、早めに並んでチケットを買った方がいいとお伝えしたかったんですが、昨晩はいらっしゃらなかったので……
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="アスパシア"]構わない。私が博物館に行きたかったのは、特別展示会が目的ではないからな。あの蒐集家を訪ねる方が重要だった。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ホテルの受付係"]なんだか機嫌が良さそうですね。
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="アスパシア"]私の思った通り、言葉は平和の架け橋であり、会話は理解の基礎だ。そしてこの歴史ある街には、見識の豊かな人間が少なくない。
+[name="アスパシア"]あぁ、古から現在に至るまで、輝かしい歴史を誇るサルゴン人よ、あなた方がもし略奪するのではなく、あの蒐集家と同じように私と腰を据え夜通し語り合ってくれれば、どれほど素晴らしいことか。
+[name="アスパシア"]私の説明で、あの蒐集家はミノス人の執念を理解してくれた。私もまた、彼のこの都市の紹介を通じて多くの学びを得た……
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]……そうだ、一つ確認したいことがあるのだが。
+[name="アスパシア"]現代のミナトハマイでは、銀製品は金製品より貴重なのか？
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ホテルの受付係"]はは、どうして突然そんな冗談を？
+[name="ホテルの受付係"]もちろん、そのようなこともあるでしょうね……例えば、首長様に脅迫された時とか。
+[charslot(slot="m",name="avg_npc_1477_1#2$1")]
+[name="アスパシア"]……ありがとう。状況は理解した。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]私と同室の旅仲間は戻ってきているか？
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ホテルの受付係"]はい、お二人のご友人と一緒に。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]二人の友人……？
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="アスパシア"]それも結構。思想の交流は多いほどいい。私も彼女のように情熱的で豪快なクランタの知己をもっと得たい。
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "-180,0",duration = 2,afrom=1,ato=0)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1477_1#8$1",posfrom = "100,0", posto = "0,0",duration = 1)]
+[delay(time=1)]
+アスパシアはホテルの階段を上がり、部屋の前にすっくと立つ。
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="アスパシア"]ナラントゥヤ、いるのか？
+[name="アスパシア"]良いニュースがある。三位を取ったあの蒐集家が、私の演説を三時間聞いた後、金杯をタダで譲ってくれたんだ！
+[name="アスパシア"]対が揃った金杯を見に、一緒に博物館へ行かないか……？
+[stopmusic(fadetime=2)]
+[charslot(slot = "m", focus = "n")]
+[name="知らない声"]……昨日の夜は、宝石が置いてあるあの部屋に誰も入ってないわ。本当よ、ナラントゥヤ。
+[name="知らない声"]向かいの屋根に隠れて、まばたきもせずにずっと監視してたもの。
+[name="ナラントゥヤの声"]……今回の誘拐がどれだけ重要かはわかってたはずよね。すぐに大金を手に入れるにはああいうターゲットじゃなきゃだめなんだよ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="53_g7_oldtown_indoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1484_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1485_1#2$1",focus="r")]
+[name="アジャニ"]ごめん、ナラントゥヤ。今すぐパーディシャーの娘を探しに行ってくるから。
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]もう遅い。
+[name="ナラントゥヤ"]隠れ蓑として見つけてきたキャラバンはそろそろ街を出てしまう。今さら彼女を見つけて何とか誘拐に成功したとしても、逃げるには間に合わない。
+[charslot]
+[charslot(slot="l",name="avg_npc_1484_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1485_1#8$1",focus="r")]
+[name="アジャニ"]だったら……
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]今後のことを話しましょう。
+[name="ナラントゥヤ"]あんたたちは博物館に戻って。だけどあのパーディシャーの娘にはもう接触しないようにね。金を奪う新しいチャンスを見つけたら、すぐに連絡を寄越すんだ。
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="ナラントゥヤ"]あたしはその消えた宝石を探しに行く。せめてアスパシアに返してやらないとね……
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_1477_1#1$1",duration=0.5)]
+[delay(time=0.51)]
+[name="アスパシア"]その必要はない。
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="ナラントゥヤ"]……
+[charslot]
+アジャジは突如として部屋の中が静まり返るのを感じた。
+彼女は押し入ってきた見知らぬ者を見て、それからナラントゥヤを見て、最後に助けを求めるようにアジャニを見た。
+アジャニは指を立てて唇の前に置き、もう一方の手で腰にある麻酔薬を探る。
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="ナラントゥヤ"]あー、話を聞いて、アスパシア。
+[charslot(slot="m",name="avg_4138_narant_1#8$1")]
+[name="ナラントゥヤ"]今は計画の初期段階なんだ。計画が成功したら、必ず宝石は返す。少なくとも同価値のものを返すよ。あたしを信じてくれていい。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]そうだ、こっちはあたしの手下の二人で……
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]何の計画だ？
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="ナラントゥヤ"]えーっと……
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]その宝石を餌にしてパーディシャーの娘を誘拐しようという企みが聞こえたが。
+[charslot(slot="m",name="avg_4138_narant_1#11$1")]
+[name="ナラントゥヤ"]……全部聞いてたの？
+[charslot(slot="m",name="avg_npc_1477_1#5$1")]
+[name="アスパシア"]すまない、盗み聞きするつもりはなかった。だがつい先ほど偶然扉の前に立っていたんだ。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]私は、会話は理解の基礎だと信じている。それと、あなたには借金があり、今すぐに金が必要だということも知っている。
+[name="アスパシア"]だから、事のいきさつを詳しく話してくれないか？
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="ナラントゥヤ"]……
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]実は、宝石の行方については何の見当もついてなくてね。あなたの力を借りようにも、任せられる仕事はないんだ。
+[name="ナラントゥヤ"]過ぎたことはもう何を言っても仕方ない。けど、そんな感じだから今のところの計画は……ほとんど計画なんてないようなもんさ。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]私が訊いているのはそういうことではない。わかっているだろう。
+[charslot(slot="m",name="avg_4138_narant_1#12$1")]
+[name="ナラントゥヤ"]じゃあ、もしあたしがなぜ借金をしていて、いくら金が欲しいのかを話したら、あたしのやり方を支持してくれるのかい？
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]話し合うことによって、より良心に恥じることのないやり方を考えられると思う。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]ほら、やっぱりあたしって、あなたのことをよく分かってるでしょ。
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]アスパシア。手を出して。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]何をするんだ？
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]気にしないで。あたしたちの仲だと思ってさ……
+[charslot]
+アジャニとアジャジがアイコンタクトを取る。
+ナラントゥヤが行動を起こす合図は、ヒールで地面を叩く澄んだ音であることを彼女たちはよく知っている。
+[charslot(slot="m",name="avg_4138_narant_1#5$1")]
+[name="ナラントゥヤ"]これで──あたしの借りを帳消しにしてくれない？
+[charslot]
+[charslot(slot="l",name="avg_npc_1484_1#10$1")]
+[charslot(slot="r",name="avg_npc_1485_1#7$1")]
+[name="アジャジ＆アジャニ"]……え？
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="ナラントゥヤ"]あたしはあなたの所に半月泊めてもらった上、宝石を持ち去った。まとめて全部あなたへの借りよ。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[playsound(key="$d_avg_goldcoin")]
+[name="ナラントゥヤ"]この金貨の袋は、全部で千二百ディナールある。これくらいじゃ全然足りないのはわかってる。だけど……あたしたちの仲でしょ？
+[charslot(slot="m",name="avg_npc_1477_1#3$1")]
+[name="アスパシア"]ナラントゥヤ……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]そうだ、中にはよその国の硬貨も混ざってるんだ。商人によっては受け取らないだろうけど、どこかしらでは使えるだろうさ。
+[name="ナラントゥヤ"]それと宝石。どれも小さくて不純物もちょっと多いけど、幸い数はそれなりにあるから。
+[name="ナラントゥヤ"]これで何とかならない？
+[charslot(slot="m",name="avg_npc_1477_1#6$1")]
+[name="アスパシア"]……ナラントゥヤ！
+[name="アスパシア"]そんなに私と話し合いたくないのか？
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]「会話は理解の基礎」だよ。けど、あたしはもうあなたを理解しているんだもの。
+[name="ナラントゥヤ"]あなたはかつて神殿で毎日毎日そこにある像の真似をして、剣の持ち方を練習したかもしれないね。あるいは両親に倣って、一族に伝わる誓いを立てたかもしれない。
+[name="ナラントゥヤ"]なにより、あなたはミノスの英雄を慕う者の一人だから、純潔な魂を持とうと心掛けている。
+[name="ナラントゥヤ"]きっと、高い建物から落ちてくる人を救うために手を伸ばすだろうし、良くない手段を使おうとする人を……こっぴどく批判するだろうね。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]……
+[name="アスパシア"]そうだ、あなたの言う通りだ。
+[name="アスパシア"]私は人々の心には善悪を計る尺度があり、法令にもまた尺度があると信じている。人は尺度に従って行動すべきだ。
+[name="アスパシア"]あなたと同じように、私もあなたのことを理解している。おそらく今の私に対して首長やパーディシャーの法令の尺度は異常であり、自らの心に従った方がいいと言うだろう。
+[name="アスパシア"]ただ、ナラントゥヤ……私は自分の心が信じられない。
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]……
+[name="ナラントゥヤ"]じゃあ、もしあたしがいつか首長様に捕まって、わけもわからないまま死罪を食らったら、あなたは同情してくれる？
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]もちろんだ。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]ハッ、それで十分だ。どうやらあなたも、あたしの死は全サルゴンにとって取り返しのつかない損失だって思ってくれてるみたいだね。
+[name="ナラントゥヤ"]もしあなたがあたしの偉業に加わってくれるんなら、あたしたちが途中でヘマして死ぬ確率は随分と減るだろう。でも嫌だって言うんなら、それでも別に構わない。
+[name="ナラントゥヤ"]来る者がいれば去る者もいる。当然あたしは皆をそばに引き留めておきたいよ。だけど去る人にあまりにもこだわってたら、それってあたしを妬む人たちと同じくらい愚かでしょ？
+[name="ナラントゥヤ"]つまりあたしが言いたいのは、もうお互いを困らせるのは無しってこと。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="アスパシア"]……わかった。
+[charslot(slot="m",name="avg_npc_1477_1#2$1")]
+[name="アスパシア"]これで私たちはもう貸し借りなしだ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_deluxeroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$dooropenquite")]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",duration=1)]
+[delay(time=1.5)]
+[name="ぺぺ"]はぁ……
+[Dialog]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]怪我をしているではないか。
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]ただのかすり傷だよ。心配ない……
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]手当てすべきだ。油断して小さな傷を放置し、最後には命を失った兵士をこれまで大勢見てきた。
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]今はもうそういう時代じゃないのさ……また日を改めて現代の医療技術について話してあげるよ。
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]休むのか？
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]いや……水浸しになったノートを書き直さないと……
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]水浸し？
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]話すと長くなる。全部語り終えるほどの気力が残ってるかどうかわからない。
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]朝別れる前、そなたは得た情報を余に共有すると言った。ペペ殿、そなたは約束したのだ。だから話すべきだ。
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]……わかったよ。今日は何の収穫もなかったんだ。
+[name="ぺぺ"]情報を公開したら、無数の人が似たような宝石を持って押し寄せてきたんだ。でも一つとして関係なかったのさ。
+[name="ぺぺ"]丸一日、無数の宝石が私の目の前でキラキラ輝いて、めまいがするほどだった。それから飲み物でも頼んで一休みしようと思ったら、隣にいた二人の子供が突然喧嘩をし始めたんだ。
+[name="ぺぺ"]その結果テーブルが倒れて、飲み物はこぼれ、私はすり傷を負って、ノートがビシャビシャになったのさ……
+[name="ぺぺ"]これが共有できるすべてだよ、ズバイル。
+[name="ぺぺ"]今の話から君が必要な情報は得られたかな？
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]……
+[name="ズバイル"]では……余が今日経験したことを聞きたいか？
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]ズバイル……
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]たくさんの変人がやって来た……しかし面白かった。
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]明日にしてくれるかな。君は寝る必要がないだろうけど、私は本当にクタクタなんだ。
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]ペペ殿、余は展示館内にとどまりたくない……
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]……あと数日辛抱してくれ。ティティのために今回の特別展示会をやり遂げなきゃ。その代わりとして、彼女は宝石をくれたんだから。
+[name="ぺぺ"]展示会が終わったら、ほかの宝石探しに連れて行ってあげるよ。
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]貴石を探しに行くのもあまり気が進まない……
+[charslot(slot="l",name="avg_4058_pepe_1#8$2",focus="l")]
+[name="ぺぺ"]何を言い出すんだ、ズバイル？　シャアの宝物庫の守護者として、一刻も早く記憶をすべて思い出し、再び自分の責務を負うべきではないのか？
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]宝物庫の場所を知りたいと急いているのはそなたの方ではないか？
+[charslot(slot="l",name="avg_4058_pepe_1#3$2",focus="l")]
+[name="ぺぺ"]あー……そう、その通りさ。でなきゃ私がなぜ君を呼び起こしたと思っているんだ？
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]だがペペ殿、余はすでに目覚めたのだ。もはや余を文化遺産として扱わないでほしい。余の行動と考えは余自身の支配下にある。
+[name="ズバイル"]少なくとも現時点において、自分の過去をすぐに思い出したいとは思っていない。
+[name="ズバイル"]明日は良い天気だ。外へ散歩に行き、何も考えたくない。
+[charslot(slot="l",name="avg_4058_pepe_1#8$2",focus="l")]
+[name="ぺぺ"]博物館の展示物が一人で街なかで日向ぼっこしているのを見たら、街の人がびっくりしてひっくり返るって！
+[Dialog]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_stickknock")]
+[playsound(key="$d_avg_bellfall",channel="2")]
+[delay(yime=0.5)]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]言ったであろう、余は展示物ではない！
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]……
+[name="ぺぺ"]すまない、ズバイル……
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]気にするな。
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]もう夜中だよ。本当に疲れたんだ……また明日話そう、いい？
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]……
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]おやすみ。
+[Dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration = 1)]
+[delay(time=1.2)]
+[playsound(key="$doorclosequite")]
+[charslot(slot = "l",afrom = 1, ato = 0,duration = 0.5)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="ズバイル"]……
+[Dialog]
+[delay(time=1)]
+[playsound(key="$d_avg_doorknob")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+虚ろな部屋、ズバイルは壁のスイッチを押してみる。すると明かりは消えた。
+[Dialog]
+[playsound(key="$d_avg_doorknob")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+すぐに彼はもう一度押してみる。すると再び明かりが点灯した。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g2_menatmainstreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1482_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ミオ"]……
+[playsound(key="$d_avg_meownormal")]
+[name="ミオ"]ニャ？
+[charslot(slot = "m", focus = "n")]
+ミオは深夜の通りの中央に立ち、遠くで明滅している窓に向かって目を凝らす。
+すると──
+[Dialog]
+[charslot]
+[playsound(key="$bottlebroken")]
+[delay(time=1)]
+明滅は止み、代わりにガラスがそこらじゅうに砕け散った。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=1)]
+[delay(time=2)]
+[name="ナラントゥヤ"]南風が過ぎれば、向こうは乾季だ。
+[name="ナラントゥヤ"]それまでに十分な金を手に入れられるだろうか？
+[name="ナラントゥヤ"]よし、飛ぶか……
+[charslot]
+[Dialog]
+[playsound(key="$d_avg_cndlbrn")]
+[charslot(slot="m",name="avg_npc_1492_1#1$1",duration=0.5)]
+[delay(time=0.51)]
+[name="ランプライター"]おい──！
+[name="ランプライター"]今時の若い子はどうしてこんなに無茶なんだ……何をしている？　自殺しようとしてたわけではないだろうな？
+[charslot(slot="m",name="avg_4138_narant_1#12$1")]
+[name="ナラントゥヤ"]見れば分かるでしょ？　これは湛水祭の風習の一つなんだから。
+[name="ナラントゥヤ"]川の神に質問しようとしてるんだよ。
+[charslot(slot="m",name="avg_npc_1492_1#1$1")]
+[name="ランプライター"]だとしても川に飛び込んでやるもんじゃない……
+[name="ランプライター"]お嬢さん、それはどこの歴史書から引っ張ってきた風習だい？
+[name="ランプライター"]確かに昔の人々は迷った時、川に質問を投げかけた。しかし今じゃ大概の問題はお金で解決できるようになったってのに……
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]役に立たない豆知識をありがとう。
+[charslot(slot="m",name="avg_npc_1492_1#1$1")]
+[name="ランプライター"]まあでも、私なら君の質問に答えることができるよ。
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_4138_narant_1#2$1")]
+[charslot(slot = "l",posfrom = "-150,0", posto = "0,0",duration = 1,name="avg_npc_1492_1#1$1")]
+[delay(time=1.5)]
+ランプライターは持っていた明かりを掲げ、ナラントゥヤの方へと近づいた。
+[charslot(slot = "l",focus="l")]
+[name="ランプライター"]南風が吹くまでに君が得られるお金は、君自身の欲望を満たすには足りない。だがそれでも十分だろう。
+[charslot(slot="r",name="avg_4138_narant_1#2$1",focus="r")]
+[name="ナラントゥヤ"]……もう少し具体的な質問に変えようか。これからあたしはどこへ行ってその金を手に入れればいい？
+[charslot(slot = "l",focus="l")]
+[name="ランプライター"]砂漠の奥深くだ。
+[charslot(slot="r",name="avg_4138_narant_1#2$1",focus="r")]
+[name="ナラントゥヤ"]サルゴンはそこら中が砂だらけだけどね。
+[charslot(slot = "l",focus="l")]
+[name="ランプライター"]答えてやれる質問はあと一つだけだ。
+[charslot(slot="r",name="avg_4138_narant_1#4$1",focus="r")]
+[name="ナラントゥヤ"]ミナトハマイの人はどいつも裕福だから、無料サンプルは無限に貰えるもんだと思ってたけど？
+[charslot(slot="r",name="avg_4138_narant_1#2$1",focus="r")]
+[name="ナラントゥヤ"]……あ、待って。今のは質問に入らないからね。
+[charslot(slot="r",name="avg_4138_narant_1#3$1",focus="r")]
+[name="ナラントゥヤ"]教えてちょうだい……あのバカほど真面目なミノス人はあたしを探しに来てくれる？
+[charslot(slot = "l",focus="l")]
+[name="ランプライター"]来るだろう。
+[charslot]
+相手がそう言った瞬間、ナラントゥヤは視界の端に一つの人影を捉えた。
+その人影は誰もいない路上で足を止め、一瞬彼女を見ると、向きを変えて歩き去った。
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="ナラントゥヤ"]……アスパシア？
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4138_narant_1#9$1")]
+[name="ナラントゥヤ"]アスパシア！
+[Dialog]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(duration=1)]
+路地を曲がった影を、赤髪のクランタが追いかける。
+駆けるナラントゥヤの耳元に届くのは風の音、川の流れる音、そして彼女の背後で徐々に遠ざかるランプライターの歌声だけだ。
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="♪神が河畔を歩く姿が見られますように。神の歩みに従って永遠へと辿り着けますように♪", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g2_menatmainstreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="ナラントゥヤ"]……見失った？
+[name="ナラントゥヤ"]嘘でしょ？　このナラントゥヤがターゲットを見失っただって？
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="ナラントゥヤ"]……ハァ。
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]まあいいさ。落ち着いて考えよう。
+[name="ナラントゥヤ"]ここの人たちは皆何かの影が見えるよう祈ってたっけ。今あたしが見た影は足音がしなかった。
+[name="ナラントゥヤ"]つまり、あたしが見たのは本当に幽霊だってわけ？
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "m", focus = "n")]
+彼女は道端に座り込んだ。
+花壇の向こう側、暗闇の中で同じように川の流れに耳を傾けている者がいる。
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]川の近くのベンチには水がたまってることが多いから、拭いた方がいいよ。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……
+[name="落ち込む通行人？"]そなたも本当に幽霊が怖いわけではないのだろう？
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]なーんだ、あなたもあの影を見て怖くなったの？　あたしが守ってあげようか？
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……懐かしさを感じた。
+[name="落ち込む通行人？"]はっきりとは見えなかったが、あれは亡き親族や友人の亡魂であるのかもしれぬ。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]なんであれ、一人で見るよりは二人の方がマシでしょうよ。
+[name="ナラントゥヤ"]その姿を見た人はミナトハマイの祝福を得られると聞いたけど、ここに座ってる人はどっちもツイてないみたいだね。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……余はただ、口論をしただけだ。
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="ナラントゥヤ"]奇遇だね。きっと負けたんでしょ？
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]勝っていればここに座ってはおらぬ。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]はははっ。
+[name="ナラントゥヤ"]知ってる？　ほんの十分前に聞いたんだけど、ここに住んでる人には悩みがないんだって。なぜなら金がすべて解決してくれるから。
+[name="ナラントゥヤ"]なかなか理に適ってると思うよ。あたしみたいに借金がなければ、そこまでむしゃくしゃすることなんてないだろうね。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……余は今日、他人に物を投げつけられ、先週手に入れたばかりの新しいマントも汚された。そのうえわけもわからず一日で二十回も結婚させられた。老若男女幅広い相手だった。
+[name="落ち込む通行人？"]しかも誰も余のこういった話を聞いてくれない。
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="ナラントゥヤ"]えっ、あぁ……それは確かに災難だったね。
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]個人情報を持ち出された上、勝手に結婚の手続きをされたって？　あなたそもそも結婚できる年齢なの？
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……ん？
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]別に悪気はないよ。あなた少し変わった声をしてるけど、若そうに聞こえたから。
+[name="ナラントゥヤ"]ハァ、あたしがあなたくらいの年だった時はもっと運が良かった気がするよ。
+[name="ナラントゥヤ"]一度、奪った駄獣たちを追い立てながら帰ってる時、突然空が暗くなって、スカーフでも遮れないほど砂が吹きつけたことがあった。
+[name="ナラントゥヤ"]幸い人数が多かったから、他とはちょっと違った空き地を見つけてすぐに掘り始めたんだ。
+[name="ナラントゥヤ"]何が出てきたと思う？　砂に埋もれた二つの部屋さ。あたしたちの全員がギリギリ入れて、中にはベッドとテーブルまであった。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……それは古代の陵墓でよく見られる寝室の調度品だな。
+[charslot(slot="m",name="avg_4138_narant_1#6$1")]
+[name="ナラントゥヤ"]ははは、物知りだね！　あたしがそれを知ったのは、何年も経った後だったよ。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]あれはなんて楽しい日々だったんだろうね。時間ってやつはまったく……
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]左様……時は川の流れを変え、都市を興し消滅させる。骨を烈日の砂漠にさらし、歴史をより深く沈める。
+[name="落ち込む通行人？"]過ぎ去った日々は懐かしく、そしてその懐かしさは……恐ろしさを感じさせる。
+[charslot(slot="m",name="avg_4138_narant_1#11$1")]
+[name="ナラントゥヤ"]そうさ。過ぎ去った日々はどれだけ懐かしんだところで取り戻せないよ。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……
+[name="落ち込む通行人？"]そなたが懐かしむその者たちは、今どうしている？
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="ナラントゥヤ"]生きてるさ。ひどい有様でね。
+[name="ナラントゥヤ"]一番ひどいのは、そいつらはぽっきり折れたまんま、前を向くことすらできないことだ。どれだけの奴が刀を売り払ったことか。
+[name="ナラントゥヤ"]だからあたしはあいつらのボスとしてあいつらに借りがあるんだ。
+[charslot(slot="m",name="avg_4138_narant_1#6$1")]
+[name="ナラントゥヤ"]とにかく、新しい金貨の山でも築けば、あのバカどももきっと元気が出て、以前のような日々を過ごせるはずさ。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]……そうなることを願っている。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]あなたは？
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]余は……余にもわからぬ。
+[name="落ち込む通行人？"]人々が必死になって川の神の姿を追い、ついにはっきり見えた顔が見たくもないものだったら、心に恐怖が生まれるのも当然だろう。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]もしそれでも追うというなら、少なくともあなたがそこまで恐れちゃいないってことだ。
+[name="ナラントゥヤ"]あたしが故郷を去る前、母さんはいつも耳元でこう言ってたよ。
+[name="ナラントゥヤ"]「ナイツモラは恐怖の主であるべきで、恐怖に支配されることなどない」、誰もがそう思ってるからね。
+[charslot(slot = "m", focus = "n")]
+[name="落ち込む通行人？"]──そなたはナイツモラなのか？
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]そうだよ。それがどうかし──
+[stopmusic(fadetime=1)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+ナラントゥヤは肩を叩かれ、ごく自然に振り返った。
+静寂な通りで、街灯だけが遠くから一つ一つ灯される。
+ランプライターは、鼻歌を歌いながら二人の前までやってくると、梯子を上ってガラスのランプシェードを開けた。
+[Dialog]
+[charslot(slot="l",name="avg_npc_1479_1#1$1",afrom=0,ato=0,posfrom = "200,0", posto = "200,0")]
+[charslot(slot="m",name="avg_npc_1479_1#1$1",afrom=0,ato=0,bstart=0.8,bend=1)]
+[delay(time=0.1)]
+[charslot(slot="m",afrom=0,ato=1,duration=0.5)]
+[delay(time=1)]
+[charslot(slot="l",afrom=1,ato=1)]
+[charslot(slot="m",name="avg_npc_1479_1#1$1",duration=2)]
+[delay(time=3)]
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="ナラントゥヤ"]──
+[charslot(slot="m",name="avg_4138_narant_1#9$1")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=35, randomness=30, fadeout=true, block=false)]
+[name="ナラントゥヤ"]ぎゃああああああ！！！！！！！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.7)]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=35, randomness=30, fadeout=true, block=false)]
+[name="ナラントゥヤ"]誰か、誰か助けてぇ！　死人に取り憑かれたぁ！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

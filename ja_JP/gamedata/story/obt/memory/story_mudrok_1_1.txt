@@ -1,0 +1,727 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[delay(time=1)]
+ボブ、君が以前の手紙で持ち掛けてくれた親切な提案について、真剣に考えてみた。結論として、君の好意は有難いが、ひとまずクルビアへ行くのはやめておく。
+我々はカズデルの外れにある集落に身を寄せ、しばらく足を休めることにした。
+そうだ、ずいぶん長い道のりを歩いてきたが、カズデルまであと一歩というところで立ち止まり、踵を返すことにしたんだ。
+だが我々が迷い、考え、口論し……堂々巡りした挙句、カズデルには入らず、かと言って離れることもできなかった理由は、誰にも分からない。
+それは、私の考えがまだまとまっていないせいか。
+それとも、カズデルに多少の良い変化があったとしても、結局は大して良くはなっていないせいか。
+もしかすると、ただ多くの者が再び長旅へと踏み出す気力を失ってしまっただけなのかもしれない。もちろん、私自身もな。
+ところで少し言い出しづらいのだが、ちょっとした頼み事がある。君には迷惑をかけるかもしれないし、ともすれば厚かましく思われるかもしれない。
+それに、君の業務範囲に含まれるかどうかも分からないから、先に一言謝っておこう……つまり、できればでいいのだが……私と仲間たちとで……
+またビールを買いたいんだ。
+少なくとも安魂祭の日に、カズデルの外で行われる仮装パレードに参加したいと考えている。その時にビールが飲めるのなら、これほど素晴らしいことはない。
+[dialog]
+[stopmusic(fadetime=1.5)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]ゲホゲホッ……喉がイガイガする。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]マスクを着けてるくせにか？
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]こいつはホコリは防げねぇんだよ。ユルゲン、文句ならリザに言いな。俺なんかより、この女の方がよほどガチガチに防護を固めてやがる。
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_1011_wizard_1",duration=1)]
+[delay(time=2)]
+[name="ウルサス術師"]……
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]マドロック、帰ったのか！　手紙は出せた？　安魂祭前にビールを手に入れられそうかい？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]マドロック、ビールの件はなんて？
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]マドロック？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]トランスポーターは不在だった。だから、手紙はロドス事務所に託し、渡してもらうよう依頼するしかなかった。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]さらに時間が伸びたってわけか……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]カズデルの周辺じゃ、ほんとにビールの一本も見つからないわけ？
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]（肩をすくめる）でなきゃマドロックがわざわざビッグ・ボブに手紙を書いたりしねぇだろ？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]いいや、安魂祭にビールを飲むと言ったからには、必ず飲むぞ。自分たちでも何かしないと。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]自分でとなると……醸造か？
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]そいつのデタラメに耳を貸すだけ無駄だぜ。酒を作るのなんてそう簡単にできるわけねぇだろ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]誰がデタラメ言ってるって？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]ビールの醸造はそう難しいことじゃない。大麦を水に漬けて発芽させたら、それを煮沸してろ過し、ホップを加えて発酵させれば完成さ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]麦はあるけど、ホップは……
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]だったら、この辺りを探してみようぜ。醸造なんて簡単だとか抜かす奴なら、ホップがどんな見た目なのか知ってるはずだしな。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]もちろんだとも！
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]だけど、どうして急にやる気を出し始めたんだ？　さっきまでデタラメだとか言ってたくせに――
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]ごちゃごちゃうるせえぞ、ユルゲン。今から醸造の件をみんなに話してくる。
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]というわけよ、ユルゲン。そうと決まったからには、約束は守ってよね。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]あー、それは……あははっ……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]私も手伝おう。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]他の皆も手伝ってくれるさ。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="27_g26_dusk_wild",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+数日後
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]……違う、こんなのホップとはまったくの別物だ。
+[charslot]
+[dialog]
+[PlaySound(key="$leaveshake")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]なら、これはどうだ？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]クンクン……これも違うな。においが酸っぱすぎる。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]カズデルってとこは――つまり、僕たちが野営しているここの辺りは、植物の育ちがかなり悪いね。道中で君から聞いた話とずいぶん違う。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……カズデルに植物が生い茂っている話など、した覚えはないが。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]別の誰かから聞いたんじゃないのか？　確か冬霊山脈にいた頃の雪の夜に……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]いや、何でもない。
+[charslot]
+[dialog]
+[PlaySound(key="$leaveshake")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]ああ、そうだったね。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]あの日はちょうど雪が降っていて、僕たち全員お腹が減って死にそうだった。だけどノダイコンすら、近くの村の人たちに採りつくされてしまってた……
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]ボロ小屋で震えていると、アンヤの奴が突然「カズデルなら、ノダイコンくらいは絶対に生えてるはず」だって言い出して。それで、みんなで思いつく限りの最高の場所を一通り挙げていったんだ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]植物が生い茂った丘に森、それと谷あい……もちろん、麦とホップの畑もね。そんな場所、カズデルになんてあるはずないのに。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_wind", volume=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ユルゲン、もし君がカズデルに入りたいのなら――
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]入れないことはない、って言いたいんだろ。けど泥棒みたいにコソコソするのなんて、こっちから願い下げだよ。
+[charslot]
+[dialog]
+[PlaySound(key="$leaveshake")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]これも違う、これも――
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]ははっ、噂をすればだ！
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]それは……ノダイコンか？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]ああ、それもこんなにたくさん！　ほんとにカズデルに生えてたんだな！
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]*リターニアスラング*、ノダイコンまであるのに、なんでホップだけがないのかな、まったく……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ひとまず探し続けてみよう――
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]あっ、マドロック、ちょっとじっとしてて。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]君の頭に小さな球果が落ちてきた。今取るから、落とさないでくれよ。
+[dialog]
+[charslot(duration=0.8)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_067",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]よし取れた。クンクン……このにおいは……
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]これを使おう。もしかしたらイケるかもしれないぞ。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+十数日後
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]マドロック、どうしてここに？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]皆、ビールがどうなったか気になって仕方ないからな。見に来たんだ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]どうもこうも、発酵を続けるしかないわ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ユルゲンの奴も全く何も知らなかったわけじゃないわ。麦の発芽と麦汁の煮沸はさまになってたけど、発酵の過程になった途端頭を抱えちゃってね、結局私が代わってあげたの。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]小隊の中で酒の醸造に詳しいのは、もう彼だけかと思っていた。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]私を忘れてたってこと？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]それは――ああ……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]そうだったな。君も雪原でとても美味しいベリー酒を作ってくれたんだった。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ほんとに忘れてるのかと思ったわ。ベリー酒……もう何年も前のことね。当時の私たちはまだレユニオンだったかしら？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ああ、あの頃の君はまだ「口が甘くて赤い歯のリザ」だったな。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]アハハ、今度はずいぶんと思い出すのが早いじゃない。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ただ度数低めの甘いお酒が好きなだけなのに、「口が甘い」だなんて。私ってそんなに口先だけに見えるの？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]「赤い歯」に関しては特に文句はないけどね。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]君の歯は、いつもベリーで赤く染まっていたのを覚えている……まあ、君は常にマスクを着けていたけど。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]あははっ、それはお互い様でしょ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]でも、みんなであだ名をつけあったり、冗談を言ったり、お酒を飲んでもケンカにならなかった頃は、なんだかあっという間だった気がするわ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]あなたが出て行くと決めたのも、その頃だったのでしょう？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ああ。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]はじめの頃、レユニオンはまるで雪原に建てられた暖炉が灯る家のよう……本当の家のようだった。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]だけど、それは次第に燃え盛る戦車へと変わっていった。ただ真っすぐ前へ突き進み、雪も、草木も、石も土も……何もかも焼き尽くしていった。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]だから、あなたと昔馴染みのサルカズだけじゃなく、普段は群れようとしなかったウルサス人も一緒に出ていったのよ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ユルゲンやアンヤのようなリターニア人も、あなたがいたから、私たちと一緒にここまでやってこられたわ。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……すまない。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]なんで謝るのよ？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]カズデルがみんなの故郷になれることを望んでいたのに、安魂祭のような特別な日でさえ、街の外で祝うしかないから？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]それが何よ？　故郷に帰れない私たちのような人間が、カズデルからずーっとお客さん扱いされるのも……悪くないことじゃない？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]今回の安魂祭だって、結局のところはアンヤが――
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_steamburst", volume=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]もうっ、このオンボロ発酵槽、またガス漏れしてる。塞がなきゃ。
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_steamburst", volume=1)]
+[PlaySound(key="$d_avg_steamburst", volume=1,delay=0.3)]
+[delay(time=2)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]まずいわ、ガスが噴き出してる！
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]私も手伝おう！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ダメよ、発酵槽は土で塞いじゃダメなの！　ここは私が――
+[charslot]
+[dialog]
+[CameraShake(duration=1, ystrength=60, vibrato=50, randomness=100, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[delay(time=2)]
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ホンブルグのバカ、こんなオンボロ樽を見つけてくるなんて！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]マドロック、怪我はない――って、あなたは私よりも重装備だったわね。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]はあ、私も鎧を調達して来ようかしら。まずはマスクからね。ホンブルグが持ってたあれなんて良さそうだったけど……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]マドロック？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]いい香りがする。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]言われてみれば……そうね、いい香りだわ。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]だが、材料は……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]問題ないわ。麦芽ならまた発芽させればいいし、代用ホップの方はユルゲンがたくさん隠し持ってるのを知ってるから。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]隠し持っている？　何のために？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]想像できないでしょうけど……あいつはあれを枕に詰めて使ってるのよ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]その上でぐっすり眠って、天まで響くようなイビキをかいてるんだから。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]そうだ、ベリーでも食べる？
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ベリー？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]酵母を買う時、ついでにキャラバンに交換してもらったの。ビールができたらベリー酒も作ろうと思ってたけど、全然甘くないから、口寂しい時に食べるくらいしか使い道がなくなっちゃった。
+[charslot]
+[dialog]
+そう言うと、ウルサスの女性はマスクの端をつまみ上げ、ベリーを一つ頬張った。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]チェッ、ちっとも味がしないわ。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]やっぱり雪原のベリーの方が美味しいわね。
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="27_g26_dusk_wild",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+数十日後
+安魂祭当日
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]マドロック、もうすぐパレードの時間だ。俺たちもそろそろ準備しねぇとな。ユルゲンとリザは何て言ってた？　ビールは完成したのか？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]もうすぐ分かる。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]念のため聞くが、ビッグ・ボブの方は？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]音沙汰なしだ。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]……そうか。
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]何ボーッとしてんだ？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]カズデルのことを……考えていた。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]考えるまでもねぇだろ。でかい炉ならあそこにそびえ立ってるぜ。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]だが、今のカズデルと……私たちがこれまでずっと憧れてきたあの場所は、本当に同じなのか？
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]どう見ても別物だな。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]特にアンヤの奴、道中ずっとカズデルのことを大げさに持て囃しやがって、聞いてるこっちの方が恥ずかしかったぜ。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]とはいえ、カズデルが本当にそんな場所になったんなら、何日かくらいは住んでみたいもんだな……
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]さあ、ひとまず野営地へ戻ろうぜ。早くビールが飲みたくて待ちきれねぇや。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]……
+[charslot]
+[name="マドロック小隊メンバーたち"]……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……失敗したのか？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]失敗ってわけじゃないけど、うーん、なんて言ったらいいのか……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]そんなのはいいから、私たちの傑作を持って来なさいよ。ほら、とりあえずちょっと味見してみて。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]良い香りだ――
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]うっ……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……酢？
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]プッ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]よく笑えたな。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]なによ？　泣けってこと？　アンヤがあなたの泣き顔を見たいとでも思ってる？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]アンヤは――
+[dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[dialog]
+[charslot]
+[Subtitle(text="「あたしはカズデルで死んだ最初のマドロック小隊員だよ。故郷で最期を迎えられるなんて、すごく幸せ。あたしの遺灰は海に撒いてね――」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="「……何その顔、みんな本気で行くつもりだったの？　イベリアの噂を聞いたことあるけど、シーボーンの餌になるなんて絶対にいやだよ！」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「仕方ないから妥協してあげる。キャプリニーとして、みんなの代わりに魂の炉の中を探索してくるね――」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「ああもう、なんであんたたちって揃いも揃ってそんなに冗談が通じないのさ。まさか本当にカズデルごと敵に回すつもりじゃないよね？」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「まあ、冗談はそれくらいにして、安魂祭の日は、カズデルの外で仮装パレードをやるんだよね？」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「その日にあたしも連れて、みんなで騒いで、ビールを飲んで――あ、本物のビールだよ。カズデルでありがたられてるあの臭い麦酒じゃなくてね。それだけでもう十分。」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="……", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「……ちょっと、ビールの話をしただけで、そんなに物欲しそうな顔しちゃって。マドロック、あんたのせいだからね。ちゃんと責任取ってよ。」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「そうそう、笑って笑って。」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="「あたしたち、もう笑い方忘れちゃったくらい、長いこと笑ってなかったよね。」", x=300, y=370, alignment="left", size=24, delay=0.04, width=700)]
+[subtitle]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_067")]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6)]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6,loop=false,channel="1",delay=1)]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6,loop=false,channel="2",delay=2)]
+[Delay(time=2.5)]
+[charslot]
+リターニア人はレユニオンの制服を着た目の前の仲間を鋭く睨みつけると――
+出し抜けにマドロックからコップを奪い、酢を一気に飲み干した。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ユルゲン！
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]マドロック、平気さ、僕は何とも――ゴフッ！
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]リザ、言っとくけどね、僕は今日どうしたってカズデルへ行くからな。そんで街の外のパレードで……
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]……ビネガーサイダーを飲んでやるんだ！
+[dialog]
+[charslot]
+張り詰めた空気が一気に緩み、人だかりからまばらに笑い声が上がる。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]マドロック？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ユルゲンの言ったように、ひとまずアンヤを連れて、手作り「ビール」を持って……カズデルへ向かおう。
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]残念だな、本当にビールが飲めると思ってたんだが。ビッグ・ボブはどうしたんだ？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]もうすぐ日が暮れる。彼を待っている時間はない。
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]皆、準備してくれ。カズデルへ向かおう。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]今日は安魂祭だ。街の外では仮装パレードが行われる。皆にはできる限り……その……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]想像力を働かせてほしい。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]仮装した他のサルカズが、我々に文句を付けてくるかもしれない。そのため、皆なるべくサルカズの格好をした方がいいだろう。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]私と他のサルカズたちが先頭を行く。
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.6, loop=true, channel="bse")]
+[charslot]
+[name="フェリーンの隊員"]見てよ、あたしが作ったこの付け角、本物っぽいでしょ？　さあさあ、持ってない人はこっちに取りに来て！
+[name="ウルサスの隊員"]こりゃひどい作りだな。全然耳に合わないぞ！
+[name="フェリーンの隊員"]悪いのはあたしの腕じゃなくて、あんたの耳が丸すぎるからだよ！
+[name="キャプリニーの隊員"]俺はどうすりゃいいんだ？　角を削るのは絶対にいやだからな！　すっげぇ痛ぇんだから！
+[name="サルカズの隊員"]仮装だよ、仮装！　フードとか被れば済む話だろ！
+[name="エラフィアの隊員"]都市内にはサンクタの格好をした人もいるって聞いたわ。はい、この光る輪っかを頭につけてみて。
+[name="サルカズの隊員"]ヒュー、*サルカズスラング*、すげー明るいな！
+[stopSound( channel="bse",fadetime=2)]
+[dialog]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[charslot(slot="l",name="avg_npc_932_1#1$1",posfrom="-200,0",posto="-200,0",duration=0)]
+[charslot(slot="m",name="avg_npc_934_1#1$1",posfrom="0,0",posto="0,0",duration=0)]
+[charslot(slot="r",name="avg_npc_933_1#1$1",posfrom="200,0",posto="200,0",duration=0)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.6, loop=true, channel="bse")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="カズデル周辺の住民A"]見ろ、マドロックたちも来たぞ。
+[charslot(slot="m",name="avg_npc_934_1#1$1")]
+[name="カズデル周辺の住民B"]あの部隊ってこんなにサルカズが多かったかしら？　あの人の角……なんかズレてない？
+[name="カズデル周辺の住民B"]それに、もう一人のフードから突き出てる角って、どう見てもキャプリニーっぽいけど……
+[charslot]
+[name="サルカズの隊員"]おい、こいつらよりも、俺を見てくれよ！
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="カズデル周辺の住民A"]おお、お前か。お前は本物のサルカズだな！　人だかりの中にいるし、しかも頭に光輪までつけてるじゃないか！
+[charslot(slot="m",name="avg_npc_934_1#1$1")]
+[name="カズデル周辺の住民B"]でも、これはさすがに――
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="カズデル周辺の住民A"]細かいことなんて気にすんなよ。角があるんだから、サルカズに決まってるだろ！
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_1011_wizard_1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_934_1#1$1")]
+[name="カズデル周辺の住民B"]あそこの彼女には角がないけど……
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="カズデル周辺の住民A"]レユニオンの仮装か！　クオリティ高いな！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]あなた、よく分かってるじゃない！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ほら、これを一口飲んでみて。アゴが外れるくらいビックリすること間違いなしよ！
+[charslot]
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="カズデル周辺の住民A"]こりゃビールか？　しかも炭酸たっぷりの。もう長いこと飲んでないんだ、早く寄こしてくれ――
+[name="カズデル周辺の住民A"]ブッ――酸っぱ！
+[charslot]
+[name="パレードの人だかり"]アハハハハハ……
+[stopSound( channel="bse",fadetime=2)]
+[dialog]
+[charslot]
+様々な理由により街へ入ることを望まない、あるいは入ることのできないサルカズたちは、全員この部隊に気づいていた。
+条件が限られているため、ほとんどのマドロック小隊員の仮装はいともたやすく見破られてしまった。
+しかしこの夜、それを暴こうとする者はいなかった。
+むしろ彼らは信じたかったのだ。自分たちと同じように、ここにいる異種族たちも、長い長い家路を歩き、ようやく故郷に……
+カズデルに帰り着いたのだと。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]あははは……ゲップ！
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]ユルゲン、それくらいにしておけ。そんなにグビグビ飲んだら、腹が酢でタプタプになっちまうぞ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]酢だからなんだってんだ！　これはビールだって僕が言ったんだから、ビールなんだよ！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_942_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="マドロック"]ユルゲン……
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]やあ、マドロック！　今夜は実に楽しいな。そう思わないかい？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ああ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]アンヤもそう思うだろ？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]もう時間も遅い。そろそろ最後の仕上げにとりかかろう。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]最後の……仕上げ？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]カズデルに……行くんだ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]よせよ。アンヤも言ってただろ。自分ひとりのために街全部を敵に回すなって……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]心配はいらない。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]アンヤを……こちらへ。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowstormflp", volume=0.8, loop=true, channel="wind")]
+マドロックはリターニア人から遺灰の入った骨壺を受け取る。
+そして、しばらくその場にただ立っていた。
+夜風の音のかまびすしい中、風にさらされる岩のように、一言も発することなく。
+[stopsound(channel="wind",fadetime=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]カズデルの象徴があの止まることのない炉だけだと、誰が決めた？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]土石、泥沼、砂礫……そのようなもっと穏やかで、広大で、安らかな場所こそ、我らがカズデルであり……
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]我らの故郷なのかもしれない。
+[dialog]
+[charslot]
+群衆は静まり返り、じっと待ち続けた――
+マドロックが骨壺を置き、大地に向かって何かを囁くのを。
+やがて大地が微かに震え出し、土石が喜び勇んでその呼びかけに応じるのを。マドロックが家路の途中で幾度となく頼んだように、それが積み重なり炉の形を織りなすのを。
+そして、大の大人ほどの高さの炉に薪がくべられ、温かな炎が灯るのを。そこには嘆声も怒号もない。ただ薪がパチパチ爆ぜる音だけが響いている。
+[charslot(slot="m",name="avg_npc_010", bstart=0.2,bend=0.7)]
+[name="？？？"]マドロック。
+[name="？？？"]マドロック！
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]この声は……！？
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_010",duration=1)]
+[delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[name="ビッグ・ボブ"]こんなところにいたのか、ずいぶん探したぞ。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]久しぶりだな、マドロック。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]……ボブ！？　本当に君なのか――来てくれたんだな！
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]道中で少し時間を取られたが、何とかギリギリで間に合った。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]野営地に誰もいなかったから、何かあったのかと心配したぞ。賞金稼ぎ時代の腕がまだ完全に鈍っていなくて幸いだった――
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]ボブ！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ビッグ・ボブ、本当に来てくれたのね！
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]もちろんさ。マドロック小隊がビールをご所望とあらば、手を貸さないわけにいかないからな。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]君が……ビッグ・ボブさん？　本当にビールを……届けてくれたのかい？
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]おっ、新人だな？
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]その通りだ、君たちにビールを届けに来た！
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]ボブ農場のクラフトビール！　農場主による配送サービス付きだ。小隊の人数分用意してあるぞ。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]だがその様子を見るに、今はビールを飲むタイミングじゃなさそうだな？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]いや……
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]むしろ最高のタイミングさ、ボブ。今こそ……まさしくビールを飲む絶好の時だ。
+[dialog]
+[charslot]
+マドロックは骨壺を開く。長き旅路を歩んできた戦士の遺灰がサラサラと炎の中へと滑り落ちていく。
+続いて、彼女はビッグ・ボブからビールを一本受け取った。
+黄金色の液体が注がれ、炉の炎がパチパチと爆ぜる。その澄んだ音は、まるで安魂夜のパレードに間に合わなかった仲間の笑い声のように聞こえた。
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ぐすっ……
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]煙がやたらむせるわ。そう思わない？
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]……言ったろ。俺のマスクじゃ……ホコリは防げねぇって。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]……
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]アンヤ……アンヤ……
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]うぅ……
+[dialog]
+[charslot]
+マドロック小隊の所々からすすり泣く声が響く。残っていたパレードの参加者たちも炉の周りに集まってきていた。
+燃え盛る炉の炎を見つめながら、全員が本来ならばここにいたはずの、しかしここに辿り着くことのできなかった者を思いしのんだ。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]……ボブさん、ビールはまだあるかい？
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]ああ、たっぷりな。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]僕にも一本くれ！　アンヤにだけこっそり一人占めになんてさせないぞ！
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]皆……ビールを受け取りに来てくれ。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_932_1#1$1")]
+[name="カズデル周辺の住民A"]なあ、その、もし余ってるんなら……
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]ほれ！
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]保冷装置の源石パーツが道中で壊れてしまったんだ。マドロック小隊だけで飲みきれるか心配だったから、飲んでくれて助かるくらいさ！
+[dialog]
+[charslot]
+流れていた涙は、腹の中で滾るアルコールの熱さによってすぐに乾いた。
+固く結ばれた唇がようやく緩み、ほろ酔いの頬がほんのり赤く染まる。すすり泣く声は歌声に変わり、歌声はまた熱の孕んだ話し声へと変わっていった。
+ホップの香りが、寝静まった闇夜の彼方へと漂ってゆく。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]なあ、マドロック！　土と石でシェルターや巨像を作れるのなら、もっと……なんていうか……詩的なことができたりはしないかい？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]詩的？
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]たとえば……カズデル周辺の荒野を全部栄養たっぷりの黒土に変えて、そこを……麦畑にするとか！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ベリー園がいいわ！
+[charslot(slot="m",name="avg_npc_053")]
+[name="サルカズ戦士"]俺は麦畑に一票。
+[charslot(slot="m",name="avg_npc_067")]
+[name="リターニア感染者"]それ、見たことか！
+[charslot(slot="m",name="char_1011_wizard_1")]
+[name="ウルサス術師"]ホンブルグ、よく考えなさい。ユルゲンの奴にはせいぜいお酢のサイダーくらいしか作れないけど、私なら毎日ベリー酒を飲ませてあげられるわよ！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwdcheerup", volume=1)]
+[CameraShake(duration=2, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="歓喜する人々"]ベリー酒！　ベリー酒！
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ボブ、感謝する。君が来てくれて本当によかった。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]いや、たとえこのビールがなくたって、酢だけを飲む羽目になっていたとしても、今夜は温かな安魂祭になっていただろう。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]それから、すまない。以前手紙でクルビアに会いに行くと書いたのに、結局君が先にカズデルに来ることになるとは。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]それもまたいいじゃないか。たしかにクルビアには麦畑もホップもあるが、酒類・煙草・アーツユニット及び源石製品管理局もあるからな。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]酒類……？　煙草……？
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]一言で説明すると、税金の取り締まりをしてるとこだ。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]本当は他の奴に酒を届けさせてもらおうと思ってたんだが、そいつらがあまりにも鬱陶しくてな。それに、道中でトラブルが起きても困るし、だからいっそのこと自分で足を運ぶことにしたってわけ。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]君から頼まれていたホップの標本のこともあるし、それならビールをたんまりもらったほうがいいだろう？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]でもクルビアに戻ったら……
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]さあな。連中は手厳しいから、帰った途端に牢屋にぶち込まれるかもしれんぞ、ははっ！
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]はは……
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]それで君は？　これからもずっとここに住むつもりなのか？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]いや。いつかはここを離れて、立ち向かうさ。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]立ち向かうって、誰に？
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ウルサスの領主、リターニアの貴族……それでもまだ足りない。
+[charslot(slot="m",name="avg_npc_010")]
+[name="ビッグ・ボブ"]そいつはいい。だったらついでに酒類・煙草・アーツユニット及び源石製品管理局も加えておいてくれよ。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]フッ……本当にクルビアへ行くことがあれば。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]だが、我々が立ち向かわねばならないものは、もしかすると目に見えて、手で触れられるものよりも……ずっと厄介かもしれない。
+[dialog]
+[charslot]
+二人の間に沈黙が訪れた。炉のそばでは、相変わらず人々の話し声や笑い声が絶えず響いている。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]しかし今この瞬間、我々は思い出と夢を抱きながら、生きて、笑っている。これが我々にできる一番ささやかな抵抗だ。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]ここにいる全員の故郷で。
+[charslot(slot="m",name="avg_npc_942_1#1$1")]
+[name="マドロック"]カズデルで。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=3)]
+[Character]
+[Image]

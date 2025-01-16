@@ -1,0 +1,765 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="53_g5_museum",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[Delay(time=2)]
+[playsound(key="$d_avg_crowdrun",volume=0.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="忙しない少女"]その明かりはもう少し高く吊るしてください。展示物の細部まで完璧に照らす必要がありますから。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="博物館職員"]わかりました、館長！
+[Dialog]
+[playsound(key="$rungeneral", loop=true, channel="a",volume=0.7)]
+[StopSound(channel="a", fadetime=1.2)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-200,0",duration = 0.7,afrom=1,ato=0)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="忙しない少女"]この歌姫の胸像を古歴紀暗闌（あんらん）時代の像と一緒に置いたのは誰ですか？　時代が全く違いますよ。早くここから搬出して、第二展示ホールに運んでください。
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="博物館職員"]私が運びます！
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 0.7,afrom=1,ato=0)]
+[playsound(key="$rungeneral", loop=true, channel="b",volume=0.7)]
+[StopSound(channel="b", fadetime=1.2)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="忙しない少女"]古歴紀詠嘆時代の制作技術に基づいて復元されたあの楽器は？　なぜ展示台に見当たらないのでしょう？
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "-100,0",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "m",posfrom = "-100,0", posto = "-100,-30",duration = 0.4)]
+[playsound(key="$d_avg_open_woodbox")]
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "-100,-30", posto = "-100,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="忙しない少女"]ここじゃない……
+[Dialog]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[charslot(slot = "m",posfrom = "-100,0", posto = "0,0",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-30",duration = 0.4)]
+[playsound(key="$d_avg_open_woodbox")]
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "0,-30", posto = "0,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="忙しない少女"]ここにもない……
+[Dialog]
+[charslot(duration=1)]
+[stopmusic(fadetime=1)]
+[delay(time=2)]
+[playsound(key="$d_avg_harppluck", volume=0.5)]
+[delay(time=2)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[name="愉快な歌声"]♪彼方より訪れし客人よ、スイレンが咲く池のさざ波があなたの足跡を濡らす♪
+[name="愉快な歌声"]♪木陰の下には、甘いナツメヤシと芳醇なビール♪
+[name="愉快な歌声"]♪さあ乾杯をしよう、盛夏を祝おう♪
+[Dialog]
+[playsound(key="$d_avg_clapsologirl")]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1484_1#12$1",posfrom = "-100,0", posto = "0,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="l",focus="l")]
+[name="媚びる職員"]あぁ、メジェティクティさん。あなたの歌声は本当に美しいですね。ずっと余韻が消えません！
+[Dialog]
+[charslot(slot="r",name="avg_npc_1485_1#1$1",posfrom = "100,0", posto = "0,0",duration = 0.5)]
+[delay(time=0.8)]
+[charslot(slot="r",name="avg_npc_1485_1#1$1",focus="r")]
+[name="おだてる職員"]わぁ、メジェティクティさん、あなたのハープの音はまるで川のせせらぎみたいに、心地いいです！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1478_1#10$1",duration=1)]
+[delay(time=1.5)]
+[Effect(name="$e_emoji_musicalnote",layer = 1,x=-80,y=170)]
+[name="メジェティクティ"]当然でしょ。この古典を完璧に演奏するために、一ヶ月以上も猛練習したんだもの。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1",duration=1)]
+[delay(time=2)]
+[name="忙しない少女"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#10$1")]
+[name="忙しない少女"]はぁ、あなたたちときたら。口を開けば蜂蜜を塗ったみたいに甘い言葉ばかりなのに、仕事となると足に油を塗ったみたいにすぐいなくなるんですから。
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="忙しない少女"]ティティ、あなたが持っているその復元楽器の展示が明日だということは、当然知っていますよね？
+[charslot(slot="m",name="avg_npc_1478_1#5$1")]
+[name="メジェティクティ"]知ってるけど、今日のところはひとまず迎賓部に貸してちょうだいよ、アナト。貴賓が来るんだから、しっかりとおもてなししなきゃでしょう。
+[charslot(slot="m",name="avg_4139_papyrs_1#8$1")]
+[name="アナト"]今回は湛水祭のために用意した特別展示会なんですよ。
+[name="アナト"]今の私たちの最重要任務は、展示会のプログラムがすべて滞りなく進むように準備することです。
+[name="アナト"]ここの人たちの目がどれだけ厳しいかは、わたしよりも先輩の職員であるあなたの方がよくわかっているはずです。
+[charslot(slot="m",name="avg_npc_1478_1#4$1")]
+[name="メジェティクティ"]カッカしないでよ、館長さん。
+[charslot(slot="m",name="avg_npc_1478_1#9$1")]
+[name="メジェティクティ"]あなたも就任した直後にこんな重要な展示会を企画しなくちゃいけないんだもの。不安な気持ちはわかるわよ。
+[name="メジェティクティ"]でも信じて、アナト。落ち着けば大丈夫だから。私たちが何を展示しようと、難癖をつけてくる人は必ずいるの。
+[name="メジェティクティ"]何せこのミナトハマイでは、どこの家にも多かれ少なかれ貴重なコレクションがあるわけだし、私たちの展示物をお気に召さない人がいても当然よ。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="アナト"]……わたし、明日お披露目する新しい展示物を見てきます。
+[charslot(slot="m",name="avg_npc_1478_1#10$1")]
+[name="メジェティクティ"]安心してちょうだいな。例の殿方とのデートの邪魔はしないから。
+[charslot(slot="m",name="avg_4139_papyrs_1#8$1")]
+[name="アナト"]あれは研究対象であって、デートの相手なんかじゃありません。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot="m",posfrom = "0,0", posto = "-200,0",duration = 1.5,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1478_1#5$1")]
+[name="メジェティクティ"]そう？　あなたがあれを見る時の目、あんまり情熱的すぎるんだもの。
+[Dialog]
+[MusicVolume(volume=0.3, fadetime=1)]
+[charslot(slot="m",name="avg_npc_1478_1#2$1")]
+[playsound(key="$d_avg_harppluck", volume=0.5)]
+[delay(time=1.5)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[charslot(slot="m",name="avg_npc_1478_1#5$1")]
+[name="メジェティクティ"]それにしても変ね……
+[charslot(slot="m",name="avg_npc_1478_1#3$1")]
+[name="メジェティクティ"]もうこんな時間だってのに、あの人たちはまだ来ないのかしら？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="暇な市民"]あの女の子は、都市の治水発展の歴史に関する論文を書くために、設備の動きを観察してるんじゃないかな。
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="退屈な市民"]もしくは碑文学者で、単に川の中にある石碑についた泥を落としているだけかもしれないわ。
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="暇な市民"]まあ、どっちでも同じようなもんだろ。いずれにしても歴史を調査してる人間だろうさ。
+[name="暇な市民"]なんせ俺たちの都市の歴史があまりに長すぎるせいで、サルゴン中の歴史学者がここに集まるんだからな。
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="退屈な市民"]……そうねぇ。四百年の歴史を持ってる古代の河川は大きくて雄大だし、そっちの二百歳の建築物も高くて立派よ。
+[name="退屈な市民"]重厚な歴史の伝承っていうのは、まさにこういうののことよね。
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="暇な市民"]しかも湛水祭に匹敵するものなんて他にはないだろう。あれは千年も前から受け継がれてきた伝統的な祭りだ。
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="退屈な市民"]ああ、この川に水があふれた時、私は川の神にオアシスの純白の花を捧げましょう。神の呼吸がいつまでも芳しくありますように。
+[name="退屈な市民"]で、あなたは何を用意したの？
+[charslot(slot = "left", name = "avg_npc_1490_1#1$1",focus="l")]
+[name="暇な市民"]相変わらず我が家の伝統通りさ。純金で作られた杯と食器、それとワイン……父が生まれた時から祖父が土の中で寝かせておいた古い酒だ。
+[name="暇な市民"]神が美食をお楽しみになり、祭日の賑やかな雰囲気を我らと共に感じてくださいますように。
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",focus="r")]
+[name="退屈な市民"]神が人の世をお歩きになる姿を拝み、その祝福を得られますよう。
+[name="退屈な市民"]不朽のミナトハマイへ杯を捧げましょう。神がこの地に永久におわしますように。
+[Dialog]
+[charslot(slot = "m", focus = "all")]
+[PlaySound(key="$clink")]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1")]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1")]
+[playsound(key="$d_avg_walk_water", loop=true, channel="bgs")]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "left",posfrom = "0,0", posto = "-10,-15",duration = 0.3)]
+[delay(time=0.5)]
+[charslot(slot = "left",posfrom = "-10,-15", posto = "20,-15",duration = 0.5)]
+[delay(time=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "left",posfrom = "20,-15", posto = "0,-15",duration = 0.5)]
+[delay(time=1)]
+[playMusic(key="$m_avg_dailylifeofsargon_loop", volume=0.6)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="岸辺の少女"]お姉ちゃん、まだ見つからないの？
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="ぺぺ"]もう少し待ってくれたまえ。ちょうど手に触れたところだから。
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="岸辺の少女"]もう少しって、さっきからずうっと同じこと言ってるじゃん。水の中に入って一時間半も経つよ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#3$1",focus="l")]
+[name="ぺぺ"]シー……邪魔するんじゃないよ……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(slot="r",name="avg_npc_1478_1#5$1",duration=1.5)]
+[delay(time=2)]
+[name="メジェティクティ"]まったく、あのお嬢様ったらどこに行ったのかしら？
+[name="メジェティクティ"]街の全部のゲートに人を置いてるのに、誰もあの子を見てないなんて。
+[charslot(slot="r",name="avg_npc_1478_1#1$1", focus="r")]
+[name="メジェティクティ"]まさかもう入ってきてたりはしないわよね？　出迎えるためにここまで手間をかけたのに、こっそり忍び込まれちゃたまらないわ。
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1493_1#1$1",posfrom = "-170,0", posto = "0,0",duration = 1.5)]
+[delay(time=2)]
+[charslot(slot = "l", focus="l")]
+[name="ご機嫌な婦人"]ごきげんよう、メジェティクティさん。そんなに急いでどちらへ？
+[charslot(slot="r",name="avg_npc_1478_1#9$1", focus="r")]
+[name="メジェティクティ"]あら、ベケット夫人じゃない。これから旧友に会いに行くの！
+[charslot(slot = "l", focus="l")]
+[name="ご機嫌な婦人"]これお庭で摘んだばかりのスイートオレンジなのよ。湛水祭前に実ったから、間違いなくみんなの胃袋を虜にするお味よ。
+[name="ご機嫌な婦人"]ご友人にも差し上げてくださいな、メジェティクティさん。
+[charslot(slot="r",name="avg_npc_1478_1#9$1", focus="r")]
+[name="メジェティクティ"]まあ、ありがとう。他人の優しさを素直に受けとらない友人に代わってお礼を言っておくわ。それじゃまたね、ベケット夫人。
+[charslot(slot = "l", focus="l")]
+[name="ご機嫌な婦人"]ええ、ではまた！
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r",posfrom = "0,0", posto = "180,0",duration = 1.5,afrom=1,ato=0)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="r",name="avg_npc_1478_1#9$1", duration=0.5)]
+[delay(time=1)]
+[name="メジェティクティ"]ここの人たちはいつも親切ね……
+[charslot(slot="r",name="avg_npc_1478_1#3$1", focus="r")]
+[name="メジェティクティ"]はぁ……あの子は一体どこへ行ったのやら……
+[name="メジェティクティ"]学校に通っていた時はどこへ行くのが好きだったかしら？
+[Dialog]
+[charslot(slot = "l",name="avg_npc_1486_1#1$1",duration = 0.5)]
+[charslot(slot = "l",posfrom = "-200,0", posto = "0,0",duration = 0.7)]
+[charslot(slot = "r",posfrom = "0,0", posto = "-100,0",duration = 0.7)]
+[delay(time=0.7)]
+[charslot(slot = "l",name="avg_npc_1486_1#4$1")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot="r",name="avg_npc_1478_1#4$1")]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration = 0.5)]
+[charslot(slot = "r",posfrom = "-100,0", posto= "50,0",duration = 0.5)]
+[delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=2, ystrength=5, vibrato=15, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_orangefall", volume=1)]
+[delay(time=1)]
+[charslot(slot = "l",name="avg_npc_1486_1#4$1",focus="l")]
+[name="観光客"]あっ、申し訳ありませんお嬢さん。いらっしゃることに気が付かなくて。オレンジが散らばってしまいましたね。
+[charslot(slot="r",name="avg_npc_1478_1#4$1", focus="r")]
+[name="メジェティクティ"]私は平気よ、あなたは？　大丈夫かしら？
+[charslot(slot = "l",name="avg_npc_1486_1#1$1",focus="l")]
+[multiline(name="観光客")]お許しいただき感謝します。優しいお方ですね。
+[charslot(slot = "l",name="avg_npc_1486_1#5$1",focus="l")]
+[multiline(name="観光客")]あっ、そんな……
+[charslot(slot="r",name="avg_npc_1478_1#1$1", focus="r")]
+[name="メジェティクティ"]急に顔をしかめたりしてどうしたのかしら？　どこか怪我でも？
+[charslot(slot = "l",name="avg_npc_1486_1#5$1",focus="l")]
+[name="観光客"]たった今、あなたの額に陰りが見えたのです。これは良い兆しではありません。不運が訪れることを示しています。
+[charslot(slot = "l",name="avg_npc_1486_1#1$1",focus="l")]
+[name="観光客"]五ディナールいただければ、あなたに訪れる不運を取り除いて差しあげましょう。
+[charslot(slot="r",name="avg_npc_1478_1#5$1", focus="r")]
+[name="メジェティクティ"]えーっと……あの、私約束があるので、これで！
+[Dialog]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=1)]
+[charslot(slot = "r",posfrom = "50,0", posto = "300,0",duration = 1,afrom=1,ato=0)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=1)]
+[charslot(slot = "l",name="avg_npc_1486_1#4$1",focus="l")]
+[charslot(slot = "l",focus="l",posfrom = "-150,0", posto = "-50,0",duration = 0.5)]
+[delay(time=0.6)]
+[name="観光客"]ちょっと！　あの！　お待ちください。二ディナールでも結構ですから！
+[name="観光客"]嘘ではありません。本当に不幸な目に遭いますよ！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1")]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1")]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="岸辺の少女"]嘘じゃないよね……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]安心しなよ。お姉ちゃんは約束を破ったことなんかないからね。
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="岸辺の少女"]本当？　ううっ……でも……
+[charslot(slot = "left", name = "avg_4058_pepe_1#11$1",focus="l")]
+[name="ぺぺ"]ほら泣かないで、もうすぐ……
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[Dialog]
+[CameraShake(duration=0.5, xstrength=5, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", action="jump",posto = "0,-15",power=1,times=1,duration = 0.3)]
+[delay(time=0.31)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=1,times=1,duration = 0.3)]
+[playsound(key="$d_avg_jump_water",volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="ぺぺ"]うわぁ、しまった。また逃げられた！
+[Dialog]
+[charslot(slot ="r", action="shake", power=10, times=50, duration=0.3)]
+[delay(time=0.31)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="悲しむ少女"]うわああん！！！
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "0,15",power=1,times=1,duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#11$1",focus="l")]
+[name="ぺぺ"]泣かないでってば、今のはからかっただけさ！　ちゃんと捕まえてあるよ。ほら、私の手の中にいるだろう？
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="傷付いた少女"]ひどいよお姉ちゃん……
+[charslot(slot = "left", name = "avg_4058_pepe_1#10$2",focus="l")]
+[name="ぺぺ"]いやあ……普段うちの弟をからかう癖があるものだからつい、ね。
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="傷付いた少女"]弟さんが可哀想……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$2",focus="l")]
+[name="ぺぺ"]可哀想だなんてとんでもない。あいつだってよく私のことをからかうんだよ。ほら、缶を貸して。鱗獣を入れてあげるから。
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="すすり泣く女の子"]金色の鱗獣、もう二度と帰ってこないかと思ったよ……ありがとうお姉ちゃん。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$2",focus="l")]
+[name="ぺぺ"]チッチッチッ。こーんなに苦労して手伝ったってのに、そのお礼がそれっぽっちなの？　もっとはっきり大きな声で言ってよ。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="すすり泣く女の子"]ありがとうお姉ちゃん！　お姉ちゃんは最高だよ！
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$2",focus="l")]
+[name="ぺぺ"]うむうむ。そうでなくちゃ。どういたしまして！
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]ほら、急いでおうちに帰りなさい。もうほかの人の真似をしてペットを外でお散歩させようだなんて気を起こしちゃいけないよ。
+[charslot(slot = "right", name = "avg_npc_1497_1#1$1",focus="r")]
+[name="喜ぶ女の子"]うん、またねお姉ちゃん。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.5)]
+[charslot(slot = "right",posfrom = "0,0", posto = "250,0",duration = 1.5,afrom=1,ato=0)]
+[delay(time=2.5)]
+[Effect(name="$e_emoji_shy",layer = 1,x=-210,y=50)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#10$1",focus="l")]
+[name="ぺぺ"]川でペットの鱗獣の散歩かぁ。子供の頃にそんな奇想天外なことをするのは私だけじゃなかったんだね……
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",posfrom = "150,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1478_1#2$1",focus="r")]
+[name="メジェティクティ"]オッホン……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]おや、水の中で鱗獣を探すのに夢中になってたら、ついに誰かさんの堪忍袋の緒が切れちゃったみたいだね。
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]あなたにも私の気持ちが分かったのね、ペペ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]ハァ……まだ博物館には行きたくないな。どうせアナトがしつこくあれこれ聞いてきて、絶対にゆっくりできないだろうし。
+[name="ぺぺ"]そういえば、一人で来たの？　アナトは？
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]彼女は館長代理としてやらなきゃならないことがたくさんあるのよ。大切な展示会のこともあって、ここのところ休む間もなく駆けずり回っているわ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]すごいじゃないか。まさか来て早々に出世するなんてね。学校の頃は、大人しい性格を侮られがちだったが、いつも真剣に物事に取り組む彼女なら、きっと成果を出すと信じていたよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]……あの子は昔から芯が強かったものね。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]君の方はどうなんだ？　この都市に長く住んでいるだろう。何か変化はあったの？
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]私はねぇ、まあ忙しくも暇でもなく、一応はどうにか副館長の肩書を手に入れたところよ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]しかし前にクルビアの博物館にいた頃は……
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]あの頃はビジネス運営を担当していたわね。けどこっちは環境が違うのよ。
+[name="メジェティクティ"]ミナトハマイの博物館はお金を稼ぐ必要がないんだもの。首長とパーディシャーたちの毎年の支援に頼るだけでも健全な運営ができるし、私の出る幕はないわ。
+[name="メジェティクティ"]それも悪くないと思うのよ。私ものんびりできるし。
+[charslot(slot = "left", name = "avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]でも君は……のんびりできる性格じゃなかっただろう。
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]あなたは？　今回の旅できっとたくさんの収穫があったんでしょ？
+[charslot(slot = "left", name = "avg_4058_pepe_1#7$1",focus="l")]
+[name="ぺぺ"]想像できないくらい多いよ、これが。
+[charslot(slot = "right", name = "avg_npc_1478_1#2$1",focus="r")]
+[name="メジェティクティ"]そう……なら提出される報告書もきっと想像できないほど多いんでしょうね。
+[charslot(slot = "left", name = "avg_4058_pepe_1#3$2",focus="l")]
+[name="ぺぺ"]うな～、ダメだぁ、暑すぎる。どうやら軽い熱中症にかかってしまったようだ。ここでもうちょっと風に当たっていかないと。
+[charslot(slot = "right", name = "avg_npc_1478_1#10$1",focus="r")]
+[name="メジェティクティ"]その手には乗らないわよ。昔あなたが学校を休む時に、私が何度も使った言い訳じゃないの。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1490_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="ウェイター"]お客様、ずっとここに座ってらっしゃいますが、日差しもこんなに強いことですし、何か飲み物はいかがです？　当店お薦め搾りたてのリコリスジュースがたった五ディナールですよ。
+[name="ウェイター"]それともアップルローゼルティーにしますか？　こちらですと一杯二ディナールです。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#1$1",duration=1)]
+[delay(time=2)]
+[name="奇妙な女性"]いらないよ。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]ではアンズジュースは？　たったの一ディナールですよ。
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="奇妙な女性"]「いらない」と言ったでしょ。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]かしこまりました……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_804_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="裕福な観光客"]待て、ウェイター。ここで一番上等なコーヒーをくれ。地元特産のカルダモンとクローブを加えてな。
+[name="裕福な観光客"]それとリコリスジュースをそちらのレディに。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]少々お待ちください。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_804_1#8$1")]
+[name="裕福な観光客"]そちらのお嬢さん、ミナトハマイに来て湛水祭を楽しむなら、十分な予算を用意しておかなくてはいけないよ。でないと旅の体験価値が大きく損なわれてしまう。
+[name="裕福な観光客"]気を悪くしないでほしいのだが、消費というのは自身の収入に見合うものであるべきだと私は考えている。もし資金が足りなくても、バカンスに適した相応の場所は他にもたくさんあるよ。
+[name="裕福な観光客"]ボリバルのドッソレスなんかはいい場所だと聞いたことがあるな。物価が安く、風景も美しい。懐具合が……いささか寂しい方には適しているのではなかろうか。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="奇妙な女性"]……もっともらしい話だ。あなた、とても博学みたいだね。
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[name="裕福な観光客"]光栄だな。あなたは？　自らの見聞を広げる道を歩んでおられるのかな？
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="奇妙な女性"]道？　……そんなところさ。今は自分の道を探している途中だよ。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1490_1#1$1",duration=1)]
+[playsound(key="$d_gen_walk_n",volume=0.6)]
+[delay(time=1.5)]
+[name="ウェイター"]お待たせいたしました。コーヒーでございます。
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[name="裕福な観光客"]そこに置いてくれ。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]リコリスジュースです。
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="奇妙な女性"]（一気に飲み干す）
+[name="奇妙な女性"]お気遣いをどうも。
+[Dialog]
+[playsound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_804_1#7$1")]
+[name="裕福な観光客"]（小声）フン──
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[multiline(name="裕福な観光客")]ウェイター、湛水祭ではどんな面白いイベントがあるのか紹介してくれ……
+[charslot(slot="m",name="avg_npc_804_1#10$1")]
+[multiline(name="裕福な観光客")]なんだその表情は？
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]いえ、少し驚いたもので……あのお客さん、頑なにドリンクを注文しようとしなかったのに、チップはこんなに払うなんて……
+[charslot(slot="m",name="avg_npc_804_1#1$1")]
+[name="裕福な観光客"]フンッ、プライドだけは一人前の貧乏人か。
+[name="裕福な観光客"]まあいい。楽しみは自分で見つけるとしよう。君、会計を頼む。
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]はい。全部で十五ディナールでございます。
+[charslot(slot="m",name="avg_npc_804_1#10$1")]
+[name="裕福な観光客"]……
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="ウェイター"]お客様？
+[charslot(slot="m",name="avg_npc_804_1#10$1")]
+[name="裕福な観光客"]うっ……なぜだ？　財布が見当たらない！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="奇妙な女性"]川の流れよ、この金メッキの鉄くずを運びたまえ。そして川の水が干上がった時、必要な人に拾われますように。
+[name="奇妙な女性"]……時間を無駄にしちまったね。危うくターゲットを見失うとこだった。
+[name="奇妙な女性"]聞くところによると……輝ける都市はそこら中に宝石が散らばっていて、多くの勇士が求めても見つからなかったお宝もあるって話だったけど。
+[name="奇妙な女性"]遠路はるばるやってきた結果が、ほんの数枚ぽっちの金貨にキーキー言う奴らばっかりとはね。
+[Dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[playsound(key="$waterbubble_n",volume=0.7,channel="1")]
+[playsound(key="$d_avg_fallintowater",volume=0.7)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.07, yScaleTo=1.07, duration=0.9)]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall",fadetime=1)]
+流れて来た黒雲が、眩い日差しを遮る。赤毛の女性が袋を傾けて金貨を一枚また一枚と投げる。金色が全く同じ軌道で川面に映る太陽の輪郭を砕いた。
+その後、彼女は口笛を吹きながら人混みの中に消えていった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g10_grandbazaar_d",x=-30,screenadapt="coverall",xScale=1.05, yScale=1.05)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]ぷはぁ……グランドバザールのアンズジュースはやっぱり美味しいねえ。アカデミーの時から味が全く変わらないよ！
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]初めはあなたがここにいると予想したけど、どれだけ人混みの中を歩き回っても見つからなかったのよね。それでアカデミー時代ここに来る時はいつも三人一緒だったことを思い出したの。
+[name="メジェティクティ"]一人の時、あなたが行く場所は決まって……
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]川の畔だね……一人の時は川辺をぶらぶらするのが好きなんだ。でも、私を探すためにそんなにあちこち駆け回っていたとはなぁ。
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]あなたは賓客なのよ、ペペ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]どうしてそんなことにこだわるかな……友達だろう？
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="メジェティクティ"]……
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="ぺぺ"]まさか吐きそうになるほどこっ恥ずかしい演出で私を迎えようとはしてないだろうね？
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]……
+[name="メジェティクティ"]それがあるべき礼節じゃない。
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="ぺぺ"]あのね。相手は誰だと思ってるのかな。君が腹の中で笑う声がここまで聞こえてきそうだよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="メジェティクティ"]それで？　今回はどんな大発見を持って帰ったの？
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]宝石だよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="メジェティクティ"]宝石？
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[delay(time=1)]
+[playsound(key="$d_avg_jewelryimpact")]
+[name="宝石商"]サファイアのブレスレット、ネックレス、イヤリング、お好きな組み合わせでたったの二千ディナールだ。二千ディナールで持ってっていいよ。ただし値引きはご勘弁を。
+[name="道端のスピーカー"]お客様がた、当店は厳選したエメラルドの指輪を取り揃えていますよ。丸ごと一箱ご購入いただければ、セット割引をいたします。
+[name="道端のスピーカー"]品質も分量も保証済みで価格はリーズナブル、いずれもなんと十五カラット以上の上等な品。ご親戚やご友人のプレゼントに、たった四千五百ディナールです。
+[name="テレビ広告"]ルビー、サファイア、アメジスト。ローズクォーツ、ペリドット、クリソベリル。宝石を買うならグランドバザールへ。毎日が卸売価格、びっくりするほどお値打ちです。
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]ミナトハマイはあらゆる宝石が産出されているわ。普通の宝石なら見るに値しないわよ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$1",focus="l")]
+[name="ぺぺ"]なあに、私が発掘した宝石は少しばかり特別なのだよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="メジェティクティ"]特別？
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[delay(time=1)]
+[name="上品な婦人"]この間、水の浄化に用いられていたと言われるピンクサファイアを購入致しましたの。源石回路が非常に細かく刻まれていて、まるで芸術品ですのよ。
+[name="華やかな服装の男性"]聞くだけでも価値がありそうですね。私も先月似たようなトルマリンを手に入れて、杖にはめ込みましたが、アーツが大幅に強化されたよ。
+[name="貫禄のある老人"]どれ、わしも。ほれ、見てみい。
+[name="上品な婦人"]これは昨年数量限定で販売された宝石ベルトではなくて？　お肌を改善し、老化を遅らせることができると販売主が謳ってらしたわよね？
+[name="華やかな服装の男性"]着用してみた感じはどうなんです？
+[name="貫禄のある老人"]確かにしゃきっとしたのう……
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="ぺぺ"]うーん……ああいったグランドバザールで売られてる宝石とは比べものにならないな。私が発掘した宝石にはレアな機能が付いてるんだ。
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]どうレアなの？　グランドバザールで流通している源石回路宝石だって、一般人からしたらそうそうお目にかかれない代物よ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]まずは先に進むとしようか、ティティ。
+[charslot(slot = "right", name = "avg_npc_1478_1#4$1",focus="r")]
+[name="メジェティクティ"]まさか人に見せられない秘密でもあるの？
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]そうではないよ。安心したまえ、ちゃんと話すから。でも──
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$2",focus="l")]
+[name="ぺぺ"]灼熱の太陽が更に高く昇る前に、七芒星通りに祈願の像を買いに行かないと。研究を行うにも神の祝福が必要だからね。
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]……なら早く行かないとね。あの通りはすぐに足を火傷するくらい熱くなるわよ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[Background(image="53_g10_grandbazaar_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[name="こそこそする女性"]ターゲットは街の中心の博物館に向かって移動中……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="こそこそする女性"]地元博物館の副館長直々に迎えに来るとは、どうやら情報に誤りはないようだ。只者じゃないね。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_npc_1478_1#4$1",focus="r")]
+[name="メジェティクティ"]何ですって！？　あなたが見つけた宝石はシャアの遺物なの？
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="ぺぺ"]あちゃー……こうなるならつま先が出てるサンダルなんて履かなかったのに。後で絶対サンダル跡が付いちゃうよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="メジェティクティ"]サンダルなんてどうでもいいわよ！　それよりその宝石は一体どこで見つけたの？
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]かつてシュバト＝アルサランって呼ばれていた土地でその手がかりを見つけ、それから紆余曲折あって、最終的にとある首長の領地で発見したのさ。
+[charslot(slot = "right", name = "avg_npc_1478_1#3$1",focus="r")]
+[name="メジェティクティ"]「獅子たちの旧き王座」……
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]とある晶洞の中で、シャア本人が残した古代の映像も見たよ。
+[name="ぺぺ"]道中での発見は、全部この手記に記録してある。これは宝が詰まった宝物庫の正確な位置を特定し、かつてシャアがナイツモラと交わした約束が伝説なんかじゃないと証明してくれるはずさ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]あぁ、宝物庫に足を踏み入れた時、そこで何が私たちを待ち受けているんだろうね？
+[name="ぺぺ"]世にも珍しいお宝の価値が金貨何枚になるかは置いとくとして、より重要なのはその中に含まれる情報が当時の真相を明らかにするってことだよ。
+[name="ぺぺ"]ティティ、シャアが残した解けない謎が全部、一つも余さずに解明されるんだ！
+[charslot(slot = "left", name = "avg_4058_pepe_1#6$2",focus="l")]
+[name="ぺぺ"]彼が狂気とも言える戦いの約束をしたのは果たしてなぜなのか？　そして世間を驚かせた、彼とハランドゥハンの戦いの真相！　さらには彼の最後の行方！
+[charslot(slot = "left", name = "avg_4058_pepe_1#7$2",focus="l")]
+[Effect(name="$e_emoji_proud",layer = 1,x=-170,y=150)]
+[name="ぺぺ"]これは人々を震撼させる大発見になるよ！　黄金都市だって私に注目しちゃうだろうね！
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="メジェティクティ"]場所がわかってるのなら、直接人を連れて発掘しに行けばいいじゃないの。ただ……
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]いや、最後の手がかりがまだなんだよ。そのために博物館からあるものを借りる必要があってね。
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="メジェティクティ"]公開展示されている文化財を自由にできるのは言うまでもなく、博物館の倉庫だって好きな時に入れるでしょう。あなたはパーディシャーの娘なんだし。
+[charslot(slot = "left", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]それが問題なんだよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#5$1",focus="r")]
+[name="メジェティクティ"]待って、まさかあなたが目を付けてるのって……
+[charslot(duraiton=1)]
+ペペが博物館の外壁を見る。ちょうど幕がゆっくりと開かれているところだった。
+幕には金の鎧を身にまとったミイラが描かれている。顔はマスクで覆われ、スマートな体つきをしている。
+そして幕の下の方に、ひときわ目を引く大きな文字が並んでいる。
+[Dialog]
+[delay(time=1)]
+『バルジャバンダバード博物館周年記念特別展示──シャア時代の名もなき将軍』
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="ぺぺ"]将軍？　違うよ、彼はその宝物庫の守護者さ。
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="メジェティクティ"]将軍でも守護者でも、アナトが一番推してる展示物よ。そう簡単には借りられないわ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="ぺぺ"]手がかりである宝石だけでは何も証明できない。シャアの宝物庫を見つけてこそ、父様と陛下に私の能力を証明できるんだ。
+[name="ぺぺ"]黄金都市に入って、陛下の史官になり、全サルゴンの歴史を記述する──私にはその能力があると証明をするんだ。
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="メジェティクティ"]パーディシャーの後継者でも十分に良いと思うけど？
+[charslot(slot = "left", name = "avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]……富と権力は表面的な繁栄でしかないよ。私たちの一族の背骨である栄光の本質は、代々伝わる史官としての地位だ。
+[charslot(slot = "right", name = "avg_npc_1478_1#8$1",focus="r")]
+[name="メジェティクティ"]でもペペ……あなたのお父様は以前からあなたの弟に史官の地位に継がせようとしてるんじゃないの？
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="ぺぺ"]あいつが備えている素養なら私にもあるし、品行や能力だって、絶対に負けてやしない。
+[charslot(slot = "right", name = "avg_npc_1478_1#8$1",focus="r")]
+[name="メジェティクティ"]ペペ、あと二ヶ月後には、あなたの弟を黄金都市へと連れていく使者が来るのよ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$1",focus="l")]
+[name="ぺぺ"]間に合うさ！　ティティ、君さえ手伝ってくれればね！　夏が終わるまで、アナトはあのミイラを研究に貸してくれないだろう。
+[name="ぺぺ"]でもこの夏が最後のチャンスなんだ。私には時間がないんだよ。
+[charslot(slot = "right", name = "avg_npc_1478_1#2$1",focus="r")]
+[name="メジェティクティ"]あなたたち姉弟ったら本当……子供の頃から喧嘩ばかりして、大きくなったら今度は一つの椅子を巡って争うだなんて。
+[charslot(slot = "right", name = "avg_npc_1478_1#1$1",focus="r")]
+[name="メジェティクティ"]……ほら、私の通行証よ。持っていきなさい。
+[name="メジェティクティ"]夜に館内に入ってこそこそ研究するといいわ。
+[charslot(slot = "left", name = "avg_4058_pepe_1#5$1",focus="l")]
+[name="ぺぺ"]ティティ……
+[charslot(slot = "right", name = "avg_npc_1478_1#9$1",focus="r")]
+[name="メジェティクティ"]ここ数年あなたたちがいがみ合ってるのを見て、私もうんざりしていたのよ。
+[name="メジェティクティ"]最後に一度だけ手伝ってあげる。これで何も得られないようなら、これ以上こだわるのはおよしなさいな。
+[charslot(slot = "left", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]そうはならない。何も得られないなんてことはない。
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1)]
+[Dialog]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.05, yScaleTo=1.05, duration=4, yTo=-20,block=false)]
+[delay(time=2)]
+[Background(image="bg_white",screenadapt="coverall",fadetime=2)]
+[delay(time=2)]
+[bgeffect(name="$eb_sunlight_l",layer=1,x=-400,y=100)]
+[image(image="53_i01",screenadapt="coverall",xScale=1.2, yScale=1.2,screenadapt="coverall",fadetime=2)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=45)]
+[delay(time=1)]
+メジェティクティは、ペペの独り言に構うことなく、ゆっくり立ち上がると、数百年の歳月を経た壮大な建築物を見やった。
+太陽が燦燦と降り注ぎ、庭園と建物を照らす。どこまでも青い空の下、巨大な台形の建築物がそびえ立っている。
+[PlaySound(key="$d_avg_breezetree")] 
+そばにある大きなシュロの木が風に吹かれて、さらさらと葉擦れの音を立てる。
+[name="メジェティクティ"]毎日見ていても、やはりこの迫力には圧倒されるわ。
+[name="メジェティクティ"]長い間、この建物はひっそりとこの都市にあり続け、静かに歳月に抗ってきた。
+[name="ぺぺ"]そうだね。この建物の前では、どんなに長い人生も一瞬だ。
+[name="ぺぺ"]瞬きの間に……過ぎ去ってしまう。
+[name="メジェティクティ"]ある瞬間で時を止められたらいいのに。
+[name="ぺぺ"]うん、そうだったらどんなにいいだろうね。
+[name="メジェティクティ"]それじゃあ明日の展示会で会いましょう。バレた時はその通行証は盗んだって言って。
+[Dialog]
+[stopmusic(fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=1)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_breezetree")]
+[name="奇妙な女性"]明日……博物館の展示会……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="奇妙な女性"]よし、これで客人のスケジュールは決まりだね。あとはしっかりともてなしてやるだけだ。
+[name="奇妙な女性"]輝かしい史官一族の後継者、王者と英雄の賛美者、サルゴン各地に足跡を残した探検家、博学と名高き者、貴きパーディシャーの娘──
+[name="奇妙な女性"]シュナペカペ＝サキト＝ハトシェプスト。
+[charslot(slot="m",name="avg_4138_narant_1#7$1")]
+[name="奇妙な女性"]他の奴なら、一度にこんな多くの人間を追い切れないって頭を抱えるだろうけど、あいにくここに立ってるのはナラントゥヤだ。並んだ肩書の主が実は同一人物であることを残念に思うだけさ。
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="ナラントゥヤ"]……彼女一人を誘拐するだけで、あたしの借金を返済するのに十分な身代金がもらえるだろう。
+[name="ナラントゥヤ"]財布に残ってる金で明日のチケットくらいは買えるはずだけど……
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="ナラントゥヤ"]……やめた。
+[name="ナラントゥヤ"]列は長すぎだし、日差しもきつい。
+[name="ナラントゥヤ"]その割に、この都市じゃ金貨は一番安もんだ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$sjoyasorrow_intro",key="$sjoyasorrow_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1477_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="ミノスの観光客"]あなたは自分たちの黄金の太陽に、輝かしい宝石に、そして背後にある大博物館に誓ってくれるか？
+[name="ミノスの観光客"]歴史と文明への尊重に基づいて丁寧に答えてくれるか？
+[name="ミノスの観光客"]自分の良心に問いただした上で答えるんだ。この博物館のチケットはいくらだ？
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="博物館チケット販売員"]繰り返しになりますが、サルゴンの歴史的文化財と関連がない展示館は無料です。サルゴンに関する展示館のみ入場時にチケットの購入が必要となります。
+[name="博物館チケット販売員"]目の前のチケット販売窓口のガラスに観覧する際の料金表があります。もし文字が読めない場合は、当館の翻訳サービスを利用することも可能です。
+[charslot(slot="m",name="avg_npc_1477_1#4$1")]
+[name="ミノスの観光客"]ミノスの展示ホールが無料で入れるだと！？
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="博物館チケット販売員"]繰り返しになりますが、ここには「ミノスの展示ホール」というものはございません。
+[name="博物館チケット販売員"]ですが「北東部族支系」展示ホールではお客様のおっしゃるミノスの文化財がたびたび展示されております。
+[charslot(slot="m",name="avg_npc_1477_1#3$1")]
+[name="ミノスの観光客"]……「北東部族支系」？
+[charslot(slot = "m", focus = "n")]
+異国からやってきた観光客は深く息を吸った。むき出しになった腕の筋肉が拳を握る動作に伴って隆起する。
+チケット販売員は無意識に小窓のシャッターを下ろそうとしたが、観光客はそのシャッターをがっしりと押さえた。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="ミノスの観光客"]歴史とはこの大地のあらゆる人が共に歩んできた長い川である。古代都市タルササの源石工房はガリアの探検家によって発掘され、古代王国アガモンの伝説の経典はミノスの職人の手で復元された。
+[name="ミノスの観光客"]そしてミノス自身の歴史は川の流れに逆らい砂漠に散逸している。私はただその欠けた章を垣間見るためだけにここまで遡ったのだ。
+[name="ミノスの観光客"]歴史学者の使命とは、人々に忘れ去られた過去を探すことである。あなたはそれに賛同するか……？
+[name="ミノスの観光客"]そのために、強権を有する略奪者が自らの傲慢さによって一報を優遇し他方を冷遇することを阻止すべきだと思わないか？
+[name="ミノスの観光客"]言い換えれば、もしサルゴン自身の歴史に人々が百ディナールを払う価値があると思うなら、ミノスもそれと同等の価値であるべきではないのか？
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="博物館チケット販売員"]……
+[name="博物館チケット販売員"]チケットはいるのですか、いらないのですか？
+[charslot(slot="m",name="avg_npc_1477_1#6$1")]
+[name="ミノスの観光客"]そしてさらに重要なのは、サルゴン人がまさに略奪者の立場にあるということだ。
+[name="ミノスの観光客"]ここまでの話を聞いて、あなたは自らの良識を保ち、館内におけるミノス文化財の価値を直視してくれるだろうか？
+[charslot(slot="m",name="avg_npc_1491_1#1$1")]
+[name="博物館チケット販売員"]次の方！
+[charslot(slot="m",name="avg_npc_1477_1#2$1")]
+[name="ミノスの観光客"]待て。
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="ミノスの観光客"]私の名は、ヘリアのアスパシア。サルゴン語ではなく、ミノス語のスペルを使用してくれ。
+[name="アスパシア"]チケットを一枚いただこう。どうも。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

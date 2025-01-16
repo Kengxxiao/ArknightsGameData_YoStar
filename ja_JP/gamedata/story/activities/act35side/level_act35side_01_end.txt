@@ -1,0 +1,545 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$chasing_intro",key="$chasing_loop", volume=0.6)]
+[Delay(time=1)]
+[CameraShake(duration=3, xstrength=10, ystrength=8, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_paniccrowd")]
+[name="慌てる観衆"]ぎゃあああーー！
+[name="恐れる観衆"]ミ……ミイラが動いた！
+[name="恐れる観衆"]お、お化けだ！　は、早く逃げろ！
+[name="恐れる観衆"]あのミイラ、こっちを見てないか！？
+[name="慌てる観衆"]やっぱりな！
+[CameraShake(duration=0.3, xstrength=30, ystrength=28, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="慌てる観衆"]いずれ起こるだろうと思ってたさ！　これほど長い歴史を持つ都市だからな！
+[Dialog]
+[playsound(key="$d_avg_crowdrun",channel="2")]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1",duration=0.5)]
+[Delay(time=0.7)]
+[name="メジェティクティ"]皆さん冷静に。慌てないで、落ち着いてください！
+[charslot(slot = "m", name = "avg_4058_pepe_1#8$1")]
+[name="ぺぺ"]みんなこちらへ！　非常口から順番に出るんだ。押さないで！
+[charslot(slot = "m", name = "avg_npc_1478_1#5$1")]
+[name="メジェティクティ"]ちょっと、通して、通してください。
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "80,0",duration = 0.7)]
+[Delay(time=0.3)]
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",duration = 0.2)]
+[charslot(slot = "right",posfrom = "200,0", posto = "-50,0",duration = 0.7)]
+[Delay(time=0.3)]
+[charslot(slot = "right",afrom=1,ato=0,duration=0.3)]
+[playsound(key="$d_avg_clothmovement")]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "80,0", posto = "0,0",duration = 0.5)]
+[Delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_1478_1#4$1")]
+[name="メジェティクティ"]すみません、ごめんなさい。
+[Dialog]
+[charslot(slot = "right", name = "avg_npc_1490_1#1$1",duration = 0.2)]
+[charslot(slot = "right",posfrom = "100,0", posto = "-50,0",duration = 0.4)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown2")]
+[charslot(slot = "right",afrom=1,ato=0,duration=0.2)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-100,0",duration = 0.3)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1478_1#7$1")]
+[name="メジェティクティ"]*サルゴンスラング*、アナト！　聴こえるかしら、アナト！
+[charslot]
+メジェティクティがひしめく群衆をかき分けると、床に青ざめた顔をしたアナトが倒れており、何か言いたげに力なく口をパクパクとさせていた。
+しかしその背後に立っている首をかしげてたミイラに恐怖を覚えたメジェティクティは、それ以上足を前に出すことができない。
+[charslot(slot = "m", name = "avg_4058_pepe_1#8$1")]
+[name="ぺぺ"]ティティ、君はお客さんたちの安全を確保してくれ。私がどうにかしてアナトとこのミイラを別の場所へと連れていく。
+[charslot(slot = "m", name = "avg_npc_1478_1#4$1")]
+[name="メジェティクティ"]あなた怖くないの？　ミイラが動いてるのよ！
+[charslot(slot = "m", name = "avg_4058_pepe_1#3$2")]
+[name="ぺぺ"]まあ……多少は。けど今年は二回も古歴紀期の墓の考古学作業に参加してるし、墓の主もこの目で二人見たからね。
+[charslot(slot = "m", name = "avg_4058_pepe_1#1$2")]
+[name="ぺぺ"]あれに比べれば、この人はまだ穏やかな顔をしているよ。
+[charslot(slot = "m", name = "avg_npc_1478_1#5$1")]
+[name="メジェティクティ"]さすが考古学のベテランは肝の太さが違うわね……一人で平気？
+[charslot(slot = "m", name = "avg_4058_pepe_1#6$2")]
+[name="ぺぺ"]安心したまえ。考古学に携わる者は体力だって並じゃないよ。
+[charslot]
+[name="アナト"]ティティ……
+[charslot(slot = "m", name = "avg_npc_1478_1#8$1")]
+[name="メジェティクティ"]アナト……？
+[charslot(slot = "m", name = "avg_4058_pepe_1#2$1")]
+[name="ぺぺ"]……大したことはないはずだよ。意識を失ってうわ言を口にしてるだけだ。
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="メジェティクティ"]館長のオフィスならここから遠くないわ。あなたたちは通用口からお行きなさい。できるだけ人目を避けるようにね。私はお客さんの避難誘導が終わり次第、あなたたちの元に向かうわ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="53_g5_museum",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_avg_paniccrowd",volume=0.4)]
+[playsound(key="$d_avg_crowdrun",channel="2",volume=0.4)]
+[Delay(time=2)]
+[interlude(maskid = "group_interclude_square_common", char = "右のイヤホン", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "450,0", pto="-435,-105", duration = 0.5)]
+[interlude(maskid = "group_interclude_square_common", char = "左のイヤホン", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = false, pfrom = "-450,0", pto="435,-105", duration = 0.5)]
+[charslot(slot="m",name="avg_4138_narant_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="ナラントゥヤ"]何が起きた？　まだ待ち伏せ場所に着いちゃいないよ！　早めに発煙装置を起動させたの？
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 4, switch = true)]
+[name="左のイヤホン"]違う。何もしていない。
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_4138_narant_1#12$1")]
+[name="ナラントゥヤ"]どういうこと？
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, switch = true)]
+[name="右のイヤホン"]会場内で別の誰かが騒ぎを起こしたみたい。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_4138_narant_1#8$1")]
+[name="ナラントゥヤ"]ったく……群衆に紛れてターゲットが確認できない。彼女はどこへ行ったの？
+[name="ナラントゥヤ"]仕方ない。状況が変わったから計画を前倒しで実行するよ。彼女を見つけて、しっかりと見張り、逐一報告するように。
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, switch = true)]
+[name="右のイヤホン"]了解。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_4138_narant_1#8$1")]
+[name="ナラントゥヤ"]手早くね。うまくやりおおせたら群衆に紛れ込むんだ。
+[name="ナラントゥヤ"]群衆が散らばってからだと、何もかもパーだからね。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[interlude(clear = true)]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",posfrom = "100,0", posto = "100,0")]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]よし……みんな行ったようだね……
+[Dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "100,0",duration = 1)]
+[delay(time=1.5)]
+足を前に踏み出したペペは、ミイラの胸の中で青い光が流れているのを見た。
+例の宝石はその光の中に呑まれて、もう視認できなくなっている。
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]ふんっ、やっぱり宝石が原因だったか……
+[name="ぺぺ"]君のその体勢……運びにくそうだな……
+[charslot(slot = "m", focus = "n")]
+ペペは数秒間ミイラを観察した後、高い位置にあるミイラの左腕を低く下ろすことにした。
+[Dialog]
+[charslot(slot = "left",posfrom = "100,0", posto = "100,-15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left",posfrom = "100,-15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]（左腕を下ろす）
+[Dialog]
+[charslot(slot = "r",posfrom = "100,0", posto = "100,15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r",posfrom = "100,15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="名もなきミイラ"]（右腕を上げる）
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]ん！？
+[Dialog]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1")]
+[charslot(slot = "left",posfrom = "100,0", posto = "100,-15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left",posfrom = "100,-15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]（右腕を下ろす）
+[Dialog]
+[charslot(slot = "r",posfrom = "100,0", posto = "100,15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r",posfrom = "100,15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="名もなきミイラ"]（左腕を上げる）
+[dialog]
+[charslot(slot = "l", name = "avg_4058_pepe_1#12$1",focus="l")]
+[Effect(name="$e_emoji_blackline",layer = 1,x=-60,y=170)]
+[delay(time=0.5)]
+[name="ぺぺ"]どういうことだ？
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="名もなきミイラ"]……
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$2",focus="all")]
+ペペは眉をひそめ、首をかしげながらどうすればこのミイラに言うことを聞かせられるかを考える。
+すると驚いたことに、ミイラも首をかしげ、考え込むようなポーズを取っている。
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]待てよ、君は……私の真似をしているのか？
+[Dialog]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1")]
+[charslot(slot = "l",posfrom = "100,0", posto = "50,0",duration = 0.7)]
+[delay(time=1.5)]
+[charslot(slot = "r",posfrom = "100,0", posto = "50,0",duration = 0.7)]
+[delay(time=1)]
+ペペが左に一歩踏み出す。すると次の瞬間、ミイラも彼女の動きに合わせて一歩踏み出した。その足取りはほぼ同じものだった。
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]むむ？
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "-70,0",power=5,times=1,duration = 0.4)]
+[delay(time=1)]
+[charslot(slot = "r", action="jump",posto = "100,0",power=10,times=1,duration = 0.4)]
+[delay(time=0.41)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_punchwindow")]
+突然、ペペは後ろへジャンプした。ミイラもそれと同じように後ろへジャンプするも、背後は壁だったため、大きな衝突音が響いた。
+[charslot(slot = "l", name = "avg_4058_pepe_1#11$1",focus="l")]
+[name="ぺぺ"]ププッ──
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]どうやら君が動かせるのは手足だけであって、頭の方はちっとも働かないようだ。
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]待てよ、もし同じ動作をするというのなら、もしかして……
+[charslot(slot = "m", focus = "n")]
+そばで昏々と眠るアナトを見て、ペペはあるアイデアを閃いた。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1")]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1")]
+[Background(image="53_g5_museum",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]ふぅ、よーし……もう少しで館長のオフィスだ。私の真似をして曲がれ。
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="名もなきミイラ"]（右に曲がる）
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]もっとアナトの肩をしっかり掴ませなくては。さっきは危うくずり落ちるところだったからね。こう……
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="ぺぺ"]（右手を動かす）
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="名もなきミイラ"]（アナトの肩を握る）
+[charslot(slot = "m", focus = "n")]
+[name="アナト"]（無意識に眉をひそめる）
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]よしよし。そのままついてくるんだ……
+[Dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "-100,0",duration = 0.7)]
+[delay(time=1.5)]
+[charslot(slot = "r",posfrom = "0,0", posto = "-100,0",duration = 0.7)]
+[delay(time=0.7)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[delay(time=0.5)]
+[charslot(slot = "m", focus = "n")]
+[name="アナト"]（無意識にうめく）
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="ぺぺ"]いやいや待て、ダメだ。あまり歩幅が広すぎるとアナトが不快に感じるかもしれない……次は歩幅を狭くするよ……
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="名もなきミイラ"]……
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="ぺぺ"]君も賛成したということで。
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "-50,0",power=5,times=2,duration = 0.8)]
+[delay(time=1)]
+[charslot(slot = "r", action="jump",posto = "-50,0",power=5,times=2,duration = 0.8)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[multiline(name="ぺぺ")]これでいけるはず……
+[charslot(slot = "l", name = "avg_4058_pepe_1#11$1",focus="l")]
+[multiline(name="ぺぺ")]ああ、ダメダメダメ――！
+[Dialog]
+[charslot(slot = "m", focus = "all")]
+[playsound(key="$d_avg_clothmovement")]
+[delay(time=0.5)]
+[charslot(slot = "r",posfrom = "-150,0", posto = "-250,-80",duration = 0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown2")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+歩幅があまりに狭すぎたため、ミイラは自らの服の長い裾を踏み、前方にバランスを崩して小柄なアナトの上に思い切り倒れ込んだ。
+[name="アナト"]（無意識にうなる）
+[name="ぺぺ"]あちゃー。顔にできたこの赤いあざ、いつ消えるかな……
+[name="名もなきミイラ"]……
+[name="ぺぺ"]ハァ……まったく、君ってやつは頭が良すぎて困るね。
+[name="ぺぺ"]冷静に行こう。今度はしっかりと彼女を抱きしめるんだ。しっかりとね！
+[name="アナト"]（無意識に眉をひそめる）
+[Dialog]
+[image(image="53_i16",screenadapt="coverall",xScale=1.05,yScale=1.05,x=20,y=-15)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ぺぺ"]さあ、私と一緒に歩くんだ。歩幅は広すぎず狭すぎず、いいぞ……前に進め……もう少し。
+[Dialog]
+[PlaySound(key="$d_avg_fsmummy",volume=0.7)] 
+[ImageTween(xFrom=20, xTo=0,duration=1.5, block=false)]
+[name="名もなきミイラ"]……
+[name="ぺぺ"]そうだ、焦るな。ゆっくり行こう。オフィスまでほんの数歩だよ。
+[Dialog]
+[CameraShake(duration=0.2, xstrength=5, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_cakebgflgrnd")] 
+[delay(time=1.5)]
+[name="ぺぺ"]……
+[name="名もなきミイラ"]……
+ふと、ペペは視界の片隅で床に一枚の通行証が転がっていることに気づいた。それは自分のポケットから落ちたものだ。
+彼女は上げた自分の両腕と、アナトを抱くミイラの両腕を見た。
+ミイラは非常に背が高い。もし手を放せば、アナトは悲惨にも後頭部から落下するだろう。
+[name="ぺぺ"]参ったな。どうやってオフィスに入ろう……
+[name="ぺぺ"]どっちの手も下ろせない……足で拾い上げるしかないか……
+[ImageTween(yFrom=-15, yTo=0,duration=0.5, block=false)]
+[name="ぺぺ"]（片方の足を伸ばす）
+[CameraShake(duration=0.5, xstrength=2, ystrength=10, vibrato=3, randomness=90, fadeout=true, block=false)]
+[name="名もなきミイラ"]（片方の足を伸ばす）
+[name="ぺぺ"]よし、バランスは保てる。
+[Dialog]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=true)]
+[name="ぺぺ"]ダメだ、届かない。体が硬すぎるんだ。こうなることがわかっていれば、体育の授業をサボらなかったのに……
+[name="ぺぺ"]頑張れ、ペペ。私ならいける！
+[name="ぺぺ"]くそぉ……はぁー。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+全力を尽くしたにもかかわらず、ペペのつま先はすぐそこに落ちている通行証に届かない。
+そして姿勢のねじ曲がった彼女はもはやバランスを維持することができず、足がふらつくままにあっさりと地面へ倒れ込んだのだった。
+[Dialog]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=10, randomness=70, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown1")]
+当然ながら彼女の真似をするミイラもまた、アナトを手放し、同じ姿勢で地面に倒れ込んだ。
+[Dialog]
+[CameraShake(duration=0.2, xstrength=5, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[playsound(key="$d_avg_headknock")]
+ペペは地面に伏したままどうすることもできず、アナトの頭が鈍い音を響かせて床にぶつかるのを見守るしかなかった。
+[name="アナト"]（無意識に悲鳴を上げる）
+[name="名もなきミイラ"]……
+[name="ぺぺ"]……
+[name="ぺぺ"]……すまない、アナト。君の次の研究は必ず全力でサポートする。
+[charslot]
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")] 
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1",duration=1)]
+[delay(time=1.5)]
+[name="歩き回る職員"]あの、手伝いましょうか？
+[charslot(slot = "m", focus="n")]
+[name="ぺぺ"]ああっ、ありがとう。いいところに来てくれて本当に助かったよ。館長が具合を悪くしたものでね、彼女をオフィスに連れて行くのを手伝ってもらえるかな？
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="歩き回る職員"]わかりました。
+[Dialog]
+[PlaySound(key="$d_avg_devicebeep")] 
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "0,0", posto = "150,0",duration = 1)]
+[delay(time=0.6)]
+[charslot(slot = "m",afrom=1,ato=0,duration = 0.4)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement")] 
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1",posfrom = "150,0", posto = "0,0",duration = 1)]
+[delay(time=1.3)]
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="歩き回る職員"]あの、館長はソファに寝かせておきました。ところであなたたちもなんだかものすごいことになってるけど、立ち上がる予定は……
+[charslot(slot = "m", focus="n")]
+[name="ぺぺ"]お構いなく。これは特別なストレッチ方法なのでね。
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="歩き回る職員"]えーっと、では展示物の方は？　中に運び入れるのを手伝う？
+[charslot(slot = "m", focus="n")]
+[name="ぺぺ"]問題ないよ。一人で何とかできるから。
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="歩き回る職員"]わかりました……必要なら、いつでも呼んで。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_4058_pepe_1#3$1",posfrom = "0,-50", posto = "0,0",duration=0.5)]
+[delay(time=1)]
+[name="ぺぺ"]ふぅ……これでやっと動ける……危うくバレるところだった。
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1479_1#1$1",posfrom = "0,-50", posto = "0,0",duration=0.5)]
+[delay(time=0.51)]
+[name="名もなきミイラ"]……
+[charslot(slot = "m", name = "avg_4058_pepe_1#1$1")]
+[name="ぺぺ"]何を突っ立って見ているんだ。一緒に入るよ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1484_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="歩き回る職員"]ナラントゥヤ、良いニュースだ……ターゲットの位置を確認した。
+[name="歩き回る職員"]そうだ。たった今第四号展示ホール付近で彼女に遭遇し、気絶した館長をオフィスに運ぶのを手伝った。
+[name="歩き回る職員"]ああ、間違いない。彼女はオフィスの中にいる。中にいるのは気を失った館長を除いて彼女一人だけだ。それから彼女の通行証も手に入れた。
+[name="歩き回る職員"]わかった。問題ない、ここで待っている。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1478_1#1$1",duration=1)]
+[delay(time=2)]
+[name="メジェティクティ"]ジヤア？
+[charslot(slot = "m", name = "avg_npc_1484_1#5$1")]
+[name="歩き回る職員"]うっ、メジェティクティさん、えーと……
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="メジェティクティ"]館内がこんな騒ぎになってるってのに、どうしてまだこんな所でうろついてるの？
+[name="メジェティクティ"]もうすぐ閉館にするから、早くこの迷子のお客さんたちを連れ出してあげてちょうだい。
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[name="迷子の観光客"]一体何が起きたんです？　どこへ行けばいいんですか？
+[name="迷子の観光客"]私たちは無事に出られるんですか？
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1478_1#9$1")]
+[name="メジェティクティ"]皆さん、ご安心を。私共のスタッフがご案内いたします。彼女が皆さんを安全な場所へお連れしますので、慌てず後について進んでください。
+[charslot(slot = "m", name = "avg_npc_1484_1#5$1")]
+[name="歩き回る職員"]で、でも……私にはまだほかにやることが……
+[charslot(slot = "m", name = "avg_npc_1478_1#1$1")]
+[name="メジェティクティ"]わかったわ、だったら私が──
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1482_1#7$1",duration=0.2)]
+[charslot(slot = "l", action="jump",posto = "400,0",power=30,times=1,duration = 0.5)]
+[delay(time=0.3)]
+[charslot(duration=0.2)]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1478_1#7$1")]
+[name="メジェティクティ"]危ない！
+[charslot(slot = "m", focus = "n")]
+[name="迷子の観光客"]な、何が危ないんですか！？
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="メジェティクティ"]博物館に雲獣を入れたのは誰？　館内にはペットの持ち込みは禁止なのよ！
+[charslot(slot = "m", name = "avg_npc_1484_1#1$1")]
+[name="歩き回る職員"]えっと、雲獣なんて見てませんけど……
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="メジェティクティ"]あなたの職務怠慢については後で話し合うわ。先に雲獣を捕まえなくちゃ。こんな人だかりじゃ踏みつぶされてしまうわ！
+[Dialog]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 1,afrom = 1, ato = 0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1484_1#1$1")]
+[name="歩き回る職員"]……どうやら私がお客さんたちを連れていくしかないようだ。
+[charslot(slot = "m", name = "avg_npc_1484_1#4$1")]
+[name="歩き回る職員"]（小声）まあいい。多分間に合うだろうし。
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="歩き回る職員"]皆さん、私の後についてきてください。ここを右に曲がれば非常口があります。
+[Dialog]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-150,0",duration = 1,afrom = 1, ato = 0)]
+[delay(time=2)]
+[charslot]
+[name="迷子の観光客"]待って、こっちは左じゃないの……？
+[name="迷子の観光客"]でも彼女はここの職員なわけだし、間違えるはずがないわよね……ねぇちょっと、そんなに速く歩かないで！
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="48_g7_galleriesstaircase",screenadapt="coverall")]
+[playsound(key="$d_avg_open_door")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_gatecloz")]
+[delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+重々しい展示ホールの扉が押し開けられ、そして閉じた。
+本来その扉は開けたままにしておくべきだと気づく者も、勝手に開けられたことを気にかける者も、「北東部族支系」と書かれた扉のプレートをメンテナンスしに来る者もいない。
+展示ホールは荘厳かつ静寂であった。
+アスパシアの心臓が激しく高鳴る。暴れる鼓動は彼女の慎重な足音をかき消すほどだった。
+彼女の視線は、滅亡した部族の浅黒い境界石、そして五色の糸で編まれたイェラグの絨毯の前を通り過ぎ、展示ホールの暗い深部へと向けられた。
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1477_1#1$1",duration=1)]
+[delay(time=2)]
+[name="アスパシア"]……ようやくだ。
+[name="アスパシア"]我々の歴史はここで静かに私を待っていた。
+[name="アスパシア"]歴史を仰ぎ見る場は、やはりこのように厳かで静かな雰囲気であるべきだ。
+[charslot(slot = "m", name = "avg_npc_1477_1#5$1")]
+[name="アスパシア"]あぁ。目の前に広がる絵巻のような壁面彫刻は、いずれの廃神殿の壁であろうか？　これほどまでに純白の完璧な石材は、果たしてミノスにあるどの山で産出したものだろうか？
+[name="アスパシア"]そして様々な文化財によって家庭の一場面を表現し、古代ミノスの生活様式を具現化している。なんと素晴らしい想像力だろうか？
+[name="アスパシア"]ただ──
+[charslot(slot = "m", name = "avg_npc_1477_1#6$1")]
+[name="アスパシア"]すべて間違っている！
+[name="アスパシア"]なぜなら私は知っているからだ。かつて神殿の中央に置かれていた金杯よ。何年も前、私の祖父がここに来てあなたを見た、母もまた同様にだ。
+[name="アスパシア"]私の一族はあなたを失ったことにより、数多の苦難に遭った。
+[name="アスパシア"]……この博物館はなぜこれを発酵乳保存用の陶碗の間に置いているのだ？　材質的にもスタイル的にも、それらとセットになるものではないことくらいわかるだろう！
+[name="アスパシア"]それにこれと対になるもう一つの金杯はどこへ行った？　当時すべてを掠め取っていったサルゴン人は、なぜ奪い取ったものを適切に保管することすらできないのか！
+[name="アスパシア"]そして展示物の紹介にいたっては──
+[MusicVolume(volume=0, fadetime=1)]
+[charslot(slot = "m", focus = "n")]
+彼女は展示物の解説板をじっと見つめると、その金属プレートを壁から取り外し、裏面を調べた。
+どちらの面も滑らかで、ただ彼女自身の姿を映し出すのみだった。
+[charslot(slot = "m", name = "avg_npc_1477_1#3$1")]
+[name="アスパシア"]失礼、これはただ何も書かれていないだけだった。
+[MusicVolume(volume=0.6, fadetime=3)]
+[charslot(slot = "m", name = "avg_npc_1477_1#6$1")]
+[name="アスパシア"]だがこれらの遺産がここに置かれていることこそ、最大の過ちだ。
+[name="アスパシア"]百年以上も昔、ミノス人はあらゆる屈辱を受けた。サルゴンの軍隊がミノスの領土に足を踏み入れ、我々の文明と歴史を踏みにじる様を目の当たりにした。
+[name="アスパシア"]決してこれらの本来あるべき姿ではない……
+[name="アスパシア"]私が持ち帰らねば。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_avg_crowdrun",volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="歩き回る職員"]皆さん、この階段を下りれば、無事に博物館から出られます。
+[name="歩き回る職員"]そのー、私はまだ用事があるから、先に失礼します。
+[Dialog]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot]
+[name="迷子の観光客"]やっぱり何かおかしいわ。
+[name="疑問に思う観光客"]来た時はこんな道じゃなかったような……？
+[name="迷子の観光客"]でも彼女はここの職員だし……間違えるわけないわよね？
+[name="迷子の観光客"]本当にここから出られて、家に帰れるのかしら？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "m", name = "avg_npc_1477_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[name="アスパシア"]あなたたちを家に連れて帰るべきだ。
+[name="アスパシア"]そしてミノスの祭司に引き渡そう。あなたたちは彼らによって研究がなされ、保存されるべきだ。
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[delay(time=1)]
+アスパシアは、重々しい足取りで展示台の前に歩み寄ると、金杯を捧げ持った。
+[charslot(slot = "m", name = "avg_npc_1477_1#1$1")]
+[name="アスパシア"]これらミノスの数々の遺産は、この日の当たらない展示ホールの中に横たわるべきではない。誰にも注目されず、放置されることなどあってはならない。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[playsound(key="$d_avg_crowdrun",volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_avg_open_door",channel="2")]
+[playsound(key="$d_avg_crwddiscuss_inside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[delay(time=1.5)]
+[charslot]
+[name="迷子の観光客"]ちょっと、押さないで！　どこを歩いてるかすら見えないんだから。この非常口はどうして誘導灯の一つもないのよ！
+[name="迷子の観光客"]ねぇ、あっちに展示物を並べている職員がいるわ。さっきの人より頼りになりそうよ！　急いで訊きに行きましょう！
+[charslot(slot = "m", name = "avg_npc_1477_1#8$1")]
+[name="アスパシア"]あなた方は、もしやミノスの展示物を見学に──
+[charslot]
+[name="迷子の観光客"]すみません、展示館から出る道はこっちで合っていますか？
+[charslot(slot = "m", name = "avg_npc_1477_1#4$1")]
+[name="アスパシア"]……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1477_1#2$1")]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1477_1#10$1")]
+[name="アスパシア"]何か力になれることはあるだろうか？
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
