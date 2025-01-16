@@ -1,0 +1,545 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$chasing_intro",key="$chasing_loop", volume=0.6)]
+[Delay(time=1)]
+[CameraShake(duration=3, xstrength=10, ystrength=8, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_paniccrowd")]
+[name="Panicking Visitor"]Eek!
+[name="Frightened Visitor"]Th-The mummy is moving!
+[name="Frightened Visitor"]I'm getting out of here! This place is haunted!
+[name="Frightened Visitor"]It's looking at me!
+[name="Panicking Visitor"]I knew it!
+[CameraShake(duration=0.3, xstrength=30, ystrength=28, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Panicking Visitor"]This is what happens when a city grows too old!
+[Dialog]
+[playsound(key="$d_avg_crowdrun",channel="2")]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1",duration=0.5)]
+[Delay(time=0.7)]
+[name="Medjehtiqedti"]Everyone! Stay calm! Don't panic!
+[charslot(slot = "m", name = "avg_4058_pepe_1#8$1")]
+[name="Pepe"]The exit's over here! Stay in line, don't push!
+[charslot(slot = "m", name = "avg_npc_1478_1#5$1")]
+[name="Medjehtiqedti"]Make way, make way!
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "80,0",duration = 0.7)]
+[Delay(time=0.3)]
+[charslot(slot = "right", name = "avg_npc_1491_1#1$1",duration = 0.2)]
+[charslot(slot = "right",posfrom = "200,0", posto = "-50,0",duration = 0.7)]
+[Delay(time=0.3)]
+[charslot(slot = "right",afrom=1,ato=0,duration=0.3)]
+[playsound(key="$d_avg_clothmovement")]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "80,0", posto = "0,0",duration = 0.5)]
+[Delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_1478_1#4$1")]
+[name="Medjehtiqedti"]Sorry, excuse me.
+[Dialog]
+[charslot(slot = "right", name = "avg_npc_1490_1#1$1",duration = 0.2)]
+[charslot(slot = "right",posfrom = "100,0", posto = "-50,0",duration = 0.4)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown2")]
+[charslot(slot = "right",afrom=1,ato=0,duration=0.2)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-100,0",duration = 0.3)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1478_1#7$1")]
+[name="Medjehtiqedti"]*Sargon expletive* Anat! Anat!
+[charslot]
+Medjehtiqedti squeezes through the crowd to find a pale Anat lying limp on the ground, her lips parting weakly as though trying to speak.
+But the sight of the mummy cocking its head behind Anat strikes her with such terror that she cannot move her feet.
+[charslot(slot = "m", name = "avg_4058_pepe_1#8$1")]
+[name="Pepe"]Titi, go handle the evacuation. I'll try to take Anat and the mummy somewhere else.
+[charslot(slot = "m", name = "avg_npc_1478_1#4$1")]
+[name="Medjehtiqedti"]Aren't you scared? It's moving!
+[charslot(slot = "m", name = "avg_4058_pepe_1#3$2")]
+[name="Pepe"]I'm... alright. Ahem. I've been on two Old Calendar tomb excavations this year and met with their residents personally.
+[charslot(slot = "m", name = "avg_4058_pepe_1#1$2")]
+[name="Pepe"]This one looks like a nice old man by comparison.
+[charslot(slot = "m", name = "avg_npc_1478_1#5$1")]
+[name="Medjehtiqedti"]It really takes guts to do archaeology, huh? Are you going to be okay by yourself?
+[charslot(slot = "m", name = "avg_4058_pepe_1#6$2")]
+[name="Pepe"]Don't worry, it takes plenty of strength to do archaeology too.
+[charslot]
+[name="Anat"]Titi...
+[charslot(slot = "m", name = "avg_npc_1478_1#8$1")]
+[name="Medjehtiqedti"]Anat?
+[charslot(slot = "m", name = "avg_4058_pepe_1#2$1")]
+[name="Pepe"]She's fine... just muttering in her sleep.
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="Medjehtiqedti"]The curator's office isn't far. Go out the side door and avoid the crowds. I'll come find you once the evacuation is complete.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="53_g5_museum",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_avg_paniccrowd",volume=0.4)]
+[playsound(key="$d_avg_crowdrun",channel="2",volume=0.4)]
+[Delay(time=2)]
+[interlude(maskid = "group_interclude_square_common", char = "Right Earphone", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "450,0", pto="-435,-105", duration = 0.5)]
+[interlude(maskid = "group_interclude_square_common", char = "Left Earphone", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = false, pfrom = "-450,0", pto="435,-105", duration = 0.5)]
+[charslot(slot="m",name="avg_4138_narant_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="Narantuya"]What's going on? I'm not in my ambush position yet! Did you turn on the smoke early?
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 4, switch = true)]
+[name="Left Earphone"]We didn't do anything.
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_4138_narant_1#12$1")]
+[name="Narantuya"]What's happening?
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, switch = true)]
+[name="Right Earphone"]Seems like someone else is causing a commotion.
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_4138_narant_1#8$1")]
+[name="Narantuya"]Drat... I didn't see the target in the crowd. Where did she go?
+[name="Narantuya"]Alright, change of plans. We're starting early. Find her, keep an eye on her, and keep me posted.
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, switch = true)]
+[name="Right Earphone"]Roger.
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_4138_narant_1#8$1")]
+[name="Narantuya"]Hurry. We need to blend into the crowd once we're done.
+[name="Narantuya"]It'll be too late once the evacuation is finished.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[interlude(clear = true)]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",posfrom = "100,0", posto = "100,0")]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]Good... everyone is gone...
+[Dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "100,0",duration = 1)]
+[delay(time=1.5)]
+Pepe approaches the mummy and sees a blue light glowing in its chest.
+The gem has vanished into the light and is nowhere to be seen.
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]Hrmph. So it <i>was</i> the gem...
+[name="Pepe"]It's not easy to carry you like this...
+[charslot(slot = "m", focus = "n")]
+After observing the mummy for a few seconds, Pepe decides to push the mummy's raised left arm back down.
+[Dialog]
+[charslot(slot = "left",posfrom = "100,0", posto = "100,-15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left",posfrom = "100,-15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"](Pushes the left arm down)
+[Dialog]
+[charslot(slot = "r",posfrom = "100,0", posto = "100,15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r",posfrom = "100,15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="Nameless Mummy"](Raises right arm)
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="Pepe"]Huh?
+[Dialog]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1")]
+[charslot(slot = "left",posfrom = "100,0", posto = "100,-15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left",posfrom = "100,-15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"](Pushes the right arm down)
+[Dialog]
+[charslot(slot = "r",posfrom = "100,0", posto = "100,15",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r",posfrom = "100,15", posto = "100,0",duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="Nameless Mummy"](Raises left arm)
+[dialog]
+[charslot(slot = "l", name = "avg_4058_pepe_1#12$1",focus="l")]
+[Effect(name="$e_emoji_blackline",layer = 1,x=-60,y=170)]
+[delay(time=0.5)]
+[name="Pepe"]What's going on with you?
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="Nameless Mummy"]...
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$2",focus="all")]
+Pepe cocks her head and ponders how to get the mummy to cooperate.
+To her surprise, she finds that the mummy also cocks <i>its</i> head, as if in thought.
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]Wait... are you copying me?
+[Dialog]
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1")]
+[charslot(slot = "l",posfrom = "100,0", posto = "50,0",duration = 0.7)]
+[delay(time=1.5)]
+[charslot(slot = "r",posfrom = "100,0", posto = "50,0",duration = 0.7)]
+[delay(time=1)]
+Pepe takes a step to the left, and the mummy does the same.
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]Hm?
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "-70,0",power=5,times=1,duration = 0.4)]
+[delay(time=1)]
+[charslot(slot = "r", action="jump",posto = "100,0",power=10,times=1,duration = 0.4)]
+[delay(time=0.41)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_punchwindow")]
+Pepe jumps backwards, and the mummy does the same, making a loud noise as it hits the wall behind it.
+[charslot(slot = "l", name = "avg_4058_pepe_1#11$1",focus="l")]
+[name="Pepe"]Pfft.
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]Looks like you can move your arms and legs, but not your brains.
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="Pepe"]Hey, if we can move in unison...
+[charslot(slot = "m", focus = "n")]
+An idea comes to Pepe as she looks at Anat, who still lies passed out on the ground.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1")]
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1")]
+[Background(image="53_g5_museum",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]Almost to the curator's office. Alright, follow my movements and make a turn here.
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="Nameless Mummy"](Turns right)
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="Pepe"]Gotta get it to hold Anat's shoulder tighter. She almost fell just now. Let's see...
+[charslot(slot = "l", name = "avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"](Moves right hand)
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="Nameless Mummy"](Grabs Anat's shoulder)
+[charslot(slot = "m", focus = "n")]
+[name="Anat"](Frowns unconsciously)
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]Alright. Now follow me...
+[Dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "-100,0",duration = 0.7)]
+[delay(time=1.5)]
+[charslot(slot = "r",posfrom = "0,0", posto = "-100,0",duration = 0.7)]
+[delay(time=0.7)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[delay(time=0.5)]
+[charslot(slot = "m", focus = "n")]
+[name="Anat"](Moans unconsciously)
+[charslot(slot = "l", name = "avg_4058_pepe_1#4$1",focus="l")]
+[name="Pepe"]Maybe we should take smaller steps...
+[charslot(slot = "r", name = "avg_npc_1479_1#1$1",focus="r")]
+[name="Nameless Mummy"]...
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]I'll consider that a yes.
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "-50,0",power=5,times=2,duration = 0.8)]
+[delay(time=1)]
+[charslot(slot = "r", action="jump",posto = "-50,0",power=5,times=2,duration = 0.8)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4058_pepe_1#1$1",focus="l")]
+[multiline(name="Pepe")]Very good...
+[charslot(slot = "l", name = "avg_4058_pepe_1#11$1",focus="l")]
+[multiline(name="Pepe")]Wait, no, no, no—!
+[Dialog]
+[charslot(slot = "m", focus = "all")]
+[playsound(key="$d_avg_clothmovement")]
+[delay(time=0.5)]
+[charslot(slot = "r",posfrom = "-150,0", posto = "-250,-80",duration = 0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown2")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+The mummy steps on the hem of its own robe and falls forward, right on top of Anat's tiny frame.
+[name="Anat"](Groans unconsciously)
+[name="Pepe"]That red mark on her face isn't going away for a while...
+[name="Nameless Mummy"]...
+[name="Pepe"]Oh, you genius.
+[name="Pepe"]Come on, hold her tightly this time.
+[name="Anat"](Frowns unconsciously)
+[Dialog]
+[image(image="53_i16",screenadapt="coverall",xScale=1.05,yScale=1.05,x=20,y=-15)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Pepe"]Walk with me. Not too fast, not too slow. Good... one-two... one-two...
+[Dialog]
+[PlaySound(key="$d_avg_fsmummy",volume=0.7)] 
+[ImageTween(xFrom=20, xTo=0,duration=1.5, block=false)]
+[name="Nameless Mummy"]...
+[name="Pepe"]Take it slow and easy. We're almost there.
+[Dialog]
+[CameraShake(duration=0.2, xstrength=5, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_cakebgflgrnd")] 
+[delay(time=1.5)]
+[name="Pepe"]...
+[name="Nameless Mummy"]...
+Pepe turns her head to find her pass lying on the floor. It must have fallen out of her pocket.
+She looks at her own raised arms, then at the mummy's holding Anat.
+If the mummy let go, it would drop Anat on her head...
+[name="Pepe"]How do I get into the office like this?
+[name="Pepe"]I can't use my hands... I have to use my foot...
+[ImageTween(yFrom=-15, yTo=0,duration=0.5, block=false)]
+[name="Pepe"](Reaches out one foot)
+[CameraShake(duration=0.5, xstrength=2, ystrength=10, vibrato=3, randomness=90, fadeout=true, block=false)]
+[name="Nameless Mummy"](Reaches out one foot)
+[name="Pepe"]Good, keep your balance.
+[Dialog]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=true)]
+[name="Pepe"]Still can't reach it. I wish I didn't skip gym class...
+[name="Pepe"]Come on, you can do it!
+[name="Pepe"]Argh—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Despite trying her best, the pass still lies just beyond Pepe's reach.
+She stretches a little too far and loses her balance.
+[Dialog]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=10, randomness=70, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown1")]
+Following her lead, the mummy lets go of Anat and falls in the same way.
+[Dialog]
+[CameraShake(duration=0.2, xstrength=5, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[playsound(key="$d_avg_headknock")]
+Pepe can only watch as Anat's skull hits the floor, making a dull sound on impact.
+[name="Anat"](Unconscious cry)
+[name="Nameless Mummy"]...
+[name="Pepe"]...
+[name="Pepe"]Sorry, Anat, I'll give you my full support on your next research project.
+[charslot]
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")] 
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1",duration=1)]
+[delay(time=1.5)]
+[name="Wandering Staff"]Hanimefendi, do you need help?
+[charslot(slot = "m", focus="n")]
+[name="Pepe"]Oh, I'm so glad you're here. Your curator isn't feeling well. Can you help me carry her into the office?
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="Wandering Staff"]Alright.
+[Dialog]
+[PlaySound(key="$d_avg_devicebeep")] 
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "0,0", posto = "150,0",duration = 1)]
+[delay(time=0.6)]
+[charslot(slot = "m",afrom=1,ato=0,duration = 0.4)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement")] 
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1",posfrom = "150,0", posto = "0,0",duration = 1)]
+[delay(time=1.3)]
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="Wandering Staff"]I set Curator Anat on the sofa. Your posture is... interesting. Are you sure you don't need help getting up?
+[charslot(slot = "m", focus="n")]
+[name="Pepe"]No, it's a special exercise I do.
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="Wandering Staff"]Er, okay. What about the exhibit? Should I carry it inside too?
+[charslot(slot = "m", focus="n")]
+[name="Pepe"]No, I can handle it on my own.
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="Wandering Staff"]Alright... let me know if you need anything else.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_4058_pepe_1#3$1",posfrom = "0,-50", posto = "0,0",duration=0.5)]
+[delay(time=1)]
+[name="Pepe"]I can finally move... that was close.
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1479_1#1$1",posfrom = "0,-50", posto = "0,0",duration=0.5)]
+[delay(time=0.51)]
+[name="Nameless Mummy"]...
+[charslot(slot = "m", name = "avg_4058_pepe_1#1$1")]
+[name="Pepe"]Stop staring and come in.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1484_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Wandering Staff"]Good news, Narantuya, I found the target.
+[name="Wandering Staff"]Yeah, near Hall Four. I helped her carry the unconscious curator into the office.
+[name="Wandering Staff"]I'm certain she's in the office. There's no one else, other than the curator who's still out cold. I also have her pass.
+[name="Wandering Staff"]No problem, I'll wait here for you.
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1478_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Medjehtiqedti"]Izaja?
+[charslot(slot = "m", name = "avg_npc_1484_1#5$1")]
+[name="Wandering Staff"]Oh, Medjehtiqedti Hanimefendi, I...
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="Medjehtiqedti"]What are you doing here, with the whole museum in chaos?
+[name="Medjehtiqedti"]We're shutting things down for the day. Help lead these lost guests out.
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[name="Lost Tourist"]What's going on? Where are we going?
+[name="Lost Tourist"]Are we in danger?
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1478_1#9$1")]
+[name="Medjehtiqedti"]Don't worry, just follow our staff here and she'll take you to a safe place.
+[charslot(slot = "m", name = "avg_npc_1484_1#5$1")]
+[name="Wandering Staff"]B-But I have other things to do...
+[charslot(slot = "m", name = "avg_npc_1478_1#1$1")]
+[name="Medjehtiqedti"]Alright, I will—
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1482_1#7$1",duration=0.2)]
+[charslot(slot = "l", action="jump",posto = "400,0",power=30,times=1,duration = 0.5)]
+[delay(time=0.3)]
+[charslot(duration=0.2)]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1478_1#7$1")]
+[name="Medjehtiqedti"]Look out!
+[charslot(slot = "m", focus = "n")]
+[name="Lost Tourist"]Wh-What happened?!
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="Medjehtiqedti"]Who brought a cloudbeast in here? Pets aren't allowed in the museum!
+[charslot(slot = "m", name = "avg_npc_1484_1#1$1")]
+[name="Wandering Staff"]I-I didn't see any cloudbeasts...
+[charslot(slot = "m", name = "avg_npc_1478_1#6$1")]
+[name="Medjehtiqedti"]We'll talk about your negligence later. I've got to catch it before someone steps on it.
+[Dialog]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 1,afrom = 1, ato = 0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1484_1#1$1")]
+[name="Wandering Staff"]...I guess I'm guiding the tourists outside.
+[charslot(slot = "m", name = "avg_npc_1484_1#4$1")]
+[name="Wandering Staff"](Mutter) Well, I think I can still make it.
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="Wandering Staff"]Follow me, everyone. The exit is this way, to the right.
+[Dialog]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-150,0",duration = 1,afrom = 1, ato = 0)]
+[delay(time=2)]
+[charslot]
+[name="Lost Tourist"]Isn't that the left?
+[name="Lost Tourist"]She's staff here, I'm sure she knows what she's doing... hey, wait for us!
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="48_g7_galleriesstaircase",screenadapt="coverall")]
+[playsound(key="$d_avg_open_door")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_gatecloz")]
+[delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+A heavy exhibition hall door is pushed open, then closed again.
+No one remembers that it should be open, no one cares that it was opened, and no one has cleaned the dusty sign that reads 'Northeastern Tributary Exhibit' in ages.
+The hall is silent.
+Aspasia's heart thumps against her chest, almost loud enough to drown out her whispering footsteps.
+She passes by the black monuments of lost tribes and colorful Kjerag rugs, casting her gaze towards the dark depths of the hall.
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1477_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Aspasia"]...Finally.
+[name="Aspasia"]Our history awaits me in silence.
+[name="Aspasia"]I must admit that one should look upon history with such solemnity.
+[charslot(slot = "m", name = "avg_npc_1477_1#5$1")]
+[name="Aspasia"]From which lost temple's relief was the scroll before me drawn? From which Minoan peak was such immaculately white marble hewn?
+[name="Aspasia"]And such imagination, piecing together a corner of an ancient Minoan family with ancient artifacts.
+[name="Aspasia"]But—
+[charslot(slot = "m", name = "avg_npc_1477_1#6$1")]
+[name="Aspasia"]It's all wrong!
+[name="Aspasia"]I recognize you, the golden goblet that once sat in the center of the temple. My grandfather came to visit you, many years ago, as did my mother after him.
+[name="Aspasia"]Much has my family suffered for your loss.
+[name="Aspasia"]Why has this museum put it among the clay bowls for fermented milk? They share no common material or style!
+[name="Aspasia"]And where is the other half of the pair? The Sargonians took them all, yet they do not keep them safe!
+[name="Aspasia"]Even the exhibit description is—
+[MusicVolume(volume=0, fadetime=1)]
+[charslot(slot = "m", focus = "n")]
+She takes a long look at the exhibit label, then pulls the metal plate off the wall and looks to the other side.
+Both sides are perfectly smooth, with only her own reflection upon them.
+[charslot(slot = "m", name = "avg_npc_1477_1#3$1")]
+[name="Aspasia"]<i>Signómi</i>, this one was just left empty.
+[MusicVolume(volume=0.6, fadetime=3)]
+[charslot(slot = "m", name = "avg_npc_1477_1#6$1")]
+[name="Aspasia"]—But the biggest mistake is that these artifacts are here at all.
+[name="Aspasia"]A century ago, Minos suffered the shame of Sargonian armies violating her soil, trampling on our civilization and history.
+[name="Aspasia"]It should not have been so...
+[name="Aspasia"]I must take them.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_avg_crowdrun",volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1484_1#11$1")]
+[name="Wandering Staff"]Follow this flight of stairs down, and you'll find the exit.
+[name="Wandering Staff"]Now then, I have other business to attend to.
+[Dialog]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot]
+[name="Lost Tourist"]Something still doesn't feel right.
+[name="Bewildered Tourist"]I don't think this is how we came in.
+[name="Lost Tourist"]She's staff here. She knows what she's doing... right?
+[name="Lost Tourist"]Will this way really take us home?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "m", name = "avg_npc_1477_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[name="Aspasia"]I must take you home.
+[name="Aspasia"]I must bring you to the priests of Minos, that they may study and preserve you.
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[delay(time=1)]
+Aspasia walks solemnly towards the exhibition pedestal and lifts the goblet.
+[charslot(slot = "m", name = "avg_npc_1477_1#1$1")]
+[name="Aspasia"]Minoan artifacts must not be allowed to lie forgotten in this forsaken, sunless hall.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[playsound(key="$d_avg_crowdrun",volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_avg_open_door",channel="2")]
+[playsound(key="$d_avg_crwddiscuss_inside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[delay(time=1.5)]
+[charslot]
+[name="Lost Tourist"]Don't push! I can't see where I'm going. Shouldn't they put an underground light or something in the emergency exit?
+[name="Lost Tourist"]Hey, there's a lady there setting up the exhibit. She looks more reliable than the other one. Let's ask her!
+[charslot(slot = "m", name = "avg_npc_1477_1#8$1")]
+[name="Aspasia"]Have you come to see—
+[charslot]
+[name="Lost Tourist"]—Is this the way out of the museum?
+[charslot(slot = "m", name = "avg_npc_1477_1#4$1")]
+[name="Aspasia"]...
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1477_1#2$1")]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1477_1#10$1")]
+[name="Aspasia"]Is there something I can help you with?
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

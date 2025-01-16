@@ -1,0 +1,787 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="53_g1_menatmainstreet_d",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_mictest",volume=1)]
+[Delay(time=2)]
+[name="Museum PA"]Please queue here for tickets... Please queue here for tickets to the 'Encounter with a Resurrected General from the Time of the Shah' special exhibition!
+[name="Museum PA"]Please queue here for tickets, please queue here for tickets...
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1479_1#1$1")]
+[Background(image="53_g6_museum_core",screenadapt="coverall")]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="a",volume=0)]
+[SoundVolume(volume=0.7, channel="a",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$marketplace_intro",key="$marketplace_loop", volume=0.6)]
+[name="Zubayr"]...
+[SoundVolume(volume=0.5, fadetime=2,channel="a")]
+[charslot(slot = "m", focus = "n")]
+[name="Fervent Crowd"]Yes, eyes on me, look at me, not the camera.
+[name="Fervent Crowd"]Please wait just a moment! I need to straighten my bridal gown!
+[name="Fervent Crowd"]I worked all night to make this, but I guarantee with my three thousand tales about the Shah that it is historically accurate!
+[charslot(slot="m",name="avg_npc_1479_1#1$1")]
+[name="Zubayr"]Please note flash photography is prohibited in this exhibition, to prevent damaging the cultural artifacts.
+[charslot(slot = "m", focus = "n")]
+[name="Fervent Crowd"]Alright! Lets do twenty burst shots!
+[Dialog]
+[charslot(slot = "m", focus = "m")]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[playsound(key="$d_avg_takphtrptly")]
+[delay(time=0.3)]
+[playsound(key="$skill_flash",volume=0.3,channel="x")]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[delay(time=0.2)]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.4, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[playsound(key="$skill_flash",volume=0.3,channel="y")]
+[delay(time=0.5)]
+[name="Zubayr"]...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="53_g6_museum_core",screenadapt="coverall",xScale=1.05, yScale=1.05,x=30,y=-50)]
+[charslot(slot="m",name="avg_npc_1479_1#1$1",posfrom = "30,-30", posto = "30,-30")]
+[delay(time=0.1)]
+[BackgroundTween(xFrom=30, xTo=-30, duration=6)]
+[charslot(slot = "m",posfrom = "30,-30", posto = "0,-30",duration=6)]
+[delay(time=0.2)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.1)]
+[focusout(type="bg", from=0, to=0.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_201",afrom=0,ato=0)]
+[charslot(slot = "left",action="zoom", poszoom = "0.5,0.5", scale=1.1)]
+[charslot(slot="l",duration=1,posfrom = "0,-250", posto = "150,-250",duration=1,afrom=0,ato=1)]
+[delay(time=1.5)]
+[charslot(slot="l",focus="l")]
+[name="Visitor On Hoverboard"]Hey guys, I'm finally inside the most mysterious room of the Varjavandabad Museum.
+[name="Visitor On Hoverboard"]Now, I'm going to smoothly record the movements of this heroic general from all angles and uncover the secrets of the resurrection in the City of Radiance.
+[Dialog]
+[charslot(slot="l",duration=2,posfrom = "150,-250", posto = "350,-250",afrom=1,ato=0,duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_1497_1#1$1",posfrom = "100,-70", posto = "100,-70",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="r",focus="r")]
+[name="Young Visitor"]Dad, its legs look empty inside.
+[Dialog]
+[charslot(slot = "r",posfrom = "100,-70", posto = "70,-70",duration = 0.2)]
+[PlaySound(key="$d_avg_chopsteeltube",volume=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[charslot(slot = "r",posfrom = "70,-70", posto = "100,-70",duration = 0.2)]
+[delay(time=0.5)]
+[charslot(slot="r",focus="r")]
+[name="Young Visitor"]You hear that, Dad? It sounds like it's empty inside when I knock on it!
+[charslot(slot="r",focus="n")]
+[name="Visitor On Phonecall"]Mhm, yes, this batch of goods must be delivered to Higashi. It's not a large order, but we can't come off as unreliable...
+[Dialog]
+[charslot(slot="r",focus="all")]
+[delay(time=0.5)]
+[charslot(slot = "r",posfrom = "100,-70", posto = "70,-70",duration = 0.2)]
+[PlaySound(key="$d_avg_chopsteeltube",volume=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[charslot(slot = "r",posfrom = "70,-70", posto = "100,-70",duration = 0.2)]
+[delay(time=0.21)]
+[charslot(slot = "r",posfrom = "100,-70", posto = "70,-70",duration = 0.2)]
+[PlaySound(key="$d_avg_chopsteeltube",volume=1)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[charslot(slot = "r",posfrom = "70,-70", posto = "100,-70",duration = 0.2)]
+[delay(time=0.5)]
+[charslot(slot="r",focus="n")]
+[name="Museum Staff"]Sir, please look after your child.
+[name="Visitor On Phonecall"]Sorry, hold on, I'm a little busy... Hey! Come back here! Don't run off touching everything!
+[Dialog]
+[charslot(slot = "r",posfrom = "100,-70", posto = "200,-70",duration = 1,afrom=1,ato=0)]
+[delay(time=1.2)]
+[charslot(slot="r",focus="n")]
+[name="Museum Staff"]Please don't make noise in the museum...
+[name="Visitor On Phonecall"]Hey, you're the ones who decided to pull off this open exhibition and even let your exhibit wander around! You didn't even limit the number of visitors, so it's no wonder the place is so rowdy!
+[charslot(slot="r",focus="m")]
+[name="Zubayr"]Acting Curator Anat believes that 'History and knowledge should be made equally available to all', and thus she has not established a tiered ticketing system.
+[name="Zubayr"]Also, the sixty centimeter-high guardrails around my display are meant to prevent visitors from intruding into my space. If your child crosses the rails, you will be flouting the rules and regulations of this place.
+[name="Zubayr"]Please cooperate with the staff...
+[Dialog]
+[PlaySound(key="$d_avg_mummyhit",volume=1)]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_dropspanner",volume=0.5)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=10, vibrato=20, randomness=90, fadeout=true, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_523_1#1$1", afrom = 0, ato = 0,posfrom = "300,-300", posto = "300,-300")]
+[charslot(slot ="r", name = "avg_npc_524_1#1$1", afrom = 0, ato = 0,posfrom = "200,-300", posto = "200,-300")]
+[delay(time=0.1)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=1.05)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=1.05)]
+[delay(time=0.1)]
+[charslot(slot = "l",afrom = 0, ato = 1,duration=1)]
+[charslot(slot ="r", afrom = 0, ato = 1,duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l",focus="l")]
+[name="Tourist With Coins"]Gah! I missed!
+[charslot(slot = "r",focus="r")]
+[name="Tourist Reading Guide"]This guide doesn't say which currencies work.
+[name="Tourist Reading Guide"]To be fair, the guide doesn't even say if tossing a coin will bring good luck.
+[charslot(slot = "l",focus="l")]
+[name="Tourist With Coins"]Why not try it anyway, just in case?
+[charslot(slot = "r",focus="r")]
+[name="Tourist Reading Guide"]...Give me a coin. I should aim for its torso, right?
+[charslot(slot="r",focus="n")]
+[name="Museum Staff"]Please... stop... this is an important historical artifact...!
+[name="Museum Staff"]There's too many of them, I can't handle them all...
+[Dialog]
+[charslot(slot = "l",afrom = 1, ato = 0,duration=1)]
+[charslot(slot ="r", afrom = 1, ato = 0,duration=1)]
+[delay(time=1.2)]
+[name="Zubayr"]Understood. I will use my weapon to slice the incoming projectiles apart.
+[name="Zubayr"](Lifts hand)
+[Dialog]
+[charslot(slot="l",name="avg_npc_219",duration=0.5,posfrom = "-200,-70", posto = "0,-70")]
+[delay(time=0.51)]
+[charslot(slot="l",duration=0.3,posfrom = "0,-70", posto = "-100,-70",afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$bodyfalldown1", volume=1,channel="1")]
+[name="Visitor in Armor"]Arrgh—!
+[Dialog]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[playsound(key="$d_avg_takphtrptly")]
+[delay(time=0.3)]
+[playsound(key="$skill_flash",volume=0.3,channel="x")]
+[Blocker(a=0, r=1, g=1, b=1, afrom=0.3, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[delay(time=0.2)]
+[charslot(slot="r",focus="n")]
+[name="Visitor in Armor"]Everyone, look!
+[name="Visitor in Armor"]I'm role-playing a Nightzmoran warrior from a thousand years ago! Ack, I have been defeated! What a grand historical re-enactment!
+[charslot(slot="r",focus="m")]
+[name="Zubayr"]My weapon did not make any contact with his body.
+[charslot(slot="r",focus="n")]
+[name="Visitor in Armor"]Oh, General of the Shah! A few words for your defeated foe, perhaps!
+[charslot(slot="r",focus="m")]
+[name="Zubayr"]...
+[name="Zubayr"]Back in my day, the most common phrase one would hear in the army when beheading captured enemy leaders was 'The insects shall devour your entrails'.
+[charslot(slot="r",focus="n")]
+[name="Visitor in Armor"]Okay, sure, if you could just say that again...
+[Dialog]
+[SoundVolume(volume=0.8, fadetime=3,channel="a")]
+[charslot(slot = "l",bstart=0.8,bend=1 ,name = "avg_npc_1490_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "r",bstart=0.8,bend=1 ,name = "avg_npc_1491_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "l",posfrom = "100,-550", posto = "100,-450",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot = "l",duration = 0.4,afrom=1,ato=0)]
+[charslot(slot = "right",posfrom = "-100,-500", posto = "-100,-400",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot = "r",duration = 0.4,afrom=1,ato=0)]
+[delay(time=0.2)]
+[charslot(slot = "l",bstart=0.8,bend=1 ,name = "avg_npc_1490_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "r",bstart=0.8,bend=1 ,name = "avg_npc_1491_1#1$1",afrom=0,ato=0)]
+[charslot(slot = "l",posfrom = "0,-550", posto = "0,-450",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot = "right",posfrom = "0,-500", posto = "0,-400",duration = 0.4,afrom=0,ato=1)]
+[delay(time=0.5)]
+[charslot(slot="r",focus="n")]
+[CameraShake(duration=1, xstrength=10, ystrength=5, vibrato=20, randomness=90, fadeout=true)]
+[name="Visitor in Armor"]Hey, hey! Don't come over while I'm still lying on the ground! You're gonna cause a stampede!
+[name="Museum Staff"]Oh no... I should call for backup.
+[name="Museum Staff"]Who could've guessed there would be so many people here to see a walking mummy when the Flood Festival is going on?
+[stopmusic(fadetime=2)]
+[StopSound(channel="a", fadetime=3)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[focusout(type="bg", from=0, to=0, block=true)]
+[delay(time=1)]
+[Background(image="53_g8_sargondeluxeroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_175",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", focus="r")]
+[name="Woman of High Status"]Hatshepsut Hanimefendi, I hear you've been spending recent days looking for a particular gem lately.
+[name="Woman of High Status"]It just so happens my family is in possession of one, so I've brought it here for you. I hope it can alleviate your worries.
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]Thank you so, so much... please let me see it...
+[charslot(slot = "right", focus="r")]
+[name="Woman of High Status"]I wonder if I might be fortunate enough to host you at my home for dinner sometime soon?
+[charslot(slot = "left", name = "avg_4058_pepe_1#1$1",focus="l")]
+[name="Pepe"]So sorry, hanimefendi, but I've been crazy busy lately.
+[name="Pepe"]Thank you for taking the trouble to bring me the gem, but I'm sorry to say it's not the one I'm looking for.
+[charslot(slot = "right", focus="r")]
+[name="Woman of High Status"]Oh, truly a pity. I will bother you no more, Hatshepsut Hanimefendi. Until we meet again.
+[Dialog]
+[charslot(slot = "right",posfrom = "0,0", posto = "150,0",duration = 1,afrom=1,ato=0)]
+[delay(time=1)]
+[PlaySound(key="$doorclosequite", volume=1)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$1",focus="l")]
+[name="Pepe"]Uh... how many more do we still have outside?
+[Dialog]
+[charslot(slot = "right", name = "avg_4139_papyrs_1#1$1",posfrom = "0,0", posto = "0,0",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "right", name = "avg_4139_papyrs_1#2$1",focus="r")]
+[name="Anat"]Seventy-three, and they all claim to have the gem you're looking for.
+[charslot(slot = "left", name = "avg_4058_pepe_1#9$2",focus="l")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Pepe"]Why are there so many?!
+[charslot(slot = "right", name = "avg_4139_papyrs_1#1$1",focus="r")]
+[name="Anat"]Just tough it out and take a break at noon. Some gemstone merchants from the Grand Bazaar say they've found some clues, so we'll go over then to take a look.
+[charslot(slot = "left", name = "avg_4058_pepe_1#8$2",focus="l")]
+[name="Pepe"]You call that a break...?
+[charslot(slot = "right", name = "avg_4139_papyrs_1#11$1",focus="r")]
+[name="Anat"]Of course. You'll only be seeing gemstones, no people.
+[charslot(slot = "left", name = "avg_4058_pepe_1#12$2",focus="l")]
+[name="Pepe"]Ah...
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g10_grandbazaar_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_jewelryimpact", volume=1)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1495_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4139_papyrs_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left",focus="l")]
+[name="Gem Merchant"]Anat Hanim, the Padishah's daughter has been sitting here frowning for the past three hours. Are you still interested in the remaining gemstones?
+[charslot(slot = "right", name = "avg_4139_papyrs_1#2$1",focus="r")]
+[name="Anat"]How many do we have left?
+[charslot(slot = "left",focus="l")]
+[name="Gem Merchant"]More than two hundred...
+[charslot(slot = "right", name = "avg_4139_papyrs_1#10$1",focus="r")]
+[name="Anat"]...Leave them here, we'll finish looking through this crate first.
+[charslot(slot = "left",focus="l")]
+[name="Gem Merchant"]Very well, I'll take my leave then.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "left",posfrom = "0,0", posto = "-200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_4058_pepe_1#12$1",duration = 0.5)]
+[delay(time=0.51)]
+[name="Pepe"]Anat... did someone come by earlier?
+[charslot(slot = "m", name = "avg_4139_papyrs_1#1$1")]
+[name="Anat"]They delivered another crate of gemstones.
+[charslot(slot = "m", name = "avg_4058_pepe_1#2$1")]
+[name="Pepe"]...
+[charslot(slot = "m", name = "avg_4058_pepe_1#5$1")]
+[name="Pepe"]Anat, something's wrong... why does your head look like a prism...?
+[Effect(name="$e_emoji_matter",layer = 1,x=50,y=140)]
+[charslot(slot = "m", name = "avg_4058_pepe_1#12$1")]
+[name="Pepe"]The furnishings too... they're sparkling...
+[Dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-80",duration = 0.5,afrom=1,ato=0)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=30, vibrato=15, randomness=90, fadeout=true, block=false)]
+[delay(time=0.8)]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=35, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4139_papyrs_1#6$1")]
+[name="Anat"]Pepe!!!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="35_g17_deserttown_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1477_1#8$1",duration=1)]
+[delay(time=2)]
+[name="Aspasia"]The museum has finally opened its doors?
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="Museum Receptionist"]Yes, Aspasia Hanim. The special exhibition tickets are in high demand! I heard wind of it last night and wanted to tell you to queue up early, but I couldn't find you.
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="Aspasia"]It's alright, that's not what I'm here to see. It's the collector I'm looking for.
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="Museum Receptionist"]You seem to be in a good mood.
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="Aspasia"]As I thought, language is a bridge to peace, communication serves as a foundation of understanding, and this historic city is also abundant with knowledge.
+[name="Aspasia"]*sigh* Sargonians have been proud of their glorious history since antiquity. How wonderful it would be if they were willing to sit down for a long conversation, instead of plundering everywhere they go.
+[name="Aspasia"]That collector understood how persistent we Minoans could be, after my explanation, and I also gained much from his insights into the city...
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]Right, there is something I want to ask you.
+[name="Aspasia"]In modern Menat-Ha'mait, are silver crafts more valuable than those made from gold?
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="Museum Receptionist"]Haha, are you joking?
+[name="Museum Receptionist"]Of course, it does happen from time to time... for example, under pain of death by a lord ameer.
+[charslot(slot="m",name="avg_npc_1477_1#2$1")]
+[name="Aspasia"]...I see, thank you for the clarification.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]May I ask if that companion of mine has returned?
+[charslot(slot="m",name="avg_npc_1490_1#1$1")]
+[name="Museum Receptionist"]Yes, with two other friends as well.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]Two other... friends?
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="Aspasia"]Very well. The more heads to share ideas with, the better. I'd love to find more Kurantas as passionate and frank as she.
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "-180,0",duration = 2,afrom=1,ato=0)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1477_1#8$1",posfrom = "100,0", posto = "0,0",duration = 1)]
+[delay(time=1)]
+Aspasia walks up the hotel stairs and stops before the door.
+[charslot(slot="m",name="avg_npc_1477_1#8$1")]
+[name="Aspasia"]Narantuya, are you in there?
+[name="Aspasia"]I bring good news. That collector who won third place has decided to return my goblet to me after listening to my three-hour speech!
+[name="Aspasia"]Would you like to come with me to the museum to look at both goblets together...?
+[stopmusic(fadetime=2)]
+[charslot(slot = "m", focus = "n")]
+[name="Unfamiliar Voice"]...I didn't see anyone go in or out of that room with the gemstone last night, Narantuya.
+[name="Unfamiliar Voice"]I was hiding on the roof of the opposite building with my eyes peeled the entire time.
+[name="Narantuya's Voice"]...You know how important this kidnapping is. This is the only way to quickly get a big pile of money.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="53_g7_oldtown_indoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1484_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1485_1#2$1",focus="r")]
+[name="Ajani"]I'm sorry, Narantuya. We'll go look for the Padishah's daughter right away.
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]It's too late for that.
+[name="Narantuya"]The caravan I got to be our cover is about to leave the city. Even if we manage to find and snatch her, we won't have a way out.
+[charslot]
+[charslot(slot="l",name="avg_npc_1484_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1485_1#8$1",focus="r")]
+[name="Ajani"]So...
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]Let's focus on what to do next.
+[name="Narantuya"]Both of you should go back to the museum, but avoid contact with the girl. Report in as soon as you find any other way to make money.
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="Narantuya"]I'll go look for the lost gemstone and return it to Aspasia. That's the least I can do...
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_1477_1#1$1",duration=0.5)]
+[delay(time=0.51)]
+[name="Aspasia"]You don't have to do that.
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="Narantuya"]...
+[charslot]
+Ajazi suddenly feels a deadly silence descend upon the room.
+She looks at the intruding stranger, shifts her gaze to Narantuya, and finally turns her head to Ajani with eyes pleading for help.
+Ajani raises a finger to her lips with her other hand inching towards the sedative at her waist.
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="Narantuya"]Uh, I can explain, Aspasia.
+[charslot(slot="m",name="avg_4138_narant_1#8$1")]
+[name="Narantuya"]We were just mapping out our plan. Once it's done, I'll return you your gem, or something of equal value. You can trust me on that.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Oh, and, these are my other two subordinates...
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]What plan?
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="Narantuya"]Eh...?
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]I heard you planning to bait the Padishah's daughter with that gem, in order to kidnap her.
+[charslot(slot="m",name="avg_4138_narant_1#11$1")]
+[name="Narantuya"]...You heard everything?
+[charslot(slot="m",name="avg_npc_1477_1#5$1")]
+[name="Aspasia"]My apologies, I had no intention of eavesdropping on your conversation. I just happened to be standing by the door.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]I believe communication lays the foundation of understanding, but I also know you have a large debt to pay and need money urgently.
+[name="Aspasia"]So, would you like to tell me the whole story?
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="Narantuya"]...
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]To be honest, I don't have a clue where the gem is right now. There's nothing I could ask you to do, even if you want to help.
+[name="Narantuya"]The past is in the past, and our plan now... Well, we basically don't have one.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]You know that's not what I'm talking about.
+[charslot(slot="m",name="avg_4138_narant_1#12$1")]
+[name="Narantuya"]If I tell you why I owe this debt and need the money, will you help me?
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]I believe we can discuss a more honest and conscientious way to do it.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Heh, I knew you'd say something like that.
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]Aspasia, mind holding your hand out for me?
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]What for?
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]For old times' sake... I just want to...
+[charslot]
+Ajani and Ajazi exchange looks with each other.
+They are certain Narantuya's call to action is the moment when they hear the crisp clacking of her heels on the ground.
+[charslot(slot="m",name="avg_4138_narant_1#5$1")]
+[name="Narantuya"]——Ask you for a discount on what I owe you.
+[charslot]
+[charslot(slot="l",name="avg_npc_1484_1#10$1")]
+[charslot(slot="r",name="avg_npc_1485_1#7$1")]
+[name="Ajazi and Ajani"]...Huh?
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="Narantuya"]I've been staying with you for weeks and even took your gem. I have to pay you back for all that.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[playsound(key="$d_avg_goldcoin")]
+[name="Narantuya"]This coin purse holds one thousand and two hundred dinars. I know it's not enough, but... I mean, we're such good friends, aren't we?
+[charslot(slot="m",name="avg_npc_1477_1#3$1")]
+[name="Aspasia"]Narantuya...
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Ah, there's a bunch of foreign coins in there too. Some merchants might not recognize them, but I'm sure you'll find somewhere to spend them.
+[name="Narantuya"]Here's some gemstones too. They're tiny and impure, but they make up for it in number.
+[name="Narantuya"]So... could you be a bit flexible with my debt?
+[charslot(slot="m",name="avg_npc_1477_1#6$1")]
+[name="Aspasia"]...Narantuya!
+[name="Aspasia"]Are you so unwilling to have an actual discussion about this with me?
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]'Communication lays the foundation of understanding', right? I already get you, though.
+[name="Narantuya"]Maybe you spent day after day in your temple copying statues to work out the basics of swordsmanship, or maybe you followed your parents and took an oath passed down through generations.
+[name="Narantuya"]More importantly, you're one of the innumerable followers of the Minoan heroes, so I'm sure your soul is pure.
+[name="Narantuya"]You'd definitely help out someone about to fall from a tall building, and you'd speak up to anyone who used more... exceptional methods.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]...
+[name="Aspasia"]Yes, you're right.
+[name="Aspasia"]I believe a scale of good and evil lies within all our hearts, and one exists within the laws of the land as well. People ought to act according to the balance of that scale.
+[name="Aspasia"]But I understand your point of view. Perhaps you would say the laws set by the lords ameer and padishahs are of abnormal balance, and one should act as one's heart dictates.
+[name="Aspasia"]However... I dare not trust myself, Narantuya.
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]...
+[name="Narantuya"]If the day does come when I'm caught by the lords ameer and they give me some ridiculous death sentence, will you feel sorry for me?
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]Of course.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Hah. That's all I need. Looks like you think my death would be a great loss for all Sargon too.
+[name="Narantuya"]Your help in my grand project would significantly lessen the risk of us failing midway. But I understand if you don't want to.
+[name="Narantuya"]People come and go. I'd love to have everyone join me and stay by my side, but if I care too much about those who leave, aren't I just as stupid as the ones who resent me?
+[name="Narantuya"]What I mean is... let's not make it difficult for each other.
+[charslot(slot="m",name="avg_npc_1477_1#1$1")]
+[name="Aspasia"]...Very well.
+[charslot(slot="m",name="avg_npc_1477_1#2$1")]
+[name="Aspasia"]I consider your debt settled.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_deluxeroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$dooropenquite")]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",duration=1)]
+[delay(time=1.5)]
+[name="Pepe"]*sigh*...
+[Dialog]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]You're injured.
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]I'm fine, it's just a scratch...
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]You should see to it. I've met many a warrior who lost his life after neglecting a minor injury.
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]Times have changed... I'll tell you all about modern medical science someday.
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Are you going to rest?
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]No... I need to tidy up these soaked notes first...
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Soaked?
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]It's a super long story, and I don't know if I'm sane enough right now to tell you the whole thing.
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Before we parted this morning, you promised to share the information you obtained with me. Stay true to your word, Pepe.
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="Pepe"]...Okay, I found absolutely nothing today.
+[name="Pepe"]I made an announcement, and lots of people came to see me with similar-looking gems, but they were all useless stones.
+[name="Pepe"]I spent the whole day watching gem after gem fly past my eyes until my head was spinning. Then I went to get a drink and take a break, but the two kids next to me suddenly started fighting.
+[name="Pepe"]They knocked over the table <i>and</i> my drink, spilling it onto my notebook, and that's how I got this bruise...
+[name="Pepe"]That's all I have to share with you, Zubayr.
+[name="Pepe"]Got the information you needed from that?
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]...
+[name="Zubayr"]Do you... wish to hear what I experienced today?
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="Pepe"]Zubayr...
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Many strange people came... though they were rather amusing as well.
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="Pepe"]Let's pick this back up tomorrow. You don't need to sleep, but I'm exhausted.
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Pepe... I do not wish to stay inside the museum.
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="Pepe"]Just bear with it for a few more days... we need to help Titi with her exhibition until its over. That's how we got the gem from her, after all.
+[name="Pepe"]Once the exhibition is over, I'll take you to look for the other gemstones.
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]I do not want to look for gemstones either...
+[charslot(slot="l",name="avg_4058_pepe_1#8$2",focus="l")]
+[name="Pepe"]What's wrong, Zubayr? As the guardian of the Shah's treasury, aren't you supposed to recover all your memories and resume your original duties?
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Are you not the one more eager to locate the treasury?
+[charslot(slot="l",name="avg_4058_pepe_1#3$2",focus="l")]
+[name="Pepe"]Ah... yeah, you're right. I mean why else did you think I woke you up?
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]Pepe. I am already awake, and you can no longer treat me as a mere artifact. My thoughts and actions are my own to control.
+[name="Zubayr"]I do not wish to recall all my memories so soon. At least for the moment.
+[name="Zubayr"]Tomorrow we will have fine weather, and I wish to take a walk outside, free of all worry.
+[charslot(slot="l",name="avg_4058_pepe_1#8$2",focus="l")]
+[name="Pepe"]People are going to freak out if they see a museum exhibit getting some sun all alone on the streets!
+[Dialog]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_stickknock")]
+[playsound(key="$d_avg_bellfall",channel="2")]
+[delay(yime=0.5)]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]I already told you, I am not an exhibiting artifact!
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="Pepe"]...
+[name="Pepe"]I'm sorry, Zubayr...
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]It's fine.
+[charslot(slot="l",name="avg_4058_pepe_1#5$1",focus="l")]
+[name="Pepe"]It's already so late though, and I'm REALLY tired, so... we can talk tomorrow, okay?
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]...
+[charslot(slot="l",name="avg_4058_pepe_1#2$1",focus="l")]
+[name="Pepe"]Good night.
+[Dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration = 1)]
+[delay(time=1.2)]
+[playsound(key="$doorclosequite")]
+[charslot(slot = "l",afrom = 1, ato = 0,duration = 0.5)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1479_1#1$1",focus="r")]
+[name="Zubayr"]...
+[Dialog]
+[delay(time=1)]
+[playsound(key="$d_avg_doorknob")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+In the empty room, Zubayr tries to press the wall switch and turns the light off.
+[Dialog]
+[playsound(key="$d_avg_doorknob")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+After a moment, he tries again, and the light comes back on.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g2_menatmainstreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1482_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Mio"]...
+[playsound(key="$d_avg_meownormal")]
+[name="Mio"]Meow?
+[charslot(slot = "m", focus = "n")]
+Mio stands in the middle of a night-shrouded street, staring at a window in the distance with a light repeatedly flickering on and off.
+And then—
+[Dialog]
+[charslot]
+[playsound(key="$bottlebroken")]
+[delay(time=1)]
+The light stops flickering, and glass shatters.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=1)]
+[delay(time=2)]
+[name="Narantuya"]Once the south wind passes, it'll be the drought season over there.
+[name="Narantuya"]Will I manage to make enough money before then?
+[name="Narantuya"]Alright, prepare to jump...
+[charslot]
+[Dialog]
+[playsound(key="$d_avg_cndlbrn")]
+[charslot(slot="m",name="avg_npc_1492_1#1$1",duration=0.5)]
+[delay(time=0.51)]
+[name="Lamplighter"]Whoa!
+[name="Lamplighter"]Girls are really something these days... What are you doing? Throwing your life away?
+[charslot(slot="m",name="avg_4138_narant_1#12$1")]
+[name="Narantuya"]What, isn't this normal for the Flood Festival?
+[name="Narantuya"]I want to ask the river god some questions.
+[charslot(slot="m",name="avg_npc_1492_1#1$1")]
+[name="Lamplighter"]Not by jumping into the river though...
+[name="Lamplighter"]Also, which history book did you even learn this custom from, girlie?
+[name="Lamplighter"]The ancients did ask the river for answers when they were unsure of something, but later, they realized many problems could be solved with money...
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]Thanks, but that life hack won't work for me.
+[charslot(slot="m",name="avg_npc_1492_1#1$1")]
+[name="Lamplighter"]I can answer your question, though.
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_4138_narant_1#2$1")]
+[charslot(slot = "l",posfrom = "-150,0", posto = "0,0",duration = 1,name="avg_npc_1492_1#1$1")]
+[delay(time=1.5)]
+The lamplighter raises his lamp and approaches Narantuya.
+[charslot(slot = "l",focus="l")]
+[name="Lamplighter"]Before the southern wind blows through, you won't have enough money to satisfy your own desires, but it will be what you need.
+[charslot(slot="r",name="avg_4138_narant_1#2$1",focus="r")]
+[name="Narantuya"]...I'll rephrase my question and be more specific: where should I go to look for the money?
+[charslot(slot = "l",focus="l")]
+[name="Lamplighter"]To the depths of the sands.
+[charslot(slot="r",name="avg_4138_narant_1#2$1",focus="r")]
+[name="Narantuya"]This is Sargon, that doesn't do much to narrow it down.
+[charslot(slot = "l",focus="l")]
+[name="Lamplighter"]I can only answer one more question.
+[charslot(slot="r",name="avg_4138_narant_1#4$1",focus="r")]
+[name="Narantuya"]I thought the people of Menat-Ha'mait were generous sorts with unlimited samples to offer?
+[charslot(slot="r",name="avg_4138_narant_1#2$1",focus="r")]
+[name="Narantuya"]No... wait, that's not the question I wanted to ask.
+[charslot(slot="r",name="avg_4138_narant_1#3$1",focus="r")]
+[name="Narantuya"]I want to know... will that rigid Minoan come looking for me?
+[charslot(slot = "l",focus="l")]
+[name="Lamplighter"]Yes.
+[charslot]
+As soon as the lamplighter finishes, Narantuya catches a glimpse of a shadow on the edge of her vision.
+The figure stops in the empty street and looks at her for a moment before turning and leaving.
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="Narantuya"]...Aspasia?
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4138_narant_1#9$1")]
+[name="Narantuya"]Aspasia!
+[Dialog]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(duration=1)]
+The shadow crosses the street, and the crimson Kuranta chases after it.
+Narantuya can only hear the sound of the wind, the rush of the river, and a song from the lamplighter that gradually fades into silence.
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="♪May I see Him by the waterside, may I follow Him to eternity♪", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="53_g2_menatmainstreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4138_narant_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="Narantuya"]...I lost sight of her?
+[name="Narantuya"]I, Narantuya, actually lost track of a target? Must have been a ghost.
+[charslot(slot="m",name="avg_4138_narant_1#3$1")]
+[name="Narantuya"]...*sigh*.
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]Forget it, I'm not stupid.
+[name="Narantuya"]Everyone here is always praying to see a spirit or two, and I heard no footsteps earlier.
+[name="Narantuya"]So, this only means I really did see a ghost, yes?
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "m", focus = "n")]
+She sits down on the curb.
+On the other side of a flowerbed sits someone listening to the river silently in the dark.
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]The benches by the river tend to get wet, you might want to wipe it dry first.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]...
+[name="Lost Passerby?"]You're not actually scared of ghosts, are you?
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]What, did you see that shadow too? Did it spook you? Need me to protect you?
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]...I'm feeling nostalgic.
+[name="Lost Passerby?"]I didn't get a good look, but I'm certain it felt like the soul of a late friend or kin.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Two spotting a ghost is always better than just one.
+[name="Narantuya"]I hear anyone who spots that shadow will receive the blessing of Menat-Ha'mait, but it looks like the two of us here are down on luck.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]...I merely got into an argument.
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="Narantuya"]What a coincidence. I'm guessing you didn't win?
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]I would not be sitting here if I did.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Haha.
+[name="Narantuya"]You know what? Somebody told me ten minutes ago that the locals are never troubled because money can always solve their problems.
+[name="Narantuya"]I thought that made sense. What's there to be sad about, if you're not as desitute as me?
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]Today, someone threw something at me, another soiled the new cape I got last week, and I was inexplicably married twenty times to people of all genders and ages.
+[name="Lost Passerby?"]No one was interested in listening to me either.
+[charslot(slot="m",name="avg_4138_narant_1#4$1")]
+[name="Narantuya"]O-Oh... that's pretty unlucky.
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]How old are you? They stole your identity for a marriage registration?
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]...What?
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Your voice is a little strange, but you sound young. No offense.
+[name="Narantuya"]*sigh* I think I was pretty lucky, when I was around your age.
+[name="Narantuya"]One time, we were herding some stolen burdenbeasts back home, and the sky suddenly turned dark. Our headscarves couldn't shield us from the sand flying our way.
+[name="Narantuya"]But we had plenty of manpower, and quickly found a somewhat different area to dig into.
+[name="Narantuya"]Guess what we found? Two houses buried in the sand, just enough to fit everyone. Even came with beds and tables.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]...Common furnishing you find in ancient tombs.
+[charslot(slot="m",name="avg_4138_narant_1#6$1")]
+[name="Narantuya"]Hahaha! You know your stuff! I only found out a few years later.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Those were wonderful days.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]Indeed... Time can alter how rivers flow, establish and eradicate cities, bleach bones with the sun, elongate and intensify history.
+[name="Lost Passerby?"]It makes one miss the past, and nostalgia... can be a fearsome thing.
+[charslot(slot="m",name="avg_4138_narant_1#11$1")]
+[name="Narantuya"]Yeah. Miss the past all you want, but you're never getting it back.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]...
+[name="Lost Passerby?"]How are the people you've been missing?
+[charslot(slot="m",name="avg_4138_narant_1#2$1")]
+[name="Narantuya"]They're alive, but more surviving than living.
+[name="Narantuya"]The worst part is that they can't just move on. You have no idea how many of them sold off their blades.
+[name="Narantuya"]So as their boss, I owe them.
+[charslot(slot="m",name="avg_4138_narant_1#6$1")]
+[name="Narantuya"]I mean, I just need to build a new pile of gold, and those stooges will cheer up and return to the way they used to be.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]I hope that is the case.
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]What about you?
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]I... don't know either.
+[name="Lost Passerby?"]It's like how people risk their lives to catch a glimpse of the river god, but all they end up seeing is the last face they would ever want to see. Is that not a terrifying prospect?
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]It's not <i>that</i> scary, if people still choose to chase that mirage.
+[name="Narantuya"]Well, that's what my mother always told me, back home:
+[name="Narantuya"]'We Nightzmora must be the masters of fear, and will never be dominated by it.' That's what they all say.
+[charslot(slot = "m", focus = "n")]
+[name="Lost Passerby?"]—You're a Nightzmora?
+[charslot(slot="m",name="avg_4138_narant_1#1$1")]
+[name="Narantuya"]Yeah, why—
+[stopmusic(fadetime=1)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+Narantuya feels a pat on her shoulder and turns her head on reflex.
+She sees no one but the silent street, with its lamps being lit one by one from a distance.
+The lamplighter hums a tune as he walks up to them, climbing up a ladder and opening the glass shade to light it.
+[Dialog]
+[charslot(slot="l",name="avg_npc_1479_1#1$1",afrom=0,ato=0,posfrom = "200,0", posto = "200,0")]
+[charslot(slot="m",name="avg_npc_1479_1#1$1",afrom=0,ato=0,bstart=0.8,bend=1)]
+[delay(time=0.1)]
+[charslot(slot="m",afrom=0,ato=1,duration=0.5)]
+[delay(time=1)]
+[charslot(slot="l",afrom=1,ato=1)]
+[charslot(slot="m",name="avg_npc_1479_1#1$1",duration=2)]
+[delay(time=3)]
+[charslot]
+[charslot(slot="m",name="avg_4138_narant_1#10$1")]
+[name="Narantuya"]—
+[charslot(slot="m",name="avg_4138_narant_1#9$1")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=35, randomness=30, fadeout=true, block=false)]
+[name="Narantuya"]AAAAAAAAHHHHHHH!!!
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.7)]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=35, randomness=30, fadeout=true, block=false)]
+[name="Narantuya"]Help, HELP! There's a dead guy haunting meee!!!
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
