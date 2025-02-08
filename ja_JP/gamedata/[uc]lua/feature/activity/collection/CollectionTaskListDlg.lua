@@ -74,16 +74,16 @@ function CollectionTaskListDlg:Refresh(activityId, close)
   end
 
   
-  local csMissionList = CS.Torappu.Lua.Util.GetActMissionListByActId(activityId);
-  if csMissionList == nil then
-    return;
-  end
-
   self.m_missionList = {};
-  for idx = 0, csMissionList.Count - 1 do
-    table.insert(self.m_missionList, csMissionList[idx]);
+  for idx = 0, missionGrp.missionIds.Length -1 do
+    local missionId = missionGrp.missionIds[idx];
+    local missionData = CollectionActModel.me:FindMission(missionId);
+    
+    if missionData then
+      table.insert(self.m_missionList, missionData);
+    end
   end
-
+  
   local playerMissions = CS.Torappu.PlayerData.instance.data.mission.missions;
   local suc, typeMissions = playerMissions:TryGetValue(CS.Torappu.MissionPlayerDataGroup.MissionTypeString.ACTIVITY);
   if not suc then
@@ -117,17 +117,17 @@ function CollectionTaskListDlg:_RebuildVirtualViews()
   self.m_adapter:RemoveAllViews();
   self.m_adapter:AddView({
     viewType = CollectionTaskItemType.DAILTY_TITLE,
-    data = {},
+    data = nil,
     size = itemSizeTable[CollectionTaskItemType.DAILTY_TITLE]
   });
   self.m_adapter:AddView({
     viewType = CollectionTaskItemType.DAILTY_ITEM,
-    data = {},
+    data = nil,
     size = itemSizeTable[CollectionTaskItemType.DAILTY_ITEM]
   });
   self.m_adapter:AddView({
     viewType = CollectionTaskItemType.TIMED_TITLE,
-    data = {},
+    data = nil,
     size = itemSizeTable[CollectionTaskItemType.TIMED_TITLE]
   });
 

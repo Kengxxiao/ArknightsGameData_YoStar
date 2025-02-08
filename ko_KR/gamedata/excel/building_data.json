@@ -12210,6 +12210,96 @@
         }
       ]
     },
+    "char_4146_nymph": {
+      "charId": "char_4146_nymph",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all[017]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "dorm_rec_all[027]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_dorm_rec[002]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4151_tinman": {
+      "charId": "char_4151_tinman",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "hire_spd_dorm&lv[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "hire_spd_dorm&lv[010]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": []
+        }
+      ]
+    },
+    "char_4147_mitm": {
+      "charId": "char_4147_mitm",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_wt&cost[003]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&meet[010]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     "char_4058_pepe": {
       "charId": "char_4058_pepe",
       "maxManpower": 8640000,
@@ -13054,6 +13144,18 @@
       "roomType": "CONTROL",
       "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
     },
+    "control_dorm_rec[002]": {
+      "buffId": "control_dorm_rec[002]",
+      "buffName": "성찰",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_leader",
+      "sortId": 1400,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
     "control_train_spd[010]": {
       "buffId": "control_train_spd[010]",
       "buffName": "S.W.E.E.P. 리더",
@@ -13640,7 +13742,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "제조소에 배치 시, 생산력 <@cc.vup>+20%</>, <$cc.bd_tachanka><@cc.rem>우르수스 특제 음료</></> <@cc.vup>1</>병당 창고 용량 <@cc.vup>+2</>"
+      "description": "제조소에 배치 시, 생산력 <@cc.vup>+20%</>, <$cc.bd_tachanka><@cc.rem>우르수스 특제 음료</></> <@cc.vup>1</>병당 창고 용량 상한 <@cc.vup>+2</>"
     },
     "manu_prod_spd_addition[030]": {
       "buffId": "manu_prod_spd_addition[030]",
@@ -14626,6 +14728,18 @@
       "roomType": "TRADING",
       "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+25%</>, 응접실 레벨 1레벨당 추가로 수주 효율 <@cc.vup>5%</> 제공, 최대 <@cc.vup>40%</> 제공"
     },
+    "trade_ord_spd&meet[010]": {
+      "buffId": "trade_ord_spd&meet[010]",
+      "buffName": "타고난 고문",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd&meet",
+      "sortId": 4040,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+15%</>, 응접실 레벨 1레벨당 추가로 수주 효율 <@cc.vup>5%</> 제공, 최대 <@cc.vup>30%</> 제공"
+    },
     "trade_ord_spd&formula[000]": {
       "buffId": "trade_ord_spd&formula[000]",
       "buffName": "정확한 스케줄",
@@ -15045,6 +15159,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
       "description": "무역소에 배치 시, 해당 무역소의 <@cc.kw>고품질 귀금속 오더</>의 출현 확률이 <@cc.kw>상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+    },
+    "trade_ord_wt&cost[003]": {
+      "buffId": "trade_ord_wt&cost[003]",
+      "buffName": "능통",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_wt&cost1",
+      "sortId": 4004,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "무역소에 배치 시, 해당 무역소의 <@cc.kw>고품질 귀금속 오더</>의 출현 확률이 <@cc.kw>소폭 상승</> (확률은 작업 시간의 영향을 받음), 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "trade_ord_spd&share[000]": {
       "buffId": "trade_ord_spd&share[000]",
@@ -17456,7 +17582,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <@cc.kw>실론</>일 경우 회복 효과가 추가로 <@cc.vup>+0.45</>"
+      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 대상이 <@cc.kw>실론</>일 경우 추가로 <@cc.vup>+0.45</>"
     },
     "dorm_rec_single_P[001]": {
       "buffId": "dorm_rec_single_P[001]",
@@ -17468,7 +17594,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <@cc.kw><$cc.gvial>가비알</></>일 경우 회복 효과가 추가로 <@cc.vup>+0.45</>"
+      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외한 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 대상이 <@cc.kw><$cc.gvial>가비알</></>일 경우 추가로 <@cc.vup>+0.45</>"
     },
     "dorm_rec_single_P[002]": {
       "buffId": "dorm_rec_single_P[002]",
@@ -17480,7 +17606,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 내 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <@cc.kw>블루포이즌</>일 경우 회복 효과가 추가로 <@cc.vup>+0.45</>"
+      "description": "숙소에 배치 시, 해당 숙소 내 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 대상이 <@cc.kw>블루포이즌</>일 경우 추가로 <@cc.vup>+0.45</>"
     },
     "dorm_rec_all[000]": {
       "buffId": "dorm_rec_all[000]",
@@ -17578,6 +17704,18 @@
       "roomType": "DORMITORY",
       "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
     },
+    "dorm_rec_all[017]": {
+      "buffId": "dorm_rec_all[017]",
+      "buffName": "심리안정 의식 α",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all2",
+      "sortId": 5400,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
     "dorm_rec_all[020]": {
       "buffId": "dorm_rec_all[020]",
       "buffName": "동장군",
@@ -17608,6 +17746,18 @@
       "buffIcon": "dormitory",
       "skillIcon": "bskill_dorm_all3",
       "sortId": 5423,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.2</> (동종 효과 중 가장 높은 수치만 적용)"
+    },
+    "dorm_rec_all[027]": {
+      "buffId": "dorm_rec_all[027]",
+      "buffName": "심리안정 의식 β",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all3",
+      "sortId": 5420,
       "buffColor": "#21cdcb",
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
@@ -17780,7 +17930,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 목표 오퍼레이터가 <$cc.g.sm><@cc.kw>사미</></> 오퍼레이터일 경우 회복 효과가 추가로 <@cc.vup>+0.45</>"
+      "description": "숙소에 배치 시, 해당 숙소 안에 자신을 제외하고 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 대상이 <$cc.g.sm><@cc.kw>사미</></> 오퍼레이터일 경우 추가로 <@cc.vup>+0.45</>"
     },
     "dorm_rec_all&oneself[000]": {
       "buffId": "dorm_rec_all&oneself[000]",
@@ -18152,7 +18302,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
-      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <@cc.vup>+10%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+10%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "hire_spd_cost[110]": {
       "buffId": "hire_spd_cost[110]",
@@ -18164,7 +18314,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
-      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <@cc.vup>+20%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+20%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "hire_spd_cost[111]": {
       "buffId": "hire_spd_cost[111]",
@@ -18176,7 +18326,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
-      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <@cc.vup>+20%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+20%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "hire_spd_cost[101]": {
       "buffId": "hire_spd_cost[101]",
@@ -18188,7 +18338,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
-      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <@cc.vup>+10%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+10%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "hire_spd_cost[120]": {
       "buffId": "hire_spd_cost[120]",
@@ -18200,7 +18350,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
-      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스 누적 속도 <@cc.vup>+30%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+30%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>"
     },
     "hire_spd_cost&clue[001]": {
       "buffId": "hire_spd_cost&clue[001]",
@@ -18381,6 +18531,30 @@
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
       "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+20%</>, 레퍼런스 서칭 <@cc.vup>1</>회 완료 시마다 <$cc.g.glasgow><@cc.kw>글래스고</></> 단서 획득 확률 증가 (확률은 작업 시간과 모집 인원의 영향을 받음)"
+    },
+    "hire_spd_dorm&lv[000]": {
+      "buffId": "hire_spd_dorm&lv[000]",
+      "buffName": "메이랜더의 탐정 α",
+      "buffIcon": "hire",
+      "skillIcon": "bskill_hire_spd&dorm1",
+      "sortId": 8102,
+      "buffColor": "#565656",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "HIRE",
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+5%</>, 모든 숙소의 레벨 1당 인맥 레퍼런스의 누적 속도 <@cc.vup>+1%</>"
+    },
+    "hire_spd_dorm&lv[010]": {
+      "buffId": "hire_spd_dorm&lv[010]",
+      "buffName": "메이랜더의 탐정 β",
+      "buffIcon": "hire",
+      "skillIcon": "bskill_hire_spd&dorm2",
+      "sortId": 8103,
+      "buffColor": "#565656",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "HIRE",
+      "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+5%</>, 모든 숙소의 레벨 1당 인맥 레퍼런스의 누적 속도 <@cc.vup>+2%</>"
     },
     "meet_spd[000]": {
       "buffId": "meet_spd[000]",
@@ -66201,7 +66375,7 @@
         "height": 7,
         "comfort": 290,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "작아 보아지만 많은 '짐'을 실을 수 있다.\n원래는 사르곤인들이 이사하는 데 사용하는 도구이지만, 유넥티스가 캠프의 오퍼레이터들에게 식사를 나누어 주는 식사 차량으로 사용되곤 한다. “먹어야 일할 수 있는 법이야.”",
+        "description": "작아 보이지만 많은 '짐'을 실을 수 있다.\n원래는 사르곤인들이 이사하는 데 사용하는 도구이지만, 유넥티스가 캠프의 오퍼레이터들에게 식사를 나누어 주는 식사 차량으로 사용되곤 한다. “먹어야 일할 수 있는 법이야.”",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -68973,7 +69147,7 @@
       "furni_HunterInstitute_projectionequipment_01": {
         "id": "furni_HunterInstitute_projectionequipment_01",
         "sortId": 1614,
-        "name": "인터렉티브 홀로그램 스크린",
+        "name": "인터렉터블 홀로그램 스크린",
         "iconId": "furni_HunterInstitute_projectionequipment_01",
         "interactType": "NONE",
         "musicId": "",
@@ -69371,6 +69545,533 @@
         "processedByProductGroup": [],
         "canBeDestroy": false,
         "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_corner_01": {
+        "id": "furni_mindsanctum_corner_01",
+        "sortId": 1627,
+        "name": "의외",
+        "iconId": "furni_mindsanctum_corner_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_1",
+        "width": 6,
+        "depth": 4,
+        "height": 10,
+        "comfort": 520,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "계단과 문틀 같은 정보 해석기, 잠그지 않은 것이 아니라 잠글 수 없는 것이다.\n언제나 선별된 것들 중 직접적으로 마음속에 들어오는 것이 있기 마련이다. 간혹 정리하고 싶지 않은 몇몇 정보는 이곳에 남게 된다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 383,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_locket_01": {
+        "id": "furni_mindsanctum_locket_01",
+        "sortId": 1628,
+        "name": "망각",
+        "iconId": "furni_mindsanctum_locket_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_1",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 130,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "자물쇠가 달린 상자 같은 거절 장치, 포장이 끝나 곧 보내질 예정이다.\n안에 들어있는 그녀가 미워하는 것들은 결국 상자에 담긴 채 열쇠와 함께 처분될 것이다. 하지만 정말 되찾고자 한다면 방법이 없는 것도 아니다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 118,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_chandelier_01": {
+        "id": "furni_mindsanctum_chandelier_01",
+        "sortId": 1629,
+        "name": "반응",
+        "iconId": "furni_mindsanctum_chandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_1",
+        "width": 2,
+        "depth": 1,
+        "height": 4,
+        "comfort": 60,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "장식용 샹들리에 같은 즉각적 반응. 불을 켤까, 아니면 잠가버릴까?\n한번 채운 자물쇠는 오랫동안 등불에 그을려야 다시 열 수 있지만, 때로는 눈 깜짝할 사이에 성사된 일이 그녀를 괴롭히곤 한다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 55,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_display_01": {
+        "id": "furni_mindsanctum_display_01",
+        "sortId": 1630,
+        "name": "처리",
+        "iconId": "furni_mindsanctum_display_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_1",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 165,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "자물쇠 전시대 같은 예비 대책. 다른 상자에는 당연히 다른 자물쇠를 채워야 하는 법.\n모든 일에 상자 또는 상자를 잠그기 위한 열쇠를 필요로 하는 건 아니다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 150,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_light_01": {
+        "id": "furni_mindsanctum_light_01",
+        "sortId": 1631,
+        "name": "억눌린 분노",
+        "iconId": "furni_mindsanctum_light_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLLAMP",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_2",
+        "width": 4,
+        "depth": 1,
+        "height": 3,
+        "comfort": 100,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "장식용 벽등 같은 분노. 많지는 않지만, 잘 잠겨 있으며, 높은 곳에 있는 데다 열쇠도 잘 보이는 곳에 놓여 있다.\n그녀는 화를 잘 내지 않는다. 간혹 보이는 화내는 모습조차 기쁨의 일부분에 해당한다. 하지만 만약 그녀가 정말로 분노의 자물쇠를 연다면, 분명 무서운 일이 일어날 것이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 90,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_table_01": {
+        "id": "furni_mindsanctum_table_01",
+        "sortId": 1632,
+        "name": "드러난 기쁨",
+        "iconId": "furni_mindsanctum_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_2",
+        "width": 10,
+        "depth": 4,
+        "height": 6,
+        "comfort": 575,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "대형 탁자 같은 기쁨. 여러 가지 요소로 구성되어 있으며, 공간을 크게 차지하고 있다.\n그녀는 언제나 쉽게 타인을 사랑하고, 쉽게 타인의 사랑을 받는다. 이는 카즈델에서 흔치 않은 것이고, 그렇기에 더욱 귀중하다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 423,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_carpet_01": {
+        "id": "furni_mindsanctum_carpet_01",
+        "sortId": 1633,
+        "name": "곳곳의 즐거움",
+        "iconId": "furni_mindsanctum_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_2",
+        "width": 12,
+        "depth": 7,
+        "height": 1,
+        "comfort": 160,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "카펫 같은 즐거움. 큼지막하고 눈에 띄지 않으며, 언제나 발밑에 있다. 먼지가 쌓이면 청소하는 것을 잊지 말자.\n기쁨은 삶의 밑바탕, 평범함 속에서도 기쁨의 원천을 만날 수 있다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 145,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_key_01": {
+        "id": "furni_mindsanctum_key_01",
+        "sortId": 1634,
+        "name": "켜켜이 쌓인 슬픔",
+        "iconId": "furni_mindsanctum_key_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DECORATION_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_2",
+        "width": 4,
+        "depth": 3,
+        "height": 4,
+        "comfort": 130,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "천장에 매달린 장식 같은 슬픔. 산산조각 난 것을 굉장히 기발한 방식으로 가뒀다.\n그녀에게도 슬플 때가 있다. 그리고, 이것들은 자물쇠로 잠글 수 없기에 그저 마음속에 물리적으로 고정한 채 떨어지지 않기를 기도할 뿐이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 118,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_chair_01": {
+        "id": "furni_mindsanctum_chair_01",
+        "sortId": 1635,
+        "name": "흔들리지 않는 이성",
+        "iconId": "furni_mindsanctum_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_2",
+        "width": 3,
+        "depth": 2,
+        "height": 6,
+        "comfort": 185,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "의자 같은 이성. 언제나 그곳에서 조용히 열쇠와 상자의 모양을 결정한다.\n자물쇠를 채울 수 없는 일, 감성적이면 안 될 장소는 있는 법이다. 그러면 가만히 앉아서 움직이지 말자, 그것이 문제를 해결하는 첫걸음이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 153,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_mirror_01": {
+        "id": "furni_mindsanctum_mirror_01",
+        "sortId": 1636,
+        "name": "나를 직면한다",
+        "iconId": "furni_mindsanctum_mirror_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DRESSING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_3",
+        "width": 4,
+        "depth": 3,
+        "height": 7,
+        "comfort": 275,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "화장대 같은 내성적 부분. 이 거울을 통해 자신의 여러 모습을 볼 수 있다.\n좋은 것, 나쁜 것, 진짜, 가짜 모두 거울 속에 비친다. 자신을 속이지 말자, 발견해야 변할 수 있는 법이니까.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 203,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_column_01": {
+        "id": "furni_mindsanctum_column_01",
+        "sortId": 1637,
+        "name": "나를 드러낸다",
+        "iconId": "furni_mindsanctum_column_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_3",
+        "width": 4,
+        "depth": 2,
+        "height": 9,
+        "comfort": 255,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "기둥 모양 같은 남에게 보이는 부분. 보여주고 싶은 것을 위에 걸 수 있다.\n오랫동안 진실이 위에 걸려 있었으나, 바꿀 생각은 없다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 188,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_ornament_01": {
+        "id": "furni_mindsanctum_ornament_01",
+        "sortId": 1638,
+        "name": "나를 움직인다",
+        "iconId": "furni_mindsanctum_ornament_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ART_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_3",
+        "width": 4,
+        "depth": 3,
+        "height": 4,
+        "comfort": 225,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "태엽 장식 같은 격려의 부분. 문제가 생겼어? 기분이 나빠? 이걸 두어 번 돌리고 안의 소리를 들어볼래?\n스스로 조정하는 건 심오한 학문이다. 아직 제대로 파악하진 못했지만, 아직까지 틀린 건 없다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 185,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_cabinet_01": {
+        "id": "furni_mindsanctum_cabinet_01",
+        "sortId": 1639,
+        "name": "나를 평가한다",
+        "iconId": "furni_mindsanctum_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_3",
+        "width": 6,
+        "depth": 2,
+        "height": 8,
+        "comfort": 315,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "수납장 같은 검토의 부분. 모든 열쇠에는 짝이 있고, 그에 알맞은 상자는 이 캐비닛 안에 있다.\n있었던 사소한 일들을 되새기며 작지만 놀라운 마음의 변화를 느껴보자. 저절로 무엇을 해야 할지 알게 될 것이다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 233,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_sofa_01": {
+        "id": "furni_mindsanctum_sofa_01",
+        "sortId": 1640,
+        "name": "무의식의 입구",
+        "iconId": "furni_mindsanctum_sofa_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "BEDDING",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_4",
+        "width": 7,
+        "depth": 2,
+        "height": 4,
+        "comfort": 270,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "소파 침대 같은 전송기. 사람을 다른 방으로 보낼 수 있다.\n언뜻 보기에 쉽게 해결할 수 없는 사항들은 이곳으로 보내진다. 만약 이곳에서도 해결할 수 없다면, 다음 방으로 가서 도움을 구해야 한다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 223,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_lamp_01": {
+        "id": "furni_mindsanctum_lamp_01",
+        "sortId": 1641,
+        "name": "이미 빛나는 영혼의 빛",
+        "iconId": "furni_mindsanctum_lamp_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "FLOORLAMP",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_4",
+        "width": 3,
+        "depth": 2,
+        "height": 7,
+        "comfort": 200,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "플로어 램프 같은 라이터. 아차 하면 사라지는 불꽃을 언제나 등갓으로 부드럽게 감싸고 있다.\n방 안이 밝아지던 순간만 기억하는 게 아닌, 방이 환했던 날들을 더욱 기억해야 한다.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 165,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_wallpaper_01": {
+        "id": "furni_mindsanctum_wallpaper_01",
+        "sortId": 1642,
+        "name": "미정형의 정보",
+        "iconId": "furni_mindsanctum_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_4",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "파노라마 디스플레이 같은 수신기. 바깥 세계의 이모저모를 아낌없이 보여주고 있다.\n여기에 비치는 건 그녀와 관련된 것뿐만이 아니라, 그, 그리고 그것, 그것 외에도……",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 198,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
+        "quantity": 1
+      },
+      "furni_mindsanctum_floor_01": {
+        "id": "furni_mindsanctum_floor_01",
+        "sortId": 1643,
+        "name": "볼품없는 인격",
+        "iconId": "furni_mindsanctum_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_mindsanctum",
+        "groupId": "furni_set_mindsanctum_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "바닥 같은 마음의 토대. 견고해 보이지만, 사실 항상 변하고 있다.\n'님프'라는 개체를 구성하는 가장 본질적인 부분 중 하나.",
+        "obtainApproach": "가구상점 한정 구매",
+        "processedProductId": "3401",
+        "processedProductCount": 198,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": true,
+        "isOnly": -1,
         "quantity": 1
       },
       "furni_pepesroom_showcase_01": {
@@ -71261,7 +71962,7 @@
         "processedByProductPercentage": 0,
         "processedByProductGroup": [],
         "canBeDestroy": false,
-        "isOnly": 1,
+        "isOnly": 2,
         "quantity": 0
       },
       "furni_MA_mooncake_G_02": {
@@ -71416,7 +72117,7 @@
         "processedByProductPercentage": 0,
         "processedByProductGroup": [],
         "canBeDestroy": false,
-        "isOnly": 1,
+        "isOnly": 2,
         "quantity": 0
       },
       "furni_oct1st_seating_01": {
@@ -73859,6 +74560,130 @@
         "comfort": 160,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "염국 전통 명절을 축하할 때 사용하는 장식대 중 하나. 귀여운 토끼가 큰소리로 경주를 응원하고 있다.\n“깃발이 흔들리고, 대나무 잎으로 만든 배와 고기가 들은 쫑즈가 있다!”",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_MA_mooncake_B_03": {
+        "id": "furni_MA_mooncake_B_03",
+        "sortId": 10225,
+        "name": "'내려온 달' 선물 상자",
+        "iconId": "furni_MA_mooncake_B_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 80,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정교하고 독특하게 만든 수제 아이스 월병 선물 상자, 가을 무렵의 축복이 담겨있다. 지난 일은 천리 밖으로 멀어진다. 산과 물이 겹겹이 가로막는다 해도 다시 만날 수 있을 것이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_MA_mooncake_B_04": {
+        "id": "furni_MA_mooncake_B_04",
+        "sortId": 10226,
+        "name": "'바라보는 달빛' 선물 상자",
+        "iconId": "furni_MA_mooncake_B_04",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 80,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정교하고 독특하게 만든 수제 아이스 월병 선물 상자, 가을 무렵의 축복이 담겨있다. 지난 일은 천리 밖으로 멀어진다. 산과 물이 겹겹이 가로막는다 해도 다시 만날 수 있을 것이다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_MA_mooncake_S_03": {
+        "id": "furni_MA_mooncake_S_03",
+        "sortId": 10227,
+        "name": "'달 그림' 선물 상자",
+        "iconId": "furni_MA_mooncake_S_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 80,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정교하고 독특하게 만든 수제 아이스 월병 선물 상자, 가을 무렵의 축복이 담겨있다. 아름다운 정원과 금으로 된 술잔으로 밝은 달을 청하니, 웃음과 노래가 좋은 밤을 함께하네.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_MA_mooncake_S_04": {
+        "id": "furni_MA_mooncake_S_04",
+        "sortId": 10228,
+        "name": "'밤빛 베개' 선물 상자",
+        "iconId": "furni_MA_mooncake_S_04",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 80,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "정교하고 독특하게 만든 수제 아이스 월병 선물 상자, 가을 무렵의 축복이 담겨있다. 아름다운 정원과 금으로 된 술잔으로 밝은 달을 청하니, 웃음과 노래가 좋은 밤을 함께하네.",
         "obtainApproach": "이벤트 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -76596,6 +77421,37 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_terracommericials_DreamingEssence_01": {
+        "id": "furni_terracommericials_DreamingEssence_01",
+        "sortId": 11088,
+        "name": "플레이트 《미몽》",
+        "iconId": "furni_terracommericials_DreamingEssence_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "단 한 번의 호흡으로 후각은 현실의 건조함을 벗겨낸다.",
+        "obtainApproach": "이벤트 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_terratimes_Sargon_01": {
         "id": "furni_terratimes_Sargon_01",
         "sortId": 11089,
@@ -77206,7 +78062,7 @@
         "height": 4,
         "comfort": 105,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "시에스타 파도치는 해변 섬멸을 완료한 뒤 보고를 제출하면 획득 가능한 기념품. 해변의 여음이 아직도 귓전에 맴도는 듯하다.",
+        "description": "시에스타 파도치는 해변 섬멸을 완료한 뒤 보고를 제출하면 획득 가능한 기념품. 해변의 소리가 아직도 귓가에 남아 울리는 듯하다.",
         "obtainApproach": "섬멸 의뢰 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -77764,7 +78620,7 @@
         "height": 4,
         "comfort": 105,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
-        "description": "컬럼비아 '이심률' 실험실 섬멸을 완료하고 보고를 제출하면 획득 가능한 기념품. '이심률' 실험실의 여운이 아직도 귓가에 남아 울리는 듯하다.",
+        "description": "컬럼비아 '이심률' 실험실 섬멸을 완료하고 보고를 제출하면 획득 가능한 기념품. '이심률' 실험실의 소리가 아직도 귓가에 남아 울리는 듯하다.",
         "obtainApproach": "섬멸 의뢰 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -77796,6 +78652,37 @@
         "comfort": 105,
         "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
         "description": "빅토리아 내 불타는 거리 구역의 섬멸을 완료하고 보고를 제출한 뒤 획득한 기념품. 불타는 거리 구역의 소리가 아직도 귓가에 남아 울리는 듯하다.",
+        "obtainApproach": "섬멸 의뢰 보상",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_annihilation_s24_01": {
+        "id": "furni_annihilation_s24_01",
+        "sortId": 13022,
+        "name": "쉐라그의 메아리 (눈의 골짜기)",
+        "iconId": "furni_annihilation_s24_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+        "description": "쉐라그 얼음과 눈의 골짜기 구역 섬멸을 완료하고 보고를 제출하면 획득 가능한 기념품. 얼음과 눈의 골짜기 구역의 소리가 아직도 귓가에 남아 울리는 듯하다.",
         "obtainApproach": "섬멸 의뢰 보상",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -93257,6 +94144,142 @@
           "furni_HunterInstitute_floor_01"
         ]
       },
+      "furni_set_mindsanctum": {
+        "id": "furni_set_mindsanctum",
+        "sortId": 94,
+        "name": "마음과 정신의 공간",
+        "themeType": "NORMAL",
+        "desc": "이전까지 존재한 적 없는 방, 엔지니어링부 오퍼레이터가 님프에게 마음의 계시를 받은 후 디자인한 것. 마음에 대한 디얄의 관념을 구현해 냈다.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_mindsanctum_corner_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_locket_01",
+            "pos0": 1,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_chandelier_01",
+            "pos0": 4,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_display_01",
+            "pos0": 6,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_light_01",
+            "pos0": 6,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_table_01",
+            "pos0": 9,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_carpet_01",
+            "pos0": 11,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_key_01",
+            "pos0": 12,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_chair_01",
+            "pos0": 15,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_mirror_01",
+            "pos0": 19,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_column_01",
+            "pos0": 24,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_ornament_01",
+            "pos0": 21,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_cabinet_01",
+            "pos0": 28,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_sofa_01",
+            "pos0": 26,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_lamp_01",
+            "pos0": 31,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_mindsanctum_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_mindsanctum_1",
+          "furni_set_mindsanctum_2",
+          "furni_set_mindsanctum_3",
+          "furni_set_mindsanctum_4"
+        ],
+        "furnitures": [
+          "furni_mindsanctum_corner_01",
+          "furni_mindsanctum_locket_01",
+          "furni_mindsanctum_chandelier_01",
+          "furni_mindsanctum_display_01",
+          "furni_mindsanctum_light_01",
+          "furni_mindsanctum_table_01",
+          "furni_mindsanctum_carpet_01",
+          "furni_mindsanctum_key_01",
+          "furni_mindsanctum_chair_01",
+          "furni_mindsanctum_mirror_01",
+          "furni_mindsanctum_column_01",
+          "furni_mindsanctum_ornament_01",
+          "furni_mindsanctum_cabinet_01",
+          "furni_mindsanctum_sofa_01",
+          "furni_mindsanctum_lamp_01",
+          "furni_mindsanctum_wallpaper_01",
+          "furni_mindsanctum_floor_01"
+        ]
+      },
       "furni_set_pepesroom": {
         "id": "furni_set_pepesroom",
         "sortId": 96,
@@ -99073,6 +100096,63 @@
           "furni_HunterInstitute_nightstand_01"
         ]
       },
+      "furni_set_mindsanctum_1": {
+        "id": "furni_set_mindsanctum_1",
+        "sortId": 1,
+        "name": "인지의 창문",
+        "themeId": "furni_set_mindsanctum",
+        "comfort": 205,
+        "count": 4,
+        "furniture": [
+          "furni_mindsanctum_corner_01",
+          "furni_mindsanctum_locket_01",
+          "furni_mindsanctum_chandelier_01",
+          "furni_mindsanctum_display_01"
+        ]
+      },
+      "furni_set_mindsanctum_2": {
+        "id": "furni_set_mindsanctum_2",
+        "sortId": 2,
+        "name": "감정 표현",
+        "themeId": "furni_set_mindsanctum",
+        "comfort": 270,
+        "count": 5,
+        "furniture": [
+          "furni_mindsanctum_table_01",
+          "furni_mindsanctum_light_01",
+          "furni_mindsanctum_key_01",
+          "furni_mindsanctum_chair_01",
+          "furni_mindsanctum_carpet_01"
+        ]
+      },
+      "furni_set_mindsanctum_3": {
+        "id": "furni_set_mindsanctum_3",
+        "sortId": 3,
+        "name": "의지의 귀환",
+        "themeId": "furni_set_mindsanctum",
+        "comfort": 270,
+        "count": 4,
+        "furniture": [
+          "furni_mindsanctum_ornament_01",
+          "furni_mindsanctum_mirror_01",
+          "furni_mindsanctum_column_01",
+          "furni_mindsanctum_cabinet_01"
+        ]
+      },
+      "furni_set_mindsanctum_4": {
+        "id": "furni_set_mindsanctum_4",
+        "sortId": 4,
+        "name": "마음의 구조",
+        "themeId": "furni_set_mindsanctum",
+        "comfort": 210,
+        "count": 4,
+        "furniture": [
+          "furni_mindsanctum_sofa_01",
+          "furni_mindsanctum_lamp_01",
+          "furni_mindsanctum_wallpaper_01",
+          "furni_mindsanctum_floor_01"
+        ]
+      },
       "furni_set_pepesroom_1": {
         "id": "furni_set_pepesroom_1",
         "sortId": 1,
@@ -99741,6 +100821,21 @@
         },
         {
           "skinId": "char_136_hsguma@summer#16"
+        },
+        {
+          "skinId": "char_282_catap@summer#17"
+        },
+        {
+          "skinId": "char_1020_reed2@summer#17"
+        },
+        {
+          "skinId": "char_2012_typhon@summer#17"
+        },
+        {
+          "skinId": "char_4032_provs@summer#17"
+        },
+        {
+          "skinId": "char_4062_totter@summer#17"
         },
         {
           "skinId": "char_4100_caper@summer#18"

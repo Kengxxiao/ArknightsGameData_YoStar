@@ -62916,7 +62916,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を1枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大8回まで）",
+                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を1枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大8回まで重複可能）",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -62949,7 +62949,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を1枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大9<@ba.talpu>（+1）</>回まで）",
+                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を1枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大9<@ba.talpu>（+1）</>回まで重複可能）",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -63047,7 +63047,7 @@
               "candidates": [
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を2枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大8回まで）",
+                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を2枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大8回まで重複可能）",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -63080,7 +63080,7 @@
                 },
                 {
                   "displayRangeId": false,
-                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を2枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大9<@ba.talpu>（+1）</>回まで）",
+                  "upgradeDescription": "スキル発動時、コイン（スキル発動時に消費）を2枚獲得。スキル発動中に特性によるコスト消費時、コインを1枚獲得し、自身の攻撃力+5%（最大9<@ba.talpu>（+1）</>回まで重複可能）",
                   "talentIndex": 0,
                   "unlockCondition": {
                     "phase": 2,
@@ -89611,6 +89611,2184 @@
           {
             "key": "atk",
             "value": 40.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_mitm": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.65
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍によってブロックされている敵を攻撃する場合、攻撃力が165%まで上昇\n援軍がブロックしている敵は味方ユニットから狙われやすくなる",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "mitm_equip_1_1_p1",
+            "target": "TALENT",
+            "isToken": true,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "taunt_level",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "def",
+                      "value": 0.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 100.0
+          },
+          {
+            "key": "atk",
+            "value": 25.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.65
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍によってブロックされている敵を攻撃する場合、攻撃力が165%まで上昇\n援軍がブロックしている敵は味方ユニットから狙われやすくなる",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": true,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "戦車状態で撃破された時、隣接4マスに最大HPがより高い残骸を生成し、15秒後に再召喚される。残骸状態の時、敵を1体ブロックできる",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "ガラクタの戦車",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "block_cnt",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "interval",
+                      "value": 15.0
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].max_hp",
+                      "value": -0.35
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].block_cnt",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].def",
+                      "value": -1.0
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].atk",
+                      "value": -1.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "戦術召集点にチェリー3号を援軍として召喚可能\n援軍が倒された時、その隣接4マスに最大HPがより高い残骸を生成し、15秒後に再召喚される",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "ガラクタの戦車",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "cnt",
+                      "value": 1.0
+                    }
+                  ],
+                  "tokenKey": "token_10037_mitm_trshrb",
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "mitm_equip_1_2_p1",
+            "target": "TALENT",
+            "isToken": true,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "taunt_level",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "def",
+                      "value": 0.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 140.0
+          },
+          {
+            "key": "atk",
+            "value": 35.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.65
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍によってブロックされている敵を攻撃する場合、攻撃力が165%まで上昇\n援軍がブロックしている敵は味方ユニットから狙われやすくなる",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": true,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "戦車状態で撃破された時、隣接4マスに最大HPがさらに高い残骸を生成し、15秒後に再召喚される。残骸状態の時、敵を1体ブロックできる",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "ガラクタの戦車",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "block_cnt",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "interval",
+                      "value": 15.0
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].max_hp",
+                      "value": -0.3
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].block_cnt",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].def",
+                      "value": -1.0
+                    },
+                    {
+                      "key": "trshrb_t_1[trash_born].atk",
+                      "value": -1.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "戦術召集点にチェリー3号を援軍として召喚可能\n援軍が倒された時、その隣接4マスに最大HPがさらに高い残骸を生成し、15秒後に再召喚される",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "ガラクタの戦車",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "cnt",
+                      "value": 1.0
+                    }
+                  ],
+                  "tokenKey": "token_10037_mitm_trshrb",
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "mitm_equip_1_3_p1",
+            "target": "TALENT",
+            "isToken": true,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "taunt_level",
+                      "value": 1.0
+                    },
+                    {
+                      "key": "def",
+                      "value": 0.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "mitm_equip_1_3_p2",
+            "target": "TALENT",
+            "isToken": true,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "11",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp",
+                      "value": 0.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 150.0
+          },
+          {
+            "key": "atk",
+            "value": 40.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_chen2": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 30.0
+          },
+          {
+            "key": "def",
+            "value": 37.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "chen2_equip_1_2_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置中、自身の弾薬消費系スキルが23%の確率で弾薬を消費せず、自身以外の【狙撃】が20%の確率で弾薬を消費しなくなり、その他遠距離オペレーターが8%の確率で弾薬を消費しなくなる（同種の効果は高いほうのみ適用）",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "勤倹節約",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "e_spareshot_chen.prob",
+                      "value": 0.23
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][other].prob",
+                      "value": 0.08
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][sniper].prob",
+                      "value": 0.2
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置中、自身の弾薬消費系スキルが25%<@ba.talpu>（+2%）</>の確率で弾薬を消費せず、自身以外の【狙撃】が20%の確率で弾薬を消費しなくなり、その他遠距離オペレーターが8%の確率で弾薬を消費しなくなる（同種の効果は高いほうのみ適用）",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "勤倹節約",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "e_spareshot_chen.prob",
+                      "value": 0.25
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][other].prob",
+                      "value": 0.08
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][sniper].prob",
+                      "value": 0.2
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 45.0
+          },
+          {
+            "key": "def",
+            "value": 42.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "chen2_equip_1_3_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置中、自身の弾薬消費系スキルが25%の確率で弾薬を消費せず、自身以外の【狙撃】が20%の確率で弾薬を消費しなくなり、その他遠距離オペレーターが12%の確率で弾薬を消費しなくなる（同種の効果は高いほうのみ適用）",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "勤倹節約",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "e_spareshot_chen.prob",
+                      "value": 0.25
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][other].prob",
+                      "value": 0.12
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][sniper].prob",
+                      "value": 0.2
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置中、自身の弾薬消費系スキルが27%<@ba.talpu>（+2%）</>の確率で弾薬を消費せず、自身以外の【狙撃】が20%の確率で弾薬を消費しなくなり、その他遠距離オペレーターが12%の確率で弾薬を消費しなくなる（同種の効果は高いほうのみ適用）",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "勤倹節約",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "e_spareshot_chen.prob",
+                      "value": 0.27
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][other].prob",
+                      "value": 0.12
+                    },
+                    {
+                      "key": "chen2_t_002[spareshot][sniper].prob",
+                      "value": 0.2
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 60.0
+          },
+          {
+            "key": "def",
+            "value": 45.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_aosta": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 35.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "ブロックされてない敵を攻撃時、攻撃対象を4秒間、1秒ごとにアオスタの攻撃力の23%の術ダメージ（特性に影響されない）を受ける流血状態にする",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "釘刺創",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 0.23
+                    },
+                    {
+                      "key": "duration",
+                      "value": 4.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "ブロックされてない敵を攻撃時、攻撃対象を4秒間、1秒ごとにアオスタの攻撃力の25%<@ba.talpu>（+2%）</>の術ダメージ（特性に影響されない）を受ける流血状態にする",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "釘刺創",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 0.25
+                    },
+                    {
+                      "key": "duration",
+                      "value": 4.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 170.0
+          },
+          {
+            "key": "atk",
+            "value": 44.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "ブロックされてない敵を攻撃時、攻撃対象を5秒間、1秒ごとにアオスタの攻撃力の25%の術ダメージ（特性に影響されない）を受ける流血状態にする",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "釘刺創",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 0.25
+                    },
+                    {
+                      "key": "duration",
+                      "value": 5.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "ブロックされてない敵を攻撃時、攻撃対象を5秒間、1秒ごとにアオスタの攻撃力の27%<@ba.talpu>（+2%）</>の術ダメージ（特性に影響されない）を受ける流血状態にする",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "釘刺創",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 0.27
+                    },
+                    {
+                      "key": "duration",
+                      "value": 5.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 200.0
+          },
+          {
+            "key": "atk",
+            "value": 50.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_excu": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 38.0
+          },
+          {
+            "key": "attack_speed",
+            "value": 3.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "攻撃時、対象の防御力を190無視",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "アサルトカスタム",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "def_penetrate_fixed",
+                      "value": 190.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "攻撃時、対象の防御力を205<@ba.talpu>（+15）</>無視",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "アサルトカスタム",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "def_penetrate_fixed",
+                      "value": 205.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 46.0
+          },
+          {
+            "key": "attack_speed",
+            "value": 4.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "攻撃時、対象の防御力を210無視",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "アサルトカスタム",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "def_penetrate_fixed",
+                      "value": 210.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "攻撃時、対象の防御力を225<@ba.talpu>（+15）</>無視",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 50
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "アサルトカスタム",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "def_penetrate_fixed",
+                      "value": 225.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 52.0
+          },
+          {
+            "key": "attack_speed",
+            "value": 5.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_002_pinecn": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 30.0
+          },
+          {
+            "key": "def",
+            "value": 15.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置後、70秒間SP自然回復速度+0.5sp/秒",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "ポータブル電源",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.5
+                    },
+                    {
+                      "key": "duration",
+                      "value": 70.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置後、70秒間SP自然回復速度+0.55<@ba.talpu>（+0.05）</>sp/秒",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "ポータブル電源",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.55
+                    },
+                    {
+                      "key": "duration",
+                      "value": 70.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 36.0
+          },
+          {
+            "key": "def",
+            "value": 25.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "TRAIT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": null,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [
+                    {
+                      "key": "atk_scale",
+                      "value": 1.6
+                    }
+                  ],
+                  "overrideDescripton": "攻撃範囲内の<@ba.kw>敵全員</>を同時に攻撃し、自身の正面横3マスにいる敵を攻撃時攻撃力が<@ba.kw>160%</>まで上昇",
+                  "prefabKey": "-1",
+                  "rangeId": "1-3"
+                }
+              ]
+            }
+          },
+          {
+            "resKey": null,
+            "target": "TALENT_DATA_ONLY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置後、75秒間SP自然回復速度+0.55sp/秒",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "ポータブル電源",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.55
+                    },
+                    {
+                      "key": "duration",
+                      "value": 75.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置後、75秒間SP自然回復速度+0.6<@ba.talpu>（+0.05）</>sp/秒",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 40
+                  },
+                  "requiredPotentialRank": 4,
+                  "prefabKey": "1",
+                  "name": "ポータブル電源",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.6
+                    },
+                    {
+                      "key": "duration",
+                      "value": 75.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 40.0
+          },
+          {
+            "key": "def",
+            "value": 30.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_003_mostma": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "攻撃範囲<@ba.kw>拡大</>",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": "敵に<@ba.kw>範囲術ダメージ</>を与える",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "mostma_equip_2_1_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": true,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": "3-1",
+                  "blackboard": [],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 120.0
+          },
+          {
+            "key": "atk",
+            "value": 55.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "攻撃範囲<@ba.kw>拡大</>",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": "敵に<@ba.kw>範囲術ダメージ</>を与える",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "mostma_equip_2_2_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置中、味方【術師】のSPの自然回復速度+0.5sp/秒、自身は自然回復速度+0.7sp/秒（同種の効果は高いほうのみ適用）",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "スキルブースト・術師",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.5
+                    },
+                    {
+                      "key": "mostma_003_t[self].sp_recovery_per_sec",
+                      "value": 0.7
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "mostma_equip_2_2_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": true,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": "3-1",
+                  "blackboard": [],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 165.0
+          },
+          {
+            "key": "atk",
+            "value": 68.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "攻撃範囲<@ba.kw>拡大</>",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": "敵に<@ba.kw>範囲術ダメージ</>を与える",
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "mostma_equip_2_3_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "配置中、味方【術師】のSPの自然回復速度+0.6sp/秒、自身は自然回復速度+0.9sp/秒（同種の効果は高いほうのみ適用）",
+                  "talentIndex": 0,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "1",
+                  "name": "スキルブースト・術師",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "sp_recovery_per_sec",
+                      "value": 0.6
+                    },
+                    {
+                      "key": "mostma_003_t[self].sp_recovery_per_sec",
+                      "value": 0.9
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "mostma_equip_2_3_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": true,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": "3-1",
+                  "blackboard": [],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "max_hp",
+            "value": 190.0
+          },
+          {
+            "key": "atk",
+            "value": 80.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      }
+    ]
+  },
+  "uniequip_003_swire2": {
+    "phases": [
+      {
+        "equipLevel": 1,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "特性によるコスト消費時、攻撃力+4%、最大5回まで",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "swire2_equip_2_1_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "interval",
+                      "value": 3.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.04
+                    },
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 57.0
+          },
+          {
+            "key": "def",
+            "value": 44.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 2,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "特性によるコスト消費時、攻撃力+4%、最大5回まで",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "swire2_equip_2_2_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "致命的なダメージを受けた時、所持コストが5以上の場合、代わりにコストを5消費して、HPを最大値の70%まで回復する（発動のたびに消費コスト+5）",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "2",
+                  "name": "財あれば憂いなし",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "cost",
+                      "value": -5.0
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.7
+                    },
+                    {
+                      "key": "cost_addition",
+                      "value": -5.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "致命的なダメージを受けた時、所持コストが5以上の場合、代わりにコストを5消費して、HPを最大値の80%<@ba.talpu>（+10%）</>まで回復する（発動のたびに消費コスト+5）",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 2,
+                  "prefabKey": "2",
+                  "name": "財あれば憂いなし",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "cost",
+                      "value": -5.0
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.8
+                    },
+                    {
+                      "key": "cost_addition",
+                      "value": -5.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "swire2_equip_2_2_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "interval",
+                      "value": 3.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.04
+                    },
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 71.0
+          },
+          {
+            "key": "def",
+            "value": 53.0
+          }
+        ],
+        "tokenAttributeBlackboard": {}
+      },
+      {
+        "equipLevel": 3,
+        "parts": [
+          {
+            "resKey": null,
+            "target": "DISPLAY",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": null
+            },
+            "overrideTraitDataBundle": {
+              "candidates": [
+                {
+                  "additionalDescription": "特性によるコスト消費時、攻撃力+4%、最大5回まで",
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "blackboard": [],
+                  "overrideDescripton": null,
+                  "prefabKey": null,
+                  "rangeId": null
+                }
+              ]
+            }
+          },
+          {
+            "resKey": "swire2_equip_2_3_p2",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "致命的なダメージを受けた時、所持コストが3以上の場合、代わりにコストを3消費して、HPを最大値の70%まで回復する（発動のたびに消費コスト+3）",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "2",
+                  "name": "財あれば憂いなし",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "cost",
+                      "value": -3.0
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.7
+                    },
+                    {
+                      "key": "cost_addition",
+                      "value": -3.0
+                    }
+                  ],
+                  "isHideTalent": false
+                },
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "致命的なダメージを受けた時、所持コストが3以上の場合、代わりにコストを3消費して、HPを最大値の80%<@ba.talpu>（+10%）</>まで回復する（発動のたびに消費コスト+3）",
+                  "talentIndex": 1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 2,
+                  "prefabKey": "2",
+                  "name": "財あれば憂いなし",
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "cost",
+                      "value": -3.0
+                    },
+                    {
+                      "key": "hp_ratio",
+                      "value": 0.8
+                    },
+                    {
+                      "key": "cost_addition",
+                      "value": -3.0
+                    }
+                  ],
+                  "isHideTalent": false
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          },
+          {
+            "resKey": "swire2_equip_2_3_p1",
+            "target": "TALENT",
+            "isToken": false,
+            "addOrOverrideTalentDataBundle": {
+              "candidates": [
+                {
+                  "displayRangeId": false,
+                  "upgradeDescription": "",
+                  "talentIndex": -1,
+                  "unlockCondition": {
+                    "phase": 2,
+                    "level": 60
+                  },
+                  "requiredPotentialRank": 0,
+                  "prefabKey": "10",
+                  "name": null,
+                  "description": null,
+                  "rangeId": null,
+                  "blackboard": [
+                    {
+                      "key": "interval",
+                      "value": 3.0
+                    },
+                    {
+                      "key": "atk",
+                      "value": 0.04
+                    },
+                    {
+                      "key": "max_stack_cnt",
+                      "value": 5.0
+                    }
+                  ],
+                  "isHideTalent": true
+                }
+              ]
+            },
+            "overrideTraitDataBundle": {
+              "candidates": null
+            }
+          }
+        ],
+        "attributeBlackboard": [
+          {
+            "key": "atk",
+            "value": 81.0
+          },
+          {
+            "key": "def",
+            "value": 60.0
           }
         ],
         "tokenAttributeBlackboard": {}

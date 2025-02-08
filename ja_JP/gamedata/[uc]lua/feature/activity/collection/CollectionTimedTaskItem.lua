@@ -92,8 +92,6 @@ function CollectionTimedTaskItem:Refresh( missionData, cfg )
 
     self._gotMark:SetActive(self.m_finish);
   end
-
-  self:CreateRewardIcon(cfg);
 end
 
 
