@@ -882,6 +882,7 @@
   "instFinDmdShdCost": 80,
   "easyCrystalBonus": 0,
   "diamondMaterialToShardExchangeRatio": 10,
+  "diamondHandbookStageGain": 200,
   "apBuyCost": 1,
   "apBuyThreshold": 999,
   "creditLimit": 300,
@@ -968,6 +969,7 @@
     "attainga.attention": "<color=#E1322C>{0}</color>",
     "linkagega.charname": "<color=#FFF6A9>{0}</color>",
     "linkagega.title": "<color=#FF8A00>{0}</color>",
+    "ga.spgacha": "<color=#FF8A00>{0}</color>",
     "limtedga.title": "<color=#FFFFFF>{0}</color>",
     "limtedga.subtitle": "<color=#FFC90E>{0}</color>",
     "limtedga.up": "<color=#FF7F27>{0}</color>",
@@ -999,6 +1001,7 @@
     "dm.condition": "<color=#C9C9C9>{0}</color>",
     "tutor": "<color=#36BBCC>{0}</color>",
     "lv.muitem": "<color=#D4133C>{0}</color>",
+    "token.highlight": "<color=#d8741a>{0}</color>",
     "ba.grt": "<color=#FFAB27>{0}</color>",
     "ba.exl": "<color=#14F0AF>{0}</color>",
     "ba.hrd": "<color=#DA2536>{0}</color>",
@@ -1104,6 +1107,7 @@
   "isRoguelikeAvgAchieveFuncEnabled": true,
   "isClassicPotentialItemFuncEnabled": true,
   "isClassicGachaPoolFuncEnabled": true,
+  "isSpecialGachaPoolFuncEnabled": false,
   "isVoucherClassicItemDistinguishable": true,
   "voucherSkinRedeem": 1,
   "voucherSkinDesc": "The [Outfit Voucher] can only be used to redeem outfits currently available in the Outfit Store, and <color=#ffa633>cannot be used</color> to redeem outfits with dynamic art. [Outfit Voucher] <color=#ffa633>cannot be used</color> if you have already purchased all outfits in the Outfit Store, or if there are none available.\n\nYou will be informed if there are other outfits that <color=#ffa633>cannot be redeemed</color> using the [Outfit Voucher].",
@@ -1298,6 +1302,11 @@
       "termId": "ba.tremble",
       "termName": "Frighten",
       "description": "Cannot perform normal attacks when blocked"
+    },
+    "ba.fear": {
+      "termId": "ba.fear",
+      "termName": "Fear",
+      "description": "Cannot be blocked and runs off uncontrollably"
     },
     "ba.dt.burning2": {
       "termId": "ba.dt.burning2",
@@ -1641,8 +1650,8 @@
     }
   },
   "storyReviewUnlockItemLackTip": "Insufficient Information Fragments. Acquire more from the Purchase Certificates Store or the Event Store.",
-  "dataVersion": "41.3.0",
-  "resPrefVersion": "53d0d0",
+  "dataVersion": "42.1.0",
+  "resPrefVersion": "52d2d0",
   "announceWebBusType": "ak_announcement",
   "defaultMinContinuousBattleTimes": 1,
   "defaultMaxContinuousBattleTimes": 6,
