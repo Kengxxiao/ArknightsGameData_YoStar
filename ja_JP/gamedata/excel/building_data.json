@@ -12409,6 +12409,125 @@
           "buffData": []
         }
       ]
+    },
+    "char_4141_marcil": {
+      "charId": "char_4141_marcil",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd[004]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "manu_prod_spd[014]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd_bd[400]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4143_sensi": {
+      "charId": "char_4143_sensi",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&tag[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_bd_dungeon[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4144_chilc": {
+      "charId": "char_4144_chilc",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&limit[036]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd_bd[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4142_laios": {
+      "charId": "char_4142_laios",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd[021]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_bd[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -13684,6 +13803,30 @@
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、製造効率<@cc.vup>+30%</>"
     },
+    "manu_prod_spd[004]": {
+      "buffId": "manu_prod_spd[004]",
+      "buffName": "使い魔派遣α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_marcille1",
+      "sortId": 3562,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、製造効率<@cc.vup>+20%</>"
+    },
+    "manu_prod_spd[014]": {
+      "buffId": "manu_prod_spd[014]",
+      "buffName": "使い魔派遣β",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_marcille2",
+      "sortId": 3562,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、製造効率<@cc.vup>+30%</>"
+    },
     "manu_skill_spd1[000]": {
       "buffId": "manu_skill_spd1[000]",
       "buffName": "意識連結",
@@ -14235,6 +14378,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、<$cc.bd_b1><@cc.rem>俗世之憂</></><@cc.vup>3</>につき、製造効率<@cc.vup>+1%</>"
+    },
+    "manu_prod_spd_bd[400]": {
+      "buffId": "manu_prod_spd_bd[400]",
+      "buffName": "意外に美味しい",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd_bd_dungeon",
+      "sortId": 3562,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>1</>つにつき製造効率<@cc.vup>+1%</>"
     },
     "manu_formula_spd[000]": {
       "buffId": "manu_formula_spd[000]",
@@ -14968,6 +15123,18 @@
       "roomType": "TRADING",
       "description": "貿易所配置時、受注効率<@cc.vup>+30%</>、注文上限<@cc.vup>+1</>"
     },
+    "trade_ord_spd&limit[036]": {
+      "buffId": "trade_ord_spd&limit[036]",
+      "buffName": "組合の顔役",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd&limit7",
+      "sortId": 4607,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "貿易所配置時、受注効率<@cc.vup>+30%</>、注文上限<@cc.vup>+1</>"
+    },
     "trade_ord_spd&limit[100]": {
       "buffId": "trade_ord_spd&limit[100]",
       "buffName": "威圧感",
@@ -15051,6 +15218,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
       "description": "貿易所配置時、<$cc.bd_B><@cc.rem>静かなる共鳴</></><@cc.vup>2</>につき、受注効率<@cc.vup>+1%</>"
+    },
+    "trade_ord_spd_bd[100]": {
+      "buffId": "trade_ord_spd_bd[100]",
+      "buffName": "馴染み深い香り",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd_bd_dungeon",
+      "sortId": 4607,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "貿易所配置時、<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>1</>つにつき受注効率<@cc.vup>+1%</>"
     },
     "trade_ord_limit&cost[000]": {
       "buffId": "trade_ord_limit&cost[000]",
@@ -17644,6 +17823,18 @@
       "roomType": "DORMITORY",
       "description": "宿舎配置時、<@cc.vup>1</>の<$cc.bd_a1_a2><@cc.rem>夢</></>が<@cc.vup>1</>の<$cc.bd_a1><@cc.rem>知覚情報</></>に転化される"
     },
+    "dorm_rec_bd_dungeon[000]": {
+      "buffId": "dorm_rec_bd_dungeon[000]",
+      "buffName": "センシの大食堂",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_bd_dungeon",
+      "sortId": 5427,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "宿舎配置時、配置宿舎のレベル1につき、<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1</>"
+    },
     "dorm_rec_all[010]": {
       "buffId": "dorm_rec_all[010]",
       "buffName": "バイオリン独奏",
@@ -17763,6 +17954,18 @@
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
       "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+    },
+    "dorm_rec_all&tag[000]": {
+      "buffId": "dorm_rec_all&tag[000]",
+      "buffName": "ベテラン料理人",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_senshi",
+      "sortId": 5427,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）。対象が<$cc.tag.dungeon><@cc.kw>【ライオスパーティー】</></>所属オペレーターの場合、更に<@cc.vup>+0.15</>"
     },
     "dorm_rec_all&single[000]": {
       "buffId": "dorm_rec_all&single[000]",
@@ -18616,6 +18819,18 @@
       "roomType": "MEETING",
       "description": "応接室配置時、手がかり捜索速度<@cc.vup>+20%</>"
     },
+    "meet_spd[021]": {
+      "buffId": "meet_spd[021]",
+      "buffName": "好奇心",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spd2",
+      "sortId": 6002,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "応接室配置時、手がかり捜索速度<@cc.vup>+20%</>"
+    },
     "meet_spd[030]": {
       "buffId": "meet_spd[030]",
       "buffName": "占い",
@@ -19095,6 +19310,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "応接室配置時、手がかり捜索速度<@cc.vup>+5%</>。また、<$cc.bd_ash><@cc.rem>情報備蓄</></><@cc.vup>1</>につき、さらに<@cc.vup>+5%</>"
+    },
+    "meet_spd_bd[001]": {
+      "buffId": "meet_spd_bd[001]",
+      "buffName": "満腹時の意気込み",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_bd_dungeon",
+      "sortId": 6007,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "応接室配置時、<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>1</>つにつき手がかり捜索速度<@cc.vup>+2%</>"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -71686,6 +71913,595 @@
         "isOnly": -1,
         "quantity": 1
       },
+      "furni_rhodesKitchen_ceilingLight_01": {
+        "id": "furni_rhodesKitchen_ceilingLight_01",
+        "sortId": 1714,
+        "name": "食欲増進ライト",
+        "iconId": "furni_rhodesKitchen_ceilingLight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "LIGHT",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 5,
+        "depth": 2,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "エンジニア部がグルメキッチンのために購入した照明、食べ物をより美味しそうに見せる効果がある。\nしかし、食欲を抑えられないオペレーターたちは、この照明の下だとなおさら暴食に走ってしまうため、普通の照明器具に交換するか検討中だ。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_rhodesKitchen_dessertTable_01": {
+        "id": "furni_rhodesKitchen_dessertTable_01",
+        "sortId": 1715,
+        "name": "グミのデザートテーブル",
+        "iconId": "furni_rhodesKitchen_dessertTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 7,
+        "depth": 3,
+        "height": 4,
+        "comfort": 285,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "グムが自分で飾りつけをしたデザートテーブル。ロサに褒められたクマちゃんのアイシングクッキーは、彼女が丁寧に一筆ずつ描き上げたものだ。\nイースチナとロサはよく本を片手に、ここで静かに午後のティータイムを楽しんでいる。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_setTable_01": {
+        "id": "furni_rhodesKitchen_setTable_01",
+        "sortId": 1716,
+        "name": "シャマレのデザートテーブル",
+        "iconId": "furni_rhodesKitchen_setTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 7,
+        "depth": 3,
+        "height": 3,
+        "comfort": 270,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "シャマレが飾りつけをしたデザートテーブル。練習をしたおかげで、今の彼女はとても可愛いお菓子を作れるようになった。\n「楽しい味がするって、モルテが言ってる。」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_dessertCabinet_01": {
+        "id": "furni_rhodesKitchen_dessertCabinet_01",
+        "sortId": 1717,
+        "name": "体力補充オヤツラック",
+        "iconId": "furni_rhodesKitchen_dessertCabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 290,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "お菓子とドリンクを同時にしまっておける大型ラック。中はエネルギーを補給できる様々な食べ物でいっぱいだ。\nキアーベが緑色の缶詰を食べたあと、その缶に書いてあるキャラクターと同じポーズを取っているのをほぼ毎日目撃できる……ブローカでもアオスタでもいいから、誰かなんとかして！",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_deliveryCar_01": {
+        "id": "furni_rhodesKitchen_deliveryCar_01",
+        "sortId": 1718,
+        "name": "「シーンお嬢様のご注文」",
+        "iconId": "furni_rhodesKitchen_deliveryCar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 135,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "注意！食堂の配膳ロボットではありません。載っている料理を勝手に取らないようにお願いします。これはシーンお嬢様の「レンズ」です！\n「シーンお嬢様は辛いものが食べたいとおっしゃいました！」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_boxLight_01": {
+        "id": "furni_rhodesKitchen_boxLight_01",
+        "sortId": 1719,
+        "name": "ロドスキッチン電飾看板",
+        "iconId": "furni_rhodesKitchen_boxLight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLLAMP",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 2,
+        "depth": 1,
+        "height": 2,
+        "comfort": 55,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "クロージャが自らデザインした電飾看板。メインビジュアルにナイフとフォーク、背景にロドスのロゴが使われている。オレンジ色のライトは温もりを感じさせてくれる。\nお一ついかが？",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_ceilingLight_02": {
+        "id": "furni_rhodesKitchen_ceilingLight_02",
+        "sortId": 1720,
+        "name": "温かなランプ",
+        "iconId": "furni_rhodesKitchen_ceilingLight_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 1,
+        "depth": 1,
+        "height": 3,
+        "comfort": 40,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "エンジニア部がグルメキッチンのために購入した照明、食べ物をより美味しそうに見せる効果がある。\n冷めてしまうと美味しくなくなってしまう料理もあるので、こちらも加熱機能付きの照明器具に交換するか検討中だ。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 4,
+        "quantity": 4
+      },
+      "furni_rhodesKitchen_spicesPlant_01": {
+        "id": "furni_rhodesKitchen_spicesPlant_01",
+        "sortId": 1721,
+        "name": "ビュッフェ式香辛料鉢",
+        "iconId": "furni_rhodesKitchen_spicesPlant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "SHELF",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 3,
+        "depth": 1,
+        "height": 2,
+        "comfort": 65,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "オペレーターたちが育てている香辛料の鉢植え。ステーキを焼いている時やソースを作る際は、適時にここから摘み取って使っている。\n高い位置に置いているのは、一部のフェリーンのオペレーターが無意識に吸い寄せられ、混乱を引き起こすのを防ぐためだ。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_chair_01": {
+        "id": "furni_rhodesKitchen_chair_01",
+        "sortId": 1722,
+        "name": "腹ペコさんのイス",
+        "iconId": "furni_rhodesKitchen_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 135,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "青い一人掛けのイス。人間工学に基づいた設計で、リラックスしながら食事を楽しめる。\nケーちゃんがよく座っている。彼女はいつも着席するやいなやすぐに食べ始めるため、イスにこのような呼び名がついた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_chair_02": {
+        "id": "furni_rhodesKitchen_chair_02",
+        "sortId": 1723,
+        "name": "山さんのイス",
+        "iconId": "furni_rhodesKitchen_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 95,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "青い一人掛けのイス。人間工学に基づいた設計で、リラックスしながら食事を楽しめる。\nマウンテンがよく座っている。彼は大食いではあるが、食事中は落ち着いた所作で山のようにじっとしているため、イスにこのような呼び名がついた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 4,
+        "quantity": 4
+      },
+      "furni_rhodesKitchen_chair_03": {
+        "id": "furni_rhodesKitchen_chair_03",
+        "sortId": 1724,
+        "name": "「怪奇現象」さんのイス",
+        "iconId": "furni_rhodesKitchen_chair_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 135,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "青い一人掛けのイス。人間工学に基づいた設計で、リラックスしながら食事を楽しめる。\nイーサンがよく座っている。彼は食べ足りない時、よく姿を隠して他人の食べ物をくすね、料理が「忽然と消える」のような怪奇現象を引き起こすため、イスにこのような呼び名がついた。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_festTable_01": {
+        "id": "furni_rhodesKitchen_festTable_01",
+        "sortId": 1725,
+        "name": "ご馳走テーブル",
+        "iconId": "furni_rhodesKitchen_festTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 12,
+        "depth": 3,
+        "height": 5,
+        "comfort": 470,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "たくさんの料理が並べられた大きなテーブル。オペレーターたちが皆で用意した料理は、どれも美味しそうで食欲をそそる。\nゴールデングローの静電気ポップコーンに、スカイフレアの焼き栗。ビーンストークが作ったハガネガニのフラワーケーキ、それとウォーミー特製のニンジンとお肉のシチュー……よだれをテーブルに垂らさないよう気を付けて！",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_fridge_01": {
+        "id": "furni_rhodesKitchen_fridge_01",
+        "sortId": 1726,
+        "name": "大型冷蔵庫",
+        "iconId": "furni_rhodesKitchen_fridge_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COOKING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 5,
+        "depth": 2,
+        "height": 8,
+        "comfort": 255,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "冷凍、冷蔵、鮮度保持の三大機能を備えている。オペレーターそれぞれの好物もすべて余裕もって入れられるたっぷりサイズ。\n冷蔵庫に貼り付けられたマグネットは、オペレーターたちの手作り。中でも特に人気なのは、フライ返しを手に目玉焼きを焼いているグムのイラストのもので、量産を待ち望む声も多い。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_ceilingCabinet_01": {
+        "id": "furni_rhodesKitchen_ceilingCabinet_01",
+        "sortId": 1727,
+        "name": "キッチン用つり棚",
+        "iconId": "furni_rhodesKitchen_ceilingCabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "SHELF",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 10,
+        "depth": 2,
+        "height": 6,
+        "comfort": 195,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "レンジフードや照明、簡易的なツールフックが備え付けられたつり棚。超強力な換気機能により、料理中のオペレーターたちを空気の汚れから守ってくれる。\n棚の中にはキッチン用品がしまってあるため、開ける際は落下物に注意すること。そして、隣にいるオペレーターに頭をぶつけないよう気をつけること。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_stove_01": {
+        "id": "furni_rhodesKitchen_stove_01",
+        "sortId": 1728,
+        "name": "洗練された調理場",
+        "iconId": "furni_rhodesKitchen_stove_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COOKING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 12,
+        "depth": 2,
+        "height": 4,
+        "comfort": 350,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "三口コンロが備えつけられた高品質の調理台。三つの料理を同時進行で調理できる。\n右側のシンクは食材を洗い、左側のコンセントで予めお湯を沸かすことができる。マッターホルンはこの調理台を大変気に入っているが、セットになっているつり棚を開け閉めする際に、角にぶつからなければもっといいのにと思っている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_carpet_01": {
+        "id": "furni_rhodesKitchen_carpet_01",
+        "sortId": 1729,
+        "name": "ハガネガニカーペット",
+        "iconId": "furni_rhodesKitchen_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 7,
+        "depth": 4,
+        "height": 1,
+        "comfort": 65,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ハガネガニ模様のふかふかカーペット。滑りにくく、摩擦にも強い。明るく爽やかな緑色は人々の心を癒してくれる。\nカーペットの模様のモデルを務めたぴーちゃんは、報酬として高級フードを三食分もらった。ご機嫌なぴーちゃんは、その日花を三輪も咲かせたのだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_teaTable_01": {
+        "id": "furni_rhodesKitchen_teaTable_01",
+        "sortId": 1730,
+        "name": "ハガネガニティースタンド",
+        "iconId": "furni_rhodesKitchen_teaTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 2,
+        "depth": 4,
+        "height": 5,
+        "comfort": 185,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ビーンストークが、自分のハガネガニシリーズのデザートを宣伝するために申請したデザートスタンド。\nハガネガニシリーズに新作登場！ビーンストークが開発及び制作をしたハガネガニの花茶、フラワーケーキ、それとフラワークッキー！どうぞご自由にお取りください！",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_wallpaper_01": {
+        "id": "furni_rhodesKitchen_wallpaper_01",
+        "sortId": 1731,
+        "name": "暖色のキッチンタイル",
+        "iconId": "furni_rhodesKitchen_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ロドスらしさが詰まったキッチンの壁紙。キッチンの環境を整えるために、エンジニア部が開発した。耐油、防水、耐高熱、耐摩擦、耐酸性、耐腐蝕と、すべての性能を兼ね備えている。\nほら、ここに外の景色を眺められるスペースもきちんと確保されている。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_floor_01": {
+        "id": "furni_rhodesKitchen_floor_01",
+        "sortId": 1732,
+        "name": "暖色のキッチンフロア",
+        "iconId": "furni_rhodesKitchen_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "宿舎に飾れば、雰囲気を良くする。",
+        "description": "ロドスらしさが詰まったキッチンの壁紙。同じくキッチンの環境を整えるために、エンジニア部が開発した。耐油、防水、耐高熱、耐摩擦、耐酸性、耐腐蝕と、すべての性能を兼ね備えている。\nこぼしてしまった飲み物も、しつこい油汚れも、この床ならサッと一拭きするだけで、跡形もなくきれいさっぱりだ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -94768,6 +95584,198 @@
           "furni_amuselounge_wallpaper_01",
           "furni_amuselounge_floor_01"
         ]
+      },
+      "furni_set_rhodesKitchen": {
+        "id": "furni_set_rhodesKitchen",
+        "sortId": 99,
+        "name": "お披露目\nグルメキッチン",
+        "themeType": "EVENT",
+        "desc": "ロドスがオペレーターたちの料理を披露するための部屋。料理に関するどんなアイディアも、この部屋で実現できる！",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_01",
+            "pos0": 1,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_01",
+            "pos0": 28,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_dessertTable_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_setTable_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_dessertCabinet_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_deliveryCar_01",
+            "pos0": 8,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_boxLight_01",
+            "pos0": 12,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 12,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 16,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 20,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 24,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_spicesPlant_01",
+            "pos0": 14,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_01",
+            "pos0": 10,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 12,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 15,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 19,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 22,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_03",
+            "pos0": 24,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_festTable_01",
+            "pos0": 12,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_fridge_01",
+            "pos0": 17,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingCabinet_01",
+            "pos0": 23,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_stove_01",
+            "pos0": 22,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_carpet_01",
+            "pos0": 26,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_teaTable_01",
+            "pos0": 29,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_rhodesKitchen_1",
+          "furni_set_rhodesKitchen_2",
+          "furni_set_rhodesKitchen_3",
+          "furni_set_rhodesKitchen_4"
+        ],
+        "furnitures": [
+          "furni_rhodesKitchen_ceilingLight_01",
+          "furni_rhodesKitchen_dessertTable_01",
+          "furni_rhodesKitchen_setTable_01",
+          "furni_rhodesKitchen_dessertCabinet_01",
+          "furni_rhodesKitchen_deliveryCar_01",
+          "furni_rhodesKitchen_boxLight_01",
+          "furni_rhodesKitchen_ceilingLight_02",
+          "furni_rhodesKitchen_spicesPlant_01",
+          "furni_rhodesKitchen_chair_01",
+          "furni_rhodesKitchen_chair_02",
+          "furni_rhodesKitchen_chair_03",
+          "furni_rhodesKitchen_festTable_01",
+          "furni_rhodesKitchen_fridge_01",
+          "furni_rhodesKitchen_ceilingCabinet_01",
+          "furni_rhodesKitchen_stove_01",
+          "furni_rhodesKitchen_carpet_01",
+          "furni_rhodesKitchen_teaTable_01",
+          "furni_rhodesKitchen_wallpaper_01",
+          "furni_rhodesKitchen_floor_01"
+        ]
       }
     },
     "groups": {
@@ -100385,6 +101393,65 @@
           "furni_amuselounge_chest_01",
           "furni_amuselounge_bed_01",
           "furni_amuselounge_floor_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_1": {
+        "id": "furni_set_rhodesKitchen_1",
+        "sortId": 1,
+        "name": "おやつエリア",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 240,
+        "count": 4,
+        "furniture": [
+          "furni_rhodesKitchen_setTable_01",
+          "furni_rhodesKitchen_dessertTable_01",
+          "furni_rhodesKitchen_dessertCabinet_01",
+          "furni_rhodesKitchen_deliveryCar_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_2": {
+        "id": "furni_set_rhodesKitchen_2",
+        "sortId": 2,
+        "name": "食材保存エリア",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 195,
+        "count": 6,
+        "furniture": [
+          "furni_rhodesKitchen_ceilingLight_01",
+          "furni_rhodesKitchen_ceilingLight_02",
+          "furni_rhodesKitchen_boxLight_01",
+          "furni_rhodesKitchen_spicesPlant_01",
+          "furni_rhodesKitchen_fridge_01",
+          "furni_rhodesKitchen_wallpaper_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_3": {
+        "id": "furni_set_rhodesKitchen_3",
+        "sortId": 3,
+        "name": "美食堪能エリア",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 265,
+        "count": 4,
+        "furniture": [
+          "furni_rhodesKitchen_chair_01",
+          "furni_rhodesKitchen_chair_02",
+          "furni_rhodesKitchen_chair_03",
+          "furni_rhodesKitchen_festTable_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_4": {
+        "id": "furni_set_rhodesKitchen_4",
+        "sortId": 4,
+        "name": "料理体験エリア",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 240,
+        "count": 5,
+        "furniture": [
+          "furni_rhodesKitchen_stove_01",
+          "furni_rhodesKitchen_carpet_01",
+          "furni_rhodesKitchen_ceilingCabinet_01",
+          "furni_rhodesKitchen_teaTable_01",
+          "furni_rhodesKitchen_floor_01"
         ]
       }
     },

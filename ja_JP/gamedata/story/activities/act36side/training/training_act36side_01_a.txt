@@ -1,0 +1,19 @@
+[HEADER] 活动36side教学关_a
+[executeactionarray(target="char_4142_laios", key="stop_sp_recovery")]
+[camerafocusto(offsetX="3.5", offsetY="4", time="1", scale="CLOSE")]
+[delay(time="1")]
+[name="ライオス", avatarId="char_4142_laios", isAvatarRight="FALSE"]腹いっぱい食べたおかげで元気もいっぱいだ。気付けば随分遠くまで歩いてきたな。
+[delay(time="1")]
+[summonenemy(enemyId="enemy_1001_bigbo", x="4", y="4", endX="4", endY="5", countAsKilled="True")]
+[move(enemyId="enemy_1001_bigbo", row="4", col="4")]
+[delay(time="0.5")]
+[playAnim(enemyId="enemy_1001_bigbo", anim="Idle", dir="LEFT")]
+[name="ビッグボブ", avatarId="npc_010", isAvatarRight="TRUE"]待て待て！まったく、どうしてそんなに急ぐんだか……
+[playAnim(charId="char_4142_laios", anim="Idle", dir="RIGHT")]
+[delay(time="1")]
+[name="ライオス", avatarId="char_4142_laios", isAvatarRight="FALSE"]ビッグボブじゃないか！まだ何か用事でも？
+[name="ビッグボブ", avatarId="npc_010", isAvatarRight="TRUE"]野外調理の重要なポイントを、まだ伝えていなかったと思ってな。
+[name="ビッグボブ", avatarId="npc_010", isAvatarRight="TRUE"]君たちも、せっかくなら毎食、先ほどのような美味しいものを食べたいだろう？
+[resetCamera(time="1.5")]
+[executeactionarray(target="char_4142_laios", key="recover_sp_recovery")]
+[end]

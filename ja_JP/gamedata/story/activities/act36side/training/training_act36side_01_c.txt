@@ -1,0 +1,55 @@
+[HEADER(is_tutorial=true, is_skippable=false)]  活动36side教学关_c
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.3)]
+[PopupDialog(dialogHead="$avatar_bigbo")]冒険中は、空腹になると<@tu.kw>HPが減少し続け</>、さらにその減少速度は<@tu.kw>徐々に早くなっていく</>。
+[Tutorial(focusX=50, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=2, dialogHead="$avatar_bigbo",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]だが、この<@tu.kw>大鍋</>があれば、周囲の食材を使って腹を満たすことができるぞ。
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=4)]
+[Battle.Pause]
+[Tutorial(focusX=50, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=2, dialogHead="$avatar_bigbo",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]<@tu.kw>食べられる</>敵を倒すと、その可食部が食材として鍋に入る。
+[Tutorial(focusX=50, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=2, dialogHead="$avatar_bigbo",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]敵の重量が<@tu.kw>重ければ重い</>ほど、得られる食材も多くなるぞ。
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=11)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, validX=50, validY=100, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="char_info", focusX=50, focusY=100, focusWidth=100, focusHeight=100, \
+          animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_bigbo", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+鍋に食材が十分に集まったら、調理を始めることができる。
+[InputBlocker(blockInput=true)]
+[Delay(time=1)]
+[Tutorial(target="btn_skill",  waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_bigbo")] \
+時間と火加減に気を配りつつ、しばらく待てば……
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0.3)]
+[PopupDialog(dialogHead="$avatar_laios")]良い香りがしてきた！　これで俺たちも、オリジムシのフルコースを作れそうだな！
+[PopupDialog(dialogHead="$avatar_marcil")]この匂い……確かに美味しそう！
+[PopupDialog(dialogHead="$avatar_bigbo")]腹を満たせば、全員の攻撃力がわずかに<@tu.kw>上昇</>し、さらにHPが持続的に<@tu.kw>回復</>する効果も得られる。
+[PopupDialog(dialogHead="$avatar_bigbo")]しかし、鍋の中の料理は<@tu.kw>徐々に減っていき</>、いずれは食べ終わってしまう。
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=3)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0.3)]
+[PopupDialog(dialogHead="$avatar_bigbo")]だから、食べられる敵を倒して、食材を<@tu.kw>補充</>し続けなければならない。
+[PopupDialog(dialogHead="$avatar_bigbo")]食べ物が尽きれば、また空腹に苛まれることになるからな。
+[Tutorial(dialogHead="$avatar_laios",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]えっ？　腹を空かせたくはないんだが――
+[PopupDialog(dialogHead="$avatar_bigbo")]時折、<@tu.kw>特別な敵</>に遭遇することもあるだろう。
+[PopupDialog(dialogHead="$avatar_bigbo")]たとえば、あそこで眠っている虫が見えるか？
+[Tutorial(dialogHead="$avatar_marcil",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]どれどれ……
+[Battle.Pause(pause=false)]
