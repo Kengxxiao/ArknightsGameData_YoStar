@@ -1,0 +1,55 @@
+[HEADER(is_tutorial=true, is_skippable=false)]  活动36side教学关_c
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.3)]
+[PopupDialog(dialogHead="$avatar_bigbo")]Traveling in the wastes will cause hungry adventurers to <@tu.kw>continuously lose HP</>, and they'll lose <@tu.kw>more and more HP</> over time.
+[Tutorial(focusX=50, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=2, dialogHead="$avatar_bigbo",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]All you need is this <@tu.kw>Big Pot</>, and you can eat your fill of nearby ingredients.
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=4)]
+[Battle.Pause]
+[Tutorial(focusX=50, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=2, dialogHead="$avatar_bigbo",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Defeat <@tu.kw>edible</> enemies and their ingredients will be added into the pot.
+[Tutorial(focusX=50, focusY=100, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=2, dialogHead="$avatar_bigbo",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]<@tu.kw>Heavier</> enemies will provide more ingredients.
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=11)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, validX=50, validY=100, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="char_info", focusX=50, focusY=100, focusWidth=100, focusHeight=100, \
+          animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_bigbo", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+You can begin cooking once the pot is full.
+[InputBlocker(blockInput=true)]
+[Delay(time=1)]
+[Tutorial(target="btn_skill",  waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_bigbo")] \
+When cooking, make sure to pay attention to both time and heat. Just one moment...
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0.3)]
+[PopupDialog(dialogHead="$avatar_laios")]Smells great! Now we can cook up our own Originium slug feast too!
+[PopupDialog(dialogHead="$avatar_marcil")]A familiar aroma!
+[PopupDialog(dialogHead="$avatar_bigbo")]Operators who have eaten will <@tu.kw>gain</> a slight ATK increase, and continuously <@tu.kw>recover</> HP.
+[PopupDialog(dialogHead="$avatar_bigbo")]But the food inside the pot will <@tu.kw>deplete</> over time and eventually run out.
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=3)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0.3)]
+[PopupDialog(dialogHead="$avatar_bigbo")]You can defeat edible enemies to <@tu.kw>refill</> the pot.
+[PopupDialog(dialogHead="$avatar_bigbo")]If the pot runs out of food, you'll have to go hungry again.
+[Tutorial(dialogHead="$avatar_laios",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Huh? I don't want to feel hungry again...
+[PopupDialog(dialogHead="$avatar_bigbo")]Sometimes, you might meet <@tu.kw>unusual enemies</>.
+[PopupDialog(dialogHead="$avatar_bigbo")]For example, see that sleeping slug over there?
+[Tutorial(dialogHead="$avatar_marcil",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]I'll take a look!
+[Battle.Pause(pause=false)]

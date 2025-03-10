@@ -12409,6 +12409,125 @@
           "buffData": []
         }
       ]
+    },
+    "char_4141_marcil": {
+      "charId": "char_4141_marcil",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd[004]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "manu_prod_spd[014]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd_bd[400]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4143_sensi": {
+      "charId": "char_4143_sensi",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&tag[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_bd_dungeon[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4144_chilc": {
+      "charId": "char_4144_chilc",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&limit[036]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd_bd[100]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4142_laios": {
+      "charId": "char_4142_laios",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd[021]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_bd[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -13684,6 +13803,30 @@
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, productivity <@cc.vup>+30%</>"
     },
+    "manu_prod_spd[004]": {
+      "buffId": "manu_prod_spd[004]",
+      "buffName": "Familiar Dispatch α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_marcille1",
+      "sortId": 3562,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, productivity <@cc.vup>+20%</>"
+    },
+    "manu_prod_spd[014]": {
+      "buffId": "manu_prod_spd[014]",
+      "buffName": "Familiar Dispatch β",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_marcille2",
+      "sortId": 3562,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, productivity <@cc.vup>+30%</>"
+    },
     "manu_skill_spd1[000]": {
       "buffId": "manu_skill_spd1[000]",
       "buffName": "Consciousness Agreement",
@@ -14235,6 +14378,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, for every <@cc.vup>3</> <$cc.bd_b1><@cc.rem>Worldly Plight</></>, Productivity <@cc.vup>+1%</>"
+    },
+    "manu_prod_spd_bd[400]": {
+      "buffId": "manu_prod_spd_bd[400]",
+      "buffName": "Unexpectedly Delicious",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd_bd_dungeon",
+      "sortId": 3562,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.vup>+1%</> productivity for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
     },
     "manu_formula_spd[000]": {
       "buffId": "manu_formula_spd[000]",
@@ -14968,6 +15123,18 @@
       "roomType": "TRADING",
       "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</> and the order limit <@cc.vup>+1</>"
     },
+    "trade_ord_spd&limit[036]": {
+      "buffId": "trade_ord_spd&limit[036]",
+      "buffName": "Half-foot Guild Representative",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd&limit7",
+      "sortId": 4607,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</> and the order limit <@cc.vup>+1</>"
+    },
     "trade_ord_spd&limit[100]": {
       "buffId": "trade_ord_spd&limit[100]",
       "buffName": "Intimidate",
@@ -15051,6 +15218,18 @@
       "buffCategory": "OUTPUT",
       "roomType": "TRADING",
       "description": "When this Operator is assigned to a Trading Post, for every <@cc.vup>2</> <$cc.bd_B><@cc.rem>Soundless Resonance</></>, <@cc.vup>+1%</> order efficiency"
+    },
+    "trade_ord_spd_bd[100]": {
+      "buffId": "trade_ord_spd_bd[100]",
+      "buffName": "Familiar Flavors",
+      "buffIcon": "trading",
+      "skillIcon": "bskill_tra_spd_bd_dungeon",
+      "sortId": 4607,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+1%</> for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
     },
     "trade_ord_limit&cost[000]": {
       "buffId": "trade_ord_limit&cost[000]",
@@ -17644,6 +17823,18 @@
       "roomType": "DORMITORY",
       "description": "When this Operator is assigned to a Dormitory, every <@cc.vup>1</> levels of <$cc.bd_a1_a2><@cc.rem>Dreamland</></> is converted into <@cc.vup>1</> points of <$cc.bd_a1><@cc.rem>Perception Information</></>"
     },
+    "dorm_rec_bd_dungeon[000]": {
+      "buffId": "dorm_rec_bd_dungeon[000]",
+      "buffName": "Senshi's Diner",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_bd_dungeon",
+      "sortId": 5427,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, provide <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></> for every level of the current Dormitory"
+    },
     "dorm_rec_all[010]": {
       "buffId": "dorm_rec_all[010]",
       "buffName": "Violin Solo",
@@ -17763,6 +17954,18 @@
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
       "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    "dorm_rec_all&tag[000]": {
+      "buffId": "dorm_rec_all&tag[000]",
+      "buffName": "Veteran Cook",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_senshi",
+      "sortId": 5427,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place); if the target is a <$cc.tag.dungeon><@cc.kw>Laios's Party</></> Operator, restore an additional <@cc.vup>+0.15</> Morale"
     },
     "dorm_rec_all&single[000]": {
       "buffId": "dorm_rec_all&single[000]",
@@ -18616,6 +18819,18 @@
       "roomType": "MEETING",
       "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
     },
+    "meet_spd[021]": {
+      "buffId": "meet_spd[021]",
+      "buffName": "Curiosity",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spd2",
+      "sortId": 6002,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
+    },
     "meet_spd[030]": {
       "buffId": "meet_spd[030]",
       "buffName": "Divination",
@@ -19095,6 +19310,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>5%</>, with an additional <@cc.vup>5%</> for every <@cc.vup>1</> <$cc.bd_ash><@cc.rem>Intelligence Reserve</></>"
+    },
+    "meet_spd_bd[001]": {
+      "buffId": "meet_spd_bd[001]",
+      "buffName": "Gourmand",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_bd_dungeon",
+      "sortId": 6007,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by an additional <@cc.vup>2%</> for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
     },
     "meet_spd_hast[000]": {
       "buffId": "meet_spd_hast[000]",
@@ -71686,6 +71913,595 @@
         "isOnly": -1,
         "quantity": 1
       },
+      "furni_rhodesKitchen_ceilingLight_01": {
+        "id": "furni_rhodesKitchen_ceilingLight_01",
+        "sortId": 1714,
+        "name": "Elegant Hanging Lamp",
+        "iconId": "furni_rhodesKitchen_ceilingLight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "LIGHT",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 5,
+        "depth": 2,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Special photoflood lamps installed by Engineering to make the food look more enticing. Lately they've been thinking about switching to normal lamps, as some operators are having trouble controlling themselves.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "quantity": 2
+      },
+      "furni_rhodesKitchen_dessertTable_01": {
+        "id": "furni_rhodesKitchen_dessertTable_01",
+        "sortId": 1715,
+        "name": "Little Cub Ice Cream Table",
+        "iconId": "furni_rhodesKitchen_dessertTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 7,
+        "depth": 3,
+        "height": 4,
+        "comfort": 285,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A dessert table arranged and decorated by Gummy. She meticulously drew the Little Cub cookie patterns herself, earning praise from Rosa. Istina and Rosa often sit here to read, quietly enjoying their afternoon tea.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_setTable_01": {
+        "id": "furni_rhodesKitchen_setTable_01",
+        "sortId": 1716,
+        "name": "Shamare's Dessert Table",
+        "iconId": "furni_rhodesKitchen_setTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 7,
+        "depth": 3,
+        "height": 3,
+        "comfort": 270,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A dessert table arranged and decorated by Shamare. She's spent some time practicing and is now able to craft elegant, delicious desserts. 'Morte says they taste like pure happiness.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_dessertCabinet_01": {
+        "id": "furni_rhodesKitchen_dessertCabinet_01",
+        "sortId": 1717,
+        "name": "Stamina-Booster Cabinet",
+        "iconId": "furni_rhodesKitchen_dessertCabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 5,
+        "depth": 2,
+        "height": 10,
+        "comfort": 290,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A large cabinet stocked with snacks and drinks. Almost every day, Chiave grabs several green cans of food, scarfs them down, and then strikes the same pose as the guy on the label. Someone—Broca? Aosta?—keep an eye on him!",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_deliveryCar_01": {
+        "id": "furni_rhodesKitchen_deliveryCar_01",
+        "sortId": 1718,
+        "name": "Scene's Spicy Food Cart",
+        "iconId": "furni_rhodesKitchen_deliveryCar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_1",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 135,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Note: This is not the dining cart from the cafeteria. You are NOT free to take food from it as you please! This is Scene's Lens! Scene says she's craving spicy food! She wants some spice in her life!",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_boxLight_01": {
+        "id": "furni_rhodesKitchen_boxLight_01",
+        "sortId": 1719,
+        "name": "Rhodes Restaurant Logo Lamp",
+        "iconId": "furni_rhodesKitchen_boxLight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLLAMP",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 2,
+        "depth": 1,
+        "height": 2,
+        "comfort": 55,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A logo lamp designed personally by Closure. It features a knife and fork set in front of the Rhodes Island emblem, its warm yellow glow adding a cozy touch. Who WOULDN'T want one?",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_ceilingLight_02": {
+        "id": "furni_rhodesKitchen_ceilingLight_02",
+        "sortId": 1720,
+        "name": "Warm Yellow Hanging Lamp",
+        "iconId": "furni_rhodesKitchen_ceilingLight_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 1,
+        "depth": 1,
+        "height": 3,
+        "comfort": 40,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Special photoflood lamps purchased and installed by Engineering to make the food look more enticing. Recently, they've been considering replacing them with heat lamps—after all, some foods are best served warm.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 4,
+        "quantity": 4
+      },
+      "furni_rhodesKitchen_spicesPlant_01": {
+        "id": "furni_rhodesKitchen_spicesPlant_01",
+        "sortId": 1721,
+        "name": "Grab 'n Go Potted Herbs",
+        "iconId": "furni_rhodesKitchen_spicesPlant_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "SHELF",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 3,
+        "depth": 1,
+        "height": 2,
+        "comfort": 65,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Herbs grown by the operators, used for grilling or to make sauces. This particular mix of herbs is similar to catnip. Thus, the planters are kept up high, ensuring that Feline operators can focus on their work.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_chair_01": {
+        "id": "furni_rhodesKitchen_chair_01",
+        "sortId": 1722,
+        "name": "Eater's Chair",
+        "iconId": "furni_rhodesKitchen_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 135,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A blue, ergonomic single-seater—relax and enjoy your favorite food. This is Kay's favorite chair—she starts eating as soon as she sits down, which is how it got its name.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_chair_02": {
+        "id": "furni_rhodesKitchen_chair_02",
+        "sortId": 1723,
+        "name": "Mountain's Chair",
+        "iconId": "furni_rhodesKitchen_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 95,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A blue, ergonomic single-seater—relax and enjoy your favorite food. This is Mountain's favorite chair—his calm and steady eating style while he sits steady as a mountain earned this its name.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 4,
+        "quantity": 4
+      },
+      "furni_rhodesKitchen_chair_03": {
+        "id": "furni_rhodesKitchen_chair_03",
+        "sortId": 1724,
+        "name": "Stealth Chair",
+        "iconId": "furni_rhodesKitchen_chair_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 2,
+        "depth": 2,
+        "height": 3,
+        "comfort": 135,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A blue, ergonomic single-seater—relax and enjoy your favorite food. This is Ethan's favorite chair—he sometimes steals other's food while camouflaged. That's how this got its name.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_festTable_01": {
+        "id": "furni_rhodesKitchen_festTable_01",
+        "sortId": 1725,
+        "name": "Feasting Table",
+        "iconId": "furni_rhodesKitchen_festTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_3",
+        "width": 12,
+        "depth": 3,
+        "height": 5,
+        "comfort": 470,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The operators have piled this table high with scrumptious dishes. There's Goldenglow's electrostatic popcorn, Skyfire's roasted chestnuts, Beanstalk's metal crab flower cupcakes, and Warmy's carrot stew—try not to drool on the table!",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_fridge_01": {
+        "id": "furni_rhodesKitchen_fridge_01",
+        "sortId": 1726,
+        "name": "High-Capacity Fridge",
+        "iconId": "furni_rhodesKitchen_fridge_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COOKING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 5,
+        "depth": 2,
+        "height": 8,
+        "comfort": 255,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A spacious refrigerator with a crisper and a freezer. The operators handmade all the fridge magnets—the one of Gummy frying a fowlbeast egg is everyone's favorite. When can we start mass-producing these?",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_ceilingCabinet_01": {
+        "id": "furni_rhodesKitchen_ceilingCabinet_01",
+        "sortId": 1727,
+        "name": "Hanging Kitchen Cabinet",
+        "iconId": "furni_rhodesKitchen_ceilingCabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "SHELF",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 10,
+        "depth": 2,
+        "height": 6,
+        "comfort": 195,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A wall cabinet equipped with a range hood, lighting, and strong ventilation to ensure a safe, clean cooking environment. It holds lots of cooking supplies. Be careful when opening it, lest a sharp object fall on your head.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_stove_01": {
+        "id": "furni_rhodesKitchen_stove_01",
+        "sortId": 1728,
+        "name": "Premium Stove",
+        "iconId": "furni_rhodesKitchen_stove_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COOKING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 12,
+        "depth": 2,
+        "height": 4,
+        "comfort": 350,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A stovetop with three burners. There's a sink on the right and an electrical outlet on the left. Matterhorn loves this stovetop, though he wishes the cabinet doors wouldn't hit his horns when they're opened.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_carpet_01": {
+        "id": "furni_rhodesKitchen_carpet_01",
+        "sortId": 1729,
+        "name": "Metal Crab Rug",
+        "iconId": "furni_rhodesKitchen_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 7,
+        "depth": 4,
+        "height": 1,
+        "comfort": 65,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A soft, non-slip, bright-green carpet adorned with a metal crab flower pattern. Peacake modeled for the carpet design and earned three gourmet treats as payment. She's in great spirits: she bloomed three flowers in a single day!",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_teaTable_01": {
+        "id": "furni_rhodesKitchen_teaTable_01",
+        "sortId": 1730,
+        "name": "Metal Crab Dessert Table",
+        "iconId": "furni_rhodesKitchen_teaTable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "CATERING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 2,
+        "depth": 4,
+        "height": 5,
+        "comfort": 185,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A dessert stand specially requested by Beanstalk to showcase her metal crab dessert series. New desserts have arrived! Come enjoy some metal crab flower tea, metal crab flower cupcakes, and metal crab flower cookies!",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_wallpaper_01": {
+        "id": "furni_rhodesKitchen_wallpaper_01",
+        "sortId": 1731,
+        "name": "Warm Kitchen Wallpaper",
+        "iconId": "furni_rhodesKitchen_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Rhodes Island's fun kitchen wallpaper, developed by the Engineering Department. It's oil-proof, waterproof, heat-resistant, and resistant to wear, acid, and corrosion. Look, there's even an open section so you can admire the view!",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_rhodesKitchen_floor_01": {
+        "id": "furni_rhodesKitchen_floor_01",
+        "sortId": 1732,
+        "name": "Warm Kitchen Flooring",
+        "iconId": "furni_rhodesKitchen_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_rhodesKitchen",
+        "groupId": "furni_set_rhodesKitchen_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Rhodes Island's fun kitchen flooring, developed by the Engineering Department. It's oil-proof, waterproof, heat-resistant, and resistant to wear, acid, and corrosion. Spilled drinks, stubborn oil stains? A quick wipe, and they're gone.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -94706,6 +95522,198 @@
           "furni_amuselounge_wallpaper_01",
           "furni_amuselounge_floor_01"
         ]
+      },
+      "furni_set_rhodesKitchen": {
+        "id": "furni_set_rhodesKitchen",
+        "sortId": 99,
+        "name": "Operators' Potluck Party",
+        "themeType": "EVENT",
+        "desc": "A room in Rhodes Island for showcasing the operators' culinary talents. Whatever creative cooking ideas you have can come to life here!",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_01",
+            "pos0": 1,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_01",
+            "pos0": 28,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_dessertTable_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_setTable_01",
+            "pos0": 0,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_dessertCabinet_01",
+            "pos0": 7,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_deliveryCar_01",
+            "pos0": 8,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_boxLight_01",
+            "pos0": 12,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 12,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 16,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 20,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingLight_02",
+            "pos0": 24,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_spicesPlant_01",
+            "pos0": 14,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_01",
+            "pos0": 10,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 12,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 15,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 19,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_02",
+            "pos0": 22,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_chair_03",
+            "pos0": 24,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_festTable_01",
+            "pos0": 12,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_fridge_01",
+            "pos0": 17,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_ceilingCabinet_01",
+            "pos0": 23,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_stove_01",
+            "pos0": 22,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_carpet_01",
+            "pos0": 26,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_teaTable_01",
+            "pos0": 29,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_rhodesKitchen_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_rhodesKitchen_1",
+          "furni_set_rhodesKitchen_2",
+          "furni_set_rhodesKitchen_3",
+          "furni_set_rhodesKitchen_4"
+        ],
+        "furnitures": [
+          "furni_rhodesKitchen_ceilingLight_01",
+          "furni_rhodesKitchen_dessertTable_01",
+          "furni_rhodesKitchen_setTable_01",
+          "furni_rhodesKitchen_dessertCabinet_01",
+          "furni_rhodesKitchen_deliveryCar_01",
+          "furni_rhodesKitchen_boxLight_01",
+          "furni_rhodesKitchen_ceilingLight_02",
+          "furni_rhodesKitchen_spicesPlant_01",
+          "furni_rhodesKitchen_chair_01",
+          "furni_rhodesKitchen_chair_02",
+          "furni_rhodesKitchen_chair_03",
+          "furni_rhodesKitchen_festTable_01",
+          "furni_rhodesKitchen_fridge_01",
+          "furni_rhodesKitchen_ceilingCabinet_01",
+          "furni_rhodesKitchen_stove_01",
+          "furni_rhodesKitchen_carpet_01",
+          "furni_rhodesKitchen_teaTable_01",
+          "furni_rhodesKitchen_wallpaper_01",
+          "furni_rhodesKitchen_floor_01"
+        ]
       }
     },
     "groups": {
@@ -100323,6 +101331,65 @@
           "furni_amuselounge_chest_01",
           "furni_amuselounge_bed_01",
           "furni_amuselounge_floor_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_1": {
+        "id": "furni_set_rhodesKitchen_1",
+        "sortId": 1,
+        "name": "Dessert Area",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 240,
+        "count": 4,
+        "furniture": [
+          "furni_rhodesKitchen_setTable_01",
+          "furni_rhodesKitchen_dessertTable_01",
+          "furni_rhodesKitchen_dessertCabinet_01",
+          "furni_rhodesKitchen_deliveryCar_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_2": {
+        "id": "furni_set_rhodesKitchen_2",
+        "sortId": 2,
+        "name": "Storage Area",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 195,
+        "count": 6,
+        "furniture": [
+          "furni_rhodesKitchen_ceilingLight_01",
+          "furni_rhodesKitchen_ceilingLight_02",
+          "furni_rhodesKitchen_boxLight_01",
+          "furni_rhodesKitchen_spicesPlant_01",
+          "furni_rhodesKitchen_fridge_01",
+          "furni_rhodesKitchen_wallpaper_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_3": {
+        "id": "furni_set_rhodesKitchen_3",
+        "sortId": 3,
+        "name": "Feasting Area",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 265,
+        "count": 4,
+        "furniture": [
+          "furni_rhodesKitchen_chair_01",
+          "furni_rhodesKitchen_chair_02",
+          "furni_rhodesKitchen_chair_03",
+          "furni_rhodesKitchen_festTable_01"
+        ]
+      },
+      "furni_set_rhodesKitchen_4": {
+        "id": "furni_set_rhodesKitchen_4",
+        "sortId": 4,
+        "name": "Cooking Area",
+        "themeId": "furni_set_rhodesKitchen",
+        "comfort": 240,
+        "count": 5,
+        "furniture": [
+          "furni_rhodesKitchen_stove_01",
+          "furni_rhodesKitchen_carpet_01",
+          "furni_rhodesKitchen_ceilingCabinet_01",
+          "furni_rhodesKitchen_teaTable_01",
+          "furni_rhodesKitchen_floor_01"
         ]
       }
     },

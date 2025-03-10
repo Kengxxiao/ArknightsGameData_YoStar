@@ -1,0 +1,19 @@
+[HEADER] 活动36side教学关_a
+[executeactionarray(target="char_4142_laios", key="stop_sp_recovery")]
+[camerafocusto(offsetX="3.5", offsetY="4", time="1", scale="CLOSE")]
+[delay(time="1")]
+[name="Laios", avatarId="char_4142_laios", isAvatarRight="FALSE"]I'm all pumped up after that meal! How long have we been on the move?
+[delay(time="1")]
+[summonenemy(enemyId="enemy_1001_bigbo", x="4", y="4", endX="4", endY="5", countAsKilled="True")]
+[move(enemyId="enemy_1001_bigbo", row="4", col="4")]
+[delay(time="0.5")]
+[playAnim(enemyId="enemy_1001_bigbo", anim="Idle", dir="LEFT")]
+[name="Big Bob", avatarId="npc_010", isAvatarRight="TRUE"]Slow down! What's the rush?
+[playAnim(charId="char_4142_laios", anim="Idle", dir="RIGHT")]
+[delay(time="1")]
+[name="Laios", avatarId="char_4142_laios", isAvatarRight="FALSE"]Big Bob! What's the matter?
+[name="Big Bob", avatarId="npc_010", isAvatarRight="TRUE"]I just remembered I left out an important outdoor cooking lesson.
+[name="Big Bob", avatarId="npc_010", isAvatarRight="TRUE"]I'm sure you'd like more meals as filling as that last one, right?
+[resetCamera(time="1.5")]
+[executeactionarray(target="char_4142_laios", key="recover_sp_recovery")]
+[end]

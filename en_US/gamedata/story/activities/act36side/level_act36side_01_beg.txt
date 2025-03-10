@@ -1,0 +1,474 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]	
+[name="Falin"]Laios... Run!
+[Dialog]
+[PlaySound(key="$d_avg_magicreverse",volume=1)]
+[Background(image="bg_white",fadetime=1.5,screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.5, fadetime=0.1,a=1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.5, fadetime=0.1,a=1)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[PlayMusic(intro="$m_sys_act01_intro", key="$m_sys_act01_loop", volume=0.6)]
+[BackgroundTween(xScaleFrom=1.15, yScaleFrom=1.15, xScaleTo=1.15, yScaleTo=1.15, duration=2,xFrom=50, yFrom=0, xTo=0, yTo=0,duration=35, block=false,screenadapt="coverall")]
+[Background(image="bg_white",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.1, r=5, g=5, b=0, fadetime=2, block=true)]
+[curtain(direction = 0,fillfrom = 0.5,fillto = 0.25, fadetime=1,a=1)]
+[curtain(direction = 4,fillfrom = 0.5,fillto = 0.25, fadetime=1,a=1)]
+[Delay(time=1)]	
+[charslot(slot="m",name="avg_4142_laios_1#3$1",duration=1)]
+[charslot(slot="m", action="zoom", poszoom = "0.35,0.65", scale=1.5,duration= 0)]
+[Delay(time=2.5)]
+[Subtitle(text="The moment she was swallowed whole by the Red Dragon, my sister Falin teleported the rest of us out of the dungeon with her magic.", x=300, y=550, alignment="center", size=24, delay=0.04, width=750)]
+[subtitle]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4144_chilc_1#7$1",duration=1)]
+[charslot(slot="m", action="zoom", poszoom = "0.65,0.49", scale=1.5,duration= 0)]
+[Delay(time=2.5)]
+[Subtitle(text="Our belongings and travel funds were all left behind. However, we had no choice but to venture into the dungeon again to rescue Falin before she's digested.", x=300, y=550, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4141_marcil_1#8$1",duration=1)]
+[charslot(slot="m", action="zoom", poszoom = "0.35,0.59", scale=1.5,duration= 0)]
+[Delay(time=2.5)]
+[Subtitle(text="On our way, we tried eating the monsters we killed to feed ourselves.", x=300, y=550, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",duration=1)]
+[charslot(slot="m", action="zoom", poszoom = "0.65,0.47", scale=1.5,duration= 0)]
+[Delay(time=1)]
+[Subtitle(text="It's been tough, but thanks to that, we met new friends, solved all kinds of problems, and learned many new things about the dungeon.", x=300, y=550, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=2.5)]
+[charslot(duration=0.5)]
+[Delay(time=1)]
+[Delay(time=2)]
+[Subtitle(text="But just as we were venturing deeper, thinking all was going well, we seem to have found ourselves in a new predicament...", x=300, y=550, alignment="center", size=24, delay=0.04, width=750)]
+[subtitle]
+[stopmusic(fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.25,fillto = 0.5, fadetime=1.5,a=1)]
+[curtain(direction = 4,fillfrom = 0.25,fillto = 0.5, fadetime=1.5,a=1)]
+[Delay(time=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlayMusic(key="$normal_loop", volume=0.6,fadetime=2)]
+[curtain]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Background(image="bg_forest",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_clothmovement",volume=1)]
+[charslot(slot="m",name="avg_4142_laios_1#3$1",posfrom="0,-20",posto="0,0",afrom=0,ato=1,isblock=true,duration=0.5)]
+[name="Laios"]Falin!
+[Dialog]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4142_laios_1#13$1",focus="m")]
+[name="Laios"]Oh... just a dream.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4141_marcil_1#7$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Marcille"]You're finally awake, Laios!
+[charslot(slot="m",name="avg_4141_marcil_1#9$1",focus="m")]
+[name="Marcille"]How are you feeling? Still dizzy?
+[charslot(slot="m",name="avg_4142_laios_1#13$1",focus="m")]
+[name="Laios"]Not really... but now that you mention it, I am feeling a little hungry.
+[charslot(slot="m",name="avg_4142_laios_1#1$1",focus="m")]
+[name="Laios"]Where are we...?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_amb_forestnight_loop",volume=0.5,channel="1",loop=true,fadetime=1.5)]
+[Delay(time=1.5)]
+[Background(image="38_g20_skyblue_R2",screenadapt="showall",fadetime=2.5)]
+[Delay(time=6)]
+[Background(image="bg_forest",screenadapt="showall",fadetime=2.5)]
+[Delay(time=3)]
+[stopsound(channel="1",fadetime=1.5)]
+[charslot(slot="m",name="avg_4142_laios_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="Laios"]The sky, the sun, the woods... and...
+[charslot(slot="m",name="avg_4141_marcil_1#11$1",focus="m")]
+[name="Marcille"]Looks like somewhere outside the dungeon, right? But no, it's not. None of us recognize this place at all. Not me, not Senshi, not even Chilchuck.
+[Dialog]
+[PlaySound(key="$d_avg_magic_1",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[PlaySound(key="$d_avg_magic_1",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4141_marcil_1#9$1",focus="m")]
+[name="Marcille"]And look. I've been getting no response at all... I've tried several times, but the spirits aren't responding to me.
+[charslot(slot="m",name="avg_4142_laios_1#1$1",focus="m")]
+[multiline(name="Laios")]That's strange...
+[charslot(slot="m",name="avg_4142_laios_1#16$1",focus="m")]
+[multiline(name="Laios",end=true)]Senshi? What are you doing?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement",volume=1)]
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",afrom=0,ato=1,duration=0.5)]
+[charslot(slot="m",posfrom="0,-20",posto="0,0",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",focus="m")]
+[name="Senshi"]Been examining the soil here.
+[charslot(slot="m",name="avg_4143_sensi_1#3$1",focus="m")]
+[name="Senshi"]Look, the soil's moist, deep in color, and starts to smell when you rub it in your palms. Which means it's got a lot of organic matter packed in there.
+[charslot(slot="m",name="avg_4141_marcil_1#5$1",focus="m")]
+[name="Marcille"]Meaning?
+[Dialog]
+[charslot(slot="m",name="avg_4143_sensi_1#2$1",focus="m")]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4143_sensi_1#3$1",focus="m")]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4143_sensi_1#3$1",focus="m")]
+[name="Senshi"]Meaning it's just perfect for planting! Aye, just like the soil on the back of a golem!
+[Dialog]
+[charslot(slot="m",name="avg_4141_marcil_1#22$1",focus="m")]
+[name="Marcille"]Who cares?!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_wing",channel="3")]
+[Delay(time=0.2)]
+[PlaySound(key="$leaveshake",channel="1")]
+[PlaySound(key="$bodyfalldown1",channel="2")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_clothmovement",volume=1)]
+[charslot(slot="m",name="avg_4144_chilc_1#15$1",posfrom="0,-20",posto="0,0",afrom=0,ato=1,isblock=true,duration=1.5)]
+[name="Chilchuck"]Pipe down, Marcille! You spooked the birds!
+[charslot(slot="m",name="avg_4144_chilc_1#12$1",focus="m")]
+[name="Chilchuck"]Well, I have good news and bad news. First, we've checked our surroundings, and haven't come across any monsters. This place should be safe.
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"]What about the good news?
+[charslot(slot="m",name="avg_4141_marcil_1#13$1",focus="m")]
+[name="Marcille"]That <i>was</i> the good news!
+[charslot(slot="m",name="avg_4141_marcil_1#1$1",focus="m")]
+[name="Marcille"]So what's the bad news?
+[charslot(slot="m",name="avg_4144_chilc_1#3$1",focus="m")]
+[name="Chilchuck"]The bad news is this place is huge, and nothing like any environment I'm familiar with.
+[charslot(slot="m",name="avg_4144_chilc_1#10$1",focus="m")]
+[name="Chilchuck"]From a high vantage point, I could tell we're on the edge of a forest.
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",focus="m")]
+[name="Senshi"]I've never seen anywhere like this in the first five floors, and haven't heard about anything like it, either.
+[charslot(slot="m",name="avg_4141_marcil_1#9$1",focus="m")]
+[name="Marcille"]Which means...
+[charslot(slot="m",name="avg_4142_laios_1#7$1",focus="m")]
+[name="Laios"]Which means...?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4144_chilc_1#7$1",focus="all")]
+[charslot(slot="r",name="avg_4141_marcil_1#2$1",focus="all")]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4143_sensi_1#3$1",focus="all")]
+[charslot(slot="r",name="avg_4142_laios_1#6$1",focus="all")]
+[Delay(time=2)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Laios's Party"]Could it be that the dungeon has changed shape?!
+[charslot]
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",focus="m")]
+[name="Senshi"]Never seen any of those birds before. Strange. An area of the dungeon? Hmm. Looks more like a whole different place to me.
+[charslot(slot="m",name="avg_4141_marcil_1#9$1",focus="m")]
+[name="Marcille"]Could this be similar to... being inside one of those paintings? Were we brought to another world?
+[charslot(slot="m",name="avg_4142_laios_1#9$1",focus="m")]
+[name="Laios"]Does that mean we'll get to see monsters no one's ever seen before?
+[charslot(slot="m",name="avg_4142_laios_1#10$1",focus="m")]
+[name="Laios"]And, if we're lucky, to taste them too?!
+[charslot(slot="m",name="avg_4141_marcil_1#4$1",focus="m")]
+[name="Marcille"]Do you even realize what you're saying?!
+[name="Marcille"]Our top priority is saving Falin, not wasting our time in whatever this place is!
+[charslot(slot="m",name="avg_4141_marcil_1#11$1",focus="m")]
+[name="Marcille"]And there's one other thing I should mention. I've tried several times now, but I'm only able to use simple magic here.
+[charslot(slot="m",name="avg_4142_laios_1#16$1",focus="m")]
+[name="Laios"]That... could be an issue.
+[charslot(slot="m",name="avg_4143_sensi_1#3$1",focus="m")]
+[name="Senshi"]What's more...
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"]There's more?
+[charslot(slot="m",name="avg_4143_sensi_1#3$1",focus="m")]
+[name="Senshi"]Something's off about the forest and this clearing here. As if someone opened up the soil for planting things. I'm quite familiar with methods like that.
+[charslot(slot="m",name="avg_4141_marcil_1#22$1",focus="m")]
+[name="Marcille"]You don't care about my magic getting weaker at all, do you?!
+[charslot(slot="m",name="avg_4144_chilc_1#1$1",focus="m")]
+[name="Chilchuck"]Come to think of it, I did spot some strange wooden hut outside the forest. Maybe there are people living there?
+[name="Chilchuck"]Let's head there and ask around, see if we can learn anything.
+[charslot(slot="m",name="avg_4141_marcil_1#9$1",focus="m")]
+[name="Marcille"]Don't change the subject!
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"]Strange wooden hut?
+[charslot(slot="m",name="avg_4142_laios_1#18$1",focus="m")]
+[name="Laios"]Let's go check it out!
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4141_marcil_1#2$1",focus="m")]
+[name="Marcille"]Hey!
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Background(image="54_g1_bobfarm",screenadapt="showall")]
+[Delay(time=2)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4141_marcil_1#13$1",duration=1.5)]
+[Delay(time=2)]
+[name="Marcille"]We need to be more cautious. We know nothing about this place.
+[name="Marcille"]Who knows what's inside? We might even encounter hostile demi-humans.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4143_sensi_1#1$1",focus="m")]
+[charslot(slot="m",name="avg_4144_chilc_1#11$1",focus="m")]
+[charslot(slot="r",name="avg_4142_laios_1#1$1",focus="m")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4144_chilc_1#11$1",focus="m")]
+[multiline(name="Chilchuck")]I suggest you let me go first to... 
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$runsand",volume=0.3)]
+[charslot(slot="l",posfrom="0,0",posto="100,0",focus="m",duration=1)]
+[charslot(slot="r",posfrom="0,0",posto="100,0",focus="m",duration=1)]
+[charslot(slot="l",afrom=1,ato=0,duration=0.5,focus="m")]
+[charslot(slot="r",afrom=1,ato=0,duration=0.5,focus="m")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4144_chilc_1#7$1",focus="m")]
+[multiline(name="Chilchuck",end=true)]Hey!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Background(image="54_g1_bobfarm",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[charslot(slot="l",name="avg_4143_sensi_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_4142_laios_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4143_sensi_1#1$1",focus="l")]
+[name="Senshi"]The hut's not big, but it's got plenty of fencing. The stakes're all planted firmly into the ground, too. Nice and steady.
+[name="Senshi"]The part above the ground are obviously short. Most folks could climb over 'em, no problem. I guess they go deep, to keep animals inside from digging their way out.
+[name="Senshi"]I'm also seeing some black rocks scattered all over. Some kind of marker, maybe?
+[charslot(slot="r",name="avg_4142_laios_1#1$1",focus="none")]
+[name="Chilchuck"]Hey! Stop running around like that! What if it's dangerous?
+[Dialog]
+[charslot(slot="r",name="avg_4142_laios_1#1$1",focus="r")]
+[PlaySound(key="$d_avg_swordquake",volume=0.7)]
+[charslot(slot = "r", action="shake",random=true, power=5, times=10,duration=0.3,isblock=true)]
+[Delay(time=0.5)]
+[charslot(slot="r",name="avg_4142_laios_1#8$1",focus="r")]
+[name="Laios"](Whispers) Kensuke?
+[charslot(slot="r",name="avg_4142_laios_1#16$1",focus="r")]
+[name="Laios"](Kensuke reacts to monsters nearby. Does that mean...)
+[Dialog]
+[charslot]
+[PlaySound(key="$runsand",volume=1)]
+[charslot(slot="m",name="avg_4141_marcil_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1)]
+[name="Marcille"]Huh?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1430_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4144_chilc_1#7$1",focus="m")]
+[name="Chilchuck"]I TOLD you not to run around!
+[charslot(slot="m",name="avg_4141_marcil_1#2$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Marcille"]—Ahhhh!
+[name="Marcille"]I-It moves! Th-There's something squishy under the rock!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1430_1#1$1",focus="m")]
+[charslot(slot="m",posfrom="0,0",posto="25,0",isblock=true,duration=0.5)]
+[charslot(slot="m",posfrom="25,0",posto="0,0",isblock=true,duration=0.5)]
+[charslot(slot="m",name="avg_4141_marcil_1#2$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Marcille"]Eeeeek!
+[charslot(slot="m",name="avg_4142_laios_1#3$1",focus="m")]
+[name="Laios"]I-Is it some kind of insect monster that uses rocks as its shell? So the shell is used for both protection and offense?
+[charslot(slot="m",name="avg_4141_marcil_1#2$1",focus="m")]
+[name="Marcille"]Hey, don't just stand around and watch! Take care of it already!
+[charslot(slot="m",name="avg_4142_laios_1#3$1",focus="m")]
+[name="Laios"]Its hard outer shell is more than enough protection for its abdomen. It covers the neck too, which usually has a lot of nerves.
+[name="Laios"]It wouldn't be easy to kill it with just our weapons.
+[name="Laios"]Marcille, use your magic!
+[charslot(slot="m",name="avg_4143_sensi_1#4$1",focus="m")]
+[name="Senshi"]Keep it as weak as you can. We don't want to harm the environment here!
+[charslot(slot="m",name="avg_4141_marcil_1#10$1",focus="m")]
+[name="Marcille"]Don't worry, I can't cast anything stronger than this right now anyway!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1430_1#1$1",focus="m")]
+[PlaySound(key="$e_atk_magic_n",volume=0.5)] 
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4141_marcil_1#3$1",focus="m")]
+[name="Marcille"]Hmph, they're as weak as walking mushrooms.
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"]So it <i>is</i> a new type of monster! Are you alright, Marcille? How did its attacks feel?
+[charslot(slot="m",name="avg_4141_marcil_1#22$1",focus="m")]
+[name="Marcille"]I'm fine. Thanks for worrying about <i>me</i>.
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",focus="m")]
+[name="Senshi"]Hm... What a hard shell. You don't often see shells made of minerals.
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"]Wh-What about the rest of it?
+[charslot(slot="m",name="avg_4143_sensi_1#7$1",focus="m")]
+[name="Senshi"](Flips the Originium slug around with his axe)
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4144_chilc_1#7$1",focus="all")]
+[charslot(slot="r",name="avg_4141_marcil_1#2$1",focus="all")]
+[name="Chilchuck & Marcille"]Wha—?!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4142_laios_1#1$1",focus="m")]
+[name="Laios"]What? What is it like?
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",focus="m")]
+[name="Senshi"]Stay back!
+[charslot(slot="m",name="avg_4143_sensi_1#3$1",focus="m")]
+[name="Senshi"]Don't lay a finger on it when we don't even know the first thing about it.
+[charslot(slot="m",name="avg_4143_sensi_1#1$1",focus="m")]
+[name="Senshi"]Critters that crawl on the ground usually live off of decomposing organic matter. So they're likely to be full of bacteria and parasites. You could get infected just by touching it.
+[charslot(slot="m",name="avg_4142_laios_1#1$1",focus="m")]
+[name="Laios"]That's true...
+[Dialog]
+[charslot(slot = "m", action="shake",random=true, power=5, times=10,duration=0.3,isblock=true)]
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"](Hm? Kensuke? We found the slug already... Is there something else?)
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$smallearthquake",volume=0.5)]
+[charslot(slot="l",name="avg_npc_1430_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1430_1#1$1",duration=1)]
+[CameraShake(duration=4.5, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=true)]
+[charslot]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4142_laios_1#3$1",focus="m")]
+[name="Laios"]Hold on... The rocks around us have all come to life!
+[charslot(slot="m",name="avg_4141_marcil_1#4$1",focus="m")]
+[name="Marcille"]In that case, we'll just have to take them all down!
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1430_1#1$1")]
+[charslot(slot="r",name="avg_npc_1430_1#1$1")]
+[PlaySound(key="$d_avg_magicreverse",volume=1)]
+[PlaySound(key="$d_sp_ballista",volume=1.0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4141_marcil_1#13$1",focus="m")]
+[name="Marcille"]Haa... Haah... How's this?!
+[charslot(slot="m",name="avg_4143_sensi_1#4$1",focus="m")]
+[name="Senshi"]Watch out!
+[name="Senshi"]Seems like they come in all kinds! Some can spew some sort of fluid! Careful... It seems to be corrosive!
+[charslot(slot="m",name="avg_4142_laios_1#8$1",focus="m")]
+[name="Laios"]W-Wow, they can spit corrosive fluids?!
+[charslot(slot="m",name="avg_4141_marcil_1#12$1",focus="m")]
+[name="Marcille"]You're excited about <i>that</i> right now?!
+[charslot(slot="m",name="avg_4144_chilc_1#15$1",focus="m")]
+[name="Chilchuck"]I don't think I can do much damage to these guys. They're all yours!
+[Dialog]
+[PlaySound(key="$runsand",volume=1)]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4141_marcil_1#4$1",focus="m")]
+[name="Marcille"]Quick! We'll hide inside this hut!
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$dooropenquite",volume=1)]
+[charslot(slot="l",afrom=0,ato=1,duration=0.5)]
+[charslot(slot="l",name="avg_npc_010",posfrom="-100,0",posto="-50,0",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4141_marcil_1#7$1",focus="m")]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4141_marcil_1#7$1",focus="m")]
+[name="Marcille"]What...?
+[Dialog]
+[charslot(slot="l",name="avg_npc_010",focus="l")]
+[name="???"]......
+[Dialog]
+[Delay(time=0.5)]
+[PlaySound(key="$e_atk_saw_n_1", volume=0.7,channel="3")]
+[Delay(time=0.5)]
+[PlaySound(key="$e_atk_saw_n_1", volume=0.7,channel="4")]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_4141_marcil_1#2$1",focus="m")]
+[playMusic(intro="$dontmaketrouble_intro", key="$dontmaketrouble_loop", volume=0.6)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Marcille"]Ahhhhhhhh! What the heck?!
+[Dialog]
+[PlaySound(key="$runsand",volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5)]
+[charslot(slot="m",posfrom="200,0",posto="300,0",duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_4144_chilc_1#7$1",focus="m")]
+[name="Chilchuck"]Senshi, do you know this orc all decked out in armor?
+[charslot(slot="m",name="avg_4143_sensi_1#4$1",focus="m")]
+[name="Senshi"]Hm, all the orcs I know tend to dress pretty lightly. He must be the owner of the hut. Should I ask?
+[charslot(slot="m",name="avg_4141_marcil_1#2$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Marcille"]Ask? Ask what? Let's run for it!!
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=2,xstrength=10,ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$rungeneral", volume=1,channel="1")]
+[charslot]
+[Image(image="54_i1",screenadapt="coverall",xScale=1.1,yScale=1.1,fadetime=0)]
+[ImageTween(xFrom=30, xTo=0, duration=30, xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,block=false)]
+[Blocker(a=0, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[name="Chilchuck"]Senshi, put me down already!
+[name="Marcille"]I-Is he chasing us?!
+[name="Laios"]What is he, anyway? Is he really an orc?
+[name="Senshi"]You sure you don't need me to go and ask?
+[name="Marcille"]Why are you people so curious about that? He was obviously hell-bent on slaughtering us with that strange massive blade! We definitely pissed him off!
+[name="Chilchuck"]Yeah, probably with your explosion magic! Why don't you try apologizing?
+[name="Marcille"]I'm not apologizing to an orc! And how were we supposed to chase off the rock slugs without magic?!
+[name="Laios"]So this <i>is</i> a new place we've never been to! There are so many things to do here!
+[name="Chilchuck"]For the last time Senshi, I know how to run! Put me down already! Hey—
+[name="Laios"]I've never read anything about this in books either. This is so cool...
+[name="Chilchuck"]Laios!!
+[Dialog]
+[PlaySound(key="$e_atk_saw_n_2", volume=0.7,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$e_atk_saw_n_2", volume=0.7,channel="2")]
+[Delay(time=0.5)]
+[PlaySound(key="$e_atk_saw_n_2", volume=0.7,channel="3")]
+[Delay(time=0.5)]
+[PlaySound(key="$e_atk_saw_n_2", volume=0.7,channel="4")]
+[Delay(time=0.5)]
+[CameraShake(duration=1.5,xstrength=10,ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Marcille"]Ahhhhhhhh!!!
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[charslot]
+[Image]
