@@ -1,0 +1,123 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+아군도 아니고 적군도 아니다. 중간에 서길 좋아하는 사람들이 있다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2,block=true)]
+[charslot]
+[Background(image="bg_wild_m",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="캔낫"]또 보네, 내 친구여! 이번엔 뭐가 필요하실까?
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="고성 건축설계도랑 연출복이 필요해.;시본 스프레이 없어? 뿌리면 시본이 바로 도망치는 거.;마음대로 쓰고 고칠 수 있는 전자 암호판 같은 게 없을까.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]자네가 원하는 거라면 여기 죄다 있지.
+[name="캔낫"]그렇지만 가격이……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="캔낫", values="1")]
+[Predicate(references="1")]
+[Decision(options="999 오리지늄각뿔이야!", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]이런, 자네가 어떻게……?
+[Dialog]
+[name="캔낫"]뭐, 좋아.
+[name="캔낫"]하지만 안타깝게도 약간 모자라군……
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement",channel="2")]
+[charslot(slot="m",posfrom="0,0",posto="10,0",duration=1,isblock=true)]
+[charslot(slot="m",posfrom="10,0",posto="0,0",duration=1,isblock=true)]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+캔낫이 가격표의 먼지를 닦아내자 드디어 진짜 가격이 드러났다.
+이 물건들은 전부 1000 오리지늄각뿔이었다!
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="(캔낫에게 물건을 '빌린다')", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]놉, 오늘은 안 돼.
+[name="캔낫"]주위를 둘러보게, 친구여.
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+주위는 지극히 평범한 광경이었지만, 당신은 이곳이 심상치 않다는 걸 직감적으로 느꼈다……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="배치할 곳이 없네?!;내 배치 코스트는?!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]미안하군, 오늘 들여온 물건들이 너무 귀중한 터라 나도 어쩔 수 없이 많은 준비를 하게 됐네.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="한판 싸우고 오면 안 될까?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]안 돼.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]그래도 낙심하지 말게, 친구여. 자네의 마음은 나도 잘 알아.
+[name="캔낫"]자네가 여행 중에 몇 번이나 오리지늄각뿔이 한두 개 모자라서 쓸쓸히 뒤돌아섰던가!
+[name="캔낫"]또 몇 번이나 주머니 사정이 여의치 않아 나한테서 '공짜 쇼핑'을 하고 갔던가!
+[name="캔낫"]나도 알아, 그래서 자네를 원망한 적은 없네. 오히려, 자네의 그 변덕스럽지만 슬기로운 두뇌가 좋았지.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="그래서 무슨 말이 하고 싶은데?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]나는 상인이야. 이 문명에 존재하는 거라면 내가 취급 못 하는 게 없어.
+[name="캔낫"]개중에는 부를 늘리는 방법도 포함되어 있지.
+[name="캔낫"]자, 그럼 이쯤에서 자네한테 내가 직접 수강하는……
+[name="캔낫"]“이 보다 더 좋을 순 없다! 테라의 투자 마스터 레슨”을 소개하지.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="무슨 소리야?;드디어 미친 건가?;(눈에서 금빛이 번쩍인다)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]10000? 아니! 5000? 아니! 단돈 오리지늄각뿔 999에 내가 1대1 지도, 입문부터 정통까지 멱살 잡고 캐리해, 자네더러……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="상업연합회를 살 수 있게?;로도스를 이동도시로 업그레이드할 수 있게?;황금 함대를 만들어 출항할 수 있게?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]……선택 필승, 투자 필중, 빠른 부의 축적으로 자네를 갑부로 만들어 주지!
+[name="캔낫"]어떤가, 흥미롭지 않나?
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="뭘 투자하는데……?;선택하는 게 어려워?;얼마나 벌 수 있는데?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]관심이 있으면 한 번 체험해보든가. 안심해 친구여, 체험 레슨은 무료니까.
+[name="캔낫"]단, 지금의 여정을 끝내고 나랑 여길 떠나야 하네.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="캔낫"]어떻게 할 건가? 이 천재일우의 기회를 잡을 것인가……
+[name="캔낫"]아니면 계속 여행하며 힘들게 모은 오리지늄각뿔을 전부 탕진할 것인가?
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="생각 좀 해보고.;결정했어!;……", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

@@ -33123,6 +33123,94 @@
       ],
       "invisibleDetail": false
     },
+    "enemy_8008_eltswd": {
+      "enemyId": "enemy_8008_eltswd",
+      "enemyIndex": "SFR04",
+      "enemyTags": null,
+      "sortId": 1103,
+      "name": "벡터 전술 장비",
+      "enemyLevel": "ELITE",
+      "description": "로도스 아일랜드 엔지니어링부가 이번 벡터 돌파 훈련을 위해 특별 제작한 전술 장비.\n생각의 실체화는 큰 압박을 가져다주지만, 동시에 큰 힘도 가져다준다.",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "더 쉽게 피격되며, 피격 시 주변 아군에 트루 대미지를 입힘",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "지속적으로 주변의 아군을 <$ba.stun>기절</>시킴",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "다른 적과 부딪히면 사라짐, 해당 적의 최대 HP와 공격력 증가, 쓰러지면 그 자리에 [벡터 전술 장비] 생성",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "쓰러지면 역장 생성, 역장 내 아군의 최대 HP 및 공격력 증가, 받는 물리 및 마법 대미지 감소",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "일정 시간 후 자폭, 넓은 범위에 높은 마법 대미지를 입힘",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8007_eltrsm"
+      ],
+      "damageType": [
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8009_eltufo": {
+      "enemyId": "enemy_8009_eltufo",
+      "enemyIndex": "SFR05",
+      "enemyTags": null,
+      "sortId": 1104,
+      "name": "'로즈몬티스'의 드론",
+      "enemyLevel": "ELITE",
+      "description": "로도스 아일랜드 엔지니어링부가 이번 벡터 돌파 훈련을 위해 특별 제작한 드론.\n로즈몬티스가 이 드론의 색깔을 매우 마음에 들어 한다.",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "비행 유닛",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "역장 내에서만 피격됨",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "공격이 광역 대미지를 입힘",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "2회 공격 후, 다음 공격이 모든 목표를 <$ba.stun>기절</>시킴",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "쓰러지면 그 자리에 보급품 드랍, 해당 보급품은 <'로즈몬티스', 시뮬레이션>이 [생각의 붕괴] 발동 시 활성화되며, 넓은 범위 내 아군이 받는 물리 및 마법 대미지 감소",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8007_eltrsm"
+      ],
+      "damageType": [
+        "PHYSIC"
+      ],
+      "invisibleDetail": false
+    },
     "enemy_8001_flmlod": {
       "enemyId": "enemy_8001_flmlod",
       "enemyIndex": "SFR01",
@@ -33287,6 +33375,172 @@
         "enemy_8003_flmchn2",
         "enemy_8004_flmspr",
         "enemy_8005_flmspr2"
+      ],
+      "damageType": [
+        "PHYSIC",
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8007_eltrsm": {
+      "enemyId": "enemy_8007_eltrsm",
+      "enemyIndex": "SFR03",
+      "enemyTags": null,
+      "sortId": 1108,
+      "name": "'로즈몬티스', 시뮬레이션",
+      "enemyLevel": "BOSS",
+      "description": "로즈몬티스의 전투력 한계를 모델로 재구성한 돌파 훈련교관.\n데이터가 실체화된 '인간형 병기'를 바라보고 있다. 소녀의 기억은 더 이상 구속받지 않는다. 이제 소녀는 모두와 함께 나아가고 싶어 한다. 소녀는 이미 더 용감해졌다.",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": true,
+      "hideInStage": false,
+      "abilityList": [
+        {
+          "text": "[마음의 역장] 받는 물리 및 마법 대미지 감소, 전장 내 [벡터 전술 장비]가 파괴될 시 효과 무효화, 다시 전술 장비를 획득하기 전까지 공격 불가",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "제1형태",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "[투사] 전장의 아군 1명을 향해 <벡터 전술 장비> 투척, 장비가 떨어질 때 목표에 물리 대미지를 3회 입히며(2번째부터는 여진, 입히는 대미지 절반 감소), 만약 목표가 <$ba.stun>기절</> 상태인 경우 강제로 쓰러뜨림",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[포획] 전장의 모든 역장을 제거하고 다시 전술 장비 획득",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8008_eltswd",
+        "enemy_8009_eltufo"
+      ],
+      "damageType": [
+        "PHYSIC",
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8007_eltrsm_2": {
+      "enemyId": "enemy_8007_eltrsm_2",
+      "enemyIndex": "SFR03",
+      "enemyTags": null,
+      "sortId": 1109,
+      "name": "'로즈몬티스', 시뮬레이션",
+      "enemyLevel": "BOSS",
+      "description": "로즈몬티스의 전투력 한계를 모델로 재구성한 돌파 훈련교관.\n데이터가 실체화된 '인간형 병기'를 바라보고 있다. 소녀의 기억은 더 이상 구속받지 않는다. 이제 소녀는 모두와 함께 나아가고 싶어 한다. 소녀는 이미 더 용감해졌다.",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": true,
+      "hideInStage": false,
+      "abilityList": [
+        {
+          "text": "[마음의 역장] 받는 물리 및 마법 대미지 감소, 전장 내 [벡터 전술 장비]가 파괴될 시 효과 무효화, 다시 전술 장비를 획득하기 전까지 공격 불가",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "제1형태",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "[투사] 전장의 아군 1명을 향해 <벡터 전술 장비> 투척, 장비가 떨어질 때 목표에 물리 대미지를 3회 입히며(2번째부터는 여진, 입히는 대미지 절반 감소), 만약 목표가 <$ba.stun>기절</> 상태인 경우 강제로 쓰러뜨림",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[포획] 전장의 모든 역장을 제거하고 다시 전술 장비 획득",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[충동 저지] HP가 0이 되면 부활 단계 진입, 도중에는 몇 초마다 주변에 큰 범위의 광역 마법 대미지를 입힘",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "제2형태",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "[증폭 투사] 최초로 <벡터 전술 장비> 투척 후 몇 초 뒤에 다시 투척, 만약 목표가 <$ba.stun>기절</> 상태인 경우 강제로 쓰러뜨림",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[기억 상실] 공격 시 일정량의 HP 소모, 주변에 큰 범위의 광역 마법 대미지를 입힘",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8008_eltswd",
+        "enemy_8009_eltufo"
+      ],
+      "damageType": [
+        "PHYSIC",
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8007_eltrsm_3": {
+      "enemyId": "enemy_8007_eltrsm_3",
+      "enemyIndex": "SFR03",
+      "enemyTags": null,
+      "sortId": 1110,
+      "name": "'로즈몬티스', 시뮬레이션",
+      "enemyLevel": "BOSS",
+      "description": "로즈몬티스의 전투력 한계를 모델로 재구성한 돌파 훈련교관.\n데이터가 실체화된 '인간형 병기'를 바라보고 있다. 소녀의 기억은 더 이상 구속받지 않는다. 이제 소녀는 모두와 함께 나아가고 싶어 한다. 소녀는 이미 더 용감해졌다.",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "[마음의 역장] 받는 물리 및 마법 대미지 감소, 전장 내 [벡터 전술 장비]가 파괴될 시 효과 무효화, 다시 전술 장비를 획득하기 전까지 공격 불가",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "제1형태",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "[투사] 전장의 아군 1명을 향해 <벡터 전술 장비> 투척, 장비가 떨어질 때 목표에 물리 대미지를 3회 입히며(2번째부터는 여진, 입히는 대미지 절반 감소), 만약 목표가 <$ba.stun>기절</> 상태인 경우 강제로 쓰러뜨림",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[포획] 전장의 모든 역장을 제거하고 다시 전술 장비 획득",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[충동 저지] HP가 0이 되면 부활 단계 진입, 도중에는 몇 초마다 주변에 큰 범위의 광역 마법 대미지를 입힘",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "제2형태",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "[증폭 투사] 최초로 <벡터 전술 장비> 투척 후 몇 초 뒤에 다시 투척, 만약 목표가 <$ba.stun>기절</> 상태인 경우 강제로 쓰러뜨림",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[기억 상실] 공격 시 일정량의 HP 소모, 주변에 큰 범위의 광역 마법 대미지를 입힘",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "[생각의 붕괴] HP가 50% 미만일 시 공중부양하고 원거리 공격으로 변경, 로즈몬티스의 공격력 증가, 이후 더 이상 [투사]를 사용하지 않고 다음의 능력 획득:",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "공격 시 목표를 장시간 <$ba.stun>기절</>시킴, [마음의 역장]이 더 이상 무효화되지 않고 대미지 감소 비율 증가, [기억 상실]이 입히는 대미지 및 소모 HP 증가, 피격 시 주변 아군에 일정량의 트루 대미지를 입힘",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8008_eltswd",
+        "enemy_8009_eltufo"
       ],
       "damageType": [
         "PHYSIC",
