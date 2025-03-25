@@ -1,0 +1,50 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="29_g6_mainstreet",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+八日後
+クルビア
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="キャノット"]さすがだな、ドクター。一般人ならこの初心者コースを終えるのに最低でも八ヶ月はかかるところだ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="八日分の食事代の源石錐を払わされただけじゃないか？;回りくどい話をされてなければ、八分で学べたな。;もういいか？　いつになったら一攫千金させてくれる？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]お前が富を得たいと気が急いているのはわかっている、わが友よ。
+[name="キャノット"]そういうことなら、早速実践に移るとしよう。
+[name="キャノット"]ここはグリーングラスシティのバトルセンターだ。
+[name="キャノット"]無数のチームがこの地に集い、リーグ優勝のタイトルをかけて死闘を繰り広げる。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="さんざん時間を使って結局これか？;カジミエーシュ騎士メジャーと同じじゃないか？;バカにしているのか？　源石錐を返せ！", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]ここの試合にそこまで細かい決まりはない、わが友よ。
+[name="キャノット"]協賛も参加資格制限もねぇ。大会が定めたルールにのっとれば、隣近所を引っ張ってきたとしても舞台に上がって競うことができる。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="オペレーターたちを連れてこよう。;試合に出なきゃいけないのか？;作戦指揮なら慣れている。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]いやいやいや、わが友よ。そんな骨の折れることはしなくていい。
+[name="キャノット"]試合に出るよりも、チームに投資することこそ至高の選択だ。
+[name="キャノット"]勝利するごとに、手厚い報酬がもたらされる。
+[name="キャノット"]チャンピオンは常に変わるものだが、優れた見る目さえ持っていれば、俺たちこそ永遠の勝者だ。
+[name="キャノット"]そしてやってくるのが、数え切れないほどの富ってことよ。
+[name="キャノット"]これぞビジネス、これぞ投資！
+[name="キャノット"]お前の時代を迎える準備はいいか？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

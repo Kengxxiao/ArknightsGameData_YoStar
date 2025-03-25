@@ -33123,6 +33123,94 @@
       ],
       "invisibleDetail": false
     },
+    "enemy_8008_eltswd": {
+      "enemyId": "enemy_8008_eltswd",
+      "enemyIndex": "SFR04",
+      "enemyTags": null,
+      "sortId": 1103,
+      "name": "ベクトル戦術装備",
+      "enemyLevel": "ELITE",
+      "description": "ロドスエンジニア部による最先端の設計。今回の鋒矢突破訓練のために作られた戦術装備。\n実体化した思念は重圧をもたらし、力をもたらす。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "攻撃されやすい。攻撃を受けると、周囲にいる味方ユニットに一定の確定ダメージを与える",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "周囲にいる味方ユニットを<$ba.stun>スタン</>させ続ける",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "他の敵が接触すると消え、その対象の最大HPと攻撃力を上昇させる。対象が倒されると、再びその場に<ベクトル戦術装備>を生成する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "倒されると<フォースフィールド>を生成する。<フォースフィールド>範囲内の味方ユニットの最大HPと攻撃力が上昇し、物理・術の被ダメージが減少する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "戦場に一定時間滞在後に自爆し、広範囲内の味方ユニット全員に高い術ダメージを与える",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8007_eltrsm"
+      ],
+      "damageType": [
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8009_eltufo": {
+      "enemyId": "enemy_8009_eltufo",
+      "enemyIndex": "SFR05",
+      "enemyTags": null,
+      "sortId": 1104,
+      "name": "「Rosmontis」のドローン",
+      "enemyLevel": "ELITE",
+      "description": "ロドスエンジニア部による最先端の設計。今回の鋒矢突破訓練のために特別にオーダーメイドされたドローン。\nロスモンティスはこの色をとても気に入っている。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "飛行ユニット",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "<フォースフィールド>範囲内でのみ攻撃を受ける",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "範囲攻撃を行う",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "2回攻撃後、次の攻撃で全ての攻撃対象を<$ba.stun>スタン</>させる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "倒されるとその場に補給物資を残す。補給物資は<「Rosmontis」・虚実の手>が【思考崩壊】を発動した際に起動し、広範囲内の味方の物理・術の被ダメージを減少させる",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8007_eltrsm"
+      ],
+      "damageType": [
+        "PHYSIC"
+      ],
+      "invisibleDetail": false
+    },
     "enemy_8001_flmlod": {
       "enemyId": "enemy_8001_flmlod",
       "enemyIndex": "SFR01",
@@ -33287,6 +33375,172 @@
         "enemy_8003_flmchn2",
         "enemy_8004_flmspr",
         "enemy_8005_flmspr2"
+      ],
+      "damageType": [
+        "PHYSIC",
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8007_eltrsm": {
+      "enemyId": "enemy_8007_eltrsm",
+      "enemyIndex": "SFR03",
+      "enemyTags": null,
+      "sortId": 1108,
+      "name": "「Rosmontis」・虚実の手",
+      "enemyLevel": "BOSS",
+      "description": "ロスモンティスの戦闘力の限界をベースモデルに設計された突破訓練官。\nデータが実体化した「人型兵器」を見て、少女の記憶を縛るものはなくなったようだ。今、彼女は皆と手を携えて共に進みたいと願い、さらに勇敢になった。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": true,
+      "hideInStage": false,
+      "abilityList": [
+        {
+          "text": "【エモーションフィールド】:物理・術の被ダメージが減少する。戦場の<ベクトル戦術装備>が破壊されると当該効果を失い、再び戦術装備を獲得するまで攻撃不可となる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "第一形態",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "【投擲】:戦場の味方ユニット1名の位置に<ベクトル戦術装備>を投擲し、対象に物理ダメージを3回与える（2回目以降は与ダメージが半分となる余震）。投擲対象が<$ba.stun>スタン</>状態の場合、強制的に退場させる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【捕獲】:戦場内の全ての<フォースフィールド>を除去し、戦術装備を再び獲得する",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8008_eltswd",
+        "enemy_8009_eltufo"
+      ],
+      "damageType": [
+        "PHYSIC",
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8007_eltrsm_2": {
+      "enemyId": "enemy_8007_eltrsm_2",
+      "enemyIndex": "SFR03",
+      "enemyTags": null,
+      "sortId": 1109,
+      "name": "「Rosmontis」・虚実の手",
+      "enemyLevel": "BOSS",
+      "description": "ロスモンティスの戦闘力の限界をベースモデルに設計された突破訓練官。\nデータが実体化した「人型兵器」を見て、少女の記憶を縛るものはなくなったようだ。今、彼女は皆と手を携えて共に進みたいと願い、さらに勇敢になった。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": true,
+      "hideInStage": false,
+      "abilityList": [
+        {
+          "text": "【エモーションフィールド】:物理・術の被ダメージが減少する。戦場の<ベクトル戦術装備>が破壊されると当該効果を失い、再び戦術装備を獲得するまで攻撃不可となる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "第一形態",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "【投擲】:戦場の味方ユニット1名の位置に<ベクトル戦術装備>を投擲し、対象に物理ダメージを3回与える（2回目以降は与ダメージが半分となる余震）。投擲対象が<$ba.stun>スタン</>状態の場合、強制的に退場させる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【捕獲】:戦場内の全ての<フォースフィールド>を除去し、戦術装備を再び獲得する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【衝動遮断】：HPが0になると復活状態へと移行し、数秒ごとに周囲広範囲内にいる味方ユニットに術ダメージを与え、一定時間後に復活する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "第二形態",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "【増幅投射】：最初に<ベクトル戦術装備>を投擲してから数秒後に再び投擲し、投擲対象が<$ba.stun>スタン</>状態の場合、強制的に退場させる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【記憶流失】：攻撃時一定のHPを失い、自身の周囲広範囲内にいる味方ユニットに術ダメージを与える",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8008_eltswd",
+        "enemy_8009_eltufo"
+      ],
+      "damageType": [
+        "PHYSIC",
+        "MAGIC"
+      ],
+      "invisibleDetail": false
+    },
+    "enemy_8007_eltrsm_3": {
+      "enemyId": "enemy_8007_eltrsm_3",
+      "enemyIndex": "SFR03",
+      "enemyTags": null,
+      "sortId": 1110,
+      "name": "「Rosmontis」・虚実の手",
+      "enemyLevel": "BOSS",
+      "description": "ロスモンティスの戦闘力の限界をベースモデルに設計された突破訓練官。\nデータが実体化した「人型兵器」を見て、少女の記憶を縛るものはなくなったようだ。今、彼女は皆と手を携えて共に進みたいと願い、さらに勇敢になった。",
+      "attackType": null,
+      "ability": null,
+      "isInvalidKilled": false,
+      "overrideKillCntInfos": {},
+      "hideInHandbook": false,
+      "hideInStage": true,
+      "abilityList": [
+        {
+          "text": "【エモーションフィールド】:物理・術の被ダメージが減少する。戦場の<ベクトル戦術装備>が破壊されると当該効果を失い、再び戦術装備を獲得するまで攻撃不可となる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "第一形態",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "【投擲】:戦場の味方ユニット1名の位置に<ベクトル戦術装備>を投擲し、対象に物理ダメージを3回与える（2回目以降は与ダメージが半分となる余震）。投擲対象が<$ba.stun>スタン</>状態の場合、強制的に退場させる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【捕獲】:戦場内の全ての<フォースフィールド>を除去し、戦術装備を再び獲得する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【衝動遮断】：HPが0になると復活状態へと移行し、数秒ごとに周囲広範囲内にいる味方ユニットに術ダメージを与え、一定時間後に復活する",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "第二形態",
+          "textFormat": "TITLE"
+        },
+        {
+          "text": "【増幅投射】：最初に<ベクトル戦術装備>を投擲してから数秒後に再び投擲し、投擲対象が<$ba.stun>スタン</>状態の場合、強制的に退場させる",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【記憶流失】：攻撃時一定のHPを失い、自身の周囲広範囲内にいる味方ユニットに術ダメージを与える",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "【思考崩壊】：HPが最大値の50%以下になると、飛行状態となり、攻撃力が上昇し、遠距離攻撃を行うようになる。以降は【投擲】を使用しなくなるが、以下の能力を獲得する：",
+          "textFormat": "NORMAL"
+        },
+        {
+          "text": "攻撃時に対象を長時間<$ba.stun>スタン</>させる。【エモーションフィールド】の効果が永続化し、被ダメージ軽減率が上昇。【記憶流失】の与えるダメージと失うHPが上昇。攻撃を受けると自身の周囲にいる味方ユニット全員に一定の確定ダメージを与える",
+          "textFormat": "NORMAL"
+        }
+      ],
+      "linkEnemies": [
+        "enemy_8008_eltswd",
+        "enemy_8009_eltufo"
       ],
       "damageType": [
         "PHYSIC",

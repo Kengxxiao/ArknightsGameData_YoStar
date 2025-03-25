@@ -1,0 +1,123 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+盟友でも敵でもなく、真ん中に立ちたがるやつもいる。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2,block=true)]
+[charslot]
+[Background(image="bg_wild_m",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="キャノット"]また会ったな、わが友よ。今回は何を買いたいんだお求めで？
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="古城の設計図と役者の衣装セットが欲しい。;シーボーン駆除スプレーとか？　即効性あるやつ。;書き換え自由な電子啓示板があればいいんだけどなぁ。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]お前が欲しいものは、ここに何でもそろっている。
+[name="キャノット"]だが値段は……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="投資システムの預金をすべて引き出した！", values="1")]
+[Predicate(references="1")]
+[Decision(options="源石錐999個だ！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]おや、なぜそれを……？
+[Dialog]
+[name="キャノット"]まあいい。
+[name="キャノット"]だが残念ながら、惜しいとこで終わったな……
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement",channel="2")]
+[charslot(slot="m",posfrom="0,0",posto="10,0",duration=1,isblock=true)]
+[charslot(slot="m",posfrom="10,0",posto="0,0",duration=1,isblock=true)]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+キャノットがタグのほこりを拭き取ると、今度はくっきりと見えた――
+これらの品の値段はいずれも1000源石錐だった。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="（キャノットから商品を「借りて」みる）", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]おっと、今日はそうはいかないぞ。
+[name="キャノット"]周りをよく見てみろ、わが友よ。
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+周囲を見渡すも、そこには普通の光景しかなかったが、この場所はどこかおかしいと直感が告げていた……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="配置可能なマスがない！？;配置コストはどこいった！？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]悪いが、今日の商品はあまりに貴重なもんで、色々と備えないといけなくてな、わが友よ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="一度戦いに行ってから戻ってきてもいいか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]ダメだ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]落ち込むな、そして怒るな、わが友よ。お前の気持ちはよーくわかるさ。
+[name="キャノット"]旅の中で、お前は果たして何度、源石錐が一つか二つ足らずに悔し涙を流したことか。
+[name="キャノット"]そして果たして何度、手持ちが心もとないからといって、俺の所で「無料のショッピング」をしたいと思ったことか。
+[name="キャノット"]全部わかってるぞ、だからお前を恨みはしねぇ。むしろお前のそのキレがよくて切り替えの早い頭には好感を持てる。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="一体何が言いたい？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]俺は商人だ。文明の産物であれば、何でも取引する。
+[name="キャノット"]それには当然、富を増やす方法も含まれる。
+[name="キャノット"]ではこれより、この俺が直々に講師を担当するセミナー――
+[name="キャノット"]「テラが誇る投資マスター直伝！　これを上回るものはない！」を紹介させていただこう。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="何を訳のわからないことを言ってるんだ。;急にどうした？;（目を輝かせる）", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]驚け、10000でも、5000でもないぞ。源石錐たった999個ポッキリで、手取り足取り一対一の個別指導、入門からマスターレベルに到達することで――
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="商業連合会を買える？;ロドスを移動都市にアップグレードできる？;黄金艦隊を作って遠くまで航海できる？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]――選択は必中、投資は必勝、経済的自由をフルスピードで実現して億万長者だ！
+[name="キャノット"]どうだ、興味はあるか？
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="何に投資するんだ……？;選択とは難しいものなのか？;一体いくら稼げるんだ？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]興味があるなら、まずは体験授業を受けてみろ。安心していい、わが友よ、体験は無料だ。
+[name="キャノット"]ただ、今回の旅はここで終わらせて、俺と共に来ないといけないがな。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="キャノット"]どうだ、この千載一遇の財テクチャンスをつかむか……
+[name="キャノット"]それともこのまま先へ進み、苦労して貯めた源石錐を最終的に全て失い、手ぶらでスタート地点へ戻るか？
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="考えさせてくれ。;決めた！;……", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]
