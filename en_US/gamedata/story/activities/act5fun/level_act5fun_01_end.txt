@@ -1,0 +1,50 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="29_g6_mainstreet",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+8 days later...
+Columbia
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="Cannot"]Incredible, Doctor. It takes most people 8 months to finish the basic course.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="So the ingots were food money for 8 days?;Would've been 8 minutes if you got to the point.;So when do I start making money?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]I know you're eager for money, friend.
+[name="Cannot"]Let's get right to it, then.
+[name="Cannot"]This is the Grassville Arena.
+[name="Cannot"]Countless teams assemble here, fighting over the title of champion.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="That's all?;So... Kazimierz again, gotcha.;This is a ripoff! I want a refund!", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]This competition doesn't have nearly as many rules, friend.
+[name="Cannot"]No sponsors, no restrictions. You can bring your neighbors if you want, as long as its within the rules.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="So I can bring my operators.;Do we have to compete ourselves?;Giving orders is kind of my thing.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]No no no, it's not nearly that exhausting, friend.
+[name="Cannot"]The wise don't compete themselves; they invest.
+[name="Cannot"]Each victory brings great rewards.
+[name="Cannot"]Champions come and go, but we, my friend, can keep winning forever simply by picking the right side.
+[name="Cannot"]And with victory comes wealth beyond imagination.
+[name="Cannot"]This is business. This is investment.
+[name="Cannot"]Are you ready to create your dynasty?
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

@@ -1,0 +1,123 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+Neither an ally nor an enemy. Some people like to sit on the fence.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2,block=true)]
+[charslot]
+[Background(image="bg_wild_m",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="Cannot"]We meet again, friend. What are you buying this time?
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="Got a castle map and some theater costumes?;I could use some Seaborn repellent.;A reusable digital foldartal would be nice.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]I have everything you're looking for.
+[name="Cannot"]There's only the matter of the price...
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="Here, my entire Investment System balance!", values="1")]
+[Predicate(references="1")]
+[Decision(options="999 Originium Ingots!", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]How did you...?
+[Dialog]
+[name="Cannot"]Very well.
+[name="Cannot"]Unfortunately, you're not quite there...
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement",channel="2")]
+[charslot(slot="m",posfrom="0,0",posto="10,0",duration=1,isblock=true)]
+[charslot(slot="m",posfrom="10,0",posto="0,0",duration=1,isblock=true)]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+Cannot wipes away the dust on the price card.
+You see that they are all priced at 1000 Originium Ingots.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="(Try to 'borrow' the items)", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]No, not today. You won't have the chance.
+[name="Cannot"]Look around you, friend.
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+Everything seems perfectly normal, but you have a feeling that something is not quite right...
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="No deployable tiles?!;Where are my deployment points?!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]I'm sorry, but today's goods are too valuable not to make special preparations.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="Can I do a couple of operations and come back?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]No.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]No need to be angry or frustrated, friend. I know how you feel.
+[name="Cannot"]How often in your journeys have you had to leave in regret because you were missing an Ingot or two?
+[name="Cannot"]How many times have you come for 'free shopping' because you were short on cash?
+[name="Cannot"]I understand it perfectly. Which is why I've never hated you. In fact, I quite like your flexible way of thinking.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="What are you getting at?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]I'm a merchant. I sell anything that can be sold.
+[name="Cannot"]Including ways to increase your wealth, of course.
+[name="Cannot"]And now, without further ado, let me introduce—
+[name="Cannot"]'It Cannot Get Any Better Than This! Terra Investment Masterclass'
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="What the &#$% are you talking about?;Are you &#$%ing out of your mind?;(Eyes glitter)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]Not 10000, not 5000, but for only 999 Originium Ingots, you will receive personalized instruction on everything you need to know in order to—
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="Buy out the General Chamber of Commerce?;Upgrade Rhodes Island to a nomadic city?;Build a Golden Armada to sail the seas?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]To win every bet, every decision! The secret to financial freedom, and much more!
+[name="Cannot"]Interested?
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="What do you mean by bet?;Is making choices supposed to be hard?;How much can I earn?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]I offer a free trial lesson, if you're interested. No charge, no strings attached.
+[name="Cannot"]However, you will have to conclude your journey and come with me.
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="Cannot"]What do you say? Will you seize this once-in-a-lifetime opportunity?
+[name="Cannot"]Or will you keep going, leaving your hard-earned Ingots behind at the end and once again returning to the start empty-handed?
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="Let me think about it.;I've made my choice!;......", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]
