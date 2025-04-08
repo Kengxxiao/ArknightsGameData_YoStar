@@ -1,0 +1,436 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g1_battlefieldoutside",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[focusout(duration=0.5, type="bg", from=0, to=1, block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="???"]...Lieutenant...
+[name="???"]Lieutenant... Shearer... wake... up...
+[name="Shearer"]—?
+He sees a pair of hands reach out towards him.
+[name="Shearer"]...Lady Delphine?
+[Dialog]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="walk1")]
+[Delay(time=2)]
+[stopSound(channel="walk1", fadetime=2)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Don't move. I'll carry you. We need to get back to the forward position that we captured.
+[name="Delphine"]We have to move before more Sarkaz arrive and fill this place with witchcraft bombs.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[name="Shearer"]I—thank you—saving my life—
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]No need. It was a brave soldier and nurse, Sarah, who saved your life.
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="Delphine"]She used her Arts to protect you and the other wounded soldiers from the witchcraft bomb, despite her limited experience.
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="n")]
+[name="Shearer"]It was her... wait, did she—
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]Don't worry, she just passed out. We've taken her to the forward position at the access port.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]But you've all been exposed to high-Originium environments for too long...
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[name="Shearer"]I knew the risks.
+[name="Shearer"]You succeeded in reaching the access port?
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Yes.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[name="Shearer"]I saw fire on the wall... it's out.
+[name="Shearer"]Is the battle for the walls over?
+[charslot(slot="m",name="avg_4110_delphn_1#7$1",focus="m")]
+[name="Delphine"]...
+[name="Delphine"]No, it has only just begun.
+[name="Delphine"]The Nachzehrer is locked in a standoff with the ducal alliance, relying on the city's defensive artillery and the elite troops.
+[charslot(slot="m",name="avg_4110_delphn_1#7$1",focus="n")]
+[name="Shearer"]Is there anything we can do?
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Break through the access port, create a gap in the wall, and reveal a weakness in the Sarkaz lines.
+[name="Delphine"]Just like the alliance helped us... even if they didn't mean to.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Shearer"]Understood—*cough*—
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Lieutenant Shearer, you are dismissed from this operation. That is an order.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[name="Shearer"]—!
+[name="Shearer"]Does that come from Siege—
+[charslot(slot="m",name="avg_4110_delphn_1#2$1",focus="m")]
+[name="Delphine"]It comes from me.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Stand by at the forward position. You need to rest.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[name="Shearer"]...
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g15_customs", screenadapt="coverall",block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Exemplars Forward Position, City Wall Access Port</><p=2>September 25th, 1098, 8:21 A.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]♪Then may we call and savely syng,
+[charslot(slot="m",name="avg_npc_729_1#1$1",focus="m")]
+[name="Depressed Soldier"]...
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Excitable Soldier"]May the vast lands they keep owre kynge. ♪
+[charslot(slot="m",name="avg_npc_241",focus="m")]
+[name="Composed Soldier"]......His people, and alle his well-wyllynge. ♪
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]And give them grace wythoute endyng. ♪
+[name="Cheerful Soldier"]Why aren't you singing?
+[charslot(slot="m",name="avg_npc_729_1#1$1",focus="m")]
+[name="Depressed Soldier"]...
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]Cheer up, man! I know, we're all hurt, but we're almost home!
+[name="Cheerful Soldier"]♪Then may we call and savely syng,
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Excitable Soldier"]♪Victoria, yeve thankes for owre hom!
+[charslot(slot="m",name="avg_npc_729_1#1$1",focus="m")]
+[name="Depressed Soldier"]V—Victoria, yeve thankes for owre hom! ♪
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]Here, you can have the rest of this ration. Couldn't finish it.
+[name="Cheerful Soldier"]It's our first breakfast since we came back home. Got to fill up!
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Excitable Soldier"]Once the rest of our men make it into the city, we'll show those devils who really runs Londinium!
+[charslot(slot="m",name="avgnew_112_siege_1#3$1",focus="m")]
+[name="Vina"]...
+[charslot(slot="m",name="avg_npc_405_1#5$1",focus="m")]
+[multiline(name="Morgan")]I don't like that song...
+[charslot(slot="m",name="avg_npc_405_1#2$1",focus="m")]
+[multiline(name="Morgan")]What about you, Vina?
+[charslot(slot="m",name="avg_155_tiger_1#1$1",focus="m")]
+[name="Indra"]Don't ask her. She hums it in her sleep.
+[charslot(slot="m",name="avgnew_112_siege_1#11$1",focus="m")]
+[name="Vina"]Hannah!
+[charslot(slot="m",name="avg_npc_396_1#8$1",focus="m")]
+[name="Dagda"]Shut your gob and eat up, Indra.
+[name="Dagda"]Or I'll take it, if you don't want it, and I'll lead the assault since you got hurt attacking the Confessarius passage.
+[charslot(slot="m",name="avg_155_tiger_1#1$1",focus="m")]
+[name="Indra"]Not a chance. It's just a scratch.
+[name="Indra"]A little scratch won't dull my fists. You're not gettin' ahead of me this time, Dagda.
+[charslot(slot="m",name="avg_npc_396_1#6$1",focus="m")]
+[name="Dagda"]Hmph.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]I'll do another round of patrol and scout ahead once I'm done, make sure there's no mistake.
+[name="Delphine"]The Military Commission set up defenses at this backup access port, which should only have been known to the workers who built the wall. This means they know the city much better than we expected.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="n")]
+[name="???"]I'm back from patrol, Lady Delphine.
+[charslot(slot="m",name="avg_4110_delphn_1#4$1",focus="m")]
+[name="Delphine"]—?!
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1070_1#5$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1070_1#5$1",focus="m")]
+[name="Shearer"]Spare a ration? I haven't had breakfast yet.
+[charslot(slot="m",name="avg_npc_405_1#9$1",focus="m")]
+[name="Morgan"]Lieutenant?! I thought you were recovering from your injuries.
+[charslot(slot="m",name="avg_npc_1070_1#1$1",focus="m")]
+[name="Shearer"]I'm a medic. I know how to restore a soldier to combat effectiveness as quickly as possible.
+[name="Shearer"]I understand my own body, Lady Delphine. I am ready to return to duty.
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",focus="m")]
+[name="Vina"]Giving your protective equipment to the wounded, getting exposed to high-Originium environments, and being in close proximity to a witchcraft bomb explosion... you know exactly what all this means, Lieutenant.
+[charslot(slot="m",name="avg_npc_1070_1#1$1",focus="m")]
+[name="Shearer"]I do. A blood test is not possible now, but I understand the pathological progress of infection.
+[name="Shearer"]What about it? Is that not normal in this place?
+[dialog]
+[charslot]
+He looks around. Exemplars are crowded around the narrow passage.
+The dust and Originium particles that cover their faces have not diminished the fire in their eyes at all.
+They know what they are doing. They know the price they will pay.
+But they are singing.
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="Singing with joyous grace.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",focus="m")]
+[name="Vina"]Delphine, do you give the Lieutenant permission to return to duty?
+[charslot(slot="m",name="avg_4110_delphn_1#5$1",focus="m")]
+[name="Delphine"]...
+[dialog]
+[charslot]
+Delphine can see the painkiller injector that Shearer is trying to hide behind his back.
+Without sufficient access to Oripathy suppressants, painkillers are the next best thing to deal with the suffering brought on by Oripathy.
+[charslot(slot="m",name="avg_4110_delphn_1#5$1",focus="m")]
+[name="Delphine"]Will you pull through?
+[charslot(slot="m",name="avg_npc_1070_1#5$1",focus="m")]
+[name="Shearer"]Of course, Lady Delphine. Never forget, I still have to see you go home and take back what is yours.
+[charslot(slot="m",name="avg_4110_delphn_1#5$1",focus="m")]
+[name="Delphine"]...You didn't need to do this.
+[charslot(slot="m",name="avg_npc_1070_1#5$1",focus="m")]
+[name="Shearer"]Neither did you.
+[name="Shearer"]You want to witness what this ragtag team can achieve, what will come of this city. So do I.
+[charslot(slot="m",name="avg_4110_delphn_1#10$1",focus="m")]
+[name="Delphine"]Very well, Lieutenant. Back to your post.
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]What will Londinium be, once we drive out the devils, Vina?
+[charslot(slot="m",name="avgnew_112_siege_1#2$1",focus="m")]
+[name="Vina"]Better than before, at least.
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]You know what I'd like to see? More flower shops, making the flowers cheaper, making it easier for me to find a girl to marry. Maybe a wealthy young woman. Or a widow who lost her husband.
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Excitable Soldier"]I want more Originium fuel for a warmer winter.
+[charslot(slot="m",name="avg_npc_241",focus="m")]
+[name="Composed Soldier"]...I want more police stations, and I wanna become a cop. I want to give, not take.
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]What about you?
+[charslot(slot="m",name="avg_npc_729_1#1$1",focus="m")]
+[name="Depressed Soldier"]I... I hope Mum's still waiting for me back home.
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Cheerful Soldier"]...
+[name="Cheerful Soldier"]Hah, don't worry! She'll be there to open the door for you.
+[charslot(slot="m",name="avg_155_tiger_1#1$1",focus="m")]
+[name="Indra"]What about you, Dagda? You gonna stick with us to get the gym back in business, or will you lock yourself away in your tower?
+[charslot(slot="m",name="avg_npc_396_1#12$1",focus="m")]
+[name="Dagda"]You and I, we've got a score to settle, Hannah.
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="Morgan"]Let's go back to the gym together, Vina!
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",focus="m")]
+[name="Vina"]Yes, we will... we haven't found Baird yet...
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_396_1#2$1",posfrom = "0,0", posto = "-100,0",focus="all")]
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="all")]
+[charslot(slot="r",name="avg_155_tiger_1#2$1",posfrom = "0,0", posto = "100,0",focus="all")]
+[delay(time=2)]
+[dialog]
+[charslot]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>One more step until we're home. That one step took us three days.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>We were welcomed by steam gushing from the factories, reaching into the clouds.</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>But many didn't live to see it. They walked into the tunnel, singing, and never came out again.</i>", x=300,y=300,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g5_victoriaspeakeasy", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Ten Pints Pub</><p=2>December 21st, 1098, 5:25 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Excited Soldier"]Have one on me, Vina!
+[name="Excited Soldier"]The devils ran, but they're not dead yet! They still have that tech that filled the city with Originium dust. They'll be back, mark my words!
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Impetuous Soldier"]And you can bet those dukes won't give a shit about us when something happens again.
+[name="Impetuous Soldier"]Like you said, we need to defend ourselves.
+[name="Impetuous Soldier"]That's why I don't believe the rumors that say the Exemplars are getting disbanded. Right, Vina?
+[charslot(slot="m",name="avgnew_112_siege_1#12$1",focus="m")]
+[name="Vina"]Do you remember the wishes we made at the access port?
+[name="Vina"]For the factory boilers to burn bright as they used to, for the guns on Londinium's walls to defend her as they used to.
+[name="Vina"]For the doors of the police stations to be wide open to all, for the police to defy the nobles' will and treat the Infected with fairness and justice.
+[charslot(slot="m",name="avgnew_112_siege_1#2$1",focus="m")]
+[name="Vina"]For the law of Parliament to be the only rule... that's what I hope to see, and what I'm trying to bring about.
+[charslot(slot="m",name="avgnew_112_siege_1#12$1",focus="m")]
+[name="Vina"]Are you happy with Londinium now? Has she gotten better?
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Impetuous Soldier"]...
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Excited Soldier"]...
+[charslot(slot="m",name="avgnew_112_siege_1#1$1",focus="m")]
+[name="Vina"]I can tell you that I'm not happy.
+[charslot(slot="m",name="avg_npc_1520_1#1$1",focus="m")]
+[name="Shearer"]You're dodging the question, Madam Speaker.
+[name="Shearer"]If you choose to do nothing and keep the status quo of the Exemplars, that's entirely fine with everyone.
+[name="Shearer"]All they want is an answer. Will the Exemplars continue to exist—
+[charslot(slot="m",name="avgnew_112_siege_1#1$1",focus="m")]
+[name="Vina"]This is my answer, Lieutenant.
+[name="Vina"]What Parliament fears is your trust in me, personally, that runs deeper than your trust in Parliament itself.
+[name="Vina"]Perhaps they fear that the Exemplars will become the private army of Vina Victoria.
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",focus="m")]
+[name="Vina"]What will become of the glory and honor of the Exemplars when that day comes?
+[name="Vina"]Will the day come when our wishes come true?
+[charslot(slot="m",name="avg_npc_1520_1#2$1",focus="m")]
+[name="Shearer"]...
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]...
+[charslot(slot="m",name="avgnew_112_siege_1#12$1",focus="m")]
+[name="Vina"]Thank you. I will inform Parliament of what I learned today. It's not my place to give an answer over the heads of Parliament.
+[name="Vina"]Let's go, Morgan.
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]...
+[charslot(slot="m",name="avgnew_112_siege_1#5$1",focus="m")]
+[name="Vina"]Morgan?
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]You go first, Vina. I'll have a couple of rounds with the guys here.
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",focus="m")]
+[name="Vina"]...Sure.
+[dialog]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="sw")]
+[stopsound(fadetime=2.5, channel="sw")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>I didn't understand what Vina said that day.</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>But I agreed with the Lieutenant. Our Exemplar comrades needed our help. That's why I needed to stay, stay on Vina's behalf, at least talk to them.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>Even though she was the Speaker, and there was so much she could do...</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>For the first time since the war ended, I drank until I passed out. It burned my belly.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>It was Hannah who found me, and I asked her the question that I could never ask Vina—</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>When can we go home, back to our gym?</i>", x=300,y=300,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="43_g7_towngreenhouse", screenadapt="coverall",block=true)]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_418_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_487_bobb_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_418_1#1$1",focus="l")]
+[name="Sanatorium Patient"]The herbs are growing well. Diane would be glad.
+[name="Sanatorium Patient"]When the farm was rebuilt, it was she who persuaded the engineers to leave behind the damaged lighting equipment and refit it for small greenhouses that didn't draw so much power.
+[name="Sanatorium Patient"]Sorry... remind me, where were we?
+[charslot(slot="r",name="avg_487_bobb_1#1$1",focus="r")]
+[name="Eliseo"]We were talking about your condition.
+[name="Eliseo"]You mentioned that you noticed a significant increase in the strength of your Originium Arts.
+[charslot(slot="l",name="avg_npc_418_1#1$1",focus="l")]
+[name="Sanatorium Patient"]Yes. Sorry, I'm finding it hard to remember things lately. Keep getting distracted. The doctor says Originium has made its way into my brain...
+[name="Sanatorium Patient"]Don't tell me, I've told you this before too?
+[charslot(slot="r",name="avg_487_bobb_1#1$1",focus="r")]
+[name="Eliseo"]We're just chatting. You can say anything you want. Anything else that doesn't feel right?
+[charslot(slot="l",name="avg_npc_418_1#1$1",focus="l")]
+[name="Sanatorium Patient"]Difficulty walking straight? It's happening to a lot of people, though.
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[name="Eliseo"]Ataxia. It's a common symptom of many Infected in Londinium, but I'm not sure what the cause is.
+[charslot(slot="l",name="avg_npc_418_1#1$1",focus="l")]
+[name="Sanatorium Patient"]When I'm by myself, I've been trying to... it's strange. My Originium Arts seem to be changing.
+[charslot(slot="r",name="avg_487_bobb_1#4$1",focus="r")]
+[name="Eliseo"]Changing? I don't have any other reports of—
+[charslot(slot="r",name="avg_487_bobb_1#1$1",focus="r")]
+[name="Eliseo"]Never mind. Please continue, Sarah.
+[name="Eliseo"]Are you casting with your bare hands, by the way? The doctors may have told you this already, but that's detrimental to keeping your condition under control.
+[charslot(slot="l",name="avg_npc_418_1#1$1",focus="l")]
+[name="Sanatorium Patient"]Heh. You're a worrier alright, just like Diane said.
+[name="Sanatorium Patient"]I just can't help it. It's how I search for the war memories in my clouded mind.
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="Eliseo"]The battle for the walls.
+[name="Eliseo"]You said you were a nurse, and you were trying to stop a witchcraft bomb explosion with your Arts, but it didn't work out too well.
+[charslot(slot="l",name="avg_npc_418_1#1$1",focus="l")]
+[name="Sanatorium Patient"]Yes. I remember I was behind Lieutenant Shearer, and the blast threw me off my feet.
+[name="Sanatorium Patient"]Next thing I remember, I was in the field hospital, lying next to the other acute Infected.
+[name="Sanatorium Patient"]I don't know how many witchcraft bombs fell upon the Exemplars.
+[name="Sanatorium Patient"]So many fates, turned on their heads in an instant... but I didn't see any of it, and I don't remember any of it... how could things be like this?
+[Dialog]
+[PlaySound(key="$d_avg_originiumcastshort", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="Eliseo"]Sarah?
+[Dialog]
+[charslot]
+The patient is trembling, and begins to cast Originium Arts without realizing it.
+Eliseo does not know if it is a symptom of post-traumatic stress, but he quickly attempts to direct her attention elsewhere.
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="Eliseo"]Listen to me, Sarah. Take a deep breath.
+[name="Eliseo"]Can you smell the flowers? You're in the sanatorium.
+[name="Eliseo"]The war is over. The Exemplars are home. You're back in Londinium.
+[name="Eliseo"]You're...
+[Dialog]
+[charslot(slot="m",name="avg_487_bobb_1#7$1",focus="m")]
+[Delay(time=1.5)]
+[charslot(duration=0.5)]
+[Delay(time=0.7)]
+He pauses and looks up at the damaged lighting above his head.
+A strange and unfamiliar city, one that, to his eyes, is not far off from a pile of rubble.
+[Dialog]
+[Delay(time=1)]
+'You're in... a place where everything will get better.'
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall",block=true)]
+[charslot(slot="m",name="avg_487_bobb_1#9$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_487_bobb_1#9$1",focus="m")]
+[name="Eliseo"]The alteration of Sarah's Originium Arts is a symptom that has never been observed in other Infected. I should ask my colleagues to keep an eye out.
+[charslot(slot="m",name="avg_487_bobb_1#7$1",focus="m")]
+[name="Eliseo"]I wonder if Diane could get me in touch with an international Messenger. Waiting for Maylander's regular Messenger would take too long. Londinium needs supplies, urgently...
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",posfrom="80,0",posto="0,0",afrom=0,ato=1,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avgnew_112_siege_1#9$1",focus="m")]
+[name="Vina"]...
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step1",loop=false)]
+[stopsound(channel="step1",fadetime=2)]
+[charslot(slot="m",posfrom="0,0",posto="-100,0",afrom=1,ato=0,duration=1)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="Eliseo"]...Huh?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_1519_1#6$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_1519_1#6$1",focus="m")]
+[name="Diane"]Eliseo! You're here too?
+[charslot(slot="m",name="avg_npc_1519_1#9$1",focus="m")]
+[name="Diane"]—Why didn't you stop her? Weren't you looking for her?
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="Eliseo"]Who?
+[charslot(slot="m",name="avg_npc_1519_1#8$1",focus="m")]
+[name="Diane"]The Speaker.
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="Eliseo"]The Speaker?! I saw her coming out of an underground pub...
+[charslot(slot="m",name="avg_npc_1519_1#8$1",focus="m")]
+[name="Diane"]That's where I came from. I happened to run into her when she went to have a drink with old friends.
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="Eliseo"]Sounds like she really considers herself your friend.
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="Diane"]Yeah... if only she considered herself more than a friend.
+[name="Diane"]Eliseo... I've always felt that Londinium could become a better place, that Victoria would be proud of her.
+[name="Diane"]Can the Speaker really make that happen, though?
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

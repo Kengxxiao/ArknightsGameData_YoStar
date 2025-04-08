@@ -1,0 +1,695 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g3_westlobbythroneroom",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[backgroundTween(xFrom=100, yFrom=0, xTo=-100, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=35, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15,grad = true,fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15,grad = true,fadetime=0.1)]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", multi = true, text="♪May the vast lands they keep owre kynge.", x=300,y=200, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n♪His people, and alle his well-wyllynge,",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n♪And give them grace wythoute endyng!",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n♪Then may we call and savely syng,",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n♪Victoria, yeve thankes for owre hom!",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[dialog]
+[curtain(fadetime=1)]
+[delay(time=2)]
+[Background(image="55_g3_westlobbythroneroom",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Throne Room, Palace of Westhaleg</><p=2>October 8th, 1098, 9:45 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Decision(options="You've been humming that song ever since we stepped into the throne room.;Do you like it?", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="Vina"]'Like' is too strong a word. It's just left an impression on me.
+[name="Vina"]My foster parents would hum it by my bedside whenever I couldn't sleep.
+[name="Vina"]I thought it was a lullaby. It's only long after they've passed on that I realized whom I was to them, who was their 'kynge'.
+[name="Vina"]The song became a stranger from that day forth, but the tune has remained familiar. I would never forget it.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="n")]
+[Decision(options="Do you still remember him? The...",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#7$2",focus="m")]
+[name="Vina"]The King? I'm not familiar with him. As for the man who is my closest blood relative...
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="Vina"]I won't lie, Doctor, I tried to piece together an image of my father in my memory.
+[name="Vina"]But when I saw him again with my own eyes, there was nothing familiar about him.
+[name="Vina"]He was a king, and I'm just a gangster from the streets. We have nothing in common, save for the name Victoria.
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="Vina"]There are more important things for me to think about.
+[name="Vina"]You heard the dukes talking. They're ready to abandon Londinium... my home, to whatever fate.
+[name="Vina"]This wasn't what I expected when Dr. Kal'tsit got you out of Chernobog and got me to plan a return to Victoria.
+[name="Vina"]But I've come too far to let it go.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="n")]
+[Decision(options="Responsibility is a curious thing.;I can't let go of the Rhodes Islanders, either.;We're the same.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Decision(options="The dukes know you can't let go of the people who need you. They're counting on it.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="Vina"]And we're counting on them being obsessed with maintaining their own power.
+[name="Vina"]As long as their pride still needs the name 'Victoria', the city will have time to recover.
+[name="Vina"]It's a deal where the outcome is predetermined, and both sides of the table know that.
+[name="Vina"]It's the people who have had my back through all this that keeps me going.
+[charslot(slot="m",name="avg_1019_siege2_1#9$2",focus="m")]
+[name="Vina"]We're home. The war is over. It's time to listen to their voices.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#9$2",focus="n")]
+[Decision(options="Vina...",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="Vina"]What is it, Doctor?
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="n")]
+[Decision(options="Perhaps the day will come when Rhodes Island doesn't approve of the choices you make.;Perhaps the day will come when you don't approve of the choices Rhodes Island makes.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="Vina"]...I know.
+[name="Vina"]Many of us find it hard to accept that you assisted Wiš'adel with the evacuation of the remaining Sarkaz.
+[charslot(slot="m",name="avg_1019_siege2_1#5$2",focus="m")]
+[name="Vina"]But this war can go on no longer. I... We've lost enough people.
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="Vina"]And we've heard Sarkaz warning, loud and clear.
+[name="Vina"]The ducal fleets held their positions during the retreat because they all got the news—
+[name="Vina"]Massive Catastrophe clouds forming over the capitals of most of the Core countries almost simultaneously.
+[charslot(slot="m",name="avg_1019_siege2_1#2$2",focus="m")]
+[name="Vina"]Talk about straightforward. They strolled back to Kazdel in broad daylight.
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="Vina"]You and Dr. Kal'tsit know what they could do with that piece of Originium.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="n")]
+[Decision(options="They won't abuse it, unless their back is to the wall.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="Vina"]For self-defense only? Maybe they think that way, for now.
+[name="Vina"]But there is no such thing as a guarantee when one is in possession of power far greater than one can control.
+[name="Vina"]I've seen many gangs rise rapidly with the backing of the nobility, only to fall apart from the inside just as quickly.
+[dialog]
+[charslot]
+[Decision(options="That's why Amiya is going back to Kazdel with them.;Amiya will keep the Originium under our oversight.", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[musicvolume(volume=0, fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="But you're not in a position to determine Sarkaz's destiny either. Both sides have been inflicted wounds that will not heal so easily.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="The young Sarkaz regent has gotten his wish. The Sarkaz are once again united by concrete hatred, and obtained an Originium shard that belongs to them...", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="Hatred always ends the same way. Where will you be when that time comes?", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_deeplion", volume=1, channel="slide", loop=false)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1", duration=2)]
+[delay(time=2.5)]
+[soundvolume(channel="slide",volume=0,fadetime=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+A golden lion walks out from behind the darkened throne and crouches by its side.
+Gawain. It is like he was always here, like the reliefs around him, bearing witness to the Empire's rise and fall, all in the blink of an eye.
+And now, his dark eyes have witnessed you.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#4$2",focus="m")]
+[name="Vina"]Teacher?!
+[dialog]
+[charslot]
+[Decision(options="...;This is the first time you've shown yourself before me.", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="No need to fear. I am neither a monster nor an illusion.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="I show myself now because I must.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="Vina has chosen a path that she had not even considered, until now. She must grow, and you are in a position to help her.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="n")]
+[Decision(options="Rhodes Island is already assisting her work in Londinium.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="That is not what I mean. I have no intention to interfere in Victoria's destiny, whatever it may be.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=740)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="But you have led her towards a confrontation with the destiny of Terra itself, on which hope is hard to come by.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="I promised one who is long gone to walk with her until the very last, but now, even my own being is no longer a certainty—", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="n")]
+[Decision(options="We will try not to drag others into it.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="I know Vina. When the day comes, she will stand with Rhodes Island, and you will need her. But where will you stand when that day comes?", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="There is no need to answer. She will witness on my behalf.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="You are neither her follower, nor mentor, nor foe.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st4", text="You already realize that the ties you share are one-of-a-kind.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st4", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st5", text="Perhaps we can afford to wait for a chance at a fresh start. But Vina cannot.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st5", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#10$2",focus="m")]
+[name="Vina"]......
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="I have taught you how to survive, Vina. But I cannot teach you how to become hope—", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="The one before you, however, can.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="n")]
+[Decision(options="I know what I must do.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="Then guide her, the one whom Vina trusts. You are the spark that lights her fire, the spring that drives her forward.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="Listen to this one, Vina, when you find yourself in doubt.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice",fadetime=0,screenadapt="coverall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Speaker's Office</><p=2>December 10th, 1098, 7:32 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",duration=0.7)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="Delphine"]What is this instrument, Vina?
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]An engineering sample made by Rockrock. Says it keeps tired workers from growing drowsy. But how's that different from just taking a nap?
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="Delphine"]Does it work?
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[delay(time=0.5)]
+Vina yawns, rubs her eyes, and continues to peruse the documents before her.
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[name="Vina"]No.
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="Vina"]What DOES wake you up, though, is responding to some forty petitions to eliminate the traitor, Millscar.
+[name="Vina"]Have the citizens fighting over this outside calmed down?
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="Delphine"]Yes. Horn brought a bunch of city guard's newcomers straight out of training camp.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]Thank goodness it didn't get out of hand.
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="Delphine"]It helped that the soldiers had families and comrades on both sides. *sigh* I really don't know what the people who still support Millscar are thinking.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]No surprise. It was Parliament that went back on its word first. We did have trouble with our medicine supply, and her stuff gave people hope.
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="Delphine"]Only false hope, though.
+[name="Delphine"]At first, I thought you sent the Defense Forces to...
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]Crack down? Using violence to suppress innocent countrymen is the most cowardly and lest effective method—
+[dialog]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#10$1",focus="l")]
+[name="Vina"]Why are you looking at me like that?
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="Delphine"]Just feeling dumb for worrying at all.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]Don't tease me. I've got a long way to go before I'm used to this role. Thank goodness I have a lot help from people I can trust.
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[name="Vina"]My teacher, the Doctor, and you... and many others.
+[dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+She stretches, puts down Rockrock's sample, and lets out a long exhalation.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]I would be stumbling in the dark without the intel from your informants and our Rhodes Island colleagues.
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="Delphine"]But Millscar...
+[charslot(slot="l",name="avg_1019_siege2_1#2$1",focus="l")]
+[name="Vina"]Selling dangerous drugs of unknown origin, offering predatory loans, threatening the lives of the citizenry... and colluding with the Sarkaz...
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="Vina"]All the evidence lies in my drawer, all of it corroborated. She cannot be allowed to run unchecked just because some few benefited from association with her.
+[charslot(slot="r",name="avg_4110_delphn_1#5$1",focus="r")]
+[name="Delphine"]Allerdale, she—
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="Vina"]It's not just her, Delphine.
+[name="Vina"]No one wants to see this hard-earned peace broken again, after all we've been through.
+[name="Vina"]Parliament promised safety to the people. I know what must be done.
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="Delphine"]Very well. An old friend has a lead on her that might interest you.
+[dialog]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="all")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="w1")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="w2")]
+[stopsound(fadetime=2, channel="w1")]
+[stopsound(fadetime=2, channel="w2")]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[name="Delphine"]By the way, I've given serious consideration to the Doctor's suggestion.
+[name="Delphine"]Once things have settled down for a bit, I'll return to Windermere and take back certain things that have always belonged to me.
+[name="Vina"]How long will you be?
+[name="Delphine"]I don't know. But the Doctor is right. I need what Mother left behind, if I am to help you... even if I was reluctant at the time of her death.
+[name="Vina"]Thank you.
+[name="Delphine"]It's for myself, too. Victoria, Windermere, Lynncardine... I must see for myself that which Mother cared so much about.
+[name="Delphine"]It's the only way I can get closer to her.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u",fadetime=0,screenadapt="coverall")]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_229_1#2",duration=0.7)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="Injured Exemplar"]Sir! Please allow me to still call you that... I-I didn't think you would come to me.
+[name="Injured Exemplar"]Did my application go through?
+[charslot(slot="l",name="avg_npc_229_1#2",focus="l")]
+[name="Horn"]Walker, I've heard how Pitt and the others got you to leave the scene of the protest. I think—
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="Walker"]So that's not what you're here for... Alright. Actually, I've been listening to the radio, sir.
+[name="Walker"]I heard about the artillery handover to the newly reorganized Defense Forces under your command, and the newly-constructed training plate outside the city.
+[name="Walker"]I went to see it myself. The facilities are superb. I can even imagine myself training there...
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="Horn"]I'm sorry, Walker, but I can't approve your application to join the Defense Forces.
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="Walker"]......
+[name="Walker"]Sure, if I'm not up to standard, I'll redouble my—
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="Horn"]You know your own health. Training and fighting will only make it worse.
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="Walker"]My condition is under control. I'm taking medicine. I haven't felt any pain from the rocks for a while! I'm getting better—
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="Horn"]Millscar's medicine, right? We've analyzed it, and it's...
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="Walker"]Nothing more than a painkiller. I know.
+[name="Walker"]But that's what we need. Parliament's medicine rations are running out, aren't they?
+[name="Walker"]At least this makes me feel better, for a while, and lets me practice wielding a crossbow with one hand. I'll pass the Defense Forces tests, sir.
+[name="Walker"]'There will be hope as long as we make it back home, no matter how bloody goddamned hard life is.' That's what you told me during the defense of Chetleigh.
+[Dialog]
+[charslot]
+[musicvolume(volume=0.3, fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>'We are the Exemplars.'</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>'We make miracles.'</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>What about life after the miracle, then? Where do the Exemplars go?</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>Horn said the miracle of the previous Exemplars lived on in Gaul, in the textbooks of military schools. What about us? It was a question no one needed to think about before we truly returned to Londinium.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>When the city broadcast announced that the city belonged to the Victorians again, the youngest girl in my group asked me,</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>'Where do we go from here?'</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>I said we go home; I'll go back to the Slobberknocker with Hannah, Vina and Dagda, and you get to go home too.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>But the girl told me...</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>'I don't have a home anymore. I only have you.'</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=0.5)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_405_1#12$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="Morgan"]Vina and the others are here. We ought to go down.
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Walker"]Vina? Speaker Vina? She's coming for me too? Because of the protest?
+[name="Walker"]Did you come to keep an eye on me, sir?
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="Morgan"]She came to help you because she knew Vina was coming. Same for all of us.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall", x=120,y=-150,xScale=1.5, yScale=1.5,block=true)]
+[delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+There is no warmth in Londinium's sunset.
+The survivors do not remember if it has always been this way. Those who come after will not even question it.
+Once, The Shard was the pride of this old nomadic city. Now, people pay careful attention not to step into its shadow.
+They all remember the day that terror itself descended upon its pinnacle, beneath the burning red sky.
+[Dialog]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall",fadetime=2,block=true)]
+[delay(time=1)]
+Two walk side-by-side through the sparse crowd, the setting sun drawing long shadows behind them.
+Those they pass bow to them, then go back to the work at hand, humming—
+♪Then may we call and savely syng,
+♪Victoria, yeve thankes for owre hom!
+[Dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="l")]
+[name="Vina"]The refurbishment of The Shard seems to be proceeding ahead of schedule.
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="Delphine"]Rhodes Island helped a lot: providing medicine, taking in patients, and the Engineering Department has been helping with construction work in the city.
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="Delphine"]The initial incident left such an impression on the people that the proposal to modify The Shard met no significant opposition.
+[name="Delphine"]And we're cleaning up the Originium crystal growths in the city while we're at it.
+[name="Delphine"]But the engineers of the Self-Salvation Corps say it'll take some time for things to go back to normal. Even the mobility layer is affected.
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="Vina"]Have we confirmed the retrieval team for The Shard's core technologies?
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="Delphine"]We have a preliminary list, but we're still doing background checks on some of the technicians and scholars. They have... certain links, if you know what I mean.
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="Vina"]I do. The dukes have given me a heads-up. We'll turn a blind eye, as long as there's no serious issue.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="Vina"]I, for one, am hoping that they find something worthwhile in that scrapheap. It would be a good thing for Victoria.
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="Delphine"]And it's not such a bad thing for us if they started fighting over it.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_229_1#6",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="Horn"]Vina. Delphine.
+[charslot(slot="m",name="avg_4110_delphn_1#11$1",focus="m")]
+[name="Delphine"]Horn? I thought you were...
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="Horn"]I came to visit an old comrade.
+[name="Horn"]Don't mind me. I was just about to go and see how Bagpipe's doing with the new recruits.
+[Dialog]
+[charslot]
+Horn stretches, but shows no sign of leaving. Vina sighs.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot="m",name="avg_npc_405_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_405_1#1$1",focus="m")]
+[name="Morgan"]Vina! You would never guess what Walker and I talked about. You remember the Davises, who came with us from Chetleigh? Well, the wife just gave birth—
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="Vina"]I know why you're here, Morgan.
+[name="Vina"]Walker and the protests are a matter for Parliament... it's not something I should get involved in.
+[name="Vina"]I'm just here to talk about the whereabouts of Millscar.
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]......
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Walker"]Thanks, but there's no need to make things difficult for Madam Speaker.
+[name="Walker"]I trust Parliament. I know many MPs. Fine people.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Parliament is not as simple as you think. There are those who would prefer to escalate the issue.
+[name="Delphine"]But resolving the Millscar issue as soon as possible is in the best interests of everyone, including you.
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="Walker"]......
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Image(image="55_i17_2", screenadapt="coverall",block=true)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>The solder who charged into the city with us stood in the setting sun, suffering our 'interrogation'.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>We all know that Vina can influence Parliament... if she chooses to.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>That was the day when I truly realized that Vina had not belonged solely to the Glasgow Gang for a long time.</i>",block = true)]
+[Sticker(id="st1")]
+[playsound(key="$d_avg_paper1",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_sketchdraw",volume=1)]
+[Image(image="55_i05_2", screenadapt="coverall",fadetime=3,block=true)]
+[Delay(time=2)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>Maybe my Vina already said goodbye to us that afternoon.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>That day, all factories of the city came rumbling to life, and steam gushed up to the sky.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>I saw her golden hair flying wild in the wind, blocking the fleeting tears in her eyes. She turned towards us with a smile and said—</i>",block = true)]
+[Sticker(id="st1")]
+[stopmusic(fadetime=1)]
+[Sticker(id="st2", text="'We're home.'", x=300, y=270, alignment="left", size=24, delay=0, duration=1, width=700,block = true)]
+[Delay(time=1)]
+[Sticker(id="st2", duration=1,block = false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>We're home. But things have not gone the way we expected.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>Does going back home mean goodbye?</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>Will we lose Vina?</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[PlayMusic(key="$m_avg_epic_loop", volume=0.6)]
+[Image(image="55_i05_1", screenadapt="coverall",fadetime=3,block=true)]
+[PlaySound(key="$d_avg_armycrowd", volume=0.6)]
+[PlaySound(key="$d_avg_audience_chaos", volume=0.5)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'The factories welcome us!'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'There are survivors in the city!'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Why do you stand in our way?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'I'm sorry... dukes' orders. The Exemplars must not act on their own until the dukes have come to a conclusion.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Why are you pointing your bow at me?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Weren't we fighting side-by-side just a moment ago?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'What do we do? Is that a... protest? In the city?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Londinium</><p=2>September 28th, 1098, 5:27 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.4)]
+[PlaySound(key="$d_avg_steamburst", volume=0.6,channel="machine1",delay=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.6,channel="machine2",delay=2)]
+[PlaySound(key="$d_avg_steamburst", volume=0.8,channel="machine3",delay=2.5)]
+[PlaySound(key="$d_avg_steamburst", volume=1,channel="machine4",delay=3)]
+[PlaySound(key="$d_avg_airshiptakeoff", volume=0, loop=true, channel="machine")]
+[SoundVolume(volume=0.6, channel="machine",fadetime=4)]
+[PlaySound(key="$factory_low_drone", volume=0.4, loop=true, channel="f")]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[delay(time=2)]
+The city was angry.
+[name="Morgan"]The troops that stood in our way... are they falling back?
+[name="Indra"]The factories are waking up? I thought the Sarkaz had shut everything down.
+[name="Dagda"]...I remember these factories. I know where they are. I always will.
+[name="Dagda"]That's Miles Industries on York Street! And that's Coppola Foods on Scott Street! And that's—
+[name="Dagda"]'Consolidated Inc.'... 'Hankin's'... 'South Wicker Cargo'...
+[name="Dagda"](Choked) Vina... I thought they...
+[dialog]
+Those that were silent, those that had been abandoned, those that had been commandeered by the Sarkaz, and those that continued to run timidly.
+All the city's factories came alive at the same time, but the Sarkaz hastily pulling back from the battlefield outside the city had no time to notice.
+The steam that gushed out was the breath of steel and machine. The factories were roaring.
+[name="Morgan"]What's going on?
+[name="Vina"]They're helping us. Londinium is helping us.
+[name="Allied Soldier"]March on, Exemplars. It's time to bring this to an end.
+[name="Allied Soldier"]This is Lieutenant Diane Weber of the Sixth Column, Tenth Infantry Regiment. Lower your weapons, soldiers, and escort the Exemplars in their advance.
+[name="Vina"]You're defying the dukes?
+[name="Diane"]Before I was a soldier, I was a Londinier. This is my home too.
+[name="Diane"]Go, Siege. The fight is not yet over.
+[name="Diane"]We will take back what is ours!
+The first squad starts lowering their crossbows, and they are soon followed by others, who step aside to clear a path.
+[name="Vina"]Exemplars, forward!
+[dialog]
+[PlaySound(key="$d_avg_armywalking", volume=0.8)]
+[delay(time=2)]
+[name="Vina"]We're home.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[image]
+[Background(image="32_g4_ordnancefactory", screenadapt="coverall",block=true)]
+[charslot(slot="m",name="avg_4162_cathy_1#3$1",focus="m")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4162_cathy_1#3$1",focus="m")]
+[name="Catherine"]Keep the factories running at full steam! Keep the Sarkaz at bay just a bit longer!
+[name="Catherine"]The dukes want people to think there's no Victorians left alive, justifying them sitting on their hands out there. But we'll make 'em hear we're still here!
+[name="Catherine"]The people outside the walls will know we haven't given up yet!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_864_1#9$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_864_1#9$1",focus="m")]
+[name="Percival"]Thanks for the assist, Madam Catherine. You can trust our guys; everyone has a trick or two up their sleeves.
+[name="Percival"]Nine and the others are working on the other factories. This whole city is about to rise up.
+[charslot(slot="m",name="avg_4162_cathy_1#4$1",focus="m")]
+[name="Catherine"]Are you coming back... Feist?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_cherunder_2", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="m",name="avg_npc_400_1#12$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_400_1#12$1",focus="m")]
+[name="Heidi"]Is it on?
+[charslot(slot="m",name="avg_npc_012",focus="m")]
+[name="Guard Operator"]On it is! The other factories have also been restored, just as the Doctor planned.
+[name="Guard Operator"]It's not just the citizens that are helping us though. There are other people, and they call themselves—
+[name="Guard Operator"]Reunion...
+[Dialog]
+[dialog]
+[StopSound(channel="machine", fadetime=2)]
+[StopSound(channel="f", fadetime=2)]
+[StopSound(channel="e", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="50_g13_warshipcommandroom", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="l",name="avg_npc_1068_1#1$1")]
+[charslot(slot="r",name="avg_npc_726_1#1$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_1068_1#1$1",focus="l")]
+[name="Duke of Gododdin"]Well, well. I haven't seen the city so lively in years.
+[name="Duke of Gododdin"]I just got word that alliance troops have cleared a path for the Exemplars.
+[name="Duke of Gododdin"]That wasn't our orders. Are you happy with the test results?
+[charslot(slot="r",name="avg_npc_726_1#1$1",focus="r")]
+[name="Duke of Caster"]It seems we have underestimated the influence of a miracle.
+[name="Duke of Caster"]We should hasten our preparations, then.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="21_G7_decisivebattlealley_d", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Mysterious Mercenary"]Hey, boss, looks like we don't have to cause a commotion anymore.
+[name="Mysterious Mercenary"]They're letting the Exemplars through.
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1", bstart=0.2,bend=0.7,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]Pull the ambush and give a hand to the factories we captured.
+[name="???"]Tell the people in charge that the boilers keep burning until I say stop.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Mysterious Mercenary"]You got it.
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=0.7)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]......
+[name="???"]Welcome home, Vina.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Speaker's Office</><p=2>December 10th, 1098, 9:28 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]Speaker's Office.
+[name="Vina"]Walker's fine. Parliament won't come down hard on him over this little thing. But tell him to stay safe.
+[name="Vina"]There's no telling if the people watching us might find him inconvenient to them.
+[name="Vina"]And... how are things going over there?
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="Vina"]...Good.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1019_siege2_1#9$1",focus="m")]
+[name="Vina"]We'll find you...
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="Vina"]Allerdale.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

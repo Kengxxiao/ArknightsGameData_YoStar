@@ -12528,6 +12528,96 @@
           ]
         }
       ]
+    },
+    "char_1019_siege2": {
+      "charId": "char_1019_siege2",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "trade_ord_spd&par[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "trade_ord_spd&par[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": []
+        }
+      ]
+    },
+    "char_487_bobb": {
+      "charId": "char_487_bobb",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&unfull[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "dorm_rec_all&unfull[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4162_cathy": {
+      "charId": "char_4162_cathy",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_proc_probability&ext[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "workshop_proc_probability&ext[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "workshop_formula_cost[001]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
@@ -14329,7 +14419,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "When this Operator is assigned to Factory, for every <@cc.vup>2</> points of <$cc.bd_A><@cc.rem>Chain of Thought</>, productivity </><@cc.vup>+1%</>"
+      "description": "When this Operator is assigned to Factory, for every <@cc.vup>2</> points of <$cc.bd_A><@cc.rem>Chain of Thought</></>, productivity <@cc.vup>+1%</>"
     },
     "manu_prod_spd_bd[010]": {
       "buffId": "manu_prod_spd_bd[010]",
@@ -14341,7 +14431,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "When this Operator is assigned to Factory, for every <@cc.vup>1</> points of <$cc.bd_A><@cc.rem>Chain of Thought</>, productivity </><@cc.vup>+1%</>"
+      "description": "When this Operator is assigned to Factory, for every <@cc.vup>1</> points of <$cc.bd_A><@cc.rem>Chain of Thought</></>, productivity <@cc.vup>+1%</>"
     },
     "manu_prod_spd_bd[200]": {
       "buffId": "manu_prod_spd_bd[200]",
@@ -15555,6 +15645,30 @@
       "roomType": "TRADING",
       "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants), additional order acquisition efficiency <@cc.vup>+10%</>"
     },
+    "trade_ord_spd&par[000]": {
+      "buffId": "trade_ord_spd&par[000]",
+      "buffName": "Resolution on Foreign Trade α",
+      "buffIcon": "trading",
+      "skillIcon": "trade_ord_spd&par1",
+      "sortId": 6124,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>"
+    },
+    "trade_ord_spd&par[001]": {
+      "buffId": "trade_ord_spd&par[001]",
+      "buffName": "Resolution on Foreign Trade β",
+      "buffIcon": "trading",
+      "skillIcon": "trade_ord_spd&par2",
+      "sortId": 6125,
+      "buffColor": "#0075a9",
+      "textColor": "#ffffff",
+      "buffCategory": "OUTPUT",
+      "roomType": "TRADING",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; if a <$cc.g.glasgow><@cc.kw>Glasgow Gang</></> Operator is assigned to the same Trading Post, increase order acquisition efficiency by an additional <@cc.vup>+10%</>"
+    },
     "workshop_proc_probability[000]": {
       "buffId": "workshop_proc_probability[000]",
       "buffName": "Focus α",
@@ -15711,6 +15825,30 @@
       "roomType": "WORKSHOP",
       "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, any recipes with Morale cost of <@cc.kw>4</> or higher have their Morale cost divided by <@cc.vup>4</>"
     },
+    "workshop_proc_probability&ext[000]": {
+      "buffId": "workshop_proc_probability&ext[000]",
+      "buffName": "Model Efficient Worker α",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_p2",
+      "sortId": 7142,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the byproduct chance is increased by <@cc.vup>50%</>"
+    },
+    "workshop_proc_probability&ext[001]": {
+      "buffId": "workshop_proc_probability&ext[001]",
+      "buffName": "Model Efficient Worker·β",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_p7",
+      "sortId": 7143,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the byproduct chance is increased by <@cc.vup>50%</>; if <@cc.kw>Stainless</> is assigned to a Dormitory, increase byproduct chance by an additional <@cc.vup>10%</>"
+    },
     "workshop_formula_bonus1[000]": {
       "buffId": "workshop_formula_bonus1[000]",
       "buffName": "Causality",
@@ -15741,6 +15879,18 @@
       "buffIcon": "workshop",
       "skillIcon": "bskill_ws_cost_magallan",
       "sortId": 7112,
+      "buffColor": "#e3eb00",
+      "textColor": "#333333",
+      "buffCategory": "FUNCTION",
+      "roomType": "WORKSHOP",
+      "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, reduces the Morale consumed by all formulas that cost <@cc.kw>4</> Morale or more by <@cc.vup>-2</>"
+    },
+    "workshop_formula_cost[001]": {
+      "buffId": "workshop_formula_cost[001]",
+      "buffName": "Automated Assembly Line",
+      "buffIcon": "workshop",
+      "skillIcon": "bskill_ws_cost",
+      "sortId": 7116,
       "buffColor": "#e3eb00",
       "textColor": "#333333",
       "buffCategory": "FUNCTION",
@@ -17773,7 +17923,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is <@cc.kw><$cc.gvial>Gavial</></>, further increases Morale restored by <@cc.vup>+0.45</>"
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is <@cc.kw><$cc.gvial>Gavial</></>, further increases Morale restored by <@cc.vup>+0.45</>"
     },
     "dorm_rec_single_P[002]": {
       "buffId": "dorm_rec_single_P[002]",
@@ -17966,6 +18116,30 @@
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
       "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place); if the target is a <$cc.tag.dungeon><@cc.kw>Laios's Party</></> Operator, restore an additional <@cc.vup>+0.15</> Morale"
+    },
+    "dorm_rec_all&unfull[000]": {
+      "buffId": "dorm_rec_all&unfull[000]",
+      "buffName": "Listener",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_all2",
+      "sortId": 5429,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    "dorm_rec_all&unfull[001]": {
+      "buffId": "dorm_rec_all&unfull[001]",
+      "buffName": "Conversationalist",
+      "buffIcon": "dormitory",
+      "skillIcon": "bskill_dorm_unfull",
+      "sortId": 5430,
+      "buffColor": "#21cdcb",
+      "textColor": "#ffffff",
+      "buffCategory": "RECOVERY",
+      "roomType": "DORMITORY",
+      "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory; for every <@cc.kw>1</> Operator whose Morale is not full in that Dormitory, restore an additional <@cc.vup>+0.01</> (Only the strongest effect of this type applies)"
     },
     "dorm_rec_all&single[000]": {
       "buffId": "dorm_rec_all&single[000]",
@@ -73060,6 +73234,533 @@
         "isOnly": 1,
         "quantity": 1
       },
+      "furni_trainStation_elevator_01": {
+        "id": "furni_trainStation_elevator_01",
+        "sortId": 1733,
+        "name": "Railway Platform Elevator",
+        "iconId": "furni_trainStation_elevator_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_1",
+        "width": 5,
+        "depth": 4,
+        "height": 10,
+        "comfort": 460,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The train station's elevator, which survived the entire war, was stuck between two floors. The Vouivre and her Lupo captain managed to yank it free using just a few safety cables, startling the workers who had come to fix it.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_hatBox_01": {
+        "id": "furni_trainStation_hatBox_01",
+        "sortId": 1734,
+        "name": "Engraved Briefcase",
+        "iconId": "furni_trainStation_hatBox_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_2",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 125,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A suitcase emblazoned with the gang's name. Despite its unassuming exterior, it holds the gang's weapons inside. Claws, machetes, brass knuckles... and a butterfly knife, well-maintained and gleaming as brightly as the day it was bought.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_steamEngine_01": {
+        "id": "furni_trainStation_steamEngine_01",
+        "sortId": 1735,
+        "name": "Old Steam Engine",
+        "iconId": "furni_trainStation_steamEngine_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_1",
+        "width": 3,
+        "depth": 3,
+        "height": 6,
+        "comfort": 225,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "No one knows who removed the steam engine, but it's no longer repairable. A boilermaker's daughter placed it on the platform. It once thundered, driving the world forward, but time has left it behind, forgotten on the railway platform.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_brand_01": {
+        "id": "furni_trainStation_brand_01",
+        "sortId": 1736,
+        "name": "Railway Platform Timetable",
+        "iconId": "furni_trainStation_brand_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "BOARD_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_1",
+        "width": 2,
+        "depth": 3,
+        "height": 7,
+        "comfort": 200,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A timetable displaying the daily train schedule; a black umbrella is lying next to it. Long ago, the Self-Salvation Corps used the color of umbrellas to signal enemy movements. But the war is over now, and an umbrella is just an umbrella.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_scheduleDisplay_01": {
+        "id": "furni_trainStation_scheduleDisplay_01",
+        "sortId": 1737,
+        "name": "'The Future is Nigh'",
+        "iconId": "furni_trainStation_scheduleDisplay_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DEVICE_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_2",
+        "width": 8,
+        "depth": 3,
+        "height": 4,
+        "comfort": 165,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A display board that shows when the next train will arrive. Many travelers like to take photos under it just as a specific train is about to arrive. Recently, there have even been afternoon tea gatherings held directly beneath it.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_bench_01": {
+        "id": "furni_trainStation_bench_01",
+        "sortId": 1738,
+        "name": "Railway Platform Bench",
+        "iconId": "furni_trainStation_bench_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_2",
+        "width": 6,
+        "depth": 3,
+        "height": 4,
+        "comfort": 270,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A platform bench crafted by maintenance workers—simple, but sturdy. A former Defense Forces soldier once visited a sanatorium. Upon returning, he remained silent. He left the undelivered bouquet and loaf of bread behind on the bench.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_ladder_01": {
+        "id": "furni_trainStation_ladder_01",
+        "sortId": 1739,
+        "name": "Portable Staircase",
+        "iconId": "furni_trainStation_ladder_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_1",
+        "width": 6,
+        "depth": 3,
+        "height": 6,
+        "comfort": 325,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A sturdy scrap metal ladder meant for repairing the railway platform's construction faults. But the workers did such a good job restoring it that it was never needed. It now serves as a makeshift stand for their toolboxes.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_cart_01": {
+        "id": "furni_trainStation_cart_01",
+        "sortId": 1740,
+        "name": "Engraved Pushcart",
+        "iconId": "furni_trainStation_cart_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_2",
+        "width": 3,
+        "depth": 2,
+        "height": 4,
+        "comfort": 195,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "An old man's luggage cart, topped by a pot filled with Norport's forgotten weeds. He stood before that wall, his voice trembling as he carefully read out every word of a heraldry paper published months ago, with his students as co-authors.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_plants_01": {
+        "id": "furni_trainStation_plants_01",
+        "sortId": 1741,
+        "name": "Railway Platform Flower Box",
+        "iconId": "furni_trainStation_plants_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PLANT",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_3",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 155,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The simple yet ingenious flower boxes add a touch of greenery to the railway platform. The seeds came from the town of Brentwood and were the first new variety cultivated by local gardeners after the war.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_chandelier_01": {
+        "id": "furni_trainStation_chandelier_01",
+        "sortId": 1742,
+        "name": "Pulley Pendant Lamp",
+        "iconId": "furni_trainStation_chandelier_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_3",
+        "width": 3,
+        "depth": 2,
+        "height": 4,
+        "comfort": 90,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A bright chandelier designed with decorative pulleys. 'They say it's decorative, but with a bit of skill, the rope hidden in the lampshade could—Grandma? You were here all the time?'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_pillar_01": {
+        "id": "furni_trainStation_pillar_01",
+        "sortId": 1743,
+        "name": "Railway Platform Column",
+        "iconId": "furni_trainStation_pillar_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_3",
+        "width": 2,
+        "depth": 3,
+        "height": 10,
+        "comfort": 230,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Decorative pillars on the platform feature posters illustrating the Londiniers' vision of the future. 'We have given our blood, tears, toil, and sweat. Soon, we will embrace a bright future.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_boxshelf_01": {
+        "id": "furni_trainStation_boxshelf_01",
+        "sortId": 1744,
+        "name": "Classic Luggage Cart",
+        "iconId": "furni_trainStation_boxshelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_3",
+        "width": 2,
+        "depth": 4,
+        "height": 7,
+        "comfort": 235,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A metal luggage cart holding the belongings of a military doctor and his companion. Fear, anger, sorrow… beneath the warm glow of the sunset, none of it matters now. What matters is that the war is over, and the soldiers should go home.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_ticketOffice_01": {
+        "id": "furni_trainStation_ticketOffice_01",
+        "sortId": 1745,
+        "name": "Mobile Ticket Booth",
+        "iconId": "furni_trainStation_ticketOffice_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_4",
+        "width": 8,
+        "depth": 5,
+        "height": 8,
+        "comfort": 645,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "This ticket booth has been restored and now doubles as an information desk. The children of Saint Marcel are thrilled to travel by train again, pretending to be workers and Exemplars, and their teacher who stands alone against the tide.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_clock_01": {
+        "id": "furni_trainStation_clock_01",
+        "sortId": 1746,
+        "name": "Railway Platform Clock",
+        "iconId": "furni_trainStation_clock_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DEVICE_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_4",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 80,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The train station's clock, which stood through the entire war. It had stopped the moment the war began. Now, it once again measures the passage of time.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_Mailbox_01": {
+        "id": "furni_trainStation_Mailbox_01",
+        "sortId": 1747,
+        "name": "Railway Platform Mailbox",
+        "iconId": "furni_trainStation_Mailbox_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 175,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The train station's mailbox, which withstood the entire war, freshly repainted. In those days, people cast their hopes and dreams into it—not to inform others, but to find solace for themselves.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_wallpaper_01": {
+        "id": "furni_trainStation_wallpaper_01",
+        "sortId": 1748,
+        "name": "Railway Platform Panoramic Display",
+        "iconId": "furni_trainStation_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_2",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A panoramic display screen showcasing the scenery outside Londinium Station. The evening light is gentle as the trains rush by. The platform does not speak; it simply smiles as it bids farewell to each departure.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
+      "furni_trainStation_floor_01": {
+        "id": "furni_trainStation_floor_01",
+        "sortId": 1749,
+        "name": "Railway Platform Metal Floor",
+        "iconId": "furni_trainStation_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_trainStation",
+        "groupId": "furni_set_trainStation_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "The metal flooring on the platform, which held up through the entire war. Some of its anti-slip patterns have worn down. Now, people no longer run here to evade capture—they sprint because their train is about to depart.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -78950,6 +79651,37 @@
         "isOnly": 1,
         "quantity": 0
       },
+      "furni_terratimes_Glasgow_01": {
+        "id": "furni_terratimes_Glasgow_01",
+        "sortId": 11091,
+        "name": "Plaque - Gang",
+        "iconId": "furni_terratimes_Glasgow_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "Graffiti, sandbags, beer cans, fists, life, and fate.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -80119,6 +80851,37 @@
         "comfort": 105,
         "usage": "Used in the dorm to improve the ambience.",
         "description": "A souvenir awarded for completing the Kjerag Icebound Valley Annihilation mission and submitting the mission report. The echoes of the Icebound Valley yet reverberate in your ears.",
+        "obtainApproach": "Annihilation Mission Award",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "quantity": 0
+      },
+      "furni_annihilation_s25_01": {
+        "id": "furni_annihilation_s25_01",
+        "sortId": 13023,
+        "name": "Echoes of Columbia - Cityway",
+        "iconId": "furni_annihilation_s25_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "Used in the dorm to improve the ambience.",
+        "description": "A souvenir awarded for completing the Columbia's Cityway 66 Annihilation mission and submitting the mission report. The sounds of the prison yet reverberate in your ears.",
         "obtainApproach": "Annihilation Mission Award",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -96483,6 +97246,142 @@
           "furni_rhodesKitchen_wallpaper_01",
           "furni_rhodesKitchen_floor_01"
         ]
+      },
+      "furni_set_trainStation": {
+        "id": "furni_set_trainStation",
+        "sortId": 100,
+        "name": "Londinium Railway Platform",
+        "themeType": "EVENT",
+        "desc": "A recreation of an evening train platform based on descriptions from several operators. Victorian operators often visit to drink tea, chat, or simply sit quietly, doing nothing at all.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_trainStation_elevator_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_hatBox_01",
+            "pos0": 8,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_steamEngine_01",
+            "pos0": 5,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_brand_01",
+            "pos0": 2,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_scheduleDisplay_01",
+            "pos0": 9,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_bench_01",
+            "pos0": 10,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_ladder_01",
+            "pos0": 9,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_cart_01",
+            "pos0": 15,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_plants_01",
+            "pos0": 20,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_chandelier_01",
+            "pos0": 17,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_pillar_01",
+            "pos0": 22,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_boxshelf_01",
+            "pos0": 21,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_ticketOffice_01",
+            "pos0": 25,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_clock_01",
+            "pos0": 25,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_Mailbox_01",
+            "pos0": 30,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_trainStation_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_trainStation_1",
+          "furni_set_trainStation_2",
+          "furni_set_trainStation_3",
+          "furni_set_trainStation_4"
+        ],
+        "furnitures": [
+          "furni_trainStation_elevator_01",
+          "furni_trainStation_hatBox_01",
+          "furni_trainStation_steamEngine_01",
+          "furni_trainStation_brand_01",
+          "furni_trainStation_scheduleDisplay_01",
+          "furni_trainStation_bench_01",
+          "furni_trainStation_ladder_01",
+          "furni_trainStation_cart_01",
+          "furni_trainStation_plants_01",
+          "furni_trainStation_chandelier_01",
+          "furni_trainStation_pillar_01",
+          "furni_trainStation_boxshelf_01",
+          "furni_trainStation_ticketOffice_01",
+          "furni_trainStation_clock_01",
+          "furni_trainStation_Mailbox_01",
+          "furni_trainStation_wallpaper_01",
+          "furni_trainStation_floor_01"
+        ]
       }
     },
     "groups": {
@@ -101337,8 +102236,7 @@
           "furni_laundry_floor_01",
           "furni_laundry_washer_01",
           "furni_laundry_shelf_01",
-          "furni_laundry_basket_01",
-          ""
+          "furni_laundry_basket_01"
         ]
       },
       "furni_set_shuttle_1": {
@@ -102217,6 +103115,63 @@
           "furni_rhodesKitchen_ceilingCabinet_01",
           "furni_rhodesKitchen_teaTable_01",
           "furni_rhodesKitchen_floor_01"
+        ]
+      },
+      "furni_set_trainStation_1": {
+        "id": "furni_set_trainStation_1",
+        "sortId": 1,
+        "name": "A Memory",
+        "themeId": "furni_set_trainStation",
+        "comfort": 300,
+        "count": 4,
+        "furniture": [
+          "furni_trainStation_elevator_01",
+          "furni_trainStation_steamEngine_01",
+          "furni_trainStation_brand_01",
+          "furni_trainStation_ladder_01"
+        ]
+      },
+      "furni_set_trainStation_2": {
+        "id": "furni_set_trainStation_2",
+        "sortId": 2,
+        "name": "A Long Road",
+        "themeId": "furni_set_trainStation",
+        "comfort": 220,
+        "count": 5,
+        "furniture": [
+          "furni_trainStation_hatBox_01",
+          "furni_trainStation_scheduleDisplay_01",
+          "furni_trainStation_bench_01",
+          "furni_trainStation_cart_01",
+          "furni_trainStation_wallpaper_01"
+        ]
+      },
+      "furni_set_trainStation_3": {
+        "id": "furni_set_trainStation_3",
+        "sortId": 3,
+        "name": "A Glimmer of Hope",
+        "themeId": "furni_set_trainStation",
+        "comfort": 165,
+        "count": 4,
+        "furniture": [
+          "furni_trainStation_plants_01",
+          "furni_trainStation_chandelier_01",
+          "furni_trainStation_pillar_01",
+          "furni_trainStation_boxshelf_01"
+        ]
+      },
+      "furni_set_trainStation_4": {
+        "id": "furni_set_trainStation_4",
+        "sortId": 4,
+        "name": "A Train Ticket",
+        "themeId": "furni_set_trainStation",
+        "comfort": 260,
+        "count": 4,
+        "furniture": [
+          "furni_trainStation_ticketOffice_01",
+          "furni_trainStation_clock_01",
+          "furni_trainStation_Mailbox_01",
+          "furni_trainStation_floor_01"
         ]
       }
     },
@@ -103980,7 +104935,7 @@
       ],
       "requireStages": [
         {
-          "stageId": "easy_11-03",
+          "stageId": "sub_09-1-2",
           "rank": 2
         }
       ]
@@ -104114,7 +105069,7 @@
       ],
       "requireStages": [
         {
-          "stageId": "sub_05-4-3",
+          "stageId": "sub_04-4-1",
           "rank": 2
         }
       ]
@@ -104630,7 +105585,7 @@
       ],
       "requireStages": [
         {
-          "stageId": "easy_13-13",
+          "stageId": "sub_09-1-4",
           "rank": 2
         }
       ]
@@ -104764,7 +105719,7 @@
       ],
       "requireStages": [
         {
-          "stageId": "easy_13-04",
+          "stageId": "sub_09-1-3",
           "rank": 2
         }
       ]
@@ -108759,5 +109714,155 @@
     3,
     4,
     5
-  ]
+  ],
+  "workshopRarities": [
+    {
+      "name": "All",
+      "order": 0,
+      "rarityList": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3",
+        "TIER_4",
+        "TIER_5"
+      ],
+      "color": "#FFFFFF"
+    },
+    {
+      "name": "Normal",
+      "order": 1,
+      "rarityList": [
+        "TIER_2"
+      ],
+      "color": "#9FBA32"
+    },
+    {
+      "name": "Rare",
+      "order": 2,
+      "rarityList": [
+        "TIER_3"
+      ],
+      "color": "#1DA0F4"
+    },
+    {
+      "name": "Epic",
+      "order": 3,
+      "rarityList": [
+        "TIER_4"
+      ],
+      "color": "#B986FE"
+    },
+    {
+      "name": "Unique",
+      "order": 4,
+      "rarityList": [
+        "TIER_5"
+      ],
+      "color": "#BB9D12"
+    }
+  ],
+  "todoItemSortPriorityDict": {
+    "NONE": 0,
+    "MANUF_STOP": 1,
+    "TRADE_STOP": 2,
+    "HIRE_EMPTY": 3,
+    "MEETING_EMPTY": 4,
+    "NEW_PRODUCTS": 5,
+    "HAS_ORDERS": 6,
+    "NEW_FAVOR": 7,
+    "NEW_FAVOR_MAX": 8,
+    "BATCH_WORK": 9,
+    "BATCH_REST": 10,
+    "CHAR_TIRED": 11,
+    "TRAIN_FINISH": 12,
+    "HIRE_REFRESHED": 13,
+    "NEW_CLUES": 14
+  },
+  "slotPrequeDatas": {
+    "CONTROL": {
+      "roomType": "CONTROL",
+      "name": "Control Center",
+      "typeSortId": 0,
+      "isPreque": true,
+      "prequeNum": 3
+    },
+    "MEETING": {
+      "roomType": "MEETING",
+      "name": "Reception Room",
+      "typeSortId": 1,
+      "isPreque": true,
+      "prequeNum": 3
+    },
+    "MANUFACTURE": {
+      "roomType": "MANUFACTURE",
+      "name": "Factory",
+      "typeSortId": 2,
+      "isPreque": true,
+      "prequeNum": 3
+    },
+    "TRADING": {
+      "roomType": "TRADING",
+      "name": "Trading Post",
+      "typeSortId": 3,
+      "isPreque": true,
+      "prequeNum": 3
+    },
+    "POWER": {
+      "roomType": "POWER",
+      "name": "Power Plant",
+      "typeSortId": 4,
+      "isPreque": true,
+      "prequeNum": 3
+    },
+    "HIRE": {
+      "roomType": "HIRE",
+      "name": "Office",
+      "typeSortId": 5,
+      "isPreque": true,
+      "prequeNum": 3
+    },
+    "TRAINING": {
+      "roomType": "TRAINING",
+      "name": "Training Room",
+      "typeSortId": 6,
+      "isPreque": false,
+      "prequeNum": 0
+    },
+    "WORKSHOP": {
+      "roomType": "WORKSHOP",
+      "name": "Workshop",
+      "typeSortId": 7,
+      "isPreque": false,
+      "prequeNum": 0
+    }
+  },
+  "dormitoryPrequeDatas": {
+    "DORMITORY": {
+      "roomType": "DORMITORY",
+      "name": "Dormitory"
+    }
+  },
+  "workshopTargetDesDict": {
+    "F_EXP": "Battle Records",
+    "F_GOLD": "Precious Metals",
+    "F_ASC": "Chips",
+    "F_DIAMOND": "Originium Materials"
+  },
+  "tradingOrderDesDict": {
+    "O_GOLD": "Business Strategy",
+    "O_DIAMOND": "Mining Strategy"
+  },
+  "stationManageConstData": {
+    "cantWorkToastNoTiredChar": "No Fatigued working operators",
+    "cantWorkToastNoAvailQueue": "No Available Presets",
+    "cantRestToastNoTiredChar": "No operators require rest",
+    "cantRestToastNoAvailDorm": "No vacancies in the dormitories",
+    "workBatchToast": "{0} room(s) switched their Formation",
+    "restBatchToast": "{0} operator(s) assigned to the dormitories",
+    "roomNoAvailQueueToast": "No Available Presets",
+    "cantUseNoPerson": "No operator assigned",
+    "cantUseWorking": "In Formation",
+    "queueCleared": "The Presets in this building have been cleared",
+    "updateTime": 1744113600
+  }
 }

@@ -1,0 +1,604 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_329_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_240",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Nervous Child"]I-I just go over there like this?
+[charslot(slot="l",name="avg_npc_329_1#1$1",focus="l")]
+[name="Ill-Intentioned Citizen"]Yes. Just go over there and ask what the price is.
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Nervous Child"]A-Alright.
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot = "r", posfrom="0,0", posto="100,0", afrom=1, ato=0, duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+The child approaches the merchant's stall and timidly peruses the wares.
+[Dialog]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="Amiable Merchant"]Fireworks, kid?
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Nervous Child"]Y-Yeah...
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="Amiable Merchant"]A special occasion? A gift? This one's real popular for celebrations!
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Nervous Child"]B-But there's a lot of dust—
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="Amiable Merchant"]That's normal; it's been lying in the warehouse for a while. How about this, you buy one, and I'll give you one free—
+[Dialog]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="n")]
+[playsound(key="$d_avg_fireleadwire", volume=0.7)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[multiline(name="Amiable Merchant")]What's that smell—
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="Amiable Merchant")]Fire! It's you, isn't it?!
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="Ill-Intentioned Citizen"]Hah!
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Nervous Child"]......
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Ill-Intentioned Citizen"]What are you standing there for? Run!
+[Dialog]
+[charslot]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[playsound(key="$d_avg_firerockfall", volume=0.7)]
+[PlaySound(key="$firestorm", volume=0.9,delay=0.2)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0.6, r=0.92, g=0.3, b=0.3, fadetime=0.05, block=true)]
+[Blocker(a=0.2, r=0.92, g=0.3, b=0.3, fadetime=0.3, block=false)]
+[PlaySound(key="$d_avg_churchfire", loop=true, channel="bse",volume=0)]
+[SoundVolume(volume=0.6, fadetime=3,channel="bse")]
+[delay(time=2)]
+The merchant tries to put out the fire to no avail, and is soon surrounded by flames himself.
+The exploding fireworks draws a gawking crowd.
+The 'practical joker' has long fled the scene with the child.
+'But... wasn't it supposed to be a joke...'
+'Serves him right for marrying a devil woman, the bastard.'
+[Dialog]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9, duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9,focus="m")]
+[name="???"]The fire's getting bigger! I'll grab the man; you get the crowd out of here!
+[charslot(slot = "m", name = "avg_npc_248", focus="m")]
+[name="Defense Force Patrol"]Yes, ma'am!
+[Dialog]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9,focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[PlaySound(key="$gunlance",channel="bipe1",volume=1)]
+[PlaySound(key="$d_avg_spear",channel="bipe2",volume=1,delay=0.3)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+The piledriver spear rips the flames apart. The sounds of explosions and crackling fire sing joyfully in cacophony.
+A Vouivre emerges from the flames, spear in one hand, the merchant in the other. She puts the merchant down in a safe place, then sits beside him, wiping the soot off her face.
+[Dialog]
+[stopmusic(fadetime=2)]
+[SoundVolume(volume=0.2, fadetime=3,channel="bse")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_222_bpipe_1#5", duration=0.5)]
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "l", name = "avg_222_bpipe_1#5",focus="l")]
+[name="Bagpipe"]Ach, sorry aboot yer stall, I think I might've...
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="Amiable Merchant"]It's fine, fine, don't worry.
+[charslot(slot = "l", name = "avg_222_bpipe_1#4",focus="l")]
+[name="Bagpipe"]Fine? This is... fine?
+[Dialog]
+[charslot]
+She points towards the raging fire, with fireworks still leaping out from time to time.
+The gawking crowd continues to grow. A drunkard, seemingly oblivious to what is going on, pulls over an unsuspecting passerby and starts dancing.
+Under the setting sun is pandemonium, drunken singing mixed with angry yelling mixed with the cackle of fireworks.
+This street has not been so lively since the Sarkaz took over.
+It is the very picture of chaos, but the merchant, who has already calmed down, begins to laugh.
+[charslot(slot = "l", name = "avg_222_bpipe_1#4",focus="l")]
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="l")]
+[name="Bagpipe"]...?
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="Amiable Merchant"]I haven't seen the folks so happy in a very long time. Brings back memories...
+[charslot(slot = "l", name = "avg_222_bpipe_1#5",focus="l")]
+[name="Bagpipe"]But... it's <i>your</i> stall that's on fire.
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="Amiable Merchant"]You know what? I'm in a good mood today. Let's just call it a fireworks show for everyone!
+[name="Amiable Merchant"]Between you and me, ma'am... my wife can finally leave the city, tonight.
+[charslot(slot = "l", name = "avg_222_bpipe_1#7",focus="l")]
+[name="Bagpipe"]...?
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_248", focus="m")]
+[name="Defense Force Patrol"]No injuries, ma'am. Should we go after the troublemaker?
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="Amiable Merchant"]Well, nobody got hurt—
+[charslot(slot = "m", name = "avg_222_bpipe_1#7",focus="m")]
+[name="Bagpipe"]We've got a duty to handle anyone who commits an offense.
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="Amiable Merchant"]Well, thank you, in any case. Say, can you dance? Or play an instrument?
+[charslot(slot = "m", name = "avg_222_bpipe_1#4",focus="m")]
+[name="Bagpipe"]What?
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="Amiable Merchant"]Can't let good fireworks go to waste, can I?
+[name="Amiable Merchant"]Maybe my wife will hear the commotion. My way of saying goodbye.
+[charslot(slot = "m", name = "avg_222_bpipe_1#8",focus="m")]
+[name="Bagpipe"]*sigh* I'm startin' to miss wartime. Even workin' on the farm. Anythin's easier than this 'keepin' the peace' business.
+[name="Bagpipe"]But, hey, if everyone's happy, who'm I tae complain?
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+Once she is satisfied that there is no danger, she lies down on a crate by the roadside, stretches, and lets the beams of the setting sun fall upon her face.
+[name="Bagpipe"]Gimme a haystack over this any day.
+[name="Bagpipe"]Where are you, Chenchen...?
+[Dialog]
+[StopSound(channel="bse", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_240")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Nervous Child"]Wh-Why did you burn his stall? You said you were just going to snitch something!
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="Ill-Intentioned Citizen"]That shameless bastard's own fault for marrying a devil.
+[multiline(name="Ill-Intentioned Citizen")]On the bright side, maybe somebody's already lynched his wife—
+[musicvolume(volume=0.3, fadetime=1)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[multiline(name="Ill-Intentioned Citizen")]Whoa!
+[name="Ill-Intentioned Citizen"]Who the feck are you?
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Nervous Child"]—!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1342_1#6$1",duration=1)]
+[delay(time=1.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot="m",name="avg_npc_1342_1#6$1",focus="m")]
+[name="Millscar"]Now's your chance to run, kid.
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Nervous Child"]O-Okay!
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="Ill-Intentioned Citizen"]Wh-What do you want?
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]Just doing a favor for a client. Maybe it'll bring in future business.
+[Dialog]
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_punch02", volume=0.7)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.2)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]What's the situation with this batch?
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Tired Mercenary"]Coast is clear, and the head count checks out, no problem. But word on the streets is that Parliament is looking for you.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]Nothing they can actually do about it. Same as before, don't cause any trouble.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Tired Mercenary"]Speaking of trouble...
+[name="Tired Mercenary"]There's a kid in this batch that's giving us a hard time.
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="Indignant Child"]Why can't I see my dad one last time before we leave?
+[name="Indignant Child"]This man says there's fireworks outside. It's dad's fireworks!
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="Millscar"]......
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="Nervous Woman"]Shh, quiet.
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="Indignant Child"]You don't want to leave either, do you, Mum—
+[Dialog]
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.5)]
+[delay(time=1)]
+[charslot]
+The Sarkaz covers the child's mouth and holds her tightly, gazing up nervously at the woman looking quietly down at her.
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="Nervous Woman"]I'm sorry, she's just not used to this... her father never left her side, even during the war.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]Our deal with your husband was to get you out of the city. The rest is not my business.
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="Millscar"]If you want to stay, that's also your own decision.
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="Nervous Woman"]......
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]Ma'am, they're just scared because they've never been through anything like this.
+[name="Old Woman"]None of us have... Don't worry, I'll take care of the girl. She won't cause you any trouble.
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="Indignant Child"]But where are we going? What about Dad?
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="Nervous Woman"]He'll come find us once he's taken care of things at home.
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]*sigh* I knew this day would come, the day the people from Kazdel came.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]You don't like the Military Commission? Isn't Theresis your legendary hero?
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]I'm every bit the Londinier that you are. I've never been anywhere else since I was born, and I don't know no Theresis.
+[name="Old Woman"]Your accent, that's not how commoners talk. I take it you ended up here because of the folks from Kazdel?
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[multiline(name="Millscar")]I—
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[multiline(name="Millscar")]Never mind.
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]You're a good person, ma'am. No one else would come close to us at a time like this.
+[name="Old Woman"]Without you, the new Parliament might've... nothing to be surprised, I suppose. The bigwigs never change, whatever happens.
+[name="Old Woman"]I've seen enough in my lifetime.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]This new Parliament is different—
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]Maybe. For people like us, though, it all feels the same.
+[Dialog]
+[charslot]
+The aged Sarkaz soothes the sobbing child and sighs.
+[charslot(slot="l",name="avg_npc_1457_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1455_1#1$1",focus="r")]
+[name="Old Woman"]Don't be afraid, child. Your father is an honest man, more honest than most people I've met. He'll find you.
+[charslot(slot="l",name="avg_npc_1457_1#1$1",focus="l")]
+[name="Indignant Child"]Alright... but where will you go after leaving here?
+[charslot(slot="r",name="avg_npc_1455_1#1$1",focus="r")]
+[name="Old Woman"]I plan on visiting some old friends. They left during the withdrawal with their twins, who work for a pharmaceutical company.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="Millscar"]......
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]Do you know them, ma'am?
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]No. We have no time. You should get ready to leave.
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]What is your name, ma'am?
+[charslot(slot="m",name="avg_npc_1342_1#10$1",focus="m")]
+[name="Millscar"]We will not meet again.
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]Humor an old woman, won't you? I just want to thank you, on behalf of myself, and all those who are afraid of you—
+[name="Old Woman"]And I would rather not direct this gratitude to a code name that's ready to be cast aside any time.
+[charslot(slot="m",name="avg_npc_1342_1#5$1",focus="m")]
+[name="Millscar"]......
+[name="Millscar"]Allerdale.
+[Dialog]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="aw")]
+[stopsound(fadetime=3, channel="aw")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="Old Woman"]Beautiful name. Thank you, Allerdale.
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[focusout(duration=2.5, type="bg", from=0, to=1, block=true)]
+Allerdale. A name that should have been laid to rest in the Mausoleum of Kings.
+In the darkness where even the passage of time became blurred, she had sought to die in the ruins of history, to be forgotten by all those whom she disappointed, yet she was afraid to die, afraid to be forgotten.
+But when muddy water dripped from the hole that the Steam Knight left behind and fell upon her palm, she opened her eyes and saw light.
+What lay at the end of the light was life, and submission again.
+Her hesitation may have lasted three days, or three minutes... in the end, she made the same choice as she once did.
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.8, block=true)]
+[Image(image="32_i13", screenadapt="coverall",fadetime=2,block=true)]
+[delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="'You will meet Vina again, someday.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+She recited it over and over in her mind, and crawled quietly into the light.
+[Dialog]
+[stopmusic(fadetime=1)]
+[focusout(duration=0.1, type="bg", from=1, to=0, block=false)]
+[charslot]
+[image]
+[Background(image="32_g3_school_indoor",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, amount=0, block=true)]
+[Delay(time=2.5)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Office of Provisional Supply Procurement</><p=2>December 12th, 1098, 5:32 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="Eliseo"]What do you mean, the reservation with Madam Major is no longer valid and I have to get in queue again?
+[charslot(slot="m",name="avg_487_bobb_1#3$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Eliseo"]Should we be trying to buy time for the Infected who can't get medication?
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="Unperturbed Official"]I'm afraid the reservation system is under maintenance. There are a lot of files that need to be organized following Madam Major's passing.
+[name="Unperturbed Official"]However, we are all very busy with preparations for Madam Major's funeral.
+[charslot(slot="m",name="avg_487_bobb_1#2$1",focus="m")]
+[name="Eliseo"]How long are we talking?
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="Unperturbed Official"]It should be up and running within seven business days. We will inform you as soon as reasonably possible.
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="Eliseo"]—!
+[charslot(slot="m",name="avg_487_bobb_1#3$1",focus="m")]
+[name="Eliseo"]Have you been to the Center for Biological Infection Control? More and more citizens whose conditions are deteriorating rapidly are being sent there by the day.
+[name="Eliseo"]Most Londiniers didn't know how to handle acute Oripathy attacks before the war. The ones who need help the most are the ones getting the least of it.
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="Eliseo"]They can't afford to wait... not to mention the proliferation of drugs that have little actual effectiveness...
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="Unperturbed Official"]Your feedback is noted. We will pass it on to the Center for Biological Infection Control. Is there anything else I can help you with?
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="Eliseo"]......
+[name="Eliseo"]Tell me where the Speaker's office is.
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="Unperturbed Official"]If you would like to visit the Speaker, I can assist you in making a reservation—
+[charslot(slot="m",name="avg_npc_1519_1#1$1",focus="m")]
+[name="Diane"]No need to ask him. I know where the Speaker is.
+[name="Diane"]Come with me, Eliseo.
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="Unperturbed Official"]I apologize for the inconvenience. Please let us know if you need any other assistance. And thank you for the coffee, sir.
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="Unperturbed Official"]It is a very valuable gift.
+[charslot(slot="m",name="avg_487_bobb_1#7$1",focus="m")]
+[name="Eliseo"]......
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="32_g3_school_indoor",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1519_1#8$1")]
+[charslot(slot="r",name="avg_487_bobb_1#6$1")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_487_bobb_1#6$1",focus="r")]
+[name="Eliseo"]Aren't you furious, Diane? This is no way for them to behave. I came to Londinium to—
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="Diane"]To save us?
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[name="Eliseo"]No... that's not what I mean.
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="Diane"]But it's what you think, isn't it?
+[charslot(slot="r",name="avg_487_bobb_1#5$1",focus="r")]
+[name="Eliseo"]I-I mean no offense. I'm grateful that you've put a roof over my head, but I also see there's nothing but chaos in the matter of helping the Infected here.
+[name="Eliseo"]I get that it takes time to build up and improve systems and workflows. Please understand, though, that it was my job to raise such issues, back in Columbia.
+[name="Eliseo"]I just want to see more regulated and effective workflow to provide help to more Infected. And if I may say so, we're a little ahead on that front.
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="Diane"]I've never been to Columbia, Eliseo, and I don't know how people like us are treated back where you call home.
+[name="Diane"]I would love to see it, if I get the chance.
+[name="Diane"]But that gentleman has done nothing wrong. He has done what was tasked of him in such cases; in fact, he has done it better than any of his predecessors.
+[name="Diane"]Londinium has many problems. But things are getting better, even better than before the war.
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="Eliseo"]It seems you trust this new Parliament?
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="Diane"]No, but I trust the Speaker. Come, I'll take you to her.
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="Eliseo"]How do you know where she is?
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="Diane"]I take it you Columbians are not in the habit of listening to the broadcasts.
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[multiline(name="Eliseo")]Well, we're more used to watching...
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[multiline(name="Eliseo")] Never mind. Where is the Speaker?
+[charslot(slot="l",name="avg_npc_1519_1#1$1",focus="l")]
+[name="Diane"]At the memorial service for Madam Major.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="32_g2_dukegarden",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1519_1#1$1")]
+[charslot(slot="r",name="avg_487_bobb_1#11$1")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",loop=true, channel="tk", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="Eliseo"]Here? There are so many people, how do we get to the Speaker?
+[charslot(slot="l",name="avg_npc_1519_1#1$1",focus="l")]
+[name="Diane"]Come with me. I know a shortcut.
+[Dialog]
+[stopsound(channel="tk", fadetime=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$leaveshake", volume=0.8)]
+[Delay(time=1)]
+Through the window, Eliseo sees Vina Victoria for the first time.
+He has done his homework, and heard the legends of the young Speaker during the war.
+He thought the Speaker would be more impressive.
+When he sees the well-dressed Aslan speaking at the podium, he feels nothing but disappointment—
+Vina Victoria is not nearly as splendid as he imagined.
+[name="???"]Are you lost?
+[name="???"]If you're here for the service, the entrance is that way.
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="Eliseo"]—!
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]Would you like a hand, Eliseo?
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="Eliseo"]Oh, er, thank you.
+[charslot(slot="m",name="avg_npc_1519_1#9$1",focus="m")]
+[name="Diane"]......
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="Eliseo"]Hey, how did you—
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]I was the one who put the files on Pure Heart Medical—and yourself—on the Speaker's table, long before you arrived in Londinium.
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="Eliseo"]So you know what I'm here for?
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]Of course.
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="Eliseo"]And the Speaker knows what I've been trying to do for the past few days?
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]Of course.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Unfortunately, it's not that simple.
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="Eliseo"]I thought the Speaker would be different from the other nobles I've met.
+[charslot(slot="m",name="avg_npc_1519_1#1$1",focus="m")]
+[name="Diane"]Eliseo!
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]It's fine. I would just like to clear up the misunderstanding. This is not Columbia, Eliseo, and it is arrogance to judge us by your standards.
+[name="Delphine"]Sometimes, we must follow the rules first, in order to change things.
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="Diane"]Not even she could do it?
+[Dialog]
+[charslot]
+Inside the hall, Vina is muttering something with a sad expression on her face, but they cannot hear what she is saying.
+Delphine meets Diane's gaze, then quickly averts her eyes.
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="Diane"]......
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="Eliseo"]Was Madam Major another victim of the rules?
+[charslot(slot="m",name="avg_4110_delphn_1#2$1",focus="m")]
+[name="Delphine"]No, only a respectable woman. One of those 'nobles' you were talking about.
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="Delphine"]She could have stayed in Normandy, far from danger, but she came of her own accord to the chaos of Londinium in order to help the people here.
+[name="Delphine"]She refused to stop working, even as her condition deteriorated, trying to help as many people as she could. Just like you, Eliseo.
+[name="Delphine"]Our conflict with her was only because of the harm that her radicalness and stubbornness were doing to herself.
+[name="Delphine"]There are no dark secrets, no conspiracies behind her passing. She was not a 'victim'.
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="Eliseo"]I'm sorry, I... I didn't know.
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="Eliseo"]But that makes it even harder to understand. Why do you refuse to work with Pure Heart? We're just trying to solve your problems.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Are you aware that Pure Heart Medical is backed by the Columbian Department of Defense and the Maylander Foundation?
+[charslot(slot="m",name="avg_487_bobb_1#9$1",focus="m")]
+[name="Eliseo"]Of course. The military and the Foundation have always been our main stakeholders.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]You... are a good, responsible man. Feel free to come and find me, if you insist on carrying out that responsibility.
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="Eliseo"]Oh, er... you are...?
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]Delphine Windermere. You may call me Delphine. Looks like your company has work to do when it comes to client research.
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="Eliseo"]—!
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="Eliseo"]I'm not giving up, Lady Delphine. I believe we can help with Londinium.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]I can't make any promises on behalf of Vina or Parliament. But believe me when I say that we want to heal this city more than anyone else.
+[name="Delphine"]But, if you would like, you can come with me, to say goodbye to Madam Major...
+[name="Delphine"]And to all those who have died in the chaos of the past few years.
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[PlaySound(key="$bigbell",volume=1)]
+[Delay(time=1)]
+The bell of mourning tolls. Fowlbeasts glide close to the ground, a sign of impeding rain.
+Right now, though, nobody pays any heed. Their heads are bowed.
+No tears are shed. War has already spent the city of its last drop.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_396_1#9$1")]
+[charslot(slot="r",name="avg_155_tiger_1#6$1")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_155_tiger_1#6$1",focus="r")]
+[name="Indra"]All leads point to this place being Millscar's hideout. Why are you still taking your time?
+[charslot(slot="l",name="avg_npc_396_1#9$1",focus="l")]
+[name="Dagda"]Don't you think it's too easy?
+[name="Dagda"]Besides, there has been rumors of unidentified Sarkaz activity here. Can't hurt to be careful.
+[charslot(slot="r",name="avg_155_tiger_1#10$1",focus="r")]
+[name="Indra"]I say it can't hurt to have an accident or two. Good exercise.
+[name="Indra"]Why do you think I refused to help Morgan with her stupid paperwork?
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="Indra"]You're an upright girl, to come along like this. I thought you'd shut yourself up in the tower as soon as you came back.
+[charslot(slot="l",name="avg_npc_396_1#1$1",focus="l")]
+[name="Dagda"]<i>You</i> really ought to be staying put at the ship, Hannah. How many times has Medical reminded you about your condition—
+[Dialog]
+[charslot(slot="l",name="avg_npc_396_1#1$1",focus="n")]
+[PlaySound(key="$bigbell",volume=0.6)]
+[Delay(time=1)]
+The sound of bells echoes in the sky above the city. As if everything has gone quiet for a moment.
+[charslot(slot="r",name="avg_155_tiger_1#2$1",focus="r")]
+[name="Indra"]......
+[charslot(slot="l",name="avg_npc_396_1#2$1",focus="l")]
+[name="Dagda"]The memorial service has started.
+[charslot(slot="r",name="avg_155_tiger_1#2$1",focus="r")]
+[name="Indra"]......
+[Dialog]
+[charslot(slot="r",name="avg_155_tiger_1#3$1",focus="r")]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="Indra"]Well—no time to wallow in sentiment. Let's go, Dagda. I don't want to get my arse kicked while I'm trying to wipe the tears from my eyes.
+[charslot(slot="l",name="avg_npc_396_1#2$1",focus="l")]
+[name="Dagda"]Sometimes I just don't know what to do with you, Hannah.
+[charslot(slot="l",name="avg_npc_396_1#10$1",focus="l")]
+[name="Dagda"]What do we do if we run into Allerdale?
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="Indra"]Punch her in the gut and leave the rest for Vina to worry about.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_bellfall", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_396_1#7$1",focus="m")]
+[name="Dagda"]Who's there?!
+[Dialog]
+[charslot]
+[name="???"]I'm afraid you won't find her. It's not you she wants to see.
+[charslot(slot="m",name="avg_155_tiger_1#7$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Indra"]Who are you?!
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_higheldshosfts",volume=0.7)]
+[charslot(slot="m",name="avg_npc_1521_1#9$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="???"]The Rose Riverside's Canoe.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

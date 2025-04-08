@@ -117,17 +117,17 @@ function CollectionTaskListDlg:_RebuildVirtualViews()
   self.m_adapter:RemoveAllViews();
   self.m_adapter:AddView({
     viewType = CollectionTaskItemType.DAILTY_TITLE,
-    data = {},
+    data = nil,
     size = itemSizeTable[CollectionTaskItemType.DAILTY_TITLE]
   });
   self.m_adapter:AddView({
     viewType = CollectionTaskItemType.DAILTY_ITEM,
-    data = {},
+    data = nil,
     size = itemSizeTable[CollectionTaskItemType.DAILTY_ITEM]
   });
   self.m_adapter:AddView({
     viewType = CollectionTaskItemType.TIMED_TITLE,
-    data = {},
+    data = nil,
     size = itemSizeTable[CollectionTaskItemType.TIMED_TITLE]
   });
 

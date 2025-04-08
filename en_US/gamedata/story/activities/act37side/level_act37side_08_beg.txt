@@ -1,0 +1,667 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Background(image="bg_cherunder_2",screenadapt="showall")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="32_g1_lentiavenue",screenadapt="showall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_mgcbttlfld",channel="1",loop=true,volume=1)]
+[playMusic(intro="$m_bat_walkinthedust_intro", key="$m_bat_walkinthedust_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[playsound(key="$p_atk_blackcannon_d", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$p_atk_blackcannon_d", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$p_imp_blackcannon_d", volume=1,channel="1")]
+[Delay(time=0.2)]
+[playsound(key="$d_avg_boomdust", volume=1,channel="2")]
+[CameraShake(duration=0.5, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1.5)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Auchterigg Front Lines, T1</><p=2>October 2nd, 1098, 6:23 A.M. - The Day the War Ended</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="Sudaram"]Death... awaits... at the end...
+[name="Sudaram"]My liege... watches... death, watches... you...
+[Dialog]
+[charslot(duration=1.5)]
+[delay(time=3.5)]
+[PlaySound(key="$d_gen_soldiersrun",channel="2",volume=1)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="Excited Soldier"]Captain, the target has been neutralized! But our remaining ammunition is estimated to last only two more minutes!
+[name="Excited Soldier"]We need our next set of orders!
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="Horn"]All units, prepare for close-quarter combat!
+[name="Horn"]Hold the line for the next two minutes—I'll cover your retreat!
+[Dialog]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#1$1", duration = 1)]
+[charslot(slot="m",posfrom="0,0",posto="-200,0",duration=1.5,focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]Siege, our artillery support is running out!
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]The bombardment will end in three minutes! What's the situation on your side?
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#3$1", duration = 0)]
+[name="Vina"]We can't clear this Nachzehrer fog!
+[name="Vina"]These things have severed the supply routes our workers cleared for us. We can't get supplies to your position quickly enough.
+[name="Vina"]Prepare to retreat from T1.
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#3$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Excited Soldier"]Negative! Abandoning T1 will create a gap in our encirclement, and the alliance forces will break through from our side! Captain, I can't accept that—
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]The battlefield isn't a place for heroics! Honor your orders!
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#3$1", duration = 0)]
+[name="Vina"]We've sent a distress signal to our friends at Rhodes Island. Now we have to trust the Doctor and the plan.
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="Vina"]Soldiers, we've made it home. Do everything you can to survive! Only then can we take back what we've lost!
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Excited Soldier"]...
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]Siege, we'll hold the line for the final two minutes, then retreat to regroup and assist you in clearing out the creatures in the fog!
+[name="Horn"]Bagpipe, keep them safe!
+[Dialog]
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_222_bpipe_1#8", duration = 1.5)]
+[name="Bagpipe"]Aye, Captain!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="Vina"]If the fog can't be dispersed, don't wait for us. Head to I12 and rendezvous with Gododdin's 106th Assault Brigade. Keep fighting.
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]Understood.
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_222_bpipe_1#1", duration = 0)]
+[name="Bagpipe"]I'll be seein' ye soon, Captain—
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="Voice from the Communicator"](Strange howl)
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_222_bpipe_1#6", duration = 0)]
+[name="Bagpipe"]Look out, Siege!
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4110_delphn_1#3$1", duration = 0)]
+[name="Delphine"]It's the Confessarius chimeras! Everyone, prepare to retreat!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="Voice from the Communicator"](Song-like shriek)
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_405_1#4$1", duration = 0)]
+[name="Morgan"]It's lit itself up! Hannah, watch out for its flames!
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_155_tiger_1#9$1", duration = 0)]
+[name="Indra"]Oof... It hurts... Vina, are you alright?
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_396_1#7$1", duration = 0)]
+[name="Dagda"]Everyone else, fall back! I can't allow any more needless sacrifices...
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="Voice from the Communicator"](A piercing wail)
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_155_tiger_1#9$1", duration = 0)]
+[name="Indra"]Wait—where did this backup come from!?
+[Dialog]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[playsound(key="$d_avg_minethrowerwhoosh", volume=1)]
+[Delay(time=1)]
+[playsound(key="$d_avg_boomdust", volume=1)]
+[Delay(time=1)]
+[name="Unknown Transmission"]Anti-witchcraft cannon has struck the target. Enemy movement disrupted. Remaining squads, continue setting up anti-witchcraft cannons.
+[name="Unknown Transmission"]Mission objective: eliminate threats within the fog.
+[name="Unknown Transmission"]Friendly forces at T1, hold your position. Emergency supplies will arrive at your location in three and a half minutes.
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[charslot(slot="m",name="avg_npc_229_1#4",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]—!
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]Exemplar T1 Combat Team—message received! Please identify your unit!
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="Unknown Transmission"]Duke of Normandy's 8th Grenadier Battalion, under orders to support The Exemplars.
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="Vina"]The Duke of Normandy? 8th Grenadier Battalion? Horn, do you know anything about this unit?
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]They're not under the direct command of the Duke of Normandy. They report to the Earl of March.
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_1518_1#4$1", duration = 1.5)]
+[name="The Young Duke"]Lieutenant Skamandros truly has an exceptional grasp of our intelligence operations, as to be expected from someone born into a military family.
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_1518_1#2$1", duration = 0)]
+[name="The Young Duke"]Lieutenant, keep Her Royal Highness Alexandrina safe.
+[name="The Young Duke"]As for Your Highness, please accept this small gift.
+[name="The Young Duke"]Once all these matters are resolved, I'll visit you in person, Vina.
+[Dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="Horn"]Siege, do you know the Earl of March?
+[charslot(slot="m",name="avg_npc_229_1#1",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="Vina"]No, we've never met. But her name was mentioned in some of the information sent to me.
+[name="Vina"]That doesn't matter now. With reinforcements, we should be able to reopen the supply line. Horn, we'll meet again soon!
+[name="Vina"]At last, it's time to bring all of this to an end.
+[Dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.5)]
+[Delay(time=1)]
+[charslot]
+[interlude(channel = 3, clear = true)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",focus="m")]
+[name="Excited Soldier"]Finally!
+[Dialog]
+[charslot]
+The crowd cheers.
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="Horn"]Phew—
+She gazes at The Shard in the distance and the faintly visible Palace of Westhaleg, calmer than she has ever been.
+[charslot(slot="m",name="avg_npc_229_1#2",focus="m")]
+[name="Horn"]Triangle, Cello, Oboe... Tempest Platoon, everyone, watch closely.
+[name="Horn"]...As we scatter the dark clouds over Londinium!
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="Horn"]All members of the Exemplar T1 Combat Team, hear this: hold your ground. Do not give them a single inch!
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_oicrwd", volume=1)]
+[CameraShake(duration=1, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+'Roger that!'
+[Dialog]
+[stopsound(fadetime=1.5,channel="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="32_g4_ordnancefactory",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2.5, block=true)]
+[Delay(time=2)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Highbury Secret Base</><p=2>October 2nd, 1098 6:36 A.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[name="Rockrock"]Captain, Rock-18 just uploaded the scan of the last segment of our route to PRTS. Did you receive it?
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="Feist"]Got it! Rockrock, we're already repairing the final track-shift node.
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="Rockrock"]Given the current damage level, how long until the repairs are complete?
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="Feist"]Ten minutes.
+[name="Feist"]Located Granny yet? We need to retrieve that weapon as soon as possible. The Exemplars will need our support on the front line.
+[charslot(slot="l",name="avg_4040_rockr_1#11$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="Rockrock"]Still trying to pinpoint the correct location.
+[name="Rockrock"]The signals we've found over the past few days were all decoy beacons they left behind. It might take a bit more time to re-establish contact.
+[charslot(slot="l",name="avg_4040_rockr_1#11$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 0)]
+[name="Feist"]At least that means Granny's team is still safe for now...
+[charslot(slot="l",name="avg_4040_rockr_1#1$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 0)]
+[name="Rockrock"]Captain, if—and I mean if—we can't get in touch with Catherine, what should we do?
+[charslot(slot="l",name="avg_4040_rockr_1#1$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 0)]
+[name="Feist"]We'll use this passage to transport as much of Highbury's remaining supplies as possible to—
+[Dialog]
+[playsound(key="$d_gen_explo_n", volume=0.5)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[Delay(time=1.5)]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.5)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_4040_rockr_1#5$1",focus="l")]
+[name="Rockrock"]Captain?!
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="32_g5_ordnancefactory_ex",screenadapt="showall")]
+[Delay(time=2)]
+[playsound(key="$a_bat_buildingshaking_1", volume=1)]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[bgeffect(name="$eb_smoke_l",layer=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(slot="m",name="avg_4072_ironmn_1#9$1",pfrom="0,-50",posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[name="Feist"]*cough*—
+[name="Feist"]*cough* Is everyone okay?
+[charslot(slot="m",name="avg_4072_ironmn_1#8$1",focus="m")]
+[name="Feist"]Where did those Sarkaz come from... and what was that artillery fire I just heard?
+[Dialog]
+[charslot]
+The smoke shifts, yet a small ember glimmers brightly in the depths of the haze...
+The ember of a cigarette.
+A familiar, acrid smell hits Feist's nose and makes his eyes sting.
+[Dialog]
+[name="???"]I keep telling you, when you're busy working, you always forget to watch your back.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_4162_cathy_1#10$1",duration=1.5)]
+[delay(time=2.5)]
+[name="Catherine"]Welcome home, brat.
+[Dialog]
+[charslot(slot="m",name="avg_4072_ironmn_1#7$1",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4072_ironmn_1#9$1",focus="m")]
+[name="Feist"]Granny! We've been looking for you all this time!
+[charslot(slot="m",name="avg_4162_cathy_1#10$1",focus="m")]
+[name="Catherine"]I know. When someone told me the passage was being repaired, I figured it was you.
+[charslot(slot="m",name="avg_4072_ironmn_1#7$1",focus="m")]
+[name="Feist"]Hm?
+[name="Feist"]That's—
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_mechwarrior", volume=1)]
+[delay(time=2.5)]
+He spots a massive shadow in the depths of the smoke.
+[charslot(slot="m",name="avg_4162_cathy_1#10$1",focus="m")]
+[name="Catherine"]Haha, remember the blueprints you left behind?
+[charslot(slot="m",name="avg_4162_cathy_1#11$1",focus="m")]
+[name="Catherine"]It took some effort, with the Sarkaz blockade and all, but we finally managed to build your big machine.
+[charslot(slot="m",name="avg_4072_ironmn_1#7$1",focus="m")]
+[name="Feist"]The Crawler...
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="bg_cherunder_2",screenadapt="showall")]
+[Delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Sudean Secret Underground Passage</><p=2>October 2nd, 1098 6:39 A.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]I know you're there.
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="Millscar"]Your earring has grown... rather warm.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]Those workers who came to support the Self-Salvation Corps earlier—that was your doing, wasn't it?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="Mysterious Vampire"]Shh, you'll disturb my friends.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]...
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="Mysterious Vampire"]Still, thank you for taking good care of Little Garnet for me, kitten.
+[name="Mysterious Vampire"]And thank you for cleaning up those filthy rocks Duq'arael left behind.
+[charslot(slot="m",name="avg_npc_1342_1#6$1",focus="m")]
+[name="Millscar"]Here. You can have this back.
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(slot="m",pfrom="0,0",posto="-50,0",duration=1.5,isblock=true)]
+[charslot(slot="m",pfrom="-50,0",posto="0,0",duration=1.5,isblock=true)]
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="Millscar"]I have more important things to deal with.
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="Mysterious Vampire"]Off to find that hunk of sheetmetal again?
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="Millscar"]He… wouldn't want to miss this battle.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="Millscar"]Thank you for saving me earlier. Farewell.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5)]
+[delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="Mysterious Vampire"]Where are you off to next?
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=0.7)]
+[charslot(slot="r",name="avg_4132_ascln_1#1$1",posfrom="0,0",posto="-110,0",bstart=0.1,bend=0.5,duration=0.8,focus="m")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="none")]
+[name="Ascalon"]To meet with him.
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="m")]
+[name="Mysterious Vampire"]You're not going to go help Dame Kal'tsit?
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="none")]
+[name="Ascalon"]With Amiya and Logos there, nothing will happen.
+[name="Ascalon"]I'll wait for them beneath the Palace of Westhaleg. It's his last known location, as far as I know.
+[name="Ascalon"]Her Highness is gone. It's time to put the past to rest.
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="m")]
+[name="Mysterious Vampire"]Your wounds...
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="none")]
+[name="Ascalon"]Insignificant.
+[name="Ascalon"]You don't need to involve yourself in the frontline work anymore. Take care of yourself.
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="Mysterious Vampire"]Don't you understand how powerful I am by now, runt? You learned quite a bit from us back in the day, didn't you?
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="none")]
+[name="Ascalon"]...
+[charslot(slot="m",name="avg_npc_1521_1#8$1",focus="m")]
+[name="Mysterious Vampire"]Bringing you into the city was the most I could do. Whatever is between you and the Regent—Rose Riverside will no longer be involved.
+[charslot(slot="m",name="avg_npc_1521_1#8$1",focus="none")]
+[name="Ascalon"]Good.
+[name="Ascalon"]Where will you go next?
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="m")]
+[name="Mysterious Vampire"]I'll keep tracking her down. She disappeared so suddenly, abandoning Her Highness at the most critical moment. That demands an explanation.
+[name="Mysterious Vampire"]One of our sharp-eyed sisters managed to track her as she left Londinium. She's still heading west, though her destination is unclear.
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="none")]
+[name="Ascalon"]And when you catch her? Will you bring her back, or kill her?
+[charslot(slot="m",name="avg_npc_1521_1#8$1",focus="m")]
+[name="Mysterious Vampire"]She owes all the Riverbank Canoes an explanation.
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="m")]
+[name="Mysterious Vampire"]But you, runt, should worry about yourself first. The Regent is close at hand.
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="none")]
+[name="Ascalon"]...
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="Mysterious Vampire"]The Riverside Canoes swore not to get involved with anything related to Babel anymore. However, helping an old acquaintance doesn't break the rules.
+[name="Mysterious Vampire"]This smear of blood—it's a gift and a blessing, for less pain and fewer scars. Safe travels, Ascalon.
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="none")]
+[name="Ascalon"]Did you really have to wipe it on my neck?
+[charslot(slot="m",name="avg_npc_1521_1#10$1",focus="m")]
+[name="Mysterious Vampire"]Not my fault you always hide your face so well under that hood. You look better this way.
+[charslot(slot="m",name="avg_npc_1521_1#10$1",focus="none")]
+[name="Ascalon"]Hmph.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=0.7)]
+[charslot(slot="r",posfrom="-110,0",posto="0,0",afrom=1,ato=0,duration=0.5,focus="m")]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="Mysterious Vampire"]Oh, by the way, I forgot to ask—what do you think of that kitten?
+[Dialog]
+[charslot]
+She does not emerge from the shadows, and the wind carries her voice.
+'My judgment is unnecessary. When the dust settles, the truth will reveal itself.'
+'We're all the same.'
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=1.5)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>Even today, many still argue about when exactly the war ended.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>Some say it was when the Nachzehrer King fell at the gates of the Palace of Westhaleg. Others say it was when the Sarkaz fully withdrew from Londinium.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>As someone who lived through it, I've been asked quite frequently about my opinion.</i>",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="<i>Luckily, I share the exact same view as Vina:</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>The war ended the moment we found the courage to take the sword from Vina's hands and wield it against the Nachzehrer King ourselves.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>We fought back. We destroyed, with our own hands, the enemies who tried to ruin us. We never needed a singular hero.</i>",block = true)]
+[Sticker(id="st1")]
+[playMusic(key="$wheel_loop", volume=0)]
+[Sticker(id="st1", multi = true, text="<i>That day, everyone who fought for her home and her future was a hero.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[MusicVolume(volume=0.2, fadetime=4)]
+[Image(image="55_i09_2",screenadapt="coverall", fadetime=2.5)]
+[Delay(time=3)]
+'Everyone, no matter your unit number, which squad you belong to, or which duke you serve—'
+'There's no retreating now!'
+'Support the allied forces! Why should we lag behind this lot?'
+'Quick, go help The Exemplars!'
+'Captain, argh—my weapon's broken—'
+'Take mine! If it breaks, grab another! If there's none left, snatch a blade from the devils and keep fighting!'
+'Advance! Advance!!'
+'For Victoria!'
+'For Victoria!'
+[Dialog]
+[Image(image="55_i09_1",screenadapt="coverall", fadetime=2.5)]
+[MusicVolume(volume=1, fadetime=4.5)]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2, duration=80, block=false)]
+[Delay(time=3)]
+[name="Vina"]Soldier, you should not continue this assault empty-handed.
+[name="Vina"]Take this sword.
+[name="Diane Weber"]...but, this is the Sighs of Kings... I can't possibly...
+[name="Diane Weber"]It belongs to Your Royal Highness.
+[name="Vina"]No. It belongs to Victoria.
+[name="Vina"]On the wreckage of the <i>Glorious,</i> trusted allies passed the sword from hand to hand until it reached me, completing its mission.
+[name="Vina"]Now, take it from my hand! Let it reach the hands of everyone who needs it. Let its mission continue anew.
+[name="Vina"]This is your right as a Victorian.
+[name="Diane Weber"]But if we take the sword, what will Your Royal Highness use?
+[name="Vina"]I still have my hammer.
+[name="Vina"]I will not stop. I will stay with you until the end.
+The early morning sun breaks through the dark clouds. A golden-haired Feline and a Victorian stand together.
+The soldier grips the sword tightly, her gaze locked on the determined Aslan, despite the blinding sunlight.
+She refuses to look away, for she sees the thousands of Victorians rallied behind her, fighting for the same cause.
+She sees the King, walking alongside her people.
+[name="Diane Weber"]...
+[name="Diane Weber"]As you bid.
+[name="Diane Weber"]All survivors of the 6th Column, 10th Infantry Regiment, advance with me!
+[name="Diane Weber"]For Victoria!
+[name="Diane Weber"]♪May the vast lands they keep owre kynge.
+She cuts down two Nachzehrer Royal Court elites and a caster. Her blade bears two new notches.
+[name="Diane Weber"]♪His people, and alle his well-wyllynge,
+However, she is too gravely injured to continue, so she passes the sword on.
+A worker grips the sword and presses forward. He perishes alongside a Royal Court elite, leaving yet another notch on the blade.
+[name="Diane Weber"]♪And give them grace wythoute endyng!
+An Infected picks the sword up from the pool of blood. She does not defeat any enemies, instead protecting it with her body.
+In so doing, she protects her Victoria and hope itself.
+[name="Diane Weber"]♪Then may we call and savely syng,
+[name="Diane Weber"]♪Victoria, yeve thankes for owre hom!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>Finally, the sword pierced the Nachzehrer King, after which it disappeared into the chaos of the battle.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>To this day, we still don't know who the final hero to wield the sword was, or whether they're still alive. But one thing is certain—the sword fulfilled its mission.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>The Victorians wielded the blade against the invaders.</i>",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="<i>But its legend didn't end there. They say it was the workers who recovered the broken Sighs of Kings from the blood and mud.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>As for the rest of the story, well, every child in Londinium can sing it loud and clear.</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3.5, block=true)]
+[stopmusic(fadetime=1.5)]
+[charslot]
+[image]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[Background(image="55_g9_dusklentiavenue_ex",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0.3, r=1,g=1, b=1, fadetime=2, block=true)]
+[Delay(time=2)]
+[playMusic(key="$faceoff_loop", volume=0.6)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Auchterigg, the Nachzehrers' final camp</><p=2>October 2nd, 1098, 7:35 A.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_405_1#13$1",focus="m")]
+[name="Morgan"]I don't see any more Nachzehrers. Is the battle finally over?
+[charslot(slot="m",name="avg_155_tiger_1#9$1",focus="m")]
+[name="Indra"]But this blasted fog hasn't let up one bit.
+[charslot(slot="m",name="avg_npc_396_1#13$1",focus="m")]
+[name="Dagda"]Something's not right. The Sarkaz aren't attacking under the cover of the thick fog like before. Is this a trap?
+[charslot(slot="m",name="avg_npc_229_1#2",focus="m")]
+[name="Horn"]Based on our previous encounters with the Nachzehrer army, they are far more elusive than they seem.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Horn, what do you suppose we should do next?
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="Horn"]Coordinate with the main allied forces, hold off on advancing rashly, and minimize unnecessary casualties until we get a clearer read on the situation.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="Vina"]Alright. Sound strategy.
+[name="Vina"]Dagda, send the orders to all of our troops.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]I'll pass it on to the alliance commanders, as well as Closure and the others.
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 1)]
+[Delay(time=2)]
+[name="Unknown Transmission"]Hey, heyyy, hey! Did Hood even get the frequency right?
+[name="Unknown Transmission"]Huh? We're already live?
+[name="Unknown Transmission"]Gah! Everybody, listen up! Babel's captured the Military Commission's Command Center.
+[name="Unknown Transmission"]The bastards don't know their heads from their asses right now, and nobody's got it in them to help out the crusty old Nachzehrer King.
+[name="Unknown Transmission"]So quit wasting time and get those feet moving!
+[name="Unknown Transmission"]I don't care if you believe me or not, just go and get this over with!
+[name="Unknown Transmission"]Oh, and by the way, you might wanna look up.
+[name="Unknown Transmission"]The old hag owes me big this time.
+[Dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_155_tiger_1#5$1",focus="m")]
+[name="Indra"]...?
+[charslot(slot="m",name="avg_npc_229_1#5",focus="m")]
+[name="Horn"]...
+[charslot(slot="m",name="avg_npc_396_1#3$1",focus="m")]
+[name="Dagda"]...
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[name="Vina"]Delphine—
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="Delphine"]We traced the transmission. It seems this communication was received on several different frequencies.
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Delphine"]Both the allies and the Sarkaz probably heard it.
+[charslot(slot="m",name="avg_npc_405_1#2$1",focus="m")]
+[name="Morgan"]That voice... it was....
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]Wiš'adel. Sounds like they've been busy.
+[name="Vina"]Horn, please re-assess the situation.
+[charslot(slot="m",name="avg_155_tiger_1#5$1",focus="m")]
+[name="Indra"]Vina, look at the sky! It's...
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1.5)]
+All eyes turn upwards, and soon they hear the sound of steam bursting at full force, echoing above the Palace of Westhaleg.
+'Victoria!'
+[playMusic(key="$m_bat_wdslm_loop", volume=0.6)]
+The Victorian army boils.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2.5, block=false)]
+[playsound(key="$d_avg_steamrelease", volume=0.3)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_396_1#5$1",focus="m")]
+[name="Dagda"]It's Charles Lynch! He's gone into the fog!
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_boomdust", volume=0.3)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[name="Vina"]I can hear the commotion inside the clouds. He's battling the Nachzehrers.
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]Horn?
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="Horn"]Although morale is currently high, the alliance has yet to make any major moves. Clearly, the dukes are still hesitating—they have reason to be cautious with intelligence from an unknown source.
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="Vina"]If Rhodes Island trusts Wiš'adel, then so do I.
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="Horn"]Ha. We trust you as well, Siege. I'll go tell everyone to get ready.
+[Dialog]
+[charslot]
+[playsound(key="$a_bat_buildingshaking_1", volume=1,channel="1")]
+[playsound(key="$d_avg_mechwarrior", volume=1,channel="1")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_avg_giantmecha", volume=1,channel="3")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[charslot(slot="m",name="avg_npc_405_1#4$1",focus="m")]
+[name="Morgan"]Huh? What's going on?
+[name="Morgan"]Did you hear that sound... right beneath our feet!
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_tankbiggun", volume=1,channel="1")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_gen_explo_n", volume=1,channel="1")]
+[playsound(key="$d_avg_boomdust", volume=1,channel="13")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[name="???"]The Exemplars, we meet at last.
+[charslot(slot="m",name="avg_npc_405_1#9$1",focus="m")]
+[name="Morgan"]Wait a minute, Vina. Am I seeing things, or did a giant... thing just burrow out from underground?
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="55_i14",screenadapt="coverall",fadetime=0.5)]
+[ImageTween(xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=50, block=false)]
+[Delay(time=1)]
+[playsound(key="$a_bat_buildingshaking_2", volume=1,channel="2")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[playsound(key="$d_avg_mechwarrior", volume=1,channel="1")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_giantmecha", volume=1,channel="4")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[playsound(key="$d_avg_mechwarrior", volume=1,channel="1")]
+[Delay(time=0.3)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_giantmecha", volume=1,channel="5")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2.5)]
+[name="Catherine"]A giant thing? No. It has a name.
+[name="Catherine"]The Crawler. My grandson designed it. Pretty good, huh?
+The gray-haired pilot blows a smoke ring, standing proudly on the ladder of the massive machine.
+It has four massive steam-powered hydraulic legs, encased in protective armor that bears the unmistakable signs of a worker's handiwork.
+Smoke is still billowing from its enormous, black cannon barrel, a clear sign that it was the one responsible for the massive hole in the ground.
+A steady stream of Self-Salvation Corps members emerge from the gaping hole beneath The Crawler, carrying combat supplies up to the surface.
+[name="Vina"]You—
+[name="Feist"]Siege, thank goodness we made it here in time!
+[name="Feist"]Starting now, the Self-Salvation Corps will join forces with you. With Granny and her team helping out, we'll have a much greater chance of victory!
+[name="Catherine"]We just got that message ourselves—it seems the timing is spot on.
+[name="Vina"]I-Victoria thanks you!
+[name="Vina"]Horn?
+[name="Horn"]All clear. The preparations are complete, and we're ready to move out at any time.
+[name="Vina"]Good.
+[name="Vina"]Everyone, this is the final battle. We—
+[name="Catherine"]Wait a minute. There's still one thing left.
+[name="Catherine"]I need to adjust the cannon.... there. That should do it.
+[name="Catherine"]Cover your ears!
+[Dialog]
+[playsound(key="$d_avg_cannonfilling", volume=1,channel="1")]
+[Delay(time=2)]
+[playsound(key="$d_avg_tankbiggun", volume=1,channel="1")]
+[CameraShake(duration=1.5, ystrength=100, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_explo_n", volume=1,channel="1")]
+[playsound(key="$d_avg_boomdust", volume=1,channel="13")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_avg_churchbell", volume=0.5,channel="4")]
+[playsound(key="$a_bat_buildingshaking_1", volume=0.3,channel="2")]
+[CameraShake(duration=3.5, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=true)]
+The cannon strikes the giant bell at the center of Auchterigg, an ancient relic that had stood for centuries.
+The bell tolls, loud, clear, and beautiful, followed by the sound of the alliance war horns and their furious battle cries.
+[name="Catherine"]We've got to let certain people know we're here.
+[name="Catherine"]You're in command now.
+[name="Vina"]Victorians! Charge forth to our final victory!
+[Dialog]
+[playsound(key="$d_avg_oicrwd", volume=1,channel="1")]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

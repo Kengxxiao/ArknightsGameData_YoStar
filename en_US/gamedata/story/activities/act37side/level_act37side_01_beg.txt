@@ -1,0 +1,591 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_cavewaterdrop", volume=0.3, loop=true, channel="a")]
+[playMusic(intro="$darkness02_intro", key="$darkness02_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Londinium, Abandoned Factory</><p=2>December 8th, 1098, 4:43 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[SoundVolume(channel="a", volume=0.7, fadetime=2)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="b")]
+[StopSound(channel="b", fadetime=2)]
+[charslot(slot="m",name="avg_npc_243",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_243",focus="m")]
+[name="Calm Lady"]Section G12... All these linkage numbers have faded away since this place was abandoned... Is this it?
+[name="Calm Lady"]*phew* I'm praying I don't run into those damned devils again—
+[dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_399_1#1$1", duration=0.5)]
+[charslot(slot = "r", name = "avg_npc_399_1#1$1", duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="l")]
+[name="Cautious Mercenary"]I think you're lost, lady.
+[name="Cautious Mercenary"](Hey, new guy, get her out of here. And while you're at it, ask her <i>nicely</i> how she found this place.)
+[name="Cautious Mercenary"](Remember, keep your tail clean this time. Don't make the boss mad.)
+[charslot(slot="r",name="avg_npc_399_1#1$1",focus="r")]
+[name="Tired Mercenary"]You heard him, lady. Come with me—
+[dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="r", afrom=1,ato=0,duration=0.7)]
+[delay(time=1)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[delay(time=1)]
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_243",focus="m")]
+[PlaySound(key="$d_avg_slap", volume=1)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Calm Lady"]Let go of me!
+[name="Calm Lady"]Is this any way to treat a lady?
+[name="Calm Lady"]Mickey Robinson, hero of the Exemplars... Or rather, <i>one of</i> the heroes, is my husband. He entrusted me to fetch some medicine.
+[name="Calm Lady"]Th-The medicine to dull the pain from those hideous black stones. He can hardly even walk...
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_399_1#1$1",focus="r")]
+[name="Tired Mercenary"]Hah, yet another unlucky bugger—
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="l")]
+[name="Cautious Mercenary"]Shut it.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Cautious Mercenary"]Listen, I haven't heard of any Mickey.
+[name="Cautious Mercenary"]All you'll find in this blasted place are some bum's expired fun drugs and the dead devils' bones.
+[charslot(slot="m",name="avg_npc_243",focus="m")]
+[name="Calm Lady"]But—
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Cautious Mercenary"]Anyways, if you want Oripathy meds, go look for that newly-built Sanatorium. The new Speaker lady promised it'd be stocked.
+[charslot(slot="m",name="avg_npc_243",focus="m")]
+[name="Calm Lady"]Wait, we really have no other choice. There's simply not enough medicine there.
+[name="Calm Lady"]I know I can get it here. My husband, he...
+[name="Calm Lady"]Listen, I have a few valuables stashed away somewhere safe, all from Cumberland Manor. The late duke gave them to us. If I could just get some medicine—
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_399_1#1$1",focus="l")]
+[name="Cautious Mercenary"]Don't give a reason for the Defense Forces patrolling out there to come sniffing around here.
+[charslot(slot="r",name="avg_npc_399_1#1$1",focus="r")]
+[name="Tired Mercenary"]Just go already, <i>lady.</i>
+[dialog]
+[charslot(slot="r",name="avg_npc_399_1#1$1",focus="n")]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[name="Voice on the Terminal"]Make her sign the list, then let her come by tomorrow to pick up the meds.
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="l")]
+[name="Cautious Mercenary"]Yes, boss! But what if she doesn't have the money...?
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="n")]
+[name="Voice on the Terminal"]We do it the old-fashioned way then.
+[dialog]
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="n")]
+[PlaySound(key="$transmission")]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_399_1#1$1",focus="r")]
+[name="Tired Mercenary"]That's weird, I don't think the boss ever stuck her nose into this sort of thing. Err, what should I...?
+[charslot(slot="l",name="avg_npc_399_1#1$1",focus="l")]
+[name="Cautious Mercenary"]Hmph. Just give her the contract.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_243",focus="m")]
+[name="Calm Lady"]Thank you, tha—Wait, these clauses... My husband never mentioned them! If I signed this, then we...
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Cautious Mercenary"]He'll live well, at least before we come calling for our due.
+[name="Cautious Mercenary"]Seems that hero husband of yours wasn't quite so honest with his better half, eh?
+[name="Cautious Mercenary"]C'mon, hold that pen steady. If you can't, we can sign it for you.
+[charslot(slot="m",name="avg_npc_243",focus="m")]
+[charslot(slot = "m", action="shake",random=true, power=5, times=20,duration=0.3)]
+[name="Calm Lady"]—
+[dialog]
+[charslot]
+The mercenary holds her writing hand tight. The trembling overtakes her. She can no longer maintain her veneer of calm.
+She shuts her eyes, grits her teeth, and lets the mercenary guide her hand.
+[dialog]
+[PlaySound(key="$d_avg_writerub",volume=1,channel="wr",loop=false)]
+[stopsound(channel="wr",fadetime=1.5)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="Cautious Mercenary"]Go on, enjoy your life. Bloody war's over, after all.
+[name="Cautious Mercenary"]Asking Millscar for help will be the best decision you and your husband have ever made, lady.
+[Dialog]
+[stopmusic(fadetime=2)]
+[stopsound(channel="a",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_oldtvelectricity", volume=0, loop=true, channel="o")]
+[SoundVolume(volume=1, channel="o", fadetime=2)]
+[name="Radio"]This morning, Londinium's interim health-secretary-cum-provisioner-general Madam Major was found dead in her office in New Auchterigg District.
+[name="Radio"]In today's parliamentary session, Madam Speaker Alexandrina expressed her support of Madam Major's work in caring for the Infected, and lamented her untimely passing.
+[name="Radio"]The final point in Madam Major's itinerary before she passed was a trip to the Dukedom of Normandy to discuss a purchase of medicine so as to relieve the shortages within Londinium's walls.
+[name="Radio"]But according to some reliable sources, Madam Major died of an acute Oripathy attack.
+[name="Radio"]Not only did she conceal her infection, she was also often seen arguing furiously with the Speaker, in recent times.
+[name="Radio"]In this sensitive period where the number of reported Infected within the city is growing exponentially, it is clearly worth looking into the death of Madam Major, who had lost her hereditary peerage.
+[name="Radio"]Even now, two months after the Sarkaz withdrawal, why are their sinister plots coming back to the fore?
+[name="Radio"]As for the Exemplars, are the terms of the resettlement program still not finalized?
+[name="Radio"]All eyes are on the newly-appointed Speaker, who has won the backing of a majority of the dukes.
+[name="Radio"]We have managed to connect with the Speaker's close confidant, Miss Kate Morrigan, digging deeper into—
+[Dialog]
+[PlaySound(key="$d_avg_button", volume=1)]
+[StopSound(channel="o", fadetime=1)]
+[delay(time=1)]
+The broadcast in the Speaker's office suddenly falls silent.
+[Dialog]
+[charslot(slot="m",name="avg_npc_405_1#11$1",focus="m")]
+[PlaySound(key="$gavel2", volume=1)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Morgan"]Those louts are a real crock of shit, I tell you!
+[name="Morgan"]They were loafing about the Sanatorium cafeteria, waiting for me to sit down for lunch before they tried to wheedle some info out of me...
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="Vina"]Then you beat the hell out of them.
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]I thought... That way, they wouldn't dare run their mouths on the news again...
+[name="Morgan"]Sorry. I didn't think about how it'd affect the way everyone sees you—
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="Vina"]No, I would have kicked them out too, literally.
+[charslot(slot="m",name="avg_npc_405_1#2$1",focus="m")]
+[name="Morgan"]Huh? But...
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="Vina"]It doesn't matter what you say to those newshounds when they're in the business of making up fluff. They've already decided what to put in their latest story a long time ago.
+[name="Vina"]Since there's no way of shutting them up, might as well get straight to the point.
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(duration=0.3)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_boxing", volume=1)]
+[CameraShake(duration=0.8, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+Vina strikes her two fists together, putting herself through the paces engraved in her instincts with ease.
+Just like she always did back in the gym.
+[charslot(slot="m",name="avg_npc_405_1#10$1",focus="m")]
+[name="Morgan"]Hah! That's the Vina I know! I knew it, Hannah even said—
+[Dialog]
+[charslot(slot="m",name="avg_npc_405_1#10$1",focus="n")]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_405_1#2$1",focus="m")]
+[name="Morgan"]Whoa.
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="Vina"]These clothes really do get in the way. Maybe I should find someone to make some alterations—
+[Dialog]
+[charslot]
+[name="Delphine"]I happen to know a pretty good tailor.
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]He made clothes for the royal family when he was younger. Luckily, he made it through everything alive. Shame nobody dares hire him nowadays.
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="Vina"]Infected as well?
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Yes.
+[charslot(slot="m",name="avg_npc_405_1#3$1",focus="m")]
+[name="Morgan"]*cough* Ah yeah, any progress on that thing you mentioned in your message?
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]The situation is complicated.
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="Delphine"]We've captured the Sarkaz who have been hurting people. They're now cuffed in the Sineselde's parliamentary chamber.
+[name="Delphine"]I suspect this might have something to do with the gangs operating out of the abandoned underground factories.
+[charslot(slot="m",name="avg_1019_siege2_1#10$1",focus="m")]
+[name="Vina"]Millscar.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]As for whether or not the Duke of Normandy's heir is behind all this—
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[multiline(name="Vina")]She and I will resume...
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[multiline(name="Vina")] Negotiations.
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]Madam Major's death, the Londiniers' medicine supply, as well as Millscar's gang and those Sarkaz...
+[name="Vina"]There're a lot of things to handle in this city, and none we can solve with our fists like we did two months ago.
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]You've settled into the job quick, Vina. I believe Parliament as it is now can manage these issues, so relax. I'm here to help you.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="Delphine"]Mother taught me how to handle this sort of situation. I won't let her down.
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]...
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[PlaySound(key="$doorclosequite", volume=1)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4110_delphn_1#11$1",focus="m")]
+[name="Delphine"]Morgan?
+[Dialog]
+[charslot]
+[name="Voice Outside the Door"]I'm heading over to Parliament. See you there.
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]...
+[name="Vina"]She's not quite used to this sort of life yet. None of us are.
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="Vina"]There are some things Siege could do that this so-called Speaker can't.
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]How's the victim of the Sarkaz attack?
+[charslot(slot="m",name="avg_4110_delphn_1#11$1",focus="m")]
+[name="Delphine"]In the care of our colleagues at Rhodes Island's medical department. No life-threatening complications, for the time being.
+[name="Delphine"]Moreover, we've traced the source of those low-quality medicines. Most of them came from Millscar.
+[name="Delphine"]Many turned to them in desperation, but in the end, all they got was a pile of harassment from that gang of wandering goons.
+[name="Delphine"]As for whether this Millscar is in the know, or if it's the work of some overeager underlings, I'm not too sure—
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="Vina"]Allerdale knows.
+[Dialog]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall",fadetime=1,block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name="avg_npc_1342_1#1$1",posfrom="50,0",posto="0,0",duration=2)]
+[delay(time=2)]
+Millscar. The wildest villain running rampant in Londinium's shadows.
+[Dialog]
+[charslot(slot = "r", name="avg_npc_397_1#1$1",posfrom="-50,-5",posto="0,-5",duration=2)]
+[delay(time=2)]
+Allerdale. She's dead. The final furious flame of Cumberland the Ever on High.
+Vina herself has already forgotten when the figures behind those two names slowly became one.
+Was it when the war was nearly over?
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Background(image="55_g8_siegeoffice",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+She subconsciously paws at her clothes. By the time the Exemplars' 'heroic leader' walked out of the Palace of Westhaleg wearing this old suit of royal armor...
+She had already torn down the flag of Kazdel's Military Commission at the break of dawn, and had seen a familiar figure and the Steam Knight fade away into the all-encompassing vapor.
+That day, Allerdale did not go to her. Rather, she turned and disappeared into the shadows of the ruined city.
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="Vina"]Let's go. To Parliament.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g4_victoriaconferencehall", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>The Sineselde, once a royal estate often rented by nobles as a banquet hall. It wasn't until everyone was dealing with the headache of where to house Parliament that Vina realized there weren't many choices left for the Londiniers.</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>The chaos of war had destroyed far too much of this city.</i>",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="<i>I've seen this room many times before on posters and in movies. I used to be astonished by how massive it was, big enough for every gang boss to bring all their boys and girls in to sit down and have a chat about their turfs.</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>But now, it disappoints me. It's filled to the gills, all cramped and suffocating.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>Though Vina's never admitted it, I know her and I are of like mind—</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_405_1#2$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_659_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_npc_659_1#1$1",focus="r")]
+[name="Uneasy MP"](Miss Morgan... Miss Morgan...)
+[charslot(slot="l",name="avg_npc_405_1#2$1",focus="l")]
+[name="Morgan"]Huh?
+[charslot(slot="r",name="avg_npc_659_1#1$1",focus="r")]
+[name="Uneasy MP"]I didn't mean to interrupt your writing, it's just that... that...
+[name="Uneasy MP"](Barnaby's late again, I'm thinking of going to look for him. I'm worried he's gone and gotten himself soused again.)
+[charslot(slot="l",name="avg_npc_405_1#3$1",focus="l")]
+[multiline(name="Morgan")]Well, Vina's not here yet. If you're gonna look, go look, no need to ask me—
+[charslot(slot="l",name="avg_npc_405_1#4$1",focus="l")]
+[multiline(name="Morgan")]Wait!
+[name="Morgan"]Now that I think about it, you said the same last time, and the two of you never came back the entire session.
+[charslot(slot="r",name="avg_npc_659_1#1$1",focus="r")]
+[name="Uneasy MP"]W-We were just locked out last time...
+[name="Uneasy MP"]In all honesty, Miss Morgan, I've been carrying around the factory's design sheets for near my entire life.
+[name="Uneasy MP"]If you asked me to do a quality inspection, I'd know all the ins and outs of whichever part you'd like, and there wasn't a foreman out there who'd dare say I was wrong.
+[name="Uneasy MP"]But sitting here with those lords and ladies, trying to read these documents covered in gobbledygook so we can manage such a ridiculously huge city...
+[name="Uneasy MP"](Biggest thing I've looked after in my life was my workshop. God, my heart's pounding like mad.)
+[charslot(slot="l",name="avg_npc_405_1#4$1",focus="l")]
+[name="Morgan"]With us at your back, why be scared of some tosspot nobles?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_175",focus="m")]
+[Delay(time=0.2)]
+[charslot(slot="m",posfrom="0,0",posto="0,-20",duration=0.3)]
+[Delay(time=0.3)]
+[charslot(slot="m",posfrom="0,-20",posto="0,0",duration=0.5)]
+[Delay(time=0.7)]
+An elegantly-dressed member of parliament's eyes meets Morgan's gaze, and she smiles and nods her head in greeting.
+[charslot(slot="m",name="avg_npc_175",focus="m")]
+[name="Graceful MP"]Fine weather we're having today. I hope you are all in good health.
+[charslot(slot="m",name="avg_npc_405_1#3$1",focus="m")]
+[name="Morgan"]Ah, yeah. Good health to you too.
+[charslot(slot="m",name="avg_npc_659_1#1$1",focus="m")]
+[name="Uneasy MP"]We're fine, just fine, thanks.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_405_1#5$1",focus="l")]
+[charslot(slot="r",name="avg_npc_659_1#1$1",focus="l")]
+[name="Morgan"](Well... Just treat it as helping Vina fill the seats.)
+[name="Morgan"](I suppose they're not <i>all</i> tosspots, but keep in mind that we put our lives on the line to take back the right to sit here.)
+[name="Morgan"](Are you seriously thinking of going back to the days before that? If so, I'll have to sort you out first before these bastards ruin this city again.)
+[charslot(slot="r",name="avg_npc_659_1#1$1",focus="r")]
+[name="Uneasy MP"]Alright, I get it, I get it. Are Miss Indra and Miss Dagda not showing up today?
+[charslot(slot="l",name="avg_npc_405_1#5$1",focus="l")]
+[name="Morgan"]They're busy handling some public safety stuff.
+[charslot(slot="r",name="avg_npc_659_1#1$1",focus="r")]
+[name="Uneasy MP"](*sigh* I'd rather hold my hammer tight and go back to bed too.)
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="ds")]
+[SoundVolume(volume=0.4, channel="ds",fadetime=2)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[Delay(time=1)]
+[stopsound(channel="ds", fadetime=2)]
+[charslot(slot="m",name="avg_npc_175",focus="m")]
+[name="Graceful MP"]Oh, Madam Speaker, you're here—What's this?
+[charslot(slot="m",name="avg_npc_405_1#9$1",focus="m")]
+[name="Morgan"]Vina! Wait, who's that you're carrying?
+[charslot(slot="m",name="avg_npc_659_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Uneasy MP"]Barnaby!
+[Dialog]
+[charslot]
+[stopsound(channel="ds", fadetime=2)]
+[charslot(slot="m",name="avg_npc_248",duration=1)]
+[charslot(slot = "m", action="shake",random=true, power=5, times=30,duration=0.7)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Drunken MP"]C-Clive...
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]Help him to his seat, Delphine.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4110_delphn_1#1$1",focus="all")]
+[charslot(slot="r",name="avg_npc_248",focus="all")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="dw")]
+[stopsound(fadetime=2, channel="dw")]
+[charslot(duration=1)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4110_delphn_1#2$1",focus="m")]
+[name="Delphine"]He drank until he passed out in front of the Sineselde's doors. Now he won't let go of Vina.
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Drunken MP"]I'm waiting for the Speaker!
+[name="Drunken MP"]I've got... got a whole lot of proposals to help with the meds shortage—
+[charslot(slot="m",name="avg_4110_delphn_1#7$1",focus="m")]
+[name="Delphine"]Then you should include them in your formal petition. We reformed the rules issued by Parliament all so we could bind ourselves.
+[charslot(slot="m",name="avg_npc_659_1#1$1",focus="m")]
+[name="Uneasy MP"]Lady Delphine, I swear Barnaby here's not trying to be a simpleton on purpose. He and I have talked about his ideas loads of times!
+[name="Uneasy MP"]He's just like me, sick to our stomachs the moment we stepped foot into this bloody place, like the soul's getting sucked right out of us. It's not just that we can't speak right, all the brass courage we had while chopping down devils is gone.
+[name="Uneasy MP"]So I came up with this stupid idea. That maybe a bit of drink would... would...
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="Morgan"]Relax, Vina's not going to get mad over something like that.
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="Delphine"]Right, you needn't worry. Parliament nowadays is incredibly complex by nature. Everyone here's on the lookout, getting used to things and learning on the job... That includes the Speaker.
+[name="Delphine"]If we're going to defeat those who wish us ill off the battlefield, we're going to have to learn how they think.
+[name="Delphine"]It's not going to be an easy process for any of us. The two of you have done pretty well, all things considered.
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="Morgan"]What if we become them once we learn enough about them...?
+[charslot(slot="m",name="avg_npc_659_1#1$1",focus="m")]
+[name="Uneasy MP"]I-I certainly won't, Miss Morgan!
+[charslot(slot="m",name="avg_npc_405_1#7$1",focus="m")]
+[name="Morgan"]I'm not saying you will, Clive.
+[charslot(slot="m",name="avg_4110_delphn_1#5$1",focus="m")]
+[name="Delphine"]I can't guarantee that won't be the case, Morgan. Nobody can.
+[charslot(slot="m",name="avg_npc_405_1#3$1",focus="m")]
+[name="Morgan"]I believe in Vina. So do Hannah and Dagda... I don't care what you all think.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g4_victoriaconferencehall", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.5, loop=true, channel="ss")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]I'm sure we're all very clear on why we have convened this emergency meeting.
+[name="Vina"]Ever since Parliament was reestablished, we have worked around the clock to resolve the issue of the Sarkaz who continue to operate within Londinium's walls.
+[name="Vina"]We gave our citizens a promise. A promise of safety.
+[name="Vina"]It matters not if it is the Sarkaz, or roving mercenaries such as Millscar hiding within the city; Parliament will strive to settle the matter.
+[name="Vina"]We will brook no evil that threatens the safety of our people.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Sarkaz Assassin"]...You're putting me on trial?
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]There will be no trial, Sarkaz. Parliament's new interim bill dictates how we handle you. The provisional court has passed it as well.
+[name="Vina"]You will be dealt with in a manner that all agree upon.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Sarkaz Assassin"]Not everyone. Just you people.
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="Vina"]You caused grave injury to a kind-hearted shopkeep, all for a loaf of bread he had already set aside for you.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Sarkaz Assassin"]He's still alive?
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]He is.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Sarkaz Assassin"]Good. So, when's the execution?
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="Vina"]You really should have left with the rest of your kind when the war ended.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Sarkaz Assassin"]You still remember me? Of course you do. You were the one who let me go during the big retreat, after all.
+[name="Sarkaz Assassin"]I'd say you were my savior, head of the Exemplars.
+[charslot(slot="m",name="avg_1019_siege2_1#10$1",focus="m")]
+[name="Vina"]You—
+[Dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[StopSound(channel="ss", fadetime=2)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Sarkaz Assassin"]'Longshot'. That's what my daughter calls me. You didn't ask me my name at the time, and I'm betting the people sitting by your side don't give a damn what it is.
+[name="Longshot"]But I'm going to ask everyone here something, on behalf of a few others.
+[name="Longshot"]Are Sarkaz born and bred in Londinium, who have never left the city, still considered Victorians?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>To be honest, I've never really thought about that question.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>The Sarkaz who called himself Longshot never yelled or shouted, but the rowdy, chattering chamber went dead quiet as he spoke.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>I looked at the people all around me, paying special attention to the nobles' expressions.</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>Those who had long made up their minds on the issue didn't feel like speaking up. As for those who hadn't, the more nervous of them had their eyes darting about, waiting for someone else to speak up first.</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>But me? I was part of the third kind of people. I didn't have to make up my mind, because Vina'd do it for me.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>So that day, all I had to do was wait for her answer.</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>Just like the time I was up on the city walls, watching the Sarkaz troops leave the city, waiting for her to give me an answer.</i>", x=300,y=310,  alignment="left", size=24, delay=0.04, width=710,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="55_i17_1", screenadapt="coverall",fadetime=0)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_sketchdraw",volume=1)]
+[Image(image="55_i01_2", screenadapt="coverall",fadetime=4,block=true)]
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+[delay(time=2)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>I don't think I'm ever going to forget that sight, so long as I live.</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>Back then, I also had a question for Vina: Why're we allowing those Sarkaz who killed Baird to leave with so much pomp and circumstance?</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Image(image="55_i01_1", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=3.5)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[Delay(time=5)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>She never said anything that day.</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Atop Londinium's Walls</><p=2>October 8th, 1098, 8:48 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+The Sarkaz troops are leaving.
+The airship's shadow looms over the silent, orderly soldiers, the Lifebone tearing ripples through the dark clouds hanging above the ruins outside the city.
+Vina stands atop the walls, quietly watching them march into the distance. Not too long ago, they were tearing apart her home.
+The land is scarred and slick with blood.
+How many years will it take to recover from the wounds Amnannam left on Londinium?
+[dialog]
+[delay(time=1)]
+[name="Indra"]I don't know what you and the Doctor talked about, Vina, but there's still time to beat the shite out of all those bastards!
+[name="Indra"]Our men and the boys from the ducal alliance are still waiting down at the foot of the walls. Just—
+[name="Delphine"]Hannah, we're the ones who most need to stay calm right now.
+[name="Delphine"]I'd like more than any of you to keep them here... But truth be told, we simply can't do it.
+[name="Vina"]...
+[name="Dagda"]The dukes' main fleets haven't retreated too far away, Delphine.
+[name="Morgan"]Dagda's right! They can hem and haw all they like, but once we start the fight again, they'll have to help us out, even if it's just keeping up pretenses.
+[name="Delphine"]Then? Are you going to let these people who fought so hard to survive the war just throw their lives away?
+[name="Delphine"]Don't forget the ceasefire agreement. Now's not the time to act recklessly.
+[name="Morgan"]...
+[name="Indra"]All you ever say is 'don't, don't, don't'! Screw this! Screw it all!
+[name="Indra"]I can't take it any longer!
+[name="Indra"](Choking back tears) All those people... Our friends... Baird...
+[dialog]
+[PlaySound(key="$d_avg_openftstprun", volume=1)]
+[delay(time=1.5)]
+Indra stays not a moment longer. She fears she cannot stop herself from sliding down the walls to join the crowd below.
+She fears she cannot stop herself from leading the charge, pulling her battle-worn yet battle-hungry fellows back into the fray.
+[name="Vina"]Hannah...
+[name="Dagda"]She's been bottling herself up this whole time. Don't worry, Vina. I'll go keep an eye on her.
+[name="Dagda"]She's just venting. She's not the foolhardy type.
+[name="Morgan"]Vina. Why're we allowing those Sarkaz who killed Baird to leave with so much pomp and circumstance?
+[name="Vina"]...
+[name="Delphine"]This is the best the Doctor and Wiš'adel could get us.
+[name="Delphine"]Londinium cannot withstand another war. There's... There's enough dead already.
+[name="Delphine"]You know this, Vina.
+[name="Vina"]*sigh* Tell the Exemplars, no rash action from anyone—
+[dialog]
+[playsound(key="$d_gen_transmissionget", volume=0.4)]
+[delay(time=1)]
+[name="Vina"]Doctor?
+[dialog]
+[Decision(options="Rhodes Island received a few invitations from the dukes.",values="1")]
+[Predicate(references="1")]
+[Decision(options="They want us to sit in on the post-war conference on handling Londinium.",values="1")]
+[Predicate(references="1")]
+[name="Vina"]Handling... You mean before all the Sarkaz are even gone?
+[CameraShake(duration=0.7, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Vina"]Are they really in such a rush?
+[name="Vina"]I don't think the city as it is now is willing to play ball with their machinations.
+[dialog]
+[Decision(options="They realized that too.;That's why they chose you.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Vina"]Hmph...
+[dialog]
+[Decision(options="You could always refuse, Vina.",values="1")]
+[Predicate(references="1")]
+[name="Vina"]...
+[name="Vina"]This is my home, Doctor.
+[name="Delphine"]Made your decision, Vina?
+[name="Vina"]Wasn't it made the moment we lead the Exemplars on our charge into the city?
+[name="Vina"]They know it, and I do too.
+[name="Delphine"]It's not something to take lightly, but you have my full support.
+[name="Morgan"]...
+[dialog]
+[Decision(options="Then Rhodes Island will 'attend' the conference.;We'll stand by your side.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Vina"]Thank you, Doctor.
+[name="Vina"]I suppose you're saying the biggest challenge is yet to come?
+[name="Vina"]Hah, I'm supremely curious as to what they'll spew out of those pretty little mouths of theirs.
+[dialog]
+[Decision(options="We'll meet you as soon as we can.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[playsound(key="$transmission")]
+[delay(time=2)]
+[name="Vina"]Coming home's not always easy, is it?
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
