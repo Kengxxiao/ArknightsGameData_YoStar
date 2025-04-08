@@ -898,6 +898,7 @@
   "mainlineNormalDesc": "通常のプレイ環境\n★3初回クリア報酬は純正源石を含む",
   "rejectSpCharMission": 1687503600,
   "addedRewardDisplayZone": "main_9",
+  "oneDiamondAp": 135,
   "richTextStyles": {
     "mission.levelname": "<color=#FFDE00>{0}</color>",
     "mission.number": "<color=#FFDE00>{0}</color>",
@@ -983,6 +984,11 @@
     "act.missiontips": "<color=#d9bd6a>{0}</color>",
     "lv.hdbg": "<color=#7ba61f>{0}</color>",
     "tu.ht": "<color=#ff8d00>{0}</color>",
+    "acdm.award": "<color=#04d3a3>{0}</color>",
+    "acdm.milestone": "<color=#2da186>{0}</color>",
+    "acdm.hudtip": "<color=#04d3a3>{0}</color>",
+    "acdm.buff": "<color=#2da186>{0}</color>",
+    "acdm.tracker": "<color=#2da186>{0}</color>",
     "lv.act20side": "<color=#F7BC44>{0}</color>",
     "lv.act20sre": "<color=#F7BC44>{0}</color>",
     "lv.mhitem": "<color=#A57F5B>{0}</color>",
@@ -1005,10 +1011,17 @@
     "ba.grt": "<color=#FFAB27>{0}</color>",
     "ba.exl": "<color=#14F0AF>{0}</color>",
     "ba.hrd": "<color=#DA2536>{0}</color>",
+    "firework.npc": "<color=#810d17>{0}</color>",
     "act.spreward": "<color=#FF5001>{0}</color>",
     "act.timelimit": "<color=#ffe300>{0}</color>",
     "vc.text": "<color=#898989>{0}</color>",
-    "vc.endtime": "<color=#ff0327>{0}</color>"
+    "vc.endtime": "<color=#ff0327>{0}</color>",
+    "firework.animal": "<color=#0098dc>{0}</color>",
+    "firework.animaldesc_1": "<color=#f05b6d>{0}</color>",
+    "firework.animaldesc_2": "<color=#b7d888>{0}</color>",
+    "firework.animaldesc_3": "<color=#ffc25e>{0}</color>",
+    "firework.animaldesc_4": "<color=#70c0db>{0}</color>",
+    "firework.animaldesc_all": "<color=#ffecb1>{0}</color>"
   },
   "charAssistRefreshTime": [
     {
@@ -1307,7 +1320,7 @@
     "ba.dt.burning2": {
       "termId": "ba.dt.burning2",
       "termName": "灼熱損傷・味方",
-      "description": "損傷が一定値（通常の敵、【エリート】は1000、敵【ボス】は2000）蓄積すると爆発し、対象は即時に7000の元素ダメージを受け、かつ爆発効果期間中は術耐性-20。効果発動後、10秒後再発動可能になる"
+      "description": "損傷が一定値（通常の敵及び【エリート】は1000、敵【ボス】は2000）蓄積すると爆発し、対象は即時に7000の元素ダメージを受け、かつ爆発効果期間中は術耐性-20。効果発動後、10秒後再発動可能になる"
     },
     "ba.addash": {
       "termId": "ba.addash",
@@ -1496,7 +1509,7 @@
     },
     "cc.g.abyssal": {
       "termId": "cc.g.abyssal",
-      "termName": "アビサル",
+      "termName": "アビサルハンター",
       "description": "対象オペレーター：\nグレイディーア、スカジ、スペクター、アンドレアナ、ウルピアヌス"
     },
     "cc.g.psk": {
@@ -1534,15 +1547,20 @@
       "termName": "BSW",
       "description": "対象オペレーター：\nリスカム、フランカ、ジェシカ、バニラ、アーモンド"
     },
+    "cc.g.siracusa": {
+      "termId": "cc.g.siracusa",
+      "termName": "シラクーザ",
+      "description": "対象オペレーター：\nアンジェリーナ、ラップランド、プロヴァンス、ヴァーミル、ブローカ、シャマレ、スズラン、キアーベ、アオスタ、ペナンス、ルナカブ、ヴィジェル、アロマ、ウルピスフォリア、フィグリーノ、荒蕪ラップランド"
+    },
     "cc.c.abyssal2_1": {
       "termId": "cc.c.abyssal2_1",
       "termName": "特殊効果",
-      "description": "全ての製造所に配置中の<$cc.g.abyssal><@cc.kw>アビサル</></>所属のオペレーターの合計人数1につき、<$cc.g.abyssal><@cc.kw>アビサル</></>配置中の製造所の製造効率<@cc.vup>+5%</>（1つの製造所に対して提供できる最大上昇値は<@cc.vup>45%</>まで）"
+      "description": "全ての製造所に配置中の<$cc.g.abyssal><@cc.kw>アビサルハンター</></>所属のオペレーターの合計人数1につき、<$cc.g.abyssal><@cc.kw>アビサル</></>配置中の製造所の製造効率<@cc.vup>+5%</>（1つの製造所に対して提供できる最大上昇値は<@cc.vup>45%</>まで）"
     },
     "cc.c.abyssal2_2": {
       "termId": "cc.c.abyssal2_2",
       "termName": "特殊効果",
-      "description": "全ての製造所に配置中の<$cc.g.abyssal><@cc.kw>アビサル</></>所属のオペレーターの合計人数1につき、<$cc.g.abyssal><@cc.kw>アビサル</></>配置中の製造所の製造効率<@cc.vup>+10%</>（1つの製造所に対して提供できる最大上昇値は<@cc.vup>90%</>まで）"
+      "description": "全ての製造所に配置中の<$cc.g.abyssal><@cc.kw>アビサルハンター</></>所属のオペレーターの合計人数1につき、<$cc.g.abyssal><@cc.kw>アビサル</></>配置中の製造所の製造効率<@cc.vup>+10%</>（1つの製造所に対して提供できる最大上昇値は<@cc.vup>90%</>まで）"
     },
     "cc.c.abyssal2_3": {
       "termId": "cc.c.abyssal2_3",
@@ -1671,9 +1689,11 @@
     }
   },
   "storyReviewUnlockItemLackTip": "事象の欠片の数が足りません。購買資格証ショップあるいはイベントショップで購入してください",
-  "dataVersion": "42.3.0",
-  "resPrefVersion": "54d0d0",
+  "dataVersion": "43.1.0",
+  "resPrefVersion": "55d0d0",
   "announceWebBusType": "ak_announcement",
+  "videoPlayerWebBusType": "ak_video_player",
+  "gachaLogBusType": "ak_gacha_log",
   "defaultMinContinuousBattleTimes": 1,
   "defaultMaxContinuousBattleTimes": 6,
   "continuousActionOpen": true,
@@ -1744,7 +1764,9 @@
     "primcaster": "MAGICAL",
     "loopshooter": "PHYSICAL",
     "hammer": "PHYSICAL",
-    "alchemist": "PHYSICAL"
+    "alchemist": "PHYSICAL",
+    "primprotector": "PHYSICAL",
+    "skywalker": "PHYSICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",

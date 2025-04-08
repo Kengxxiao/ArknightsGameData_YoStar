@@ -1,0 +1,667 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Background(image="bg_cherunder_2",screenadapt="showall")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="32_g1_lentiavenue",screenadapt="showall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_mgcbttlfld",channel="1",loop=true,volume=1)]
+[playMusic(intro="$m_bat_walkinthedust_intro", key="$m_bat_walkinthedust_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[playsound(key="$p_atk_blackcannon_d", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$p_atk_blackcannon_d", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$p_imp_blackcannon_d", volume=1,channel="1")]
+[Delay(time=0.2)]
+[playsound(key="$d_avg_boomdust", volume=1,channel="2")]
+[CameraShake(duration=0.5, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1.5)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>オークタリッグ区前線T1陣地</><p=2>1098年10月2日 a.m. 6:23 終戦日</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="「霊骸布」"]死が……果てにて……待つ……
+[name="「霊骸布」"]宗主は……死を……見つめている、お前たちを……見つめている……
+[Dialog]
+[charslot(duration=1.5)]
+[delay(time=3.5)]
+[PlaySound(key="$d_gen_soldiersrun",channel="2",volume=1)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="興奮した兵士"]隊長、目標を排除しました！　ですが後続の弾薬は二分しか持たない見込みです！
+[name="興奮した兵士"]次の指令を願います！
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="ホルン"]総員、白兵戦の用意を！
+[name="ホルン"]二分持ちこたえて。撤退支援は私がするわ！
+[Dialog]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#1$1", duration = 1)]
+[charslot(slot="m",posfrom="0,0",posto="-200,0",duration=1.5,focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]シージさん、後続の火力支援が間もなく尽きます！
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]爆撃したエリアの火力制圧は三分後に停止する見通しです！　そちらの戦況はどうですか？
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#3$1", duration = 0)]
+[name="ヴィーナ"]ナハツェーラーの霧が全く払えない！
+[name="ヴィーナ"]工員たちが切り拓いてくれた補給ルートは霧に完全に遮断されている。戦略物資をそちらの陣地に迅速に補充することができない。
+[name="ヴィーナ"]T1陣地からの撤退準備をするんだ。
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#3$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="興奮した兵士"]ダメです！　T1陣地を譲れば、連合軍の包囲網がここから突破されてしまいます！　隊長、そんなの受け入れられません――
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]戦場は英雄を気取って無駄死にする場所ではない。命令に従いなさい！
+[charslot(slot="m",name="avg_npc_229_1#7",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#3$1", duration = 0)]
+[name="ヴィーナ"]すでにロドスの者に救援信号を送った。今はドクターたちの働きを信じるしかない。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="ヴィーナ"]兵士たちよ、我々はすでに家に着いた。まずは生き残れ！　命あってこそ、失ったものを取り返せる。
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="興奮した兵士"]……
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]シージさん、我々は陣地に残って最後の二分間に殿を務めた後、撤退して霧の中の化け物を排除する支援をします！
+[name="ホルン"]バグパイプ、シージさんたちを守りなさい！
+[Dialog]
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_222_bpipe_1#8", duration = 1.5)]
+[name="バグパイプ"]了解、隊長！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="ヴィーナ"]霧が払えない場合は我々に構わず、急いでI12エリアへゴドズィンの一〇六突撃砲旅団と合流して、引き続き戦闘を続けろ。
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]分かっています。
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_222_bpipe_1#1", duration = 0)]
+[name="バグパイプ"]それじゃまた後でね、隊長――
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="通信の声"]（奇妙な雄たけび）
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_222_bpipe_1#6", duration = 0)]
+[name="バグパイプ"]危ない、シージ！
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4110_delphn_1#3$1", duration = 0)]
+[name="デルフィーン"]聴罪師のキメラたちです……全員撤退の準備をしてください！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="通信の声"]（歌声のような鳴き声）
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_405_1#4$1", duration = 0)]
+[name="モーガン"]あいつ自分を燃やしたよ！　ハンナちゃん、あいつの火に気をつけて！
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_155_tiger_1#9$1", duration = 0)]
+[name="インドラ"]っ、痛てぇ……ヴィーナ、大丈夫か？
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_396_1#7$1", duration = 0)]
+[name="ダグザ"]他の者は撤退だ！　これ以上無用な犠牲を出してはならない……
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="通信の声"]（甲高い雄たけび）
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_155_tiger_1#9$1", duration = 0)]
+[name="インドラ"]待て――どこの援軍だ！？
+[Dialog]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[playsound(key="$d_avg_minethrowerwhoosh", volume=1)]
+[Delay(time=1)]
+[playsound(key="$d_avg_boomdust", volume=1)]
+[Delay(time=1)]
+[name="未知の信号"]対巫術砲命中、ターゲットの行動を妨害しました。残りの小隊は引き続き対巫術砲の設置を。
+[name="未知の信号"]作戦目標、霧の中の脅威を排除。
+[name="未知の信号"]T1陣地の友軍の皆さん、引き続き陣地をお守りください。緊急戦略補給は三分半後にあなた方の座標に到着します。
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[charslot(slot="m",name="avg_npc_229_1#4",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]――！
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]こちら模範軍T1陣地作戦小隊！　そちらの部隊番号をお願いします！
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[name="未知の信号"]ノーマンディー公爵指揮下の擲弾連隊第八大隊、上官の命により模範軍を支援すべく参りました。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="ヴィーナ"]ノーマンディー公爵？　擲弾連隊第八大隊？　ホルンさん、この部隊について何か知っているか？
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]ノーマンディー公爵直属の部隊ではなく、マーチ伯爵管轄の部隊です――
+[charslot(slot="m",name="avg_npc_229_1#2",posfrom="200,0",posto="-200,0",focus="none")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_1518_1#4$1", duration = 1.5)]
+[name="「小公爵」"]さすがは軍人家系のご出身だ。スカマンドロス中尉は私たちの情報についても明るいようですね。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_npc_1518_1#2$1", duration = 0)]
+[name="「小公爵」"]中尉、アレクサンドリナ殿下の安全は任せました。
+[name="「小公爵」"]殿下におかれましては、このささやかなプレゼントをお受け取りいただければ幸いです。
+[name="「小公爵」"]目の前のこの厄介事が全部片づいたら、直接伺うといたしますよ、ヴィーナさん。
+[Dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#1",posfrom="200,0",posto="-200,0",focus="m")]
+[name="ホルン"]シージさん、マーチ伯爵とお知り合いですか？
+[charslot(slot="m",name="avg_npc_229_1#1",posfrom="200,0",posto="-200,0",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_1019_siege2_1#6$1", duration = 0)]
+[name="ヴィーナ"]いや、会ったこともない。だが、誰かが送ってきた情報の中に、彼女の名前があった。
+[name="ヴィーナ"]しかし今は構っている暇などない。援軍の助けがあれば、再び補給ルートを切り拓けるはずだ。ホルンさん、すぐに合流できる！
+[name="ヴィーナ"]ついに、全てを終わらせる時が来た。
+[Dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.5)]
+[Delay(time=1)]
+[charslot]
+[interlude(channel = 3, clear = true)]
+[charslot(slot="m",name="avg_npc_414_1#1$1",focus="m")]
+[name="興奮した兵士"]ついに！
+[Dialog]
+[charslot]
+人々が歓声を上げる。
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="ホルン"]ふぅ――
+彼女は遠くのザ・シャードと、うっすら見える聖王会西部大広間を眺める。かつてないほどに気持ちが落ち着いていた。
+[charslot(slot="m",name="avg_npc_229_1#2",focus="m")]
+[name="ホルン"]トライアングルにチェロ、オーボエ、それから……テンペスト特攻隊のみんな、見ていて。
+[name="ホルン"]私たちはこの手で、ロンディニウムを覆う暗雲を払いのける！
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="ホルン"]模範軍T1陣地作戦小隊、総員注目！　この陣地を守り抜く。一歩も退くな。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_oicrwd", volume=1)]
+[CameraShake(duration=1, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+「オォ！！」
+[Dialog]
+[stopsound(fadetime=1.5,channel="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="32_g4_ordnancefactory",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2.5, block=true)]
+[Delay(time=2)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ハイベリー区労働者秘密基地</><p=2>1098年10月2日 a.m. 6:36</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[name="ロックロック"]隊長、ロック十八号が通路の最終箇所のスキャン画像をPRTSにアップしたよ、届いた？
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="フェイスト"]ばっちり！　ロックロック、こっちは最後の分岐ポイントの修理を始めてるよ。
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="ロックロック"]全部の修理が終わるのにどれくらいかかりそう？
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="フェイスト"]少なくとも十分が必要だな。
+[name="フェイスト"]ばあちゃんたちの位置は確認できたか？　何としても早くあの武器を取ってこなきゃならない。模範軍は前線で俺たちの助けを必要としてるんだ。
+[charslot(slot="l",name="avg_4040_rockr_1#11$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#10$1", duration = 0)]
+[name="ロックロック"]まだ正確な位置を特定してるところ。
+[name="ロックロック"]ここ数日で見つけたのは、彼らが残したおとりのビーコンだけ。連絡を回復するにはまだ時間がかかるかもしれない。
+[charslot(slot="l",name="avg_4040_rockr_1#11$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 0)]
+[name="フェイスト"]なら、ばあちゃんたちがひとまず安全ってことだね……
+[charslot(slot="l",name="avg_4040_rockr_1#1$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 0)]
+[name="ロックロック"]隊長、もし、もしもの話だよ、キャサリンさんに連絡がつかなかったら、この後どうするの？
+[charslot(slot="l",name="avg_4040_rockr_1#1$1",focus="none")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "avg_4072_ironmn_1#1$1", duration = 0)]
+[name="フェイスト"]この通路を使って、できる限りハイベリー区の残りの物資を――
+[Dialog]
+[playsound(key="$d_gen_explo_n", volume=0.5)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 0)]
+[Delay(time=1.5)]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.5)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_4040_rockr_1#5$1",focus="l")]
+[name="ロックロック"]隊長！？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="32_g5_ordnancefactory_ex",screenadapt="showall")]
+[Delay(time=2)]
+[playsound(key="$a_bat_buildingshaking_1", volume=1)]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[bgeffect(name="$eb_smoke_l",layer=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(slot="m",name="avg_4072_ironmn_1#9$1",pfrom="0,-50",posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[name="フェイスト"]ゲホゲホッ――
+[name="フェイスト"]ゲホッ――みんな、大丈夫か？
+[charslot(slot="m",name="avg_4072_ironmn_1#8$1",focus="m")]
+[name="フェイスト"]あのサルカズたちは一体どっから湧いてきやがった……それとさっきの砲撃音――
+[Dialog]
+[charslot]
+煙が動いている。だが、その奥にある火の赤は明るく目を引いた……
+それは煙草だった。
+フェイストは懐かしい匂いに、鼻の奥がつんとした。
+[Dialog]
+[name="？？？"]いつも言ってるだろ。あんたは仕事を始めると、背中の注意がおろそかになるんだよ。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_4162_cathy_1#10$1",duration=1.5)]
+[delay(time=2.5)]
+[name="キャサリン"]おかえり、フェイスト。
+[Dialog]
+[charslot(slot="m",name="avg_4072_ironmn_1#7$1",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4072_ironmn_1#9$1",focus="m")]
+[name="フェイスト"]ばあちゃん、ずっと探してたんだ……
+[charslot(slot="m",name="avg_4162_cathy_1#10$1",focus="m")]
+[name="キャサリン"]知ってるさ。地下通路が修復されているって聞いた時から、あんたたちだって予想はついてたからね――
+[charslot(slot="m",name="avg_4072_ironmn_1#7$1",focus="m")]
+[name="フェイスト"]ん？
+[name="フェイスト"]あれは――
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_mechwarrior", volume=1)]
+[delay(time=2.5)]
+彼は煙の奥の巨大な黒い影を見た。
+[charslot(slot="m",name="avg_4162_cathy_1#10$1",focus="m")]
+[name="キャサリン"]ハッ、あんたが残した改造図面をまだ覚えてるかい？
+[charslot(slot="m",name="avg_4162_cathy_1#11$1",focus="m")]
+[name="キャサリン"]サルカズの封鎖期間中は少し骨が折れたけど、あんたのこのデカブツはようやく完成したよ。
+[charslot(slot="m",name="avg_4072_ironmn_1#7$1",focus="m")]
+[name="フェイスト"]「クローラー」……
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="bg_cherunder_2",screenadapt="showall")]
+[Delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>サディアン区地下秘密通路</><p=2>1098月10月2日 a.m. 6:39</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]ここにいると思っていたわ。
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="「ミルスカー」"]あなたのイヤリングは……とても温かくなっているわ。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]さっきの工員たちが自救軍を助けに来たのも、あなたが情報を送ったからでしょ、ブラッドブルード？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="謎のブラッドブルード"]シッ、アタシのお友達の邪魔になっちゃうでしょ。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]……
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="謎のブラッドブルード"]でもザクロちゃんをきちんと保管してくれたのはありがとね、子ネコちゃん。
+[name="謎のブラッドブルード"]それと、ドゥカレが残したあの臭い石たちを代わりに掃除してくれたのも、ご苦労様。
+[charslot(slot="m",name="avg_npc_1342_1#6$1",focus="m")]
+[name="「ミルスカー」"]フンッ、返すわ。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(slot="m",pfrom="0,0",posto="-50,0",duration=1.5,isblock=true)]
+[charslot(slot="m",pfrom="-50,0",posto="0,0",duration=1.5,isblock=true)]
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="「ミルスカー」"]私にはまだすべきことがあるの。重要なね。
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="謎のブラッドブルード"]また、あの鉄のお友達に会いに行くの？
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="「ミルスカー」"]彼が……この一戦を見過ごすはずないわ。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]助けてくれたことに感謝するわ。もう会うこともないでしょう。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5)]
+[delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="謎のブラッドブルード"]これからどこへ行くつもり？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=0.7)]
+[charslot(slot="r",name="avg_4132_ascln_1#1$1",posfrom="0,0",posto="-110,0",bstart=0.1,bend=0.5,duration=0.8,focus="m")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="none")]
+[name="アスカロン"]彼に会いに行く。
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="m")]
+[name="謎のブラッドブルード"]ケルシー士爵を助けに行かないわけ？
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="none")]
+[name="アスカロン"]アーミヤとLogosたちがいる、問題はない。
+[name="アスカロン"]私は一足先に行って、聖王会西部大広間の地下で彼らを待つ。調査した結果、奴が最後に現れたのはそこだった。
+[name="アスカロン"]殿下はすでに去った。当時のことは、片をつけるべきだ。
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="m")]
+[name="謎のブラッドブルード"]……君の怪我――
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="none")]
+[name="アスカロン"]支障はない。
+[name="アスカロン"]これから、お前は前線の戦いに関与する必要はない。自身の身を守れ。
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="謎のブラッドブルード"]まだアタシの実力を分かっていないの、おチビちゃん？　当時君がアタシたちから盗んでいった技はたくさんあるでしょ。
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="none")]
+[name="アスカロン"]……
+[charslot(slot="m",name="avg_npc_1521_1#8$1",focus="m")]
+[name="謎のブラッドブルード"]君を都市に引き入れたことが、アタシにできる限界。君たちと摂政王との件について、「ローズ河畔」はこれ以上関与しない。
+[charslot(slot="m",name="avg_npc_1521_1#8$1",focus="none")]
+[name="アスカロン"]分かった。
+[name="アスカロン"]これからお前はどこへ行く？
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="m")]
+[name="謎のブラッドブルード"]あの人の行方を引き続き調査する。当時、彼女が最後の瞬間に突然殿下を捨てて消えたことには、落としどころが必要だからね。
+[name="謎のブラッドブルード"]アタシたちの、あの情報集めが上手な姉妹がロンディニウムを去った後の彼女の行方を突き止めたんだよ。彼女はいまだ西へと向かっている、目的地がどこかはまだ分からないけどね。
+[charslot(slot="m",name="avg_npc_1521_1#7$1",focus="none")]
+[name="アスカロン"]それから？　連れ戻すのか、それとも殺すのか。
+[charslot(slot="m",name="avg_npc_1521_1#8$1",focus="m")]
+[name="謎のブラッドブルード"]……彼女は全ての船に、自分の行動について説明する必要がある。
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="m")]
+[name="謎のブラッドブルード"]だけど、君って人はさ、まず自分の心配をしなよ。摂政王は目の前なんだよ。
+[charslot(slot="m",name="avg_npc_1521_1#4$1",focus="none")]
+[name="アスカロン"]……
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="謎のブラッドブルード"]アタシたち河畔の船は、もうバベルに関することに手を突っ込まないとお互いに約束しているけど、アタシが個人的に昔馴染みに手を貸すくらいはルールを破ったことにはならないでしょ。
+[name="謎のブラッドブルード"]この血は祝福であり、贈り物でもある。この先の旅路において痛むことのないように、傷つくことのないように、無事でありますように、アスカロン。
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="none")]
+[name="アスカロン"]……どうしても首に塗らなければならないのか？
+[charslot(slot="m",name="avg_npc_1521_1#10$1",focus="m")]
+[name="謎のブラッドブルード"]君はいつもフードで顔をきっちり覆っているんだもの。こっちの方が綺麗だよ。
+[charslot(slot="m",name="avg_npc_1521_1#10$1",focus="none")]
+[name="アスカロン"]フンッ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=0.7)]
+[charslot(slot="r",posfrom="-110,0",posto="0,0",afrom=1,ato=0,duration=0.5,focus="m")]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1521_1#1$1",focus="m")]
+[name="謎のブラッドブルード"]そうそう、聞くのを忘れてた。あの子ネコちゃんをどう思う？
+[Dialog]
+[charslot]
+影に隠れる者が残した答えは、風に乗って届いた。
+「私の評価は必要ない。全てが終わった時、自ずと結論は出る。」
+「我々の皆が同じだ。」
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=1.5)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>今でも、あの戦争の終わりは一体いつだったのかとたくさんの人が議論をしている。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>ナハツェーラーの王が聖王会西部大広間の扉の前で滅びた時だと言う人もいれば、サルカズが完全にロンディニウムから撤退した時と言う人もいる。</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>当事者である吾輩に考えを聞いてくる人間も当然いる。</i>",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="<i>幸い吾輩の意見はヴィーナと完全に一致していた――</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>吾輩たちが勇気を持ってヴィーナの握るあの剣を受け取り、ナハツェーラーの王に振りかかった時、戦争は終わったんだ。</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>反抗し、災いをもたらした敵を吾輩たちの手で払いのけるために誰か特定の英雄なんて必要ない。</i>",block = true)]
+[Sticker(id="st1")]
+[playMusic(key="$wheel_loop", volume=0)]
+[Sticker(id="st1", multi = true, text="<i>あの戦いで、故郷と未来のために戦う一人一人がみんな英雄だった。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[MusicVolume(volume=0.2, fadetime=4)]
+[Image(image="55_i09_2",screenadapt="coverall", fadetime=2.5)]
+[Delay(time=3)]
+「全員聞け。貴様らの個人番号が何であろうと、どこの部隊であろうと、忠誠を誓う公爵が誰であろうと――」
+「今この時、退く道はない！」
+「連合軍を支援しろ！　こいつらに後れを取るな！」
+「急げ、模範軍を助けろ！」
+「隊長、くっ――武器が壊れました――」
+「私のを使え！　壊れたら交換しろ！　なくなったら、魔族の刀を奪って戦え！」
+「進め！　進め！！」
+「ヴィクトリアのために――」
+「ヴィクトリアのために！」
+[Dialog]
+[Image(image="55_i09_1",screenadapt="coverall", fadetime=2.5)]
+[MusicVolume(volume=1, fadetime=4.5)]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2, duration=80, block=false)]
+[Delay(time=3)]
+[name="ヴィーナ"]そこの兵士、素手で突撃するな。
+[name="ヴィーナ"]この剣を持て。
+[name="ダイアン・ウェーバー"]……し、しかし……「諸王の息」をそのような……
+[name="ダイアン・ウェーバー"]これは……貴殿の剣であります、殿下。
+[name="ヴィーナ"]いいや、これはヴィクトリアの剣だ。
+[name="ヴィーナ"]「グロリアーナ」号の残骸の上で、いくつもの手を経て、この剣は私の元に届いた。私の信頼する多くの者が心を一つに、剣の使命を完遂させた。
+[name="ヴィーナ"]さあ、握れ！　剣を振るうことのできる者は皆これを手に取れ。剣に己の使命を全うさせ続けろ。
+[name="ヴィーナ"]これもまたヴィクトリア人の権力だ。
+[name="ダイアン・ウェーバー"]……我々が剣を使ってしまったら、貴殿はどうするのです？
+[name="ヴィーナ"]私にはこのハンマーがある。
+[name="ヴィーナ"]私は止まりなどしない。貴様らと共に最後まで歩もう。
+明け方の日差しが暗雲を突き破る。降り注ぐ光の中に、金髪のフェリーンとヴィクトリア人が並び立っている。
+兵士は剣を握り締めて、毅然としたアスランを見つめる。陽光がくすぐったいほど、目に差し込んできていた。
+しかし彼女は目を逸らす気などさらさらなかった……己の背後に、立ち上がり共に戦う幾千幾万という勇敢なヴィクトリア人が見えた――
+国王が、自らの民と共に行くのが見えた。
+[name="ダイアン・ウェーバー"]……
+[name="ダイアン・ウェーバー"]承知しました。
+[name="ダイアン・ウェーバー"]連合軍第六縦隊第十歩兵団でまだ生きている者たち、小官に続いて進め！
+[name="ダイアン・ウェーバー"]ヴィクトリアのために！！
+[name="ダイアン・ウェーバー"]大いなる大地よ、我らが王を守り給え♪
+兵士が握る剣は、ナハツェーラーの王庭軍二名と術師一名に打ち勝ち、刀身には傷が二つできた。
+[name="ダイアン・ウェーバー"]彼の民と彼の幸福を守り給え♪
+しかし彼女は重傷を負い、歩みを止めた。そして、次の者に剣を渡した。
+剣を握り、引き続き進むのは、一人の労働者だ。彼は王庭軍の精鋭一名と相打ちし、刀身にはまた一つの傷ができた。
+[name="ダイアン・ウェーバー"]我らに無限の恩恵を賜り給え♪
+血だまりから剣を拾うのは、呼びかけに応じて部隊に加入した感染者の市民だ。敵を倒そうとすることはなく、ただひたすらに剣を守る。
+彼女のヴィクトリアを、希望を守る。
+[name="ダイアン・ウェーバー"]我ら愉快に声上げて歌おう♪
+[name="ダイアン・ウェーバー"]ヴィクトリア、我が故郷♪
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>最終的に、その剣はナハツェーラーの王の体に刺さり、そして混乱の戦場に消えた。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>最後に剣を手に取った英雄が誰なのか、その人がまだ生きているのか、吾輩たちはいまだに知らない。でも、その剣は確かに使命を果たした――</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>ヴィクトリア人の手によって侵略者に振り下ろされたんだ。</i>",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="<i>そして伝説はそれで終わりじゃない。聞くところによると、工員たちが血だまりと泥濘の中からぼろぼろになった「諸王の息」を見つけたらしい……</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>その後の物語は、ロンディニウムの子供の誰もが朗々と歌うことができる。</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3.5, block=true)]
+[stopmusic(fadetime=1.5)]
+[charslot]
+[image]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[Background(image="55_g9_dusklentiavenue_ex",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0.3, r=1,g=1, b=1, fadetime=2, block=true)]
+[Delay(time=2)]
+[playMusic(key="$faceoff_loop", volume=0.6)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>オークタリッグ区 ナハツェーラーの最終陣地</><p=2>1098月10月2日 a.m. 7:35</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_405_1#13$1",focus="m")]
+[name="モーガン"]ナハツェーラーが見当たらないよ……終わったの？
+[charslot(slot="m",name="avg_155_tiger_1#9$1",focus="m")]
+[name="インドラ"]けど、うぜぇ霧はちっとも晴れてねぇぞ。
+[charslot(slot="m",name="avg_npc_396_1#13$1",focus="m")]
+[name="ダグザ"]おかしい、サルカズどもが前みたいに霧に乗じて攻撃を仕掛けてこねー。罠か？
+[charslot(slot="m",name="avg_npc_229_1#2",focus="m")]
+[name="ホルン"]これまでのナハツェーラー軍との交戦経験からして、彼らは想像よりはるかに手強いはずです。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]ホルンさんの判断では、我々はこれから何をすべきですか？
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="ホルン"]歩調を連合軍大部隊の行動に合わせて、しばらく進攻を控え、形勢が明確になるまで無用な犠牲をなるべく減らしましょう。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="ヴィーナ"]よし、言う通りにしよう。
+[name="ヴィーナ"]ダグザ、命令を仲間全員に伝えてくれ。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]私は連合軍総司令部に共有します。それとクロージャさんたちにも――
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_empty", duration = 1)]
+[Delay(time=2)]
+[name="未知の通信"]もしもーし――ねぇ、フードが言ってたチャンネルは合ってるのよね？
+[name="未知の通信"]あれ？　もう繋がってる？
+[name="未知の通信"]チッ、全員よく聞きなさい。バベルがすでに軍事委員会の司令部を占拠したわ。
+[name="未知の通信"]バカどもは今混乱してて、ナハツェーラーの老いぼれの支援に行ってる暇がある奴はいないわ。
+[name="未知の通信"]だからあんたたち腰抜けどもは、そこに突っ立って時間を無駄にしてるんじゃないわよ。
+[name="未知の通信"]さっさと終わらせることね。信じるかどうかはあんたたちの勝手だけど。
+[name="未知の通信"]ついでにもう一つ言っとく。空を見なさい。
+[name="未知の通信"]……これでクソババアはあたしに大きな借りができたわね。
+[Dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_155_tiger_1#5$1",focus="m")]
+[name="インドラ"]……？
+[charslot(slot="m",name="avg_npc_229_1#5",focus="m")]
+[name="ホルン"]……
+[charslot(slot="m",name="avg_npc_396_1#3$1",focus="m")]
+[name="ダグザ"]……
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[name="ヴィーナ"]デルフィーン――
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="デルフィーン"]どのチャンネルで発信しているかを調べたところ、全てのチャンネルでほぼ同時にこの通信を受信しています。
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="デルフィーン"]連合軍とサルカズのどちらの耳にも届いているはずです。
+[charslot(slot="m",name="avg_npc_405_1#2$1",focus="m")]
+[name="モーガン"]話してた人の声って……
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="ヴィーナ"]ウィシャデルだ。どうやらあちらも暇していたわけではないようだな。
+[name="ヴィーナ"]ホルンさん、状況をもう一度判断してくれ――
+[charslot(slot="m",name="avg_155_tiger_1#5$1",focus="m")]
+[name="インドラ"]ヴィーナ、空を見ろ！　あれは……
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1.5)]
+その場の誰もが空を見上げる。次の瞬間、蒸気の全力の噴射音が聖王会西部大広間の上空に響き渡った。
+「ヴィクトリア！」
+[playMusic(key="$m_bat_wdslm_loop", volume=0.6)]
+ヴィクトリアの軍隊が沸き立つ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2.5, block=false)]
+[playsound(key="$d_avg_steamrelease", volume=0.3)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_396_1#5$1",focus="m")]
+[name="ダグザ"]チャールズ・リンチだ！　彼が霧の中に突っ込んでいった！
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_boomdust", volume=0.3)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[name="ヴィーナ"]……中から音が聞こえる。彼はナハツェーラーと戦っている。
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="ヴィーナ"]ホルンさん？
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="ホルン"]皆の士気は非常に高まっていますが、連合軍の部隊にはまだ大きな動きがありません。出所の分からない情報を簡単に信じる道理などありませんから、公爵たちが迷っているのは明らかです。
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="ヴィーナ"]ロドスがウィシャデルたちを信じているというなら、私も信じる。
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="ホルン"]ははっ、我々もあなたを信じています、シージさん。準備をするよう全員に伝えます。
+[Dialog]
+[charslot]
+[playsound(key="$a_bat_buildingshaking_1", volume=1,channel="1")]
+[playsound(key="$d_avg_mechwarrior", volume=1,channel="1")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_avg_giantmecha", volume=1,channel="3")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[charslot(slot="m",name="avg_npc_405_1#4$1",focus="m")]
+[name="モーガン"]えっ、何が起きてるの――
+[name="モーガン"]みんな、何か音が聞こえなかったかな……吾輩たちの足元だよ！
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_tankbiggun", volume=1,channel="1")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_gen_explo_n", volume=1,channel="1")]
+[playsound(key="$d_avg_boomdust", volume=1,channel="13")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[name="？？？"]模範軍のみんな、やっと会えたね。
+[charslot(slot="m",name="avg_npc_405_1#9$1",focus="m")]
+[name="モーガン"]待って、ヴィーナ、見間違いじゃないよね――なんか……デカブツが地面の中から出てきたよ？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="55_i14",screenadapt="coverall",fadetime=0.5)]
+[ImageTween(xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=50, block=false)]
+[Delay(time=1)]
+[playsound(key="$a_bat_buildingshaking_2", volume=1,channel="2")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[playsound(key="$d_avg_mechwarrior", volume=1,channel="1")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_giantmecha", volume=1,channel="4")]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[playsound(key="$d_avg_mechwarrior", volume=1,channel="1")]
+[Delay(time=0.3)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_giantmecha", volume=1,channel="5")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2.5)]
+[name="キャサリン"]デカブツだって？　いいや、こいつにはちゃんと名前があるんだ。
+[name="キャサリン"]「クローラー」ってね。うちの孫が設計したんだよ。なかなかのもんだろ。
+灰色の髪の運転手は煙の輪を吐き出すと、巨体の梯子の上に誇らしげに立った。
+「クローラー」は四つの巨大な蒸気液圧脚部装置を備えていて、ゴツゴツした重厚な装甲で覆われている。
+巨大な漆黒の砲身からは淡い煙が上がっていた。たった今地面を突き破ったのはまさにそれだった。
+そして「クローラー」の下の空洞からは、戦備物資を地上へと運ぶ自救軍が絶え間なく続いていた。
+[name="ヴィーナ"]貴様ら――
+[name="フェイスト"]シージさん、間に合ってよかったよ！
+[name="フェイスト"]これから自救軍もあんたたちの行動に加わる。ばあちゃんたちの助けがあれば、俺たちの勝算はかなり上がるぜ！
+[name="キャサリン"]あたしたちもついさっきあの通信を受け取ったところだ。どうやら良いタイミングだったようだね。
+[name="ヴィーナ"]ありがたい。感謝する。
+[name="ヴィーナ"]ホルンさん？
+[name="ホルン"]問題ありません、準備完了しました。いつでも動けます。
+[name="ヴィーナ"]よし。
+[name="ヴィーナ"]各位、これが最後の戦いだ。我々は――
+[name="キャサリン"]待ちな、もう一つあるよ。
+[name="キャサリン"]砲身を調整させてくれ……うん、これでいい。
+[name="キャサリン"]全員、耳を塞いでおくれ！
+[Dialog]
+[playsound(key="$d_avg_cannonfilling", volume=1,channel="1")]
+[Delay(time=2)]
+[playsound(key="$d_avg_tankbiggun", volume=1,channel="1")]
+[CameraShake(duration=1.5, ystrength=100, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_explo_n", volume=1,channel="1")]
+[playsound(key="$d_avg_boomdust", volume=1,channel="13")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_avg_churchbell", volume=0.5,channel="4")]
+[playsound(key="$a_bat_buildingshaking_1", volume=0.3,channel="2")]
+[CameraShake(duration=3.5, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=true)]
+砲火は、オークタリッグ区の中央に長年吊るされている大鐘に命中した。
+鐘の音が美しく響く。一拍置いてそれに呼応したのは、あちこちから湧き上がる連合軍部隊の突撃ラッパと雄たけびだった。
+[name="キャサリン"]あたしたちが到着したことを、伝えてやらないとだろ。
+[name="キャサリン"]さてと、あとの指揮はあんたに任せたよ。
+[name="ヴィーナ"]――ヴィクトリアの者たちよ、最後の勝利に向かって、進め！
+[Dialog]
+[playsound(key="$d_avg_oicrwd", volume=1,channel="1")]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

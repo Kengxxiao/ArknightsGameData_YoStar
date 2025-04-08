@@ -1,0 +1,543 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_indoor4",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[name="冷静な声"]まだ目を覚ましてないの？
+[name="緊張した声"]まだだよ、先生。部族のみんなで午後からずっとここに座って待ってるんだがな。
+[name="パピルス"]う～ん……
+[name="冷静な声"]他に診察が必要な人は？
+[name="緊張した声"]いや、俺たちは後回しでいい。先にあの子を助けてやってくれ！　あの子は呪われてしまったんだ！
+[name="冷静な声"]この子、滝のほうから来たんだって？
+[name="緊張した声"]ああ。俺たちで何度も調べたんだが、体に石は生えてないし、怪我もしていない。ただずっと石板を抱きかかえたまま離そうとしないんだよ。
+[name="緊張した声"]午前中はまだ何かブツブツ唱えてたんだが、しばらくしたらまったく喋らなくなっちまった。
+[name="緊張した声"]そんでさっき見にいったら、今にも息が止まりそうになっててよ！
+[name="冷静さを失った声"]なんですって！？　なんでもっと早く言わなかったの！
+[name="緊張した声"]もし救えなくても、せめて呪いだけは解いてやってくれないか。ここ、俺の家だからさ……
+[dialog]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[delay(time=3)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_163#1",duration=1)]
+[delay(time=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="巡回医師"]お嬢さん、私の声が聞こえる！？
+[charslot]
+[name="パピルス"]お……おもい……うぅ……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……石板を胸の上に置いたのは誰？
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]よし、石をどけたわよ。
+[charslot]
+[dialog]
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1",duration=1)]
+[delay(time=1.5)]
+[name="パピルス"]……ぷはあ！
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]よかった、ちゃんと反応があるわ。気分はどう？
+[charslot(slot="m",name="avg_4139_papyrs_1#3$1")]
+[name="パピルス"]わたし……
+[charslot(slot="m",name="avg_4139_papyrs_1#3$1")]
+[name="パピルス"]……ミント味の……ズバイルアイスが食べたい……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]本当にもう大丈夫なの？
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="パピルス"]はい。たしかに医学の専門知識はありませんが……熱中症で倒れたことなら何度もありますから……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]まったく、こんな気候で熱中症を起こすことなんてめったにないのに。他に具合の悪いところはある？
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="パピルス"]大丈夫です。ただ、いくつかお聞きしたいことがあって。
+[dialog]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="パピルス"]この葉っぱは、本に書いてある爽やかな香りで眠気覚ましの効果を持つジュウノウコウの葉でしょうか？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……早く捨てなさい。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]あなたが今言った効果は聞いたことないけど、その葉っぱをすり潰して額を塗ったら、アシッドムシを引き寄せられることは知ってるわ。
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="パピルス"]えっ、そうなんですね……じゃ、じゃあこの木の実は？　栄養補給用の行動食として使えませんか？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]どちらかというと、死んだあとの景色を見るために使えるわ。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……何を書いてるの？　ノート？
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="パピルス"]はい、これはわたしの『遍歴初期計画（最終稿）』です。すでに旅へ向けて万全の準備と出発の決心を固めたことを意味するのですが……たった今「最終稿・改訂版下書き」になってしまいました……
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="パピルス"]丁寧に教えていただき、本当にありがとうございます。他にサバイバルについてアドバイスがあるなら、それも聞かせてくれると嬉しいです。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]ええ。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]今すぐおうちに帰ることよ。この周辺に観光するような場所はないわ。
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="パピルス"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="パピルス"]はい、それはわかっています。
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]本当に完全に治ったのか？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]本人がそう言っていたわ。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]いや、何か違和感がある。俺、やっぱりあの子は呪われてると思うぜ。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]今朝、姉貴と水辺で気を失ってるところを見つけたんだ。あの辺りの入っちゃいけない森に入ったに違いない。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]そん時、スゲーデカい声でずっとうなされててよ。起きてた時よりもずっとうるさかったんだぞ。
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]そうそう。なんとかのトーテムだか、内臓が入った壺だかを探すって喚いてて……しまいには他の人に手伝えって命令し始めるし。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]ああ、ばっちり覚えてるぜ。　こいつは何年前に死んだとか、あいつは何年前に埋められたとか……呪われてない奴がこんなこと言うか？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]うーん……
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]もしあの子がまた妙なことをしだしたら、木を叩き切るみたいに、俺が悪いもんを根こそぎ切り落としてやる！
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]とりあえず落ち着いて。あの子、見るからに弱そうだから、他人を傷つけることなんてできっこないわよ。それに、一人じゃそんなに遠くも行けないでしょうし。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]さて、次の患者さんは――
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[PlaySound(key="$rungeneral", volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="パピルス"]た、助けてーー！
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]うわっ、なんでオリジムシがこんなに大量に集まってきてるの！？
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]あ、あ、あ、慌てるな！　今助ける！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="パピルス"]……ごめんなさい。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]その植物はオリジムシを誘き寄せるって、さっき注意したばかりよね？
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="パピルス"]……村を出る時に小道でつまずいて……
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="パピルス"]……その拍子に木に頭をぶつけて、根本にいたオリジムシたちを驚かせてしまったんです。地面に伏せてアーツで身を守ろうとしたけど、狙いが定まらなくて……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……あまり無茶しないで。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]前にも首長があなたみたいな人をここへ寄越したことがあるわ。この辺りを掘り返しては、拾った石を宝物のように扱ってたわね。
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="パピルス"]そうなんですか？　何か発見はあったんですか？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]さあね。私にわかるのは、彼らが去っていったあとも、ここの生活は何も変わらなかったことだけ。彼らが掘った小さな穴も、たった一度の増水で全部元に戻ったわ。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]もしあなたがここで「歴史」なんてものを見つけられると、本気で思っているのなら……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]大丈夫です。失望するのは怖くありません。
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="パピルス"]今回は心を決めてきたんです。ようやく外に出られたんですから、しっかり自分の目で、この大地のすべてを見るんだって。
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="パピルス"]わたし、この石板にある古代文字が読めるんですよ。だから、この手がかりを頼りに最後まで調査するつもりです……たとえ大した発見がないまま終わるとしても。
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="パピルス"]それに、参考文献から「知られざるジャングル部族の絶景」を百個も集めたんです！　確かにジャングルはすごく広いけど、一つくらいは出会えるかもしれません！
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]はあ、ほらこれをあげるわ。熱冷まし、吐き気止め、虫よけに獣よけ……必要な薬は一通り入ってるから。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]私はもうすぐ次の村に行かなきゃいけないの。ここのアダクリスたちは親切だけどあまり期待しないことね。あなたを助けてくれるどころか、理解してくれるかすら怪しいわ。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]はい、本当にありがとうございます……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]そうだ、先生、もう一つ聞いてもいいですか？　ここの村人たちが言う「呪い」って、一体なんのことでしょう？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_falls_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]ああ、そんなふうに結び目を作ったら、ツルを体に巻き付けて、ブランコの要領で向こう岸まで渡るんだ。
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]だけど、その抱えてる石は置いていかなきゃな。ツルを掴むには片手を空けなきゃいけない。
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="パピルス"]大丈夫です。脇に挟んでおきますから。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]それに、これは普通の石じゃなくて、文字が刻まれている石板なんです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]こういう石板を、もう何枚も集めました。もし似たような石を見つけたら、持ってきてくれれば報酬をお支払いしますよ。
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]表面に何かが刻まれてる石？　他の奴から聞いたことあるな。
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="パピルス"]本当ですか？　誰から聞いたのです？　その人とお話をさせてもらえませんか？
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]いや、あいつはとっくにくたばったよ。あの呪われた森に行ったからな。同情すべきかどうかもわからん。
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="パピルス"]やっぱり……何かの記念碑のような石板は全部、あの森の外れにあるのですね……
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]何か言ったか？
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="パピルス"]い、いえ。ええと、向こう岸へ渡るので、後ろから押していただけませんか？
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]いいぜ！　せーの、よいしょっとー！
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[CameraShake(duration=0.6, xstrength=8, ystrength=12, vibrato=30, randomness=90, block=false)]
+[name="パピルス"]きゃああああー！
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[CameraShake(duration=0.6, xstrength=8, ystrength=12, vibrato=30, randomness=90, block=false)]
+[name="パピルス"]あーっ、石板が！　落っこちゃうーー！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_jump_water", volume=0.3)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="情熱的な村人"]ツルから手を放すな！　水ん中で石を抱えたりしたら――
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_jump_water", volume=1)]
+[CameraShake(duration=0.6, xstrength=8, ystrength=12, vibrato=30, randomness=90, block=false)]
+[delay(time=1)]
+[name="パピルス"]た、助け――ゴボゴボ……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_jungleentrance",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]パピルス、戻ってきたんだね！　今回はずいぶん長く出かけていたから、てっきりもうここを発ったのかと――
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]あれ、どうして全身ずぶ濡れなの？　また川に落ちちゃった？
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="パピルス"]い、いえ……これは雨のせいで……クシュン！
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="パピルス"]ジヤア、この石を登録して倉庫に入れておいてください……はい、あの部族からもらった天気予報石です。まあ、雨が降るのを事前に知ったところで、何の役にも……
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="パピルス"]あれ、ジヤア……仕事中なのになんでボーッと突っ立ってるんですか？
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]えっと……誰と話してるの？
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="パピルス"]ハッ……！　ジヤアじゃない！
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="パピルス"]すみません、さっき言ったことは全部忘れてください……！　他の部族なんていません。いませんから！
+[dialog]
+[charslot]
+[charslot(slot="r",name="avg_4139_papyrs_1#6$1")]
+[charslot(slot="l",name="avg_npc_072#1")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="l",posfrom="0,0",posto="100,0",duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",focus="l",posfrom="100,0",posto="50,0",duration=0.3)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="優しい村人"]すごい熱！　どうりでおかしなことばかり言うはずだよ！
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="優しい村人"]はあ、呪いとか抜きにしても、本当に可哀そうな子。ひとまず家の中で休みましょう。
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="優しい村人"]元気になったら、服のコーティングに使える樹脂が取れる木を教えてあげる。それを塗れば防水にもなるし、オリジムシも足を這い上がってこなくなるよ。
+[charslot(slot="r",name="avg_4139_papyrs_1#3$1",focus="r")]
+[name="パピルス"]ありがとうございます……
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="優しい村人"]まったく、毎日そればっかり。何に感謝しているの？　そこら中に生えている木に、役に立つものがあるって教えただけじゃない？
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="優しい村人"]私から聞いたことを、次はあなたがまた他の誰かに教えてあげる。それだけのことだよ。
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="優しい村人"]ほら、行きましょう。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="たくましい村人"]パピルス、なんで木なんか切ってるの？　力のいる仕事だし、あたしがやろうか？
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="パピルス"]はあ……はあ……大丈夫です。ありがとうございます……
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="パピルス"]ちょっと試したかっただけです。このアーツで動くチェーンソーを使えば、本当に体力を節約できるかどうか……
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="たくましい村人"]へぇー、なんかすごそうだね！　あたしもやってみていい？
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="パピルス"]もちろんです！　ちょっと待ってくださいね、今これをどうにかして止めますから……
+[dialog]
+[PlaySound(key="$e_atk_saw_n_1", volume=0.7)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[delay(time=0.2)]
+[PlaySound(key="$e_atk_saw_n_2", volume=0.7)]
+[CameraShake(duration=1.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="たくましい村人"]ちょっと、パピルス！　逆にスピードを上げてどうすんの！　向きもまずいよ！
+[charslot(slot="m",name="avg_npc_073#1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="たくましい村人"]どいて！
+[Dialog]
+[charslot]
+[PlaySound(key="$leaveshake")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[playsound(key="$smallearthquake")]
+[Delay(time=5)]
+[PlaySound(key="$leaveshake")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_land_impact", volume=1)]
+[playsound(key="$smallearthquake")]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[delay(time=4)]
+[Background(image="bg_village_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="パピルス"]す、すみません……！
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="たくましい村人"]あはは！　やっぱりね！　パピルスは出かけると、いつも便利なものを持って帰ってきてくれる！
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="パピルス"]そ、そうでしょう……とにかく、屋根はちゃんと直しますので……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]いやあ、こいつは本当に便利だな！
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="パピルス"]待ってください。その石板は羽獣の卵を焼くためのものじゃ……
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]ここに描いてある絵が見たいんだろ？　後できれいにして返すからよ。
+[charslot(slot="m",name="avg_4139_papyrs_1#3$1")]
+[name="パピルス"]わかりました……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]皆さん、もう呪いは怖くないんですか？
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]石版をたくさん拾ったあんたが無事なのに何を怖がるんだ？　それに、こないだ婆ちゃんが埋まってる石の山を見てきたけど、婆ちゃんは出てこなかった。つまり悪いことは起きてないってことだ。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]お婆さんは……前に出てきたことがあるんですか？
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]ねえよ、ははっ！　知っての通り、俺は今までずっとツイてるからな！
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]ん？　そういやパピルスって、一回も自分の話をしたことなくないか？
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]俺は、初めて獲物を仕留めた時にどの木を使ったかまで話したってのに、あんたからは何も聞いてない。どこから来たのかとか、部族に何人いるのかとか、ボクシング試合で何位を取ったのかとか……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]わ、わたしはただ……特に話すようなことがないだけで……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]年が近い子たちとの付き合いも少なかったし、実家のお屋敷から出る機会もあまりなかったんです。今までのわたしの生活には、本しかありませんでした。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]へえ、本か！　そっちの商人はどんな本を売ってんだ？　俺は絵がいっぱい描いてるあるやつを読むのが好きだぜ！
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]いえ、たぶんあなたが想像しているものとはちょっと違うと思います……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]わたしの家は学者の家系で、貴重な本をたくさんコレクションしていました。そして、蔵書の保管と収集に力を注いできたんです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]もちろん、本には無数のテーマが存在しています。ですが、わたしの父は、街の大部分の人と同じ、歴史こそあらゆる知識の中で最も高貴な学門だと信じていました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]正直……本当に本が好きだったのか、それとも他に選択肢がなかったからだけなのか、自分でもわかりません。わたしは自分のことよりも、二千年前の人々の暮らしのほうが詳しいのかもしれません。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]二千年前？　ほお、それってつまりは俺の婆ちゃんの婆ちゃんの婆ちゃんの……
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]ああ、頭がこんがらがってきた！　でもパピルス、あんた面白い話をたくさん知ってそうだな！
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]面白い話、ですか？　……そういえば、一部の学者は、二千年前はマンティコアがジャングルの支配者であり、崇拝の対象だと考えていました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]大型の古墓に埋葬された骨が彼らの説の根拠でしたが、後に技術が進んだことにより、彼らはただ骨格復元の際に想像力を働かせすぎてしまっただけなのだと証明されたんです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]一部の骨を誤った場所に組み立ててしまったせいで、いかにもアダクリスがマンティコアの特徴を持っているように見えてしまったんだとか。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]アダクリスといえば、こんな面白い仮説もありますね。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]アダクリスが歴史の早期に痕跡を残していないのは、その知識と科学技術が現代のサルゴンの水準をとうに超えていたから、という説です。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]彼らは自分たちの好奇心をすでに十分に満たしていたため、外界とはそれ以上の接触を望まず、さらには意図的に自分たちを見つけた探検者の痕跡を消し去ったとか。
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="パピルス"]それから……
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="パピルス"]……あっ！　ごめんなさい。専門分野の話になると、とりとめのない内容でもついつい長々と語ってしまって……
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]謝ることないでしょう？　誰も聞いたことないような話をあんなに真剣に語ってくれるなんて、面白いに決まってるよ。
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="たくましい村人"]そうそう、あたしはそういう妙な言葉を聞くと、何かに取りつかれたみたいにすぐに引き込まれちゃうんだよね！
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]えと……その、今話したのはどれも学術史上の噂話にすぎません。よく理解できなかったとしても、くれぐれも真に受けないでくださいね……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]でも私自身については、本で読んだ物語以外に話せることは、やっぱり何もないみたいです……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]今回旅に出ようと決心するまで、生まれ育ったミナトハマイから出たのは、たったの一度きりでしたから。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]そいつを聞かせてくれよ！
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="パピルス"]はい……あの日、わたしと友人は、ある文献を巡って口論になりました。すると、その子は突然机を叩いて、どっちが正しいのかもう一人の共通の友人に判断してもらおうと言い出したんです。
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="パピルス"]二人とも感情が昂りすぎていたせいでしょうか。学院の教授に聞きにいくことすら思いつかなくて……友人が連絡したキャラバンと一緒に、そのまま出発してしまったんです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]はじめは、そのことが父の耳に入って、時間を無駄にしてまで言いつけを破ったことについて怒られないか、とても怖かったです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]でも、実はあの二日間、わたしたちは寝室のようにレイアウトされた車両の中で過ごしていただけです。わたしは、いつも通りに七時に起きて論文を書いていました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]会う予定の友人も、待ち合わせしやすいように、最寄りの街まで駆けつけてくれていました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]あと覚えていることといえば、その子から、古墓の発掘現場をわざわざ変なふうに見える角度で撮った、怖い写真を渡されたことくらいでしょうか。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]それとあの辺りは気候が劣悪だったので、安全のために移動中は車両の窓をずっと閉めていました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]感染対策のためには、そうするのが正しかったのはわかってます。だけど、今でもついつい考えてしまうんです。あの時の窓の外は、一体どんな感じだったのだろうって。
+[dialog]
+[charslot]
+目の前のアダクリスたちは、きょとんとした顔で互いに見つめ合った。誰も、まさかここで話が終わるのだと予想していなかったようだ。
+ほどなくして、羽獣の卵の黄身をすする「ズズッ」という音に続いて、誰かが大声で沈黙を破った。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]なあ、車両ってどんなのなんだ？　なんでそいつは部屋ごと運べるんだよ。
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="優しい村人"]私も気になってたけど、学院ってどんな場所なの？
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]……
+[dialog]
+[charslot]
+パピルスはアダクリスに囲まれ、矢継ぎ早にたくさんの質問を浴びせられた。
+予想していた質問もあれば、考えたこともない質問もあった。
+彼女が子供の頃に最も多くの時間を過ごした書斎から、壮大なバルジャバンダバード博物館、そしてロドスという名の陸上艦まで。
+退屈で窮屈だったはずの人生は、次から次へと投げかけられる質問の中で、色とりどりな輝きを放ちはじめる。
+最後に、パピルスは今回の旅について聞かれた。
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="せっかちな村人"]もう一つ質問があるんだ。チェーンソーだの雨を予報する石だの、あんたがいつも持って帰ってくる奇妙な道具は、どこからみつけてきてんだ？
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[delay(time=4)]
+[Background(image="bg_indoor4",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=2)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[name="熱意に溢れた声"]もっと声を張り上げろ！　俺たちは友達を作りにいくんだ。向こう以上に情熱を見せつけてやらないと！
+[name="熱意に溢れた声"]パピルスに教えてもらったスローガンを叫べ！　そうすりゃ間違いねえ！
+[dialog]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]「友達を作りに」、ねえ……お嬢さん、外で村人たちがこんなに集まって、彼らにとっての禁足地に踏み込もうとしてるのは、あなたの入れ知恵でしょう？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]もうとっくに村から出て行ったのかと思ってたけど。
+[charslot(slot="m",name="avg_4139_papyrs_1#10$1")]
+[name="パピルス"]わたしが頻繁に体調を崩したり、道端で倒れたりしていなければ、確かにとっくに出て行ってたと思います……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]すみません、先生。この前はついかっとなってしまいました。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]どうやら私のアドバイスは聞き入れてもらえなかったみたいね。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]わたしはただ、呪いなど存在しておらず、彼らが恐れているジャングルの向こう側にあるのはもう一つの部族なら、ご先祖様が残した言い伝えにすっと縛り付けられるべきではないと思っただけです。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]あなたはあくまでも「歴史の真実」にこだわり続けるのね。たとえそれが、生きている人々を傷つけることになったとしても。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]いえ……それについては反省しました。先生、どうか聞いてください。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]先生の言う通り、両部族が接触すれば何が起こるかは誰にもわかりません。文献を見ても、両部族が常に血を流す争いをしていたことは明らかです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]だから、わたしはその争いの根源を突き止めるために、ずっと両方の間を行き来していました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]もし歴史のどこかで、両部族がかつて親密な関係にあり、今でも共通の儀式が残っているのなら、双方には友好的に接触するための基盤があるはずです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]でも……結局役に立ったのは、毎回それぞれの部族から持ち帰った発明品でした。皆さんそれに興味を惹かれて、ジャングルの反対側の部族に会ってみたいと、自分たちから言ってくれたんです。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]つまり、あなたが言い出したわけじゃないってことね。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]はい。今振り返って見ると、わたしはただトランスポーターのような役割をしていただけかもしれません。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]そうだ先生、彼らはあの大きな滝の近くに橋を架けるそうですよ。今回ここから経つ時は、わざわざジャングルの瘴気の一番濃い場所を通らなくてもいいかもしれませんね。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……じゃああなたは？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]お嬢さん、あなたって本当におかしな子だわ。あなたなら前にやってきた首長の使いみたいに、涼しい風が出る鉄の塊に乗ってここに来ることだってできたのでしょう？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]いや、あなたは彼らよりももう少し偉いかもしれないわね。二つの部族の歴史だって、誰かをここにやって調査してもらうこともできたに違いないわ。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]彼らの生活に介入し、専属のトランスポーターを派遣して両部族間に交友関係を結ばせ、果てには一つに合併することだって、あなたなら造作もなかったはずよ。似たようなことを見たことがあるわ。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]なのにどうしてあんな無茶をしたの？
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]わたしは、ただの「観光」がしたかったわけではありません……窓の外がどうなっているのかを知りたかったんです。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#14$1")]
+[name="パピルス"]出発前、尊敬するある人から言われました――長旅の意味は自分で見つけなければいけない、と。そして、決して忘れてはいけないけど、それを崇めてもいけない、と。
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="パピルス"]だからたくさん努力をしました。結果的には、悪夢のバリエーションが増えただけでしたけど……
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="パピルス"]オリジムシを見て悪夢にうなされる今ほうがずっと好きです。今までのわたしはただ、事務所で興味本位で少し触っては、うきうきしながらデスクに戻ってその光沢を書き記すだけでしたから。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]やっぱりおかしな子ね。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]で、これだけ苦労して、満足した？
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]そうですね……今でも冷房の効いた事務所や、きれいな水、そして好きな時に手に取れるたくさんの資料を恋しく思っています。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]そして、サルゴンの歴史の長さと、自分が踏み出した一歩の小ささを比べない日もありません。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]だから父の言う通り、私の研究にとって、ジャングルに数十日も篭るなんて確かに時間の無駄だったのでしょう。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]でも、わたしがこんなにも長くここに留まっていられたのは、一つのことを成し遂げたかったからです。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]あの石板たち……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]はい。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]部族の人たちにスローガンを教えたみたいだけど、石板から色んな情報を見つけられたようね。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]実は……石版に書かれていたのは戦いの功績だけでした。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]先生の予想通りでしたよ。アダクリスは生まれつき好戦的で、かつて二つの部族は顔を合わせれば、どちらかが死ぬまで戦っていました。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]きっと、森の向こうにある部族へ近づいた者は誰一人として戻って来られなかったせいで、「あの森に入ると呪われる」なんて言い伝えが広まったのでしょう。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]でも、今生きている人たちにとって、過去の真相なんてどうでもいいと思いませんか？
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]……わかった、このことは内緒にしといてあげる。それと、あなたがここを去ったあとも、二つの部族の間にすれ違いが起きて、また争いにならないよう、気をつけておくわ。
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]私からのお礼だとでも思って。あなたが彼らに橋を架けさせたおかげで、これからは遠回りせずに済みそうだし。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]ありがとうございます……その、次に出発する時は、私も同行させていただけると嬉しいです。
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="パピルス"]それで最寄りの街についたら、まず冷たいフルーツジュースを飲んで、それからロドスの事務所に連絡を取りたいんです……あっ、お金はちゃんと払いますから！
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="巡回医師"]サバイバル生活はもういいの？
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="パピルス"]も、もう石板の調査も終わりましたから！
+[charslot(slot="m",name="avg_4139_papyrs_1#11$1")]
+[name="パピルス"]それに、部落の皆さんが一団になって、新しい友人を作るために、恐れているはずの森に踏み込もうとしている姿を見ていたら、ふと気づいたんです。
+[charslot(slot="m",name="avg_4139_papyrs_1#11$1")]
+[name="パピルス"]いつだって一番大切なことは、初めの一歩を踏み出すことなのかもしれないって。
+[dialog]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[Image]

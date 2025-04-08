@@ -1,0 +1,611 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g2_westlobbyhall",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[Delay(time=1)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>성왕궁 서쪽 회당</><p=2>1098년 10월 8일 7:28 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+전쟁 종식 직후
+[dialog]
+[charslot(slot="m",name="avg_npc_1518_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1518_1#1$1",focus="m")]
+[name="'소공작'"]26년 전만 해도 이곳은 찬란한 곳이었습니다.
+[name="'소공작'"]머리 위의 저 돔은 반짝반짝 빛났고, 두 달의 빛과 매혹적인 밤하늘은 밤새 열리는 댄스파티에서 볼 수 있는 가장 아름다운 경치였죠.
+[charslot(slot="m",name="avg_npc_1518_1#4$1",focus="m")]
+[name="'소공작'"]저는 여기서 폐하의 손등에 입맞춤을 올린 적도 있답니다. “알리스테어 폐하께 경의를”, 아주 귀한 영광이었죠.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="ww")]
+[stopsound(fadetime=2, channel="ww")]
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="비나"]빅토리아에는 이제 국왕이 없다. 당신……
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="비나"]아니, 마치 백작이라 불러야 하나?
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]그냥 엘레노어라 불러주시면 됩니다.
+[name="'소공작'"]노르망디 공작님으로부터 마치 카운티 백작령을 하사받은 것은 백작 작위 때문이 아니라, 단지 사업상의 필요 때문이라서요, 전하.
+[name="'소공작'"]그때 국왕의 처형이라는 촌극이 없었다면 우리는 더 가까운 관계였을 겁니다, 비나 씨.
+[dialog]
+그녀는 보라색을 입힌, 금빛 부처꽃이 인쇄된 명함을 꺼냈다.
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]받아주세요. 형식을 중시하신다면 이쪽이 편하실 테니.
+[charslot(slot="l",name="avg_1019_siege2_1#10$1",focus="l")]
+[name="비나"]……너와의 인연은 깊지 않아서 말이지. 너희는 이 장소에서 런디니움의 미래를 결정하려는 건가?
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]회의 장소는 제가 결정할 수 있는 일은 아닙니다. 하지만 이곳에서 일어났던 일들을 고려해 보면, 더 적합한 장소가 있을까요?
+[dialog]
+[charslot]
+[delay(time=1)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11,grad = true, fadetime=1.5)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11, grad = true,fadetime=1.5)]
+[delay(time=2)]
+[backgroundTween(xFrom=0, xTo=30,yFrom=0, yTo=-30,xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2, duration=10, block=false)]
+[delay(time=3)]
+엘레노어는 과거를 붙잡으려는 것처럼, 홀 깊숙하게 자리한 빛바랜 조각상과 먼지 쌓인 문을 바라보았다.
+문 너머에는 빅토리아 국왕의 왕좌가 있다. 한때 국왕이 앉아 제국 전체의 흥망성쇠를 좌우하던 자리.
+그러나 지금, 문 너머에는 과연 무엇이 남아있을까.
+[dialog]
+[curtain(fadetime=1)]
+[delay(time=2)]
+[Background(image="55_g2_westlobbyhall",screenadapt="coverall", fadetime=1.5,block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#10$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]이곳에 미리 온 이유는 추억의 장소를 둘러보려는 것도 있지만, 당신을 만나기 위해서이기도 합니다. 우리 사이에는 얘기해야 할 것이 너무도 많으니까요.
+[charslot(slot="r",name="avg_npc_1518_1#4$1",focus="r")]
+[name="'소공작'"]당신도 저를 만나고 싶으셨던 건 아닌지?
+[charslot(slot="l",name="avg_1019_siege2_1#6$1",focus="l")]
+[name="비나"]……내가 네 약점을 잡고 있는 건 알고 있……
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]비나 씨, 로도스 아일랜드의 동료들은 이미 다른 공작님들의 의견을 전달하고 있을 겁니다.
+[charslot(slot="l",name="avg_1019_siege2_1#6$1",focus="l")]
+[name="비나"]다른 공작? 너나 노르망디 공작이 그 녀석들과 별로 다를 것 같지는 않은데.
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]저를 노르망디 공작님과 혼동하지 마셨으면 합니다. 존경할 만한 분이지만, 런디니움의 사소한 문제를 처리하는 일로 공작님을 번거롭게 할 필요는 없지요.
+[name="'소공작'"]다른 몇 분에 대해서도, 감히 저를 그분들에 비교할 수는 없지요.
+[name="'소공작'"]살카즈 군대의 철수가 런디니움 재난의 종식을 의미하지는 않습니다. 지금은 감염자 수의 추이를 계산하고 싶어 하는 사람이 없지만, 결과는 불 보듯 명확하죠.
+[name="'소공작'"]빅토리아의 약품 생산 라인은 부족하고, 감염자들을 위해 귀중한 생산 라인을 개조하겠다는 사람도 없습니다. 무슨 뜻인지 아시겠죠?
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="비나"]무슨 말이 하고 싶은 거지?
+[charslot(slot="r",name="avg_npc_1518_1#2$1",focus="r")]
+[name="'소공작'"]저는 컬럼비아 군과 장기적이고 안정적인 협력 관계를 맺고 있습니다. 많은 제약회사로부터 추천도 받았죠.
+[name="'소공작'"]메울 수 없는 틈은 없답니다. 가격만 적절하다면요.
+[charslot(slot="l",name="avg_1019_siege2_1#6$1",focus="l")]
+[name="비나"]……협박인가?
+[charslot(slot="r",name="avg_npc_1518_1#2$1",focus="r")]
+[name="'소공작'"]어떻게 받아들일지는 당신의 자유입니다. 답을 서두를 필요는 없어요. 손에 어떤 패를 들고 있는지 정리한 후에 다시 저를 찾아주세요, 비나 씨.
+[name="'소공작'"]지금 이 순간이, 이후 긴밀한 협력 관계의 좋은 시작점이 될 수 있을 겁니다.
+[charslot(slot="r",name="avg_npc_1518_1#1$1",focus="r")]
+[name="'소공작'"]그리고, 이 장소를 봐주세요. 당신의 일족은 한때 이 낡은 건물 안에서 빅토리아 전체의 향방을 결정했습니다.
+[name="'소공작'"]알렉산드리나 전하, 런디니움은 당신에게 너무도 작습……
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=0.7)]
+[delay(time=1)]
+[name="???"]저는 오히려 이 도시가 너무 큰 것 같습니다. 민망합니다만, 거리에 울리는 울음소리에 화들짝 놀라 허둥대다 길을 잃고 말았군요.
+[name="???"]후우. 도시의 참상은 정말이지……
+[dialog]
+[charslot(slot="m",name="avg_npc_1068_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]많이 변했군요, 엘레노어. 내 뿔을 잡고 목마를 탔던 때가 아직도 기억납니다만.
+[charslot(slot="m",name="avg_npc_1518_1#1$1",focus="m")]
+[name="'소공작'"]그 관대함에는 여전히 감사하고 있습니다. 노르망디 공작님께서는 좀 더 청결한 곳으로 휴양하러 가신다 하셨습니다만, 괜찮으시다면 함께 가시는 건 어떠신지요.
+[charslot(slot="m",name="avg_npc_1068_1#8$1",focus="m")]
+[name="고도딘 공작"]하하, 저장고에 있는 술을 다 마시기 전까지는 아까워서라도 영지를 한 발짝도 떠나고 싶지 않군요.
+[dialog]
+[charslot]
+[name="???"]노르망디라면 이 모임을 좀 더 중요하게 여길 줄 알았는데 말이지.
+[dialog]
+[charslot(slot="m",name="avg_npc_726_1#7$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]상관없나. 우리가 오늘 여기 모인 이유는 바로 자네 때문이니까, 알렉산드리나.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]크흠, 그렇게 서둘러 본론으로 들어갈 필요는 없지 않습니까, 캐스터 공작.
+[name="고도딘 공작"]그 노장군은 아직도 도착하지 않았군요……. 역시 초대를 거절한 건지?
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]그 사람의 시선은 이미 런디니움을 벗어나 있어. 내일 아침쯤이면 당신의 첩자가 나와 그의 대화 내용을 아침 식사로 올려놓겠지.
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="캐스터 공작"]그리고, 지금 그의 모습은 가울을 집어삼켰던 때와 비교해도 손색이 없어.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]그건 빅토리아에 좋은 일이라고는 할 수 없겠군요.
+[charslot(slot="m",name="avg_npc_1068_1#7$1",focus="m")]
+[name="고도딘 공작"]타라와 '더블린'……. 빅토리아에서 이탈하겠다는 의사를 명확히 선언한 것은 아니지만, 현 정세를 파악하고 있는 사람이 보면 충분히 알 수 있죠.
+[name="고도딘 공작"]애버콘과 파이프는 큰 손해를 입고, 더 큰 의사 결정에 참여할 기회를 '자발적으로 포기'했어요. 애시워스의 배후에 있던 이들도 동란에서 거리를 두기로 했지요.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]노르망디 공작은……. 태도가 이미 확실하군요.
+[dialog]
+[charslot]
+고도딘 공작은 미소 띤 얼굴로 '소공작'을 바라보았고, 엘레노어 역시 가볍게 고개를 숙였다.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]아아, 세상 일은 참으로 무상하지요.
+[name="고도딘 공작"]예전에는 여기서 의회의 연회가 열리기도 했고, 알리스테어 폐하가 알현실에 앉아 계셨을 적엔 그분의 목소리를 무시할 수 있는 자가 없었죠.
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="캐스터 공작"]훗.
+[dialog]
+[charslot]
+먼지가 내려앉은 어두운 홀에 선 고도딘 공작은 마치 지난날과 같은 모습으로, 몸에 익은 리듬을 가벼운 발걸음과 함께 밟아나갔다.
+연기가 피어오르고, 음악은 멈추지 않는다. 햇살이 돔을 넘어 그의 몸에 쏟아졌다. 그 시절 고도딘 공작은 기개 있는 사람으로, 권력자나 귀부인들이 그의 파트너 자리를 두고 다투었으며, 폐하도 그에게 박수를 보낼 정도였다.
+그리고 그 후, 그 역시 다른 공작들과 손을 잡고 폐하를 교수대로 보냈다.
+[charslot(slot="m",name="avg_npc_1518_1#1$1",focus="m")]
+[name="'소공작'"]공작님은 어째서 이미 세상을 떠난 분을 그리워하시는지요? 그분의 후대가 바로 눈앞에 있지 않나요?
+[charslot(slot="m",name="avg_npc_1068_1#8$1",focus="m")]
+[name="고도딘 공작"]하하, 그도 그렇군요. 빅토리아에 국왕이 없다고 한들 무슨 문제가 있겠습니까.
+[charslot(slot="m",name="avg_npc_1518_1#6$1",focus="m")]
+[name="'소공작'"]……
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]'시즈' 씨, 우리의 제안을 받아들이기 전까진 이렇게 부를 수밖에 없겠습니다.
+[name="고도딘 공작"]감염자, 난민, 그리고 골칫거리…… 살카즈들. 당신이라면 더 나은 방식으로 머릿속의 생각을 실현할 수 있을 겁니다.
+[name="고도딘 공작"]……'의장님'.
+[charslot(slot="m",name="avg_1019_siege2_1#6$1",focus="m")]
+[name="비나"]그건 '제국의 의지'가 보내는 통보인가?
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]그저 시도일 뿐이야. 폐허가 되어 가는 이 도시를 처리할 방법은 그 외에도 많지.
+[name="캐스터 공작"]그 자리는 종신직도 뭣도 아냐. 당신이 적합한지 여부는 우리가 판단하겠지.
+[charslot(slot="m",name="avg_1019_siege2_1#6$1",focus="m")]
+[name="비나"]과거와 똑같이……. 말인가?
+[name="비나"]너희가 말하는 그 '식탁 위의 의회'에 의지해, 몇몇 공작들이 왕의 곁에 모여 춤을 추며 나라의 미래를 결정했었지.
+[name="비나"]그런데 결과는? 밖을 봐. 살카즈의 피를 아직도 완전히 닦아내지 못했어.
+[charslot(slot="m",name="avg_npc_726_1#5$1",focus="m")]
+[name="캐스터 공작"]자네가 본 것은 이 작은 도시뿐이지. 내가 보고 있는 것은 빅토리아 전체야.
+[name="캐스터 공작"]만약 런디니움이 빅토리아를 약화시키는 고름이 된다면, 도려내는 것도 나는 마다하지 않을 생각이야.
+[name="캐스터 공작"]빅토리아가 피 흘리는 모습을 다른 나라들이 보는 것까지는 허용할 수 있지만, 그 그로테스크한 흉터를 남들이 비웃게 둘 수는 없어.
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]하수구에 서 있으면 이 오랜 제국의 전모는 볼 수 없어. 잊지 말도록. '빅토리아'라는 성은……. 내게도 그렇게 먼 것이 아니야, 알렉산드리나 전하.
+[name="캐스터 공작"]강한 자와 영웅만이 제국의 진로를 거머쥘 힘을 가지는 법이야.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]미래의 친구를 위협할 필요가 있나요, 캐스터 공작. 바로 그 문제를 해결하기 위해 우리가 지금 모인 게 아니겠습니까?
+[name="고도딘 공작"]웰링턴은 중심지에서 떨어졌고, 윈더미어령은 소란이 끊이지가 않지요. 그 외에도 우리의 태도를 지켜보고 있는 이들이 많습니다.
+[name="고도딘 공작"]이 건은 모처럼 우리 모두의 의견이 일치했으니, 좀 더 간단하게 정리해 보는 것이 어떻겠습니까.
+[charslot(slot="m",name="avg_npc_1518_1#1$1",focus="m")]
+[name="'소공작'"]그건 부정할 수 없네요. 하지만 비나 씨, 당신이 할 수 있는 일은 이 정도가 전부는 아닙니다.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]하지만 그것이 '의장은 반드시 왕좌에 앉아야 한다'는 의미는 아니지요, 엘레노어.
+[dialog]
+[stopmusic(fadetime=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="비나"]……할 말은 끝났나?
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#6$2",posfrom="200,0",posto="200,0",duration=0.7)]
+[PlaySound(key="$d_avg_drawswordlong", volume=2)]
+[delay(time=2)]
+그녀가 검을 뽑자, 홀 안은 순식간에 조용해졌다.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]……
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]……
+[charslot(slot="m",name="avg_npc_1518_1#9$1",focus="m")]
+[name="'소공작'"]……
+[dialog]
+[charslot]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>비나는 그 비밀회의의 기록을 남길 필요가 있다고 강하게 느꼈다.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>그것은 런디니움의 미래를 결정짓는 회의였고, 런디니움의 시민들은 그 모든 것을 알 권리가 있다고 믿었기 때문이다.</i>",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="<i>나는 그림자 속에 숨어 그들의 말을 하나하나 객관적으로 기록하려 했다. 하지만 비나가 허리에서 검을 뽑아 여유로이 떠드는 바보들에게 검 끝을 겨누었을 때……</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>그 바보들을 모조리 단칼에 베어버리길 진심으로 바랐다. 그러기만 한다면, 이후에 일어날 모든 일들이 변할 테니까.</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]선생님이 말했지. '왕의 숨결'은 한때 반란을 일으킨 권력자의 목을 벤 적도 있다고.
+[charslot(slot="m",name="avg_1019_siege2_1#2$2",focus="m")]
+[name="비나"]……아니, 이제는 '왕의 숨결'이라 부를 수도 없겠군. 뭐라고 불러야 할지는 나도 모르겠지만.
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]내겐 이것에 이름을 붙일 자격조차 없어. 이건 아직 상처가 아물지 않은 승리를 기념하기 위해 노동자들이 만든 것이니까.
+[name="비나"]원래라면 전장의 진흙 속에서 잊혔을 때, 사명은 이미 끝난 것이라 생각했지.
+[name="비나"]하지만 모든 걸 잃은 영웅들은 여전히 이 검을 기억하고 있었어. 이건 그들 마음속 '빅토리아'이고……. 빅토리아를 다시는 먼지 속에 묻어두고 싶지 않았을 테니까.
+[charslot(slot="m",name="avg_npc_726_1#6$1",focus="m")]
+[name="캐스터 공작"]……
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]그들이 이 검을 내게 보낸 진짜 이유는 알고 있어. 자신들을 대신하여 이 검으로 심판해 주길 바라는 거야……. 진정으로 그들에게 재앙을 초래한 자들을.
+[name="비나"]하지만 너희 중에는 이 검을 두려워하는 자가 없지. 아닌가?
+[dialog]
+[charslot]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_726_1#7$1",duration=0.7)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1068_1#1$1",duration=0.7)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1518_1#10$1",duration=0.7)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]너희가 진정 두려워하는 것은 이 검이 아니야.
+[dialog]
+[charslot]
+[PlayMusic(key="$m_avg_epic_loop", volume=0.6)]
+비나는 검 자루 양쪽에 새겨진 문양을 천천히 훑었다. 그 문양은 장인이 특별히 새긴 것이었다.
+망치 하나, 그리고 칼 한 자루가 빛나고 있었다.
+[charslot(slot="m",name="avg_1019_siege2_1#2$2",focus="m")]
+[name="비나"]……“검 끝이 영원토록 빛나면, 빅토리아에도 영원한 영광 있으리.”
+[name="비나"]그들은 나에게, 이미 너덜너덜한 이 검을 다시 벼릴 수 있도록 협력해 달라 간청했다……. 내 망치를 주재료로 해서 말이지.
+[name="비나"]검을 다시 벼린 후, 그들은 조금의 망설임도 없이 나에게 이것을 주었다. 하지만 그 순간 나는 그들에게 그 어떤 약속도 해줄 수 없었어. 국왕이니 의장이니, 그런 건 내게는…….
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]……쓰레기나 다를 게 없어. 나와 그들 사이엔 아무런 차이도 없다. 나 역시 그저 집으로 돌아가고 싶은 사람일 뿐.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Image(image="37_i03", screenadapt="coverall",fadetime=0)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, amount=0.8, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=2)]
+[name="비나"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[image]
+[Background(image="55_g2_westlobbyhall",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, amount=0.5, block=true)]
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]하지만 집에 돌아온 다음에는? 내가 본 것은 무엇이지?
+[name="비나"]그래. 내 눈에는 너희가 보는 그 '웅대한' 빅토리아가 보이지 않아.
+[charslot(slot="m",name="avg_1019_siege2_1#5$2",focus="m")]
+[name="비나"]하지만 난 볼 수 있어. 복싱장의 감염된 아이도 복싱을 배워 고향을 지키려 하고, 이가 다 빠진 주정뱅이조차 수술대 위의 병사를 구하기 위해 땅속에 숨겨둔 독한 술을 기꺼이 병원에 내놓지.
+[name="비나"]제국의 영광은 우리와 너무도 멀리 떨어져 있어. 추운 새해에 우리의 딱딱한 침대를 따뜻하게 데울 수조차 없을 만큼……
+[charslot(slot="m",name="avg_1019_siege2_1#2$2",focus="m")]
+[name="비나"]이 검은 그들이 내 손에 맡긴 책임이다. 의회나 왕권 따위 없어도, 나는 내가 무엇을 해야 할지 알고 있어……
+[charslot(slot="m",name="avg_1019_siege2_1#6$2",focus="m")]
+[name="비나"]그들로 하여금 자신들이 쥐고 있는 힘을 보게 하고, 자신의 영토는 스스로 지켜야 한다는 것을 깨닫게 할 것이다!
+[name="비나"]그날까지, 어떤 신분이든 나는 그들 앞에 서야만 해.
+[name="비나"]하수구 속에서도 꽃은 피어날 수 있다. 그러니 적어도 이곳, 내 집에서는……
+[charslot(slot="m",name="avg_1019_siege2_1#3$2",focus="m")]
+[name="비나"]아직 네놈들에게 배울 처지는 아니다!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_swrdstckgrnd", volume=1)]
+[PlaySound(key="$d_avg_swordy", volume=1,delay=1)]
+[CameraShake(duration=1.2, xstrength=15, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+비나가 검을 바닥에 힘껏 내리꽂았다. 검 끝은 아무 저항 없이 돌바닥을 뚫고, 공작들 앞에 세워졌다.
+모두의 시선이 미세하게 떨리는 검으로 쏠렸다. 그들은 이것이 비나의 도발이라는 것을 알고 있었다.
+'국검'과 '기적'은 그 전쟁 이후에 이미 굳게 이어져 있었다.
+그들이 주목하는 것은 선왕의 핏줄이 아닌, 비나의 또 다른 신분이었다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_strangeclap",volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1068_1#8$1",focus="m")]
+[name="고도딘 공작"]하하, 말씀하신 대로입니다! 지금 이 검이 우리 손에 들어와도 아무런 의미가 없지요.
+[name="고도딘 공작"]역시 직접 뽑으시는 게 좋겠습니다. 이 멋진 검에 상처라도 나면 안 되니까 말입니다.
+[charslot(slot="m",name="avg_npc_1068_1#1$1",focus="m")]
+[name="고도딘 공작"]당신의 선생이 확실히 실용적인 것을 가르쳤군요. 아무래도 우리가 쓸데없이 걱정한 모양입니다, 캐스터 공작.
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="캐스터 공작"]그렇군. 방식은 서투르나, 사람의 마음을 사로잡기엔 충분해. 의회를 통해 더 빠르게 성장시킬 수 있을 거야.
+[charslot(slot="m",name="avg_1019_siege2_1#3$1",focus="m")]
+[name="비나"]*빅토리아 비속어* 잠깐……
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]우리에게 선택지는 없어, 시즈. 찢어져 버린 빅토리아에는 새로운 목소리가 필요하지. 그리고 그 역할을 자처한 건 너야.
+[name="캐스터 공작"]하지만 나는 지금껏 자신의 검에 죽어간 사람들을 수도 없이 봐왔지. 그래서 그 검을 손에 쥘 것인지 신중했던 것이고.
+[name="캐스터 공작"]그 검에 베이거나 다치지 않도록 말이야, 의장. 이건 내 충고야.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[Delay(time=1.5)]
+[Decision(options="여러분, 비나는 당신들 생각보다 냉정한 사람이야.;아무래도 잘 대처하고 있는 것 같네, 비나.", values="1;2")]
+[Predicate(references="1;2")]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1019_siege2_1#4$1",focus="m")]
+[name="비나"]박사?!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_867_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="'회색 모자'"]죄송합니다. 그…… 도저히 막을 수가 없었습니다.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="npc_10002",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"](지루한 듯 으르렁거린다)
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]일단 물러나도록.
+[Dialog]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="slide1")]
+[stopsound(fadetime=2, channel="slide1")]
+[charslot(duration=1)]
+[Delay(time=2)]
+[Decision(options="지금 런디니움은 모두를 지켜줄 수 있는 리더가 필요해.",values="1")]
+[Predicate(references="1")]
+[Decision(options="다른 자들은 신뢰할 수 없어.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#10$1",focus="m")]
+[name="비나"]박사……
+[Dialog]
+[charslot]
+[Decision(options="물론 최종 결정권은 네게 있어.;로도스 아일랜드는 도시 내 감염자 대응을 전폭적으로 지원하겠어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="m")]
+[name="캐스터 공작"]흥미롭군. 광석병 전문 의료 회사가 자신들과 무관한 일에 이렇게 손을 뻗다니.
+[name="캐스터 공작"]당신들은 공작 연합군을 거치지 않고 살카즈와 휴전 협정을 맺었지.
+[Dialog]
+[charslot(slot="m",name="avg_npc_726_1#7$1",focus="n")]
+[Decision(options="각 공작의 함대는 그에 대해 아무런 반응도 하지 않고 있어.;당신들은 묵인했어, 아닌가?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_726_1#5$1",focus="m")]
+[name="캐스터 공작"]선물이라고 치지. 당신들이 전장에 기여한 것에 대한 감사의 의미로.
+[name="캐스터 공작"]하지만 적당히 해야 하는 일도 있는 법이야.
+[Dialog]
+[PlaySound(key="$d_avg_highheelfts", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1068_1#6$1",focus="m")]
+[name="고도딘 공작"]시즈 씨, 우리는 당신의 답변을 기다리고 있습니다.
+[name="고도딘 공작"]그리고 로도스 아일랜드, 그동안은 줄곧 조심스러운 태도이더니, 이제 와서 그렇게 급해질 필요가 있었는지?
+[Dialog]
+[charslot(slot="m",name="avg_npc_1068_1#6$1",focus="n")]
+[Decision(options="시간은 때때로 비이성적인 결정을 내리게 하는 법이지, 공작 나리.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1068_1#7$1",focus="m")]
+[name="고도딘 공작"]……호오? 시간입니까……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_1518_1#2$1",focus="m")]
+[name="'소공작'"]비나 씨, 당신이 지키고 있는 사람들이 진정으로 원하는 게 무엇인지, 잘 생각해 보시죠.
+[name="'소공작'"]……그리고, 그 결정을 내린 뒤에는 로도스 아일랜드의 사람들과 너무 가까이하지 않도록 하세요.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1518_1#2$1",focus="n")]
+[Decision(options="우리와 노르망디 공작의 관계가 그렇게 나쁘지는 않았던 것 같은데.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1518_1#6$1",focus="m")]
+[name="'소공작'"]그게 바로 제가 비나 씨에게 충고를 드리는 이유입니다. 로도스 아일랜드의 '박사'.
+[Dialog]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="wk")]
+[stopsound(fadetime=2.5, channel="wk")]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Decision(options="……",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[name="비나"]……저 사람은 다른 공작들과 조금 다르군.
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="비나"]박사, 우리는 앞으로 어떻게 해야 하지?
+[Dialog]
+[charslot]
+[Decision(options="마음속으로는 이미 답을 내렸잖아, 비나.;로도스 아일랜드가 이 이상 런디니움의 일에 개입하는 건 바람직하지 않아.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="아미야는 이미 카즈델로 출발했어.;로도스 아일랜드는 곧……. 대부분 런디니움에서 철수할 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g4_victoriaconferencehall",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",loop=true, channel="tk", volume=0.4)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>시네셀드 의회실</><p=2>1098년 12월 8일 5:01 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[stopsound(channel="tk", fadetime=2)]
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="롱샷"]바벨이 내 형제들을 데리고 떠난 지도 꽤 됐군…… 그동안은 우리에게 정말 견디기 힘든 시간이었어.
+[name="롱샷"]쳇, 죽여라. 더 할 말은 없다.
+[Dialog]
+[charslot]
+그는 주변을 둘러보았고, 벤치에 불편하게 앉은 사람들이 수군거리는 것을 보며 저도 모르게 코웃음을 쳤다.
+이 장소는 그에게 족쇄를 채웠고, 그의 운명을 결정지으려는 이들에게도 공평하게 족쇄를 채웠다.
+불과 얼마 전, 비나는 성왕궁 서쪽 회당을 의회 업무에 재사용하자는 제안을 거절하고 왕실이 과거에 빌려 썼던 이 건물을 선택했다.
+비나는 이곳이 새로운 의회의 시작이 되기를 바랐다.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="델핀"]비나 씨, 조사가 끝났어.
+[name="델핀"]롱샷, 용병 출신, 카즈델 '흉터의 상점'이라는 곳 출신이야. 전쟁 중에는 군사위원회의 도시 내 방위업무를 담당했고, 전선에 나간 적은 없어.
+[name="델핀"]두 달 전에 바벨이 군을 철수했지만, 그는 떠나지 않고 현지 살카즈의 철수를 비밀리에 도우려다 인드라 씨와 다그다 씨에게 붙잡혔어. 당시엔 비나 씨가 그를 눈감아 줬고.
+[charslot(slot="m",name="avg_1019_siege2_1#10$1",focus="m")]
+[name="비나"]나는……. 기억나지 않아.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="롱샷"]훗.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="델핀"]이번 범죄에 대해 단서를 추적하던 중에, 그가 숨기고 있던 사람을 발견했어.
+[name="델핀"]그의 딸은 지난 두 달 동안 살카즈가 도시를 빠져나가는 것을 돕고 있었어. 그리고 이번에는 그 딸도 몰래 도시를 빠져나가려는 사람들 중 하나였지.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="롱샷"]*살카즈 비속어*!
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="델핀"]알고 지내던 상인을 다치게 한 것은, 그들에게 물자를 조달하고자 했던 것이겠죠. 아닙니까?
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="롱샷"]아아아악!!
+[Dialog]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.51",scale=1.02,duration=0.3)]
+[CameraShake(duration=1.5,xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_4110_delphn_1#7$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot = "m", posfrom = "0,0", posto = "-60,0",duration = 0.5)]
+[charslot(duration=0.3)]
+[delay(time=0.7)]
+[charslot]
+[charslot(slot="m",name="avg_1019_siege2_1#6$1",focus="m")]
+[name="비나"]제압해!
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="델핀"]너무 흥분하지 마세요, 롱샷 씨. 당신이 신경 쓰는 그 사람들은 조금 전에 도주했습니다. 그들에게 손을 빌려주는 자가 있더군요.
+[name="델핀"]'밀스카'. 이 이름을 알고 있겠죠?
+[name="델핀"]그들의 '사업'이 결국 건드리지 말아야 할 곳까지 손을 뻗었습니다.
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="롱샷"]……하, 하하.
+[name="롱샷"]난 아무것도 모르겠는걸, 필라인. 이제 날 죽여도 좋다고.
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="비나"]……
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="롱샷"]내 피가 이 깨끗한 곳을 더럽히는 게 걱정되는가?
+[name="롱샷"]전쟁은 이제 막 끝났을 뿐인데, 네놈들은 벌써 피를 보는 게 두려워졌나?!
+[CameraShake(duration=0.7,xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="롱샷"]여기 앉아 있는 놈들 모두, 네놈들이 빅토리아 출신이라고 인정하지 않는 살카즈보다 더 비열한 놈들이다!
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="델핀"]……나머지는 내게 맡겨줘.
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="비나"]알겠어.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g4_victoriaconferencehall",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="쉰 목소리"]최근 도시 일 관련해서 공작님으로부터 새로운 지시가 있었나?
+[name="상냥한 목소리"]공작님께서는 살카즈와 '밀스카'와 관련된 문제를 일찍이 알고 계셨으며, 시민들의 안전을 무척 염려하고 계신다.
+[name="상냥한 목소리"]다만 지금 의회에는 모든 의원이 자리해 있고, 의장님께서도 시민들을 위해 문제 해결에 매진하고 있지. 때문에 공작님께서는 상황이 점차 나아질 것이라 믿고 계신다.
+[name="상냥한 목소리"]다만……
+[name="쉰 목소리"]다만?
+[name="상냥한 목소리"]다만 런디니움의 안전을 위협하는 요소를 배제하는 것은 결코 늦춰져서는 안 된다는 입장을 고수하고 계신다. 특히 '밀스카'에 대해서는.
+[name="상냥한 목소리"]그러니 모두들 의장님께 하루빨리 이런 문제들을 해결하도록 재촉해 주길 바란다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>'밀스카' 은신처</><p=2>1098년 12월 8일 6:05 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="귀찮아하는 용병"]보스, 그 마족은 의회에서 교수형을 당했습니다만, 의뢰한 물건은 되찾았습니다.
+[name="귀찮아하는 용병"]이 물건들은……
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="'밀스카'"]보내줘.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="귀찮아하는 용병"]하지만 보스……. 지금은 너무 위험합니다. 의회 놈들이 우리를 계속 추적하고 있다고요.
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="'밀스카'"]물건은 잠깐 숨겨 둬. 이미 대금 지불은 끝났으니까, 우리는 물건을 보내는 일에만 집중하면 돼. 다른 일은 신경 쓸 필요 없어.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="귀찮아하는 용병"]어차피 이 물건의 존재를 아는 놈은 아무도 없습니다. 그러니 차라리……
+[Dialog]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="n")]
+[PlaySound(key="$d_avg_exsheath", volume=1)]
+[delay(time=1)]
+용병이 손으로 목을 긋는 제스처를 하자, 턱 부근에서부터 돌연 날카로운 통증과 냉기가 느껴졌다.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[charslot(slot = "r", action="shake",random=true, power=5, times=40,duration=0.3)]
+[name="귀찮아하는 용병"]보, 보스, 저를 죽여도 좋습니다만, 이게 최선의 처리 방법이라는 것만은 말씀드리고 싶습니다!
+[name="귀찮아하는 용병"]그 마족 놈들 때문에 우리가 얼마나 많은 형제를 잃었는지 아십니까?!
+[charslot(slot="m",name="avg_npc_1342_1#1$2",focus="m")]
+[name="'밀스카'"]진짜로 그걸 신경 썼다면, 너는 지금 여기가 아니라 파라곤 부대의 퇴역 명부에 이름이 올라가 있었겠지.
+[name="'밀스카'"]……하지만 신중히 움직여야 하는 건 맞아. 새 의장이 도시의 안전을 이렇게나 염려하고 있으니까, 그 화살 끝에 서게 될 것은 살카즈를 제외하면 우리 정도지.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="귀찮아하는 용병"]흥, 하지만 그것도 그 마족 놈들의 자업자득 아니겠습니까.
+[charslot(slot="m",name="avg_npc_1342_1#1$2",focus="m")]
+[name="'밀스카'"]두 달 전 대부대가 철수할 때 안 가고, 정세가 불안해지니까 이제 와서 떠나려고 하면 많은 대가를 치러야 하는 것도 당연하지.
+[name="'밀스카'"]안심해. 이번 건만 잘 풀리면, 자연스럽게 새 일도 많이 들어올 테니까.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_1519_1#9$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1519_1#9$1",focus="l")]
+[name="퇴역한 여병사"]드디어 돌아오셨네요. 어떻게 됐어요? 구했어요?
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="부상당한 파라곤 부대 병사"]요양소가 사람들로 꽉 찬 데다가 다들 앞다투어 억제제를 구하고 있어. 거기에 메이저 님 건도 있으니…
+[name="부상당한 파라곤 부대 병사"]미안하다, 다이앤. 파라곤 부대라고 해도 그런 특권은 없어서 말이야.
+[name="부상당한 파라곤 부대 병사"]우리와 계속 협력해 온 로도스 아일랜드도 억제제 공급에 힘쓰고는 있다만, 감염자가 너무 많이 늘었어……
+[charslot(slot="l",name="avg_npc_1519_1#2$1",focus="l")]
+[name="다이앤"]네……. 알고 있어요.
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="부상당한 파라곤 부대 병사"]으음…… 방법이 아예 없는 건 아니야. 전우에게서 뒷거래 루트가 있다고 들었어……
+[charslot(slot="l",name="avg_npc_1519_1#2$1",focus="l")]
+[name="다이앤"]……불법적인 건가요?
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="부상당한 파라곤 부대 병사"]며칠이라도 더 살 수만 있다면……
+[Dialog]
+[charslot]
+[name="???"]약을 구할 수 있는 다른 경로가 있었나요? 윽, 경쟁자가 있다는 얘기는 못 들었는데요.
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="부상당한 파라곤 부대 병사"]흥, 뭐 잘못 들은 거 아닌가?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_487_bobb_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="???"]이런, 실례했습니다. 컬럼비아에서 급히 오느라 피로가 쌓였나 보네요. 반갑습니다, 엘리시오라고 합니다. 여기, 제 명함입니다.
+[charslot(slot="m",name="avg_npc_1519_1#9$1",focus="m")]
+[name="다이앤"]컬럼…… 비아? 적심 의료?
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[multiline(name="엘리시오")]네, 제가 이번에 런디니움에 오게 된 건……
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[multiline(name="엘리시오")]으음, 잠시만 기다려주시겠어요? 리스트 좀 확인해 보겠습니다……
+[name="엘리시오"]런디니움에 온 이래로 제가 보게 된 상황은, 대부분 사전에 받아본 자료랑 많이 다르더라고요.
+[Dialog]
+[PlaySound(key="$d_avg_paper2")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="엘리시오"]아, 여기 있네요. 런디니움 임시 공공위생 행정관……. 메이저 씨. 혹시 임시 물자 조달 사무실로 가는 길을 아시나요?
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="엘리시오"]안심하세요. 저는 적심 의료를 대표해서 의약품 협력에 관해 논의하러 왔습니다. 여러분의 상황도 곧 호전될 거예요.
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="다이앤"]……
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="부상당한 파라곤 부대 병사"]……
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="엘리시오"]……에, 음, 제가 뭔가 잘못 말했나요?
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="다이앤"]소식 못 들으셨어요? 메이저 님은……. 오늘 아침에 돌아가셨어요.
+[name="다이앤"]죄송합니다.
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="엘리시오"]……?!
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="엘리시오"]면목 없습니다. 실언을 부디 용서해 주시길……. 얼마나 큰 노력이 필요하든, 적심 의료의 진심과 약속은 변치 않을 겁니다.
+[name="엘리시오"]하지만 지금은 일단, 저를 임시 물자 조달 사무실로 안내해 주시겠어요?
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

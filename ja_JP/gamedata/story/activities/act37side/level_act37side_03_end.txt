@@ -1,0 +1,506 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g4_victoriaconferencehall",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.5, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>シネセルド大広間議会ホール</><p=2>1098年12月15日 p.m. 4:02</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_229_1#1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="ホルン"]各位が都市防衛軍に閲覧の申請をしたファイルは全て持ってきました。
+[name="ホルン"]議長、都市防衛軍巡回隊の結成以来、我々は「ミルスカー」およびその手下が関わる問題について助けてほしいという訴えを二百件以上も受け取っています。
+[name="ホルン"]「ミルスカー」たちが議会の改正した法に違反した行為についてはいずれも罪証があります。
+[charslot(slot="m",name="avg_npc_659_1#1$1",focus="m")]
+[name="荒々しい議員"]なら何を待っているのですか！？　奴らはすでに我々の仕事の邪魔をしているんですよ。直接命令を出して、壊滅させればいいではないですか！
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="ヴィーナ"]貴様らの状況は知っている。フェイストとロックロックがすでに訪ねてきた。
+[name="ヴィーナ"]私とて街の再建の進捗を遅らせたくはない。だが、だからといって議会は一個人の感情によって動くものではない。
+[dialog]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="ヴィーナ"]……エルサ子爵、発言を許可する。
+[charslot(slot="m",name="avg_npc_175",focus="m")]
+[name="誇り高い議員"]「ミルスカー」たちの行為に裁定が必要なのは間違いありません。ですがあの者たちが提供する薬は、正規の薬を手に入れられない者たちの感情を一時的に安定させているのは確かです――
+[charslot(slot="m",name="avg_npc_1157_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="憤る議員"]バカを言うな！
+[name="憤る議員"]あいつらがばらまいているのは薬だが、回収しているのは命だぞ！
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="ホルン"]アラン議員、席に戻ってください。ここは議会です！
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="ホルン"]エルサ子爵、彼らは戦時中に残された地下施設を頼りに、長期にわたって捜査の手を逃れています。
+[name="ホルン"]未だ逮捕するに至っていない理由として、彼らが意図的に拠点を分散させていることが挙げられますが、その他にも議会に捜査から逃れるための手助けをしている者がいるという証拠があります。
+[name="ホルン"]これに関しても説明が必要なのでは？
+[charslot(slot="m",name="avg_npc_175",focus="m")]
+[name="誇り高い議員"]スカマンドロス中尉は、ロンディニウム都市防衛軍を代表して我々に調査協力の申請を希望しているのですか？
+[name="誇り高い議員"]市民のため、可能な限り早急に「ミルスカー」の脅威を取り除くことには、我々も当然最大限の協力をしたいと考えます。私からカスター公爵閣下に連絡し、応援を派遣していただくことも――
+[charslot(slot="m",name="avg_1019_siege2_1#6$1",focus="m")]
+[name="ヴィーナ"]エルサ子爵、カスターがようやく議会に救いの手を差し伸べてくれると言うのであれば、他の公爵たちにも支援を提供してくれるか尋ねるのも差し支えはないだろうな？
+[name="ヴィーナ"]ヘクター男爵、ギデオン子爵、ハーマン医師に、アーウィン学士。「ついでに」、各位も他の公爵たちへと連絡してはもらえないだろうか？
+[dialog]
+[charslot]
+[stopsound(channel="c", fadetime=1)]
+[Delay(time=1.5)]
+群衆の中の控えめな議員たちはわずかにうろたえた後、微笑みながら身を起こし、ヴィーナに頭を下げることしかできなかった。
+肯定も否定もしない。しかし先ほどまでの口論など初めからなかったように、議会ホールからは論争が消え去った。
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="ヴィーナ"]「ミルスカー」の問題については、これから議会が議員を選出して特別臨時裁判所を設置し即刻処理する。それにあたって当然、「ミルスカー」が自らを弁護する権利を認める。
+[dialog]
+[charslot]
+出席者からの間でひそひそとささやく声が上がる。だがはっきりと反対する者はいない。
+[name="席から上がる声"]裁判とは言いますが……彼女が、公然とここに姿を現すはずがありませんよ？
+[charslot(slot="m",name="avg_1019_siege2_1#2$1",focus="m")]
+[name="ヴィーナ"]もしこの場に現れなければ、弁護の機会を放棄したと見なす。その時は臨時裁判所が公正な判決を下すだろう。
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="ヴィーナ"]それとホルンさん、都市防衛軍巡回隊に都市全域で「ミルスカー」を捜索し、彼女を議会ホールに連れてくるよう伝えてくれないか。
+[multiline(name="ヴィーナ")]議会の今日の勤務時間が終わるまで――
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[multiline(name="ヴィーナ")]彼女にはあと二時間ある。私はここで待とう。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g4_victoriaconferencehall",fadetime=0,screenadapt="coverall")]
+[charslot(slot="l",name="avg_1019_siege2_1#2$1")]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="デルフィーン"]ヴィーナさん、執務室で少し休んだ方がいいですよ。調子があまり良くなさそうです。
+[name="デルフィーン"]もし彼女が来たら、私が知らせ――
+[charslot(slot="l",name="avg_1019_siege2_1#6$1",focus="l")]
+[name="ヴィーナ"]ここで待つと言っている！
+[charslot(slot="r",name="avg_4110_delphn_1#5$1",focus="r")]
+[name="デルフィーン"]……分かりました。
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[name="ヴィーナ"]大きな声を出してすまない、私はただ……ただ、なんというか――
+[charslot(slot="r",name="avg_4110_delphn_1#5$1",focus="r")]
+[name="デルフィーン"]分かっています。
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[name="ヴィーナ"]本当に理解できないんだ。治療が必要な感染者、物資の不足、都市の再建、秩序の回復、我々にはこうしたやらねばならない重要なことが山ほどあるというのに……
+[name="ヴィーナ"]毎日、私の確認が必要な重要事項がデスクに数え切れぬほど押し寄せているというのに。
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[multiline(name="ヴィーナ")]彼らは嬉々として反対意見もない議論に丸一日をかけて口論する――
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[multiline(name="ヴィーナ")]はぁ……
+[name="ヴィーナ"]私は、まだまだうまくできていない。
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="デルフィーン"]ヴィーナ、うちの人員と都市防衛軍が総力を挙げて彼女を捜索すれば、逃げられはしないと以前私は言いましたよね。ですが、当時あなたはそれを拒みました。
+[charslot(slot="l",name="avg_1019_siege2_1#10$1",focus="l")]
+[name="ヴィーナ"]我々の人手は十分ではない。その方法で問題を解決すれば、より緊急性の高い他の問題を無視しなければならない――
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="デルフィーン"]では、自分でそういう判断を下していたにもかかわらず、なぜ今になって自分はうまくできていないと感じているんですか？
+[name="デルフィーン"]移動都市全体を背負って移動しようとする必要はないんです。移動都市が頼っているのはキャタピラなんですから。
+[name="デルフィーン"]あなたには誰よりも完璧なリーダーや、全ての問題を当然のように解決できる人になるような義務はありません。人々の勝手な望みに従う必要はないんです。
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="デルフィーン"]それに……「ミルスカー」、デモ、薬品の不足、最近の数々の出来事の背後には必ず公爵の影があります。
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[name="ヴィーナ"]「ミルスカー」の件にカスターの働きかけがあることは分かっている。だが結局のところ結果は必要だ。「ミルスカー」は……すでに一線を越えた。
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="デルフィーン"]ですが、彼女を捕らえることはかなり難題です。インドラさんとダグザさんによると、彼女は奇妙なブラッドブルードとも関わりがあるようです。
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[name="ヴィーナ"]デルフィーン……もし彼女が来なければ――
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="デルフィーン"]彼女に来てほしいんですか、ヴィーナさん？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="27_g7_subway",fadetime=0,screenadapt="coverall")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>「ミルスカー」の隠れ家</><p=2>1098年12月15日 p.m. 5:17</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_243",bstart=0.2,bend=0.7,focus="m")]
+[name="慌てる女性"]なぜ目隠しまでするの……夫の負債はすでに返したはずよ？
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="冷静な傭兵"]そうですね。あなたは信用を重んじる方のようだ。
+[name="冷静な傭兵"]ミッキー・ロビンソンの負債は確かに返済された。そうだ、ボスから哀悼の意を伝えておくよう言われています。ご主人は生前、間違いなくこの都市にかけがえのない貢献をしました。
+[charslot(slot="m",name="avg_npc_243",bstart=0.2,bend=0.7,focus="m")]
+[name="慌てる女性"]……では、もう行ってもいいかしら？
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="冷静な傭兵"]もちろんです。あなたの負債を完済していただければすぐにでも。
+[name="冷静な傭兵"]契約は二つ。一つはご主人がサインしたもの、つまりすでに返済したものです。もう一つは、ご主人に代わりあなたがサインしたのでは？
+[charslot(slot="m",name="avg_npc_243",bstart=0.2,bend=0.7,focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="慌てる女性"]でも、あの人はもういないのよ！
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="冷静な傭兵"]ですが、薬はまだ手元にあるでしょう。お受け取りください、こちらです。今から請求書についてお話しして構いませんか？
+[name="冷静な傭兵"]もちろん、後払いでも――
+[dialog]
+[charslot]
+[name="暗闇の中の人物"]後払いは受け付けないわ。
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="冷静な傭兵"]えっ、ボス、いつから規則が変わったんですか？
+[dialog]
+[charslot]
+[name="暗闇の中の人物"]たった今よ。彼女を「休憩」に連れていきなさい。
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="冷静な傭兵"]……分かりました。その後は？
+[dialog]
+[charslot]
+[name="暗闇の中の人物"]シネセルド大広間へと送り届ける。あの議員たちは私を待っているんでしょう？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g4_victoriaconferencehall",fadetime=0,screenadapt="coverall")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.5, channel="d",fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>シネセルド大広間議会ホール</><p=2>1098年12月15日 p.m. 5:58</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4110_delphn_1#3$1",focus="m")]
+[name="デルフィーン"]どいてください、医者の邪魔をしないで！
+[charslot(slot="m",name="avg_4110_delphn_1#7$1",focus="m")]
+[name="デルフィーン"]ヴィーナさん、調べ終わりました。議会に運ばれてきたのはローレンスさん、ノーポート区出身です。
+[charslot(slot="m",name="avg_1019_siege2_1#6$1",focus="m")]
+[name="ヴィーナ"]命に危険は？
+[charslot(slot="m",name="avg_4110_delphn_1#7$1",focus="m")]
+[name="デルフィーン"]息はあります。殺す気はなかったようで、傷は重要な器官を避けていますが出血が多いです。手を下したのは……「ミルスカー」の人間です。
+[name="デルフィーン"]いくつかの情報が広まり、悪い影響が出ています。
+[charslot(slot="m",name="avg_4110_delphn_1#2$1",focus="m")]
+[name="デルフィーン"]彼女の夫、ミッキー・ロビンソンは鉱石病の急性発作を起こし、きちんとした薬による治療を受けられずに亡くなったばかりです――
+[charslot(slot="m",name="avg_1019_siege2_1#3$1",focus="m")]
+[name="ヴィーナ"]しかも彼は模範軍のメンバーであり、我々と共に帰ってきた。
+[name="ヴィーナ"]これが彼女の返答だな。
+[charslot(slot="m",name="avg_1019_siege2_1#6$1",focus="m")]
+[name="ヴィーナ"]デルフィーン、都市防衛軍の医療テントまでローレンスさんを護送してくれ。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]あなたは？
+[charslot(slot="m",name="avg_1019_siege2_1#7$1",focus="m")]
+[name="ヴィーナ"]……あと二分ある。
+[name="ヴィーナ"]臨時裁判所の、そして私の……約束を果たす。
+[stopmusic(fadetime=3)]
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",fadetime=0,screenadapt="coverall")]
+[delay(time=0.5)]
+[stopsound(channel="d", fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+数名の親切な議員がデルフィーンの合図に駆け寄り、意識を失った女性を慎重に保護しながら議会ホールを後にした。彼女の血は取り換えられたばかりの議会の絨毯を赤く染めた。
+二ヶ月前、ここがまだ紛争地区だった頃、この場所で血を流したのはサルカズだった。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="55_i02",x=270, y=-30, screenadapt="coverall",xScale=1.6, yScale=1.6, fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+議会ホールに再び秩序が戻った。
+最後の一分。誰も現れない。二枚の黒い羽根だけがヴィーナをじっと見つめているように感じられる。
+羽根はあの意識のない女性の体から落ちたもので、医療テントへと女性を運ぶ人々が過ぎ去ると、軽やかに揺れ動きながら再び空中に舞い上がる。
+それは本来彼女が立っているべき場所だった。
+[Dialog]
+[PlaySound(key="$d_avg_churchbell", volume=1)]
+[delay(time=2)]
+時計の針が六時を指した。
+[Dialog]
+[playMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.6)]
+[ImageTween(xTo=0, yTo=0, xScaleTo=1, yScaleTo=1, duration=25, block=false)]
+[delay(time=3)]
+[name="ヴィーナ"]……
+[name="ヴィーナ"]議員各位、時間だ。「ミルスカー」は自らを弁護する権利を放棄した。法に基づき処理することとしよう。
+[name="ヴィーナ"]ロンディニウム議会現議長、ヴィーナ・ヴィクトリアが、議会を代表して令状を発する――
+[name="ヴィーナ"]「ミルスカー」を特別指名手配とし、その生死は問わない。都市防衛軍巡回隊が「ミルスカー」関係者を総力を挙げて掃討する。
+[name="ヴィーナ"]この命令は、現時点より有効とする。
+[Dialog]
+[delay(time=1)]
+[name="ヴィーナ"]また、議会はすでに公開した都市安全に関する法案を、なるべく早期に履行できるようこれまで以上に努める旨を、都市全体に通知せよ。
+[name="ヴィーナ"]議会を代表して全てのロンディニウム市民に約束する。新たな警察部門は一ヶ月以内に最終的な再編を完了し、その時ロンディニウムは夜間外出禁止令を全面的に解除する。
+[name="ヴィーナ"]そして、臨時裁判所は二ヶ月以内に人員の異動と任用を完了し、名をロンディニウム都市裁判所と改めて正式に運用される。
+[name="ヴィーナ"]裁判所は、戦争終結以降市民の安全を脅かしている全ての未処理事件の審理に引き続き協力していく。
+[name="ヴィーナ"]私と議会は、全ての人間が公正な扱いを受けることを保証しよう――
+[name="ヴィーナ"]その者が、かつて何らかの理由で優遇を受けていようがなかろうが――
+[name="ヴィーナ"]法はあらゆる者を平等に扱う。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="55_g3_westlobbythroneroom",fadetime=0,screenadapt="coverall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.8, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[Decision(options="ヴィーナ、君はどのようなリーダーになることを望む？",values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="ヴィーナ"]私は……分からない、ドクター。
+[name="ヴィーナ"]だが、少なくとも何が正しく、何が間違っているかは知っておく必要があるだろう？
+[Dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="n")]
+[Decision(options="しかし、それは時として立場によって決まる。",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="ヴィーナ"]……ならば私はどうすればいい？
+[Dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="n")]
+[Decision(options="君を憎む人を受け入れるんだ。その者が警鐘になる。;君の信じる正しい信念を貫け。孤独に打ち勝つ友だ。",values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="自分が最近、遠くに去った友人から学んだことだ。",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="ヴィーナ"]……
+[Dialog]
+[stopmusic(fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="27_g7_subway",fadetime=0,screenadapt="coverall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=2)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[name="通信機の声"]こちらバグパイプ、T-11、T-32エリアの掃討任務が完了。「ミルスカー」は発見できず。
+[name="通信機の声"]そっちの状況は？
+[name="通信機の声"]隊長、C-11とC-20の任務は順調ですが、「ミルスカー」は見つかりません。
+[name="通信機の声"]L-10エリアの状況は？　どうして報告がないの？
+[name="通信機の声"]モンノ、何かあったの？
+[charslot(slot="m",name="avg_npc_422_1#1$1",focus="m")]
+[name="震えた声の隊員"]隊長、こ、こちらモンノ！
+[name="震えた声の隊員"]我々の小隊はたった今L-10の捜索を終えたところです。ここには誰もいません――
+[Dialog]
+[charslot(slot="m",name="avg_npc_1342_1#6$2",focus="m")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1342_1#6$2",focus="n")]
+彼は目の前の紫色の刃を見て、懇願するように「ミルスカー」を見つめる。
+[charslot(slot="m",name="avg_npc_1342_1#1$2",focus="m")]
+[name="「ミルスカー」"]（うなずく）
+[Dialog]
+[charslot(slot="m",name="avg_npc_422_1#1$1",focus="m")]
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.3)]
+[name="震えた声の隊員"]隊長、こ、これより帰隊の準備をします。
+[charslot(slot="m",name="avg_npc_422_1#1$1",focus="n")]
+[name="通信機の声"]モンノ、そっちは何か有益な手がかりはあった？
+[charslot(slot="m",name="avg_npc_422_1#1$1",focus="m")]
+[name="震えた声の隊員"]いえ、何もありません！
+[Dialog]
+[charslot]
+彼がじりじりと後ろへ下がると、その紫色の刃もゆっくりと下ろされた。
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="「ミルスカー」"]……
+[Dialog]
+[charslot]
+[name="通信機の声"]分かった。じゃあ戻ってきて。前に教えた場所に集合するように。
+[charslot(slot="m",name="avg_npc_422_1#1$1",focus="m")]
+[name="震えた声の隊員"]す、すぐに向かいます。
+[dialog]
+[charslot]
+[PlaySound(key="$transmission",volume=0.6)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]通信機は置いて行きなさい。
+[charslot(slot="m",name="avg_npc_422_1#1$1",focus="m")]
+[name="震えた声の隊員"]……はい。
+[dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=2)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+彼は影の中の「ミルスカー」をじっと見つめ、自分に手を出すつもりがないことを確認すると、通信機を置き、身を翻して逃げていった。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="25_mini02_victoria_street_n",fadetime=0,screenadapt="coverall")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ロンディニウムキャヴェンディッシュストリート</><p=2>1098年12月15日 p.m. 9:58</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1342_1#8$1",focus="m")]
+[name="「ミルスカー」"]本当に静かね……
+[name="「ミルスカー」"]やっぱり地下の方が好きだわ。少なくともあそこの音なら、私は――
+[charslot(slot="m",name="avg_npc_1342_1#9$1",focus="m")]
+[name="「ミルスカー」"]フッ。
+[Dialog]
+[charslot]
+議会は戦後も夜間外出禁止令を解除していない。彼らは……彼女のような者の手から市民を守ろうとしている。
+入手したばかりの通信機からは、巡回隊の最新情報が流れ続けている。
+[Dialog]
+[PlaySound(key="$d_avg_oldtvelectricity", volume=0, loop=true, channel="o")]
+[SoundVolume(volume=1, channel="o", fadetime=1)]
+「ミルスカー」が通りに面した店の前をゆっくりと通り過ぎる。照明の光が漏れる店内からラジオが聞こえて、彼女は思わず足を止めた。
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_1342_1#7$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="n")]
+[name="かすかなラジオの声"]――都市の治安保障機能が回復した後、区画ごとに夜間外出禁止令を解除するという議長の発言に対して、ハンスさんはどう思われますか？
+[name="かすかなラジオの声"]今現在のペースを考えると、警察や裁判所を一から再構築して、そのうえ夜間外出禁止令まで解除するというのは、子供騙しの冗談だと思いますね。誰が人を捕まえて、誰が裁くべきなんです？
+[name="かすかなラジオの声"]ハンスさんは議会を信用していないのですか？　ここ二ヶ月、議会が残存する魔族を掃討して、多くの市民が安心を得ていますよ。
+[name="かすかなラジオの声"]そして本日行われた都市全域の地下勢力への一斉捜査も顕著な効果を示しました。長らく市民の安全を脅かしてきた潜在的危険性が、また一つ解決したと言っていいでしょう。
+[name="かすかなラジオの声"]ご覧の通り、たった三時間で議会に対して、特にあの特別な身分にある議長に対して感謝を述べたいという市民からの手紙が数百通も届いています。
+[name="かすかなラジオの声"]議長が着実に仕事をこなしていて、非常に行動力のあるリーダーであることは否定できませんね。だけど、こういった人たちにいつまで期待し続けることができると？
+[name="かすかなラジオの声"]数ヶ月と経たずに、彼女も口を開けば嘘ばかりのお偉方たちと、何も違いがなくなる――
+[Dialog]
+[stopsound(channel="o", fadetime=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]フンッ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_drivestop", volume=1)]
+[Delay(time=2.5)]
+一台の豪華な車がゆっくりと彼女のそばに止まった。ドアが開くと車内には一人の運転手と……見覚えのある服。
+彼女はその服にある紋章を認めた――「カンバーランド家」。
+[name="車内の声"]まだ生きていたのだな。公爵閣下はあなたにはまだ価値があるとお認めになった。
+[name="車内の声"]ゆえに戻るチャンスを与えることにした。
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="「ミルスカー」"]……
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]彼女に伝えておきなさい。カンバーランドは死んだと。
+[name="「ミルスカー」"]死人は、再び死ぬことを恐れはしないの。
+[Dialog]
+[charslot]
+[name="車内の声"]……
+[Dialog]
+[PlaySound(key="$d_avg_cardoorc", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_driveincar", loop=true, channel="a",volume=1)]
+[StopSound(channel="a", fadetime=4)]
+[Delay(time=2)]
+ドアが閉まる。車はゆっくりと動き出し、道の果てに消えた。
+[charslot(slot="m",name="avg_npc_1342_1#6$1",focus="m")]
+[name="「ミルスカー」"]*ヴィクトリアスラング*……これで私を殺したいと思う人は、あなただけではなくなったかもね、ヴィーナ。
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="「ミルスカー」"]他の人に先を越されないようにするといいわ……
+[Dialog]
+[PlaySound(key="$d_avg_openftstpwalk", volume=0.8, loop=true, channel="aw")]
+[charslot(duration=1)]
+[Delay(time=2)]
+[stopsound(channel="aw", fadetime=5)]
+彼女は黙って街の影の中を歩き、夜の帳の中に消えていった。
+[name="「ミルスカー」"]少なくとも、より多くの人々があなたならば、いま最も貴重なものを――安全を、彼らに与えられると信じるでしょう。
+[name="「ミルスカー」"]アレクサンドリナ、私の最後の贈り物を気に入ってくれるといいのだけど……
+[name="「ミルスカー」"]あなたへの借りはもう何一つないわ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="25_mini02_victoria_street_n",fadetime=0,screenadapt="coverall")]
+[delay(time=2)]
+[playMusic(intro="$storyendjp_intro", key="$storyendjp_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>聖王会西部大広間エリアにいるナハツェーラーの陣地に対して攻撃を仕掛ける前、みんなの士気はこれ以上ないほどに高まっていた。けど都市内部の人にとっては、そうじゃなかった。</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>長いことサルカズたちの統治下で暮らして、自分たちが反抗できることを忘れかけてたんだ。戦う力が残ってる人へ吾輩たちに加入するようダグザちゃんと説得しても効果が今ひとつだった……</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>ヴィーナが現れてようやく、その状況が好転した。</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st2", multi = true, text="<i>けど彼女は吾輩が今までに想像もしたことのなかった服……王室の服を着ていた。誰に渡されたのか彼女は言わなかったけど、吾輩たちにはみんな心当たりがあった――</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st2", multi = true, text="\n<i>アラデルだ。</i>",block = true)]
+[Sticker(id="st2")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st3", multi = true, text="<i>驚いて、吾輩はダグザちゃんを見た。彼女は明らかに震えを抑えていた。</i>", x=300,y=240,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st3", multi = true, text="\n<i>人々が熱狂した様子で通りを行き交って、ますます多くの人が押し寄せてきて、吾輩たちに加わった。</i>",block = true)]
+[Sticker(id="st3", multi = true, text="\n<i>ヴィーナはみんなに囲まれ吾輩からどんどん遠くなっていった。</i>",block = true)]
+[Sticker(id="st3")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st4", multi = true, text="<i>「アレクサンドリナ殿下が帰ってきた。彼女が民を率いてサルカズを駆逐し、故郷を取り返してくれる！」</i>", x=300,y=340,  alignment="center", size=28, delay=0.04, width=700,block = true)]
+[Sticker(id="st4")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=0, amount=0.5, block=true)]
+[Delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ロンディニウムキャヴェンディッシュストリート</><p=2>1098年9月30日 p.m. 9:22</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="デルフィーン"]……てっきり、この提案を拒否すると思っていました。
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="ヴィーナ"]いま重要なのはこの最後の戦いに勝つことだ。物事の優先順位はわきまえている。
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="デルフィーン"]つまり、あのカンバーランド公爵の息女は生きているんですね？
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="ヴィーナ"]そう願っている。何が起きたのであろうと、彼女には初めからやり直すチャンスを与えられるべきだとも思っている。
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="デルフィーン"]では、あなたは？　この服を着ることが何を意味するか分かっているんですか？
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="ヴィーナ"]分かっている。だが私にはずっと選択肢があった、違うか？
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="n")]
+ヴィーナはデルフィーンを伴って群衆を抜ける。皆が彼女に敬意を表した。
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[name="ヴィーナ"]……だがこれには耐えられんな……
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="ヴィーナ"]ん――？
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="n")]
+彼女は前へと絶えず押し寄せる兵士や市民の中に、埋もれる一つの影を見たような気がした。
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="デルフィーン"]どうしましたか？
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[name="ヴィーナ"]……何でもない、部隊を整えるんだ。そろそろ終わりの時だ。
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="nw",fadetime=3)]
+[stopsound(channel="step",fadetime=3)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",fadetime=0,screenadapt="coverall")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+「ヴィーナ、あなたとあなたの部隊なら必ず勝つと信じているわ。渡したプレゼント――元からあなたの物であるその服も、最終的な勝利の瞬間のための飾りに過ぎない。」
+「残念なのは、この勝利において、あなたのそばにもう私の居場所がないことね。これは私自身の決断よ。」
+「だけど、デタラメな戦争の終わりこそ、あなたの物語の本当の始まりだと思う。その時、あなたは勝利する道だけを歩んできた伝説ではなくなっていることでしょう。」
+「ヴィクトリアは誰かに簡単に変えられることはないわ。たとえ、その人があなただとしても。」
+「……いいえ、あるいは、過去の私なら喜んで信じていたかもしれないわね――」
+[Dialog]
+[delay(time=1)]
+「さようなら、ヴィーナ……さようなら。」
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

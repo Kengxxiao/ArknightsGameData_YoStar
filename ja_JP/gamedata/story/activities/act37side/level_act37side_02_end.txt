@@ -1,0 +1,604 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_329_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_240",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="緊張した子供"]こ、このまま行けばいいの？
+[charslot(slot="l",name="avg_npc_329_1#1$1",focus="l")]
+[name="悪意を抱く市民"]そうだ。このまま行って値段を聞けばいい。
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="緊張した子供"]わ、分かった。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot = "r", posfrom="0,0", posto="100,0", afrom=1, ato=0, duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+商人の露店の前まで行くと、子供はおずおずとうつむいて並んでいる商品を見る。
+[Dialog]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="穏やかな商人"]花火を買いたいのかい？
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張した子供"]う、うん……
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="穏やかな商人"]誕生日祝いか、それともプレゼントか？　これとかどうだ。お祝いに買っていく人が多いぞ！
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張した子供"]で、でも……ほこりがたくさん付いてるよ――
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="穏やかな商人"]最近倉庫から出したばかりだからな。少しくらいほこりが付いてても普通さ。こうしよう。一つ買ったらおまけでもう一つ付けてやる――
+[Dialog]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="n")]
+[playsound(key="$d_avg_fireleadwire", volume=0.7)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[multiline(name="穏やかな商人")]何の臭いだ――
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="穏やかな商人")]商品が！　うちの商品に火をつけたな！
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="悪意を抱く市民"]ハッ！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張した子供"]……
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="悪意を抱く市民"]逃げろ！　ぼうっとしてんじゃねぇ！
+[Dialog]
+[charslot]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[playsound(key="$d_avg_firerockfall", volume=0.7)]
+[PlaySound(key="$firestorm", volume=0.9,delay=0.2)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0.6, r=0.92, g=0.3, b=0.3, fadetime=0.05, block=true)]
+[Blocker(a=0.2, r=0.92, g=0.3, b=0.3, fadetime=0.3, block=false)]
+[PlaySound(key="$d_avg_churchfire", loop=true, channel="bse",volume=0)]
+[SoundVolume(volume=0.6, fadetime=3,channel="bse")]
+[delay(time=2)]
+商人は露店の火を必死に消そうとするも、焼け石に水であり、その姿ごと次第に炎に呑み込まれていく。
+花火が炸裂し、より多くの人を引き寄せた。
+そして「いたずら」を仕掛けた人物はすでに呆然とする子供を連れて現場から去っていた。
+「いたずらするだけだったんじゃないの？　ど、どうして……」
+「魔族を嫁にするような奴はこうなるのが当然だろうが。ざまあみろ！」
+[Dialog]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9, duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9,focus="m")]
+[name="？？？"]火の勢いが大きくなってる。急いで人々を避難誘導して。うちは救出に行く！
+[charslot(slot = "m", name = "avg_npc_248", focus="m")]
+[name="都市防衛軍巡ら隊"]了解です、隊長！
+[Dialog]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9,focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[PlaySound(key="$gunlance",channel="bipe1",volume=1)]
+[PlaySound(key="$d_avg_spear",channel="bipe2",volume=1,delay=0.3)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+破城矛が連続して放たれ、炎を引き裂く。炸裂音と花火の音が交錯し、楽章を奏でる。
+ヴイーヴルは片手に矛、片手に商人を引っ提げて炎から飛び出す。彼女は商人を安全な場所に置き、ようやくそのそばに無造作に座って、黒くなった顔を拭った。
+[Dialog]
+[stopmusic(fadetime=2)]
+[SoundVolume(volume=0.2, fadetime=3,channel="bse")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_222_bpipe_1#5", duration=0.5)]
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "l", name = "avg_222_bpipe_1#5",focus="l")]
+[name="バグパイプ"]うぅ、申し訳ないべ。店ごと一緒に……
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="穏やかな商人"]いやいや、大したことじゃないさ。
+[charslot(slot = "l", name = "avg_222_bpipe_1#4",focus="l")]
+[name="バグパイプ"]これが……大したことじゃないの？
+[Dialog]
+[charslot]
+いまだ赤々と燃え上がる現場を、そして飛び交い続ける花火を彼女が指さした。
+野次馬はますます増え、何も知らずに周りの人を無理やり引っ張り踊り出す酔っ払いまでいた。
+酔っ払いを罵る声に騒いで踊る音、花火が辺りに飛び交う音、夕日の下でその全てが入り乱れる。
+サルカズが都市を接収して以来、この通りがこれほどまで賑やかになるのは随分と久しぶりだった。
+現場は混乱していたが、商人は落ち着きを取り戻してからふと笑い出した。
+[charslot(slot = "l", name = "avg_222_bpipe_1#4",focus="l")]
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="l")]
+[name="バグパイプ"]……？
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="穏やかな商人"]みんなのこんなにお気楽な様子は久しぶりだ。本当に懐かしい……
+[charslot(slot = "l", name = "avg_222_bpipe_1#5",focus="l")]
+[name="バグパイプ"]……でもおめーさんは、店が燃えちゃったんだよ？
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="穏やかな商人"]今日は気分が良いから、みんなに花火でお祝いしたってことにするさ！
+[name="穏やかな商人"]兵隊さん、ここだけの話、うちの嫁は今晩ようやく都市から出られるんだ。
+[charslot(slot = "l", name = "avg_222_bpipe_1#7",focus="l")]
+[name="バグパイプ"]……？
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_248", focus="m")]
+[name="都市防衛軍巡ら隊"]隊長、怪我人はいません。騒ぎを起こした奴を捕まえてきますか？
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="穏やかな商人"]……どうせ怪我人はいないんだし――
+[charslot(slot = "m", name = "avg_222_bpipe_1#7",focus="m")]
+[name="バグパイプ"]彼が罪を犯した以上、うちらは処罰する必要がある。これがうちらの責務だよ。
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="穏やかな商人"]まあ、とにかくありがとうよ。そうだ、あんたは踊れたり演奏できたりするか？
+[charslot(slot = "m", name = "avg_222_bpipe_1#4",focus="m")]
+[name="バグパイプ"]え？
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="穏やかな商人"]ほら、もうこうなっちまったんだ。うちの花火を無駄にするわけにはいかないだろ？
+[name="穏やかな商人"]そうだ！　こんな大きな騒ぎなら、うちの嫁にも聞こえるかもしれない。餞別ってことにしよう。
+[charslot(slot = "m", name = "avg_222_bpipe_1#8",focus="m")]
+[name="バグパイプ"]都市の治安の管理は、戦争や農作業よりもずっと厄介だね。
+[name="バグパイプ"]でもみんな楽しそうだし、それでいっか。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+すでに民衆に危険がないことを確認すると、彼女は吹っ切れたように道端の荷物の上に横たわり、体を伸ばして日差しを顔に受けた。
+[name="バグパイプ"]うーん、やっぱし藁におの上には敵わないなぁ。全然心地よくないや。
+[name="バグパイプ"]チェンちゃん。チェンちゃんは今どこにいるの……？
+[Dialog]
+[StopSound(channel="bse", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_240")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張した子供"]な、なんであの人のお店を燃やしたの！　物を取るだけって言ったじゃん！
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="悪意を抱く市民"]見ててウゼーからよ。魔族の嫁がいるくせに、恥も知らねぇ。
+[multiline(name="悪意を抱く市民")]まっ、あいつの嫁はとっくに殺されてるかもな――
+[musicvolume(volume=0.3, fadetime=1)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[multiline(name="悪意を抱く市民")]ぐあっ！
+[name="悪意を抱く市民"]テメー*ヴィクトリアスラング*誰だ！？
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張した子供"]――！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1342_1#6$1",duration=1)]
+[delay(time=1.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot="m",name="avg_npc_1342_1#6$1",focus="m")]
+[name="「ミルスカー」"]逃げないの？
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張した子供"]お、おお！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="悪意を抱く市民"]……な、何の用だ？
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]うちのお客さんに恩を売っておくのよ。今後また協力することになるかもしれないからね。
+[Dialog]
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_punch02", volume=0.7)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.2)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]このブツを都市の外に送る準備はどうなったの？
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="疲弊した傭兵"]外の準備は整っています。人数も数えました。問題ありません。ただ、最近受け取った情報ですと、議会はあなたを指名手……探しています。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]彼らは私をどうすることもできないわ。これまで通り、余計な問題は起こさないように。
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="疲弊した傭兵"]えーっと……今回は確かに少し問題がありまして。
+[name="疲弊した傭兵"]ブツの中にガキがいて、そいつにお手上げなんです。
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="納得できない子供"]わたしはただ出発前にパパに会いたいだけなのに、どうしてダメなの？
+[name="納得できない子供"]外で花火が上がってるってこのおじちゃんが言ってた。あれはパパの花火だよ！
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="「ミルスカー」"]……
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張した女性"]バカ言わないの。
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="納得できない子供"]ママ、ママだって行きたくないんでしょ――
+[Dialog]
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.5)]
+[delay(time=1)]
+[charslot]
+サルカズは子供の口を覆い、腕の中に抱き込むと、少し緊張した面持ちで目の前の沈黙した人を見る。
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張した女性"]申し訳ありません、この子はただ慣れていないだけで。戦争中も父のそばから離れたことがないものでして。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]あなたの旦那さんから受けた依頼は、あなたたちを都市から出すことだけ。その他のことはどうだっていいわ。
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="「ミルスカー」"]残りたいなら、好きにしていいよ。こっちは気にしないから。
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張した女性"]……
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]ちょっといいかい。この子たちはこんな経験をしたことがなくて、パニックになっているだけだよ。
+[name="年長の女性"]私たちの誰も経験がないんだ……安心してくれ、この子は私が見ておくから。あんたたちに迷惑はかけないよ。
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="納得できない子供"]でもわたしたちどこに行くの？　パパは？　パパはどうするの？
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張した女性"]パパは家の用事が終わったら合流するわ。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]はぁ……カズデルの人たちが都市に入った時から、いつかこんな日が来ると思っていたよ。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]あなたは軍事委員会が気に入らないの？　テレシスはあなたたちの物語の英雄じゃないの？
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]私は目を開けたその日からロンディニウムにいるんだ。テレシスなんて奴は知らないよ。私はあんたと同じで、ロンディニウム人さ。
+[name="年長の女性"]でも訛りからするに、あんたも昔はご立派な身分だったんだろ。あんたもあのカズデルの連中のせいでこんな風になったんじゃないのかい？
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[multiline(name="「ミルスカー」")]……私は――
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[multiline(name="「ミルスカー」")]フッ。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]あんたは良い人だよ。何せ、こんな時に私たちと関わろうとする人なんていないからね。
+[name="年長の女性"]あんたがいなけりゃ、多分あの新議会がとっくに……でもそれも普通のことだ。何が起きようと、お偉いさんってのは結局何も変わらないもんさ。
+[name="年長の女性"]私は人生で腐るほど見てきたよ。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]この新しい議会はこれまでとは違うわ――
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]かもしれないね。でも私たちにとっちゃ、何も違いやしないよ。
+[Dialog]
+[charslot]
+年老いたサルカズは悲しむ子供をなだめながら、小さくため息をつくことしかできなかった。
+[charslot(slot="l",name="avg_npc_1457_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1455_1#1$1",focus="r")]
+[name="年長の女性"]怖がらなくていいよ。あんたのお父さんは誠実な人さ。私の知ってるたくさんの人よりもね。きっとあんたを見つけてくれる。
+[charslot(slot="l",name="avg_npc_1457_1#1$1",focus="l")]
+[name="納得できない子供"]うーん……でも都市を出たら、おばあさんはどこに行くの？
+[charslot(slot="r",name="avg_npc_1455_1#1$1",focus="r")]
+[name="年長の女性"]二人の古い友人を訪ねに行くよ。彼らには双子の子供がいてね、その子たちがある製薬会社で働いているんだ。軍が撤退した時、その姉妹が二人を迎えに来たんだよ。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="「ミルスカー」"]……
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]ん？　あんた、その子たちを知っているのかい？
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="「ミルスカー」"]いいえ。そろそろ時間よ。荷物をまとめて出発の準備をしてちょうだい。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]待ってくれ。あんた、名前を教えてくれないかい？
+[charslot(slot="m",name="avg_npc_1342_1#10$1",focus="m")]
+[name="「ミルスカー」"]今後関わることはないはずよ。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]年寄りの願いにすぎないよ。あんたに感謝を伝えたいんだ。私としても、それとあんたを怖がってる人に代わってね――
+[name="年長の女性"]この感謝はいつでも捨てることのできるコードネームに取っておくべきじゃないよ。
+[charslot(slot="m",name="avg_npc_1342_1#5$1",focus="m")]
+[name="「ミルスカー」"]……
+[name="「ミルスカー」"]……アラデルよ。
+[Dialog]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="aw")]
+[stopsound(fadetime=3, channel="aw")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長の女性"]アラデルか、素敵な名前だね。ありがとう。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[focusout(duration=2.5, type="bg", from=0, to=1, block=true)]
+「アラデル」――諸王の眠る地にて葬られるはずだった名。
+時間が曖昧になった暗闇の中、彼女は歴史の廃墟の中で死にゆくことを望み、裏切った全ての人に忘れ去られることを望んだ。しかし彼女はまた死にゆくことを恐れ、忘れ去られることを恐れた。
+蒸気騎士が去った空洞から汚い泥水が彼女の手の平に落ちた時、彼女は目を開け、一筋の光を見た。
+光の果てにあるのは生であり、再びの屈服でもある。
+迷いは三日も続いたかもしれないし、ほんの三分にとどまったかもしれない……彼女は過去と同じ決断をした。
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.8, block=true)]
+[Image(image="32_i13", screenadapt="coverall",fadetime=2,block=true)]
+[delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="「いつの日か、お前は再びヴィーナと出会うであろう。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+彼女は心の中でその言葉を繰り返し、一言も発することなく光の中へと這っていった。
+[Dialog]
+[stopmusic(fadetime=1)]
+[focusout(duration=0.1, type="bg", from=1, to=0, block=false)]
+[charslot]
+[image]
+[Background(image="32_g3_school_indoor",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, amount=0, block=true)]
+[Delay(time=2.5)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>臨時物資調達公共事務室</><p=2>1098年12月12日 p.m. 5:32</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="エリシオ"]メジャーさんとのアポイントは失効しているため並び直す必要があると？
+[charslot(slot="m",name="avg_487_bobb_1#3$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="エリシオ"]今こそ薬品の補給が手に入らない感染者のために急ぐべきではないのですか？
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="冷静な文官"]申し訳ございません。我々の予約システムは現在メンテナンス中です。メジャーさんが亡くなり、書類を全て再整理する必要があるんです。
+[name="冷静な文官"]ですが最近では担当者たちは皆メジャーさんの葬儀の準備に追われていまして。
+[charslot(slot="m",name="avg_487_bobb_1#2$1",focus="m")]
+[name="エリシオ"]……分かりました。最短でどの程度かかりますか？
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="冷静な文官"]七営業日以内には復旧する見込みです。復旧次第、直ちにご連絡いたします。
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="エリシオ"]――！
+[charslot(slot="m",name="avg_487_bobb_1#3$1",focus="m")]
+[name="エリシオ"]生物感染総合処理センターに行かれたことはありますか？　感染症状の急速な悪化によって運び込まれる市民の数が日々増加しているんです。
+[name="エリシオ"]あの戦争が起きるまで、ロンディニウムの大多数の者が鉱石病の急性発作に対する正確な知識を持っていませんでした。そして彼らは最も助けが必要にもかかわらず、それを得られない人々なのです。
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="エリシオ"]彼らは待てないんですよ……それに外で現在、効果のほとんどない劣悪な薬が大量に流通していることは言うまでもありません……
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="冷静な文官"]承知しました。ご意見は記録し、生物感染総合処理センターの者に速やかに共有しておきます。他に回答が必要なご質問はございますか？
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="エリシオ"]……
+[name="エリシオ"]議長の執務室がどちらか教えてください。
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="冷静な文官"]議長を訪問したいのですか？　ではアポイントを承ります――
+[charslot(slot="m",name="avg_npc_1519_1#1$1",focus="m")]
+[name="ダイアン"]彼に聞く必要はありません。議長が今どちらにいるかは知っています。
+[name="ダイアン"]エリシオ殿、ついてきてください。
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="冷静な文官"]ご迷惑をおかけして誠に申し訳ございません。他に何か協力が必要な場合はご連絡ください。そうだ、コーヒーをありがとうございました。
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="冷静な文官"]大変貴重なプレゼントです。
+[charslot(slot="m",name="avg_487_bobb_1#7$1",focus="m")]
+[name="エリシオ"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="32_g3_school_indoor",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1519_1#8$1")]
+[charslot(slot="r",name="avg_487_bobb_1#6$1")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_487_bobb_1#6$1",focus="r")]
+[name="エリシオ"]ダイアンさん、あなたは怒りを覚えないんですか？　これは彼らにあるまじき態度です。私がロンディニウムに来たのは――
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="ダイアン"]我々に救いの手を差し伸べるため、ですか？
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[name="エリシオ"]……いえ、私が言いたいのはそんなことではありません。
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="ダイアン"]ですが貴殿は心の中でそう思っている。違いますか？
+[charslot(slot="r",name="avg_487_bobb_1#5$1",focus="r")]
+[name="エリシオ"]わ、私はあなたの機嫌を損ねたいわけではありません。ご自身の家を一時的に貸してくれていることにも感謝しています。ですが、感染者を助けるという件に関して、私が見たのは、混乱だけです。
+[name="エリシオ"]全ての制度とフローには徐々に確立され改善される過程があることは分かっています。ですがクルビアにいた時、こうしたことに意見することがまさに私の責務の一つです。どうかご理解ください。
+[name="エリシオ"]私はただ……大多数の感染者を助けるためのより規範的で効率的なフローを持っていただくことを願っているだけです。そして、我々はこの点に関して確かにいくらか先んじています。
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="ダイアン"]エリシオ殿、小官はクルビアに行ったことがありません。貴殿の故郷で小官たちのような者がどのように扱われているかも分かりません。
+[name="ダイアン"]機会があれば、是非とも行ってみたいものです。
+[name="ダイアン"]ですがあの可哀想な事務官殿は何も間違ったことをしていません。こういった面倒事の処理においては、彼はすでに責任を果たし、他のどの前任者よりもよくやってくれています。
+[name="ダイアン"]ロンディニウムは確かに多くの問題を抱えています。ですが良くなりつつある、あの戦争の前よりも。
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="エリシオ"]……あなたはこの新議会を信じているのですか、ダイアンさん？
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="ダイアン"]いいえ。ですが小官はあの議長を信じています。行きましょう。彼女の所までご案内いたします。
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="エリシオ"]ですが議長がどこにいるかなぜ知っているのですか？
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="ダイアン"]ふっ、どうやら貴殿らクルビア人はラジオを聞く習慣がないとお見受けする。
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[multiline(name="エリシオ")]ええと……実のところ、我々はテ……
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[multiline(name="エリシオ")]まあいいでしょう。議長はどちらに？
+[charslot(slot="l",name="avg_npc_1519_1#1$1",focus="l")]
+[name="ダイアン"]メジャー殿の追悼式です。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="32_g2_dukegarden",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1519_1#1$1")]
+[charslot(slot="r",name="avg_487_bobb_1#11$1")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",loop=true, channel="tk", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="エリシオ"]こちらですか？　どう入ればいいのでしょう？　ここは人が多すぎます。どうすれば議長に会えるのですか？
+[charslot(slot="l",name="avg_npc_1519_1#1$1",focus="l")]
+[name="ダイアン"]ついてきてください。直接中に行ける道を知っています。
+[Dialog]
+[stopsound(channel="tk", fadetime=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$leaveshake", volume=0.8)]
+[Delay(time=1)]
+エリシオは窓越しに、世に広く知られるあのヴィーナ・ヴィクトリアを遠くから初めて見た。
+彼は出発前に多くの調査を行い、あの戦争におけるヴィクトリアのこの若き議長の伝説とも言える功績を耳にした。
+議長閣下はもっと他を圧倒する存在だと思っていた。
+しかし華やかな服を着て演説するアスランを目の当たりにした時、彼の心に湧いたのは失望だけだった。
+ヴィーナ・ヴィクトリアは、見る限り彼が期待していたほどの輝かしい人物ではなかった。
+[name="？？？"]お二人は道に迷われたのですか？
+[name="？？？"]弔問に来られたのなら、正門はあちらです。
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="エリシオ"]――！
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="デルフィーン"]エリシオさん、手をお貸ししましょうか？
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="エリシオ"]あ、ありがとうございます。
+[charslot(slot="m",name="avg_npc_1519_1#9$1",focus="m")]
+[name="ダイアン"]……
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="エリシオ"]――あれ、あなたはなぜ――
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="デルフィーン"]エリシオさん、あなたがロンディニウムにいらっしゃる前に、赤心社とあなた本人に関する資料はすでに議長室のデスクの上に置かせていただきました。
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="エリシオ"]つまり私がここへ来た理由をご存知なのですか？
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="デルフィーン"]はい。
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="エリシオ"]議長もここ数日私が何のために至る所で交渉していたのかご存知なのですか？
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="デルフィーン"]はい。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]申し訳ありません。ですがこの件はそう単純な話ではありません。
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="エリシオ"]てっきり……議長は私がこれまで接してきた貴族たちとは異なると思っていたのですが。
+[charslot(slot="m",name="avg_npc_1519_1#1$1",focus="m")]
+[name="ダイアン"]エリシオ殿！
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]構いません。エリシオさんの誤解にすぎませんので。ここはクルビアではないんです。あなた方の見方でもって我々を判断するのは、傲慢というほかありません。
+[name="デルフィーン"]時として、我々は先にある程度の規則に従ってから、一部の物事を変えようと試みるしかないんです。
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="ダイアン"]……彼女であっても、できないのでしょうか？
+[Dialog]
+[charslot]
+ホールの中でヴィーナが悲しげな表情で小さく何かを言っている。だが彼らにはその内容が聞こえなかった。
+デルフィーンはダイアンの視線を受けて、反射的に目をそらした。
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="ダイアン"]……
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="エリシオ"]つまり、メジャーさんもあなた方の言う規則による犠牲者なのですか？
+[charslot(slot="m",name="avg_4110_delphn_1#2$1",focus="m")]
+[name="デルフィーン"]……違います。彼女は一人の尊敬に値する人にすぎません。あなたの言う「貴族たち」のうちの。
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="デルフィーン"]彼女は本来、ノーマンディー領に留まり危険から遠ざかることもできました。ですが自ら最も混乱したロンディニウムに来てここの市民を救おうとしたんです。
+[name="デルフィーン"]できるだけ迅速により多くの人を救うため、彼女は急性感染後でさえ仕事をやめようとしませんでした。あなたと同じように、エリシオさん。
+[name="デルフィーン"]我々が彼女と言い争っていたのも、彼女の過激さと頑固さが彼女自身を傷つけてしまうことになるからにすぎません。
+[name="デルフィーン"]彼女が去ったことには、隠された事情も陰謀もありません。ましてやあなたの言う「犠牲者」などではありません。
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="エリシオ"]申し訳ありません……事情も知らずに。
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="エリシオ"]ですがますます理解できません。なぜあなた方は我々赤心社との協力を拒むのですか？　我々はただあなた方のトラブルを解決しようとしているだけだというのに。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]エリシオさん、赤心社の背後にはクルビア国防部とマイレンダー基金が同時に存在していることをご存知ですか？
+[charslot(slot="m",name="avg_487_bobb_1#9$1",focus="m")]
+[name="エリシオ"]もちろんです。軍とマイレンダー基金が我々の大株主ですから。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]……あなたは責務を全うする善人です。自らの職責を果たそうと貫き通したいというならば、いつでも私の所に来て構いません。
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="エリシオ"]えーっと……あなたは？
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="デルフィーン"]デルフィーン・ウィンダミア。デルフィーンと呼んでください。どうやら貴社の顧客調査は完璧ではないようですね。
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="エリシオ"]――！
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="エリシオ"]デルフィーンさん、私は諦めたくありません。我々ならきっとロンディニウムの力になれるはずです。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="デルフィーン"]私は議会やヴィーナさんに代わってあなたに約束することはできません。ですがどうか信じてください。この都市の傷痕を治したいと誰よりも切実に思っているのは我々であると。
+[name="デルフィーン"]ですが今、あなたさえよければ、私と一緒に入って、メジャーさんを……
+[name="デルフィーン"]そして数年にわたり続いた動乱の中で亡くなった全ての人を見送りましょう。
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[PlaySound(key="$bigbell",volume=1)]
+[Delay(time=1)]
+哀悼の鐘が響き、羽獣が低く地面をかすめる。雨が降りそうだ。
+しかしこの瞬間にそんな些細なことを気にする者はおらず、皆下を向いている……
+涙などない。戦争がとうにこの都市の涙を、最後の一滴まで余さず搾り取ってしまったからだ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_396_1#9$1")]
+[charslot(slot="r",name="avg_155_tiger_1#6$1")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_155_tiger_1#6$1",focus="r")]
+[name="インドラ"]ぐずぐずしすぎだ、ダグザ。「ミルスカー」がここに隠れてることは全部の手がかりが証明してんだ。まだ何を調べてやがる？
+[charslot(slot="l",name="avg_npc_396_1#9$1",focus="l")]
+[name="ダグザ"]簡単にいきすぎだと思わねーのか？
+[name="ダグザ"]それに、ここで正体不明のサルカズが活動しているって情報を議会がずっと受け取ってるんだ。気をつけるに越したことはねーだろ。
+[charslot(slot="r",name="avg_155_tiger_1#10$1",focus="r")]
+[name="インドラ"]チッ、もし本当になんかあっても、ちょうどいい運動だろ。
+[name="インドラ"]だからモーガンと一緒に退屈な書類仕事を片づけに行くことを断固拒否したんだよ。
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="インドラ"]フッ、にしてもお前もダチ思いだな。てっきり帰ってきたら塔楼にこもって出てこねぇかと思ってたぜ！
+[charslot(slot="l",name="avg_npc_396_1#1$1",focus="l")]
+[name="ダグザ"]……ハンナ、本来ならあんたも本艦に戻ってしばらく安静にしておくべきなんだ。医療部の奴があんたの状況について何度も注意して――
+[Dialog]
+[charslot(slot="l",name="avg_npc_396_1#1$1",focus="n")]
+[PlaySound(key="$bigbell",volume=0.6)]
+[Delay(time=1)]
+二人は都市上空に響く鐘の音が聞こえた。その反響が全てを一瞬にして静寂にしたかのようだった。
+[charslot(slot="r",name="avg_155_tiger_1#2$1",focus="r")]
+[name="インドラ"]……
+[charslot(slot="l",name="avg_npc_396_1#2$1",focus="l")]
+[name="ダグザ"]……追悼式が始まった。
+[charslot(slot="r",name="avg_155_tiger_1#2$1",focus="r")]
+[name="インドラ"]……
+[Dialog]
+[charslot(slot="r",name="avg_155_tiger_1#3$1",focus="r")]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="インドラ"]ふぅ――今は感傷に浸ってる場合じゃねぇ、ダグザ。行くぞ。涙を拭いてる時にケツを蹴飛ばされるのはごめんだ。
+[charslot(slot="l",name="avg_npc_396_1#2$1",focus="l")]
+[name="ダグザ"]ハンナ、時々あんたには敵わないと思うよ。
+[charslot(slot="l",name="avg_npc_396_1#10$1",focus="l")]
+[name="ダグザ"]もしこの後アラデルに対峙したら、私たちはどうすんだ？
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="インドラ"]ふん、とりあえずぶん殴る。その他の面倒事はヴィーナに任せりゃいい。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_bellfall", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_396_1#7$1",focus="m")]
+[name="ダグザ"]誰かいる！
+[Dialog]
+[charslot]
+[name="？？？"]彼女が会いたいのは君たちじゃないの。だから、悪いけど君たちは会う機会がないと思うよ。
+[charslot(slot="m",name="avg_155_tiger_1#7$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="インドラ"]誰だ！？
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_higheldshosfts",volume=0.7)]
+[charslot(slot="m",name="avg_npc_1521_1#9$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="？？？"]「ローズ河畔の船」よ。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

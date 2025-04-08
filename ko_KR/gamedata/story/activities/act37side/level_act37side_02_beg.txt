@@ -1,0 +1,695 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g3_westlobbythroneroom",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[backgroundTween(xFrom=100, yFrom=0, xTo=-100, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=35, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15,grad = true,fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15,grad = true,fadetime=0.1)]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", multi = true, text="넓은 대지여 우리의 왕을 지켜 주소서♪", x=300,y=200, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n그의 백성과 그의 행복을 지켜 주소서♪",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n우리에게 무한한 은혜를 내려 주소서♪",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n우리를 즐겁게 노래하게 하소서♪",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n빅토리아, 나의 고향이여!♪",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[dialog]
+[curtain(fadetime=1)]
+[delay(time=2)]
+[Background(image="55_g3_westlobbythroneroom",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>성왕궁 서쪽 회당 알현실</><p=2>1098년 10월 8일 9:45 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Decision(options="알현실에 들어온 뒤로 계속 그 노래를 부르고 있네.;좋아하는 노래야?", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="비나"]인상이 깊을 뿐, 좋아한다고 할 수는 없어.
+[name="비나"]어릴 적에, 잠들지 못하는 밤마다 양부모님이 침대 곁에서 자주 이 노래를 불러주셨지.
+[name="비나"]한때는 자장가 같은 거라 생각했지만, 두 분이 돌아가시고 시간이 흐른 뒤에 문득 그런 생각을 했어……. 두 분에게 '나는 뭐였을까' 라고.
+[name="비나"]그날에야 비로소 깨달았어. 내가 이 노래를 모르고 있었다는 걸. 하지만 이젠 어쩔 수 없지. 이 노래의 멜로디는 평생 잊지 못할 거야.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="n")]
+[Decision(options="그럼 혹시 아직도 기억하고 있어? 그…….",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#7$2",focus="m")]
+[name="비나"]그 국왕 말인가? 국왕에 대해서는 잘 몰라. 혈연 상 가장 가까운 가족인데도…….
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="비나"]박사, 네게 거짓말을 할 필요는 없겠지. 나는 기억 속에 흩어져있는 아버지의 이미지를 짜 맞춰 보려고 한 적이 있어.
+[name="비나"]하지만 실제로 마주했을 때, 아주 조금의 친밀감도 느낄 수 없었지.
+[name="비나"]그는 국왕이고, 나는 거리의 문제아야. '빅토리아'라는 성 외에는 어떤 공통점도 없으니까.
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="비나"]그런 것보다, 지금은 머리를 써야 하는 더 중요한 일이 있어.
+[name="비나"]박사, 방금 전 공작들의 이야기를 다 들었겠지. 놈들에게 런디니움은…… 내 고향은 언제든 버릴 수 있는 체스 말에 불과해.
+[name="비나"]닥터 켈시가 너를 체르노보그에서 구해 내게 데려오고, 빅토리아로 돌아올 계획을 세울 때는 이런 상황이 될 거라 상상도 못 했어.
+[name="비나"]하지만 이제 더는 손 놓고 있을 수 없어.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="n")]
+[Decision(options="'책임'이란 기묘한 것이지.;나 역시 로도스 아일랜드의 모두를 쉽게 포기할 수는 없어.;우리 둘 다 같은 처지다.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Decision(options="그 공작들도, 너를 필요로 하는 사람들을 네가 버리지 못한다는 사실을 잘 알고 있어.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="비나"]나 역시 그 공작들이 자신들의 세력을 유지하고자 하는 마음을 잘 안다고?
+[name="비나"]놈들이 여전히 '빅토리아'라는 이름으로 스스로를 꾸밀 필요가 있는 한, 나는 이 도시의 회복을 위한 시간을 벌 수 있어.
+[name="비나"]이건 서로 아주 잘 알고 있는, 필연적인 결과를 지닌 거래일 뿐이야.
+[name="비나"]내게 정말로 용기를 주는 건, 항상 뒤에서 나를 받쳐주는 이들이지.
+[charslot(slot="m",name="avg_1019_siege2_1#9$2",focus="m")]
+[name="비나"]우리는 집으로 돌아왔고, 전쟁도 끝났어. 이제는 내가 그들의 목소리를 들을 차례야.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#9$2",focus="n")]
+[Decision(options="비나……",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="비나"]왜 그러지, 박사?
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="n")]
+[Decision(options="어쩌면, 미래의 네 결정에 로도스 아일랜드가 동의하지 않을지도 몰라.;로도스 아일랜드는 미래에, 네가 동의하지 않는 결정을 내릴지도 몰라.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="비나"]……알고 있어.
+[name="비나"]위셔델이 남은 살카즈를 이끌고 철수하도록 너희가 도와줬지만, 우리들 중 많은 사람들이 그 결과를 받아들이지 못한 것처럼.
+[charslot(slot="m",name="avg_1019_siege2_1#5$2",focus="m")]
+[name="비나"]하지만 이 전쟁을 더는 지속할 수 없다는 건 잘 알고 있어. 나는……. 우리는 이미 너무 많은 사람들을 잃었어.
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="비나"]그리고 살카즈의 경고는 우리 모두가 받았지.
+[name="비나"]살카즈가 철수할 때 모든 공작 함대가 일제히 병력을 움직이지 않은 건, 긴급한 소식을 받았기 때문이야……
+[name="비나"]거의 동일한 시각에, 대다수 핵심권 국가의 수도 상공에 일시적으로 무시무시한 재앙 구름이 모였어.
+[charslot(slot="m",name="avg_1019_siege2_1#2$2",focus="m")]
+[name="비나"]훗, 노골적으로 위협한 다음에 당당히 카즈델로 돌아갔지.
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="비나"]박사, 너와 닥터 켈시라면 잘 알 텐데. 그 오리지늄으로 놈들이 또 뭘 할 수 있는지를.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="n")]
+[Decision(options="달리 방법이 없는 상황까지 몰리지 않는 한, 저들이 그 기술을 활용할 일은 없을 거야.",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="비나"]방어를 위해서만 쓰겠다는 건가? 확실히 놈들은 지금 그렇게 생각하고 있을지도 모르겠군.
+[name="비나"]하지만 스스로 제어할 수 있는 범위를 아득하게 뛰어넘는 힘을 가지고 있다면, 무슨 일이 일어날지는 누구도 보장할 수 없어.
+[name="비나"]귀족 놈들의 힘에 기대서 빠르게 세력을 키웠다가 얼마 못 가서 내부에서부터 무너진 신흥 갱단은 많이 봐 왔지.
+[dialog]
+[charslot]
+[Decision(options="그래서 아미야도 함께 카즈델로 돌아갈 예정이야.;아미야가 그 오리지늄을 우리 감시하에 두도록 확보할 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[musicvolume(volume=0, fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="하지만 당신들이라고 해도 살카즈가 향할 필연적인 미래를 좌우할 수는 없다. 이 전쟁 끝에는 양쪽 다 감당하기 힘든 상처를 입었다.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="그 젊은 섭정왕이 바라는 대로 살카즈는 구체적인 증오를 통해 단결했고, 자신들의 오리지늄도 손에 넣었다……", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="그리고 증오가 도착할 곳은 결국 하나뿐이다. 그때가 되면, 당신은 어디 서 있을까?", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_deeplion", volume=1, channel="slide", loop=false)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1", duration=2)]
+[delay(time=2.5)]
+[soundvolume(channel="slide",volume=0,fadetime=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+옥좌의 뒤에서, 황금 사자가 천천히 걸어 나와 어두운 옥좌 옆에 엎드렸다.
+가웨인. 원래 그곳에 있어야 할 것처럼 자리해서는, 영원처럼 존재하는 주위 벽면의 조각과 함께 제국의 긴 시간에 걸친 흥망성쇠의 세월을 일순간 그 눈에 담았다.
+그리고 그 순간, 그 검은 눈동자는 당신의 모습을 비췄다.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#4$2",focus="m")]
+[name="비나"]……선생님?!
+[dialog]
+[charslot]
+[Decision(options="……;……내 앞에 모습을 나타낸 건 처음이네.", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="두려워하지 않아도 좋다. 나는 괴물도, 환영도 아니니까.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="내가 모습을 드러낸 건, 필요한 일이기 때문이지.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="비나는 생각지도 못한 위험한 길에 스스로 발을 들였다. 더 성장해야만 하지. 그리고 그런 비나를 이끄는 건 그대다.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="n")]
+[Decision(options="로도스 아일랜드는 애초부터 비나의 런디니움 관련 업무에 협력하고 있었어.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="내가 신경 쓰는 점은 그런 게 아니다. 빅토리아에는 본래 흥망성쇠의 숙명이 있다. 거기에 내가 관여할 생각은 없지만.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=740)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="하지만 그대들은, 이 대지의 숙명을 마주하는 길…… 옅은 희망만이 존재하는 길로 비나를 이끌었다.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="원래라면 나는 옛 친구와의 약속을 지키기 위해, 비나가 생명의 종착점으로 향하는 길을 같이 걸으려 했지. 하지만 지금, 나도 나 자신을 장담할 수 없게 되었다.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="n")]
+[Decision(options="……우리는 이 이상 더 많은 사람을 휘말리지 않게 할 거야.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="나는 비나를 이해한다. 그날이 오면 비나는 반드시 로도스 아일랜드 곁에 서겠지. 그대들 역시 더 많은 힘을 필요로 하고 있다. 하지만 그날, 그대는 어디에 서 있을 것인가?", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="답할 필요는 없다. 비나가 나 대신 봐주겠지.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="그대는 그녀의 부하도, 선생도 아닌 데다 적대할 이유도 없다.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st4", text="이미 알 거다. 그대와 그녀의 관계는 유일무이하다는 것을.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st4", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st5", text="아직 우리에게는 재시도할 기회가 있을지도 모르겠지만, 비나는 그렇지 않다.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st5", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#10$2",focus="m")]
+[name="비나"]……
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="……비나, 나는 네게 생존에 관한 건 모두 가르쳐 주었다. 하지만 어떻게 해야 다른 이의 희망이 될 수 있는지는 가르쳐줄 수 없지……", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="눈앞에 있는 인물이라면 가능할 터.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="n")]
+[Decision(options="내가 해야 할 일은 잘 알고 있어.",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="자 그러면 비나가 신뢰하는 이여, 비나의 손을 이끌어다오. 그대는 비나의 불씨이자 동력원일지니.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="비나, 망설여질 때는 이 사람의 생각에 귀를 기울여 보도록 해라.", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice",fadetime=0,screenadapt="coverall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>의장실</><p=2>1098년 12월 10일 7:32 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",duration=0.7)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="델핀"]저기 비나 씨, 이 기계는 뭐야?
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]락락이 만든 실험작이야. 노동자들의 피로를 풀어줄 수 있다고 꼭 써 보라더군. 졸릴 때는 그냥 그대로 자는 편이 낫지 않아?
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="델핀"]그래서, 효과는 있어?
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[delay(time=0.5)]
+비나는 하품을 하며 눈을 비비고는, 앞에 놓인 문서를 쳐다보았다.
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[name="비나"]없어.
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="비나"]하지만 국가 반역자 '밀스카'의 소탕을 바라는 100명의 청원서에 40부 이상이나 답장하고 있으려니 아무래도 졸리는군.
+[name="비나"]이 건으로 충돌을 일으켰던 외부 시민들은 좀 진정됐나?
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="델핀"]응. 혼 씨가 주둔지에서 아직 연습 중이던 도시 방위군을 급하게 데리고 갔어.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]……소란으로 번지지 않았다면 다행이군.
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="델핀"]양측 데모 참가자 중에는 병사의 가족이나 전우도 있다 보니까, 설득 효과가 놀랄 정도로 바로 나타났어. 하아. 아직도 '밀스카'를 지지하는 사람들은 머리 구조가 어떻게 된 건지.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]너무 탓하지 마. 먼저 약속을 어긴 건 의회니까. 우리 약품 공급에도 문제가 있었고, 그쪽 약이 확실히 일부 사람들에게는 살아갈 희망이 되기도 했어.
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="델핀"]그러나 그건 결국 잠깐의 위안일 뿐이야.
+[name="델핀"]비나 씨, 나는 비나 씨가 도시 방위군을 보낸 목적이……
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]폭력으로 상대를 내쫓기 위해서? 폭력으로 죄 없는 동포를 억압하는 건 가장 나약하고 효율이 낮은 방법……
+[dialog]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#10$1",focus="l")]
+[name="비나"]왜 그런 눈으로 보는 거지?
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="델핀"]그냥 쓸데없는 걱정을 했구나 하고 생각했을 뿐이야.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]놀리지 마. 이 역할을 제대로 연기하기에는 아직 멀었어. 하지만 다행히 힘을 빌려줄, 신뢰할 만한 사람들이 있지.
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[name="비나"]선생님, 박사, 그리고 너…… 아주 많은 사람이.
+[dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+비나는 기지개를 켜고, 락락이 만든 실험작을 떼어낸 다음 그제야 긴 한숨을 내쉬었다.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]만약 네 첩자나 로도스 아일랜드의 동료가 공유하는 정보가 없었더라면, 나는 당황하는 것 말고는 아무것도 할 수 없었을 거야.
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="델핀"]하지만 '밀스카' 건은……
+[charslot(slot="l",name="avg_1019_siege2_1#2$1",focus="l")]
+[name="비나"]출처 불명의 위험 약물 판매, 고리대금, 살해 협박…… 그리고 살카즈와의 결탁……
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="비나"]모든 증거가 내 손안에 있고, 전부 사실이라는 것도 확인했어. 일부 사람들이 수혜를 입고 있는 상황이라고 해서 그냥 놔둘 수는 없지.
+[charslot(slot="r",name="avg_4110_delphn_1#5$1",focus="r")]
+[name="델핀"]비나 씨, 알레데일 씨는……
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="비나"]이건 알레데일 혼자만의 문제가 아니야, 델핀.
+[name="비나"]그 재앙 이후에 힘들게 얻어낸 평온을 누군가가 파괴한다는 건, 다들 원하지 않아.
+[name="비나"]……의회는 시민의 안전을 약속했지. 그리고 내가 뭘 해야 하는지는 알고 있어.
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="델핀"]알겠어. 우리의 오랜 친구 하나가 알레데일의 단서를 가지고 있는데, 당신이라면 흥미가 있을지도 모르겠네.
+[dialog]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="all")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="w1")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="w2")]
+[stopsound(fadetime=2, channel="w1")]
+[stopsound(fadetime=2, channel="w2")]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[name="델핀"]참, 박사에게 들은 조언에 대해서 신중하게 생각해 봤어.
+[name="델핀"]이 근래 발생한 귀찮은 일들을 처리하고 나면, 일단 윈더미어령에 돌아가서 원래 내 것이었던 것들을 가지러 돌아가려고 해.
+[name="비나"]얼마나 걸리지?
+[name="델핀"]몰라. 하지만 박사가 말한 대로, 당신을 도우려면 어머니가 남기신 것들이 필요해……어머니가 돌아가신 직후에는 거절했었지만.
+[name="비나"]고맙다.
+[name="델핀"]이건 나 자신을 위한 것이기도 해. 빅토리아, 윈더미어 영지, 린카딘. 어머니가 눈에 담아두셨던 것들을 내 눈으로 봐둘 필요가 있으니까……
+[name="델핀"]그래야만, 어머니에게 조금씩 가까워질 수 있을 거야.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u",fadetime=0,screenadapt="coverall")]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_229_1#2",duration=0.7)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="부상당한 파라곤 부대 병사"]상관님…… 지금도 상관이라 부르는 걸 용서해 주십시오. 서, 설마 만나러 오실 줄은!
+[name="부상당한 파라곤 부대 병사"]제 신청서가 승인됐습니까?!
+[charslot(slot="l",name="avg_npc_229_1#2",focus="l")]
+[name="혼"]워커, 피트가 너를 데모 현장에서 데리고 온 뒤의 일은 들었다. 보아하니……
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="워커"]……그러면 그 일로 오신 게 아니군요. 실은 저 매일 라디오를 듣고 있습니다, 상관님.
+[name="워커"]당신이 재편을 담당한 도시 방위군이 수성포 인계식에 참가한 것도, 도시 바깥의 부속 훈련 구역이 막 준공됐다는 것도 알고 있습니다.
+[name="워커"]굳이 도시 밖에까지 나가서 직접 보고 왔는데, 훈련 시설이 완벽하게 갖춰져 있었어요. 제가 거기서 훈련하는 모습까지 상상할 수 있을 정도로요……
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="혼"]미안하다, 워커. 네 도시 방위군 가입 신청은 승인할 수 없어.
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="워커"]……
+[name="워커"]알겠습니다. 아직 제가 도시 방위군이 될 만한 수준이 아니라고 하신다면, 계속해서……
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="혼"]자기 몸 상태는 잘 알고 있잖아. 이대로 다른 병사들과 훈련하면 스스로를 다치게 할 뿐이다.
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="워커"]하지만 제 병은 이미 안정된 상태고 약도 먹고 있습니다. 몸에 자라난 돌도 오랜 시간 아프지도 않았단 말입니다! 저는 이미 회복……
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="혼"]그거 '밀스카'의 약이지? 성분을 분석해 봤는데, 그건……
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="워커"]통증을 잠깐 억제할 뿐이죠. 알고 있습니다.
+[name="워커"]하지만 지금 저희에게는 이게 필요합니다. 의회가 배분하는 약으로는 부족해요. 아닙니까, 상관님?
+[name="워커"]최소한 그 약으로 통증을 줄이면 한 손으로 석궁을 드는 연습은 할 수 있을지도 모릅니다. 반드시 도시 방위군 시험을 통과해 보이겠습니다, 상관님.
+[name="워커"]“사는 게 *빅토리아 비속어* 어렵더라도, 살아서 돌아갈 곳만 있다면 희망은 반드시 보인다.” 이건 저희가 체틀리 카운티를 지키던 때 당신이 해 주신 말씀입니다.
+[Dialog]
+[charslot]
+[musicvolume(volume=0.3, fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>'파라곤 부대'</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>'우리는 기적을 만들어 낸다.'</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>하지만 기적이 막을 내린 후에는? 파라곤 부대는 어디로 향해야 하는가?</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>예전 파라곤 부대의 기적은 가울에 남아, 사관학교의 교과서에 실렸다고 혼이 얘기했었다. 그러면 우리는? 런디니움에 돌아가기까지는 실제로 누구도 이 문제에 대해 생각할 필요는 없었다.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>빅토리아인이 다시 자신들의 도시를 탈환했다고 도시 전체에 선언한 순간, 우리 부대에서 가장 어린아이가 물었다.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>“이제 우리는 어디로 가?”</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>나는 흥분해서 말했다. 집으로 돌아갈 거야. '어퍼컷' 복싱장으로 돌아가는 거다. 한나, 비나, 다그다도 같이. 너도 집에 돌아갈 수 있어, 라고.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>하지만 그 아이는 이렇게 말했다……</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>“우리 집은 없어졌어. 나한테는 누나들밖에 없어.”</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=0.5)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_405_1#12$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="모건"]다들 왔네. 내려갈까.
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="워커"]비나…… 의장입니까? 의장도 데모 건으로 저를 만나러 온 건지?
+[name="워커"]그러니까, 상관님이 저를 만나러 왔다는 건 그냥 감시하기 위해서라는 겁니까?
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="모건"]혼은 비나가 올 걸 알고 있었기 때문에 먼저 너를 구하러 온 거래. 우리도 다들 그렇기도 하고.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall", x=120,y=-150,xScale=1.5, yScale=1.5,block=true)]
+[delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+런디니움의 석양에 온도는 없다.
+다행히도, 살아남은 자는 과거에도 그랬는지 더 이상 기억하지 못한다. 그리고 새로 태어난 자는 여기에 적응해서, 원래부터 그런 것이라고 생각한다.
+더 샤드, 한때는 이 오랜 이동도시에 명예를 가져다준 건축물이지만, 지금은 그 그림자에 발을 들이려는 자는 거의 없다.
+그날. 그 진홍빛 하늘 아래, 진정한 공포가 더 샤드 끝에 강림한 것을 잊은 자는 없다.
+[Dialog]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall",fadetime=2,block=true)]
+[delay(time=1)]
+그리고 지금, 드문드문 보이는 사람들 사이로 어깨를 나란히 한 두 사람이 지나가며 길고 긴 그림자를 드리우고 있었다.
+주변에서 바쁘게 움직이던 사람들은 가볍게 고개를 숙이고는 다시 하던 일에 집중했다. 그러면서 그들은 가볍게 흥얼거리고 있었다.
+우리를 즐겁게 노래하게 하소서♪
+빅토리아, 나의 고향이여!♪
+[Dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="l")]
+[name="비나"]아무래도 더 샤드의 개조는 우리 예상보다 빠르게 진행되고 있는 것 같군.
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="델핀"]로도스 아일랜드가 상당 부분 도와줬어. 약 공급이나 감염자 치료뿐만 아니라, 도시 재건이 진행되는 것도 엔지니어링부 동료들의 지원 덕분이지.
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="델핀"]역시 그 이변이 모두에게 남긴 트라우마는 매우 깊었던 모양이야. 그렇기 때문에 더 샤드 개조 안건이 빠르게 가결될 수 있었지.
+[name="델핀"]마침 도시에서 비정상적으로 자라나던 오리지늄 결정들도 함께 정리할 수 있게 됐어.
+[name="델핀"]하지만 자경단 복구 담당 팀의 얘기로는, 에너지 동력층까지 영향을 끼친 탓에 예전 상태로 복구하기에는 아직 시간이 걸릴지도 모른다고 해.
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="비나"]그러면 더 샤드의 핵심 기술 회수 작업을 위한 인선은 결론이 났나?
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="델핀"]일단 목록은 나왔어. 일부 기술자와 학자의 배경 조사가 아직 진행 중이지만, 이 자들 배후에…… 전부 그들의 그림자가 있어.
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="비나"]그들이 누군지는 알고 있어. 대공작 몇 명이 이미 연락을 줬거든. 목록에 큰 문제가 없다면 신경 쓰지 말고 못 본 척하면 돼.
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="비나"]……나는 오히려 그들이 탑 내부 잔해 더미에서 가치 있는 걸 찾아줬으면 좋겠어. 그게 빅토리아에게는 좋은 일이기도 하고.
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="델핀"]흥, 눈에 불을 켜고 경쟁해 준다면 확실히 우리에게는 좋은 일이겠지.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_229_1#6",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="혼"]비나 씨, 델핀 씨.
+[charslot(slot="m",name="avg_4110_delphn_1#11$1",focus="m")]
+[name="델핀"]혼 씨? 당신은 분명……
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="혼"]마침 옛 동료를 만나러 와서요.
+[name="혼"]저는 신경 쓰지 않으셔도 됩니다. 백파이프가 담당하는 도시 방위군 견습들의 훈련 성과를 체크하러 가려는 참이니까요.
+[Dialog]
+[charslot]
+혼은 기지개를 켰지만, 떠날 생각은 전혀 없어 보였다. 비나는 한숨을 내쉬었다.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot="m",name="avg_npc_405_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_405_1#1$1",focus="m")]
+[name="모건"]비나! 비나! 워커랑 무슨 얘기를 했는지 상상도 못 할걸? 체틀리 카운티에서 우리랑 함께 왔던 데이비스 부부의 아이가 태어났다고……
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="비나"]……모건, 왜 너희가 여기에 있는지 알고 있어.
+[name="비나"]워커와 데모 건에 대해서는 의회가 결론을 내겠지. 나는…… 이 건에 손을 대서는 안 돼.
+[name="비나"]나는 단지 '밀스카'의 행방에 대해 얘기하러 온 것뿐이야.
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="모건"]……
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="워커"]두 분 다 감사합니다. 하지만 의장을 곤란하게 할 필요는 없습니다.
+[name="워커"]저는 의회를 믿습니다. 의회에 아는 사람이 많은데, 다들 매우 좋은 사람들이죠.
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="델핀"]의회는 당신이 생각하는 것처럼 단순하지 않습니다. 오히려 일을 키우려는 사람도 있죠.
+[name="델핀"]하지만 '밀스카' 건의 해결이 빠르면 빠를수록 당신들에게는 좋은 일이 될 겁니다.
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="워커"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Image(image="55_i17_2", screenadapt="coverall",block=true)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>한때 우리와 함께 도시에 돌입했던 병사는 노을 속에 서서 우리의 '심문'에 답했다.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>비나가 의회에 영향을 끼칠 수 있다는 것을 모두 잘 알고 있었다…… 비나가 바라기만 한다면.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>비나는 이미 글래스고에만 속한 것이 아니라고, 확실히 깨달은 것은 그날부터였다.</i>",block = true)]
+[Sticker(id="st1")]
+[playsound(key="$d_avg_paper1",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_sketchdraw",volume=1)]
+[Image(image="55_i05_2", screenadapt="coverall",fadetime=3,block=true)]
+[Delay(time=2)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>어쩌면 그날 오후, 내가 알던 비나는 이미 작별을 고한 것일지도 모른다.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>그때, 도시 전체의 공장이 동시에 가동하면서 굉음과 함께 하늘까지 증기를 내뿜었다.</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>비나의 금빛 머리카락은 열풍에 흩날리며 일순간 눈에 고였던 눈물을 감추었다. 그녀는 미소와 함께 돌아보며 말했다――</i>",block = true)]
+[Sticker(id="st1")]
+[stopmusic(fadetime=1)]
+[Sticker(id="st2", text="“집에 돌아왔다.”", x=300, y=270, alignment="left", size=24, delay=0, duration=1, width=700,block = true)]
+[Delay(time=1)]
+[Sticker(id="st2", duration=1,block = false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>집에 돌아왔다. 하지만 모든 것이 예상한 대로 될 리는 없다.</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>나는 무섭다. 귀향은 이별이라는 것이……</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>나는 무섭다…… 비나를 잃는 것이.</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[PlayMusic(key="$m_avg_epic_loop", volume=0.6)]
+[Image(image="55_i05_1", screenadapt="coverall",fadetime=3,block=true)]
+[PlaySound(key="$d_avg_armycrowd", volume=0.6)]
+[PlaySound(key="$d_avg_audience_chaos", volume=0.5)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“공장이 우리를 환영하고 있어?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“지, 진짜로 도시에 아직 살아 있는 사람이 잔뜩 있었어!!”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“너희는 왜 우리를 방해하지?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“죄송합니다…… 공작의 명령입니다. 결론이 날 때까지 파라곤 부대는 더 이상 마음대로 행동할 수 없습니다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“왜 나한테 석궁을 겨누는 거지?!”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“조금 전까지는 옆에서 함께 싸우지 않았나?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……우리는 어떻게 해야 하지? 도시 사람들이…… 화내고 있어?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>런디니움</><p=2>1098년 9월 28일 5:27 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.4)]
+[PlaySound(key="$d_avg_steamburst", volume=0.6,channel="machine1",delay=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.6,channel="machine2",delay=2)]
+[PlaySound(key="$d_avg_steamburst", volume=0.8,channel="machine3",delay=2.5)]
+[PlaySound(key="$d_avg_steamburst", volume=1,channel="machine4",delay=3)]
+[PlaySound(key="$d_avg_airshiptakeoff", volume=0, loop=true, channel="machine")]
+[SoundVolume(volume=0.6, channel="machine",fadetime=4)]
+[PlaySound(key="$factory_low_drone", volume=0.4, loop=true, channel="f")]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[delay(time=2)]
+도시가 화내고 있다.
+[name="모건"]비나, 우리를 가로막고 있던 연합군 부대가…… 철수하고 있는데?
+[name="인드라"]왜 갑자기 공장이 전부 가동하기 시작했지? 정보대로라면 살카즈가 도시 전체에 일시 계엄령을 내린 거 아니었어?!
+[name="다그다"]……이 공장은 알아. 여기 방향은 죽어도 못 잊지.
+[name="다그다"]저기는 요크 거리의 '마일스 공업'이야! 저쪽은 스코트 거리의 '코폴라 식품 공장!' 그리고 저기는!
+[name="다그다"]'콘솔리데이트', '핸킨스', '사우스 위커 운송'……
+[name="다그다"](흐느끼며) 비나, 나, 나는 이 공장들이……
+[dialog]
+멈춘 곳, 폐기된 곳, 살카즈에 징용된 곳, 그리고 전전긍긍하면서도 어떻게든 가동하고 있는 곳.
+도시 전체의 공장이 거의 동시에 전력으로 가동됐기 때문에, 성 밖 전장에서 도시로 정신없이 후퇴하던 살카즈는 이를 볼 여유도 없었다.
+강철 기계의 숨결을 증기로 내뿜으며, 공장이 분노로 울부짖고 있다.
+[name="모건"]이건…… 무슨 일이 일어나고 있지?
+[name="비나"]그들이 우리를 도와준 거야. 런디니움이 우리를 도와주고 있어.
+[name="연합군 군인"]꾸물거리지 말고 전진하십시오, 파라곤 부대. 모든 것을 끝장낼 때입니다.
+[name="연합군 군인"]연합군 제6종대 제10보병단 다이앤 웨버 중위가 명령한다. 전원 무기를 내리고 파라곤 부대를 호위하라!
+[name="비나"]공작들의 명령을 거역할 셈인가?
+[name="다이앤"]저는 군인이기 전에, 여기서 태어난 런디니움인입니다…… 그리고 여기는 제 집이기도 하죠.
+[name="다이앤"]더 이상의 이야기는 필요 없습니다. 갑시다. 시즈, 조금만 더 버텨주시죠. 아직 함께 넘어서야 할 싸움이 남았어요.
+[name="다이앤"]우리의 것을 되찾기 위해!
+공작 연합군 부대 중 한 명이 손에 든 석궁을 내렸다. 그러자 뒤이어 나머지 부대가 길을 열었다.
+[name="비나"]……파라곤 부대, 계속해서 전진하라!!
+[dialog]
+[PlaySound(key="$d_avg_armywalking", volume=0.8)]
+[delay(time=2)]
+[name="비나"]집에 돌아왔다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[image]
+[Background(image="32_g4_ordnancefactory", screenadapt="coverall",block=true)]
+[charslot(slot="m",name="avg_4162_cathy_1#3$1",focus="m")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4162_cathy_1#3$1",focus="m")]
+[name="캐서린"]공장을 최고 출력으로 계속 가동하라고 해. 살카즈 놈들을 조금이라도 더 막아. 앞으로 조금이면 돼!
+[name="캐서린"]공작 놈들은 도시 안에 살아남은 빅토리아인이 거의 없다고 믿게 하려는 수작이다. 그놈들, 포위만 하고 공격하지 않는 걸 정당화하려고 하는 거지. 그렇다면 우리가 소리를 내줘야 하지 않겠나.
+[name="캐서린"]성벽 밖에 있는 놈들에게 우리는 아직 포기하지 않았다는 걸 보여줘라!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_864_1#9$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_864_1#9$1",focus="m")]
+[name="퍼시벌"]호흡이 잘 맞는군요, 캐서린 씨. 우리 쪽 사람들 한 번 믿어 보시죠. 다들 수완가니까요.
+[name="퍼시벌"]나인 일행도 다른 공장을 가동시키던 참입니다. 곧 도시 전체가 달아오를 겁니다.
+[charslot(slot="m",name="avg_4162_cathy_1#4$1",focus="m")]
+[name="캐서린"]……피스트, 너희도 돌아왔나?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_cherunder_2", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="m",name="avg_npc_400_1#12$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_400_1#12$1",focus="m")]
+[name="하이디"]가동했나요?
+[charslot(slot="m",name="avg_npc_012",focus="m")]
+[name="가드 오퍼레이터"]그래! 박사의 계획대로 다른 공장도 다시 가동하기 시작했어!
+[name="가드 오퍼레이터"]하지만 시민 말고도 우리를 도와주는 녀석들이 있어…… 그 녀석들……
+[name="가드 오퍼레이터"]리유니온이라고 하더군……
+[Dialog]
+[dialog]
+[StopSound(channel="machine", fadetime=2)]
+[StopSound(channel="f", fadetime=2)]
+[StopSound(channel="e", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="50_g13_warshipcommandroom", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="l",name="avg_npc_1068_1#1$1")]
+[charslot(slot="r",name="avg_npc_726_1#1$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_1068_1#1$1",focus="l")]
+[name="고도딘 공작"]……이 도시에 이렇게 활력이 가득한 건, 요 근래 몇 년은 못 봤는데요.
+[name="고도딘 공작"]아까 연락을 받았습니다. 연합군 부대가 먼저 파라곤 부대에게 길을 열어줬다고 말이죠.
+[name="고도딘 공작"]이건 우리가 내린 명령이 아닙니다. 이번 결과, 만족스러우신지요?
+[charslot(slot="r",name="avg_npc_726_1#1$1",focus="r")]
+[name="캐스터 공작"]그래. 아무래도 우리는 '기적'의 영향력을 우습게 본 거 같아.
+[name="캐스터 공작"]이렇게 된 이상, 그 건의 준비를 먼저 시작하도록 할까.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="21_G7_decisivebattlealley_d", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="수수께끼의 용병"]보스, 아무래도 굳이 소란을 피울 필요는 없을 것 같습니다.
+[name="수수께끼의 용병"]저자들, 알아서 파라곤 부대를 통과시켰습니다.
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1", bstart=0.2,bend=0.7,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]주변 복병을 후퇴시키고, 우리가 빼앗은 공장 쪽 지원으로 돌려.
+[name="???"]그리고 책임자들에게 전해. 내가 끝났다고 말할 때까지 화로에 불이 꺼지지 않도록 하라고.
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="수수께끼의 용병"]넵.
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=0.7)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]……
+[name="???"]어서 와, 비나.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>의장실</><p=2>1098년 12월 10일 9:28 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="비나"]그래, 의장실이다.
+[name="비나"]안심해라. 워커는 무사하다. 의회가 이 건으로 그를 괴롭힐 일은 없어. 다만 워커에게는 당분간 조심하라고 전해 둬.
+[name="비나"]우리를 감시하는 자들이 거기에도 뭔가 불이익을 줄지도 모르니까.
+[name="비나"]그리고…… 그쪽 진척은 어떻지?
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="비나"]……알겠다.
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1019_siege2_1#9$1",focus="m")]
+[name="비나"]이제야 겨우 찾아낼 수 있겠군……
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="비나"]알레데일.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
