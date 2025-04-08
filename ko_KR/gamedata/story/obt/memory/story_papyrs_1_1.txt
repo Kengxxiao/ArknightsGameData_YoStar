@@ -1,0 +1,543 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_indoor4",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[name="차분한 목소리"]아직 안 깨어났어?
+[name="긴장한 목소리"]아직이야, 의사 선생. 마을 사람들 모두가 여기서 오후 내내 기다리고 있었다고.
+[name="파피루스"]윽……
+[name="차분한 목소리"]혹시 급하게 진료를 받아야 할 사람이 더 있나?
+[name="긴장한 목소리"]우린, 우리는 급하지 않으니 저 여자아이를 먼저 구해줘! 저주에 걸린 것 같아!
+[name="차분한 목소리"]저 소녀가 대폭포 쪽에서 왔다고?
+[name="긴장한 목소리"]맞아. 처음에 내가 아이를 이리저리 살펴봤는데, 돌이 생기지도, 다치지도 않았었어. 단지 저 석판을 계속 안고 있더라고.
+[name="긴장한 목소리"]오전에는 입에서 이상한 소리까지 났어. 얼마 지나지 않아 곧 조용해졌지만.
+[name="긴장한 목소리"]근데 방금 보러 갔을 때는, 거의 숨이 끊어질 것 같더라!
+[name="차분하지 않은 목소리"]……뭐? 왜 그걸 진작 말하지 않았어?!
+[name="긴장한 목소리"]만약 저 애를 구할 수 없다면, 적어도 저주라도 풀어줘. 여기는 우리 집인데……
+[dialog]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[delay(time=3)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_163#1",duration=1)]
+[delay(time=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="떠돌이 의사"]이봐, 아가씨, 내 말 들려?!
+[charslot]
+[name="파피루스"]너무…… 무거워요…… 으으……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……대체 누가 석판을 가슴 위에 올려놓은 거야?
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]됐어, 석판은 내가 치웠단다.
+[charslot]
+[dialog]
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1",duration=1)]
+[delay(time=1.5)]
+[name="파피루스"]……후!
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]다행이야, 아직 반응이 있네. 지금은 좀 어떠니?
+[charslot(slot="m",name="avg_4139_papyrs_1#3$1")]
+[name="파피루스"]저……
+[charslot(slot="m",name="avg_4139_papyrs_1#3$1")]
+[name="파피루스"]……민트 맛 주바이르…… 아이스크림이 너무 먹고 싶어요……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]정말로 완전히 회복된 게 맞니?
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="파피루스"]네, 의사 선생님. 제가 전문적인 의학 지식은 없지만…… 예전부터 더위를 먹고 기절한 경험이 많아서……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]휴, 아가씨, 이런 날씨에 더위를 먹는 건 정말 드문 일이야. 다른 데는 불편한 곳 없고?
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="파피루스"]몸은 괜찮아요. 다만, 몇 가지 궁금한 게 있어요.
+[dialog]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="파피루스"]이 식물의 잎이 책에서 말한, 향기가 시원하고 정신을 맑게 해주는 수뇌향이 맞나요?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……빨리 버리렴.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]네가 말한 수뇌향이 뭔지는 잘 모르겠지만, 네 손에 있는 잎을 으깨서 이마에 바르면 산성 원석충이 모여들 거라는 건 보증하마.
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="파피루스"]저, 저기…… 그럼 이 과일은요? 혹시 여행 중에 체력을 보충할 수 있는 비상식량이라도 될 수 있을까요?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]그걸 먹었다간 사후세계를 보게 될 거야.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……뭘 쓰고 있는 거니? 노트?
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="파피루스"]네, 이건 제가 쓰고 있는 《여행 초보 계획(최종판)》이에요. 여행을 떠나기에 앞서 제가 만반의 준비를 마치고 출발할 결심을 했다는 것을 의미하죠…… 지금은 ‘최종판-수정판 초안’이 됐지만요……
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="파피루스"]가르침을 주셔서 감사합니다. 혹시 다른 야외 생존 팁이 더 있을까요?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]있지.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]빨리 집으로 돌아갈 것. 이 근처에는 구경할 만한 건 없단다.
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="파피루스"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="파피루스"]네, 알겠습니다.
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]저 아이가 정말 완전히 회복됐다고 확신해?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]본인이 그렇게 말했으니까.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]난 아닌 것 같아. 난 아직도 저 아이가 저주에 걸려있는 것 같은데.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]아침에 나랑 누님이 물가에서 저 아이를 발견했을 때는 이미 기절한 상태였어. 분명 들어가면 안 되는 숲에 들어갔던 거겠지.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]그 와중에도 저 아이는 계속 중얼거렸어. 그것도 엄청 큰 소리로. 내가 듣기엔 걔가 정신이 맑을 때보다 더 또렷한 것 같았어.
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]맞아. 저 아이가 무슨 토템이니, 내장이 든 항아리니 하는 것들을 찾는다고 했어…… 심지어 다른 사람들에게 자기를 위해 일하라고 명령까지 하기 시작했지.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]맞아, 나도 아주 잘 기억하고 있어! 쉴 새 없이 이건 죽은 지 몇 년이 되었고, 저건 묻힌 지 몇 년이 되었다는 둥 말했어. 과연 이게 정상적인 사람이 할 수 있는 말이야?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]음……
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]만약 저 아이가 또 이상한 행동을 하면, 나는 나무를 베는 것처럼 깨끗이 베어버릴 거야!
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]다들 너무 걱정하지 마. 저 아이는 허약해서 다른 사람에게 해를 끼치긴커녕, 혼자서는 멀리 갈 수도 없으니까.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]자, 다음 진료를 받을 사람……
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[PlaySound(key="$rungeneral", volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="파피루스"]살, 살려주세요……!
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]앗, 왜 이렇게 많은 원석충이 몰려 온 거지?!
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]다, 다, 다, 당황하지 마! 우리가 도와줄게!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="파피루스"]……죄송합니다.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]내가 분명 그 식물이 원석충을 불러 모은다고 경고하지 않았니?
+[charslot(slot="m",name="avg_4139_papyrs_1#9$1")]
+[name="파피루스"]……마을을 나가던 길에 그만 발이 걸려 넘어졌어요……
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="파피루스"]……그런데 하필이면 머리를 나무에 부딪혀서, 나무뿌리 밑에 있던 원석충이 놀라서 튀어나왔고, 스스로 보호하는 과정에서 오리지늄 아츠를 사용하다가 그만, 조준을 잘못한 거예요……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……너무 무리하지 마.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]전에 아미르가 너와 비슷한 사람들을 이곳에 보낸 적이 있어. 그들은 이곳저곳을 뒤지며 주워온 돌을 보물로 여겼지.
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="파피루스"]그다음은요? 아무것도 찾지 못했나요?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]그걸 내가 어떻게 알겠어. 내가 아는 건 단지 그들이 왔다가 갔고, 이곳의 생활은 아무런 변화도 없었다는 사실뿐이야. 그들이 파낸 작은 구멍 따위는 한 번의 홍수로 평평해졌고.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]만약 네가 정말로 이곳에서 어떤 ‘역사’를 찾을 수 있다고 생각했다면……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]괜찮아요, 저는 실망하지 않아요.
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="파피루스"]이번에는 결심했거든요. 어렵게 나온 만큼, 반드시 제 눈으로 이곳의 모든 것을 똑똑히 보겠다고.
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="파피루스"]전 이 석판에 있는 고대 문자를 해독할 수 있으니, 이 정보를 따라 끝까지 조사할 거예요…… 설령 그게 가치 있는 발견이 아닐지라도요.
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="파피루스"]또, 저는 관련 서적들에서 '정글 부족의 불가사의' 100가지를 추렸다고요. 아무리 정글이 엄청나게 크다지만, 못해도 하나 정도는 마주치지 않겠어요!
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]하아, 이 약초들을 가져가렴. 더위를 식히고, 벌레를 쫓고, 구토를 멈추게 하고, 맹수의 주의를 피하는 데 도움이 될 거야…… 필요한 건 다 있어.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]나도 곧 다른 마을로 떠나야 하거든. 이곳 아다크리스 사람들은 친절하긴 하지만, 너를 이해하지 못할 수도 있어. 도움을 기대하기는 어려울 거야.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]네, 정말 감사합니다……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저기, 의사 선생님, 한 가지만 더 여쭤봐도 될까요? 여기 마을 사람들이 말하는 ‘저주’가 뭔지 아세요?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_falls_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]맞아, 이런 식으로 매듭을 지어서 덩굴로 자신을 묶은 다음, 반대편으로 건너가면 돼.
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]하지만 덩굴을 잡으려면 한 손을 놔야 하니까 네가 안고 있는 큰 돌은 내려놔야 할걸.
+[charslot(slot="m",name="avg_4139_papyrs_1#7$1")]
+[name="파피루스"]괜찮아요, 한쪽 팔로 끼고 있을 수 있어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]이건 그냥 돌이 아니에요. 표면에 글자가 새겨져 있다고요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]벌써 이런 석판을 여러 개 모았어요. 만약 비슷한 석판을 발견하면 가져다주세요. 꼭 보답할게요.
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]글자가 새겨진 돌? 그런 얘기 들어본 적 있긴 한데.
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="파피루스"]정말요? 누구에게 들었나요? 그 사람과 얘기할 수 있을까요?
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]아, 그 사람은 벌써 땅에 묻혔어. 저주받은 숲에 들어갔다가 돌아오지 못했지. 그 사람을 불쌍히 여겨야 하는지는 잘 모르겠네.
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="파피루스"]역시, 모든 기념비로 보이는 석판은 그 숲 변두리에……
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]뭐라고?
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="파피루스"]아, 아무것도 아니에요. 제가 반대편으로 건너가도록 밀어주실 수 있나요?
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]그럼! 하나, 둘, 셋……
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[CameraShake(duration=0.6, xstrength=8, ystrength=12, vibrato=30, randomness=90, block=false)]
+[name="파피루스"]으아아아아……
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[CameraShake(duration=0.6, xstrength=8, ystrength=12, vibrato=30, randomness=90, block=false)]
+[name="파피루스"]잠깐만…… 석판…… 떨어질 것 같아……!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_jump_water", volume=0.3)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_070#1")]
+[name="열정적인 마을 주민"]손 놓지 마! 석판 잡으려 하지 말고……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_jump_water", volume=1)]
+[CameraShake(duration=0.6, xstrength=8, ystrength=12, vibrato=30, randomness=90, block=false)]
+[delay(time=1)]
+[name="파피루스"]살, 살려주세요…… 끄윽……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_jungleentrance",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]파피루스, 돌아왔구나! 이번에는 한참이나 오래 나가 있길래, 네가 떠난 줄 알았어……
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]어머, 또 온몸이 젖었네? 설마 또 물에 빠진 거야?
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="파피루스"]아, 아니에요……비 때문에…… 에취!
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="파피루스"]지야아, 이 돌을 창고에 등록해줘…… 응, 이건 그 마을에서 준 일기예보 돌이야. 하지만 비가 올 걸 알아도 뭘 할 수가 없네……
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="파피루스"]윽, 지야아…… 왜 거기 멍하니 서 있기만 하고 일을 안 하는 거야?
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]너…… 누구랑 얘기하고 있는 거니?
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="파피루스"]……아니, 지야아가 아니네!
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="파피루스"]죄송해요, 방금 제가 무슨 말을 했든 다 잊어주세요……! 다른 마을은 없었어요. 없었으니깐요!
+[dialog]
+[charslot]
+[charslot(slot="r",name="avg_4139_papyrs_1#6$1")]
+[charslot(slot="l",name="avg_npc_072#1")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="l",posfrom="0,0",posto="100,0",duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",focus="l",posfrom="100,0",posto="50,0",duration=0.3)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="친절한 마을 주민"]……엄청 뜨겁네, 어쩐지 헛소리를 하더라니!
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="친절한 마을 주민"]휴, 저주인지 아닌지는 아직도 모르겠지만, 정말 불쌍하네. 일단 우리 집에 가서 좀 쉬자.
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="친절한 마을 주민"]병이 다 나으면 어떤 나무 기름을 옷에 발라야 하는지 알려줄게. 그걸 바르면 옷이 방수되니까, 원석충도 더는 네 다리를 타고 올라오지 않을 거야.
+[charslot(slot="r",name="avg_4139_papyrs_1#3$1",focus="r")]
+[name="파피루스"]감사합니다……
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="친절한 마을 주민"]이야, 매일 뭐가 그렇게 고마운지 모르겠네. 나무는 그저 거기 자라고 있던 거고, 누군가 와서 그게 유용하다고 말해준 것뿐이야.
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="친절한 마을 주민"]내가 너에게 말해준 것처럼, 나중에 너도 필요한 사람에게 말해주렴.
+[charslot(slot="l",name="avg_npc_072#1",focus="l")]
+[name="친절한 마을 주민"]자, 가자.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="건장한 마을 주민"]파피루스, 왜 나무를 자르고 있어? 힘이 좀 필요해 보이는데, 내가 도와줄까?
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="파피루스"]후…… 하…… 괜찮아요, 감사합니다……
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="파피루스"]저는 그냥 이 오리지늄 아츠로 작동하는 전기톱이 정말로 힘을 많이 절약해주는지 시험해보고 싶었어요……
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="건장한 마을 주민"]그 물건 꽤 대단해 보이네! 내가 한번 써봐도 될까?
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="파피루스"]물론이죠! 잠깐만요, 우선 어떻게 끄는지 좀 알아볼게요……
+[dialog]
+[PlaySound(key="$e_atk_saw_n_1", volume=0.7)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[delay(time=0.2)]
+[PlaySound(key="$e_atk_saw_n_2", volume=0.7)]
+[CameraShake(duration=1.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="건장한 마을 주민"]어, 잠깐만, 파피루스. 그걸 그렇게 빨리 움직이면 안 돼! 방향이 잘못됐어!
+[charslot(slot="m",name="avg_npc_073#1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="건장한 마을 주민"]빨리 비켜!
+[Dialog]
+[charslot]
+[PlaySound(key="$leaveshake")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[playsound(key="$smallearthquake")]
+[Delay(time=5)]
+[PlaySound(key="$leaveshake")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_land_impact", volume=1)]
+[playsound(key="$smallearthquake")]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[delay(time=4)]
+[Background(image="bg_village_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="파피루스"]죄, 죄송해요……!
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="건장한 마을 주민"]하하! 역시 파피루스, 네가 매번 나갔다 올 때 가져오는 물건들은 참 유용하네!
+[charslot(slot="m",name="avg_4139_papyrs_1#4$1")]
+[name="파피루스"]그, 그런가요…… 어쨌든, 지붕은 제가 고쳐 드릴게요……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="bg_village",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]오, 이거 정말 좋은데!
+[charslot(slot="m",name="avg_4139_papyrs_1#6$1")]
+[name="파피루스"]잠깐만요, 그 석판은 파울비스트의 알을 부치는 데 쓰는 게 아니에요……
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]넌 그냥 위에 있는 그림을 보고 싶어 하는 거잖아. 석판은 나중에 깨끗이 닦아서 돌려줄게.
+[charslot(slot="m",name="avg_4139_papyrs_1#3$1")]
+[name="파피루스"]알겠어요……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]이제 저주가 두렵진 않으세요?
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]너는 석판을 한 무더기 주워왔는데도 별일 없잖아, 두려워할 게 뭐 있겠어? 최근에 내가 일부러 할머니가 묻힌 돌무덤을 보러 갔었는데 할머니가 튀어나와서 말을 걸지 않으시더라구. 그런 걸 보면 이곳에 나쁜 일이 딱히 생기지 않았다는 뜻이지.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]할머니가…… 이전에도 나와서 말을 거신 적이 있나요?
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]없어, 하하! 너도 알잖아, 난 평생 운이 정말 좋았다고!
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]그런데 파피루스, 너는 왜 네 이야기는 한 번도 하지 않니?
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]난 너한테 내가 처음 사냥한 동물을 잡을 때 사용한 나무에 대해서까지도 이야기했는데. 정작 너는 네가 어디에서 왔는지, 마을에 몇 명이 있는지, 권투 대회에서 몇 등을 했는지 도통 말한 적이 없어……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저는…… 저는 그냥 말할 게 별로 없어서.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저는 예전에 친구들과 어울리긴커녕, 가문의 저택 밖으로 나갈 일조차 별로 없었어요. 제 삶에는 오직 책만 있었죠.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]오, 책! 너희 쪽 상인들은 어떤 책을 팔아? 나는 그림만 있는 책을 좋아하는데!
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]아니 그, 생각하시는 책과는 좀 다를 거예요……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저희 가문은 학자 집안이라 집에 많은 귀중한 책들을 소장하고 있거든요. 대대로 서적을 보관하고 늘려가는 일에 힘써왔어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]물론 책의 주제는 다양하지만, 아버지께선 그 도시 대부분의 사람처럼 역사야말로 모든 지식 중에서 가장 고귀한 분야라고 생각하셨죠.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저는…… 제가 그것을 진짜 좋아하는지 아니면 다른 선택이 없어서 익숙해진 건지 모르겠어요. 어쩌면 저 자신의 삶보다 오히려 2000년 전 사람들의 삶에 더 익숙할지도 몰라요.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]2000년 전? 와, 그건 내 할머니의 할머니의 할머니……
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]세지도 못하겠네. 파피루스, 하지만 넌 재미있는 이야기를 많이 알고 있잖아!
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]재미있는 이야기?…… 맞다, 한때 일부 학자들은 2000년 전 맨티코어가 정글 지역의 지배자였고 숭배의 대상이었다고 추측했어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]학자들의 추측은 대형 고분에 묻힌 골격에 근거한 것이었지만, 훗날 더 발전된 기술을 통해 그들이 골격을 복원하는 과정에서 상상력을 과하게 발휘한 것으로 밝혀졌어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]학자들이 몇몇 뼈를 잘못된 위치에 배치하는 바람에 아다크리스가 맨티코어의 특징을 가지게 만든 거예요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]아다크리스에 대해 말하자면, 또 하나 유명한 ‘재밌는 가설’이 있어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]아다크리스가 초기 역사에 흔적을 남기지 않은 이유는 그들의 지혜와 기술이 이미 현대의 사르곤 수준을 초월했기 때문이라는 거죠.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]그들은 이미 자신들의 지적 호기심을 충분히 충족해서 굳이 외부와 접촉을 더 원하지 않았고, 그 때문에 그들을 찾은 모든 탐험가의 흔적을 의도적으로 지웠다는 거예요.
+[charslot(slot="m",name="avg_4139_papyrs_1#13$1")]
+[name="파피루스"]그리고……
+[charslot(slot="m",name="avg_4139_papyrs_1#5$1")]
+[name="파피루스"]……아! 미안해요, 전문 분야에 대해 말하기 시작하면, 농담이라도 너무 많이 말하게 되네요.
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]사과할 게 뭐 있어? 모두가 들어본 적 없는 이야기를 네가 열심히 해줬잖아, 엄청 재밌었어.
+[charslot(slot="m",name="avg_npc_073#1")]
+[name="건장한 마을 주민"]맞아, 나는 그런 이상한 말을 듣자마자 마치 홀린 것처럼 빨려들었다고!
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]흠…… 알겠어요, 방금 제가 한 말들은 모두 학술사에서의 일화일 뿐이에요. 이해했든 못했든 너무 진지하게 받아들이진 마세요……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]제 삶은 책 속의 이야기 외에는 별로 할 말이 없는 것 같아요……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]이번처럼 굳게 결심하고 여행을 떠나기 전엔, 제가 어릴 때부터 살던 메나트 하마이트를 떠난 적이 딱 한 번밖에 없었어요.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]말해봐, 말해봐!
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="파피루스"]좋아요…… 어느 날, 저는 친구와 한 문헌의 해석을 놓고 논쟁을 벌였어요. 그런데 친구가 갑자기 책상을 치더니 과연 누구 말이 맞는지 다른 친구에게 물어보러 가자고 했죠.
+[charslot(slot="m",name="avg_4139_papyrs_1#2$1")]
+[name="파피루스"]그때는 둘 다 흥분해서, 학원의 교수님을 찾아갈 생각조차 하지 못했어요…… 친구가 한 상인단과 연락을 취했고, 우리는 그 상인단과 함께 출발했죠.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]처음에는 혹시 아버지가 이 일을 아시면, 제가 시간 아깝게 위험한 짓이나 한다고 꾸짖으실까 봐 무서웠어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]하지만 사실 그 이틀 동안 우리는 침실처럼 꾸며진 좋은 객실에 머물렀고, 저는 7시에 일어나는 규칙적인 생활을 유지하며 계속 책을 읽고 논문을 썼거든요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]우리가 만나기로 한 친구도 저희를 만나러 가장 가까운 마을로 와준 덕분에 편하게 만날 수 있었고요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]그 친구가 고분 발굴 현장에서 일부러 기괴한 각도로 찍은 공포 사진을 가져다준 것만 기억에 남긴 했지만……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]어쨌든 그 지역의 기후가 매우 나빠서, 저는 안전을 위해 여정 길 내내 객실 창문도 열지 않았어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]전 지금도 그게 옳다고 생각해요. 무엇보다 제 건강에 관련된 일이었으니까. 하지만 지금도 저는 종종 과연 그때 창밖은 어떤 모습이었을지 궁금해하긴 해요.
+[dialog]
+[charslot]
+눈앞의 마을 주민들은 이야기가 여기서 끝날 줄은 생각지도 못한 듯 멍하니 서로를 바라봤다.
+잠시 후, 누군가 파울비스트의 알을 빨아먹는 “쭈웁” 소리를 내며 대담하게 침묵을 깼다.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]질문이 있어. 객실은 어떤 모습이야? 대체 어떻길래 네 방을 가지고 다닐 수 있는 거야?
+[charslot(slot="m",name="avg_npc_072#1")]
+[name="친절한 마을 주민"]그러고 보니, 나도 궁금해, 학원은 어떤 곳이지?
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]……
+[dialog]
+[charslot]
+파피루스는 아다크리스들에게 둘러싸여, 많은 질문을 받았다.
+어떤 것은 예상했던 것이었지만, 또 어떤 것은 전혀 예상하지 못한 것들이었다.
+어릴 적 가장 익숙했던 서재에서부터 웅장한 바르야반다바드 박물관, 그리고 로도스 아일랜드라는 육지 함선까지.
+지루하고 답답한 것 같았던 그녀의 인생은 질문 하나하나 속에서 기묘해지며 다양한 색이 입혀졌다.
+마지막엔, 모두가 그녀의 이번 여행에 대해서 물었다.
+[charslot(slot="m",name="avg_npc_071#1")]
+[name="조급한 마을 주민"]질문이 하나 더 있어, 파피루스. 네가 매번 가져오는 신기한 물건들 말이야, 톱이라든지 비가 올 걸 예보하는 돌이라든지 이런 것들은 도대체 다 어디서 가져오는 거야?
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[delay(time=4)]
+[Background(image="bg_indoor4",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=2)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[name="열정적인 목소리"]더 크게 외쳐! 우리는 친구를 사귀러 가는 거니까, 딱 봐도 열정적이어야 해. 특히 상대방보다는 무조건 더!
+[name="열정적인 목소리"]파피루스가 알려준 구호를 외쳐! 그럼 절대로 문제없을 거야!
+[dialog]
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]“친구를 사귀러 간다”, 흠? 아가씨, 밖의 마을 사람들이 이렇게 대대적으로 금지구역으로 가려고 하는 건 네 아이디어지?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]난 네가 이미 떠난 줄 알았어.
+[charslot(slot="m",name="avg_4139_papyrs_1#10$1")]
+[name="파피루스"]제가 이렇게 자주 병에 걸리지 않았거나 길가에 쓰러지지만 않았어도, 정말 떠났을 거예요……
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]의사 선생님, 지난번엔 대들어서 죄송해요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]내 충고를 듣지 않았구나.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저는 단지, 만약 저주가 존재하지 않는 것이라면 그들이 그렇게 두려워하는 정글 너머도 그저 또 다른 마을일 뿐이니까, 그들이 조상의 전설에 갇혀 있어서는 안 된다고 생각했어요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]너는 ‘역사의 진실’을 고집하겠다는 거지. 비록 그것이 살아있는 사람들에게 상처를 줄지라도.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]아뇨…… 저는 반성했어요, 의사 선생님. 제 설명을 들어주세요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]선생님께서 말씀하신 것처럼, 두 마을이 접촉하면 어떤 일이 벌어질지는 저도 감히 상상할 수 없어요. 역사 속에서 마을 간의 유혈 충돌은 흔하니까요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]그래서 전 두 마을 사이를 오가며 그들 사이의 근원을 알아내려고 했어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]만약 역사의 어딘가에서 두 마을이 한때 친밀한 관계에 있었고, 지금까지도 공통된 의식이 남아 있다면, 양측은 우호적으로 접촉할만한 기반이 있을 거예요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]음, 하지만…… 결국 가장 큰 역할을 한 건 제가 가져온 각 마을의 작은 발명품들이었어요. 그것들이 서로의 호기심을 자극해서 결국 양측 모두 정글 너머의 친구들을 만나고 싶다고 제안했거든요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]그래서, 이건 네가 낸 아이디어가 아니라는 거구나.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]네. 지금 생각해보면, 저는 단지 전달자 역할을 했을 뿐이에요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]맞다, 의사 선생님. 앞으로 큰 폭포 근처에 다리를 건설할 계획이에요. 아마 이번에 떠나실 때부턴 정글에서 가장 독한 독기가 심한 곳을 돌아서 가지 않으셔도 될 것 같아요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……그럼 너는?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]꼬마 아가씨는 참 이상해. 사실 넌 충분히 예전의 아미르의 사자들처럼 냉방이 되는 철제 물건을 타고 여기까지 올 수도 있었잖아?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]내가 보기엔 네 지위가 그들보다도 더 높아 보이는데. 심지어 이 두 마을의 역사 정도는 누군가에게 부탁해서 조사하게 할 수 있었잖아.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]너는 애초에 전달자를 보내서 두 마을을 교류하게 하거나 심지어 합병하는 식으로 그들의 삶에 개입할 수 있는 능력이 있었어. 나는 그런 일들을 다 봐왔거든.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]대체 왜 이렇게 스스로 힘들게 하는 거야?
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]왜냐하면 저는 단지 ‘관광’을 하러 온 게 아니니까요…… 저는 창밖의 현실이 어떤 모습인지 알고 싶었어요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……
+[charslot(slot="m",name="avg_4139_papyrs_1#14$1")]
+[name="파피루스"]여행을 출발하기 전에, 제가 아주 존경하는 분께서 제게 이렇게 말씀하셨어요. 먼 길을 떠나는 의미는 스스로 발견해야 하고 그 의미를 잊으면 안 되지만, 그렇다고 하여 너무 고상하게 생각할 필요도 없다.
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="파피루스"]그래서 저는 노력했어요. 비록 결과적으로는 제 악몽만 더 풍부해진 셈이 됐지만……
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="파피루스"]그래도 직접 원석충을 보고 악몽을 꾸는 것이, 사무실에서 그들을 호기심에 만져보고 기쁨에 차서 그들의 광택을 기록하는 것보다는 나아요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]넌 정말 이상하구나.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]이제 이렇게 많은 고생을 했으니, 만족하니?
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저는…… 사실 사무실의 에어컨, 생수, 그리고 언제든지 열람할 수 있는 책들이 매일 그리워요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]동시에 날마다 사르곤의 긴 역사에 비해 제 한 걸음이 얼마나 미미한지도 몸소 느껴요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]이 점은 아버지가 맞았네요. 제 학술 연구에, 정글 속에서 있었던 이 몇십일은 결과적으론 정말 시간 낭비였죠.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]오랜 시간 동안, 저는 단지 한 가지 일을 끝내기 위해 여기 남아 있었어요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]석판들.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]맞아요.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]네가 현지인들에게 구호를 알려준 걸 보니, 석판에서 제법 많은 정보를 얻었나 보구나.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]사실…… 석판에는 전투에서의 공로만 기록되어 있었어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]의사 선생님께서 예측하신 대로, 아다크리스는 싸움을 좋아해서 예전에는 두 마을이 만나기만 하면 서로 죽이려고 했대요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]저는 상대 마을 방향으로 간 사람들이 돌아오지 않았기 때문에, 언제부턴가 마을 안에서 “그 숲이 인간을 저주한다”는 말이 생겨났다고 생각해요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]하지만, 현재 살아있는 사람들에게 과거의 진실이 중요하진 않죠. 안 그래요?
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]……좋아, 나도 이 비밀을 지켜주지. 아가씨가 떠난 후에도 두 마을이 오해해서 또 싸우지 않도록 나도 신경 쓰마.
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]이건 내가 나중에 길을 덜 돌아가도록 네가 다리를 만들어준 보답이야.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]정말 감사합니다…… 음, 이번에 떠나실 때 저를 데려가 주시면 더 감사할 것 같아요.
+[charslot(slot="m",name="avg_4139_papyrs_1#1$1")]
+[name="파피루스"]여기서 가장 가까운 도시에 무사히 도착해서, 일단은 먼저 아이스 주스를 한 잔 마시고, 로도스 아일랜드 사무소와 연락을 취하고 싶어요…… 돈은 드릴게요!
+[charslot(slot="m",name="avg_npc_163#1")]
+[name="떠돌이 의사"]네 원칙은 고수하지 않는 거야?
+[charslot(slot="m",name="avg_4139_papyrs_1#12$1")]
+[name="파피루스"]이제, 이제 떠나는 거잖아요!
+[charslot(slot="m",name="avg_4139_papyrs_1#11$1")]
+[name="파피루스"]그리고 마을 사람들이 두려워했던 숲으로 들어가 새로운 친구를 만날 팀을 꾸리기 시작했을 때, 저는 문득 깨달았어요.
+[charslot(slot="m",name="avg_4139_papyrs_1#11$1")]
+[name="파피루스"]어쩌면 첫걸음을 내딛는 것이, 그 무엇보다도 중요한 것일 수 있다는 걸요.
+[dialog]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[Image]

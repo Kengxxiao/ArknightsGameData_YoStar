@@ -898,6 +898,7 @@
   "mainlineNormalDesc": "일반적인 플레이 환경\n3★ 평가의 첫 클리어 보상에는 순오리지늄이 포함됩니다",
   "rejectSpCharMission": 1687503600,
   "addedRewardDisplayZone": "main_9",
+  "oneDiamondAp": 135,
   "richTextStyles": {
     "mission.levelname": "<color=#FFDE00>{0}</color>",
     "mission.number": "<color=#FFDE00>{0}</color>",
@@ -983,6 +984,11 @@
     "act.missiontips": "<color=#d9bd6a>{0}</color>",
     "lv.hdbg": "<color=#7ba61f>{0}</color>",
     "tu.ht": "<color=#ff8d00>{0}</color>",
+    "acdm.award": "<color=#04d3a3>{0}</color>",
+    "acdm.milestone": "<color=#2da186>{0}</color>",
+    "acdm.hudtip": "<color=#04d3a3>{0}</color>",
+    "acdm.buff": "<color=#2da186>{0}</color>",
+    "acdm.tracker": "<color=#2da186>{0}</color>",
     "lv.act20side": "<color=#F7BC44>{0}</color>",
     "lv.act20sre": "<color=#F7BC44>{0}</color>",
     "lv.mhitem": "<color=#A57F5B>{0}</color>",
@@ -1005,10 +1011,17 @@
     "ba.grt": "<color=#FFAB27>{0}</color>",
     "ba.exl": "<color=#14F0AF>{0}</color>",
     "ba.hrd": "<color=#DA2536>{0}</color>",
+    "firework.npc": "<color=#810d17>{0}</color>",
     "act.spreward": "<color=#FF5001>{0}</color>",
     "act.timelimit": "<color=#ffe300>{0}</color>",
     "vc.text": "<color=#898989>{0}</color>",
-    "vc.endtime": "<color=#ff0327>{0}</color>"
+    "vc.endtime": "<color=#ff0327>{0}</color>",
+    "firework.animal": "<color=#0098dc>{0}</color>",
+    "firework.animaldesc_1": "<color=#f05b6d>{0}</color>",
+    "firework.animaldesc_2": "<color=#b7d888>{0}</color>",
+    "firework.animaldesc_3": "<color=#ffc25e>{0}</color>",
+    "firework.animaldesc_4": "<color=#70c0db>{0}</color>",
+    "firework.animaldesc_all": "<color=#ffecb1>{0}</color>"
   },
   "charAssistRefreshTime": [
     {
@@ -1145,7 +1158,7 @@
     "ba.fragile": {
       "termId": "ba.fragile",
       "termName": "취약",
-      "description": "피격 물리, 마법, 트루 대미지가 해당 비율만큼 증가 (동종 효과 중 최대 수치만 적용)"
+      "description": "받는 물리, 마법, 트루 대미지가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
     },
     "ba.shield": {
       "termId": "ba.shield",
@@ -1155,7 +1168,7 @@
     "ba.protect": {
       "termId": "ba.protect",
       "termName": "가호",
-      "description": "받은 대미지가 해당 비례만큼 감소 (동종 효과 중 최대 수치만 적용)"
+      "description": "받는 물리, 마법 대미지가 해당 비례만큼 감소 (동종 효과 중 최대 수치만 적용)"
     },
     "ba.cold": {
       "termId": "ba.cold",
@@ -1230,7 +1243,7 @@
     "ba.dt.apoptosis": {
       "termId": "ba.dt.apoptosis",
       "termName": "쇠약 피해",
-      "description": "쇠약 피해가 1000까지 누적될 경우 15초 동안 스킬 발동 불가, 초당 SP -1 및 100 마법 대미지 부여"
+      "description": "쇠약 피해가 1000까지 누적될 경우 15초 동안 스킬 발동 불가, 초당 SP -1 및 100 마법 대미지를 입힘"
     },
     "ba.debuff": {
       "termId": "ba.debuff",
@@ -1250,12 +1263,12 @@
     "ba.magicfragile": {
       "termId": "ba.magicfragile",
       "termName": "마법 취약",
-      "description": "받은 마법 대미지가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
+      "description": "받는 마법 대미지가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
     },
     "ba.elementfragile": {
       "termId": "ba.elementfragile",
       "termName": "원소 취약",
-      "description": "받은 원소 피해가 해당 비율만큼 증가 (동종 효과 중 최대 수치만 적용)"
+      "description": "받는 원소 피해가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
     },
     "ba.dying": {
       "termId": "ba.dying",
@@ -1290,7 +1303,7 @@
     "ba.dt.apoptosis2": {
       "termId": "ba.dt.apoptosis2",
       "termName": "쇠약 피해 (아군)",
-      "description": "최대치 도달 시 폭발(일반, 정예 경우 1000, 리더 경우 2000), 적에게 50%의 <$ba.weaken>약화</> 효과를 적용하지만 점차 회복하며, 초당 원소 대미지 800 부여, 쿨타임 15초"
+      "description": "최대치 도달 시 폭발(일반, 정예 경우 1000, 리더 경우 2000), 적에게 50%의 <$ba.weaken>약화</> 효과를 부여하지만 점차 회복하며, 초당 원소 대미지 800 입힘, 쿨타임 15초"
     },
     "ba.epbarrier": {
       "termId": "ba.epbarrier",
@@ -1310,7 +1323,7 @@
     "ba.dt.burning2": {
       "termId": "ba.dt.burning2",
       "termName": "소각 피해 (아군)",
-      "description": "최대치 도달 시 폭발(일반, 정예인 경우 1000, 리더인 경우 2000), 적에게 즉시 7000의 원소 대미지를 입히며 그동안 마법 저항 -20, 쿨타임 10초"
+      "description": "최대치 도달 시 폭발(일반, 정예 경우 1000, 리더 경우 2000), 적에게 7000의 원소 대미지를 입히며 그동안 마법 저항 -20, 쿨타임 10초"
     },
     "ba.addash": {
       "termId": "ba.addash",
@@ -1537,6 +1550,11 @@
       "termName": "블랙스틸 월드와이드",
       "description": "다음 오퍼레이터 포함\n리스캄, 프란카, 제시카, 바닐라, 아몬드"
     },
+    "cc.g.siracusa": {
+      "termId": "cc.g.siracusa",
+      "termName": "시라쿠사",
+      "description": "다음 오퍼레이터 포함\n안젤리나, 라플란드, 프로방스, 버메일, 브로카, 샤마르, 스즈란, 키아베, 아오스타, 페넌스, 루나컵, 비질, 아로마, 불피스폴리아, 피구리노, 라플란드 더 데카덴차"
+    },
     "cc.c.abyssal2_1": {
       "termId": "cc.c.abyssal2_1",
       "termName": "특수 버프",
@@ -1674,9 +1692,11 @@
     }
   },
   "storyReviewUnlockItemLackTip": "기록 조각이 부족합니다. 증명서 상점 또는 이벤트 기간에 열리는 상점을 통해 교환할 수 있습니다.",
-  "dataVersion": "42.3.0",
-  "resPrefVersion": "54d0d0",
+  "dataVersion": "43.1.0",
+  "resPrefVersion": "55d0d0",
   "announceWebBusType": "ak_announcement",
+  "videoPlayerWebBusType": "ak_video_player",
+  "gachaLogBusType": "ak_gacha_log",
   "defaultMinContinuousBattleTimes": 1,
   "defaultMaxContinuousBattleTimes": 6,
   "continuousActionOpen": true,
@@ -1747,7 +1767,9 @@
     "primcaster": "MAGICAL",
     "loopshooter": "PHYSICAL",
     "hammer": "PHYSICAL",
-    "alchemist": "PHYSICAL"
+    "alchemist": "PHYSICAL",
+    "primprotector": "PHYSICAL",
+    "skywalker": "PHYSICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",
