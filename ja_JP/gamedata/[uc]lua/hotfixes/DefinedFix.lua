@@ -8,8 +8,8 @@ local list =
   "HotFixes/V056RoguelikeBattleHotfixer",
   "HotFixes/Whitw2Skill3FunnelRangedAttackHotfixer",
   "HotFixes/SandboxPermTutorialHotfixer",
-  "HotFixes/Act1VAutochessTutorialHotfixer"
-
+  "HotFixes/Act1VAutochessTutorialHotfixer",
+  "HotFixes/MedalGroupItemViewHotfixer"
 };
 
 return list;

@@ -1,0 +1,876 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[charslot]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-150)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=15, block=false)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-100", block = false)]<p=2>1100年11月5日 p.m. 8:10</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-150, fadetime=2)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0, to=0.6, duration=2, block=false)]
+[charslot(slot="l", name="avg_npc_1557_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[delay(time=3)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="熱狂するマフィア"]揃ったか？
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮気味のマフィア"]どうぞ振り向いてご覧ください。通り一面、うちの人間で埋め尽くされています……居並ぶ群狼、まさに壮観ですよ。
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="熱狂するマフィア"]よろしい。誰一人として、このカルネヴァーレを逃してはならないからな。
+[name="熱狂するマフィア"]それで、武器は？
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮気味のマフィア"]ドンのご命令で、今夜は秘密の武器庫が全構成員に開放されることになっています。銃でも爆薬でもアーツユニットでも源石クロスボウでも……自由に使っていいとのことです。
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="熱狂するマフィア"]よし！　だが、一番重要なことを忘れるなよ――常にマスクを着けて行動しろ。絶対に外すんじゃないぞ。
+[name="熱狂するマフィア"]そうしてさえいれば、お前が誰で、どこのファミリーの人間かなど気にする奴はいない。どんな罪を犯そうと、追及されることもないんだ。
+[name="熱狂するマフィア"]カルネヴァーレとはまさしく、シラクーザの歴史上最も偉大な祭りだ！
+[name="熱狂するマフィア"]仇敵を排除し、邪魔者を一掃せよ！　我々に歯向かうファミリーの連中は、今宵シラクーザの舞台を降りることになる！
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮気味のマフィア"]シティホールの職員はどうします？　いつも理想理想とうるさいあの哀れな奴らは、しょっちゅう我々の邪魔をしてきて、ほかのファミリーよりよほど煩わしいですが。
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="熱狂するマフィア"]フッ、ちょうど我々の背後に裁判所があるだろう……ああいう奴らはこのご自慢の白い建物に閉じ込めておけばいい。言うことを聞かないやつには、矢でもくれてやれ。
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮気味のマフィア"]あははっ、最高ですね！
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="熱狂するマフィア"]風に混じった匂いを感じるか？　かすかだが、今にも爆発せんばかりの血の匂いだ……
+[name="熱狂するマフィア"]今日この夜、グレイホールも法律も、いかなる規則も秩序も消えてなくなり、シラクーザはこの新都市から再び生まれ変わることに――
+[dialog]
+[PlaySound(key="$d_avg_policesiren", volume=1, loop=true, channel="p")]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spotlightc", volume=1)]
+[stopmusic(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", bstart=0.2,bend=0.7)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="？？？"]おしゃべりはそこまでだ。
+[dialog]
+[StopSound(channel="p", fadetime=0.5)]
+[PlaySound(key="$d_avg_spotlight", volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", posfrom="0,-50", posto="0,-50", duration=0)]
+[Delay(time=1)]
+[name="？？？"]わ、私は――ええと……ヌオバ・ウォルシーニ警察の見習い警官、ノエミ！
+[name="ノエミ"]周りを見てみるんだな……お前たちにもう逃げ場はないぞ！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot="m", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=0)]
+[Delay(time=0.5)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[charslot(slot="r", name= "avg_npc_1553_1#1$1", posfrom="200,-100", posto="30,-100", duration=0.5)]
+[charslot(slot="l", name= "avg_npc_1553_1#1$1", posfrom="-200,-100", posto="-30,-100", duration=0.5)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", posfrom="0,-50", posto="0,-50", duration=0)]
+[name="ノエミ"]『新都市管理法』により、お前たちがグレイホールの十二家であろうとも、ヌオバ・ウォルシーニに入る前には身元調査を受け、個人登録をしなければならない。
+[name="ノエミ"]お前たちの過去の暴力行為は記録されている。今もくろんでいる暴力行為についても追及させてもらうぞ。武器の違法保持及び乱用は重罪だ！
+[name="ノエミ"]自分がどこにいるのかをわかっていないようだな。ここには……こほん。
+[name="ノエミ"]ヌオバ・ウォルシーニには、ファミリーなど存在しないんだ！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_clapboard", volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="画面外の声"]カット！
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall",fadetime=2)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=2, block=false)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[Delay(time=3)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m", name= "avg_npc_1553_1#1$1", duration=1)]
+[Delay(time=2)]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="ノエミ"]すみません監督、セリフはちゃんと覚えてるんですけど、どうしてか……
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="監督"]カルネヴァーレのパレードは数日後だぞ、ノエミ。この映画は急いで撮り終えなきゃならないんだ。
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="ノエミ"]本当にごめんなさい。でもまさか、実習最初の任務が――映画撮影だなんて。
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="監督"]君が緊張しているのはカメラのせいか？　それとも、このシーンが現実に見えるからか？
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="ノエミ"]……
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="監督"]カメラのせいなら、一度周りの学のない連中を見てみるといい。こいつらときたら、ピッツァ屋のことばかり考えて今にもセリフをトチりそうなレベルだろ。
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="ノエミ"]私も実際、警察学校に入るまでは、ずっとお父さんのピッツァ屋で暮らしてましたし、ピッツァにばかり親しんでたくらいなんですが……
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="監督"]まあとにかく、君の雰囲気はこの作品にぴったりだし、記憶力だって大したものだ。これ以上の人選はないんだよ。
+[name="監督"]あるいは、これが現実に見えるせいで緊張してるなら――君はシラクーザ初の警察学校の卒業生だろう。今後本当にこういう現場に立ち会えば、後には引けないぞ。それが君の仕事なんだから。
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="ノエミ"]うぅ……ど、どっちの理由もありそうだと思いますけど……
+[name="ノエミ"]でも、無事に実習を終えて職務に就くってお父さんに約束しましたから、どんな任務でも成し遂げてみせます！
+[name="ノエミ"]もう一度やらせてください！
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="監督"]よし、それじゃあヴェネツィア自工のみんな、もう一度頼む。
+[charslot]
+[name="マフィア役の人々"]はぁ……
+[dialog]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=4)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=4)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-150, fadetime=4)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0, to=0.6, duration=4, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[Delay(time=0.5)]
+[charslot(slot="l", name="avg_npc_1557_1#1$1",  posfrom="0,-100", posto="0,-100", duration=1.5)]
+[Delay(time=2)]
+[name="監督"]3、2、1、アクション！
+[dialog]
+[PlaySound(key="$d_avg_clapboard", volume=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.5, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.5, fadetime=0.3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[charslot]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=0.1, block=false)]
+[curtain]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall")]
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1")]
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="レオントゥッツォ"]……
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="ラヴィニア"]……
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="レオントゥッツォ"]なあ、あんたはどう思う……？
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="ラヴィニア"]どういう評価が欲しいのかしら？
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="レオントゥッツォ"]マフィア役の連中はもっと凶悪に演じるべきじゃないか？　そうすることでこそ、ヌオバ・ウォルシーニがこの一年成果を勝ち得てきた過程の苦労が伝わるだろうし……
+[name="レオントゥッツォ"]それとも……ヴェネツィア自工に協力してもらうのが嫌なのか？　だが彼らは、少なくともまだヌオバ・ウォルシーニで『新都市管理法』に反したことはないんだ。
+[name="レオントゥッツォ"]向こうはただエキストラとして「従業員」を動員してくれているだけで、プロモーション映画に広告を入れろなんて要求すらしてこないし……
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="ラヴィニア"]……
+[charslot(slot= "l", name= "avg_npc_1541_1#4$1", focus="l")]
+[name="レオントゥッツォ"]ラヴィニア、あんたもわかってるだろう。俺だって喜んでこんなことをしてるわけじゃない。
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="ラヴィニア"]そうかしら。喜んで脚光を浴びようとしているように見えるけど。
+[charslot(slot= "l", focus="n")]
+[name="監督"]市長さん！　ご準備お願いします！　もうすぐスピーチの撮影に入りますので！
+[charslot(slot= "l", name= "avg_npc_1541_1#3$1", focus="l")]
+[name="レオントゥッツォ"]わかった！　すぐ準備する――
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="ラヴィニア"]……
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="レオントゥッツォ"]今の俺はまだ市長代理だということは、あとでよく言っておく。
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="ラヴィニア"]でも、代理でいる期間もすぐに終わるでしょう？
+[name="ラヴィニア"]これほど盛大な祝典を開いて、市長就任を正式に発表し、宣伝映画も撮って、街の隅々に至るまであなたの顔を映し出し、万人に広く覚えさせようだなんて……
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="レオントゥッツォ"]……前にも話しただろう。
+[name="レオントゥッツォ"]俺たちはこの新都市で多くを成した。新たなシティホールを建て、『新都市管理法』を施行して、数々の政策でファミリーによる秩序を排除して……
+[name="レオントゥッツォ"]だが、まだ皆の疑問に正面から答えられてはいない。ミズ・シチリアや、新都市をつけ狙うほかのファミリーにまつわる疑問には。
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="レオントゥッツォ"]今こそが、その時なんだ。
+[name="レオントゥッツォ"]ヌオバ・ウォルシーニ建設一周年を記念して、俺たちは全市民と、他国の友人を皆ヌオバ・ウォルシーニへと招いた。
+[name="レオントゥッツォ"]「カルネヴァーレ」――この六、七十年にわたり使われずにいた言葉を再び用いて、そこに新たな意味を与えることは……
+[name="レオントゥッツォ"]この国には、この都市を起点として、今まで縛られてきた古い物事すべてを喜んで変えようという意欲があり、そして実際それを成せるという証明になる！
+[charslot(slot= "r", name= "avg_4065_judge_1#15$1", focus="r")]
+[name="ラヴィニア"]けれど、あなたが矢面に立つことにどんなメリットがあるの？
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="レオントゥッツォ"]俺達には旗印が必要なんだ……
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="ラヴィニア"]旗印ね。シラクーザのファミリーのほうも、攻撃の的、傷つける相手を探していると思うけど。
+[name="ラヴィニア"]今は一時的に鳴りを潜めていても、彼らがこの都市の掌握を諦めたわけではないということはわかっているでしょう。彼らは常に機をうかがっているのよ。
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="レオントゥッツォ"]……俺は奴らを恐れはしない。
+[name="レオントゥッツォ"]奴らの思い通りにはさせない。もう二度と……
+[charslot(slot= "r", name= "avg_4065_judge_1#6$1", focus="r")]
+[name="ラヴィニア"]レオン……気持ちはわかるけれど、私たちに必要なのはそんな無謀な宣戦布告ではないのよ。
+[name="ラヴィニア"]ちゃんと自分の身を守ってちょうだい。私は見たくないのよ、あなたまでもが……
+[charslot(slot= "l", focus="n")]
+[name="監督"]市長さん！　ご準備よろしいですか？
+[charslot(slot= "l", name= "avg_npc_1541_1#3$1", focus="l")]
+[name="レオントゥッツォ"]あ、ああ！　今行く！
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="ラヴィニア"]……
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="ラヴィニア"]撮影が終わり次第、すぐにトラックを組合に返却するようにね。カルネヴァーレを間近に控えた今は、色々な準備でトラックが必要になるから。
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="レオントゥッツォ"]わかっているさ。こうして半日借りるだけでも、組合の負担としては限界だろう。すべて手配しておいたから、安心してくれ。
+[dialog]
+[charslot(slot= "r", name= "avg_4065_judge_1#8$1", focus="r")]
+[delay(time=1)]
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="ラヴィニア"]それじゃ、私はもう行くわ。裁判所のほうでまだやることがあるから。
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="レオントゥッツォ"]何か問題でも？
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="ラヴィニア"]大したことじゃないわ。登記情報をごまかしている企業がいくつかあっただけ。
+[name="ラヴィニア"]あの人たちって、私の大学時代の友人たちと同じくらい、法の抜け穴に目ざといのよね。
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="レオントゥッツォ"]だったら、今日の夕飯は――
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="ラヴィニア"]冷蔵庫にまだパスタがあるから、一人で食べてちょうだい。
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="レオントゥッツォ"]ああいや、そうじゃなく……
+[name="レオントゥッツォ"]今夜は、ディミトリから食事に誘われてな……受けることにしたんだ。あいつをいつまでも避け続けるわけにもいかないだろう。
+[charslot(slot= "r", name= "avg_4065_judge_1#6$1", focus="r")]
+[name="ラヴィニア"]……
+[name="ラヴィニア"]……気を付けてね、レオン。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1.5)]
+[delay(time=2)]
+[charslot(slot= "l", focus="n")]
+[name="監督"]では、撮影開始の合図を見逃さないようにしてくださいね。ご準備が整い次第、始めましょう。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", posfrom="0,0", posto="200,0", duration=1)]
+[delay(time=1)]
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="レオントゥッツォ"]わかった。
+[dialog]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_mictest", volume=1)]
+[delay(time=1)]
+[name="レオントゥッツォ"]市民の皆さん、こんばんは。
+[name="レオントゥッツォ"]私は、ヌオバ・ウォルシーニの一市民として、ここに立ってお話しできることを光栄に思っている。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="皆さんに送りたいものがある。それは招待状だ――", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nようこそ、シラクーザの新時代へ。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", posfrom="-200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[name="見習いサルトリア"]ど……どうぞ！
+[name="見習いサルトリア"]5ブロックも駆け回ってやっと買ってきたサラミと、うちの祖父が一番奥に隠してたワインです……祖父は身体が悪いので、もうお酒は飲めませんし、差し上げます。
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="マフィア"]よくやった、上出来だサルトリア。
+[name="マフィア"]ふぅ、ヌオバ・ウォルシーニに越してきてから、夜の楽しみっつうとこればっかだな。昔なら、こんな夜には……ハッ。
+[dialog]
+[PlaySound(key="$d_avg_whistle", volume=1)]
+[Delay(time=1.5)]
+[name="マフィア"]（軽薄な調子で口笛を吹く）
+[dialog]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[PlaySound(key="$d_avg_whistleunfamiliar", volume=1)]
+[Delay(time=1.5)]
+[name="見習いサルトリア"]（不慣れな様子で口笛を吹く）
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="マフィア"]やめろルキーノ、このバカが！
+[name="マフィア"]前に、映画で学んだ「隠語」を俺らの前でこれ見よがしに使ってきた時言ったはずだろ――
+[name="マフィア"]マフィアの真似事したって、ファミリーの一員になれるわけじゃねえんだよ。それに……まあとにかく現実を見て、てめえはサルトリアをやってりゃいいんだ。
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="ルキーノ"]……はい。
+[charslot(slot= "l", name= "avg_4155_talr_1#1$1", focus="l")]
+[name="ルキーノ"]それじゃ、お酒とサラミはお渡ししたので、ぼくはそろそろ帰りますね。
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="マフィア"]ああ？　今日はやけに素直じゃねえか。ファミリーの伝説を聞かせろってせがむのはやめたのか？
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="ルキーノ"]……祖父にバレたんです。ぼくが、あなたたちと関わってるって。それで――
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="マフィア"]ハハハハッ、そんな肝っ玉で大物になりてえとか、笑わせるな！
+[charslot(slot= "l", focus="n")]
+[name="？？？"]ルキーノ、まだ外にいるのかい？
+[name="？？？"]もうすぐ警察が巡回しにくる。カルネヴァーレが近いから、取り締まりが厳しくなっているんだ。外をうろつくのはやめなさい。
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[name="ルキーノ"]……すみません、祖父が呼んでるので。
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="マフィア"]あのジジイ……
+[name="マフィア"]昔は、誰もが俺らを恐れ敬ってたってのに、今じゃウンベルトみてえな老いぼれサルトリアまで俺らに逆らいやがる。
+[name="マフィア"]土地が変わればその場のルールに従わなきゃならんとはいえ、ヌオバ・ウォルシーニはもう昔のルールなんざいらないとまで言ってんだ。
+[name="マフィア"]俺らの小さいファミリーはおろか、サルッツォみてえなグレイホールに席がある大ファミリーさえ、ここに来たら尻尾を巻いていい子にしてなきゃなんねえんだから……世の中本当変わっちまったよ。
+[charslot(slot= "l", name= "avg_4155_talr_1#3$1", focus="l")]
+[name="ルキーノ"]「サルッツォ」……
+[charslot(slot= "l", name= "avg_4155_talr_1#1$1", focus="l")]
+[name="ルキーノ"]ぼく、もう行きますね。
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_doorbell", volume=1)]
+[Background(image="56_g7_tailorshop",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot= "m", name= "avg_4155_talr_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ルキーノ"]お、おじいちゃん。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot= "m", name= "avg_npc_1543_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="ウンベルト"]……このスーツは梱包しておいた。配送先は覚えているだろう、届けに行ってくれ。
+[charslot(slot= "m", name= "avg_4155_talr_1#10$1")]
+[name="ルキーノ"]うん。
+[charslot(slot= "m", name= "avg_npc_1543_1#1$1")]
+[name="ウンベルト"]お客さんに試着してもらって、特に問題なければ、すぐに帰ってきなさい。
+[charslot(slot= "m", name= "avg_npc_1543_1#3$1")]
+[multiline(name="ウンベルト")]今回のお客様が非常に特別であることも、お前がずっと繋がりを欲しがっていた「本当に重要なお客様」であることもわかっているが――
+[charslot(slot= "m", name= "avg_npc_1543_1#2$1")]
+[charslot(slot = "m", action="shake", afrom=1 , ato=1, power=3, times=30, duration=0.3)]
+[multiline(name="ウンベルト",end=true)]ごほ、ごほっ……
+[dialog]
+[PlaySound(key="$d_avg_walkfast", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", posfrom="-200,0", posto="-50,0", duration=0.5, isblock=true)]
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="ルキーノ"]その話は何度も聞いたよ、おじいちゃん。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", posfrom="-50,0", posto="150,0", duration=1.5)]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[charslot(slot= "m", posfrom="0,0", posto="200,-10", afrom=1, ato=0, duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot= "l", name= "avg_4155_talr_1#10$1")]
+[name="ルキーノ"]服を届けるついでに、薬屋で薬をもらって帰ってくるから、ゆっくり休んでて。
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="変化は我々のそばで起きている。", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nゆっくりと、しかし力強く、誰もが目にするような形で。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n我々は今まさに、本来持つべき暮らしを、勇気を、すべてを取り戻しつつある。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Sticker(id="st2", multi = true, text="歴史の慣性は非常に重く、確かに過去の泥沼は、時として我々の足を引っ張ることもある。", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st2", multi = true, text="\n\nしかし我々は前進を続け、永遠に立ち止まりはしない。", block = true)]
+[Sticker(id="st2", multi = true, text="\n\n今もなお、「我々には力がある」のだから。", block = true)]
+[Sticker(id="st2", duration=1, block = false)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g14_governmentoffice_n",screenadapt="coverall")]
+[PlayMusic(key="$formal_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日 p.m. 9:37</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1", posfrom="-50,0", posto="0,0", duration=0.3)]
+[delay(time=1)]
+[name="焦るトラックドライバー"]おい！　先に着いてたのはこっちだぞ、なに割り込んでんだ？
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="ファミリー傘下企業社員"]あんた、どこの会社の人間だ？
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1")]
+[name="焦るトラックドライバー"]会社っつーか……あたしはドライバー互助会の人間だ。ラヴィニア裁判官に今日中に処理してもらわなきゃならない重要な書類があって、アポだってもう取ってあるんだよ！
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="ファミリー傘下企業社員"]それはどれだけ重要なんだ？　ヌオバ・ウォルシーニに億単位の投資をもたらすビジネスだとでも？
+[charslot(slot= "m", name= "avg_npc_1542_1#2$1")]
+[name="焦るトラックドライバー"]そうじゃないけど……
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="ファミリー傘下企業社員"]だったら大して急ぎじゃねえな。
+[name="ファミリー傘下企業社員"]まあちょっと待ってろ。今頃、部屋の中じゃ大事な商談をしてるんだ。お前にゃまるでわからんくらいの数字が関わってるんだよ。
+[name="ファミリー傘下企業社員"]この都市に最大限貢献したいなら、ここでおとなしく待つこった。
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1")]
+[name="焦るトラックドライバー"]……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="56_g14_governmentoffice_n", screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="n")]
+[name="ファミリー傘下企業法務"]ラヴィニア裁判官。一つ申し上げたいのですが、法律とは「公平」であるべきもので、誰かが特別扱いを受けるのは間違っているはずです。
+[name="ファミリー傘下企業法務"]サルッツォ名義の企業に対するあなたの扱いは、我々への個人的な偏見によるものではないかと疑わずにはいられません。
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="ラヴィニア"]個人的な……偏見ですって？
+[name="ラヴィニア"]お言葉ですが、今はもう夜九時を回っています。その「個人的な偏見」とやらを根拠に我々に残業を強いるのは、理由として十分ではないですね。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="ファミリー傘下企業法務"]……
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="ラヴィニア"]サルッツォ酒造が前回提出した、新しいワイナリーに関する資料によると、この会社には「警備員130名」が在籍しているそうですが――
+[name="ラヴィニア"]今回の資料には、「物流スタッフ30名」「酒職人50名」「技術スタッフ50名」が在籍しているとあります。
+[charslot(slot = "l", name = "avg_4065_judge_1#15$1", focus="l")]
+[name="ラヴィニア"]私を敬えとは言いませんが、少なくとも『新都市管理法』と一般常識には敬意を払ってもらいたいものですね。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="ファミリー傘下企業法務"]……一体どうすれば、我々を見逃してくださるのやら。
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="ラヴィニア"]簡単なことです。ヌオバ・ウォルシーニは、「会社」としての本分を守る企業であれば歓迎しますが、そうでなく「ファミリー」として在ろうとするものは決して見過ごしません。
+[name="ラヴィニア"]サルッツォが自分たちのワインをリターニアに売ろうが、クルビアに売ろうが、あるいはたとえウルサスに売ろうが構いませんが……
+[name="ラヴィニア"]資格審査を通過しない限り、サルッツォの新しいワイナリーのラベルが貼られたワインは、一本たりともヌオバ・ウォルシーニの商品棚に並べることはできませんよ。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="ファミリー傘下企業法務"]やれやれ。恐れ入りました、ラヴィニア裁判官。シラクーザの歴史上、我々にこんな物言いをした人間は、政府にも裁判所にもほかにいないでしょうね。
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="ラヴィニア"]ここはヌオバ・ウォルシーニです。この地の法律は、いかなる義理やよしみにも左右されることはありません。
+[name="ラヴィニア"]従って、すぐに適応することをお勧めしましょう。でなければ、おそらくこの先の日々はあなた方にとって、より耐え難いものになるはずです。
+[charslot(slot = "l", name = "avg_4065_judge_1#2$1", focus="l")]
+[name="ラヴィニア"]今日はサルッツォのワインのことで時間を浪費してしまいました。今すぐ私のオフィスを出て、あなた方に入室を邪魔されている女性をお呼びしてください。
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="ラヴィニア"]先ほどの失礼な発言は聞こえていましたよ。彼女に謝罪をすべきです。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="ファミリー傘下企業法務"]……フンッ。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1, isblock=true)]
+[delay(time=1.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1542_1#7$1", focus="r")]
+[name="焦るトラックドライバー"]ラヴィニア裁判官、こんばんは！　お休み中すみません、でもどうしても見ていただきたくて！
+[name="焦るトラックドライバー"]ここ最近のドライバー互助会の出庫記録です。運転手と積み荷、走行ルート、走行時間がすべて記載されています。
+[name="焦るトラックドライバー"]数が多すぎて、今日になってようやく整理が終わったところなんです……ご確認をお願いします！
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="ラヴィニア"]ご苦労様です。実に詳細な記録ですね。ですが……なぜ私の確認を経る必要が？
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="焦るトラックドライバー"]カルネヴァーレ前後の物流輸送はすごく重要だって、前に仰ってましたよね。この機に乗じて密輸を企てる者がいないか警戒しなければならない、って……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]確かに言いましたが、あれはただの注意喚起ですし……それに、この記録についても、ドライバー互助会の会長として、あなたがご自身で判断していいのですよ、エイレーネさん。
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="エイレーネ"]えっ……あたしのこと、覚えてらしたんですか。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]お互い知らない仲でもないでしょう……この街で最も勤勉なドライバーにして、ヌオバ・ウォルシーニ貨物輸送労働者およびトラックドライバー連合互助会の頼れるリーダーさん。
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="エイレーネ"]そんな仰々しい名前より、「ドライバー互助会」のほうが呼び慣れてますけどね……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]あなた方のような労働者やドライバーがいなければ、今のヌオバ・ウォルシーニはありません。己の力を過小評価せず、ご自身をもっと誇ってください。
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="エイレーネ"]あ……ありがとうございます。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]いいえ。では、この報告書は受け取っておきますね。私はあなたの判断を信じていますし、お気遣いには感謝しています……ほかに何かご用事はありますか？
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]そういえば、先週新しいトラックドライバーの名簿を提出したんですが、まだ承認されていませんでしたよね。
+[name="エイレーネ"]そこでもう一人、あたしから直に推薦したい人が……
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_paper2",volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="ラヴィニア"]エイレーネさん。我々がこれほどまでに、トラックドライバー各員の背景調査に気を配る理由はおわかりのはずですね……
+[charslot(slot = "r", name = "avg_npc_1542_1#8$1", focus="r")]
+[name="エイレーネ"]もちろんです！　物流業はヌオバ・ウォルシーニの要であり、多くのファミリーが狙っているので、付け入る隙を与えるわけにはいかないから、ですよね！
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="ラヴィニア"]ですが、ウルサス出身のレプロバ、空白に近いほど人間関係が単純で、過去の経歴も曖昧……というこの資料だけを見ると、審査を通過するのは難しいと言わざるを得ません。
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="エイレーネ"]あ、あたしが保証します、彼女はファミリーとは何の関係もありません。それに、彼女は運転の腕が本当にいいんです！
+[name="エイレーネ"]資料にある経歴のことだって、単にこれまでツイてなかったってだけで……彼女には、本当に仕事が必要なんですよ！
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]ヌオバ・ウォルシーニの法律があたしたちをファミリーから守ってくれていることは知ってますけど、それならあたしたち市民が助けを求めている時だって……
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="ラヴィニア"]……
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="エイレーネ"]あっ、誤解しないでくださいね！　あなたにプレッシャーをかけるつもりはないんです。思うように対応していただけたら――
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]緊張しすぎですよ、エイレーネさん。
+[name="ラヴィニア"]あなたが意図的に私と距離を置いていることはわかっています。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]あたしは……
+[name="エイレーネ"]正直、個人的にはあなたのことも、レオントゥッツォさんのことも大好きなんです……本当ですよ！
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]ふふっ、ありがとうございます。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]それに、ソマーもあたしと同じ気持ちです。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]ソマーというと、あなたと一緒にこの街に来たドライバーですね。ライターを大切そうに握りしめていたのが印象的でしたが……
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="エイレーネ"]そんなことまで覚えてらしたんですね！　彼はあたしの親友なんです。
+[name="エイレーネ"]一年前、ここに来たばかりの頃は、シティホールがドライバー互助会を立ち上げるって貼り紙がされて半月経ってたのに、マフィアに報復されるリスクを冒して申し込もうとする人はいなくて。
+[name="エイレーネ"]あたしとソマーも何度か読んだだけで離れようとしたところで、あなたとレオントゥッツォさんに呼び止められたんですよね。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]あなたは、誰よりも長い間貼り紙の前に立っていましたから。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]……あたしたち、シチリアにいられなくなってここへ来たんです。
+[charslot(slot = "r", name = "avg_npc_1542_1#3$1", focus="r")]
+[name="エイレーネ"]あの時あなたたちが言ってくれたことは今でも覚えてます……あ、あたし、臭いセリフは言いたくないけど、実際あなたたちがいなければ、今のあたしの生活がなかったのは確かなんです。
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="ラヴィニア"]……
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]あなたがああいうファミリーに――いや、ああいう企業の連中に、ヌオバ・ウォルシーニの物流業に介入してほしくないと思ってるのはわかってますし、あいつらが全然諦めないことも知ってます。
+[name="エイレーネ"]だけどその結果、ドライバー互助会は現状唯一運営を許可された輸送組織になって、規模もどんどん大きくなってて。
+[charslot(slot = "r", name = "avg_npc_1542_1#3$1", focus="r")]
+[multiline(name="エイレーネ")]うちのドライバーは多かれ少なかれ、ヌオバ・ウォルシーニに来る前は……
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[multiline(name="エイレーネ",end=true)]ううん、とにかく、みんなただ新しい食いぶちを見つけようとしてるだけなんです。
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="ラヴィニア"]だからあなたたちは、シティホールや裁判所とあまり親密にしているとは見られたくない、と。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="エイレーネ"]……はい。
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="ラヴィニア"]多くのことは、一夜にして成し遂げられるようなものでないことはわかっていますから。
+[charslot(slot = "r", name = "avg_npc_1542_1#8$1", focus="r")]
+[name="エイレーネ"]でも、安心してください。ドライバー互助会には絶対にファミリーの人間を入らせはしません――前にお約束した通り、絶対に。
+[name="エイレーネ"]それに、レオントゥッツォさんが市長選で争ってた時は、あたしも彼に投票したんですよ！　ここ一年、市長代理としてやってきた彼の功績は、誰が見たって明らかですから！
+[dialog]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$d_avg_hungry", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="エイレーネ"]あっ……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]夕食はまだなのですか？
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="エイレーネ"]大丈夫です！　お腹空いてないので……
+[dialog]
+[charslot(slot = "l", posfrom="0,0", posto="50,0", duration=0.6, isblock=true)]
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]よろしければ、ピッツァがあるのでいかがですか。少し冷めてはしまいましたが。
+[dialog]
+[charslot(slot = "r", posfrom="0,0", posto="50,0", duration=0.6, isblock=true)]
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="エイレーネ"]いやいやいや！　そんな、ダメですって……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]一人では食べきれないので、手伝っていただきたいのです。お腹が空いては仕事の話もできませんしね。
+[name="ラヴィニア"]それに、この美味しいピッツァを無駄にすることは、全シラクーザ人にとって耐えがたき重罪ではありませんか？
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="エイレーネ"]それなら……遠慮なく頂きます。ありがとうございます。
+[dialog]
+[charslot(slot = "r", posfrom="50,0", posto="0,0", duration=0.6, isblock=true)]
+[PlaySound(key="$d_avg_humaneat", volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="ラヴィニア"]エイレーネさん、ドライバー互助会の現状についてもう少し聞かせてもらえますか？
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="エイレーネ"]ん……はい……わかりました！
+[name="エイレーネ"]ここ一ヶ月でいうと、ドライバー互助会の一日当たりの平均ソースは前の数ヶ月の五倍になっ……
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[multiline(name="エイレーネ")]じゃなくて……すいません、平均出庫人数です……
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[multiline(name="エイレーネ",end=true)]あと、このピッツァにかかってるソース、本当に美味しいですね。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="ラヴィニア"]……
+[name="ラヴィニア"]急ぐ必要はありませんし、やはり夕食を食べ終えてからにしましょうか。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="私は、ある友人がかつて口にした言葉が好きだ。彼の言う、我々の持つ力とは――", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n「私たちが創造した生活そのもの」。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nこの力は、私たちが創造したすべてを守るに十分なものだ。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日 p.m. 10:52</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="カポネ"]お前、もうジュース三杯飲んでピッツァも五切れ食っただろ……そんなに腹が減ってるのか？
+[charslot(slot = "r", name = "avg_npc_542_1#6$1", focus="r")]
+[name="ガンビーノ"]うるせえ。黙ってこのエスプレッソでも飲んでろ。
+[dialog]
+[PlaySound(key="$d_avg_drinkswllw", volume=1)]
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[delay(time=1)]
+[name="カポネ"]おえっ……酸っぱすぎる。
+[name="カポネ"]これで腹下して任務に遅れが出たらお前のせいだからな。
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="r")]
+[name="ガンビーノ"]テキトーに買ったもんなんだから我慢しろ。
+[name="ガンビーノ"]大体、誰もいねえ脇道で、「タイヤ」を運ぶだけの仕事で何か起きると思うのか？
+[charslot(slot = "r", name = "avg_npc_542_1#7$1", focus="r")]
+[name="ガンビーノ"]輸送の援護とは言うが、実際のところ暇な仕事だ。大した功績にはならねえし、そんなに気にしてどうする？
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="カポネ"]この二ヶ月、俺はお前の愚痴を腐るほど聞いてきたがな。
+[name="カポネ"]新しいボスの性格をまだわかってないのか？　あいつの前で焦ってアピールしようとしたって、逆効果だぞ。
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="カポネ"]俺たちは入ってからまだ大して時間が経っちゃいない。チャンスを待つんだよ。
+[charslot(slot = "r", name = "avg_npc_542_1#8$1", focus="r")]
+[name="ガンビーノ"]お前のほうはボスを随分理解してるらしいな。ご立派な従業員っぷりじゃねえか。
+[name="ガンビーノ"]てっきりお前は、こういう話をするときは、多少なり恥を感じるもんだと思ってたぜ。「シチリア人」も落ち目だな。
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="カポネ"]そりゃあ、俺はとっくに「シチリア人」じゃないからな。それはお前の恥であって、俺のもんじゃない。
+[name="カポネ"]俺はさっさとヌオバ・ウォルシーニの定住資格を正式に手に入れたいだけだ。この半年、どれだけ苦労して認定費用を支払ってきたと思ってんだ。それでようやく市民ポイントが半分貯まったとこ――
+[charslot(slot = "r", name = "avg_npc_542_1#2$1", focus="r")]
+[name="ガンビーノ"]半分だと？　なんで俺より50ポイントも高いんだ？　隠れてコソコソ社会奉仕活動でもしてやがったのか？
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="カポネ"]黙れ。俺たちには次のチャンスなんざないんだぞ、ガンビーノ。
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="r")]
+[name="ガンビーノ"]……
+[charslot(slot = "l", name = "avg_npc_541_1#7$1", focus="l")]
+[multiline(name="カポネ")]前の通りをちゃんと見張ってろよ。もうすぐ車が来るはずだ――
+[multiline(name="カポネ")]ところで、ピッツァはまだあるか？　俺にも一切れ寄越せ。
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_541_1#6$1", focus="l")]
+[name="カポネ"]うわ……こんな冷めてんのによく食えるな……
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[PlaySound(key="$d_avg_noisycitytraffic", volume=0, loop=true, channel="n")]
+[Delay(time=1)]
+[CameraShake(duration=-1, xstrength=0.4, ystrength=0.4, vibrato=10, randomness=10, fadeout=false, block=false)]
+[SoundVolume(volume=1, channel="car",fadetime=2)]
+[SoundVolume(volume=0.6, channel="n",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-180", block = false)]<p=2>1100年11月5日 p.m. 11:05</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[SoundVolume(volume=0.4, channel="car",fadetime=1)]
+[StopSound(channel="n", fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1541_1#4$1", duration=0.5, isblock=true)]
+[name="レオントゥッツォ"]はぁ……やはり間に合わなかったか。
+[dialog]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+[name="電話の声"]遅刻だぞ、レオン。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1541_1#1$1")]
+[name="レオントゥッツォ"]すまない、今日は少し忙しくてな。
+[charslot(slot = "m", focus = "n")]
+[name="電話の声"]まだ就任演説の準備をしてるのか？
+[charslot(slot = "m", name = "avg_npc_1541_1#1$1")]
+[name="レオントゥッツォ"]ああ。だが、それもこの忙しさのほんの一部だ……何せ都市を挙げての誕生パーティーを開くんだからな。そもそも、俺たちはこれまで、家でパーティーを開いた経験しかなかっただろう？
+[charslot(slot = "m", focus = "n")]
+[name="電話の声"]こりゃ驚いた……まさかあの頃のことをまだ覚えてたとはな。
+[charslot(slot = "m", name = "avg_npc_1541_1#8$1")]
+[name="レオントゥッツォ"]当然だ。あのホームパーティーのことは今でも覚えている。お前が黒ビールの代わりにジンジャーエールを発注して、その差額で車を手に入れたなんてこと、忘れるわけもないだろう？
+[charslot(slot = "m", focus = "n")]
+[name="電話の声"]ハハッ――そんなこともあったな。
+[charslot(slot = "m", name = "avg_npc_1541_1#2$1")]
+[name="レオントゥッツォ"]ディーマ……なんだか少し、心ここにあらずといったふうに聞こえるが？
+[charslot(slot = "m", focus = "n")]
+[name="電話の声"]何でもないさ。随分会ってなかったせいじゃないか。
+[name="電話の声"]まあ、道中気をつけろよ、レオン。
+[charslot(slot = "m", name = "avg_npc_1541_1#8$1")]
+[name="レオントゥッツォ"]ははっ、これがヌオバ・ウォルシーニじゃなければ、その言葉は脅しに聞こえただろうな。
+[charslot(slot = "m", focus = "n")]
+[name="電話の声"]冗談はよせ。早く来いよ、窓際の席で待ってるから。
+[dialog]
+[charslot(duration=1)]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+レオントゥッツォは通信を切った。
+電話の向こうの人物には、もう一年も会っていない。だが、相手の意図はわかっており、自分がどんな言葉を使って断りを入れることになるかもわかっていた。
+これは間違いなく、愉快な再会にはならないだろう。そう考えて、レオントゥッツォは首を横に振った。
+[stopmusic(fadetime=2)]
+その時、強い光が彼の顔に当たった。
+[dialog]
+[PlaySound(key="$d_avg_carhorn", volume=1)]
+[StopSound(channel="car", fadetime=2)]
+[PlaySound(key="$d_avg_noisycitytraffic", volume=0, loop=true, channel="n")]
+[SoundVolume(volume=0.4, channel="n",fadetime=2)]
+[curtain(direction = 0, fillfrom = 0.11,fillto = 0.11, a=0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.11,fillto = 0.11, a=0, fadetime=2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[CameraShake(duration=0, xstrength=0.4, ystrength=0.4, vibrato=10, randomness=10, fadeout=false, block=false)]
+[background]
+[curtain]
+[charslot]
+[Image(image="56_i28", screenadapt="coverall")]
+[delay(time=0.1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[name="レオントゥッツォ"]対向車か？　向こうの運転手、何を――
+[name="レオントゥッツォ"]ッ、あの車――
+[name="レオントゥッツォ"]これは――ハンドルが効かな――
+[dialog]
+[StopSound(channel="n", fadetime=1)]
+[PlaySound(key="$drift", volume=1)]
+[delay(time=0.6)]
+[PlaySound(key="$d_avg_carcrash_wreck", volume=1)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0.5, block=false)]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=3)]
+[Image(image="56_i29", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=20, block=false)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="？？？"]まだ危険な状況ですから、近づかないでください！
+[name="？？？"]どいて、道を塞がないで。怪我人を運びます、スペースを空けて！
+[name="？？？"]あの！　大丈夫ですか？　聞こえてますか？
+[name="？？？"]しっかりしてください！　すぐに救急車が来ますから！
+[dialog]
+[SoundVolume(volume=0.2, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[PlaySound(key="$d_avg_tinnitus", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_gen_heartbeat", volume=0, loop=true, channel="heart")]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="cr")]
+[SoundVolume(volume=1, channel="heart",fadetime=2)]
+[SoundVolume(volume=0.2, channel="cr",fadetime=2)]
+[Background(image="38_g21_skystarry_L1",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[backgroundTween(xFrom=0, yFrom=100, xTo=-40, yTo=-100, duration=6)]
+[focusout(type="bg", id="38_g21_skystarry_L1", from=0, to=1, duration=0.1, block=false)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Background(image="56_g2_newvolsiniistreet_n", screenadapt="coverall", xScale=1.4, yScale=1.4)]
+[backgroundTween(xFrom=50, xTo=-50, yFrom=0, yTo=-90, duration=8, block=false)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=0, to=1, duration=0.1, block=false)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=1, to=0.6, duration=2, block=false)]
+[Blocker(a=0.4, r=0.92, g=0.4, b=0.3, fadetime=3, block=true)]
+[name="レオントゥッツォ"]……
+[name="レオントゥッツォ"]ここは……どこだ……
+[name="？？？"]動かないでください！　すごく出血してますから――
+[name="レオントゥッツォ"]あれは……誰だ？
+[dialog]
+[StopSound(channel="c", fadetime=2)]
+[StopSound(channel="cr", fadetime=2)]
+[StopSound(channel="heart", fadetime=1)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[BackgroundTween(yTo=150, duration=0.3, block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=0.5)]
+意識を失う前、最後の瞬間に、レオントゥッツォはぼやけた黄色の何かを見た――
+それは一台のタクシーだった。
+[dialog]
+[background]
+[delay(time=2)]
+[PlaySound(key="$d_avg_ambulancewhistle", volume=0, loop=true, channel="am")]
+[SoundVolume(volume=1, channel="am",fadetime=2)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=1, to=0, duration=0, block=false)]
+[Image(image="56_i01", screenadapt="coverall", xScale=1.4, yScale=1.4, x=-120, fadetime=0)]
+[ImageTween(yFrom=-150, yTo=100, duration=8, block=false)]
+[delay(time=2)]
+[StopSound(channel="am", fadetime=6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=3)]
+「カルネヴァーレ」と呼ばれる祭りには、無数の人がシラクーザ中から、そしてそれ以外の各地から、ヌオバ・ウォルシーニへと押しかける。
+[dialog]
+[PlaySound(key="$d_avg_drivestop", volume=1)]
+[Delay(time=1.5)]
+[cgitem(image="cgitem_56_i01_1", style="cg", sfrom=2, sto=2, sduration=0, afrom = 0, ato = 1, aduration = 0.1, pfrom = "300,10", pto = "-100,10", pduration = 0.3, layer = 1)]
+[Delay(time=0.2)]
+[cgitem(image="cgitem_56_i01_2", style="cg", sfrom=2, sto=2, sduration=0, afrom = 0, ato = 1, aduration = 0.1, pfrom = "0,10", pto = "-900,10", pduration = 0.8, layer = 2)]
+[hidecgitem(image="cgitem_56_i01_1", fadetime=0.1)]
+[Delay(time=0.4)]
+タクシーは絶え間なく観光客を乗せて都市を行き交っており、その一台も何の変哲もないタクシーの一つである。
+[dialog]
+[Image(image="56_i01", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=2)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=8, block=false)]
+[Delay(time=2)]
+[PlayMusic(intro="$act21side_intro", key="$act21side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[cgitem(image="cgitem_56_i01_3", style="cg", sfrom=1.1, sto=1, sduration=8, afrom = 0, ato = 1, aduration = 2, pfrom = "5,0", pto = "5,0", pduration = 0, layer = 3)]
+――それが巨大な、ぼやけた影をまとっていること以外は。
+その影は、高層ビルの暗い壁面がそう見えたというわけでもなければ、ネオンが落とした影でもなく――狼の姿をしていた。
+[dialog]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[hidecgitem(image="cgitem_56_i01_3", fadetime=3)]
+[Delay(time=3)]
+タクシーは荒野から来た狼を乗せて、亡霊のように街を走る。
+[dialog]
+[PlaySound(key="$drift", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_carspeedup", volume=1)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[image]
+[charslot]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[SoundVolume(volume=0.5, channel="car",fadetime=2)]
+[Image(image="56_i02", screenadapt="coverall", xScale=1.2, yScale=1.2, fadetime=0)]
+[ImageTween(xFrom=100, xTo=0, yFrom=-80, yTo=0, xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[name="ザーロ"]もっとゆっくり走らせろ、ラップランド。
+[dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="ラップランド"]あれ、どうしたの？　不死にして不滅の狼主も、車から放り出されるのが怖いのかな？
+[name="ザーロ"]こんな運転をしていたら、このガラクタの車はすぐに壊れてしまうぞ。
+[name="ラップランド"]大丈夫だって。荒野でこの子を拾った時はスクラップ同然だったけど、うまく修理できたでしょ？　信じてあげなよ、この子は頑丈なんだ。
+[name="ラップランド"]ああ、それとも、ボクの運転技術が信じられないのかな？　ボクは自分の命をおろそかになんてしないよ……その必要がある時以外はね。
+[name="ザーロ"]お前とて、すぐさま他人に見つかることも、警察に捕縛され牢に入れられることも、あるいはファミリーの人間に切り刻まれることも望まぬだろうと言っているのだ。
+[name="ラップランド"]わあ、ボクたちますます心が通じ合ってきてるね、ザーロ。
+[name="ラップランド"]それはもちろん、まだカルネヴァーレに参加しないといけないからね。
+[name="ザーロ"]通りを飾る明かりや風船を見れば、お前は「カルネヴァーレ」とやらがいかに下らぬものかをあざ笑うだろうと思っていたが。
+[name="ラップランド"]まさか！　アハハ。
+[name="ラップランド"]数百年前、シラクーザがまだリターニアの未開の地だった時から、カルネヴァーレは存在したんだよ。
+[name="ラップランド"]あるとき、シラクーザのループスたちは、自分たちが都市を持ち、「ファミリー」という名の秩序を得てもなお、心穏やかにいられないことに気付いたんだ。
+[name="ラップランド"]だからマフィアたちは一年のうち数日だけ、街で好き勝手振る舞うことにした。自分のもめ事を片付けたり、復讐したり、縄張り争いをしたり、あるいは単に暴力で発散したりしてね。
+[name="ラップランド"]彼らは殺戮の限りを尽くしたけれど――そうした行為のすべては、彼らがマスクをかぶっていたから、追及を免れたのさ。
+[name="ラップランド"]その後、ミズ・シチリアが権力を握って最初にやったのは、カルネヴァーレの廃止だった。だけど今、ヌオバ・ウォルシーニはミズ・シチリアを説得し、それを復活させた。
+[name="ラップランド"]ただ、彼らが期待しているのは野蛮で残忍な伝統に彩られた祭りなんかじゃなく、空白の都市に意味を与えて、新しい人生を追求する人々にアイデンティティを付与する祭りなんだ。
+[name="ラップランド"]大胆な「カルネヴァーレ」だよね、実に素晴らしいアイデアだ！
+[name="ザーロ"]お前は詩でも詠っているのか？　本当に演技じみた物言いをするのが好きだな。
+[name="ラップランド"]わかってないなあ、ボクは興奮してるだけさ！
+[name="ラップランド"]キミに保証してあげるよ。この新しいカルネヴァーレは、すべての人に――すべての狼にとって一生忘れられないものになるってね。
+[name="ザーロ"]我らの交わした約束を忘れないでもらいたいものだな。今回のゲームは終わりに近づきつつある。失望させるなよ、ラップランド。
+[name="ザーロ"]すでに伝えている通り――この戦いは何千年と続くことだろうからな。
+[dialog]
+[Image(image="56_i02", screenadapt="coverall", fadetime=0.5)]
+[curtain(direction = 3,fillfrom = 0.01,fillto = 0.45, fadetime=0.5)]
+[curtain(direction = 7,fillfrom = 0.01,fillto = 0.45, fadetime=0.5)]
+[delay(time=1)]
+[name="ラップランド"]まあ、しっかり座ってなよ――
+[dialog]
+[PlaySound(key="$d_avg_carspeedup", volume=1)]
+[delay(time=1.5)]
+[StopSound(channel="sn", fadetime=1)]
+[StopSound(channel="car", fadetime=1)]
+[ImageTween(xFrom=0, xTo=-350, duration=0.3, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

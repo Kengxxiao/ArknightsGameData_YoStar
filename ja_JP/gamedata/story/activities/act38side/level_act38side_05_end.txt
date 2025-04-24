@@ -1,0 +1,509 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g9_truckcamp",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[name="？？？"]ソマー、これは一体どういうことだ？
+[name="ソマー"]俺にだってわからんさ！　車を走らせてたらエンジンが壊れちまって、その時道端に倒れてるこの子を見つけたんだ。てっきり轢いちまったかと思って、心底驚いたよ。
+[name="ソマー"]荒野に一人ぼっちでいて、意識がもうろうとしてるくせに、赤い服の奴を見つけるとかどうとかずーっとぶつぶつ言っててな。
+[name="ソマー"]放っておくわけにもいかないし、とりあえず連れて帰ってきたんだが……
+[name="？？？"]それであたしのところに来たって？　でも、こんな奴顔も見たことないぞ。
+[name="ソマー"]孤独でツイてない奴なんだろうさ。野営地で引き取ってやるのはどうだ？　最近は忙しいし、一人人手が増えるだけでもありがたい話じゃないか。
+[name="？？？"]知ってるだろ。互助会の人員はみんな、厳しい審査を受けないといけないんだ。
+[name="？？？"]こいつみたいな感染……いや、経歴不詳の奴を受け入れて、万一どこかのファミリーと繋がってたらどうする気だ？
+[name="ソマー"]はぁ……
+[name="？？？"]医者の話じゃ、こいつの容体は安定してるとさ。目が覚めたら、ここから出て行ってもらおう。
+[name="ソマー"]わ、わかったよ。
+[name="ソマー"]しかし、この子はなんだってずっとナイフを握りしめてるんだろうな。危なっかしいから、とりあえず――
+[dialog]
+[bgeffect(name="$eb_dim_openeye",layer=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=false)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_slap",volume=0.5)]
+[CameraShake(duration=0.2, xstrength=20, ystrength=20, vibrato=15, randomness=90, fadeout=true, block=false)]
+[name="リュドミラ"]触るな！
+[dialog]
+[charslot(slot="m",name="avg_npc_1542_1#1$1",duration=1)]
+[Delay(time=2)]
+[bgeffect]
+[name="赤い服の人"]……
+[name="赤い服の人"]目が覚めたか。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]お前――！
+[charslot(slot = "m", focus = "n")]
+リュドミラはその人物を見て、目をこすった。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]ああ、いや、悪かった……ここはどこだ？
+[charslot(slot="m",name="avg_npc_1542_1#1$1")]
+[name="赤い服の人"]ヌオバ・ウォルシーニのドライバー互助会さ。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]あんたたちが助けてくれたのか……ありがとう。
+[charslot(slot="m",name="avg_npc_1542_1#1$1")]
+[name="赤い服の人"]大したことじゃないさ。うちの人間は、荒野で倒れている人を見殺しにするような奴じゃないからな。ただ、これから先のことはあまり力になれそうにない。
+[name="赤い服の人"]せいぜい一食食べさせてやるくらいだな。それを食べたら、ここを出て行ってくれ。ソマー、こいつのことは任せるぞ。
+[dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]助けてもらっただけで十分だ、感謝する……すぐに出て行くよ。
+[charslot(slot = "m",name = "avg_npc_1547_1#1$1")]
+[name="ソマー"]そう焦るな、若いの。
+[name="ソマー"]念のために聞きたいんだが……お前は、どこかのファミリーの人間じゃないんだよな？
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]……もう何年もその言葉を聞いていなかったくらいだ。
+[charslot(slot = "m",name = "avg_npc_1547_1#2$1")]
+[name="ソマー"]そうだろうな。俺としても、お前はああいう連中との付き合いがありそうには見えない。
+[name="ソマー"]さっきのことは気にしないでくれ。エイレーネはファミリーの人間が互助会に入り込まないか心配しててな。気を配らないといけないことが多いだけで、お前に敵意があるわけじゃないんだ。
+[name="ソマー"]お前が野営地に来てからの医療費も、実は全部あいつが自腹を切ってくれたんだよ。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]ありがとう……もちろん、迷惑をかけるようなことはしない。
+[name="リュドミラ"]ただ、次に何をすべきなのか……考える時間が欲しいとは思っているんだ。
+[charslot(slot = "m",name = "avg_npc_1547_1#2$1")]
+[name="ソマー"]お前、運転はできるか？
+[charslot(slot="m",name="char_1502_crowns")]
+[name="リュドミラ"]……
+[name="リュドミラ"]ウルサスでトラックを運転したことならあるが、それもできるうちに入るだろうか？
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[focusout(duration=0, type="bg", from=0, to=1, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_rhodesbedroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.4)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", text="レッド。", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+優しげなささやきと共に訪れたのは、その声と同じくらいに優しく撫でられる感触だった。
+草の上に舞い落ちる木の葉や、荒野の山腹で受ける風のように、危険な気配はみじんもない。
+彼女はこうしたささやき声と、優しく撫でる感触に包まれて眠り、育った。
+ロドスには、彼女にそんなことをできる者も、する者もいない。ケルシーさえもそうではない。
+[charslot(slot = "m",name = "char_144_red_7#7")]
+[name="レッド"]……オバアサン！？
+[dialog]
+[charslot]
+[focusout(duration=1, type="char", from=0, to=0.5)]
+[charslot(slot = "m", name = "avg_npc_1549_1#1$1", duration=1)]
+[Delay(time=2)]
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]やっぱり、まだ目、見えない？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]前にも話した通りだけれど、おばあさんの目は、狼に食べられてしまったのよ。この眼鏡はただの飾りなの。
+[name="おばあさん"]狼の両目をくり抜いて、それをオバアサンの目に戻してくれたら、レッドの姿がはっきり見えるようになるわ。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]オバアサン、レッドを抱きしめること、できない？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]おばあさんの両手は、狼に飲み込まれてしまったの。どうか狼の手足を斬り落として、オバアサンの両手を取り戻してちょうだい。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]オバアサン、もう、歌を教えてくれない？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]本当は教えてあげたいけれど、狼がいつも遠吠えをしているから、奴らに気付かれるのが怖いの。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]オバアサン、どうしてずっと、来てくれなかった？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]狼が多すぎて、色々なところに潜んでいるからよ。お願いレッド、狼の皮を引き裂いて、おばあさんのために服を作って。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]うぅ……
+[name="レッド"]オバアサン、ほんとに、消えちゃう？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]それはあなたにかかっているわ。おばあさんを助けてちょうだい。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]っ、レッド、龍門で見つけた狼、偽物だった。でもアイツ、身体から、真狼の匂い、した。
+[name="レッド"]そのあと、新しい発見、ない……
+[name="レッド"]オバアサン……レッド、探すの、続けてない。
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]それでも、レッドを責めたりなんてしないわ。レッドは一番聞きわけが良い、自慢の子だもの。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]違う。レッド、初めてオオカミ狩った時、倒れた。レッド、弱すぎた。ケルシー、草むらの中で、助けてくれた。
+[charslot(slot = "m",name = "char_144_red_7#1")]
+[name="レッド"]レッド、ケルシーのそばに、しばらくいた。ケルシー、知らないこと、たくさん教えてくれた。
+[charslot(slot = "m",name = "char_144_red_7#3")]
+[name="レッド"]「守る」、「殺す」、「苦しい」、「楽しい」、それが何なのか。レッドが、何を見分けられて、何ができるか。
+[name="レッド"]質問、たくさん。難しかった。レッド、わからない。
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="おばあさん"]「苦しい」？　「楽しい」？
+[name="おばあさん"]おばあさんは、レッドの面倒をちゃんと見てあげられなかったようね。それどころか、レッドの助けを必要とまでしていて……
+[name="おばあさん"]ねえレッド、もしも嫌になったなら、このままロドスに留まっていてもいいのよ。
+[name="おばあさん"]おばあさんには、元々あまり時間がないの。いっそのこと、おばあさんのことも、自分がウルフハンターであることも忘れてしまいなさい……
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="レッド"]……
+[dialog]
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[Delay(time=0.5)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[focusout(duration=0, type="char", from=1, to=0, block=true)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+レッドは目を開いた。
+ドアと窓はしっかりと閉じられ、少しの風さえ入ってこない。
+彼女が同じ夢を見て目覚めるのは、今夜はこれで三度目だった。
+[dialog]
+[charslot(slot = "m",name = "char_144_red_7#1",duration=0.5)]
+[Delay(time=1)]
+[name="レッド"]オバアサン、レッド、必要……
+[charslot(slot = "m",name = "char_144_red_7#2")]
+[name="レッド"]（力強く耳を動かす）
+[charslot(slot = "m",name = "char_144_red_7#1")]
+[name="レッド"]レッド、ケルシーに約束した。ロドス離れる時、ケルシーに言う。
+[name="レッド"]ケルシー、いない。トリ何とか、行った。とても遠い都市。
+[charslot(slot = "m",name = "char_144_red_7#5")]
+[name="レッド"]レッド、待つべき――違う。レッド、待てない。オバアサン、待てない。
+[charslot]
+[Dialog]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=false)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall",fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "m",name = "char_144_red_7#2")]
+[name="レッド"]（警戒気味に匂いを嗅ぐ）
+[charslot(slot = "m",name = "char_144_red_7#1")]
+[name="レッド"]オオカミの匂い、する。
+[name="レッド"]残りの真狼、少ない。残りの真狼、ここにいる。
+[name="レッド"]オオカミたちにとっては、オバアサンを傷つけること、「ゲーム」でしかない。
+[name="レッド"]それなら、レッドの、ゲームのルール、奴らを殺すこと。
+[name="レッド"]……オバアサン、今も、レッドを待ってる。
+[dialog]
+[stopmusic(fadetime=3)]
+[charslot(duration=1)]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$act21side_intro",key="$act21side_loop", volume=0.6)]
+[delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日 p.m. 3:17</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1557_1#1$1",posfrom = "-150,0", posto = "0,0",duration = 0.7)]
+[delay(time=1)]
+[name="通行人A"]「素晴らしき夜のために、爪を研ごう！」
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_1556_1#1$1",posfrom = "150,0", posto = "0,0",duration = 0.7)]
+[delay(time=1)]
+[charslot(slot = "r", focus="r")]
+[name="通行人B"]「迅速なる狩りのために、牙を剥こう！」
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "-150,0",power=-30,times=1,duration = 0.7)]
+[delay(time=1)]
+[charslot(slot = "l", focus="l")]
+[name="通行人A"]「自由なるカルネヴァーレのために、殺し合おう！」
+[Dialog]
+[charslot(slot = "r", action="jump",posto = "150,0",power=-30,times=1,duration = 0.7)]
+[delay(time=1)]
+[charslot(slot = "r", focus="r")]
+[name="通行人B"]「最後の一人になるまで、ゲームは終わらない！」
+[Dialog]
+[charslot(slot = "l", focus="l")]
+[name="通行人A"]「こんな真似をするのはなぜなのか？」
+[Dialog]
+[charslot(slot = "l",action="zoom", poszoom = "0.5,0.5", scale=1.05,duration = 0.5)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=1.05,duration = 0.5)]
+[charslot(slot = "l", action="jump",posto = "160,-30",power=-30,times=1,duration = 0.5)]
+[charslot(slot = "r", action="jump",posto = "-160,-30",power=-30,times=1,duration = 0.5)]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="通行人A&B"]「それは我らが狼だからだ！」
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "r",posfrom = "-10,-30", posto = "-200,-30",duration = 1.5,afrom=1,ato=0)]
+[charslot(slot = "l",posfrom = "10,-30", posto = "-200,-30",duration = 1.5,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "left", name = "char_105_emper",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]芝居は平凡だが、こういう野外演劇のやり方自体はアリだな！　見ろよこのサーチライトに装飾、それにこのミュージックも……
+[dialog]
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",focus="r")]
+[name="ルナカブ"]エンペラー？　なぜここにいるのだ？
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]そう言うお前も、ここに帰ってきてるじゃねえか。
+[name="エンペラー"]この手の賑やかなパーティーにゃ、俺様みたいな天才アーティストがつきもんだろ！　俺様が来るのは当然ってもんだ！
+[name="エンペラー"]見ろよアンニェーゼ、若造どものパーティーのほうが、お前らよりよっぽどマトモだぜ。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",focus="r")]
+[name="ルナカブ"]……お前はパーティーに来たのか？　それとも、アンニェーゼに会いに来たのか？
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]お前はアンニェーゼからあれだけ色々教わっといて、パーティーってのが昔馴染みに会いに来るにはぴったりの場所だってことは知らねえのか？
+[dialog]
+[charslot(slot = "l", action="jump",posto = "-100,0",power=-30,times=1,duration = 0.4,isblock=true)]
+[charslot(slot = "l", action="jump",posto = "100,0",power=-30,times=1,duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]俺は大帝♪　どこも大抵♪　友が大勢♪　お目が高いぜ♪　だけど当然♪　俺は甘かないぜ♪　ボサッとしてると命ないぜ♪　……この歌詞どう思う？
+[charslot(slot = "right", name = "avg_4014_lunacu_1#6$1",focus="r")]
+[name="ルナカブ"]テキトーに歌ってるに決まってるのだ……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]こういうのはフリースタイルっつーんだよ！　おいアンニェーゼ、お前このガキにポピュラーミュージックの何たるかを教えなかったのか！
+[charslot(slot = "right", name = "avg_4014_lunacu_1#8$1",focus="r")]
+[name="ルナカブ"]そんな言い方するな！　アンニェーゼは良い奴だ！　お前の歌より良い歌を教えてくれてるんだぞ！
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]へえ？　ほかに何を教わったんだ？
+[charslot(slot = "right", name = "avg_4014_lunacu_1#9$1",focus="r")]
+[name="ルナカブ"]それはもう、たくさん教えてくれたのだ！　火の起こし方とか夜を過ごす場所の見つけ方とか、弓の持ち方、ナイフの使い方、狩りの仕方と獲物の血抜きのやり方も！
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]どうしてそう血なまぐさいことばっかなんだよ……
+[charslot(slot = "right", name = "avg_4014_lunacu_1#10$1",focus="r")]
+[name="ルナカブ"]……それに、風向きの確かめ方も、花の香りのことも、牙獣と話す方法も教えてくれたぞ。
+[name="ルナカブ"]あと、人間と話す方法と、人間に溶け込んで生きる方法もな。
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]確かに、お前はきちんと言葉を話しちゃいるな。あの赤いのとは大違いだ。あいつが何か言うたびに、こっちはまどろっこしい思いさせられるんだよ。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#10$1",focus="r")]
+[name="ルナカブ"]それだけじゃないぞ。アンニェーゼは、人間のカルネヴァーレがどんなに面白いかも教えてくれたし、都市でも荒野にいる時みたいに楽しく気ままに過ごす方法だって教えてくれたのだ……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]……そりゃマジで色々習ってるな。お前は運のいい奴だ。ほかの牙ならそういうことは学べねえもんだからな。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#9$1",focus="r")]
+[name="ルナカブ"]ほかの牙……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]前に、ほかの狼とそいつらの牙に会ったことがあるが、一言話しただけでこっちが頭に来ちまったよ。
+[name="エンペラー"]はぁ、正直よっぽど大事なことでもなけりゃ、お前ら「狼主」と関わんのはもう御免なんだがな、アンニェーゼ。
+[name="エンペラー"]群狼が野蛮で頑固なのは知ってるが、今回の同族の顔合わせには絶対に出てもらうぞ。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#9$1",focus="r")]
+[name="ルナカブ"]アンニェーゼの同族……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]「私の意志だけでは、群れ全体の視線を導くには足りない」だあ……？　一体どういう意味だ？　「これまでの道と決別する」って話はどうした？　「新しい人生」を送るんじゃねえのか？
+[name="エンペラー"]「ゲームは群れの決定事項」？　「ゲームが終わらなければ、群れの意志をほかに向けることはできない」？　挙句に「これが私たちのさが」だと？　どうしてまたくだらねえゲームの話になるんだ！
+[name="エンペラー"]「生まれ持ったさがを変えるには長い道のりが……」って、つくづく面倒くせえ連中だな！　お前らと喋んのはこりごりだ。真面目な話になるとすぐさががどうとか言い訳しやがって。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#8$1",focus="r")]
+[name="ルナカブ"]アンニェーゼが言うには、「このゲームには、必ず勝者が必要」らしいぞ。
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]けっ、バカな狼め！　お前を褒めて損したよ！
+[dialog]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]まあいい。お前、こいつに殺し以外のことを教えてるってこたあ、ほかの牙みたく死ぬまで殺し合わせたいわけじゃねえんだろ？　こいつをロドスへ送るよう頼んできたのも今日のためじゃねえよな？
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",focus="r")]
+[name="ルナカブ"]……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]こいつのことが心配なら、さっさとロドスに送り帰しちまえばいいのによ。なんだってまだウロチョロさせてやがるんだか！
+[charslot(slot = "right", name = "avg_4014_lunacu_1#6$1",focus="r")]
+[name="ルナカブ"]ロドス……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_wolflordthreat", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=30,times=1,duration = 0.3)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="エンペラー"]――うおっ！　この牙獣どもいつ現れやがった？　牙なんぞ剥いて一体誰をビビらせようってんだ、お前ら！
+[charslot(slot = "right", name = "avg_4014_lunacu_1#8$1",focus="r")]
+[name="ルナカブ"]……みんな怖がっているだけなのだ。牙の匂いを嗅ぎ取ったから。
+[name="ルナカブ"]ルナカブも、同じ匂いを感じる。
+[name="ルナカブ"]狼はすでに来ているのだ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g9_truckcamp",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日 p.m. 4:05</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bottlecollide", volume=1)]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]うわっ、つめた！　……なんだ、冷やした塩サイダーか……驚かすなよ！
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#1$1")]
+[name="トラックドライバーB"]リュドミラの話にのめり込みすぎなんだよ。
+[name="トラックドライバーB"]それで？
+[name="トラックドライバーB"]そのタルラって奴は結局、クラウンスレイヤーに殺されたのか？
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#3$1",duration=1.5)]
+[delay(time=2)]
+[name="リュドミラ"]……
+[name="リュドミラ"]いや。クラウンスレイヤーは彼女を殺さなかった。
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="r")]
+[name="トラックドライバーB"]気の毒だよな。タルラのそばにずっといたのに、実はそいつが偽りだらけのリーダーだってことには気づけなかったなんてさ……本当なら、たくさんの人を救えたはずなのに。
+[name="トラックドライバーB"]ところでそいつ、タルラもウルサスの皇帝も殺してないよな？　冠の主を倒してないなら、どうして「クラウンスレイヤー」を名乗ってたんだ？
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#2$1")]
+[name="リュドミラ"]……
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="l")]
+[name="トラックドライバーA"]皇帝だの極悪人の龍だのが相手なんだぞ？　簡単に言うなっての。そう言うお前は、誰かを殺したことなんかあるのかよ、ロミ。
+[name="トラックドライバーA"]まさか、本当にあるとは言わないよな？　ボルジアファミリーのために働いてた時とかに……
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#1$1")]
+[name="トラックドライバーB"]あるわけないだろ。
+[name="トラックドライバーB"]俺はただの運転手だよ。奴らのために、夜中車を出してただけだ。殺しだとか強盗だとか、そういうのは俺みたいな奴にはホイホイ任せられないのさ。
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]本当かねえ。お前の腕で大物たちを乗せて運転なんかできるのか？
+[name="トラックドライバーA"]その夜中に車を出すっていうのは……俺の知らないファミリー内の隠語とかじゃないだろうな？
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#3$1")]
+[name="トラックドライバーB"]文字通りの意味に決まってるだろ！　ったく、なんだって警察みたいな聞き方してくるんだか！　そもそも、全部昔のことだぞ。
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]だが、真面目な話、お前最近切符切られすぎだろ。
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#1$1")]
+[name="トラックドライバーB"]カルネヴァーレが近いせいで、人も車も多すぎて、どこもかしこも走りづらいんだよ。お前だって知ってるくせに。
+[name="トラックドライバーB"]俺は、廃墟だらけの移動都市で天災を避けながら車を走らせたことなんかないしな！
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]まだリュドミラの話に浸ってるのか。
+[name="トラックドライバーA"]そういえばリュドミラ、さっきのって、本当にウルサスで聞いた噂話なのか？　話が真に迫ってて、実体験みたいだなと思ったんだが……
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#6$1")]
+[name="リュドミラ"]……
+[charslot]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1547_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="ソマー"]お前なあ、人様に奢ってもらったサイダー片手に、話まで聞かせてもらっておいて質問攻めとは、遠慮ってものを知らないのか？
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]おっと、すまんすまん。悪かったな、リュドミラ。
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="リュドミラ"]いや、別に。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="ソマー"]リュドミラ、お前も。毎週奢ってやることないんじゃないか？
+[name="ソマー"]野営地に来てどれくらいになる？　三ヶ月、いや四ヶ月か？
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="リュドミラ"]覚えてないが、それなりに時間は経ったな。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="ソマー"]互助会がお前に払った給料、今回も全部俺たちに還元してくれただろう。どうして俺の言った通りに、将来何かの商売ができるように貯金しようとしないんだ？
+[charslot(slot="m",name="avg_1502_crosly_1#9$1")]
+[name="リュドミラ"]あんたたちはみんな家族がいるだろ。私は一人だし、金の使い道がないんだ。それに、私はツイてないから、貯金なんてしてたって金がどこかに飛んでいかないとも限らない。
+[charslot(slot="m",name="avg_npc_1547_1#7$1")]
+[name="ソマー"]そういうことを言ってるんじゃなくてだな……
+[charslot(slot="m",name="avg_1502_crosly_1#9$1")]
+[name="リュドミラ"]たかが塩サイダー2ケースだろ。
+[name="リュドミラ"]週末なんだから、本当ならみんなにビールでも振る舞いたいくらいだ。
+[name="リュドミラ"]でも、あんたたちは今夜は裁判所広場に行って映画の撮影をするんだろ？　忙しくなりそうだし、口当たりの似たサイダーで我慢してもらうしかないと思ったんだ。
+[name="リュドミラ"]足りなかったらもっと飲んでくれ。まだあるから。
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]だったら遠慮なくもらうとするか！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Image(image="56_i07", xScale=1.2, yScale=1.2,screenadapt="coverall")]
+[ImageTween( xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=45, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bottlecollide", volume=1)]
+[name="ソマー"]ほら、お前の分。自分で買ったのに飲んでないだろ？
+[name="トラックドライバーA"]えっ、お前まだ飲んでなかったのか……
+[name="トラックドライバーB"]おいおい、そんなに飲んどいて知らなかったのか！
+[name="トラックドライバーA"]へへ、悪い悪い！
+[name="リュドミラ"]……私はいいんだ。いらない。
+[name="ソマー"]リュドミラ、あのことはみんな知ってるんだ。
+[dialog]
+[delay(time=1.5)]
+[name="ソマー"]まるで気にしてないとは言えないけどな。正直な話、お前のマスクを取った時は……本当に驚いたし。
+[name="ソマー"]でも、感染者であるお前自身のほうが、誰かに影響させやしないか俺たちよりも気にしてるだろう。
+[name="リュドミラ"]……
+[name="ソマー"]いつもロミたちがお前にあれこれ聞いてるのも、責めないでやってくれ。あいつらに悪気はないんだよ。ただ、お前のことをもっと知りたいだけでな。
+[name="ソマー"]お前も水臭い真似はやめてくれ、リュドミラ。
+[name="リュドミラ"]……
+夕日が野営地の芝生を、そしてドライバーたちの顔を赤く染めていく。ソマーは荷台に寄りかかると、彼女に向かって手を伸ばす。他のドライバーも、無警戒な笑みを向けてきていた。
+塩サイダーでも人は酔うものなのかもしれないと、眉間に深いしわを寄せたレプロバは思った。
+短い沈黙の後、彼女はマスクを取ると、塩サイダーの瓶を受け取った。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1550_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="トラックドライバーA"]よーし、そろそろ時間だな。ぼちぼち片付けて、裁判所広場に行くとするか。
+[name="トラックドライバーA"]撮影現場のタイムスケジュールは俺たちの出庫シフトより厳格だからと、エイレーネの奴が口酸っぱくして言ってたからな。遅刻でシティホールに迷惑かけるようなことは絶対あっちゃいけないとさ。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="ソマー"]そのエイレーネは？
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]新しいドライバーの資格審査の件で、ラヴィニア裁判官のところに行くとか言ってたな。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="ソマー"]ああ……
+[charslot(slot="m",name="avg_npc_1561_1#1$1")]
+[name="トラックドライバーB"]そういえば、お前は本当に一緒に行かないのか？　ソマー。
+[name="トラックドライバーB"]トラックを運転して派手なシーン作りを手伝うだけの簡単な仕事だし、シティホールからの報酬も、一日車転がしてるより高いくらいだってのに。
+[charslot(slot="m",name="avg_npc_1547_1#4$1")]
+[name="ソマー"]さ、最近は働きづめだったからな。せっかく暇ができたことだし、ここでひと眠りするよ。
+[charslot(slot="m",name="avg_1502_crosly_1#3$1")]
+[name="リュドミラ"]……
+[charslot(slot="m",name="avg_npc_1561_1#1$1")]
+[name="トラックドライバーB"]リュドミラ、お前は？
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="リュドミラ"]私も行かない。用があるんだ。
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="トラックドライバーA"]そうか。じゃあ、またあとでな。
+[stopmusic(fadetime=2)]
+[Dialog]
+[PlaySound(key="$d_avg_drivestop")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="ソマー"]ふぅ、ようやくか……
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$sportscarstart")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+トラックの行列は野営地を去っていった。夜の帳がゆっくりと降りる中、辺りには誰の姿もなく、ソマーは自分の車へと向かった。
+彼は車のエンジンをかけ、ドアを閉めようとしたが――その前に、助手席にはすでに一つの影があり、その人物はシートベルトまで締めていた。
+[dialog]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1547_1#8$1",focus="l")]
+[name="ソマー"]っ、リュドミラ――
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="リュドミラ"]寝るんじゃなかったのか？
+[charslot(slot="l",name="avg_npc_1547_1#7$1",focus="l")]
+[name="ソマー"]俺は……
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="リュドミラ"]深夜の運転だっていうのに、助手席に誰も乗せずに車を出していいわけないだろう？
+[charslot(slot="l",name="avg_npc_1547_1#4$1",focus="l")]
+[name="ソマー"]リュドミラ、実は……
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="リュドミラ"]あんた自身が言ったことじゃないか――水臭い真似はやめてくれ、ソマー。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

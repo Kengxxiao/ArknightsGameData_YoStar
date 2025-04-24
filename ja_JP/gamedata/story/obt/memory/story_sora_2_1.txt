@@ -1,0 +1,1153 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[playMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_lmstreet_2",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[Delay(time=0.5)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="マフィア"]……てめえ、一体何者だ？
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m",duration=1)]
+[delay(time=2)]
+[name="テキサス"]ペンギン急便だ。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="マフィア"]……最近名前を聞くようになった、表にも裏にも手を出すって噂のあの物流会社か。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]とっとと失せろ。そこの仲間と同じように、地面に転がりたくないならな。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="マフィア"]ボスが見逃すと思うなよ！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私を狙う輩は大勢いるんだ。なるべく急いだほうがいいと、お前のボスに伝えておけ。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="マフィア"]ふん、覚えてやがれ！
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=2.5)]
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[dialog]
+[PlaySound(key="$transmission",volume=0.6)]
+[delay(time=1)] 
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]現場の掃討は完了した。
+[charslot]
+[dialog]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "260,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_105_emper", duration = 1)]
+[Delay(time=0.5)]
+[charslot(slot = "l", focus = "n")]
+[name="エンペラー"]たぶん荷物は車のトランクの中だな。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]まだ聞いていなかったな。今回の荷物はなんなんだ？
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]依頼人の名前は？
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]いや、そもそも……一体どこへ送り届ければいい？
+[interlude(channel = 3, switch = true)]
+[charslot(slot = "l", focus = "n")]
+[name="エンペラー"]依頼人はMSRだ。
+[name="エンペラー"]依頼内容はとある荷物を今夜開かれるライブの会場まで送り届けることさ。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]了解した。
+[interlude(channel = 3, switch = true)]
+[charslot(slot = "l", focus = "n")]
+[name="エンペラー"]肝心の荷物についてだが――
+[name="エンペラー"]テキサスよ、俺はな、最近考えることがあるんだ。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]ボスがそういうことを言う時は、大抵ろくでもない話だ。
+[interlude(channel = 3, switch = true)]
+[charslot(slot = "l", focus = "n")]
+[name="エンペラー"]考えてみろ。俺たちはいま会社を経営してる。んで、会社で一番重要なことはなんだと思う？　それはな、企業文化ってやつだ！
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]企業文化？
+[interlude(channel = 3, switch = true)]
+[charslot(slot = "l", focus = "n")]
+[name="エンペラー"]おうよ！　だから今日から俺たちも、独自の文化ってやつを築いていかなきゃなんねえよな。
+[charslot(slot = "l", focus = "n")]
+[name="エンペラー"]つーわけで、今日の標語は――ミステリアスだ。
+[dialog]
+[PlaySound(key="$transmission",volume=0.6)]
+[interlude(channel = 3, clear = true,duration=1)]
+[delay(time=1)] 
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#2",focus="m")]
+[name="テキサス"]……日替わりなのか？
+[charslot(slot="m",name="char_102_texas_1#2",focus="m")]
+[name="テキサス"]まあいい。
+[dialog]
+[charslot]
+エンペラーの話はいつだって突拍子もない。だが、最近ではテキサスも少し免疫がついてきていた。
+テキサスは肩をすくめると、トランクを開け――そこにあるものを見て、目を見張った。
+中には手足を縛られ、口をテープで塞がれた少女がいた。だが、驚いたのはそのせいではない。そんな光景は、これまでだって何度も見てきている。
+テキサスが驚いたのは、その少女が何者か知っていたからだ――
+最近、人気上昇中のアイドル――ソラ。テキサスは運転中に時折、彼女の歌を聴いていた。
+テキサスの姿を見ると、少女はすぐに助けを求める目をして、じたばたと体を動かしはじめた。
+[dialog]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="ソラ"]むぐ、むむぅっ！！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement")]
+[delay(time=2)]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]これでいいだろう。
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_101_sora_1#4",focus="m",duration=1)]
+[delay(time=2)]
+[name="ソラ"]あ～あ、縛られてたせいで服にしわができちゃったよ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]はぁ。まあ、それはひとまず置いといて……
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]あなたは、あたしを助けに来たの？　それとも殺しに来たの？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]助けに来たのでも、殺しに来たのでもない。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私は配送業務の集荷に来ただけだ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]てことは、あなたがペンギン急便のテキサスさんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私のことを知っているのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]今回の「配達」、実はあたしがマネージャーを説得して依頼してもらったんです。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]自分が誘拐されるのを知っていたということか？
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]はい。あたしがライブに出るのを望まない人たちがいて。その人たちがマフィアを雇って攫わせたんです。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]あたしはたまたま、彼女たちが通話しているところを立ち聞きしてしまって。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あっ、そうだ！　自己紹介がまだでしたよね。あたしはMSRで活動してるアイドル――ソラです。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]知っている。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]車にお前のCDがあるからな。
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]ええっ、もしかしてあたしのファンの方だったんですか！？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]CDをたくさん持っていることをそう呼ぶのであれば。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あたしの曲、気に入ってくれたんですね。ありがとうございます！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]まだ動けるか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]はい。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それなら行こう。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ライブ会場まで送っていく。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]待ってください。別の場所に連れていってもらうことは、できませんか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私が受けた依頼は、お前をライブ会場に送り届けることなんだが。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]まあ、一応話だけは聞こうか。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ちょっと待ってくださいね。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement")]
+[delay(time=2)]
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テストテスト、あー、あーあー♪
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]アーツを感じますか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]いいや。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]やっぱり……あの誘拐犯たちにマイクを壊されちゃってる。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ひとまず楽器店に寄って修理したくて……ダメでしょうか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あの……どうかしましたか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]いや、てっきり安全な場所に連れていってほしいという話だと思っていたんだが。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あたしはアイドルですよ。ファンへの責任は果たさなきゃ！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]それに、今夜のライブはとっても大事なもので……失敗したら、事務所の機嫌を損ねちゃいますから。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それは重要なことなのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]もちろんですよ！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[PlaySound(key="$d_avg_cardoorc", volume=1)]
+[delay(time=2.5)]
+[name="遠くから響く声"]ここだ。まだ中にいるぞ、包囲しろ！
+[dialog]
+[delay(time=2)]
+[PlaySound(key="$sportscarstart", volume=0.5)]
+[delay(time=1)]
+[name="車内のテキサス"]楽器店の住所を教えてくれ。
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]送ってくれるんですか？
+[charslot]
+[name="車内のテキサス"]ボスが言っていたんだ。今日の企業文化は、ミステリアスだと。
+[name="車内のテキサス"]そして、この場合のミステリアスとは――臨機応変に動くことだ。そう、私は解釈した。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_uptown_3",screenadapt="coverall")]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11,a=1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11,a=1, fadetime=0.1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[SoundVolume(volume=0.6, channel="car",fadetime=2)]
+[Delay(time=1)]
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさん、車にあるって言ってたCDを見たんですけど、あたしの「すやすやナンバー」シリーズは買ってないんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]見かけたことはあるが、買ってはいない。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]寝付きは良いほうだからな。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それに、運転する時に睡眠導入は必要ない。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]それもそうですね。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]でも！　やっぱり「すやすやナンバー」シリーズは全力でおすすめします！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]寝付きが悪くて悩んでいるお友達がいれば、その方に勧めるのも良いと思いますよ！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]なるほど、そのシリーズには相当自信があるんだな。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]正確に言うなら、自分が歌ったものは全部自信があります。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]本当にすっごくよく効くんですから！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]まあ、耳を塞いでよく聞こえないようにすれば、なーんの効果もないはずですけどね。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]眠れない時に試してみよう。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あっ、それなら連絡先を交換しておきませんか。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]この件が落ち着いたら、プレゼントさせてください！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]依頼の追加報酬ってことで。これも助けてもらったお礼です。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]感謝する。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]感謝すべきなのはあたしのほうですよ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あっ、ここです。
+[dialog]
+[charslot]
+[stopSound(volume=0,channel="car")]
+[playsound(key="$drift")]
+[delay(time=3)]
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさん、ちょっとここで待っててください。すぐに戻りますから。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]分かった。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain(fadetime=0.1)]
+[Background(image="bg_uptown_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[dialog]
+[charslot]
+[playsound(key="$d_avg_crowdrun")]
+[delay(time=1)]
+[name="マフィアA"]見つけたぞ！　こっちだ！
+[name="マフィアB"]あの女を包囲するんだ。気をつけろ、手強いぞ！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]はぁ、まったく懲りない奴らだ。
+[charslot]
+[name="ソラ"]ここはあたしに任せて。
+[name="ソラ"]テキサスさん、耳を塞いでください！
+[dialog]
+[charslot]
+先程のソラの話を思い出して、テキサスは反射的に耳を塞いだ。
+少女は楽器店の二階から隣のテラスに飛び移り、マイクを握って歌い始めた。
+[name="マフィアA"]あの女を殺せ……うっ……身体が……
+[name="マフィアB"]まぶたが重い……
+[name="マフィアC"]ああ、いい歌だ……ふわぁ……眠くなってきたぜ……
+[Dialog]
+[PlaySound(key="$bodyfalldown1", volume=0.6)]
+[Delay(time=0.2)]
+[PlaySound(key="$bodyfalldown2", volume=0.6)]
+[Delay(time=0.2)]
+[PlaySound(key="$bodyfalldown3", volume=0.4)]
+[Delay(time=1)]
+ソラの歌声が響く中、マフィアの構成員たちは次々に倒れ込み、心地よい微睡みに落ちていく。
+テキサスは肩の力が抜けていくのを感じ――すぐに、それが歌の効果だと気づいた。
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="char_102_texas_1#4",focus="m")]
+[name="テキサス"]――うっ……
+[charslot(slot="m",name="char_102_texas_1#2",focus="m")]
+[name="テキサス"]……何故だ……？　耳は、塞いだのに――
+[dialog]
+[CameraShake(duration=0.5, xstrength=10, ystrength=0, vibrato=30, randomness=3, fadeout=true, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]小さい頃、すごくイライラしていた時に大きな声で歌ったら、ほかの子たちが怒りだしたことがありました……
+[name="ソラ"]自分の力に気づいたのはその時です。
+[name="ソラ"]強い感情を抱いた時、それを押さえつけずに歌声に乗せれば、歌を通してほかの人に影響を与えることができる……でも、相手を選ぶことはできないんです。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]ごめんなさい、テキサスさん。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]あなたが強いのは分かってます。だからさっきはわざと勘違いさせるようなことを言ったんです……
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]あたしの歌の効果は耳を塞げば防げるって。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]実際は、もちろんそんなことありません。
+[charslot(slot="m",name="char_102_texas_1#2",focus="m")]
+[name="テキサス"]どうして……嘘を……？
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]すべてから逃げ出すためです。
+[charslot(slot="m",name="char_102_texas_1#2",focus="m")]
+[name="テキサス"]……
+[dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]テキサスさん、本当にごめんなさい。
+[dialog]
+[charslot]
+[name="？？？"]たしかにお前は謝るべきだな。ただし、それは自分に対してだぜ。
+[name="？？？"]なんせ、嬢ちゃんは自分が助かる道を、自ら閉ざしちまったんだからな。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]え？
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]どうして――
+[dialog]
+[charslot]
+[playMusic(intro="$nervous_intro",key="$nervous_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_031",focus="m",duration=1)]
+[delay(time=1)]
+[name="陰険なマフィア"]お前のアーツはたしかにちょっとばかし特別みたいだな。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]だが、そんなもんは少し調べりゃ対処するのは簡単だぜ。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]まっ、そこのバカどもは、たかが歌手一人にそんな手間をかける必要はないと思い込んでたようだがな。お陰で手柄は俺のもんってわけだ！
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]……！
+[dialog]
+[charslot]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]おっと！　動くなよ、嬢ちゃん。うっかり指を滑らせちまうかもしれねえからな。死にたくなけりゃ、大人しくしといたほうが身のためだぜ。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]そうビビることはねえさ。上からは殺すなと指示を受けてる。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]それに、感謝してるんだぜ。そこのペンギン急便のテキサスとかいう女、最近やけに名を上げてやがってな。一人でそいつの相手をする自信はなかった。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]それにしても、「すべてから逃げる」か、ははっ。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]お前らみたいな温室育ちの考えは、ほんと笑えるぜ。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]あなたには分からないよ。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]ああ、分かんねえな。毎日楽な暮らしをして、ただ歌って踊るだけで金が手に入る。その上、観客からの注目まで浴びれるってのに。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]その生活から逃げようとするなんてな。しかもこんなやり方で。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]俺がお前だったら、そんなバカみたいな決断をしたこと、後悔してるところだぜ。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]……たしかにあたしはバカだったよ。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]失敗する可能性は最初から予想してたけど……あなたたちのことを甘く見て、自分の命綱を自分で手放しちゃった。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]こんな理由で失敗するなんて、たしかに自分でも笑っちゃうくらいバカらしいよ。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]だけどね。あなたの言うその「楽な暮らし」っていうのが、毎日決められた曲を歌って、決められた話をして、決められたスケジュールをこなして、決められた笑顔を見せることなら――
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]そんな暮らし、いらない。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]あたしが後悔していることがあるとすれば、それは行動を起こす前にもっともっと準備をしておかなかったこと。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]すべてから逃げると決めたことじゃない！
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]なかなか肝が据わってんじゃねえか。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]心配すんな。こっから先、そんな楽な暮らしは送れねえからよ。
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]……
+[charslot]
+[name="？？？"]それはお前が決めることではないな。
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]なっ！？
+[charslot]
+[dialog]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_031",focus="m")]
+[name="陰険なマフィア"]ぐうっ――
+[dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=1)]
+[dialog]
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#4",focus="m",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]テキサスさん、どうして――
+[charslot(slot="m",name="char_102_texas_1#4",focus="m")]
+[name="テキサス"]いまは話してる場合じゃない。
+[charslot(slot="m",name="char_102_texas_1#4",focus="m")]
+[name="テキサス"]行くぞ。
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_lungmen_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ここまで来れば大丈夫だ。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]テキサスさん……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]お前の歌の効果はなかなかのものだったな。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]危うく間に合わなくなるところだった。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]こんなに眠りが浅い人、初めて見ました。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]昔は眠っている時も常に神経を尖らせて、周囲を警戒していたからな。癖になってしまっているんだ。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……ごめんなさい、テキサスさん。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]謝罪ならさっきも聞いた。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]もう少し怒ってくれませんか？　じゃないと、なんだか申し訳なくて。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]お前が自分の選択を後悔していないなら、私が怒っても意味はないだろう。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]……あはは、それも聞こえてたんですね。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それに、私もお前の考えが間違っているとは思わない。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]え？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そう、なんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ああ。過去の生活が嫌になって、そのすべてから逃げ出したくなった。それのどこに責められるいわれがあるんだ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ただ、そうだな。お前も言っていたが、次はもっと綿密に準備をするべきだ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……はぁ。そんなふうに言ってくれる人に、もっと早く出会えてたら、踏み留まれたかもしれないのに……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]どうしてそうなる？　私はお前が逃げるのを応援しているつもりなんだが。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]分からないんですか、テキサスさん。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]時には理解者の存在が、衝動的な行動を踏みとどまらせてくれることがあるんです。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]もしも、もっと前にあなたと友達になれていたら、嫌なことがあった時にも愚痴をこぼせていたし……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]それにあなたなら、きっとあたしを慰めて、一緒に嫌な人たちのところへ怒りに行ってくれましたよね？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]怒るのは得意じゃないが、そいつらを叩きのめすことならできる。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あっ、それじゃあ逆にあたしが止めてたかもしれませんね。暴力反対〜って。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そんなふうに、意見が合わないことだってあったかもしれないですけど。少なくとも話し相手になってもらうことはできた……
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]あたしが本当に欲しかったのは、こんなちょっとしたことだったんですね。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]それさえあれば……こんなことしなかったのに。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]そろそろ行こう。だいぶ時間を取られてしまった。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]……そうですね。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]だけど、その前に……テキサスさん、あたしと一緒にオペラをやってくれませんか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]オペラだと？　私は歌えないぞ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あたしが歌います。テキサスさんはただ、合いの手に問いを投げかけてくれるだけで構いません。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]何を問いかけるべきかは……その時になれば分かると思います。
+[dialog]
+[charslot]
+ソラは街灯の下まで歩いて行った。マイクを握りしめるとテキサスに手を差し出して、彼女を誘った。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]龍門のとある高層ビルに少女がひとり。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]誰もいない家の中、少女はテレビに映る歌手を真似て歌を歌う。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]お日さまが昇って沈むまで。お月さまが昇って沈むまで。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ただ、歌だけが、その子の友達だった。
+[dialog]
+[charslot]
+テキサスは運転中に彼女の歌声を聴いたことがある。とても美しい声だった。
+しかしいま、テキサスが感じているのは単なる声の美しさだけではなかった。ソラが歌に乗せて発する言葉には、力強さがあった。
+殻を破りたいと願う彼女の意志、そのもののような力強さが。
+テキサスは彼女の声に促されるように、思わず口を開いていた。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子の両親はどんな人だったんだ？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]父は商人。母は巷でちょっと話題のスター。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]日々を仕事に追われる彼らの結婚は、ただ一時の衝動に過ぎず――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その衝動から偶然生まれた存在に、心からの愛を注ぐはずもなかった。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子は孤独だったから、歌うことを選んだのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その子は歌声で孤独を表現していた。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]たくさんのことを歌声で表現する術を身につけていった。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]歌はその子の拠り所などではなく、いつも傍にいてくれる友達のようなものだった。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子はなぜアイドルの道を選んだんだ？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]虚空に向かって歌うことに、いつしか嫌気がさして――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]もっとたくさんの人に歌声を聴いてほしいと願っていた。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その子は家を出て、ビルの下の公園へ向かった。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]公園には近くの子供たちが集まっていた。その子は子供たちの中心に立ち、大きな声で歌い出した。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その歌声は子供たちを夢中にさせた。大人たちも、無視することなんてできなかった。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そうして、その子はアイドルに選ばれたんだ！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子はアイドルになりたかったのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……みんなが喜んでくれた。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]両親はもうその子の将来を心配する必要がなくなった。気にかける必要すらもうなかった。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]MSRは前途有望な人材を手に入れた。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その子だって、最初はとても嬉しかった。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]だってその子は歌うことが心から好きで――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]自分の歌声をもっともっと、たくさんの人に聴いてほしいと願ってたから。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]だが、現実はその子の思うようにはいかなかったんだな。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そう、その通りだった！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]みんな～！ ライブに来てくれてありがとう！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]これからもずっと応援してね。もっともっと素敵な歌を届けるから！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]みんなに会えてよかった。また次のライブで！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]これが、その子のお決まりのセリフだった。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]その子にはもっと伝えたい言葉があったのに。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]もっともっと歌いたい歌があったのに！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]どうして周りの人たちに言わなかったんだ？
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]打ち明けたこともある。だけど、何も変わらなかった。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]みんなその子にこう言った。それはアイドルになる代償だ、って。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]その子は恨んだりしなかったよ。だって、みんな大切にしてくれたから。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]でも、やっぱりどこかで恨んでたのかもしれない。だって、本当の意味で誰も気遣ってくれたことなんてなかったから。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]みんながよくしてくれたのは――
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]その子がみんなの望む道を歩んでいたから。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]だからその子は逃げることにしたのか。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]マネージャーに伝えたら、こう言われた。そんなの芸能界ではよくあることだ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その時、その子はこう思ったんだ――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]いっそこのまま消えてしまおうって。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子はステージを心から愛していたはずだ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そう、ステージではたくさんの人に歌を聴いてもらえる。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子は注目されたかったのか。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]いいえ、ただ歌を聴いてほしかっただけ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]その子の本当の望みはなんだったんだ？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]彼女の願いは、最初から一つだけ――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ただ自由気ままに……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]なんにも気にせず……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]心のままに歌うこと――！
+[dialog]
+[charslot]
+河のほとりには誰もいない。
+その歌声を聴いているのは、明るい月とそよ風――そしてテキサスだけだ。
+それでもソラは、溢れんばかりの笑顔を浮かべていた。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……ありがとうございます、テキサスさん。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あたしの願いを叶えてくれて。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ライブ会場まで送ってください。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]いや、お前を連れていく場所は――
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_pgbase_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=0.7)]
+[delay(time=2)]
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]ここが……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ペンギン急便のアジトだ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私は別の仕事があるから、すぐに出るが……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ここには好きなだけいてくれて構わない。
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]あたしの配達はもういいんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]いや。だが大した問題じゃない。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]どうして……あたしに協力してくれるんです？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]去年のことだ。私はクルビアを離れようとしていた……だが、どこにも行くあてがなくて――
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]そんな時、ある人が私を龍門のこの部屋まで連れてきてくれた。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]そして、こう言ったんだ。ここで好きなだけ悩んで構わないと。
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]それで、そのままここに残ったんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ああ。その後すぐに、ペンギン急便が設立された。
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]……それって、テキサスさんもあたしみたいに、自分の過去から逃げようとしたってことですよね？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]そんなに大した考えがあったわけじゃない。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私はただ、嫌になっただけだ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]お前があれこれ縛られるのが嫌になったのと同じように。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]でも、テキサスさんはそんなに強いのに――
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]剣ですべてを解決することはできないからな。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]あ～あ、そういうことなら、本当にもっと早く友達になれていればよかったな。
+[charslot(slot="m",name="char_101_sora_1#5",focus="m")]
+[name="ソラ"]そうなってたら、あたしが励ましてもらうだけじゃなくて……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさんを励ますことだってできたのに！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]いまからでも遅くはないさ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]それって、あたしたちはもう友達ってことですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]友人は少ないんだ。だから、よく分からない。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]う～ん、そう言われると……あたしの周りにも友達って言える人はいませんね。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]でも、さっきお互いの過去を打ち明けあったじゃないですか。こういうのって普通は、友達同士だからすること……ですよね？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……そうだな。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]じゃあ、あたしたちはもう友達ですね。テキサスさん！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あたしのことはソラって呼んでください。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]分かった、ソラ。
+[dialog]
+[charslot]
+[PlaySound(key="$transmission",volume=0.6)]
+[delay(time=1)] 
+[charslot]
+[dialog]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "260,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_105_emper", duration = 1)]
+[Delay(time=0.5)]
+[name="エンペラー"]テキサス、どこにいる！
+[dialog]
+[interlude(channel = 3, clear = true)]
+[charslot]
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]（小声）ひとまずあたしはいないってことに――
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]（小声）いや、その必要はない。
+[charslot]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "260,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_105_emper")]
+[interlude(channel = 3, switch = false)]
+[name="テキサス"]アジトにいる。
+[interlude(channel = 3, switch = true)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[name="エンペラー"]配達中じゃなかったのか？
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]ちょっとしたトラブルがあってな。配達はやめにしたんだ。
+[interlude(channel = 3, switch = true)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[name="エンペラー"]……
+[dialog]
+[interlude(channel = 3, clear = true)]
+[charslot]
+[charslot(slot="m",name="char_101_sora_1#2",focus="m")]
+[name="ソラ"]（小声）そんなにはっきり言っちゃって大丈夫ですか！？
+[charslot]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "260,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_105_emper")]
+[name="エンペラー"]ほーん。まっ、今日の企業文化はミステリアスだからな。そういうこともあんだろ。
+[name="エンペラー"]ナイス・ミステリアス！　気に入ったぜ！
+[dialog]
+[interlude(channel = 3, clear = true)]
+[charslot]
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]……
+[charslot]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "260,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_105_emper")]
+[name="エンペラー"]おおっとそうだ。本題を忘れちまうとこだったな！
+[dialog]
+[interlude(channel = 3, clear = true)]
+[charslot]
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]（小声）あたしの件は本題じゃないってこと！？
+[charslot]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "260,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "235,0", pto="235,0", name = "char_105_emper")]
+[name="エンペラー"]お前、いま何してんだ？
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]次の配達の準備だが。
+[interlude(channel = 3, switch = true)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[name="エンペラー"]んなこたあ後回しにしとけ。こっちのキーボーディストが失恋して雲隠れしちまってな。ちっと穴を埋めに来い！
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]いつもの場所でいいのか？
+[interlude(channel = 3, switch = true)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="n")]
+[name="エンペラー"]ああ。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="l",name="char_102_texas_1#1",focus="l")]
+[name="テキサス"]分かった。
+[dialog]
+[charslot]
+[dialog]
+[PlaySound(key="$transmission",volume=0.6)]
+[interlude(channel = 3, clear = true,duration=1)]
+[delay(time=2)] 
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]出かけてくる。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ソラはここで休んでいてくれ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]出て行っても構わないが、その時は外のシャッターを閉めておいてもらえるか。
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]待ってください。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ん？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさん、あたしもついていっていいですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]暗いところに一人で残るのが怖いのか？　それなら灯りを点けてやる。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]違いますって。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]これはあたしが蒔いた種だし、エンペラーさんに直接話すべきだと思うんです。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]そうか……分かった。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_bar_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ボス、来たぞ。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]おう！　いいタイミングじゃねえか。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]んん？　そこの奴は――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あの、エンペラーさん……
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]テキサスよ、こいつがお前の言ってたトラブルってやつか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ああ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]彼女が拒んだから、配達は中止したんだ。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]ほう、そうか。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]えっと、それだけで納得できるんですか？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]お前は配達されてえってのか？
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……嫌です。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]じゃあ行く必要はねえな。MSRのほうは、俺がなんとかしといてやる。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……ありがとうございます、エンペラーさん。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]さてと。テキサス、とっとと準備してきな。そろそろ俺たちの出番だぜ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]了解。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_bar_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="char_101_sora_1#3",focus="m")]
+[name="ソラ"]テキサスさんって、楽器まで弾けるんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ボスに無理やり覚えさせられてな。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]優れたトランスポーターはバンドの楽器が弾けなきゃダメだと口うるさく言われて、仕方なく覚えることにした。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]だが、私はやはりチェロのほうが好きだ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あはは、テキサスさんがチェロを弾いてるとこ、見てみたいな。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]機会があればな。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]テキサスさん。あの……昔いたところからどうやって逃げ出したのか、訊いてもいいですか？
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]あたしみたいに、突然姿を消したとか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]いや。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]火を放って、何人かとやり合った。その後、奴らにもう探すなと伝えたんだ。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]その人たちは言う通りにしたんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ああ。私が誰かを知っていたからな。探すことはしなかった。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]一人だけ、まだ諦めてない奴がいるようだが。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]じゃあ――うまくいったってことですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]うまくいった？　なんのことだ？
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]自分の過去から逃げることです。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]そうだな……その後のことで、たしかに言えるのは一つだけだ――
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]どれだけ逃げようと、過去はいつか必ず追いついてくる。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]どうしてそう思ったんですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私が育った場所だからだ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私とあの場所の繋がりは、剣で断ち切ることなどできはしない。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]雨が細く暗い水路を流れ、やがて大河に至ろうと――最後にはまた雨となって、彼の地に降り注ぐように。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]つまり、逃げても意味なんてないってことですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]意味はある。おかげで龍門に来られた。お前の歌を聴いて、友達になることも。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それに、トランスポーターの仕事が楽じゃないということもわかった。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]いつか過去が追いついて来たら、どうするつもりですか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それはそうなった時に、考えればいい。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……それだけ？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それだけだ。
+[charslot(slot="m",name="char_101_sora_1#4",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あはは！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]どうしたんだ？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]なんでもないんです。ただ、なんだか悩みが一気に軽くなった気がして。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]よぉ、テキサス、準備はできてんだろうな？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ああ。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]よぉし――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]エンペラーさん、あの……さっきセットリストを見たんです。次の曲、あたしにも歌わせてもらえませんか？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]ほお？　俺のヒットナンバーの一つに挑戦してえってのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ご存知ないかもしれませんけど。あたし、こっそりラップを猛特訓してるんです。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]事務所がずっとチャンスをくれなかっただけで。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]知ってるぜ。聴いたことがあるからな。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]え？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]うちのスタジオはお前んとこと近いんだ。知ってんだろ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……あたしのラップ、どうでした？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]そうだな。次の曲をこのステージで任せてやってもいいとは思ったぜ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……ありがとうございます！
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]よーく聞けよ？　俺の要求は一つだけだ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ステージを熱狂させること……ですよね？
+[charslot(slot="m",name="char_101_sora_1#6",focus="m")]
+[name="ソラ"]任せてください！
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_bar_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_crwddiscuss_inside", channel="slide",volume=0.8)]
+[delay(time=3.5)]
+[name="観客A"]オイオイ、次のボーカルはエンペラーだったはずだろ？　なんで女の子が出てきたんだ？
+[name="観客B"]あの子、知ってるよ。MSRのソラでしょ！
+[name="観客C"]ソラってあの元気系アイドル？ どうしてこんなところに……？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]みんな、驚いてますね。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]私はもっと驚いているがな。まさかお前が本当にボスの曲を歌えるとは。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]あたしは歌手ですよ、テキサスさん！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]それから、さっきの話の続きですけど……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさん、あたし気が変わりました。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]この曲が終わったら、ライブ会場まで送ってくれますか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]まだライブには間に合うはずです。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]本当にそれでいいのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]はい、もう大丈夫です。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]みんな～こんばんは！　今日はエンペラーさんに代わって彼のヒットナンバーを歌わせてもらうね。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]この中には、あたしを知ってる人も知らない人もいると思うけど、どっちだって大丈夫！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]大切なのは踊ることだよ！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]一緒に、この夜を思いっきり楽しもう〜！
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_park",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_cardoorc", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ここまでで大丈夫です。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ここから先は、一人で行けますから！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]手伝いは必要ないのか？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]はい、これはあたし自身の問題です。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさん、ありがとうございます。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]礼ならさっき聞いた。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]一回言うだけじゃ足りませんよ！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]だって、あなたは命の恩人で、あたしの理解者で……それに、大切なことを教えてくれた――
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]逃げ出す時は自分がどういう人間なのか、ちゃんとみんなにわからせてやるべきだって。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]考えたんです。もしも、あたしがここでいなくなったら、みんなの中のあたしのイメージは「あの元気系アイドル」のまま……そんなの悔しすぎます。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ずっと、自分が本当にやりたいことと向き合う勇気がありませんでした。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]でも、いまはもう大丈夫！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そろそろ行きますね。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]何かあったら、電話をくれ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]はい！
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]見ろよ、オイ。立派な背中じゃねえか。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]きっとあいつは、いまこの瞬間から歩みはじめたのさ。あいつ自身が望むアイドルの道をな。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ボス。今日の企業文化がミステリアスだったのは、最初からMSRの依頼を果たす気がなかったから。そうだろう？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]結果的には、ちゃんと依頼は達成してるはずだぜ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]これで依頼完了？　それは、依頼人が気の毒だな。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ボスは私に知られたくなかったんだろう。本当の依頼人が自分自身だということを。だから、今日の企業文化をミステリアスということにしたんだ。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]俺が依頼人だって？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]いやいや。それは違うぜ、テキサス。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]ソラだ。あいつの中には自由への憧れがあった。その憧れが無意識に、お前に真の依頼を出していたのさ。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]そんで、お前にはその依頼内容がちゃーんと理解できたはずだ。そうだろ？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]たしかにそうだ。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]MSRの依頼は、彼女をステージに送り届けることだった。
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]だが、私が受け取った依頼は――
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ありのままの彼女を、ステージに送り出すことだった。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+その夜は、後にファンの間で伝説となった。
+それまで元気系アイドルとして知られていたソラは、ステージに上がるとそれまでの曲風を一新し、民謡からラップまで、イメージにそぐわない多彩な楽曲を披露したのだ。
+伴奏していたバンドメンバーは事務所が特別に用意したサプライズだと思い込み、ソラに合わせて何曲も演奏したらしい。
+その後、演奏はすぐに事務所から止められてしまった。だが、伴奏がなくなろうと、ステージの上でソラは変わらず、力強く歌い続けた。
+「あれはこの大地で最も情熱的な歌声だった。 」
+「俺はあの歌から無限の愛を感じた。歌と、俺たちと、そして自由への愛を。 」
+――ライブ会場に居合わせたファンはそうコメントを残した。
+しかし、公演の後すぐにソラはMSRから責任を追及された。ライブを故意に台無しにしたと契約を解除されそうになったのだ。
+各方面からの非難に晒されながら、これまでずっと大人しかったソラは打って変わって強硬な姿勢を示した。
+彼女は謝罪会見をすることも、非を認めることも拒んだのだ。そんな彼女を前にして、事務所の上層部も一時は途方に暮れていた。
+MSRの契約プロデューサーで、著名なミュージシャンでもあるエンペラーが名乗りを上げたのは、そんな時だった。
+彼はソラがもう一度、聴衆の前に立てるようになるその日まで、自分が経営するペンギン急便で一時的に引き受けると宣言したのだ。
+エンペラーが身元を引き受けたことで、事態は円滑に進んだ。こうして、ソラはペンギン急便に加わり、トランスポーターとなったのだった。
+[dialog]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[Background(image="bg_pgbase_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playmusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]フン……フン、フ〜ン♪
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]テキサスさん！　このあいだ送った新曲、聴いてくれましたか？
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]ああ、悪くなかったな。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]その感想じゃ、漠然としすぎていて……
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]もっと具体的なコメントが欲しいです！
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]それなら、もう少し聴いてみよう。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]やったあ！
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]オイ、新しい依頼だぜ。どっちが行くんだ？
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]はいはい！　あたしに行かせてよ、ボス！
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]よし、んじゃこいつはお前に任せたぜ、ソラ。
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]この前みてえに歌うことに夢中になりすぎて、配達を忘れねえように気をつけろよ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]了解！
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]そうだ、ボス。この依頼が終わったら、スタジオで歌の練習をしてもいいかな？
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]おう、構わねえよ。
+[charslot(slot="m",name="char_101_sora_1#1",focus="m")]
+[name="ソラ"]ありがとう！　じゃあ、行ってくるね！　フンフンフ～ン♪
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]……
+[charslot(slot="m",name="char_102_texas_1#1",focus="m")]
+[name="テキサス"]……
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]オイ、やっぱりお前もついてってやれ、テキサス。
+[charslot(slot="m",name="char_102_texas_1#2",focus="m")]
+[name="テキサス"]……了解だ。
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_105_emper#1",focus="m")]
+[name="エンペラー"]ハッ、やれやれ。これから騒がしくなりそうだぜ。
+[dialog]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[Image]

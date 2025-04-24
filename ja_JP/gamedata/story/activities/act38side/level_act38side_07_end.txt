@@ -1,0 +1,857 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_vipward",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月7日 p.m. 12:00</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$transmission")]
+[delay(time=1)]
+[name="ラジオ"]市民の皆様、こんにちは。
+[name="ラジオ"]数ヶ月にわたり準備が進められてきたカルネヴァーレですが、11月9日夜に予定通り開催され、当日は数十万の市民が街に繰り出して、ヌオバ・ウォルシーニ完成一周年を祝う見込みです。
+[name="ラジオ"]カルネヴァーレ準備委員会によると、獣をかたどったフロート車はすべてヌオバ・ウォルシーニ港での組み立てを終え、パレードのため本日開拓区へ移動するとのことです。
+[name="ラジオ"]野外演劇のコンテストも幕を下ろし、最も多くの観衆を集めたチームはカルネヴァーレ当日の夜に、全市民を代表してフロート車の明かりを灯す資格を得ることとなりました……
+[name="ラジオ"]そのほかにも、入選した劇はフロート車の運行に合わせて、市民が練り歩く道路の両脇で上演される予定です。
+[name="ラジオ"]また準備委員会は、フロート車の正式なお披露目までは秘密を守っていただけるよう呼びかけています！　好奇心は抑えて、フロート車の覗き見、隠し撮り、拡散はお止めください！
+[dialog]
+[charslot(slot="m",name="avg_1028_texas2_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="テキサス"]……
+[charslot]
+[name="ラジオ"]次のニュースです。11月5日深夜、港湾エリア第五通りで発生した交通事故で、一名が負傷、事故を起こした車両がその場から逃走しました。
+[name="ラジオ"]現場にはすぐに警察が駆け付け、第五通りの混乱は回復しております。この事故による深刻な影響はございませんので、市民の皆様はどうぞご安心ください。
+[name="ラジオ"]警察は特別捜査本部を設け、都市全域で問題の車両を捜索しております。手がかり及び目撃情報がございましたら、警察までご連絡ください。
+[dialog]
+[PlaySound(key="$dooropenquite")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4065_judge_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ラヴィニア"]テキサスさん。
+[charslot(slot="m",name="avg_1028_texas2_1#1$1")]
+[name="テキサス"]おかえり。
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]少し様子を見に来ました。このあとまた、裁判所へ向かう予定ですが……
+[name="ラヴィニア"]レオンの様子はどうですか？
+[charslot(slot="m",name="avg_1028_texas2_1#1$1")]
+[name="テキサス"]これまでに医者が三度来たが……いずれも通常通りの検査をして、特段何かを言ってはこなかった。少なくとも、悪化はしていないということだろう。
+[charslot(slot="m",name="avg_4065_judge_1#6$1")]
+[name="ラヴィニア"]……
+[charslot(slot="m",name="avg_1028_texas2_1#1$1")]
+[name="テキサス"]その顔を見るに、昨日対応した件はうまくいかなかったのか？
+[charslot(slot="m",name="avg_4065_judge_1#2$1")]
+[name="ラヴィニア"]片付きはしました……どうすることもできなかったとも言います。見たくはない光景でした。
+[charslot(slot="m",name="avg_4065_judge_1#5$1")]
+[name="ラヴィニア"]ところで、あなたにはお昼のニュースを聞く習慣などなかったように思いますが。
+[charslot(slot="m",name="avg_1028_texas2_1#1$1")]
+[name="テキサス"]本当の状況は、ニュースで語られていたほど楽観視できるものではないんだろう？
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]手がかりは残っており、容疑者も特定していますが、実質的な進展はない状況です。
+[charslot(slot="m",name="avg_1028_texas2_1#5$1")]
+[name="テキサス"]事件の夜に通報してきた人物は調べがついたのか？
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]通報者が提示してきた情報はすべて虚偽でしたから、調べるのは難しいですね。
+[charslot(slot="m",name="avg_1028_texas2_1#3$1")]
+[name="テキサス"]であれば、私が手伝おうか。この街にも知り合いは多くいる。ファミリーの……
+[charslot(slot="m",name="avg_4065_judge_1#6$1")]
+[name="ラヴィニア"]ありがとうございます、テキサスさん……あなたがこの件をよく気にかけてくださっていることはわかっています。
+[name="ラヴィニア"]これがウォルシーニであれば、あなたが現れることは都市内全勢力を刺激し、一部の人間を怒らせ、あるいは彼らに警告を与え、物事を好転させるに十分なものでした。
+[name="ラヴィニア"]ですが、今は一年前とは違います。ヌオバ・ウォルシーニはウォルシーニではないのです。ファミリーの存在しないこの都市で、「最後のテキサス」にしていただけることは限られています。
+[charslot(slot="m",name="avg_1028_texas2_1#8$1")]
+[name="テキサス"]あるいは、この場所においては「最後のテキサス」が多くを成すべきではない、ということだな。
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]……はい。
+[dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_npc_702_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="看護師"]テキサスさん、あなた宛てのお電話が来ていますよ。
+[charslot(slot="m",name="avg_1028_texas2_1#3$1")]
+[name="テキサス"]私に？
+[dialog]
+[PlaySound(key="$doorclosequite")]
+[charslot(duration=0.5)]
+[delay(time=1.5)]
+[name="テキサス"]誰からだ？
+[name="？？？"]アハハッ、やあテキサス！　キミ、車は必要かい？
+[name="？？？"]でも、あまり長くは待たないよ。
+[name="テキサス"]……
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume( channel="bgs",fadetime=2)]
+[bgeffect(name="$eb_rain_fp",layer=1)]
+[PlaySound(key="$dooropenquite")]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", x=-640,y=320,solidheight="720/720/720/720",fadetime=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[gridbg]
+[Background(image="33_g6_newtown_street",screenadapt="coverall")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_avg_umbrella_flap")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1028_texas2_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="テキサス"]ここ数日晴れていたというのに、なぜ急に土砂降りになったんだ？
+[playMusic(intro="$bar_intro",key="$bar_loop", volume=0.6)]
+[charslot(slot = "m", focus = "n")]
+[name="？？？"]本気で驚いてはないよね。そんな人は傘なんか持ち歩かないもの。
+[charslot(slot="m",name="avg_1028_texas2_1#1$1")]
+[name="テキサス"]……
+[charslot]
+[dialog]
+[playsound(key="$d_avg_carhorn")]
+[delay(time=1)]
+[name="？？？"]こっちこっち。
+タクシーのボンネットの上、黒い大きな傘を差して、運転手が退屈そうに鍵をいじっている。
+[name="？？？"]ハハ、相当早く来てくれたね。
+[name="？？？"]久しぶり、テキサス。
+[dialog]
+[delay(time=1)]
+[Blocker(a=0.3, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_shallowswalk", volume=1, loop=true, channel="sh")]
+[StopSound(channel="sh", fadetime=4)]
+[interlude(maskid = "ui_cutin_mask_horizon" ,size = "1280,160",tsfrom="1,0.5", tsto ="1,1",tsduration = 1, style = 1,offset = "0,0", channel = 3)]
+[interlude(channel = 3, type = 2, name = "56_g13_cutin_char_20", sfrom = "1.45,1.45", sto = "1.4,1.4", sduration = 0, pfrom = "20,-300", pto="70,-300", duration = 3, afrom = 0, ato = 1, aduration = 3)]
+[delay(time=1)]
+[interlude(channel = 3, type = 1, slot = "m", offset = "400,0", name = "cutin_char_20", sfrom = "1,1", sto = "0.8,0.8",pfrom = "-30,-110", pto = "0,-90", duration = 3, afrom = 0, ato = 1, aduration = 3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+運転手がゆっくりと傘を上げると、吊り上がった口元があらわになる――それは屈託のない笑みだった。それから彼女は何食わぬ顔で傘を投げ捨て、テキサスに挨拶をしてくる。
+[dialog]
+[interlude(channel = 3, clear = true,tsfrom="1,1",tsto="1,0",tsduration=0)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1028_texas2_1#1$1",duration=0.3,isblock=true)]
+[delay]
+[name="テキサス"]ラップランド。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_dullthunderclap", volume=1)]
+[bgeffect(name="$eb_thundershower",layer=1)]
+[delay(time=2)]
+[Background(image="bg_black",screenadapt="coverall",fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image(image="56_i08",screenadapt="coverall", xScale=1.5, yScale=1.5,x=300,y=-200)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[image(image="56_i08",screenadapt="coverall", xScale=1.5, yScale=1.5,x=-300,y=-100)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[image(image="56_i08",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[bgeffect]
+[ImageTween(xScaleTo=1, yScaleTo=1,duration=40, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=8, block=false)]
+[bgeffect]
+[delay(time=2)]
+[name="ラップランド"]我らが故郷、ウォルシーニの夜とあの雨を思い出すね。
+[name="テキサス"]ああ。この新都市はいつも天気が良いようだからな。
+[name="ラップランド"]だけど、キミは雨が降ることくらい予想してたみたいだね。
+[name="テキサス"]備えはしていたほうがいいと思っただけだ。結局ここがシラクーザである以上、これほど長く大雨を免れていたことのほうが珍しいからな。
+[name="テキサス"]あの事故は、一体何が起きたんだ？
+[name="ラップランド"]ベッローネの市長くんのこと？　アッハハッ、まさかボクがこのタクシーでぶつかったんじゃないか、なんて思ってないよね？
+[name="テキサス"]そうだったとしても驚かないがな。
+[name="テキサス"]そもそも、まったくの無関係であれば、お前はここに現れていないはずだ。
+[name="ラップランド"]……確かに、ある程度事情は知ってるよ。
+[name="ラップランド"]良かったら一緒にドライブしない？
+[name="テキサス"]フッ、いいだろう。その気がなければここには来なかったからな。
+[name="ラップランド"]それにしても、キミなら傘に入れてくれると思ってたのに。
+[name="テキサス"]雨の中随分楽しそうにしているものだから、邪魔をする気になれなかったんだ。
+[name="ラップランド"]アハハ、さすがテキサス。
+[name="テキサス"]いつまでそんな気取ったポーズを取っているつもりだ？　こんな大雨で、観客もいないというのに。疲れるだろう？
+[name="ラップランド"]あれっ、キミは観客じゃないって言うの？
+[name="テキサス"]……
+[name="ラップランド"]ほら、早く乗ってよ。今から行く場所は近いとは言えないところでね。しばらく時間がかかるから。
+[name="ラップランド"]そういえば、助手席にキミへの手土産があるよ。
+[name="テキサス"]この箱からして、食べ物か……今は食欲がないな。
+[name="ラップランド"]安心して。今回はミルフィーユじゃないから。
+[name="ラップランド"]ボク、もう好みが変わったんだ。
+[name="ラップランド"]だけど、キミは相変わらず古臭い習慣に夢中なんでしょ？　知ってるよ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4065_judge_1#1$1",focus="n")]
+[Background(image="bg_vipward",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4065_judge_1#4$1")]
+[name="ラヴィニア"]テキサスさん？　もう戻られたのですか？
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_690_1#9$1",duration=1)]
+[delay(time=1.5)]
+[name="ディミトリ"]俺だよ。
+[charslot(slot="m",name="avg_4065_judge_1#5$1")]
+[name="ラヴィニア"]……ディミトリ？
+[name="ラヴィニア"]あなたには、ここに入る権限はないはずよ。
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="ディミトリ"]それでも方法はあるもんさ。いつまでもレオンに会わせないようにしようったって無理な相談だ。
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="ディミトリ"]花束を持ってきたんだよ。病室に手ごろな花瓶なんかないか？
+[name="ディミトリ"]前は、ベッローネの屋敷でよくこのバラを飾ってたんだ。あんたも見たことあるだろ、ラヴィニアさん？
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]……
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="ディミトリ"]そんな目で見ないでくれよ。
+[name="ディミトリ"]あんたが手配した通り、警察はここ二日の間に、事件前後の俺の行動すべてを事細かに調査していた。
+[name="ディミトリ"]だが、俺があの事故に関わっているという証拠は何も出てこなかったんだ。
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]あなたが、他人に見られて困るようなことを自分の手でするわけがないでしょう。
+[name="ラヴィニア"]シティホールの同僚から聞いたわ。最近、サルッツォ酒造から経営主体変更申請を受けたと……あなたはアルベルトと手を結んでいるの？
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="ディミトリ"]この都市、あるいはあんたたちは、俺をあまり歓迎してくれないみたいだからな。そうなると、俺もここに居座るための手段を探すしかないだろう。
+[name="ディミトリ"]法律に反した行いだったか？
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]……いいえ、完全に合法よ。
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="ディミトリ"]それなら、俺を目の届くところに置いておいたほうが、まだマシだろ？
+[name="ディミトリ"]あんたたちが病院に配置した警察であれば、俺の一挙手一投足を、そして誰と接触し誰に命令を下したかを監視するには十分な実力があるはずだ。
+[name="ディミトリ"]とにかく、俺はレオンに会いに来なきゃならなかったんだよ。
+[name="ディミトリ"]これまで、こいつが病気になった時にはいつも俺が看病してやってたんだから。
+[charslot(slot="m",name="avg_4065_judge_1#8$1")]
+[name="ラヴィニア"]……
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="ディミトリ"]ベッローネはヌオバ・ウォルシーニへの進出を諦めない。
+[name="ディミトリ"]だが、俺にレオンを傷つける理由はないし、そうでなくとも絶対に傷つけはしない。
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="ラヴィニア"]……
+[name="ラヴィニア"]その花は、レオンに代わって受け取っておきましょう。
+[name="ラヴィニア"]ただ申し訳ないけれど、司法の観点から、容疑者となる可能性のある人物を、個人的に、かつ直接的に被害者と会わせることはできないわ。
+[name="ラヴィニア"]……レオンの安否は、今やこの都市の行く末と密接に関係しているの。
+[name="ラヴィニア"]それに、この先の混乱が何をきっかけに始まるかなんて、誰にもわからないのだから。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_drivestop")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[delay(time=1)]
+[Background(image="56_g11_newvolsiniipier",screenadapt="coverall")]
+[CameraShake(duration=2, xstrength=2, ystrength=2, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1564_1#3$1",duration=0.5)]
+[charslot(slot="l",name="avg_1028_texas2_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1028_texas2_1#1$1",focus="l")]
+[name="テキサス"]――私に見せたいものというのはこれか？
+[charslot(slot="r",name="avg_npc_1564_1#3$1",focus="r")]
+[name="ラップランド"]んー、どうやらさっきの雨じゃ足りなかったみたいだね。
+[dialog]
+[charslot(slot="r",focus="all")]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$drift")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[bgeffect(name="$eb_scorchedearth",layer=1,y=-200)]
+[charslot]
+[playsound(key="$d_avg_churchfire", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+火。
+猛スピードで走っていたタクシーは、燃え盛る炎のほど近くまで来たところで急にブレーキをかけ、まだ濡れている地面にくっきりとタイヤ痕を残した。
+[charslot(slot="r",name="avg_npc_1564_1#3$1",focus="l")]
+[charslot(slot="l",name="avg_1028_texas2_1#1$1",focus="l")]
+[name="テキサス"]……
+[charslot(slot="r",name="avg_npc_1564_1#9$1",focus="r")]
+[name="ラップランド"]この火を消すためにキミを連れてきた、って言ったら信じるかい？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[bgeffect(name="$eb_burn",layer=1)]
+[image(image="56_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+獰猛な狼の口の中で炎が揺らめいて、煙がもうもうと立ち上がる。
+獣をかたどった巨大なフロート車は燃え続けており、その炎は曇天の下で異様なほどに目を引いた。
+[dialog]
+[delay(time=1)]
+[name="テキサス"]……ラップランド、お前は一体何を知っている？
+[name="ラップランド"]ボクを疑ってるの？
+[name="テキサス"]いや。お前が犯人であれば、より古典的で目を引く方法を取っただろう。
+[name="テキサス"]その場合、今頃お前は私の隣ではなく、火の中心に立っていたはずだ。
+[name="ラップランド"]アハハッ、やっぱりキミはボクのことをわかってくれてるなあ。
+[name="ラップランド"]でも、ここの労働者も警察も対応が早いから、もう少ししたら火は消し止められちゃうだろうね。残念だよ。
+[name="ラップランド"]とはいえ、彼らはさっきの大雨に感謝しないといけないね。でないとこの火は、ヌオバ・ウォルシーニ港全体を焼き尽くしてたかもしれないし。
+[name="テキサス"]……規模がどうであろうと、この火はヌオバ・ウォルシーニの人々の前で燃え上がってしまった。
+[name="テキサス"]――レオントゥッツォたちは、新たな姿の祝祭を以て、この新都市にいる数十万人にアイデンティティを与えたいと考えている。
+[name="テキサス"]市長代理に重傷を負わせた交通事故に、物流港で発生した大火災。カルネヴァーレを間近に控えた今、そうした問題が立て続けに起きたことは、市民の心に大きな動揺を与えるだろう……
+[name="ラップランド"]これって何かの前兆か、予告か、あるいは挑発だとは思わない？
+[name="テキサス"]お前はどれだけ内情を知っている？　何が目的だ？
+[name="ラップランド"]やれやれ、なんだかピリピリしてるけど――どうしてかな？
+[name="ラップランド"]元々ヌオバ・ウォルシーニは、ミズ・シチリアが若者に約束してくれた試験場なんだよね？
+[name="ラップランド"]試験だっていうからには、その結果が上手くいったりいかなかったりするのは当然じゃない？
+[name="ラップランド"]事件の目撃者として明言しよう。ベッローネのお坊ちゃんの事故は完全なる偶然だってね。
+[name="ラップランド"]彼のことは、キミが病院でずっと世話をして、今はもう命の危機を脱したんでしょう？
+[name="ラップランド"]それならどうしてピリピリしてるの？
+[name="テキサス"]……
+[name="ラップランド"]カルネヴァーレでは……キミが出す答えに期待してるよ。
+[name="テキサス"]お前が何をするつもりだろうと……
+[name="テキサス"]ラヴィニアの代わりに、私がお前を見張っておこう。
+[name="ラップランド"]アッハハ！　それならしっかり座っておきなよ。
+[name="ラップランド"]あの警官たちとのんびり過ごす気にはなれないから。
+[Dialog]
+[PlaySound(key="$sportscarstart")]
+[PlaySound(key="$d_avg_drivestop",delay=1.5,channel="1")]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[interlude(channel = 2, clear = true)]
+[interlude(channel = 3, clear = true)]
+[delay(time=1)]
+[Background(image="56_g11_newvolsiniipier",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1547_1#11$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1547_1#11$1")]
+[name="ソマー"]ど、どうしてこんなことに……！？
+[name="ソマー"]フロート車も……荷物も全部燃えちまった……
+[dialog]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",duration=0.4)]
+[delay(time=0.6)]
+[charslot(slot = "r",posfrom = "0,0", posto = "200,0",duration = 0.8,afrom=1,ato=0)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 0.8,afrom=1,ato=0)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[delay(time=0.1)]
+[charslot(slot="l",name="avg_npc_1547_1#11$1")]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1")]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="l",name="avg_npc_1547_1#11$1",focus="l")]
+[name="ソマー"]うっ――
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]落ち着け、私だ。警察が近づいているから、顔を出すな。
+[charslot(slot="l",name="avg_npc_1547_1#11$1",focus="l")]
+[name="ソマー"]っ、リュドミラ？
+[name="ソマー"]一昨日の夜はどこに行ってたんだ？　いや、それより……どうやってここを見つけた？
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]質問したいのはこっちだ、ソマー。
+[name="リュドミラ"]事故の後どこへ行っていた？
+[charslot(slot="l",name="avg_npc_1547_1#10$1",focus="l")]
+[name="ソマー"]っ、エイレーネのところに行ったんだ。あいつに気絶させられたあと倉庫に鎖で繋がれて――いや、とにかく色々あって、俺もやっと逃げ出してきたところなんだよ。
+[charslot(slot="r",name="avg_1502_crosly_1#5$1",focus="r")]
+[name="リュドミラ"]はぁ……全員の注意がフロート車に向けられているうちに動くぞ。ついてこい。煙が私たちを隠してくれる。誰にも気づかれはしないさ。
+[charslot(slot="l",name="avg_npc_1547_1#9$1",focus="l")]
+[name="ソマー"]お前、どうして裾が焦げてるんだ？
+[charslot(slot="l",name="avg_npc_1547_1#11$1",focus="l")]
+[name="ソマー"]まさかあの火は、お、お前が……
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]ああ、私がやった。
+[name="リュドミラ"]あと少し遅くなれば、警察はあのトラックと荷台の中にあるものを見つけていただろう。方法はこれしかなかった。
+[charslot(slot="l",name="avg_npc_1547_1#10$1",focus="l")]
+[name="ソマー"]……
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]行くぞ。まずはここを離れてからだ。警察の連中が――
+[charslot(slot="l",name="avg_npc_1547_1#11$1",focus="l")]
+[name="ソマー"]ま、待った！　あっちから来てるのは……エイレーネだよな！？
+[name="ソマー"]しかも一緒にいるのは……！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1553_1#1$2",duration=1)]
+[delay(time=1.5)]
+[name="警察官"]エイレーネ・ラバッツァさんと、アルベルト・サルッツォさんですね……火災現場から200メートルの場所にいた理由を、説明してもらえますか？
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_686_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1542_1#2$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_686_1#1$1",focus="l")]
+[name="アルベルト"]お前らに説明する必要はないように思うがな。
+[name="アルベルト"]俺の回答が欲しいなら、あの裁判官様に証拠と捜索令状を俺のもとまで持ってこさせてもらおうか。
+[name="アルベルト"]俺はいつでも待っていてやる。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1553_1#1$2")]
+[name="警察官"]……ではいずれ、あなたのもとをお訪ねしましょう。
+[name="警察官"]確かに、現状あなたがこの火災に関与していることを証明する証拠はありません。ですがそれは、あなたが事件のすべてと無関係であることを意味するわけではありませんので。
+[name="警察官"]そしてあなたもですよ、エイレーネ・ラバッツァさん。
+[name="警察官"]あのフロート車はほとんど焼け落ちてしまいましたが、それでもいくつか証拠となるであろう燃え残りを集めることはできました。
+[name="警察官"]後ほど鑑識に回す予定ですが、フロート車に用いられた車両が、あなたたちドライバー互助会のトラックであることはほぼ断定できています。
+[name="警察官"]ドライバー互助会の責任者として、調査協力のため同行をお願いします。
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_686_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1542_1#2$1",focus="r")]
+[name="エイレーネ"]……アルベルトさん。
+[charslot(slot = "left", name = "avg_npc_686_1#9$1",focus="l")]
+[name="アルベルト"]この前の約束は有効だからな、エイレーネ。
+[name="アルベルト"]お前はこの件とは無関係だろうが、言葉にはよく気をつけろよ。
+[name="アルベルト"]でなきゃ、俺にも助けてやれんぞ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="33_g3_srccourt",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月8日 a.m. 10:00</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="ラップランド"]懐かしい場所だ。そうは思わない？　テキサス。
+[name="ラップランド"]ただ、今回被告席に立つのはキミでもボクでもない……
+[name="ラップランド"]残念だなあ。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]仮に裁判官の言う通り、この事件がヌオバ・ウォルシーニの公共の安全を脅かすものだったとしても、彼らが出向く必要はないと思うが。
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1554_1#1$1",duration=0.5)]
+[charslot(slot = "l", name = "avg_npc_1554_1#1$1",duration=0.5)]
+[charslot(slot = "m", name = "avg_npc_686_1#1$1",duration=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m",posfrom = "0,0", posto = "-250,0",duration = 1.5,focus="m")]
+[charslot(slot = "r",posfrom = "0,0", posto = "-200,0",duration = 1.5)]
+[charslot(slot = "l",posfrom = "0,0", posto = "-200,0",duration = 1.5)]
+[charslot(duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1",duration=0.5)]
+[charslot(slot = "l", name = "avg_npc_1555_1#1$1",duration=0.5)]
+[charslot(slot = "m", name = "avg_npc_1544_1#1$1",duration=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m",posfrom = "0,0", posto = "250,0",duration = 1.5,focus="m")]
+[charslot(slot = "r",posfrom = "0,0", posto = "200,0",duration = 1.5)]
+[charslot(slot = "l",posfrom = "0,0", posto = "200,0",duration = 1.5)]
+[charslot(duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1")]
+[name="ラップランド"]一人のトラックドライバーの裁判に、利害関係がぶつかり合ってるファミリー二つの人間が押しかけて、傍聴席が埋め尽くされちゃうなんてね。
+[charslot(slot = "m", name = "avg_npc_1564_1#3$1")]
+[name="ラップランド"]アッハハ、ますますこの街が気に入ったよ。
+[name="ラップランド"]だけど、随分早いうちに裁判をするんだね。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]明日はカルネヴァーレだからな。特別な手続きを取っているんだろう。明日が来る前に、できるだけ早くこの事件を解決したいと裁判所が考えることは、理解できないでもない。
+[name="テキサス"]だが、あのエイレーネという人物のことは知っていたのか？
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1")]
+[name="ラップランド"]そうやって探りを入れてこなくていいよ。
+[name="ラップランド"]あの可哀そうなドライバーさんには一度会っただけだけど、彼女の末路は想像がつくね。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]彼女は無実だということか？
+[charslot(slot = "m", name = "avg_npc_1564_1#3$1")]
+[name="ラップランド"]そんなこと言ってないでしょ。
+[name="ラップランド"]こんなの、シラクーザという名の泥沼ではそう珍しくもないじゃない。
+[name="ラップランド"]この泥沼はいずれ、すべての人を飲み込んでいくんだ。だって、誰にでもキミみたいに逃げ出す力があるわけじゃないからね……
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1")]
+[name="ラップランド"]みんな口封じに殺されるか、泥水の中に隠れて何とか生き永らえるかのどちらかさ。
+[name="ラップランド"]テキサス、キミはヌオバ・ウォルシーニなら三つ目の道を与えられると信じてるのかい？
+[dialog]
+[charslot]
+[PlaySound(key="$gavel1", volume=0.7)]
+[CameraShake(duration=0.2,xstrength=15,ystrength=15,vibrato=30,randomness=90,fadeout=true,block=true)]
+[name="裁判官"]静粛に。
+[name="裁判官"]『新都市管理法』に基づき、ヌオバ・ウォルシーニ刑事法廷、ヌオバ・ウォルシーニ公訴による港湾放火事件、事件番号00278の審理を開廷いたします。
+[name="裁判官"]被告人は、名前と経歴、職業、住所を述べてください。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1542_1#2$1",duration=1)]
+[delay(time=2)]
+[name="エイレーネ"]エイレーネ・ラバッツァ。シチリア出身で、今はドライバー互助会の人間です。トリノ区アリト大通りの、トラック野営地に住んでいます。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1547_1#9$1")]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1")]
+[Background(image="56_g9_truckcamp",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]私たちの証言が法廷では無効になるというのは、どういう意味だ？
+[name="リュドミラ"]ここでただ、エイレーネの裁判の結果を待てと言うのか？
+[charslot(slot="l",name="avg_npc_1547_1#10$1",focus="l")]
+[name="ソマー"]お前よりも法廷に行きたいのは俺のほうなんだぞ。何せエイレーネは俺のせいで……
+[charslot(slot="l",name="avg_npc_1547_1#9$1",focus="l")]
+[name="ソマー"]だけど、お前も聞いただろう。あいつは警察署で何も言わなかったんだ……これ以上誰かを巻き込まないようにしてるんだろう。
+[name="ソマー"]あいつはシティホールと裁判所を信じてる。自分の無実は証明できると信じてるんだ……
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]あんたもそう信じているのか？
+[charslot(slot="l",name="avg_npc_1547_1#10$1",focus="l")]
+[name="ソマー"]……
+[charslot(slot="l",name="avg_npc_1547_1#9$1",focus="l")]
+[name="ソマー"]俺はあいつを信じてる。
+[charslot(slot="r",name="avg_1502_crosly_1#6$1",focus="r")]
+[name="リュドミラ"]……
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="リュドミラ"]ここで待っていろ、ソマー。私はほかの連中を集めてくる。何があろうと、私たちは彼女のそばにいてやるべきだ。
+[dialog]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(slot = "r",posfrom = "0,0", posto = "300,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_1547_1#12$1",focus="l")]
+[name="ソマー"]……
+[dialog]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[playsound(key="$bodyfalldown2",volume=0.7)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=25, vibrato=20, randomness=90, fadeout=true, block=false)]
+ソマーは頭を抱えて地面にくずおれ、リュドミラが去った方向を見つめた。
+エイレーネに隠れてヴェネツィアの荷物を運んでいなければ……あの事故が起きていなければ……エイレーネに助けを求めなければ……もっと早く鎖をほどいて港に辿り着いていれば……
+すべては彼に起因することだというのに、今法廷で審理を受けているのは彼の親友であり……娘なのだ。
+彼は手探りで、一枚の名刺を取り出した。誰が自分のキャンピングカーにこれを滑り込ませたかは、彼にはわからなかった。
+その名刺には一つの住所が――「港湾第三ターミナル」という文字列だけがあった。
+[name="ソマー"]エイレーネ、俺がお前みたいに頭の切れる奴じゃないのはわかってるが……
+[name="ソマー"]今回はきっと、お前の力になれるはずだと思うんだ……
+[dialog]
+[playsound(key="$d_avg_clothmovement")]
+[delay(time=1)]
+彼は立ち上がると、一人で野営地を離れていった。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1542_1#2$1", focus = "n")]
+[Background(image="33_g3_srccourt",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[charslot(slot = "m", focus = "n")]
+[name="裁判官"]エイレーネ・ラバッツァさんですね。シティホールの身分登録情報とも一致します。
+[name="裁判官"]昨日港で起きた火災は、重大な物的損害を引き起こし、また現場にいた数十名の労働者が危うく負傷するところでした。これは都市の公共の安全を深刻に脅かした事件だと言えるでしょう。
+[name="裁判官"]カルネヴァーレを間近に控えた今、このような事件が世論に与える影響は計り知れぬものです。
+[name="裁判官"]警察が提出した証拠を裁判所が確認したところ、火元――つまり巨大な狼のフロート車には、明らかな人為的放火の痕跡が存在しました。
+[name="裁判官"]そのトラックはドライバー互助会の所有物でした。警察が出入庫表と比較したところ、当該車両には近日出庫の予定はなく、ヌオバ・ウォルシーニ港にあるはずのないものだったと判明しています。
+[name="裁判官"]その前提を踏まえ、ドライバー互助会の責任者であるあなたが、偶然にも火災現場に居合わせたことから――
+[name="裁判官"]エイレーネさん、あなたは最大の容疑者と目されています。あなたには弁明の権利があります。
+[charslot(slot = "m", name = "avg_npc_1542_1#2$1")]
+[name="エイレーネ"]裁判官、あたしは自分の知るすべてを喜んでお話しします。
+[charslot(slot = "m", focus = "n")]
+エイレーネは落ち着いて彼女の知るすべてを述べ、昨日の火災はドライバー互助会の誰とも関係がないと証明しようとした。
+だが、裁判官の表情は険しくなっていくばかりだ。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]……裁判官個人が彼女を助けたいと思っていても、どうしようもないな。
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1")]
+[name="ラップランド"]そりゃそうでしょ。放火した真犯人が出てこない限り、彼女がどんなに自己弁護したところで無力だもの。
+[name="ラップランド"]あーあ、可哀そうにね。助けてあげたいとは思わないの？
+[name="ラップランド"]たとえば、ここで立ち上がって彼女は無実だって保証してあげるとかさ。キミが言うなら、裁判所は寛大な措置をしてくれるかもしれないよ。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]お前の考えはわかっている。
+[name="テキサス"]ヌオバ・ウォルシーニの法律はそのように踏みにじられ、軽視されてはならない。あれはラヴィニアたちが戦って、ようやく勝ち取ったものなのだから。
+[charslot(slot = "m", name = "avg_npc_1564_1#3$1")]
+[name="ラップランド"]だったら、ここで見てるしかなさそうだね。あるいは……
+[charslot(slot = "m", focus = "n")]
+ラップランドがうずうずした様子で、挑発的にテキサスを見た。
+[charslot(slot = "m", name = "avg_npc_1564_1#3$1")]
+[name="ラップランド"]ボクとしては、キミたちのくだらないルールなんてどうでもいいんだよね。だから、力を貸してあげようか？
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]……
+[charslot]
+[name="裁判官"]こほん、しばしお待ちください。ただいま、追加の証人の証言申請を受理しました。
+[name="裁判官"]えっ……あ、アルベルト・サルッツォさん？
+[dialog]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_686_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="アルベルト"]どうした、裁判官殿。『新都市管理法』に厳密に従い身分登録を済ませた正式な市民たる俺の証言が、まさか法廷で受け入れられないとでも？
+[charslot(slot = "m", focus = "n")]
+[name="裁判官"]……も、もちろんそのようなことはありません。どうぞ。
+[name="裁判官"]あなたは、エイレーネさんがあの火災に関与していたと証言なさるおつもりですか？
+[charslot(slot="m",name="avg_npc_686_1#5$1")]
+[name="アルベルト"]……
+[charslot]
+その時、アルベルトは答えなかった。彼の視線は証人席の反対側、傍聴席の左に向けられていた。そこに座っているのはアントニオとその部下たちだ。
+そしてアントニオの斜め後方に、アルベルトは自身の娘――追放されたサルッツォの子を見た。
+ラップランドは足を組んだまま、にっと笑うと、人目を気にせず彼に手を振った。
+彼女のそばにはテキサスまでいる。
+[dialog]
+[charslot(slot = "left", name = "avg_1028_texas2_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1564_1#3$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1564_1#3$1",focus="r")]
+[name="ラップランド"]（小声）チャオ～。
+[name="ラップランド"]ほらテキサス、ボクの愛するお父様がこっちを見てるよ。お高くとまってないで手を振ってあげて。
+[charslot]
+[name="裁判官"]あの、アルベルトさん？　陳述をお願いします。
+[charslot(slot="m",name="avg_npc_686_1#9$1")]
+[name="アルベルト"]フンッ。
+[name="アルベルト"]エイレーネは放火をしていない。俺が証明してやろう。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g11_newvolsiniipier",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$distressed_intro",key="$distressed_loop", volume=0.6)]
+[playsound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_npc_1547_1#9$1",duration=1)]
+[delay(time=1.5)]
+[name="ソマー"]第三ターミナル……この辺りのはずだ。
+[charslot(slot = "m", focus = "n")]
+[name="？？？"]あんたがソマーか？
+[charslot]
+[dialog]
+[charslot(slot = "left", name = "avg_npc_1555_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1555_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", focus="l")]
+[name="マフィア"]ボスから、ここであんたを待つように言われてな。
+[charslot(slot = "r", focus="r")]
+[name="マフィア"]行くぞ。あの人が会いたがってる。
+[charslot]
+[charslot(slot="m",name="avg_npc_1547_1#9$1")]
+[name="ソマー"]あんたら、ヴェネツィアファミリーの人間か？　それとも、サルッツォか？　あるいはメディチとか……？
+[charslot(slot = "m", name = "avg_npc_1555_1#1$1")]
+[name="マフィア"]チッ。
+[charslot(slot="m",name="avg_npc_1547_1#9$1")]
+[name="ソマー"]これでエイレーネは助かるんだよな？
+[charslot(slot = "m", name = "avg_npc_1555_1#1$1")]
+[name="マフィア"]いいから行け。すぐ先だ。
+[name="マフィア"]角にあるコンテナに入れ。
+[charslot(slot="m",name="avg_npc_1547_1#10$1")]
+[name="ソマー"]……
+[charslot(slot="m",name="avg_npc_1547_1#12$1")]
+[name="ソマー"]わかった。
+[dialog]
+[charslot(duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="エイレーネ。これまで、お前に何も言わずにいてすまなかった。実は、グリを迎える準備はもう進めているんだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="俺が仕事を増やして、少し金を貯めていたことはお前も知っているだろう。これくらいあれば、あの子が二年間鉱石病の治療を受けて、学校に通うには十分なはずだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="その学校は、俺たちの野営地からも遠くないし、俺もあの子の面倒を見てやることができるだろう。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="昔、お前を引き取ったのは俺だったが、お前が何年も俺を助けてくれたことを思えば、恩があるのはどっちのほうかなんてわからない。今は何でもお前に頼りっきりだし、これじゃ不公平なくらいだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="お前もそろそろ自分のことを考えるべきじゃないか、ははっ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="正直俺には、理想なんかないんだ。何せ、この一生でもうたくさんの物事を見てきて、自分に何ができるかもよくわかってきてるからな……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="俺は家族と穏やかな日々を過ごせたらそれでいいって人間だ。小さなスーパーの店主で、ごく平凡なドライバーで……だから、お前についてこの都市に来ようと思った理由もそこにある。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="店がなくなったからには、場所も生き方も変えるだけのことだと思ったんだ。あいつらに張り合う必要はないし、こういうツイてない出来事は誰にでも起こりうるんだから、誰を責めることもない。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ただ遠ざかりさえすればいい。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="幸い、お前がみんなのために良い場所を選んでくれたから……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="グリもきっとここを気に入るだろう。賭けたっていい。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1542_1#2$1")]
+[Background(image="33_g3_srccourt",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[name="エイレーネ"]……
+[charslot(slot="m",name="avg_npc_686_1#1$1")]
+[name="アルベルト"]今述べたすべては真実であると保証しよう。先ほど言ったように、昨日の午前からヌオバ・ウォルシーニ港での火災が起こるまで、彼女はずっと俺といた。
+[name="アルベルト"]サルッツォ酒造のブドウ畑二つがもうじき初収穫を迎えるんでな。収穫したブドウを運ぶために、ドライバー互助会に車を回してもらえるよう頼もうとしていたんだ。
+[name="アルベルト"]俺たちが港の状況確認に向かったのもそのためだ。うちの従業員たちがそれを証明してくれるだろう。
+[dialog]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=1)]
+[charslot(slot = "m", focus = "n")]
+[name="傍聴席のマフィア"]アルベルトさんの言う通りだ！　俺たちもそう聞いてた！
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="m",name="avg_npc_686_1#1$1")]
+[name="アルベルト"]つまり、エイレーネには十分なアリバイがあるわけだ。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m",posfrom = "0,0", posto = "-150,0",duration = 0.9,afrom=1,ato=0)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1",posfrom = "0,0", posto = "0,0")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="r",name="avg_npc_686_1#1$1",duration=1,posfrom = "200,0", posto = "200,0")]
+[delay(time=2)]
+[playsound(key="$d_avg_strangeclap")]
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1",focus="m")]
+[name="ラップランド"]（拍手をする）ブラボー。
+[charslot(slot="r",name="avg_npc_686_1#1$1",focus="r")]
+[name="アルベルト"]……
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "r",posfrom = "200,0", posto = "0,0",duration = 1.5,afrom=1,ato=0,focus="r")]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1",focus="m")]
+[name="ラップランド"]お父様はさすが聡明だ。これでドライバー互助会との繋がりを作ったわけだね。
+[name="ラップランド"]こうなれば、今後あの可哀そうなドライバーさんはあの人の言いなりになるしかない。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]事はそう簡単には終わらないようだが。
+[charslot]
+[name="裁判官"]しかし、あのトラックが互助会のものであることは事実ですし、先ほど述べた通り、当該車両の出庫予定はありませんでした。あの車が港に置かれ、フロート車になっていた理由は何なのでしょう？
+[name="裁判官"]貴方が放火犯ではないにしても、互助会の責任者として、車両の違反使用についての説明責任はあると思いますよ、エイレーネさん。
+[charslot(slot = "m", name = "avg_npc_1542_1#4$1")]
+[name="エイレーネ"]……
+[charslot(slot = "m", focus = "n")]
+[name="？？？"]その点については、私から証言しましょう。
+[charslot]
+[name="裁判官"]アントニオさん？
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1544_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="アントニオ"]裁判官、追加の証拠として税関申告書を提出いたします。あの車はヴェネツィア自工のためにタイヤを輸送していたのです。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g11_newvolsiniipier",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1555_1#1$1")]
+[name="マフィア"]ここだ、入れ。
+[name="マフィア"]ボスがお待ちだ。
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1547_1#10$1")]
+[name="ソマー"]……
+[charslot(slot = "m", focus = "n")]
+コンテナの扉は半開きになっており、ソマーには真っ暗なコンテナ内でちらつく微かな光以外何も見えなかった。
+[charslot(slot = "m", name = "avg_npc_1547_1#10$1")]
+[name="ソマー"]それで、俺を……エイレーネを助けてくれるその人は、一体誰なんだ？
+[charslot(slot = "m", name = "avg_npc_1555_1#1$1")]
+[name="マフィア"]無駄口叩くな、おっさん。
+[name="マフィア"]そんなのは入ればわかるこった。
+[name="マフィア"]お前はあのドライバーを助けたいんだろう？　俺たちもそうだってことさえ知ってりゃ十分だ。
+[charslot(slot = "m", name = "avg_npc_1547_1#9$1")]
+[name="ソマー"]……
+[charslot(slot = "m", focus = "n")]
+ソマーはコンテナの扉に触れ、ためらった。
+[charslot(slot = "m", name = "avg_npc_1547_1#10$1")]
+[name="ソマー"]約束してくれるんだろうな――
+[charslot]
+答える者はいなかった。ファミリーの構成員はすでに遠ざかり、ここに居るのは彼一人だ。
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="エイレーネ。俺にはお前みたいな度胸はないし、お前ほど賢くもない。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="だから、お前がラヴィニア裁判官とレオントゥッツォ市長の頼みに応じて組合の責任者になると決めた時、俺は喜んだし、同時に心配にもなった。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="それは、俺たちがたくさんのトラブルに巻き込まれることを意味していると思ったし……案の定そうだった。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="だが、お前は言っていたな。俺たちが作ろうとしているのは、シティホールがファミリーに対処するのを補助する「組合」ではなく、俺たちと同じような運命にある人々のための「互助会」なんだと。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="お前はいつも、引き取ってくれたのはソマーだと言うが、俺にこれまでと違う暮らしが得られる可能性を与えてくれたのは、明らかにお前だった。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="これはお互い様なんてもんじゃない。俺はお前に大きな借りがあるんだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="俺にお前を助けられる時があるとすれば、俺はためらわない。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="グリには、自分の親父が恩返しもできないような奴だとは思わせたくないからな。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="あの子にはいつも、恩を軽んじる奴にはなるなと教えているわけだし、俺も身をもって実践しないと。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Dialog]
+[MusicVolume(volume=0.4, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g3_srccourt",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="裁判官"]アントニオさん。あなたは、今の陳述の意味するところをわかっているんですね？
+[charslot(slot="m",name="avg_npc_1544_1#1$1")]
+[name="アントニオ"]アルベルトさんは、一市民として法廷に立ち証言したまでだというふうに仰っていましたが、実際のところこの件に関わっているのはヴェネツィア自工なのです。
+[name="アントニオ"]カルネヴァーレの影響で、ここ二ヶ月は市内の車両需要が急増しましたので、我々は臨時でほかの都市に車両の材料を発注せざるを得なくなりましてね。
+[name="アントニオ"]例の車に乗せていた荷物は通関手続きも済んでおり、ドライバー互助会に輸送してもらっている最中でした。臨時対応をお願いしたので、出入庫表に反映する時間もなかったのだと思います。
+[name="アントニオ"]エイレーネさん、私の言ったことに誤りがありましたら、訂正をお願いします。
+[charslot(slot = "m", name = "avg_npc_1542_1#2$1")]
+[name="エイレーネ"]……彼の言った通りです。紙の書類も探せば見つかるかと。
+[charslot(slot="m",name="avg_npc_1544_1#1$1")]
+[name="アントニオ"]あの車が港にあった理由も、誰がフロート車の中に紛れ込ませたのかについても、我々は知るよしもありません。警察の捜査が頼りです。
+[name="アントニオ"]しかし、ドライバー互助会に車両の違反使用はなく、エイレーネさんは事件に対してそれほど大きな過失があるとは言えないと存じます。
+[charslot]
+[name="裁判官"]……こちらでも裏を取ってみましょう。
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1")]
+[name="ラップランド"]あの可哀想なドライバーさん、運が良いね。結果はほとんど見えてるよ。
+[name="ラップランド"]お父様と「次代のヴェネツィア」の証言はとっても効果的だった。おかげでエイレーネの容疑は晴れて、彼女は難を逃れたわけだ。
+[charslot(slot = "m", name = "avg_1028_texas2_1#2$1")]
+[name="テキサス"]だが、容疑者自身が蚊帳の外に置かれてしまった。
+[charslot(slot = "m", name = "avg_1028_texas2_1#1$1")]
+[name="テキサス"]当事者でありながら、エイレーネはもはやほとんど口を挟めない。この法廷は完全にヴェネツィアとサルッツォが支配している。
+[name="テキサス"]奴らは裏ではあれほど争い合っているというのに、法廷では驚くほど息が合っているな。
+[name="テキサス"]ファミリーの連中のやり方は皆よくわかっている。
+[name="テキサス"]自分たちの潔白を証明した上で、ドライバー互助会を完全に掌握するためとあれば、行動を起こすのは必然だ。
+[charslot(slot = "m", name = "avg_npc_1564_1#9$1")]
+[name="ラップランド"]それも当然だね。本当の放火犯はまだ見つかってないわけだし。
+[name="ラップランド"]あるいは、永遠に見つからないほうが都合がいいのかもしれないけど。
+[charslot(slot = "m", name = "avg_npc_1564_1#3$1")]
+[name="ラップランド"]アハハッ、ファミリーが見返りを求めてる時は、当事者の考えなんてまるで気にしないものだから。
+[charslot(slot = "m", name = "avg_1028_texas2_1#7$1")]
+[name="テキサス"]……ラヴィニアに連絡しなくては。
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1547_1#10$1")]
+[Background(image="56_g11_newvolsiniipier",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ソマー"]……
+[charslot]
+彼は二度深呼吸をすると、コンテナの扉を押し開けて中に入った。
+[dialog]
+[playsound(key="$d_gen_doorclose",volume=0.7)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_npc_1547_1#11$1")]
+[name="ソマー"]……誰もいないのか？
+[charslot]
+コンテナの中には明かりが一つと、椅子が一つあるばかりで、誰の姿もそこにはなかった。
+ソマーは唖然とした。
+それでも彼は待つことにした。これでエイレーネを救えるのなら……
+彼は喜んで待った。
+[dialog]
+[delay(time=1)]
+[Subtitle(text="エイレーネ、俺はこの都市が好きなんだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="グリもそうだといいなと思うし、そうでなくとも、あの子にもっと良い環境を用意してやれたらと思ってる。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="だから、ありがとうな。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ほら、そろそろ行くよ。いつも通り、遅れのないように配達しないと。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g11_newvolsiniipier",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",duration=1)]
+[delay(time=1.5)]
+[name="リュドミラ"]第三ターミナル、あいつはここに来てるはず……
+[name="リュドミラ"]だが、ここは広すぎる……クソッ、どうやって見つければいい？
+[charslot(duration=1)]
+[playsound(key="$rungeneral", volume=0.7)]
+リュドミラはコンテナが作り出す路地の間を焦りと共に通り抜けては、ソマーの痕跡を見つけようとしていた。
+――そう遠くない場所から響く話し声を聞くまでは。
+[name="マフィアA"]なあ、カルネヴァーレのあとの休暇はどこに行く？
+[name="マフィアB"]ウォルシーニとかかねえ。歴史あるオペラ座は全部あそこに揃ってるし、優雅な気分でも味わいに行くよ。
+[name="マフィアA"]俺はテルニのほうが良いと思うがな。あそこのクラブには、ボリバルから来たっていうペッローのメンズストリップダンサーがいるらしいぞ。
+[name="マフィアB"]ったく、お前はサルッツォの人間だろ。本気で行くなら尻尾を隠せよ。
+[name="マフィアA"]ハハッ、そんならこっちはウォルシーニの良いダフ屋を何人か教えてやろう。
+[name="マフィアA"]お前は良い奴だし、仕事の手際も良い。ヴェネツィアでやっていけなくなったら、俺の所に来な。口利きしてやるからよ。
+[name="マフィアB"]遠慮しとくよ。それより、一本どうだ？
+[dialog]
+[playsound(key="$d_avg_lighter", volume=0.5)]
+[delay(time=1)]
+[name="マフィアA"]へえ、なかなか良いライターだな。
+[dialog]
+[charslot(slot="m",name="avg_1502_crosly_1#4$1",duration=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+リュドミラは饒舌な二人組を見やったが、話の内容などまるで気に留めていなかった。
+ただ、その男が手でもてあそんでいる金色のライターを見ていたのだ。
+彼女はそのライターを知っていた。それの所有者は目の前の二匹の狼ではなく、とあるタバコを吸わないドライバーであるということも。
+[charslot(duration=1)]
+……
+だが、彼女が知りえぬことに、それは本来とあるファミリーの人間のものだった。
+巡り巡って、それはまたファミリーの手中へと戻ってきたのだ。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
