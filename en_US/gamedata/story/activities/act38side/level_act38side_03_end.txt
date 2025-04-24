@@ -1,0 +1,595 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g12_saluzzowinery",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>November 6th, 1100    8:20 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_701_1#1$1",duration = 1)]
+[delay(time=2)]
+[name="Undercover Officer A"]I recommend the 'Red Tongue Sour'. They say it's made like how the Sami do.
+[dialog]
+[charslot(slot = "r", name = "avg_npc_702_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "r",focus="r")]
+[name="Undercover Officer B"]Are you mad, Mane? Ordering cocktails at a winery? We'll be laughed out of here!
+[charslot(slot = "l",focus="l")]
+[name="Undercover Officer A"]*ahem* Didn't we taste a similar looking one when we were in Columbia last month?
+[name="Undercover Officer A"]I just wanted to reminisce about our honeymoon a little, tesoro.
+[name="Undercover Officer A"](Remember our undercover classes at the police academy. Sometimes we have to be conspicuous to cover the others.)
+[name="Undercover Officer A"](The judge needs more time to clear bystanders from here.)
+[charslot(slot = "r",focus="r")]
+[name="Undercover Officer B"](...Are you sure you didn't pull that just because you wanted to drink it?)
+[charslot(slot = "l",focus="l")]
+[name="Undercover Officer A"]I swear, tesoro!
+[charslot(slot = "r",focus="r")]
+[name="Undercover Officer B"]Ssh..! Softer, Mane!
+[charslot]
+[name="???"]I thought his Nuova Volsinii would be much more lenient.
+[name="???"]Signorina, why not have a drink on me? A cocktail, of course.
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_690_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="Demetri"]Let's just say it's a local custom.
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_702_1#1$1",focus="r")]
+[charslot(slot = "left", name = "avg_npc_701_1#1$1",focus="r")]
+[name="Undercover Officer B"](Mane, he's here...)
+[charslot(slot = "l",focus="l")]
+[name="Undercover Officer A"]Signore, thank you for the generosity, but it's not your place to offer my—
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="Demetri"]I think there's been a misunderstanding. My offer was not directed at you, officer.
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_702_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_701_1#1$1",focus="l")]
+[name="Undercover Officer A"]—!
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="Demetri"]It's been a while, Lavinia.
+[name="Demetri"]Care for a drink? You've been standing in that dim corner for a long while.
+[dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4065_judge_1#1$1",duration=1)]
+[delay(time=1.5)]
+[playMusic(intro="$nervous_intro",key="$nervous_loop", volume=0.6)]
+[name="Lavinia"]I was just wondering how long it'd take before you'd pay and leave.
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="Demetri"]I don't have to worry about the bill here. The Saluzzos never treat their important guests poorly.
+[name="Demetri"]Besides, Alberto informed all of his wineries in advance. 'Feel free to taste the wines as you please', were his words.
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="Lavinia"]I never knew you were on such cordial terms with the Saluzzos. What are you and Alberto doing together? Surely you can't be working as a bartender here?
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="Demetri"]...
+[dialog]
+[playsound(key="$d_avg_chairrub")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image(image="56_i30",screenadapt="coverall", xScale=1.1, yScale=1.1,x=70)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,duration=60,xTo=0)]
+[playsound(key="$pourwater")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Demetri"]Lavinia, I didn't come here to be interrogated.
+[name="Demetri"]I'm deeply concerned for Leon. That's the only reason for our meeting tonight.
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="Lavinia"]'He's still in a coma', 'He's still in a critical condition'... what kind of answer are you expecting from me? Or should I say, what kind of answer are you afraid of?
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="Demetri"]The fact that you are here means his condition isn't that bad.
+[name="Demetri"]...I still can't meet him?
+[charslot(slot="m",name="avg_4065_judge_1#2$1")]
+[name="Lavinia"]You don't have to ask a question you already know the answer to.
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="Demetri"]Leon is mi fratello. I just hope he's safe and sound.
+[charslot(slot="m",name="avg_4065_judge_1#7$1")]
+[name="Lavinia"]A fratello to you? Or Bellone's traitor?
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="Demetri"]Lavinia, everyone who stayed in the Bellones has valid reasons for hating him.
+[name="Demetri"]I hate him too. I don't agree with his choice and how he does things today, but I wouldn't deal with him in such a despicable way.
+[charslot(slot="m",name="avg_4065_judge_1#7$1")]
+[name="Lavinia"]That won't serve as valid testimony to clear you from suspicion.
+[name="Lavinia"]Leon got into the accident right before he was supposed to meet you, and you were inside a restaurant near the scene. There is reason to suspect you.
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="Demetri"]Then, Your Honor, what will you do? Haul me into your court and slowly interrogate the truth from me? I know many of the 'customers' here today are in fact officers.
+[charslot(slot="m",name="avg_4065_judge_1#7$1")]
+[name="Lavinia"]...I won't arrest you without decisive evidence. This is how the law operates, we won't act according to the 'rules' of the famiglie.
+[name="Lavinia"]But my suspicion towards you remains.
+[name="Lavinia"]I'll get to the bottom of this, no matter if you're innocent or not, no matter who was involved. I <i>will</i> get to the truth.
+[charslot(slot="m",name="avg_npc_690_1#9$1",focus="n")]
+Demetri looks at Lavinia's determined eyes, and sighs.
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[name="Demetri"]You haven't changed at all, Lavinia. Still the same as your newbie judge days, daring question a famiglia don.
+[name="Demetri"]I never liked you that much, but... thank you for taking care of Leon for me.
+[name="Demetri"]Also, I still have to say: I'll also investigate Leon's accident... I want to know who the culprit is too.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_decap",delay=1)]
+Demetri fetches a nearby wine bottle and gently pulls the cork open.
+The liquid swishes within. Only half remains.
+[dialog]
+[charslot(slot="m",name="avg_npc_690_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="Demetri"]Someone gifted me this bottle. I had planned to invite Leon to try it. He should have been the one sitting here...
+[name="Demetri"]Anyway, this glass is on me.
+[name="Demetri"]Can I really not see him, Lavinia?
+[charslot(slot = "m", focus = "n")]
+He leans on the counter, waiting for her answer.
+But the judge looks at the glass of red wine and says nothing.
+[charslot(slot="m",name="avg_npc_690_1#1$1")]
+[name="Demetri"]Fine. No point for me to remain here.
+[name="Demetri"]Now would you guys excuse me?
+[name="Demetri"]Or are you planning to detain me under some special procedures for the famiglie under the New Urban Management Act?
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="Lavinia"]There's no more famiglia here, Demetri.
+[charslot(slot="m",name="avg_npc_690_1#2$1")]
+[name="Demetri"]...So I guess I'll go?
+[charslot(slot="m",name="avg_4065_judge_1#1$1")]
+[name="Lavinia"]As you please.
+[dialog]
+[charslot(slot="m",name="avg_npc_690_1#9$1")]
+[delay(time=0.5)]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=1.5)]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Background(image="33_g10_smallrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_avg_dishes")]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_npc_686_1#9$1",focus="r")]
+[name="Alberto"]As laid-back as ever, Venezia senior.
+[name="Alberto"]Do your men know their don is currently sitting in an ordinary restaurant right now, while they're waiting to welcome him at the port?
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]I just missed the food here. I didn't expect you'd be the first face to greet me.
+[charslot(slot = "left", name = "avg_npc_1545_1#7$1",focus="l")]
+[name="Venezia Sr."]Haha. Come, have a seat, my friend.
+[name="Venezia Sr."]This restaurant isn't as ordinary as you think. I found the chef here from Sicilia. Makes the most authentic bolognese, you should try some.
+[name="Venezia Sr."]The younger ones love talking about the future, which isn't a bad thing. However, some traditions shouldn't be abandoned, especially when it comes to Siracusan cuisine.
+[name="Venezia Sr."]Anyone who tried innovating a new Saluzzo wine making method would surely be buried six feet under in the vineyard for fertilizer.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]Hmph. That's right.
+[name="Alberto"]This bottle of noble rot wine is the first of our new collection. Take it as a welcome gift.
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]Hm... 1069. A good year.
+[name="Venezia Sr."]I can find all of Saluzzo Vino's vintages and subsidiary brands on my rack, but it's been a long time since I've received a bottle from you personally...
+[name="Venezia Sr."]We haven't been in contact much, Alberto.
+[charslot(slot = "right", name = "avg_npc_686_1#8$1",focus="r")]
+[name="Alberto"]Just a decade.
+[name="Alberto"]The Morettis ignored the Dodici Famiglie's ban on competing with the other famiglie to monopolize the Orignium trade, and recklessly tried to wipe us out...
+[charslot(slot = "right", name = "avg_npc_686_1#9$1",focus="r")]
+[name="Alberto"]Famiglia Venezia stepped in as a mediator back then, you are certainly worthy of our respect.
+[charslot(slot = "left", name = "avg_npc_1545_1#6$1",focus="l")]
+[name="Venezia Sr."]'Recklessly tried to wipe us out'—Maybe I'm just old and my memory's failing me...
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]But as I recall, it was the Morettis who vanished from Siracusa.
+[name="Venezia Sr."]You swallowed all their Originium businesses, secured your seat in the Grey Hall, and that granted the Saluzzos the current status in Siracusa today.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]I'm sure you've experienced more like this than I have.
+[name="Alberto"]Our sparse communication has been a boon to us. No one knows what Signora Sicilia would think of our meeting here.
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]Really?
+[name="Venezia Sr."]She banned Carnevale herself, and yet it's come back from the dead... perhaps she is much more tolerant of Siracusa than we or everyone else in the Grey Hall could imagine.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]Hmph.
+[charslot(slot = "left", name = "avg_npc_1545_1#7$1",focus="l")]
+[name="Venezia Sr."]A brand new city celebrating one of the oldest festivals. Surely no one would miss attending?
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]The young ones at city hall are simply doing this to declare that Siracusa will change inside-out... from here.
+[charslot(slot = "left", name = "avg_npc_1545_1#3$1",focus="l")]
+[name="Venezia Sr."]I just thought of the late Bernardo.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]...A self-righteous fool.
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]Not very nice to badmouth a friend who's no longer here.
+[name="Venezia Sr."]I saw trucks going in and out while the police directed traffic, and I couldn't even tell a single family member from the unmasked pedestrians...
+[name="Venezia Sr."]Even the weather here is better than the other Siracusan cities.
+[name="Venezia Sr."]To be honest, the famiglie might not disappear the way Bernardo wanted... but I was finding it hard to believe this was still a Siracusan city until you showed up.
+[dialog]
+[charslot(slot = "m", focus ="all")]
+[delay(time=1)]
+[charslot(slot = "right", name = "avg_npc_686_1#9$1",focus="r")]
+[name="Alberto"]The Venezias have integrated into the city well, senior.
+[name="Alberto"]From the city plate's construction work to the founding of the new government, your famiglia never showed up even once. Then Nuova Volsinii officially started operating, and the Venezias went quickly to work.
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]Anton was in charge of all that.
+[charslot(slot = "right", name = "avg_npc_686_1#9$1",focus="r")]
+[name="Alberto"]Your son-in-law is indeed quite capable.
+[name="Alberto"]Venezia Trucking has never flouted any of the New Urban Management Act rules, and even works with city hall to investigate illegal acts by the other famiglie.
+[charslot(slot = "left", name = "avg_npc_1545_1#7$1",focus="l")]
+[name="Venezia Sr."]The younger ones are always more eager to get with the times than we are.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]But time is unable to sweep the famiglie's stain away. You know better than me what your vehicle company is doing under the table.
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]I suppose that's enough gossip for today. Alberto, I've been wondering when you'd finally start talking about the business at hand.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]You knew what I was going to talk about?
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]Not many new stories in Siracusa these days.
+[name="Venezia Sr."]No matter where you heard it from or whatever it is you're planning, this old man might not be able to do much.
+[name="Venezia Sr."]Be it the city hall or Anton, be it a threat or offer to collaborate, I have nothing to do with it all.
+[name="Venezia Sr."]Times have changed. I can't say if I like it or not, but I definitely can't stop progress. So I thought, why not leave it to the younger generation instead.
+[charslot(slot = "right", name = "avg_npc_686_1#10$1",focus="r")]
+[name="Alberto"]Not afraid they would screw up?
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]Why not wait and see?
+[name="Venezia Sr."]The Venezias climbed to our current position in just three generations, and it was not because of the older generations sticking with their views.
+[name="Venezia Sr."]We have Vulpos, Perros, and Lupos with no blood relations. It is precisely because we accept anyone with ideas with open arms that we are what we are today.
+[name="Venezia Sr."]What I'm doing now is no different than what the old don did.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]Hmph.
+[charslot(slot = "left", name = "avg_npc_1545_1#7$1",focus="l")]
+[name="Venezia Sr."]I came here just to enjoy the festival—but I'm happy you were the first person I saw.
+[name="Venezia Sr."]But old men like us ultimately need to act with decency.
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]'Decency'. I see it's still a favorite in your dictionary.
+[charslot(slot = "left", name = "avg_npc_1545_1#1$1",focus="l")]
+[name="Venezia Sr."]That is why we Venezias have managed to stick together to this day.
+[name="Venezia Sr."]The famiglia's decency frames what we should do or can't do. What say you, Alberto?
+[charslot(slot = "right", name = "avg_npc_686_1#1$1",focus="r")]
+[name="Alberto"]Anyone else and I would have called beastshit. But you—
+[name="Alberto"]I can only admit that it's 'truly valuable in Siracusa'.
+[charslot(slot = "right", name = "avg_npc_686_1#9$1",focus="r")]
+[name="Alberto"]Mind getting me some spaghetti bolognese?
+[name="Alberto"]You'd best open this noble wine now instead of bringing it back to Montelupe.
+[name="Alberto"]I'm craving some myself after seeing you enjoy your meal.
+[name="Alberto"]After all, I fear a chance for a leisurely meal like this will be quite rare in future.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g7_tailorshop",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[playsound(key="$d_avg_sewingmachine", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+Umberto never has to look at the clock when working.
+He silently counts the number of times the sewing machine's needle bobbed up and down. This is his favorite way of counting time after bidding farewell to his past life.
+But now, he dreads the sound of the needle.
+The old man's eyes are puffy from his long excruciating day, but he forces himself to keep on sewing to keep it together.
+[StopSound(channel="bgs", fadetime=2)]
+[dialog]
+[playsound(key="$dooropenquite")]
+[playsound(key="$d_avg_doorbell",channel="1",volume=0.5)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1543_1#4$1")]
+[name="Umberto"]—!
+[name="Umberto"]Is that you, Luchino?
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_697_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Kindly Neighbor"]Signor Umberto?
+[charslot(slot = "m", name = "avg_npc_1543_1#1$1")]
+[name="Umberto"]Oh, it's you, Anna...
+[charslot(slot = "m", name = "avg_npc_697_1#1$1")]
+[name="Kindly Neighbor"]Yes, I'm here to collect the suit I ordered. I formally start at city hall tomorrow!
+[name="Kindly Neighbor"]Ah, is Luchino out?
+[charslot(slot = "m", name = "avg_npc_1543_1#6$1")]
+[name="Umberto"]He... had something to do.
+[charslot(slot = "m", name = "avg_npc_1543_1#9$1")]
+[name="Umberto"]Wait here while I get your suit.
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "150,0",duration = 1.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.1)]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_697_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",posfrom = "150,0", posto = "0,0",duration = 1.5)]
+[delay(time=2)]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",focus="r")]
+[name="Umberto"]How is it?
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]It, it fits perfectly! Grazie mille!
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",focus="r")]
+[name="Umberto"]No need, you paid me for this.
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]But you used an even better material for it...
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",focus="r")]
+[name="Umberto"]You waited so long for city hall to get back to you, and worked hard for the position too. Of course you deserve a better suit.
+[name="Umberto"]Treat it as a greeting gift from us when we moved here. Neighbors should take care of each other.
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]We're so lucky to have you as our tailor, Signore.
+[name="Kindly Neighbor"]Right, I know Luchino hates sitting around, and I wanted to give him this ticket to the Carnevale show contest rehearsals. It's a good seat.
+[name="Kindly Neighbor"]Could you give it to him for me?
+[charslot(slot = "r", name = "avg_npc_1543_1#3$1",focus="r")]
+[name="Umberto"]...
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]Haha, everyone knows you only want the best for the boy, but sometimes it's good to let him live a little.
+[name="Kindly Neighbor"]He should enjoy his life sometimes, right?
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",focus="r")]
+[name="Umberto"]...Grazie, I'll pass it on to him.
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]I gotta tell you, your boy has a keen eye.
+[name="Kindly Neighbor"]When I was here last month queuing for measurements, he was excitedly telling me which customers were important government officials or famiglia guys.
+[name="Kindly Neighbor"]He's so proud you're making clothes for those high-ups.
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",focus="r")]
+[name="Umberto"]A clever boy indeed. But most of our customers—most people who look for a tailor are actually just regular civilians.
+[name="Umberto"]It's rare they get a reason to come here. A rare job opportunity, a beautiful wedding, or even a dignified funeral.
+[name="Umberto"]Everyone deserves the decency of tailoring, and we at Tailor de Montano hopes to operate for a long time on this basis.
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]I admire you, Signor Umberto. I'm sure Luchino will be an excellent tailor in future with a great teacher like you.
+[dialog]
+[charslot(slot = "l", focus="all")]
+[charslot(slot = "r", name = "avg_npc_1543_1#5$1",focus="r")]
+[delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="'Luchino, hold onto my hand tight.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Do you want to live together with me from today onwards?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'...'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="The child had just barely turned three when Umberto found him in a farm with mud all over his face.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Your eyes are like his... like my son.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'You... cry...?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="The curious child extends his hand to wipe away the tears from Umberto's eyes, but leaves a filthy gray mark instead.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'What happened to your papa, Luchino, I won't allow it ever again—'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]...You look haggard, signore. Need help?
+[charslot(slot = "r", name = "avg_npc_1543_1#4$1",focus="r")]
+[name="Umberto"]Just age getting to me. Not getting enough rest lately.
+[charslot(slot = "r", name = "avg_npc_1543_1#9$1",focus="r")]
+[name="Umberto"]Anna, tomorrow's your first day at work. Your brand new suit won't do all the work of impressing your colleagues. Have an early rest... Oh, feel free to get it ironed here anytime.
+[charslot(slot = "r", name = "avg_npc_1543_1#1$1",focus="r")]
+[name="Umberto"]I... will close early today and get some rest.
+[charslot(slot = "l", focus="l")]
+[name="Kindly Neighbor"]Alright. Ciao, Signor Umberto. Find us anytime if you need anything.
+[dialog]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot = "l",posfrom = "0,0", posto = "-200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot(slot = "l", focus="n")]
+Umberto holds the ticket in hand, and slumps before his sewing machine. He feels powerless.
+After a brief silence, he dials a number.
+[dialog]
+[playsound(key="$d_avg_telephone")]
+[charslot(slot = "r", name = "avg_npc_1543_1#3$1",focus="r")]
+[delay(time=1)]
+[name="Umberto"]...
+[name="Umberto"]I know there's no cause to contact you, but this is the only way I have left.
+[name="Umberto"]Luchino's been missing for a whole day. I can't go to the police, I'm afraid that the boy might have gotten himself mixed up in some mob matter—
+[charslot(slot = "r", name = "avg_npc_1543_1#5$1",focus="r")]
+[name="Umberto"]If you're listening, I beg of you—Help me find him... He's the only thing this old man is concerned about... Please, Signora Venezia.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g12_saluzzowinery",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>November 6th, 1100    9:00 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[playMusic(key="$m_avg_elegance_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=3)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_701_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="Undercover Officer A"]Your Honor, Demetri is gone. Should we pack up as well?
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[name="Lavinia"]Just hold on.
+[charslot(slot = "m", name = "avg_npc_701_1#1$1")]
+[name="Undercover Officer A"]Your face is kinda red, did you drink too much...?
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[name="Lavinia"]Tell the others to continue tracking the vehicle responsible for the accident while we continue investigating the suspects.
+[charslot(slot = "m", name = "avg_npc_701_1#1$1")]
+[name="Undercover Officer A"]It'll be hard, pinning someone down this way...
+[charslot(slot = "m", name = "avg_4065_judge_1#8$1")]
+[name="Lavinia"]Indeed. Demetri, Alberto, and a 'missing driver'... We have many suspects, but I think there are other ulterior motives behind this incident.
+[name="Lavinia"]Ever since Nuova Volsinii was founded, there have been many eyes on us—
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[name="Lavinia"]Like that customer who hasn't left yet.
+[charslot(duration=1)]
+Lavinia looks at a corner.
+The winery lights are bright, but the wine racks cast a shadow in the corner, with a Vulpo sitting in the dark within.
+Her bottle is already half gone, and she has been keeping her distance from everyone else the whole time. So much so that no one has noticed her blade blatantly left on the table.
+[charslot(slot = "m", name = "avg_npc_701_1#1$1")]
+[name="Undercover Officer A"]So that's why you didn't call it a day yet...
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", focus = "n")]
+[name="Tipsy Vulpo"]Judge Lavinia, yes?
+[charslot(slot = "m", name = "avg_4065_judge_1#4$1")]
+[name="Lavinia"]...
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_4026_vulpis_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Tipsy Vulpo"]To be honest, your actions today—and your scatterbrained officers are giving me a headache.
+[name="Tipsy Vulpo"]I had planned to pry any interesting info from talkative drunkards here, but it turns out—
+[name="Tipsy Vulpo"]You're the only one left I can count on.
+[charslot(slot = "m", name = "avg_4065_judge_1#4$1")]
+[name="Lavinia"]How do you know my name, and—
+[charslot(slot = "m", name = "avg_4026_vulpis_1#1$1")]
+[name="Tipsy Vulpo"]Why don't you have a seat first?
+[charslot(slot = "m", name = "avg_4026_vulpis_1#6$1")]
+[name="Tipsy Vulpo"]Sorry, I had no intentions to eavesdrop on your conversation earlier. But a judge and a famiglia don? A classic combination not to be missed.
+[charslot(slot = "m", focus = "n")]
+The Vulpo points at her ridiculously large ears and gives a wry smile.
+[charslot(slot = "m", name = "avg_4026_vulpis_1#1$1")]
+[name="Tipsy Vulpo"]What can I say? I don't know if a good hearing really helps.
+[charslot(slot = "m", name = "avg_4026_vulpis_1#11$1")]
+[name="Tipsy Vulpo"]Ah, right. Ingrid—my name.
+[charslot(slot = "m", name = "avg_4026_vulpis_1#1$1")]
+[name="Ingrid"]Now we're even.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="56_i04_1",screenadapt="coverall", xScale=1.4, yScale=1.4)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.25,block=true)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.25,block=true)]
+[ImageTween(xFrom=-80, xTo=80,yFrom=180, yTo=180,duration=45)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Ingrid"]You've been staring at my blade for a long time—just a prop. I can register it at city hall if needed.
+[name="Ingrid"]I've been away from Siracusa for too long and haven't gotten used to the new rules yet.
+[name="Lavinia"]...Ingrid.
+[name="Ingrid"]I think you know very well these promising officers around us won't be much help.
+[name="Ingrid"]Are they all under you? Does Nuova Volsinii have the police and judiciary together in the same unit?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="56_i04_1",screenadapt="coverall", xScale=1.4, yScale=1.4)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.25,block=true)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.25,block=true)]
+[ImageTween(xFrom=80, xTo=-80,yFrom=-150, yTo=-150,duration=45)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Lavinia"]We make do with what we have in these times. They're also serious about their work.
+[name="Lavinia"]We'll gladly escort you over to city hall for identity registration, Signora Venezia.
+[name="Ingrid"]Sure, but after I'm done with my business.
+[name="Ingrid"]I won't take too long, Lavinia... today I'm just a visitor doing some visiting.
+Ingrid sips a mouthful of wine, and lets Lavinia inspect her blade.
+[name="Lavinia"]You're here for Carnevale?
+[name="Ingrid"]For my daughter. She was hurt.
+[name="Ingrid"]Oripathy. An accident.
+[name="Ingrid"]Any other questions? I'll be happy to answer.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0,fillto = 0,block=true)]
+[curtain(direction = 4,fillfrom = 0,fillto = 0,block=true)]
+[Image(image="56_i04_1",screenadapt="coverall", xScale=1.1, yScale=1.1)]
+[delay(time=0.1)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,duration=50)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Lavinia"]Signora Venezia. I hope you don't get the wrong idea, but this isn't an interrogation.
+[name="Ingrid"]It's alright. I've crossed paths with judges before. I have no particular opinions on the profession.
+[name="Ingrid"]It's not your determination as a judge to crack the case, but your kind concern for a patient that has won my respect.
+[name="Lavinia"]You know something about the accident. Even though we've been keeping it confidential.
+[name="Ingrid"]I already told you about my sharp ears, Lavinia.
+[name="Ingrid"]So who is 'still in a coma'? A relative? An important friend?
+[name="Lavinia"]Sorry, but I'm not answering that.
+[name="Ingrid"]Hmm, I see accidents do come easy in Siracusa.
+[name="Ingrid"]No need to be so vigilant, Lavinia. I can guarantee you my return here has no plans to involve myself in any famiglia affairs.
+[name="Ingrid"]Hm... Perhaps we may even have a chance to exchange information.
+[name="Lavinia"]...
+[dialog]
+[PlaySound(key="$dooropenquite",volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement",volume=1,delay=1)]
+The two are interrupted by the sound of the winery door opening. The new addition stands at the entrance until the sommelier quickly steps up and humbly takes his coat.
+[dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[name="Mafioso"]Phew. Signora Venezia, I knew you'd be here.
+[name="Mafioso"]Wasn't easy tracking you down... I told the old don about our run-in at de Montano, and he specifically told me he wanted to see—
+[name="Mafioso"]Um...
+[dialog]
+[Image(image="56_i04_1",screenadapt="coverall", xScale=1, yScale=1,fadetime=1)]
+[delay(time=1)]
+The new guest looks in Lavinia's direction and shuts his mouth.
+[Dialog]
+[Image(image="56_i04_2",screenadapt="coverall", xScale=1, yScale=1,fadetime=1)]
+[delay(time=1.5)]
+Lavinia and Ingrid stare at the flustered guest in unison, and the surrounding officers pretending to be drunks follow suit.
+[name="Lavinia"]...
+[name="Ingrid"]...
+[name="Nervous Mafioso"]...
+[name="Sommelier"]Signore, we've decanted your wine for you. Allow me to show you the way.
+[name="Nervous Mafioso"]Uh, no, it's fine. I just remembered something.
+[name="Sommelier"]Oh, please wait just a moment while I fetch you a bottle of our winery's newest—
+[name="Nervous Mafioso"]My tuskbeast back home's giving birth today! I shouldn't miss it!
+[PlaySound(key="$rungeneral",volume=1)]
+Lavinia watches him hurriedly grab his coat back from the sommelier. He puts it back on, and even tips his hat off to her before he leaves.
+[dialog]
+[PlaySound(key="$doorclosequite",volume=1)]
+[delay(time=1.5)]
+[Image(image="56_i04_1",screenadapt="coverall", xScale=1, yScale=1,fadetime=1)]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1,duration=60)]
+[delay(time=1.5)]
+[name="Lavinia"]Early this year, that man was jailed for three months for attempting some trouble. I didn't think I'd see him out so soon.
+[name="Lavinia"]Of course, he absolutely did it on his own and had 'no relations at all' with Venezia Trucking.
+[name="Ingrid"]Your Honor, I'm starting to think if I should hold you in higher esteem.
+[name="Ingrid"]The mafiosi were never this afraid of a judge in the old Siracusa.
+[name="Lavinia"]Well, Signora Venezia, I actually prefer your attitude—'No particular opinions on the profession.'
+[name="Lavinia"]What Siracusa should revere is the law itself, and not certain individuals.
+[dialog]
+[PlaySound(key="$phonevibration", volume=1)]
+[delay(time=1.5)]
+[name="Ingrid"]...
+[name="Ingrid"]Haha, a novel idea—though I fear I must get going now.
+[name="Lavinia"]To meet with your former don?
+[name="Ingrid"]I have no obligation to report every step of my trip to a judge, but I don't wish to complicate matters for you either, Lavinia.
+[name="Ingrid"]As I said, I have no intentions of involving myself with famiglia matters.
+[name="Ingrid"]I have more pressing things to attend to, but I'll make sure I get them done before the identity registration deadline.
+[name="Ingrid"]Ah, you should cut down on the alcohol too.
+[name="Ingrid"]You can't hold your liquor well at all.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Lavinia"]...
+[charslot(slot = "m", focus = "n")]
+Lavinia watches the Vulpo leave, and directs the eager officers with her eyes to stay put.
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[name="Lavinia"]She knows what all of you look like, so let's leave it to the others.
+[name="Lavinia"]Investigate Venezia Trucking, it seems their old don is already in town.
+[charslot(slot = "m", name = "avg_4065_judge_1#8$1")]
+[name="Lavinia"]Leon... I'm afraid the situation's getting even more troublesome.
+[dialog]
+[charslot(slot = "m", name = "avg_4065_judge_1#8$1")]
+[delay(time=1)]
+[playsound(key="$rungeneral",volume=0.6)]
+[charslot(slot = "m", focus = "n")]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1553_1#1$2",duration=0.5)]
+[delay(time=0.7)]
+[name="Anxious Officer"]Your Honor, the tech department guys just sent over some data from the scene. We need you to review it—
+[charslot(slot = "m", name = "avg_4065_judge_1#1$1")]
+[name="Lavinia"]Wasn't that area's monitoring system broken?
+[charslot(slot = "m", name = "avg_npc_1553_1#1$2")]
+[name="Anxious Officer"]It's not from that. A private car that broke down was parked in the area for several days and its dash cam happened to record something.
+[dialog]
+[playsound(key="$d_avg_oldtvelectricity")]
+[delay(time=1)]
+[name="Anxious Officer"]A suspicious individual was spotted in an alley. Look, this silhouette looks like a Vulpo, wielding a blade...
+[charslot(slot = "m", name = "avg_4065_judge_1#4$1")]
+[name="Lavinia"]...
+[charslot(slot = "m", name = "avg_npc_1553_1#1$2")]
+[name="Anxious Officer"]What's the matter?
+[charslot(slot = "m", name = "avg_4065_judge_1#8$1")]
+[name="Lavinia"]She was just here.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

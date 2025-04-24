@@ -1,0 +1,610 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>November 5th, 1100    10:17 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[SoundVolume(volume=0.4, channel="car",fadetime=1)]
+[CameraShake(duration=5, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.1, fadetime=0.5)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.1, fadetime=0.5,block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1547_1#4$1",duration=1)]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]...That's the gist of it, Lyudmila. Told you everything I know.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]What're you delivering for the Venezias?
+[charslot(slot="l",name="avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]It's a batch of tires tonight.
+[name="Sommer"]It's usually stuff for making vehicles. Originium engines, steel, alloys, things like that. At times there's also frozen fins, frozen meat, booze, meds...
+[name="Sommer"]It's pretty common in other Siracusan cities. Goods the famiglie buy don't have to go through normal customs, so they save a lot on taxes. But here in Nuova Volsinii—
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]I get it. No need to go into detail.
+[charslot(slot="l",name="avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]Alright, alright.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]This isn't your first time, is it?
+[charslot(slot="l",name="avg_npc_1547_1#6$1",focus="l")]
+[name="Sommer"]Err... Lyudmila, did you hang back from joining tonight's film shoot because of me?
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]What do you think?
+[charslot(slot="l",name="avg_npc_1547_1#7$1",focus="l")]
+[name="Sommer"]When did you figure me out?
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="car", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_1550_1#1$1",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "right",focus="r")]
+[name="Truck Driver"]Why the hell d'you keep following us?
+[charslot(slot = "left", name = "avg_npc_1547_1#8$1",focus="l")]
+[name="Sommer"]Look, sorry, but Ruggiero and I are really busy here! Would you mind leaving?
+[charslot]
+[charslot(slot="m",name="avg_npc_1555_1#1$1")]
+[name="Mafioso"]So busy you can't even stop for a cup of coffee?
+[name="Mafioso"]C'mon, Sommer, Ruggiero, lighten up!
+[name="Mafioso"]This is Nuova Volsinii! We're all citizens here, and we're going to be rubbing shoulders for quite a while longer. Gotta talk to one another, y'know?
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1550_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]......
+[charslot]
+[charslot(slot="m",name="avg_npc_1555_1#1$1")]
+[name="Mafioso"]How about we set up a caffè across from your camp? With that many drivers, business would be booming, and it'd be easy for us to meet up—
+[dialog]
+[PlaySound(key="$d_avg_smoke_grenade", volume=1)]
+[bgeffect(name="$eb_smog",layer=1)]
+[Blocker(a=0.5, r=0.7, g=0.7, b=0.7, fadetime=0.5, block=true)]
+[name="Mafioso"]The hell's going on *cough* *cough* Where's all this smoke coming from? My eyes, gah—
+[dialog]
+[PlaySound(key="$punch_n1", volume=1)]
+[CameraShake(duration=0.1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.3)]
+[name="Mafioso"]Merda! Which of you stronzi hit me?!
+[dialog]
+[PlaySound(key="$d_avg_punch", volume=1)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.21)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.5)]
+[name="Mafioso"]Ouch—
+[dialog]
+[Blocker(a=0.7, r=0.7, g=0.7, b=0.7, fadetime=0.5, block=true)]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1555_1#1$1")]
+[name="Mafioso"]......
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1550_1#1$1",focus="r")]
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="r")]
+[name="Truck Driver"]......
+[charslot(slot = "left", name = "avg_npc_1547_1#7$1",focus="l")]
+[name="Sommer"]......
+[dialog]
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_1555_1#1$1")]
+[name="Mafioso"]Sommer! Ruggiero!
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1550_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1547_1#8$1",focus="l")]
+[name="Sommer"]W-We don't know who did it either! We're all the way over here, and we haven't moved an inch...
+[charslot(slot = "left", name = "avg_npc_1547_1#4$1",focus="l")]
+[name="Sommer"]And you know we can't do Arts...
+[charslot(slot = "r", name = "avg_npc_1550_1#1$1",focus="r")]
+[name="Truck Driver"]I heard the reason why this plate was put out on the border of the city, and why City Hall didn't do anything with it until they let us set up our camp, is 'cause it used to—
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1555_1#1$1")]
+[name="Mafioso"]S-Stop talking crap already. I'll let you two off this time.
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$rungeneral",volume=0.7)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="l",name="avg_npc_1547_1#7$1")]
+[delay(time=1)]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[playsound(key="$d_avg_truckengine", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_npc_1547_1#7$1",focus="l")]
+[name="Sommer"]...Now I remember.
+[name="Sommer"]We never had a chance to know you better until you helped us out of that bind that time. Everyone started to talk to you, asking you about what the hell your mysterious Arts are, and your experiences in Ursus...
+[charslot(slot="r",name="avg_1502_crosly_1#3$1",focus="r")]
+[name="Lyudmila"]A famiglia associate's not going to come looking for you just because they 'don't like the look of your face'.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]They kept pestering you after that. Why didn't you tell me, Sommer?
+[charslot(slot = "left", name = "avg_npc_1547_1#4$1",focus="l")]
+[name="Sommer"]......
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]Does Eirene know?
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"](Shakes head)
+[charslot(slot = "left", name = "avg_npc_1547_1#4$1",focus="l")]
+[name="Sommer"]I need to get Guri her treatment and bring her over to Nuova Volsinii. I <i>need</i> this money, Lyudmila.
+[name="Sommer"]And what use would telling you have been? They're a pack of rabid wolves who won't give up until they catch their prey. I'm not going to bring that sort of trouble onto the association.
+[name="Sommer"]We're a band of brothers and sisters living together. But we're just ordinary people, nothing more.
+[charslot(slot="r",name="avg_1502_crosly_1#3$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot = "m", focus = "n")]
+The faces of the drivers flash through Lyudmila's mind one after another. She doesn't say anything.
+[MusicVolume(volume=0.4, fadetime=3)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="56_g9_truckcamp",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "l",focus="l")]
+[name="Truck Driver A"]Hey, you didn't tell Lyudmila, did you?
+[charslot(slot = "r",focus="r")]
+[name="Truck Driver B"]Don't worry, she's in her tent right now!
+[charslot(slot = "l",focus="l")]
+[name="Truck Driver A"]She's never taken off that mask since she arrived here, and she sometimes frowns when... Breaks my heart, it does.
+[charslot(slot = "r",focus="r")]
+[name="Truck Driver B"]You're telling me. I've been holding back from smoking these past few days she's been around. It's killing me.
+[charslot(slot = "l",focus="l")]
+[name="Truck Driver A"]Quick, light up already—
+[charslot]
+[dialog]
+[playsound(key="$d_avg_lighter")]
+[delay(time=1.2)]
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Lyudmila"]......
+[charslot]
+[dialog]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="l")]
+[name="Truck Driver A"]L-Lyudmila...
+[name="Truck Driver A"]Scusa, scusa! We're about to do a night delivery, so we were just gonna have a pre-drive smoke to pick ourselves up—or not! No smoking is fine! We'll put them out right away!
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="Lyudmila"]Err... If you want to smoke, go ahead. No need to hide it from me.
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="r")]
+[name="Truck Driver B"]Huh?
+[name="Truck Driver B"]Well, everyone thought you wore the mask because you've got a weak throat or something... Your crystals are in a pretty peculiar place, you know. Us drivers smoke a lot, so we thought...
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="Lyudmila"]You're overthinking things.
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="r")]
+[name="Truck Driver B"]Well, we just hope you like it here, Lyudmila.
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[StopSound(channel="bgs", fadetime=2)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[charslot(slot="l",name="avg_npc_1547_1#1$1")]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[playsound(key="$d_avg_truckengine", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]You'd better get off and wait at that intersection coming up. We're about to arrive, and there'll be trouble with the Venezias if I show up with a rando in tow.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]Lyudmila...
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]Enough. I got on your truck, so I'll stick with you all the way.
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]Thanks, Lyudmila.
+[name="Sommer"]No matter what happens, I'm lucky to have you with me.
+[name="Sommer"]Hmmhmm♪ Hmmhmmhmm♪ Hmm♪
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]You've been listening to this song on loop for a while now. Not tired of it?
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]Of course not!
+[charslot(slot = "left", name = "avg_npc_1547_1#3$1",focus="l")]
+[name="Sommer"]'A Chance Encounter' is an amazing song, and Sora's got one hell of a singing voice!
+[name="Sommer"]It's the hottest new single this week. There was an interview saying she recorded it just for Carnevale.
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]'A chance encounter'... Now I'm not a cultured man, but these words... Don't you think they're about people like us?
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]You're going to leave, aren't you, Lyudmila?
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]Eh? What?
+[charslot(slot = "left", name = "avg_npc_1547_1#4$1",focus="l")]
+[name="Sommer"]You said you didn't have any family or friends left in Siracusa, and no place to go. Everyone at camp will be happy to have someone as interesting as you stick around.
+[name="Sommer"]Eirene and I have talked it over before, but I feel like you're not going to stay with us at the Union forever...
+[name="Sommer"]There's doubt in your eyes, and hate, but I don't know who they're for.
+[charslot(slot="r",name="avg_1502_crosly_1#6$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]Do you still remember what you were like when you first saw Eirene?
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]I don't remember anything worth mentioning.
+[name="Lyudmila"]I woke up in the camp, and you and Eirene were standing in front of me...
+[charslot(slot = "left", name = "avg_npc_1547_1#5$1",focus="l")]
+[name="Sommer"]The moment you saw her, your expression changed in an instant... Though it went back real quick.
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]You thought she was someone else, didn't you?
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[curtain]
+[Background(image="bg_black",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1542_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="l",name="avg_npc_1547_1#1$1")]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]I might have been a bit light-headed when I woke up.
+[charslot(slot="r",name="avg_1502_crosly_1#3$1",focus="r")]
+[name="Lyudmila"]A Lupo woman wearing a red hoodie, protective gear around her neck... Eirene really does remind me of someone I hate.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[curtain]
+[Background(image="bg_black",screenadapt="coverall")]
+[charslot(slot="m",name="char_144_red_7#1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="l",name="avg_npc_1547_1#1$1")]
+[charslot(slot="r",name="avg_1502_crosly_1#3$1")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="r",name="avg_1502_crosly_1#6$1",focus="r")]
+[name="Lyudmila"]Doesn't matter if it's in Yan or Siracusa, every time I run into that girl, I get struck by a bout of bad luck.
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]So that's how it is.
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]I'm not going to ask you if those stories of Ursus are ones you heard from elsewhere or ones you experienced yourself, Lyudmila. No need for us to argue over who's more unlucky in life, either...
+[charslot(slot = "left", name = "avg_npc_1547_1#3$1",focus="l")]
+[name="Sommer"]This really is a chance encounter between two sfortunati, haha.
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]Eirene always says life will show how much it cares for people with bad luck, it's just running a bit late is all.
+[charslot(slot="r",name="avg_1502_crosly_1#6$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot = "m", focus = "n")]
+Lyudmila says nothing in response. As the truck turns past the intersection, she turns her head to look out the window on a whim—
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[charslot(slot="m",name="char_144_red_7#1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="l",name="avg_npc_1547_1#1$1")]
+[charslot(slot="r",name="avg_1502_crosly_1#4$1")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="r",name="avg_1502_crosly_1#5$1",focus="r")]
+[name="Lyudmila"]That's—
+[dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0.5, r=1, g=1, b=1, fadetime=0.5)]
+[PlaySound(key="$d_avg_arrowshot")]
+[delay(time=0.3)]
+[PlaySound(key="$knifegore")]
+[CameraShake(duration=0.2, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1)]
+[delay(time=0.11)]
+[playMusic(intro="$tense_intro",key="$tense_loop", volume=0.6)]
+[CameraShake(duration=0.12, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$d_avg_tyrexplosion")]
+[delay(time=0.3)]
+[PlaySound(key="$drift")]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "left", name = "avg_npc_1547_1#5$1",focus="l")]
+[name="Sommer"]Cazzo! The steering wheel's not working all of a sudden—
+[charslot(slot="r",name="avg_1502_crosly_1#7$1",focus="r")]
+[name="Lyudmila"]Sommer, look out! There's a car over there—
+[dialog]
+[PlaySound(key="$drift")]
+[CameraShake(duration=1, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5)]
+[PlaySound(key="$grenade_explosion",channel="1")]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$glass",channel="2")]
+[PlaySound(key="$d_avg_planeshake",channel="3")]
+[delay(time=2)]
+[name="???"]True wolf. Finally found you.
+[name="???"]You will not get away.
+[dialog]
+[delay(time=0.5)]
+[name="???"]Hey! Can't you see there's people in there? Your knife and my arrow blew out their tires. Shouldn't we save them?
+[dialog]
+[PlaySound(key="$d_avg_arrowshot")]
+[delay(time=0.3)]
+[playsound(key="$knifegore")]
+[delay(time=0.1)]
+[playsound(key="$swordtsing4")]
+[delay(time=0.5)]
+[name="???"]Oh.
+[name="???"]You're right, Agnese. We shouldn't get distracted during a hunt.
+[curtain]
+[Dialog]
+[charslot]
+[delay(time=2)]
+[focusout(duration=6, type="bg", from=1, to=0.3)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", xScale=1.1, yScale=1.1)]
+[BackgroundTween(xFrom=-30, yFrom=-30, xTo=0, yTo=0,  duration=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2)]
+[delay(time=1)]
+[playsound(key="$d_avg_tinnitus",channel="2")]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", fadetime=2, xScale=1.1, yScale=1.1,x=10,y=10)]
+[BackgroundTween( xTo=15, yTo=5,  duration=3)]
+[delay(time=2)]
+[BackgroundTween(xTo=0, yTo=0,  duration=2, xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall",fadetime=2)]
+[delay(time=2.5)]
+[focusout(duration=2, type="char", from=0.5, to=0.3)]
+[charslot(slot = "m",name = "char_144_red_7#1",duration=0.5)]
+[delay(time=1)]
+[playsound(key="$rungeneral",volume=0.5)]
+[charslot(slot = "m", afrom = 1, ato = 0,duration = 1,posfrom = "0,0", posto = "300,0")]
+[delay(time=2)]
+A splitting headache pounds against the inside of Lyudmila's skull.
+[CameraShake(duration=0.2, xstrength=0, ystrength=20, vibrato=15, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown3")]
+She yanks off her seat belt and pushes open the truck door, falling from her seat as she does. As her face plants into the ground, she sees a familiar red silhouette fade down the intersection.
+[dialog]
+[charslot]
+[focusout(duration=1, type="char", from=0.3, to=0)]
+[focusout(duration=1, type="bg", from=0.5, to=0)]
+[charslot(slot="m",name="avg_1502_crosly_1#6$1",duration=1)]
+[delay(time=1.5)]
+[name="Lyudmila"]*cough* *cough*...
+[charslot(slot = "m", focus = "n")]
+Before the dizziness disperses, before she can take stock of the situation, before she can check on Sommer... Rage. An unending rage washes over her like the tide.
+[charslot(slot="m",name="avg_1502_crosly_1#7$1")]
+[name="Lyudmila"]What the hell's with this bad luck?! How come it's you again?!
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=35, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_1502_crosly_1#8$1")]
+[name="Lyudmila"]You goddamn lupetta!
+[dialog]
+[playsound(key="$rungeneral",volume=0.7)]
+[charslot(slot = "m", afrom = 1, ato = 0,duration = 1,posfrom = "0,0", posto = "350,0")]
+[delay(time=0.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusout(duration=3, type="char", from=0, to=0)]
+[focusout(duration=3, type="bg", from=0, to=0)]
+[Blocker(a=0.3, r=1, g=1, b=1, fadetime=0.1, block=false)] 
+[playsound(key="$d_avg_arrowshot",channel="1",volume=0.7)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=5, vibrato=20, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)] 
+[playsound(key="$d_avg_arrowshot",channel="2",volume=1)]
+[Blocker(a=0.5, r=1, g=1, b=1, fadetime=0.1, block=false)] 
+[CameraShake(duration=0.2, xstrength=5, ystrength=5, vibrato=20, randomness=90, fadeout=true, block=true)]
+[playsound(key="$d_avg_arrowshot",channel="3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.2, block=true)] 
+[Effect(name="$e_spark_01_mid",layer = 1,x = 100,y=150)]
+[playsound(key="$swordtsing5",channel="3")]
+[CameraShake(duration=0.1, xstrength=5, ystrength=5, vibrato=20, randomness=90, fadeout=true, block=true)]
+[Effect(name="$e_spark_01_mid",layer = 1,x = 200,y=50)]
+[playsound(key="$swordtsing6",channel="4")]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4026_vulpis_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="Ingrid"]I've handled tougher fights in the Siracusa of old with many more people on the other end.
+[name="Ingrid"]But I'm always the last one standing. No exceptions.
+[name="Ingrid"]Don't treat humans like beasts. Your hunting skills won't work on me.
+[name="Ingrid"]You can certainly continue to try. Same goes for you, 'Projekt Red'.
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_4014_lunacu_1#1$2",duration=1)]
+[delay(time=1.51)]
+[name="Lunacub"]......
+[dialog]
+[charslot(slot = "l", name = "char_144_red_7#1",duration=1)]
+[delay(time=1.51)]
+[charslot(slot = "l", focus="l")]
+[name="Projekt Red"]......
+[charslot(slot = "r", name = "avg_4014_lunacu_1#8$2",focus="r")]
+[name="Lunacub"]I'll find you.
+[charslot(slot = "l", name = "char_144_red_7#5",focus="l")]
+[name="Projekt Red"]My blade... not sharp enough...
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_4026_vulpis_1#8$1")]
+[name="Ingrid"]Come.
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_4014_lunacu_1#8$2")]
+[charslot(slot = "l", name = "char_144_red_7#1")]
+[delay(time=1)]
+[charslot(slot = "r",posfrom = "0,0", posto = "150,300",duration = 0.51)]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,300",duration = 0.51)]
+[playsound(key="$d_avg_clothmovementsp")]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4026_vulpis_1#7$1")]
+[name="Ingrid"].....?
+[charslot(slot = "m", name = "avg_4026_vulpis_1#2$1")]
+[name="Ingrid"]You can't hide from me forever. I won't wait any longer for Vargo's answers.
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "char_144_red_7#1",duration=1)]
+[delay(time=1.5)]
+[name="Projekt Red"]......
+[name="Projekt Red"]I lost. To the Vulpo out of nowhere.
+[Dialog]
+[PlaySound(key="$d_avg_exsheath")]
+[Blocker(a=0.3, r=1, g=1, b=1, fadetime=0.4, block=false)]
+[delay(time=0.2)]
+[charslot(slot = "m",name = "char_144_red_7#5")]
+[charslot(slot = "m",posfrom = "0,0", posto = "-250,0",duration = 0.3,afrom=1,ato=0)]
+[PlaySound(key="$d_avg_ftrub")]
+[delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#7$1",duration=0.5)]
+[delay(time=0.5)]
+[name="Lyudmila"]Damned pup!
+[name="Lyudmila"]Think you can just walk away after I finally found you?
+[charslot(slot = "m", name = "char_144_red_7#1")]
+[name="Projekt Red"]......
+[name="Projekt Red"]You again?!
+[dialog]
+[charslot]
+[Blocker(a=0.6, r=1, g=1, b=1, fadetime=0.2, block=false)]
+[CameraShake(duration=0.1, xstrength=15, ystrength=2, vibrato=10, randomness=90, fadeout=true)]
+[PlaySound(key="$d_avg_spear")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.2)]
+[PlaySound(key="$d_avg_clothmovementsp",delay=0.3)]
+[delay(time=0.5)]
+[PlaySound(key="$fightgeneral")]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=20, randomness=90, fadeout=true)]
+[PlaySound(key="$d_avg_metalcollar",volume=0.6,delay=0.3)]
+Lyudmila brandishes her knife once again, but Projekt Red nimbly dodges it. A heavy kick immediately slams into her back. Her arm is pinned down, and her knife clatters onto the ground.
+[PlaySound(key="$bodyfalldown1")]
+[CameraShake(duration=0.3, xstrength=5, ystrength=20, vibrato=10, randomness=90, fadeout=true)]
+By the time she can react, she is already being pressed down into the dirt.
+[name="Lyudmila"]Ugh—Agh—
+[dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[image(image="avg_6_18",screenadapt="coverall", xScale=1.3, yScale=1.3,x=150,y=-100)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+The rough scraping of her face against the ground bring a memory to the forefront of her mind—
+In the alleys of Lungmen, she was held down by the same damnable wolf pup, unable to resist then either.
+The same sorry figure pressed against the ground, the same pain shooting through her body.
+[dialog]
+[delay(time=1)]
+[CameraShake(duration=0.2, xstrength=15, ystrength=15, vibrato=20, randomness=90)]
+[name="Lyudmila"]Gah! My arm! Let go of me! Pizdets! Vaffanculo!
+[name="Lyudmila"]You stronza! I nearly had my revenge in Lungmen. Why'd you have to get between me and Kal'tsit?!
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90)]
+[name="Lyudmila"]Maestro couldn't fight any more, so why'd you kill her?!
+[name="Lyudmila"]Why the hell do you keep showing up over and over again?!
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90)]
+[name="Lyudmila"]Why can't I kill you?! Why?!
+[name="Projekt Red"](Bares teeth in irritation)
+[name="Projekt Red"]...I remember you.
+[name="Projekt Red"]I hunt wolves. You're not a true wolf. No need to kill you.
+[name="Projekt Red"]Kal'tsit said we shouldn't kill a homeless hyena. You're in pain. Kal'tsit doesn't want me to kill you.
+[name="Lyudmila"]......
+[name="Projekt Red"]Grandma's waiting for me.
+[name="Projekt Red"]I don't have time to waste. I need to find the last true wolf.
+[name="Projekt Red"]Don't get in my way again. I've left Rhodes Island. I'm not listening to Kal'tsit any more...
+[dialog]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=1)]
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+The Lupo clad in a red hoodie stays for not a moment longer, disappearing down the depths of the alley.
+Lyudmila doesn't get up. She lies against the ground, cradling her near-dislocated arm, waiting for the pain and humiliation to seep in and drown her.
+She suddenly remembers Sommer's words.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1547_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="l")]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Sommer"]This really is a chance encounter between two sfortunati, haha.
+[charslot(slot="l",name="avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]Eirene always says life will show how much it cares for people with bad luck, it's just running a bit late is all.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Lyudmila"]You sure about that, Sommer?
+[stopmusic(fadetime=2)]
+[name="Lyudmila"]Sommer... Oh right, Sommer...
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(slot="m",name="avg_1502_crosly_1#6$1",duration=1.5,posfrom = "0,-100", posto = "0,0")]
+[delay(time=1)]
+[charslot(slot ="m", action="shake", power=6, times=40, duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1502_crosly_1#7$1")]
+[name="Lyudmila"]Dammit, I got so caught up in chasing that stupid wolf pup... I forgot Sommer's still in the truck...
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

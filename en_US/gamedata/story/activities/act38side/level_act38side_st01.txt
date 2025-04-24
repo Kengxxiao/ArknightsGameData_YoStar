@@ -1,0 +1,876 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[charslot]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-150)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=15, block=false)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-100", block = false)]<p=2>November 5th, 1100    8:10 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-150, fadetime=2)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0, to=0.6, duration=2, block=false)]
+[charslot(slot="l", name="avg_npc_1557_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[delay(time=3)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="Fanatical Mafioso"]Is everybody here?
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="Excited Mafioso"]Look behind you. The whole street belongs to us... an awe-inspiring pack of wolves.
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="Fanatical Mafioso"]Good. No one should miss the Carnevale.
+[name="Fanatical Mafioso"]The weapons?
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="Excited Mafioso"]The secret weapon caches have been opened by the Don's orders. Guns, bombs, staves, crossbows... everything is fair game.
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="Fanatical Mafioso"]Good! But remember the most important thing—keep your mask on.
+[name="Fanatical Mafioso"]Nobody cares who's behind the mask, which famiglia they're from. Nothing you do will be punished.
+[name="Fanatical Mafioso"]Carnevale—Siracusa's greatest festival!
+[name="Fanatical Mafioso"]Cut down our foes! All the famiglie that oppose us will be swept aside! Nothing shall stand in our way in Siracusa!
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="Excited Mafioso"]What about the officials of the city hall? They're even worse than the other famiglie, those slugs that keep babbling about their lofty ideals.
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="Fanatical Mafioso"]The courthouse is right there behind us. They can sit and watch in that proud white tower of theirs... or get a crossbow bolt in their throat if they don't behave.
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="Excited Mafioso"]I like the sound of that!
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="Fanatical Mafioso"]Do you smell it in the wind? It's the smell of blood, just waiting for a chance to spill...
+[name="Fanatical Mafioso"]Tonight, there is no Grey Hall, there are no laws, no rules, no order. Tomorrow, there will be a new order in Siracusa, starting with this new city—
+[dialog]
+[PlaySound(key="$d_avg_policesiren", volume=1, loop=true, channel="p")]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spotlightc", volume=1)]
+[stopmusic(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", bstart=0.2,bend=0.7)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="???"]Alright, I think the speech has gone on for long enough.
+[dialog]
+[StopSound(channel="p", fadetime=0.5)]
+[PlaySound(key="$d_avg_spotlight", volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", posfrom="0,-50", posto="0,-50", duration=0)]
+[Delay(time=1)]
+[name="???"]I'm—er... Noemi! Trainee officer at the Nuova Volsinii Police Department!
+[name="Noemi"]Look around you! There is nowhere to run!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot="m", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=0)]
+[Delay(time=0.5)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[charslot(slot="r", name= "avg_npc_1553_1#1$1", posfrom="200,-100", posto="30,-100", duration=0.5)]
+[charslot(slot="l", name= "avg_npc_1553_1#1$1", posfrom="-200,-100", posto="-30,-100", duration=0.5)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", posfrom="0,-50", posto="0,-50", duration=0)]
+[name="Noemi"]According to the New Urban Management Act, even members of the Dodici Famiglie must undergo a background check and standard registration prior to entering Nuova Volsinii.
+[name="Noemi"]Your previous acts of violence are on record, and the violence that you are planning will not go unpunished. Illegal ownership and usage of weapons is a serious crime!
+[name="Noemi"]Where do you think you are? Here, er, *ahem*...
+[name="Noemi"]Nuova Volsinii has no place for famiglie!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_clapboard", volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="Off Screen"]Cut!
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall",fadetime=2)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=2, block=false)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[Delay(time=3)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m", name= "avg_npc_1553_1#1$1", duration=1)]
+[Delay(time=2)]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="Noemi"]I thought I had it all memorized. I don't know why...
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="Director"]There are only a few days until the Carnevale, Noemi. We need to finish this soon.
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="Noemi"]Sorry, I didn't think that my first task as a trainee would be shooting a movie...
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="Director"]Are you nervous because of the camera, or because the scene in front of you looks real?
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="Noemi"]...
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="Director"]If it's the former—look at these blokes here. I'm nervous that they'll let slip the names of their favorite pizzerias while trying to say their lines.
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="Noemi"]I worked at my papa's pizzeria before I started police school...
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="Director"]Anyway, you look good on screen and have a decent memory. You're the best one for the job.
+[name="Director"]If it's the latter—you're a graduate of Siracusa's first police academy. You're gonna have to stare into the eyes of the wise guys at some point. It's your job.
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="Noemi"]B-Both, I guess...
+[name="Noemi"]I promised Papa that I'd finish my training and become a cop. I'll get my job done, whatever it is!
+[name="Noemi"]Please let me have another go!
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="Director"]Alright, Venezians, here we go for another take.
+[charslot]
+[name="Mafiosi Extras"]*Moan*—
+[dialog]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=4)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=4)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-150, fadetime=4)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0, to=0.6, duration=4, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[Delay(time=0.5)]
+[charslot(slot="l", name="avg_npc_1557_1#1$1",  posfrom="0,-100", posto="0,-100", duration=1.5)]
+[Delay(time=2)]
+[name="Director"]3, 2, 1, action!
+[dialog]
+[PlaySound(key="$d_avg_clapboard", volume=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.5, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.5, fadetime=0.3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[charslot]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=0.1, block=false)]
+[curtain]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall")]
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1")]
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="Leontuzzo"]...
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="Lavinia"]...
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="Leontuzzo"]...What do you think?
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="Lavinia"]What answer would you like to hear?
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="Leontuzzo"]Maybe the actors playing the mafiosi should act more intimidating? Show just how far Nuova Volsinii has come?
+[name="Leontuzzo"]Or maybe you don't like how Venezia Trucking is involved in the filming? But at least they have not attempted to challenge Nuova Volsinii's New Urban Management Act.
+[name="Leontuzzo"]They're just providing 'employees' as extras. They didn't even ask for ad space in the promotional video...
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="Lavinia"]...
+[charslot(slot= "l", name= "avg_npc_1541_1#4$1", focus="l")]
+[name="Leontuzzo"]You know I'm not doing this because I like it.
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="Lavinia"]I don't know, you look pretty happy in the limelight.
+[charslot(slot= "l", focus="n")]
+[name="Director"]Signore! It's almost time to shoot your speech!
+[charslot(slot= "l", name= "avg_npc_1541_1#3$1", focus="l")]
+[name="Leontuzzo"]Be right there!
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="Lavinia"]...
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="Leontuzzo"]I-I'll make sure they know I'm just the Acting Mayor...
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="Lavinia"]Not for long, though.
+[name="Lavinia"]A grand festival, formal inauguration as mayor, a promotional video, your face in every corner of the city, so that no one would miss it...
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="Leontuzzo"]We've talked about this, Lavinia.
+[name="Leontuzzo"]We've done a lot in this new city. We've founded a new city hall, enacted the New Urban Management Act, and put into place policies that exclude the mafioso order...
+[name="Leontuzzo"]But we have yet to face the big questions head-on—from Signora Sicilia, and the other famiglie that have designs on the new city.
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="Leontuzzo"]Is there a better time than now?
+[name="Leontuzzo"]Here, at the one-year anniversary of Nuova Volsinii, we have invited all citizens, even friends from abroad, to come to Nuova Volsinii.
+[name="Leontuzzo"]We have revived the word Carnevale, which has not been used in the last half-century, and given it new meaning, in order to demonstrate...
+[name="Leontuzzo"]This country can and will change the old things that bind it, and it starts with this city.
+[charslot(slot= "r", name= "avg_4065_judge_1#15$1", focus="r")]
+[name="Lavinia"]But how will painting a target on your back contribute to all that you've said?
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="Leontuzzo"]We need a banner...
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="Lavinia"]And the famiglie of Siracusa are waiting for a target that they can attack and harm.
+[name="Lavinia"]Just because the famiglie have kept a low profile doesn't mean they've given up on controlling this city. They have their eyes on you.
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="Leontuzzo"]...I'm not afraid of them.
+[name="Leontuzzo"]I won't let them have their way, not again...
+[charslot(slot= "r", name= "avg_4065_judge_1#6$1", focus="r")]
+[name="Lavinia"]I know how you feel, Leon, but what we need right now is not a reckless declaration of war.
+[name="Lavinia"]You need to protect yourself. I don't want to see you...
+[charslot(slot= "l", focus="n")]
+[name="Director"]Signore! Are you ready?
+[charslot(slot= "l", name= "avg_npc_1541_1#3$1", focus="l")]
+[name="Leontuzzo"]C-Coming!
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="Lavinia"]...
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="Lavinia"]The trucks will have to be returned to the union as soon as the shooting is done. They're needed for the festival preparations.
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="Leontuzzo"]I know, half a day is as much as the union can give us. Don't worry, it's all been arranged.
+[dialog]
+[charslot(slot= "r", name= "avg_4065_judge_1#8$1", focus="r")]
+[delay(time=1)]
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="Lavinia"]I need to go. A lot to do at the courts.
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="Leontuzzo"]Is there trouble?
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="Lavinia"]Nothing major. Some issues with a few companies' registrations.
+[name="Lavinia"]Their nose for loopholes in the law would put my law school classmates to shame.
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="Leontuzzo"]About dinner—
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="Lavinia"]There's leftover pasta in the fridge. Help yourself.
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="Leontuzzo"]No... what I mean is...
+[name="Leontuzzo"]I promised to join Demetri for dinner tonight... I can't avoid him forever.
+[charslot(slot= "r", name= "avg_4065_judge_1#6$1", focus="r")]
+[name="Lavinia"]...
+[name="Lavinia"]Take care of yourself, Leon.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1.5)]
+[delay(time=2)]
+[charslot(slot= "l", focus="n")]
+[name="Director"]Keep an eye on the camera's indicator light, Signore. We can begin when you're ready.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", posfrom="0,0", posto="200,0", duration=1)]
+[delay(time=1)]
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="Leontuzzo"]Alright.
+[dialog]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_mictest", volume=1)]
+[delay(time=1)]
+[name="Leontuzzo"]Good evening, citizens.
+[name="Leontuzzo"]It is my honor to speak to you today as a citizen of Nuova Volsinii.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="I bring you an invitation—", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nWelcome to a new era for Siracusa.", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", posfrom="-200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[name="Apprentice Tailor"]H-Here!
+[name="Apprentice Tailor"]I had to walk five blocks and stand in a queue to buy this salami. And this wine is the best from Nonno's collection... he's not in any shape to drink anymore.
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="Mafioso"]Good, little tailor, you're a good kid.
+[name="Mafioso"]There's so little to do at night in Nuova Volsinii. In the old days, on a night like this... hehe.
+[dialog]
+[PlaySound(key="$d_avg_whistle", volume=1)]
+[Delay(time=1.5)]
+[name="Mafioso"](Cocky whistling)
+[dialog]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[PlaySound(key="$d_avg_whistleunfamiliar", volume=1)]
+[Delay(time=1.5)]
+[name="Apprentice Tailor"](Awkward whistling)
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="Mafioso"]Eh, cut it out, Luchino! It's so damn dumb.
+[name="Mafioso"]I warned you last time when you tried to show off the jargon you learned from movies—
+[name="Mafioso"]Imitating a mafioso doesn't make you one. Besides... just get real, and stick to tailoring.
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="Luchino"]...Yes sir.
+[charslot(slot= "l", name= "avg_4155_talr_1#1$1", focus="l")]
+[name="Luchino"]Alright, you got your wine and salami. I got to go.
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="Mafioso"]Going already? Thought you'd be pestering us for stories about the famiglia again.
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="Luchino"]Nonno found out that I was hanging out with you. He doesn't want—
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="Mafioso"]Ha! And you want to be somebody?
+[charslot(slot= "l", focus="n")]
+[name="???"]What are you doing outside, Luchino?
+[name="???"]The cops are stepping up their patrols ahead of the Carnevale. Don't let them catch you roaming on the streets.
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[name="Luchino"]...Nonno's calling.
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="Mafioso"]That old man—
+[name="Mafioso"]Everybody respected us and feared us back in the day. Now we're letting an old tailor like Umberto walk all over us.
+[name="Mafioso"]Sure, follow the rules of wherever you end up, but the rule of Nuova Volsinii is to throw all the old rules out.
+[name="Mafioso"]Even big famiglie with a seat in the Grey Hall, like the Saluzzo, have to keep their tail firmly between their legs here... how times have changed.
+[charslot(slot= "l", name= "avg_4155_talr_1#3$1", focus="l")]
+[name="Luchino"]'Saluzzo'...
+[charslot(slot= "l", name= "avg_4155_talr_1#1$1", focus="l")]
+[name="Luchino"]Er, I'm going in.
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_doorbell", volume=1)]
+[Background(image="56_g7_tailorshop",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot= "m", name= "avg_4155_talr_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Luchino"]N-Nonno.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot= "m", name= "avg_npc_1543_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Umberto"]...The suit's already packed. You remember where to deliver it to, right?
+[charslot(slot= "m", name= "avg_4155_talr_1#10$1")]
+[name="Luchino"]Yeah.
+[charslot(slot= "m", name= "avg_npc_1543_1#1$1")]
+[name="Umberto"]Come back right away if the customer doesn't have any requests after trying it on.
+[charslot(slot= "m", name= "avg_npc_1543_1#3$1")]
+[multiline(name="Umberto")]I know this is a special client, and I know you've always wanted to meet the 'real VIPs'.
+[charslot(slot= "m", name= "avg_npc_1543_1#2$1")]
+[charslot(slot = "m", action="shake", afrom=1 , ato=1, power=3, times=30, duration=0.3)]
+[multiline(name="Umberto",end=true)]*Cough*—
+[dialog]
+[PlaySound(key="$d_avg_walkfast", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", posfrom="-200,0", posto="-50,0", duration=0.5, isblock=true)]
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="Luchino"]I know, I know, you've said it many times.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", posfrom="-50,0", posto="150,0", duration=1.5)]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[charslot(slot= "m", posfrom="0,0", posto="200,-10", afrom=1, ato=0, duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot= "l", name= "avg_4155_talr_1#10$1")]
+[name="Luchino"]I'll get your medicine on the way and come back as soon as I've made the delivery. Don't worry, just get some rest.
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="Change is happening around us.", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nSlowly, but surely. We can all see it.", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nWe are taking back what should have been ours all along. Our lives, our courage.", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Sticker(id="st2", multi = true, text="The burden of history weighs heavy. Sometimes, we find our feet mired in the past.", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st2", multi = true, text="\n\nBut we will keep walking. We will never stop.", block = true)]
+[Sticker(id="st2", multi = true, text="\n\nWe are still strong.", block = true)]
+[Sticker(id="st2", duration=1, block = false)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g14_governmentoffice_n",screenadapt="coverall")]
+[PlayMusic(key="$formal_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>November 5th, 1100    9:37 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1", posfrom="-50,0", posto="0,0", duration=0.3)]
+[delay(time=1)]
+[name="Anxious Truck Driver"]I came here first! You're cutting the line!
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="Famiglia Company Employee"]Which company do you represent, sir?
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1")]
+[name="Anxious Truck Driver"]I... I'm with the Truckers' Union. I have important documents that I need Judge Lavinia to take care of today. I have an appointment with her!
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="Famiglia Company Employee"]How important? Will it bring hundreds of millions of florins in investments to Nuova Volsinii?
+[charslot(slot= "m", name= "avg_npc_1542_1#2$1")]
+[name="Anxious Truck Driver"]Well, no...
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="Famiglia Company Employee"]Then it's nothing particularly urgent.
+[name="Famiglia Company Employee"]I suggest that you remain patient while important business is being discussed behind those doors, involving numbers that you cannot even fathom.
+[name="Famiglia Company Employee"]That's the biggest contribution you can make to the city.
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1")]
+[name="Anxious Truck Driver"]...
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="56_g14_governmentoffice_n", screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="n")]
+[name="Famiglia Lawyer"]I must remind you, Judge Lavinia, that the law is founded upon the principle of fairness, and no one should receive special treatment.
+[name="Famiglia Lawyer"]It is difficult not to suspect that you frequently target companies under the Saluzzo banner out of your own prejudice against us.
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="Lavinia"]Did you say prejudice?
+[name="Lavinia"]It is past nine in the evening, signore. Did you think I volunteered to do overtime, unpaid, and go through the ordeal of sitting in a room with you, just so I could satisfy my 'prejudice'?
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="Famiglia Lawyer"]...
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="Lavinia"]Here is Saluzzo Vino's previous submission for their new winery, which lists one hundred and thirty security personnel.
+[name="Lavinia"]Here is the revised submission, which instead lists thirty logistics personnel, fifty winemakers, and fifty technical personnel.
+[charslot(slot = "l", name = "avg_4065_judge_1#15$1", focus="l")]
+[name="Lavinia"]You don't have to respect me, signore, but the least you could do is respect the New Urban Management Act, and have a modicum of common sense.
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="Famiglia Lawyer"]...What will it take for you to stop breathing down our necks?
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="Lavinia"]Easy. Nuova Volsinii welcomes any honest business with open arms, but there is no place here for any dishonest famiglia.
+[name="Lavinia"]Saluzzo can sell his wine to Leithanien, Columbia, even Ursus for all I care...
+[name="Lavinia"]But not a single shelf in Nuova Volsinii will carry wine bearing the label of Saluzzo's new winery until it passes the qualification audit.
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="Famiglia Lawyer"]I'll give it to you, Judge Lavinia. Not one government or court employee has dared talk to us like this in the entire history of Siracusa.
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="Lavinia"]The law of Nuova Volsinii bends for no one.
+[name="Lavinia"]Get used to it, or things are only going to get harder for you.
+[charslot(slot = "l", name = "avg_4065_judge_1#2$1", focus="l")]
+[name="Lavinia"]I've already wasted too much time with Saluzzo wines today, signore. Kindly remove yourself from my office, and remove your men from the door, because they're in the way of that lady outside.
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="Lavinia"]I heard the impertinence that you showed towards her. She deserves an apology.
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="Famiglia Lawyer"]...Hmph.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1, isblock=true)]
+[delay(time=1.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1542_1#7$1", focus="r")]
+[name="Anxious Truck Driver"]Good evening, Judge Lavinia! Sorry to take up your time, but please, take a look at this!
+[name="Anxious Truck Driver"]It's the dispatch record of the Truckers' Union in recent days, recording the driver, cargo, route, and time of every dispatch.
+[name="Anxious Truck Driver"]There's so much that it took quite a while to put together... I would like you to review it.
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="Lavinia"]Thanks. It's very detailed... but why are you asking me to review it?
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Anxious Truck Driver"]You said logistics around the Carnevale is really important, and to be on guard of smugglers...
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]Yes, but it was just a reminder... besides, you're the president of the Truckers' Union, Eirene. You can make your own judgment.
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="Eirene"]Oh... you recognize me?
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]It's not like we haven't met before... the most diligent driver in Nuova Volsinii, and the most trusted leader of the Nuova Volsinii Freight Workers and Truck Drivers Mutual Aid Association.
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="Eirene"]It's always going to be just 'Truckers' Union' to us...
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]Without workers and drivers like you, there would be no Nuova Volsinii. You should all be proud of yourselves.
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="Eirene"]T-Thank you.
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]I'll take the report. Thank you for your vigilance; I trust your judgment... is there anything else?
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]Well... the list of new truck drivers that we submitted last week hasn't been approved yet.
+[name="Eirene"]I would like to provide my assurance for one of the names on the list...
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_paper2",volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="Lavinia"]You understand, Eirene, why we're very thorough about background checks for truck drivers...
+[charslot(slot = "r", name = "avg_npc_1542_1#8$1", focus="r")]
+[name="Eirene"]Of course! I know... logistics is very important to Nuova Volsinii. We can't give the famiglie a chance to get their foot in!
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="Lavinia"]A Reproba from Ursus with almost no social relations and whose past is virtually unknown... You do see my concern, right?
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="Eirene"]I-I promise, she has nothing to do with the mafia. And she's a great driver!
+[name="Eirene"]Her resume is like this because she's had some hard luck... she really, really needs a job right now!
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]I'm thinking, Judge Lavinia... the laws of Nuova Volsinii protect us from the mafia. When our citizens need help, perhaps...
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="Lavinia"]...
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="Eirene"]Oh, I don't mean to pressure you! You should deal with it whatever way you see fit—
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]You're too wound up, Eirene.
+[name="Lavinia"]I can see that you're trying to keep your distance from me.
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]I...
+[name="Eirene"]I, I really like you and Signor Bellone, Judge Lavinia, I really do!
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]Hehe, thanks.
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]Same for Sommer.
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]Sommer? The driver who came with you to Nuova Volsinii? The one always with a lighter in his hand...
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="Eirene"]You remember! He's my best friend.
+[name="Eirene"]We came to Nuova Volsinii a year ago. Back then, City Hall's notice about the Truckers' Union had been up for half a month, but no one dared to apply, fearing mafia reprisals.
+[name="Eirene"]Sommer and I read it a few times and were about to leave when you and Signor Bellone stopped us.
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]You stood before the notice longer than anyone else.
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]...We came because we couldn't stay in Sicilia.
+[charslot(slot = "r", name = "avg_npc_1542_1#3$1", focus="r")]
+[name="Eirene"]I remember what you said to me... I, I don't mean to make this awkward, but my life would be very different without you.
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="Lavinia"]...
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]I know you don't want the famiglie—I mean, 'companies' to interfere in Nuova Volsinii's logistics, and I know they haven't given up on it.
+[name="Eirene"]The result, however, is that the Truckers' Union has become the only legal transportation organization, and it is growing by the day...
+[charslot(slot = "r", name = "avg_npc_1542_1#3$1", focus="r")]
+[multiline(name="Eirene")]All our drivers have something in their past that they're not proud of, before they came to Nuova Volsinii...
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[multiline(name="Eirene",end=true)]Anyway, we're all looking for a fresh start, a second chance.
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="Lavinia"]That's why you don't want to be seen to be too close to City Hall or the courts.
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="Eirene"]...Yes.
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="Lavinia"]I know, there are many things that will take time to get there.
+[charslot(slot = "r", name = "avg_npc_1542_1#8$1", focus="r")]
+[name="Eirene"]But I promise you that the mafia will never get a foothold in the Truckers' Union.
+[name="Eirene"]And I voted for Signor Bellone when he ran for mayor! Everyone can see how well he’s done as Acting Mayor for the past year. I'm sure—*grumble*.
+[dialog]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$d_avg_hungry", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="Eirene"]Oh...
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]Haven't had dinner yet?
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="Eirene"]I-I'm fine! I'm not hungry yet...
+[dialog]
+[charslot(slot = "l", posfrom="0,0", posto="50,0", duration=0.6, isblock=true)]
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]I still have some pizza here, if you don't mind that it's gotten a little cold.
+[dialog]
+[charslot(slot = "r", posfrom="0,0", posto="50,0", duration=0.6, isblock=true)]
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="Eirene"]I-I can't possibly...
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]Think of it as helping me out. It's too much for me to finish on my own, and we can't very well talk about work on an empty stomach, can we?
+[name="Lavinia"]Besides, there is no greater crime in Siracusa than letting good, authentic pizza go to waste.
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="Eirene"]If you put it that way... I guess it would be rude to refuse.
+[dialog]
+[charslot(slot = "r", posfrom="50,0", posto="0,0", duration=0.6, isblock=true)]
+[PlaySound(key="$d_avg_humaneat", volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="Lavinia"]Tell me more about the present state of the Truckers' Union, Eirene.
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="Eirene"]Oh, uh... okay!
+[name="Eirene"]Average pizza sauce last month is up five times from the previous months...
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[multiline(name="Eirene")]Oh, I mean, dispatches...
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[multiline(name="Eirene",end=true)]And this pizza sauce is really good.
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="Lavinia"]...
+[name="Lavinia"]Maybe we should finish our dinner first.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="A friend once said something that really left an impression on me—", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n'Our power comes from the very lives we have created.'", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nOur power will protect all that we have built.", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>November 5th, 1100    10:52 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="Capone"]That's the fifth slice of pizza and third glass of juice that you just eliminated. Are you that hungry?
+[charslot(slot = "r", name = "avg_npc_542_1#6$1", focus="r")]
+[name="Gambino"]Just shut up and drink this concentrated juice.
+[dialog]
+[PlaySound(key="$d_avg_drinkswllw", volume=1)]
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[delay(time=1)]
+[name="Capone"]It's so damn sour!
+[name="Capone"]If we screw up this mission because this swill makes me throw up, whose head am I gonna give the boss, yours?
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="r")]
+[name="Gambino"]Live with it. I just picked it up off the shelf.
+[name="Gambino"]Nobody uses this frontage road anyway. Besides, it's just transporting a bunch of 'tires', what could go wrong?
+[charslot(slot = "r", name = "avg_npc_542_1#7$1", focus="r")]
+[name="Gambino"]No need to get all worked up about an unimportant job like this.
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="Capone"]I'm tired of listening to your complaints for the past two months, Gambino.
+[name="Capone"]Haven't you figured out our new boss yet? Trying too hard to show off in front of him will only have the opposite effect.
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="Capone"]Fresh meat like us needs to prove ourselves not with talk, but with actual results from jobs. Even these unimportant ones.
+[charslot(slot = "r", name = "avg_npc_542_1#8$1", focus="r")]
+[name="Gambino"]Well, ain't you the model employee, Capone.
+[name="Gambino"]I thought you would at least show a little bit of, I don't know, shame? There's hardly any place for a Sicilian in Siracusa these days.
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="Capone"]I'm not a Sicilian anymore. It's your shame, not mine.
+[name="Capone"]I just want to get my Nuova Volsinii citizenship sooner rather than later. All the work I put in over the past six months, all the guarantee money I paid, and I'm only halfway to the required points—
+[charslot(slot = "r", name = "avg_npc_542_1#2$1", focus="r")]
+[name="Gambino"]Halfway?! You've got fifty more points than I do? Have you been doing—*gasp*—community service while I wasn't looking?
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="Capone"]Shut your crap, Gambino. We're on our last chance and you know it.
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="r")]
+[name="Gambino"]...
+[charslot(slot = "l", name = "avg_npc_541_1#7$1", focus="l")]
+[multiline(name="Capone")]Keep your eyes sharp on the street. It should be coming any time now—
+[multiline(name="Capone")]You got any pizza left? Give me one.
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_541_1#6$1", focus="l")]
+[name="Capone"]Cazzo, it's cold, how do you even manage to eat this...
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[PlaySound(key="$d_avg_noisycitytraffic", volume=0, loop=true, channel="n")]
+[Delay(time=1)]
+[CameraShake(duration=-1, xstrength=0.4, ystrength=0.4, vibrato=10, randomness=10, fadeout=false, block=false)]
+[SoundVolume(volume=1, channel="car",fadetime=2)]
+[SoundVolume(volume=0.6, channel="n",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-180", block = false)]<p=2>November 5th, 1100    11:05 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[SoundVolume(volume=0.4, channel="car",fadetime=1)]
+[StopSound(channel="n", fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1541_1#4$1", duration=0.5, isblock=true)]
+[name="Leontuzzo"]Ach... I'm late.
+[dialog]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+[name="Voice on the Phone"]You're late, Leon.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1541_1#1$1")]
+[name="Leontuzzo"]I'm sorry, it's been a really busy day.
+[charslot(slot = "m", focus = "n")]
+[name="Voice on the Phone"]Still working on your inaugural speech?
+[charslot(slot = "m", name = "avg_npc_1541_1#1$1")]
+[name="Leontuzzo"]Well, that too... We're planning a birthday party for an entire city. It's not quite the same as planning a party at home, is it?
+[charslot(slot = "m", focus = "n")]
+[name="Voice on the Phone"]I'm surprised... you still remember.
+[charslot(slot = "m", name = "avg_npc_1541_1#8$1")]
+[name="Leontuzzo"]Of course I do. Did you think I was going to forget how you bought ginger ale instead of beer for the banquet, and pocketed the difference to buy a car?
+[charslot(slot = "m", focus = "n")]
+[name="Voice on the Phone"]Well, I guess that DID happen.
+[charslot(slot = "m", name = "avg_npc_1541_1#2$1")]
+[name="Leontuzzo"]You sound... distracted, Demetri.
+[charslot(slot = "m", focus = "n")]
+[name="Voice on the Phone"]Do I? It's nothing. I guess it's been too long since we last saw each other.
+[name="Voice on the Phone"]Take care on your way, Leon.
+[charslot(slot = "m", name = "avg_npc_1541_1#8$1")]
+[name="Leontuzzo"]Might have taken that as a threat, if we weren't in Nuova Volsinii.
+[charslot(slot = "m", focus = "n")]
+[name="Voice on the Phone"]Enough joking and hurry up. I'm waiting at the seat by the window.
+[dialog]
+[charslot(duration=1)]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+Leontuzzo hangs up.
+He has not seen the man on the other end of the phone for a year now. He knows what he wants and how to decline his offer.
+Leontuzzo shakes his head at the thought of the reunion, which promises to be a less-than-pleasant one.
+[stopmusic(fadetime=2)]
+A beam of light shines on his face.
+[dialog]
+[PlaySound(key="$d_avg_carhorn", volume=1)]
+[StopSound(channel="car", fadetime=2)]
+[PlaySound(key="$d_avg_noisycitytraffic", volume=0, loop=true, channel="n")]
+[SoundVolume(volume=0.4, channel="n",fadetime=2)]
+[curtain(direction = 0, fillfrom = 0.11,fillto = 0.11, a=0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.11,fillto = 0.11, a=0, fadetime=2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[CameraShake(duration=0, xstrength=0.4, ystrength=0.4, vibrato=10, randomness=10, fadeout=false, block=false)]
+[background]
+[curtain]
+[charslot]
+[Image(image="56_i28", screenadapt="coverall")]
+[delay(time=0.1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[name="Leontuzzo"]What the—who drives like that?
+[name="Leontuzzo"]Wait, that vehicle—
+[name="Leontuzzo"]Hey, what's going on with my steering wheel—
+[dialog]
+[StopSound(channel="n", fadetime=1)]
+[PlaySound(key="$drift", volume=1)]
+[delay(time=0.6)]
+[PlaySound(key="$d_avg_carcrash_wreck", volume=1)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0.5, block=false)]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=3)]
+[Image(image="56_i29", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=20, block=false)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="???"]Keep your distance! It's dangerous!
+[name="???"]Out of the way! Make way for the stretcher!
+[name="???"]Signore! Can you hear me?
+[name="???"]Hang in there! The ambulance is almost here!
+[dialog]
+[SoundVolume(volume=0.2, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[PlaySound(key="$d_avg_tinnitus", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_gen_heartbeat", volume=0, loop=true, channel="heart")]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="cr")]
+[SoundVolume(volume=1, channel="heart",fadetime=2)]
+[SoundVolume(volume=0.2, channel="cr",fadetime=2)]
+[Background(image="38_g21_skystarry_L1",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[backgroundTween(xFrom=0, yFrom=100, xTo=-40, yTo=-100, duration=6)]
+[focusout(type="bg", id="38_g21_skystarry_L1", from=0, to=1, duration=0.1, block=false)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Background(image="56_g2_newvolsiniistreet_n", screenadapt="coverall", xScale=1.4, yScale=1.4)]
+[backgroundTween(xFrom=50, xTo=-50, yFrom=0, yTo=-90, duration=8, block=false)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=0, to=1, duration=0.1, block=false)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=1, to=0.6, duration=2, block=false)]
+[Blocker(a=0.4, r=0.92, g=0.4, b=0.3, fadetime=3, block=true)]
+[name="Leontuzzo"]...
+[name="Leontuzzo"]Where... am... I...
+[name="???"]Stay still, signore! You've lost a lot of blood—
+[name="Leontuzzo"]Who is... that...?
+[dialog]
+[StopSound(channel="c", fadetime=2)]
+[StopSound(channel="cr", fadetime=2)]
+[StopSound(channel="heart", fadetime=1)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[BackgroundTween(yTo=150, duration=0.3, block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=0.5)]
+The last thing Leontuzzo remembers before he loses consciousness is a blurry yellow silhouette—
+A taxi.
+[dialog]
+[background]
+[delay(time=2)]
+[PlaySound(key="$d_avg_ambulancewhistle", volume=0, loop=true, channel="am")]
+[SoundVolume(volume=1, channel="am",fadetime=2)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=1, to=0, duration=0, block=false)]
+[Image(image="56_i01", screenadapt="coverall", xScale=1.4, yScale=1.4, x=-120, fadetime=0)]
+[ImageTween(yFrom=-150, yTo=100, duration=8, block=false)]
+[delay(time=2)]
+[StopSound(channel="am", fadetime=6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=3)]
+The Carnevale has brought countless visitors from Siracusa and beyond to Nuova Volsinii.
+[dialog]
+[PlaySound(key="$d_avg_drivestop", volume=1)]
+[Delay(time=1.5)]
+[cgitem(image="cgitem_56_i01_1", style="cg", sfrom=2, sto=2, sduration=0, afrom = 0, ato = 1, aduration = 0.1, pfrom = "300,10", pto = "-100,10", pduration = 0.3, layer = 1)]
+[Delay(time=0.2)]
+[cgitem(image="cgitem_56_i01_2", style="cg", sfrom=2, sto=2, sduration=0, afrom = 0, ato = 1, aduration = 0.1, pfrom = "0,10", pto = "-900,10", pduration = 0.8, layer = 2)]
+[hidecgitem(image="cgitem_56_i01_1", fadetime=0.1)]
+[Delay(time=0.4)]
+This taxi does not seem different from any other that carries visitors across the city.
+[dialog]
+[Image(image="56_i01", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=2)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=8, block=false)]
+[Delay(time=2)]
+[PlayMusic(intro="$act21side_intro", key="$act21side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[cgitem(image="cgitem_56_i01_3", style="cg", sfrom=1.1, sto=1, sduration=8, afrom = 0, ato = 1, aduration = 2, pfrom = "5,0", pto = "5,0", pduration = 0, layer = 3)]
+Except for the great, strange shadow that it wears.
+Not cast by the towering buildings, nor a trick of the neon lights. It is the shadow of a wolf.
+[dialog]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[hidecgitem(image="cgitem_56_i01_3", fadetime=3)]
+[Delay(time=3)]
+The taxi slithers through the city like a ghost, carrying a wolf from the wilderness.
+[dialog]
+[PlaySound(key="$drift", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_carspeedup", volume=1)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[image]
+[charslot]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[SoundVolume(volume=0.5, channel="car",fadetime=2)]
+[Image(image="56_i02", screenadapt="coverall", xScale=1.2, yScale=1.2, fadetime=0)]
+[ImageTween(xFrom=100, xTo=0, yFrom=-80, yTo=0, xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[name="Zaaro"]Slower, Lappland.
+[dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Lappland"]What? The ageless, deathless Signore dei Lupi, afraid of being thrown out of a car?
+[name="Zaaro"]It's your car I'm worried about. Keep driving it like this, and it'll fall apart.
+[name="Lappland"]We managed to get it fixed when it was just a bunch of scrap metal lying out there in the wilderness. It's strong, trust it.
+[name="Lappland"]Or do you not trust my driving skills? I don't fool around with my own life... except when necessary.
+[name="Zaaro"]You don't want the police to find you and throw you in jail, or the mafia to find you and throw you into a meat grinder, do you? At least, not yet.
+[name="Lappland"]We're getting better at reading each other's minds, Zaaro.
+[name="Lappland"]We still have a Carnevale to go to, after all.
+[name="Zaaro"]I thought you would scorn the Carnevale for lacking in revelry, seeing all the colorful lights and balloons that line the streets.
+[name="Lappland"]Of course not.
+[name="Lappland"]Carnevale had been a thing for centuries, dating back to when Siracusa was just a backwater province of Leithanien.
+[name="Lappland"]The Lupo of Siracusa found that they were still restless and uneasy, even after getting their own city, and the order of the famiglia.
+[name="Lappland"]And so, for a few days in a year, the famiglie run amok in the city, settling scores, fighting over territory, or simply engaging in wanton violence.
+[name="Lappland"]Assault, arson, robbery, murder—everything was fair game as long as you had your mask on.
+[name="Lappland"]The first thing Signora Sicilia did when she came to power was to abolish the festival, but Nuova Volsinii has persuaded her to permit its revival.
+[name="Lappland"]They hope that reviving the festival without the brutality and cruelty would give this blank slate of a city new meaning, and a sense of belonging for the people who have come to seek out a new life.
+[name="Lappland"]Is that not Carnevale—a wonderful thing?
+[name="Zaaro"]Have we gotten into poetry now? Your showmanship is beyond mortal help, Lappland.
+[name="Lappland"]Just excited about it.
+[name="Lappland"]I promise that the reborn festival will be an unforgettable one for everyone—the Lupi included.
+[name="Zaaro"]I hope you remember our agreement. This round is coming to a close. Do not disappoint me, Lappland.
+[name="Zaaro"]As I said, our battle will continue for thousands upon thousands of years.
+[dialog]
+[Image(image="56_i02", screenadapt="coverall", fadetime=0.5)]
+[curtain(direction = 3,fillfrom = 0.01,fillto = 0.45, fadetime=0.5)]
+[curtain(direction = 7,fillfrom = 0.01,fillto = 0.45, fadetime=0.5)]
+[delay(time=1)]
+[name="Lappland"]Well, strap in, and hang on—
+[dialog]
+[PlaySound(key="$d_avg_carspeedup", volume=1)]
+[delay(time=1.5)]
+[StopSound(channel="sn", fadetime=1)]
+[StopSound(channel="car", fadetime=1)]
+[ImageTween(xFrom=0, xTo=-350, duration=0.3, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

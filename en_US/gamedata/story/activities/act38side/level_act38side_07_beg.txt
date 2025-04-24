@@ -1,0 +1,633 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_wilderness_m",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=1, xstrength=7, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_airwaramb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=1)]
+[Delay(time=1)]
+[CameraShake(duration=1.5, xstrength=7, ystrength=5, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[StopSound(channel="bgs", fadetime=1.5)]
+[Delay(time=1)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_snowbootwalk")]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_683_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_683_1#9$1")]
+[name="Lappland"]Tsk, tsk.
+[name="Lappland"]We got here too late. They finished their fight and now there's no one alive to talk to.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_688_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="Zaaro"]You stopped our duel just to watch a boring shootout?
+[charslot]
+Woman and wolf stand on the barrenlands as the sun rises, with a yellow cab parked not far from them.
+The cab's hood bears a deep depression from a prior intimate meeting with a boulder. Tire tracks twist and turn in its wake peppered with strewn up dirt, narrating the car's journey here...
+Several bodies lie around the car. The wind carries the stench of blood far away, inciting low growls from wild beasts in the distance.
+[charslot(slot="m",name="avg_npc_683_1#9$1")]
+[name="Lappland"]Zaaro, there are two things you ought to understand.
+[name="Lappland"]One: I am not a toy for your entertainment. Two: As <i>my</i> toy for <i>my</i> entertainment, I've realized an immortal Signore dei Lupi is just so boring...
+[charslot(slot="m",name="avg_npc_683_1#3$1")]
+[name="Lappland"]Compared to you, isn't a famiglia shoot out happening in the middle of the wastes much more interesting?
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]......
+[dialog]
+[charslot(slot="m",name="avg_npc_683_1#9$1")]
+[delay(time=0.5)]
+[charslot(slot = "m",posfrom = "0,0", posto = "150,0",duration = 1)]
+[delay(time=1.5)]
+[PlaySound(key="$sportscarstart")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_683_1#3$1")]
+[name="Lappland"]Haha, the car can still move even after all that?
+[charslot]
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]Where was it's original destination?
+[charslot(slot="m",name="avg_npc_683_1#9$1")]
+[name="Lappland"]Let's see... a spot circled on the map—'Nuova Volsinii', and some entry documents in the glove box to boot... Looks like we're all set!
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]A familiar name.
+[charslot(slot="m",name="avg_npc_683_1#9$1")]
+[name="Lappland"]Hey, Zaaro. Help me drag these corpses aside so I can reverse the car.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]You want to...
+[charslot(slot="m",name="avg_npc_683_1#3$1")]
+[name="Lappland"]Siracusa has graced us with an invitation.
+[name="Lappland"]Don't tell me you'd refuse? I didn't think a Signore dei Lupi would be so rude.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]I told you, I will walk with you until the victor is decided.
+[charslot(slot="m",name="avg_npc_683_1#9$1")]
+[name="Lappland"]Then help me out!
+[Dialog]
+[MusicVolume(volume=0.4, fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[delay(time=1)]
+[Image(image="56_i25",screenadapt="coverall")]
+[PlaySound(key="$d_avg_filmprojection")]
+[playsound(key="$d_avg_filmprojection_loop", loop=true, channel="bgs",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="(The Taxi Driver)", delay=0.001, width=800, x=250, y=520, duration=2, alignment="center", size=42)]
+[delay(time=1)]
+[Sticker(id="st1", duration=2, block = false)]
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]
+[bgeffect]
+[delay(time=1)]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>October 25th, 1100    9:00 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[charslot(slot = "right", name = "avg_npc_696_1#1$1",duration = 1)]
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]Salve.
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]Um, y-you don't have to be so formal, Signor Capone.
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]Relax. I just didn't wanna spook you with this scary mug of mine. After all, it wasn't easy to secure this meet-up with you.
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]I thought a lot about your proposal. If city hall staff discover I privately transferred my citizen points to you, will they...
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]Just pick a few documents from your pile of certs, write a little explanation, and change the name on 'em. Simple.
+[name="Capone"]I'll earn fifty points, while you get... a lotta dough.
+[name="Capone"]We ain't violatin' no laws here. If city hall got a problem, it just means the New Urban Management Act needs more revisions. I bet you know this better than me.
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]When you put it like that...
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]Identity registration's awful unfair, ain't it?
+[charslot(slot = "left", name = "avg_npc_541_1#4$1",focus="l")]
+[name="Capone"]I turned over a new leaf, paid so much guarantee money the past six months and did so much community service all thanks to my criminal record. All that work, and I still haven't earned even half of the 120 points I need...
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]But you? A 'clean resume', and 'experience in law-adjacent tech industries'... You're pretty new here, but the points you converted from all that's already enough to become a citizen three times over!
+[name="Capone"]It'd be a waste to keep 'em for yourself.
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]A-Alright.
+[name="Nervous Passerby"]I applied for an appointment next week to get my documents authenticated. I'll get these revisions done before that—
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]Easy, pal.
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]Huh? Aren't you the one wanting to become a citizen ASAP?
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]What I mean is, have <i>you</i> ever thought of puttin' off your citizenship application?
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]Wh-What do you mean?
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]Lots of us guys in the city could use a lot more points, but there ain't many guys like you who can get 'em so easy. So...
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]......
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]I'm happy to play middleman.
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]Nuova Volsinii introduced the New Urban Management Act to deter people like you—S-Sorry...
+[name="Nervous Passerby"]I mean, aren't we contradicting the city's founding principles by doing this?
+[charslot(slot = "left", name = "avg_npc_541_1#9$1",focus="l")]
+[name="Capone"]C'mon, pal. Relax, relaaax. I was just thinkin' out loud, is all. Don't mind me.
+[name="Capone"]But noodle on it a bit. Why'd you come here? A stable income? A better life?
+[name="Capone"]You think you'll get that after you become a legal citizen of Nuova Volsinii and work an entry-level job at a law firm?
+[charslot(slot = "right",focus="r")]
+[name="Nervous Passerby"]......
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_clapsolo", volume=1)]
+[delay(time=1)]
+[name="Lappland"](Claps)
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]Are you going to stay here and watch them all night, Lappland?
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]Why the rush? How can we start our night shift before getting some food? Want a slice of this freshly baked polenta?
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]......
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]On second thought, let's not waste it.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]You're in a good mood... Just because you witnessed that strange deal happen?
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]Zaaro, how long have we been here in Nuova Volsinii?
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]More than two months.
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]And how many places have we been, in that span of time? How many customers have we ferried?
+[name="Lappland"]Isn't it uncomfortable, seeing everyone in the city act so prim and proper?
+[name="Lappland"]The city hall staff and court judges are itching to slap their laws on their foreheads, ready to fight against Siracusa's old customs and rules at any moment...
+[name="Lappland"]While the famiglie are trying their best to prove how much they like and have adapted to this new set of game rules.
+[name="Lappland"]I've never seen Siracusans this restrained, this uncomfortable, like everyone has a mask sewn onto their faces.
+[name="Lappland"]It'll be Carnevale soon. Are they even in the mood to enjoy the so-called 'carnival'?
+[charslot(slot="m",name="avg_npc_1564_1#3$1")]
+[name="Lappland"]I'm thankful for our two friends here worrying over their citizen points for showing me Siracusa remains the same, and it's in every Siracusan's nature to turn every new territory into a swamp.
+[name="Lappland"]Haha, <i>now</i> I'm looking forward to Carnevale.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]......
+[charslot(slot="m",name="avg_npc_1564_1#1$1")]
+[name="Lappland"]Hey, are you even listening?
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]I smelled their scent.
+[charslot(slot="m",name="avg_npc_1564_1#10$1")]
+[name="Lappland"]Your compatriots, the other Signori dei Lupi?
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]No plans to catch up with them?
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]A Signore dei Lupi who has left the game should no longer interfere.
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]Don't look so defeated, Zaaro. You did lose, but it doesn't mean you can't derive any more fun from it.
+[name="Lappland"]Think about it, what else can you do?
+[name="Lappland"]Free yourself. We returned to this swamp for a leisurely swim.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]Hah...
+[name="Zaaro"]And you? When are you planning to say hello to your past?
+[charslot(slot="m",name="avg_npc_1564_1#3$1")]
+[name="Lappland"]Carissimo padre mio, you mean?
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]I already said addio... though I <i>did</i> prepare a gift for him this time.
+[charslot(duration=1)]
+The cab driver stops talking, and lifts her legs onto the dashboard to rest in a more comfortable position.
+Through the car window ahead is a wall sporting a huge billboard advertising a winery. A sullen-looking man with his tightly-knit brows brandishes a wine glass towards the camera, with the following invitation—
+'Saluzzo Vino is looking for a senior legal advisor! Several other positions also open, apply to join us today!'
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[curtain]
+[Background(image="56_g12_saluzzowinery",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1554_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Famiglia Lawyer"]Don Alberto, we got all the information here. Please have a look.
+[charslot(slot="m",name="avg_npc_686_1#1$1")]
+[name="Alberto"]Mm.
+[charslot(slot="m",name="avg_npc_1554_1#1$1")]
+[name="Famiglia Lawyer"]We have a total of thirteen wineries in this city. Six of them are undergoing a qualification audit and cannot operate for the time being.
+[name="Famiglia Lawyer"]Two of them on the city's outer plates are about to welcome their first harvest, and the warehouse, lab, and bottling line are ready...
+[name="Famiglia Lawyer"]But there's no way we can handle this many ripened grapes in this short period of time with half our wineries not operating.
+[name="Famiglia Lawyer"]The root of our problem lies with city hall's attitude towards us, those stronzi are obviously targeting us on purpose—
+[charslot(slot="m",name="avg_npc_686_1#9$1")]
+[name="Alberto"]These files are meant for our friend here. He has the means of solving such problems.
+[charslot(duration=0.5)]
+Alberto looks across the table, where a red-headed Lupo has been sitting for a while.
+The wine is finally decanted, and he takes a sip, calmly returning Alberto's gaze.
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_686_1#9$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_690_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_690_1#1$1",focus="r")]
+[name="Demetri"]Merge and restructure all Saluzzo properties in this city into new entities, including both the operating ones and those undergoing an audit...
+[name="Demetri"]Then, hire non-stakeholder employees to manage on-site operations. This is feasible under the New Urban Management Act.
+[charslot(slot = "left", name = "avg_npc_686_1#9$1",focus="l")]
+[name="Alberto"]Simply put, I will transfer these properties to you.
+[charslot(slot = "left", name = "avg_npc_686_1#1$1",focus="l")]
+[name="Alberto"]Famiglia Bellone does not have large-scale businesses, so the procedure should be relatively simple. Yet you've been rejected more than ten times now.
+[name="Alberto"]Whenever it involves a 'Bellone' or 'Saluzzo', the government and court—or should I say, Leontuzzo and Lavinia—always tend to react in a more defensive manner.
+[charslot(slot = "right", name = "avg_npc_690_1#1$1",focus="r")]
+[name="Demetri"]It sounds like I have no reason to refuse this arrangement.
+[charslot(slot = "left", name = "avg_npc_686_1#9$1",focus="l")]
+[name="Alberto"]Demetri, what I value more is that you understand Leontuzzo better than anyone else, as well as the rules he has set—
+[name="Alberto"]You are the best fit for this position.
+[name="Alberto"]I want to see if city hall will still brazenly clamp down on us even after we tie our companies together in total compliance with the New Urban Management Act.
+[name="Alberto"]Don't you agree, our new Don Bellone?
+[charslot(slot = "right", name = "avg_npc_690_1#9$1",focus="r")]
+[name="Demetri"]......
+[name="Demetri"]Don't treat me like your puppet, Alberto.
+[name="Demetri"]I admit Bellone's company registration has met many bumps on the road, and your invitation was timely.
+[name="Demetri"]You get rid of some troubles, while I gain the rights to legally enter the city. We're just business partners getting what we want.
+[name="Demetri"]Even though the Bellones are not what they used to be in Siracusa anymore; even though this new city doesn't have famiglie anymore, you need to know this—
+[name="Demetri"]My choice to work for Saluzzo Vino does not in any way mean the Bellones will be at the Saluzzos' beck and call.
+[name="Demetri"]So you'd best put that title to rest. I'm not sitting here as the don of Famiglia Bellone.
+[charslot(slot = "left", name = "avg_npc_686_1#9$1",focus="l")]
+[name="Alberto"]There's no point in acting tough, ragazzo.
+[name="Alberto"]Whether or not this collaboration will mean 'The Bellones have thrown themselves at the Saluzzos'—I'm curious how Leontuzzo will see it.
+[name="Alberto"]Oh, almost forgot. Maybe he doesn't even care at all anymore.
+[name="Alberto"]He already abandoned you.
+[dialog]
+[charslot(slot = "m", focus = "all")]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_690_1#9$1",focus="r")]
+[name="Demetri"]If you insist on this topic... Aren't you a lone wolf too, Alberto?
+[name="Demetri"]The White Wolf of Saluzzo—your daughter—who always disobeyed your orders, has left her famiglia forever.
+[name="Demetri"]According to my sources, she arrived in Nuova Volsinii a few months ago... as a cab driver.
+[name="Demetri"]I'm curious, too. Did she come here to add insult to your injury, or will she return home and help the Saluzzos?
+[charslot(slot = "left", name = "avg_npc_686_1#10$1",focus="l")]
+[name="Alberto"]...Lappland?
+[charslot(slot = "left", name = "avg_npc_686_1#7$1",focus="l")]
+[name="Alberto"]<i>I</i> banished her.
+[charslot(slot = "right", name = "avg_npc_690_1#9$1",focus="r")]
+[name="Demetri"]From what I know about her, she's probably thinking that's not how it went down.
+[charslot(slot = "left", name = "avg_npc_686_1#1$1",focus="l")]
+[name="Alberto"]I won't take offense from you, Demetri, you are different from Bernardo, you understand what's going on.
+[name="Alberto"]These harmless differences will not affect our shared interests, so why not take this as a happy start to our collaboration?
+[charslot(slot = "right", name = "avg_npc_690_1#9$1",focus="r")]
+[name="Demetri"]Fine, I won't waste my breath then.
+[name="Demetri"]Why not you sign this equity document first, Signor Alberto.
+[name="Demetri"]I'll use the dividends from this month to get Leon to reminisce about the good old days.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>November 5th, 1100    10:45 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1564_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="Lappland"]Went looking for your fellow floating heads?
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_688_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Zaaro"]I did. A hypocritical and sly wolf.
+[name="Zaaro"]Caesar has turned her Fang into an idiot who only knows how to bite people and suck blood. She won't be able to find Vargo's Fang even if she sniffed every single corner of this land.
+[name="Zaaro"]That Fang has never showed himself. Hidden very well.
+[name="Zaaro"]But if we had Bernardo here, locating a Siracusan in Siracusa would be like going through a pile of hay for an animal. Simple.
+[name="Zaaro"]If I don't interfere and help them out, god knows how long they're going to drag this round for!
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]Zaaro, it's rare to see so many words spill out from your mouth.
+[name="Lappland"]You're upsetting the table, and relishing it.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]Like you are.
+[charslot(slot="m",name="avg_npc_1564_1#3$1")]
+[name="Lappland"]Esatto. Stop worrying about winning or losing, learn to do it for the love of the game, and derive even more enjoyment from it. That's what games are really for.
+[name="Lappland"]How do you wolves fail to even understand this...?
+[dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[playsound(key="$d_avg_noisycitytraffic", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Dialog]
+[BackgroundTween(yFrom=0, yTo=-30, duration=5,block=false)]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[delay(time=2)]
+Nuova Volsinii nights are dark.
+Woman and wolf stand atop a building, sandwiched by the night sky above and the noisy city below—
+Pre-Carnevale activities happen in all sorts of shades and forms, vehicles speed through the streets, pedestrians shuttle to and fro. They enjoy a panoramic view of everything happening below.
+[StopSound(channel="bgs", fadetime=2)]
+[name="Zaaro"]They cover their fangs with masks, and use a festival to divulge their thirst to have it all. How sad.
+[name="Zaaro"]On the contrary, you seem to be enjoying this farce. When did you become so interested in such boring activities?
+[name="Lappland"]Zitto, Zaaro. You're noisier than the people who used to hang around me before.
+[name="Lappland"]I'm just enjoying the breeze.
+[name="Zaaro"]......
+[name="Lappland"]We practically have a VIP seat here. So keep quiet and wait for the show to begin.
+[name="Lappland"]The actors are already on the stage...
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[gridbg]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[SoundVolume(volume=0.4, channel="car",fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[CameraShake(duration=3, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$m_dia_street_intro",key="$m_dia_street_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1541_1#1$1", duration=0.5, isblock=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "250,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", pfrom = "270,0", pto="270,0", name = "avg_npc_690_1#1$1",duration = 0.5)]
+[interlude(channel = 3, type = 2, slot = "r", switch = true,name = "33_g10_smallrestaurant", duration = 0)]
+[Delay(time=1)]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="Demetri"]You're late, Leon.
+[charslot(slot = "l", name = "avg_npc_1541_1#1$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[name="Leontuzzo"]I'm sorry, it's been a really busy day.
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[name="Demetri"]Still working on your inaugural speech?
+[charslot(slot = "l", name = "avg_npc_1541_1#1$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[name="Leontuzzo"]Well, that too... we're planning a birthday party for a whole city. It's not quite the same thing as planning a party at home, is it?
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[name="Demetri"]You remember?
+[charslot(slot = "l", name = "avg_npc_1541_1#8$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[name="Leontuzzo"]Of course I do. Did you think I was going to forget how you bought ginger ale instead of beer for the banquet, and pocketed the difference to buy a car?
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[name="Demetri"]Well, I guess that DID happen.
+[charslot(slot = "l", name = "avg_npc_1541_1#2$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[name="Leontuzzo"]You sound... distracted, Demetri.
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[name="Demetri"]Do I? It's nothing. I guess it's been too long since we last saw each other.
+[name="Demetri"]Take care on your way, Leon.
+[charslot(slot = "l", name = "avg_npc_1541_1#8$1",focus="l")]
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[name="Leontuzzo"]Haha. Might have taken that as a threat, if we weren't in Nuova Volsinii.
+[charslot(slot = "m", focus = "n")]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[name="Demetri"]Enough joking and hurry up. I'm waiting at the seat by the window.
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true,tsto="0,1",tsduration=0.5)]
+[charslot(duration=0.5)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_drivestop", volume=1)]
+[Dialog]
+[StopSound(channel="car", fadetime=2)]
+[BackgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=false)]
+The car drives by the apprentice tailor jogging on the street and heads to the end of the main street.
+[dialog]
+[charslot]
+[curtain]
+[delay(time=3)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_walkfast",volume=1)]
+[charslot(slot="m",name="avg_4155_talr_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Luchino"]I should pick up the pace. I can't miss the delivery window to hand over the clothes to Signor Alberto.
+[name="Luchino"]The Don of Famiglia Saluzzo...
+[charslot(slot="m",name="avg_4155_talr_1#3$1")]
+[name="Luchino"]What kind of man is he?
+[dialog]
+[PlaySound(key="$rungeneral", volume=0.7)]
+[charslot(duration=1)]
+Luchino gasps for breath with the suit in his arms as he runs through a deserted alley, illuminated only by the light coming from a cafe.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_541_1#1$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_542_1#1$1",duration = 0.5)]
+[delay(time=0.8)]
+[PlaySound(key="$d_avg_humaneat")] 
+[charslot(slot = "right", name = "avg_npc_542_1#1$1",focus="r")]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_541_1#2$1",focus="l")]
+[name="Capone"]That's the fifth slice of pizza and third glass of juice that you just gobbled. Are you that hungry?
+[charslot(slot = "right", name = "avg_npc_542_1#6$1",focus="r")]
+[name="Gambino"]Shut up and drink this espresso.
+[PlaySound(key="$d_avg_drinkswllw")] 
+[charslot(slot = "left", name = "avg_npc_541_1#1$1",focus="l")]
+[name="Capone"]Yuck, it's so damn sour!
+[name="Capone"]You gonna lend me your head if we screw up the mission because this sewage gave me diarrhea?
+[charslot(slot = "right", name = "avg_npc_542_1#1$1",focus="r")]
+[name="Gambino"]Suck it up. I just picked it off the shelf.
+[name="Gambino"]Nobody uses this frontage road anyway. Besides, it's just haulin' a bunch of 'tires', what could go wrong?
+[charslot(slot = "r", name = "avg_npc_542_1#7$1", focus="r")]
+[name="Gambino"]No need to get all worked up over a boring job like this.
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="Capone"]I'm tired of hearin' you whine for the past two months, Gambino.
+[name="Capone"]Haven't you figured out our new boss yet? Tryin' too hard to show off will only have the opposite effect.
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="Capone"]Fresh meat like us, we gotta be patient and wait for our chance.
+[charslot(slot = "r", name = "avg_npc_542_1#8$1", focus="r")]
+[name="Gambino"]Well, ain't you the model employee, Capone.
+[name="Gambino"]I thought you would at least show a little bit of, I don't know, shame? There's hardly any place for the Siciliani in Siracusa these days.
+[charslot(slot = "left", name = "avg_npc_541_1#1$1",focus="l")]
+[name="Capone"]I'm not Sicilian anymore. It's your shame, not mine.
+[name="Capone"]I just want to get my Nuova Volsinii citizenship sooner rather than later. All the work I put in over the past six months, all the guarantee money I paid, and I'm only halfway to the required points—
+[charslot(slot = "right", name = "avg_npc_542_1#2$1",focus="r")]
+[name="Gambino"]Halfway?! You've got fifty more points than I do? Have you been doing—*gasp*—community service while I wasn't looking?
+[charslot(slot = "left", name = "avg_npc_541_1#2$1",focus="l")]
+[name="Capone"]Shut your crap, Gambino. We're on our last chance and you know it.
+[charslot(slot = "right", name = "avg_npc_542_1#1$1",focus="r")]
+[name="Gambino"]......
+[charslot(slot = "l", name = "avg_npc_541_1#7$1", focus="l")]
+[multiline(name="Capone")]Keep your eyes sharp on the street. It should be coming any time now—
+[multiline(name="Capone")]You got any pizza left? Give me one.
+[charslot(slot = "left", name = "avg_npc_541_1#6$1",focus="l")]
+[name="Capone"]Cazzo, it's cold, how do you even manage to eat this...
+[charslot(slot = "m", focus = "n")]
+As the two grumble to the other, a dark shadow quietly slips through the alley.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$nervous_intro",key="$nervous_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4014_lunacu_1#1$2",duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "m",posfrom = "0,0", posto = "300,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot(slot="m",name="char_144_red_7#1",duration=1,posfrom = "-150,0", posto = "0,0")]
+[delay(time=1)]
+[name="Projekt Red"]*sniff*
+[name="Projekt Red"]This is the smell. True wolf.
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "300,0",duration = 1,afrom=1,ato=0)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[PlaySound(key="$d_avg_drivestop", volume=1)]
+[delay(time=1)]
+A truck drives past Red and attracts her attention.
+[charslot(slot="m",name="char_144_red_7#5")]
+[name="Projekt Red"]Are you hiding inside?
+[charslot(slot="m",name="char_144_red_7#2")]
+[name="Projekt Red"]*sniff*
+[charslot(slot="m",name="char_144_red_7#1")]
+[name="Projekt Red"]No. Hm, over there?
+[charslot(slot = "m", focus = "n")]
+She looks toward the opposite end of the street.
+[charslot(slot="m",name="char_144_red_7#1")]
+[name="Projekt Red"]......
+[name="Projekt Red"]Grandma, I am a wolf hunter. I remember.
+[dialog]
+[charslot(duration=0.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4026_vulpis_1#2$1",duration=1.5,bstart=0.3,bend=0.5)]
+[delay(time=2)]
+[name="Ingrid"]The girls?
+[name="Ingrid"]Vargo, I hope you left me accurate instructions on how to identify them.
+[name="Ingrid"]*sigh*... It'll be a headache if I hurt the wrong people.
+[charslot(slot = "m", focus = "n")]
+With blade in hand, the Vulpo leans on a wall hidden within its shadow, waiting in silence for the prime opportunity to strike.
+She will eliminate the two targets who threaten Umberto's life in one go, and then demand her reward from the wolf.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[SoundVolume(volume=0.4, channel="car",fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[delay(time=1)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=15, randomness=90, fadeout=true, block=false)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[CameraShake(duration=1, xstrength=1, ystrength=1, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="l",name="avg_npc_1547_1#4$1",duration=1)]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]Tsk. A kid loitering around the streets outside this late?
+[charslot(slot="r",name="avg_1502_crosly_1#4$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot="r",name="avg_1502_crosly_1#5$1",focus="r")]
+[name="Lyudmila"](That figure... was I just seeing things?)
+[charslot(slot="l",name="avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]Lyudmila, Lyudmila... why did you space out so suddenly?
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]It's nothing... Just a little tired.
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]You'd better get off and wait at that intersection coming up. We're about to arrive, and there'll be trouble with the Venezias if I show up with a rando in tow.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]......
+[charslot(slot = "left", name = "avg_npc_1547_1#1$1",focus="l")]
+[name="Sommer"]Lyudmila...
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]Enough. I got on your truck, so I'll stick with you all the way.
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]Thanks, Lyudmila.
+[charslot(slot="l",name="avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]No matter what happens, I'm lucky to have you with me.
+[name="Sommer"]Hmmhmm♪ Hmmhmmhmm♪ Hmm♪
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Lyudmila"]You've been listening to this song on loop for a while now. Not tired of it?
+[charslot(slot = "left", name = "avg_npc_1547_1#2$1",focus="l")]
+[name="Sommer"]Of course!
+[charslot(slot = "left", name = "avg_npc_1547_1#3$1",focus="l")]
+[name="Sommer"]'A Chance Encounter' is an amazing song, and Sora's got one hell of a singing voice!
+[name="Sommer"]It's the hottest new single this week. There was an interview saying she recorded it just for Carnevale.
+[charslot(duration=1)]
+Sommer hums to the song looping from the speakers.
+Soon, the truck will reach the turning point ahead and bump into the other car.
+Carnevale's curtains are slowly pulled open.
+[Dialog]
+[StopSound(channel="car", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[delay(time=1)]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1564_1#9$1")]
+[name="Lappland"]In just one city block, we have our young and promising Acting Mayor, Fangs, people coming home for the festivities, and Sicilians too—I don't even know who they're seeking protection from...what a crowd.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]I could make it even noisier.
+[charslot(slot="m",name="avg_npc_1564_1#10$1")]
+[name="Lappland"]......
+[name="Lappland"]Just wait, Zaaro. You don't have to do anything.
+[name="Lappland"]Pretend you're a cab driver who turns on the radio at the right time to tune into a story.
+[name="Lappland"]The games humanity plays are much more interesting than your kind's preference to select just a few people to fight each other.
+[charslot(slot="m",name="avg_npc_688_1#1$1")]
+[name="Zaaro"]......
+[name="Zaaro"]Caesar's pup has discovered Agnese's cub.
+[charslot(slot="m",name="avg_npc_1564_1#3$1")]
+[name="Lappland"]Look! Isn't there another car coming from the port?
+[dialog]
+[playsound(key="$d_avg_carspeedup")]
+[stopmusic(fadetime=1)]
+[charslot(slot = "m", focus = "n")]
+[delay(time=2)]
+[playsound(key="$drift",volume=0.5)]
+[delay(time=1.5)]
+[Blocker(a=0.3, r=1, g=1, b=1, fadetime=0.5, block=false)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_carcrash_wreck",channel="1")]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$glass",channel="2")]
+[PlaySound(key="$d_avg_planeshake",channel="3")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=false)]
+[charslot(slot="m",name="avg_npc_1564_1#5$1")]
+[name="Lappland"]—'Bang!'
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[playsound(key="$d_avg_churchfire", loop=true, channel="1",volume=0)]
+[SoundVolume(volume=0.3, channel="1",fadetime=2)]
+[Image(image="56_i29", fadetime=0, xScale=1.1, yScale=1.1,screenadapt="coverall")]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=45, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+The truck crashes into the car, and flees in a panic. Eye-watering flames, hysterical crowds.
+[name="Lappland"]Those who share the same stage, obviously perform the same play.
+[name="Zaaro"]Just a chaotic show. I don't see what's so fun about this, Lappland.
+[name="Lappland"]What's with the rush?
+[name="Lappland"]Before the play truly begins, allow me to perform my duty as an upstanding citizen of the city.
+[dialog]
+[playsound(key="$d_avg_telephonebusy")]
+[delay(time=2)]
+[name="Lappland"]Pronto. Buonasera, is this the police?
+[name="Lappland"]Me? Just a driver-for-hire. I'd like to make a report.
+[name="Lappland"]Si... the port district. That's right, an accident just happened.
+[Dialog]
+[Delay(time=1)]
+[StopSound(channel="1", fadetime=2)]
+[StopSound(channel="2", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image]
+[charslot]
