@@ -1,0 +1,13 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess进入回合
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="buy_char",bindKey="buy_char", hint="우선 튜토리얼을 완료해 주세요.")]
+[Delay(time=1)]
+[Tutorial(focusX=-375, focusY=20, focusWidth=400, focusHeight=480,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 위수 협의에서 보급선은 전선을 향해 계속해서 보급품을 조달합니다. 또한, 보급품을 구매하기 위해서는 <@tu.kw>자금</>이 필요해요.
+[Tutorial(tileX=-0.5, tileY=7, focusWidth=158, focusHeight=74,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 왼쪽 상단에서 현재 보유한 자금을 확인할 수 있어요. 라운드가 시작할 때마다 <@tu.kw>일정량의 자금</>이 제공되는데, 이 자금을 소모해 보급품을 구매할 수 있어요.
+[InputBlocker(blockInput=true, battleTarget="tile_first_shop_char_chess", validWidth=70, validHeight=70)]
+[Tutorial(battleTarget="tile_first_shop_char_chess", focusWidth=85, focusHeight=90,           waitForSignal="act1vautochess_shop_item_selected",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 오퍼레이터는 시뮬레이션 데이터 형식으로 작전에 참여합니다. 오퍼레이터 1명을 <@tu.kw>구매</>해 보세요.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.2)]
+[Tutorial(target="panel_act1vautochess_battle_hud_chess_coin", focusWidth=320, focusHeight=60,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 일반적으로 오퍼레이터를 구매할 때는 <@tu.kw>자금 3</>이 필요합니다. 오퍼레이터를 선택하여 확인해보세요.
+[Tutorial(target="btn_act1vautochess_shop_char_menu_buy",           waitForSignal="act1vautochess_battle_item_bought",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 구매 버튼을 탭하면 해당 오퍼레이터가 핸드존에 편성됩니다.

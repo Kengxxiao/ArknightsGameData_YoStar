@@ -1,0 +1,10 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess商店升级2
+[Battle.LockAutoChessHud]
+[Battle.AutoChessOnlyAllow(reqConditionKey="upgrade_store",bindKey="upgrade_store", hint="우선 튜토리얼을 완료해 주세요.")]
+[Delay(time=0.5)]
+[Battle.SwitchToDefaultUIState]
+[InputBlocker(blockInput=true, battleTarget="tile_trap_shop_upgrade", validWidth=70, validHeight=70)]
+[Tutorial(battleTarget="tile_trap_shop_upgrade", focusWidth=85, focusHeight=90,           waitForSignal="act1vautochess_util_trap_selected",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 자금이 약간 남았는데, 보급선 담당자를 <@tu.kw>승급</>해볼까요.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.5)]
+[Tutorial(target="btn_act1vautochess_shop_char_menu_buy",           waitForSignal="act1vautochess_battle_shop_upgraded",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] <@tu.kw>승급</> 버튼을 탭하여 주세요. 그리고 오퍼레이터에게 방금 합성한 <@tu.kw>장비</>를 장착해 주세요. 준비가 끝났으면 <@tu.kw>우측 상단</>의 버튼을 탭하여 바로 전투를 시작할 수 있습니다.
