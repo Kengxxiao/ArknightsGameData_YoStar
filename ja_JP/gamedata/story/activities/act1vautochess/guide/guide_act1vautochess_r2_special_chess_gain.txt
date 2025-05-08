@@ -1,0 +1,8 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess使用特殊招募卡
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="use_sp_magic",bindKey="use_sp_magic", hint="チュートリアルを先にクリアしてください")]
+[Tutorial(focusX=40, focusY=80, focusWidth=1200, focusHeight=130, anchor="Bottom",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 同じオペレーターが三名揃うと自動で合成され、<@tu.kw>精鋭</>オペレーターに昇進します。昇進したオペレーターは能力が強化され、<@tu.kw>金色</>のオーラを身に纏うようになります。
+[Tutorial(battleTarget="tile_first_hand_equip_chess", focusWidth=85, focusHeight=90,           animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] オペレーターが昇進すると、装備していた装備品は自動的に<@tu.kw>所有エリアに戻ります</>。この点を生かして、柔軟な装備の運用プランを立ててみてください。
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="act1vautochess_special_magic_used", dialogHead="$avatar_amiya", animStyle="Drag",           startBattleTarget="tile_sp_magic_chess",  endTileX=8, endTileY=4)] さらに、同じオペレーターを三名合成すると、報酬として<@tu.kw>昇進配分許可証</>が一枚配給されます。こちらを使用することで、より経験豊富なオペレーターを招集することができますよ。

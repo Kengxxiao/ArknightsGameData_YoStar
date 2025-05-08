@@ -1,0 +1,10 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess准备开战
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="disabled",bindKey="prepare_battle", hint="チュートリアルを先にクリアしてください")]
+[PopupDialog(dialogHead="$avatar_amiya")]これで戦闘前の準備は大方完了しましたね。未使用の資金は<@tu.kw>クリア</>され、次のラウンドまで<@tu.kw>持ち越すことができません</>。ですがご安心ください。補給船がラウンドごとに資金を提供してくれますし、<@tu.kw>ラウンドを経るごとに提供される資金も増えていく</>ので。
+[InputBlocker(blockInput=true, validX=-60, validY=-60, validWidth=75, validHeight=65, anchor="TopRight")]
+[Battle.AutoChessOnlyDisable(reqConditionKey="disabled",bindKey="prepare_battle")]
+[Battle.UnlockAutoChessHud]
+[Battle.AutoChessOnlyAllow(reqConditionKey="round_battle_start", hint="作戦を開始してください")]
+[Tutorial(focusX=-60, focusY=-60, focusWidth=75, focusHeight=65, anchor="TopRight",           waitForSignal="act1vautochess_battle_prepared",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] では、作戦ボタンをタップして開始しましょう。

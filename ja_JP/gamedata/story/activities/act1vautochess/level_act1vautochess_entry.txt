@@ -1,0 +1,230 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_rhodescom",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$tech_intro", key="$tech_loop", volume=0.6, crossfade=1, delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[PlaySound(key="$d_avg_crwddiscuss_inside", channel="slide", loop=true, volume=0.4)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m",duration=2)]
+[delay(time=3)]
+[name="アーミヤ"]今日の会議はここまでです。皆さんお疲れ様でした。
+[stopsound(channel="slide", fadetime=3)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#2$1",focus="all",duration=0.5)]
+[delay(time=3)]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="char_130_doberm_ex#3",focus="all",duration=0.5)]
+[charslot(slot="l",name="avg_npc_1300_1#1$1",focus="all",duration=0.5)]
+[delay(time=3)]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_391_rosmon_1#2$1",focus="all",duration=0.5)]
+[charslot(slot="l",name="char_017_homura_3#1",focus="all",duration=0.5)]
+[delay(time=3)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]お戻りの際は、コップをお忘れなく。
+[dialog]
+[charslot]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="char_130_doberm_ex",focus="all")]
+[charslot(slot="l",name="avg_npc_1300_1#2$1",focus="all")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_391_rosmon_1#9$1",focus="all")]
+[charslot(slot="l",name="char_017_homura_3#7",focus="all")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[delay(time=3)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="all")]
+[delay(time=3)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1",focus="m")]
+[name="アーミヤ"]ケルシー先生、クロージャさんがまだですが、どうしましょう？
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]ドクターにもあまり時間の余裕はない。ひとまず我々だけで始めよう。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="何の用件で引き留めたんだ？;何をすればいい？;……", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="ケルシー"]ロドスの防衛システムを強化するためのアイデアについて話し合いたい。
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="ケルシー"]具体的な施策についてはまだ実現可能性の検証段階にあり、公に議論できるレベルには至っていない。そこで、まずは限られた範囲での非公式会議を行うというわけだ。
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="ケルシー"]ドクター、ロドスは君の意見を必要としている。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]アーミヤ、ドクターに簡単な説明を頼む。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]はい。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]こちらが関連資料です、ドクター。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]ロドスはこれまで、襲撃事件への対応から得た経験に基づき、内外両面の防衛体制の最適化を行ってきました。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]ロンディニウム事件のフィードバックからも、そうした最適化がかなりの効果を上げていることが分かっています。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]大量の人員をロンディニウムの支援に向かわせた状況下でも、本艦に残ったオペレーターだけで部隊を編成し、小規模の暴動に対処し本艦の安全を確保することができましたよね。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]その成果を受けて、ケルシー先生はロドスの防衛体制をさらに一段階強化する計画を考案してくださったんです……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]もちろん、艦船規模の襲撃が予見された場合には、本艦に備わる偵察機能や速度的優位を生かして、交戦を避けることを優先します。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]ですが、万が一の事態に備えて、オペレーターの皆さんに外縁部のプラットフォームで接舷戦を行える体制を整えておいていただくことも必要です。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]具体的なことは資料に詳しく書いてあります。まだなにか質問があれば、ケルシー先生に説明していただきましょう。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[Dialog]
+[Decision(options="ケルシー、これは本当に検討用の資料なのか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]何か引っかかることでもあるのか？
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="ロドスが対外作戦で遭遇した敵がすべて記されている。;訓練計画ではなく、実行用の資料に見えるが。;エリートオペレーターも加えておいて、検討段階だと？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]計画がいくら綿密に練られていようと、検討の余地があるという事実に変わりはない。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]たとえ私個人が、この防衛プランは相当の完成度を有すると判断していたとしてもな。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]だがなによりも、君やアーミヤに、私の考えを理解した上で、それぞれの意見を出してほしいんだ。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]何せ最終的に計画を実行するのは、私ではなく君たちだからな。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]理解できない部分があれば、遠慮なく質問してくれ。より踏み込んだ説明をしよう。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="十分に分かりやすい資料だ。;ケルシー、いくら読んでもさっぱりだ！", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#2$1",focus="m")]
+[name="ケルシー"]よし、では早速シミュレーションを手配しよう。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]……アーミヤ、ドクターの今日の予定に空きはあるか？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1",focus="m")]
+[name="アーミヤ"]今日はもう会議の予定でいっぱいです。空いているのは就寝前の時間くらいで――
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]ではその時間に会議室を取っておく。資料の内容を完全に理解できるようになるまで、事細かに解説しよう。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]アーミヤ、すまないが、君も付き合ってくれ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]分かりました。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="ケルシー"]……
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="ケルシー"]クロージャはまだ来ないのか。二時間前に会議の招待は送ってあるが――
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_dooropen",volume=1)]
+[Delay(time=0.4)]
+[charslot(slot="m",name="avg_npc_411_1#5$1",focus="m",duration=1)]
+[delay(time=2)]
+[Dialog]
+[charslot(slot="m",name="avg_npc_411_1#5$1",focus="n")]
+[Decision(options="やあ、クロージャ。;会議はもう終わったよ。;……（時計を指差す）", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_411_1#7$1",focus="m")]
+[name="クロージャ"]ごめんごめん。仕事が一段落してホッと一息ついたときにやっと気付いてさ。これでも慌てて飛んできたんだから。
+[name="クロージャ"]で、何の用？
+[charslot]
+[charslot(slot="r",name="avg_npc_411_1#7$1",focus="l")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]……協定シミュレートシステムの調整は進んでいるか？
+[charslot(slot="r",name="avg_npc_411_1#5$1",focus="r")]
+[name="クロージャ"]今週はシステムの調整業務が詰まっててさ……物流プラットフォームに訪問者情報認証、工房データセンター、それから倉庫管理……それぞれにシミュレートシステムはあるけど、どれのこと？
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1",focus="m")]
+[name="アーミヤ"]（小声）最近ずっと取り組んでいる、接舷戦のあれですよ。
+[charslot(slot="m",name="avg_npc_411_1#3$1",focus="m")]
+[name="クロージャ"]あー、あれね！　さっきまでやってたんだけど、もうすぐ完了ってとこまで進んでるよ。
+[charslot]
+[charslot(slot="r",name="avg_npc_411_1#3$1",focus="l")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]では、管理者権限をドクターにも開放してもらえるか？
+[charslot(slot="r",name="avg_npc_411_1#12$1",focus="r")]
+[name="クロージャ"]えっと……それは……まだちょっと……
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]何か問題でも？
+[charslot(slot="r",name="avg_npc_411_1#2$1",focus="r")]
+[name="クロージャ"]シミュレーションのデータマッピングをロドスの現行システムから独立させて、機密レベルも引き上げろって要望があったでしょ。その権限の編集にちょっと手間取りそうで。
+[charslot(slot="r",name="avg_npc_411_1#1$1",focus="r")]
+[name="クロージャ"]でも大丈夫、明日には絶対なんとかするから。
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]ひとまず現状のバージョンを見せてくれ。些末な問題はその場で解決できるかもしれない。
+[charslot(slot="r",name="avg_npc_411_1#3$1",focus="r")]
+[name="クロージャ"]オッケー！　ケルシーが手伝ってくれるなら助かるよ！
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]では会議室の外で待っていてくれ。
+[name="ケルシー"]ドクターと少し話をしてから、一緒に君のエンジニア室に向かうとしよう。
+[charslot(slot="r",name="avg_npc_411_1#1$1",focus="r")]
+[name="クロージャ"]わかった。
+[charslot]
+[charslot(slot="m",name="avg_npc_411_1#10$1",focus="m")]
+[name="クロージャ"]ドクター、購買部にも色々新商品が入ってるから、暇な時にチェックしに来てね！
+[dialog]
+[Delay(time=0.4)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]アーミヤ、君も仕事に戻るといい。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]はい。ではお先に失礼しますね、ドクター、ケルシー先生。
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[delay(time=2)]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_doorknob",volume=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_spotlightc", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.6, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="ケルシー、なぜ電源を落とした？;何か伝えたい機密情報でも？", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]この計画……堅守協定は、ロドスを外敵の侵入から守るために用意したものだ。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="ケルシー"]だが計画実行の際には、より多角的な思考をもとに防衛にあたってほしい。
+[name="ケルシー"]それと一つ、覚えておいてくれ――
+[name="ケルシー"]敵は、必ずしも外からやってくるとは限らない。
+[dialog]
+[delay(time=3)]
+[charslot]
+[Background]
+[Image]

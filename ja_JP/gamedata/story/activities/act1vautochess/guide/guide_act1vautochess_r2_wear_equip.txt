@@ -1,0 +1,9 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess穿装备
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="wear_equip_not_replace",bindKey="wear_equip_not_replace", hint="チュートリアルを先にクリアしてください")]
+[Delay(time=0.2)]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="act1vautochess_battle_field_equip_wear_putdown", dialogHead="$avatar_amiya", animStyle="Drag",           startBattleTarget="tile_first_hand_equip_chess", endBattleTarget="tile_battle_char_chess")] 装備品をオペレーターにドラッグすると、オペレーターごとに最大<@tu.kw>二つ</>まで装備させることができます。装備させた装備品はそのオペレーターに<@tu.kw>固定</>され、一時的に取り外せなくなるのでご注意ください。
