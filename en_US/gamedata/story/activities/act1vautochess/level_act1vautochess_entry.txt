@@ -1,0 +1,230 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_rhodescom",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$tech_intro", key="$tech_loop", volume=0.6, crossfade=1, delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[PlaySound(key="$d_avg_crwddiscuss_inside", channel="slide", loop=true, volume=0.4)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m",duration=2)]
+[delay(time=3)]
+[name="Amiya"]This concludes today's meeting. Thank you, everyone.
+[stopsound(channel="slide", fadetime=3)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#2$1",focus="all",duration=0.5)]
+[delay(time=3)]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="char_130_doberm_ex#3",focus="all",duration=0.5)]
+[charslot(slot="l",name="avg_npc_1300_1#1$1",focus="all",duration=0.5)]
+[delay(time=3)]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_391_rosmon_1#2$1",focus="all",duration=0.5)]
+[charslot(slot="l",name="char_017_homura_3#1",focus="all",duration=0.5)]
+[delay(time=3)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Don't forget to take your water bottles with you when you leave.
+[dialog]
+[charslot]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="char_130_doberm_ex",focus="all")]
+[charslot(slot="l",name="avg_npc_1300_1#2$1",focus="all")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_391_rosmon_1#9$1",focus="all")]
+[charslot(slot="l",name="char_017_homura_3#7",focus="all")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[delay(time=3)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="all")]
+[delay(time=3)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1",focus="m")]
+[name="Amiya"]Dr. Kal'tsit, Closure hasn't arrived yet. Should we wait for her?
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Doctor's time is limited. Let's get started.
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="Do you have something to discuss?;Do you need me to do anything?;......", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="Kal'tsit"]I have some ideas for Rhodes Island's defense systems.
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="Kal'tsit"]The specific measures are still under feasibility testing and require further development before they are ready for public discussion.
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="Kal'tsit"]That's why we're holding a closed-door meeting today. Rhodes Island requires your input.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Amiya, please brief Doctor on the details.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Of course.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Here are some documents for you to review.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Rhodes Island has learned from previous assaults, and optimized its internal and external defenses.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Feedback from the Londinium incident suggests that these adjustments have been quite effective.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Even with a large number of personnel dispatched to support Londinium, the remaining Operators still managed to effectively organize and counter small-scale riots, ensuring the landship's safety.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]This is the main reason Dr. Kal'tsit is thinking about further enhancing Rhodes Island's defense systems.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]When faced with an attack from other landships, our preferred option is to rely on our speed and/or reconnaissance to avoid combat entirely.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]However, sometimes combat is unavoidable. In which case we will need our Operators to be prepared for boarding battles on the outer platforms.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]The details are clearly outlined in the documentation, Doctor. If you have any further questions, I believe Dr. Kal'tsit will be more than willing to assist you.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[Dialog]
+[Decision(options="Are you sure this is a feasibility study?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]What?
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="It includes every enemy we've encountered.;This is for an operation, not a training plan, right?;Our elites are already involved, and it's still 'under testing'?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]No matter how detailed the plan, it still requires a feasibility study.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Personally, I do think it is quite well conceived.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]But I need you and Amiya to understand it and provide your own input.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]After all, I'm not the one who will be implementing it.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Let me know if there are any aspects of the plan that you do not understand, and I'll explain them.
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="It's all quite clear to me.;Explain this part, Dr. Kal'tsit!", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#2$1",focus="m")]
+[name="Kal'tsit"]Very good. I'll arrange the simulations as soon as possible.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Amiya, does Doctor have any free time today?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1",focus="m")]
+[name="Amiya"]There are a full slate of meetings scheduled today, only a small open slot right before bedtime, but—
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]I'll book a meeting then, so we can go over all the materials together, Doctor.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Amiya, I'd like you to attend as well.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Of course.
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="Kal'tsit"]......
+[charslot(slot="m",name="avg_003_kalts_1#3$1",focus="m")]
+[name="Kal'tsit"]Where's Closure? We notified her of the meeting two hours ago.
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_dooropen",volume=1)]
+[Delay(time=0.4)]
+[charslot(slot="m",name="avg_npc_411_1#5$1",focus="m",duration=1)]
+[delay(time=2)]
+[Dialog]
+[charslot(slot="m",name="avg_npc_411_1#5$1",focus="n")]
+[Decision(options="Closure, you're here.;The meeting's already over.;.... (points to the clock)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_411_1#7$1",focus="m")]
+[name="Closure"]Sorry, girls. Didn't see the notification until just now, and I rushed over soon as I could.
+[name="Closure"]So did you need something?
+[charslot]
+[charslot(slot="r",name="avg_npc_411_1#7$1",focus="l")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="Kal'tsit"]...How is the debugging of the Protocol Simulator going?
+[charslot(slot="r",name="avg_npc_411_1#5$1",focus="r")]
+[name="Closure"]You'll have to be more specific. We're working on simulators for the logistics platform, the visitor authentication system, the workshop data center, the warehouse management system—and that's just this week.
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1",focus="m")]
+[name="Amiya"](hushed tone) The boarding battle simulator. The latest one.
+[charslot(slot="m",name="avg_npc_411_1#3$1",focus="m")]
+[name="Closure"]Oh, <i>that</i> one! Ha! I was working on it when you called—I might even have been done by now if you hadn't.
+[charslot]
+[charslot(slot="r",name="avg_npc_411_1#3$1",focus="l")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="Kal'tsit"]Can you give Doctor admin rights then?
+[charslot(slot="r",name="avg_npc_411_1#12$1",focus="r")]
+[name="Closure"]Uhh... well...
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="Kal'tsit"]Is there a problem?
+[charslot(slot="r",name="avg_npc_411_1#2$1",focus="r")]
+[name="Closure"]Since you said we needed to make the mapping independent of Rhodes Island's existing systems—and keep it high clearance level—there might still be some issues with permission settings.
+[charslot(slot="r",name="avg_npc_411_1#1$1",focus="r")]
+[name="Closure"]No worries, though. It'll be ready by tomorrow.
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="Kal'tsit"]I want to review the current version, then. No doubt there are a few problems we can resolve rather quickly.
+[charslot(slot="r",name="avg_npc_411_1#3$1",focus="r")]
+[name="Closure"]With your help? We'll be done in a jiffy!
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="Kal'tsit"]Wait for me outside the meeting room.
+[name="Kal'tsit"]I have some final things to discuss with Doctor, and then I'll join you at the workshop.
+[charslot(slot="r",name="avg_npc_411_1#1$1",focus="r")]
+[name="Closure"]Gotcha.
+[charslot]
+[charslot(slot="m",name="avg_npc_411_1#10$1",focus="m")]
+[name="Closure"]Oh yeah, Doctor! We got a whole bunch of new stuff over at Procurement! Come check it out when you're free!
+[dialog]
+[Delay(time=0.4)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"]Amiya, you have some personal business to attend to, yes?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Ah, right, please excuse me.
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[delay(time=2)]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_doorknob",volume=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_spotlightc", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.6, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="Kal'tsit? Why did you cut off the power?;Do you have some secret info for me?", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"](hushed tone) The Stronghold Protocol is designed to protect Rhodes Island from outside invaders.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="Kal'tsit"](hushed tone) However, I hope that when you implement it, you will adopt a more... flexible approach to deploying defenses.
+[name="Kal'tsit"](hushed tone) Or rather, please do so.
+[name="Kal'tsit"](hushed tone) After all, enemies do not always come from the outside.
+[dialog]
+[delay(time=3)]
+[charslot]
+[Background]
+[Image]

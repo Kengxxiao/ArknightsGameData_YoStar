@@ -1,0 +1,9 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess穿装备
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="wear_equip_not_replace",bindKey="wear_equip_not_replace", hint="Please finish the tutorial first.")]
+[Delay(time=0.2)]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="act1vautochess_battle_field_equip_wear_putdown", dialogHead="$avatar_amiya", animStyle="Drag",           startBattleTarget="tile_first_hand_equip_chess", endBattleTarget="tile_battle_char_chess")] Drag equipment onto an Operator to activate its effects. Each Operator can have up to <@tu.kw>two pieces</> of equipment. Once equipped, the gear will be <@tu.kw>locked</> onto the Operator and can not be removed.

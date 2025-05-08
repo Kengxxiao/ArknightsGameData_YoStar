@@ -1,0 +1,25 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess商店升级
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="disabled",bindKey="deploy", hint="Please finish the tutorial first.")]
+[Tutorial(focusX=40, focusY=80, focusWidth=1200, focusHeight=130, anchor="Bottom",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] This is your Bench. The Operators and Tools you purchase will be placed here.
+[Battle.SetDragOperationLock(isLocked=true)]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.5)]
+[InputBlocker(blockInput=false)]
+[Battle.SetDragOperationLock(isLocked=false)]
+[Tutorial(waitForSignal="act1vautochess_battle_field_char_putdown", dialogHead="$avatar_amiya", animStyle="Drag",           startBattleTarget="tile_first_hand_char_chess", endTileX=8, endTileY=4)] Operator deployment works the same as in other modes. Drag an Operator from the Bench to the battlefield to deploy them.
+[Tutorial(waitForSignal="act1vautochess_battle_field_char_build")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.5)]
+[Tutorial(battleTarget="tile_first_battle_char_chess", focusWidth=85, focusHeight=90,           animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] You can drag deployed Operators to a new location to reposition them.
+[PopupDialog(dialogHead="$avatar_amiya")] Any Funds remaining at the end of this round will be <@tu.kw>cleared out</> and <@tu.kw>cannot be carried over</> to the next round, so try to spend all your Funds before the round is over. Let's see what else we can do now.
+[Battle.AutoChessOnlyDisable(reqConditionKey="disabled",bindKey="deploy")]
+[Battle.AutoChessOnlyAllow(reqConditionKey="ugrade_store", hint="Please finish the tutorial first.")]
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, battleTarget="tile_trap_shop_upgrade", validWidth=70, validHeight=70)]
+[Tutorial(battleTarget="tile_trap_shop_upgrade", focusWidth=85, focusHeight=80,           waitForSignal="act1vautochess_util_trap_selected",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] Barge captains are logistics Operators. You can pay them Funds to <@tu.kw>upgrade</> the Supply Barge for you.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.5)]
+[Tutorial(focusX=220, focusY=-170, focusWidth=435, focusHeight=350, anchor="Left",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] As their level increases, the Barge Captain will add higher-tier Operators and supplies to the supply pool.
+[Tutorial(target="btn_act1vautochess_shop_char_menu_buy",           waitForSignal="act1vautochess_battle_shop_upgraded",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] Tap the button to upgrade the Supply Barge by spending Funds. The cost will decrease as the rounds progress. Tap the button now to <@tu.kw>upgrade</>.

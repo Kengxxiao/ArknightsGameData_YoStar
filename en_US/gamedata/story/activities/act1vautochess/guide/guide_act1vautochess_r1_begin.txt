@@ -1,0 +1,13 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess进入回合
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="buy_char",bindKey="buy_char", hint="Please finish the tutorial first.")]
+[Delay(time=1)]
+[Tutorial(focusX=-375, focusY=20, focusWidth=400, focusHeight=480,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] In Stronghold Protocol, the Supply Barge will continually send supplies to the front line. We can <@tu.kw>spend Funds</> to purchase them.
+[Tutorial(tileX=-0.5, tileY=7, focusWidth=158, focusHeight=74,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] You can check how much Funds you have in the upper left corner. At the start of each round, you'll <@tu.kw>receive a certain amount of Funds</> for you to purchase supplies on the Barge.
+[InputBlocker(blockInput=true, battleTarget="tile_first_shop_char_chess", validWidth=70, validHeight=70)]
+[Tutorial(battleTarget="tile_first_shop_char_chess", focusWidth=85, focusHeight=90,           waitForSignal="act1vautochess_shop_item_selected",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] Operators will participate in the Combat Ops as virtual simulations. Please try <@tu.kw>purchasing</> an Operator.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.2)]
+[Tutorial(target="panel_act1vautochess_battle_hud_chess_coin", focusWidth=320, focusHeight=60,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] It normally costs <@tu.kw>3 Funds</> to recruit an Operator. Select the Operator you want to check.
+[Tutorial(target="btn_act1vautochess_shop_char_menu_buy",           waitForSignal="act1vautochess_battle_item_bought",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] Tap 'Purchase' to add the Operator to the Bench.
