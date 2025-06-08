@@ -1,0 +1,64 @@
+[HEADER(is_tutorial=true, is_skippable=false)]电玩城计程车教学1_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Battle.SwitchToDefaultUIState]
+[Battle.Delay(time=1.1)]
+[Battle.Pause]
+[popupdialog(dialogHead="$avatar_sys")][HURDLE SPEEDER] Game Guide
+[popupdialog(dialogHead="$avatar_sys")]In HURDLE SPEEDER, the player's objective is to get 'The Amphibian' Ship-Cars to travel along as long a route as possible before seeing them safely to the <@tu.kw>gray Objective</>.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=1, tileY=1, focusWidth=150, focusHeight=150,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys")] This is the amphibious dock the Ship-Cars will launch from.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=1, tileY=1, focusWidth=150, focusHeight=150,           animStyle="Highlight", focusStyle="HighlightCircle", black=0.5,           protectTime=0.2, dialogHead="$avatar_sys")] Once the dock is ready, it'll automatically activate its skill to launch an <@tu.kw>'The Amphibian' Ship-Car</>.
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=3, tileY=1, focusWidth=180, focusHeight=180,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys")] The Ship-Car will travel in a straight line and deal <@tu.kw>Physical Damage that ignores Dodge</> along with a <@tu.kw>brief Stun</> to any enemies it collides with.
+[Tutorial(tileX=3, tileY=1, focusWidth=180, focusHeight=180,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys")] Ship-Cars start with a certain amount of points, and every time it travels a certain distance, its points will increase.
+[Tutorial(tileX=8, tileY=5, focusWidth=120, focusHeight=120,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys",  dialogY="$f_lower_dialog_pos_y")] Once a Ship-Car arrives at the <@tu.kw>gray Objective</> safely, the player will obtain its points.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=3)]
+[Battle.Pause(pause=true)]
+[popupdialog(dialogHead="$avatar_sys")]If a Ship-Car runs into <@tu.kw>impassable</> terrain, it will crash, and the player will not receive its points.
+[popupdialog(dialogHead="$avatar_sys")]However, we can alter its course to prevent that from happening.
+[Battle.EnsureMinSp(charId="trap_187_arcgacha", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=6, tileY=3, validWidth=108, validHeight=111)]
+[Tutorial(tileX=6, tileY=3, focusWidth=108, focusHeight=111, waitForSignal="char_info", charId="trap_187_arcgacha",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center",           protectTime=0.5, dialogHead="$avatar_sys")] Look, a new item added to the Gacha Machine: the steering system.
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_sys")]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.3)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=false)]
+[Tutorial(tileX=5, tileY=1, focusWidth=108, focusHeight=111, waitForSignal="put_down", charId="trap_081_turngear",            posX=5, posY=1, animStyle="Drag", startCardIndex=0, startRightStart=true, endTileX=5, endTileY=1,           dialogHead="$avatar_sys", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5)] Deploy it here.
+[Battle.Pause]
+[InputBlocker(blockInput=true, tileX=5, tileY=1, validWidth=150, validHeight=170)]
+[Tutorial(waitForSignal="select_direction", animStyle="Drag",           startTileX=5, startTileY=1, endTileX=5, endTileY=3)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[popupdialog(dialogHead="$avatar_sys")]If a Ship-Car passes through the steering system or a <@tu.kw>friendly unit</>, it will <@tu.kw>turn to follow the direction they're facing</>.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[popupdialog(dialogHead="$avatar_sys")]Note that if a Ship-Car is attacked, both its HP and its points will decrease. You will need to keep the path clear for them, Doctor.
+[popupdialog(dialogHead="$avatar_sys")]There are also randomly-appearing 'Washed-Up Parts' on the field. Ship-Cars passing over them will obtain <@tu.kw>buffs</>.
+[popupdialog(dialogHead="$avatar_sys")]There's <@tu.kw>more than one type</> of buff available. Keep an eye out for them in the following games, Doctor.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]
