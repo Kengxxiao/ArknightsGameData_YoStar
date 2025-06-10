@@ -1,0 +1,42 @@
+[HEADER(is_tutorial=true, is_skippable=false, is_autoable=false)] 电玩城喷泉大战教学_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, black=0.2)]
+[Battle.SwitchToDefaultUIState]
+[Battle.Pause]
+[popupdialog(dialogHead="$avatar_sys")][파운틴 워] 공략 가이드
+[popupdialog(dialogHead="$avatar_sys")]파운틴 워의 공략 목표는 최대한 많은 칸에 하얀 증기를 채우고, [점수 기록판]의 스킬을 발동해 <@tu.kw>하얀 증기의 수량</>에 따라 점수를 계산 및 획득하는 것입니다.
+[Tutorial(tileX=4, tileY=4, focusWidth=108, focusHeight=111,           animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center",           protectTime=0.5, dialogHead="$avatar_sys")] 그런데 박사님, 이 분수가 눈에 익지 않습니까?
+[Tutorial(tileX=4, tileY=4, focusWidth=108, focusHeight=111,           animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center",           protectTime=0.5, dialogHead="$avatar_sys")] 이것은 게임 내에 재현한 시에스타의 분수대입니다. 분수대 <@tu.kw>주변 4칸</>에 오퍼레이터를 배치하면 지상의 적을 공격할 때, 적의 발밑에 하얀 증기가 생성됩니다.
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 파운틴 워에서는 적을 전부 섬멸할 필요가 없습니다. 적이 방어 포인트에 들어가도 <@tu.kw>스테이지 HP가 차감되지 않습니다</>.
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 대신 최대한 많은 칸에 하얀 증기를 채워야 합니다. 그래야만 더 높은 점수를 획득할 수 있습니다.
+[Tutorial(tileX=5, tileY=4, focusWidth=108, focusHeight=111,           animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center",           protectTime=0.5, dialogHead="$avatar_sys")] 박사님, 우선 분수대 주변에 오퍼레이터를 배치해 바닥에 하얀 증기를 채워보십시오.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.EnsureMinSp(charId="trap_187_arcgacha", sp=30)]
+[InputBlocker(blockInput=true, tileX=1, tileY=3, validWidth=105, validHeight=111)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=1, tileY=3, focusWidth=108, focusHeight=111,           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", waitForSignal="char_info", charId="trap_187_arcgacha",           protectTime=0.5, dialogHead="$avatar_sys",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 또한, 가챠머신에도 새로운 지원 도구가 추가되었습니다.
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_sys")] 우선 한 번 뽑아보십시오.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Tutorial(cardIndex=0, focusWidth=100, focusHeight=100, rightStart=true,           animStyle="Highlight", focusStyle="HighlightCircle", black=0.5,           protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 이것은 게임의 최신 아이템인 크크콜라입니다.
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="put_down",charId="trap_194_arcsoda", posX=8, posY=1,endTileX=8, endTileY=1, dialogHead="$avatar_sys", animStyle="Drag", startCardIndex=0, startRightStart=true)] 크크콜라는 하얀 증기를 채우기 어려운 곳에 배치하는 게 좋습니다.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0.2)]
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 오퍼레이터가 크크콜라를 <@tu.kw>파괴</>하면 주변에 하얀 증기가 생성됩니다.
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 박사님, 이 아이템을 활용해 높은 점수를 받아보십시오.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]

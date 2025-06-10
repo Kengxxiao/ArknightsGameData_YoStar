@@ -899,6 +899,16 @@
   "rejectSpCharMission": 1687503600,
   "addedRewardDisplayZone": "main_9",
   "oneDiamondAp": 135,
+  "charRotationPresetMaxCnt": 4,
+  "charRotationSkinListMaxCnt": 20,
+  "defaultCRPresetCharId": "char_002_amiya",
+  "defaultCRPresetCharSkinId": "char_002_amiya#1",
+  "defaultCRPresetBGId": "bg_rhodes_day",
+  "defaultCRPresetThemeId": "tm_rhodes_day",
+  "defaultCRPresetName": "화면 프리셋",
+  "charRotationPresetTrackTs": 1749088800,
+  "uniequipArchiveSysTrackTs": 1749088800,
+  "manufactPromptTime": 3,
   "richTextStyles": {
     "mission.levelname": "<color=#FFDE00>{0}</color>",
     "mission.number": "<color=#FFDE00>{0}</color>",
@@ -1212,13 +1222,13 @@
     },
     "ba.dt.erosion": {
       "termId": "ba.dt.erosion",
-      "termName": "침식 피해",
-      "description": "침식 피해가 1000까지 누적될 경우 800 물리 대미지를 받고, 방어력 100 영구 감소"
+      "termName": "침식 손상",
+      "description": "침식 손상이 1000까지 누적될 경우 800 물리 대미지를 받고, 방어력 100 영구 감소"
     },
     "ba.dt.burning": {
       "termId": "ba.dt.burning",
-      "termName": "소각 피해",
-      "description": "소각 피해가 1000까지 누적될 경우 1200 마법 대미지를 받고, 10초간 마법 저항력 20 감소"
+      "termName": "소각 손상",
+      "description": "소각 손상이 1000까지 누적될 경우 1200 마법 대미지를 받고, 10초간 마법 저항력 20 감소"
     },
     "ba.float": {
       "termId": "ba.float",
@@ -1232,8 +1242,8 @@
     },
     "ba.dt.element": {
       "termId": "ba.dt.element",
-      "termName": "원소 피해",
-      "description": "<$ba.dt.neural>신경 손상</>, <$ba.dt.erosion>침식 피해</>, <$ba.dt.burning>소각 피해</>, <$ba.dt.apoptosis>쇠약 피해</> 포함"
+      "termName": "원소 손상",
+      "description": "<$ba.dt.neural>신경 손상</>, <$ba.dt.erosion>침식 손상</>, <$ba.dt.burning>소각 손상</>, <$ba.dt.apoptosis>쇠약 손상</> 포함"
     },
     "ba.overdrive": {
       "termId": "ba.overdrive",
@@ -1242,8 +1252,8 @@
     },
     "ba.dt.apoptosis": {
       "termId": "ba.dt.apoptosis",
-      "termName": "쇠약 피해",
-      "description": "쇠약 피해가 1000까지 누적될 경우 15초 동안 스킬 발동 불가, 초당 SP -1 및 100 마법 대미지를 입힘"
+      "termName": "쇠약 손상",
+      "description": "쇠약 손상이 1000까지 누적될 경우 15초 동안 스킬 발동 불가, 초당 SP -1 및 100 마법 대미지를 입힘"
     },
     "ba.debuff": {
       "termId": "ba.debuff",
@@ -1268,7 +1278,7 @@
     "ba.elementfragile": {
       "termId": "ba.elementfragile",
       "termName": "원소 취약",
-      "description": "받는 원소 피해가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
+      "description": "받는 원소 대미지가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
     },
     "ba.dying": {
       "termId": "ba.dying",
@@ -1302,13 +1312,13 @@
     },
     "ba.dt.apoptosis2": {
       "termId": "ba.dt.apoptosis2",
-      "termName": "쇠약 피해 (아군)",
+      "termName": "쇠약 손상 (아군)",
       "description": "최대치 도달 시 폭발(일반, 정예 경우 1000, 리더 경우 2000), 적에게 50%의 <$ba.weaken>약화</> 효과를 부여하지만 점차 회복하며, 초당 원소 대미지 800 입힘, 쿨타임 15초"
     },
     "ba.epbarrier": {
       "termId": "ba.epbarrier",
-      "termName": "피해 보호막",
-      "description": "일정량의 <$ba.dt.element>원소 피해</> 흡수"
+      "termName": "손상 보호막",
+      "description": "일정량의 <$ba.dt.element>원소 손상</> 흡수"
     },
     "ba.tremble": {
       "termId": "ba.tremble",
@@ -1322,7 +1332,7 @@
     },
     "ba.dt.burning2": {
       "termId": "ba.dt.burning2",
-      "termName": "소각 피해 (아군)",
+      "termName": "소각 손상 (아군)",
       "description": "최대치 도달 시 폭발(일반, 정예 경우 1000, 리더 경우 2000), 적에게 7000의 원소 대미지를 입히며 그동안 마법 저항 -20, 쿨타임 10초"
     },
     "ba.addash": {
@@ -1349,6 +1359,11 @@
       "termId": "ba.liftoff",
       "termName": "이륙",
       "description": "지상의 적 저지 불가, 지상 적의 공격을 받지 않음, 비행 상태의 적 저지 가능"
+    },
+    "ba.physicfragile": {
+      "termId": "ba.physicfragile",
+      "termName": "물리 취약",
+      "description": "받는 물리 대미지가 해당 비례만큼 증가 (동종 효과 중 최대 수치만 적용)"
     },
     "cc.bd_A_1": {
       "termId": "cc.bd_A_1",
@@ -1697,8 +1712,8 @@
     }
   },
   "storyReviewUnlockItemLackTip": "기록 조각이 부족합니다. 증명서 상점 또는 이벤트 기간에 열리는 상점을 통해 교환할 수 있습니다.",
-  "dataVersion": "43.4.0",
-  "resPrefVersion": "56d0d0",
+  "dataVersion": "44.1.0",
+  "resPrefVersion": "57d4d0",
   "announceWebBusType": "ak_announcement",
   "videoPlayerWebBusType": "ak_video_player",
   "gachaLogBusType": "ak_gacha_log",
@@ -1774,12 +1789,20 @@
     "hammer": "PHYSICAL",
     "alchemist": "PHYSICAL",
     "primprotector": "PHYSICAL",
-    "skywalker": "PHYSICAL"
+    "skywalker": "PHYSICAL",
+    "soulcaster": "MAGICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",
     "char_336_folivo",
     "char_402_tuye",
     "char_4043_erato"
-  ]
+  ],
+  "birthdaySettingDesc": "박사님의 생일 정보가 부족하여 보완이 필요합니다.\n<size=21><color=#0075a9>로도스 아일랜드는 박사님의 생일 당일에 메일을 통해 추가 물자를 지급해 드립니다.</color></size>",
+  "birthdaySettingConfirmDesc": "{0} 박사님, 생일 날짜를 {1}월 {2}일로 제출하시겠습니까?\n\n<color=#b84040>제출 완료 후 생일은 변경할 수 없습니다.</color>",
+  "birthdaySettingLeapConfirmDesc": "{0} 박사님, 생일 날짜를 {1}월 {2}일로 제출하시겠습니까?\n\n<color=#b84040>제출 완료 후 생일은 변경할 수 없습니다. 윤년이 아닌 해의 경우, 박사님의 물자는 {3}월 {4}일에 지급됩니다.</color>",
+  "leapBirthdayRewardMonth": 2,
+  "leapBirthdayRewardDay": 28,
+  "birthdaySettingShowStageId": "tr_05",
+  "isBirthdayFuncEnabled": false
 }
