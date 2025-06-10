@@ -1,0 +1,52 @@
+[HEADER(is_tutorial=true, is_skippable=false, is_autoable=false)]电玩城黄金矿工模式教学关1_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, black=0.2)]
+[Battle.SwitchToDefaultUIState]
+[Battle.Pause]
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 【超級キャッチャー】攻略指南
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 超級キャッチャーは、<@tu.kw>敵を掴んで穴の中に引きずり込み</>、なるべく多くのスコアを獲得するゲームです。
+[Battle.EnsureMinSp(charId="trap_192_archook", sp=5)]
+[Tutorial(tileX=5, tileY=6, focusWidth=100, focusHeight=150,          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black",          protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 常に動き続けているアームを、<@tu.kw>適切なタイミング</>で発射することで敵を掴むことができます。
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=5,tileY=6, validWidth=100, validHeight=150)]
+[Tutorial(tileX=5, tileY=6, focusWidth=100, focusHeight=150,          animStyle="Click", focusStyle="HighlightCircle",waitForSignal="char_info", charId="trap_192_archook", black="$f_tut_black",          protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] そろそろですよ、アームのスキルを発動する準備はできましたか？
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_sys")] 今です、アームを発射してください！
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_sys")]上手くいきましたね！敵を穴に引きずり込むと、その<@tu.kw>重量</>に応じたスコアを獲得できます。ただし、強制移動の効果を受けない敵はアームで引き寄せられないため、ご注意ください。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.4)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_187_arcgacha", sp=30)]
+[InputBlocker(blockInput=true, tileX=4, tileY=6, validWidth=105, validHeight=111)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=4, tileY=6, focusWidth=108, focusHeight=111,           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", waitForSignal="char_info", charId="trap_187_arcgacha",           protectTime=0.5, dialogHead="$avatar_sys",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] カプセルマシンには役に立つアイテムがたくさん入っています。スキルを発動して運試しといきましょう。スコアを獲得すれば<@tu.kw>カプセルマシンのゲージが追加で溜まり</>ますよ。
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_sys")]では、回してみましょう！
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[Tutorial(focusX=-50, focusY=90, focusWidth=100, focusHeight=150, anchor="BottomRight",          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black",          protectTime=0.5, dialogHead="$avatar_sys")]それは次元超越電話ボックスです。戦場に不思議な敵を呼ぶことができ、倒すと<@tu.kw>より多くのスコア</>を獲得できます。
+[InputBlocker(blockInput=false)]
+[Tutorial(tileX=5, tileY=1, focusWidth=108, focusHeight=111, waitForSignal="put_down", charId="trap_190_arcsum3",           animStyle="Drag", startCardIndex=0, startRightStart=true, endTileX=8, endTileY=3, dialogHead="$avatar_sys",          focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5)] 次元超越電話ボックスは、任意のマスに配置することで効果を発動します。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=2, tileY=7, focusWidth=100, focusHeight=150,          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black",          protectTime=0.5, dialogHead="$avatar_sys")]見てください、ビッグ・ボブが電話に呼び出されてやって来ました！  
+[Tutorial(protectTime=0.5, dialogHead="$avatar_sys", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] カプセルマシンには、他にも不思議な支援道具がたくさん入っていますので、プレイ中にご自身で色々試してみてくださいね。  
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

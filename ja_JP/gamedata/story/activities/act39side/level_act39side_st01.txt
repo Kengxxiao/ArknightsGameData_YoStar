@@ -1,0 +1,857 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="49_g12_diving",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_jump_water")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_underwateramb",volume=0.3,channel="1",loop=true)]
+[Subtitle(text="「塩には神聖な何かがあるに違いない。そしてそれは、海の中にも、我々の涙の中にも存在しているのだ。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+彼は湖底のかすかな金属光沢を探して、水中の暗さに慣れようとしていた。
+[Dialog]
+[PlaySound(key="$d_avg_swiminwater",volume=0.5,channel="2",loop=true)]
+水をかき、ゆっくりと前へ進み、指を泥に食い込ませても、水草を掴むばかりだ。
+冷たい水が肌を撫で、髪の間を流れていく。彼は戸惑っていた。どうすれば例の金貨を見つけられるのか、彼にはわからなかった。
+[Dialog]
+[Subtitle(text="「視覚で捉えようとするのではなく、水の流れに方向を教えてもらいなさい。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+岸辺から声が聞こえてきた。水を隔てた向こうにいるその人の顔ははっきりとは見えない。だが、穏やかで優しいその口調は、その人を信じようという気持ちにさせた。
+そこで彼が目を閉じ、沸き立つ水の流れを感じると、水底の光景が頭の中に鮮明に浮かび上がってきた――
+複雑な模様のついた、硬く丸い一枚の金属が、そよぐ水草の間に横たわっている。
+彼はその模様を撫でるとそれを握り締め、水面へと浮上する。岸辺にいる人の顔が、次第に鮮明に見えてきた。
+[Dialog]
+[Subtitle(text="「金貨は見つかったかい？」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+手を開いて見やれば、金貨の細かい円形の模様は、その真ん中についた横線で区切られている。彼はふと、それがまだ目にしたことのない、はるか遠くの水平線のように思えた。
+[Dialog]
+[StopSound(channel="1",fadetime=1.5)]
+[StopSound(channel="2",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_piratepet_vo01")]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_clothmovement")]
+[Delay(time=1.5)]
+[name="イシドロ"]うっ……
+[name="イシドロ"]何だこれは……塩辛い……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_towerinside",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_piratepet_vo01")]
+[charslot(slot="m",name="avg_npc_1586_1#1$1",focus="m",duration=1.5)]
+[Delay(time=2)]
+[name="奇妙な生き物"]フンス、フンス……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot="m",name="avg_293_thorns_1#2$1",duration=1.5)]
+[Delay(time=2)]
+[name="イシドロ"]はぁ……
+[charslot(slot="m",name="avg_npc_1586_1#4$1",focus="m")]
+[name="奇妙な生き物"]ハフー……
+[charslot(slot="m",name="avg_293_thorns_1#7$1",focus="m")]
+[name="イシドロ"]顔を舐めるな、チビ助。そろそろ本当に殴るぞ。
+[Dialog]
+[PlaySound(key="$d_avg_piratepet_vo02")]
+[charslot(slot="m",name="avg_npc_1586_1#4$1",focus="m")]
+[charslot(slot = "m", action="jump",power=50,times=1,duration = 0.5,isblock=true)]
+[name="奇妙な生き物"]ハフ……
+[charslot(slot="m",name="avg_293_thorns_1#3$1",focus="m")]
+[name="イシドロ"]……まあいい。お前のことを我慢してやる必要も、これでもうなくなるんだ。
+[Dialog]
+[PlaySound(key="$dooropenquite")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_293_thorns_1#3$1",focus="none")]
+[name="荒々しい男の声"]坊主、飯だぞ、さっさと食え！　あの人が待ってるからな！
+[Dialog]
+[PlaySound(key="$doorclosequite")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_293_thorns_1#6$1",focus="m")]
+[name="イシドロ"]……
+[charslot(slot="m",name="avg_293_thorns_1#1$1",focus="m")]
+[name="イシドロ"]彼女が今日俺に会うことはないだろうがな。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement")]
+[Delay(time=2)]
+イシドロは室内のハンモックを外すと、皿の上の硬いパンと、水が半分ほど入ったボトルをそれに包んだ。
+そうして彼がそばのスーツケースを蹴れば、その下に隠されていた穴があらわになった。
+この抜け道を掘るために、イシドロは一週間を費やしたのだ。
+そばにいた奇妙な生き物が彼のもとに寄ってきて、人懐こくズボンのすそをくわえてくる。よだれで湿ったズボンを見下ろし、イシドロはため息をついた。
+[charslot(slot="m",name="avg_293_thorns_1#3$1",focus="m")]
+[name="イシドロ"]二度とここには戻らない。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovementsp")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="57_g9_community_d",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_broadsword_polish",channel="1",volume=1,loop=true)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",channel="2",volume=0.3,loop=true)]
+[charslot(slot="m",name="avg_npc_1579_1#1$2",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1579_1#1$2",focus="none")]
+[name="豪快な女性"]ようハビエル、先月預けたナイフはもう持ってってもいいかい？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1579_1#1$2",focus="m")]
+[name="ハビエル"]……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1580_1#2$1",duration=1.5)]
+[Delay(time=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="豪快な女性"]ハビエル！！
+[Dialog]
+[StopSound(channel="1",duration=1.5)]
+[StopSound(channel="2",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1579_1#8$2",focus="m")]
+[name="ハビエル"]おっと……すまん、ティーチ。聞こえなかったんだ。ナイフを取りに来たのか？
+[charslot(slot="m",name="avg_npc_1580_1#1$1",focus="m")]
+[name="ティーチ"]それ以外に何がある？　あんたの汗だくの胸を拝みに来たとでも思うのかい？
+[charslot(slot="m",name="avg_npc_1579_1#2$2",focus="m")]
+[name="ハビエル"]いつものことだが、そういう冗談はよしてくれ。
+[charslot(slot="m",name="avg_npc_1580_1#5$1",focus="m")]
+[name="ティーチ"]まあそう気を損ねるんじゃないよ。朝っぱらから包丁研いでるあんたの姿は、もうすっかりここの風景に馴染んできてるじゃないか。
+[name="ティーチ"]周りに集まってる連中を見てみな……こいつらは、ナイフを研いでもらいに来たようにはちっとも見えないだろ。
+[Dialog]
+[charslot]
+[name="そばで見ている男"]（ウインクする）ハ～イ、ハビエル！
+[charslot(slot="m",name="avg_npc_1579_1#9$2",focus="m")]
+[name="ハビエル"]ふざけんなっての……ほらティーチ、あんたのナイフだ。
+[charslot(slot="m",name="avg_npc_1579_1#1$2",focus="m")]
+[name="ハビエル"]武器の修理用に使える金属がほとんど残ってなかったもんで、代用品を使うしかなくてな。しばらくはそれで我慢してくれ。
+[charslot(slot="m",name="avg_npc_1580_1#5$1",focus="m")]
+[name="ティーチ"]こいつは骨と貝殻かい？　つくづく器用な奴だね。
+[charslot(slot="m",name="avg_npc_1579_1#1$2",focus="m")]
+[name="ハビエル"]試し斬りしていくか？
+[charslot(slot="m",name="avg_npc_1580_1#1$1",focus="m")]
+[name="ティーチ"]何か硬い食材でもあんのかい？
+[charslot(slot="m",name="avg_npc_1579_1#7$2",focus="m")]
+[name="ハビエル"]硬くなったパンがあったんだが……ついさっき、小屋にいる坊主にやっちまったよ。
+[charslot(slot="m",name="avg_npc_1580_1#5$1",focus="m")]
+[name="ティーチ"]もったいないねえ。
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_1590_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="？？？"]どいたどいた！　お前ら、こんな早いうちから何を暇そうに駄弁ってやがるんだ？
+[charslot(slot="m",name="avg_npc_1579_1#1$2",focus="m")]
+[name="ハビエル"]ルス？
+[charslot(slot="m",name="avg_npc_1580_1#5$1",focus="m")]
+[name="ティーチ"]なんだ、あんたか。朝も早いってのに妙に太陽がまぶしいと思ったが、道理で。
+[charslot(slot="m",name="avg_npc_1590_1#4$1",focus="m")]
+[name="ルス"]お前とやり合ってる場合じゃないんだっての。ほら来いハビエル、中で話そう！
+[charslot(slot="m",name="avg_npc_1580_1#1$1",focus="m")]
+[name="ティーチ"]どうやらあたしはお邪魔らしい。じゃあもう行くよ、またねハビエル。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[name="そばで見ている男"]しらけんなぁ……そんじゃハビエル、また明日な！
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1579_1#7$2",focus="m")]
+[name="ハビエル"]……チッ……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="57_g5_newcabin",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$darkness02_intro", key="$darkness02_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$doorclosequite")]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1590_1#4$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1579_1#1$2",focus="l")]
+[name="ルス"]頼むからフアナを説得してくれよ。あいつは狂ってる！　このままじゃ俺たち全員、あいつのせいで死んじまうぞ！　フアナの周りにいる連中で一番冷静なのはお前だろ！
+[charslot(slot="r",name="avg_npc_1579_1#2$2",focus="r")]
+[name="ハビエル"]あの人は前からそういう人だろう。
+[charslot(slot="r",name="avg_npc_1579_1#1$2",focus="r")]
+[name="ハビエル"]考えてもみろ。あの人の決定はいつだって、どんなに狂ってるように見えても、実際にはみんなのために活路を見出してくれてたじゃないか。
+[charslot(slot="r",name="avg_npc_1579_1#7$2",focus="r")]
+[name="ハビエル"]十数年前、あの人が危険を冒してあのキャラバンに接触してなければ、今みたいに塩海で掘り出した骨董品を売って生計を立てられるなんて想像もできなかっただろ？
+[name="ハビエル"]当時は誰も賛成してやしなかったし、がめつい商人が裁判所に船団の位置を漏らすんじゃないかとみんな恐れてたくらいだった。
+[charslot(slot="r",name="avg_npc_1579_1#1$2",focus="r")]
+[name="ハビエル"]けどそんな中、フアナさんは取引の価値を示して、拒めないような条件を向こうに提示し、この関係を今も成立させてる。
+[charslot(slot="l",name="avg_npc_1590_1#2$1",focus="l")]
+[name="ルス"]しかしなあハビエル、今回ばっかりは本当にワケが違うだろ。
+[charslot(slot="r",name="avg_npc_1579_1#2$2",focus="r")]
+[name="ハビエル"]いや、違わない。どうあれ、あの人は俺たちの信用に値するキャプテンだ。
+[charslot(slot="l",name="avg_npc_1590_1#2$1",focus="l")]
+[name="ルス"]……
+[name="ルス"]あいつは俺たちを連れて海に帰るつもりなんだぞ。それでもまだ、これまで通りフアナを支持するつもりなのか？　本気でそれが活路になると思うのかよ？
+[name="ルス"]有り得ないだろ。そいつは間違いなく破滅への道だ。
+[charslot(slot="r",name="avg_npc_1579_1#8$2",focus="r")]
+[name="ハビエル"]前向きに考えよう、ルス。あの人はコンパスも、それを修理できる術師も見つけたんだ。何もかも、期待した通りに進んでるじゃないか。
+[charslot(slot="l",name="avg_npc_1590_1#2$1",focus="l")]
+[name="ルス"]毎日厨房こもりっきりで周りにゃ無頓着なお前でも、最近運び込まれてくる食材がクソみてえなもんなのは気付いてるだろ？
+[Dialog]
+[PlaySound(key="$d_avg_paper1")]
+[Delay(time=1)]
+[name="ルス"]見ろ、こいつは全部フアナの買った木材の請求書だ。あの使えねえボロ船を修理して、海に出るのにこんだけ使い込んだんだぞ。
+[Dialog]
+[PlaySound(key="$d_avg_paper1")]
+[Delay(time=1)]
+[name="ルス"]木材がどんなに高いかくらい知ってるだろ？　本当はこの金があれば、みんなもう少しマシな暮らしができてたはずだ。お前も毎日苦労してレバーを漬けたり臭いガルムを作ったりせずに済んだのに。
+[name="ルス"]あいつがこれ以上金をつぎ込まないうちに何とか説得してくれよ。
+[name="ルス"]最近、集落では……良くない噂が広がってるんだ。それでみんな不安がっててな。
+[charslot(slot="r",name="avg_npc_1579_1#1$2",focus="r")]
+[name="ハビエル"]……
+[name="ハビエル"]あの人と話してくるよ。
+[charslot(slot="r",name="avg_npc_1579_1#10$2",focus="r")]
+[name="ハビエル"]だが忘れないでくれ。フアナさんが――あんたの言う「狂った」女がいなければ、俺たちの先祖も、親たちの代も、それに俺たちだって……
+[charslot(slot="r",name="avg_npc_1579_1#2$2",focus="r")]
+[name="ハビエル"]この塩海で生きていくことはできなかったってことをな。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="57_g9_community_d",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_293_thorns_1#10$1",duration=1.5)]
+[Delay(time=2)]
+[name="イシドロ"]妙だな……
+[name="イシドロ"]いつも入り口に座っている料理人はどこへ行ったんだ？
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_1591_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_293_thorns_1#7$1")]
+[name="イシドロ"]クソッ……
+[name="イシドロ"]……まさか、俺を連れ戻しに来てるのか？
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot="m",posfrom="0,0",posto ="-50,0",duration = 1,isblock=false)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5,isblock=false)]
+[Delay(time=2)]
+[charslot]
+その時、一人の男が怒り狂った様子で街角から現れ、イシドロは咄嗟に隅の陰に隠れた。
+だが、男はイシドロのほうへ向かってくることはなく、ただ悪態をつきながら通り過ぎていった。
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="怒り狂った男"]バカが……このバカどもが！
+[name="怒り狂った男"]あのクソババアは今に、俺たちを皆殺しにするだろうよ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1580_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="ティーチ"]目を覚ましな、セスク。あんた、またあの娘の薬草を盗み食いしたね。
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]目を覚ますのはお前らのほうだ！
+[name="セスク"]あのクソババアに不満があるのは俺だけだって言うのか？
+[name="セスク"]揃いも揃って腑抜けやがって、誰一人本当のことを言いやしねえ！
+[charslot(slot="m",name="avg_npc_1580_1#2$1",focus="m")]
+[name="ティーチ"]消えな。街中で喚き散らすんじゃないよ。
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]俺は何か間違ったこと言ったか！？
+[name="セスク"]まさかお前はあのイカれたババアを少しも疑ってねえってのかよ！
+[name="セスク"]お前もハビエルと同じで、あいつの狂ったデタラメを信じ込んでるわけか！？
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite")]
+[charslot(slot="l",name="avg_npc_1590_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1579_1#6$2",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1579_1#6$2",focus="r")]
+[name="ハビエル"]セスク、お前……
+[charslot(slot="l",name="avg_npc_1590_1#4$1",focus="l")]
+[name="ルス"]よせ、ハビエル。あいつはどうかしちまってるんだ！
+[charslot(slot="r",name="avg_npc_1579_1#6$2",focus="r")]
+[name="ハビエル"]もう一度言ってみろ。
+[name="ハビエル"]もう一度言えと言ってるんだ。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]ハッ、何が違うってんだ？
+[name="セスク"]お前と来たら何年経ってもあのイカれたババアの言いなりじゃねえか。あいつが言うこと成すこと全部に大賛成なんだろ？
+[name="セスク"]お前があいつの一番忠実なペットだってことくらい、みんな知ってるぜ。
+[name="セスク"]いっそその包丁を置いて、地面に這いつくばってあいつの靴でも舐めてりゃどうだ？
+[charslot(slot="m",name="avg_npc_1579_1#6$2",focus="m")]
+[name="ハビエル"]野郎ッ――！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punch",channel="2")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=true)]
+ハビエルが男の胸ぐらを掴んで高く持ち上げ、その背を壁へと激しくぶつける。
+ハビエルの表情は落ち着いていたが、その目に燃える炎は男を消し炭にしかねないほどに燃え滾っていた。
+[Dialog]
+[name="イシドロ"]あれは殴り合いになるか……？
+[name="イシドロ"]そうなれば、その隙に逃げるのもアリだな。
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]うっ……
+[charslot(slot="m",name="avg_npc_1579_1#6$2",focus="m")]
+[name="ハビエル"]二度とそんな口は利くなよ。寝言であってもだ。
+[name="ハビエル"]わかったか？　セスク。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_cnstrctnck",channel="2")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=true)]
+喉を締め上げられた男は窒息しかけていたが、周囲にはそれを止めようとする者はおらず、皆黙ってうつむき、その場を避けて通っていた。
+道の両側にある掘っ立て小屋の人々は、次々と扉や窓を閉め、ほんの短い間に、道には誰もいなくなった。
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]う、ぐっ……
+[charslot(slot="m",name="avg_npc_1590_1#4$1",focus="m")]
+[name="ルス"]ハビエル、放してやれ。こいつだってもうわかったはずだ！
+[charslot(slot="m",name="avg_npc_1580_1#1$1",focus="m")]
+[name="ティーチ"]（小声）ここでは止しな、ハビエル……
+[charslot(slot="m",name="avg_npc_1579_1#3$2",focus="m")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="ハビエル"]返事は！！
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]（慌ただしくうなずく）
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement",channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$bodyfalldown3",channel="2")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=true)]
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[name="セスク"]ごほっ……げほげほげほ――！
+[charslot(slot="m",name="avg_npc_1579_1#6$2",focus="m")]
+[name="ハビエル"]帰れ。今日のことはしっかり覚えておくんだな。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1591_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[PlaySound(key="$rungeneral")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1580_1#4$1",focus="m")]
+[name="ティーチ"]やれやれ、一体どうしたんだい？　あんたは衝動に駆られるようなタイプじゃないだろ。
+[charslot(slot="m",name="avg_npc_1590_1#1$1",focus="m")]
+[name="ルス"]衝動？　そんなもんじゃないさ。こいつはただ、自分の態度をみんなに向かって示しただけだ。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1579_1#9$2",focus="m")]
+[name="ハビエル"]ルス、俺は……
+[charslot(slot="m",name="avg_npc_1580_1#5$1",focus="m")]
+[name="ティーチ"]気にしなくていい。それより、夜に何か持って行ってやりな。きっと締め出されやしないだろうさ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1579_1#5$2",focus="m")]
+[Delay(time=1)]
+[name="ハビエル"]そうだな。ありがとう、ティーチ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1580_1#5$1",focus="m")]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1579_1#1$2",focus="m")]
+ハビエルはしばし道の真ん中に立ち、女が去るのを見送った。
+風に乗ってきたバンダナが、彼の足元に引っかかる。それはたった今慌てて逃げ去った男が落としたものだった。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+ハビエルはそれを拾い上げ、ほこりを払うと小屋に戻り、扉をそっと閉ざした。
+[Dialog]
+[PlaySound(key="$doorclosequite")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_293_thorns_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="イシドロ"]ちょうどいい。これで誰もいなくなったな。
+[charslot(slot="m",name="avg_293_thorns_1#6$1",focus="m")]
+[name="イシドロ"]連中が暑さを逃れて道を離れる昼までは、待つ羽目になると思っていたが……
+[charslot(slot="m",name="avg_293_thorns_1#7$1",focus="m")]
+[name="イシドロ"]チッ……
+[name="イシドロ"]前回の俺は、なぜ夜に逃げ出そうなどと考えたんだ？　奴らの一番の活動時間だというのに。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="57_g6_olddeck_1",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1589_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1592_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="none")]
+[name="イシドロ"]（ここから下りれば……逃げられるな。）
+[name="イシドロ"]（警備は二人だけ。気絶させれば済む話だ。）
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]こほん……
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="none")]
+[name="イシドロ"]（なんだ……？）
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]あのさ、アンナ……ほかの場所を見に行きたいと思ったことはないか？
+[name="浮ついた警備要員"]実は俺、前に掘り当てた古い硬貨をちょっとちょろまかして隠しといたんだ。表面に彫られた国王の顔は削り取って、今流通してるやつと見た目は変わらないようにしてな！
+[name="浮ついた警備要員"]それがあれば、お前をこの塩海から連れ出せる。二人でレム・ビリトンでも、クルビアでも……お前さえ望むなら、どこへだって行けるんだ。
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="l")]
+[name="職務を果たす警備要員"]いいえ、ホセ。私はここで生まれたから、ここを離れるだなんて考えたこともないの。
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]アンナ……本気でここに残って、キャプテンと一緒に海へ行くつもりか？
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="l")]
+[name="職務を果たす警備要員"]あの人は私のキャプテンだもの。
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]だが、海は人を食うって言うだろ……
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="l")]
+[name="職務を果たす警備要員"]そんなの怖くないわ。キャプテンは約束してくれたでしょ。
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]俺は怖いんだよ。その約束が、現実的じゃないように感じて。
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="l")]
+[name="職務を果たす警備要員"]怖いなら逃げればいいじゃない。私は止めないわよ。
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]……そうじゃない、むしろ止めてほしいんだよ、アンナ。
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="none")]
+[name="イシドロ"]（いつまでやっているつもりなんだ？）
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]俺と一緒に来てくれないなら、せめて……
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="l")]
+[name="職務を果たす警備要員"]せめて、何？
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="none")]
+[name="イシドロ"]（明らかに拒絶されているのでは？）
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="r")]
+[name="浮ついた警備要員"]アンナ……その、俺に……
+[charslot(slot="r",name="avg_npc_1592_1#1$1",focus="none")]
+[name="イシドロ"]（何をグズグズためらって――）
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="l")]
+[name="職務を果たす警備要員"]もうっ、何をグズグズためらってるのよ！
+[stopmusic(fadetime=1.5)]
+[charslot(slot="l",name="avg_npc_1589_1#1$1",focus="none")]
+[name="イシドロ"]（……？）
+[Dialog]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="l",posfrom="0,0", posto="100,0", afrom=1, ato=0, duration=0.5, isblock=false)]
+[charslot(slot="r",posfrom="0,0", posto="50,0", afrom=1, ato=0, duration=0.5, isblock=false)]
+[PlaySound(key="$bodyfalldown1",channel="2")]
+[Delay(time=0.4)]
+もじもじする男を見かねた女は彼を押し倒し、相手の顔を両手で包むようにしてキスをした。
+そばに隠れていたイシドロは、この光景に眉をひそめて視線を逸らす。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement",channel="1")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=true)]
+[name="浮ついた警備要員"]っ……アンナ……
+[name="職務を果たす警備要員"]黙ってて！
+[Dialog]
+[Delay(time=1)]
+[charslot(slot = "m",name="avg_293_thorns_1#10$1",posfrom="-200,0", posto="0,0", afrom=0, ato=1, duration=1.5, isblock=true)]
+[name="イシドロ"]……
+[name="イシドロ"]（……少なくとも、気付かれる心配はなさそうだ。）
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=2.5, isblock=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="57_g1_saltdesert_d",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$runsand")]
+[charslot(slot = "m",name="avg_293_thorns_1#1$1",posfrom="-200,0", posto="0,0", afrom=0, ato=1, duration=1.5, isblock=true)]
+[name="イシドロ"]ふぅ……
+[name="イシドロ"]もっとペースを上げよう……夜になる前に逃げ切らなければ……
+[name="イシドロ"]これまでのパターンからして、おそらくは……
+[Dialog]
+[PlaySound(key="$d_avg_explosion_stone")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[charslot(slot = "m",posfrom="0,0", posto="-50,0", afrom=1, ato=0, duration=0.5, isblock=false)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+巨大な舵輪が彼の前をかすめ、その足元に突き刺さった。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1581_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="？？？"]レディをこんなに待たせないでちょうだい。
+[name="？？？"]さあ、おとなしく私と戻りましょう、坊や。
+[charslot(slot="m",name="avg_293_thorns_1#7$1",focus="m")]
+[name="イシドロ"]なぜここに……
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="？？？"]あれだけ試したのに、まだ諦められないの？　こっちも余分な薬はないし、また怪我でもしたら、何も塗ってあげられないわよ。
+[charslot(slot="m",name="avg_293_thorns_1#7$1",focus="m")]
+[name="イシドロ"]なぜ俺がいなくなったとわかったんだ、フアナ？
+[name="イシドロ"]周囲は確認していた。誰にもつけられてはいなかったはずだ。
+[charslot(slot="m",name="avg_npc_1581_1#10$1",focus="m")]
+[name="フアナ"]私はキャプテンよ？　船団内の動向は手に取るようにわかるの。簡単に逃れられるとは思わないでね。
+[name="フアナ"]それと、質問に答えたがってないレディを問い詰めたところで、ろくな結果は得られないわよ。
+[charslot(slot="m",name="avg_293_thorns_1#7$1",focus="m")]
+青年は何も言わずに、ただふとあの長年連れ添った剣を思い出していた。あれがまだここにあれば、いくらか勝算があっただろう。
+だが、あの剣は折れてしまった。あと少しで手が届いたはずの自由と同じように、この塩海で真っ二つに砕かれたのだ。
+イシドロはこぶしを握り締め、歯を食いしばって、残された何かを掴むべく彼女に立ち向かった。
+対する女は、ただ落ち着いた様子で長剣を静かに抜いた。
+[charslot(slot="m",name="avg_293_thorns_1#5$1",focus="m")]
+[name="イシドロ"]邪魔をするな！
+[Dialog]
+[PlaySound(key="$runsand")]
+[charslot(slot = "m",posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=1.5, isblock=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punch02",channel="2")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_punchsp3",channel="1")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_punch",channel="3")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$bodyfalldown1",channel="2")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=true)]
+[name="イシドロ"]ッ――
+[Dialog]
+[PlaySound(key="$d_avg_throwrope",channel="1")]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_cnstrctnck",channel="1")]
+[Delay(time=1.5)]
+丸腰のイシドロはたった数撃で打ち負かされて倒れこみ、口いっぱいに塩が入り込む。彼は最後に残されたものすらも失ったのだ。
+フアナは彼を縛り上げると肩に担いだ。イシドロは、心の中で何かが静かに砕け散るのを感じていた。
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]若いって良いわね。決して諦めることなく、何度負けても次は必ずと夢を見続けられるんだから。
+[name="フアナ"]そんなにここから去りたいのなら、私のコンパスを直してちょうだい。
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="none")]
+[name="イシドロ"]何度も言った通り、あれは錬金術師でなければ直せないし、俺は錬金術師じゃない。
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]そう？　だったらどうしてその金貨を持っているのか説明して。
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="none")]
+[name="イシドロ"]……これは盗んだものだ。
+[charslot(slot="m",name="avg_npc_1581_1#2$1",focus="m")]
+[name="フアナ"]あなたって、嘘が下手なのね。
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]そこに刻まれたシンボルは、誰もが知るようなものではないの。それは、忘れ去られたある錬金術の流派を表すものでね……その秘密の技術によって、無数の艦隊が海中の宝を見つけてきたのよ。
+[name="フアナ"]だけど、大いなる静謐の後、その門弟は監禁され、彼らの創造物も破壊されてしまった……
+[name="フアナ"]そんな状況下で、あなたはなぜその金貨を手元に置いているのかしら？
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="none")]
+[name="イシドロ"]……
+[name="イシドロ"]俺は何も知らない。
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]あら、強情ね。それなら、別の質問に答えてもらえない？
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="none")]
+[name="イシドロ"]……
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]あの抜け道はどうやって堀ったの？
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="none")]
+[name="イシドロ"]……寄こされたパンが硬かったものでな。
+[charslot(slot="m",name="avg_npc_1581_1#3$1",focus="m")]
+[name="フアナ"]フフッ、つくづく賢い子ね。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="57_g5_newcabin",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]坊やの見張りご苦労様、本当にありがとう！
+[name="フアナ"]あなたが知らせてくれなかったら、逃げられていたかも。
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]ええ、彼が聞き分けのいい子じゃないってことくらいはわかってるわ。だけど、あなたがついてるでしょ？
+[name="フアナ"]私たちの中で一番賢くて、機転が利いて、とっても手ごわい……
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]ネネ。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1586_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="ネネ"]フンス、フンス！
+[name="ネネ"]（はしゃいでグルグル回る）
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]あらあら、あんまりはしゃがないの。あなたに与えた見張りの任務は困難なものなのよ。絶対に油断しないでね。
+[charslot(slot="m",name="avg_npc_1586_1#1$1",focus="m")]
+[name="ネネ"]（すぐに倒れこむ）
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]もちろん、あなたのことは信頼してるわ。ほら、行って。あの坊やに正体を悟られないようにね。
+[charslot(slot="m",name="avg_npc_1586_1#1$1",focus="m")]
+[name="ネネ"]フンス！
+[Dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$doorknockquite",channel="2")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]入って、ハビー。
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite")]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1579_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="ハビエル"]フアナさん、ネネとの楽しい時間を邪魔してないといいんですが。
+[charslot(slot="m",name="avg_npc_1586_1#2$1",focus="m")]
+[name="ネネ"]ハフー……！
+[charslot(slot="m",name="avg_npc_1579_1#8$1",focus="m")]
+[name="ハビエル"]そうやって威嚇するのはよせ。いいものを持ってきてやったんだから。
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]骨で作ったボールね。良くできてるわ……あなたが彫り上げたの？
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[name="ハビエル"]ええ。古い武器から砕けた骨を取り外してみたものの、使い道がなくて。
+[name="ハビエル"]元々はルスに詫びの品として贈ろうとしていたんですが、門前払いを食らいました。
+[charslot(slot="m",name="avg_npc_1581_1#10$1",focus="m")]
+[name="フアナ"]ああ……聞いたわよ。そう衝動的になるべきじゃなかったわね。ルスは船団の甲板長なんだから、海に出るという計画に疑問を呈するのも仕事のうちでしょ。
+[name="フアナ"]そんな彼の部下を攻撃すれば、粗暴な警告と捉えられても仕方ないわ。
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]あなたは料理長に昇進したばかりなんだし、ほどほどにしなさい。口に出す必要のないこともあるのよ。
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[name="ハビエル"]それなら、あいつが自分の部下を放任して、公衆の面前であなたを侮辱するままにさせたことも、粗暴な挑発じゃありませんか？
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]私は別に構わないわ。本人が気にしていないんだから、あなたが気に病むことないでしょ？
+[charslot(slot="m",name="avg_npc_1579_1#2$1",focus="m")]
+[name="ハビエル"]ですが俺は、あなたがみんなの命を弄ぶような狂人じゃないと知ってますから。
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]いい子ね、ハビー……
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[name="ハビエル"]フアナさん、あのコンパスを直せたら、本当に海の怪物を避けながら資源を見つけられるんでしょうか？
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]もちろんよ。あなたに嘘をついたことなんてないじゃない。
+[charslot(slot="m",name="avg_npc_1581_1#10$1",focus="m")]
+[name="フアナ"]……この塩海では、何世代にもわたって私たちが生き延びるには足りないの。本当の尽きせぬ資源というのは、やっぱり海の中にあるのよ。
+[name="フアナ"]今この時、私たちのもとには「コンパス」とそれを修理できる錬金術師が揃っている。この現状を変えるチャンスを逃すわけにはいかないわ。
+[charslot(slot="m",name="avg_npc_1579_1#9$1",focus="m")]
+[name="ハビエル"]でも、俺たちの中では、あなた以外誰も海を見たことがありませんし、その豊かな黄金時代というのを経験したこともないんですよ。
+[name="ハビエル"]俺は物心ついた時からこの塩海で暮らしてきましたが、料理人の爺さんが言うには、ここは百年前には肥沃な土地だったそうです。
+[name="ハビエル"]つまり、大いなる静謐を経た今は、豊かだったはずの海も、こことはまた別の塩海になっているかもしれないってことなんですよ。
+[charslot(slot="m",name="avg_npc_1579_1#2$1",focus="m")]
+[name="ハビエル"]どんなに不思議な力を持ったコンパスでも……過去へと導くことはできないでしょう。
+[charslot(slot="m",name="avg_npc_1581_1#2$1",focus="m")]
+[name="フアナ"]「潮が私の足跡を消し、海風が波しぶきを吹き飛ばす。」
+[name="フアナ"]「それでも、海と岸は在り続けるのだ――永遠に。」
+[charslot(slot="m",name="avg_npc_1579_1#9$1",focus="m")]
+[name="ハビエル"]それは一体……？
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]ただの古い詩よ。陸と違って、海は粘り強いの。たとえ異族の血肉に侵されていても、生命力に溢れていることに変わりはないわ。
+[name="フアナ"]海はかつて私たちのものだったのだから、もう一度私たちのものとすることもできるはずよ。
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[name="ハビエル"]俺はあなたを信じますよ、フアナさん。
+[name="ハビエル"]ですが、噂の件は……自分の言葉が嘘ではないことを、あなたからあいつらに証明してもらわないとなりません。
+[charslot(slot="m",name="avg_npc_1581_1#10$1",focus="m")]
+[name="フアナ"]ええ、そうするわ。
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[name="ハビエル"]……
+[name="ハビエル"]そういえば……ご命令通り小屋に行ってみたら、地面に穴が空いてましたよ。一晩もらえたら埋められると思います。
+[name="ハビエル"]あの坊主、今夜はどうしてやりましょう？　こうなるとさすがに、小屋に入れておくわけにもいきませんが。
+[charslot(slot="m",name="avg_npc_1581_1#1$1",focus="m")]
+[name="フアナ"]安心して、もうその手配は済んでるから。
+[charslot(slot="m",name="avg_npc_1579_1#9$1",focus="m")]
+[name="ハビエル"]どこに放り込んだんです？　言っておきますが、俺は引き取りませんからね。
+[charslot(slot="m",name="avg_npc_1581_1#11$1",focus="m")]
+[name="フアナ"]あら、そんなに気にしなくても大丈夫よ。帰り道でわかるから。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="57_g9_community_d",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",channel="2",volume=0.3,loop=true)]
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]おいガキ、お前ガラクタ売りつけてきやがったな！　この義足、二日と経たずに真っ二つになっちまったじゃねえか！
+[Dialog]
+[charslot]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4163_rosesa_1#5$1",duration=1.5)]
+[delay(time=2)]
+[name="浅ましい露天商"]そんなの、直せばまた使えるじゃん。
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]クソッタレめ！　お前の脚もへし折ってやろうか！
+[charslot(slot="m",name="avg_4163_rosesa_1#3$1",focus="m")]
+[name="浅ましい露天商"]ちょっ……ちょっと何すんのさ！　返品すれば済む話でしょ、なんで殴ろうとすんの！？
+[name="浅ましい露天商"]こ、こっちはナイフを持ってんだからね！　近づかないでよ！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1579_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]ハビエル、ちょうどいいところに！　この小娘をとっ捕まえるのを手伝ってくれ！
+[charslot(slot="m",name="avg_4163_rosesa_1#16$1",focus="m")]
+[name="浅ましい露天商"]何さ、どけよでくの坊！
+[charslot(slot="m",name="avg_npc_1579_1#2$1",focus="m")]
+[name="ハビエル"]まったく……お前と来たら、面倒ばかり起こすな。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",posfrom="0,0",posto ="-50,0",duration = 1.5,isblock=false)]
+[charslot(slot="m",afrom=1,ato=0,duration=1,isblock=false)]
+[Delay(time=2)]
+[StopSound(channel="2",fadetime=2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_4163_rosesa_1#19$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1579_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_4163_rosesa_1#19$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1579_1#1$1",focus="l")]
+[name="浅ましい露天商"]うわっ！　いったぁ！
+[charslot(slot="r",name="avg_npc_1579_1#1$1",focus="r")]
+[name="ハビエル"]こいつに金を返してやれ。
+[charslot(slot="l",name="avg_4163_rosesa_1#15$1",focus="l")]
+[name="浅ましい露天商"]はーなーせー！　フアナに言いつけてやるからね！　あんたらにいじめられたって！
+[charslot(slot="r",name="avg_npc_1579_1#2$1",focus="r")]
+[name="ハビエル"]身の程をわきまえな、嬢ちゃん。ここは、お前が減らず口叩いて無事で済むような場所じゃない。俺たちは町の臆病者どもとは違うんだ。
+[charslot(slot="r",name="avg_npc_1579_1#1$1",focus="r")]
+[name="ハビエル"]お前が間違いを犯しても、俺らはわざわざ牢屋にぶち込んで裁判なんぞしてやらん。左手と右手、どっちを残しておきたいかを選ばせてやれるくらいだな。
+[charslot(slot="l",name="avg_4163_rosesa_1#14$1",focus="l")]
+[name="浅ましい露天商"]や、やんのか！　あたしがいなけりゃ、そちらさんのキャプテンがコンパスを手に入れることもなかったんだよ！
+[charslot(slot="r",name="avg_npc_1579_1#1$1",focus="r")]
+[name="ハビエル"]ほう、やる気か？
+[charslot(slot="l",name="avg_4163_rosesa_1#19$1",focus="l")]
+[name="浅ましい露天商"]うぅ……わかったよ、金を返せばいいんでしょ。その代わり、義足は返してね！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]バカ言え。俺が足に着けてるもんは俺のもんだ。
+[Dialog]
+[charslot]
+[charslot(slot="r",name="avg_npc_1579_1#1$1",focus="l")]
+[charslot(slot="l",name="avg_4163_rosesa_1#19$1",focus="l")]
+[name="浅ましい露天商"]こ、この盗賊集団！
+[charslot(slot="r",name="avg_npc_1579_1#2$1",focus="r")]
+[name="ハビエル"]俺らの立場をよーくわかってもらえてるようで、有難い限りだな。
+[charslot(slot="l",name="avg_4163_rosesa_1#3$1",focus="l")]
+[name="浅ましい露天商"]あ、あはは……ちょ、ちょっと口が滑っただけだよ……じゃあ、金はここに置いておくから、この辺で失礼するね。
+[Dialog]
+[PlaySound(key="$rungeneral")]
+[charslot(slot="l",posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=1.5, isblock=false)]
+[Delay(time=3)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]キャプテンは一体何を考えてるんだ？　あんなずる賢い小娘を船団に残しておくなんて。
+[charslot(slot="m",name="avg_npc_1579_1#2$1",focus="m")]
+[name="ハビエル"]あの人なりの考えがあるんだろうさ。
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]それにあの坊主もだ。また逃げたって言うじゃねえか。いっそ足でも折ってやったらどうだ？
+[name="怒った男"]今回も結局キャプテンに連れ戻されてここに置き去りにされてんだろ。しかも、絶対傷つけんなってお達しでよ。ったく、マジでムカつくぜ。あの顔見てると一発殴ってやりたくなる。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1579_1#2$1",focus="m")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[Delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1592_1#1$1",focus="m")]
+[name="怒った男"]おいハビエル、ちょっと考えただけだっての、本気にすんな！　行くなって！
+[name="怒った男"]おい！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",channel="1",loop=true,volume=0.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1579_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="none")]
+[name="イシドロ"]……
+[charslot(slot="m",name="avg_npc_1579_1#10$1",focus="m")]
+[name="ハビエル"]一日中駆けずり回ってたんだろう。水でも飲むか？
+[charslot(slot="m",name="avg_npc_1579_1#10$1",focus="none")]
+[name="イシドロ"]……
+[charslot(slot="m",name="avg_npc_1579_1#1$1",focus="m")]
+[name="ハビエル"]このままだんまりを決め込むつもりか。
+[Dialog]
+[StopSound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="57_i01",xScale=2.5, yScale=2.5,y=-130,screenadapt="coverall")]
+[imagerotate(angle=180,fadetime=0,block = false)]
+[PlayMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="イシドロ"]……
+[name="イシドロ"]お前たちには屈しない。
+[name="ハビエル"]そうかい、好きにしな。
+[name="ハビエル"]ここには悪い知らせを伝えに来ただけなんだ。お前、ここで一晩過ごすことになるぞ。
+[name="イシドロ"]……別に構わない。
+[name="ハビエル"]そいつはよかった……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[Delay(time=2)]
+[name="イシドロ"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3.5, block=true)]
+[imagerotate(angle=0,fadetime=0,block = true)]
+[ImageTween(xFrom=0, yFrom=-130, xTo=0, yTo=0, xScaleFrom=2, yScaleFrom=2, xScaleTo=1, yScaleTo=1, duration=35, block=false)]
+[name="イシドロ"]……
+[name="イシドロ"]…………
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3.5, block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=2, block=true)]
+朝日が金貨に当たり、一筋の光がイシドロのまぶたに向かって反射して、彼は瞬きをした。光が揺れるのに合わせて、金貨の模様が揺れ動く。
+イシドロはその感覚が気に入らず、金貨を岸辺の男に渡した。しかし、相手はそれをすぐ受け取ろうとはせず、手を伸ばすと少年の両足を掴んで逆さに持ち上げた。
+少年がもがいていると、岸辺の男はこう言った。
+[Dialog]
+[Subtitle(text="「行く当てがないのなら、私についてきなさい。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「私の名はアウルスだ。この金貨を拾う手伝いをしてくれた礼として、君の面倒を見よう。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+沈みゆく太陽の光がソルトシップの骨組みの隙間を抜け、イシドロのまぶたに向かって差し込んだ。彼は落ち着かなさそうに瞬きをする。
+路上を行き交う通行人の誰もが、思わず顔をそらして笑うのが見えた。
+イシドロは少しめまいがした。かすかな笑い声を聞くうち、頭に血が上ってくるが、それはずっと逆さ吊りにされているせいかもしれない。
+塩の砂漠には、粗末なテントや板張りの小屋が寄せ集められたように建っている。
+通りの両側には巨大なソルトシップが横付けしており、数頭のまどろむ海獣のように見えた。
+マストの上には、雨を集めるための布袋がかけられており、風の中で雲の訪れを待っている。
+道行く人々は肩を並べて歩いては笑いふざけ合っていると思えば、誰かが突然口論を始め、それが乱闘に発展しているのも見受けられた。
+一方で、静かな片隅では、恋人同士が仲睦まじく抱きしめ合ってキスを交わしている。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[Delay(time=2)]
+[name="浅ましい露天商"]ほんと野蛮な盗賊どもだよ。
+[name="浅ましい露天商"]あたしったら、どうしてこんなクソみたいな場所に来ちゃったのかなあ。
+[name="イシドロ"]良い質問だな、パスクアラ。俺としても、どうして自分がこの盗賊の根城にいるかを聞きたいんだが。
+[name="パスクアラ"]ご、ごほんごほん……
+[name="パスクアラ"]それはあたしにもわかんないけどさあ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

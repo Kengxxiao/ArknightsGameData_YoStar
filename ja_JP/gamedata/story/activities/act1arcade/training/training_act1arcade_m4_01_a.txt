@@ -1,0 +1,64 @@
+[HEADER(is_tutorial=true, is_skippable=false)]电玩城计程车教学1_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Battle.SwitchToDefaultUIState]
+[Battle.Delay(time=1.1)]
+[Battle.Pause]
+[popupdialog(dialogHead="$avatar_sys")]【障害物競艇】攻略指南
+[popupdialog(dialogHead="$avatar_sys")]障害物競艇は、ボトルカー「水陸両用号」をなるべく長い距離走らせつつ、<@tu.kw>グレーの目的地</>に無事到達させるゲームです。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=1, tileY=1, focusWidth=150, focusHeight=150,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys")] ここが「水陸両用号」のスタート地点である水陸両用埠頭です。  
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=1, tileY=1, focusWidth=150, focusHeight=150,           animStyle="Highlight", focusStyle="HighlightCircle", black=0.5,           protectTime=0.2, dialogHead="$avatar_sys")] 水陸両用埠頭は準備が整うと、自動的にスキルを発動し<@tu.kw>「水陸両用号」</>を一台発射させます。
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=3, tileY=1, focusWidth=180, focusHeight=180,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys")] 「水陸両用号」は発射後、真っすぐ前に進みます。敵にぶつかると相手に<@tu.kw>回避不可の物理ダメージ</>と<@tu.kw>短時間のスタン</>を与えます。   
+[Tutorial(tileX=3, tileY=1, focusWidth=180, focusHeight=180,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys")] 「水陸両用号」はスコアを所持した状態で発射されます。そのスコアは、一定距離を進むごとに増加していきます。
+[Tutorial(tileX=8, tileY=5, focusWidth=120, focusHeight=120,  animStyle="Highlight", focusStyle="HighlightCircle", dialogHead="$avatar_sys",  dialogY="$f_lower_dialog_pos_y")] 「水陸両用号」が無事に<@tu.kw>グレーの目的地</>に到達すると、その時点でのスコアを獲得できます。  
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=3)]
+[Battle.Pause(pause=true)]
+[popupdialog(dialogHead="$avatar_sys")]「水陸両用号」が<@tu.kw>通行不可</>の地形に入ると退場と見なされ、スコアも獲得できません。 
+[popupdialog(dialogHead="$avatar_sys")]ですが、「水陸両用号」の進行方向を変えることで通行不可の地形を避けることができます。
+[Battle.EnsureMinSp(charId="trap_187_arcgacha", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=6, tileY=3, validWidth=108, validHeight=111)]
+[Tutorial(tileX=6, tileY=3, focusWidth=108, focusHeight=111, waitForSignal="char_info", charId="trap_187_arcgacha",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center",           protectTime=0.5, dialogHead="$avatar_sys")] 見てください、カプセルマシンに新たなアイテム――ターンテーブルが追加されました。 
+[Battle.LockFunction(mask="CHARACTER_INFO")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_sys")]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.3)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=false)]
+[Tutorial(tileX=5, tileY=1, focusWidth=108, focusHeight=111, waitForSignal="put_down", charId="trap_081_turngear",            posX=5, posY=1, animStyle="Drag", startCardIndex=0, startRightStart=true, endTileX=5, endTileY=1,           dialogHead="$avatar_sys", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5)] ここに配置してみてください。
+[Battle.Pause]
+[InputBlocker(blockInput=true, tileX=5, tileY=1, validWidth=150, validHeight=170)]
+[Tutorial(waitForSignal="select_direction", animStyle="Drag",           startTileX=5, startTileY=1, endTileX=5, endTileY=3)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[popupdialog(dialogHead="$avatar_sys")]「水陸両用号」はターンテーブル、もしくは<@tu.kw>味方ユニット</>を通過すると、その<@tu.kw>配置方向に従って進行方向を変えます</>。  
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[popupdialog(dialogHead="$avatar_sys")]「水陸両用号」は敵の攻撃を受けると、HPと獲得できるスコアが減少します。障害物は予め取り除いておきましょう。
+[popupdialog(dialogHead="$avatar_sys")]また、戦場には「ボトルパーツ」が出現することがあります。「水陸両用号」がそこを通過すると、対応する<@tu.kw>支援効果</>を獲得できます。  
+[popupdialog(dialogHead="$avatar_sys")]支援効果は<@tu.kw>一種類だけではありません</>。ぜひご自身でプレイをして、確認してみてください。
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]

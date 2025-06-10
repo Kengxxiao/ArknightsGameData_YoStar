@@ -899,6 +899,16 @@
   "rejectSpCharMission": 1687503600,
   "addedRewardDisplayZone": "main_9",
   "oneDiamondAp": 135,
+  "charRotationPresetMaxCnt": 4,
+  "charRotationSkinListMaxCnt": 20,
+  "defaultCRPresetCharId": "char_002_amiya",
+  "defaultCRPresetCharSkinId": "char_002_amiya#1",
+  "defaultCRPresetBGId": "bg_rhodes_day",
+  "defaultCRPresetThemeId": "tm_rhodes_day",
+  "defaultCRPresetName": "デフォルト",
+  "charRotationPresetTrackTs": 1749088800,
+  "uniequipArchiveSysTrackTs": 1749088800,
+  "manufactPromptTime": 3,
   "richTextStyles": {
     "mission.levelname": "<color=#FFDE00>{0}</color>",
     "mission.number": "<color=#FFDE00>{0}</color>",
@@ -1347,6 +1357,11 @@
       "termName": "離陸",
       "description": "地面上にいる敵の攻撃対象にならない、空中にいる敵のみをブロックできる"
     },
+    "ba.physicfragile": {
+      "termId": "ba.physicfragile",
+      "termName": "対物理脆弱",
+      "description": "物理の被ダメージが効果値分上昇（同名の状態は効果値が高いほうのみ適用）"
+    },
     "cc.bd_A_1": {
       "termId": "cc.bd_A_1",
       "termName": "念力",
@@ -1670,7 +1685,7 @@
     "cc.tag.durin": {
       "termId": "cc.tag.durin",
       "termName": "ドゥリン族",
-      "description": "対象オペレーター：\nミニマリスト、テンニンカ、チェストナット、ドゥリン"
+      "description": "対象オペレーター：\nミニマリスト、テンニンカ、チェストナット、ドゥリン、テクノ"
     },
     "cc.tag.mh": {
       "termId": "cc.tag.mh",
@@ -1694,8 +1709,8 @@
     }
   },
   "storyReviewUnlockItemLackTip": "事象の欠片の数が足りません。購買資格証ショップあるいはイベントショップで購入してください",
-  "dataVersion": "43.4.0",
-  "resPrefVersion": "56d0d0",
+  "dataVersion": "44.1.0",
+  "resPrefVersion": "57d4d0",
   "announceWebBusType": "ak_announcement",
   "videoPlayerWebBusType": "ak_video_player",
   "gachaLogBusType": "ak_gacha_log",
@@ -1771,12 +1786,20 @@
     "hammer": "PHYSICAL",
     "alchemist": "PHYSICAL",
     "primprotector": "PHYSICAL",
-    "skywalker": "PHYSICAL"
+    "skywalker": "PHYSICAL",
+    "soulcaster": "MAGICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",
     "char_336_folivo",
     "char_402_tuye",
     "char_4043_erato"
-  ]
+  ],
+  "birthdaySettingDesc": "データの不足が確認されました。記念日を入力してください。\n<size=21><color=#0075a9>記念日当日になると、メールでロドスからの補給物資が支給されます。</color></size>",
+  "birthdaySettingConfirmDesc": "{1}月{2}日をDr.{0}の誕生を祝う記念すべき日として設定しますか？\n\n<color=#b84040>記念日は一度確定すると変更できません</color>",
+  "birthdaySettingLeapConfirmDesc": "{1}月{2}日をDr.{0}の誕生を祝う記念すべき日として設定しますか？\n\n<color=#b84040>記念日は一度確定すると変更できません。うるう年以外の場合、物資は{3}月{4}日にメールで支給されます</color>",
+  "leapBirthdayRewardMonth": 2,
+  "leapBirthdayRewardDay": 28,
+  "birthdaySettingShowStageId": "tr_05",
+  "isBirthdayFuncEnabled": false
 }

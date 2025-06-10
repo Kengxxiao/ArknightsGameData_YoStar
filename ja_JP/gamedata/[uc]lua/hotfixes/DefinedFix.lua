@@ -2,14 +2,16 @@
 local list = 
 {
   
+  "HotFixes/VCameraControllerHotfixer",
+  "HotFixes/BuildingControllerfixer",
   "HotFixes/TestStubHotfixer",
-  "HotFixes/MultiFunnelTraitHotfixer",
-  "HotFixes/V056Hotfixer",
-  "HotFixes/V056RoguelikeBattleHotfixer",
-  "HotFixes/Whitw2Skill3FunnelRangedAttackHotfixer",
-  "HotFixes/SandboxPermTutorialHotfixer",
-  "HotFixes/Act1VAutochessTutorialHotfixer",
-  "HotFixes/MedalGroupItemViewHotfixer"
+  "HotFixes/ArchiveRelicModelHotfixer",
+  "HotFixes/RoguelikeActivityHistorySeedItemModelHotfixer",
+  "HotFixes/EtlchiHotfixer",
+  "HotFixes/StagePageHotfixer",
+  "HotFixes/CheckTheLeftSameDeployedTokenHotFixer",
+  "HotFixes/FuncFurnModelHotfixer",
+  "HotFixes/BattleControllerHotfixer"
 };
 
 return list;
