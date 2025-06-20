@@ -993,12 +993,45 @@
         "dynAvatarId": null
       },
       {
+        "avatarId": "avatar_activity_WB",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 55,
+        "avatarIdDesc": "【登臨意】記録復元\n「登臨意」",
+        "avatarItemName": "「登臨意」",
+        "avatarItemDesc": "黄塵万里に広がり、征鼓が鳴り響く——",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "記録復元",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_activity_RL4_2",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 56,
+        "avatarIdDesc": "【統合戦略】期間限定任務\n「追求」",
+        "avatarItemName": "「追求」",
+        "avatarItemDesc": "胸に抱く願いは人それぞれだが、その願いが叶うチャンスには皆両手を差し伸べるだろう。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "【統合戦略】期間限定任務で獲得",
+        "dynAvatarId": null
+      },
+      {
         "avatarId": "avatar_activity_FD",
         "avatarType": "ACTIVITY",
         "avatarIdSort": 57,
         "avatarIdDesc": "【樹影にて眠る】記録復元\n「樹影にて眠る」",
         "avatarItemName": "「樹影にて眠る」",
         "avatarItemDesc": "サーミは汝の願いを聞き届け、汝の行くべき道を示す。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "記録復元",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_activity_FC",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 58,
+        "avatarIdDesc": "【この炎が照らす先】記録復元\n「この炎が照らす先」",
+        "avatarItemName": "「この炎が照らす先」",
+        "avatarItemDesc": "小さな火種であっても、進む先を照らし出すことができる。",
         "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
         "obtainApproach": "記録復元",
         "dynAvatarId": null
@@ -1296,7 +1329,10 @@
           "avatar_activity_VEC1",
           "avatar_activity_IS",
           "avatar_activity_AC",
+          "avatar_activity_WB",
+          "avatar_activity_RL4_2",
           "avatar_activity_FD",
+          "avatar_activity_FC",
           "avatar_activity_ARC1"
         ]
       },
@@ -1572,6 +1608,19 @@
         "unlockDesList": [
           "[購買部]で迷宮都市冒険パックを購入して獲得"
         ]
+      },
+      {
+        "bgId": "bg_sui_1",
+        "bgSortId": 21,
+        "bgStartTime": 1750402800,
+        "bgName": "青禾",
+        "bgMusicId": "music_bg_sui",
+        "bgDes": "稲穂は青々と、黍穂は黄金に、風が錦のごとく優しくその先を撫でる。",
+        "bgUsage": "一枚の写真、ひと時の思い出、テラの大地でのある瞬間が凝縮されている。",
+        "obtainApproach": "パック購入",
+        "unlockDesList": [
+          "[購買部]で大荒青禾パックを購入して獲得"
+        ]
       }
     ],
     "themeList": [
@@ -1686,6 +1735,22 @@
         "rarity": 5
       },
       {
+        "id": "tm_sui_1",
+        "type": "ACTIVITY",
+        "sortId": 8,
+        "startTime": 1750402800,
+        "tmName": "大荒",
+        "tmDes": "田んぼが規則正しく上り下り、農民たちは次々と豊穣の未来をその手で耕す。",
+        "tmUsage": "機能を一切変更することなく、PRTS画面のデザインを一新しました。",
+        "obtainApproach": "購買部パック",
+        "unlockDesList": [
+          "[購買部]で大荒青禾パックを購入して獲得"
+        ],
+        "isLimitObtain": true,
+        "hideWhenLimit": true,
+        "rarity": 5
+      },
+      {
         "id": "tm_arcade_1",
         "type": "ACTIVITY",
         "sortId": 9,
@@ -1738,6 +1803,18 @@
             "displayAfterEndTime": false
           }
         ]
+      },
+      "bg_sui_1": {
+        "bgId": "bg_sui_1",
+        "limitInfos": [
+          {
+            "limitInfoId": "bg_sui_1#1",
+            "startTime": 1750402800,
+            "endTime": 1752173999,
+            "invalidObtainDesc": "現在入手できません",
+            "displayAfterEndTime": false
+          }
+        ]
       }
     },
     "themeLimitData": {
@@ -1767,6 +1844,16 @@
           {
             "startTime": 1741590000,
             "endTime": 1742756399,
+            "invalidObtainDesc": "現在入手できません"
+          }
+        ]
+      },
+      "tm_sui_1": {
+        "id": "tm_sui_1",
+        "limitInfos": [
+          {
+            "startTime": 1750402800,
+            "endTime": 1752173999,
             "invalidObtainDesc": "現在入手できません"
           }
         ]
@@ -2237,7 +2324,764 @@
     }
   },
   "mailArchiveData": {
-    "mailArchiveInfoDict": {},
+    "mailArchiveInfoDict": {
+      "mail_500w_closure_1": {
+        "id": "mail_500w_closure_1",
+        "type": "NORMAL",
+        "sortId": 1,
+        "displayReceiveTs": 1579633200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　いつもお疲れ様！今のロドスがあるのも、ドクターの日頃の努力のおかげだね。\n　この塩卵味チョコがドクターの過酷な業務のほんの息抜きになりますように。中に含まれたカロリーもね。\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_2": {
+        "id": "mail_500w_closure_2",
+        "type": "NORMAL",
+        "sortId": 2,
+        "displayReceiveTs": 1579719600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　医療部のオペレーターにいつも言われるんだけど、高カロリーで脂質の多いおやつは健康とスタイル維持にとっての大敵なんだって……。\n　でも美味しいから仕方ないよね！\n　というわけで、昨日のチョコ、もうひとつあげちゃうね。\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_3": {
+        "id": "mail_500w_closure_3",
+        "type": "NORMAL",
+        "sortId": 3,
+        "displayReceiveTs": 1579806000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　あたしも徹夜の時は集中のためにおやつを食べたりするんだけど、多分今時の働き者ってみんなそうなんだよね。\n　でもこれ以上集中できないオペレーターたちにはさすがに意味ないよ。\n　はい、今日の分のチョコだよ。\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_4": {
+        "id": "mail_500w_closure_4",
+        "type": "NORMAL",
+        "sortId": 4,
+        "displayReceiveTs": 1579892400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　知ってた？実は購買部に置いてあるおやつのほとんどが、ロドスの薬品開発の途中に偶然できたものなんだ。まさに奇跡から生まれた絶品！う～ん、ロマンを感じるね！\n　あっ、このチョコは違うよ。これは友達からもらったんだ。\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_5": {
+        "id": "mail_500w_closure_5",
+        "type": "NORMAL",
+        "sortId": 5,
+        "displayReceiveTs": 1579978800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　おっはよードクター！良いニュースを持ってきたよ！今回のチョコ、ちょっとずつだけどオペレーターたちにも好評を博すようになってきたんだ！新たなヒット商品誕生の予感！\n　よし、今日もドクターに一個あげちゃおう！次はお金をもらうからね！\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_6": {
+        "id": "mail_500w_closure_6",
+        "type": "NORMAL",
+        "sortId": 6,
+        "displayReceiveTs": 1580065200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　……塩卵チョコの商品化は白紙に戻っちゃった……。\n　ドーベルマン教官やカーディたちが猛反発したらしいんだよね。理由はわからないけど、この手のおやつが流行るのがすごく嫌みたい。\n　そういうわけだから、もうドクターにあげるしかないんだ。\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_7": {
+        "id": "mail_500w_closure_7",
+        "type": "NORMAL",
+        "sortId": 7,
+        "displayReceiveTs": 1580151600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "クロージャからの差し入れ",
+        "content": "ドクターへ\n　塩卵チョコの商品化計画は失敗しちゃったけど、研究者にとってこれくらいなんてことないね！\n　新しい健康食品も開発中だから、乞うご期待っ！\n　さて、これが最後の在庫だよ。消費はドクターに任せたからね。\n\nクロージャ",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_5002_amiya_1": {
+        "id": "mail_5002_amiya_1",
+        "type": "NORMAL",
+        "sortId": 8,
+        "displayReceiveTs": 1580842800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "アーミヤからの手紙",
+        "content": "ドクターへ\n　この前カジミエーシュの話をしたら、ケルシー先生にその場から追い出されてしまいました。\n　聞くところによると、草木が鬱蒼と茂り、山が多い国で、伝説や遺跡がたくさんあるそうですね。 いつかドクターと一緒に行ってみたいな。\n　これは今日ドクターに買った昼食です。 たまにはこういう食事も大丈夫かと思います。 このドリンクの味、私は結構好きですよ！\n\nアーミヤ",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_1": {
+        "id": "mail_500w_kazimierz_1",
+        "type": "NORMAL",
+        "sortId": 9,
+        "displayReceiveTs": 1580929200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡①",
+        "content": "ドクターへ\n　カジミエーシュ郊外より連絡が返ってきました。 グラニは無事滴水村に到着したとのことでした。 しかし不可解にも、通信の反応が遅く、不規則になっています。 村が僻地にあっても正常な通信設備はあるはずなのですが。\n　彼女の無事を祈ります。\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_5002_amiya_2": {
+        "id": "mail_5002_amiya_2",
+        "type": "NORMAL",
+        "sortId": 10,
+        "displayReceiveTs": 1581015600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "アーミヤからの手紙",
+        "content": "ドクターへ\n　ドクターもカジミエーシュに興味をお持ちですか？なら良かったです。私、メテオさんとメテオリーテさんが聞かせてくれるカジミエーシュのお話が大好きです！でも、ニアールさんもカジミエーシュ出身なのに、自分とメテオさんが知っているカジミエーシュは違うかもしれないと言っていました。どういうことなのか、知りたいです……。\n\nアーミヤ",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_2": {
+        "id": "mail_500w_kazimierz_2",
+        "type": "NORMAL",
+        "sortId": 11,
+        "displayReceiveTs": 1581102000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡②",
+        "content": "ドクターへ\n　グラニは無事村に入り、今回の依頼人と接触しました。\n　村はある程度の損害を受けているにもかかわらず、カジミエーシュ当局は何の援助も提供していないとのことです。\n　滴水村の村民が実に心配です。\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_meteo_1": {
+        "id": "mail_500w_meteo_1",
+        "type": "NORMAL",
+        "sortId": 12,
+        "displayReceiveTs": 1581188400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "メテオリーテからの便り",
+        "content": "ドクターへ\n　ドクターはカジミエーシュのことを知りたいのかしら？カジミエーシュの騎士競技会は多くの観光客で賑わうの。古くからの騎士は今や競技会に参加する選手と国家の象徴になっているわ。私も競技会が大好きよ！騎士のポスターもたくさん集めてるし、昔のニアールさんのも持ってるわ！本人にこのことは言わないで。頼むわよ、ドクター。\n\nメテオリーテ",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_3": {
+        "id": "mail_500w_kazimierz_3",
+        "type": "NORMAL",
+        "sortId": 13,
+        "displayReceiveTs": 1581274800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡③",
+        "content": "ドクターへ\n　グラニは今回の依頼内容を確認し、カジミエーシュの未開発の森に足を踏み入れました。\n　報告によると、森の中には未知の存在が大量に潜伏しているとのことです。\n　とはいえこちらも準備万全ですので、安心して次の連絡を待ちましょう。\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_shotst_1": {
+        "id": "mail_500w_shotst_1",
+        "type": "NORMAL",
+        "sortId": 14,
+        "displayReceiveTs": 1581361200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "メテオからの便り",
+        "content": "ドクターへ\n　アーミヤから聞いたんだけど、ドクターもカジミエーシュに興味があるの？私はほとんどの時間はカジミエーシュの森で暮らしていたわ。\n　カジミエーシュの森はとても広くてね、珍しい植物や野生動物を狙う悪者も多かったの。森を守る責任は私たち森を愛する者が背負っているのよ。\n　ドクターも機会があれば行ってみると良いわね。森はきっとあなたを歓迎するわ。\n\nメテオ",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_4": {
+        "id": "mail_500w_kazimierz_4",
+        "type": "NORMAL",
+        "sortId": 15,
+        "displayReceiveTs": 1581447600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡④",
+        "content": "ドクターへ\n　滴水村に限らず、今のカジミエーシュ郊外は基本的にどこも政府の統治外にあります。\n　地理的な理由もあり、近くの村は普段から通りすがりの流れ者による嫌がらせを少なからず受けています。\n　カジミエーシュ当局は早い段階から彼らを見捨てていたようです。\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_meteo_2": {
+        "id": "mail_500w_meteo_2",
+        "type": "NORMAL",
+        "sortId": 16,
+        "displayReceiveTs": 1581534000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "メテオリーテからの便り",
+        "content": "ドクターへ\n　それとね、ドクター。ファイヤーウォッチにはカジミエーシュのことを聞かないで。あの子はカジミエーシュに複雑な想いを抱えているから。\n　カジミエーシュの多くの栄えた都市とは逆に、辺鄙で貧しい村も少なくないわ。ファイヤーウォッチの故郷もそのひとつだけど、彼女は自分の村を愛していた。その村に救いの手を差し伸べなかったカジミエーシュ当局には、恨みを抱いているに違いないわ。\n\nメテオリーテ",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_5": {
+        "id": "mail_500w_kazimierz_5",
+        "type": "NORMAL",
+        "sortId": 17,
+        "displayReceiveTs": 1581620400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡⑤",
+        "content": "ドクターへ\n　我々の調査によると、確かにカジミエーシュの騎士には財産を後世に遺すという風習があるようです。命を落としたとしても、このような形で後世の人に何かを遺したいと考えているようです。ですが、同時にそれを手に入れるための過酷な試練も設けられます。それを理由に、人々はしだいに遺産を探し当てることをあきらめていきました。\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_nearl_1": {
+        "id": "mail_500w_nearl_1",
+        "type": "NORMAL",
+        "sortId": 18,
+        "displayReceiveTs": 1581706800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "ニアールからの便り",
+        "content": "ドクターへ\n　何人かがカジミエーシュの近況をドクターに伝えたようだな。責めるつもりも何かをごまかすつもりもない。我が祖国としてのカジミエーシュは、美しく偉大な地でありながら、病の兆候と腐敗を抱える国でもあった。騎士競技会というもの自体に決して反対しているわけではないが、その裏に蔓延する影の圧力と取引によって、現代に再び蘇るべき古き騎士たちの信条が、宣伝の道具と平和の虚像に成り下がってしまったのだ。\n\nニアール",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_6": {
+        "id": "mail_500w_kazimierz_6",
+        "type": "NORMAL",
+        "sortId": 19,
+        "displayReceiveTs": 1581793200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡⑥",
+        "content": "ドクターへ\n　グラニからの返事がきました。滴水村での任務は完了に近づいているようです。\n　宝を無事発見し、村の修繕に手伝った上、バウンティハンターを撃退し、救護が必要な敵をも助けたとのことです。\n　ロドスの騎馬警官の名に一点の曇りもなさそうです。\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_nearl_2": {
+        "id": "mail_500w_nearl_2",
+        "type": "NORMAL",
+        "sortId": 20,
+        "displayReceiveTs": 1581879600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "ニアールからの便り",
+        "content": "ドクターへ\n　最近とあるオペレーターがカジミエーシュでの任務に参加しているのは知っているだろう？彼女の先祖はカジミエーシュからヴィクトリアにやってきた移民のひとりだ。\n　カジミエーシュはウルサス軍を幾度も国境線から退けてきたが、長年に渡る戦争に嫌気が差す住民も多く、それ以上に騎士たちの傲慢で尊大な態度に心底疲弊していた。だから、彼らはヴィクトリアに新しい生活を探しに行ったというわけだ。カジミエーシュの隆盛の裏には、大きな影があるということだな。\n\nニアール",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_7": {
+        "id": "mail_500w_kazimierz_7",
+        "type": "NORMAL",
+        "sortId": 21,
+        "displayReceiveTs": 1581966000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "カジミエーシュからの連絡⑦",
+        "content": "ドクター\n　グラニの報告によると、今回の任務ではやはりレユニオン部隊の痕跡が見られたとのことです。この部隊はレユニオンから完全に独立したチームのようで、命令や指示を受けている様子は全くありませんでした。なので真の脅威にはなりませんでしたが……レユニオンの影響は一体どこまで広がっているのでしょうか？\n\nロドス連絡員",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_newyear_2021_1": {
+        "id": "mail_newyear_2021_1",
+        "type": "NORMAL",
+        "sortId": 22,
+        "displayReceiveTs": 1627642800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_121_lava",
+        "title": "ラヴァからのお祝い",
+        "content": "ほらよドクター、祝いの品だ。ニェンからだよ、アタシは持ってきただけ。\nオマエを呼びにここまで来る途中で、たまたま会って頼まれたんだ。\nドクター、みんなオマエのこと待ってるぞ。仕事してないでパーティーの準備に行ったらどうだ。\nああ、祝いの言葉がまだだったな。1.5周年おめでとう。次の記念日までの間、ハイビスの健康食を食わなくて済むように祈ってるよ。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_2": {
+        "id": "mail_newyear_2021_2",
+        "type": "NORMAL",
+        "sortId": 23,
+        "displayReceiveTs": 1627646400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_130_doberm",
+        "title": "ドーベルマンからのお祝い",
+        "content": "これは教官陣からの少しばかりの祝いの気持ちだ。ドクター、1.5周年おめでとう。\n今日は訓練の予定は入っていないから、私も珍しく時間を気にせずにゆっくりできるんだ。\nずっと伝えようと思っていたことがあるんだが、今が良い機会だろう。……ドクター、この1年と半年、お前が我々の仕事を、変わることなく支持し続けてくれたことに感謝する。\n次の節目にもまたお互い無事でこうして顔を合わせることができることを願おう。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_3": {
+        "id": "mail_newyear_2021_3",
+        "type": "NORMAL",
+        "sortId": 24,
+        "displayReceiveTs": 1627650000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_325_bison",
+        "title": "バイソンからのお祝い",
+        "content": "こんにちは、ドクター。あなた宛の荷物を届けに来ました。サインをお願いします。\nそれからこちらは、ぼく個人からドクターへの贈り物です。受け取ってください。\nはは、いつも忙しいのに慣れてしまって、こんなおめでたい日でも何かしていないと落ち着かないんですよ。\nドクターはぼくの真似をしないでくださいね、休めるときにはお休みになって下さい。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_4": {
+        "id": "mail_newyear_2021_4",
+        "type": "NORMAL",
+        "sortId": 25,
+        "displayReceiveTs": 1627653600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2014_nian",
+        "title": "飯食いに行こうぜ！",
+        "content": "来たぞ、1.5周年だ！　ほら、オメーにオモチャを用意したんだ、やるよ。\nなんだ、まだ早いって？　つれねぇこというなって。ちっとばっかし早かろうが遅かろうがどうでもいいだろ、いいから受けとれよ。\nふんっ、私はラヴァのやつみたいに誰かの名を借りて物を贈ったりしねぇからな！\nそれじゃ確かに渡したぞ。またなぁ！",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_5": {
+        "id": "mail_newyear_2021_5",
+        "type": "NORMAL",
+        "sortId": 26,
+        "displayReceiveTs": 1627657200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "ドクターへ",
+        "content": "ドクター、1.5周年おめでとうございます！　お仕事の進捗はどうですか？\nバイソンさんに頼んで贈り物を届けてもらったのですが、炎国のオペレーターがいうには、節目の日には手渡しで自分が選んだプレゼントを贈ってこそ、より気持ちが伝わるらしいんです。\nなので、その、私いくつか、選んできたんです。ドクターのお気に召すでしょうか？\nあっ。ーー良かった。伝わった気がします。喜んでいただけたなら良かったです！",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_1": {
+        "id": "mail_newyear_2022_1",
+        "type": "NORMAL",
+        "sortId": 27,
+        "displayReceiveTs": 1658556000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_124_kroos",
+        "title": "サプライズ！",
+        "content": "2.5周年おめでとぉ〜！\nドクター、また仕事ぉ？　\n本当は直接渡したかったけど、見当たらなかったから、プレゼントは執務室に置いとくよぉ〜。\n何をあげようか、すごく迷って色々取り寄せたんだぁ。\n私の一番大好きな缶詰も入れておいたから、気に入ってくれると思う〜。\n\n（追伸）こないだサボってたの、ドーベルマン教官とフェンちゃんには秘密にしてくれると嬉しいなぁ〜。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_2": {
+        "id": "mail_newyear_2022_2",
+        "type": "NORMAL",
+        "sortId": 28,
+        "displayReceiveTs": 1658559600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_243_waaifu",
+        "title": "気持ちばかりですが",
+        "content": "ドクター、記念日が近いと伺いました！\n私の方からも、ささやかですが龍門の宮保肉丁と贈り物の詰め合わせです。\nしょっぱめの味付けなのでご飯や麺と合わせて召し上がって下さい。\n温めるだけで食べれますから、忙しいドクターにもおすすめです。\nアルバイトでお世話になってしばらく経ちますが、私も引き続きみなさんの役に立てるよう頑張ります。\n改めて、今後ともよろしくお願いしますね！",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_3": {
+        "id": "mail_newyear_2022_3",
+        "type": "NORMAL",
+        "sortId": 29,
+        "displayReceiveTs": 1658563200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_172_svrash",
+        "title": "祝いの品",
+        "content": "我々に条約があるからといって、全てをビジネスに結びつける必要はない。\nロドスの祝い事が近いと聞いたので贈り物を用意した。受け取って欲しい。\n長年イェラガンドへの供物としてのみ用いられてきた上等な獣肉だ。\nそれが今こうしてお前の食卓に上がることがどういう意味か、わからないお前ではあるまい。\n私の誠意を理解してくれるだろう。今後ともよろしく頼む、我が盟友よ。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_4": {
+        "id": "mail_newyear_2022_4",
+        "type": "NORMAL",
+        "sortId": 30,
+        "displayReceiveTs": 1658566800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_003_kalts",
+        "title": "補給物資及び2.5周年の件",
+        "content": "ドクター、この後に予定されているパーティーだが、こうしたイベント事は、オペレーターたちの精神的な圧力の一時的な緩和に大いに資すると考えられる。\nしかしキミや私のような立場であれば、彼らの喜ぶ顔を見て、かえって自分自身の責務の重さを感じることもあるだろう。\nそれを理解しながらも、あえて言わせてもらう。君は彼らの輪に加わるべきだ。\n日夜職務を全うし続けてきたキミには、この一時を享受する資格がある。\nそのために補給物質を送った。オペレーターたちとの交流を存分に楽しめるよう願っている。\n\n（追伸）なお、同梱した立方体は食用だ。消費期限は長く、安全性にも問題ない。空腹を感じたらそのまま口に入れるといい。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_5": {
+        "id": "mail_newyear_2022_5",
+        "type": "NORMAL",
+        "sortId": 31,
+        "displayReceiveTs": 1658570100,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "ドクターへ",
+        "content": "ドクター、もうすぐ2.5周年ですね！　本日お仕事の進捗はいかがでしたか？\nこうして記念日を迎えるたびに、私はドクターとくぐり抜けた困難を思い出すんです。\nこれから先も様々なことが待ち受けていると思いますが、まずは今日この時間を共に過ごせることを、みなさんと思いっきりお祝いしましょう。\n一足先に私からのプレゼントをお送りしますね。食べ終わったら、感想をいただけると嬉しいです。\nドクター、これからもどうか私たちと一緒に歩み続けて下さい！",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_1": {
+        "id": "mail_newyear_2023_1",
+        "type": "NORMAL",
+        "sortId": 32,
+        "displayReceiveTs": 1690527600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2015_dusk",
+        "title": "なんとかして",
+        "content": "ドクター、私の部屋の前でしつこく誘いに来る連中を静かにさせてちょうだい。あいつらの浮かれた声に苛立って筆運びをしくじったんだから。\n第一ね、祝い事だからって、全員が喧しくしなきゃならない道理なんてないでしょ。これだから嫌なのよ。\n私は一人で静かに過ごしたいの。\nまあでも、しくじったところから即興で描いた絵は案外悪くなかったわ。\n私自身は全く興味ないけれど、記念日で浮き立った人たちの願いや、期待や、喜びが枝に実を成しているんでしょうね。\n捨てるほどでもないしあなたにあげるわ。\nそれじゃ、騒音の件、確かに頼んだわよ。\n\nあともう一つ。\nどうせ無粋な貴方のことだから、この柿は食べれるのかとか聞いてくるんでしょうけど、食べたいなら勝手に試しなさい。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_2": {
+        "id": "mail_newyear_2023_2",
+        "type": "NORMAL",
+        "sortId": 33,
+        "displayReceiveTs": 1690531200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_322_lmlee",
+        "title": "パーティーの件",
+        "content": "平素より大変お世話になっております。\nさて、貴社で記念パーティーを開かれるということで、この度はご案内をお送り頂き、誠に有難うございます。\n是非参加させていただきたく思います。\nよろしくお願いいたします。\n\nP.S.\n同便で炎国の菓子を送りました。おれの自作なんで、形が不格好なとこは笑ってくださいや。\n保存が効きますんで、仕事の合間にでも摘まんで一息ついてください。\nゆっくり茶を楽しむ時間ってのも人生にゃ必要なもんですよ、ドクター。\n\nリー探偵事務所 所長\nリー",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_3": {
+        "id": "mail_newyear_2023_3",
+        "type": "NORMAL",
+        "sortId": 34,
+        "displayReceiveTs": 1690534800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2014_nian",
+        "title": "飯食いに行こうぜ！",
+        "content": "ドクター、滅多にない休みだろ。一緒に火鍋つつこうぜ！\n休みじゃなくても誘ってるとか、そういう下がる突っ込みはやめろよ。\n食材は全部用意してあるし、卓上炉も作ってあるぞ。どんなデカイ鍋を持ってきても壊れねぇって保証してやるよ。\nスープの味が口に合わないっていうなら、買いに付き合ってやるし、とにかくこのメールをみたらさっさと部屋から出てこい。\n休みの日まで籠ってたらカビが生えちまうぞ。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_4": {
+        "id": "mail_newyear_2023_4",
+        "type": "NORMAL",
+        "sortId": 35,
+        "displayReceiveTs": 1690538400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_455_nothin",
+        "title": "祝いの品",
+        "content": "ドクター、おめでとう！\nここのところ会う度に言っている気がするが、こういうことは何度伝えてもいいだろうからね。\nこのウユウ、心からドクターとロドスの益々の繁栄を願っているよ。\n本当ならここで世にも珍しい贈り物でもできたらいいんだろうが、生憎と凡人の身では何の変哲もない普通の物しか思い浮かばなくてな。\n勾呉城だと、節目節目に成長を祝って餅を食べる風習があるから、それを贈るよ。\n噛み締めると少しばかり甘いのが特徴というくらいで普通の餅だが、これが美味いんだ。\nもし気に入ったら是非、一筆貰えると助かる。ドクターの好物となったら、今後休憩室で売るときに良い宣伝文句になるからさ。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_5": {
+        "id": "mail_newyear_2023_5",
+        "type": "NORMAL",
+        "sortId": 36,
+        "displayReceiveTs": 1690542000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "ドクターへ",
+        "content": "ドクター、お仕事お疲れ様です！\n前回のお祝いから、早いものでまた1年が経ちましたね。\n決して平穏とは言えない日々をなんとか乗り越えて、私たちが今日まで歩んでこれたのも、ロドスの仲間たちとドクターのおかげです。\nお忙しいと思いますが、記念パーティーには是非来てくださいね。\nそれと……いつも傍で支えてくれてくれるドクターへの個人的な感謝の気持ちとして、ささやかながら贈り物を準備しました。\nパパイヤのパイです。初めてレシピをアレンジして作ったので、お口に合うかは分かりませんが食べていただけると嬉しいです。\n感想をお待ちしていますね。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_1": {
+        "id": "mail_newyear_2024_1",
+        "type": "NORMAL",
+        "sortId": 37,
+        "displayReceiveTs": 1722408900,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_249_mlyss",
+        "title": "次からはちゃんと教えて！",
+        "content": "もう、なんであたしに今日が記念日だって言わなかったのよ。おかげで何の用意もできなかったじゃない……\n話を聞いてから急いで買ったから間に合わせだけれど、受け取って。\nお返しは期待してるわよ～。\nそれと、お祝いの言葉も必要よね？\nこれを送ったらすぐに、分身をあなたの傍にやるわ。ちょうどいいからプレゼントも一緒に持っていくわね。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_2": {
+        "id": "mail_newyear_2024_2",
+        "type": "NORMAL",
+        "sortId": 38,
+        "displayReceiveTs": 1722412800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_1016_agoat2",
+        "title": "記念日ですね",
+        "content": "お疲れ様です、先輩。\n時が経つのは本当に早いですね。ロドスでの思い出も、いつの間にかたくさんできて、今思うと皆さんに出会えたのは本当に幸運でした。\n以前に過去は過ぎ去ったからおしまいというわけではなくて、その時間が私たちに残したものが、形を変えてずっと寄り添ってくれるのだと聞いたことがあります。だからこういう日こそ、なるべく未来に目を向けたいです。\nまた来年も、この日を先輩と一緒にお祝いできたらすごく幸せです。\nささやかですが、私の好きなスイーツを同封しました。アズリウスさんがお手伝いしてくださって、一緒に作ったものです。\nどうか今日この日が先輩にとって素敵な一日になりますように。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_3": {
+        "id": "mail_newyear_2024_3",
+        "type": "NORMAL",
+        "sortId": 39,
+        "displayReceiveTs": 1722416400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_4098_vvana",
+        "title": "ありがとうございました",
+        "content": "親愛なるドクターへ。\n先ほどはお時間をいただき、誠にありがとうございました。\n素晴らしい祝賀会にお招きいただいて光栄です。\nそのお礼というほどのものではありませんが、ヴィヴィアナ個人として、贈り物をご用意しました。ご笑納ください。\n私たちの行く先を輝かしい星々が照らし続けていますように。\nそして、あなたがいつまでもこの船を導く灯火であり続けますように。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_4": {
+        "id": "mail_newyear_2024_4",
+        "type": "NORMAL",
+        "sortId": 40,
+        "displayReceiveTs": 1722420000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_4121_zuole",
+        "title": "お祝いを申し上げます",
+        "content": "歳月の流れは留まることなく、常に新しい水が流れ入るもの。\n本日はロドスが大きな節目を迎えられる日だと伺いました。謹んでお祝いを申し上げます。\n炎国でも、こうした日を大いなる敵とみなして、それを乗り越えることで運命を自らの手で切り拓く象徴にするのです。\n少々……硬い話になりましたね。\n実は、玉門から菓子を持参しました。私が幼い時分に好んで食していたものです。\n随分と年月は経ちましたが、あの頃と変わらぬ味でした。どうぞご賞味ください。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_5": {
+        "id": "mail_newyear_2024_5",
+        "type": "NORMAL",
+        "sortId": 41,
+        "displayReceiveTs": 1722423600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "ドクターへ",
+        "content": "お仕事お疲れ様です、ドクター！\n4.5周年のお祝いに贈り物を用意したのですが、もう受け取っていただけたでしょうか。\n今回は手軽に食べられるクッキーを作ってみました。お口に合うと嬉しいです。\nどんなに忙しくても、お腹が空いた時は我慢しちゃだめですよ。気分も落ち込んできますし、体にもよくないです。こうした軽食だけでもいいので食べてくださいね。\nそれで、ですね。あまり時間がなかったので、ひとまずはクリームを挟んだクッキーだけですが、もし他の味がお好きなら、その、ドクターもお菓子教室に参加して一緒に作ってみませんか？\nきっと楽しい思い出になると思うんです。\n\nここのところずっと遅くまでお仕事されていると聞きます。今日くらいは早めに休んでくださいね。\n明日、いえ……また朝にお会いしましょう。おやすみなさい、ドクター。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_amiyaBirth_2025_1": {
+        "id": "mail_amiyaBirth_2025_1",
+        "type": "NORMAL",
+        "sortId": 43,
+        "displayReceiveTs": 1734958800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "amiya_2024",
+        "title": "ドクターへ",
+        "content": "お仕事、お疲れ様です。\n今日はありがとうございました。\n皆さんにたくさんお祝いの言葉やプレゼントをいただいて、本当に嬉しかったです。\n先ほど、ケーキを切っている間にドクターの姿が見えなくなっていたので、きっとまだやり残した書類仕事があるのだと思って、こちらにお持ちしました。\n忘れずに食べてくださいね。\nそれと、次のドクターのバースデーケーキは私が用意をしてもいいですか？\n嫌だとは言わないと信じています。\nふふ、おやすみなさい、ドクター。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_120_2024_6",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      }
+    },
     "constData": {
       "funcOpenTs": 1749088800
     }
