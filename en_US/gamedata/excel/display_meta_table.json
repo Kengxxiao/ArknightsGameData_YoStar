@@ -993,12 +993,45 @@
         "dynAvatarId": null
       },
       {
+        "avatarId": "avatar_activity_WB",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 55,
+        "avatarIdDesc": "[Where Vernal Winds Will Never Blow] Record Restoration\n'Where Vernal Winds Will Never Blow'",
+        "avatarItemName": "'Where Vernal Winds Will Never Blow'",
+        "avatarItemDesc": "Yellow sands soar, war drums roar—",
+        "avatarItemUsage": "Can be set as an icon, serving for personal branding.",
+        "obtainApproach": "Obtained from Record Restoration",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_activity_RL4_2",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 56,
+        "avatarIdDesc": "[Integrated Strategies] Limited-Time Mission\n'Pursue'",
+        "avatarItemName": "'Pursue'",
+        "avatarItemDesc": "They do not seek the same wish, but they reach out for a chance to make it.",
+        "avatarItemUsage": "Can be set as an icon, serving for personal branding.",
+        "obtainApproach": "From Integrated Strategies Limited-Time Mission",
+        "dynAvatarId": null
+      },
+      {
         "avatarId": "avatar_activity_FD",
         "avatarType": "ACTIVITY",
         "avatarIdSort": 57,
         "avatarIdDesc": "[The Black Forest Wills A Dream] Record Restoration\n'The Black Forest Wills A Dream'",
         "avatarItemName": "'The Black Forest Wills A Dream'",
         "avatarItemDesc": "Sami listens to what you seek. Sami guides your path.",
+        "avatarItemUsage": "Can be set as an icon, serving for personal branding.",
+        "obtainApproach": "Obtained from Record Restoration",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_activity_FC",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 58,
+        "avatarIdDesc": "[What the Firelight Casts] Record Restoration\n'What the Firelight Casts'",
+        "avatarItemName": "'What the Firelight Casts'",
+        "avatarItemDesc": "A single spark illuminates the path.",
         "avatarItemUsage": "Can be set as an icon, serving for personal branding.",
         "obtainApproach": "Obtained from Record Restoration",
         "dynAvatarId": null
@@ -1296,7 +1329,10 @@
           "avatar_activity_VEC1",
           "avatar_activity_IS",
           "avatar_activity_AC",
+          "avatar_activity_WB",
+          "avatar_activity_RL4_2",
           "avatar_activity_FD",
+          "avatar_activity_FC",
           "avatar_activity_ARC1"
         ]
       },
@@ -1572,6 +1608,19 @@
         "unlockDesList": [
           "Obtained by buying a Tales of Stratopolis Pack in [Store]"
         ]
+      },
+      {
+        "bgId": "bg_sui_1",
+        "bgSortId": 21,
+        "bgStartTime": 1750438800,
+        "bgName": "Green Buds",
+        "bgMusicId": "music_bg_sui",
+        "bgDes": "Green rice buds sway, gilded millet bows; To the wind's brush that paints the land's scrolls.",
+        "bgUsage": "A photo, a memory, a moment in time that encapsulates the entirety of Terra.",
+        "obtainApproach": "Purchase Pack",
+        "unlockDesList": [
+          "Obtained by buying Dahuang Sprout Pack in [Store]"
+        ]
       }
     ],
     "themeList": [
@@ -1686,6 +1735,22 @@
         "rarity": 5
       },
       {
+        "id": "tm_sui_1",
+        "type": "ACTIVITY",
+        "sortId": 8,
+        "startTime": 1750438800,
+        "tmName": "Dahuang",
+        "tmDes": "Plates rise and fall in an orderly manner, the people upon them planting a future of plenty.",
+        "tmUsage": "The PRTS interface has been redesigned without changing its functionality.",
+        "obtainApproach": "Procurement Center Pack",
+        "unlockDesList": [
+          "Obtained by buying Dahuang Sprout Pack in [Store]"
+        ],
+        "isLimitObtain": true,
+        "hideWhenLimit": true,
+        "rarity": 5
+      },
+      {
         "id": "tm_arcade_1",
         "type": "ACTIVITY",
         "sortId": 9,
@@ -1738,6 +1803,18 @@
             "displayAfterEndTime": false
           }
         ]
+      },
+      "bg_sui_1": {
+        "bgId": "bg_sui_1",
+        "limitInfos": [
+          {
+            "limitInfoId": "bg_sui_1#1",
+            "startTime": 1750438800,
+            "endTime": 1752231599,
+            "invalidObtainDesc": "Currently unobtainable",
+            "displayAfterEndTime": false
+          }
+        ]
       }
     },
     "themeLimitData": {
@@ -1767,6 +1844,16 @@
           {
             "startTime": 1741626000,
             "endTime": 1742813999,
+            "invalidObtainDesc": "Not Available"
+          }
+        ]
+      },
+      "tm_sui_1": {
+        "id": "tm_sui_1",
+        "limitInfos": [
+          {
+            "startTime": 1750438800,
+            "endTime": 1752231599,
             "invalidObtainDesc": "Not Available"
           }
         ]
@@ -2237,7 +2324,674 @@
     }
   },
   "mailArchiveData": {
-    "mailArchiveInfoDict": {},
+    "mailArchiveInfoDict": {
+      "mail_500w_closure_1": {
+        "id": "mail_500w_closure_1",
+        "type": "NORMAL",
+        "sortId": 1,
+        "displayReceiveTs": 1579690800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\nThanks for working so hard these days. Rhodes Island wouldn't have made it this far without your efforts.\nHope this salted egg yolk flavor chocolate, or I should say the calories it has, can help relieve your pressure at work.\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_2": {
+        "id": "mail_500w_closure_2",
+        "type": "NORMAL",
+        "sortId": 2,
+        "displayReceiveTs": 1579777200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\nOperators of the Medical Department keep reminding me high-calorie and high-fat food is extremely bad for our health and body figure...\nBut it tastes just GOOD!\nHere's the same chocolate I gave you yesterday. Enjoy another bite.\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_3": {
+        "id": "mail_500w_closure_3",
+        "type": "NORMAL",
+        "sortId": 3,
+        "displayReceiveTs": 1579863600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\nI like having snacks during overtime to focus, just like you do. I guess that's what all modern workers have in common.\nBut it seems useless to distracted Operators.\nHere's the chocolate for today.\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_4": {
+        "id": "mail_500w_closure_4",
+        "type": "NORMAL",
+        "sortId": 4,
+        "displayReceiveTs": 1579950000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\nYou know what, actually most snacks from the Purchase Department were developed by accident during our drug researches. Incredible food that was developed unintentionally, sounds romantic, right?\nWell, but we didn't develop this chocolate. It's from a friend of mine.\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_5": {
+        "id": "mail_500w_closure_5",
+        "type": "NORMAL",
+        "sortId": 5,
+        "displayReceiveTs": 1580036400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\nGood morning! I got good news today. Many Operators love the chocolate! Looks like it will become the bestselling snack soon!\nHere's another one for you! But you gotta pay LMD for it next time!\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_6": {
+        "id": "mail_500w_closure_6",
+        "type": "NORMAL",
+        "sortId": 6,
+        "displayReceiveTs": 1580122800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\n... The formal sale of the chocolate has been rejected.\nThe reason seems to be the strong objection of Miss Dobermann, Cardigan and other Operators. I don't know why but they just oppose the spread of this snack.\nSo I guess I can only give them to you.\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_7": {
+        "id": "mail_500w_closure_7",
+        "type": "NORMAL",
+        "sortId": 7,
+        "displayReceiveTs": 1580209200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "Greetings from Closure",
+        "content": "Doctor,\nThe chocolate plan did fail, but that's not even a setback for a researcher!\nThe development of new sanity food is ongoing! Please stay tuned!\nHere's the last chocolate. Please take them out for me.\n\nClosure",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_5002_amiya_1": {
+        "id": "mail_5002_amiya_1",
+        "type": "NORMAL",
+        "sortId": 8,
+        "displayReceiveTs": 1580900400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Letter from Amiya",
+        "content": "Dear Doctor,\nLast time when we talked about Kazimierz, Dr. Kal'tsit sent me away.\nI heard it's a country full of mountains and forests, and it has many legends and relics. I really feel like travelling there with you.\nHere's the lunch for today. It's fine to have fast food sometimes. I love its drink!\n\nAmiya",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_1": {
+        "id": "mail_500w_kazimierz_1",
+        "type": "NORMAL",
+        "sortId": 9,
+        "displayReceiveTs": 1580986800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz①",
+        "content": "Doctor,\nHere's the news from the outskirts of Kazimierz. Operator Grani has arrived in Dewville safely, but our communicate has become slow and irregular. It's strange because that village is remote though, it is supposed to have functional communication equipment.\nHope everything is fine.\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_5002_amiya_2": {
+        "id": "mail_5002_amiya_2",
+        "type": "NORMAL",
+        "sortId": 10,
+        "displayReceiveTs": 1581073200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Letter from Amiya",
+        "content": "Dear Doctor,\nSo you are also interested in Kazimierz? Great! I love the stories Miss Meteor and Miss Meteorite told me! By the way, although Miss Nearl is also from Kazimierz, she said the Kazimierz she knows may be different from the one in Miss Meteor's mind. I wonder why...\n\nAmiya",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_2": {
+        "id": "mail_500w_kazimierz_2",
+        "type": "NORMAL",
+        "sortId": 11,
+        "displayReceiveTs": 1581159600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz②",
+        "content": "Doctor,\nOperator Grani has managed to enter the village and meet the client.\nThe village has been damaged to some extent, but the government of Kazimierz didn't send any help to it.\nI feel anxious about the villagers there.\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_meteo_1": {
+        "id": "mail_500w_meteo_1",
+        "type": "NORMAL",
+        "sortId": 12,
+        "displayReceiveTs": 1581246000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Greetings from Meteorite",
+        "content": "Honorable Doctor,\nWould you like to know something about Kazimierz? The Kazimierz Knight Tournament has attracted so many travelers these years, and the knights from the ancient times have become part of the game and the symbol of the country. I love the tournament, too! I've collected a lot of knight posters, including Miss Nearl's! But please keep it a secret from Miss Nearl. Thank you.\n\nMeteorite",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_3": {
+        "id": "mail_500w_kazimierz_3",
+        "type": "NORMAL",
+        "sortId": 13,
+        "displayReceiveTs": 1581332400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz③",
+        "content": "Doctor,\nGrani Operator has confirmed the content of the mission. She is entering the undeveloped forests of Kazimierz.\nI've received report that massive unknown forces have set an ambush there.\nBut they seem to be prepared, so we can look forward to their next message.\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_shotst_1": {
+        "id": "mail_500w_shotst_1",
+        "type": "NORMAL",
+        "sortId": 14,
+        "displayReceiveTs": 1581418800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Greetings from Meteor",
+        "content": "Dear Doctor,\nAmiya told me you are also interested in Kazimierz, right? I have lived in the forest of Kazimierz in most of my time.\nThose are vast forests with precious woods and animals, so there are also quite some poachers. We love the forests, so we take responsibility for guarding them.\nGo visit there if you have the chance. I'm sure the forest of Kazimierz will give you a warm welcome.\n\nMeteor",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_4": {
+        "id": "mail_500w_kazimierz_4",
+        "type": "NORMAL",
+        "sortId": 15,
+        "displayReceiveTs": 1581505200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz④",
+        "content": "Doctor,\nDewville is not a rare example. The whole outskirts of Kazimierz is basically self-governing.\nDue to their locations, all the villages in the region often get harassed by the thugs that pass by.\nIt looks like the government of Kazimierz abandoned them long ago.\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_meteo_2": {
+        "id": "mail_500w_meteo_2",
+        "type": "NORMAL",
+        "sortId": 16,
+        "displayReceiveTs": 1581591600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Greetings from Meteorite",
+        "content": "Honorable Doctor,\nWell, please don't ask Firewatch anything about Kazimierz. She has a complicated feeling about this country.\nDifferent from the powerful cities it has, the villages there are mostly remote and poor, and Firewatch's village is one of them. Apparently she loves her hometown, but it's also true that she hates the Kazimierz government, as they never sent any help.\n\nMeteorite",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_5": {
+        "id": "mail_500w_kazimierz_5",
+        "type": "NORMAL",
+        "sortId": 17,
+        "displayReceiveTs": 1581678000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz⑤",
+        "content": "Doctor,\nAfter the investigation, we have confirmed that Kazimierz knights did have a special custom—leaving legacies to the people—as they hoped to give something to the descendants even after they died, and they often set some tests in the way. But the tests are too difficult for most people so they gave up the search long ago.\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_nearl_1": {
+        "id": "mail_500w_nearl_1",
+        "type": "NORMAL",
+        "sortId": 18,
+        "displayReceiveTs": 1581764400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Greetings from Nearl",
+        "content": "Distinguished Doctor,\nIt seems that many Operators have told you about the situation of Kazimierz. I am not writing to blame or cover anything. As my homeland, Kazimierz has its own beauty and greatness, but corruptions also exist. I am not an objector of the Knight Tournament, but the gray powers and trades behind it have destroyed the rebirth of the creed of the ancient knights, and even turned it into a promotion tool and the cover of the fake peace.\n\nNearl",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_6": {
+        "id": "mail_500w_kazimierz_6",
+        "type": "NORMAL",
+        "sortId": 19,
+        "displayReceiveTs": 1581850800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz⑥",
+        "content": "Doctor,\nWe have received Operator Grani's response and it looks like the mission in Dewville is almost done.\nThey have managed to find the treasure, fix the village, defeat the bounty hunters and even save the enemies that needed help.\nThe mounted police of Rhodes Island deserves her reputation.\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_nearl_2": {
+        "id": "mail_500w_nearl_2",
+        "type": "NORMAL",
+        "sortId": 20,
+        "displayReceiveTs": 1581937200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Nearl",
+        "content": "Dear Doctor,\nDid you know that an operator has been carrying out a mission in Kazimierz lately? Her father was one of the migrants who traveled to Victoria from Kazimierz. Although Kazimierz has pushed back Ursus every time it has tried to invade their border, many civilians there were tired of the warring and could no longer stand the pride and arrogance of the knights. That's why they moved to Victoria to start a new life. Kazimierz's great power is also not without a great weakness.\n\nNearl",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_7": {
+        "id": "mail_500w_kazimierz_7",
+        "type": "NORMAL",
+        "sortId": 21,
+        "displayReceiveTs": 1582023600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "Contact from Kazimierz⑦",
+        "content": "Doctor:\nAccording to Grani's report, one of Reunion's soldiers also participated in this operation. He acted independently from the rest of Reunion's power structure, and never received any orders or instructions from their leadership. While this person did not threaten our interests, one must wonder... How far has the influence of Reunion spread?\n\nLiaison of Rhodes Island",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_newyear_2021_1": {
+        "id": "mail_newyear_2021_1",
+        "type": "NORMAL",
+        "sortId": 22,
+        "displayReceiveTs": 1627700400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_121_lava",
+        "title": "Blessings from Lava",
+        "content": "Happy 1.5 Anniversary, Doctor! Nian just asked me to bring you some presents.\nI happened to pass by and thought I could be of help.\nGet ready for the celebration, Doctor! Why are you still working?\nAnyways, just have fun and stay away from Hibiscus's Healthy Meal.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_2": {
+        "id": "mail_newyear_2021_2",
+        "type": "NORMAL",
+        "sortId": 23,
+        "displayReceiveTs": 1627704000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_130_doberm",
+        "title": "Blessings from Dobermann",
+        "content": "Here are some presents from the instructors. Happy 1.5 Anniversary, Doctor.\nThere is no training session today so I can finally take a break as well.\nJust wanna say thank you for always being so supportive.\nAnd I hope next anniversary we can get together and celebrate again.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_3": {
+        "id": "mail_newyear_2021_3",
+        "type": "NORMAL",
+        "sortId": 24,
+        "displayReceiveTs": 1627707600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_325_bison",
+        "title": "Blessings from Bison",
+        "content": "Hello Doctor, I have a delivery for you, please sign here.\nAnd here's another delivery from myself, hope you'll like it!\nAhaha, I've so grown used to the busy schedule and can't let myself rest even during celebrations.\nDon't be like me. Rest when you can, Doctor!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_4": {
+        "id": "mail_newyear_2021_4",
+        "type": "NORMAL",
+        "sortId": 25,
+        "displayReceiveTs": 1627711200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2014_nian",
+        "title": "Blessings from Nian",
+        "content": "Hey, it's the 1.5 Anniversary, I've got you a little something.\nOf course I know it's not time yet. A little bit early won't make a difference, just take it.\nUnlike Lava, I don't give out presents pretending it's from someone else~\nSee ya!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_5": {
+        "id": "mail_newyear_2021_5",
+        "type": "NORMAL",
+        "sortId": 26,
+        "displayReceiveTs": 1627714800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "Blessings from Amiya",
+        "content": "Doctor, Happy 1.5 Anniversary! Everything's going alright?\nI have asked Bison to deliver my presents to you, but operators from Yen told me it's only presents handed in person that matter.\nSo, I... I have picked these for you. I hope you like it...\nI'm... I'm feeling your delight! I'm glad you like my presents, Doctor!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_1": {
+        "id": "mail_newyear_2022_1",
+        "type": "NORMAL",
+        "sortId": 27,
+        "displayReceiveTs": 1658556000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_124_kroos",
+        "title": "Blessings from Kroos",
+        "content": "Doctor~\nI've been looking everywhere for you! I just went and put your gifts in your office. I went to a lot of trouble to get you these~\nI even put in a can of my absolute favorite food. I do hope you'll like it.\nNow if you accept my gift, you can't call me lazy ever again~\nHa~ppy~ Anni~versary~",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_2": {
+        "id": "mail_newyear_2022_2",
+        "type": "NORMAL",
+        "sortId": 28,
+        "displayReceiveTs": 1658559600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_243_waaifu",
+        "title": "Blessings from Waai Fu",
+        "content": "Doctor, it's about time for another anniversary~\nTake a look at my gift: it's a bit of Lungmen Kung Pao Fowlbeast, among other things.\nDo be sure to have some rice or noodles with the Kung Pao Fowlbeast. Wouldn't want the salt to overwhelm you.\nI really have to thank you so much for everything you've done for me since I came to Rhodes Island. I've learned so much during my internship here.\nI'm confident that, through all our efforts, Rhodes Island has an even brighter future ahead of her. And I'll do what I can to that end.\nNow, let me give you a traditional Yanese blessing for the future, Doctor. Wish you good health!\n",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_3": {
+        "id": "mail_newyear_2022_3",
+        "type": "NORMAL",
+        "sortId": 29,
+        "displayReceiveTs": 1658563200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_172_svrash",
+        "title": "Blessings from SilverAsh",
+        "content": "We're well beyond any sort of transactional relationship, my friend.\nThe anniversary draws near, so on behalf of Karlan Trade and the Silverash Clan——\nI offer you this gift.\nThis beastmeat of the finest quality, once offered only as a sacrifice to Kjeragandr, is now yours to enjoy.\nA heartfelt expression of my sincerity.\nNow then, let us join in celebration together.\n",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_4": {
+        "id": "mail_newyear_2022_4",
+        "type": "NORMAL",
+        "sortId": 30,
+        "displayReceiveTs": 1658566800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_003_kalts",
+        "title": "Blessings from Kal'tsit",
+        "content": "These celebrations do a lot to relieve the stress on our operators. But for you and I, Doctor, do you feel the weight of responsibility on your shoulders that much heavier as you watch them revel in their joy?\nEven so, I suggest you join them. As a reward for your hard work.\nI've allocated some supplies for you, and I hope you will indulge yourself, feel the camaraderie, and let yourself have fun.\nThis cube here is for you. It's edible, keeps for quite a long time, and is completely unadulterated. Just pop it into your mouth when you feel hungry.\n",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_5": {
+        "id": "mail_newyear_2022_5",
+        "type": "NORMAL",
+        "sortId": 31,
+        "displayReceiveTs": 1658570100,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "Blessings from Amiya",
+        "content": "It's almost time for another anniversary,\nDoctor. How do you feel? We've been through a lot this past year, so we have to let ourselves go and have a good time!\nHere are some gifts I prepared for you. And I hope you'll be as cheerful every day as you are receiving them here today.\nI need you walking this path with me for a long time to come!\nOh, and do let me know if you enjoy the cake.\n",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_1": {
+        "id": "mail_newyear_2024_1",
+        "type": "NORMAL",
+        "sortId": 32,
+        "displayReceiveTs": 1722448800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_249_mlyss",
+        "title": "Blessings from Muelsyse",
+        "content": "How come no one told me today was a special day? I could've had way more time to get you a good present...\nI searched like crazy, and still had to settle for getting you all this li'l itsy-bitsy stuff.\nYou'd better have something good for me back~\nOh, and I've gotta say something to mark the occasion, right?\nThen you just gimme a sec, Doctor, prommy?\nI'll send a Flowing Shape your way now.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_2": {
+        "id": "mail_newyear_2024_2",
+        "type": "NORMAL",
+        "sortId": 33,
+        "displayReceiveTs": 1722449700,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_1016_agoat2",
+        "title": "Blessings from Eyjafjalla the Hvít Aska",
+        "content": "Happy Anniversary, Professor.\nTime flies so fast. I can't believe how long I've been with Rhodes Island now. I was so lucky to have met you, and so many other friends here.\nSomeone once told me 'The past isn't truly over. They're always by your side, in one way or another.' On a day like this, let's say goodbye to the past with an unburdened heart.\nBy the way, Blue Poison helped me make a dessert you'd like. I hope you really do enjoy it, and I wish you a sweet holiday.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_3": {
+        "id": "mail_newyear_2024_3",
+        "type": "NORMAL",
+        "sortId": 34,
+        "displayReceiveTs": 1722450600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_4098_vvana",
+        "title": "Blessings from Viviana",
+        "content": "Hallo, Doctor, Happy Anniversary.\nWhat a lively day this has been. I am most grateful to you and Rhodes Island for the hospitality. I'm having a wonderful time.\nI've prepared some gifts for you, as a token of my appreciation. I do hop you will accept them with a smile.\nMay our future be a starlit one. And may you, my dear Doctor, enjoy good health and success in all your affairs.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_4": {
+        "id": "mail_newyear_2024_4",
+        "type": "NORMAL",
+        "sortId": 35,
+        "displayReceiveTs": 1722451500,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_4121_zuole",
+        "title": "Blessings from Zuo Le",
+        "content": "The passage of time welcomes new beginnings and great progress.\nI offer a sincere wish for your joy, health, and peace in the coming year. Today holds extraordinary significance for every subject of Great Yan.On the mythological front, it symbolizes humanity's triumph over our great enemy, seizing the right to command our own destiny.\nMan conquers Heaven, Man's work manifests.\nIs that... perhaps a bit too grave?\nLet me offer you some sweets I brought from Yumen, a favorite from my childhood. Many years have passed, yet the taste remains the same. I hope you'll enjoy them too.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_5": {
+        "id": "mail_newyear_2024_5",
+        "type": "NORMAL",
+        "sortId": 36,
+        "displayReceiveTs": 1722452400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "Blessings from Amiya",
+        "content": "Happy Anniversary, Doctor!\nI sent a gift for you. I wonder if you got it yet? I made you some little cookies this time, the kind that are easy to carry around. I hope you like them.\nSo if you get hungry, don't starve yourself, have a cookie to take the edge off. That's good for your body and your mood.\nI only had time to make the cream-filled ones for now. If you want to try another flavor, maybe we could make them together in a dessert class?\nAfter all, sweet memories come back easier than bitter ones.\nIt's getting late. Don't stay up too long.\nSee you... in the morning... Doctor~",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_amiyaBirth_2025_1": {
+        "id": "mail_amiyaBirth_2025_1",
+        "type": "NORMAL",
+        "sortId": 38,
+        "displayReceiveTs": 1734957780,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "amiya_2024",
+        "title": "A Thank-you Letter from Amiya",
+        "content": "Thank you so much, Doctor. I was really happy to receive so many blessings and gifts today.\nYou had already left when we were cutting the cake, probably caught up with work again, I guess? So I saved you a slice—make sure you eat it.\nNext time, when your birthday comes, I'll prepare a cake for you in return. Don't say no—I know you're actually looking forward to it.\nHehe. Good night, Doctor.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_120_2024_6",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      }
+    },
     "constData": {
       "funcOpenTs": 1749124800
     }
