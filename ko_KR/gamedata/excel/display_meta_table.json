@@ -993,12 +993,45 @@
         "dynAvatarId": null
       },
       {
+        "avatarId": "avatar_activity_WB",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 55,
+        "avatarIdDesc": "[등림의] 기록 복원\n'등림의'",
+        "avatarItemName": "'등림의'",
+        "avatarItemDesc": "만 리나 흩날린 흙먼지, 울리기 시작한 정복의 북소리……",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "기록 복원 획득",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_activity_RL4_2",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 56,
+        "avatarIdDesc": "[통합 전략] 한정 임무\n'추적'",
+        "avatarItemName": "'추적'",
+        "avatarItemDesc": "사람마다 소원은 다르겠지만, 소원을 빌기 위해 모두 똑같이 두 손을 내민다.",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "통합 전략의 한정 임무에서 획득",
+        "dynAvatarId": null
+      },
+      {
         "avatarId": "avatar_activity_FD",
         "avatarType": "ACTIVITY",
         "avatarIdSort": 57,
         "avatarIdDesc": "[나무 그늘 속에 잠들다] 기록 복원\n'나무 그늘 속에 잠들다'",
         "avatarItemName": "'나무 그늘 속에 잠들다'",
         "avatarItemDesc": "사미는 그대의 요청에 귀 기울이고, 그대가 가는 길을 인도할 것이다.",
+        "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+        "obtainApproach": "기록 복원 획득",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_activity_FC",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 58,
+        "avatarIdDesc": "[불로 비춰주소서] 기록 복원\n'불로 비춰주소서'",
+        "avatarItemName": "'불로 비춰주소서'",
+        "avatarItemDesc": "아무리 작은 불빛이라도 앞길을 밝혀줄 수 있다.",
         "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
         "obtainApproach": "기록 복원 획득",
         "dynAvatarId": null
@@ -1296,7 +1329,10 @@
           "avatar_activity_VEC1",
           "avatar_activity_IS",
           "avatar_activity_AC",
+          "avatar_activity_WB",
+          "avatar_activity_RL4_2",
           "avatar_activity_FD",
+          "avatar_activity_FC",
           "avatar_activity_ARC1"
         ]
       },
@@ -1572,6 +1608,19 @@
         "unlockDesList": [
           "[구매센터]에서 던전 기담 패키지 구매 시 획득"
         ]
+      },
+      {
+        "bgId": "bg_sui_1",
+        "bgSortId": 21,
+        "bgStartTime": 1750402800,
+        "bgName": "푸름",
+        "bgMusicId": "music_bg_sui",
+        "bgDes": "벼는 푸르고 기장은 노랗게 익어가며, 아름다운 바람이 곡식을 어루만집니다.",
+        "bgUsage": "한 장의 사진, 한 편의 추억. 테라의 어느 순간이 담겨 있습니다.",
+        "obtainApproach": "패키지 구매",
+        "unlockDesList": [
+          "[구매센터]에서 대황성의 푸름 팩 구매 시 획득"
+        ]
       }
     ],
     "themeList": [
@@ -1686,6 +1735,22 @@
         "rarity": 5
       },
       {
+        "id": "tm_sui_1",
+        "type": "ACTIVITY",
+        "sortId": 8,
+        "startTime": 1750402800,
+        "tmName": "대황성",
+        "tmDes": "섹터는 질서 있게 오르내리고, 사람들은 수만 평의 논밭에 미래를 심어갑니다.",
+        "tmUsage": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
+        "obtainApproach": "구매센터 패키지",
+        "unlockDesList": [
+          "[구매센터]에서 대황성의 푸름 팩 구매 시 획득"
+        ],
+        "isLimitObtain": true,
+        "hideWhenLimit": true,
+        "rarity": 5
+      },
+      {
         "id": "tm_arcade_1",
         "type": "ACTIVITY",
         "sortId": 9,
@@ -1738,6 +1803,18 @@
             "displayAfterEndTime": false
           }
         ]
+      },
+      "bg_sui_1": {
+        "bgId": "bg_sui_1",
+        "limitInfos": [
+          {
+            "limitInfoId": "bg_sui_1#1",
+            "startTime": 1750402800,
+            "endTime": 1752173999,
+            "invalidObtainDesc": "획득처 미개방",
+            "displayAfterEndTime": false
+          }
+        ]
       }
     },
     "themeLimitData": {
@@ -1767,6 +1844,16 @@
           {
             "startTime": 1741590000,
             "endTime": 1742756399,
+            "invalidObtainDesc": "획득처 미개방"
+          }
+        ]
+      },
+      "tm_sui_1": {
+        "id": "tm_sui_1",
+        "limitInfos": [
+          {
+            "startTime": 1750402800,
+            "endTime": 1752173999,
             "invalidObtainDesc": "획득처 미개방"
           }
         ]
@@ -2237,7 +2324,764 @@
     }
   },
   "mailArchiveData": {
-    "mailArchiveInfoDict": {},
+    "mailArchiveInfoDict": {
+      "mail_500w_closure_1": {
+        "id": "mail_500w_closure_1",
+        "type": "NORMAL",
+        "sortId": 1,
+        "displayReceiveTs": 1579633200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "늘 열심히 일해줘서 고마워 박사, 지금의 로도스 아일랜드가 있을 수 있는 건, 전부 박사의 노력 덕분이라구! 앞으로도 열심히 일해달란 뜻으로 '솔티드 에크 초콜릿'을 보냈으니까, 일하다가 당 떨어지면 먹어줘!",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_2": {
+        "id": "mail_500w_closure_2",
+        "type": "NORMAL",
+        "sortId": 2,
+        "displayReceiveTs": 1579719600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "의료부 쪽에서 계속 뭐라 하는 거 있지, 고칼로리 고지방 간식은 건강과 몸매의 가장 큰 적이라고…… 그, 그치만! 못 참을 정도로 맛있는걸! 이건 어제 줬던 거랑 같은 초콜릿이야, 박사한테 하나 더 줄게!",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_3": {
+        "id": "mail_500w_closure_3",
+        "type": "NORMAL",
+        "sortId": 3,
+        "displayReceiveTs": 1579806000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "야근 할 땐 늘 간식을 먹으면서 집중을 하곤 해. 이게 바로 현대 직장인의 비애라는 거겠지. 주의력이 완전히 분산된 상태라면 뭘 먹어도 소용없겠지만…… 아참, 이건 오늘 분의 초콜릿이야. 까먹지 말고 받아둬.",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_4": {
+        "id": "mail_500w_closure_4",
+        "type": "NORMAL",
+        "sortId": 4,
+        "displayReceiveTs": 1579892400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "박사, 그거 알아? 사실 우리 구매부의 간식은 대부분 로도스 아일랜드에서 약물을 개발하다 우연히 만들어진 거란 거. 무심코 탄생시켜버린 작품이라니, 되게 낭만적이지 않아? 아, 안심해. 이 초콜릿은 그런 게 아니니까. 그, 그냥 친구한테 받은 거라구……",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_5": {
+        "id": "mail_500w_closure_5",
+        "type": "NORMAL",
+        "sortId": 5,
+        "displayReceiveTs": 1579978800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "박사~ 좋은 아침! 오늘은 좋은 소식이 있어. 바로 이번에 만든 초콜릿이 오퍼레이터들의 호평을 받고 있다는 소식이지! 이 초콜릿이 정식 판매될 날도 머지않았어! 오늘도 박사한테 하나 줄게! 다음부턴 용문폐로 사야 할 거라구!",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_6": {
+        "id": "mail_500w_closure_6",
+        "type": "NORMAL",
+        "sortId": 6,
+        "displayReceiveTs": 1580065200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "……솔티드 에그 초콜릿의 정식 출시가 취소됐어…… 도베르만 교관님이랑 카디건, 그리고 다른 오퍼레이터들이 완강히 반대했다더라고. 왜 다들 그렇게 반대하는 거지? 이렇게 된 이상, 그냥 박사한테 줄 수밖에 없겠네.",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_closure_7": {
+        "id": "mail_500w_closure_7",
+        "type": "NORMAL",
+        "sortId": 7,
+        "displayReceiveTs": 1580151600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "npc_007_closure",
+        "title": "클로저에게서 온 메시지",
+        "content": "초콜릿 계획은 실패했지만, 연구원한테 있어 실패란 늘 있는 일 아니겠어? 새로운 에너지 식품이 또 개발 중이니까, 기대해달라구! 이건 마지막으로 남은 초콜릿이니까, 박사가 대신 처리해줘.",
+        "rewardList": [
+          {
+            "id": "ap_item_SEC_60",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_5002_amiya_1": {
+        "id": "mail_5002_amiya_1",
+        "type": "NORMAL",
+        "sortId": 8,
+        "displayReceiveTs": 1580842800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "아미야에게서 온 메시지",
+        "content": "친애하는 박사님께,\n\n저번에 카시미어에 대한 얘기가 나왔을 때, 켈시 선생님께선 제게 자리를 비켜달라고 하셨었죠. 카시미어는 산지가 많아 수풀이 우거지고, 수많은 전설과 유적이 남아있는 나라라고 하던데, 꼭 한번 박사님과 함께 가보고 싶네요. 이건 제가 박사님께 보내드리는 점심이에요, 가끔은 이런 것도 나쁘지 않겠죠? 전 여기 음료수가 특히 마음에 들더라고요!\n\n아미야",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_1": {
+        "id": "mail_500w_kazimierz_1",
+        "type": "NORMAL",
+        "sortId": 9,
+        "displayReceiveTs": 1580929200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락①",
+        "content": "카시미어의 교외 구역에서 연락이 왔습니다. 오퍼레이터 그라니는 문제없이 물방울 마을에 무사히 도착했지만, 연락이 점차 뜸해지고 있습니다. 뭔가 이상합니다. 마을이 비교적 외딴곳에 떨어져 있다고 해도, 통신 설비는 제대로 있을 텐데 말이죠. 모든 일이 순조롭길 바라며, 이만 줄이겠습니다.\n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_5002_amiya_2": {
+        "id": "mail_5002_amiya_2",
+        "type": "NORMAL",
+        "sortId": 10,
+        "displayReceiveTs": 1581015600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "아미야에게서 온 메시지",
+        "content": "박사님도 카시미어에 대해 관심이 있으신가요? 정말 잘 됐네요, 저도 메테오 씨와 메테오라이트 씨가 해주는 카시미어 이야기를 무척 좋아하거든요! 근데 니어 씨는 카시미어 사람인데도, 어째서인지 메테오 씨네랑은 카시미어를 다르게 얘기하더라고요. 대체 무슨 일이 있었던 걸까요……\n\n아미야",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_2": {
+        "id": "mail_500w_kazimierz_2",
+        "type": "NORMAL",
+        "sortId": 11,
+        "displayReceiveTs": 1581102000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락②",
+        "content": "오퍼레이터 그라니는 성공적으로 마을에 진입했고, 이번 건의 의뢰인과 조우하였습니다. 마을은 어느 정도 파괴되었지만, 카시미어 당국에서는 어떠한 도움도 주지 않고 있는 상황입니다. 물방울 마을의 촌민들을 보고 있자면, 정말 불안할 따름입니다.\n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_meteo_1": {
+        "id": "mail_500w_meteo_1",
+        "type": "NORMAL",
+        "sortId": 12,
+        "displayReceiveTs": 1581188400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "메테오라이트에게서 온 메시지",
+        "content": "카시미어의 상황에 대해 알고 싶나? 카시미어 기사 시합 덕분에, 현재 카시미어에는 수많은 관광객이 몰리게 되었어. 고대에 존재했던 기사는 이제 시합에 참가하는 선수이자 국가의 상징이 되었지. 나도 여태까지 많은 기사들의 포스터를 모아왔을 정도로 기사 시합은 무척 좋아해! 심지어는 니어 씨의 과거 시절 포스터까지 갖고 있는걸!! 아… 이, 이 얘기, 니어 씨에게는 하지 마, 알겠지?",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_3": {
+        "id": "mail_500w_kazimierz_3",
+        "type": "NORMAL",
+        "sortId": 13,
+        "displayReceiveTs": 1581274800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락③",
+        "content": "박사님께,\n\n오퍼레이터 그라니가 이번 의뢰 내용을 확인하고, 카시미어의 미개발 삼림 지대에 진입했습니다. 하지만 지금까지 받은 보고로 미뤄봤을 때, 숲에는 신원이 확인되지 않은 인원이 다수 잠복해있는 것으로 확인됩니다. 그라니 측에선 이미 준비를 마쳤다고 하니, 다음 연락을 기다려주시기 바랍니다.\n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_shotst_1": {
+        "id": "mail_500w_shotst_1",
+        "type": "NORMAL",
+        "sortId": 14,
+        "displayReceiveTs": 1581361200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "메테오에게서 온 메시지",
+        "content": "아미야한테 들었어, 카시미어에 관심이 생겼다면서? 내가 또 카시미어의 숲에서 오래 살았거든. 카시미어의 숲은 정말 광활해, 희귀한 나무와 야생동물이 많다 보니, 그걸 노리는 나쁜 놈들도 상당히 많지. 그래서 늘 우리 같이 숲을 사랑하는 사람들이 책임지고 숲을 지키고 있는 거고. 기회가 되면 한 번 가보는 건 어때? 카시미어의 숲은 분명 박사를 반겨줄 거야.",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_4": {
+        "id": "mail_500w_kazimierz_4",
+        "type": "NORMAL",
+        "sortId": 15,
+        "displayReceiveTs": 1581447600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락④",
+        "content": "박사님께,\n\n물방울 마을뿐만 아니라, 카시미어의 교외 구역은 현재 기본적으로 전부 자치 상태라고 봐야 할 것 같습니다. 지리적인 위치로 인해, 근처의 모든 마을은 평소에도 늘 불청객들에게 유린당하고 해도 과언이 아닐 것입니다. 카시미어 당국은, 이미 오래전부터 이들을 포기해왔던 것 같습니다.\n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_meteo_2": {
+        "id": "mail_500w_meteo_2",
+        "type": "NORMAL",
+        "sortId": 16,
+        "displayReceiveTs": 1581534000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "메테오라이트에게서 온 메시지",
+        "content": "근데 박사, 파이어워치한테는 카시미어에 대해 물어보지 않는 편이 좋을 거야. 파이어워치는 카시미어에 대한 감정이 꽤 복잡할 테니까. 카시미어엔 강대한 도시들이 셀 수 없이 많지만, 외딴곳에 떨어진 촌락은 굉장히 가난하거든. 파이어워치가 있던 마을도 그런 가난한 마을 중 하나였어. 물론 파이어워치는 자기 고향을 무척 아끼지만, 자기 마을에 단 한 번도 손을 내밀어 준 적이 없는 카시미어에 대해선 아마 증오밖에 남아있지 않을 거야.",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_5": {
+        "id": "mail_500w_kazimierz_5",
+        "type": "NORMAL",
+        "sortId": 17,
+        "displayReceiveTs": 1581620400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락⑤",
+        "content": "박사님께,\n\n저희 조사에 따르면, 카시미어의 기사들에겐 자신의 유산을 사람들에게 남겨주는 풍습이 있었다고 합니다. 비록 목숨을 다하였지만, 이러한 방식으로 후대 사람들에게 자신의 유산을 남겨주었던 겁니다. 하지만 이 유산을 얻으려면 시련을 통과해야 하는 경우가 많았다고 합니다. 사람들이 긴 시간 동안 점차 유산을 찾기를 포기하게 만들기 위해서 말이죠.\n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_nearl_1": {
+        "id": "mail_500w_nearl_1",
+        "type": "NORMAL",
+        "sortId": 18,
+        "displayReceiveTs": 1581706800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "니어에게서 온 메시지",
+        "content": "아무래도 몇몇 오퍼레이터가 박사에게 카시미어의 근황을 폭로해주고 있다는 것 같더군. 이에 대해 지적을 하거나 사실을 감추고 싶은 마음은 없어. 카시미어는 나의 조국이다. 아름답고 위대한 곳도 있지만, 병들고 부패한 도시도 있지. 기사 시합 자체에 대해 반대하는 편은 아니다. 하지만 그 배후에 있는 부패한 세력과 손을 잡은 뒤로, 새롭게 태어나고자 하는 고대의 카시미어 기사들의 신조는, 겉보기에 그럴싸한 이미지를 홍보하는 수단이 되어버리고 말았지…",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_6": {
+        "id": "mail_500w_kazimierz_6",
+        "type": "NORMAL",
+        "sortId": 19,
+        "displayReceiveTs": 1581793200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락⑥",
+        "content": "박사님께,\n\n오퍼레이터 그라니로부터 회신이 도착했습니다. 물방울 마을에서의 임무가 거의 완료된 것으로 보입니다. 그라니는 바운티 헌터들을 물리치며 보물을 찾아내 마을을 성공적으로 복원시켰고, 도움이 필요한 일부 적들을 돕기까지 했다고 합니다. 로도스 아일랜드의 기마경찰이라는 이름이 무색하지 않을 훌륭한 활약이었습니다. \n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_nearl_2": {
+        "id": "mail_500w_nearl_2",
+        "type": "NORMAL",
+        "sortId": 20,
+        "displayReceiveTs": 1581879600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "니어에게서 온 메시지",
+        "content": "최근에 한 오퍼레이터가 카시미어에서 수행한 임무에 대해선 알고 있겠지? 그녀의 아버지 세대는, 과거 빅토리아로 이민을 간 카시미어 출신이라고 하더군. 카시미어는 매번 우르수스를 국경선에서 몰아냈지만, 많은 사람들이 계속되는 전쟁과 기사들의 오만하고 안하무인인 태도에 지쳐갔어. 그래서, 이들은 빅토리아로 넘어가 새로운 삶을 살고자 했다. 카시미어의 강성한 이면에는 이런 불편한 진실이 숨겨져 있지.",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_500w_kazimierz_7": {
+        "id": "mail_500w_kazimierz_7",
+        "type": "NORMAL",
+        "sortId": 21,
+        "displayReceiveTs": 1581966000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "카시미어에서 온 연락⑦",
+        "content": "박사님께,\n\n오퍼레이터 그라니의 보고에 따르면, 이번 사건에서 리유니온 부대의 활동 흔적이 확인되었다고 합니다. 해당 부대는 완전히 리유니온에서 떨어져 나간 부대로써, 어떠한 명령이나 지시도 받지 않은 상태였다고 합니다. 이에 저희 쪽에 큰 위험이 되지는 않으리라 판단됩니다만… 리유니온의 영향력은 대체 어디까지 뻗어나간 걸까요?\n\n로도스 아일랜드 연락책",
+        "rewardList": [
+          {
+            "id": "ap_item_CaH_200",
+            "count": 1,
+            "type": "AP_ITEM"
+          }
+        ]
+      },
+      "mail_newyear_2021_1": {
+        "id": "mail_newyear_2021_1",
+        "type": "NORMAL",
+        "sortId": 22,
+        "displayReceiveTs": 1627642800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_121_lava",
+        "title": "라바의 축복",
+        "content": "긴 시간 동안 함께 해줘서 고마워, 박사. 니엔이 선물 전해주라더라.\n나는 뭐, 그냥 지나가던 길에 니엔 부탁을 들어주는 것뿐이야.\n다른 거 하고 있었으면, 하던 일 잠깐 멈추고 이번 이벤트를 같이 즐기는 건 어때?\n아, 그리고, 히비스커스가 만든 건강식은 안 먹길 바랄게.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_2": {
+        "id": "mail_newyear_2021_2",
+        "type": "NORMAL",
+        "sortId": 23,
+        "displayReceiveTs": 1627646400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_130_doberm",
+        "title": "도베르만의 축복",
+        "content": "긴 시간 동안 함께 해줘서 고맙다, 박사. 이건 교관들의 작은 성의다.\n오늘은 훈련이 없어 나도 오랜만에 한숨 돌리는 중이었다.\n늘 우리를 항상 응원해줘서 고맙단 말이 하고 싶었다.\n이번 이벤트를 마음껏 즐겨주길, 그리고 이런 나날이 앞으로도 계속되길 바라지.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_3": {
+        "id": "mail_newyear_2021_3",
+        "type": "NORMAL",
+        "sortId": 24,
+        "displayReceiveTs": 1627650000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_325_bison",
+        "title": "바이슨의 축복",
+        "content": "안녕하세요, 박사님 앞으로 온 택배입니다. 여기 사인 부탁드릴게요.\n그리고 이건 제가 드리는 선물입니다.\n하하, 평소에 워낙 바쁘다 보니, 이런 날에도 통 쉴 수가 없네요.\n박사님께선 저처럼 너무 바쁘게 일하지 마시고, 쉴 수 있을 때 푹 쉬셨으면 합니다.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_4": {
+        "id": "mail_newyear_2021_4",
+        "type": "NORMAL",
+        "sortId": 25,
+        "displayReceiveTs": 1627653600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2014_nian",
+        "title": "니엔의 축복",
+        "content": "날이 날이니만큼 작은 선물을 준비했어.\n뭐? 아직 시간이 안 됐다고? 그딴 게 뭐가 중요해. 선물만 받으면 그만이지.\n난 라바처럼 다른 사람 이름 빌려서 선물하는 짓 따윈 안 해.\n그럼, 또 보자고.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2021_5": {
+        "id": "mail_newyear_2021_5",
+        "type": "NORMAL",
+        "sortId": 26,
+        "displayReceiveTs": 1627657200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "아미야의 축복",
+        "content": "긴 시간 동안 함께 해주셔서 감사해요, 박사님! 하는 일은 잘 돼 가시죠?\n전엔 바이슨 씨에게 부탁해서 박사님께 선물을 드렸었는데요, 염국의 오퍼레이터분들께서 선물은 역시 직접 해야 한다 하더라고요.\n그래서, 이번엔 제가 직접 박사님 집무실로 선물을 들고 왔어요. 마음에 드실지 모르겠네요.\n뭐랄까…… 박사님의 마음이 느껴지는 것 같네요. 박사님께서 좋아하신다면, 전 그걸로 만족해요!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_1": {
+        "id": "mail_newyear_2022_1",
+        "type": "NORMAL",
+        "sortId": 27,
+        "displayReceiveTs": 1658556000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_124_kroos",
+        "title": "크루스의 축복",
+        "content": "박사~ 여기저기 찾아봐도 없어서 그러는데 선물은 사무실에 놔둘게!\n이것들 때문에 신경을 많이 썼다고~\n내가 제일 좋아하는 통조림도 넣었으니 무조건 맘에 들 거야.\n내 마음도 받았으니 이젠 땡땡이친다고 하면 안 돼~\n축~제~미~리~축~하~해~",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_2": {
+        "id": "mail_newyear_2022_2",
+        "type": "NORMAL",
+        "sortId": 28,
+        "displayReceiveTs": 1658559600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_243_waaifu",
+        "title": "와이후의 축복",
+        "content": "박사님, 또 축제의 시간이로군요!\n이건 제가 준비한 선물이에요. 용문 쿵파오 파울비스트랑 이것저것 자잘한 것들을 준비해 봤어요.\n파울비스트를 먹을 때에는 밥이나 국수와 함께 먹어야 한다는 것을 잊지 마세요. 그냥 먹으면 짜거든요.\n로도스 아일랜드에 온 뒤로 박사님이 많이 챙겨줘서 너무 고마워요. 로도스 아일랜드에서 실습하는 동안 저도 많이 배웠어요.\n미래에는 로도스 아일랜드가 여러분의 노력으로 더 좋아질 거라 믿어요. 저 또한 저의 책임을 다할 거고요.\n그럼 염국의 전통에 따라, 박사님이 앞날이 순탄하고 몸도 건강하시길 빌겠습니다!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_3": {
+        "id": "mail_newyear_2022_3",
+        "type": "NORMAL",
+        "sortId": 29,
+        "displayReceiveTs": 1658566800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_172_svrash",
+        "title": "실버애쉬의 축복",
+        "content": "뭐든 비즈니스 교류로 여길 필요는 없지 않겠나, 맹우여.\n축제가 눈앞이니, 내가 카란 무역회사와 실버애쉬 가문을 대표하여…… 네게 이 선물을 증정하는 걸 허락해 주겠나.\n이 정도 품질의 비스트 고기라면 예전에는 오직 쉐라간드에 바칠 공물로만 여겨졌겠지만, 지금은 네 그릇에 올라가겠군.\n내 성의를 느낄 수 있으리라 생각한다.\n그럼 함께 축제 개막을 기대해 보도록 하지!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_4": {
+        "id": "mail_newyear_2022_4",
+        "type": "NORMAL",
+        "sortId": 30,
+        "displayReceiveTs": 1658563200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_003_kalts",
+        "title": "켈시의 축복",
+        "content": "이 축제로 인해 오퍼레이터들의 정신적 스트레스는 대폭 줄겠지. 하지만 박사, 너와 나에게는, 이런 날에 저들이 기쁨에 빠져있는 걸 보고 있으면 자신이 짊어진 책임이 어느 정도인지 느껴지지 않나?\n그래도 함께하는 게 좋을 거야. 열심히 일한 것에 대한 보상이니 받아야 마땅하지. 보급 물자들은 이미 너한테 보냈어. 하루 동안 정의와 즐거움의 소중함을 느꼈으면 좋겠군.\n그리고, 저 큐브는 먹어도 좋아. 보존 기간이 길다 보니 식품 안전 문제는 없을 거야. 허기질 땐 입 안에 넣기만 하면 될 거다.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2022_5": {
+        "id": "mail_newyear_2022_5",
+        "type": "NORMAL",
+        "sortId": 31,
+        "displayReceiveTs": 1658570100,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "아미야의 축복",
+        "content": "박사님, 오늘의 업무는 괜찮으신가요?\n그동안 정말 많은 일들을 함께 겪었네요. 그러니 있다가 축제에서 제대로 축하를 해보자고요!\n제가 준비한 선물들입니다. 전 박사님 앞으로의 하루하루가 오늘 선물 받을 때처럼 즐거웠으면 좋겠어요.\n박사님, 앞으로도 저와 함께해 주세요!\n케이크 다 드시면 꼭 저한테 맛이 어땠는지 알려주셔야 해요!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2022_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_1": {
+        "id": "mail_newyear_2023_1",
+        "type": "NORMAL",
+        "sortId": 32,
+        "displayReceiveTs": 1690531200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2015_dusk",
+        "title": "시의 축복",
+        "content": "누가 또 물어보면 이 감을 가리키며 말해, 밖에는 안 나갈 거니까 내 평온함을 방해하지 말라고. 축제라고 무조건 누구나 좋아해야 한다는 법이 있는 것도 아니잖아?\n밖에 저 시끄러운 사람들 때문에 그림도 망쳤어. 흠, 그래도 뭐, 망친 곳을 영감으로 다른 곳을 채우니 그럭저럭 나쁘지 않은 것 같기도 하고.\n난 축제엔 관심 없어. 그저 이 축제를 즐기는 이들의 염원을, 평화를, 기쁨을 그리는 것뿐이야. 정말 나가지 않을 건가, 박사? 뭐 그렇다면 난 더 좋고.\n감을 먹어도 되냐고? 좋아하면 먹던가.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_2": {
+        "id": "mail_newyear_2023_2",
+        "type": "NORMAL",
+        "sortId": 33,
+        "displayReceiveTs": 1690532100,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_322_lmlee",
+        "title": "리의 축복",
+        "content": "즐거운 축제군요, 박사님. 어떻게 오늘 하루도 즐거우셨나요?\n이런 날엔 자고로 함께 모여 배불리 먹고 떠들썩하게 지내는 게 진리 아니겠습니까.\n자, 염국의 간식을 준비해 봤습니다. 오래 보관할 수 있는 음식이니, 나중에 입 심심하시면 한 번 드셔보세요. 다과로 드시는 걸 추천드리죠. 차의 쓴맛을 해소하는 데 딱이거든요.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_3": {
+        "id": "mail_newyear_2023_3",
+        "type": "NORMAL",
+        "sortId": 34,
+        "displayReceiveTs": 1690532400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_2014_nian",
+        "title": "니엔의 축복",
+        "content": "어때, 박사. 모처럼 휴가잖아, 훠궈나 먹으러 갈래? 평소에도 이런 얘기 자주 하는 것 같다고? 박사 너 김새는 얘기도 잘하네.\n어쨌든 재료랑 화로는 내가 다 준비해뒀어. 다 내가 직접 손수 만든 거라 어떤 날씨에도 상하지 않는다고!\n그리고 네 취향이 아니라는 말도 안 돼. 물론 정말 싫은 거라면, 나랑 같이 다시 장 보러 가던가. 이런 날 방 안에 박혀있는 것도 좀 그렇잖아, 안 심심해?",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_4": {
+        "id": "mail_newyear_2023_4",
+        "type": "NORMAL",
+        "sortId": 35,
+        "displayReceiveTs": 1690533000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_455_nothin",
+        "title": "우요우의 축복",
+        "content": "이 축제를 빌어 박사에게 늘 웃음과 행복이 가득하길 기원하겠네. 로도스 아일랜드에 온 이후로 수많은 일을 겪으며 식견을 넓힌 것 같달까. 그래서 말인데, 작은 보답으로 박사를 위해 진기한 보물을 준비해볼까 했네만, 알다시피 내가 원체 능력이 없어 희귀한 물건은 구하지 못했네~\n자 이 가래떡 받게나, 맛은 끝내주네. 조금 달고 이에 붙는 것만 빼면 말이야. 겉보기엔 평범해 보여도… 역시 박사군, 이 자체가 평범하지. 뭐 어쨌든, 구오 성에선 해마다 먹는 음식이라네. 맛있게 먹어주게나.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2023_5": {
+        "id": "mail_newyear_2023_5",
+        "type": "NORMAL",
+        "sortId": 36,
+        "displayReceiveTs": 1690533300,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "아미야의 축복",
+        "content": "3.5주년 축하드려요, 박사님. 앞으로도 모든 일이 순조롭기를 바랄게요.\n로도스 아일랜드가 수많은 어려움 속에서 이렇게 버텨낼 수 있었던 건 모두 박사님께서 있어주셔서예요.\n그리고… 제가 힘들 때 함께해 주셔서, 항상 제곁에 있어주셔서 감사드려요, 박사님. 이럴 때일수록 가까운 사람들에게 따뜻함을 전하고 싶어서 선물을 준비해 봤는데요.\n기존의 레시피를 응용해서 저만의 방식으로 파이를 만들어봤어요. 박사님 입맛에 맞으실지 모르겠네요. 드셔보시고 나중에 꼭 맛평가 말해주셔야 해요!",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2023_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_1": {
+        "id": "mail_newyear_2024_1",
+        "type": "NORMAL",
+        "sortId": 37,
+        "displayReceiveTs": 1722412800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_249_mlyss",
+        "title": "뮤엘시스의 축복",
+        "content": "왜 아무도 오늘이 축제인 걸 안 알려준 거지? 널 위한 선물을 하나도 준비하지 못했단 말이야……\n일단 열심히 찾긴 했는데, 작은 선물들을 모아서 주는 것밖에 할 수 없었어.\n그래도 답례 기대할게~\n참, 축복의 말도 해야 하는 거였지?\n그러면 조금만 기다려줘, 박사.\n지금 유동체를 그쪽으로 보낼 테니까.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_1",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_2": {
+        "id": "mail_newyear_2024_2",
+        "type": "NORMAL",
+        "sortId": 38,
+        "displayReceiveTs": 1722413700,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_1016_agoat2",
+        "title": "에이야퍄들라 더 크비트 아스카의 축복",
+        "content": "안녕하세요, 선배.\n시간 참 빠르네요. 벌써 로도스 아일랜드에 온 지도 오래됐네요. 이곳에서 선배를 만나고, 다른 사람들을 만난 건 정말 행운이었다고 생각해요.\n내년에도 모두와 함께 즐겁게 보냈으면 좋겠어요.\n참, 블루포이즌 씨의 도움을 받아 제가 평소에 좋아하는 디저트를 만들어봤어요. 마음에 들었으면 좋겠네요. 그리고 이 디저트처럼 달콤한 날을 보낼 수 있길 빌게요.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_3": {
+        "id": "mail_newyear_2024_3",
+        "type": "NORMAL",
+        "sortId": 39,
+        "displayReceiveTs": 1722414600,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_4098_vvana",
+        "title": "비비아나의 축복",
+        "content": "안녕하세요, 박사님.\n오늘은 정말 시끌벅적하네요. 로도스 아일랜드로 초대해 주셔서 감사합니다. 정말 기뻐요.\n개인적인 거지만, 답례로 선물을 하나 준비했어요. 마음에 드셨으면 좋겠어요.\n앞으로 있을 여정에 별이 가득하기를 빌죠. 물론 당신을 위한 소원도 있어요. 소중한 박사님, 항상 건강하고, 모든 일이 잘 풀렸으면 좋겠네요.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_3",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_4": {
+        "id": "mail_newyear_2024_4",
+        "type": "NORMAL",
+        "sortId": 40,
+        "displayReceiveTs": 1722415500,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_4121_zuole",
+        "title": "좌락의 축복",
+        "content": "안녕하세요, 박사님. 오늘 로도스 아일랜드의 분위기는 평소와 다르군요. 음…… 떠들썩하다고 해야 할까요? 매우 인상적입니다.\n다른 사람이 친 사고를 수습하러 가야 했기에, 이제야 편지를 보내드리게 되었습니다.\n그리고, 옥문에서 가져온 디저트도 있습니다. 제가 어렸을 때부터 좋아하던 것이죠. 아무리 시간이 오래 지나도 맛은 그대로더군요. 마음에 드셨으면 좋겠습니다.\n어둠이 짙어지고 있습니다. 부디 몸조심하시길.",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_4",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_newyear_2024_5": {
+        "id": "mail_newyear_2024_5",
+        "type": "NORMAL",
+        "sortId": 41,
+        "displayReceiveTs": 1722416400,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_002_amiya",
+        "title": "아미야의 축복",
+        "content": "안녕하세요, 박사님!\n선물은 보내드렸는데 받으셨을진 모르겠네요. 이번엔 휴대하기 편한 쿠키를 조금 만들어 봤는데, 마음에 드셨으면 좋겠어요.\n혹시 배가 고프다면 절대 그냥 넘기지 말고 이 쿠키로 허기를 달래세요. 조금 나아질 거예요.\n시간이 부족해서 슈크림 쿠키밖에 만들지 못했어요. 혹시 다른 종류를 맛보고 싶다면, 제 생각엔 말이죠, 같이 디저트 수업을 들어보는 건 어떨까요?\n쓴맛보단 단맛이 더 기억에 오래 남는 법이니까요.\n꼭 제때 쉬시고, 너무 늦게 주무시면 안 돼요.\n박사님, 내일 만나요~",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_100_2024_5",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_amiyaBirth_2025_1": {
+        "id": "mail_amiyaBirth_2025_1",
+        "type": "NORMAL",
+        "sortId": 43,
+        "displayReceiveTs": 1734958800,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "amiya_2024",
+        "title": "아미야의 감사의 편지",
+        "content": "감사합니다, 박사님. 이렇게 많은 축복과 선물을 받다니 정말 행복해요.\n방금 케이크를 자를 때 박사님이 자리에 계시지 않더라고요. 아직 바쁘신 거겠죠. 그래서 제가 케이크를 직접 가져왔어요. 꼭 챙겨 드세요.\n다음에 박사님의 생일 케이크는 제가 준비할 테니, 거절하시면 안 돼요.\n그럼 안녕히 주무세요. 박사님~",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_120_2024_6",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      }
+    },
     "constData": {
       "funcOpenTs": 1749088800
     }
