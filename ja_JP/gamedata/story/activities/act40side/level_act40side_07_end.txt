@@ -1,0 +1,747 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[name="入り乱れた声"]火を消せ！　急げ！
+[name="入り乱れた声"]刺客だ！　陛下をお守りしろ！
+[name="入り乱れた声"]衛兵、衛兵はいないのか――
+[dialog]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[PlayMusic(intro="$m_bat_sfsui_intro", key="$m_bat_sfsui_loop", volume=0.6)]
+[PlaySound(key="$d_avg_audience_chaos", volume=1)]
+[Background(image="58_g6_baizhenbanquet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=0.8)]
+[name="巡回する守備軍"]火元を取り除き、現場を封鎖しろ！
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]危ない――
+[name="リン・チンイェン"]この火の出所は……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1612_1#12$1")]
+[name="リン・チンイェン"]皆さん！　杯の中の酒には触らないでください！
+[dialog]
+[Delay(time=0.8)]
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]（低温の炎……）
+[name="リン・チンイェン"]（一体何者だ……何を目論んでいる？）
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[background]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.5,fillto = 0.15, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.5,fillto = 0.15, fadetime=0.1)]
+[Background(image="58_g6_baizhenbanquet",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-150)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=30, block=false)]
+[focusout(type="bg", id="58_g6_baizhenbanquet", from=0, to=0.6, duration=0.1, block=false)]
+[Delay(time=0.1)]
+[PlaySound(key="$d_avg_audience_chaos", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "l", name = "avg_npc_1632_1#1$1", bstart=0.9,bend=1, posfrom = "-200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "l", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1633_1#1$1", bstart=0.9,bend=1, posfrom = "-200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "r", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.2)]
+[charslot(slot = "l", posfrom = "0,30", posto = "200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=0.3)]
+[charslot(slot = "r", posfrom = "0,30", posto = "200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1630_1#1$1", bstart=0.9,bend=1, posfrom = "200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "l", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1631_1#1$1", bstart=0.9,bend=1, posfrom = "200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "r", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.2)]
+[charslot(slot = "l", posfrom = "0,30", posto = "-200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=0.3)]
+[charslot(slot = "r", posfrom = "0,30", posto = "-200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=1)]
+リン・チンイェンは取り乱した群衆を落ち着かせようとしたが、彼女の声は瞬く間に騒々しい叫び声にかき消された。
+混乱の中、彼女は見覚えのある人物を見つけた。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1615_1#1$1", posfrom = "0,-70", posto = "0,-70", duration = 1.5)]
+[Delay(time=2)]
+ほんの一瞬視線を交わらせただけであったがリン・チンイェンは、はっきりと理解した。
+相手が自分を認識したことを。自分がつい先ほど皆の前で行おうとした行動を、その者も目にしていたことを。
+しかし彼女の目標は自分ではない。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1615_1#4$1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1615_1#4$1", posfrom = "0,-70", posto = "200,-70", afrom=1, ato=0, duration = 0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[background]
+[curtain]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=0.1, block=false)]
+[Background(image="58_g6_baizhenbanquet",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1612_1#1$1")]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1612_1#10$1")]
+[name="リン・チンイェン"]――！
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]ホァン……！
+[dialog]
+[StopSound(channel="f", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_inside", volume=0, loop=true, channel="cr")]
+[SoundVolume(volume=1, channel="cr",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[SoundVolume(volume=0, channel="cr",fadetime=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1619_1#1$1", duration=1.5, isblock=true)]
+[name="モー・ブフー"]何を騒いでいる？　何事だ？
+[charslot(slot = "m", name = "avg_npc_1636_1#1$1")]
+[name="ベテラン料理人"]大変です！　百珍宴の会場で、どういうわけだか突然火が上がったそうです！
+[name="ベテラン料理人"]衛兵がすでに会場を包囲しました。中が今どういう状況かも、陛下にお怪我があるかどうかも分かりません……
+[name="ベテラン料理人"]それでどうやら百珍宴は……中止すると……
+[charslot(slot = "m", name = "avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]……
+[dialog]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=0.8)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$2")]
+[name="ホァン"]レイズ……！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="-200,0", posto="0,0", duration=0.8)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot = "l", focus="l")]
+[name="衛兵A"]百珍宴に正体不明の人物が紛れ込んだとの情報が入った。これより調査を行う。
+[name="衛兵A"]全員、その場で動くな。調査に協力してもらう。
+[dialog]
+[charslot]
+[charslot(slot = "l", focus="n")]
+[SoundVolume(volume=1, channel="cr",fadetime=2)]
+[Delay(time=2)]
+[StopSound(channel="cr", fadetime=2)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$2")]
+[name="ホァン"]（ちっ……レイズの方で一体何が起きたんだろ。）
+[name="ホァン"]（ダメだ、放っておけないよ……どうにかして様子を見に行かないと……）
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1.5)]
+[charslot(slot = "m", posfrom="0,0", posto="-100,0", afrom=1, ato=1, duration=1.5)]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_knockoverdish", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$2")]
+[Delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1637_1#1$1")]
+[name="衛兵B"]そこ！　動くな！
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$2", posfrom="-100,0", posto="-100,0", afrom=1, ato=1, duration=0)]
+[name="ホァン"]（どうしよう。ここでやり合うわけにはいかないし……）
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$2")]
+[name="ホァン"]（間に合わなくなっちゃう！）
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", posfrom="-100,0", posto="300,0", afrom=1, ato=0, duration=0.6)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[Delay(time=1)]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$glass", volume=1)]
+[Delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", focus="n")]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", focus="r")]
+[name="衛兵B"]そこの者だ！　追え！
+[dialog]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=0.5)]
+[Delay(time=0.2)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=0.5)]
+[Delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1637_1#1$1")]
+[name="百人隊長"]第一、第五大隊、南門を封鎖しろ。第七、第九大隊は北門を閉め切れ！
+[name="百人隊長"]残りの者は南から北へ入念に調べるんだ。不審な人物を発見した場合はその場で捕らえるように。
+[name="百人隊長"]情報によると、百珍宴に乱入した犯人は少なくとも二人組であるとのことだ。くれぐれも気をつけろ！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[CameraShake(duration=3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=3)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", duration=1.5, isblock=true)]
+[name="ホァン"]まずいな、守備軍がすごくたくさんいる。
+[name="ホァン"]レイズ……どれだけのことしでかしちゃったの？
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2")]
+[name="ホァン"]でも聞いた感じ、まだ捕まってなさそう。どこにいるんだろう？
+[name="ホァン"]ちっ。宮殿が広すぎる。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2", posfrom="0,0", posto="120,0", afrom=1, ato=1, duration=1.5)]
+[Delay(time=0.3)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_4172_xingzh_1#7$1", posfrom="0,0", posto="-80,0", duration=0.5)]
+[Delay(time=0.3)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "r", action="jump", posto="80,0", power=20, times=1, duration=0.5)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", posfrom="120,0", posto="80,0", afrom=1, ato=1, duration=0.5)]
+[Delay(time=0.8)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", posfrom="80,0", posto="0,0", afrom=1, ato=1, duration=1.2)]
+[Delay(time=1.2)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#11$2", focus="l")]
+[name="ホァン"]あれ、どうして君が！？
+[charslot(slot = "r", name = "avg_4172_xingzh_1#5$1", focus="r")]
+[name="ニン・イン"]シッ――
+[name="ニン・イン"]あなた方は陛下へ再審を願い出に行ったのでは？　どうしてこのような事態に？
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="ホァン"]私にも分かんないよ。別に火を放ったりもしてないし！
+[charslot(slot = "r", name = "avg_4172_xingzh_1#3$1", focus="r")]
+[name="ニン・イン"]しかし、よりによってこんな時に……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#4$1", focus="r")]
+[name="ニン・イン"]早くここから離れてください！　守備軍に見つかってしまったら、どれだけ言い訳したところで説明がつきません。
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="ホァン"]でも、リン・チンイェンを助けに行かなくちゃ！
+[charslot(slot = "r", name = "avg_4172_xingzh_1#3$1", focus="r")]
+[name="ニン・イン"]……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#2$1", focus="r")]
+[name="ニン・イン"]……わたくしが行きましょう。
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="ホァン"]そんなに危険なこと、君だけに任せられるわけないでしょ！
+[charslot(slot = "r", name = "avg_4172_xingzh_1#1$1", focus="r")]
+[name="ニン・イン"]禁城にはわたくしの方が詳しいです。それにわたくしならば、たとえ捕まったとしても、釈明の余地はあります。
+[name="ニン・イン"]安心なさってください、リン少卿は見つけますから。
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="ホァン"]でも……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#1$1", focus="r")]
+[name="ニン・イン"]やはり、わたくしを信じていないのですね。まだ怒っていらっしゃるのですか？
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2", focus="l")]
+[name="ホァン"]そんなんじゃ――
+[charslot(slot = "r", name = "avg_4172_xingzh_1#4$1", focus="r")]
+[name="ニン・イン"]今すぐ南門へ向かってください。衛兵が出口を封鎖する前に！
+[name="ニン・イン"]……後ほど、あの料理屋で落ち合いましょう。
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2", focus="l")]
+[name="ホァン"]……分かった。
+[name="ホァン"]くれぐれも気を付けてね。
+[charslot(slot = "r", name = "avg_4172_xingzh_1#4$1", focus="r")]
+[name="ニン・イン"]お待ちください。先ほど衛兵に姿を見られましたか？
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", focus="l")]
+[name="ホァン"]あー……多分見られたと思う。
+[charslot(slot = "r", name = "avg_4172_xingzh_1#3$1", focus="r")]
+[name="ニン・イン"]それは厄介ですね。
+[charslot(slot = "r", name = "avg_4172_xingzh_1#1$1", focus="r")]
+[name="ニン・イン"]あっ……そうだ！　服を脱いでください。わたくしのものと交換しましょう。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g6_baizhenbanquet", screenadapt="coverall",xScale=1.1,yScale=1.1, x=-60)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#1$1", bstart=0.2,bend=0.7, posfrom="200,0", posto="0,0", duration=0.6)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#1$1", bstart=0.2,bend=0.7, posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=0.6)]
+[Delay(time=0.8)]
+[name="巡回する衛兵"]誰かが走っていくのが見えた！　あっちだ！
+[dialog]
+[CameraShake(duration=2.6, xstrength=15, ystrength=15, vibrato=90, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.7)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.7)]
+[Delay(time=0.6)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=0.7)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=0.7)]
+[Delay(time=2)]
+[charslot]
+[BackgroundTween(xFrom=-60, xTo=60, duration=2,ease="OutQuad",block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#1$1", duration=1.5)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#2$1")]
+[name="ニン・イン"]ふぅ……
+[charslot(slot = "m", name = "avg_4172_xingzh_1#3$1")]
+[name="ニン・イン"]現場はすでに誰もいませんね。リン少卿も、おそらくこちらにはいらっしゃらないでしょう。
+[name="ニン・イン"]しかし一体誰が百珍宴でこんなことを……
+[charslot(slot = "m", name = "avg_4172_xingzh_1#4$1")]
+[name="ニン・イン"]ホァン様が無事逃げ出せていればよいですけど――
+[dialog]
+[PlaySound(key="$d_avg_drawsword", volume=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_punch02", volume=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#5$1", posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=0.5, isblock=true)]
+[delay(time=1.5)]
+[charslot]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7, duration=2, isblock=true)]
+[name="？？？"]……
+[name="？？？"]……なぜ彼女が？
+[name="？？？"]あの子たちは……
+[name="？？？"]まさか本当に定められた運命にあるのか？
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1", duration=1.5, isblock=true)]
+[name="ホァン"]もう少しのはず……
+[name="ホァン"]二人はどうなってるかな……
+[charslot(slot = "m", focus="n")]
+[name="？？？"]……見つけたぞ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]誰！？
+[dialog]
+[PlayMusic(intro="$m_bat_act23side_01_intro", key="$m_bat_act23side_01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", posfrom="-300,0", posto="0,0", duration=0.3)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1", posfrom="0,0", posto="30,0", duration=0.2)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1", posfrom="0,0", posto="400,80", afrom=1, ato=0, duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", focus="l")]
+[name="「禁軍の若き教官」"]お前だったか。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[charslot]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_ftrub", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1", posfrom="-600,0", posto="40,-20", duration=1, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", posfrom="40,-20", posto="0,0", duration=1.5, isblock=true)]
+[name="ホァン"]くっ……凄い剣！
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]その格好、普通の兵士とは違うみたいだね。まさか将軍？
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[name="「禁軍の若き教官」"]答える義理はない。
+[name="「禁軍の若き教官」"]お前はリン・チンイェンが必死に匿っていた奴だな。なぜ彼女はお前を禁城へと連れてきたのだ？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]んーと……よその国の宴会に乱入するのは失礼なことだっていうのは分かってるよ。でも悪気がなかったって、信じてもらえるかな……
+[name="ホァン"]もしこれが単なる誤解だって言ったら、信じてもらえる？
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[name="「禁軍の若き教官」"]誤解などありえん。禁軍がお前の行方を追い始めてからに四十年が経っているのだからな。
+[name="「禁軍の若き教官」"]お前は彼女の子孫だ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]何の話？　誰の子孫だって？　「彼女」って誰？
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[multiline(name="「禁軍の若き教官」")]本当に知らぬのか――
+[charslot(slot = "m", name = "avg_npc_1615_1#2$1")]
+[multiline(name="「禁軍の若き教官」",end=true)]いや、見る限り、嘘は言っていないな。
+[name="「禁軍の若き教官」"]まさか長きにわたり守られてきて、これまで誰からも自分の境遇を聞かされていないのか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#5$1")]
+[name="ホァン"]あはは、正解だよ。私も自分の身の上についてすっごく気になってたんだよね。誰か教えてくれる人いないかなって思ってた。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]それで、さっきなんて言ったの？　禁軍が？　私を探してるって？
+[charslot(slot = "m", name = "avg_npc_1615_1#1$1")]
+[name="「禁軍の若き教官」"]四十年前、謀反を起こした罪深き臣下の一族において唯一行方不明だった子供。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]君……何言ってるの？
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_room_2",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_039_1")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="リン・チンイェン"]もう一度確認します……
+[name="リン・チンイェン"]あなたは1062年、ヴィクトリアで生まれた。間違いありませんね？
+[charslot(slot = "m", name = "char_017_homura_3#4")]
+[name="ホァン"]そうだよ、物心ついた頃から、私はヴィクトリアで暮らしていた。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1612_1#11$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="リン・チンイェン"]あなたの父は生前に何年も費やして、とある真相を追い求めていたようなのです……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_039_1")]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="リン・チンイェン"]万が一、自身の周りの全てが、巨大な偽りにすぎないと気付いたとしたら……
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="ホァン"]なっ……
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=90, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="ホァン"]一体なんなの！　*炎国スラング*黙って！
+[charslot(slot = "m", name = "avg_npc_1615_1#1$1")]
+[name="「禁軍の若き教官」"]お前は特殊な立場にある。いかに仕置きするかは判決を待たねばならん。
+[name="「禁軍の若き教官」"]私と来い。
+[dialog]
+[charslot]
+[PlaySound(key="$firestorm", volume=1, loop=true, channel="fire")]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=2, block=false)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$1", posfrom="200,0", posto="200,0", duration=0)]
+[charslot(slot = "l", afrom=1, ato=0, duration=1.5)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$3", duration=1.5)]
+[StopSound(channel="fire", fadetime=6)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[name="ホァン"]悪いけど無理！
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[name="「禁軍の若き教官」"]……
+[dialog]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="400,50", afrom=1,ato=0, duration=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$swordtsing3", volume=1)]
+[Effect(name="$e_spark_01_large",layer=2)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.01, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[Effect(name="$e_bladeline_01_large",x =116.1, y =0,rox =-60.2, roy =145, roz =16, layer = 1)]
+[delay(time=0.4)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.01, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[Effect(name="$e_bladeline_01_large",x =120.1, y =-103.4,rox =-60.2, roy =145, roz =16,  layer = 1)]
+[delay(time=0.6)]
+[PlaySound(key="$swordtsing5", volume=0.4)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[Effect(name="$e_bladeline_01_large",x =-141.8, y =-211.64,rox =30.5, roy =105.1, roz =39, layer = 1)]
+[Effect(name="$e_spark_01_mid",x =-141.8, y =-211.64,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =-141.8, y =-211.64,rox =100, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_01_mid",x =-141.8, y =-211.64,rox =100, roy =100, roz =50, layer = 1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[delay(time=0.1)]
+[StopSound(channel="f", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_ftrub", volume=1)]
+[charslot(slot = "r", name = "avg_1040_blaze2_1#8$3", posfrom="-600,0", posto="40,-20", duration=1, isblock=true)]
+[delay(time=0.2)]
+[charslot(slot = "r", posfrom="40,-20", posto="0,0", duration=1.5, isblock=true)]
+[name="ホァン"]（うっ――！）
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", focus="l")]
+[name="「禁軍の若き教官」"]お前は弱くはない。傷つけずに捕らえる自信はないぞ。
+[name="「禁軍の若き教官」"]怪我をしたくないのなら、大人しく捕まれ。
+[charslot(slot = "r", name = "avg_1040_blaze2_1#9$3", focus="r")]
+[name="ホァン"]それって何の冗談！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[PlaySound(key="$d_avg_lightningmagic", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.3, channel="d",fadetime=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1612_1#4$1", duration=1.5, isblock=true)]
+[name="リン・チンイェン"]（重苦しく息を切らす）
+[charslot(slot = "m", name = "avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]何かあったら逃げてくださいと……言いましたよね……？
+[charslot(slot = "m", name = "avg_npc_1615_1#6$1")]
+[name="「禁軍の若き教官」"]……リン・チンイェン。
+[dialog]
+[charslot]
+リン・チンイェンがホァンの目を見た。
+彼女は理解していたが、何も言うことはできなかった。
+ただ身を翻し、ホァンを背に庇うように立った。
+[dialog]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1612_1#1$1",posfrom="200,0", posto="0,0", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_1612_1#1$1", focus="n")]
+[name="「禁軍の若き教官」"]リン少卿、大理寺における声望を重んじて、親切心から忠告をしたはずだ。
+[name="「禁軍の若き教官」"]どうやら少しも心に留めていないようだが。
+[charslot(slot = "r", name = "avg_npc_1612_1#1$1", focus="r")]
+[name="リン・チンイェン"]自分が何をしているかはこれ以上ないほど理解しています。あなたに言われるまでもありません。
+[charslot(slot = "l", name = "avg_npc_1615_1#7$1", focus="l")]
+[name="「禁軍の若き教官」"]彼女の素性について気づいているにもかかわらず、罪深き臣下の子を庇うのか。
+[name="「禁軍の若き教官」"]……なぜだ？
+[charslot(slot = "r", name = "avg_npc_1612_1#16$1", focus="r")]
+[name="リン・チンイェン"]真相……あなた方全員が避けて語らない真相のためです。
+[dialog]
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$3")]
+[name="ホァン"]リン・チンイェン！
+[name="ホァン"]君たち何の話してるの……私が罪深き臣下の子って……どういうこと？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$3")]
+[name="ホァン"]親父は……一体何者なの？　どうして死んだの……？
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1615_1#7$1", focus="n")]
+[charslot(slot = "r", name = "avg_npc_1612_1#4$1", focus="r")]
+[name="リン・チンイェン"]申し訳ありません。本来は今夜にも全てを話すつもりでした。ですが、今はそれを語るのに相応しい状況だとは到底言えません。
+[name="リン・チンイェン"]今日生きてここを離れられたなら、どんな謝罪でもしましょう。
+[charslot(slot = "l", name = "avg_npc_1615_1#8$1", focus="l")]
+[name="「禁軍の若き教官」"]彼女には私と共に来てもらう。
+[charslot(slot = "r", name = "avg_npc_1612_1#16$1", focus="r")]
+[name="リン・チンイェン"]……私がいる限り、させません。
+[charslot(slot = "l", name = "avg_npc_1615_1#8$1", focus="l")]
+[name="「禁軍の若き教官」"]私に勝つつもりか？　お前程度の実力、三人がかりで来られでもしない限り、足止めにすらならん。
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$3")]
+[name="ホァン"]リン・チンイェン！
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]……行きなさい！
+[dialog]
+[PlaySound(key="$d_avg_spellattack_1", volume=1)]
+[charslot(duration=1, isblock=true)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=1.5)]
+雷が宮殿の壁に穴を空ける。続けて、柔らかなエネルギーがホァンに直撃した。
+彼女の体は禁城から飛び出し、遥か遠くの地面へと落ちていく。
+[dialog]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[PlaySound(key="$d_avg_lightningmagic", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[StopSound(channel="d", fadetime=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+ホァンはこれまで何度も高い所から飛び降り、戦場の中心、あるいは必要とされる場所へと身を躍らせてきた。
+彼女が飛び込むことを恐れたことはない。自分の力を、そして仲間たちを信じているからだ。
+彼女が迷うことはなかった。自分が何者であるか、内に抱く信念と譲れない物が何かをよく理解しているからだ。
+彼女の熱い心を挫けるものは何もない。それがどれほど陰湿で卑怯な謀であったとしても変わらない。朝霧では太陽を遮れないのだから。
+……しかし今は？
+彼女を待っていたのは硬い地面ではなく、果てしない深淵だった。
+ホァンは目を閉じた。
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="sn", fadetime=2)]
+[charslot]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1614_1#6$1", duration=0.5, isblock=true)]
+[name="ニン・シュー"]これは……
+[charslot(slot = "m", focus="n")]
+[name="ニン・イン"]……
+[charslot]
+ニン・インが弱弱しい呼吸でベッドに横たわっている。
+杖をつく老人の手は震え、今にも倒れそうだ。
+老人は十二分に長く生き、多くを見てきた。この世にもはや自分に平静さを失わせるようなことなどないと思っていた。
+口を何度も開けては閉じる。しかしどうあがいても、声を発することができなかった。
+状況が変わったのは、影の中に立つ人物が口を開いた時だった。
+[dialog]
+[name="？？？"]彼女はまだ生きております。
+[dialog]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7, duration=1.5, isblock=true)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="ニン・シュー"]お主じゃったか――
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="？？？"]ニン様、お止まりください。それ以上、来てはなりません。
+[name="？？？"]今夜ニン様は私に会っておらず、彼女も家から出ていません。いいですね？
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="ニン・シュー"]この子は……どういう……
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="？？？"]彼女は百珍宴に無断で侵入しました。私が発見した時、彼女はあの子と共におりました。
+[name="？？？"]もしも今日彼女が遭遇したのが他の者であったのなら、生きては戻れなかったでしょう。
+[charslot(slot = "m", name = "avg_npc_1614_1#6$1")]
+[name="ニン・シュー"]なんと……
+[name="ニン・シュー"]四十年も経ってなお……またお主が……
+[name="ニン・シュー"]四十年前、他ならぬお主がこの子を留め、今、また命を救った。
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="ニン・シュー"]運命……そう、運命じゃな……
+[name="ニン・シュー"]……結局は、逃れられんのだ。
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="？？？"]彼女を留めたのは救うためではございません。救ったのは、ニン様でございます。
+[name="？？？"]ニン様は、かつてこの事件を永遠に誰にも知られぬようにすると誓われ、この子に名を与えました。今の状況を見るにニン様は誓いを破ろうとされているようです。
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="ニン・シュー"]……
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="？？？"]今夜の変事は、いずれ真龍の知るところとなりましょう。
+[name="？？？"]選択肢はニン様の手にございます。
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_breezetree", volume=1)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0.6, loop=true, channel="sn")]
+[Delay(time=1.5)]
+一陣の風が吹き、その場には老人だけが残された。まるで、何も起きていないかのように。
+老人がいくらか放心する。
+しかし、屋敷の塀の外から喧騒が聞こえてきた。
+それは怒号のようにも、涙ながらの訴えのようにも、叱責のようにも思える。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="ニン・シュー"]まったく白昼夢を見ているようだな……
+[name="ニン・シュー"]秋じゃというのに……蝉が鳴くなどのう……
+[dialog]
+[PlaySound(key="$d_avg_walkingstick_slow", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1", posfrom="0,-30", posto="0,0", duration=0.5)]
+[name="ホァン"]はっ――！
+[name="ホァン"]ここは……私どうしてここにいるの！？
+[dialog]
+[charslot]
+[StopSound(channel="m", fadetime=2)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[name="小さな料理長"]あっ、起きた？
+[name="小さな料理長"]そら見ろ。あんたは体が丈夫だし平気だって言ったんだよ。ほら、やっぱりピンピンしてる。
+[name="小さな料理長"]ジャンの奴ったら大騒ぎして、医者を探してくるってやかましかったんだよ。今が何時かも見ずにさ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]私どれだけ寝てたの……二人はどこ！？
+[name="ホァン"]リン・チンイェン……ニン・インは来た？　私、どうしてここにいるの？
+[charslot(slot = "m", name = "avg_2026_yu_1#7$1")]
+[name="小さな料理長"]焦らない焦らない。そんな一気に聞かれたら、どこから答えていいか分からなくなるでしょ。
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[name="小さな料理長"]日が暮れた頃に、手頃な野菜でも仕入れに夜市に行こうとしたら、道の真ん中であんたが大の字になって寝てたんだよ。てっきり酔っ払ってるのかと思った。
+[name="小さな料理長"]そのままじゃ風邪を引くだろうと思ってね。ついでに拾って帰ってきたんだ。
+[name="小さな料理長"]あんた、寝こけてるのに悪態をついてたんだよ。偽善者とか大噓つきとか色々。まったく、どこでそんな炎国語を学んだのやら。
+[charslot(slot = "m", name = "avg_2026_yu_1#2$1")]
+[name="小さな料理長"]ニン・イン、それとリン・チンイェンとかいう人は……知らない人らだからよく分からないな。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]私……
+[name="ホァン"]二人を探してくる――
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="100,0", duration=1.5)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_2026_yu_1#8$1")]
+[name="小さな料理長"]ちょっとちょっと、どこ行くの？
+[charslot(slot = "m", focus="n")]
+[name="ホァン"]……禁城だよ。
+[charslot(slot = "m", name = "avg_2026_yu_1#8$1")]
+[name="小さな料理長"]さっき見た時は、禁城の辺りは巡回の衛兵だらけだったよ。入れると思う？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]だとしても行かないと――
+[charslot(slot = "m", name = "avg_2026_yu_1#2$1")]
+[name="小さな料理長"]自分のことすら見失ってるのに、他人を探そうっての？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]……どういうこと？
+[charslot(slot = "m", name = "avg_2026_yu_1#4$1")]
+[name="小さな料理長"]言った通りだよ。自分を見失っちゃってるでしょ？
+[name="小さな料理長"]自分がどこからやってきたのかも、どこへ行けばいいのかも分からない。だから他人の言葉をちょっと聞いただけで名字も名前もはっきりしなくなって、自分が誰かも分からなくなるんだ。
+[charslot(slot = "m", name = "avg_2026_yu_1#3$1")]
+[name="小さな料理長"]それは間違いだ。まったくの間違いだよ……
+[name="小さな料理長"]柑橘の種が風で江南から江北へと飛ばされ、そこで根を張り、花を咲かせ実をつける時に、種を柑桔に変えたのは、江南でも江北でもなく、数十年の日差しと雨でしょ。
+[name="小さな料理長"]柑橘と柑桔。江南と江北では書き方が違う。でも両者は同じもので言葉が違ったところで生った実に何か違いがあるわけではない。
+[charslot(slot = "m", name = "avg_2026_yu_1#2$1")]
+[name="小さな料理長"]物には本末があって、事には名実がある……このことを理解して初めて、その他のことを聞けるんだよ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="ホァン"]君……何を知ってるの？　何か知ってるんでしょ！？
+[charslot(slot = "m", name = "avg_2026_yu_1#3$1")]
+[multiline(name="小さな料理長")]私が何を知ってるかって？　私はただの料理人だよ。知っていることといえば調味料や調理法に――
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[multiline(name="小さな料理長",end=true)]あ。そうだ、あんたを見て思い出したよ。
+[name="小さな料理長"]ずっと本格的な味の桔紅酥を探してたでしょ？
+[name="小さな料理長"]どうやって作るか、たぶん分かったよ。
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

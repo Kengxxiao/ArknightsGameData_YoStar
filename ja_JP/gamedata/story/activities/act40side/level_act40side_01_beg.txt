@@ -1,0 +1,578 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_dishes")]
+[Delay(time=1)]
+[MusicVolume(volume=0.3, fadetime=3)]
+[StopSound(channel="bgs", fadetime=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1)]
+[Delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="店主、会計をお願いします。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="厨房から聞こえる声"]今忙しい！
+[name="厨房から聞こえる声"]どうせ具なしの麺じゃないか、私のおごりだ。お代はいらないよ！
+[dialog]
+[Subtitle(text="それはいけません……", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[PlaySound(key="$d_avg_coin")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_chairrub")]
+[Subtitle(text="お代はテーブルに置いておきます。ごちそうさま。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="厨房から聞こえる声"]まいど、気をつけて！
+[dialog]
+[Delay(time=1)]
+[Subtitle(text="若人が昼にそれっぽちしか食わんとは、話にならん。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="五色は人の目をして盲ならしむ。五味は人の口をして爽（たが）わしむ。口腹の欲、放縱（ほうしょう）にすべからず。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="あなたも同じく素麺しか食べていないではありませんか？", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="ふんっ、私はこれで五杯目だ。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="お前とは違って、このさっぱりとした味が好きなのだ。私は食事に余計な調味料は要らない主義でな。塩やら酢やら唐辛子やら、ネギやらニンニクやら香料やら、何もかも無粋だ。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="物を食らうなら、素材本来の味を味わうのが本道よ。食材がわずかでも新鮮でなければ、私の舌はそれを直ちに暴く。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="その官服、大理寺の少卿でしょうか？　であればあなたは舌も天下一の判官なのでしょうね。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="はははっ、胃は小さいのに口のうまいことだ。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="今後もし罪を被せられることでもあれば、大理寺を訪ねて来るがいい。私の名は虞澄（ユー・チェン）という。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="……お手を煩わせることはありませんよ。私は一介の礼部奉礼郎にすぎず、冤罪など起こり得ません。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="なに、その時は麺をおごってやるのでもいいさ。若者、名は何と言う？", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="……顧筌（グー・チュエン）と申します。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Delay(time=1)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="r",name="avg_npc_1639_1#1$1",duration=0.5,posfrom = "50,0", posto = "50,0")]
+[delay(time=1)]
+[name="料理屋の常連客"]姜（ジャン）さん、注文いいかい！
+[dialog]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",posfrom = "-200,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="ジャン"]はいよ！　劉（リュウ）さん、今日は何にします？
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]いつも通りとしようかな。今日は何がお薦めかね？
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="ジャン"]今は柿の季節ですよ。それと今日は栗が入ってます。生だと歯応えがよく、火を通せばほくほくとして甘いのなんの……栗と肉の煮込みと金木犀の風味をつけた柿餅（シーピン）なんてどうです？
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]美味そうだな。いいだろう、それにしてくれ。
+[name="料理屋の常連客"]そういえば、前にこの店の看板を修理したんだが……
+[charslot(slot = "left", name = "avg_npc_1621_1#5$1",focus="l")]
+[name="ジャン"]安心してくださいよ、今回のお代は結構だって料理長が言ってたんで。
+[name="ジャン"]ここのところ、店で木工の職人が必要なことは全部リュウさんにお願いしてるんですから、何回かタダで食べてもらったところで構いやしませんよ。
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]はははっ……恩に着るよ！
+[name="料理屋の常連客"]それにしても、ここの料理長の腕はまさに天下一に値するよ。ほかの店じゃこの味は味わえん。
+[name="料理屋の常連客"]前に木札の飾りを贈った時、彼は恥ずかしがって受け取ってくれなかったんだ。私は本気でそう思ってるのにな。
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="ジャン"]いやいや……そんな大したことないですって。
+[name="ジャン"]うちはごくありふれた小さな飯屋で、みんなのおかげでやっていけてるんですよ。「天下一」なんて、よしてくださいよ。
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]そうだ、あんたらの小さな料理長は？　今日は、外に座って客とおしゃべりしていなかったが。
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="ジャン"]それが、朝っぱらからすねちまって。
+[name="ジャン"]最近百珍宴にあやかって、街中の知られざる店を回っては、雑誌に評価を書いてる有名な美食評論家がいるでしょう？
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]ああ、知っている。百灶の一流の食事処や酒楼を評価して回っては書き物を発表してるんだろ。それに昔から今に至るまでの百灶のあらゆる優れたレシピを集めて本も書いてるとか。
+[name="料理屋の常連客"]たしか「行箸散人（シィンズゥサンレン）」とか言ったか？
+[name="料理屋の常連客"]気骨のある奴だと思っていたんだ。百灶に酒楼がいくつあり、どれほどの料理が作られてきたことか。全てを集めようというなら、腹に山ほどの料理と知識や何かを丸ごと入れないとならないだろう。
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="ジャン"]そうなんですよ……でも、あの四大名楼の料理人が彼女が書いてる『百灶食珍録』を見るなり、こぞって絶賛してたらしいんです。彼女の評価には、有名料理人たちも心から納得がいくそうで。
+[name="ジャン"]噂じゃ、そのお方が今日この辺りを訪れるそうなんですよ。
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]それのどこにつむじを曲げるところがあるんだ？　彼の料理の腕なら、どんなにすごい評論家だろうと粗探しはできないだろう？
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="ジャン"]料理長の気性はご存知でしょう。良い評価だろうが悪い評価だろうが、自分の料理をとやかく言われるのが大っ嫌いなんですよ。
+[charslot(slot = "left", name = "avg_npc_1621_1#3$1",focus="l")]
+[name="ジャン"]（小声）口じゃ料理の腕で他人と争いたくないとか言っていますがね、要は自分より人気が出たら嫌なだけなんですよ――
+[dialog]
+[PlaySound(key="$d_avg_steelbasin", volume=0.5)]
+[Delay(time=0.5)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=15,times=1,duration = 0.3)]
+[charslot(slot = "left", name = "avg_npc_1621_1#9$1",focus="all")]
+[Delay(time=0.8)]
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="ジャン"]……まあこの話はよしましょうか！
+[charslot(slot = "r",focus="r")]
+[name="料理屋の常連客"]ははっ、私はむしろこの店の人気が出る方が嫌だがな。そうなったら私たちみたいな常連は気軽に食えなくなる。
+[charslot(slot = "left", name = "avg_npc_1621_1#4$1",focus="l")]
+[name="ジャン"]その言葉にあやかりたいですけどね――おっと、またお客さんだ。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[PlaySound(key="$d_gen_walk_n", volume=0.6,delay=0.5)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",duration = 1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",duration = 1)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]おや、お二人さんもこんな時間に食事かい。
+[name="料理屋の常連客"]向かいにあるからって、この店はすっかりあんたら大理寺の食堂扱いだな。
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]ここの料理がなかったら、とっくに仕事を辞めて実家で農業しているよ！
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]とんでもないことを言うな。我々には果たすべき責務がある、簡単に仕事を辞めるなどと言うべきではない。
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]どうしたんだい、二人とも顔を強張らせて？
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]百珍宴のせいさ。毎年この時期になると、大理寺は上から下まで大忙しだ。ここ一ヶ月なんて一度もまともに眠れてない。こんなの誰が耐えられるっていうんだ。
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]用心に越したことはないからな……今はたくさんのお偉方が百灶に集まっているんだ。わずかな間違いでも生じたら、誰も責任を負いきれないだろう？
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]はぁ、どれだけ用心したところで、こういう大事な時ほど、悪事は増えるもんだって。
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]これこれ、飯の時に仕事の話は厳禁だぞ。話すなら興を削がないことだけにしなさい。
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]こっちも別に話したくて話してるわけじゃないよ。
+[name="疲弊した大理寺官吏"]ところで……聞いたか、鼎豊楼の事件。
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]何の事件だ？　もったいつけずにさっさと言え。
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]わざともったいぶってるわけじゃない。これはな、本当に奇妙なんだよ。
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.7)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_makesoup", loop=true, channel="a",volume=0)]
+[SoundVolume( channel="a",fadetime=2)]
+[playsound(key="$d_avg_cutfast", channel="c",delay=2,volume=0.5)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_avg_cooksizzle_loop", loop=true, channel="b",volume=0)]
+[SoundVolume(volume=0.6, channel="b",fadetime=2)]
+[name="疲弊した大理寺官吏"]先月十五日、鼎豊楼は息つく暇もないほど大忙しだった。百以上ある竈が朝から晩まで稼働していたんだ。
+[StopSound(channel="a", fadetime=2)]
+[StopSound(channel="b", fadetime=2)]
+[playsound(key="$d_avg_firemagic")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.2, r=0.3, g=0, b=0, fadetime=1, block=false)]
+[name="疲弊した大理寺官吏"]すると夜になって、一つの竈が突然火を噴き、どうやっても火が消えなかったんだと！　料理人が何人も怪我をしたんだぞ！
+[name="真面目な大理寺官吏"]源石エネルギー管の故障か何かだろう。それの何が特別なんだ？
+[name="疲弊した大理寺官吏"]鑑識課の調査員が現場に向かったところ、エネルギー管がいじられていたのかどうかは判断がつかなかったらしい……
+[name="疲弊した大理寺官吏"]鼎豊楼は百灶一の名店で、百珍宴を預かっているんだぞ。
+[name="疲弊した大理寺官吏"]厨房に入れる人はうん百人といる。誰が何をしてたかなんて誰にも分からないさ。
+[name="疲弊した大理寺官吏"]それにこの件が奇妙なのは、事件がちょうど十五日の夜に起き、しかもその火はちょうど百番目の竈から噴いたことだ。火の中に人影を見たって言う奴もいるんだ……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[delay(time=0.1)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]やめろやめろ。事件と言うから何かと思えば、ありもしないホラ話を聞く暇はない。
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]ホラ話じゃない！　現場の人間が何人も見てるんだぞ！
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]ほう、あんたら大理寺の仕事は刺激的だな。事件の捜査と言うから聞いてみたら、まるで講談じゃないか。
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]何言っている、我々は茶館の講談師ではない。一つの事件が何の進展もなく数週間も長引けば、毎晩悪夢にうなされるものなのだ。
+[name="真面目な大理寺官吏"]はぁ……しかしそうは言ったものの、実のところ私も奇妙な事件を耳にした。
+[name="真面目な大理寺官吏"]怪異などではないが、ただただ不可思議で常軌を逸している。
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]もっと面白い話があるのか？　早く聞かせてくれ。
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]こういう話は……安易に口に出せるものではない。
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]そこまで言っといてそれはないだろ！　早く教えてくれよ！
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[name="真面目な大理寺官吏"]重大なことに関わるのだ。この事件が起きた場所は普通ではない。他でもなく――
+[name="真面目な大理寺官吏"]先の礼部尚書、寧（ニン）様の邸宅で起きたのだ……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[delay(time=1)]
+[name="真面目な大理寺官吏"]これは私の師が少し前に追っていた事件でな。大まかに聞いただけで、具体的なことについては話してくれなかった。
+[name="真面目な大理寺官吏"]ニン様はすでに引退されて数年が経ち、近頃は都を離れて、故郷である江南の住まいへ戻る準備をされている。しかし数日前、ニン府は奇妙な賊に入られたそうだ……
+[name="真面目な大理寺官吏"]邸宅で失われたものはなく、怪我人もいなかった。しかし客間に掛けられていた仙人図の仙人の口に糖蜜が塗られていたのだ。
+[name="真面目な大理寺官吏"]本来であれば、ニン府は厳重な警備であるはずだが、その賊はニン府の構造を手に取るように把握していたようだったとか……
+[name="真面目な大理寺官吏"]その賊は、武芸に長けていたのか、あるいは場数を踏んでいたのかは分からないが、現場には何の痕跡も見つからず、師たちは今この事件で散々な目に遭っている。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]糖蜜で口を塞ぐ？　竈神送りの伝説じゃないか？　良いことを報告して、悪いことは報告しないでくださいと竈神に願う……金目の物を狙わずにそんなことするなんて、何か意味でもあるのか？
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]どんな意味があるというのだ？　ニン尚書は清廉な官吏だ。礼部における彼の数十年の功績は朝廷の皆が認めるところなのに、誰が難癖をつけるというのか？
+[name="真面目な大理寺官吏"]いずれにせよ、ニン尚書は朝廷の重臣だ。彼の邸宅が侵入されただけでも十分由々しき事態なのに、ましてやこの大切な時期に……
+[name="真面目な大理寺官吏"]はぁ、起きるなと思うことほど現実になるものだ……
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]そうだそうだ！　思い出した！
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]驚かせるなよ！　何を思い出したんだ？
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]あんたらが盛り上がってるのを聞いて、思い出したんだが、数日前にこの店で、私も奇妙なことに遭遇してね。
+[name="料理屋の常連客"]つい三日前、ここでご飯を食べている時、変な奴が来たんだ。
+[name="料理屋の常連客"]見たところ高齢で、しかも囚人服を着ていた。大理寺から釈放されたばかりのようだった。
+[name="料理屋の常連客"]そいつは威勢よく座ると、料理は何も注文せず、白米ばかりを二十杯頼んだんだ。それもなんと一粒も残さず一息にぺろりと平らげた……
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1621_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="ジャン"]お客さん……それしか食べないんですか？
+[name="ジャン"]米ばっかりじゃ喉に詰まりますよ。飯のおともと、スープでも持ってきましょうか？　お代はいらないんで。
+[charslot]
+[name="風変わりな客"]必要ない。
+[name="風変わりな客"]この大荒城の真白い米は、それ自体が絶品だ。飯のともなどいるものか。
+[name="風変わりな客"]満足な食事であった、金はある。店員、会計を頼む！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[name="料理屋の常連客"]その変人は食事を終えると、空のお椀を二十抱えて店を出て、向かいの大理寺の入り口へとまっすぐ歩いてったんだ。そのお椀の山を入り口に投げつけると、こう大声で叫んだ――
+[dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="料理屋の常連客"]「いかにも。文書保管庫の火は私が放った――」
+[name="料理屋の常連客"]おっと、私としたことが。こんなことあんたらに言うまでもなかったな。大理寺のことならば、そっちの方が詳しいだろう。あの人は一体何者なんだ？　あの後どうなった？
+[charslot]
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]……
+[name="疲弊した大理寺官吏"]いくら食事の席の雑談でも、さすがにそれは言えないな……
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]この話はよせ。隣には知らない人だっているんだぞ！
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]大丈夫だって。さっきヴィクトリア語を話していた。きっと外国人観光客だ、聞き取れないさ。
+[dialog]
+[charslot]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="ヴィクトリアの観光客？"]（きれいな炎国語）店主さん、注文いいかな！
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲弊した大理寺官吏"]……
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="真面目な大理寺官吏"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1621_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="ジャン"]「紅玉腐乳（ホンユーフールー）」に、「麻辣豆腐」「殻黄軟玉（コーホァンルワンユー）」「文思秋菊（ウェンスーチウジュー）」「彫欄玉砌（ディアオランユーチー）」……
+[name="ジャン"]あっちのお客さんの注文は……以上です。
+[charslot(slot = "m", focus = "n")]
+[name="不愉快そうな声"]……
+[name="不愉快そうな声"]どっかの料理人が喧嘩売りに来たの？
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="ジャン"]えーと、それなりに礼儀正しそうな人でした。メニューをぱっと見て適当に注文しただけのようでしたし、同業荒らしには見えませんよ……
+[charslot(slot="m",name="avg_npc_1621_1#9$1")]
+[name="ジャン"]もしかして、彼女があの『百灶食珍録』を書いたグルメ評論家だったりしません？
+[charslot(slot = "m", focus = "n")]
+[name="不愉快そうな声"]人の料理を評価するのに、豆腐料理ばっかり五皿も六皿も注文する美食家がいるっての！？
+[charslot(slot="m",name="avg_npc_1621_1#10$1")]
+[name="ジャン"]料理長……落ち着いて、落ち着いてください。
+[name="ジャン"]うちの店の状況は知ってますよね。口コミで観光客を引きつけられるかは、今回のチャンスにかかってるんですよ……
+[name="ジャン"]お願いですよ料理長……この料理は絶対に気合い入れて作ってください……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_chairrub")]
+[playsound(key="$d_avg_plateplace",delay=1,channel="1")]
+遠方より来たるヴィクトリア人は、椅子一つと酒二つを持って、二人の大理寺の役人がいるテーブルに着いた。
+[playsound(key="$pourwater",channel="2")]
+彼女はごく自然に二人に酒を注ぐ。たちまちに馥郁とした香りが広がった。
+[dialog]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="ヴィクトリアの観光客？"]ほらほら遠慮しないで飲んでよ。お酒はみんなで飲む方が楽しいんだから。
+[name="ヴィクトリアの観光客？"]それでそれで、その後は？　入り口にお椀を投げつけた人は、その後どうなったの？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]お嬢さん。今聞いていたのは全て食事の席の与太話であって……
+[name="真面目な大理寺官吏"]どうかくれぐれも他言無用に願いたい……
+[charslot(slot="m",name="avg_1040_blaze2_1#11$1")]
+[name="ヴィクトリアの観光客？"]え？　こういう時って、普通は「次回をお楽しみに」とか言うもんじゃないの？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]我々は大理寺の官吏であり、茶館の講談師ではないのだ……
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ヴィクトリアの観光客？"]奇遇だね、私にも大理寺で働いてる友達がいるよ。
+[name="ヴィクトリアの観光客？"]てっきり大理寺の人ってみーんな仏頂面でクソ真面目で、分かるように話をしないものだと思ってたよ。
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]こほん……
+[name="真面目な大理寺官吏"]こちらのヴィクトリアからのご友人は……一人で炎国旅行へ？
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ホァン"]そんなよそよそしくしなくていいって。私にも炎国の名前があるんだ。煌（ホァン）って呼んで。
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="ホァン"]旅行か……ははっ、まあそんなところ。
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]炎国語がこんなに流暢なヴィクトリア人は珍しいな。お嬢さんは炎国に住んでいたことがあるのかい？
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="ホァン"]ははっ、住んだことはないね。でも私も完全にヴィクトリア人って言い切れるわけでもないんだよね。私の親父は炎国の――
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[MusicVolume(volume=0.4, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "left", name = "char_017_homura_3#4",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_039_1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="ブレイズ"]三箇条の約束？
+[charslot(slot = "right",focus="r")]
+[name="レイズ"]もし守れないようでしたら、どうあってもあなたを百灶へと連れては行けません。
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="ブレイズ"]はいはい。分かったからさっさと言って。
+[charslot(slot = "right",focus="r")]
+[name="レイズ"]一つ、見知らぬ者には気をつけ、独断で不必要な行動を取らないこと。
+[charslot(slot = "left", name = "char_017_homura_3#10",focus="l")]
+[name="ブレイズ"]私のこと三歳児だと思ってる？　分かったよ、あとは？
+[charslot(slot = "right",focus="r")]
+[name="レイズ"]二つ、決して感染者であると明かさないこと……
+[charslot(slot = "left", name = "char_017_homura_3#5",focus="l")]
+[name="ブレイズ"]……それも言われなくたって分かってるって。それくらい、どうすればいいかは知ってる。
+[charslot(slot = "right",focus="r")]
+[name="レイズ"]三つ……
+[name="レイズ"]何があろうと、決してあなたの父に関することを他者に話さないこと。
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="ブレイズ"]……はーい。
+[charslot(slot = "right",focus="r")]
+[name="レイズ"]この一連の事件において、あなたは鍵となる参考人であり、極めて重要な手がかりでもあります。
+[name="レイズ"]私にはあなたの協力が必要ですし、あなたの身の安全も必ず保障します。
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.3, channel="bgs",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="料理屋の常連客"]あんたの親父さんが？
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ホァン"]いや、何でもないよ。今回は旅行も兼ねて親戚を訪ねに来たんだよね、あははっ。
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]にしてもちょうどいい時期に来たな。もうすぐ百珍宴が始まるから今は百灶の料理屋がこぞって争い合っている。今の時期に旅行に来るなんて、ごちそうに恵まれるぞ。
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="ホァン"]ほんとに？　なら、百灶でお薦めの名物料理か、お薦めの料理屋はある？
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]ははぁ、その問いだけでこの辺に詳しくないのが分かるな。百灶には特別な名物料理はないんだ。「食」それ自体が百灶の名物なんだよ。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ホァン"]へぇ、道理で都市の名前に竈って意味の「灶」が含まれてるわけだね。
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]ははっ、民は食を以て天と為すってもんだ。百灶が百灶と呼ばれる所以は、当時真龍が百灶と名付ける時、「天下の煙火を養生する」という言葉にちなんだからだ。
+[name="料理屋の常連客"]その後ある者が「食（し）は精を厭わず、膾（かい）は細きを厭わず」と主張した。飲食は口腹の欲を満たすのみならず。身を養い、心を修むる道でもあるとな。
+[name="料理屋の常連客"]季節には季節ごとの料理があり、地域には地域ごとの料理がある。口に入れたものは天地の精髄であり、料理とは天と人との繋がり――ここに含まれる学問は深いのだよ。
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="疲弊した大理寺官吏"]ほら外からのお客さん相手に適当言うな、飯を食え飯を。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_npc_1621_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="ジャン"]お待ちどお――
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_foodaroma_01",layer=1)]
+[curtain(direction = 2,fillfrom = 1,fillto = 0.05, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 1,fillto = 0.45, fadetime=0.1)]
+[Image(image="58_i04_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="料理屋の常連客"]それにしてもお嬢さん……豆腐がそんなに好きなのかい？
+[name="ホァン"]えっ？　料理の名前はどれも違ったけど、全部豆腐だったの？
+[name="ホァン"]知らなかった。炎国の豆腐ってこんなにたくさん料理法があったんだね。
+[dialog]
+[curtain(direction = 2,fillfrom = 0.05,fillto = 0, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.45,fillto = 0, fadetime=2)]
+[delay(time=2)]
+[Image(image="58_i04_1",screenadapt="coverall",fadetime=1)]
+[delay(time=1)]
+[name="ホァン"]まあいっか、みんなで分け合おうよ。一緒に食べれば賑やかだし――これって「炎国のテーブルマナー」に反してないよね？
+[name="料理屋の常連客"]ははっ……問題はないな。なら私たちも遠慮なく。
+[dialog]
+[PlaySound(key="$d_avg_dishes")]
+[delay(time=1.5)]
+[name="ホァン"]あれ、このデザートも私が注文したのかな？
+[dialog]
+[curtain(direction = 2,fillfrom = 0,fillto = 0.35, fadetime=1)]
+[curtain(direction = 6,fillfrom = 0,fillto = 0.15, fadetime=1)]
+[delay(time=1.5)]
+[name="上品な女性"]……
+[dialog]
+[Image(image="58_i04_2",screenadapt="coverall",fadetime=0.8)]
+[delay(time=1.2)]
+[name="上品な女性"]ん……？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[curtain]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1621_1#1$1",focus="n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="不愉快そうな声"]料理は運んだ？　注文した客の反応はどうだったの？
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="ジャン"]えーっと……あんまり口を付けずに全部隣のお客さんにあげちゃってました。
+[dialog]
+[charslot(slot="m",focus="n")]
+[playsound(key="$d_avg_broadsword_polish", loop=true, channel="c")]
+[delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[name="不愉快そうな声"]チッ……
+[charslot(slot="m",name="avg_npc_1621_1#8$1")]
+[name="ジャン"]落ち着いてください。店の雰囲気も評価の一部かもしれませんし……
+[name="ジャン"]焦らずに、とりあえず見守りましょうよ……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="ホァン"]ところでさ、さっきからずっと言ってるその百珍宴って、一体何なの？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]ふむ。炎国語は流暢でも、炎国の多くの伝統に関してはやはり知識に限りがあるな。
+[name="真面目な大理寺官吏"]百珍宴というのは、毎年の中秋に、炎国の真龍が百官を招き、国事について共に討議する日のことだ。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ホァン"]変なの、朝廷の会議がどうして食の祭典みたいな名前してるの？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]そこにもまた美談があるのだ。
+[name="真面目な大理寺官吏"]何年も昔、当時の真龍が誕生日の宴を開き、百官が贈り物をした。献上された品は、炎国各地からの非常に多彩な珍宝であった。
+[name="真面目な大理寺官吏"]しかし、ある若い戸部侍郎が、真龍に「真珠翡翠白玉湯」という名のスープを献上したのだ。
+[name="真面目な大理寺官吏"]真龍が椀の蓋を開けてみると、中に入っていたのは水で、腐った野菜の葉が数枚と玄米数粒がそれに浸っていた。
+[name="真面目な大理寺官吏"]真龍は激怒し、戸部侍郎にどういうつもりかと問うた。侍郎はこう答えた。姜斉は水害により収穫も困難であり、椀の中にあるものこそ現地の被災者が食べているものだと。
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="ホァン"]へー。言うべきことをちゃんと言う、これこそが官吏としてあるべき姿だね。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ホァン"]けど、真龍の誕生日にそんな方法で話をするなんて、その人も相当度胸あるね。
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]そうだ。真龍はその者を罰することなく、むしろ大いに褒め称えて恐れずに諫言する態度を見習うよう文武百官に命じたのだ。
+[name="真面目な大理寺官吏"]真龍は朝廷の諸経費を削減させ、災害救助に力を入れた。その後に堤防を建築し、姜斉の水害問題は解決したというわけだ。
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="疲弊した大理寺官吏"]そうそう、翌年にはそれを真似て「福禄羹（フールーゴン）」を献上した知府がいた。治める都市の鱗業が豊作だったもんで、それを真龍に報告しようと、豪華な食材のあつものを持ってったわけだ。
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]……こほん。
+[name="真面目な大理寺官吏"]いずれにせよ、それ以降、宴席にて国事を議論することが伝統となり「百珍宴」と呼ばれるようになった。これが毎年中秋節に開催されるのだ。
+[name="真面目な大理寺官吏"]その時節になると、人々は盛大に行事を盛り上げる。百珍宴で出された料理は各酒楼がこぞって模倣し、官民が共に喜びを分かち合うといったところだ。
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="ホァン"]へぇ……炎国人ってほんと食に対する探求心がすごいよね。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="ホァン"]このお店だってそうだよ。見た目は普通だけど、どの料理もめちゃくちゃ美味しい！　豆腐でこんなに色んなものが作れるなんて、ほんとすごいよ。
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="ホァン"]でもこのデザートがなぁ……前食べたのと違うかな。味も前食べたやつの方が美味しかったし、あんまり本格的じゃないように感じるよ。
+[dialog]
+[stopmusic(fadetime=1)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="料理屋の常連客"]……
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="真面目な大理寺官吏"]……
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="疲弊した大理寺官吏"]……
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="ホァン"]ん？　急に黙ってどうしたの？
+[dialog]
+[charslot]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_2026_yu_1#16$1",duration=0.8)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=0.5)]
+[name="短気な少年"]あんたか？
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_2026_yu_1#15$1")]
+[name="短気な少年"]私の料理の味が悪いって言ったのはあんたか？
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

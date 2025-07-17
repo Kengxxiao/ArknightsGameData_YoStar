@@ -1,0 +1,335 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(key="$midautumn", volume=0.6)]
+[Delay(time=2)]
+[playsound(key="$d_avg_chess")]
+[Delay(time=1.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="つまり、炎国の歴史において、本当にそのような偉人がいらしたとおっしゃるのですか？", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="そうだ……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="書巻の収録をし、文字を整え、教育の普及を広く推し進めた……天下の蒼生のためにこれだけ多くを成しておきながら、なぜ彼女を記憶している者がおらず、名すらも知られていないのでしょうか。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle]
+[playsound(key="$d_avg_penrustle")]
+[Delay(time=1.5)]
+[Subtitle(text="これは何という字ですか？　これまで見た記憶がありません。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「彼女」を覚えている者がいないのではなく、ただ彼女の一文字の真名が、史書に記録されていないだけだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="それはあんまりではありませんか？　彼女の筆が炎国の悠久の歴史を記録し、万里の山河を遍く認めたというのに、史書のどこにも名が残されていないなんて……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="先生……もしもわたくしがこれらの史書の不足を全て補えば、その中から彼女の姿を導き出すことはできるのでしょうか？", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopmusic(fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Sticker(id="st1", text="四十年前", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=2)]
+[dialog]
+[PlaySound(key="$d_gen_thunders_amb",volume=0.4)]
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[playsound(key="$d_avg_drkcludsthdr")]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1062年4月21日 穀雨</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="a")]
+[delay(time=2)]
+[StopSound(channel="a", fadetime=2)]
+[name="客引きする店員"]お客さん、お客さん！
+[name="客引きする店員"]こんな大雨ですよ！　うちで雨宿りはいかがですか！　温かいお茶でも飲んでってくださいよ。
+[name="落ち着いた男性"]無用だ。この雨はすぐに降り止むものでもないだろう。先を急ぐ。
+[name="客引きする店員"]ははっ、どうでしょうねぇ。雨が止むように望む人もいれば、少しでも長く降ってほしいと望む人もいますから。
+[name="客引きする店員"]傘売りなんかは儲け時で大笑いですよ。道を急ぐ者は困るでしょうが。
+[name="落ち着いた男性"]なかなかに面白いことを言う……
+[name="客引きする店員"]お客さん、やはり休んで行ってくださいよ。ある方からお客さんに言伝を頼まれてるんです。この先は道が悪くて歩きにくいから、水たまりで靴が濡れてしまわないか心配しておられるとか。
+[name="落ち着いた男性"]言伝……？
+[dialog]
+[PlaySound(key="$dooropenquite")]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[delay(time=1.5)]
+[name="客引きする店員"]中へどうぞ。あなたに会いたいと望まれている方がお待ちになってます。
+[Dialog]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Blocker(a=0.15, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",duration = 1)]
+[delay(time=1.5)]
+[name="シュオ"]尚書殿か。久しいな。
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="シュオ"]いや、今は……太傅と呼ぶべきだったな。
+[dialog]
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",bstart=0.2,bend=0.5,duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "r")]
+[name="？？？"]玉門での一別以来か。確かに久しいな。
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="シュオ"]此度の都への報告では、まず司歳台と兵部に会うことになると思っていたが。
+[charslot(slot = "m", focus = "r")]
+[name="？？？"]まさにそうであるからこそ、その前にお主に会いに来たのだ。
+[name="？？？"]……陛下が崩御された。
+[charslot(slot = "m", focus = "n")]
+[dialog]
+[PlaySound(key="$d_gen_thunders_amb",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",focus = "l")]
+[name="シュオ"]いつのことだ？
+[charslot(slot = "m", focus = "r")]
+[name="？？？"]半月前だ。
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="シュオ"]そうか……陛下が天寿を全うされたのであれば、太傅もわざわざ会いには来ないだろう。
+[charslot(slot = "left", name = "avg_2024_chyue_1#8$1",focus = "l")]
+[name="シュオ"]もしや。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_301_1#1$1",posfrom = "200,0", posto = "200,0")]
+[charslot(slot = "r", afrom=1,ato=0,duration = 1.5, focus = "r")]
+[delay(time=2.5)]
+[charslot(slot = "m", focus = "n")]
+影の中に座す者が手を伸ばした。彼の掌には、黒石が一つ転がっている。
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",focus = "l")]
+[name="シュオ"]……！
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]六十年前、あやつは例の古寺から逃げ出し、己の身を百八十一の黒石へと分けて各地へと散らばせた。大半は今もって行方知れずである。
+[name="太傅"]そして、ちょうど半月前、司歳台は都にてこの黒石の痕跡を発見した。
+[charslot(slot = "left", name = "avg_2024_chyue_1#8$1",focus = "l")]
+[name="シュオ"]……あいつは何をしたんだ？
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]まだ知れぬ。
+[name="太傅"]ただ一つ確かであるのは、あやつが禁城に入るのは不可能だということだ。必ず自発的にあやつに会った者がいるはずだ。
+[name="太傅"]そやつの身分は、調べるには都合が悪い。
+[charslot(slot = "left", name = "avg_2024_chyue_1#3$1",focus = "l")]
+[name="シュオ"]あいつの望みは、他者を巻き込むものではないはずなのだがな。
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]本来であれば、わしは今日お主に会うべきではなかった。しかし過去にかの罪人が動乱を引き起こした際に、お主が自らの手であやつを制圧したのは事実である。
+[name="太傅"]……宗師、この件について何か知ることは？
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="シュオ"]……何も。
+[name="シュオ"]あの事件以来、一度も会っていない。
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]……
+[name="太傅"]では宗師を信じるとしよう。
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="シュオ"]私に望むことはあるか？
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]留まることなく、即刻玉門へと引き返すのだ。
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]ウルサスの不穏は変わらず、玉門の守りの要は入れ替わった。今この時において、これ以上、人心に不安を広めてはならぬ。
+[name="太傅"]司歳台と兵部には、わしが話を通しておこう。お主が盤外にいてこそ、わしは重責を委ねることができるのだ。
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="シュオ"]……承知した。
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]彼の者が仕掛ける棋局の件も、引き続き司歳台に秘密裏に調査させる。
+[name="太傅"]特殊な状況ゆえ、宗師が再び人前に出るのは具合が悪い――わしには会わなかったと思ってくれてよい。
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",focus = "l")]
+[name="シュオ"]真龍は一体なぜ……炎武（イェンウ）殿下は無事か？
+[name="シュオ"]今頃、彼は――
+[charslot(slot = "right", name = "avg_npc_301_1#2$1",focus = "r")]
+[name="太傅"]イェンウか……
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="太傅"]陛下が崩御された晩は、イェンウが陛下に拝謁をしていた。
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb",volume=0.3)]
+[StopSound(channel="bgs", fadetime=2.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g5_dragonpalace",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=2)]
+[playMusic(intro="$nervous_intro",key="$nervous_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_npc_1239_1#1$1",duration=1.5)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.5)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-30",duration = 0.3)]
+[delay(time=0.5)]
+[name="太尉"]殿下にご報告申し上げます。叛臣の一族二十八名は全て収監いたしました。
+[name="太尉"]しかし名簿を突き合わせた際、一族には一ヶ月にも満たぬ赤子がいるのを発見しました――
+[name="太尉"]禁軍が本日太師府を捜索し、家中をくまなく探しましたが、その赤子の行方が分かりません。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]……まだお包みの赤子が、ひとりでに逃げ出すことなどなかろう。
+[name="帳の後ろの声"]まだ彼女を気にかけている者がおるな。
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]殿下が気を揉む必要はございません。禁軍が赤子を見つけることでしょう。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]ふん……
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]今朝方、刑部尚書から謁見の申し出がありました。
+[name="太尉"]一連の事件についていかに審議すべきか、殿下に意見を求めたいとのこと。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]……炎律に基づき進めよ。
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]畏まりました。伝えておきます。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]私のあの兄は、今いずこまで離れたのだ？
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]守備隊の報告によりますと、半刻前に都を発ったばかりとのことです。一部の禁軍が従い離反しました。
+[name="太尉"]警備兵は軍令がなく、阻むこと叶わず。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]ああ……百灶（バイザオ）に留めておくよう命を下してはいなかったな。
+[name="帳の後ろの声"]兄が留まることを望まず、皆を捨てて去っていったのだ。
+[name="帳の後ろの声"]離反した禁軍は……いかほどか？
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]十八名です。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]我が兄よ。天地に悖る大罪を犯しながら、自らの代わりに太師に死なせ、あまつさえ十八名の死士の追従を受けるとは。
+[name="帳の後ろの声"]朝廷百官のうち、どれほどの者が未だ兄に心を寄せている？　玉座に座ることを望んでいるのはまた、いかほどだ？
+[charslot(slot="m",name="avg_npc_1239_1#2$1")]
+[name="太尉"]今この時、その席に座しておられるのは殿下です。炎国の万世にわたる繁栄と安寧の責は、殿下の御身にございます。
+[name="太尉"]炎国の誰もが、迷い惑うことを許されておりますが……唯一、殿下だけは揺れ動いてはなりません。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]……
+[name="帳の後ろの声"]私は久しくこの宮殿から足を踏み出していない……太尉、聞くが――
+[name="帳の後ろの声"]百灶の春雨は降り止んだか？
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]殿下が望みさえすれば、この雨は止みましょう。
+[name="太尉"]……殿下のお考えが変わったのであれば、まだ彼らを引き止める間はあります。
+[charslot(slot = "m", focus = "n")]
+[name="帳の後ろの声"]……
+[name="帳の後ろの声"]……くたびれた。
+[name="侍従"]温かいスープをお召し上がりになってはいかがでしょうか？　御膳司が八宝攢湯（バーバオザンタン）と筍の細切りをご用意いたしております。
+[name="帳の後ろの声"]もて。
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="太尉"]……
+[dialog]
+[PlaySound(key="$d_avg_clothmovement",volume=0.5)]
+[charslot(slot = "m",posfrom = "0,-30", posto = "0,0",duration = 0.5)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[playsound(key="$d_avg_drkcludsthdr")]
+[bgeffect(name="$eb_rain",layer=1)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[CameraShake(duration=-1, xstrength=3, ystrength=3, vibrato=15, randomness=90, fadeout=false, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.1, fadetime=0.1)]
+[playsound(key="$d_avg_carriage_loop", loop=true, channel="b",volume=0)]
+[SoundVolume(volume=0.6, channel="b",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[playsound(key="$d_avg_babycry_loop", loop=true, channel="a",volume=0)]
+[SoundVolume(volume=0.6, channel="a",fadetime=2)]
+[delay(time=1)]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=5, randomness=90, fadeout=false, block=false)]
+[name="優しい女性"]いい子……いい子だから……
+[name="優しい女性"]ほら、泣かないのよ、帰りましょう……すぐにおうちだから……
+[StopSound(channel="a", fadetime=2)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1616_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="慌てる男"]もっと速く……お願いします、もっと速く走れませんか……
+[charslot(slot = "m", focus = "n")]
+[name="御者"]雨がひどくて道がよく見えないんです。これ以上の速度を出すのは無理ですよ……
+[charslot(slot="m",name="avg_npc_1616_1#8$1")]
+[name="慌てる男"]次の宿駅まではどれくらいですか？
+[charslot(slot = "m", focus = "n")]
+[name="御者"]どう見積もっても三十里はあります……
+[name="御者"]お客さん、どれだけ急ぎの用だってんですか……家族まで連れて、わざわざこんな夜中を選んで移動しようってのは？
+[charslot(slot="m",name="avg_npc_1616_1#4$1")]
+[name="慌てる男"]……
+[charslot(slot="m",name="avg_npc_1616_1#2$1")]
+[name="慌てる男"]……どうか急いでください。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_thunders_amb")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot(slot="m",name="avg_npc_1634_1#1$1",bstart=0.3,bend=0.9)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[charslot(duration=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="御者"]ああ……！　うわぁ！　何だ――
+[dialog]
+[StopSound(channel="b", fadetime=3)]
+[playsound(key="$d_avg_pcknmgrwl")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=15, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[curtain(fadetime=1)]
+[delay(time=1)]
+[name="御者"]何事だ！　荒野にどうして人が……
+[charslot(slot="m",name="avg_npc_1616_1#7$1")]
+[name="慌てる男"]……
+[charslot(slot = "m", focus = "n")]
+男が辺りを見渡すも、視界は連綿と続く雨の帳に遮られている。夜の闇がどこまでも広がり、何も見えない。
+[charslot(slot="m",name="avg_npc_1616_1#5$1")]
+[name="慌てる男"]このまま乗り続けることはできません……
+[playsound(key="$d_avg_goldcoin",volume=0.5)]
+[name="慌てる男"]ご苦労をかけました。この金は全て取っておいてください。引き続きこの先の宿駅に向かって、もし誰かに尋ねられても、今宵子供連れの客人を乗せたことはくれぐれも口外せぬようお願いします。
+[name="慌てる男"]では、私たちはこれで。礼を申し上げます……
+[charslot(slot = "m", focus = "n")]
+[name="御者"]ですが……こんなのって、お客人！
+[name="御者"]こんな大雨で、どちらへ向かうというのです？
+[charslot(slot="m",name="avg_npc_1616_1#3$1")]
+[name="慌てる男"]小道を行き……北の林を抜け――
+[charslot(slot = "m", focus = "n")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="うろたえる女性"]きゃああ――！
+[charslot(slot="m",name="avg_npc_1616_1#8$1")]
+[name="慌てる男"]どうした――
+[charslot(slot = "m", focus = "n")]
+[name="うろたえる女性"]子供が……
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[name="うろたえる女性"]子供が見当たらないわ……
+[charslot(slot="m",name="avg_npc_1616_1#6$1")]
+[name="慌てる男"]――！
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[bgeffect]
+[delay(time=2)]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$midautumn", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1614_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="寡黙な老人"]……
+[name="寡黙な老人"]これが……例の子か。
+[charslot]
+お包みの中の赤子はすやすやと眠っている。顔に泥と血が付いていることなどまるで気にせぬ様子だ。
+[charslot(slot="m",name="avg_npc_1614_1#2$1",focus="n")]
+[name="手が血だらけの者"]ご依頼の件は、全て完了いたしました……
+[name="手が血だらけの者"]彼らの手管はよく承知しており、対処法も存じています。どうかご心配なく、あなたのお体を汚すようなことは起きません。
+[charslot(slot="m",name="avg_npc_1614_1#6$1")]
+[name="寡黙な老人"]かような大義……老いぼれには、どう報いたらいいやも分からぬ。
+[charslot(slot = "m", focus = "n")]
+[name="手が血だらけの者"]いいえ……感謝など無用です。あなたのために行ったのではございませんから。
+[name="手が血だらけの者"]あの方には大きなご恩がございます。私が今回行ったことでは、彼女の冤罪をすすぐことは叶わず、復讐など語るべくもない。
+[name="手が血だらけの者"]私に親族はおりませんゆえ、死後の憂いはございません。閣下に願いたいことも一つだけです。
+[name="手が血だらけの者"]どうか……この子を引き取ってはくださいませんか。
+[charslot(slot="m",name="avg_npc_1614_1#3$1")]
+[name="寡黙な老人"]それは……
+[charslot(slot = "m", focus = "n")]
+[name="手が血だらけの者"]この子に何も伝える必要はございません。ただ無事に成長し、平穏に一生を暮らせればそれでよいのです。
+[charslot(slot="m",name="avg_npc_1614_1#6$1")]
+[name="寡黙な老人"]……貴殿も分かっているであろうが、この子がここに留まれば、危険が増し、この件が蒸し返される可能性も高まる。
+[charslot(slot = "m", focus = "n")]
+[name="手が血だらけの者"]それが、あなたが望んでいたことではないのですか？
+[name="手が血だらけの者"]時勢のしからしめるところにより、今の我々にはなす術がない。
+[name="手が血だらけの者"]しかしいつの日か、三十年でも、四十年でもいい……いつの日か、真相が白日の下にさらされるのであれば……
+[name="手が血だらけの者"]流された血は……無駄ではないのです。
+[charslot(slot="m",name="avg_npc_1614_1#2$1")]
+[name="寡黙な老人"]……
+[charslot(slot="m",name="avg_npc_1614_1#6$1")]
+[name="寡黙な老人"]よかろう。引き受けよう。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

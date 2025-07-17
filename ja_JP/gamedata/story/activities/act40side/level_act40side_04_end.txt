@@ -1,0 +1,349 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$m_bat_kjerag_h_intro",key="$m_bat_kjerag_h_loop", volume=0.6)]
+[PlaySound(key="$d_avg_firemagic")]
+[CameraShake(duration=1.3, xstrength=30, ystrength=30, vibrato=35, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=1, block=false)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]危ない！
+[charslot(slot="m",name="avg_npc_1619_1#7$1")]
+[name="モー・ブフー"]どういうことだ――
+[dialog]
+[charslot]
+[PlaySound(key="$fireburst")]
+[Blocker(a=0.8, r=0.5, g=0.2, b=0.1, fadetime=0.5, block=true)]
+[bgeffect(name="$eb_burn",layer=1)]
+[playsound(key="$d_avg_churchfire", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=1, block=false)]
+炎が燃え上がる。火の粉が天井から落ちて小麦粉や油に引火し、厨房は瞬く間に火の海と化した。
+[charslot(slot="m",name="avg_npc_1619_1#4$1")]
+[name="モー・ブフー"]げほごほごほっ――！
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]君は……行け……私に構うな！
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]口と鼻を押さえてて。しゃべらないで！
+[name="ホァン"]この方法はまだあんまり慣れてないけど……やってみるっきゃないか。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]頭を下げててね。
+[dialog]
+[charslot(duration=0.3)]
+[PlaySound(key="$d_avg_windmagic")]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Background(image="58_g10_restaurantkitchen",x=0, y=0, xScale=1.1, yScale=1.1, fadetime=1)]
+ホァンはナイフを手に取ると、手の平を切った。空気の渦が彼女の手の平でゆっくりと形成され、それが広がると爆風となった。
+[dialog]
+[PlaySound(key="$d_avg_strongwind")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.5, block=true)]
+[bgeffect(name="$eb_steam_sw",layer=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[BackgroundTween(xFrom=0, yFrom=0, xTo=0, yTo=0, xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=0.5, block=false)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=2)]
+[StopSound(channel="bgs", fadetime=5)]
+[playsound(key="$d_avg_knockoverdish")]
+[playsound(key="$d_avg_sundries",channel="2",volum=0.5)]
+[bgeffect(layer=1)]
+爆風が部屋全体を巻き込む。炎は消え、厨房内の調理器具や棚も吹き飛ばされてばらばらになった。
+[dialog]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1619_1#1$1",duration=0.5)]
+[Delay(time=0.5)]
+[name="モー・ブフー"]このようなことを成し遂げる力量があるとは……君はまさか……
+[name="モー・ブフー"]……感謝する。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1")]
+[multiline(name="ホァン")]どういたしまして――
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[multiline(name="ホァン")]ん？
+[dialog]
+[charslot]
+[CameraShake(duration=1.5, xstrength=20, ystrength=2, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_drawbridge", loop=true, channel="bgs")]
+[Delay(time=1.5)]
+[StopSound(channel="bgs", fadetime=2)]
+ホァンが見上げると、照明の飾りは黒焦げになり、真っ赤になった鉄の枠組が見えていた。それは揺れ、今にも落ちそうだった。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]避けて！
+[dialog]
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=0.5, block=true)]
+[charslot]
+[charslot(slot="r",name="avg_npc_1619_1#7$1")]
+[Blocker(a=0.2, r=1, g=1, b=1, style = "slider", inverse = false, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_clothmovementsp")]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$1",posfrom = "-150,0", posto = "50,0",duration=0.5)]
+[Delay(time=0.51)]
+[charslot(slot = "m", focus = "n")]
+ホァンが老人の腕をつかみ引っ張ろうとしたが、間一髪間に合わず照明は落下し――
+[charslot]
+[dialog]
+[Delay(time=0.3)]
+[Blocker(a=0.2, r=1, g=1, b=1, afrom=0.6, rfrom=1, gfrom=1, bfrom=0.5, fadetime=1.5, block=false)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_lightningmagic")]
+[charslot(duration=0.3)]
+[PlaySound(key="$d_avg_smashcello",delay=1,channel="2")]
+[PlaySound(key="$d_avg_windowbreak",delay=1,channel="3")]
+重々しい雷鳴の後、真っすぐに落下していた残骸が突然方向を変えて壁に激しく衝突した。
+[dialog]
+[charslot(slot="m",name="avg_npc_1612_1#16$1",duration=0.5)]
+[Delay(time=1)]
+[name="リン・チンイェン"]……大丈夫ですか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="ホァン"]レイズ！？　どうして君がここに？
+[charslot(slot="m",name="avg_npc_1612_1#2$1")]
+[name="リン・チンイェン"]……あなたが何故ここに居るかを、私が聞くべきでは？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]それは……
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]それに関しては後程きっちりと伺います。
+[charslot(slot="m",name="avg_npc_1612_1#3$1")]
+[name="リン・チンイェン"]先月の鼎豊楼の火災も、このような光景だったのでしょうか？
+[charslot(slot = "m", focus = "n")]
+リン・チンイェンが周囲を見渡すと、料理人たちは今しがたの騒ぎで混乱に陥り、厨房は混沌とした様子だったが、彼女の視線はすぐに仮面を被った人影を捉えた。
+その人物は彼女と視線が合ったことを悟ったようで、すぐさま身を翻して群衆の中に消えた。
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]……！
+[name="リン・チンイェン"]ホァン、あなたはここに残り、モー・ブフー料理長を守ってください！
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "250,0",duration = 0.5,afrom=1,ato=0)]
+[delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="ホァン"]ちょっと！　どこ行くの？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]けほけほっ……この煙、鬱陶しいな。
+[charslot(slot="m",name="avg_npc_1619_1#4$1")]
+[name="モー・ブフー"]ごほごほごほ……あっちの柱にレバーがある。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]レバーって……何個あるのこれ……どれを引けばいいの……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovementsp")]
+リン・チンイェンは羽毛のように軽やかな身のこなしだった。彼女がは何度か跳躍する間に、相手はみるみる隅へと追いやられた。
+彼我の距離は数メートルだったが、辺りは煙が充満していてリン・チンイェンは相手の姿をはっきりと見ることができない。
+[CameraShake(duration=0.3, xstrength=5, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_lightningmagic")]
+追い詰められたその者は再び走り出そうとしたが、雷がすぐ真横に落ちた。
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]待ちなさい！
+[name="リン・チンイェン"]これ以上動けば、次はあなたの頭に雷が落ちます。
+[name="リン・チンイェン"]質問に答えなさい。
+[charslot(slot = "m", focus = "n")]
+[name="仮面をかぶった人物"]……
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]なぜ鼎豊楼に火をつけたのですか？　あなたの目的はモー料理長ですか、それとも別の人物ですか？
+[name="リン・チンイェン"]これまでの騒ぎもあなたの仕業ですね？
+[name="リン・チンイェン"]おそらく……文書保管庫も？
+[charslot(slot = "m", focus = "n")]
+[name="仮面をかぶった人物"]……
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]再三にわたり騒ぎを起こすとなると、必ず意図があるはずです――なぜですか？
+[charslot(slot = "m", focus = "n")]
+[name="仮面をかぶった人物"]……
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]言いたくありませんか？　では大理寺に連行してじっくりと――
+[charslot(slot = "m", focus = "n")]
+[name="仮面をかぶった人物"]……そのような質問をしておきながら、まさか答えを持ち合わせていないとでも？
+[name="仮面をかぶった人物"]リン少卿は果たして真相が見えていないのでしょうか。それとも見るのを恐れて、見えていないふりをしているのですか？
+[charslot(slot="m",name="avg_npc_1612_1#10$1")]
+[name="リン・チンイェン"]なっ――
+[charslot(slot = "m", focus = "n")]
+[name="仮面をかぶった人物"]大理寺は良い場所ですが、今はまだ行く気がありません。
+[name="仮面をかぶった人物"]それと、意志が揺らいでいる時の君の雷はさして恐ろしくありません。
+[name="仮面をかぶった人物"]……そろそろ目を覚まさないといけませんよ。
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]待ちなさい――
+[stopmusic(fadetime=2)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1612_1#10$1")]
+[playsound(key="$d_avg_carwash",volume=0.6)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2)]
+[charslot(slot = "m", focus = "n")]
+一方的にそう言い終わるのと同時に仮面を被った人物は動き始め、リン・チンイェンが追おうとした瞬間、頭上の消火装置が突如作動した。
+冷たい水が降り注ぎ、彼女の顔を濡らす。
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1",duration=0.5)]
+[delay(time=1)]
+[name="ホァン"]レイズ――
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]大丈夫？
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]……ちっ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1635_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="慌てる料理人"]お客様の避難は終えました。幸い負傷者はいません。
+[name="慌てる料理人"]通報してきたので、じきに役所の方が到着すると思われます。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]役所の者なら、ここにすでに一人いるではないか。
+[charslot(slot="m",name="avg_npc_1612_1#3$1")]
+[name="リン・チンイェン"]……
+[charslot(slot = "m", name = "avg_npc_1635_1#1$1")]
+[name="慌てる料理人"]総料理長、その……
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]私は無事だ。こちらのお嬢さんのおかげでな。
+[name="モー・ブフー"]ここに君たちの用はない、戻るといい。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1635_1#1$1")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+料理人たちが去った後、リン・チンイェンは部屋の鍵を閉めた。
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]モー料理長、お話を伺ってもよろしいでしょうか。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]君はこちらのお嬢さんと知り合いかね？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]友達です。
+[name="ホァン"]モー料理長、彼女はとても重要な事件を調査していて……できるだけ彼女の質問に答えてもらえないかな？
+[charslot(slot="m",name="avg_npc_1619_1#2$1")]
+[name="モー・ブフー"]ふんっ……このモー・ブフー、役所のことは嫌いだが、借りを作るのはもっと好かん。それについ先ほど君に命を救われてしまったからな。この借りは、どうやっても返しきれん。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]よかろう。質問があるなら、聞くといい。
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]こちらのお店でとある料理人を探しています。その方はある事件の参考人です。
+[name="リン・チンイェン"]十年前、その方は恐らく死刑囚監獄で収監されている者たちに「最後の食事」を作っていたはずです。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]最後の食事を専門に作ってた料理人が鼎豊楼に就職できたの？
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]鼎豊楼は毎年の百珍宴で数多の官吏に料理を用意するので、料理人一人一人の経歴は明確である必要があります。
+[name="リン・チンイェン"]恐らく、その料理人を探し出すのは難しくないと思いますがいかがでしょうか。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]……お役人様は私にどのような返事を求めている？
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]店で原因不明の火災が発生し、さらには死刑囚の食事を作っていた料理人が我々の中にいると言う。このような風評が立って、この鼎豊楼は、果たして今後も営業できるというのか？
+[charslot(slot="m",name="avg_npc_1612_1#2$1")]
+[name="リン・チンイェン"]あなた方の事情は理解しているつもりです。ですから、このように余人を交えない場でお願いしているのです。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]……良いさ。自分の成したことである以上、認められぬことなどない。
+[name="モー・ブフー"]君が探しているその料理人、死刑囚監獄にいた莫小六（モー・シャオリュウ）は、他でもないこの私だ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="ホァン"]えっ！？
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]やはり……
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]死刑囚の食事を作ることは恥ずべき仕事でも何でもない。王侯や役人が食事をするのと同じように、物売りや従僕とて食事をする。
+[name="モー・ブフー"]私の料理の腕は監獄の中で、各地からやってきた死刑囚に最後の食事を作ることで磨き上げられたものだ。
+[name="モー・ブフー"]改名して素性を隠しているのは、ただこの店に要らぬ面倒を持ち込みたくないからだ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]だんだん……あなたのことをすごいと思い始めてきた。
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]お伺いしたいことがあります。十年前、「グー・チュエン」という名の人物が死刑囚監獄に投獄されませんでしたか？
+[name="リン・チンイェン"]この名を覚えていないのであれば、投獄後に死刑囚監獄から釈放された唯一の人物だと言えば思い当たるでしょうか。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ホァン"]何だって！？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="ホァン"]待って！　親父が？　親父がどうして死刑囚なの？
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]……ホァン！
+[charslot(slot="m",name="avg_npc_1619_1#7$1")]
+[name="モー・ブフー"]今、グー・チュエンと言ったか？　彼は君の父なのか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#12$1")]
+[name="ホァン"]そうだよ……
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]覚えていらっしゃるのですね。
+[charslot(slot="m",name="avg_npc_1619_1#3$1")]
+[name="モー・ブフー"]覚えている……あまりにも鮮明にな。
+[name="モー・ブフー"]私は監獄で長年最後の食事を作り、無数の極悪人や卑劣な輩を見てきた。そういった囚人が逝く前に食事をする時の目は、似たり寄ったりだ。
+[name="モー・ブフー"]あの監獄で、グー・チュエンほど澄んだ目をした人間は見たことがなかった。
+[name="モー・ブフー"]彼は他の囚人とはまるで違っていた。監獄に入ったその日から、一度も泣きわめいたり、無実であると叫んだりはしなかった。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]当時は私も不思議だった。このような人がどうして死刑囚監獄にいるのかと。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#12$1")]
+[name="ホァン"]親父が……どうして……
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]ではグー・チュエンが当時どのような罪を犯して死刑囚監獄に入ったのかはご存知ですか？
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]当時は知らなかった……
+[charslot(slot="m",name="avg_npc_1612_1#2$1")]
+[name="リン・チンイェン"]当時は？
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]知ったのは一年後のことだ。私は鼎豊楼に入り、百珍宴に関わるようになった。そして数年前の百珍宴で出された料理の一覧を手に入れることができたのだ――
+[name="モー・ブフー"]その時にようやく知った。グー・チュエンは真龍に、とある料理を献上していたのだ。それはまさにお嬢さんが先ほど引き当てた「天下一白」だった。
+[name="モー・ブフー"]しかし、彼はその料理の隣に饅頭（マントウ）を添えていた。饅頭の中には、豆腐を発酵させた赤い腐乳が入っていた。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="ホァン"]それは……どういう意味？　なんでその料理を献上したら、監獄に入れられるの？
+[charslot(slot="m",name="avg_npc_1612_1#3$1")]
+[name="リン・チンイェン"]……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]レイズ、どうして何も言わないの？
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]……君は家族から太師のことについて聞かされていたようだが、彼女がどのような末路をたどったかは聞いているか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#13$1")]
+[name="ホァン"]彼女の……末路？
+[charslot(slot="m",name="avg_npc_1612_1#4$1")]
+[name="リン・チンイェン"]……
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]四十年前に太師は前真龍の暗殺を企てました。事は露見して太師は自害し、彼女の一派は徹底的に調べ上げられました。その数は数千人に上ったのです……
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]百珍宴においてグー・チュエンが献上した料理の意味するところは「叛臣の冤罪をすすぐ」ということであり、真龍はそれで激怒したのだ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="ホァン"]ありえない……親父は何度も言ってたんだ。太師は、生涯を国と民に捧げ、天下を思っていたって。反逆を企てた叛臣なわけないじゃない！？
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]……歴史書には確かにそう書かれているのです。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="ホァン"]書かれてたら、それがほんとになるの！？
+[name="ホァン"]レイズ、歴史書に書かれてることが全部ほんとなら、君は今何を調べてるの！？
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]それに……それに親父は結局殺されなかったんでしょ？　それってつまり、太師と親父が潔白だと信じてた人が朝廷にいたってことなんじゃないの！
+[charslot(slot="m",name="avg_npc_1612_1#13$1")]
+[name="リン・チンイェン"]その点は確かに疑問が残ります。グー・チュエンが本当に太師の件で投獄されたのであれば、どうして後に釈放されたのでしょう？
+[charslot(slot="m",name="avg_npc_1619_1#3$1")]
+[name="モー・ブフー"]それも深く印象に残っている。グー・チュエンが投獄された後、彼との面会に来た者が二名いた。偶然にも、私はその二人を知っていた……
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]一人は彼に食事を届けに来た当時の大理寺少卿ユー・チェン。
+[name="モー・ブフー"]もう一人は彼を連れ出した……前礼部尚書、ニン・シューだ。
+[charslot(slot="m",name="avg_npc_1612_1#10$1")]
+[name="リン・チンイェン"]何ですって……！？
+[charslot]
+[name="扉の外の声"]早く！　続け！　すぐに現場を包囲しろ！
+[dialog]
+[playsound(key="$d_gen_soldiersrun")]
+[charslot(slot = "left", name = "avg_npc_1637_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1637_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="リン・チンイェン"]くそ……よりによって、こんな時に……！？
+[charslot]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1613_1#7$1",duration=1.5)]
+[delay(time=2)]
+[name="チェン・チョー"]これは奇遇な。リン少卿は私より一足早かったようですね。
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="リン・チンイェン"]……つい先ほど来たところです。確かに奇遇ですね。
+[charslot(slot="m",name="avg_npc_1613_1#1$1")]
+[name="チェン・チョー"]大理寺は鼎豊楼火災の調査をします。全員ご協力ください。
+[name="チェン・チョー"]リン・チンイェン、それと隣のお嬢さんは私と共にきなさい。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

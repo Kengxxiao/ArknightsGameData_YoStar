@@ -1,0 +1,496 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Delay(time=2)]
+[name="礼儀正しい接待係"]ようこそ鼎豊楼へ。
+[dialog]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_gateopen")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[playMusic(key="$m_avg_dailylifeofbaizao_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_1040_blaze2_1#5$1",focus="l")]
+[name="ホァン"]わぁ、これが噂の鼎豊楼か。
+[charslot(slot = "right", name = "avg_4172_xingzh_1#6$1",focus="r")]
+[name="シィンズゥ"]ホァン様……緊張しておられますか？
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1",focus="l")]
+[name="ホァン"]ん？　何に緊張するの。
+[charslot(slot = "right", name = "avg_4172_xingzh_1#6$1",focus="r")]
+[name="シィンズゥ"]もう間もなく大会が始まりますが、どうしてだか、不安を感じてしまって……
+[name="シィンズゥ"]何せ……
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1",focus="l")]
+[name="ホァン"]何を怖がってるの、ちび料理長が最後に大丈夫だって言ってくれたでしょ。
+[name="ホァン"]それにさ、私たちは本当に料理人になるわけじゃないんだし。伝説的な料理長に会って、あの桔紅酥の作り方を直接聞きたいだけなんだから。
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1",focus="r")]
+[name="シィンズゥ"]こうなった以上、そう自分に言い聞かせるしかありませんね……
+[dialog]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1635_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="厳格な試験官"]まもなく刻限です。大会をご観覧のお客様はこちらに残り、参加する料理人は私についてきてください。
+[charslot]
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1",focus="r")]
+[name="シィンズゥ"]もし試験中に何か問題が発生したとしても、決して衝動的にはならず、落ち着いて考えてください。必ず解決法はありますから……
+[charslot(slot = "left", name = "avg_1040_blaze2_1#5$1",focus="l")]
+[name="ホァン"]分かってるから安心して。じゃ行ってくるね。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1635_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="厳格な試験官"]お座りください。
+[name="厳格な試験官"]本日は試験を受けるために来られたとはいえ、遠方からのお客様です。まずはこちらのお茶をどうぞ。
+[charslot]
+[playsound(key="$pourwater")]
+試験官は机の茶壺（チァーフー）を手に取るとホァンのためにそこから茶を注いだ。仄かに甘く爽やかな香りが瞬時に鼻腔を満たす。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1")]
+[name="ホァン"]大会って言っても、結構和やかな雰囲気じゃない……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#5$1")]
+[name="ホァン"]ありがとう！　ちょうどここに来るまでの間に喉渇いてたんだ。もらうね！
+[playsound(key="$d_avg_drinkswllw")]
+[charslot]
+ホァンは茶杯を持ち上げると、一息に飲み干した。
+[playsound(key="$d_avg_paper2")]
+続けて、試験官が紙と筆を彼女の前に置いた。
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]このお茶は何の食材を漬けていたか、お書きください。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[CameraShake(duration=0.3, xstrength=10, ystrength=10, vibrato=15, randomness=90, fadeout=true, block=false)]
+[multiline(name="ホァン")]ぶふっ――
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[multiline(name="ホァン")]げほげほげほげほっ……何だって！？
+[charslot(slot = "m", focus = "n")]
+ホァンは自分の茶杯を見る。わずかに残った水滴が茶杯の内側に付着しているだけだった。今度は顔を上げて目の前の試験官を見る。彼は初めから変わらぬ礼儀正しい微笑みを浮かべている。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]もう一杯……もらえたりする？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1635_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1636_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1635_1#1$1",focus="l")]
+[name="のんびりした料理人"]今日はダメそうだな。午前中から何十人も来てるが、いまだに誰も一次試験を通ってない。
+[charslot(slot = "right", name = "avg_npc_1636_1#1$1",focus="r")]
+[name="退屈そうな料理人"]総料理長の出題がひねくれすぎてるのよ。部屋に入るなりこんな問題出されたら、誰だって戸惑うわ。
+[charslot(slot = "left", name = "avg_npc_1635_1#1$1",focus="l")]
+[name="のんびりした料理人"]舌は料理人の目だからな。舌の修練をきちんとしていないなら、料理の腕だって良くなりっこない。
+[name="のんびりした料理人"]この程度の試験すら通過できないようなら、総料理長が時間を割くまでもないね。さっさと家に帰ってもらった方がいい。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[stopmusic(fadetime=2)]
+[playsound(key="$doorknockquite")]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_1635_1#1$1",focus="l")]
+[name="のんびりした料理人"]って、ちょっとお客さん、ここは厨房ですよ。入ってきちゃ――
+[dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1612_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="リン・チンイェン"]大理寺の捜査で参りました。皆様ご協力お願いします。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[name="ホァン"]落ち着け……落ち着こう……
+[name="ホァン"]Mechanistが言ってた。人の舌は四つの味しか判別できない、でも鼻なら百種類以上の匂いを嗅ぎ分けられるって。
+[name="ホァン"]そんなこと言われても、Mechanistの「マシンオイル」ってカクテルからは何の匂いも嗅ぎ取れなかったけど……
+[charslot(slot = "m", focus = "n")]
+冷めた小ぶりの茶杯を慎重に持ち上げ、ホァンはその中の残り香をじっくりと嗅ぐ。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#3$1")]
+[name="ホァン"]花の香りがする。ジャスミンの花かな……
+[name="ホァン"]いや、ジャスミンだけじゃない。もう一つ……そうだ、菊だ！　ちび料理長がお店でお客さんに出してる菊花茶はこんな香りだった！
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]花の香り以外にも、たしかお茶を飲んだ時、少し甘酸っぱかったような。
+[name="ホァン"]花を加えたところで酸っぱくならないよね。ならあの後味は一体なんだろう。
+[name="ホァン"]あの甘酸っぱさ、なんだか覚えがあるような気がするんだよね……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1")]
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1")]
+[Background(image="58_g2_downtownarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1",focus="l")]
+[name="ホァン"]どうして梅酒を飲みに連れてきてくれたの？
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1",focus="r")]
+[name="シィンズゥ"]実はこの梅酒も百灶の名物の一つなのですよ。
+[name="シィンズゥ"]百灶の北側には大きな梅林があります。毎年六月の初夏に梅が熟すと、たくさん摘んでお酒に漬けるのです。お酒には小寒酒を用いるのが一番良いですね。
+[charslot(slot = "right", name = "avg_4172_xingzh_1#11$1",focus="r")]
+[name="シィンズゥ"]うん……やはり美味しいですね。小寒酒は苔麦で作ったお酒で、独特の香りがあり梅とよく合います。
+[name="シィンズゥ"]飲み頃は三ヶ月ほど漬けた後で、ちょうど中秋の時期にあたりますね。
+[charslot(slot = "left", name = "avg_1040_blaze2_1#1$1",focus="l")]
+[name="ホァン"]梅酒にも……何か歴史があったりするの？
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1",focus="r")]
+[name="シィンズゥ"]先ほど……百灶建設中に犠牲になった方々が、その後どうなったかと尋ねられましたよね？
+[charslot(slot = "right", name = "avg_4172_xingzh_1#3$1",focus="r")]
+[name="シィンズゥ"]歴史というほどのものではありませんが、一つ思い出したことがあります。かつてあまり恵まれていなかった時代に、梅干しは労働者がよく口にする食べ物だったのです。
+[name="シィンズゥ"]百灶建設の後、いつの年からか都市の北の山に梅林が出来ました。誰が植えたかは定かではありません。
+[charslot(slot = "left", name = "avg_1040_blaze2_1#4$1",focus="l")]
+[name="ホァン"]それも……一種の記念かな？
+[charslot(slot = "right", name = "avg_4172_xingzh_1#1$1",focus="r")]
+[name="シィンズゥ"]少なくとも、彼らが忘れられたことはないと思います。
+[name="シィンズゥ"]来年、梅の実が熟す頃にホァン様を山へとお連れいたしましょう。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[name="ホァン"]……これが答えだよ。
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]ジャスミン、野菊、青梅、天岳春、氷砂糖……小寒酒？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]梅酒を使っているでしょ。百灶の北には梅林があるって聞いたよ。
+[name="ホァン"]六月に摘んだ梅でお酒を作れば、いい具合になるのは中秋の頃だからまだ先のはず。お茶に使ってる梅はきっと早めに摘んだものだから、酸味と渋みが完全には抜けきってない。
+[name="ホァン"]お酒の匂いはお茶を煎じた時に飛んでしまって、梅の甘酸っぱさだけがお茶に残る。そこにジャスミンや野菊のまろやかな口当たりとほのかな香りが合わさって……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1")]
+[name="ホァン"]口に入れた瞬間に強烈に感じるものではないけど、後味が印象深いよ……もう一杯飲みたいな！
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]最初に答えた食材を判別できるのは当然として、小寒酒が使われていたことまで当てたのは、あなたが今日初めてです。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="ホァン"]えっと、合ってたの？
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]まさかご自身の回答に自信がないのですか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#7$1")]
+[name="ホァン"]いやいや、もちろんそんなことないよ！　あはは……
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]それでは、一次試験の合格おめでとうございます。
+[name="厳格な試験官"]上の階へと参りましょう。私についてきてください。
+[charslot]
+[playsound(key="$d_avg_beatgong")]
+[playsound(key="$d_avg_gateopen",delay=1,channel="2")]
+奥から銅鑼の音が鳴ると、ホァンのそばの扉がゆっくりと開いた。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]一次？　あといくつあるんだろう。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1612_1#1$1")]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "right", name = "avg_npc_1636_1#1$1",posfrom = "200,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_paper1")]
+[charslot(slot = "right",focus="r")]
+[name="鼎豊楼料理人"]どうぞ……こちらがご入用の鼎豊楼の料理人名簿です。
+[name="鼎豊楼料理人"]一体何の調査に来られたのか伺ってもよろしいでしょうか？
+[charslot(slot="l",name="avg_npc_1612_1#3$1",focus="l")]
+[name="リン・チンイェン"]……大理寺の機密事件ですので、今はお伝えできません。
+[charslot(slot = "right",focus="r")]
+[name="鼎豊楼料理人"]えーと……
+[charslot(slot="l",name="avg_npc_1612_1#2$1",focus="l")]
+[name="リン・チンイェン"]こちらの総料理長の名はモー・ブフーですか？
+[charslot(slot = "right",focus="r")]
+[name="鼎豊楼料理人"]もちろんです。百灶の料理界で鼎豊楼モー料理長と言えば知らない者はいません。
+[charslot(slot="l",name="avg_npc_1612_1#1$1",focus="l")]
+[name="リン・チンイェン"]モー氏が鼎豊楼に来る前、どのような仕事をしていたかご存知ですか？
+[charslot(slot = "right",focus="r")]
+[name="鼎豊楼料理人"]いいえ。モー料理長が鼎豊楼に来てから十年も経っていません。短くはありませんが、長いとも言えない。ですが彼の料理の腕は神業レベルであり、すぐに元総料理長の後を継ぎました。
+[charslot(slot="l",name="avg_npc_1612_1#2$1",focus="l")]
+[name="リン・チンイェン"]モー氏は今どちらに？　お会いしたいのですが。
+[charslot(slot = "right",focus="r")]
+[name="鼎豊楼料理人"]大変申し訳ございません。総料理長は現在試験官を行っており、お会いすることはできません。
+[charslot(slot="l",name="avg_npc_1612_1#1$1",focus="l")]
+[name="リン・チンイェン"]試験？　何の試験ですか？
+[charslot(slot = "right",focus="r")]
+[name="鼎豊楼料理人"]鼎豊楼の見習い募集試験とでも言えばいいでしょうか、数年に一度しか行われません。
+[name="鼎豊楼料理人"]もしご興味があれば、ここからでも中継をご覧になれます！
+[dialog]
+[charslot(slot = "m", focus = "all")]
+[charslot(slot="l",name="avg_npc_1612_1#3$1",focus="l")]
+[delay(time=1)]
+[name="リン・チンイェン"]この参加者は……
+[charslot(slot="l",name="avg_npc_1612_1#10$1",focus="l")]
+[name="リン・チンイェン"]ホァン……？
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$m_sys_act40side_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1")]
+[name="ホァン"]ここは……
+[name="ホァン"]ここって酒楼だよね。どうしてこの部屋は書斎みたいなの？
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]鼎豊楼は数百年の歴史を持ち、無数の名士や大家をもてなしてきました。そういった方々の手跡による書画を保管するため、鼎豊楼はわざわざこのような書斎を設けているのです。
+[name="厳格な試験官"]美食と書画は、いずれも貴重な宝であり、いずれも技量が表れる代物です。
+[charslot]
+ホァンが見上げると、天井から無数の絹糸が垂れ下がっている。その一本一本に木札が結ばれ、まるで帳のようだった。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]ここに書いてあるの、全部料理名だ……
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]鼎豊楼が現在料理人を募集しているのは、百珍宴の準備のためであることはご存知だと思います。すなわち求められているのは技術だけでなく、自らが作る料理の意味を理解していることです。
+[name="厳格な試験官"]ここに掛けてあるのは、全て歴代の百珍宴において物語がある料理です。一つ木札を引いて、その料理のいわれを話してください。これが今日の二次試験です。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]（百珍宴の料理？　そんなの知らないよ！？）
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="ホァン"]（でもここまで来たんだから――）
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_woodensign", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=3)]
+ホァンは目を閉じ、勢いよく木札を引いた。隣り合う木札がそれに伴って動き、ぶつかり合う音が次々に鳴る。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]これは何だろう……
+[name="ホァン"]「天下一白」？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#6$1")]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="シィンズゥ"]ホァン様は基本的に料理の知識がなく、一次試験を突破できただけでも望外の僥倖です。
+[name="シィンズゥ"]幼いころからヴィクトリアで育った彼女は、これらの物語など知るわけがありません。
+[name="シィンズゥ"]ホァン様……今回ばかりはわたくしも助けてあげられません……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[charslot(slot="m",name="avg_npc_1635_1#1$1")]
+[name="厳格な試験官"]時間は限られています。この料理のいわれをご存知ですか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#3$1")]
+[name="ホァン"]……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]大体五十年くらい前、炎国の太師が真龍に料理を献上した。それはすっごくシンプルな品で、大根を煮ただけのものだった。
+[name="ホァン"]その料理は炎国の各地で収穫した大根が使われていて、大根自体が多種多様な味と食感なのが特徴だった。
+[name="ホァン"]しかし大根は長時間煮込むことで、スープが浸み込み、どれを食べても同じように美味しい。
+[name="ホァン"]炎国は昔から教育に重きを置いていると聞いたことがあるよ。だけど炎国はあまりに広大だから、各都市の環境も大きな違いがあり、僻地であるほど学生が事を成すには難しかった。
+[name="ホァン"]太師が献上した料理で真龍に伝えたかったのは、天下の学生は出身に関係なく、みんなに平等な機会が与えられるべきだということ。
+[name="ホァン"]真龍は太師のこの意見を聞き入れて教育改革に力を注ぎ、学校運営や講義における地理的制限を打ち破って教育資源を平均化しようとした。
+[name="ホァン"]翌年、百灶学宮が千名以上の合格者を発表すると、その中に含まれる遠方地域出身の学生は半数以上だった。
+[name="ホァン"]それから数十年にわたり、天師府で造詣を深めた天師や、学宮で苦労して勉学に励む学生は、みんな当時の太師の直言に心から感謝をした。
+[name="ホァン"]これが、「天下一白」にまつわる話だと思うよ。
+[charslot]
+[MusicVolume(volume=0, fadetime=3)]
+説明を終えたホァンは、観覧席の雑談の声が一瞬にして静まったのを感じた。
+事実、彼女の感覚は間違っていなかった。その場の全員が緊張した面持ちで彼女を見つめている。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#7$1")]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="シィンズゥ"]（ホァン様……どうして天下一白の話を知っているのでしょう？）
+[charslot(slot = "m", name = "avg_4172_xingzh_1#6$1")]
+[name="シィンズゥ"]（それに、出題者は何故この料理をまだ残しているの……）
+[name="シィンズゥ"]（かの方は、公衆の面前で言及してよい人物ではないのに……）
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[name="ホァン"]何か間違ったこと言っちゃったかな……
+[charslot]
+[name="？？？"]面白い。
+その声は数丈ばかり高い場所から聞こえてきた。ホァンは見上げたが、人の影は見えない。
+[playsound(key="$d_avg_woodenstairfts")]
+階段の踏板を踏む鈍い音が響く。それはどっしりと重みがあり、無視することができない。
+音が次第に近付いてきてようやく、声の主――厳かな年長者が階段の上からゆっくりとその姿を現した。
+[dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[charslot(slot="m",name="avg_npc_1619_1#9$1",duration=1)]
+[delay(time=2)]
+[name="モー・ブフー"]これだけの歳月が過ぎていながら、よもやそのことを覚えている者がまだいようとは。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1")]
+[name="ホァン"]ええと……
+[charslot(slot="m",name="avg_npc_1619_1#9$1")]
+[name="モー・ブフー"]その物語は、君が生まれる前の話だ。お嬢さん、なぜ知っているのかね？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]ずっと昔、家族が話してくれたんだよ。
+[name="ホァン"]その人は、自分も当時無数にいた貧しい学生の一人だったって言ってた。
+[charslot(slot="m",name="avg_npc_1619_1#3$1")]
+[name="モー・ブフー"]水を飲みて源を思う。どうやら君の家族もまた義理人情を重んじる方であるようだな。
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]しかし……
+[name="モー・ブフー"]君は、一体どのような思いを抱いてここに来たのかね？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]それは……もちろん……真剣に大会に参加するつもりで……
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]なんであれ、君は今ここに立っている。であるならば機会を与えよう。
+[name="モー・ブフー"]最後の試験は、正々堂々と「料理」を作ってもらう。
+[name="モー・ブフー"]ついてこい。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$dooropenquite")]
+[delay(time=1)]
+まだ食事時ではなく、店には数名の客がぽつりぽつりと座っているだけ。給仕や店主の姿もなく厨房も静かだ。
+[dialog]
+[charslot]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4121_zuole_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="ズオ・ラウ"]あの……
+[charslot]
+[name="困り果てた客"]そこのあんちゃん！　助けてくれ！
+[name="困り果てた客"]今日は急いで家を出たから財布を持ってくるのを忘れちまってさ。あんちゃんは名家の公子様に見えるし、お願いだから、ちょっくら貸してくれねぇか！
+[charslot(slot="m",name="avg_4121_zuole_1#6$1")]
+[name="ズオ・ラウ"]それは……
+[charslot]
+[name="困り果てた客"]もちろんタダとは言わねぇ。ほれ、家宝の宝玉を担保にする。金を取ってきたら、こいつと引き換えてくれ。
+[charslot(slot="m",name="avg_4121_zuole_1#1$1")]
+[name="ズオ・ラウ"]お貸しするのは構いませんが、そのような事情があるなら、直接ここの店主に説明すればよろしいのではないですか？　大体私たちは面識がありませんし、どうやってお金を返すつもりですか？
+[charslot]
+[name="困り果てた客"]いやいやいや、この宝玉はそんじょそこらのもんじゃないぞ、誰に渡してもいい代物じゃないんだ。品位の高そうな公子様だからこそ預けてもいいと思ったんだ。
+[charslot(slot="m",name="avg_4121_zuole_1#1$1")]
+[name="ズオ・ラウ"]わ……分かりました……
+[charslot(slot = "m", focus = "n")]
+ズオ・ラウは懐から小銭を取り出して客に渡す。客は金を受け取ると、喜びに目を輝かせた。
+[charslot(slot="m",name="avg_4121_zuole_1#10$1")]
+[name="ズオ・ラウ"]それで、いつごろお返しいただけますか？　どこで待ち合せましょうか？
+[charslot]
+[name="困り果てた客"]縁があればまた会い、なければもう会うことはないだろう。縁がなけりゃ、公子様はその宝玉を質屋で金に換えりゃいいさ。
+[name="困り果てた客"]安心してくれ。この取引であんたが損することはないからよ。
+[playsound(key="$rungeneral", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=4)]
+言い終えるや否や、客は一目散に店から飛び出し、人混みの中に消えた。
+[charslot(slot="m",name="avg_4121_zuole_1#10$1")]
+[name="ズオ・ラウ"]質屋で……金に換える？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1",duration=0.5)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_plateplace")]
+[delay(time=1)]
+[name="ホァン"]これが私の作った料理だよ。なかなかの出来栄えでしょう？
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]……長寿麺か？
+[charslot(slot = "m", focus = "n")]
+モー・ブフーは机に手を置くも、いつまで経っても箸を動かそうとしない。しばらく黙り込んだ後、ようやくレンゲを手に取るとスープを一口すすった。
+ホァンはモー料理長を注意深く観察していたが、期待していた満足げな表情は老人の顔になかなか浮かばない。
+[charslot(slot="m",name="avg_npc_1619_1#2$1")]
+[name="モー・ブフー"]……
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]この麺……そしてこのスープ、誰から教わったのかね？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]とあるちびっ子料理人からだよ。作り方を学ぶのにかなり苦労したんだ。
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]「余味居」の店主は、君とどんな関係だ？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]どうしてそれを……
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]やはりか……
+[stopmusic(fadetime=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowl_smash")]
+[name="モー・ブフー"]……人を愚弄するのも大概にせよ！
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="ホァン"]え……？
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]彼にはいくらか才があると見込んで、わざわざ腕前を発揮する機会を与えてやろうとしたのだ。それをありがたく思わないばかりか、半人前を送り込んできて私を愚弄するとは！
+[charslot]
+[playsound(key="$d_avg_walkfast")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#6$1")]
+[playMusic(intro="$distressed_intro",key="$distressed_loop", volume=0.6)]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="シィンズゥ"]ホァン様は無事に作り上げました。味は悪くないはず。
+[name="シィンズゥ"]それなのに何故……まさかモー・ブフーは、小さな料理長と知り合いなのでしょうか？
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral", loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2.5)]
+[CameraShake(duration=2, xstrength=15, ystrength=5, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1",duration=1.5)]
+[delay(time=2)]
+[name="ホァン"]待って！　ちょっと待って！
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]ごめんなさい！　私が料理できないことなんて、あなたならひと目で見抜けるって分かってた。それに、わざと大会をめちゃくちゃにしようと思って来たわけでもない！
+[name="ホァン"]ただどうしても教えてほしいことがあって、あなたに聞くために来たんだよ！
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]私は小さい頃からヴィクトリアに住んでて、当時炎国にいた家族がよく桔紅酥を送ってくれたんだ。その桔紅酥は甘くてとても美味しかった……
+[name="ホァン"]百灶に来てあちこちを探したんだけど、その味が見つからなくて……
+[name="ホァン"]それで、あなたは百灶で一番の料理人だから、もしかして知ってるのではないかと思ったんだ！
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="モー・ブフー"]ただの点心のためにか？　君がわざわざ大会に参加して私を訪ねにくるほどの価値があるのか？
+[charslot(slot = "m", name = "avg_1040_blaze2_1#12$1")]
+[name="ホァン"]ほかにもたくさん疑問はあるよ！　でも私一人じゃ、ひとまずこの一つの疑問を解決することしかできない。これは私に手の届く家族に関する唯一の手がかりなんだ！
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="モー・ブフー"]君は……
+[name="モー・ブフー"]……桔紅酥作りで最も忌むべきは砂糖を加え、技術の拙さや素材の悪さを甘さで誤魔化すことだ。
+[name="モー・ブフー"]桔紅酥を甘くして、なおかつ味も良く作れるような腕を持つ者など知る限りはいない。
+[name="モー・ブフー"]聞きたいことは聞いただろう、行くといい。
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="ホァン"]待って――
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[CameraShake(duration=1.5, xstrength=25, ystrength=5, vibrato=5, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_woodenladder")]
+[delay(time=1.5)]
+その時、二人の真上から鈍い音が響いた。ホァンとモー・ブフーが見上げると、何かが顔を濡らした。
+[charslot(slot="m",name="avg_npc_1619_1#8$1")]
+[name="モー・ブフー"]なぜ水漏れが……
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="ホァン"]違う……これ油だよ！
+[charslot]
+[playMusic(intro="$m_bat_kjerag_h_intro",key="$m_bat_kjerag_h_loop", volume=0.6)]
+[PlaySound(key="$d_avg_firemagic")]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=1, block=false)]
+その言葉と同時に、天井から吊るされた照明が燃え上がり、火の玉と化した――
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=35, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="ホァン"]逃げて！
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
