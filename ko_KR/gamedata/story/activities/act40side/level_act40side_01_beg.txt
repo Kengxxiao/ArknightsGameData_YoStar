@@ -1,0 +1,578 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_dishes")]
+[Delay(time=1)]
+[MusicVolume(volume=0.3, fadetime=3)]
+[StopSound(channel="bgs", fadetime=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1)]
+[Delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="주인장, 계산.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="주방에서 들려오는 소리"]바빠!
+[name="주방에서 들려오는 소리"]면 한 그릇이잖아? 그냥 내가 대접한 셈 치지!
+[dialog]
+[Subtitle(text="그건 안되지……", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[PlaySound(key="$d_avg_coin")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_chairrub")]
+[Subtitle(text="돈은 테이블 위에 두겠네, 가지.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="주방에서 들려오는 소리"]그래! 또 와!
+[dialog]
+[Delay(time=1)]
+[Subtitle(text="이렇게 건장한 젊은이가 점심을 이것밖에 먹지 않는다니, 말이 되나?", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="너무 많은 색은 눈을 멀게 하고, 너무 많은 맛은 미각을 상하게 만드는 법. 욕심이 과해서는 안 됩니다.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="선생님도 면 한 그릇을 드셨을 뿐이잖습니까?", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="흥, 벌써 다섯 그릇째라고.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="저는 선생님과 달리 이런 담백한 맛을 좋아합니다. 음식에 절대 양념을 쓰지 않죠. 소금, 식초, 고추, 파, 마늘 같은 향신료는 절대로 안 넣어요.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="음식을 먹는다는 건 재료 본연의 맛을 느끼는 것이고, 재료가 신선하지 않다면 저는 바로 알아챕니다. 혀는 속일 수 없는 법이니까요.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="그나저나, 그 관복 차림을 보아하니 선생님은 혹시 대리사의 소경이십니까? 그렇다면 선생님의 혀도 천하제일의 판관이시겠군요.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="하하하, 말 한번 잘하는군.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="나중에라도 혹시 억울한 일을 당하면 나를 찾아와. 내 이름은 우징이야.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="……번거롭게 할 일은 없을 겁니다. 일개 예부 봉례랑이 억울한 일 따위가 있을 리가요.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="그렇다면 면이라도 대접해 주지. 자네, 이름이 뭔가?", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="……고전이라고 합니다.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Delay(time=1)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="r",name="avg_npc_1639_1#1$1",duration=0.5,posfrom = "50,0", posto = "50,0")]
+[delay(time=1)]
+[name="식당 단골"]강 씨, 주문!
+[dialog]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",posfrom = "-200,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="강 씨"]갑니다 가요! 유 씨, 오늘은 뭘 주문하려고?
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]평소대로. 오늘은 뭐가 신선한가?
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="강 씨"]지금은 감이 제철이야. 오늘 막 들어온 밤도 있어, 생으로 먹으면 아삭하고, 익혀 먹으면 달콤하고 쫀득한 느낌이 나지…… 그럼 계피 향 곶감과 밤을 곁들인 고기조림 어때?
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]뭘 좀 아는군. 좋아, 자네 말대로 하지.
+[name="식당 단골"]그런데 말이야, 일전에 자네의 식당 간판을 고쳐줬던 게……
+[charslot(slot = "left", name = "avg_npc_1621_1#5$1",focus="l")]
+[name="강 씨"]걱정 마, 주방장이 이번 식사는 공짜로 주라고 했으니까.
+[name="강 씨"]최근 식당 수리를 모두 손님 덕에 해결했으니, 식사 몇 끼 대접하는 건 일도 아니지.
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]하하하…… 인심 한 번 후하군!
+[name="식당 단골"]정말이지, 주방장의 솜씨는 천하제일이라 할 만해. 다른 식당에서는 이 맛이 안 난다니까.
+[name="식당 단골"]전에 진심을 담아서 작은 나무 팻말을 선물했던 적이 있는데, 쑥스러운지 받지 않더군.
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="강 씨"]아이고…… 칭찬이 과하네.
+[name="강 씨"]우린 작고 평범한 식당일 뿐이야. 많이들 찾아 준 덕에 겨우 먹고 사는 것뿐이지, '천하제일' 같은 칭호는 과하다고.
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]참, 꼬마 주방장 어디 있지? 오늘은 밖에서 손님들과 이야기 나누는 모습을 못 봤는데.
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="강 씨"]말도 마, 오늘 아침부터 난리가 났다니까.
+[name="강 씨"]최근에 꽤 유명해진 음식 평론가, 알지? 그 있잖아, 백진연을 운운하며 도시에 잘 알려지지 않은 작은 가게들을 찾아다니며 신문에 평가와 평점을 매긴다던 사람.
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]아아, 나도 들었지. 그자가 백조에서 유명한 식당과 술집을 평가했고, 백조의 과거와 현대의 모든 훌륭한 요리법을 수집한 책을 썼다더군.
+[name="식당 단골"]책 이름이 '방랑 싱주' 였던가?
+[name="식당 단골"]포부가 대단하던데, 백조에 있는 술집은 수없이 많은 데다, 장사를 해온 세월도 아주 길잖아. 책을 쓰려면 아는 것도 많아야 하고 많은 음식을 소화할 배도 필요하겠어.
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="강 씨"]내 말이…… 근데 그 사람이 집필 중인 《백조식진록》이라는 책은 4대 명루의 주방장들조차 감탄을 금치 못했다고 하더라고. 그 사람이 쓴 평론은 유명 주방장들도 납득할 수밖에 없다고 해.
+[name="강 씨"]항간에 떠도는 소문에 의하면, 그 대단한 사람이 오늘 이 동네로 온다는 얘기가 있어.
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]근데 그 정도까지 심각할 문제인가? 자네 주방장의 솜씨라면 아무리 대단한 평론가라도 흠잡을 잡을 수 없을 텐데?
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="강 씨"]주방장의 성격은 잘 알고 있잖아, 평가가 좋든 나쁘든 자기 요리에 대해 이렇다 저렇다 하는 것 자체를 듣질 못해.
+[charslot(slot = "left", name = "avg_npc_1621_1#3$1",focus="l")]
+[name="강 씨"](작은 목소리로) 말로는 누가 누구보다 요리를 잘하네 어쩌네 같은 소리를 듣기 싫은 거라고 하지만, 실은 누군가의 요리 솜씨가 본인보다 더 좋을까 봐 걱정되는 거겠지……
+[dialog]
+[PlaySound(key="$d_avg_steelbasin", volume=0.5)]
+[Delay(time=0.5)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=15,times=1,duration = 0.3)]
+[charslot(slot = "left", name = "avg_npc_1621_1#9$1",focus="all")]
+[Delay(time=0.8)]
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="강 씨"]……자, 여기까지!
+[charslot(slot = "r",focus="r")]
+[name="식당 단골"]하하, 난 이 식당이 유명해져서 우리 같은 단골이 못 오는 건 아닐까 걱정이야.
+[charslot(slot = "left", name = "avg_npc_1621_1#4$1",focus="l")]
+[name="강 씨"]덕담인 셈 칠게. 이런, 또 손님이 왔네.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[PlaySound(key="$d_gen_walk_n", volume=0.6,delay=0.5)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",duration = 1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",duration = 1)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]이야, 두 사람은 이제야 식사하러 온 건가.
+[name="식당 단골"]아무래도 이 식당은 대리사 맞은편에 있으니, 대리사 전용 식당이 되어버렸군.
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]이 식당이 아니었으면, 진작에 그만두고 고향으로 돌아가 농사를 지었을 거예요!
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]또 그런다. 우리가 맡은 일이 그렇게 마음대로 그만둘 수 있는 일이긴 해?
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]왜 그래? 다들 표정이 좋지 않은데?
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]백진연 때문이죠. 매년 이맘때가 되면 대리사 전체가 정신없이 바쁘다니까요. 한 달 내내 제대로 잠도 못 잤어요, 이걸 누가 버틸 수 있겠어요?
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]조심한다고 나쁠 건 없잖아…… 지금 높으신 분들이 얼마나 많이 이 백조에 와있는데? 작은 실수라도 생기면, 뒷감당을 어떻게 하려고?
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]하아, 근데 아무리 조심해도 이렇게 중요할 때일수록 사건은 꼭 일어난단 말이죠.
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]자자, 음식이 나왔으니 일 이야기는 그만하자고. 밥맛 떨어지는 얘기는 하지 말아야지.
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]쳇, 누군 좋아서 이러는 줄 아나.
+[name="피로한 대리사 관리"]근데 그러고 보니…… 정풍루 사건, 들었어요?
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]무슨 사건인데? 그냥 말해, 뭘 그렇게 감추려고 하는 거야.
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]괜히 그러는 게 아니라, 이 사건은 정말 이상하다니까요.
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.7)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_makesoup", loop=true, channel="a",volume=0)]
+[SoundVolume( channel="a",fadetime=2)]
+[playsound(key="$d_avg_cutfast", channel="c",delay=2,volume=0.5)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_avg_cooksizzle_loop", loop=true, channel="b",volume=0)]
+[SoundVolume(volume=0.6, channel="b",fadetime=2)]
+[name="피로한 대리사 관리"]지난달 15일, 정풍루가 눈코 뜰 새 없이 바빴을 때, 백여 개의 화구가 아침부터 밤까지 쉴 새 없이 돌아갔다고 해요.
+[StopSound(channel="a", fadetime=2)]
+[StopSound(channel="b", fadetime=2)]
+[playsound(key="$d_avg_firemagic")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.2, r=0.3, g=0, b=0, fadetime=1, block=false)]
+[name="피로한 대리사 관리"]결국 밤에 한 화구에서 갑자기 큰불이 났는데, 아무리 애써도 불을 끌 수가 없었대요! 결국 요리사 네다섯이 모두 부상을 입었다고 해요!
+[name="근엄한 대리사 관리"]오리지늄 에너지 파이프에 문제가 생긴 건가? 그게 뭐가 이상하다는 거야?
+[name="피로한 대리사 관리"]감정과 조사관들이 현장 조사를 했는데, 그 에너지 파이프에 누가 손을 댔는지 알 수 없었다고 하더라고요……
+[name="피로한 대리사 관리"]주방에 드나드는 사람이 수백 명인데, 누가 무슨 짓을 했는지 어떻게 알겠어요……
+[name="피로한 대리사 관리"]정풍루는 백조에서 제일 유명한 식당이고, 백진연을 주관하잖아요.
+[name="피로한 대리사 관리"]더 이상한 건, 이 사고가 하필 15일 밤에 벌어졌다는 점이에요. 그리고 불이 난 화구는 하필 100호 화구였고요. 그리고 그 불구덩이에서 사람의 형상을 봤다는 사람도 있어요……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[delay(time=0.1)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]자자 그만, 사건 얘기를 할 거면 사건 얘기만 하자고. 그런 근거 없는 얘기는 하지 말고.
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]아니! 제가 이런 거짓말을 해서 어디에 쓰겠어요! 현장에서 많은 사람들이 봤다니까요!
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]흠, 당신들이 하는 대리사 업무는 꽤 흥미진진한 것 같네. 사건 내용이 마치 소설책에서나 나올법한 얘기 같아.
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]전혀, 우리가 무슨 찻집의 이야기꾼인 줄 아나. 사건이 몇 주 동안이나 풀리지 않으면 매일 밤 악몽까지 꿀 정도야.
+[name="근엄한 대리사 관리"]흐음…… 말이 나와서 말인데, 사실 나도 기이한 사건을 들었어.
+[name="근엄한 대리사 관리"]초자연적인 일 같은 건 아니고, 그냥 기묘하고 황당한 사건이야.
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]재미있는 이야기가 또 있다고? 얼른 들려줘.
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]이런 이야기는…… 함부로 꺼내기가 좀 그렇긴 해.
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]말을 하다 끊는 게 어딨어요! 그러는 거 아니에요 진짜!
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[name="근엄한 대리사 관리"]약간 심각한 일이거든. 사건 발생 장소가 평범하지 않아……
+[name="근엄한 대리사 관리"]전임 예부 상서, 영 대인의 저택에서 일어난 거야……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[delay(time=1)]
+[name="근엄한 대리사 관리"]이건 내 스승님이 얼마 전에 맡았던 사건인데, 나도 대략적인 이야기만 들었을 뿐 구체적인 상황에 대해서는 스승님도 전혀 말해주지 않았어.
+[name="근엄한 대리사 관리"]영 대인은 이미 오래전에 은퇴하셨고, 최근에는 수도를 떠나 고향인 강남의 옛 저택으로 거처를 옮기려고 준비 중이었지. 그런데 며칠 전, 영 대인의 저택에 이상한 도둑이 들었다고 해……
+[name="근엄한 대리사 관리"]저택에는 없어진 물건이나 다친 사람은 없었지만, 방에 걸려있던 신선 그림의 입에 누군가 꿀을 발라놓았다고 해.
+[name="근엄한 대리사 관리"]솔직히, 영 대인의 저택은 경비가 삼엄한 곳이야. 하지만 도둑은 마치 저택의 구조를 훤히 꿰뚫고 있는 것처럼 행동했지……
+[name="근엄한 대리사 관리"]게다가 그 도둑이 무예가 뛰어난 까닭인지 아니면 경험이 풍부해서인지는 모르겠지만, 현장엔 어떤 흔적도 없었다고 해. 그래서 스승님 쪽은 지금 그 사건 때문에 발등에 불이 떨어진 것처럼 바쁘다고 하더라고.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]입에 당밀을 칠했다고요? 그건 조왕신의 전설 아닌가요? 조왕신이 좋은 말을 많이 하고, 나쁜 말은 적게 하도록 하는…… 그 도둑이 돈이나 귀중품을 노린 것도 아닌데 굳이 이런 짓을 한 걸 보면, 혹시 다른 의도가 있는 건 아닐까요?
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]다른 의도? 영 상서는 청렴하게 관직 생활을 했고, 예부에서 수십 년간 쌓아온 업적으로 조정 안팎에서 칭송이 자자한 사람이야. 누가 영 상서를 음해하려고 하겠어?
+[name="근엄한 대리사 관리"]어쨌든, 영 상서는 조정의 중신이야. 그분의 저택에 누군가 무단으로 침입했다는 것 자체로도 이미 심각한 사건이지. 하물며, 요즘처럼 중요한 시기에……
+[name="근엄한 대리사 관리"]하아, 걱정하는 일은 꼭 터지고 만다니까……
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]아, 맞다! 생각났어!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]깜짝이야, 또 뭐가 생각났다는 거예요?
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]여러분의 열띤 대화를 듣다 보니, 며칠 전에 이 식당에서 나도 이상한 일을 겪었던 기억이 났어.
+[name="식당 단골"]바로 3일 전, 여기서 밥을 먹고 있는데 가게에 이상한 사람이 찾아왔지.
+[name="식당 단골"]꽤 나이가 있어 보였고 죄수복을 입고 있었어. 마치 대리사에서 막 풀려난 사람 같았지.
+[name="식당 단골"]어깨에 힘을 잔뜩 준 채 가게로 들어와 앉더니, 요리는 안 시키고 쌀밥만 20그릇을 시키더라고. 게다가 단숨에 먹어 치웠어……
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1621_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="강 씨"]저기…… 이것만 먹을 생각이야?
+[name="강 씨"]밥만 먹으면 목이 멜 텐데, 요리랑 국이라도 조금 줄까? 그냥 주는 셈 칠게, 공짜로 말이야.
+[charslot]
+[name="유별난 식객"]필요 없다.
+[name="유별난 식객"]이 대황성의 쌀은 깨끗하고 순수해서 절세의 맛을 자랑하지, 다른 요리는 필요 없다.
+[name="유별난 식객"]만족스러운 식사였군, 돈도 충분해. 여기 계산!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[name="식당 단골"]그 이상한 사람은 밥을 다 먹고는 빈 그릇 20개를 안고 식당 밖으로 나갔고, 곧장 맞은편 대리사 문 앞으로 향했어. 그리고 겹겹이 쌓은 밥그릇들을 대리사의 문 앞에 던지고는 큰 소리로 외쳤지.
+[dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="식당 단골"]“문서고의 불은 내가 질렀다!”
+[name="식당 단골"]참, 깜빡했네. 그건 대리사의 일이니 분명 나보다 더 잘 알고 있을 텐데…… 그 사람은 도대체 누구야? 나중엔 어떻게 됐어?
+[charslot]
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]……
+[name="피로한 대리사 관리"]아무리 식사 중의 잡담이라지만, 이건 말하면 안 될 것 같은데요……
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]그만, 옆 좌석에 외지인도 있어!
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]괜찮아, 아까 빅토리아어를 하는 걸 들었어. 아마 외국인 관광객이겠지, 못 알아들을 거야.
+[dialog]
+[charslot]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="빅토리아 관광객?"](유창한 염국어로) 여기, 주문이요!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="피로한 대리사 관리"]……
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="근엄한 대리사 관리"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1621_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="강 씨"]'홍옥부유', '마라두부', '각황연옥', '문사추국', '조란옥체'……
+[name="강 씨"]그 손님이 주문한 건…… 이것들이야.
+[charslot(slot = "m", focus = "n")]
+[name="불쾌한 목소리"]……
+[name="불쾌한 목소리"]뭐야? 트집이라도 잡으러 왔나?
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="강 씨"]음…… 꽤 예의 있어 보였어. 메뉴를 보면서 이런 요리들을 주문했고, 동종 업계에서 트집을 잡으러 온 것 같지는 않았어……
+[charslot(slot="m",name="avg_npc_1621_1#9$1")]
+[name="강 씨"]혹시…… 《백조식진록》을 쓰고 있는 그 음식 평론가 아닐까?
+[charslot(slot = "m", focus = "n")]
+[name="불쾌한 목소리"]어떤 평론가가 남의 솜씨를 평가하겠다고 두부 요리를 대여섯 개나 주문해?!
+[charslot(slot="m",name="avg_npc_1621_1#10$1")]
+[name="강 씨"]주방장…… 진정, 진정해.
+[name="강 씨"]가게 사정은 너도 잘 알고 있잖아, 입소문으로 관광객을 끌어올 기회가 이번에 달렸어……
+[name="강 씨"]힘들고 수고스럽겠지만…… 이 요리들은 절대로 실수하면 안 돼……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_chairrub")]
+[playsound(key="$d_avg_plateplace",delay=1,channel="1")]
+먼 길을 온 빅토리아인은 의자와 술 2병을 들고 대리사 관리 2명의 자리 옆으로 와서 앉았다.
+[playsound(key="$pourwater",channel="2")]
+그녀는 자연스럽게 관리들에게 술을 따라주었다. 술에서 나는 진하고 달콤한 향기가 금세 식탁 위를 가득 채웠다.
+[dialog]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="빅토리아 관광객?"]사양하지 마, 술은 함께 마셔야 더 즐겁잖아.
+[name="빅토리아 관광객?"]참, 그다음은? 그릇을 문에 던진 사람은 어떻게 됐어?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]아가씨, 방금 들은 건 그냥 밥 먹으면서 가볍게 한 이야기야……
+[name="근엄한 대리사 관리"]부탁이니, 여기저기 퍼뜨리지 말아 줬으면 해……
+[charslot(slot="m",name="avg_1040_blaze2_1#11$1")]
+[name="빅토리아 관광객?"]어? 보통 이런 상황에서는 '다음 회를 기대하세요'라고 하잖아?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]우린 대리사의 관리들이야, 찻집의 이야기꾼이 아니라……
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="빅토리아 관광객?"]이런 우연이! 내 친구도 대리사에 있어.
+[name="빅토리아 관광객?"]대리사 사람들은 전부 잔뜩 굳은 얼굴에, 말도 잘 하지 않는 사람들일 줄 알았는데 말이야.
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]크흠……
+[name="근엄한 대리사 관리"]우리 빅토리아에서 온 친구는…… 혼자서 염국에 여행을 하러 왔나?
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="블레이즈"]너무 예의 차릴 필요 없어. 난 염국 이름도 있는걸. 어…… '황'이라고 해.
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="블레이즈"]여행이라…… 하하, 뭐 그런 셈이지.
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]염국어를 이렇게 유창하게 하는 빅토리아인은 드문데, 염국에서 산 적이 있어?
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="블레이즈"]하하, 그건 아니지만 100% 빅토리아인이라고 하긴 좀 그래. 우리 아버지가 염……
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[MusicVolume(volume=0.4, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "left", name = "char_017_homura_3#4",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_039_1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="블레이즈"]세 가지 규칙?
+[charslot(slot = "right",focus="r")]
+[name="레이즈"]못 지키겠다면, 전 무슨 일이 있어도 당신을 백조로 데려가지 않을 겁니다.
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="블레이즈"]알았어, 알겠다고. 할 말 있으면 빨리해.
+[charslot(slot = "right",focus="r")]
+[name="레이즈"]첫째, 낯선 사람을 조심하고, 불필요한 행동은 함부로 하지 말 것.
+[charslot(slot = "left", name = "char_017_homura_3#10",focus="l")]
+[name="블레이즈"]내가 무슨 세 살배기 애라도 되는 줄 아나? 알았어, 다음은?
+[charslot(slot = "right",focus="r")]
+[name="레이즈"]둘째, 자신이 감염자인 걸 절대 드러내지 말 것……
+[charslot(slot = "left", name = "char_017_homura_3#5",focus="l")]
+[name="블레이즈"]……그건 굳이 말 안 해도 돼. 어떻게 해야 하는지 알아.
+[charslot(slot = "right",focus="r")]
+[name="레이즈"]셋째……
+[name="레이즈"]절대, 절대로 다른 사람들에게 당신 아버지와 관련된 이야기를 하지 말 것.
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="블레이즈"]……알겠어.
+[charslot(slot = "right",focus="r")]
+[name="레이즈"]블레이즈, 당신은 이번 사건의 핵심 증인이자 중요한 단서입니다.
+[name="레이즈"]당신의 협조가 필요해요, 당신의 안전은 제가 보장하겠습니다.
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.3, channel="bgs",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="식당 단골"]아버지가 뭐라고?
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="블레이즈"]아, 아무것도 아니야. 이번엔 친척을 보러 왔어, 온 김에 여행하려고. 하하.
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]아가씨 딱 좋을 때 왔어, 백진연이 곧 시작될 때라 지금 백조의 모든 식당이 서로 경쟁이 붙었거든. 지금 여행을 오다니, 먹을 복이 넘치네.
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="블레이즈"]정말? 그렇다면 추천할 만한 백조의 특색있는 요리나 식당이 있을까?
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]뭘 잘 모르는 거 같은데, 백조에 특별한 요리는 없지만 '먹는다'라는 것 자체가 백조의 특별함이지.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="블레이즈"]오, 도시 이름에 부엌이라는 의미인 '조'가 들어간 이유가 있었구나.
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]하하, 백성은 음식을 하늘로 여긴다는 말이 있지. 그래서 백조라고 하는 거야. 진룡께서 “천하의 모든 부엌을 보살핀다”라는 뜻을 담아서 이름을 지었기 때문이지.
+[name="식당 단골"]이후, 또 어떤 사람은 “음식은 정성 들여 만들어야 한다”라고도 했어. 식사는 단순히 배를 채우는 것이 아니라, 몸과 마음을 수양하는 것이기도 하니까.
+[name="식당 단골"]절기마다 제철 요리가 있고, 지역마다 그곳의 특색 요리가 있어. 입에 음식을 넣는 것은 세상에서 가장 중요한 일이고, 요리라는 것은 하늘의 뜻과 인간의 교감이라고 해…… 여기엔 깊은 학문이 담겨있지.
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="피로한 대리사 관리"]외국에서 온 관광객에게 바람 그만 넣고, 식사나 하시죠.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_npc_1621_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="강 씨"]자, 주문했던 요리야.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_foodaroma_01",layer=1)]
+[curtain(direction = 2,fillfrom = 1,fillto = 0.05, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 1,fillto = 0.45, fadetime=0.1)]
+[Image(image="58_i04_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="식당 단골"]이 사람…… 두부를 정말 좋아하나 보네?
+[name="블레이즈"]엥? 요리 이름은 달랐는데, 전부 두부 요리였다고?
+[name="블레이즈"]나도 몰랐어…… 염국의 두부 요리법은 엄청 다양하구나……
+[dialog]
+[curtain(direction = 2,fillfrom = 0.05,fillto = 0, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.45,fillto = 0, fadetime=2)]
+[delay(time=2)]
+[Image(image="58_i04_1",screenadapt="coverall",fadetime=1)]
+[delay(time=1)]
+[name="블레이즈"]뭐, 괜찮아. 같이 나눠 먹으면 더 맛있잖아…… 이건 '염국의 테이블 매너'에 어긋나지 않겠지?
+[name="식당 단골"]하하…… 어긋나지 않아. 그럼 우리도 사양하지 않을게.
+[dialog]
+[PlaySound(key="$d_avg_dishes")]
+[delay(time=1.5)]
+[name="블레이즈"]이상하네, 이 디저트도 내가 주문했던가?
+[dialog]
+[curtain(direction = 2,fillfrom = 0,fillto = 0.35, fadetime=1)]
+[curtain(direction = 6,fillfrom = 0,fillto = 0.15, fadetime=1)]
+[delay(time=1.5)]
+[name="우아한 여성"]……
+[dialog]
+[Image(image="58_i04_2",screenadapt="coverall",fadetime=0.8)]
+[delay(time=1.2)]
+[name="우아한 여성"]음……?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[curtain]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1621_1#1$1",focus="n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="불쾌한 목소리"]음식은 나갔어? 반응은?
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="강 씨"]어…… 음식을 주문한 손님은 별로 먹지 않았고, 옆 테이블 손님들에게 나눠줬어.
+[dialog]
+[charslot(slot="m",focus="n")]
+[playsound(key="$d_avg_broadsword_polish", loop=true, channel="c")]
+[delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[name="불쾌한 목소리"]쳇……
+[charslot(slot="m",name="avg_npc_1621_1#8$1")]
+[name="강 씨"]진정해…… 진정…… 어쩌면 이 식당의 식사 분위기도 평가의 일부일지 모르잖아……
+[name="강 씨"]일단 조급해하지 말고, 조용히 지켜보자……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="블레이즈"]그나저나 아까부터 말했던 백진연이란 건 도대체 뭐야?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]염국어는 유창할지 몰라도 염국의 많은 전통에 대해서는 아직 잘 모르나 보군.
+[name="근엄한 대리사 관리"]백진연은 매년 추석이 되면 염국의 진룡께서 백관들을 초대해 함께 국사를 논의하는 날이야.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="블레이즈"]이상하네, 조정의 회의인데 왜 미식 축제처럼 이름을 지었지?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]백진연의 유래도 미담에서 비롯되었다고 할 수 있지.
+[name="근엄한 대리사 관리"]아주 오래전, 진룡께서 생일 연회를 열었고, 모든 관리는 선물을 바쳤어. 그들이 바친 선물은 염국 각지에서 온 진귀한 보물이었고, 종류도 다양했지.
+[name="근엄한 대리사 관리"]그런데 그중 한 젊은 호부 시랑이 진룡께 요리를 바친 거야. '진주 비취 백옥탕'이라는 이름의 요리였지.
+[name="근엄한 대리사 관리"]뚜껑을 연 진룡이 본 건, 맑은 탕에 들어있는 시들어버린 채소 몇 개와 쌀알 몇 개뿐이었지.
+[name="근엄한 대리사 관리"]진룡께서는 크게 분노했고, 호부 시랑에게 이게 무슨 짓이냐 물었어. 그러자 호부 시랑은 강제에 수해가 발생해 곡식 한 톨 수확하기 어려운 상태고, 이 그릇 안에 담긴 것이 바로 그 지역 백성들이 먹는 음식이라고 대답했지.
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="블레이즈"]옳은 말을 서슴없이 하는 게 관리로서 당연히 해야 할 일이긴 한데.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="블레이즈"]그래도 진룡의 생일날 감히 그런 말을 하다니, 정말 간이 큰 사람이었네.
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]맞아. 하지만 진룡께서는 이 관리를 처벌하지 않았어, 오히려 크게 칭찬하며 용감하게 간언하는 태도를 문무백관에게 본받으라 명했지.
+[name="근엄한 대리사 관리"]진룡께서는 조정의 각종 지출을 삭감하라 명하면서 구호와 재난 복구에 힘쓰도록 지시했어. 이후 하천 제방을 정비하면서 강제의 수해가 해결됐지.
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="피로한 대리사 관리"]맞아요, 그리고 이듬해에는 지부가 이를 본받아 진룡께 '복록탕'을 바쳤어요. 식재료는 매우 호화스러웠죠. 진룡께 자신이 관할하는 도시의 어업이 대풍작을 이뤘음을 보고하기 위해서였던 거예요.
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]……크흠.
+[name="근엄한 대리사 관리"]그 결과, 이렇게 연회를 빌려 국사를 논의하는 것은 전통이 되었고, 이를 '백진연'이라 부르며 매년 추석에 열게 되었지.
+[name="근엄한 대리사 관리"]이때가 되면 온 도시 백성들이 함께 성대한 축제를 즐겨. 백진연에서 선보인 요리는 식당들이 앞다투어 따라 하지, 사람들과 함께 즐기고 기쁨을 나누는 거라고 할 수 있어.
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="블레이즈"]오…… 염국 사람들은 정말 음식에 진심이구나.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="블레이즈"]이 식당도 그래, 겉보기에는 평범해 보이지만 요리는 전부 맛있어! 두부를 이렇게 다양한 요리로 만들 수 있다니, 정말 대단해.
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]하지만, 이 디저트는…… 전에 먹었던 것과는 좀 달라. 맛도 예전 같지 않고, 아마 정통은 아닌 것 같아.
+[dialog]
+[stopmusic(fadetime=1)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="식당 단골"]……
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="근엄한 대리사 관리"]……
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="피로한 대리사 관리"]……
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]음? 왜 다들 조용히 있어?
+[dialog]
+[charslot]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_2026_yu_1#16$1",duration=0.8)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=0.5)]
+[name="화가 난 소년"]너야?
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_2026_yu_1#15$1")]
+[name="화가 난 소년"]내가 만든 요리가 별로라고 한 사람이 너냐고?
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

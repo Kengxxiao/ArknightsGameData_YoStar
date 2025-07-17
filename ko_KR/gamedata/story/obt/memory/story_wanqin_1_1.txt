@@ -1,0 +1,672 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="25_g06_mountainroad_d",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[bgeffect(name="$eb_smog",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+밀림 깊은 곳에 신선이 은거하고 있다는 소문이 들려왔다. 그 신선은 가는 곳마다 아침부터 저녁까지 구름과 안개가 끼게 하는 신기한 재주가 있다고 한다.
+구름 속의 일은, 거짓과 진실이 혼재되어 있어, 그 진위를 파악하기 어렵다.
+진실을 추구하는 마음만이 길을 인도할 수 있을 뿐.
+[dialog]
+[PlaySound(key="$d_avg_snowbootwalk")]
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="화생"]후우…… 후우…… 안개가 점점 짙어지네.
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]여기는 어째 낯이 좀 익은데, 방금 지나왔던 길 아닌가?
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]드론은 여전히 신호가 없는 데다가, 근처에 딱히 길을 물을 수 있는 사람이 있는 것도 아니니……
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1643_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="l")]
+[charslot(slot="l",name="avg_4119_wanqin_1#1$1",focus="l")]
+[name="화생"]어, 산에 웬 꼬마가? 안녕……
+[dialog]
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="all")]
+[charslot(slot="l",name="avg_4119_wanqin_1#1$1",focus="all")]
+[delay(time=1)]
+[charslot(slot="r",posfrom="0,0",posto="50,0",focus="all",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",posfrom="50,0",posto="90,0",focus="all",afrom=1,ato=0,duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_4119_wanqin_1#7$1",focus="l")]
+[name="화생"]잠깐만, 난 그냥 길을 물으려고……
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_snowrun", channel="bg",volume=1)]
+[delay(time=3)]
+[stopsound(channel="bg")]
+[charslot(slot="r",name="avg_npc_1643_1#1$1",afrom=0,ato=1,posfrom="-50,0",posto="0,0",duration=1,focus="all")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_snowrun", channel="bg2",volume=1)]
+[charslot(slot="l",name="avg_4119_wanqin_1#10$1",afrom=0,ato=1,posfrom="-50,0",posto="0,0",duration=1,focus="all")]
+[delay(time=2)]
+[stopsound(channel="bg2")]
+[charslot(slot="l",name="avg_4119_wanqin_1#10$1",focus="l")]
+[name="화생"]꼬마야, 안 쫓을 테니까 도망가지 마. 산에 안개가 자욱해서 위험하단 말이야.
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="r")]
+[name="산속 어린아이"]……
+[dialog]
+[charslot(slot="r",posfrom="60,0",posto="100,0",focus="all",afrom=1,ato=0,duration=0.7)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4119_wanqin_1#8$1",focus="l")]
+[name="화생"]……나더러 따라오라는 거야?
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[delay(time=1)]
+[Background(image="25_g09_teahouse",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]여긴…… 내가 산으로 들어왔던 길이잖아. 반나절이나 돌아다녔는데, 여기서 얼마 가지도 못하고 있었구나……
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]……
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]아, 안녕.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]너, 빨리 산에서 내려가, 이 길을 따라서 쭉 내려가면 돼.
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]난 산에서 내려가려는 게 아니야. 꼬마야, 이 산에 경작지가 있는 밀림이 있다던데, 혹시 그곳이 어디인지 아니? 산속 안개가 걷히지 않아서, 길을 분간하기 너무 어려워서 그래.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]……
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]그런 곳은 본 적 없어. 분명 이상한 소문을 들은 거 같은데, 어휴, 여행객들이 다 그렇지 뭐.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]아니…… 그냥 소문은 아니야. 그래, 그 경작지를 찍은 사진도 있어, 잘 한번 봐봐, 정말 본 적 없어?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]못 봤어. 아무거나 믿어선 안 돼. 내 말 듣고 어두워지기 전에 어서 떠나도록 해.
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]자세히 보지도 않고선…… 뭐 이 사진은 네가 태어나기도 전에 찍힌 거 같으니, 너한테 물을 만한 건 아니긴 하지. 귀찮게 해서 미안, 이건 내가 직접 찾아볼게.
+[dialog]
+[charslot]
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="all")]
+[charslot(slot="l",name="avg_4119_wanqin_1#8$1",focus="all")]
+[delay(time=1)]
+[charslot(slot="r",posfrom="0,0",posto="-80,0",focus="all",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="r")]
+[name="산속 어린아이"]그런 곳이 진짜로 있다면 더 수상하지 않아? 물, 전기도 안 들어오고 인적도 드문데, 누가 그런 곳에서 살겠어? 곰곰이 생각해 봐……
+[charslot(slot="l",name="avg_4119_wanqin_1#1$1",focus="l")]
+[name="화생"]꼬마야, 알았으니 얼른 돌아가 봐, 날이 점점 어두워지고 있으니까 조심하고.
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="r")]
+[name="산속 어린아이"]에잇, 끝까지 산으로 가려나 보네…… 이 사람, 말을 통 듣질 않는군.
+[dialog]
+[charslot]
+[charslot(slot="m",posfrom="-80,0",posto="40,0",focus="all",afrom=1,ato=0,duration=1.5)]
+[delay(time=2.5)]
+[bgeffect(name="$eb_smog",layer=1,fadetime=1)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]거기는 이상한 사람이 사는 게 아니라, 경험이 풍부한…… 어라, 어디 갔지?
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]또 안개가 꼈네.
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]기상 데이터에서 여긴 1년 중 열에 아홉은 안개가 낀다 했었지. 느긋하게 안개가 걷히는 걸 기다릴 시간이 없어, 다시 부딪혀보자.
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]드론은…… 아직도 신호가 없나. 가시거리는 더 줄어들었고, 정말 이상하네, 아니면 정말 그 꼬마 말처럼……
+[charslot(slot="m",name="avg_4119_wanqin_1#12$1",focus="m")]
+[name="화생"]하하, 아니다. 과학을 믿어야지.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]아, 이 길은…… 방금까지 있었나?
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=3, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_iceforest_1",screenadapt="coverall")]
+[bgeffect(name="$eb_smog",layer=1)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=4, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]여기는…… 어디지? 아직도 방금 그 산 중턱인 건가? 쓰읍…… 춥네.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]잠깐만, 이 숲은……
+[dialog]
+[playsound(key="$d_avg_paper1",volume=0.8)]
+[delay(time=1.2)]
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]식물의 분포와 지형의 생김새가 사진 속 그 숲과 똑같아. 그 앞에 있는 저 공터는 틀림없이……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowrun",volume=1)]
+[delay(time=4)]
+[name="화생"]바로 그 밭이야……!
+[PlayMusic(key="$calm_loop", volume=0.6)]
+옅은 안개가 낀 밀림 속에 개간된 밭이 있었다. 밭 가장자리엔 덩그러니 콩 몇 개가 심어져 있었고, 드문드문 잡초가 나 있었다. 그 주변 일대는 눈이 거의 쌓이지 않은 상태였다.
+화생은 즉시 웅크려 앉아 천사의를 꺼내 콩의 데이터를 측정한 뒤, 자신이 재배에 실패한 것들과 비교해 보았다.
+콩꼬투리 끝자락의 높이는 완벽했으며, 그늘진 산비탈에서 자라서 추위에 강했다. 틀림없이 그 대선배의 작품이었다.
+[PlaySound(key="$d_avg_snowrun",volume=1)]
+화생은 흥분해서 펄쩍 뛰어올랐고, 이내 그의 시선이 밭을 지나 안갯속 유일한 오두막 하나에 닿았다. 그는 망설이지 않고 그 희미한 윤곽을 향해 달려갔다……
+달려갔다……
+발걸음이 점점 느려졌지만, 다시금 걸어갔다……
+[dialog]
+[PlaySound(key="$d_avg_snowfootstep", volume=1)]
+[delay(time=4)]
+[charslot(slot="m",name="avg_4119_wanqin_1#2$1",focus="m",duration=1)]
+[delay(time=2)]
+[name="화생"]……어? 질동이, 소나무 분재, 호미.
+[charslot(slot="m",name="avg_4119_wanqin_1#2$1",focus="m")]
+[name="화생"]아, 다시 돌아왔잖아. 질동이, 소나무 분재, 호미. 한 걸음, 두 걸음, 세 걸음, 질동이, 소나무 분재, 호미.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]전혀 앞으로 가지 않았어! 이게 어떻게 된 거지, 오두막과의 거리가 조금도 좁혀지지가 않아……
+[charslot(slot="m",name="avg_4119_wanqin_1#2$1",focus="m")]
+[name="화생"]저쪽으로 돌아서 가보자……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowfootstep", volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]……
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]이상하네, 이번엔 나무 위로 넘어가 볼까?
+[dialog]
+[charslot]
+[delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[PlaySound(key="$leaveshake")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="화생"]으아아아악……
+[dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot]
+[delay(time=2)]
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+화생은 한참이나 시도했지만, 끝내 눈앞에 보이는 오두막으로 가지 못했다. 그는 시무룩해서 밭 주변에 잠시 앉아있다가, 밭 안의 잡초가 신경 쓰였는지 한바탕 정리하기 시작했다.
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]후우…… 이제야 보기 좀 편하네. 그런데 정말 습한 날씨군. 손이 호미에 끈적하게 달라붙을 정도야.
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]하아, 난 정말 가만히 있지를 못한다니까. 이제 어떻게 해야 할지 좀 곰곰이 생각해 봐야겠다……
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]엣헴.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]어라, 꼬마야, 또 너야? 이렇게 늦었는데 집에 안 돌아가면 엄마 아빠가 걱정하시지 않니?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]신선에게 뭔가 부탁하러 온 거면 잘못 찾아왔으니까, 헛수고 그만해.
+[charslot(slot="m",name="avg_4119_wanqin_1#2$1",focus="m")]
+[name="화생"]……
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]아…… 너 사실은 그 대선배를 알고 있는 거구나!
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]난 신선에게 뭔가 부탁하러 온 게 아니야, 굳이 따지자면 가르침을 구하러 온 거지. 그분은 내가 한 번도 만나 뵌 적 없는 농업천사 대선배인데, 그분에게 꼭 물어봐야 할 중요한 일이 있거든……
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]정말 중요한 거야, 날 오랫동안 괴롭혀온 일이지.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]그분은 벌써 몇 년 동안이나 돌아오지 않았어.
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]음……
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]그러면 넌 왜 날 이렇게 빨리 쫓아내고 싶어하는 거야? 생각해 보니까, 방금 산 중턱에서도 나보고 빨리 내려가라고 했잖아……
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]그런 거 아니야! 난, 난 단지 네가 헛걸음하는 걸 보고 싶지 않아서 그래!
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]헛걸음? 헛걸음이라기엔 대선배의 실험 결과가 모두 여기 있는 걸.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]대선배가 너한테 무슨 말을 전해달라고 했어?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]너…… 생긴 거랑 다르게 바보는 아닌가 보네.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]좋아, 그분이 네게…… 음……
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]응?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]그니까, 그……
+[dialog]
+[charslot]
+어린아이는 손으로 힘껏 원을 그리며, 밭에서부터 산 아래까지를 가리켰다.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]구하려는 사람은 지난날과 다를 바 없다. 이 말 이해할 수 있지?
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"](밭, 원을 그리고, 지난날과 다를 바 없다.)
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="47_g11_shuresearchoffice",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]그 논문의 저자가…… 세계 곳곳을 유람하고 있다고요?! …… 그럼 그분과 연락할 방법을 아는 사람은 있나요?
+[charslot(slot="m",name="avg_npc_1248_1#1$1",focus="m")]
+[name="언짢은 농업천사"]하하, 그 사람하고 연락하려고? 너는 모르겠지만, 당시에도 그 사람은 이미 우리 같은 '세속적인 소란'을 싫어했었어. 잘도 논문을 완성할 때까지 참았다가 멀리 떠났지 뭐야. 참 대단하셔!
+[charslot(slot="m",name="avg_npc_1248_1#1$1",focus="m")]
+[name="언짢은 농업천사"]그 후부턴 감감무소식이야. 어디로 갔는지 아무도 몰라.
+[charslot(slot="m",name="avg_npc_1248_1#1$1",focus="m")]
+[name="언짢은 농업천사"]왜 그래, 무슨 과제 때문이야? 꼭 그 사람이어야 돼?
+[charslot(slot="m",name="avg_4119_wanqin_1#9$1",focus="m")]
+[name="화생"]네. 기계로 수확할 수 있고, 그늘을 좋아해 추위에도 견딜 수 있는 '하이팟 2호'를 재배하려 하는데, 지금은 무슨 짓을 해도 이상적인 수치에 도달하지 못하고 있어요. 벌써 반년 동안이나 정체된 상태라서……
+[charslot(slot="m",name="avg_4119_wanqin_1#5$1",focus="m")]
+[name="화생"]분명 제가 놓친 부분이 있을 거예요.
+[charslot(slot="m",name="avg_npc_1248_1#1$1",focus="m")]
+[name="언짢은 농업천사"]색다른 방법으로 해 봐봐. 데이터베이스에 가서……
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]농업 관련 기사는 이미 모조리 찾아봤는데, 그 대선배와 연관된 건 찾지 못했어요.
+[charslot(slot="m",name="avg_npc_1248_1#1$1",focus="m")]
+[name="언짢은 농업천사"]아니, 내 말은, 각지의 신비한 소문을 찾아보면, 의외의 수확이 있을지도 몰라……
+[dialog]
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="화생"]음, 진한 차는 입에 쓰긴 해도 정신을 차리게 해주니까. 약이라 생각하고 마셔야겠다.
+[Dialog]
+[charslot(slot="m",name="avg_4119_wanqin_1#3$1",focus="m")]
+[PlaySound(key="$d_avg_drinkswllw")]
+[PlaySound(key="$d_avg_drinkswllw",loop=false,channel="d1",delay=1)]
+[PlaySound(key="$d_avg_drinkswllw",loop=false,channel="d2",delay=1.6)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]후우…… 계속해 보자. 신기한 소문이 워낙 많다 보니, 보는 것만으로도 눈이 다 어지러워…… 어디까지 봤더라?
+[dialog]
+[PlaySound(key="$keyboard", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4119_wanqin_1#14$1",focus="m")]
+[name="화생"]《물속 괴물의 물싸움》, 《일곱 빛깔 구름의 색이 하나 빠진 일》, 《마른 우물 속의 볶음면 냄새》…… 다 관련 없는 것들이네.
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]《경극을 하는 클라우드비스트》? 소만에게 보내봐야겠다.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]《안갯속 길을 알려주는 신선》…… 나온 날짜를 보니 그 논문 발표 후 얼마 지나지 않아 나온 거네.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]잠깐, 이 현장 사진은!?
+[dialog]
+[charslot]
+화생은 모니터 앞으로 다가가 멀리서 찍은 사진을 최대한 크게 확대하여 사진 속 중앙에 있는 그 밭을 자세히 살펴보았다.
+구름과 안개 사이로 땅에서 자라고 있는 작물들이 희미하게 보였다. 그것들을 찬찬히 살펴보던 화생의 눈이 점점 커졌다.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]선, 선생님! 저……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_iceforest_1",screenadapt="coverall")]
+[bgeffect(name="$eb_smog",layer=1)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+안갯속 길을 알려주는 신선.
+소문은 어느 산 정상에 흩어지지 않는 구름이 덮여있는 걸 본 사람으로부터 비롯되었다.
+아무도 신선의 모습을 보진 못했지만, 그 짙은 안갯속으로 들어가면 길을 알려주었고, 질문에 답을 해주었다.
+진실과 거짓, 허와 실이 뒤섞인 가운데, 신선의 점지가 눈앞을 환해지게 한다.
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]신선의 점지라…… 어쩐지.
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"](밭, 원을 그리고, 지난날과 다를 바 없다.)
+[charslot(slot="m",name="avg_4119_wanqin_1#5$1",focus="m")]
+[name="화생"]이번엔 정말 이해했어!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[bgeffect]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[name="???"]내가 한 말을 전했다고?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]전, 전하긴 했는데요.
+[charslot]
+[name="???"]꺼지라고 확실히 말한 거야?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]비슷한 느낌으로 하긴 했어요, 하하……
+[charslot]
+[name="???"]근데 저 녀석이 왜 아직도 있냐고! 게다가 보란 듯이 내 밭에서 땅을 갈고 있잖아!
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]……땅을 가는 데 사용한 휴대용 기계랑 옷에 있는 은색 문양을 보건대, 저 사람, 신선님처럼 천사부에서 온 거 맞죠?
+[charslot]
+[name="'신선'"]흥.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]진작부터 아셨겠지만, 저 사람의 의문을 풀기 위해선 신선님이 필요한 것 같아요.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]저 사람이 하도 예의가 바르다 보니, 저도 예의를 갖춰서 이렇게 손으로 원을 그리고 나가라는 표시를 했는데…… 아 설마 저 사람, 제 손짓을 신선님이 땅을 갈라고 했다는 뜻으로 이해한 걸까요?
+[charslot]
+[name="'신선'"]내……!
+[charslot]
+[name="'신선'"]잘 들어. 이번엔 한 글자도 바꾸지 말고, 저 녀석에게 똑똑히 말해……
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_iceforest_1",screenadapt="coverall")]
+[bgeffect(name="$eb_smog",layer=1)]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", multi = true, text="네 과제 따위 내가 알 게 뭐야!", x=400,y=300, alignment="left", size=24, delay=0.04, width=800,block = true)]
+[Sticker(id="st1", multi = true, text="\n자기 연구는 스스로 머리 굴려서 하지그래?",block = true)]
+[Sticker(id="st1", multi = true, text="\n머리가 비었으면 가서 호두라도 먹고 채워! 당장 꺼져!",block = true)]
+[Sticker(id="st1", multi = true, text="\n——전 농업천사(《콩의 대량 수확 기술에 관한 새로운 방향과 전망》저자)",block = true)]
+[Sticker(id="st1")]
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]……
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]왔어? 으아, 벌써…… 시간이 이렇게 됐네?!
+[dialog]
+[charslot]
+화생은 다급히 땀을 닦아냈다. 그리고 어린아이의 모습을 보고 나서야 문득 정신이 확 들었다. 밭을 가는 데 너무 열중한 나머지, 정작 대선배의 점지 뒤에 숨겨진 의미는 아직 깨닫지 못한 것이다.
+이때의 그는 마치 숙제를 잊어버린 걸 선생님에게 들킨 학생처럼, 간절히 천사의 안으로 들어가고 싶었다.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]크흠…… 신선님께서……
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]네 과제는 내가 알…… 그……
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]과제? 역시 대선배는 내가 왜 왔는지 진작부터 알고 계셨구나. 근데 난 아직 아까 알려준 것도 완전히 이해하지 못했는데.
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m")]
+[name="화생"]연구가 단순히 일하기 위함이 아닌 건 알고 있어. 더욱 깊이 생각해 봐야겠지.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"](“네 과제 따위 내가 알 게 뭐야”, “머리가 비었으면 가서 호두라도 먹고 채워”, 이런 말을 어떻게 내뱉으란 말이야?!)
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]사람은 홀로 서는 걸 중히 여겨야 한다고 하셨어. 그…… 그리고 밭에만 있지 말고, 이제 곧 떠나야 할 때야. 영양을 보충하러.
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]영양.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]아니 아니, 거기서 중요한 부분은 떠나라는 앞부분이라고.
+[charslot(slot="m",name="avg_4119_wanqin_1#3$1",focus="m")]
+[name="화생"]떠나라, 영양을 보충하러.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]아…… 이번에야말로 확실히 이해했어, 바로 출발할게!
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]뭐? 정말 간다고? 이렇게 가버린다고?
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]응, 질질 끌어선 안 되지, 지금 바로 출발하려고!
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[delay(time=1)]
+밤의 장막과 구름이 산 정상을 뒤덮었고, 밀림은 아무런 소리 없이 고요해졌다. 가벼운 발걸음 소리가 들려오기 전까진.
+[dialog]
+[PlaySound(key="$e_imp_watersplash_h", volume=1)]
+[Delay(time=1.5)]
+이내 물을 휘젓고 뿌리는 소리가 나더니, 구름과 안갯속에서 독특한 냄새가 퍼지기 시작했다.
+[charslot]
+[name="산속 어린아이"]음…… (킁킁, 킁킁)…… 음……
+[name="산속 어린아이"]무슨 소리지…… 이건 또 무슨 냄새야……
+[name="산속 어린아이"]이건…… 아아아악!!! 아아아아아!!!
+[dialog]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]저 사람…… 저 사람 물을 긷고 돌아왔어. 그리고 비료를 물에 녹여서 밭에 거름을 주고 있잖아!
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]왜 저러는…… 아, 설마 내가 영양이라고 말해서?
+[charslot]
+[name="'신선'"]무슨 영양?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]아니아니아니, 아무것도 아니에요.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]아무튼, 조금은 제 탓이 있긴 한데…… 신선님, 저 사람을 어떻게 훈계하실지 생각하셨나요? 이번에는 제가 반드시, 토씨 한 글자도 다르지 않게 있는 그대로 전달하겠습니다.
+[charslot]
+[name="'신선'"]……됐어. 아무것도 말하지 말고, 이거나 쟤한테 갖다 줘.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]이건 신선님 밭 안의……
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_iceforest_1",screenadapt="coverall")]
+[bgeffect(name="$eb_smog",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_4119_wanqin_1#1$1",focus="all")]
+[PlaySound(key="$e_imp_watersplash_h", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_snowrun", volume=1)]
+[charslot(slot="r",name="avg_npc_1643_1#1$1",focus="all",duration=1)]
+[delay(time=4)]
+[charslot(slot="l",name="avg_4119_wanqin_1#1$1",focus="l")]
+[name="화생"]좋은 아침, 또 오느라 고생이네. 대선배가 이번에는 무슨 지침을 내려줬어?
+[dialog]
+[charslot(slot="r",posfrom="0,0",posto="-50,0",focus="all",duration=1.5)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_clothmovement")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=15, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[charslot(slot="r",posfrom="-50,0",posto="150,0",focus="all",afrom=1,ato=0,duration=1.5)]
+[PlaySound(key="$d_avg_snowrun", volume=1)]
+[delay(time=2)]
+[stopmusic(fadetime=2)]
+[charslot(slot="l",name="avg_4119_wanqin_1#7$1",focus="l")]
+[name="화생"]이건…… 콩 씨앗 세 알이잖아?
+[dialog]
+[charslot]
+땅에 있는 콩과 손안에 있는 씨앗, 그리고 주변 밭을 보던 화생의 당혹스러운 미간이 서서히 펴졌다.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]……눈앞을 환해지게 한다는 게 이런 거였구나. 선배의 뜻, 이제 겨우 모두 이해했어!
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]처음에 내가 무심코 밭의 잡초를 뽑아버린 게 시작이었어. 이후 대선배는 내가 직접 땅을 갈고 거름을 뿌리도록 지도해 주셨지. 이 모든 것들은 바로…… 지금 이 3개의 씨앗을 심기 위함이었던 거고.
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]선배는 포기하지 않고 계속해서 나아가라고 나를 격려하신 거야!
+[charslot(slot="m",name="avg_4119_wanqin_1#12$1",focus="m")]
+[name="화생"]대선배의 가르침에 정말 감사드립니다. 이 3개의 씨앗은 저의 모든 지식을 동원하여 열심히 심어볼게요!
+[dialog]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=2, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]응? 안개가 또 짙어졌네? 어, 어쨌든, 포기하지 않을게요, 선배.
+[dialog]
+[charslot]
+화생은 의기양양한 채로 땅에 앉아 도구 가방을 열더니 휴대용 토양 검사기, 드론, 실험 노트, 라벨지, 작은 비커 등의 물건들을 꺼내 바닥에 펼쳐 놓았다.
+모든 준비 작업을 마친 화생은 땅에서 흙을 한 움큼 집고 코에 대어 냄새를 맡았다. 그리고 그것을 향해 마음속으로 '안녕'이라고 말했다.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+1일 후
+[PlayMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.4)]
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]대선배, 드디어 파종을 마쳤어요. 오늘은 각 항목의 데이터를 보고드릴게요.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]참, 오늘 안개가 짙고 날씨가 습하니까 관절 조심하세요. 제가 몸 따뜻하시라고 생강차를 끓였는데, 여기에 둘게요.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+2일 후
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]대선배, 파종한 지 오늘로 이틀째에요. 데이터 보고드릴게요.
+[charslot(slot="m",name="avg_4119_wanqin_1#13$1",focus="m")]
+[name="화생"]참, 제가 대황성의 잡곡으로 꼬마와 선배에게 드릴 죽을 끓였어요. 율무는 푹 끓여내서 흐물흐물하고, 설탕도 넣지 않았으니 마음껏 드셔도 돼요. 이에 씹히지도 않고 혈당에도 영향이 없답니다.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+6일 후
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]선배, 씨앗이 발아할 수 있을지는 아마 내일이면 알 수 있을 것 같아요.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]사실, 이미 반년 동안 계속 실패했으니까, 이번에 바로 성공할 수 있다고 기대하지 않지만요……
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]아마 제 연구의 방향이 계속 잘못되어서겠죠. 그래서 그런지, 제 씨앗은 햇빛을 너무 많이 필요로 하는데다, 새싹도 그리 크게 자라지 않아 기계론 도저히 수확할 수 없더라고요.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]실은, 선배가 어떻게 심었는지 듣고 싶어서 온 거예요. 선배의 밭에 있는 몇몇 식물들을 봤는데, 높이가 정말 이상적이었거든요. 개체 수만 조금 더 많았어도 종자를 좀 가져갈 수 있어서 좋았을 텐데……
+[dialog]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=2, block=true)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_4119_wanqin_1#1$1",focus="m")]
+[name="화생"]음, 선배 뜻은 많이 생각해 봤자 좋을 것 없다는 건가요? 네, 집중해서 다음 작업을 잘 해내 볼게요.
+[charslot(slot="m",name="avg_4119_wanqin_1#10$1",focus="m")]
+[name="화생"]응?
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1643_1#1$1",duration=2)]
+[delay(time=2)]
+[name="산속 어린아이"]후…… 신선님이 하신 말씀을 한 글자도 안 틀리고 말해줄게……
+[dialog]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=1, xstrength=7, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Sticker(id="st1", multi = true, text="“머릿속에 농사짓는 거 말고 뭐가 들어있긴 하냐? 바람을 마시고 이슬을 먹으려거든 사람 말고 아예 풀이 되지그래?!”", x=400,y=300, alignment="left", size=24, delay=0.04, width=500,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_4119_wanqin_1#9$1",focus="m")]
+[name="화생"]응?
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]못 알아들을까 봐 걱정되니까, 내가 좀 더 보충해서 말해줄게. 혹시 너 중요한 걸 잊어버리지 않았어?
+[charslot(slot="m",name="avg_4119_wanqin_1#2$1",focus="m")]
+[name="화생"]데이터 말하는 거야? 잠깐 확인해볼게.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]아니, 데이터는 내려두고…… 됐다, 그냥 알려줄게. 너 처음에 일 시작할 때는 분명 신선님에게 먹을 것을 가져다줬었잖아……
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]아, 이런……
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]아니 그만, 내 말은 너 요 며칠 밥을 먹긴 했냐는 거지.
+[charslot(slot="m",name="avg_4119_wanqin_1#7$1",focus="m")]
+[name="화생"]앗차, 그러네!
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+7일 후
+[charslot(slot="m",name="avg_4119_wanqin_1#9$1",focus="m")]
+[name="화생"]대두 씨앗은 이미 정상적인 발아기에 들어섰어요. 싹이 틀 기미는 아직 보이지 않지만요.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+8일 후
+[name="화생"]……
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+9일 후
+[name="화생"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[bgeffect]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[name="'신선'"]요 며칠 갑자기 말이 없어졌네.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]싹이 트지 않는 씨앗을 주시다니, 신선님도 참 심술궂으시네요.
+[charslot]
+[name="'신선'"]학계에서는 그 녀석처럼 성실한 사람이 높은 평가를 받곤 하지. 하지만 안타깝게도, 그 녀석이 보지 못하는 게 있어……
+[charslot]
+[name="'신선'"]눈앞의 벽 말이야.
+[charslot(slot="m",name="avg_npc_1643_1#1$1")]
+[name="산속 어린아이"]그래놓고 신선님 뭘 그렇게 서성이고 계세요, 보는 제가 눈이 다 아플 지경인데. 정 그렇게 걱정되시면, 제가 대신 나가서 봐 드릴까요?
+[charslot]
+[name="'신선'"]됐어. 벽에 부딪치고 나면, 그 녀석도 돌아가겠지.
+[charslot]
+[name="'신선'"]……
+[charslot]
+[name="'신선'"]그래도 이대로 부딪쳐서 내 밭에서 죽게 내버려둘 순 없으니, 한번 가서 보긴 해야겠다.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_iceforest_1",screenadapt="coverall")]
+[bgeffect(name="$eb_smog",layer=1)]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=2, block=true)]
+화생은 아무것도 없는 밭에 누워, 손바닥을 땅에 댄 채 묵묵히 하늘을 바라보았다.
+그는 기이한 느낌을 받았다. 영원히 닿을 수 없는 오두막이 점점 더 멀어지더니, 이내 그의 시야에서 사라지고, 안갯속으로 사라졌다.
+오두막뿐만 아니라, 주변 모든 것들이 멀어지는 것 같았다. 울타리가 사라지고, 숲도 사라졌다. 그의 시야에 남아있는 건 이제 이 밭과 머리 위 하늘뿐이었다.
+하늘을 등지고 땅을 마주하는 것, 가장 중요한 두 가지.
+화생은 문득 밭에서 아주 작은 소리를 들은 것만 같았다……
+[dialog]
+[PlaySound(key="$char_emp", volume=0.9)]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+펑!
+[Delay(time=1)]
+갑작스러운 나무문을 걷어차는 소리에 화생은 화들짝 정신을 차렸다. 누운 채로 얼굴을 옆으로 돌린 그는, 안갯속에서 낯선 젊은 남자가 걸어 나오는 것을 보았다.
+화생은 당혹스러움에 눈을 가늘게 떴다.
+[charslot]
+[name="???"]심고 심고 또 심더니만, 아직도 심고 있구나!
+[charslot]
+[name="???"]예전에 선생님께서 내게 두 번째 씨앗을 심으라고 하셨을 때, 난 싹이 나지 못할 것을 알아채고 방향을 바꾸기로 했지.
+[charslot]
+[name="???"]씨앗을 심은 지 이렇게 오래되었건만, 고작 그깟 것 하나 알아채지 못하고, 내가 나서서 일일이 설명까지 해줘야 한다니……
+[charslot]
+[name="???"]내 밭에 콩이 몇 개밖에 없어 아쉽다고? 그런 생각보단 이렇게 오랜 시간이 지났는데도 왜 이것밖에 없는지 고민해 봐야 하는 거 아니냐?!
+[charslot]
+[name="???"]벽에 직접 부딪치기 전까진 돌아보지 않는다니. 그딴 태도로는 어떤 연구를 하든 간에 모두 다 처 망해버릴 거다……
+그가 내뱉던 특유의 독설은 화생 주변의 밭을 보고 나서 돌연 뚝 멈췄다.
+화생은 그 말도 안 되게 젊어 보이는…… 수십 일 동안 화생에게 '대선배'로 불렸던 사람을 바라보았다.
+반면, 그 사람은 화생 주변의 꾸불꾸불하고 생기 있는, 확실하게 새싹이 나온 그 콩을 바라보고 있었다.
+[dialog]
+[dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=2)]
+화생이 하늘을 바라보자 안개가 걷히고 맑은 하늘이 드러났다.
+[name="화생"]대…… 음, 선배, 저는 풀이 되는 게 어떤 느낌인지 잘 모르겠어요……
+[charslot]
+[name="'신선'"]뭐?! 그건 네 꽉 막힌 고집을 욕한 거지, 진짜 너보고 풀이 되라는 뜻이 아니잖아!
+[name="화생"]하지만, 열심히 들어보면, 들리는 것만 같아요……
+[name="화생"]씨앗 속의 새싹과 뿌리가 껍질을 뚫고 밖으로 나오는 소리가요.
+[charslot]
+[name="'신선'"]그건 그냥 네가 굶주리다 못해 어지러워서 그런 거고! 환청이란 거다! 얼른 일어나!
+[name="화생"]아니에요, 정말 들을 수 있……
+[charslot]
+신선이 그의 얼굴을 탁탁 때렸다.
+[charslot]
+[name="???"]일어나! 일어나라고!
+[charslot]
+[name="???"]그만 자라고! 이 물소야!
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[delay(time=1)]
+[Background(image="47_g3_fieldpath",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+콩 한 묶음이 화생의 얼굴을 탁탁 때렸다.
+[charslot(slot="m",name="avg_4122_grabds_1#5$1",focus="m")]
+[name="소만"]아니, 어떻게 콩을 수확하면서 잠들 수가 있는 거야! 얼른 일어나!
+[charslot(slot="m",name="avg_4122_grabds_1#6$1",focus="m")]
+[name="소만"]기계가 얼굴을 밟고 지나가기라도 했으면 어쩌려고 했어! 바보 물소야!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_4119_wanqin_1#8$1",focus="m",duration=1)]
+[delay(time=2)]
+[name="화생"]소만? 나…… 잤던 거야?
+[charslot(slot="m",name="avg_4122_grabds_1#5$1",focus="m")]
+[name="소만"]'하이팟 3호'의 첫 수확을 보러 오라며 날 불렀으면서, 자기는 게으름이나 피우고 말이야.
+[charslot(slot="m",name="avg_4122_grabds_1#4$1",focus="m")]
+[name="소만"]기계로 콩 수확하는 건 재미없어. 어쨌든 다 봤으니까 나랑 같이 보들이 찾아서 놀러 가자!
+[charslot(slot="m",name="avg_4122_grabds_1#10$1",focus="m")]
+[name="소만"]네가 저번에 보낸 《경극을 하는 클라우드비스트》를 보들이에게 보여줬거든. 보들이가 경극은 싫지만, 록 음악은 해볼 수 있을 것 같대.
+[charslot(slot="m",name="avg_4122_grabds_1#10$1",focus="m")]
+[name="소만"]같이 들으러 갈래? 보들이가 정말 좋아할 거야!
+[charslot(slot="m",name="avg_4119_wanqin_1#4$1",focus="m")]
+[name="화생"]안돼, 수확 작업이 끝나면 곧바로 데이터 분석해야 한단 말이야.
+[charslot(slot="m",name="avg_4122_grabds_1#5$1",focus="m")]
+[name="소만"]재미없긴. 그럼 난 슈 언니한테 가서, 네가 몰래 밭에서 잤다고 일러야지.
+[charslot(slot="m",name="avg_4119_wanqin_1#11$1",focus="m")]
+[name="화생"]그래도 안 갈 거야.
+[dialog]
+[charslot]
+소녀가 그를 향해 장난기 가득한 표정을 짓더니 곧 사라졌다.
+화생은 콩밭에서 일어났다. 수확기가 밭에서 순조롭게 작동하고 있었다. 그는 눈을 감고 귀를 기울였다. 기계의 굉음 속에 콩 꼬투리가 익어가는 듯한 소리가 섞여 있는 것만 같았다.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[charslot]
+[Image]
