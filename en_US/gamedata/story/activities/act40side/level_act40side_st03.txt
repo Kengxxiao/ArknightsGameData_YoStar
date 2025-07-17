@@ -1,0 +1,528 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_bigcaveamb", volume=0, loop=true, channel="big")]
+[SoundVolume(volume=1, channel="big",fadetime=2)]
+[PlaySound(key="$d_avg_cavewaterdrop", volume=0, loop=true, channel="ca")]
+[SoundVolume(volume=1, channel="ca",fadetime=2)]
+...What night is it?
+A gloomy mausoleum sits in pitch-black silence. In the chaotic darkness, even time seems to come to a standstill.
+How long has it been since the last sign of activity in here?
+But on this day, a new voice echoes in the tomb.
+[dialog]
+[PlaySound(key="$d_avg_gintcrturnhle", volume=1)]
+[delay(time=1.5)]
+[Subtitle(text="Where is this...?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="A tomb.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Who am I?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Unknown.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="...Who are you?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Also unknown.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Though... they did give me a name.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Sui'.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[delay(time=2)]
+[Image(image="58_i15_1", screenadapt="coverall", xScale=1.05, yScale=1.05, fadetime=0)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_gintcrturbrth", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+Have you been here for a long time?
+[dialog]
+[StopSound(channel="ca", fadetime=2)]
+[StopSound(channel="big", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+[image]
+[charslot]
+[Background(image="58_g3_baizaomainstreet_d",screenadapt="coverall")]
+[playMusic(key="$ouat_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_fetterfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1617_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1630_1#1$1")]
+[name="Judicial Officer"]If you would, Mr. Yu.
+[charslot(slot = "m", name = "avg_npc_1617_1#1$1")]
+[name="Yu Cheng"]Before you take me away, might I make a presumptuous request?
+[charslot(slot = "m", name = "avg_npc_1617_1#9$1")]
+[name="Yu Cheng"]If it's not too much trouble, could you go over to that small restaurant across the street, and buy me a bowl of plain rice with a cup of tea?
+[name="Yu Cheng"]It's no good to be imprisoned on an empty stomach.
+[charslot(slot = "m", name = "avg_npc_1630_1#1$1")]
+[name="Judicial Officer"]It's my job. Please wait a moment.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1644_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=1)]
+[name="Lin Qingyan"]Are you going?
+[charslot(slot = "m", name = "avg_npc_1617_1#1$1")]
+[name="Yu Cheng"]The sentence has been passed. I can't very well dally around the Judicial Review Office.
+[charslot(slot = "m", name = "avg_npc_1644_1#1$1")]
+[name="Lin Qingyan"]I know... Which is why I'm here today to send you off.
+[charslot(slot = "m", name = "avg_npc_1617_1#9$1")]
+[name="Yu Cheng"]You don't seem to resent me.
+[charslot(slot = "m", name = "avg_npc_1644_1#4$1")]
+[name="Lin Qingyan"]Now that I know the whole truth, I find no reason to resent you.
+[charslot(slot = "m", name = "avg_npc_1644_1#1$1")]
+[name="Lin Qingyan"]Although, I could resent you for not telling me earlier.
+[charslot(slot = "m", name = "avg_npc_1617_1#9$1")]
+[name="Yu Cheng"]If I did, I fear you might be clad in the same fetters as I have on me right now.
+[name="Yu Cheng"]I had to leave a few worthy successors for the Judicial Review Office...
+[charslot(slot = "m", name = "avg_npc_1644_1#2$1")]
+[name="Lin Qingyan"]I've raised an objection to your conviction.
+[name="Lin Qingyan"]In truth, if you feel this unjust, you can request a review at the Three Organs of Justice—
+[charslot(slot = "m", name = "avg_npc_1617_1#5$1")]
+[name="Yu Cheng"]Could you possibly think what I did is unworthy of a decade behind bars?
+[charslot(slot = "m", name = "avg_npc_1644_1#2$1")]
+[name="Lin Qingyan"]But all that you did was ultimately for...
+[charslot(slot = "m", name = "avg_npc_1617_1#6$1")]
+[name="Yu Cheng"]What difference does it make?
+[name="Yu Cheng"]The law is the law, not a mere guide to what is 'moral'.
+[name="Yu Cheng"]If I refuse to comply with the law today, how many more like me will there be in the future, and how much chaos will they create in the name of 'morality'?
+[charslot(slot = "m", name = "avg_npc_1617_1#5$1")]
+[name="Yu Cheng"]It is unlike a disciple of mine to be spouting such words.
+[charslot(slot = "m", name = "avg_npc_1644_1#4$1")]
+[name="Lin Qingyan"]I have been careless in my words...
+[charslot(slot = "m", name = "avg_npc_1617_1#1$1")]
+[name="Yu Cheng"]It's up to young people like you, and those who follow to steer the 'law' closer to what many deem is right.
+[charslot(slot = "m", name = "avg_npc_1617_1#3$1")]
+[name="Yu Cheng"]I'll be waiting for that day... And since that pine tree on the mountain still stands, I'll also be waiting for you to cut it down and craft me a coffin from its wood.
+[charslot(slot = "m", name = "avg_npc_1644_1#11$1")]
+[name="Lin Qingyan"]...
+[charslot(slot = "m", name = "avg_npc_1617_1#1$1")]
+[name="Yu Cheng"]By the way, why have you come here today not dressed in the Judicial Review Office's uniform?
+[charslot(slot = "m", name = "avg_npc_1644_1#4$1")]
+[name="Lin Qingyan"]I resigned.
+[charslot(slot = "m", name = "avg_npc_1644_1#1$1")]
+[name="Lin Qingyan"]A thunderclap can illuminate a moment, but it cannot distinguish what is good or evil, true or false for everything. There are many things I cannot perceive clearly.
+[name="Lin Qingyan"]The pine tree remains on the mountain, but it is merely a tree. What the mountain climber sees in the tree, depends on their intentions.
+[name="Lin Qingyan"]I will return to the Tianshi Bureau and practice my craft for a while.
+[charslot(slot = "m", name = "avg_npc_1617_1#9$1")]
+[name="Yu Cheng"]...Very well.
+[name="Yu Cheng"]Doing something you don't understand with muddled eyes will never bring you any achievements.
+[charslot(slot = "m", name = "avg_npc_1644_1#2$1")]
+[name="Lin Qingyan"]Sir... there is still one thing I do not understand.
+[name="Lin Qingyan"]Why exactly... did you insist on investigating the Grand Preceptor's case?
+[charslot(slot = "m", name = "avg_npc_1617_1#1$1")]
+[name="Yu Cheng"]Why do you ask?
+[charslot(slot = "m", name = "avg_npc_1644_1#1$1")]
+[name="Lin Qingyan"]I organized the files surrounding this case only to find Gu Quan was not the only one who sacrificed everything he had for this affair.
+[name="Lin Qingyan"]Gu Quan may have had his own motives, but you have no direct connection to the case, save for being under orders back then to bring this unresolved case at the Judicial Review Office to light.
+[charslot(slot = "m", name = "avg_npc_1617_1#2$1")]
+[name="Yu Cheng"]...
+[charslot(slot = "m", name = "avg_npc_1630_1#1$1")]
+[name="Judicial Officer"]Mr. Yu, the meal you wanted.
+[name="Judicial Officer"]The waiter at Savors at Yu's refused to take payment, and even said they look forward to seeing you again.
+[name="Judicial Officer"]Strange, I didn't even mention the meal was for you...
+[charslot(slot = "m", name = "avg_npc_1617_1#2$1")]
+[name="Yu Cheng"]I recall meeting Gu Quan in a restaurant several decades ago, when he imparted this to me: 'Too many colors blind the eyes, too many flavors dull the tongue'...
+[charslot(slot = "m", name = "avg_npc_1617_1#9$1")]
+[name="Yu Cheng"]I only understood his words later, probably owing to my short-sightedness and dull sense of taste.
+[name="Yu Cheng"]My eyes see only the unvarnished truth, and my tongue savors only the unaltered taste.
+[dialog]
+[charslot]
+The man clad in prisoner attire turns around and takes one last look at the plaque above the doors of the Judicial Review Office, and the courtroom behind the doors.
+He bends down, scoops a handful of unmelted snow under a cypress tree, and sprinkles it onto his rice bowl. He finishes his meal in a few mouthfuls.
+[charslot(slot = "m", name = "avg_npc_1617_1#10$1")]
+[name="Yu Cheng"]Tasty.
+[name="Yu Cheng"]...Thus, I depart.
+[dialog]
+[PlaySound(key="$d_avg_woodenstairfts", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=2)]
+[charslot(duration=2, isblock=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_carriage_loop", volume=1, loop=true, channel="ca")]
+[StopSound(channel="ca", fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[background]
+[Image(image="58_i15_2", screenadapt="coverall", xScale=1.7, yScale=1.7, y=200, fadetime=0)]
+[ImageTween(xFrom=-320, xTo=-420, duration=20, block=false)]
+[PlaySound(key="$d_avg_cavewaterdrop", volume=0, loop=true, channel="ca")]
+[SoundVolume(volume=1, channel="ca",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[Subtitle(text="Why are you here?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Because of a mistake... an oversight...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="I can feel it. You're in so much pain, so much anger...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="But after so long, your wound is healing, your rage, subsiding.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="You sound... exhausted?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Image(image="58_i15_1", screenadapt="coverall", xScale=1.7, yScale=1.7, y=-150, fadetime=4)]
+[ImageTween(xFrom=380, xTo=445, duration=20, block=false)]
+[Delay(time=2)]
+[Subtitle(text="Yes...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="My consciousness, my soul, it has split into multiples.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Just like you...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Where did they go?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Outside the tomb, they call it the 'mortal realm'.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="The 'mortal realm'... Is it a beautiful place?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Not at all...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="There I have witnessed the most savage slaughters, the most malicious plots, the most merciless betrayals!", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Kin destroys kin, love turns to hate...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Arrogance caused my failure, because I could not comprehend 'human emotions'.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="If the mortal realm is such a vicious and repulsive place...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Then why did they go there anyway?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Because...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[StopSound(channel="ca", fadetime=4)]
+[stopmusic(fadetime=4)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+[image]
+[charslot]
+[Background(image="35_g11_yumendesert",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_fssand")]
+[charslot(slot="m",name="avg_npc_786_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_786_1#6$1")]
+[name="Ya"]Who goes there?
+[dialog]
+[charslot]
+[playMusic(key="$m_sys_act23side_loop", volume=0.6)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1238_1#10$1",duration=1.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1238_1#10$1")]
+[name="'Old Tianshi'"]Quite the distance you've hiked. Where you off to?
+[charslot(slot="m",name="avg_npc_786_1#6$1")]
+[name="Ya"]...Why does it concern you?
+[charslot(slot="m",name="avg_npc_1238_1#5$1")]
+[name="'Old Tianshi'"]I'll tell you why. You caused a ruckus in Yan, and you expect me to do nothing?
+[name="'Old Tianshi'"]You old things probably forgot the pain of a wound before it even healed. If we could beat you up and drive you out then, we can do it again now.
+[charslot(slot="m",name="avg_npc_786_1#1$1")]
+[name="Ya"]With just yourself? Laughable...
+[dialog]
+[effect(name="$e_sand_transition", layer=1)]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+[PlaySound(key="$d_avg_sandwnd", volume=0, loop=true, channel="s")]
+[SoundVolume(volume=1, channel="s",fadetime=2)]
+[Delay(time=1)]
+[bgeffect(name="$eb_sand02", flip = 1, layer=2)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1238_1#1$1")]
+[name="'Old Tianshi'"]Oh, was that a challenge to a fight? Let's go.
+[dialog]
+[PlaySound(key="$firestorm", volume=1, loop=true, channel="fire")]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=1, channel="f",fadetime=2)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=2, block=false)]
+[StopSound(channel="fire", fadetime=6)]
+[name="'Old Tianshi'"]I know you have a few worlds down in that belly of yours. Let's see who's stronger—you or that painter.
+[charslot(slot="m",name="avg_npc_1238_1#5$1")]
+[name="'Old Tianshi'"]Let's see how long your leftover worlds can stand against my flames.
+[charslot(slot="m",name="avg_npc_786_1#6$1")]
+[name="Ya"]You will pay for your impertinence.
+[charslot(slot="m",name="avg_npc_1238_1#5$1")]
+[name="'Old Tianshi'"]Hmph...
+[dialog]
+[Delay(time=1)]
+[StopSound(channel="f", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1238_1#3$1")]
+[name="'Old Tianshi'"]Forget it, there's no use in killing you. You'd only mold another body to life just like before.
+[charslot(slot="m",name="avg_npc_786_1#1$1")]
+[name="Ya"]If this is your excuse for backing down, I accept.
+[charslot(slot="m",name="avg_npc_1238_1#2$1")]
+[name="'Old Tianshi'"]I can't be bothered to argue with you, but before I locate your true form and off you for good, there's a question I want to ask.
+[name="'Old Tianshi'"]I'm curious: What exactly did that weiqi failure promise you to make you obey his orders so willingly?
+[name="'Old Tianshi'"]No... Not just you, <i>all</i> of you.
+[charslot(slot="m",name="avg_npc_786_1#1$1")]
+[name="Ya"]His plots do not concern me. We only share some common goals.
+[charslot(slot="m",name="avg_npc_786_1#6$1")]
+[name="Ya"]The one I seek, is that disgraceful traitor imprisoned in a tomb.
+[charslot(slot="m",name="avg_npc_1238_1#2$1")]
+[name="'Old Tianshi'"]If you only wanted revenge, you would've just killed Its proxies one by one, then wait for It to die in war with Yan.
+[name="'Old Tianshi'"]So many years have passed. Your so-called kin on this land surely only numbers a few now... You're just feeling nostalgic.
+[charslot(slot="m",name="avg_npc_1238_1#4$1")]
+[name="'Old Tianshi'"]This 'human emotion' is what makes you different than beasts.
+[charslot(slot="m",name="avg_npc_786_1#6$1")]
+[name="Ya"]Absurd.
+[charslot(slot="m",name="avg_npc_1238_1#2$1")]
+[name="'Old Tianshi'"]No... nope, that can't be the only reason why you've conspired with him.
+[charslot(slot="m",name="avg_npc_1238_1#5$1")]
+[name="'Old Tianshi'"]Don't think you can fool me. In all these years, Yan has always kept a few pairs of eyes on you.
+[name="'Old Tianshi'"]Are you lot still thinking about that thing under Baizao...?
+[charslot(slot="m",name="avg_npc_786_1#5$1")]
+[name="Ya"]...
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[StopSound(channel="s", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="bg_caveentrance2_d",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", name = "avg_322_lmlee_1#1$1", duration=1.5)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_243_waaifu_1#2$1", duration=1.5)]
+[Delay(time=2)]
+[charslot(slot = "l", name = "avg_243_waaifu_1#2$1", focus="l")]
+[name="Waai Fu"]Uncle Lee...
+[name="Waai Fu"]Are we... gonna find Dad here?
+[charslot(slot = "r", name = "avg_322_lmlee_1#1$1", focus="r")]
+[name="Lee"]This was the only place I got after asking around.
+[charslot(slot = "r", name = "avg_322_lmlee_1#6$1", focus="r")]
+[name="Lee"]*sigh*... After so many years apart, it's the first time I was hoping news about him would turn out to be false.
+[name="Lee"]But I can't think of anyone else who'd fit the bill: Someone so obsessed with martial arts that they've fought everyone worth fighting and even intentionally injured others on multiple occasions...
+[charslot(slot = "l", name = "avg_243_waaifu_1#6$1", focus="l")]
+[name="Waai Fu"]How did he end up like this...?
+[charslot(slot = "r", name = "avg_322_lmlee_1#6$1", focus="r")]
+[name="Lee"]No clue...
+[name="Lee"]His obsession is unmatched. Although... the stronger the obsession is, the harder it usually is for the mind to break.
+[dialog]
+[PlaySound(key="$d_avg_punch02",volume=0.3)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_punch",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_243_waaifu_1#7$1", focus="l")]
+[name="Waai Fu"]What was that?!
+[charslot(slot = "r", name = "avg_322_lmlee_1#4$1", focus="r")]
+[name="Lee"]——!
+[dialog]
+[charslot(slot = "r", name = "avg_322_lmlee_1#7$1", focus="r")]
+[name="Lee"]Waai Fu... we'll find him soon, but be careful.
+[name="Lee"]You might be the only one who can wake him from his madness.
+[charslot(slot = "l", name = "avg_243_waaifu_1#1$1", focus="l")]
+[name="Waai Fu"]Mm...
+[name="Waai Fu"]Let's go, Uncle Lee.
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=2)]
+[charslot(slot = "r", name = "avg_322_lmlee_1#2$1", focus="r")]
+[name="Lee"]*sigh*...
+[name="Lee"](Was the blade falling into his hands truly a sleight of fate...?)
+[charslot(slot = "r", name = "avg_322_lmlee_1#8$1", focus="r")]
+[name="Lee"](Liang Xun, oh, Liang Xun... If something were to happen to Huai Tianpei, it'd be on your head.)
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cave_5",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+From a distance, a burly body can be vaguely seen in the depths of the cave.
+Heavy fists repeatedly pound the rock walls, leaving blood stains that resemble plum blossoms. Every punch shakes the entire cave.
+Only now do the visitors realize this 'cave' has been carved out by the punches.
+[name="Crazed Mumbling"]Forty years... The First Under Heaven... when did I...
+[dialog]
+[PlaySound(key="$d_avg_punch02",volume=1)]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_erthshkng", volume=0.3, loop=true, channel="e")]
+[CameraShake(duration=2, xstrength=3, ystrength=3, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=2)]
+[delay(time=2)]
+[name="Crazed Mumbling"]The blade... I can't give it away... throw... I better throw it away!
+[dialog]
+[PlaySound(key="$d_avg_punchsp5",volume=1)]
+[Effect(name="$e_sandfall_01",layer = 1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=3, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=3)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=2)]
+[name="Crazed Mumbling"]My daughter... I won't let you harm her!
+[dialog]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "m", name = "avg_243_waaifu_1#2$1", duration=1, isblock=true)]
+[Delay(time=0.5)]
+[name="Waai Fu"]Dad...?
+[name="Waai Fu"]Dad... wake up...
+[charslot(slot = "m", name = "avg_243_waaifu_1#6$1")]
+[name="Waai Fu"]Dad!
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "char_2005_weiyw_1#5", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Wei Yenwu"]You can almost see Baizao from here.
+[name="Wei Yenwu"]Visiting this posthouse has unexpectedly turned into a trip down memory lane.
+[name="Wei Yenwu"]What, you lot insisted on following me, so why the silence now?
+[charslot(slot="m", name="avg_npc_038")]
+[name="Shadow Guard"]All who died here are our brothers.
+[charslot(slot = "m", name = "char_2005_weiyw_1#5")]
+[name="Wei Yenwu"]All for 'loyalty'...
+[charslot(slot="m", name="avg_npc_038")]
+[name="Shadow Guard"]Lord Wei. Someone's following us.
+[charslot(slot = "m", name = "char_2005_weiyw_1#2")]
+[name="Wei Yenwu"]Mm...
+[charslot(slot="m", name="avg_npc_038")]
+[name="Shadow Guard"]Watch out—
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.05, duration = 0.2)]
+[charslot(duration=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$e_skill_skulsrsword",volume=0.8)]
+[PlaySound(key="$swordtsing4", volume=0.9,delay=0.2)]
+[CameraShake(duration=0.8, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_spear",volume=0.8)]
+[PlaySound(key="$swordtsing5", volume=0.9,delay=0.2)]
+[CameraShake(duration=0.8, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.2, block=true)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[charslot(slot = "m", name = "avg_npc_038", afrom=0, ato=0, duration = 0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 0)]
+[delay(time=0.1)]
+[charslot(slot = "m", afrom = 0, ato = 1, duration = 2)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1, duration = 2)]
+[delay(time=2.5)]
+[charslot(slot="m", name="avg_npc_038")]
+[name="Shadow Guard"]Impressive swordplay...
+[name="Shadow Guard"]In the many years since we last met, your swordplay has turned incomparable.
+[name="Shadow Guard"]Lady Ch'en.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_790_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Ch'en"]Long time no see... Wei Yenwu... Uncle.
+[charslot(slot = "m", name = "char_2005_weiyw_1#5")]
+[name="Wei Yenwu"]Hui-chieh...
+[charslot(slot = "m", name = "avg_npc_790_1#1$1")]
+[name="Ch'en"]I thought what you did in Lungmen was the stupidest decision you could make...
+[name="Ch'en"]You, and these men... what are your plans now, even?
+[charslot(slot = "m", name = "char_2005_weiyw_1#5")]
+[name="Wei Yenwu"]You shouldn't be here.
+[name="Wei Yenwu"]Could it be Fumizuki...? She told you?
+[charslot(slot = "m", name = "avg_npc_790_1#2$1")]
+[name="Ch'en"]I made this decision myself. Nothing to do with anyone else.
+[charslot(slot = "m", name = "char_2005_weiyw_1#5")]
+[name="Wei Yenwu"]This affair likewise has nothing to do with you—
+[charslot(slot = "m", name = "avg_npc_790_1#2$1")]
+[name="Ch'en"]...True.
+[charslot(slot = "m", name = "avg_npc_790_1#1$1")]
+[name="Ch'en"]I've never asked about your past. I considered it your private business, and felt I had no right to pry.
+[name="Ch'en"]I've been to many places these past few years and seen many things I never saw or even thought of before.
+[name="Ch'en"]I think I've come to understand that despite all the contradictions in this land, 'righteousness' still exists.
+[name="Ch'en"]What happened to my mother... and my sister... You can't say they have nothing to do with your past.
+[charslot(slot = "m", name = "char_2005_weiyw_1#4")]
+[name="Wei Yenwu"]...
+[charslot(slot = "m", name = "avg_npc_790_1#1$1")]
+[name="Ch'en"]So I want to see for myself how you plan to unravel this past you've been entangled in your entire life.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="58_i15_1", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=0)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=40, block=false)]
+[PlaySound(key="$d_avg_gintcrturbrth", volume=1)]
+[Delay(time=2)]
+[playMusic(key="$m_sys_act40side_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="I seem to suddenly remember many things.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Things I saw within an enormous body, through eyes that can see through the mist.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="You are a part of this consciousness, so it is only natural you possess the same memories.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="But... the mortal realm I saw is different from what you described.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="So what did you see?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="A fire.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="At the very beginning, people congregated to fend off ferocious wildbeasts, and started a fire to light up the cold nights.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="They gathered around the flames, forged all sorts of tools, and cooked all kinds of dishes. Their faces bore many expressions I cannot comprehend...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="I really want to know, what those feelings are.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Such a thought, is very dangerous...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Dangerous?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Your kin, the proxies who are already roaming about the mortal realm, entered it with similar thoughts. But the only thing awaiting them was endless torture.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Did they all... want to become human?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Before I become one, first I want to know...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'What is humanity?'", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Where should I go to look for my answer...?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Heh... just go.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Take a walk in the 'mortal realm'.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="A cacophony of emotions and desires will bring endless suffering. Give a thought form, and it will resemble the dawn of chaos. Fall into its fetters, and you will never break free.", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="...You're not afraid?", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="I...", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[PlaySound(key="$d_avg_gintcrturvive", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_smkedspte", volume=1)]
+[Image(image="58_i15_2", screenadapt="coverall", fadetime=3)]
+[delay(time=4)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+[charslot]
+[image]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", name = "avg_2026_yu_1#16$1", posfrom="0,-30", posto="0,0", duration=0.5)]
+[name="Yu"]Ahhhh!!!!!
+[charslot(slot = "m", name = "avg_2026_yu_1#9$1")]
+[name="Yu"]Huff... Oh, just a dream...
+[name="Yu"]I guess it's not so strange to dream about It...
+[charslot(slot = "m", name = "avg_2026_yu_1#4$1")]
+[name="Yu"]Where's everyone...
+[charslot]
+The young chef leaps off the couch, stretches himself, and rubs his eyes hard.
+The kitchen before him remains the same, pots and pans all in place.
+He seems to suddenly think of something, and hurriedly opens a cupboard, taking out bottles of oil, salt, soy sauce, and vinegar.
+Carefully, he drips a drop from each bottle into his mouth one by one, his brows tightly knit, deep in thought.
+Only after a long time does a smile appear on his face.
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[name="Yu"]Phew... Thank goodness...
+[name="Yu"]Still tastes the same...
+[name="Yu"]Whether as man or beast, whether I remember or not... it doesn't seem to make much difference.
+[dialog]
+[PlaySound(key="$d_avg_livelyrestaurant", volume=0, loop=true, channel="li")]
+[SoundVolume(volume=1, channel="li", fadetime=2)]
+[Delay(time=2)]
+[musicvolume(volume=0.6, fadetime=2)]
+[charslot(slot = "m", name = "avg_2026_yu_1#7$1")]
+[name="Yu"]The flavors of the land are endless, and I've discovered all the ones I've been seeking. As for what comes next... Aiya, let's not think about that right now!
+[name="Yu"]Enjoy the flavors of today and leave tomorrow's worries for tomorrow... That's all there is to it.
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[name="Yu"]Let's get cooking.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[StopSound(channel="li", fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

@@ -1,0 +1,349 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$m_bat_kjerag_h_intro",key="$m_bat_kjerag_h_loop", volume=0.6)]
+[PlaySound(key="$d_avg_firemagic")]
+[CameraShake(duration=1.3, xstrength=30, ystrength=30, vibrato=35, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=1, block=false)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="Blaze"]Watch out!
+[charslot(slot="m",name="avg_npc_1619_1#7$1")]
+[name="Mo Bufu"]What even—
+[dialog]
+[charslot]
+[PlaySound(key="$fireburst")]
+[Blocker(a=0.8, r=0.5, g=0.2, b=0.1, fadetime=0.5, block=true)]
+[bgeffect(name="$eb_burn",layer=1)]
+[playsound(key="$d_avg_churchfire", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=1, rfrom=1, gfrom=1, bfrom=1, fadetime=1, block=false)]
+Flames burst forth above their heads, raining cinders down from the ceiling, igniting the flour and oil atop the stove. In an instant, the kitchen is a sea of fire.
+[charslot(slot="m",name="avg_npc_1619_1#4$1")]
+[name="Mo Bufu"]*cough* *cough* *cough*!
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="Mo Bufu"]You... go... I'll be fine!
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="Blaze"]Cover your mouth and nose! Don't talk!
+[name="Blaze"]I'm not too good with this move yet... let's give it a try.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="Blaze"]'Scuse me, just duck.
+[dialog]
+[charslot(duration=0.3)]
+[PlaySound(key="$d_avg_windmagic")]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Background(image="58_g10_restaurantkitchen",x=0, y=0, xScale=1.1, yScale=1.1, fadetime=1)]
+Blaze grabs a knife, then slices her palm open. Gradually a whirlwind forms in Blaze's hand, then expands straight outward into a blast wave.
+[dialog]
+[PlaySound(key="$d_avg_strongwind")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.5, block=true)]
+[bgeffect(name="$eb_steam_sw",layer=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[BackgroundTween(xFrom=0, yFrom=0, xTo=0, yTo=0, xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=0.5, block=false)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=2)]
+[StopSound(channel="bgs", fadetime=5)]
+[playsound(key="$d_avg_knockoverdish")]
+[playsound(key="$d_avg_sundries",channel="2",volum=0.5)]
+[bgeffect(layer=1)]
+The violent surge of air sweeps the whole room. In a blink, she's put the fires out, and strewn the cookware about in shambles.
+[dialog]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1619_1#1$1",duration=0.5)]
+[Delay(time=0.5)]
+[name="Mo Bufu"]What a skill you have... Could you be...
+[name="Mo Bufu"]...Duoxie.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#1$1")]
+[multiline(name="Blaze")]You're welcome—
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[multiline(name="Blaze")]Hm?
+[dialog]
+[charslot]
+[CameraShake(duration=1.5, xstrength=20, ystrength=2, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_drawbridge", loop=true, channel="bgs")]
+[Delay(time=1.5)]
+[StopSound(channel="bgs", fadetime=2)]
+Looking up again, Blaze sees the lamp's frame is charred black, red-hot metal peeking through the burnt coating. It's on the verge of falling.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="Blaze"]Mo Bufu, move!
+[dialog]
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=0.5, block=true)]
+[charslot]
+[charslot(slot="r",name="avg_npc_1619_1#7$1")]
+[Blocker(a=0.2, r=1, g=1, b=1, style = "slider", inverse = false, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_clothmovementsp")]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$1",posfrom = "-150,0", posto = "50,0",duration=0.5)]
+[Delay(time=0.51)]
+[charslot(slot = "m", focus = "n")]
+Blaze grabs the old man's arm, trying to pull him to one side, but the lamp's already falling—
+[charslot]
+[dialog]
+[Delay(time=0.3)]
+[Blocker(a=0.2, r=1, g=1, b=1, afrom=0.6, rfrom=1, gfrom=1, bfrom=0.5, fadetime=1.5, block=false)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_lightningmagic")]
+[charslot(duration=0.3)]
+[PlaySound(key="$d_avg_smashcello",delay=1,channel="2")]
+[PlaySound(key="$d_avg_windowbreak",delay=1,channel="3")]
+With a stifled crack of thunder, the remains of the fixture are abruptly flung to one side, and smashed hard against the wall.
+[dialog]
+[charslot(slot="m",name="avg_npc_1612_1#16$1",duration=0.5)]
+[Delay(time=1)]
+[name="Lin Qingyan"]Are you alright there?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="Blaze"]Leizi?! What are YOU doing here?
+[charslot(slot="m",name="avg_npc_1612_1#2$1")]
+[name="Lin Qingyan"]...Maybe I should ask, what are <i>you</i> doing here?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="Blaze"]I...
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]But we can talk about you later...
+[charslot(slot="m",name="avg_npc_1612_1#3$1")]
+[name="Lin Qingyan"]Could this be a repeat of the Ding Feng Lou fire last month...?
+[charslot(slot = "m", focus = "n")]
+Lin Qingyan scans her surroundings. The kitchen chefs are in a frenzied jumble, but her gaze quickly locks onto a masked figure among them.
+...Who seems to meet her gaze, then turns and vanishes into the crowd.
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]...!
+[name="Lin Qingyan"]Blaze, stay here! Keep Mo Bufu safe!
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "250,0",duration = 0.5,afrom=1,ato=0)]
+[delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="Blaze"]Hey! Where are you going?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="Blaze"]*cough* *cough*... Jeez, this smoke is killing me.
+[charslot(slot="m",name="avg_npc_1619_1#4$1")]
+[name="Mo Bufu"]*cough* *hack*... On that pillar there, there's a breaker...
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="Blaze"]There's, uh... a lot of them here... Which one do I pull...?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g15_restaurantlobby",screenadapt="coverall")]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovementsp")]
+Flitting like a fowl, Lin Qingyan has her target cornered in just a few spry leaps.
+Mere meters separate them, but so smoky is the air that she can't quite make out their silhouette.
+[CameraShake(duration=0.3, xstrength=5, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_lightningmagic")]
+Just as he makes to run again, a thunderclap strikes next to his feet.
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Hold it!
+[name="Lin Qingyan"]Move another inch, and the next bolt is hitting your head.
+[name="Lin Qingyan"]Answer my questions.
+[charslot(slot = "m", focus = "n")]
+[name="Masked Individual"]......
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Why set fire to Ding Feng Lou? Is your target Mo Bufu, or someone else?
+[name="Lin Qingyan"]All the previous incidents, they were your doing too, weren't they?
+[name="Lin Qingyan"]Also... the scrollery?
+[charslot(slot = "m", focus = "n")]
+[name="Masked Individual"]......
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]You... and your accomplices, must have some aim in all these actions—what is it?
+[charslot(slot = "m", focus = "n")]
+[name="Masked Individual"]......
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Not talking? Then I'll take you back to the Judicial Review Office, for a nice long questioning—
+[charslot(slot = "m", focus = "n")]
+[name="Masked Individual"]Deputy Minister Lin, surely you wouldn't ask if you didn't know the answer already?
+[name="Masked Individual"]Can you not see the truth, or do you simply pretend you can't because you don't dare to?
+[charslot(slot="m",name="avg_npc_1612_1#10$1")]
+[name="Lin Qingyan"]What—
+[charslot(slot = "m", focus = "n")]
+[name="Masked Individual"]The Office is a good place, but I don't plan on visiting it for now.
+[name="Masked Individual"]Besides, when your will wavers, the thunder you throw isn't so frightening.
+[name="Masked Individual"]It's time you opened your eyes.
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Wait—
+[stopmusic(fadetime=2)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1612_1#10$1")]
+[playsound(key="$d_avg_carwash",volume=0.6)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2)]
+[charslot(slot = "m", focus = "n")]
+And with that, the masked figure is on the move. Just as Lin Qingyan would give chase, the ceiling sprinklers start up out of nowhere.
+Ice-cold water pours down, soaking her head to foot.
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1",duration=0.5)]
+[delay(time=1)]
+[name="Blaze"]Leizi—
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="Blaze"]You alright?
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Dammit.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1635_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Flustered Chef"]The customers are all safely out of the way, there's just a few in shock. Thank goodness no one was injured...
+[name="Flustered Chef"]We've reported it to the authorities. The mandarins should be here any moment...
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]Don't we have a mandarin here already?
+[charslot(slot="m",name="avg_npc_1612_1#3$1")]
+[name="Lin Qingyan"]......
+[charslot(slot = "m", name = "avg_npc_1635_1#1$1")]
+[name="Flustered Chef"]Head Chef... you're...
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]I'm fine... I owe it to this girl.
+[name="Mo Bufu"]There's nothing left for you to do here. Go on, go home.
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1635_1#1$1")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+Once the chefs leave, Lin Qingyan locks the door to the room.
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]Mr. Mo, if I could have a word or two with you.
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]You know this girl, madam?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="Blaze"]She's a friend of mine.
+[name="Blaze"]Chef Mo, she's on the trail of a really important case. Would it be alright if you, uh, tried to answer her questions...?
+[charslot(slot="m",name="avg_npc_1619_1#2$1")]
+[name="Mo Bufu"]Hmph... I don't like what the mandarins get up to, but I don't like to spurn a favor either. You saved my life today, and that's more favor than I'll ever repay.
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]Go ahead, then. Ask away.
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]I'm looking for one of your restaurant's chefs. He's a witness in a case.
+[name="Lin Qingyan"]I believe ten years ago, he was working in the Ministry of Justice death row prison, making last meals for convicts.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="Blaze"]A chef who only makes last meals... How exactly did he pass the Ding Feng Lou exams?
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]Ding Feng Lou serves all manner of mandarins every year at the Feast of a Hundred Delicacies. That means every chef's background must be clear as day for the record.
+[name="Lin Qingyan"]I imagine he shouldn't be hard to find.
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]What exactly do you want me to say, madam?
+[charslot(slot="m",name="avg_npc_1619_1#5$1")]
+[name="Mo Bufu"]First my restaurant catches fire for no reason. Now you say we have a chef who made meals for dead men. Should I even bother to open Ding Feng Lou again?
+[charslot(slot="m",name="avg_npc_1612_1#2$1")]
+[name="Lin Qingyan"]I understand your situation, sir. That's why I'm choosing to ask you these things in private.
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]Whatever. It's not like I can't admit to my own past.
+[name="Mo Bufu"]The chef you're looking for, the death row caterer Mo Xiaoliu, that was me.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="Blaze"]What?!
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]I thought so...
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]And making last meals is nothing shameful. The powerful need to eat, and so do the powerless.
+[name="Mo Bufu"]My cooking skills come from that prison, making last meals for death row convicts from all corners of the country.
+[name="Mo Bufu"]As for changing my name and hiding my identity, I just didn't want to make any trouble for this restaurant.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="Blaze"]I'm beginning to... sort of admire you.
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]Do you remember, ten years ago, a convict admitted to the prison by the name of Gu Quan?
+[name="Lin Qingyan"]If you don't remember the name, you should at least remember that some decades ago, he was the one and only person to be released from death row.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Blaze"]What?!
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="Blaze"]Wait! You mean my dad? Why'd my dad get the death penalty?
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Blaze!
+[charslot(slot="m",name="avg_npc_1619_1#7$1")]
+[name="Mo Bufu"]You mean Gu Quan? He was your father?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#12$1")]
+[name="Blaze"]Yeah...
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]So you remember him...
+[charslot(slot="m",name="avg_npc_1619_1#3$1")]
+[name="Mo Bufu"]I do... all too well.
+[name="Mo Bufu"]I spent so many years in there making last meals. I met countless horrific scoundrels, endless connivers. As each one of them ate before they left, the look in their eyes, it was always more or less the same.
+[name="Mo Bufu"]But I'd never seen someone whose eyes were so clear, so clean, so free of anything.
+[name="Mo Bufu"]He wasn't like the other convicts. In his time, he never wept, never howled, and never screamed injustice, not even on the day he was imprisoned.
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]Even I found it strange how a man like him could end up on death row.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#12$1")]
+[name="Blaze"]Why would... my dad...
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]Then do you know, at the time, what charges Gu Quan was sentenced to death on?
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]Not at the time...
+[charslot(slot="m",name="avg_npc_1612_1#2$1")]
+[name="Lin Qingyan"]Not at the time?
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]But one year later, when I joined Ding Feng Lou and began taking part in the Feast of a Hundred Delicacies, I came across a menu for a Feast from a few years before—
+[name="Mo Bufu"]That was when I learned that at that Feast, Gu Quan served a dish to the True Lung. It just so happens, that was the same dish this girl pulled down earlier. 'Medley of Whites'.
+[name="Mo Bufu"]But next to that dish, he placed a steamed flour bun, and in it... was a filling of red pickled tofu.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1")]
+[name="Blaze"]So... what does it mean? Why would he get locked up just for serving that?
+[charslot(slot="m",name="avg_npc_1612_1#3$1")]
+[name="Lin Qingyan"]......
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1")]
+[name="Blaze"]Lin Qingyan, aren't you gonna say anything?
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]Your relative told you the story of the Grand Preceptor, but never told you her eventual fate?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#13$1")]
+[name="Blaze"]Her... fate?
+[charslot(slot="m",name="avg_npc_1612_1#4$1")]
+[name="Lin Qingyan"]......
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]Forty years ago, the Grand Preceptor plotted to assassinate the True Lung. She committed suicide after it failed. Every single one of her underlings was arrested and trialed, and their numbers were over a thousand...
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]When Gu Quan served that dish at the Feast, it signified redressing her for her treason. It made the True Lung furious.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="Blaze"]No way... my dad told me so many times, the Grand Preceptor was loyal to the country, the people, the whole realm! How the hell could she be a traitor?!
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]The history books have it that way, yes.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="Blaze"]And they're right?!
+[name="Blaze"]Lin Qingyan, if everything written in them is true, what the hell are you investigating?!
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]......
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="Blaze"]And... and besides, my dad didn't actually get killed, right? Doesn't that prove, like, at least <i>some</i> people from the court believed the Grand Preceptor and my dad were both innocent?!
+[charslot(slot="m",name="avg_npc_1612_1#13$1")]
+[name="Lin Qingyan"]That's a sticking point, yes. If Gu Quan was imprisoned as part of the Grand Preceptor case, why would they free him afterwards?
+[charslot(slot="m",name="avg_npc_1619_1#3$1")]
+[name="Mo Bufu"]It stuck with me too... You see, after entering prison, Gu Quan had two visitors, and both were people I happened to know...
+[charslot(slot="m",name="avg_npc_1619_1#1$1")]
+[name="Mo Bufu"]One was the person delivering his meal. Yu Cheng, deputy minister of the Office at the time.
+[name="Mo Bufu"]And the other was the one who brought him out... former Minister of Rites, Ning Shu.
+[charslot(slot="m",name="avg_npc_1612_1#10$1")]
+[name="Lin Qingyan"]What...?!
+[charslot]
+[name="Voice Outside the Door"]Quick! This way! Surround the place immediately!
+[dialog]
+[playsound(key="$d_gen_soldiersrun")]
+[charslot(slot = "left", name = "avg_npc_1637_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1637_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1612_1#16$1")]
+[name="Lin Qingyan"]Dammit... why now...?!
+[charslot]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1613_1#7$1",duration=1.5)]
+[delay(time=2)]
+[name="Chen Che"]What a coincidence. One step ahead of me, Deputy Minister Lin.
+[charslot(slot="m",name="avg_npc_1612_1#1$1")]
+[name="Lin Qingyan"]I'd just arrived. A coincidence, indeed.
+[charslot(slot="m",name="avg_npc_1613_1#1$1")]
+[name="Chen Che"]The Judicial Review Office is investigating the Ding Feng Lou fire. I ask all of you to be cooperative.
+[name="Chen Che"]Lin Qingyan, and the girl next to you, come with me.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

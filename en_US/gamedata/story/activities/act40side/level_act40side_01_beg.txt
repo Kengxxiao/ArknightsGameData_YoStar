@@ -1,0 +1,578 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_dishes")]
+[Delay(time=1)]
+[MusicVolume(volume=0.3, fadetime=3)]
+[StopSound(channel="bgs", fadetime=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1)]
+[Delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="Check, please!", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="Voice from the Kitchen"]Wait a minute! I'm busy!
+[name="Voice from the Kitchen"]Oh. All you ordered was a bowl of plain noodles. It's on the house!
+[dialog]
+[Subtitle(text="Come on...", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[PlaySound(key="$d_avg_coin")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_chairrub")]
+[Subtitle(text="I'll leaving the money on the counter. Bye.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="Voice from the Kitchen"]Thank you, come again!
+[dialog]
+[Delay(time=1)]
+[Subtitle(text="Eating so little for lunch at that age—what gives?", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="Too many colors blind the eyes, too many flavors dull the tongue—one must not indulge in the desire for food.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="Didn't you just eat the one bowl of plain noodles?", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="Hmm. This is my fifth.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="I'm not like you—I prefer my food light and simple. I never add any seasonings when I eat—no salt, vinegar, chili, scallions, garlic, or spices at all.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="When I'm eating, I want to taste the food itself. If the basics are even slightly less than fresh, my taste buds will detect it instantly.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="Judging by your mandarin robes... you're a Deputy Minister with the Judicial Review Office, aren't you? Your tongue must be the greatest judge under Heaven.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="Haha. You have a way with words.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="When next you feel you've been wronged, come find me at the Judicial Review Office. My name is Yu Cheng.", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="I... won't need to trouble your magisterial greatness with that sort of thing. I am but a humble officer of the Ministry of Rites. I'm not often <i>wronged.</i>", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="Well, come see me anyway. I'll treat you to a bowl of noodles. What is your name, young man?", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="I am called Gu Quan.", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Delay(time=1)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="r",name="avg_npc_1639_1#1$1",duration=0.5,posfrom = "50,0", posto = "50,0")]
+[delay(time=1)]
+[name="Regular Customer"]Hey, Jiang! I'm here!
+[dialog]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",posfrom = "-200,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="Jiang"]Coming, coming! What'll it be today, Liu?
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]I'll have the usual. Any specials today?
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="Jiang"]Well, persimmons are in season. We also got a fresh batch of chestnuts today. You can either eat them raw—nice and crispy, or cooked—sweet and tender. How about stewed beast belly with chestnuts and then some osmanthus-flavored dried persimmon for dessert?
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]Nice. Alright, I'll try that then.
+[name="Regular Customer"]By the way, that sign we fixed for your restaurant a while back...
+[charslot(slot = "left", name = "avg_npc_1621_1#5$1",focus="l")]
+[name="Jiang"]Don't worry. I checked with our chef. This meal is on the house.
+[name="Jiang"]You've taken care of all our carpentry work the past few years. Treating you to a few meals is the least we can do.
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]Hahaha. You're too kind!
+[name="Regular Customer"]He's really a great cook, the greatest under Heaven, I'd say. I can't find food this good anywhere else!
+[name="Regular Customer"]That wooden talisman I gave him, I meant it! He was too modest to accept the gift!
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="Jiang"]Come on! Enough already!
+[name="Jiang"]We're just a little old eatery. It's you who keeps us in business. You don't need to flatter us like that.
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]By the way, where is that young chef of yours? I didn't see him sitting outside and chatting with the guests today.
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="Jiang"]Don't even bring him up—he's been sulking since early this morning.
+[name="Jiang"]There's this famous food critic going around lately, taking advantage of the buzz from the Feast of a Hundred Delicacies, you know? I hear she's visiting all the hidden little eateries in town, rating them one by one in the newspapers.
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]I know, I know! I hear she published an article reviewing taverns in Baizao. She's even writing a book, says she wants to compile all the best recipes from Baizao, past and present.
+[name="Regular Customer"]She calls herself, 'The Wandering Foodie' or something like that?
+[name="Regular Customer"]She's certainly ambitious—Baizao has countless taverns, and these places have been making their dishes for generations. To write a book about them, she'll need a wealth of knowledge and a stomach big enough for all that food!
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="Jiang"]Exactly... But I hear the book she's working on, <i>Baizao Cuisine & Food Culture</i>, already earned some praise from the head chefs of the Four Great Restaurants. And none of them have anything bad to say about her reviews.
+[name="Jiang"]Rumor has it, she's dropping in here today.
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]Well, you have nothing to worry about. With your chef's cooking, even the harshest critic will have nothing to criticize, right?
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="Jiang"]You know his temper. Whether the reviews are good or bad, he can't stand people talking about his food.
+[charslot(slot = "left", name = "avg_npc_1621_1#3$1",focus="l")]
+[name="Jiang"](Whisper) He says he doesn't want to get into a cooking competition, but that's just because he's afraid he'll lose.
+[dialog]
+[PlaySound(key="$d_avg_steelbasin", volume=0.5)]
+[Delay(time=0.5)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=15,times=1,duration = 0.3)]
+[charslot(slot = "left", name = "avg_npc_1621_1#9$1",focus="all")]
+[Delay(time=0.8)]
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="Jiang"]Alright. That's enough of that!
+[charslot(slot = "r",focus="r")]
+[name="Regular Customer"]Haha. The only thing I'm worried about is people discovering this place, so I won't be able to get a table here anymore.
+[charslot(slot = "left", name = "avg_npc_1621_1#4$1",focus="l")]
+[name="Jiang"]Knock on wood. Oh. Another customer!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[PlaySound(key="$d_gen_walk_n", volume=0.6,delay=0.5)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",duration = 1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",duration = 1)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Hey, look, the two of you coming right at this hour.
+[name="Regular Customer"]We're right across from the Judicial Review Office. I guess it's kind of become your unofficial cafeteria.
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]If it wasn't for this restaurant, I would have resigned and moved home ages ago!
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]Don't say such things. We have a duty! How could you think of resigning?
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]What's up? Why so serious?
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]It's the Feast of a Hundred Delicacies, of course! The busiest time of the year for the Office. I haven't had a good night's sleep in a month—who can keep going like this?
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]The precautions are necessary, though. There are so many tourists here now. If something bad were to happen, it would be a disaster.
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]No matter how careful we are... there's just too much going on. Something is bound to happen.
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Hey. Enough shop talk. Just enjoy the food.
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]You think we're talking about work because we want to? Ugh!
+[name="Exhausted Judicial Official"]By the way, did you hear about the Ding Feng Lou case?
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]What case? If there's something to say, just say it—why all the secrecy?
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]I'm not trying to be secretive—this case is just downright eerie.
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.7)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_makesoup", loop=true, channel="a",volume=0)]
+[SoundVolume( channel="a",fadetime=2)]
+[playsound(key="$d_avg_cutfast", channel="c",delay=2,volume=0.5)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_avg_cooksizzle_loop", loop=true, channel="b",volume=0)]
+[SoundVolume(volume=0.6, channel="b",fadetime=2)]
+[name="Exhausted Judicial Official"]On the 15th of last month, when Ding Feng Lou was busiest, every one of its hundred or so stoves were burning all day and late into the night.
+[StopSound(channel="a", fadetime=2)]
+[StopSound(channel="b", fadetime=2)]
+[playsound(key="$d_avg_firemagic")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.2, r=0.3, g=0, b=0, fadetime=1, block=false)]
+[name="Exhausted Judicial Official"]That night, one of the stoves caught fire, and the staff could not put it out. A handful of chefs were injured.
+[name="Stern Judicial Official"]The Originium pipe sprung a leak, was it? That's nothing new.
+[name="Exhausted Judicial Official"]Well, the investigators could not determine whether the pipe had been tampered with or not.
+[name="Exhausted Judicial Official"]Hundreds of people have access to that kitchen. Who knows if someone did something?
+[name="Exhausted Judicial Official"]You must know that Ding Feng Lou is the most famous restaurant in Baizao, and the organizer of the Feast.
+[name="Exhausted Judicial Official"]The thing that makes this incident particularly strange is that it happened on the 15th day of the month, and the fire started on the hundredth stove. Some say they saw a strange silhouette amidst the flames.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[delay(time=0.1)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]Let's stick to the facts, yes? We don't need to fabricate things here.
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]I'm telling you the truth! Many people said they saw it!
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]The work you do at the Judicial Review Office is pretty interesting. Listening to you talk about your cases is like reading a detective novel.
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]Come now. We're hardly authors here. It's just that whenever a case drags on for a few weeks without progress, I have nightmares about it.
+[name="Stern Judicial Official"]Actually, now that you mention it, I also heard about a strange case, recently.
+[name="Stern Judicial Official"]There's nothing supernatural about it. It's just plain weird.
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Oh? Another juicy story? Do tell!
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]I really shouldn't divulge too many details about this.
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]You can't tease us like that! The suspense is killing me!
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[name="Stern Judicial Official"]This is a matter of great importance. The place where this incident occurred is truly significant!
+[name="Stern Judicial Official"]It was the Mr. Ning's manor, former Minister of Rites.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[delay(time=1)]
+[name="Stern Judicial Official"]My shifu has been investigating this case for a while now. I've only heard an overview. He won't tell me more.
+[name="Stern Judicial Official"]Mr. Ning has been retired for several years now. He's in the process of leaving Baizao and moving back to his hometown in Jiangnan. But a few days ago, a strange thief broke into his mansion.
+[name="Stern Judicial Official"]Nothing was stolen, and no one was hurt. But in one of the guest rooms, there was a painting of a Xian hanging on the wall, and someone used melted honey to draw a line across the Xian's mouth.
+[name="Stern Judicial Official"]Of course, the mansion was heavily guarded, but the thief seemed to know the layout very well.
+[name="Stern Judicial Official"]And that thief—whether down to incredible skill or sheer experience—left no trace behind. My shifu and the others have their hands full trying to crack the case.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]Sealing the lips with honey? Isn't that from the 'Legend of the Stove God'? It ensures the Stove God will 'say more good things than bad'. The thief vandalized a painting, but didn't steal anything of value. They don't care for money, so did they have some other motive?
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]What motive could they have had? Minister Ning is an honorable mandarin. He has a decades-long record of dutiful public service. Who could have any issue with him?
+[name="Stern Judicial Official"]Regardless, he is an important court mandarin. The ransacking of his manor is no small matter, especially at a time like this.
+[name="Stern Judicial Official"]It's our greatest fear, come true.
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Oh! Hey! I just thought of something!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]You scared me! What's the thought?
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]I just remembered that I also saw something weird a few days ago, right in this very restaurant!
+[name="Regular Customer"]It was three days ago, I was here eating when a real strange customer walked in.
+[name="Regular Customer"]He looked to be on the older side, and he was still wearing a prison outfit, as if he had just been released by the Judicial Review Office.
+[name="Regular Customer"]He sat down and ordered twenty bowls of white rice, nothing else. He downed them in no time flat!
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1621_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="Jiang"]That's... all you're going to eat?
+[name="Jiang"]Eating all that rice is bound to make you choke. Why don't we whip up two little entrees for you, and a bowl of soup. On the house.
+[charslot]
+[name="Strange Customer"]No.
+[name="Strange Customer"]It's Dahuang rice, nice and fresh, the finest on the land. What other food could I possibly need?
+[name="Strange Customer"]I've filled my belly. I've no need for any free dishes. Check, please!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[name="Regular Customer"]After the funny fella finished eating, he grabbed all twenty empty bowls and walked out of the restaurant. He kept walking until he reached the Judicial Review Office. He threw the pile of bowls at the door of the office, and yelled—
+[dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Regular Customer"]'I'm the one who set the fire in the scrollery!'
+[name="Regular Customer"]Well, I'm sure you know more about it than me, especially with my terrible memory. Who was that guy anyway? What happened to him in the end?
+[charslot]
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]......
+[name="Exhausted Judicial Official"]There's no way I could discuss something like that with you...
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]Shhh! There are civilians at the next table over!
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Don't worry about them. I heard that lady speaking Victorian. I think they're foreigners. They don't understand what we're saying anyway.
+[dialog]
+[charslot]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="Victorian Tourist?"](In perfect Yanese) <i>Laoban, diancan!</i>
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="Exhausted Judicial Official"]......
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="Stern Judicial Official"]......
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1621_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="Jiang"]'Red Silk Special,' 'Mala Tofu,' 'Soft Yellow Shells,' 'Autumn Casserole,' and 'Jade Surprise'...
+[name="Jiang"]...and that's all she ordered.
+[charslot(slot = "m", focus = "n")]
+[name="Grumpy Voice"]......
+[name="Grumpy Voice"]Is she trying to challenge us?
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="Jiang"]She seems very polite. She just looked at the menu and picked out these dishes. Didn't look like she was asking for trouble.
+[charslot(slot="m",name="avg_npc_1621_1#9$1")]
+[name="Jiang"]You think she might be that food critic, the one who wrote 'Baizao Cuisine & Food Culture'?
+[charslot(slot = "m", focus = "n")]
+[name="Grumpy Voice"]What kind of food critic comes in and orders nothing but tofu?!
+[charslot(slot="m",name="avg_npc_1621_1#10$1")]
+[name="Jiang"]Relax, chef, relax.
+[name="Jiang"]You know how things are going here, business-wise. The future of our restaurant hinges upon this very moment!
+[name="Jiang"]You have to do your best. The dishes must be flawless!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_chairrub")]
+[playsound(key="$d_avg_plateplace",delay=1,channel="1")]
+The Victorian woman pulls up a chair and two jugs of wine and sits at the table with the two mandarins of the Judicial Review Office.
+[playsound(key="$pourwater",channel="2")]
+She casually pours each a glass of wine; its rich, sweet aroma soon fills the table.
+[dialog]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="Victorian Tourist?"]Please, drink and enjoy! This wine was meant for sharing!
+[name="Victorian Tourist?"]Aiai, so what happened next? What became of the weirdo who threw the empty rice bowls?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]Good lady, what you just heard was nothing more than idle diner's chatter.
+[name="Stern Judicial Official"]Whatever you do, please do not share it with anyone else.
+[charslot(slot="m",name="avg_1040_blaze2_1#11$1")]
+[name="Victorian Tourist?"]Huh? But you haven't finished the story yet. Where's the cliffhanger? Where's the 'stay tuned for the next episode'?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]I am a mandarin of the Judicial Review Office, madam. I'm not a storyteller in the teahouse.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Victorian Tourist?"]What a coincidence! I have a good friend who works there too.
+[name="Victorian Tourist?"]And here I was, thinking everybody at the Judicial Review Office was stuffy, pretentious, and tight-lipped.
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]*cough* *cough* *ahem*...
+[name="Stern Judicial Official"]Dear madam, have you come to Yan all by yourself? Are you here on vacation?
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Blaze"]Let's not be so formal. My Yanese name is Huang, or <i>Blaze</i> in Victorian.
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="Blaze"]And yes... I guess you could say I'm here on vacation.
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]I haven't met many Victorians who speak Yanese as well as you do. Have you lived in Yan previously?
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="Blaze"]Haha. Actually, no. But I'm not a hundred percent Victorian. My father is Yanes—
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[MusicVolume(volume=0.4, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "left", name = "char_017_homura_3#4",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_039_1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="Blaze"]Three rules, you say?
+[charslot(slot = "right",focus="r")]
+[name="Leizi"]Yes, if you can't follow these rules, I won't be able to take you back to Baizao.
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="Blaze"]Okay, okay. Lay 'em on me.
+[charslot(slot = "right",focus="r")]
+[name="Leizi"]First, be wary of strangers. Do not, of your own volition, take actions that are unnecessary.
+[charslot(slot = "left", name = "char_017_homura_3#10",focus="l")]
+[name="Blaze"]What do you take me for? A three-year-old? I know that. What else?
+[charslot(slot = "right",focus="r")]
+[name="Leizi"]Second, do not tell anyone that you are an Infected.
+[charslot(slot = "left", name = "char_017_homura_3#5",focus="l")]
+[name="Blaze"]Do I really need you to tell me that?
+[charslot(slot = "right",focus="r")]
+[name="Leizi"]Third...
+[name="Leizi"]Do not, under any circumstances, tell anyone about your father.
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="Blaze"]...Okay.
+[charslot(slot = "right",focus="r")]
+[name="Leizi"]Blaze, you are an important witness in all of these major cases… as well as an important piece of evidence.
+[name="Leizi"]I need your cooperation, and in return, I will guarantee your safety.
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.3, channel="bgs",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="Regular Customer"]What's that about your dad?
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Blaze"]Errr... I'm here to visit some family... and I'm on vacation. Haha.
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Well, madam, you came at the perfect time. The Feast of a Hundred Delicacies is about to begin! All Baizao's restaurants compete to serve the best dishes. This is the time of year when you can try the tastiest food!
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="Blaze"]Really? Do you have any Baizao delicacies you can recommend, or maybe a restaurant or two?
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]Baizao doesn't have any signature dishes, or 'Baizao delicacies', as you put it. Instead, you'll find that every single dish you eat in Baizao makes a delicacy.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Blaze"]Ah, that makes sense! I didn't make the connection until now that Baizao means <i>hundred stoves</i> in Victorian!
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]You know what they say, 'To the people, food is heaven.' Yes, the name 'Baizao', bestowed ages ago by the reigning True Lung, means to tend all cooking stoves under heaven.
+[name="Regular Customer"]Later, someone says 'Exquisite food demands meticulous preparation.' See, fine food doesn't just fill your stomach, it soothes your soul.
+[name="Regular Customer"]There are different dishes for every season and every region. The best chefs? They have a wealth of knowledge, and the power of the gods, at their fingertips.
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="Exhausted Judicial Official"]Please. Let's eat. Enough fooling around with foreign tourists.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_npc_1621_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="Jiang"]Order up!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_foodaroma_01",layer=1)]
+[curtain(direction = 2,fillfrom = 1,fillto = 0.05, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 1,fillto = 0.45, fadetime=0.1)]
+[Image(image="58_i04_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Regular Customer"]Do you have some special fondness for tofu, or...?
+[name="Blaze"]Hmm? These are all tofu dishes? They have different names, so I had no idea.
+[name="Blaze"]Who would have thought that Yan had so many different kinds of tofu?
+[dialog]
+[curtain(direction = 2,fillfrom = 0.05,fillto = 0, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.45,fillto = 0, fadetime=2)]
+[delay(time=2)]
+[Image(image="58_i04_1",screenadapt="coverall",fadetime=1)]
+[delay(time=1)]
+[name="Blaze"]Whatever. There's more than enough tofu for everyone. We'll enjoy it all together. Isn't that the custom here in Yan, after all?
+[name="Regular Customer"]Alright, let's dig in!
+[dialog]
+[PlaySound(key="$d_avg_dishes")]
+[delay(time=1.5)]
+[name="Blaze"]What's this? I don't remember ordering a dessert...
+[dialog]
+[curtain(direction = 2,fillfrom = 0,fillto = 0.35, fadetime=1)]
+[curtain(direction = 6,fillfrom = 0,fillto = 0.15, fadetime=1)]
+[delay(time=1.5)]
+[name="Elegant Woman"]......
+[dialog]
+[Image(image="58_i04_2",screenadapt="coverall",fadetime=0.8)]
+[delay(time=1.2)]
+[name="Elegant Woman"]Hmm?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[curtain]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1621_1#1$1",focus="n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Grumpy Voice"]Did you send out the food? Does she like it?
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="Jiang"]Actually, she didn't really eat much. She gave most of it away to the other customers.
+[dialog]
+[charslot(slot="m",focus="n")]
+[playsound(key="$d_avg_broadsword_polish", loop=true, channel="c")]
+[delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[name="Grumpy Voice"]Ugh...
+[charslot(slot="m",name="avg_npc_1621_1#8$1")]
+[name="Jiang"]Settle down. She might be feeling out the ambiance, you know.
+[name="Jiang"]Just calm down. Let's see what happens.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Blaze"]So what is this 'Feast of a Hundred Delicacies' you keep talking about?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]You may speak fluent Yanese, madam, but there are clearly gaps in your knowledge of our culture.
+[name="Stern Judicial Official"]The Feast of a Hundred Delicacies happens every year in Mid-Autumn, when the True Lung convenes meetings with mandarins at all levels to discuss state affairs.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Blaze"]If it's just a bunch of government meetings. Why is it called the Feast of a Hundred Delicacies?
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]Now, that has a beautiful origin story.
+[name="Stern Judicial Official"]Many years ago, the True Lung at the time held a birthday banquet, and all the mandarins presented him with gifts, including all manner of rare treasures from all across Yan.
+[name="Stern Judicial Official"]But there was one mandarin, a young Assistant Minister from the Ministry of Revenue, who gave the True Lung a bowl of 'Pearl Jade Soup'.
+[name="Stern Judicial Official"]The True Lung lifted the lid off the bowl, only to find a clump of rotten cabbage leaves and a scant few grains of brown rice floating in some water.
+[name="Stern Judicial Official"]The True Lung was enraged, demanding, 'What is the meaning of this?!' The Assistant Minister replied, 'There was a flood in Jiangqi this year, so we had a terrible harvest. What you see in the bowl here is what the peasants have been eating every day.'
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="Blaze"]Speaking up for what's right—that's what any good mandarin should do.
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Blaze"]Still, doing it to the True Lung's face, on his birthday like that, takes some serious guts.
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]Yes. The surprising thing is, the True Lung did not punish the young mandarin—he praised him and ordered that all other mandarins follow his example in advocating for the people.
+[name="Stern Judicial Official"]The True Lung ordered cuts to the court budget and used those funds for disaster relief. He built embankments to guard against future floods, and Jiangqi was saved.
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="Exhausted Judicial Official"]Yes, and the following year, the mandarins presented the True Lung with a bowl of sumptuous 'Fortune Soup' to show him that the finneries were thriving.
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]*ahem*...
+[name="Stern Judicial Official"]In summation, the annual banquet became a tradition, called the Feast of a Hundred Delicacies, held every year during the Mid-Autumn Festival.
+[name="Stern Judicial Official"]And all restaurants in the city serve dishes from the traditional Hundred Delicacies menu, welcoming all the people to join in the celebration.
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="Blaze"]Oh. The Yanese really know food, don't they?
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="Blaze"]This little shop here is a great example. It may look ordinary, but it serves top notch eats! Just look how many different types of tofu they can make! Amazing!
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="Blaze"]Then again, these cakes here... they taste different to the ones I've had before, and not in a good way. I think something's not quite right with them.
+[dialog]
+[stopmusic(fadetime=1)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="Regular Customer"]......
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="Stern Judicial Official"]......
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="Exhausted Judicial Official"]......
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="Blaze"]Huh? Why's everyone gone silent?
+[dialog]
+[charslot]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_2026_yu_1#16$1",duration=0.8)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=0.5)]
+[name="Irritable Youth"]Was it you?!
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_2026_yu_1#15$1")]
+[name="Irritable Youth"]You're the one criticizing my food?!
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

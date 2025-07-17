@@ -1,0 +1,335 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(key="$midautumn", volume=0.6)]
+[Delay(time=2)]
+[playsound(key="$d_avg_chess")]
+[Delay(time=1.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="Sir, are you saying such a remarkable individual actually existed in the history of Great Yan?", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Yes...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Cataloging books, organizing texts, promoting education... if she did so much for all life under Heaven, why does no one remember her, or even know her name?", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle]
+[playsound(key="$d_avg_penrustle")]
+[Delay(time=1.5)]
+[Subtitle(text="Sir, can you identify this character? I don't believe I've ever encountered it before.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="It's not that no one remembers her. It's simply that her 'true name in one lone word' was never recorded in the history books.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Isn't it a pity? Her pen captured Great Yan's long history and vast expanse, yet not a single page in the historical records bears her name.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Sir, if I were to complete all the missing records, do you think I could reconstruct her image?", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopmusic(fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Sticker(id="st1", text="Forty years ago...", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=2)]
+[dialog]
+[PlaySound(key="$d_gen_thunders_amb",volume=0.4)]
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[playsound(key="$d_avg_drkcludsthdr")]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>April 21st, 1062      Guyu (Grain Rain)</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="a")]
+[delay(time=2)]
+[StopSound(channel="a", fadetime=2)]
+[name="Hawking Shopworker"]Sir, sir!
+[name="Hawking Shopworker"]It's raining so hard out there. Why not come inside, have a pot of nice, warm tea, and wait out the rain?
+[name="Calm Man"]No need. This rain won't be stopping anytime soon—I should keep moving.
+[name="Hawking Shopworker"]Haha. Some people want the rain to stop, some hope it carries on.
+[name="Hawking Shopworker"]The umbrella vendor is smiling from ear to ear, but the passersby are downright miserable.
+[name="Calm Man"]A fascinating thought...
+[name="Hawking Shopworker"]Friend, you should take a moment to rest. I was asked to remind you: the road ahead is rough and uneven. A certain someone worries you might misstep, and get your shoes wet.
+[name="Calm Man"]Hmm?
+[dialog]
+[PlaySound(key="$dooropenquite")]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[delay(time=1.5)]
+[name="Hawking Shopworker"]Please just follow me, sir. Your friend is already waiting for you inside.
+[Dialog]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Blocker(a=0.15, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",duration = 1)]
+[delay(time=1.5)]
+[name="Shuo"]High Minister... it's been a while.
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="Shuo"]No... These days, you're... the Grand Tutor.
+[dialog]
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",bstart=0.2,bend=0.5,duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "r")]
+[name="???"]It has been some time indeed, since we bid each other farewell in Yumen.
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="Shuo"]I expected to meet with the Sui Regulator and the Ministry of War first upon this return to the capital to deliver my report.
+[charslot(slot = "m", focus = "r")]
+[name="???"]That's why I've arranged to meet with you in advance.
+[name="???"]His Imperial Majesty... has passed.
+[charslot(slot = "m", focus = "n")]
+[dialog]
+[PlaySound(key="$d_gen_thunders_amb",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",focus = "l")]
+[name="Shuo"]When?
+[charslot(slot = "m", focus = "r")]
+[name="???"]Two weeks ago.
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="Shuo"]I think... if His Majesty had died of natural causes, you would not be coming to see me about it.
+[charslot(slot = "left", name = "avg_2024_chyue_1#8$1",focus = "l")]
+[name="Shuo"]Does this mean...?
+[dialog]
+[charslot(slot = "m", name = "avg_npc_301_1#1$1",posfrom = "200,0", posto = "200,0")]
+[charslot(slot = "r", afrom=1,ato=0,duration = 1.5, focus = "r")]
+[delay(time=2.5)]
+[charslot(slot = "m", focus = "n")]
+The man sitting in the shadows holds out his hand. A black weiqi stone rests in his palm.
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",focus = "l")]
+[name="Shuo"]...!
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]Sixty years ago, he escaped from that ancient temple and turned himself into one hundred eighty-one black weiqi stones, which scattered across the lands. Their current whereabouts are unknown.
+[name="Grand Tutor"]Two weeks ago, the Sui Regulator found this stone in the capital.
+[charslot(slot = "left", name = "avg_2024_chyue_1#8$1",focus = "l")]
+[name="Shuo"]What... has he done?
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]I do not know.
+[name="Grand Tutor"]The only thing I'm certain of is that he could not have entered the Forbidden City... someone must have gone out to meet him.
+[name="Grand Tutor"]Investigating this person's identity would be... sensitive.
+[charslot(slot = "left", name = "avg_2024_chyue_1#3$1",focus = "l")]
+[name="Shuo"]His machinations likely will not involve others.
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]I shouldn't have come to you today, but when the convict caused all this turmoil before, you were the one who subdued him.
+[name="Grand Tutor"]Grandmaster, do you know anything of this?
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="Shuo"]Not a thing...
+[name="Shuo"]I have not seen him, since the incident.
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]...
+[name="Grand Tutor"]Then I believe you, Grandmaster.
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="Shuo"]Do you need anything from me?
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]Do not linger here. Return to Yumen at once.
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]Ursus is in constant turmoil, and there is a changing of the guard in Yumen. We must not allow morale to be shaken.
+[name="Grand Tutor"]I will handle the Sui Regulator and the Ministry of War myself. It is precisely because you are not entangled in this affair that I can entrust you with such a crucial task.
+[charslot(slot = "left", name = "avg_2024_chyue_1#1$1",focus = "l")]
+[name="Shuo"]Understood.
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]I will see the Sui Regulator continue to investigate the weiqi matter in secret.
+[name="Grand Tutor"]During this crucial time, you should remain out of sight, Grandmaster. We did not meet here today.
+[charslot(slot = "left", name = "avg_2024_chyue_1#6$1",focus = "l")]
+[name="Shuo"]Regarding the True Lung... how is His Highness Yan Wu?
+[name="Shuo"]At this moment, he should be—
+[charslot(slot = "right", name = "avg_npc_301_1#2$1",focus = "r")]
+[name="Grand Tutor"]Yan Wu...
+[charslot(slot = "right", name = "avg_npc_301_1#1$1",focus = "r")]
+[name="Grand Tutor"]Yan Wu was the one who went to His Imperial Majesty... on the night he died.
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb",volume=0.3)]
+[StopSound(channel="bgs", fadetime=2.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g5_dragonpalace",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=2)]
+[playMusic(intro="$nervous_intro",key="$nervous_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_npc_1239_1#1$1",duration=1.5)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.5)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-30",duration = 0.3)]
+[delay(time=0.5)]
+[name="Grand Commandant"]Your Highness, twenty-eight members of the traitor's family have been imprisoned.
+[name="Grand Commandant"]But after we checked the list, we found there was a single individual missing—an infant just under a month old.
+[name="Grand Commandant"]The Imperial Guard searched the Grand Preceptor's mansion thoroughly today, but found no traces of the baby.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]A newborn could not have run off by herself.
+[name="Voice Behind the Curtain"]Someone went through the trouble to whisk her away.
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Your Highness need not worry. The Imperial Guard will find her.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]Hmph...
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Earlier today, the Minister of Justice requested a meeting.
+[name="Grand Commandant"]He seeks His Highness's advice on this series of cases.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]Handle them... according to the Laws of Yan.
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]I'll tell him.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]Where is my elder brother now?
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]According to our reports, he left the capital just half an hour ago. Some of the Imperial Guard have defected with him.
+[name="Grand Commandant"]The soldiers guarding the city did not dare to stop them, without orders to do so.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]Indeed... I never ordered them to keep him in Baizao.
+[name="Voice Behind the Curtain"]He was unwilling to stay and left everyone behind.
+[name="Voice Behind the Curtain"]How many Imperial Guardsmen went with him?
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Eighteen.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]Even after committing such an unforgivable crime, my elder brother can still send the Grand Preceptor to die in his place; he can still command the unwavering loyalty of these eighteen deathsworn.
+[name="Voice Behind the Curtain"]How many courtiers are still devoted to him? How many still hope that he will retake the throne?
+[charslot(slot="m",name="avg_npc_1239_1#2$1")]
+[name="Grand Commandant"]Yet it is Your Highness who now sits on the throne, not him. Therefore, it falls upon Your Highness to ensure Yan's eternal prosperity.
+[name="Grand Commandant"]All castes of Yan may afford hesitation and uncertainty... save Your Highness.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]...
+[name="Voice Behind the Curtain"]It's been so long since I've left this palace... Grand Commandant, tell me——
+[name="Voice Behind the Curtain"]Has the spring rain yet ceased, in Baizao?
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]The rain may stop whenever Your Highness desires.
+[name="Grand Commandant"]If Your Highness has changed your mind, you yet have time to stop them.
+[charslot(slot = "m", focus = "n")]
+[name="Voice Behind the Curtain"]...
+[name="Voice Behind the Curtain"]...I'm exhausted.
+[name="Attendant"]The Imperial Kitchen has prepared some babao soup and shredded bamboo shoots. If Your Highness desires?
+[name="Voice Behind the Curtain"]Very well.
+[charslot(slot="m",name="avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]...
+[dialog]
+[PlaySound(key="$d_avg_clothmovement",volume=0.5)]
+[charslot(slot = "m",posfrom = "0,-30", posto = "0,0",duration = 0.5)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[playsound(key="$d_avg_drkcludsthdr")]
+[bgeffect(name="$eb_rain",layer=1)]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[CameraShake(duration=-1, xstrength=3, ystrength=3, vibrato=15, randomness=90, fadeout=false, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.1, fadetime=0.1)]
+[playsound(key="$d_avg_carriage_loop", loop=true, channel="b",volume=0)]
+[SoundVolume(volume=0.6, channel="b",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[playsound(key="$d_avg_babycry_loop", loop=true, channel="a",volume=0)]
+[SoundVolume(volume=0.6, channel="a",fadetime=2)]
+[delay(time=1)]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=5, randomness=90, fadeout=false, block=false)]
+[name="Gentle Woman"]There... there...
+[name="Gentle Woman"]Don't cry. We're on our way home. We're almost there.
+[StopSound(channel="a", fadetime=2)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1616_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="Anxious Man"]Pick up the pace, please... if you could.
+[charslot(slot = "m", focus = "n")]
+[name="Coachman"]It's raining too hard. And I can't see too well. Couldn't go any faster, at this rate...
+[charslot(slot="m",name="avg_npc_1616_1#8$1")]
+[name="Anxious Man"]How much farther to the next stage station?
+[charslot(slot = "m", focus = "n")]
+[name="Coachman"]At least thirty li...
+[name="Coachman"]Brother, just how urgent is your business... that you'd bring your whole family along to travel on a night like this?
+[charslot(slot="m",name="avg_npc_1616_1#4$1")]
+[name="Anxious Man"]...
+[charslot(slot="m",name="avg_npc_1616_1#2$1")]
+[name="Anxious Man"]Please... just go faster.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_thunders_amb")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot(slot="m",name="avg_npc_1634_1#1$1",bstart=0.3,bend=0.9)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[charslot(duration=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Coachman"]Ahhh! Ahhh!! What the——
+[dialog]
+[StopSound(channel="b", fadetime=3)]
+[playsound(key="$d_avg_pcknmgrwl")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=15, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[curtain(fadetime=1)]
+[delay(time=1)]
+[name="Coachman"]*Yanese exclamation* What's somebody doing out here in the wilderness at this hour?
+[charslot(slot="m",name="avg_npc_1616_1#7$1")]
+[name="Anxious Man"]...
+[charslot(slot = "m", focus = "n")]
+The man looks around, but the endless rain blocks his view. It is too dark for him to see anything.
+[charslot(slot="m",name="avg_npc_1616_1#5$1")]
+[name="Anxious Man"]We'll have to get out here.
+[playsound(key="$d_avg_goldcoin",volume=0.5)]
+[name="Anxious Man"]Sir, I'll give you all the money I have. Take your carriage to the next stage station. If anyone asks, do not tell them you carried passengers with a baby tonight.
+[name="Anxious Man"]I beseech you, good sir.
+[charslot(slot = "m", focus = "n")]
+[name="Coachman"]But.... what... huh?!
+[name="Coachman"]Where are you going in this weather?
+[charslot(slot="m",name="avg_npc_1616_1#3$1")]
+[name="Anxious Man"]We'll follow the path through the northern woods.
+[charslot(slot = "m", focus = "n")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Panicked Woman"]Ahhhh!!!!!
+[charslot(slot="m",name="avg_npc_1616_1#8$1")]
+[name="Anxious Man"]What is it?
+[charslot(slot = "m", focus = "n")]
+[name="Panicked Woman"]The baby...
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[name="Panicked Woman"]The baby is gone...
+[charslot(slot="m",name="avg_npc_1616_1#6$1")]
+[name="Anxious Man"]——!
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[bgeffect]
+[delay(time=2)]
+[Background(image="25_g11_yanroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$midautumn", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1614_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="Silent Old Man"]...
+[name="Silent Old Man"]It's... it's her.
+[charslot]
+The baby is sleeping soundly in her cradle, oblivious to the mud and blood on her face.
+[charslot(slot="m",name="avg_npc_1614_1#2$1",focus="n")]
+[name="Man with Bloody Hands"]I did everything you asked.
+[name="Man with Bloody Hands"]I know their methods, and I know how to answer them. Don't worry. I won't allow any blood to stain you.
+[charslot(slot="m",name="avg_npc_1614_1#6$1")]
+[name="Silent Old Man"]Good sir, I have no way to repay your kindness.
+[charslot(slot = "m", focus = "n")]
+[name="Man with Bloody Hands"]No. You need not thank me. I did not do this for you.
+[name="Man with Bloody Hands"]She's done so much for me, yet what I do today will neither clear her name nor even begin to avenge her.
+[name="Man with Bloody Hands"]I have no family and no affairs to settle after my death. I ask only one favor of you.
+[name="Man with Bloody Hands"]Please, take this girl in.
+[charslot(slot="m",name="avg_npc_1614_1#3$1")]
+[name="Silent Old Man"]I...
+[charslot(slot = "m", focus = "n")]
+[name="Man with Bloody Hands"]You need not tell her anything. Just let her grow up and live her life in peace.
+[charslot(slot="m",name="avg_npc_1614_1#6$1")]
+[name="Silent Old Man"]You know... if she stays here, it will be risky, with a greater possibility that this old case will be reopened.
+[charslot(slot = "m", focus = "n")]
+[name="Man with Bloody Hands"]But isn't that what you want?
+[name="Man with Bloody Hands"]We may be powerless to change the situation right now...
+[name="Man with Bloody Hands"]But if one day, be it three or four decades later, the truth is revealed...
+[name="Man with Bloody Hands"]All the blood shall not have been shed in vain.
+[charslot(slot="m",name="avg_npc_1614_1#2$1")]
+[name="Silent Old Man"]...
+[charslot(slot="m",name="avg_npc_1614_1#6$1")]
+[name="Silent Old Man"]Right then. I swear it.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
