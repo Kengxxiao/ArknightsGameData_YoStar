@@ -1,0 +1,849 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_offce",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_081",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Assistant"]Here's the files on Chernobog, chief. They're on your desk.
+[name="Assistant"]Hope you can find the info you wanted somewhere in those dusty papers.
+[Dialog]
+[charslot]
+[name="Editor"]Thanks for sorting them out, Zhenya.
+[Dialog]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_woodenladder",volume=0.8,channel="w",loop=false)]
+[stopsound(channel="w",fadetime=1)]
+[playsound(key="$doorclosequite",delay=1.4)]
+[Delay(time=1)]
+The assistant closes the door as he leaves, as usual. It scrapes against the uneven flooring, letting out a shrieking sound.
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[PlaySound(key="$d_avg_lighter", volume=0.7,delay=1.5)]
+[Delay(time=2)]
+The editor sits up straight, lights a cigarette, and pushes through the discomfort as he flips through the stack of old newspapers.
+[Dialog]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Delay(time=1)]
+[name="Editor"]'The Third Army's Dereliction of Duty in the Chernobog Incident...'
+[name="Editor"]Tch... Same old, same old. 'Chernobog Closes Mine—a Heavy Blow to Ursus's Originium Industry'.
+[name="Editor"]...'Novochernobog—The Infected Lives a Blessed Life Under His Majesty's Glory'.
+[name="Editor"]Utter drivel.
+[name="Editor"]No, this isn't what I want... These trashy tabloids are barely scratching the surface.
+[name="Editor"]...None of these reports are anywhere close to the truth.
+[Dialog]
+[PlaySound(key="$burningloop1", volume=0.9, loop=true, channel="burn")]
+[Delay(time=1)]
+The editor pushes up his glasses and flicks away some stray cigarette ash, but accidentally sends sparks flying onto the paper.
+[Dialog]
+[PlaySound(key="$d_avg_chairbump", volume=0.7)]
+[StopSound(channel="burn", fadetime=2)]
+[Delay(time=1.5)]
+He rushes to extinguish the sudden fire, but the newspaper already bears a freshly burnt hole.
+Through the hole the editor sees an ensemble of letters—'Reunion'.
+A name he has never heard of before.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_warehouse_2",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_043_1#2",duration=0.7)]
+[charslot(slot="r",name="char_011_talula_1#3",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="char_011_talula_1#3",focus="r")]
+[name="Talulah"]In the last few days, a stream of Infected have been showing up wanting to join Reunion.
+[name="Talulah"]I told them we'll be leaving Londinium in one month's time, heading for the Duke of Gododdin's territory.
+[charslot(slot="l",name="avg_npc_043_1#2",focus="l")]
+[name="Nine"]Are they willing to follow us there?
+[charslot(slot="r",name="char_011_talula_1#3",focus="r")]
+[name="Talulah"]They neither agreed nor refused. They couldn't come up with an answer.
+[charslot(slot="l",name="avg_npc_043_1#2",focus="l")]
+[name="Nine"]...I'll prepare for bringing them along. They have nowhere else to go.
+[name="Nine"]Gododdin. I hear the Duke's issued more than a few decrees benefiting the Infected, so it's worth checking out.
+[charslot(slot="r",name="char_011_talula_1#3",focus="r")]
+[name="Talulah"]Decrees and reality are not the same thing.
+[charslot(slot="l",name="avg_npc_043_1#2",focus="l")]
+[name="Nine"]Obviously. Which is why we need to see for ourselves.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[Delay(time=1)]
+From a corner comes a rustling sound as Ch'en turns a newspaper page.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Nothing to say even after listening in for so long, Ch'en?
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]Everything you've talked about is internal business.
+[name="Ch'en"]As an outsider, I have no right to comment. I've been focusing on the news anyway.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]You weren't this quiet with many of the others in private.
+[name="Talulah"]We need your thoughts, Hui-chieh.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]When I let you tag along with us, it wasn't just to show you how different we are from the other organizations.
+[name="Nine"]Don't go getting the idea that you'd have to take responsibility for either of us.
+[name="Nine"]Given our current situation, anyone's input is welcome, as long as we can help these people out. So speak your mind.
+[charslot(slot="m",name="avg_npc_662_1#7$1",focus="m")]
+[name="Ch'en"]......
+[Dialog]
+[PlaySound(key="$d_avg_scroll", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]You're planning to take in people with nowhere else to go?
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Why not?
+[name="Nine"]They'll bring new vitality to our group.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]Or new conflicts.
+[name="Ch'en"]This group you've gathered under the banner of what you're calling 'Reunion' is as rag-tag as they come.
+[name="Ch'en"]Is this what you promised me when you left?
+[charslot(slot="m",name="avg_npc_662_1#7$1",focus="m")]
+[name="Ch'en"]Not to mention <i>her</i>.
+[Dialog]
+[charslot]
+Ch'en looks toward the indifferent Talulah.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]......
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]You're bound to attract more eyes in future.
+[name="Ch'en"]So if you ask me, I suggest staying in Londinium for a while, and restructuring yourselves—
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]You mean letting someone more suitable handle it?
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]I won't deny that.
+[name="Ch'en"]Just look at the people you have here. Criminals, Infected, deserters... Do you have a clue where you're taking them?
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]We're not going to stay here forever, at the very least.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot="m",name="char_1002_nsabr_1",duration=0.5)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]What is it? What's the hurry?
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="Reunion Warrior"]Nine, Red just came back with some urgent news. Ugh—
+[Dialog]
+[charslot]
+He shoots a glance at Ch'en.
+Ever since the stranger called Ch'en showed up, his companions have been behaving strangely.
+She rarely leaves Talulah and Nine alone, but has never once commented on Reunion's actions either.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Go on. She's one of us.
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="Reunion Warrior"]Troops from the ducal alliance are approaching the factory. Should we get them to leave?
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Ducal troops? They can't be coming for us, but... I'll head there myself and see what's going on.
+[name="Nine"]Talulah... keep everyone else hidden.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Alright.
+[Dialog]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="Ch'en"]So, you agree with Nine's methods?
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]...Not exactly. But this group is nothing like the original group I traveled with on the tundra.
+[name="Talulah"]Unfortunately, oppressed peoples are treated the same way no matter where they are.
+[name="Talulah"]No one cares where we go, Hui-chieh, only where we decide to stop. And then they'll figure out how to drive us away.
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="Ch'en"]......
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]'Reunion'. It's a mistake I've made myself...
+[name="Talulah"]Nine has no intention of wiping my slate clean, but if she needs me to come up with a new meaning—
+[name="Talulah"]I have no right to refuse.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]And her conscience is crystal clear.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Nine... and myself, we know very well what we're doing.
+[name="Talulah"]But you, Hui-chieh. You chased me—or rather, Reunion—all the way here.
+[name="Talulah"]Why are you still delaying what you decided long ago?
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+Talulah leaves. Ch'en doesn't catch up with her.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g9_lightinduarea_street_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_sandnmlfts", volume=1)]
+[delay(time=1)]
+[name="Alliance Soldier"]Keep moving, you beasts. Don't stop!
+[Dialog]
+[charslot(slot="m",name="avg_npc_934_1#1$1",duration=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_punchsp5",volume=1)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.3)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[name="Sarkaz Civilian"]Tch... Bloody bastards!
+[charslot(slot="m",name="avg_npc_241",focus="m")]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Angry Alliance Soldier"]Get up! Now!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punchsp5",volume=1)]
+[CameraShake(duration=0.7, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_241",focus="l")]
+[charslot(slot="r",name="avg_npc_248",focus="l")]
+[name="Angry Alliance Soldier"]Look at these disgusting sick freaks. Wish I could just get rid of them here and now.
+[charslot(slot="r",name="avg_npc_248",focus="r")]
+[name="Cold Alliance Soldier"]The Exemplars' territory is just ahead. Are you considering dumping our rubbish right on their doorstep?
+[name="Cold Alliance Soldier"]I say we stay out of trouble. They've already set up garbage disposal stations, so no littering.
+[Dialog]
+[charslot]
+[name="Sarkaz Civilian"]Garbage disposal...?
+[Dialog]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="o")]
+[StopSound(channel="o", fadetime=2)]
+[charslot(slot="m",name="avg_npc_043_1#2",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]I won't ask when or where you got your orders, soldier.
+[name="Nine"]But this is no place for an execution.
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Cold Alliance Soldier"]Ah, the Infected hiding in the factory.
+[name="Cold Alliance Soldier"]You should be thankful that we're busy catching these devils instead of—
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "char_011_talula_1#3", bstart=0.2,bend=0.7,duration=1)]
+[delay(time=2)]
+The air grows warm. Nine casts a quick glance toward a corner shrouded in darkness.
+Within it, a fire ignites, then slowly dims.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_241",focus="l")]
+[charslot(slot="r",name="avg_npc_248",focus="l")]
+[name="Angry Alliance Soldier"]You... Did you just feel a tingling on your skin, like—
+[charslot(slot="r",name="avg_npc_248",focus="r")]
+[name="Cold Alliance Soldier"]Like I got burned by fire.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Cold Alliance Soldier"]...Itching for a fight, huh?
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]This factory area is under the Exemplars' protection.
+[name="Nine"]So why don't you go ask your superiors if they'd mind an idiotic subordinate stirring up conflict here and smashing this hard-won peace to pieces?
+[name="Nine"]I think you'll know how to speak to us after that.
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Cold Alliance Soldier"]But suppose our allies, our 'friends', were to show inappropriate sympathy and compassion towards our common enemy—
+[name="Cold Alliance Soldier"]I imagine my superiors would be humming a different tune.
+[name="Cold Alliance Soldier"]Move, Infected.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]...They don't sound like they came from Kazdel.
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="Cold Alliance Soldier"]Devils are freakishly good at disguises.
+[name="Cold Alliance Soldier"]There's no way we're letting a devil merc slide past us.
+[charslot(slot="m",name="avg_npc_241",focus="m")]
+[name="Angry Alliance Soldier"]Get moving, you damned devils!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punchsp3",volume=1)]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[name="Sarkaz Civilian"]Ugh...
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step1",loop=true)]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="step2")]
+[charslot(slot="l",name="avg_npc_932_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_935_1#1$1",duration=1)]
+[delay(time=2.5)]
+[stopsound(channel="step1",fadetime=3)]
+[stopsound(channel="step2",fadetime=3)]
+[charslot(duration=1)]
+[delay(time=2)]
+The squad escorting the Sarkaz slowly trudge through the long street, though both captors and captives look exhausted and numb.
+Nine watches as they leave, and spots a few teenagers stumbling at the end of the downcast parade of prisoners.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Bastards...
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snow_2",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]Here's the place, sir. The blaze lasted for three days and left basically nothing behind.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_takphtrptly",volume=0.7)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[delay(time=0.7)]
+[name="News Reporter"]Did the fire spread anywhere other than the Patrol Unit's outpost?
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]No... but many miners seized the chance to escape. Everyone was so scared... Didn't know when the Patrol Unit would arrive...
+[name="Local Villager"]But seems like you got here first. You said you're a reporter? But who's to say for sure?
+[Dialog]
+[charslot]
+[name="News Reporter"]...Let's not get into that. So, if the management here has always been hard on everyone, how did the miners carry out the arson?
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]The miners?
+[name="Local Villager"]No, no. The village had an old noble from the city, good heart, that man... but a bit too kindhearted, if you ask me.
+[name="Local Villager"]Couldn't stand what was happening in the mines, always talking about rescuing the miners. We thought it was all talk, but in the end...
+[name="Local Villager"]He really went and did it.
+[Dialog]
+[charslot]
+[name="News Reporter"]Oh? Then where is he now?
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]Must've died in the blaze with the Patrol Unit.
+[Dialog]
+[charslot]
+[name="News Reporter"]Hah. A noble who bravely sacrificed his life to help the suffering Infected miners.
+[name="News Reporter"]That would make a pretty good headline.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_takphtrptly",volume=0.7)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[delay(time=0.7)]
+The reporter gazes at the scorched land. Nearby buildings have been reduced to rubble, and in place of the once lush forest stands unsightly tree stumps.
+Suddenly, a scorch mark draws his attention. It looks unusual, almost aesthetically pleasing.
+[name="News Reporter"]Do you... know who left this mark here?
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]That's just from the fire.
+[Dialog]
+[charslot]
+[name="News Reporter"]I'm not buying that. It looks like a 'symbol' to me.
+[name="News Reporter"]So—who left it here?
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]Uh... no clue. It was just here after the fire.
+[Dialog]
+[charslot]
+[name="News Reporter"]So you're saying it was a deliberate act, an attempt to send out a signal: 'Salvation'.
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="Local Villager"]A-Am I?
+[Dialog]
+[charslot]
+[name="News Reporter"](Laughs) Didn't you just explain the real history behind it for me?
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g13_lightinduarea_indoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[PlaySound(key="$d_avg_crowdtalk_fear",volume=0.6,channel="tk",loop=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopsound(channel="tk",fadetime=2)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_662_1#8$1",focus="m")]
+[name="Ch'en"]No need to rush. Get in line, everyone will get some.
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="Weary Sarkaz"]How much longer do we have to stay here, Miss Ch'en?
+[name="Weary Sarkaz"]When will the next squad leaves the city...?
+[charslot(slot="m",name="avg_npc_662_1#8$1",focus="m")]
+[name="Ch'en"]Don't worry. You're safe here.
+[name="Ch'en"]I've reached out through many different channels to get everyone out of here.
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="Weary Sarkaz"]I-I heard the Sarkaz-hunting soldiers have found this place.
+[name="Weary Sarkaz"]If they find out you're sheltering us...
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(slot="m",name="char_011_talula_1#3",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Sheltering? Why speak as if you're fugitives on the run?
+[name="Talulah"]You're citizens of Londinium, victims of this war.
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="Weary Sarkaz"]We were already unwelcome long before the Sarkaz troops entered the city.
+[name="Weary Sarkaz"]Believe me, it's more than just soldiers on that team.
+[name="Weary Sarkaz"]Being a Sarkaz is already a <i>crime</i>, the worst one you can commit. Doesn't matter if you took part in the war or not.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]...I know.
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="Weary Sarkaz"]Anyways... Thanks for taking us in.
+[name="Weary Sarkaz"]I ironed it out with the others. We'll wait three days for a chance to leave the city. If we don't get one, we'll go by ourselves.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]It's not the best time to leave. The soldiers have been even more active recently.
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="Weary Sarkaz"]All the more reason to get out as soon as we can. Every day we put it off will only worsen the situation.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]...If you insist, we'll help you out.
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="Weary Sarkaz"]Appreciate the generosity. I suggest you guys do the same.
+[name="Weary Sarkaz"]Who do you think they'll target next, once the city's out of Sarkaz?
+[name="Weary Sarkaz"]Most of you are Infected. You should know how their nobles treat you guys.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_sanatorium_balcony",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="Waiter"]Today's paper, sir.
+[name="Carefree Noble"]Hmm... I can't be bothered to read it, Alyosha. Anything noteworthy?
+[name="Waiter"]New tax policies, some literary works, a few scandals, and...
+[name="Carefree Noble"]And?
+[name="Waiter"]Revolts. All over the country.
+[name="Carefree Noble"]Let me see.
+[name="Carefree Noble"]Finally, some real reporting. I thought those Deity Grypherburg reporters only knew how to run tabloids.
+[name="Carefree Noble"]'Infected have been striking at factories and outposts across the country. Some regions are experiencing a surge of uprisings, as Infected have brazenly attacked outposts and government agencies, causing serious losses...'
+[name="Carefree Noble"]'It is said that they are inspired by an Infected organization known as Reunion...'
+[name="Carefree Noble"]Oh, look, they even left some symbols...
+[name="Waiter"]...Do you wish to end your convalescence now?
+[name="Carefree Noble"]Of course not. Do you even realize how hard it is for me to get a vacation?
+[name="Waiter"]But your colleagues from the propaganda department have visited you many times already.
+[name="Carefree Noble"]Oh, my dear Alyoshenka, our dear nation has been suffering from a chronic disease for quite some time, and there are many who wish to heal her.
+[name="Carefree Noble"]But to do so, these rotten old wounds must first see the light of day.
+[name="Carefree Noble"]I've had enough of my colleagues patching them up, over and over.
+[name="Waiter"]How should I reply then?
+[name="Carefree Noble"]Tell them any discussion must wait until my vacation is over.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_328_1#1$1",focus="m")]
+[name="Red"]Did they ransack the streets again for another batch of prisoners? Here's your soup, Talulah.
+[Dialog]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Thanks.
+[Dialog]
+[PlaySound(key="$d_avg_dishes", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_328_1#1$1",focus="m")]
+[name="Red"]Too bland? Well—I had to ransack our stash to get the last of the salt.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]It's fine. Good, even.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Heh. 'Ransack'? That's a good word.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Only a week ago they wouldn't have come here, let alone taken any children among the prisoners.
+[name="Talulah"]But we just saw both happen.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]They've been dead set on wiping out any trace of the Sarkaz for the past two weeks.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]At first, it was just Sarkaz soldiers who couldn't evacuate in time. Next, it was any Sarkaz civilian who had any dealings with the army. Now? Even Londinium-born Sarkaz aren't being spared.
+[name="Talulah"]I thought you'd make a move, Hui-chieh.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]...That would only complicate things. We're in Victoria, so I have to act more cautiously.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]That'll only cost us more time.
+[name="Nine"]A few days ago I saw a group of kids harassing a poor woman... all she did was to marry a Sarkaz and raise their children together.
+[name="Nine"]This is how they treated the Infected before the war, and now it's the Sarkaz's turn. Eventually, every Londinium citizen will face this.
+[name="Nine"]Time is what these mistreated people lack most.
+[Dialog]
+[charslot]
+Nine pauses to glance at Talulah right beside her.
+However, she seems unusually calm, as if the sudden temperature increase earlier was just a hallucination.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]I thought you'd make a move on the Victorians earlier.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]It was only a warning. It'd only bring us more trouble if we pestered them any further. Hui-chieh has a point—We should keep a low profile until we're forced to show ourselves.
+[name="Talulah"]Attacking ducal alliance troops on the factory streets certainly won't do anything to improve the lives of the workers here.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]So you weren't angry.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]What you're experiencing, I have too, long ago. But at least Sarkaz blood isn't contagious like Oripathy.
+[name="Talulah"]I've long since learned to control my rage. At the very least, I won't waste it on clueless underlings like the soldiers from before.
+[name="Talulah"]This war has turned the oppressed into oppressors. It's not their fault.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Then who should the innocent Sarkaz vent their anger on?
+[name="Nine"]Remember that Sarkaz merchant with the motorbike who helped us get supplies...? The Infected killed him out of fear.
+[name="Nine"]Now, that fear is spreading unchecked as the Sarkaz are gradually retreating.
+[name="Nine"]Infected, soldiers, nobles... heh, even civilians who've never seen war. Everyone thinks they're in the right.
+[name="Nine"]So you're correct, Talulah. Sarkaz blood isn't contagious like Oripathy... but hatred and fear are.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]You've decided then?
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]To save the Sarkaz? I see no need to hesitate. They're no different from us.
+[name="Nine"]I'm just not sure how to minimize the fallout, so I need your help.
+[name="Nine"]Keep the people at camp safe, as well as the workers.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]...If you need my flames to burn for them, I won't hesitate.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Red, let the workers know our plan. Those willing to join us can stay; anyone too afraid to escape, bring them to the Exemplars' camp.
+[charslot(slot="m",name="avg_npc_328_1#1$1",focus="m")]
+[name="Red"]Got it.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Ch'en.
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="Ch'en"]......
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]You can try to stop us, or you can leave and pretend nothing happened.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]Saving those Sarkaz means you'll have to change everything you've planned.
+[name="Ch'en"]And if you go with them, none of the Dukes will let you stay long in their domain, Nine.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]They won't let us stay long anyway, even without those people.
+[name="Nine"]We're Infected, Ch'en. Maybe your time at Rhodes Island has made you forget how we're actually treated.
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="Ch'en"]Then where will you go next?
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]So you agree with our plan?
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]......
+[name="Ch'en"]Even prisoners shouldn't be executed so hastily. They don't even have an official order.
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Hui-chieh, the issue isn't where Nine and the others <i>want</i> to go, but where they're needed.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]We'll find a place that truly needs us, Ch'en.
+[name="Nine"]Not just the Infected... Anyone enslaved or deprived of their right to a fair chance at survival.
+[name="Nine"]A place with no discrimination or oppression.
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="Ch'en"]...You know as well as the rest of us that that'll be difficult, if not impossible, Nine.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Of course. But this is the path a man we all knew left us before he died.
+[charslot(slot="m",name="avg_npc_662_1#2$1",focus="m")]
+[name="Ch'en"]Guard...
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Someone has to see it through, Hui-chieh.
+[name="Talulah"]This new Reunion makes their own medicine and strives to help anyone in need, without asking for anything tangible in return.
+[name="Talulah"]Change is happening, but it's too fragile.
+[name="Talulah"]They need something to believe in, an objective. That's the only way they can push forward.
+[name="Talulah"]I don't completely agree with Nine's way of doing things, but I see no reason to refuse to cooperate either.
+[name="Talulah"]She's always admired the 'fairness' you seek, Hui-chieh.
+[name="Talulah"]So why not take a look at what <i>she</i> seeks?
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snowconutry_2",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_oldtvelectricity")]
+[delay(time=1)]
+[name="Anonymous Radio"]On the tundra ignored by the Emperor's edict, rebel activity has intensified, with thousands of Infected banding together to break their shackles and regain their freedom.
+[name="Anonymous Radio"]We've achieved what used to be unthinkable.
+[name="Anonymous Radio"]Ever since that first fire ignited by that anonymous noble, many of us have been communicating in hushed tones: Is there someone leading us? To be honest, I'm not too sure myself.
+[name="Anonymous Radio"]What I do know is that our call to rise up has not been silenced, and is even now trying to escape from the tundra and its army of trees blocking the way.
+[name="Anonymous Radio"]Our proof is that unique symbol everyone's curious about, the symbol scorched by flame.
+[Dialog]
+[delay(time=1)]
+The hoarse voice on the radio smashes the countryside's peace apart.
+People open their doors or climb onto their windowsills, listening quietly.
+The broadcast excites them, their palms feeling hot even though they live in a place with temperatures far below zero.
+Then, they light up torches in the center of the village. The light illuminates their eyes, and warms the bodies underneath their thin layers of clothing.
+Soon, nearby villages spot the firelight and start bonfires one after the other.
+On the dark tundra, countless fires light up the night sky.
+[Dialog]
+[playsound(key="$d_avg_oldtvelectricity")]
+[delay(time=1)]
+[name="Anonymous Radio"]We gather on this inhospitable tundra, following in their footsteps to take root here.
+[name="Anonymous Radio"]Everyone has heard of the group that disappeared into Chernobog to fight for the Infected: 'Reunion'.
+[name="Anonymous Radio"]Have they heard our call?
+[name="Anonymous Radio"]Have they finally returned—
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="37_g6_hotellobby",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Executioner Soldier"]Alrighty, you dregs! Turn around!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_originiumcastshort", volume=0.2)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[CameraShake(duration=0.7, xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Frightened Youth"]Sir... please... spare my life, please...
+[name="Frightened Youth"]I was born here!
+[name="Frightened Youth"]I-I'm different from the rest, sir, please!
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Executioner Soldier"]I said, shut it!
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Frightened Youth"]S-Sir, please...
+[charslot(slot="m",name="avg_npc_1454_1#1$1",focus="m")]
+[name="Sarkaz Civilian"]Kid, he doesn't give a damn who you are. He just wants to kill every Sarkaz he sees.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_originiumcastshort", volume=0.6)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Executioner Soldier"]Shut up!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[delay(time=1)]
+The boy suddenly smells a strange scent. It makes him recall his mother's perfume as she hugged him.
+Countless flowers bloom on the bloodstained floors, and the scent grows stronger.
+The executioner suddenly coughs violently until he throws up a cluster of bloody flower buds.
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Executioner Soldier"]Ugh... *cough* *cough*...
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="Frightened Youth"]Y-You...
+[Dialog]
+[charslot]
+[charslot(slot="m",name="char_011_talula_1#3",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]Get them out of here. Our people will know what to do.
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Executioner Soldier"]You lot... don't... *cough*...
+[Dialog]
+[charslot(slot="m",name="avg_npc_662_1#4$1",focus="m")]
+[PlaySound(key="$d_avg_swordexsheath", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_662_1#4$1",focus="m")]
+[name="Ch'en"]Nine! Stop your Originium Arts!
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]You already saved the Sarkaz! Killing them... is a step too far.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Couldn't you have just kept silent as usual, Ch'en?
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]Stop making more enemies everywhere you go, unless you want the Dukes chasing after Reunion once you leave the city.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Talulah can make sure that it looks like an accidental blaze.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]No. They'll only put the blame on the Sarkaz, calling it an act of revenge.
+[name="Ch'en"]And then what? Who will the Dukes turn their gaze to? More innocent Sarkaz.
+[name="Ch'en"]Or, say, an Infected group wandering around Victoria with who-knows-how-many Sarkaz in tow.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Letting them go will only make things worse.
+[name="Nine"]Tell me, Ch'en. When we finally come face to face with the ducal alliance with no chance at escape, how will you keep the Infected and innocent Sarkaz there safe?
+[Dialog]
+[PlaySound(key="$d_avg_originiumcastshort", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="Executioner Soldier"]Ugh...
+[Dialog]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_chixiaosword")]
+[CameraShake(duration=1, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_662_1#4$1",focus="m")]
+[name="Ch'en"]Enough! There're still other ways!
+[Dialog]
+[charslot]
+The tip of Ch'en's sword touches Nine's throat.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]......
+[name="Nine"]I've imagined this happening countless times.
+[name="Nine"]In fact, I'm shocked it didn't happen sooner.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]I went to school with many of their superior officers. I can talk to them.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]As what? As a former senior inspector of the L.G.D.? As Operator Ch'en of Rhodes Island? Or, what... an old classmate, reminiscing about the good old days?
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]...I can guarantee these Sarkaz will be safe, at least.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]Of course, I trust you'll keep that promise.
+[name="Nine"]But you're missing my point, Ch'en.
+[name="Nine"]There are limits to one person's power. Even you can't help the people you can't see.
+[name="Nine"]I know your capabilities all too well, and that's exactly why I'm even more sure that your momentary kindness won't change a thing. It can't.
+[name="Nine"]What I need is people willing to follow us, to see with their own eyes what we have to do.
+[charslot(slot="m",name="avg_npc_662_1#3$1",focus="m")]
+[name="Ch'en"]Spare me the sophistry, Nine.
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="Ch'en"]I'm only looking at the facts.
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="Nine"]'Sophistry', huh?
+[name="Nine"]Maybe we're all seeking 'fairness', but our interpretations of it are different.
+[name="Nine"]...This is why I've long since given up hope of you coming to understand me and the future I'm looking forward to.
+[name="Nine"]You can most certainly try to arrest me, Officer Ch'en.
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot(duration=0.5)]
+[delay(time=1.5)]
+Chi Xiao stays in place, and Nine's gaze remains on Ch'en.
+[Dialog]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_drawfiresword", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.4, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[CameraShake(duration=0.8, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Effect(name="$e_spark_01_large",layer = 2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+A flaming sword shakes Chi Xiao away.
+[Dialog]
+[playMusic(intro="$rebel_intro",key="$rebel_loop", volume=0.6)]
+[charslot(slot="m",name="char_011_talula_1#3",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="Talulah"]This isn't the place to wax nostalgic about your old days on the force.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_swrdstckgrnd", volume=1)]
+[PlaySound(key="$d_avg_swordy", volume=1,delay=1)]
+[CameraShake(duration=0.8, xstrength=15, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[Image(image="58_mini02_3", screenadapt="coverall", xScale=1.2, yScale=1.2, y=-30,fadetime=2.5)]
+[ImageTween(yTo=0,xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[Delay(time=2)]
+Talulah stabs her longsword into the ground, separating the all-tensed-up two.
+[name="Nine"]I didn't call for your help, Talulah. Don't act like you know everything better.
+[name="Talulah"]Nine, there is nothing wrong with Hui-chieh's idea.
+[name="Talulah"]The Dukes would be overjoyed at someone volunteering to remove every last Sarkaz from Londinium, and they might not make any moves on us.
+[name="Talulah"]But more importantly, there are still eyes on the both of you.
+[name="Talulah"]They only care about one thing: where should they go now?
+The rescued Sarkaz and the Reunion members following Nine are both terrified. They have no idea what to do next.
+[Dialog]
+[Delay(time=1)]
+[name="Talulah"]Many of them can't understand exactly what it is you want, Nine. They just want to live.
+[name="Talulah"]They need time. It might take a while to show them the future you see.
+[name="Nine"]Of course I know that.
+[name="Nine"]I have the patience to wait for my 'sophistry' to bloom into a concrete plan of action.
+[name="Ch'en"]And will you achieve that with even more sacrifices? How do you decide who?
+[name="Talulah"]ENOUGH!
+[name="Nine"]......
+[name="Ch'en"]......
+[name="Talulah"]I'm not here to determine which of you is right or wrong. It's not my place to.
+[name="Talulah"]But for now, just take them away from here. Take everyone who's willing to leave the city with us.
+[name="Talulah"]Hui-chieh might manage to prevent the Victorians from harassing us in the short term, but we'll still have to prepare for the worst.
+[name="Nine"]Are you giving me an order, Talulah?
+[name="Talulah"]No, I'm offering my opinion.
+[name="Ch'en"]But where can you go?
+[name="Ch'en"]Your identities are too conspicuous.
+[name="Nine"]Is this where you say we should go to Rhodes Island?
+[name="Ch'en"]Yes. I have to see the both of you judged.
+[name="Ch'en"]But not right now. Many Infected are still relying on you, and I can't just leave them in the dust.
+[name="Nine"]Hah... Classic Officer Ch'en.
+[name="Talulah"]Want my opinion?
+[Dialog]
+Whenever Talulah proactively offers her thoughts to Nine, it often leaves the Phidia with even more doubts towards her.
+But Talulah has never fallen behind.
+She always walks silently in the center of their group, so inconspicuous that people forget she exists.
+Reunion's leader, Kashchey's adopted daughter, and the manipulative mastermind behind the Chernobog disaster.
+Talulah, regarded as a hero by Infected who do not know the truth.
+[Dialog]
+[PlaySound(key="$d_avg_firecut", volume=0.6)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.2, channel="b",fadetime=3.5)]
+[Image(image="58_mini02_2", screenadapt="coverall",fadetime=2.5,block=true)]
+[Delay(time=2)]
+Her sword begins to burn, and its flames spread across the floor. They jump and fall, outlining a symbol.
+The firelight reflects in the trio's eyes, but their faces still bear some gloom—the mark once represented a dark past.
+Within it hides all sorts of crimes and injustices, certain to sting if revealed for all to see.
+[Dialog]
+[Delay(time=1)]
+[name="Talulah"]Ursus.
+[name="Talulah"]We can go back to Ursus.
+[name="Nine"]......
+[name="Ch'en"]...That's a terrible idea.
+[name="Nine"]What, thinking about your unfinished business over there?
+[name="Talulah"]No, I want to right my wrongs.
+[name="Talulah"]I've received news from Ursus. The Infected are breaking their shackles and congregating on the tundra again.
+[name="Talulah"]They claim to be answering the call of Reunion, and have decided to stand up and fight for the rights and freedoms the Infected and other oppressed deserve.
+[name="Talulah"]They were inspired by a lie, but their determination to fight back is certainly real.
+[name="Nine"]So they gave you the courage to recall the good old days?
+[name="Talulah"]...It's not only Infected over there. There are students, exiled officers and soldiers, guilt-ridden nobles...
+[name="Talulah"]It's exactly the strength you need.
+[name="Talulah"]Strength that ignores the differences in race or identity and crushes the fear of disease, united by a common goal.
+[name="Talulah"]Besides, it'll take time to leave with this many people... and I think that should be long enough for you to explain Guard's precious dream to those still willing to follow you.
+[name="Nine"]...You don't want to restore Reunion's reputation?
+[name="Talulah"]No. I never expected it to hold such a large influence even today.
+[name="Talulah"]Even if the Ursus Empire has long since covered up what happened at Chernobog.
+[name="Nine"]The voices craving resistance are like water. They might be burnt and dry up, but they'll eventually return to the land as rain.
+[name="Ch'en"]Returning to Ursus is easier said than done. There are too many factors involved, and more things for me to confirm.
+[name="Nine"]That's your problem. Not ours.
+[name="Nine"]Talulah...
+[name="Nine"]Even if Reunion can turn a new leaf, representing once again freedom and happiness...
+[name="Nine"]What about you, Talulah? Your sins can't be washed away. Your existence is Reunion's darkest history.
+[name="Nine"]How can you face the pure-white tundra as you are?
+[name="Talulah"]I know that I stand here today no longer as a leader, but as a symbol, a flag, or even... a weapon to be wielded.
+[name="Talulah"]But I'll take it. I'll accept the shackles you place on me. I've had many different identities—Draco, noble, leader, Infected... None of these matter anymore.
+[name="Talulah"]Today I remain only someone who once scattered the seeds of sin.
+[name="Talulah"]The wrongs I committed in Ursus, I will repay in Ursus.
+[name="Nine"]Repay... you make it sound so simple.
+[name="Talulah"]I will not act as just a flag this time.
+[name="Nine"]Then how?
+[name="Talulah"]I'll throw myself into a true blaze and let it all burn, until even the tundra's chill melts away.
+[name="Nine"]......
+[Dialog]
+[Image(image="58_mini02_1", screenadapt="coverall",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="Talulah"]I'll go back to Ursus... to truly face my own trial.
+[name="Talulah"]And you can be there to witness it, Nine.
+[name="Talulah"]Witness the end of Reunion, and the birth of something new from its corpse. That's what you truly want, is it not?
+[name="Nine"]You really don't mind?
+[name="Talulah"]The Reunion of my heart died long ago on the tundra... along with my companions.
+[name="Ch'en"]......
+[name="Nine"]......
+[name="Ch'en"]I'll go with you.
+[name="Talulah"]Scared I'll harm more innocents?
+[name="Ch'en"]Both you <i>and</i> Nine.
+[name="Ch'en"]After following Reunion for a while, I can confirm that the group has changed somewhat.
+[name="Ch'en"]For good or bad... I can't say.
+[name="Ch'en"]I don't want to miss your trial, but I also don't want to jump to any hasty conclusions about whether the path Nine insists on is correct.
+[name="Ch'en"]From now on, I'll keep an eye on you as Rhodes Island Operator Ch'en.
+[name="Ch'en"]I need to keep Rhodes Island informed, no matter what happens in Ursus.
+[name="Ch'en"]Talulah, Nine... I'm responsible for you both.
+[name="Nine"]...Whatever.
+[name="Ch'en"]Now, you should probably get going. Leave the soldiers to me. I'll catch up after I make sure they're okay.
+[name="Nine"]We didn't say we'd wait for you.
+[name="Ch'en"]Have you ever? I've always had to catch up on my own.
+[name="Nine"]Hmph.
+[name="Nine"]Onwards to Ursus then.
+[name="Talulah"]......
+[name="Talulah"]Onwards to Ursus.
+[Dialog]
+[Delay(time=1)]
+The flames continue to spread slowly from the tip of the blade.
+Hot flames lick the bodies piled up in a corner, gently enveloping them.
+Amid the light crackling of the fire, Talulah silently prays for the flames to bring them to a brighter and warmer place.
+[Dialog]
+[stopmusic(fadetime=3)]
+[stopsound(channel="burn",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Image]
