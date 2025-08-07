@@ -1,0 +1,849 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_offce",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_081",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="助手"]編集長、チェルノボーグの資料はこれで全部です。デスクに置いときますよ。
+[name="助手"]こんなホコリまみれの紙の山に、欲しい情報は眠っているんですかねぇ……
+[Dialog]
+[charslot]
+[name="編集長"]資料整理ご苦労、ジェニア。
+[Dialog]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_woodenladder",volume=0.8,channel="w",loop=false)]
+[stopsound(channel="w",fadetime=1)]
+[playsound(key="$doorclosequite",delay=1.4)]
+[Delay(time=1)]
+助手は去り際に、いつもの癖でドアを閉めた。古くなったドアが木板の浮いた床に擦れ、悲鳴よりも耳障りな音を立てる。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[PlaySound(key="$d_avg_lighter", volume=0.7,delay=1.5)]
+[Delay(time=2)]
+編集長は背筋を伸ばすと、タバコに火を点け、体調の優れない身体にムチを打って山のように積まれた古新聞を漁り始めた。
+[Dialog]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Delay(time=1)]
+[name="編集長"]『第三軍、チェルノボーグ事変中に汚職を働く』、か。
+[name="編集長"]チッ……擦りに擦ったネタだな。『チェルノボーグの採掘所閉鎖――ウルサスの源石工業への打撃』。
+[name="編集長"]……『新チェルノボーグ――陛下の栄光の下で幸せに暮らす感染者たち』。
+[name="編集長"]とんだデタラメだ。
+[name="編集長"]こんな情報が欲しいんじゃない……どの記事も上辺しか報じていないじゃないか。
+[name="編集長"]はぁ……真相に近付く手がかりはなしか。
+[Dialog]
+[PlaySound(key="$burningloop1", volume=0.9, loop=true, channel="burn")]
+[Delay(time=1)]
+編集長はずり落ちた眼鏡を押し上げ、タバコの灰を落とした。弾かれた火口が、まだ赤い燃えカスを新聞紙へと落とす。
+[Dialog]
+[PlaySound(key="$d_avg_chairbump", volume=0.7)]
+[StopSound(channel="burn", fadetime=2)]
+[Delay(time=1.5)]
+慌てて火を消すも、新聞紙には焦げた穴が残ってしまった。
+しかし、その穴を通して、小さな字で書かれた文字列――「レユニオン・ムーブメント」という名前に目が留まった。
+それは、今まで目にしたことのない名前だった。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_warehouse_2",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_043_1#2",duration=0.7)]
+[charslot(slot="r",name="char_011_talula_1#3",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="char_011_talula_1#3",focus="r")]
+[name="タルラ"]ここ数日、続々と感染者が我々を見つけ出し、レユニオンへ加わりたいと言ってきている。
+[name="タルラ"]彼らには、一ヶ月後にロンディニウムを離れ、ゴドズィン公爵の領地へ向かうことを伝えておいた。
+[charslot(slot="l",name="avg_npc_043_1#2",focus="l")]
+[name="ナイン"]それでも、我々についてきてくれると言ったのか？
+[charslot(slot="r",name="char_011_talula_1#3",focus="r")]
+[name="タルラ"]はっきりとした返事はもらえなかった。彼ら自身もどうすればいいかわからないのだろう。
+[charslot(slot="l",name="avg_npc_043_1#2",focus="l")]
+[name="ナイン"]……全員を連れて行く手はずは整えておく。どのみに他に行く当てもないだろうからな。
+[name="ナイン"]ゴドズィン公爵は、領地の感染者の生活を改善するための命令をいくつも下したそうだ。今回の決定はそれも考慮してのことだが――
+[charslot(slot="r",name="char_011_talula_1#3",focus="r")]
+[name="タルラ"]現実が命令を反映しているとは限らない。
+[charslot(slot="l",name="avg_npc_043_1#2",focus="l")]
+[name="ナイン"]わかっている。だからこそ、自らの目で確かめねばと言っているんだ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[Delay(time=1)]
+部屋の隅で、チェンが新聞をめくる。ぱらりと微かな音が響いた。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]チェン、いつまでもそこで黙って聞いているつもりか？
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]私はあくまでも部外者だ、ナイン。
+[name="チェン"]お前たちの決定に口を挟むつもりはない。ただここで新聞を読んでいるだけだ。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]部隊のメンバーたちと裏でコソコソ話していた時は、そんな態度には見えなかったが。
+[name="タルラ"]我々にはお前の意見が必要だ、フェイゼ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]お前の同行を許しているのは、この部隊がもう昔のレユニオンではないと証明するためだけではないぞ。
+[name="ナイン"]私とタルラに対する、その独善的な責任感も必要ない。
+[name="ナイン"]今この状況では、あの者たちの助けになるものは何であれ受け入れる。意見があればはっきりと言ってくれ。
+[charslot(slot="m",name="avg_npc_662_1#7$1",focus="m")]
+[name="チェン"]……
+[Dialog]
+[PlaySound(key="$d_avg_scroll", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]行く当てのない人々を皆、受け入れるつもりなのか？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]受け入れない理由は？
+[name="ナイン"]彼らは我々に新たな生命力をもたらしてくれる。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]だが、新たな諍いをもたらすかもしれないだろう。
+[name="チェン"]お前たちが「レユニオン・ムーブメント」の名を使って集めたこの部隊には、様々な身分の者が混じっているが――
+[name="チェン"]ナイン、お前が去る前に語った理想の形がこれか？
+[charslot(slot="m",name="avg_npc_662_1#7$1",focus="m")]
+[name="チェン"]そいつを加えたのも、理想のためか？
+[Dialog]
+[charslot]
+チェンは、平静を保っているタルラに目をやった。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]……
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]遅かれ早かれ、お前たちはさらに多くの注目を浴びることになる。
+[name="チェン"]意見を述べろと言うのなら、ロンディニウムにしばらく滞在し、体制を立て直してから――
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]もっと適した人物にこの件の処理を任せる、だろう？
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]そんなところだ。
+[name="チェン"]受け入れてきた面々を見てみろ。犯罪者に感染者、それから脱走兵まで……彼らをどんなところへ連れて行こうとしているのか、お前は本当にわかっているのか？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]だが、少なくともここに留まるべきではない。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot="m",name="char_1002_nsabr_1",duration=0.5)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]どうした？
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="レユニオン戦士"]……ナイン、たった今レイドから報告があったんだ。その――
+[Dialog]
+[charslot]
+彼は横目でチェンを一瞥した。
+この「チェン」という人物が部隊にやってきてから、仲間たちの様子がどこかおかしい。
+彼女は滅多にタルラとナインのそばを離れないが、レユニオンの活動に意見を述べることもない。いったい何者なのだろうか？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]彼女は敵じゃない。気にせず言ってくれ。
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="レユニオン戦士"]……工場の近くまで公爵連合軍の部隊が迫ってる。追い返したほうがいいか？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]公爵連合軍が？　彼らが我々を標的にすることはないと思うが……私が様子を見に行こう。
+[name="ナイン"]タルラ……皆を連れて身を隠せ。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]ああ、わかった。
+[Dialog]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="チェン"]お前もナインのやり方に賛同しているのか？
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]……すべてに賛同はしていない。だが、彼らは雪原を共に歩んだレユニオンとはまったく違う。
+[name="タルラ"]残念ながら、虐げられている者たちへの扱いは、この大地のどこであろうとまったく同じだがな。
+[name="タルラ"]フェイゼ、世の人々が気に掛けているのは、我々がどこへ行くかではなく、最終的にどこに留まるかだ。彼らは常々、我々を目と鼻の先から追い払う術を模索していることだろう。
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="チェン"]……
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]「レユニオン・ムーブメント」。これは私が自ら築き上げた過ちを意味する名だ……
+[name="タルラ"]ナインにその過ちを消し去るつもりはないようだが、もし彼女がこの名への新たな解釈を私に求めるのなら――
+[name="タルラ"]私にそれを拒む権利はない。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]ナインのほうも、そうするのが当然だと思っているようだな。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]ナインは……私たちは、自分が何をしているのか、よく理解しているよ。
+[name="タルラ"]お前のほうこそ、私を、あるいはレユニオンの痕跡を追いかけて、やっとここまで辿り着いたのだろう？
+[name="タルラ"]ならばなぜ、とうに心に決めたはずのことを実行しようとしない？
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+タルラがその場から完全に立ち去った後も、チェンは追いかけようとしなかった。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g9_lightinduarea_street_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_sandnmlfts", volume=1)]
+[delay(time=1)]
+[name="連合軍兵士"]さっさと進め、この化け物どもめ、立ち止まるな！
+[Dialog]
+[charslot(slot="m",name="avg_npc_934_1#1$1",duration=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_punchsp5",volume=1)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.3)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[name="サルカズ平民"]っ……*ヴィクトリアスラング*！
+[charslot(slot="m",name="avg_npc_241",focus="m")]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="憤慨する連合軍兵士"]さっさと立て！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punchsp5",volume=1)]
+[CameraShake(duration=0.7, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_241",focus="l")]
+[charslot(slot="r",name="avg_npc_248",focus="l")]
+[name="憤慨する連合軍兵士"]見てるだけで虫唾が走る。今すぐこの場で殺っちまいたいぜ。
+[charslot(slot="r",name="avg_npc_248",focus="r")]
+[name="冷たい連合軍兵士"]おい、この先は模範軍の勢力範囲だ。ゴミを人様の玄関前に捨ててくつもりか？
+[name="冷たい連合軍兵士"]余計な波風は立たせたくない。せっかくゴミ処理場ができたんだから、ゴミの処分はそこでやれ。
+[Dialog]
+[charslot]
+[name="サルカズ平民"]ゴミの……処分？
+[Dialog]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="o")]
+[StopSound(channel="o", fadetime=2)]
+[charslot(slot="m",name="avg_npc_043_1#2",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]やめておけ。誰がいつこんな軍令を下したのかと、訊ねるつもりはないが――
+[name="ナイン"]ここはお前たちの処刑所ではないぞ。
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="冷たい連合軍兵士"]お前は……工場に隠れている感染者か。
+[name="冷たい連合軍兵士"]何が気に食わないのか知らないが、お前たちはむしろ我々が魔族どもの捕獲に勤しんでいることを喜ぶべきではないか？
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "char_011_talula_1#3", bstart=0.2,bend=0.7,duration=1)]
+[delay(time=2)]
+周りの温度が少しずつ上昇し始めた。ナインは横目で薄暗くなっている一角を見やった。
+暗がりの中で炎が灯り、すぐにまた暗くなる。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_241",focus="l")]
+[charslot(slot="r",name="avg_npc_248",focus="l")]
+[name="憤慨する連合軍兵士"]おい……今なんかヒリヒリしなかったか？　なんて言うか、まるで――
+[charslot(slot="r",name="avg_npc_248",focus="r")]
+[name="冷たい連合軍兵士"]火に焼かれているかのような感覚だったな。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="冷たい連合軍兵士"]……やるつもりか？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]この工業エリアは模範軍の庇護下にある。
+[name="ナイン"]上司に聞いてみたらどうだ？　工場と衝突を起こして、やっと訪れた平穏を台無しにする間抜けな部下がいたらどうする、と。
+[name="ナイン"]そうすれば、その口の利き方も少しはマシになるだろう。
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="冷たい連合軍兵士"]だが、我々と戦線を同じくしていた友が、共通の敵に対して抱くべきでない同情と哀れみを持ったと報告したなら――
+[name="冷たい連合軍兵士"]おそらく、上官はまた違う反応を示すと思うがな。
+[name="冷たい連合軍兵士"]邪魔をしないでもらおうか、感染者。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]……彼らのアクセントはカズデルのものには聞こえないが？
+[charslot(slot="m",name="avg_npc_248",focus="m")]
+[name="冷たい連合軍兵士"]だが、魔族は身分を偽ることに長けている。
+[name="冷たい連合軍兵士"]万が一にでも、魔族の傭兵が混ざっていたら大変だからな。
+[charslot(slot="m",name="avg_npc_241",focus="m")]
+[name="憤慨する連合軍兵士"]ほら、行くぞ。モタモタすんな。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punchsp3",volume=1)]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[name="サルカズ平民"]くっ……
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step1",loop=true)]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="step2")]
+[charslot(slot="l",name="avg_npc_932_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_935_1#1$1",duration=1)]
+[delay(time=2.5)]
+[stopsound(channel="step1",fadetime=3)]
+[stopsound(channel="step2",fadetime=3)]
+[charslot(duration=1)]
+[delay(time=2)]
+連行されるサルカズの列がノロノロと通りを進んでいく。サルカズの捕虜も軍人も、その顔は疲れ切っていて無表情だった。
+ナインは遠ざかっていく列を見送った。その最後尾には、俯く捕虜に混じって、まだあどけなさの残る少年が数名よろよろと歩いていた。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]クソ……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snow_2",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]ここです。火事は三日三晩続きましたので、ほとんど何も残っていませんが。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_takphtrptly",volume=0.7)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[delay(time=0.7)]
+[name="新聞記者"]採掘場内で、監視隊の詰所以外に火災の被害を被った場所はありますか？
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]いえ……ですが採掘場の労働者は、ほとんどが混乱に乗じて逃げてしまいました。みんな怖いんですよ……監視隊がいつ来るかわからないので……
+[name="現地の村人"]ですが、監視隊よりも先に新聞記者さんがいらっしゃるとは。ただの記者だと仰いましたが、本当にそうなのですかな？
+[Dialog]
+[charslot]
+[name="新聞記者"]……ええ、今回の火災以外には興味ありませんよ。ここは管理が厳しいことで有名でしたが、労働者たちはどうやって放火計画を実行へと移したのでしょうか？
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]労働者たち……？
+[name="現地の村人"]いえ、違いますよ。村に都市からやってきた貴族様がいましてね、とてもお優しい方で……ですが、優しすぎたんです。
+[name="現地の村人"]採掘場の現状を見かねたようで、いつも口を開けば労働者を解放するのだと仰っていました。誰も本気にしていませんでしたが、まさか本当に……
+[name="現地の村人"]本当に、やってのけるなんて。
+[Dialog]
+[charslot]
+[name="新聞記者"]ほう？　ではその貴族様は今どちらに？
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]監視隊の士官たちもろとも、火に焼かれてしまったのでしょう。
+[Dialog]
+[charslot]
+[name="新聞記者"]ふむ……高尚な志を持つ貴族が、苦しみにあえぐ感染者の採掘工解放に命を捧げる、か。
+[name="新聞記者"]悪くない見出しだ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_takphtrptly",volume=0.7)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[delay(time=0.7)]
+記者は黒く焦げた地面を隅々まで観察した。辺り一帯の建物はすべて焼け崩れ、うっそうと茂っていたであろう雑木林も、今や醜い木の根を残すばかりだった。
+ふと、とある焦げ跡が彼の注意を引いた。それは奇妙な形でありながら、幾分か芸術的なグラデーションを孕んでいた。
+[name="新聞記者"]ご老人……このシンボルマークは誰かが残したものでしょうか？
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]そんなもの、ただの焼け焦げた跡でしょう。
+[Dialog]
+[charslot]
+[name="新聞記者"]ただの焼け跡では記事にはできませんよ。今この瞬間から、こいつは「シンボルマーク」になったんです。
+[name="新聞記者"]それで、この「シンボルマーク」を誰が残したかはご存知ですか？
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]ええっと……わかりません。火事が収まる頃には、もうここにあったと思いますが。
+[Dialog]
+[charslot]
+[name="新聞記者"]つまり、これは誰かが意図的に外へ向けて発したメッセージということですね。そして、その意味するところは――「救済」だと。
+[charslot(slot="m",name="avg_npc_092",focus="m")]
+[name="現地の村人"]そ、そうなのですか？
+[Dialog]
+[charslot]
+[name="新聞記者"]ハハッ、つい先ほど、そのように教えてくれませんでしたか？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g13_lightinduarea_indoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[PlaySound(key="$d_avg_crowdtalk_fear",volume=0.6,channel="tk",loop=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopsound(channel="tk",fadetime=2)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_662_1#8$1",focus="m")]
+[name="チェン"]一列に並んでくれ。心配するな、ちゃんと人数分ある。
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="疲れ切ったサルカズ"]チェンさん、俺たちはあとどれくらいここにいればいいんだ？
+[name="疲れ切ったサルカズ"]次に脱出する部隊の出発もいつになるかわからないし……
+[charslot(slot="m",name="avg_npc_662_1#8$1",focus="m")]
+[name="チェン"]安心しろ、ここにいれば安全だ。
+[name="チェン"]皆を安全に連れ出してもらえるよう、既にいくつものツテに連絡を取ってある。
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="疲れ切ったサルカズ"]だけど、兵士がロンディニウムに残っているサルカズを探しに、この近くまで来たんだろ？
+[name="疲れ切ったサルカズ"]もし、チェンさんたちがサルカズを匿っていることがバレたら……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(slot="m",name="char_011_talula_1#3",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]匿う？　まるで自分が犯罪者にでもなったかのような口ぶりだな。
+[name="タルラ"]ロンディニウムの市民である以上、お前たちもこの戦争の被害者だというのに……
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="疲れ切ったサルカズ"]いいや、サルカズの軍隊がロンディニウムにやって来る前から、俺たちは嫌われ者だったよ。
+[name="疲れ切ったサルカズ"]さっき連れて行かれた人たちの中には、きっと兵士じゃない人だってたくさんいたはずだ。
+[name="疲れ切ったサルカズ"]少なくとも今のところ、戦争に参加していたかどうかに関わらず、サルカズであること自体が大罪なんだよ。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]……現状は理解している。
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="疲れ切ったサルカズ"]とにかく……俺たちを受け入れてくれたことには感謝してる。
+[name="疲れ切ったサルカズ"]だけど、他のみんなとも相談して決めたんだ。もしあと三日間待っても脱出する機会がなかったら、俺たちは工場を出ていくよ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]兵士たちの捜索範囲も徹底ぶりもエスカレートするばかりだ。今ここを離れるのは得策ではないぞ。
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="疲れ切ったサルカズ"]いや、状況が日増しに悪くなる一方だからこそ、離れる決断を引き延ばすわけにはいかないんだ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]……どうしても行くのなら、できる限りの手助けをしよう。
+[charslot(slot="m",name="avg_npc_933_1#1$1",focus="m")]
+[name="疲れ切ったサルカズ"]今まで本当にありがとう。あんたたちも早くここを離れたほうがいい。
+[name="疲れ切ったサルカズ"]ロンディニウムからサルカズがいなくなったら、次に矛先を向けられるのは誰だと思う？
+[name="疲れ切ったサルカズ"]そっちはほとんど全員感染者だ。貴族サマの考えることは身に染みてわかってるだろ？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_sanatorium_balcony",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="従者"]旦那様、本日の新聞でございます。
+[name="優雅な貴族"]うむ……新聞をめくるのも億劫でな。アレクセイよ、何か目新しいニュースはあるかね？
+[name="従者"]新たに打ち出された徴税政策に、新しい文芸作品、それと新鮮なゴシップ、あとは……
+[name="優雅な貴族"]どうした？
+[name="従者"]動乱についてです。それも全国各地の……
+[name="優雅な貴族"]見せてくれ。
+[name="優雅な貴族"]やっと本物の新聞らしい記事を書く者が現れたのか。てっきりサンクト・グリファーブルクの記者どもは下らんコラムしか書けないのかと思っていたよ。
+[name="優雅な貴族"]「近頃、全国の工場や詰所で感染者が抗議活動を行っている。一部エリアではさらに事態が激化し、感染者が公然と詰所や現地の政府機関を襲撃する事件も起きており、その被害は計り知れない……」
+[name="優雅な貴族"]「聞くところによると、彼らは『レユニオン・ムーブメント』という名の感染者組織に背中を押され、このような行動に至ったそうだ……」
+[name="優雅な貴族"]ほう、見てみろ。そのレユニオンとやらのシンボルマークも載っておるぞ……
+[name="従者"]ええ……旦那様、そろそろ療養も頃合いでしょうか？
+[name="優雅な貴族"]まさか。こんな貴重な休暇のチャンスをみすみす逃しはせんよ。
+[name="従者"]ですが、宣伝部門の同僚方がもう何度も訪ねてきておりますし……
+[name="優雅な貴族"]ああ、親愛なるアレクセイよ、お前もわかっておるだろう。我らが祖国は長い間病に蝕まれ、多くの者が治療を試みてきた。
+[name="優雅な貴族"]しかし、治療を施すには、まず過去の傷口をさらけ出さねばならない……
+[name="優雅な貴族"]宣伝部門の者たちが、必死にその傷口を庇うのにはもううんざりなのだよ。
+[name="従者"]では、お返事はいかが致しましょう。
+[name="優雅な貴族"]すべては私の休暇が終わるまで待つようにと。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_328_1#1$1",focus="m")]
+[name="レイド"]奴ら、また街中のサルカズをかき集めて捕虜にしたのか。ほら、タルラ、君の分のスープだ。
+[Dialog]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]ああ、ありがとう。
+[Dialog]
+[PlaySound(key="$d_avg_dishes", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_328_1#1$1",focus="m")]
+[name="レイド"]味付けは大丈夫か？　容れ物の底に残った塩をかき集めて入れたんだが、薄いかもしれない。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]大丈夫だ、美味しい。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]フッ、「かき集める」か……いい言葉だ。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]先週までは、奴らが工場の前を通り過ぎることもなければ、捕虜のグループに子供が混ざっていることもなかった。
+[name="タルラ"]だが、今ではそのどちらも我々の目の前で起きてしまっている。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]半月を経て、連中はサルカズの痕跡を徹底的に抹消するという方針をすっかり固めたのかもしれないな。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]最初は撤退が遅れたサルカズの兵士、次は軍隊と関わりのあるサルカズの平民が連れて行かれた……今やロンディニウムで生まれ育った地元のサルカズすら見逃してもらえない。
+[name="タルラ"]フェイゼ、お前ならあの場で手を出しかねないと思ったのだが。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]……そんなことをしても、ますます状況がこじれるだけだからな。ここがヴィクトリアである以上、確実な解決策がなければ無闇に動くべきではない。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]だが、それでは時間がかかりすぎてしまう。
+[name="ナイン"]数日前、子供が女性を集団で取り囲んでいる場面にも出くわした……ただサルカズと結婚をし、何人かの子供を育て家庭を築いただけの者が、そうした目に遭っているんだ。
+[name="ナイン"]戦争が始まる前に感染者にしていたことを、彼らは今サルカズにしている。ロンディニウムの市民間にまでそれが波及するのも、時間の問題だろう。
+[name="ナイン"]不当な扱いを受ける者たちには、何よりも時間が足りないんだ。
+[Dialog]
+[charslot]
+ナインは言葉を続ける前に、隣にいるタルラを見た。
+タルラは異様なまでに落ち着いていた。ヴィクトリアの兵士を前に感じた急激な温度の上昇が、ただの錯覚だったのではと疑ってしまうほどに。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]お前の方こそ、手を出すつもりかと思ったが。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]ただの警告だ。あまり食い下がってもより大きなトラブルを招くだけだろう。フェイゼの言う通り、窮地に追い詰められない限りは、ロンディニウムでは下手に目立たないほうがいい。
+[name="タルラ"]工業エリアで公爵連合軍を攻撃すれば、ここで暮らす労働者たちの立場をも悪くしてしまう。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]つまり、先ほど見た光景に対して怒りを感じなかったと。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]こうしたことは、とうに経験してきたからな。サルカズの血が鉱石病のように広がらない点は幸いとも言えよう。
+[name="タルラ"]怒りを抑える術はもう身に着けている。自分たちが何をしているのかすらろくに理解していない兵士たちに、怒りをぶつけることはないさ。
+[name="タルラ"]迫害されてきた者たちを迫害する側へと変えたのは戦争だ。この現状を招いたのも、彼らだけの罪とは言えないだろう。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]ならば、罪なきサルカズは、その怒りの矛先を誰に向ければいい？
+[name="ナイン"]バイクに乗って物資を集めてきてくれたサルカズの商人が……恐怖する感染者たちに殺されたことはまだ記憶に新しい。
+[name="ナイン"]サルカズが敗走した今、そうした恐怖がロンディニウム全体に蔓延し始めている。
+[name="ナイン"]感染者、軍人、貴族……戦争のことを何もわかっていない一般人ですら、罪なき者を苦しめて、自分が正しいことをしていると思い込んでいるんだ。ハッ。
+[name="ナイン"]確かにお前の言う通り、サルカズの血は鉱石病のように広まることはない……だが、恨みや恐怖は違う。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]もう決めた、ということか？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]あのサルカズたちを救うことをか？　もとより迷うまでもないことだろう。彼らと我々に違いはないのだからな。
+[name="ナイン"]ただ、私一人では影響を最小限に抑えられる保証はない。だから力を貸してくれ、タルラ。
+[name="ナイン"]野営地の皆を、そして労働者たちを守ってやってほしい。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]……お前がこの炎を彼らのために使えと言うのなら、迷いはしないさ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]レイド、労働者たちに私たちの計画を伝えてきてくれ。参加したい者がいるのなら、残ってもらって構わない。その他の者は、模範軍の野営地まで連れて行ってやれ。
+[charslot(slot="m",name="avg_npc_328_1#1$1",focus="m")]
+[name="レイド"]わかった。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]チェン。
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="チェン"]……
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]今ならまだ私たちを止められるぞ。もちろん、何も聞かなかったことにして立ち去っても構わない。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]サルカズたちを助けたら、この先の計画を全て練り直すことになるんだぞ。
+[name="チェン"]彼らが一緒では、領地への逗留を受け入れてくれる公爵もいないだろうに。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]まるで、今の我々が受け入れられているかのような物言いだな。
+[name="ナイン"]私たちは感染者だぞ、チェン。ロドスと長く関わりすぎたせいで、感染者の境遇を忘れてしまったか？
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="チェン"]……これからどこへ向かうつもりだ？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]その態度は、私たちの行いを黙認するということか？
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]……
+[name="チェン"]捕虜であろうと、理由なく処刑される謂れはない。正式な軍令すら下されていないのなら、なおさらだ。
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]フェイゼ、重要なのはどこへ向かうかではなく、どの地が我々を必要としているかだ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]私たちは必ず、本当の居場所に辿り着いてみせるさ。
+[name="ナイン"]感染者だけでなく……平等に生きる権利を奪われ、奴隷扱いされてきたすべての者のためにある――
+[name="ナイン"]差別も、迫害も存在しない場所に。
+[charslot(slot="m",name="avg_npc_662_1#6$1",focus="m")]
+[name="チェン"]……極めて難しいことだと、お前もわかっているはずだ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]ああ、だがそれを諦めないことを教えてくれた人がいただろう。彼はもういないが、我々に遺してくれたものもある。
+[charslot(slot="m",name="avg_npc_662_1#2$1",focus="m")]
+[name="チェン"]Guard……
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]フェイゼ、誰かがやらなければならないんだ。
+[name="タルラ"]この新たなレユニオンは独自に治療薬の開発に勤め、助けを必要とする者には、見返りを一切求めることなく、持てる限りの力で手を差し伸べてきた。
+[name="タルラ"]変化はもう生まれているが、それはあまりにも脆い。
+[name="タルラ"]彼らが前へ進み続けるには、信念が、目標が必要なんだ。
+[name="タルラ"]私はナインのやり方すべてに賛同しているわけではない。だが、今のところ拒む理由もないのでな。
+[name="タルラ"]フェイゼ、ナインはこれまでずっと、お前が追い求める「公平」に一目置いていた。
+[name="タルラ"]お前もナインの追い求めるものを、その目で確かめるべきだと思わないか？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snowconutry_2",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_oldtvelectricity")]
+[delay(time=1)]
+[name="匿名ラジオ"]皇帝の勅令すら届けられない雪原では、抵抗運動がますます激化している。数千名もの感染者が手を取り合い、枷を打ち砕いて自由を取り戻した――
+[name="匿名ラジオ"]以前では想像もつかなかったようなことを、我々は実現したのだ。
+[name="匿名ラジオ"]すべては、あの名も知れぬ貴族が放った火から始まった。何者かが我々を導いているとも囁かれているが、その真偽は私にも定かではない。
+[name="匿名ラジオ"]だが、これだけは確信している。我々が上げた抵抗の声はかき消されていないと。それは今、木々に覆われたこの雪原から飛び出そうとしているのだと。
+[name="匿名ラジオ"]炎が残した、あの二つとないシンボルマークがその証なのである。
+[Dialog]
+[delay(time=1)]
+ラジオから聞こえるしゃがれ声が、平凡な村の静けさを破った。
+家の扉を開ける者もいれば、窓辺に腰かける者もいて、みな一様にラジオに耳を懲らしていた。
+その内容に彼らの胸は高鳴り、氷点下数十度の中にも関わらず、指の先にまで血が熱く滾った。
+そして、彼らは村の中央にある松明に火を点けた。炎は彼らの瞳を明るく照らし、薄い服に包まれた体を温めてくれた。
+ほどなくして、近隣の村もその灯りに気づき、同じように火を灯した。
+暗闇の中、雪原に点る無数の炎が夜空を照らす。
+[Dialog]
+[playsound(key="$d_avg_oldtvelectricity")]
+[delay(time=1)]
+[name="匿名ラジオ"]我々はこの過酷な凍原に集い、彼らがかつて踏み固めた足跡に沿って、この地に根付いた。
+[name="匿名ラジオ"]今や「レユニオン・ムーブメント」の名を知らぬ者はいない。感染者のために戦い、チェルノボーグで消えたあの伝説の部隊に……
+[name="匿名ラジオ"]我々の呼びかけが、届いたのだろうか――
+[name="匿名ラジオ"]ついに彼らが帰ってきたのだろうか――
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="37_g6_hotellobby",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="刑務官"]よぉし、ほらゴミども、壁側を向け。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_originiumcastshort", volume=0.2)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[CameraShake(duration=0.7, xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="怯える青年"]お、お願いします……こ、殺さないで……
+[name="怯える青年"]僕はこの街で生まれ育ったんです！
+[name="怯える青年"]ぼ、僕はあいつらの仲間なんかじゃない！　お願いします！
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="刑務官"]黙れ！　何度も言わせるな！
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="怯える青年"]そんな……
+[charslot(slot="m",name="avg_npc_1454_1#1$1",focus="m")]
+[name="サルカズ平民"]若いの、叫んだって無駄さ。こいつらは視界に入ったサルカズを皆殺しにしたいだけなんだ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_originiumcastshort", volume=0.6)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="刑務官"]黙れって言ってんだ！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[delay(time=1)]
+ふと、青年の鼻腔に奇妙な香りが広がった。それは、母の腕の中で嗅いだ香水を思い起こさせた。
+血塗れの床に無数の花が咲き開き、香りがさらに強くなる。
+その時、刑務官が突然激しく咳き込み始め、血に濡れた蕾が口から次々と飛び出した。
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="刑務官"]うっ……ゴホ……
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="怯える青年"]あ、あんたたちは……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="char_011_talula_1#3",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]皆を連れてここを出ろ。私たちの仲間が外で待っている。
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="刑務官"]クソ……やめろ……がはっ……
+[Dialog]
+[charslot(slot="m",name="avg_npc_662_1#4$1",focus="m")]
+[PlaySound(key="$d_avg_swordexsheath", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_662_1#4$1",focus="m")]
+[name="チェン"]ナイン、アーツを止めろ！
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]サルカズの救出はもう済んだ！　兵士たちを殺すのは……やり過ぎだ。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]チェン、これまでのように黙ってはいられないのか？
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]これ以上恨みを買うのはよせ。ロンディニウムを離れたあとに、公爵の軍に追い回されたくはないだろう？
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]タルラがすべてを予期せぬ火災事故に仕立て上げてくれるさ。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]いいや、今どこかで火事が起きれば、すべてサルカズによる復讐と見なされるだろう。
+[name="チェン"]そうなれば、公爵たちの怒りの矛先はどこに向けられると思う？　さらに多くの罪なきサルカズが憂き目を見ることになるぞ。
+[name="チェン"]あるいは、大勢のサルカズを連れてヴィクトリアを彷徨う感染者部隊が標的になるかもしれない。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]だが、こいつらを生きて返したところで、事態が悪化するだけだ。
+[name="ナイン"]もし我々が公爵連合軍との対峙を迫られたなら、お前はどうやってその場にいる感染者と罪なきサルカズを守るというんだ？　教えてくれ、チェン。
+[Dialog]
+[PlaySound(key="$d_avg_originiumcastshort", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="刑務官"]くっ……
+[Dialog]
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_chixiaosword")]
+[CameraShake(duration=1, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_662_1#4$1",focus="m")]
+[name="チェン"]もう十分だ！　まだ交渉の余地はある！
+[Dialog]
+[charslot]
+チェンは剣先をナインの喉に突きつけた。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]……
+[name="ナイン"]いずれこうなるだろうとは思っていた。
+[name="ナイン"]ただ、私が想定していたよりも随分遅かったな。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]彼らの上官には私の学友も多い。まずは私が掛け合ってみよう。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]ほう。どの立場で？　龍門近衛局の元上級警司か？　ロドスのオペレーターか？　それとも……ただかつての学友として、昔話に花でも咲かせるつもりか？
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]……少なくとも、お前たちとここにいるサルカズたちの安全は保証してやれる。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]ああ、お前ならできるのだろう。
+[name="ナイン"]だが、私の意図を理解していないようだな。
+[name="ナイン"]一人の力には限界がある。お前であっても、視界の外にある人たちの安全は保証できないだろう。
+[name="ナイン"]お前の能力は嫌というほど理解しているさ……だからこそ、その一時的な善意では何も変えられないこともわかっている。
+[name="ナイン"]私は皆に、我々のすべきことを各々の目で見て理解してもらいたいんだ。
+[charslot(slot="m",name="avg_npc_662_1#3$1",focus="m")]
+[name="チェン"]詭弁を並べても無駄だぞ、ナイン。
+[charslot(slot="m",name="avg_npc_662_1#1$1",focus="m")]
+[name="チェン"]私の目には、お前が彼らを殺めかけている事実しか見えない。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="ナイン"]お前には「詭弁」に聞こえるのか？
+[name="ナイン"]私たちは「公平」を追い求める者同士であっても、公平の捉え方に違いがあるのかもしれないな。
+[name="ナイン"]チェン……私はとうの昔に諦めたんだよ。お前に私を理解してもらうことも、私が目指しているものを理解してもらうこともな。
+[name="ナイン"]どうしても止めたいのなら、この場で私を逮捕してみたらどうだ、チェン警官。
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot(duration=0.5)]
+[delay(time=1.5)]
+赤霄の刃は微動だにせず、ナインの視線もチェンを捉えたままだった。
+[Dialog]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_drawfiresword", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.4, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[CameraShake(duration=0.8, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Effect(name="$e_spark_01_large",layer = 2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+だが次の瞬間、炎を纏った剣が赤霄を弾いた。
+[Dialog]
+[playMusic(intro="$rebel_intro",key="$rebel_loop", volume=0.6)]
+[charslot(slot="m",name="char_011_talula_1#3",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="char_011_talula_1#3",focus="m")]
+[name="タルラ"]ここは昔話に花を咲かせるための場所ではない。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_swrdstckgrnd", volume=1)]
+[PlaySound(key="$d_avg_swordy", volume=1,delay=1)]
+[CameraShake(duration=0.8, xstrength=15, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[Image(image="58_mini02_3", screenadapt="coverall", xScale=1.2, yScale=1.2, y=-30,fadetime=2.5)]
+[ImageTween(yTo=0,xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[Delay(time=2)]
+そう言うと、タルラは対峙する二人を断ち切るかのように、振りかざした剣を床に突き刺した。
+[name="ナイン"]勝手な真似はよせ、タルラ。
+[name="タルラ"]ナイン、フェイゼの提案も理にかなっている。
+[name="タルラ"]ロンディニウムにいるサルカズを全員連れて行くと宣言すれば、大公爵たちは我々に手を出すどころか、かえって喜ぶかもしれない。
+[name="タルラ"]何よりも、皆が見ている前で何をやっているんだ。
+[name="タルラ"]皆、どこへ行けばいいのかという不安でいっぱいなんだぞ。
+つい先ほど救出されたサルカズと、ナインと共に行動していたレユニオンのメンバーの顔には、戸惑いと恐れが浮かんでいた。
+[Dialog]
+[Delay(time=1)]
+[name="タルラ"]ナイン、ここにいるほとんどの者は、まだお前の理想を理解できる段階にない。今の彼らはただ生きたいだけなんだ。
+[name="タルラ"]お前が見ている未来を彼らに見てもらうには、時間が必要だ。長い時間がな。
+[name="ナイン"]わかっている。
+[name="ナイン"]私たちのスローガンを行動原則として定着させるためなら、いくらでも時間をかけるつもりだ。
+[name="チェン"]だが、それには多くの犠牲も伴うだろう。お前は誰を犠牲にするつもりだ？
+[name="タルラ"]いい加減にしろ！
+[name="ナイン"]……
+[name="チェン"]……
+[name="タルラ"]どちらが正しいのかを決めるつもりはないし、私にそんな資格があるとも思っていない。
+[name="タルラ"]だが今は彼らを、我々を信じてくれる者たちを連れて、ここを離れるべきだ。
+[name="タルラ"]フェイゼがヴィクトリア人を説得できる可能性が高いとしても、最悪の想定をした上で行動した方がいい。
+[name="ナイン"]タルラ、命令のつもりか？
+[name="タルラ"]意見を述べているだけだ。
+[name="チェン"]だが、行く当てはあるのか？
+[name="チェン"]お前たちの立場はあまりにもデリケートすぎる。
+[name="ナイン"]お前なら、皆をロドスに連れて行くとでも言い出すかと思ったのだがな。
+[name="チェン"]いずれはな。お前たちへの裁きをこの目で見届けるためにも。
+[name="チェン"]だが、今はまだその時ではない。大勢の感染者から庇護を求める声が届いている現状、そちらを捨て置くこともできない。
+[name="ナイン"]ハッ……お手本のような答えだな、チェン警官。
+[name="タルラ"]私の考えを言ってもいいか？
+[Dialog]
+タルラがナインに自身の意見を述べることは滅多にない。普段の従順すぎる態度には、思わず裏があるのではと疑ってしまうことも多い。
+だが、タルラはいつまでも部隊についてきた。
+彼女はいつも隊列の真ん中を歩いていた。存在すら忘れ去られてしまうほどに、ひっそりと。
+レユニオンのリーダー。コシチェイの養女。チェルノボーグに降りかかった厄災の黒幕。
+タルラ――真相を知らない感染者にとっての英雄。
+[Dialog]
+[PlaySound(key="$d_avg_firecut", volume=0.6)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.2, channel="b",fadetime=3.5)]
+[Image(image="58_mini02_2", screenadapt="coverall",fadetime=2.5,block=true)]
+[Delay(time=2)]
+剣が炎を纏ったかと思うと、床へと燃え広がった。炎は激しく舞い踊り、とあるシンボルを描き出す。
+三人の瞳は炎を映していたが、その表情は暗く沈んでいた。そのシンボルは、暗い過去を意味するものであったからだ。
+シンボルの奥深くには、あらゆる罪と不条理が隠されている。それを暴く行為には必然的に痛みが伴う。
+[Dialog]
+[Delay(time=1)]
+[name="タルラ"]ウルサス。
+[name="タルラ"]ウルサスへ帰ろう。
+[name="ナイン"]……
+[name="チェン"]……良いアイデアとは思えないが。
+[name="ナイン"]過去に成し遂げられなかったことへの未練でも湧いたか？
+[name="タルラ"]いいや、自分の犯した過ちを正しに行くだけだ。
+[name="タルラ"]ウルサスから来た者の話によると、枷を断ち切った感染者が、再び凍原に集い始めているらしい。
+[name="タルラ"]彼らは「レユニオンの呼びかけを受け、感染者、そして迫害されているすべて者の権利と自由のために立ち上がった」と主張しているそうだ。
+[name="タルラ"]きっかけは誰かの作り話だったのかもしれないが、彼らの意志は紛れもない本物だ。
+[name="ナイン"]その者たちが、お前に過去を語る勇気を与えたのか？
+[name="タルラ"]……凍原に集ったのは感染者だけではない。学生や流罪に処された士官と兵士、そして罪悪感に苛まれている貴族の若者たち……
+[name="タルラ"]種族の隔たりも、身分の違いも、病への恐怖心もすべて捨て、同じ目標のために一つとなった力がそこにある。
+[name="タルラ"]まさにお前たちが必要としているものだ。
+[name="タルラ"]これだけ大勢の人をウルサスに連れて行くとなれば、準備にも時間がかかる……Guardが遺した想いを皆に理解してもらうのにも、十分な時間が取れると思わないか。
+[name="ナイン"]……レユニオンの名を、お前自身の手で再び掲げようというわけではないのか？
+[name="タルラ"]ああ。レユニオンの影響が今でもこれほど色濃く残っていたことに驚きはしたがな。
+[name="タルラ"]チェルノボーグで起きたすべては、ウルサス帝国によって徹底的に封殺されたとばかり思っていたのでな。
+[name="ナイン"]反抗を望む声は水だ。たしかに水は干上がってしまうが、いつかは雨となって再び大地へと還る。
+[name="チェン"]しかし、ウルサスに戻る決定などそう簡単には下せないぞ。影響が及ぶ範囲が広すぎて、こちらの確認事項も膨大になる。
+[name="ナイン"]それはお前の事情だ、チェン。私たちが悩むことではない。
+[name="ナイン"]タルラ……
+[name="ナイン"]レユニオンがこれから新たに生まれ変わり、再び自由と幸福を象徴する組織になったとしよう。
+[name="ナイン"]だが、お前はどうなる……お前の罪は許されるものではない。その存在自体が、レユニオンの最も暗い過去なのだから。
+[name="ナイン"]そんなお前が、一体どうやってあの純白の雪原と向き合う？
+[name="タルラ"]自分の立場くらい自覚している。今の私はもう指導者ではなく、ある種のシンボル、一枚の旗、あるいは……誰かが握っている武器かもしれないな。
+[name="タルラ"]だが、お前たちが掛ける枷は受け入れるつもりだ。ドラコ、貴族、リーダー、感染者……これまで多くの肩書きを持っていたが、そうした肩書きはもはや意味を成さない。
+[name="タルラ"]今の私は、罪をばら撒いた者でしかないのだから。
+[name="タルラ"]私がウルサスで犯した罪を、どうかウルサスで償わせてほしい。
+[name="ナイン"]償いか……随分と簡単に口にするのだな。
+[name="タルラ"]ただの旗やシンボルとして、表面的な償いをするだけに留まるつもりはない。
+[name="ナイン"]では、どうするつもりだ？
+[name="タルラ"]真の炎にこの身を投げ入れ、冷酷な雪原が融けるまで、身を焦がし続けよう。
+[name="ナイン"]……
+[Dialog]
+[Image(image="58_mini02_1", screenadapt="coverall",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="タルラ"]私はウルサスへと戻り……真に受けるべき裁きと向き合う。
+[name="タルラ"]そのすべてを、レユニオンの終わりを見届けてくれ、ナイン。
+[name="タルラ"]その骸から新たに生まれるものこそが、お前の求めているものだ。
+[name="ナイン"]心残りはないのか？
+[name="タルラ"]私にとってのレユニオンは、とうの昔にあの雪原で消えてなくなったよ……私の小隊と、仲間と共に遠くへ旅立ったんだ。
+[name="チェン"]……
+[name="ナイン"]……
+[name="チェン"]私も共に行こう。
+[name="タルラ"]また私が罪なき者を傷つけるとでも？
+[name="チェン"]お前もそうだが、ナインも気掛かりなのでな。
+[name="チェン"]私がこのレユニオンと行動を共にしてきた中で、たしかに何らかの変化が生まれていることは認めよう。
+[name="チェン"]だが、変化の善し悪しは……まだわからない。
+[name="チェン"]タルラに下る裁きを見逃したくはないし、この場でナインが目指している道が正しいと結論付けたくもない。
+[name="チェン"]ゆえに、私はこれより、ロドスのオペレーター・チェンとしてお前たちを監視する。
+[name="チェン"]ウルサスで何が起きようと、私にはロドスへの説明責任がある。
+[name="チェン"]タルラ、ナイン、お前たちもその責任の範疇だ。
+[name="ナイン"]……勝手にしろ。
+[name="チェン"]兵士たちは私に任せて、お前たちは今すぐここから撤退するんだ。彼らの命に別状がないことを確認できたら、すぐに追いかける。
+[name="ナイン"]お前を待つとは一言も言っていないぞ、チェン。
+[name="チェン"]これまでに一度でも待ってくれたことはあったか？
+[name="ナイン"]フン。
+[name="ナイン"]では、ウルサスへ向かうとしよう。
+[name="タルラ"]……
+[name="タルラ"]ああ、ウルサスへ行こう。
+[Dialog]
+[Delay(time=1)]
+剣先の炎は、未だ燃え広がり続けていた。
+やがて、灼熱の焔が部屋の隅に積み重ねられた死体をそっと撫で、優しく包み込んだ。
+火が爆ぜる微かな音を聞きながら、タルラは胸の中でそっと祈りを捧げた。彼らが炎に導かれ、温かく明るい場所へと辿り着けるようにと。
+[Dialog]
+[stopmusic(fadetime=3)]
+[stopsound(channel="burn",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Image]

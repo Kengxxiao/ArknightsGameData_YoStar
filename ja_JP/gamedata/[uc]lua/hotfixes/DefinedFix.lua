@@ -11,7 +11,8 @@ local list =
   "HotFixes/StagePageHotfixer",
   "HotFixes/CheckTheLeftSameDeployedTokenHotFixer",
   "HotFixes/FuncFurnModelHotfixer",
-  "HotFixes/BattleControllerHotfixer"
+  "HotFixes/BattleControllerHotfixer",
+  "HotFixes/MedalGroupItemViewHotfixer"
 };
 
 return list;
