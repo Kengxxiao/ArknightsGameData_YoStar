@@ -1,0 +1,566 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall", block=true)]
+[backgroundTween(xFrom=100, yFrom=0, xTo=-100, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=35, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15,grad = false,fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15,grad = false,fadetime=0.1)]
+[Delay(time=1)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[PlaySound(key="$d_avg_woodcracle", volume=0.8, loop=true, channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+수천 년 전, 가을이 끝나고 겨울이 시작될 무렵이면 타라의 선조들도 광야 곳곳에 모닥불을 피우곤 했다.
+당시의 그들은 붉은 용에 기대 잠들었다. 뜨겁게 타오르던 꿈은 모래바람에 깎여 거칠었지만, 여전히 서로를 따뜻하게 해줄 만큼 충분했다.
+그들이 깨어날 때까지도 모닥불은 꺼지지 않았다. 그것은 붉은 용이 잠들지 않기 때문이었다.
+모닥불을 보며 고향, 술 그리고 자유의 꿈을 느끼는 것만으로도 붉은 용은 잠시나마 피로와 고통에서 벗어날 수 있었다.
+그리고 오늘은 사윈이 열리는 날이다. 사람들은 폐허 근처에서 땔감을 주워 모닥불을 피웠지만, 과거의 세월, 여유롭던 시절, 영원할 것 같던 시간은 이미 잊힌 지 오래였다.
+[dialog]
+[StopSound(channel="a", fadetime=2)]
+[curtain(fadetime=1)]
+[delay(time=2)]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]불 위로 손 올려.
+[charslot(slot="m",name="avg_npc_1752_1#4$1",focus="m")]
+[name="초조한 주민"]내 허리춤의 램프 색깔을 봐. 난 타라인이야, 붉은 용의 축복을 받았어.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]스파이가 램프의 색을 위조할 거라는 생각은 못 했어? 꾸물거리지 말고, 어서!
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]붉은……
+[name="초조한 주민"]붉은 용이시여, 자비를 베푸소서!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_woodcracle", volume=1, loop=true, channel="b")]
+[StopSound(channel="b", fadetime=3)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]으…… 음…… 그렇게 아프진 않구나.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]정말 안 아파?
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]봐, 화상 자국도 별로 심하지 않아.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]그렇다면 넌 빅토리아의 스파이가 아니겠군. 주변에 아직 검사하지 않은 사람이 또 있나?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Background(image="59_g3_dragonsquare_d",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="말 없는 주민"]……
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]그러고 보니, 너, 검사했어?
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="말 없는 주민"]……
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]그 더러운 매듭 그만 만지작대고 대답해! 따라와!
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="초조한 주민"]따라오라니까! 그 매듭 내려놓고……
+[Dialog]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]날…… 날 쳤어?!
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="말 없는 주민"]감히…… 매듭을……
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="초조한 주민"]알았어, 매듭은 뺏지 않을 테니 저기 가서, 네가 빅토리아의 스파이인지 확인해 보자고!
+[Dialog]
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[Delay(time=2)]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_crowdtalk_fear", loop=true, channel="bgs",volume=0.8)]
+[PlaySound(key="$d_avg_woodcracle", volume=0.6, loop=true, channel="c")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+말 없는 주민은 조용히 자리에서 일어나 무거운 발걸음으로 모닥불 쪽으로 걸어갔다.
+광장은 그야말로 혼란 그 자체였다.
+혼란의 절반은 의심, 증오 그리고 아무런 결과를 얻지 못한 분노에서 비롯된 것이었고, 나머지 절반은 절망의 눈빛, 그리고 숨 막히는 침묵에서 기인한 것이었다……
+[Dialog]
+[StopSound(channel="bgs", fadetime=3.5)]
+[StopSound(channel="c", fadetime=3.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_reddragonstatue",volume=0.3)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=0.3, loop=false, channel="red",delay=2)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=0.6, loop=false, channel="red1",delay=4)]
+[delay(time=2.5)]
+그러던 중 저 멀리서 무언가 바닥에 끌리는 듯한 소리가 희미하게 들려왔다.
+[PlaySound(key="$d_avg_reddragonstatue",volume=1)]
+그 소리는 점점 더 커졌고 이내 모든 소음과 혼란을 집어삼켰다.
+모두가 똑똑히 들었다, 누군가 거대한 물체를 질질 끌며 서서히 다가오는 소리를.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Image(image="59_i04",screenadapt="coverall",fadetime=0,block=true)]
+[Delay(time=1)]
+[ImageTween(xFrom=180, yFrom=-60, xTo=0, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[playMusic(intro="$ghosthunter_intro",key="$ghosthunter_loop", volume=0.6)]
+[PlaySound(key="$d_avg_reddragonstatue",volume=0.6)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=0.8, loop=false, channel="reda",delay=3)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=1, loop=false, channel="redb",delay=6)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=1, loop=false, channel="redc",delay=9)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=2)]
+순간, 주변의 모든 소음이 사라졌고 진동하는 쇳소리와 떨리는 톱니바퀴의 소리만 남았다.
+축축하고 옅게 깔린 안개 속에서, 차갑고 거대한 조각상이 나타났다.
+영웅이 빚어낸 조각상, 모든 사람의 기억 속에 있던 완성되지 않은 붉은 용 조각상은 타라에게 바치는 선물이었다. 조각상은 저무는 태양의 강렬한 빛을 입고 있었고, 거대한 형체는 하늘을 가려버릴 것만 같았다.
+[Dialog]
+[Delay(time=1)]
+[name="초조한 주민"]붉은 용 조각상이…… 살아난 건가?
+[name="격앙된 주민"]아니야, 저건…… 쿨란?!
+[name="초조한 주민"]쿨란, 너도 빅토리아인 색출을 도우러 온 거야?
+[name="격앙된 주민"]우선 너도 결백을 증명해야 해!
+[name="초조한 주민"]쿨란, 빨리 와. 네가 빅토리아 사람이 아니라면 불에 데도 별로 고통스럽지 않을 거야!
+[name="격앙된 주민"]내 말 듣고 있어?! 어서!
+[name="초조한 주민"]잠깐만……
+[name="초조한 주민"]왜, 왜 혼자서 저 큰 조각상을 끌고 온 거야?!
+[Dialog]
+[Delay(time=1)]
+사람들은 그제야 그의 팔뚝에 칭칭 감긴 쇠사슬을 보았다. 쿨란은 팔에 쇠사슬을 칭칭 감은 채, 넓은 어깨로만 조각상의 무게를 지탱하고 있었다.
+영웅은 자기를 부르는 목소리에도 아랑곳하지 않고 앞으로 걸어갔다. 어깨에서 붉은 피가 흘렀고, 근육은 찢어질 것 같았으며, 뼈 마디마디에서 고통의 비명이 터져 나왔지만, 계속 나아갈 뿐이었다.
+젊은 영웅은 조각상 앞에서 걷고 있었다. 그 거대한 존재가 자신을 한없이 초라하게 만들어도 두려워하지 않았다. 그저 한 걸음, 또 한 걸음 묵직하고 침착하게, 아무도 막고 있지 않은 곳으로 나아갔다.
+[Dialog]
+[PlaySound(key="$d_avg_reddragonstatue",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_land_impact",volume=0.7)]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+영웅은 광장 한가운데에 조각상을 내려놓고, 힘겹게 뒤를 돌아 앞에 있는 사람들을 바라봤다.
+거대한 쇳덩어리는 차가운 아름다움을 풍기며 금방이라도 날아오를 듯한 자세로 굳어 있었다. 마치 조각상이 원래 그 자리에 있었던 것처럼, 태초부터 그 자리에 존재했던 것처럼.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]다들, 그만해.
+[name="쿨란"]더 많은 동포를 죽이기 전에, 그만 멈춰.
+[Dialog]
+[charslot]
+[Delay(time=1)]
+찰나의 정적 속, 그 누구도 감히 입을 열지 못했다.
+증오와 의심은 여전했고, 좀비처럼 무력하게 만드는 고통도 그대로였다.
+하지만 앞에 있는 자는 영웅이었다. 쿨란은 나 시어셔를 지켰다. 그는 축복과 저주의 무게를 짊어지고 이곳까지 왔다. 그의 뒤로 보이는 조각상은 그가 내뱉는 말에 무게를 실어 주었다.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]누가 동포를 죽였다는 거야?
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]불로도 스파이를 찾아내지 못하면, 다음은 어쩌려고?
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_1692_1#5$1",duration=0.5)]
+[charslot(slot="r",name="avg_npc_1694_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_1692_1#5$1",focus="l")]
+[name="네모스"]쿨란 씨가 정말 여기까지 조각상을 끌고 왔네요……
+[charslot(slot="l",name="avg_npc_1692_1#10$1",focus="l")]
+[name="네모스"]어쩌죠? 쿨란 씨를…… 막아야 할까요?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]식량도 되찾고, 전쟁도 끝났잖아?
+[name="쿨란"]그래, 정말 스파이가 있다고 치자. 그런데 왜 온 도시의 주민들이 비열한 배신자 하나 때문에 이곳에 모여 서로를 다치게 해야 하지?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[charslot(slot="l",name="avg_npc_1692_1#10$1")]
+[charslot(slot="r",name="avg_npc_1694_1#12$1")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="r",name="avg_npc_1694_1#12$1",focus="r")]
+[name="로흐시니"]일단 끝까지…… 들어보자.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]다시 한번 말하지, 전쟁은 끝났어.
+[name="쿨란"]전쟁이 막 끝났을 때, 내가 생각한 일은 아주 간단해. 나보다 뛰어난 대장장이가 나타나면, 그 장인의 밑에서 기술을 배우는 것이었어. 적어도 내 손으로 만든 것만큼은 직접 고치자는 생각이었지.
+[charslot(slot="m",name="avg_npc_1697_1#2$1",focus="m")]
+[multiline(name="쿨란")]하지만 대장장이는…… 
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[multiline(name="쿨란")]나타나지 않았어. 나 역시 기술을 배우지 못했지. 게다가 모두의 생필품을 죄다 조각상을 만드는데 써버렸어.
+[name="쿨란"]그러지 말아야 했어. 지금 나 시어셔에는 모든 것이 부족해. 빈 그릇이라도 있으면 빗물이라도 받을 수 있잖아. 조각상을 만드는 재료로 쓰여 아무짝에도 쓸모없는 것보다 훨씬 나아, 훨씬.
+[name="쿨란"]그리고 식량 문제, 사실 정말 마음을 졸이고 있었어. 도시에 식량이 부족해져서 돌이킬 수 없는 상황이 벌어질까 봐 걱정했지. 다행히, 붉은 용의 가호 덕인지 아니면 어딘가의 풍작 덕인지는 모르겠지만, 결과적으로 식량이 돌아왔어.
+[name="쿨란"]살아만 있다면 우리는 끝까지 버텨낼 수 있을 거야, 내 말이 틀려?
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="쿨란"]하지만 테오는…… 이제 없어.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]아직도 그 빅토리아 녀석을 불쌍하다고 생각하는 거야?!
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="쿨란"]맞아, 난 테오가 불쌍해. 테오가 죽었다는 소식을 듣고 모두를 원망했어, 나 자신까지도 말이야.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]빅토리아인이 무슨 짓을 벌였는지는 자네가 더 잘 알잖아!
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="쿨란"]빅토리아인은 마지막 남은 힘을 다해 테오를 보호했고, 아이를 데리고 떠나달라며 내게 애원했어.
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]……
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]난 모두가 원망스러워. 테오의 죽음을 외면하고 방관한 자들을 하나하나 찾아내 복수하고 싶은 생각도 들어.
+[name="쿨란"]하지만 어쨌든 복수에는 명분이 있어야 하잖아? 그렇다면 우리의 복수는 도대체 무엇을 위한 거지?
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="격앙된 주민"]빼앗으면 돼. 빅토리아인이 우리에게 했던 것처럼!
+[charslot(slot="m",name="avg_npc_1697_1#4$1",focus="m")]
+[name="쿨란"]조각상을 만들기 위해 도끼마저 녹여버린 나 시어셔가 과연 빅토리아의 곡식 한 톨이라도 빼앗아 올 수 있을까?
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="말 없는 주민"]놈들에게 우리가 겪었던 고통을 똑같이 느끼게 해줘야 해.
+[charslot(slot="m",name="avg_npc_1697_1#4$1",focus="m")]
+[name="쿨란"]맞아. 내가 너희들에게 골목에서 죽는 고통을 똑같이 느끼게 해주고 싶은 것처럼.
+[name="쿨란"]동포들은 우리를 살리기 위해 목숨을 희생했어. 그런데 다른 사람에게 고통을 주기 위해 또 목숨을 내던질 생각이야?
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]그러면, 그 녀석들을 사랑하기라도 하란 거야? 우리가 수확했던 것을 빼앗고, 우리의 가족을 죽였던 녀석들을?
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="쿨란"]아니, 적을 사랑하라는 게 아니야.
+[charslot(slot="m",name="avg_npc_1697_1#2$1",focus="m")]
+[name="쿨란"]난 단지 너희들이 생존자들을…… 그리고 스스로를 사랑했으면 해.
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="쿨란"]게다가, 난 누굴 사랑하라고 강요할 생각도 없어. 그냥 물어보고 싶을 뿐이야.
+[name="쿨란"]내일이 되고, 사윈이 끝나고, 전쟁의 그림자가 모두 걷히고 나면…… 너희는 뭘 하고 싶어?
+[name="쿨란"]난 원래 조각상을 완성하고 그 위에 이름을 새기려고 했었어. 하지만 지금은 뛰어난 대장장이를 찾아 의족을 수리하는 기술을 배우고 싶어.
+[Dialog]
+[charslot]
+[name="침묵하는 사람들"]……
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]어이 쿨란, 오늘따라 왜 이렇게 말이 많은지 모르겠네. 난 내일이 어쩌고 전쟁이 어쩌고 하는 거엔 관심 없어, 빅토리아인이 죽기만 하면 돼.
+[name="격앙된 주민"]네가 빅토리아인을 대변하겠다면, 너도 죽이겠어.
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]……
+[name="쿨란"]좋아.
+[Dialog]
+[charslot(duration=0.7)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_twohandedblunt", volume=1)]
+쿨란은 조각상을 만든 거대한 망치를 휘두르며 거대한 용의 머리를 겨냥했다.
+그러나 자신의 피와 땀이 담긴 조각상의 머리를 내려치려는 순간, 쿨란은 주저했고, 결국 망치를 내려치지 못했다.
+쿨란의 행동이 일종의 의식이라 생각한 사람들은, 그가 뭘 하려는 건지 알아차리지 못했다.
+[Dialog]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[delay(time=2)]
+하지만 쿨란의 행위가 의식이 아니라 조각상을 부수려 한다는 것을 알아채자, 가장 좀비 같았던 사람조차 고함을 지르기 시작했고, 모든 사람이 쿨란을 에워쌌다.
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_1692_1#5$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_1692_1#5$1",focus="m")]
+[name="네모스"]쿨란 씨, 그만하세요!
+[Dialog]
+[charslot]
+네모스의 비명은 군중들의 고함에 묻혔지만, 쿨란의 쩌렁쩌렁한 목소리는 또렷하게 들렸다.
+로흐시니는 쿨란에게 다가가려 했으나 분노에 찬 군중에 가로막혔다. 결국 로흐시니는 입술을 깨물고 불꽃을 이용해 사람들을 쫓아냈고, 동시에 큰 소리로 주의를 끌려 했다.
+하지만 그 순간, 사람들의 의식이 사라진 것 같았다……
+아니 어쩌면, 정말로 의식을 잃어버린 것인지도 모른다.
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]내가 이 조각상을 부수려는 건, 빼앗긴 너희들의 일상을 되찾아 주기 위해서야.
+[Dialog]
+[charslot]
+[name="격분하는 군중"]감히 그걸 부수겠다고?!
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]난 이 조각상의 모든 부위를 무엇으로 주조했는지 기억하고 있어. 등뼈는 칼과 도끼로, 늑골은 식기와 그릇으로, 머리는 책상과 의자로 다시 주조해 너희에게 돌려줄 거야.
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="격분하는 군중"]이 배신자 자식! 어떻게 너 같은 영웅이 우리를 배반할 수 있지?!
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]누군가의 삶을 차마 빼앗지 못하는 것이 배신이라면, 난 애초부터 영웅이 아니라 배신자였다.
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="격분하는 군중"]쓸데없는 궤변 늘어놓지 마!
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]궤변이라고?
+[name="쿨란"]이 쿨란이 어떤 인간인지 알려주지. 쿨란은 영웅이 아니야, 그저 명성을 탐한 사기꾼일 뿐이었어.
+[name="쿨란"]그는 검은 숲에서 빅토리아 정찰병을 죽였다고 했지. 하지만 사실 빅토리아인을 마주친 곳은 그곳보다 훨씬 멀리 떨어진 곳이었어……
+[name="쿨란"]게다가, 그때 만난 빅토리아인은 정찰병도 아니었어. 어떤 군대에 무참히 짓밟힌 불쌍한 카라반이었을 뿐이야.
+[name="쿨란"]그는 어떻게든 그 사람들을 구하려 했지만, 결국 한 빅토리아인의 아이밖에 지켜내지 못했고, 굉장히 혼란스러워했어.
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="쿨란"]어쩔 수 없던 상황 때문이었을까, 아니면 허영심 때문이었을까, 어쨌든 그는 결국 빅토리아인들의 목을 벴고, 동포들에게는 그 사람들이 정찰병이었다 말했지.
+[name="쿨란"]그렇게 그는 영웅이 되었고, 도시에서 가장 명망 높은 시민이 되었어. 그리고 이 명성을 이용하면 주민들을 위해 많은 일을 할 수 있을 거라 생각했어.
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="쿨란"]그리고 그 아이를 키우는 건 영웅이 베푼 작은 자비가 되었지.
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="격분하는 군중"]뭐라고?!
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="쿨란"]이 불쌍한 사기꾼조차도 자신이 대장장이라는 사실은 잊지 않았고, 전쟁이 끝난 후에는 뭐라도 배워야 한다는 걸 알고 있어.
+[name="쿨란"]하지만 너희들은……
+[name="쿨란"]너희는 어떻지?
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="다정한 주민"]너…… 너는 쿨란이 아니야! 넌 쿨란의 행세를 하는 사기꾼이야!
+[Dialog]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_punch02",volume=1)]
+[CameraShake(duration=1, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.7)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=0.5)]
+[name="쿨란"]흠……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="격앙된 주민"]맞아, 너는 쿨란이 아니야! 쿨란은 우리의 영웅이야, 빅토리아 정찰병이 와도 끄떡없는 강인한 전사! 이 자식, 넌 누구냐!
+[Dialog]
+[charslot]
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[name="쿨란"]하아……
+[name="쿨란"]난 공방에서 이곳까지 조각상을 끌고 왔어……
+[name="쿨란"]너희가 보기에, 내가 앞으로 얼마나 더…… 살 수 있을 것 같아?
+[Dialog]
+[focusout(duration=2, type="bg", from=0, to=1, block=false)]
+[delay(time=1)]
+마지막 말을 마친 쿨란의 입과 코에서 피가 쏟아져 나왔다.
+쿨란은 따뜻하면서도 간절한 눈빛으로 주위의 동포들을 바라봤고, 그들의 얼굴에 증오가 아닌 다른 감정이 드리워져 있길 바랐다.
+그러나 그에게는 보랏빛 불꽃만이 어렴풋이 보였다. 그 불꽃 뒤편의 얼굴들은 죄다 흐릿해 보였고, 마치 아주 오래전, 그가 어느 유적지 밖에서 마주쳤던 안식을 얻지 못한 죽은 자와 같았다.
+쿨란은 먼 곳으로 시선을 돌렸다.
+[CameraShake(duration=0.7, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="쿨란"]쿨럭, 커헉!
+쿨란은 광장의 한쪽 모퉁이에서 작은 실루엣을 보았다.
+그가 미처 찾지 못한 테오의 시신이 그 순간 선명한 보랏빛 불꽃을 두른 채 그를 멍하니 바라보고 있었다.
+[name="쿨란"]테오? 어째서 너마저?!
+[name="쿨란"]쿨럭……
+[name="쿨란"]다 헛수고였어…… 헛수고였어……
+[Dialog]
+[focusout(duration=2, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",duration=1)]
+[CameraShake(duration=1,ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_twohandedblunt", volume=1)]
+[CameraShake(duration=1, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+쿨란은 비틀거리며 몸을 일으켰고, 망치를 거세게 휘둘렀다.
+[Dialog]
+[charslot]
+모두가 숨죽인 채 그를 바라봤다. 그 망치가 자기들의 머리 위로 떨어지는 건 아닐까 두려워했지만, 자리를 떠나지 않았다.
+쿨란은 마지막 남은 힘을 다해……
+[Dialog]
+[PlaySound(key="$d_avg_hammersmash_statue", volume=1)]
+[CameraShake(duration=1.5, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+거대한 용의 머리를 힘껏 내리쳤다.
+마치 누군가를 위한 조종이 울려 퍼지는 것 같았다.
+[Dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=1.5)]
+[Background(image="47_g15_eveningglow_L2",screenadapt="showall",fadetime=2,block=true)]
+[delay(time=1)]
+영웅은 거대한 용 앞에서 쓰러졌고, 군중들은 무언가를 잃어버린 듯 망연자실해 있었다.
+로흐시니의 목소리가 마침내 울려 퍼졌다. 그녀의 불꽃은 타오르는 석양처럼 강렬했지만, 주목하는 사람은 아무도 없었다.
+[Dialog]
+[Background(image="59_g3_dragonsquare_d",screenadapt="showall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_deathfire", volume=1)]
+[bgeffect(name="$eb_eblana_attack",layer = 1)]
+[delay(time=0.7)]
+[bgeffect(name="$eb_deathburning",y=-50,layer = 2)]
+[PlaySound(key="$burningloop1", volume=1, loop=true, channel="fire")]
+[delay(time=1)]
+그 순간, 조각상과 조각상 앞에서 미동도 하지 않는 쿨란이 순식간에 하늘을 집어삼킬 듯한 보랏빛 불꽃에 휩싸였고, 군중들은 본능적으로 뒷걸음질 치며 물러났다.
+불길 속에서 쿨란은 천천히 몸을 일으켰고, 거대한 조각상 역시 날개를 펼치며 꿈틀거렸다.
+[Dialog]
+[bgeffect(name="$eb_deathburning",y=20,layer = 3)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.5, channel="b",fadetime=1)]
+[delay(time=1.5)]
+[Dialog]
+[playsound(key="$d_avg_chimerawings",volume=0.8)]
+[playsound(key="$d_avg_chimerawings",volume=1,channel="f",delay=1.5)]
+마침내 쿨란은 완전히 일어섰고 붉은 용의 조각상은 거대한 날개를 퍼덕이며 오래도록 자신을 위해 준비된, 텅 빈 광장 정중앙의 빈 대좌로 날아갔다……
+[Dialog]
+[stopsound(channel="fire", fadetime=2)]
+[stopsound(channel="b", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+사람들은 조용히 그 모든 광경을 지켜봤다. 마치 매우 놀란 것 같기도, 경외심을 느끼는 것 같기도 했다.
+그리고 요새 쪽에서 희미한 발걸음 소리가 들려왔다.
+[Dialog]
+[charslot(slot="m",name="avg_450_necras_1#7$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_450_necras_1#7$1",focus="m")]
+[name="에블라나"]이런, 유감이야, 한발 늦었네. 도시에 남은 유일한 영웅이었는데.
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="에블라나"]자, 나 시어셔 주민들이여, 너희들의 영웅이 조각상을 위해 희생했다……
+[name="에블라나"]밤은 찾아왔고, 너희들이 아직도 붉은 용의 뜻을 따른다면……
+[name="에블라나"]곧 통행금지 시간이니 다들 집으로 돌아가라.
+[Dialog]
+[focusout(duration=1.5, type="char", from=0, to=1, block=false)]
+[focusout(duration=1.5, type="bg", from=0, to=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background(image="bg_snowconutryinside",screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[focusout(duration=0.1, type="char", from=1, to=0, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clapsolo", volume=1)]
+[Delay(time=1)]
+[name="신비한 여인"]“쿨란은 마지막 남은 힘을 다해 거대한 용의 머리를 힘껏 내리쳤다. 마치 누군가를 위한 조종이 울려 퍼지는 것 같았다”……
+[name="신비한 여인"]쿨란을 정말 좋아하나 보네. 매우 비극적인 결말이긴 해도 이렇게 아름답게 '그려낸' 걸 보면 말이야.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]과찬이에요.
+[name="작가"]전 그 대장장이와 겨우 몇 번 만났을 뿐이에요. 그리고 그는 도시가 혼란에 휩싸이고 나서 제일 처음으로 희생된 사람이죠, 테오를 제외하면요.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]사실 궁금한 점이 하나 있어. 어둠 속으로 들어갔던 더블린의 몸에도 네가 말했던 '보랏빛 불꽃'이 있었을까?
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]죄송하지만 그건 대답할 수 없어요.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]너의 이야기 속 논리대로라면, 더블린에겐 불꽃이 없었을 거야. 부패, 밀수, 권력 남용…… 그 사람들은 미래에 대해 꽤 많은 구상을 했잖아.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]……
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]많은 이야기를 나눴으니, 이제 이야기의 결말을 완성할 수 있겠네요.
+[Dialog]
+[charslot]
+[name="신비한 여인"]도시에서 일어난 일들은 이뿐만이 아니야. 너도 그랬잖아, 첫 번째 희생자일 뿐이라고.
+[name="신비한 여인"]그래도 기어코 여기서 끝을 내겠다면……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="<i>붉은 용은 죽음의 불꽃에 물든 자들은 구원받을 수 없음을 분명히 알고 있었다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>그래서 붉은 용은 선언했다. 이곳은 곧 죽음의 땅이 될 것이며, 남은 자들은 자신의 추종자가 되어 자신을 따라 죽음을 향한 여정을 시작할 것이라고.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>좀비 같은 사람들은 이미 의사 표현을 할 힘조차 남아 있지 않았다. 그날 밤, 불길이 하늘까지 치솟으며 넓은 들판을 환히 비췄다. 그 후로 붉은 용과 그녀를 따르는 추종자들을 본 사람은 아무도 없었다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]어……
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]왜 그래?
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]아무것도 아니에요. 이제 그만 가시죠.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]아직 하고 싶은 말이 남은 것 같은데.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]……
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]그 후로 정말 붉은 용을 본 사람은 없나요?
+[Dialog]
+[charslot]
+작가는 술집 구석에 있는 아무도 신경 쓰지 않는 게시판 쪽을 바라봤다. 그곳엔 오늘 자 신문이 있었고, 헤드라인에는 '리더'의 사진이 실려 있었다. 제목은 이러했다. 리더는 오크 그로브 카운티의 어떤 의식에 참석 중이다.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]게다가, '자신을 따라 죽음을 향한 여정을 시작하자'라니…… 붉은 용이 언제 그런 일을 했죠?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]이야기를 쓰는 건 작가의 자유야.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]자유. 맞는 말이에요. 하지만 자유라고 해서 마음대로 쓰고 가볍게 넘겨버려도 된다는 뜻은 아니에요.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]왜 안 되지?
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]저도, 당신도 타라인이니까요. 이야기가 아무리 왜곡되어도 이 이야기가 투영하고 있는 건 우리예요.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]스스로가 타라인이라는 걸 인정하는 건가?
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]셰이머스 윌리엄스라는 시인의 글을 처음 읽었던 그 순간부터 전 항상 타라인이었어요.
+[name="작가"]제가 타라인이 아니라면, 왜 캐스트샤이어 카운티 문학 살롱에서의 안락한 삶을 포기하고 타라로 돌아와서……
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]……
+[Dialog]
+[charslot]
+“스스로가 타라인이라는 걸 인정하는 건가?”
+작가는 순간 불길한 예감이 들었지만, 이내 불안을 떨쳐냈다.
+작가는 다시 게시판을 쳐다봤다. 신문은 사실을 보도할 뿐이다. 비록 일부가 편집된 것이라 해도 사실임에는 변함이 없다.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]단도직입적으로 묻죠, 당신을 보낸 건 누구인가요?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]난 누구의 명령도 받지 않았어. 네가 말한 대로 난 너의 이야기와 '진실 맞추기'에 흥미를 느끼는 독서가일 뿐이야.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]어떻게 증명할 수 있죠?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]참 난감한 질문이네. 누군가 날 이곳에 보냈다는 걸 입증하는 건 아주 쉬워. 하지만 애초에 그런 사람이 없다는 건 어떻게 증명해야 할까?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_drinkswllw", volume=1)]
+[Delay(time=1)]
+작가는 다시 술을 한 모금 들이켰고 절망스러운 듯 머리를 감싸 쥐었다. 그는 당분간 이 상황에서 벗어날 수 없다는 걸 깨달았다.
+하지만 아직 기회는 남아있었다. 충분히 영리하게 행동한다면……
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]곰곰이 생각해 보니 당신 말이 맞는 것 같네요. 이건 그냥 이야기일 뿐인데, 제가 예민하게 군 것 같네요. 죄송해요.
+[Dialog]
+[charslot]
+[name="신비한 여인"]그리고, 네가 끝맺지 않은 이야기들도 아직 꽤 많이 남아 있잖아.
+[name="신비한 여인"]그 이야기들을 하나로 연결하면, 그때의 나 시어셔와 네가 기억하는 타라에 어울리는 결말을 찾을 수 있을지도 몰라.
+[name="신비한 여인"]준비가 되었다면, 이제 거울 속 춤에 대한 이야기를 해줄래?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]거울 속 춤…… 말인가요?
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=1)]
+아니다, 이건 영리함의 문제가 아니다.
+충분히 신중을 기하면 된다. 불꽃에 비친 이야기의 그림자를 휘감고 형태를 바꿀 수 있다면, 분명 아무 일도 없을 거다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

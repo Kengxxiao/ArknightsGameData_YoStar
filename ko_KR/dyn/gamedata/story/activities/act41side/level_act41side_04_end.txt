@@ -1,0 +1,422 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[stopsound(channel="read2")]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_weaamonologue_2", channel="read2", loop=false)]
+[Subtitle(text="<i>고고한 붉은 용은 친구가 없었고, 종종 거울 속의 자신과 대화를 나눌 뿐이었다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>사윈이 열리던 어느 해, 붉은 용은 성대한 연회를 열고자 했고 거울 속 존재의 도움이 필요했다. 하지만 두 사람이 동시에 사람들 앞에 모습을 드러내는 순간, 거울 속의 존재는 소멸하고 말 터였다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>붉은 용의 명을 거스를 수 없었던 거울 속의 존재는 신비한 영혼수호자를 초대하기 위해 떠났다. 그러나 영혼수호자는 연회에 참석하려 하지 않았고, 되려 거울 속의 존재에게 돌아가지 말라고 설득했다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>하지만 거울 속의 존재는 결국 홀로 연회가 한창인 붉은 용의 둥지로 돌아왔다. 이어서 그녀는 황급히 모닥불의 불빛이 닿지 않는 어둠 속으로 몸을 숨겼다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>어느샌가 연회의 참석자들은 하나둘씩 사라졌고, 붉은 용은 거울 속의 존재를 어둠에서 끌어내 함께 춤을 췄다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>그들은 계속 춤을 췄다. 거울 속의 존재는 발가락이 떨어져 나갈 것만 같아 잠시 쉬고 싶었지만, 붉은 용은 멈추려 하지 않았다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[SoundVolume(volume=0, fadetime=3,channel="read2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[focusout(duration=0.1, type="char", from=0, to=1, block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[stopsound(channel="read2", fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+받아, 로흐시니.
+네가 찾던 책, 증기 기사 모험 이야기 속편이야.
+[Dialog]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Background(image="21_G7_decisivebattlealley_d",screenadapt="coverall", fadetime=2.5,block=true)]
+[delay(time=1)]
+나한테 물었지? “왜”냐고.
+이유 따윈 필요 없어, 내 사랑하는 동생아.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1685_1#1$1", bstart=0.2,bend=0.7, duration=1.5)]
+[delay(time=2.5)]
+근데, 정말 읽게?
+네 또래들이 눈치를 주지 않았으면 실제로는 관심도 없었을 그 책을?
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[focusout(duration=0.5, type="char", from=1, to=0)]
+[focusout(duration=1, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1684_1#22$1", focus="m")]
+[name="로흐시니"]내가 읽고 싶어서 그래.
+[charslot(slot = "m", name = "avg_npc_1685_1#1$1",focus="m")]
+[name="에블라나"]아빠한테 그랬다며, 왜 빅토리아인이 증기 기사 이야기를 싫어하냐는 질문을 받기 싫다고.
+[charslot(slot = "m", name = "avg_npc_1684_1#12$1", focus="m")]
+[name="로흐시니"]이 책…… 아빠가 사 오라고 시켰어?
+[charslot(slot = "m", name = "avg_npc_1685_1#8$1",focus="m")]
+[name="에블라나"]그럴 리가.
+[charslot(slot = "m", name = "avg_npc_1684_1#8$1", focus="m")]
+[name="로흐시니"]그럼 언니가…… 그걸 어떻게 알아?
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="에블라나"]뒷걸음질 치고 있네, 로흐시니.
+[name="에블라나"]난 네가 다른 사람들처럼 날 무서워하지 않았으면 좋겠어.
+[charslot(slot = "m", name = "avg_npc_1684_1#3$1", focus="m")]
+[name="로흐시니"]아냐, 난……
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="에블라나"]내가 그걸 알게 될까 봐 겁난다면 춤이라도 추자, 긴장도 풀 겸. 어때?
+[charslot(slot = "m", name = "avg_npc_1684_1#13$1", focus="m")]
+[name="로흐시니"]춤…… 이라고?
+[charslot(slot = "m", name = "avg_npc_1685_1#8$1",focus="m")]
+[name="에블라나"]안 될 거 없잖아?
+[Dialog]
+[charslot]
+에블라나는 우아한 자세로 동생에게 손을 내밀며 말했다.
+하지만 로흐시니의 기억 속 에블라나는, 가족 모두가 좋아하는 음악이 틀어져 있을 때도, 아빠는 흥겹게 몸을 흔들고 엄마는 손가락을 탁자에 튕기며 리듬을 타고 있을 때도……
+그저 냉랭하게 웃으며 꼿꼿이 앉아 있을 뿐이었다.
+언니는 한 번도 음악에 맞춰 춤을 춘 적이 없었다. 단 한 번도.
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="에블라나"]네가 내 스텝을 따라올 수 있게 되었을 때면, 겨우 책 한 권, 부탁 하나, 또래 친구들 몇 명 때문에 고민하지 않아도 될 거야.
+[charslot(slot = "m", name = "avg_npc_1684_1#25$1",focus="m")]
+[name="로흐시니"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$book_close",volume=1)]
+뜯지도 않은 기사 소설책이 바닥에 떨어졌다. 새 책 특유의 기분 좋은 잉크 냄새가 흙탕물로 덮였다.
+그때의 로흐시니는 아직 너무 어렸다. 원하는 것을 손에 넣는 일이 이토록 버겁고 쓰라릴 줄은 미처 몰랐다. 로흐시니가 기억하는 건 이것뿐이었다. 비틀거리며 돌아섰던 것……
+그리고 부드럽지만 차가웠던 손을 뿌리쳤던 것.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]로흐시니.
+[name="에블라나"]사람들이 갔어, 더는 네 신분을 숨길 필요도 없어.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]저 사람들이 아직 살아있다고 생각해?
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]내가 아는 건 모든 타라인의 가슴에 그런 불꽃이 있다는 것뿐이야. 선조들이 빅토리아 앞에 무릎을 꿇은 그날부터 그 불꽃은 단 한 번도 꺼진 적이 없지.
+[name="로흐시니"]도시 주민들도, 나와 함께 돌아온 사람들도 똑같아. 아직 불꽃이 죽음의 색으로 물들지 않았을 뿐이지.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]꽤 괜찮은 비유인걸, 로흐시니.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="에블라나"]그럼, 다시 물을게. 어떻게 할 생각이야?
+[name="에블라나"]그 불꽃을 다시 네 색으로 물들이려고? 아마 시도를 안 해본 건 아닐 텐데.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]……
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="에블라나"]누가 됐든 죽음에 물들어 버린다면, 네 불꽃은 그 대상을 불태워 잿더미로 만들어 버릴 수밖에 없겠지.
+[name="에블라나"]그러니까, 날 죽여. 로흐시니.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]도시의 모두를 함께 죽이라는 거야?
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]만약 이 일이 어떻게 기록될지 그렇게 신경 쓰인다면, 이렇게 말해. 사람들을 죽인 건 나고, 넌 사람들을 묻어줬을 뿐이라고.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]나 시어셔의 사람들은 아직 살아있어.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]그 육신을 움직이는 게 생명이 아니라 죽음이라 해도?
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]정말 작은 생명의 불씨조차 남아 있지 않았다면, 그들은 진작에 자아를 잃어버린 채 언니의 의식 없이 방황하는 좀비가 되었을 거야.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]언젠가는 그렇게 될 거야.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]아니, 그렇지 않아.
+[name="로흐시니"]난 살아있는 사람들의 몸에 보이는 보랏빛 불꽃을 역병이라고 생각할 거야. 언니가 퍼뜨린 역병.
+[charslot(slot = "m", name = "avg_450_necras_1#15$2",focus="m")]
+[name="에블라나"]그렇다면, 역병 치료제라도 찾겠다는 거야?
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]맞아.
+[name="로흐시니"]그 치료제로 언니의 상처도 치유할 수 있었으면 좋겠어, 에블라나.
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="에블라나"]다행이네.
+[charslot(slot = "m", name = "avg_1020_reed2_1#11$1",focus="m")]
+[name="로흐시니"]다행이라고……?
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="에블라나"]맞아, 정말 다행이야. 로흐시니.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="에블라나"]아직도 모르겠어?
+[name="에블라나"]내게서 도망칠 생각을 하는 게 아니라, 날 어떻게 구할지를 생각하고 있잖아.
+[Dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[image(image="59_i05",screenadapt="coverall",xScale=1.2,yScale=1.2,fadetime=2)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[delay(time=1.5)]
+[name="에블라나"]자, 춤추자, 로흐시니. 항상 너와 함께 추고 싶었지만, 늘 네가 피해 왔던 그 춤을 말이야.
+[name="로흐시니"]뭐라고……?
+[name="에블라나"]춤을 추자고, 로흐시니.
+[name="에블라나"]마지막 소절이 끝나기 전, 네 창으로 내 심장을 찔러. 죽음을 부르는 역병에 치료제 같은 건 존재하지 않아. 네 의지는 확고하긴 하지만, 결국 헛수고가 되고 말 거야.
+[name="에블라나"]자, 이제 그만 받아들여…… 나 시어셔의 운명을, 그리고 우리의 운명을.
+[name="에블라나"]아직 사윈 시작 전이지만, 생명과 죽음의 경계가 타라 역사상 그 어느 때보다도 모호해졌어.
+[name="에블라나"]정말 타라를 죽음의 땅으로 만들 셈이야?
+[Dialog]
+[delay(time=1)]
+로흐시니는 본능적으로 고개를 돌렸다.
+영웅이 이곳까지 끌고 온 조각상 위로 이글거리는 보랏빛 불꽃이 활활 타오르고 있었고, 조금 전 불꽃에 휩싸이며 벌떡 일어났던 쿨란은 바닥에 무릎을 꿇고 있었다.
+그 모습을 더 지켜볼 수 없었던 로흐시니는 고개를 돌려 언니의 두 눈과 몇 년 만에 자신에게 다시 내민 손을 직시했다.
+로흐시니의 착각이었을까, 아니면 보랏빛 불꽃에 휩싸인 모든 것이 생기를 잃었기 때문일까, 기억과 다르게 앞에 있던 손은 핏기 없는 창백한 색을 하고 있었다.
+[name="로흐시니"]여기는 한 도시고, 이곳에는 수많은 생명이 있어. 에블라나, 이건 고작 '운명'이라는 두 글자로 쉽게 결론 내릴 수 없어.
+[name="에블라나"]이제 얘기는 다 했어? 우리는 너무 오랫동안 각자의 얘기만 해온 것 같아.
+[name="로흐시니"]……에블라나!
+[name="에블라나"]원한다면 얘기를 계속해도 돼. 네가 원하기만 한다면 난 여기서 얼마든지 널 기다릴 테니까.
+[name="에블라나"]하지만 조금 서두르는 게 좋을 거야, 로흐시니. 너는 기다릴 수 있을지 몰라도, 그렇지 않은 사람도 있으니까.
+[name="로흐시니"](깊게 숨을 들이쉬며) 그 말이 맞아. 언니는 기다릴 수 있을지 몰라도, 그렇지 않은 사람도 있을 테니까.
+[name="로흐시니"]좋아, 춤을 춰줄게. 우리 중 한 명이 쓰러질 때까지.
+[name="로흐시니"]하지만 네가 원하는 대로 추지는 않을 거야. 절대.
+[name="에블라나"]좋을 대로 해.
+[name="에블라나"]근데 로흐시니, 내 사랑하는 동생, 네가 오해한 게 하나 있어.
+[name="에블라나"]아까 말했던 기다릴 수 없는 사람은 바로 네 앞에 서 있는 사람이야.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+기다릴 수 없다고?
+로흐시니는 언니의 얼굴을 뚫어져라 쳐다봤다. 그리고 전혀 예상치 못한 사실을 발견했다.
+손이 창백하다고 생각한 건 착각이 아니었다.
+보랏빛 불꽃은 천지를 뒤덮을만한 거대한 망토처럼 엮여 에블라나를 아름답고도 두려운 존재로 보이게 했지만, 그 피부 속에서 스며 나오는 생명을 갉아먹는 병마와도 같은 창백함은 감출 수 없었다.
+이럴 리가 없다. 에블라나는 한 번도 이런 모습이었던 적이 없었다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#6$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#6$1",focus="m")]
+[name="로흐시니"]에블라나……
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]응?
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="로흐시니"]언니……
+[name="로흐시니"]언니, 괜찮은…… 거야?
+[Dialog]
+[charslot]
+에블라나는 옅은 미소를 지었다. 마치 얼음장처럼 차가운 미소였다.
+이번만큼은 온기가 느껴진 것 같았지만, 그럴수록 창백한 그녀의 얼굴은 더 섬뜩해 보였다.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]걱정해 줘서 고마워, 로흐시니.
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="에블라나"]이 차가운 이별과 고통스러운 재회 끝에, 네가 날 걱정해 주는 건…… 정말 오랜만이네.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]나도 너와 춤을 추고 싶었어. 로흐시니.
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",focus="m")]
+[name="로흐시니"]……언니를 치료할 방법을 찾아내면 그때 같이 추자.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="에블라나"]좋아, 여기서 기다리고 있을게.
+[Dialog]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.6, loop=true, channel="awalk")]
+[StopSound(channel="awalk", fadetime=2.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+에블라나는 천천히 요새로 걸어갔다. 그 발소리는 거의 들리지도 않을 만큼 작은 쇠약했다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=2)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="브리지드"]후우……
+[charslot(slot = "m", name = "avg_4177_brigid_1#5$1",focus="m")]
+[name="브리지드"]후우…… 붉은 용! 네모스!
+[name="브리지드"]성문에 도착했는데, 아무도 없었어! 무슨 일이 벌어진 게 분명해. 광장에서 대체 무슨 일이……
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",duration=0.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[delay(time=1.5)]
+[name="로흐시니"]……
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="브리지드"]붉은 용, 이건……?
+[Dialog]
+[charslot]
+로흐시니는 작은 상자를 안고 있었다. 희미한 밤의 등불 아래, 모든 것이 평소보다 흐릿하게 보이는 것 같았다.
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",focus="m")]
+[name="로흐시니"]쿨란을 구해내지 못했어. 그래서……
+[name="로흐시니"]……이렇게라도 편히 쉬게 해주고 싶었어. 쿨란이 더는 광장에서 죽음의 불꽃으로 고통받지 않게.
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="브리지드"]……
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+한참을 조용히 있던 유목민은 바닥을 더듬은 뒤 작은 돌멩이 하나를 집어 들었다.
+그리고 그녀는 온 힘을 다해 돌멩이를 요새 방향으로 집어던졌다.
+하지만 돌은 순식간에 어둠 속으로 빨려 들어갔고, 작은 소리조차 나지 않았다.
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]통행금지 시간이 됐네. 네모스, 브리지드, 우선은……
+[charslot(slot = "m", name = "avg_npc_1692_1#2$1",focus="m")]
+[name="네모스"]싫어요……
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="네모스"]싫습니다.
+[Dialog]
+[charslot]
+네모스는 손을 뻗어 보이지 않는 먼지들을 털어내려는 듯 나무 상자 위를 부드럽게 쓸었다.
+그리고 며칠 전 동족들에게 거절당하며 들었던 쓸데없는 말을 떠올렸다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g5_remains_outside",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[delay(time=0.5)]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="근엄한 영혼수호자"]영혼수호자는 산 자와 함께하지 않고, 산 자의 존중도 필요 없어. 죽은 후라면 이야기가 달라지겠지만.
+[name="근엄한 영혼수호자"]이게 바로 더블린이 마땅히 지켜야 할 전통이야.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="네모스"]어쨌든, 피리라도 주셔서 감사해요…… 이만 돌아가겠습니다.
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="근엄한 영혼수호자"]잠깐만 네모스. 넌 사윈이 곧 열린다는 것도 알고 있고, 영혼수호자들이 제기를 줄 가능성이 없다는 걸 알고 있는데도 찾아왔어.
+[name="근엄한 영혼수호자"]더블린이 시켰나?
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="네모스"]아뇨, 이건 저의……
+[charslot(slot="m",name="avg_npc_1691_1#3$1",focus="m")]
+[name="근엄한 영혼수호자"]네모스, 넌 아직도 여전하구나.
+[name="근엄한 영혼수호자"]기다림, 중재, 타협…… 나 시어셔에서도, 붉은 용의 휘하에서도 넌 아직 그런 것에 집착하고 있는 건가?
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="네모스"]전 그저…… 더 나아질 수 있을 상황이 악화되는 것, 그리고 함께 힘을 합쳐야 할 사람들이 서로 싸우는 것이 보기 싫을 뿐입니다.
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="근엄한 영혼수호자"]만약 갈등이 피할 수 없는 것이라면, 넌 그 수렁에 점점 더 깊이 빠지게 될 거야.
+[name="근엄한 영혼수호자"]네모스, 도시가 널 어둡게 물들였어.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="네모스"]그래서 리더, 붉은 용께서……
+[name="네모스"]로흐시니 씨, 에블라나는 나 시어셔에 진정한 삶을 가져다줄 수 없는 겁니까? 제 말이 맞나요?
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="로흐시니"]언니는 못한다고 그랬어. 언니는…… 거짓말하는 걸 좋아하지 않아. 무언가 제약이 있는 게 아니라면……
+[charslot(slot = "m", name = "avg_npc_1692_1#4$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="네모스"]에블라나 씨는 타라를 이끄는 리더이자 유일한 붉은 용입니다. 그런데 제약이라뇨?!
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="네모스"]아……
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="브리지드"]네모스, 왜 그래? 조금…… 이상한 것 같아……
+[playMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="네모스"]이제 알았습니다. 로흐시니 전하, 이제 깨달았습니다.
+[name="네모스"]아무래도 불꽃은 살아있는 사람도 물들일 수 있는 것 같습니다.
+[charslot(slot = "m", name = "avg_1020_reed2_1#11$1",focus="m")]
+[name="로흐시니"]네모스?!
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="네모스"]제가 의지했던 사람들은 사실 사사로운 탐욕에 눈먼 악의 무리였습니다.
+[name="네모스"]제가 존경했던 리더는 사실 타인의 생사 따위 안중에도 없는 사악한 용이었고요.
+[name="네모스"]그리고 제가 목숨을 걸고 지키려 했던 사람들…… 그리고 제 가장 소중한 친구는 그들을 위해 죽었습니다.
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="네모스"]심지어, 그 사악한 용이 보랏빛 불꽃으로 친구를 태워버리지 않았다면, 그들이 제 친구에게 또 무슨 짓을 했을지도 모르겠죠……
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="네모스"]쿨란 씨의 질문은 옳았어요. 사윈이 끝나면 전 뭘 해야 할까요?
+[name="네모스"]복수를 빼면, 제가 할 수 있는 건 없습니다.
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_deathfire", volume=0.4)]
+[avgdisplay(id = "1", style = "bgeffect", name = "$eb_purple_fire", slot = "bgover",x=20,y=-20,layer = 1)]
+[Delay(time=3)]
+네모스가 말을 마친 뒤, 로흐시니는 아직 보랏빛 불꽃에 물들지 않았던 마지막 나 시어셔 주민의 몸에서 불길이 타오르는 것을 보았다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[avgdisplay(id = "1")]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="네모스"]로흐시니 전하, 전하께선 저를 이 도시 사람들과 같은 분류로, 에블라나의 신하로 여기실 겁니까?
+[charslot(slot = "m", name = "avg_1020_reed2_1#13$1",focus="m")]
+[name="로흐시니"]아니, 그렇지 않아. 그냥 치명적인 역병이…… 도시의 마지막 주민에게까지 번졌을 뿐이야.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="네모스"]그렇다면 로흐시니 전하, 맹세하겠습니다. 전하께서 춰야 하는 그 춤, 제가 전하를 도와 끝까지 함께 추겠습니다……
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="네모스"]사악한 붉은 용이 쓰러질 때까지 말입니다.
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="로흐시니"]……그 맹세, 기억할게.
+[name="로흐시니"]이제 난 나 시어셔를 떠날 생각이야. 함께 가자, 네모스.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="네모스"]영혼수호자들의 마을로 가실 생각입니까?
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]맞아. 이 도시엔 불꽃을 없앨 희망이 없어. 도움을 줄 만한 사람을 찾아야겠어.
+[charslot(slot = "m", name = "avg_npc_1692_1#2$1",focus="m")]
+[name="네모스"]저는 가지 않겠습니다. 제게 돌아갈 자격은 없어요.
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="네모스"]전 도시에 남겠습니다. 붉은 용에게 발각되어 갈기갈기 찢기지만 않는다면…… 무슨 수를 쓰든 사태가 악화하지 않게 막겠습니다.
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="네모스"]이 피리를 그들에게 돌려주세요.
+[name="네모스"]그리고…… 쿨란 씨도 부탁드립니다. 그를 위해 제대로 된 장례를 치러주세요.
+[name="네모스"]장례식에서는 지인이 추도사를 낭독해야 합니다. 추도사는…… 제가 쓸 테니 대신 낭독해 주시죠. 괜찮으신가요?
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="로흐시니"]……그래.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_writerub", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="네모스"]다 됐습니다. 여기요.
+[charslot(slot = "m", name = "avg_4177_brigid_1#10$1",focus="m")]
+[name="브리지드"]난 리드와 함께 떠날 거야. 검은 숲은 누구도 통과시켜 주지 않지만, 우리 둘이라면 무사히 빠져나갈 수 있을지도 몰라.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="네모스"]아뇨, 브리지드 씨. 당신은 남아야 합니다. 당신의 도움이 필요해요.
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="브리지드"]리드?
+[charslot(slot = "m", name = "avg_1020_reed2_1#9$1",focus="m")]
+[name="로흐시니"]나 혼자 가도 괜찮아.
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="브리지드"]좋아, 알았어. 그런데…… 네모스, 너는 점점 너답지 않게 되고 있어.
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="네모스"]……어쩌면 복수가 절 이렇게 만든 걸지도 모르겠네요.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[stopsound(channel="read2")]
+[charslot]
+[Image]

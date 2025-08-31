@@ -1,0 +1,33 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+이게 바로 접이식 요새 모듈이군요. 정비하면 요새 플랫폼이 된다는……
+[Tutorial(dialogHead="$avatar_stward")]이것도 마찬가지로 3번 정비해야 사용할 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]맞다, 요새 플랫폼은 오퍼레이터를 고지대에 배치하게 할 수 있을 뿐만 아니라, 적의 진격로도 변경할 수 있어.
+[CooperateBattle.CameraFocusTo(offsetX=11, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+그럼, 저 시설은……
+[Tutorial(dialogHead="$avatar_stward")]저건 '접이식 바리케이드'야. 저건 1번만 정비하면 바로 사용할 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]정비가 끝나면 '방호벽 바리케이드'가 되어 적을 저지할 수 있지.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=1.5)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]물론, 협력자도 함께 시설을 정비할 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]전에 투입했던 수리차가 더 많은 정비공을 데려왔어. 나머지 시설 정비는 박사한테 맡길게!
+[Tutorial(dialogHead="$avatar_adnach")]휴식 시간은 시설 정비를 위한 단계니까, 오퍼레이터를 배치할 필요는 없어요.
+[Tutorial(dialogHead="$avatar_adnach")]다음 공격이 시작되면 저희도 요새 플랫폼에 올라갈 수 있겠네요. 방어할 준비를 하시죠!
+[CooperateBattle.CameraFocusTo(offsetX=10, offsetY=4, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

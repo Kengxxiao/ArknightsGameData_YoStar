@@ -1,0 +1,747 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[name="정신없는 소리"]불을 꺼라! 어서 불을 꺼!
+[name="정신없는 소리"]자객이다! 폐하를 보호하라!
+[name="정신없는 소리"]호위병, 호위병!
+[dialog]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[PlayMusic(intro="$m_bat_sfsui_intro", key="$m_bat_sfsui_loop", volume=0.6)]
+[PlaySound(key="$d_avg_audience_chaos", volume=1)]
+[Background(image="58_g6_baizhenbanquet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=0.8)]
+[name="순찰 중인 수비군"]불타기 쉬운 물건들을 치우고, 현장을 봉쇄해라!
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="린 칭옌"]조심……
+[name="린 칭옌"]이 불은……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1612_1#12$1")]
+[name="린 칭옌"]여러분! 잔에 담긴 술을 건드리지 마세요!
+[dialog]
+[Delay(time=0.8)]
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="린 칭옌"](저건 저온 화염이야……)
+[name="린 칭옌"](정체가 뭘까…… 무슨 속셈이지?)
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[background]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.5,fillto = 0.15, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.5,fillto = 0.15, fadetime=0.1)]
+[Background(image="58_g6_baizhenbanquet",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-150)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=30, block=false)]
+[focusout(type="bg", id="58_g6_baizhenbanquet", from=0, to=0.6, duration=0.1, block=false)]
+[Delay(time=0.1)]
+[PlaySound(key="$d_avg_audience_chaos", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "l", name = "avg_npc_1632_1#1$1", bstart=0.9,bend=1, posfrom = "-200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "l", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1633_1#1$1", bstart=0.9,bend=1, posfrom = "-200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "r", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.2)]
+[charslot(slot = "l", posfrom = "0,30", posto = "200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=0.3)]
+[charslot(slot = "r", posfrom = "0,30", posto = "200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1630_1#1$1", bstart=0.9,bend=1, posfrom = "200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "l", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1631_1#1$1", bstart=0.9,bend=1, posfrom = "200,30", posto = "0,30", duration = 0.8)]
+[charslot(slot = "r", action="zoom", poszoom = "0.5,0.5", scale=0.8, duration = 0)]
+[Delay(time=0.2)]
+[charslot(slot = "l", posfrom = "0,30", posto = "-200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=0.3)]
+[charslot(slot = "r", posfrom = "0,30", posto = "-200,30", afrom=1, ato=0, duration = 0.8)]
+[Delay(time=1)]
+린 칭옌은 혼란에 빠진 사람들을 진정시키려 했지만, 그녀의 목소리는 시끄러운 비명소리에 묻히고 말았다.
+이 혼란 속에서 그녀는 낯익은 얼굴을 봤다.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1615_1#1$1", posfrom = "0,-70", posto = "0,-70", duration = 1.5)]
+[Delay(time=2)]
+서로 눈을 마주친 건 한 번뿐이었지만 린 칭옌은 확신했다.
+그 사람은 자신을 보았고, 자신이 방금 사람들 앞에서 하려고 했던 일반적이지 않은 행동도 보았다.
+하지만 그 사람의 목표는 자신이 아니었다.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1615_1#4$1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1615_1#4$1", posfrom = "0,-70", posto = "200,-70", afrom=1, ato=0, duration = 0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[background]
+[curtain]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=0.1, block=false)]
+[Background(image="58_g6_baizhenbanquet",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1612_1#1$1")]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1612_1#10$1")]
+[name="린 칭옌"]……!
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="린 칭옌"]블레이즈……!
+[dialog]
+[StopSound(channel="f", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_inside", volume=0, loop=true, channel="cr")]
+[SoundVolume(volume=1, channel="cr",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[SoundVolume(volume=0, channel="cr",fadetime=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1619_1#1$1", duration=1.5, isblock=true)]
+[name="막불복"]무슨 소란이지? 무슨 일이냐!
+[charslot(slot = "m", name = "avg_npc_1636_1#1$1")]
+[name="노련한 요리사"]큰일 났습니다! 백진연 연회장에 어찌 된 일인지 갑자기 불이 났다고 합니다!
+[name="노련한 요리사"]현재 호위병들이 연회장을 전부 에워싸고 있습니다. 하지만 지금 그 안이 어떤 상황인지, 폐하께서 다치셨는지도 알 수 없었습니다……
+[name="노련한 요리사"]그들이…… 백진연을 중단하라고 했습니다……
+[charslot(slot = "m", name = "avg_npc_1619_1#5$1")]
+[name="막불복"]……
+[dialog]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=0.8)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$2")]
+[name="블레이즈"]린 칭옌……!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="-200,0", posto="0,0", duration=0.8)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot = "l", focus="l")]
+[name="호위병 A"]백진연에 수상한 사람이 잠입했다는 정보를 전달받았습니다. 그렇기에 지금부터 신원을 확인하겠습니다.
+[name="호위병 A"]모두 자리에서 움직이지 마시고, 확인 작업에 협조해 주십시오.
+[dialog]
+[charslot]
+[charslot(slot = "l", focus="n")]
+[SoundVolume(volume=1, channel="cr",fadetime=2)]
+[Delay(time=2)]
+[StopSound(channel="cr", fadetime=2)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$2")]
+[name="블레이즈"](미치겠네…… 레이즈한테 대체 무슨 일이 일어난 거지.)
+[name="블레이즈"](안 되겠어, 레이즈를 그냥 둘 순 없어…… 가서 봐야겠어……)
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1.5)]
+[charslot(slot = "m", posfrom="0,0", posto="-100,0", afrom=1, ato=1, duration=1.5)]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_knockoverdish", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$2")]
+[Delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1637_1#1$1")]
+[name="호위병 B"]거기! 멈춰!
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$2", posfrom="-100,0", posto="-100,0", afrom=1, ato=1, duration=0)]
+[name="블레이즈"](어떡하지, 여기서 싸울 순 없는데……)
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$2")]
+[name="블레이즈"](시간이 없어……!)
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", posfrom="-100,0", posto="300,0", afrom=1, ato=0, duration=0.6)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[Delay(time=1)]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$glass", volume=1)]
+[Delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", focus="n")]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", focus="r")]
+[name="호위병 B"]쫓아가!
+[dialog]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=0.5)]
+[Delay(time=0.2)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="200,0", afrom=1, ato=0, duration=0.5)]
+[Delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1637_1#1$1")]
+[name="백부장"]1, 5대대는 남문 입구를 봉쇄하고 7, 9대대는 북문을 막아라!
+[name="백부장"]남은 인원은 남쪽부터 북쪽으로 이동하면서 철저히 수색하고, 신원이 의심되는 사람은 바로 체포해라.
+[name="백부장"]정보에 따르면 백진연을 망친 범인은 최소 두 명이 함께 공모한 사건이다. 모두 조심해라!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[CameraShake(duration=3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=3)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", duration=1.5, isblock=true)]
+[name="블레이즈"]큰일이네, 수비군이 너무 많아……
+[name="블레이즈"]레이즈, 레이즈…… 도대체 얼마나 큰 일을 저지른 거야?
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2")]
+[name="블레이즈"]들리는 얘기를 보면 아직 잡히진 않은 것 같은데…… 도대체 어디에 있는 거야?
+[name="블레이즈"]칫…… 궁전은 왜 또 쓸데없이 이렇게 커……?
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2", posfrom="0,0", posto="120,0", afrom=1, ato=1, duration=1.5)]
+[Delay(time=0.3)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_4172_xingzh_1#7$1", posfrom="0,0", posto="-80,0", duration=0.5)]
+[Delay(time=0.3)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "r", action="jump", posto="80,0", power=20, times=1, duration=0.5)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", posfrom="120,0", posto="80,0", afrom=1, ato=1, duration=0.5)]
+[Delay(time=0.8)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", posfrom="80,0", posto="0,0", afrom=1, ato=1, duration=1.2)]
+[Delay(time=1.2)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#11$2", focus="l")]
+[name="블레이즈"]네가 왜 여기 있어?!
+[charslot(slot = "r", name = "avg_4172_xingzh_1#5$1", focus="r")]
+[name="영인"]쉿!
+[name="영인"]당신들, 폐하께 사건을 재조사해 달라는 청을 한다고 하지 않았나요? 대체 일이 왜 이렇게 됐나요?
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="블레이즈"]나도 몰라, 그 불은 우리가 지른 게 아니야!
+[charslot(slot = "r", name = "avg_4172_xingzh_1#3$1", focus="r")]
+[name="영인"]그런데 왜 하필 이때……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#4$1", focus="r")]
+[name="영인"]일단 당신은 빨리 이곳을 벗어나요! 들키기라도 하면 설령 입이 100개라 해도 절대 빠져나갈 수 없을 거예요.
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="블레이즈"]린 칭옌을 구하러 가야 해!
+[charslot(slot = "r", name = "avg_4172_xingzh_1#3$1", focus="r")]
+[name="영인"]……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#2$1", focus="r")]
+[name="영인"]……제가 갈게요.
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="블레이즈"]이건 엄청 위험한 일이야! 어떻게 너한테 맡기겠어?
+[charslot(slot = "r", name = "avg_4172_xingzh_1#1$1", focus="r")]
+[name="영인"]금성에 대해선 제가 당신보다 조금 더 잘 알아요. 잡히더라도 어떻게든 빠져나갈 수 있고요.
+[name="영인"]걱정 마세요, 제가 린 소경을 찾아낼게요.
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$2", focus="l")]
+[name="블레이즈"]하지만……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#1$1", focus="r")]
+[name="영인"]절 못 믿는 건가요? 아니면 아직도 제게 화가 난 건가요?
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2", focus="l")]
+[name="블레이즈"]그건 물론 아니지만……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#4$1", focus="r")]
+[name="영인"]그럼, 지금 바로 남문으로 가세요. 호위병이 출구를 봉쇄하기 전에요, 어서요!
+[name="영인"]……이곳을 빠져나가면, 그 식당에서 다시 만나요.
+[charslot(slot = "l", name = "avg_1040_blaze2_1#2$2", focus="l")]
+[name="블레이즈"]……알았어.
+[name="블레이즈"]너도 조심해……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#4$1", focus="r")]
+[name="영인"]잠깐, 아까 어떤 호위병이 당신을 보지 않았나요?
+[charslot(slot = "l", name = "avg_1040_blaze2_1#8$2", focus="l")]
+[name="블레이즈"]아…… 아마 그랬던 것 같아.
+[charslot(slot = "r", name = "avg_4172_xingzh_1#3$1", focus="r")]
+[name="영인"]그렇다면, 큰일인데……
+[charslot(slot = "r", name = "avg_4172_xingzh_1#1$1", focus="r")]
+[name="영인"]아…… 그렇지! 옷을 저랑 바꿔 입어요.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g6_baizhenbanquet", screenadapt="coverall",xScale=1.1,yScale=1.1, x=-60)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#1$1", bstart=0.2,bend=0.7, posfrom="200,0", posto="0,0", duration=0.6)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#1$1", bstart=0.2,bend=0.7, posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=0.6)]
+[Delay(time=0.8)]
+[name="순찰 중인 호위병"]저 앞에, 누군가가 뛰어간 것 같아! 저쪽이다!
+[dialog]
+[CameraShake(duration=2.6, xstrength=15, ystrength=15, vibrato=90, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.7)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="200,0", posto="0,0", duration=0.7)]
+[Delay(time=0.6)]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=0.7)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", posfrom="0,0", posto="-200,0", afrom=1, ato=0, duration=0.7)]
+[Delay(time=2)]
+[charslot]
+[BackgroundTween(xFrom=-60, xTo=60, duration=2,ease="OutQuad",block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#1$1", duration=1.5)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#2$1")]
+[name="영인"]휴……
+[charslot(slot = "m", name = "avg_4172_xingzh_1#3$1")]
+[name="영인"]현장은 이미 정리됐네…… 그렇다면 린 소경은 여기 없겠지.
+[name="영인"]그런데 도대체 누가 백진연에서 이런 일을 벌인 걸까……
+[charslot(slot = "m", name = "avg_4172_xingzh_1#4$1")]
+[name="영인"]블레이즈 씨가 무사히 빠져나갔기를……
+[dialog]
+[PlaySound(key="$d_avg_drawsword", volume=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_punch02", volume=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot = "m", name = "avg_4172_xingzh_1#5$1", posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=0.5, isblock=true)]
+[delay(time=1.5)]
+[charslot]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7, duration=2, isblock=true)]
+[name="???"]……
+[name="???"]……저 여자가 어떻게?
+[name="???"]저 두 아이가……
+[name="???"]……정말 운명이란 게 있는 건가?
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1", duration=1.5, isblock=true)]
+[name="블레이즈"]이제 거의 다 왔어……
+[name="블레이즈"]그쪽 상황이 어떨지 모르겠네……
+[charslot(slot = "m", focus="n")]
+[name="???"]……찾았다.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="블레이즈"]누구냐?!
+[dialog]
+[PlayMusic(intro="$m_bat_act23side_01_intro", key="$m_bat_act23side_01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", posfrom="-300,0", posto="0,0", duration=0.3)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1", posfrom="0,0", posto="30,0", duration=0.2)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1", posfrom="0,0", posto="400,80", afrom=1, ato=0, duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", focus="l")]
+[name="'금위군 교관'"]역시 너였군.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[charslot]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_ftrub", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#8$1", posfrom="-600,0", posto="40,-20", duration=1, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", posfrom="40,-20", posto="0,0", duration=1.5, isblock=true)]
+[name="블레이즈"]쓰읍…… 대단한 검술이네!
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]옷차림으로 보아 일반 병사는 아닌 것 같은데, 설마 장군인가?
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[name="'금위군 교관'"]긴말하지 않겠다.
+[name="'금위군 교관'"]네가 바로 린 칭옌이 여태껏 숨기려고 했던 사람이군…… 그런데 어째서 너를 금성으로 데려온 거지?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]음…… 남의 연회에 함부로 난입한 건 분명히 잘못된 행동이긴 하지만, 나쁜 의도로 그런 게 아니라고 하면 믿어 줄 수 있을까……
+[name="블레이즈"]그러니까 내 말은, 이건 오해라는 거야……
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[name="'금위군 교관'"]오해일 리가. 금위군에서 너의 행방을 추적한 지 벌써 40년이 넘었다.
+[name="'금위군 교관'"]넌 그 여자의 후손이다.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]무슨 소리지? 누구의 후손이라고? 그 '여자'가 누군데?
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[multiline(name="'금위군 교관'")]정말로 모르는…… 
+[charslot(slot = "m", name = "avg_npc_1615_1#2$1")]
+[multiline(name="'금위군 교관'",end=true)]아니, 아무래도 거짓말은 아닌 것 같군.
+[name="'금위군 교관'"]그렇게 오랜 시간 보호받아 왔으면서, 아무도 너의 출생에 대해 말해주지 않았나?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#5$1")]
+[name="블레이즈"]하하, 네 말이 맞아…… 나도 내 출생이 참 궁금하거든? 어디 나한테 알려줄 사람 없나?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]그런데 금위군이 날 찾았다고?
+[charslot(slot = "m", name = "avg_npc_1615_1#1$1")]
+[name="'금위군 교관'"]40년 전, 반역죄를 지은 죄인의 가문에서 유일하게 행방불명된 아이.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="블레이즈"]뭐…… 뭐라고?
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_room_2",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_039_1")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="린 칭옌"]블레이즈, 한 번만 다시 확인할게요……
+[name="린 칭옌"]1062년, 빅토리아에서 태어난 거 맞나요?
+[charslot(slot = "m", name = "char_017_homura_3#4")]
+[name="블레이즈"]맞아, 내 기억에 의하면 난 빅토리아에서 자랐어.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1612_1#11$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="린 칭옌"]당신의 아버지는 생전에 오랫동안 어떤 진실을 쫓고 계셨던 것 같았습니다……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_039_1")]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="린 칭옌"]만일…… 당신 주위의 모든 것들이 온통 거짓으로 가득했던 거라면……
+[dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="블레이즈"]무슨……
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=90, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="블레이즈"]대체 뭐가 어떻게 돌아가는 거야! *염국 욕설* 입 닥쳐!
+[charslot(slot = "m", name = "avg_npc_1615_1#1$1")]
+[name="'금위군 교관'"]네 신분은 특수하기 때문에, 어떻게 처리할지는 위의 결정을 기다려야 해.
+[name="'금위군 교관'"]일단 따라와.
+[dialog]
+[charslot]
+[PlaySound(key="$firestorm", volume=1, loop=true, channel="fire")]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=2, block=false)]
+[charslot(slot = "l", name = "avg_1040_blaze2_1#9$1", posfrom="200,0", posto="200,0", duration=0)]
+[charslot(slot = "l", afrom=1, ato=0, duration=1.5)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$3", duration=1.5)]
+[StopSound(channel="fire", fadetime=6)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[name="블레이즈"]꿈 깨!
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1615_1#8$1")]
+[name="'금위군 교관'"]……
+[dialog]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="400,50", afrom=1,ato=0, duration=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$swordtsing3", volume=1)]
+[Effect(name="$e_spark_01_large",layer=2)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.01, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[Effect(name="$e_bladeline_01_large",x =116.1, y =0,rox =-60.2, roy =145, roz =16, layer = 1)]
+[delay(time=0.4)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.01, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[Effect(name="$e_bladeline_01_large",x =120.1, y =-103.4,rox =-60.2, roy =145, roz =16,  layer = 1)]
+[delay(time=0.6)]
+[PlaySound(key="$swordtsing5", volume=0.4)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[Effect(name="$e_bladeline_01_large",x =-141.8, y =-211.64,rox =30.5, roy =105.1, roz =39, layer = 1)]
+[Effect(name="$e_spark_01_mid",x =-141.8, y =-211.64,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =-141.8, y =-211.64,rox =100, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_01_mid",x =-141.8, y =-211.64,rox =100, roy =100, roz =50, layer = 1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[delay(time=0.1)]
+[StopSound(channel="f", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_ftrub", volume=1)]
+[charslot(slot = "r", name = "avg_1040_blaze2_1#8$3", posfrom="-600,0", posto="40,-20", duration=1, isblock=true)]
+[delay(time=0.2)]
+[charslot(slot = "r", posfrom="40,-20", posto="0,0", duration=1.5, isblock=true)]
+[name="블레이즈"](윽……!)
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", focus="l")]
+[name="'금위군 교관'"]너의 실력은 만만치 않아. 그래서 너를 다치게 하지 않으면서 제압할 자신은 없어.
+[name="'금위군 교관'"]그러니까 다치고 싶지 않다면 순순히 굴복해.
+[charslot(slot = "r", name = "avg_1040_blaze2_1#9$3", focus="r")]
+[name="블레이즈"]웃기지 마!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[PlaySound(key="$d_avg_lightningmagic", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.3, channel="d",fadetime=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1612_1#4$1", duration=1.5, isblock=true)]
+[name="린 칭옌"](가쁘게 숨을 몰아쉰다)
+[charslot(slot = "m", name = "avg_npc_1612_1#1$1")]
+[name="린 칭옌"]문제가 생기면 일단 도망치라고…… 분명 말했을 텐데요……?
+[charslot(slot = "m", name = "avg_npc_1615_1#6$1")]
+[name="'금위군 교관'"]……린 칭옌.
+[dialog]
+[charslot]
+린 칭옌은 블레이즈의 눈빛을 읽었다.
+그녀는 상황을 파악했지만 침묵할 수밖에 없었다.
+그리고 몸을 돌려 블레이즈의 앞을 막아섰다.
+[dialog]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1612_1#1$1",posfrom="200,0", posto="0,0", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1615_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_1612_1#1$1", focus="n")]
+[name="'금위군 교관'"]린 소경, 너의 대리사 명성을 내가 높이 평가해서 일전에는 그냥 선의의 경고만 했지.
+[name="'금위군 교관'"]하지만 내 경고를 전혀 새겨듣지 않은 것 같군.
+[charslot(slot = "r", name = "avg_npc_1612_1#1$1", focus="r")]
+[name="린 칭옌"]제가 뭘 하고 있는지는 제가 제일 잘 압니다. 그러니까 경고는 필요 없습니다……
+[charslot(slot = "l", name = "avg_npc_1615_1#7$1", focus="l")]
+[name="'금위군 교관'"]넌 이 사람의 정체를 알고 있었을 텐데, 그런데도 죄인의 후손을 감싸려는 건가?
+[name="'금위군 교관'"]……왜지?
+[charslot(slot = "r", name = "avg_npc_1612_1#16$1", focus="r")]
+[name="린 칭옌"]진실을 위해서입니다…… 당신들 모두 외면하고 있는 그 진실 말입니다.
+[dialog]
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$3")]
+[name="블레이즈"]린 칭옌!
+[name="블레이즈"]둘이서 지금 무슨 얘기를 하는 거야…… 내가…… 죄인의 후손이라니?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$3")]
+[name="블레이즈"]아빠는…… 도대체 어떤 사람이었어? 왜 죽어야만 했던 거야……?
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1615_1#7$1", focus="n")]
+[charslot(slot = "r", name = "avg_npc_1612_1#4$1", focus="r")]
+[name="린 칭옌"]죄송합니다…… 오늘 밤이 지나면 전부 말해주려고 했습니다. 하지만 지금은 도저히 그럴 상황이 아닌 것 같군요.
+[name="린 칭옌"]여기서 무사히 빠져나간다면, 당신이 원하는 방식으로 어떻게든 사과하겠습니다.
+[charslot(slot = "l", name = "avg_npc_1615_1#8$1", focus="l")]
+[name="'금위군 교관'"]저자는 오늘 반드시 나와 함께 가야 한다.
+[charslot(slot = "r", name = "avg_npc_1612_1#16$1", focus="r")]
+[name="린 칭옌"]……제가 있는 한 그렇게는 안 됩니다.
+[charslot(slot = "l", name = "avg_npc_1615_1#8$1", focus="l")]
+[name="'금위군 교관'"]날 이기는 건 둘째 치고, 그 실력으로 나를 막으려면 적어도 셋은 필요해.
+[charslot]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$3")]
+[name="블레이즈"]린 칭옌!
+[charslot(slot = "m", name = "avg_npc_1612_1#16$1")]
+[name="린 칭옌"]……가세요!
+[dialog]
+[PlaySound(key="$d_avg_spellattack_1", volume=1)]
+[charslot(duration=1, isblock=true)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=1.5)]
+천둥이 내리쳤고, 궁 담장에 구멍이 생겼다. 뒤이어, 부드러운 에너지가 블레이즈를 강타했다.
+블레이즈는 금성 밖 먼 곳으로 떨어졌다.
+[dialog]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[PlaySound(key="$d_avg_lightningmagic", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[StopSound(channel="d", fadetime=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+블레이즈는 높은 곳에서 수도 없이 뛰어내렸다. 전장 한가운데, 그리고 자신의 도움이 필요한 곳에.
+블레이즈는 절대 두려워하지 않았다. 자신의 힘을 믿었고, 또 자신의 동료들을 믿었기에.
+블레이즈는 절대 방황하지 않았다. 자신이 누구인지 명확히 알았고, 또 자신이 지켜나가야 할 방향과 신념에 대해 확고했기 때문에.
+어떠한 음모나 계략도 블레이즈의 열정을 막을 수는 없었다. 마치 새벽의 안개가 떠오르는 태양의 빛을 가릴 수 없는 것처럼.
+……하지만 지금은?
+블레이즈를 기다리고 있던 건 견고한 땅이 아닌, 끝없는 심연이었다.
+블레이즈는 눈을 감았다.
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="sn", fadetime=2)]
+[charslot]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1614_1#6$1", duration=0.5, isblock=true)]
+[name="영술"]이런……
+[charslot(slot = "m", focus="n")]
+[name="영인"]……
+[charslot]
+영인은 가는 숨을 내쉬며 침대에 누워 있었다.
+지팡이를 쥔 노인의 손은 떨고 있었다. 하마터면 몇 번이고 넘어질 뻔했다.
+그는 긴 세월을 살아온 만큼 많은 것을 겪었기에, 그를 흔들리게 할 일은 이 세상에 더 이상 없을 것이라 생각했다.
+노인은 머뭇머뭇 입술을 달싹였지만, 결국 아무 말도 하지 않았다.
+그림자 속의 인물이 먼저 입을 열었다.
+[dialog]
+[name="???"]그 사람이 아직 살아있더군요.
+[dialog]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7, duration=1.5, isblock=true)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="영술"]자네인가……
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="???"]영 대인, 멈추십시오. 가까이 오지 마시죠.
+[name="???"]오늘 밤 영 대인께서는 저를 본 적이 없고, 아가씨 또한 집을 나간 적이 없는 겁니다.
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="영술"]영인이…… 이게 어떻게……
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="???"]아가씨는 백진연에 멋대로 침입했습니다. 그리고 제가 발견했을 때는, 이미 그 사람와 함께 있었죠.
+[name="???"]아가씨가 제가 아닌 다른 자와 마주쳤다면 결코 살아남지 못했을 겁니다.
+[charslot(slot = "m", name = "avg_npc_1614_1#6$1")]
+[name="영술"]이럴 수가……
+[name="영술"]40년이 지났는데…… 또 자네가……
+[name="영술"]40년 전 자네는 영인를 살렸고, 이번에도 영인의 목숨을 구했군.
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="영술"]운명…… 운명인 게야……
+[name="영술"]……피할 수 없는 거야, 결국 피할 수 없는 걸세.
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="???"]제가 아가씨를 살려둔 건 구해주기 위함이 아니었습니다. 그녀를 구한 건 영 대인이지요.
+[name="???"]영 대인께서 그 일을 영원히 비밀에 부치겠다고 약속하셨고, 그 대가로 이 아이를 지켜냈습니다. 이제 보니 영 대인은 약속을 어긴 셈이네요.
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="영술"]……
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", bstart=0.2, bend=0.7)]
+[name="???"]진룡께서 오늘 밤의 변고를 알게 되실 겁니다.
+[name="???"]선택은 영 대인께 달렸습니다.
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_breezetree", volume=1)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0.6, loop=true, channel="sn")]
+[Delay(time=1.5)]
+바람이 불었다. 마치 아무 일도 없었던 것처럼.
+노인은 혼란스러웠다.
+담장 밖에서 다시 시끄러운 소리가 들렸다.
+그 소리는 포효 같기도, 호소 같기도, 비난 같기도 했다.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1614_1#2$1")]
+[name="영술"]어지럽구나……
+[name="영술"]이제 가을인데…… 어디서 매미가……
+[dialog]
+[PlaySound(key="$d_avg_walkingstick_slow", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1040_blaze2_1#11$1", posfrom="0,-30", posto="0,0", duration=0.5)]
+[name="블레이즈"]앗……!
+[name="블레이즈"]여긴…… 내가 왜 여기 있지?!
+[dialog]
+[charslot]
+[StopSound(channel="m", fadetime=2)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[name="꼬마 주방장"]아, 깨어났네.
+[name="꼬마 주방장"]말했잖아, 얘는 몸이 튼튼하니까 아무 일 없을 거라고. 펄펄 날뛰는 것 좀 봐.
+[name="꼬마 주방장"]강 씨가 호들갑을 떨면서 쓸데없이 의사를 부르겠다고 난리를 치더라고. 지금이 몇 시인 줄도 모르고 말이야.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="블레이즈"]기절한 지 얼마나 된 거지…… 다른 사람들은?
+[name="블레이즈"]린 칭옌이랑…… 영인은? 난…… 왜 여기에 있는 거야?
+[charslot(slot = "m", name = "avg_2026_yu_1#7$1")]
+[name="꼬마 주방장"]제발 진정해, 한꺼번에 물어보니까 나도 어디서부터 대답해야 할지 모르겠잖아.
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[name="꼬마 주방장"]원래는 저녁에 채소를 싸게 팔길래 시장에 가려 했는데, 네가 길 한복판에 대자로 누워 있더라고. 난 네가 술에 취하기라도 한 줄 알았지.
+[name="꼬마 주방장"]그대로 두면 감기에 걸릴 수 있으니까 오는 길에 널 데려온 거야.
+[name="꼬마 주방장"]곯아떨어진 와중에 계속 욕을 하더라고. 위선자, 사기꾼, 그리고 또 어쩌고저쩌고…… 쯧쯧, 대체 그런 염국 말은 어디서 배운 거야?
+[charslot(slot = "m", name = "avg_2026_yu_1#2$1")]
+[name="꼬마 주방장"]영인이랑 린 칭옌 인지 뭔지는…… 난 못 봤고, 잘 모르겠어.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]난……
+[name="블레이즈"]난 그들을 찾으러 가야 해……
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="100,0", duration=1.5)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_2026_yu_1#8$1")]
+[name="꼬마 주방장"]이봐, 어디 가는 거야?
+[charslot(slot = "m", focus="n")]
+[name="블레이즈"]……금성.
+[charslot(slot = "m", name = "avg_2026_yu_1#8$1")]
+[name="꼬마 주방장"]보니까 밖에 순찰 중인 호위병이 널려 있던데, 갈 수 있을 거 같아?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#2$1")]
+[name="블레이즈"]상관없어, 그래도 난 가야만 해……
+[charslot(slot = "m", name = "avg_2026_yu_1#2$1")]
+[name="꼬마 주방장"]……네가 누군지도 모르면서, 누굴 찾겠다는 거야?
+[charslot(slot = "m", name = "avg_1040_blaze2_1#9$1")]
+[name="블레이즈"]너…… 방금 뭐라고 했어?
+[charslot(slot = "m", name = "avg_2026_yu_1#4$1")]
+[name="꼬마 주방장"]틀린 말도 아니잖아. 널 잃어버린 거 아냐?
+[name="꼬마 주방장"]어디서 왔는지도, 어디로 가야 하는지도 모르잖아. 그래서 남이 했던 말에 휘둘려서 자신의 이름도, 자기가 누구인지도 모르게 된 거라고.
+[charslot(slot = "m", name = "avg_2026_yu_1#3$1")]
+[name="꼬마 주방장"]틀렸네, 틀렸어……
+[name="꼬마 주방장"]귤 씨앗은 바람을 타고 강남에서 강북으로 날아가지, 그리고 어딘가에 떨어져 뿌리를 내린 뒤 꽃을 피우고 열매를 맺어. 그 씨앗을 귤로 변하게 한 건 강남도, 강북이라는 땅이 아니야. 수십 년 동안의 햇빛과 비 덕분이지.
+[name="꼬마 주방장"]같은 과일이라도 강남과 강북에서 쓰는 표현은 달라. 하지만 과일의 본질은 변하지 않아.
+[charslot(slot = "m", name = "avg_2026_yu_1#2$1")]
+[name="꼬마 주방장"]이 세상 모든 것엔 시작과 끝이 있고, 표면과 본질은 다를 수 있다…… 이 이치를 깨달아야 다음으로 넘어갈 수 있어.
+[charslot(slot = "m", name = "avg_1040_blaze2_1#10$1")]
+[name="블레이즈"]너…… 뭔가 알고 있지? 뭔가 알고 있는 거지?!
+[charslot(slot = "m", name = "avg_2026_yu_1#3$1")]
+[multiline(name="꼬마 주방장")]내가 알긴 뭘 알아? 나는 그냥 요리사일 뿐이야. 내가 아는 건 각종 양념과 요리법밖에…… 
+[charslot(slot = "m", name = "avg_2026_yu_1#1$1")]
+[multiline(name="꼬마 주방장",end=true)]아, 널 보니까 생각이 난 것이 있어.
+[name="꼬마 주방장"]너, 정통 귤홍소를 찾고 있었잖아?
+[name="꼬마 주방장"]어떻게 만드는지 알게 된 것 같아.
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

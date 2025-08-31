@@ -1,0 +1,404 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="59_g2_citystreets_n",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$ghosthunter_intro",key="$ghosthunter_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_insectfly", volume=1)]
+[delay(time=1.5)]
+딱정벌레 한 마리가 어둠이 깔린 골목을 낮게 날았다.
+딱정벌레는 힘껏 날갯짓했지만, 들어간 곳은 결국 아무도 없는 버려진 거리였다.
+순금으로 만들어진 몸체는 너무 무거웠고 날개에 박힌 보석은 비행에 도움이 되지 않았다. 딱정벌레는 겨우 짧은 거리를 날아서 돌바닥의 틈새에서 웅크린 채 쉬어야 했다……
+[Dialog]
+[PlaySound(key="$runsand", volume=1)]
+[charslot(slot = "m",name="avg_npc_246",posfrom = "100,0", posto = "0,0",duration =1)]
+[delay(time=1.2)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot = "m", posfrom="0,0", posto="-80,0", afrom=1, ato=0, duration=0.7)]
+[delay(time=0.7)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[name="'관료'"]어디 또 날아 보시지!
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[name="'관료'"]잡았다, 잡았어!
+[Dialog]
+[playsound(key="$d_avg_crowdtalk_fear", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[delay(time=1.5)]
+[name="'폭정자'"]벌레를 잡았으면 어서 가서 내 수정 좀 주워 줘! 배수구로 굴러 들어가겠어!
+[name="'관료'"]바로 갈……
+[name="'관료'"]아니 잠깐. 내가 주워준다면, 나한테도 뭔가 떨어져야 하는 거 아니야?
+[name="'폭정자'"]줄게, 준다고! 일단 주워! 수정이 배수구로 굴러 들어가잖아, 안 아까워?
+[name="'고문자'"]하하, 이리 오려무나, 클라우드비스트. 이제 내 것이야!
+[name="“감찰관”"]검에 박힌 보석은…… 다행이야, 하나도 안 떨어졌어……
+[name="'고문자'"]근데 '교관' 걔네는?
+[name="'관료'"]뭐 하러 저 녀석들을 신경 써?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+관료는 딱정벌레를 품 안에 감췄고, 폭정자는 눈물이 떨어지는 것을 하염없이 보고 있었다.
+고문자는 클라우드비스트를 거칠게 다루었고, 감찰관은 마치 생사의 권력을 쥔 것처럼 검을 들었다……
+[Dialog]
+[stopSound(fadetime=2,channel="bgs")] 
+[delay(time=1)]
+[charslot(slot = "m",name="avg_450_necras_1#13$2",duration =1)]
+[delay(time=1.5)]
+[charslot(slot = "m",name="avg_450_necras_1#13$2",focus="m")]
+[name="에블라나"]……후훗, 시끌벅적하네.
+[charslot(slot = "m",name="avg_450_necras_1#1$2",focus="m")]
+[name="에블라나"]그 보물들을 너희에게 주는 건 물론 상관없지, 나의 신하들이여.
+[name="에블라나"]너희가 그렇게까지 좋아하는데, 내가 너희를 만족시키지 못한다면 되려 내가 정이 없는 사람이 되니까.
+[name="에블라나"]하지만 그것들을 주고 나면, 너희는 또 내게서 뭘 가져가려 할까?
+[charslot(slot = "m",name="avg_450_necras_1#6$2",focus="m")]
+[name="에블라나"]어디 한 번 맞혀볼까……
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="59_i03",screenadapt="coverall",fadetime=0,block=true)]
+[Delay(time=1)]
+[ImageTween(xFrom=-240, yFrom=70, xTo=0, yTo=0, xScaleFrom=1.4, yScaleFrom=1.4, xScaleTo=1, yScaleTo=1, duration=25, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+어찌 된 영문일까, 막다른 골목에는 새로운 길이 생겼고, 눈부실 만큼 번쩍이는 많은 물건이 골목 끝까지 펼쳐져 있었다.
+사람들은 이미 자신이 갖고 있는 물건에 신경 쓸 겨를이 없었다.
+이들은 바닥에 깔린 보물들을 주웠다. 주머니에 쑤셔 넣거나, 등에 짊어진 채 허리를 펼 새도 없이 또 다른 빛나는 곳으로 달려갔다.
+아무도 이 길이 어디로 이어지는지 신경 쓰지 않았다.
+[name="관료"]
+[name="관료"]……내일 도솔레스에 갈 거야. 이렇게나 많은 물건을 처리했는데, 나를 위한 물건 정도는 사야겠어……
+[name="폭정자"]……나 시어셔 그 촌놈들을 한 번 더 쥐어짜야 하는데……
+[name="감찰관"]……내 몫도 잊지 말고……
+[name="고문자"]……사람들이 '빅토리아 스파이'를 정말 나한테 보내오면……
+[Dialog]
+[Delay(time=1)]
+[name="에블라나"]훗, 이것 봐, 너희가 탐하는 게 과연 보물뿐일까?
+[name="에블라나"]풍족한 생활, 높은 지위, 넘치는 물욕 그리고 생사를 결정할 수 있는 권력…… 모든 것을 원하고 있어.
+[name="에블라나"]난 자신의 욕망에 충실한 사람을 싫어하지 않아. 너희들이 원하는 걸 줘도 아까울 것 없지.
+[name="에블라나"]하지만 한 가지 아쉬운 점은, 너희는 나의 신하인데도 나보다 더 탐욕스러운 것 같다는 거야.
+[name="에블라나"]……잘 가, 너희가 가야 할 곳으로 가.
+보물은 막다른 길에 홀연히 반짝이는 길을 만들어 냈고, 그 길은 광기에 휩싸인 무리를 둥지 밖으로, 대지로 이끌었다……
+그들은 어둠 속으로, 무자비하게 입을 쩍 벌린 검은 숲으로 달려갔다.
+[Dialog]
+[focusout(duration=2, type="cg", from=0, to=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1.5)]
+[focusout(duration=0.1, type="cg", from=1, to=0, block=true)]
+[charslot]
+[image]
+[Background(image="bg_snowconutryinside", screenadapt="coverall", block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[Delay(time=1)]
+[name="신비한 여인"]……이 단락은, 이전에 말했던 것과 스타일이 완전히 다르네.
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]말했잖아요. 제가 관찰하던 중에, 그리고 영감을 얻던 중에, 또 글을 쓰던 중에 버렸던 문장들을 몽땅 당신에게 줄 거라고요.
+[name="작가"]만약 제가 이 이야기를 완벽하게 통일된 스타일로 완성할 수 있다면, 여기서 쉰 맥주를 마시고 있을 필요도 없었겠죠.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]굳이 결말을 지으려고 한 사람은 당신이에요, 제가 아니죠.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]맞는 말이야.
+[name="신비한 여인"]하지만, 내가 반드시 이 단락을 당신의 창작물로 간주해야 한다면, 앞에 있었던 브리지드가 검은 안개에 거절당한 일도 창작으로 볼 수 있을까?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]……적어도 당신이 이야기 속에 억지로 끼워 넣은 '추방된 왕'보다는 덜 '창작'적이겠죠.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]그럼, 앞으로 이어질 내용은, 관찰이야 아니면 창작이야?
+[charslot(slot="m",name="avg_npc_1698_1#5$1",focus="m")]
+[name="작가"]원한다면 직접 구분해 보시죠. 그나저나, 제가 계속 이야기를 이어 나가길 바라고 있는 건 맞나요?
+[Dialog]
+[charslot]
+[name="신비한 여인"]맞아, 물론이야……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g10_indoor",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=1.5, keep=true, initamount=0.7, amount=0, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="브리지드"]엠마에게 무슨 일이 생긴 거야?
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="로흐시니"]가벼운 영양실조, 그리고 감기에 걸린 것뿐이야.
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="브리지드"]검은 숲 밖에서 봤을 때, 이렇게 위중해 보이지는 않았는데.
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="로흐시니"]……아마 마음의 병일 거야.
+[name="로흐시니"]조각상에 필요한 철은 집마다 돌아다니며 모아야 했고, 주민들은 연료를 아끼려고 난방도 켜지 않았어. 음식은 더 말할 것도 없고……
+[name="로흐시니"]근데 엠마가 뭘 운반해 나갔을까?
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="브리지드"]엠마는 식량 가게 주인이야, 그렇다면……?
+[charslot(slot="l",name="avg_npc_1694_1#7$1",focus="l")]
+[name="로흐시니"]그래봤자 식량 가게 주인이잖아, 혼자서는 이런 일을 못 해. 분명 다른 누군가의 개입이 있었을 거야.
+[name="로흐시니"]테오에 관해서도 물어봐야 해. 알아서 깨어날 때까지 기다릴 시간이 없어.
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="걱정하는 주민"]윽…… 허억!
+[charslot(slot="m",name="avg_4177_brigid_1#6$1",focus="m")]
+[name="브리지드"]엠마, 깼어?
+[Dialog]
+[charslot]
+[name="걱정하는 주민"]니…… 닐스!
+[name="걱정하는 주민"]나, 나를 데려가 줘…… 데려가 줘!
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="로흐시니"]아직 자고 있네.
+[name="로흐시니"]누군가의 이름을 부른 것 같은데…… 닐스?
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="브리지드"]'닐스'…… 엠마는 이 이름이 적힌 편지를 받은 적 있어. 아마 지인이겠지.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="로흐시니"]그 '닐스'라는 사람은 지금 어디 있는데?
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="브리지드"]몰라, 다만 최근에는 엠마한테 편지를 보내지 않았어.
+[Dialog]
+[charslot]
+[name="걱정하는 주민"]닐스……
+[name="걱정하는 주민"]욕해도 좋고, 때려도 상관없어, 날 버리지만 마……
+[name="걱정하는 주민"]단지 '관료'가 식량을 운반하라고 해서 옮긴 거야…… 네가 전장에서 죽었는데, 나 혼자 살아서 무슨 의미가 있겠어? 다른 사람한테 잘해 준들, 그게 또 무슨 소용이 있을까?
+[charslot(slot="m",name="avg_npc_1694_1#7$1",focus="m")]
+[name="로흐시니"]'관료'…… 더블린이야.
+[Dialog]
+[charslot]
+[name="걱정하는 주민"]어차피 도시엔 식량이 많아. 한 수레쯤이야 빼돌려도 별일 없어……
+[name="걱정하는 주민"]그래 맞아, 어차피 도시엔 식량이 없잖아. 한 수레쯤이야 빼돌린다고 별일 없을 거야……
+[name="걱정하는 주민"]아무 일도 없을 거야……
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="브리지드"]우리…… 그냥 깨울까?
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="로흐시니"]조금 더 기다리자.
+[Dialog]
+[charslot]
+[name="걱정하는 주민"]……왜 살아남은 건 당신이 아닐까?
+[name="걱정하는 주민"]왜…… 왜 그 빌어먹을 빅토리아인…… 그 사람들의 아이가 살아남은 거지?
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="로흐시니"]빅토리아인의…… 아이?
+[Dialog]
+[charslot]
+[name="걱정하는 주민"]……어째서……
+[name="걱정하는 주민"]후우…… 하………
+[name="걱정하는 주민"]괜찮아, 자기야…… 내가 바로잡을 거야……
+[name="걱정하는 주민"]기다려, 닐스…… 기다려, 자기야!!
+[name="걱정하는 주민"]흑……
+[name="걱정하는 주민"]……흑 ……흐흑!
+[Dialog]
+[delay(time=1)]
+[name="걱정하는 주민"]당신이 안 보여, 자기야! 당신이 보이지 않아……
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="걱정하는 주민"]왜?! 도대체 왜!
+[name="걱정하는 주민"]당신을 죽인 빅토리아인, 그들은 이미 쫓겨 나갔어!
+[name="걱정하는 주민"]그리고 마지막 빅토리아 자식도 내 눈앞에서…… 죽었어……
+[name="걱정하는 주민"]닐스……
+[Dialog]
+[charslot]
+엠마의 뜨거운 이마에는 땀방울이 가득 맺혔고, 계속되는 악몽 때문인지 무의식적으로 침대 시트를 움켜쥐면서 온몸을 계속 떨었다.
+그리고 방에 있던 두 사람은 동시에 일어섰다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g2_citystreets_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="브리지드"]야간 통행금지가 시작된 지 꽤 지났어. 마음대로 움직여도 괜찮을까?
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="로흐시니"]날 따라와. 만약 검은 안개가 정말 우리 중 하나를 삼키려고 한다면, 어디 한 번 해보라지.
+[charslot(slot="r",name="avg_4177_brigid_1#8$1",focus="r")]
+[name="브리지드"]잠깐, 요새에서 누군가 걸어오고 있어!
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="로흐시니"]누구지?
+[charslot(slot="r",name="avg_4177_brigid_1#8$1",focus="r")]
+[name="브리지드"]더블린 사람인 것 같은데……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_723_1#6$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1694_1#6$1",focus="m")]
+[name="로흐시니"]'교관'!
+[charslot(slot="m",name="avg_npc_723_1#6$1",focus="m")]
+[name="교관"]……
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="브리지드"]왜 저러지? 넋이 나간 것 같은데……
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="브리지드"]'교관'!!
+[charslot(slot="m",name="avg_npc_723_1#4$1",focus="m")]
+[name="교관"]누구냐?!
+[name="교관"]로흐시니 씨?
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="교관"]로흐시니 씨, 지금, 당장……
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="로흐시니"]지금 무슨 일이 일어난 거야, '교관'?
+[charslot(slot="m",name="avg_npc_723_1#6$1",focus="m")]
+[name="교관"]아닙니다.
+[name="교관"]오늘 밤엔 아무 일도 일어나지 않았습니다.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="교관"]……
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="로흐시니"]'교관', 도시에서 일어난 식량 부족에 대한 단서를 잡았어.
+[name="로흐시니"]식량 가게 사장인 엠마가 '관료'의 명령을 받고 줄곧 식량을 몰래 나 시어셔 밖으로 빼돌리고 있었어. 서두르면 식량을 되찾을 수 있어.
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="교관"]네? '관료'가요? 진작 눈치챘어야 했는데……
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="교관"]하지만 너무 늦었습니다. 이미 너무 늦었어요.
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="로흐시니"]너무 늦었다니? 설마 식량의 행방에 대해 알고 있었던 거야?
+[charslot(slot="m",name="avg_npc_723_1#6$1",focus="m")]
+[multiline(name="교관")]식량이 아니라…… 
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[multiline(name="교관")]저, 그리고 우리를 말하는 겁니다.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="교관"]로흐시니 씨, 소식은 감사합니다만……
+[charslot(slot="m",name="avg_npc_1694_1#7$1",focus="m")]
+[name="로흐시니"]'교관', 대체 무슨 일이야? 말해!
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="교관"]아닙니다. 오늘 밤에는 아무 일도 일어나지 않았습니다.
+[charslot(slot="m",name="avg_npc_1694_1#7$1",focus="m")]
+[name="로흐시니"]……도대체 무슨 일이 있었길래, 너와 같은 이상을 위해 수많은 사람의 목숨을 앗아가는 것도 개의치 않아 했던 전사가…… 이렇게 되어버린 거야?
+[name="로흐시니"]너, 그리고 더블린이 그렇게 많은 사람들의 시체를 짓밟고 이 나라를 세운 게, 자신의 동포들을 도시에 가두고 굶겨 죽이기 위함이었어?
+[charslot(slot="m",name="avg_npc_723_1#6$1",focus="m")]
+[name="교관"]……
+[name="교관"]아니요, 로흐시니 씨. 절대 아닙니다.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="교관"]소식 감사합니다. 이…… 이 문제는 제가 해결하겠습니다.
+[name="교관"]다만, 앞으로 '더블린'이란 단어는 입에 올리지 말아 주십시오.
+[name="교관"]그리고 이미 이렇게 약속한 이상, 오늘 밤에는 무슨 일이 있어도 다시 거리로 나오지 마십시오. 게다가 무관한 사람을 데리고 야간 통행금지를 어기는 일은 더더욱 안 됩니다.
+[name="교관"]당신들을 위해서 하는 말입니다.
+[Dialog]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="o")]
+[StopSound(channel="o", fadetime=2.5)]
+[charslot(duration=1)]
+[delay(time=1)]
+로흐시니는 말을 이어가려 했으나, 교관은 대답하려 하지 않았다.
+교관은 뒤돌아서 무거운 발걸음을 이끌고 도시 밖으로 향했다.
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="브리지드"]교관이 말한 대로 어디에 숨어야 하나?
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="로흐시니"]……아니, 테오에 대한 일을 곧바로 네모스에게 알려야겠어. 어디에 사는지 알아?
+[charslot(slot="r",name="avg_4177_brigid_1#10$1",focus="r")]
+[name="브리지드"]여기서 좀 멀어. 거의 나 시어셔의 반대편 끝에 있어.
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="로흐시니"]가보자.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g2_citystreets_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_4177_brigid_1#10$1",focus="r")]
+[name="브리지드"]바로 저 앞이 네모스 집이야.
+[name="브리지드"]아주 순조로워, 아무래도 오늘 저녁엔 도시에 안개가 스며들지 않은 것 같아……
+[Dialog]
+[charslot]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="브리지드"]네모스, 집에 있어?
+[Dialog]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="브리지드"]네모스?
+[name="브리지드"]아, 그러고 보니 네모스는 저녁에 더블린의 연회에 참석한다고 했는데? 설마 아직 안 왔나?
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="로흐시니"]방금 '교관'이 요새 밖으로 간 걸 보면, 연회는 이미 끝났을 텐데……
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1692_1#6$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="네모스"]로흐시니 씨…… 브리지드 씨?
+[Dialog]
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[Delay(time=1)]
+[charslot]
+로흐시니가 말하려는 순간, 네모스의 두 눈과 마주쳤다.
+네모스의 눈빛은 방금 마주친 교관보다도 더 생기가 없었다.
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="로흐시니"]네모스, 대체 어떻게 된 거야. 행사에서 무슨 일 있었어?
+[charslot(slot="m",name="avg_npc_1692_1#8$1",focus="m")]
+[name="네모스"]아니요, 오늘 밤에는 아무 일도 일어나지 않았습니다.
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="네모스"]……
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="네모스"]잠깐, 당신들이 왜 여기에 있죠?
+[name="네모스"]어서, 빨리 집으로 들어가세요! 오늘 밤 절대로 거리를 돌아다녀선 안 돼요!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g8_blackforest_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[bgeffect(name="$eb_blacksmoke_01",fade = true, fadetime =0.5,layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+네모스가 정신없이 로흐시니와 브리지드를 집으로 끌고 들어왔을 때, 교관은 이미 나 시어셔를 빠져나간 뒤였다.
+교관은 숲으로, 어둠 속으로 걸어가 검은 안개의 가장 깊은 곳까지 들어갔다.
+[Dialog]
+[bgeffect(name="$eb_blacksmoke_02",fade = true, fadetime =3,layer=2)]
+[bgeffect(layer = 1, fadetime =2.5)]
+[Background(image="59_g9_blackforest_inside",screenadapt="coverall",fadetime=2.5,block=true)]
+[PlaySound(key="$d_avg_carriage_loop", volume=1, loop=true, channel="ca")]
+[StopSound(channel="ca", fadetime=5)]
+[delay(time=2)]
+잠시 후, 앞서 나 시어셔에서 반출되었던 식량이 검은 숲에서 모습을 드러냈다.
+식량은 날이 밝기 전에 나 시어셔의 농지로 돌아갈 것이다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="59_g1_citystreets_d",screenadapt="coverall", block=true)]
+[delay(time=2)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+날이 밝은 뒤, 식량 문제는 어느 정도 해소되었지만, 교관은 검은 숲에서 돌아오지 못했다. 그러나 그 누구도 이를 신경 쓰지 않았다.
+식량은 농지에 기적처럼 나타났고, 각 거리의 식량 가게로 옮겨졌지만, 식량 부족 문제를 제대로 해결하기에는 턱없이 부족했다.
+그날 밤 이후 돌아오지 못한 사람은, 결코 교관 한 명만이 아니었다. 이 사실을 도시 사람들은 모르고 있었다.
+어쨌든 태양은 야속하게도 다시 떴다.
+붉은 용과 무리를 떠난 영혼수호자는 거리로 나와 이젠 일상이 되어버린 싸움과 더 격해지고 있는 비난을 보며 충격을 느꼈다.
+[Dialog]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+그리고 유목민은 대장장이에게 불행한 소식을 전하기 위해 그의 집 문을 두드렸다.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

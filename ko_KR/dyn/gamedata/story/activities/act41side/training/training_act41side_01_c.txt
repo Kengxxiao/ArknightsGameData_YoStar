@@ -1,0 +1,19 @@
+[header(is_skippable=false, is_tutorial=true)]
+[battle.pause(pause=true)]
+[inputblocker(blockInput=true)]
+[popupdialog(dialogHead="$avatar_lava", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]조심해!
+[tutorial(focusWidth=150, focusHeight=150, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_lava", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", tileY=4, tileX=1)]이쪽에도 적이 있어, 내게 맡겨.
+[battle.pause(pause=false)]
+[battle.delay(time=5)]
+[battle.pause(pause=true)]
+[inputblocker(blockInput=true, black=0.3)]
+[popupdialog(dialogHead="$avatar_lava", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", protectTime=0.5)]이런! 시야가 가려져서 적을 못 찾겠어, <@tu.kw>공격도 못 하겠어</>.
+[battle.lockfunction(mask="SYSTEM_MENU_INTERACT")]
+[inputblocker(blockInput=true, validWidth=40, validHeight=40, black=0, tileX=3, tileY=4)]
+[tutorial(focusWidth=100, focusHeight=100, animStyle="Click", focusStyle="HighlightCircle", protectTime=0.5, dialogHead="$avatar_lava", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", waitForSignal="char_info", tileY=4, tileX=3, charId="char_121_lava")]어디 보자……
+[inputblocker(blockInput=false)]
+[tutorial(focusX=-133, focusY=23, focusWidth=126, focusHeight=275, animStyle="Highlight", focusStyle="HighlightRect", black="0.5", protectTime=0.5, dialogHead="$avatar_lava", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", waitForSignal="any")]쳇, 여기에 위치한 적은 공격할 수 없어.
+[inputblocker(blockInput=true)]
+[tutorial(focusX=-79, focusY=21, focusWidth=506, focusHeight=469, animStyle="Highlight", focusStyle="HighlightRect", black="0.5", protectTime=0.5, dialogHead="$avatar_lava", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]아무래도 이 라인은 모든 <@tu.kw>아군 유닛</>의 공격 범위를 보여주는 것 같아. 이 정보는 꽤 쓸모가 있겠는데.
+[battle.unlockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=false)]

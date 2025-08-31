@@ -1,0 +1,9 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess特殊招募
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="recruit_char",bindKey="recruit_char", hint="우선 튜토리얼을 완료해 주세요.")]
+[Tutorial(focusX=-375, focusY=20, focusWidth=400, focusHeight=480,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 승진 모집 허가증을 사용하면 현재 보급선보다 한 단계 더 높은 티어의 오퍼레이터가 3명이 갱신되며, 그 중 1명을 무료로 구매할 수 있어요.
+[InputBlocker(blockInput=true, battleTarget="tile_first_shop_char_chess", validWidth=70, validHeight=70)]
+[Tutorial(battleTarget="tile_first_shop_char_chess", focusWidth=85, focusHeight=90,           waitForSignal="act1vautochess_shop_item_selected",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 탭하여 오퍼레이터를 확인해주세요.
+[Delay(time=0.2)]
+[Tutorial(target="btn_act1vautochess_shop_char_menu_buy",           waitForSignal="act1vautochess_battle_item_bought",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 탭하여 오퍼레이터를 무료로 구매해 보세요.

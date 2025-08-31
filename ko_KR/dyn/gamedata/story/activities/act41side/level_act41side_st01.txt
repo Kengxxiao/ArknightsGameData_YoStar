@@ -1,0 +1,579 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[stopsound(channel="read1")]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_weaamonologue_1", channel="read1", loop=false)]
+[Subtitle(text="<i>적에게 빼앗긴 왕국을 되찾기 위해, 탐욕스러운 붉은 용은 숲속에 웅거하고 있는 검은 안개를 찾아 자신을 돕게 했다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>붉은 용은 죽음의 불꽃을 뿜어냈고, 검은 안개는 불길 속으로 적을 내몰았다. 그들은 힘을 합쳐 왕국을 되찾았고 가시덤불로 무성했던 들판은 생기를 되찾았다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>하지만 죽음의 불꽃이 들판에 번지자 들판, 그리고 들판에 있던 주민들은 점점 쇠약해졌다. 새 생명은 연달아 요절했고, 죽은 자 역시 편히 잠들 수 없었다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>붉은 용은 죽음이 통제되지 않고 다시 창궐하는 것을 두고 볼 수 없었다. 그녀는 생명은 생명으로, 죽음은 죽음으로 돌려놓으려 했고, 이를 위해 사윈이 시작되기 전, 죽음의 불꽃에 물든 이들을 자신의 둥지로 불러 모았다.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[SoundVolume(volume=0, fadetime=2,channel="read1")]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1.5)]
+[stopsound(channel="read1", fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="작가"]……이게 바로 붉은 용에 관한 이야기예요.
+[name="???"]그래서? 죽음의 불꽃에 물든 사람들은 어떻게 됐어?
+[name="작가"]다음은 없어요, 책에 쓰여있는 건 여기까지니까요.
+[name="???"]말도 안 돼.
+[name="작가"]모든 것에는 끝이 있는 법이에요. 그게 말이 되든, 말이 되지 않든 말이죠, 아가씨.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_snowconutryinside",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="신비한 여인"]그렇다고 해서 그게 책을 낸 다음에 자취를 감춰버린 이유가 되진 않아. 게다가 이런 허름한 술집에 있다니, 너무 말이 안 되잖아.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1698_1#6$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]말이 안 되는 일이 얼마나 많은데요.
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="n")]
+[name="신비한 여인"]꼭 그렇게 감질나게 굴어야겠어? 결말을 궁금해하는 독자를 냉정하게 지켜보면서 심리적 만족감이라도 느끼는 거야?
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]실제로 얼마 전, 과한 책임감을 가진 몇몇 전달자들이 이곳에 찾아와 독자들의 편지를 전해줬어요.
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="n")]
+[name="신비한 여인"]진짜 즐기고 있었구나.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]즐긴다니요? 전 그 편지를 보지도 않고 곧바로 난로에 던져 버렸어요.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]너무하네.
+[name="신비한 여인"]뿐만 아니라, 네가 낸 단편집에는 결말 있는 이야기가 하나도 없어. 정말 너무하다고 생각하지 않아?
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]이유는 간단해요. 뭘 써야 할지 모르기 때문이죠. 그래서 결말을 쓰지 못했어요.
+[name="작가"]저기, 이제 돌아가 주시죠. 보아하니 잘 교육받으면서 자란 것처럼 보이는데, 이런 누추한 술집은 당신에게 어울리지 않아요. 겨우 결말 없는 이야기 몇 개 때문에 이렇게 마음 쓸 필요는 없지 않을까요?
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="신비한 여인"]왜 날 못 쫓아내서 안달이야? 어쩌면 내가 너를 도울 수도 있는 거잖아.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[delay(time=1.2)]
+[charslot]
+작가는 눈앞의 여인을 다시 살펴봤다. 후드로 가렸지만, 그녀의 얼굴은 창백했다. 분명 허약한 여자일 것이다.
+그리고 이 사람은 이 황량한 마을에 도착하자마자 이 술집으로 달려왔다. 분명 오기 전에 많은 조사를 했을 것이고, 금방 돌아가진 않을 것이다.
+작가는 이런 생각을 하며, 카드와 칩이 널브러져 있는 테이블 위에 놓인 끈적끈적한 잔을 들고 퀴퀴한 냄새가 나는 맥주를 단숨에 들이켰다.
+[Dialog]
+[PlaySound(key="$d_avg_drinkswllw",volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]좋아요, 그럼 당신은 이 이야기의 결말을 어떻게 짓고 싶나요?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]왜 나보고 결말을 지으라는 거야?
+[name="신비한 여인"]어쨌든 작가는 너잖아. 나는 그저 약간의 영감을 불러일으킬 수 있는 소재를 주고 싶을 뿐이야.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]소재?
+[name="작가"]작년 가을, 당신도 그 도시에서 죽을뻔했나요?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]그 순간을 겪었던 사람이라면, 네 이야기가 그때를 배경으로 한다는 것쯤이야 누구나 알 수 있어.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]……
+[name="작가"]한번 말해보세요. 당신의 소재를 들어 보죠.
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[stopmusic(fadetime=3)]
+[focusout(duration=2.5, type="bg", from=0, to=1, block=false)]
+[delay(time=1)]
+[name="신비한 여인"]일찍이 재앙으로 파괴된, 타라의 왕성이 있던 옛터의 가장 깊은 곳……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="59_g14_galekingruins_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$ghosthunter_intro", key="$ghosthunter_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+일찍이 재앙으로 파괴된, 타라의 왕성이 있던 옛터의 가장 깊은 곳, 금속 용광로에서 타오르던 불꽃은 짧고 평온했던 어느 날 누군가에 의해 꺼졌다.
+본래라면 그다지 다급하지 않았던 일이었겠지만, 그래도 붉은 용은 이곳에 왔다.
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=1.5, keep=true, initamount=0.7, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[charslot(slot="m",name="avg_450_necras_1#15$1",duration=1)]
+[delay(time=1.5)]
+[PlaySound(key="$e_skill_ignite_cast", volume=0.6)]
+[PlaySound(key="$b_char_fireharm", volume=0.8,delay=0.3)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.2, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]불타는 것에 저항하고 있는 건가?
+[name="붉은 용"]아니면, 설령 수백 년이 지난 뒤에 나타난 불길한 이종족이라 해도, 시간 속에서 부식된 갈망과 원한을 다시 불태울 수는 없는 건가?
+[charslot(slot="m",name="avg_450_necras_1#13$1",focus="m")]
+[name="붉은 용"]아니면, 내가 지나치게 신중했나?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_deathfire", volume=1)]
+[bgeffect(name="$eb_eblana_attack",layer = 1)]
+[delay(time=0.7)]
+[PlaySound(key="$d_avg_churchfire", volume=0.3, loop=true, channel="bse")]
+[delay(time=1.5)]
+보랏빛 불꽃이 용광로 밖으로 타올랐다.
+일렁이는 불꽃 속, 붉은 용의 얼굴색은 아까보다 더 창백해져 있었다.
+[Dialog]
+[stopsound(channel="bse", fadetime=2)]
+[bgeffect(layer = 1, fadetime = 1.5)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1690_1#5$2",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1690_1#5$2",focus="m")]
+[name="???"]……
+[charslot(slot="m",name="avg_450_necras_1#13$1",focus="m")]
+[name="붉은 용"]일어났어?
+[name="붉은 용"]흐음, 네가 누군지 알려 주어야 하나……
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]왕관을 버리고 20년 동안 황야를 떠돌았지만, 돌아온 뒤 혈육에게 죽임을 당한 불쌍한 붉은 용, 라브리타흐. '추방된 왕'이라 해야겠지?
+[charslot(slot="m",name="avg_npc_1690_1#7$2",focus="m")]
+[name="'추방된 왕'"]……
+[charslot(slot="m",name="avg_450_necras_1#1$1",focus="m")]
+[name="붉은 용"]불쌍하네, 600년이 지났는데도 갑작스러운 죽음에 충격을 받다니.
+[charslot(slot="m",name="avg_npc_1690_1#9$2",focus="m")]
+[name="'추방된 왕'"]600년?
+[charslot(slot="m",name="avg_450_necras_1#1$1",focus="m")]
+[name="붉은 용"]어림짐작일 뿐이야. 네가 정확히 몇 년도에 죽었는지는 아무도 몰라.
+[charslot(slot="m",name="avg_npc_1690_1#2$2",focus="m")]
+[name="'추방된 왕'"]놀라긴 했지만, 내가 놀란 이유는 나의 죽음 때문이 아니다. 600년이 지났다는 것과, 드라코에서 또 다른 죽음의 불꽃을 내뿜는 이종이 나타난 것에 놀랐다.
+[name="'추방된 왕'"]심지어 그들은 네가 클 때까지 기다려줬군, 젖먹이 시절에 죽이지 않았던 건가.
+[charslot(slot="m",name="avg_npc_1690_1#13$2",focus="m")]
+[name="'추방된 왕'"]빅토리아인들이 너를 시켜 날 죽음에서 깨우라고 했나? 아니면, 네 침대 밑에 빅토리아인의 바보 같은 왕관이 숨겨져 있기라도 하나?
+[charslot(slot="m",name="avg_450_necras_1#1$1",focus="m")]
+[name="붉은 용"]빅토리아는 더 이상 붉은 용이 다스리는 나라가 아니야. 게다가 지금의 타라는 그 어떤 외부인의 명령도 따르지 않아.
+[charslot(slot="m",name="avg_npc_1690_1#4$2",focus="m")]
+[name="'추방된 왕'"]하하, 나쁘지 않군.
+[name="'추방된 왕'"]죽은 자에게 희소식을 전하는 것이 유행인가? 아쉽지만 너에게 줄 보상은 없다. 그러니 이만 가보도록.
+[charslot(slot="m",name="avg_450_necras_1#1$1",focus="m")]
+[name="붉은 용"]라브리타흐, 지금 네 몸에서 타오르고 있는 건 나의 불꽃이야. 같지도 않은 말로는 이 상황은 진정시킬 수 없어.
+[charslot(slot="m",name="avg_npc_1690_1#3$2",focus="m")]
+[name="'추방된 왕'"]상황을 진정시킨다고? 나의 일은 이미 끝났다. 마무리되지 않은 일이 있다면, 그건 네가 해야 할 일이 아닌가?
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]……
+[charslot(slot="m",name="avg_npc_1690_1#3$2",focus="m")]
+[name="'추방된 왕'"]그래, 알고 있다. 어차피 죽음의 불꽃이 초래한 성가신 일은 모두 비슷하니까 말이야. 삶과 죽음이 뒤섞여, 늙은 짐승은 죽었음에도 쓰러지지 않고, 새로 태어난 어린 짐승은 요절해 버리니.
+[name="'추방된 왕'"]말해봐라, 얼마나 크게 일을 벌였지? 목장 하나만큼? 아니면 도시 하나? 그것도 아니면 들판 전체?
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]타라 전역에 불을 질렀어. 타라가 빅토리아의 폭정으로부터 자유를 얻게 하기 위해서.
+[charslot(slot="m",name="avg_npc_1690_1#7$2",focus="m")]
+[name="'추방된 왕'"]뭐라고?!
+[charslot(slot="m",name="avg_450_necras_1#6$1",focus="m")]
+[name="붉은 용"]처음에는 이렇게 불을 질러서, 타라를 죽은 자의 나라로 만들자고 생각했어. 어쨌든 죽음의 불꽃은 새로운 장작을 찾게 될 테니까.
+[name="붉은 용"]하지만 아무런 방법이 없다는 이유만으로 많은 생명을 사라지게 만드는 건 너무 경솔한 생각인 것 같았어.
+[charslot(slot="m",name="avg_450_necras_1#8$1",focus="m")]
+[name="붉은 용"]그래서 물어보는 거야. 타라의 들판에서 죽음의 불꽃을 완전히 잡으려면, 무엇을 해야 할까?
+[charslot(slot="m",name="avg_npc_1690_1#9$2",focus="m")]
+[name="'추방된 왕'"]……네가 하는 말이 단순한 허세였으면 좋겠군.
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]맘대로 생각해.
+[charslot(slot="m",name="avg_npc_1690_1#10$2",focus="m")]
+[name="'추방된 왕'"]잘 들어라, 지금부터 내가 하는 조언은 너를 위한 게 아닌 여전히 '타라'라는 이름을 갖고 싶어 하는 사람들을 위한 것이다.
+[name="'추방된 왕'"]이미 네 불에 물들어 죽음으로 향한 자들은 이제 생명으로부터 버림받게 될 것이다. 그리고 돌아가지도 못하겠지.
+[name="'추방된 왕'"]물론 네 뒤에 있는 좀비들도 포함해서다. 살아있어 봤자 시체가 걸어 다니는 꼴이지, 어찌할 도리는 없어.
+[name="'추방된 왕'"]서둘러 한곳으로 모아라, 다른 사람에게 불이 옮겨붙지 않도록.
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]관용, 이게 네가 내놓을 수 있는 조언인가?
+[charslot(slot="m",name="avg_npc_1690_1#4$2",focus="m")]
+[name="'추방된 왕'"]그럴 리가.
+[charslot(slot="m",name="avg_npc_1690_1#1$2",focus="m")]
+[name="'추방된 왕'"]그런 다음, 또 다른 붉은 용을 찾아라. 네가 아직 죽이지 않은 피붙이가 있다면 말이지.
+[name="'추방된 왕'"]불길로 생명을 따뜻하게 할 수 있는 진정한 붉은 용을 찾은 다음, 먼지, 흙, 생명 그리고 죽음을 모두 제자리로 되돌리는 거다.
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]이게 네가 아는 전부야?
+[charslot(slot="m",name="avg_npc_1690_1#4$2",focus="m")]
+[name="'추방된 왕'"]그렇다. 무지하고 어린 용이여.
+[charslot(slot="m",name="avg_450_necras_1#1$1",focus="m")]
+[name="붉은 용"]그러니까, 네가 아는 것과 내가 아는 게 큰 차이는 없다는 거네.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g4_swamp_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+붉은 용은 코웃음조차 치지 않은 채 몸을 돌려 자리를 떠났다.
+[Dialog]
+[charslot(slot="m",name="avg_450_necras_1#15$1",duration=0.7)]
+[delay(time=1.5)]
+[charslot]
+그녀는 허름한 집 한 채를 지나쳤다. 안에서는 은은한 주황색 촛불의 빛이 새어 나오고 있었다.
+이곳은 죽은 자가 배회하는 광야, 인가가 있어선 안 되는 곳이었다. 그렇기에 붉은 용은 무너져가는 집의 문을 두드렸다.
+[Dialog]
+[PlaySound(key="$doorknockquite")]
+[Delay(time=1)]
+[PlaySound(key="$dooropenquite")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1254_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]누구시죠?
+[charslot(slot="m",name="avg_450_necras_1#13$1",focus="m")]
+[name="붉은 용"]내가 누군지는 중요하지 않아. 중요한 건 네가 왜 이곳에 살고 있는지야.
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]제가 예전에 여기 있었던 이유는, 빅토리아인들이 여기까지 찾아오지도 않고, 제가 수확한 작물도 뺏어 가지 못했기 때문입니다……
+[name="노쇠한 노인"]5년 전, 딱 오늘 같은 밤이었습죠. 어떤 사악한 캐스터가 이곳을 지나치며 끝까지 쫓아온 빅토리아인을 죽였죠.
+[name="노쇠한 노인"]전 캐스터에게 고기, 곡식 그리고 새로 담근 탁주를 바쳤지만, 그 캐스터는 자신에게 필요한 것은 이런 것이 아니라 불이라고 했습니다. 자신을 불태울 수 있는 불꽃, 장작이 되기를 마다하지 않는 불꽃이 필요하다고 했죠.
+[name="노쇠한 노인"]그리고, 저의 외아들 '키스'는 그를 따라 집을 떠났죠.
+[charslot(slot="m",name="avg_450_necras_1#1$1",focus="m")]
+[name="붉은 용"]아주 고상한 영혼이군.
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]3년이 지난 후, 그날도 저녁이었죠. 또 문을 두드리는 사람이 있었습니다. 바로 키스였죠.
+[name="노쇠한 노인"]말을 하지도, 눈물을 흘리지도, 숨을 쉴 수도 없었습니다. 제 앞에 있던 건 몸에서 보랏빛 불꽃이 피어오르고 있던 키스였습니다.
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]유감이군.
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]그러나 불행은 이것으로 끝이 아니었습니다. 저는 키스를 땅에 묻었지만, 그 아이는 땅속에서 썩길 원치 않았죠. 키스는 자신의 죽은 몸을 이끌고 끝없이 황야를 떠돌았습니다.
+[name="노쇠한 노인"]이게 바로 제가 이곳에 계속 살고 있는 이유입니다.
+[name="노쇠한 노인"]당신은 그 캐스터와 같은 길을 걷는 분입니까? 혹시 키스에게 평안을 주기 위해 오셨습니까?
+[charslot(slot="m",name="avg_450_necras_1#13$1",focus="m")]
+[name="붉은 용"]맞아……
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]아, 본인이 찾아왔네.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwlstps", volume=1,loop="false", channel="dw")]
+[stopsound(fadetime=4, channel="dw")]
+[delay(time=2)]
+누가 봐도 선명하게 보랏빛 불꽃을 내뿜는 한 좀비가 비틀거리며 두 사람을 향해 다가오고 있었다.
+[Dialog]
+[PlaySound(key="$d_avg_kneelsnow_s", volume=0.8)]
+[delay(time=1)]
+[PlaySound(key="$b_char_fireharm", volume=0.8)]
+[Blocker(a=0, r=75, g=0, b=130, fadetime=0, block=true)]
+[Blocker(a=0.3, r=75, g=0, b=130, fadetime=0.05, block=true)]
+[Blocker(a=0, r=75, g=0, b=130, fadetime=0.3, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+붉은 용은 좀비의 가슴을 창끝으로 눌렀다. 좀비의 온몸이 활활 타올랐고, 눈 깜짝할 사이에 타버린 후 재로 변했다.
+노인은 순간 어안이 벙벙해졌다. 마치 불타버린 게 아니라 창끝을 타고 붉은 용의 몸으로 흘러 들어간 것 같아 보였기 때문이다.
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="붉은 용"]너는 어떻지? 너 역시 보랏빛 죽음의 불꽃에 물들어있지 않나?
+[Dialog]
+[charslot]
+노인은 자신의 몸을 살펴봤지만, 아들의 몸에 있던 맹렬한 불길은 보지 못했다. 하지만 붉은 용의 눈에는 그의 몸에서 치솟는 불길이 죽은 자들보다 더 활활 타오르는 것이 보였다.
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]……만약 당신이 말하려는 게 슬픔, 분노, 증오라면, 당신의 말이 맞습니다. 마녀.
+[name="노쇠한 노인"]빅토리아인들은 금화를 징수하지만, 당신들은 피를 징수하는 겁니까? 당신들은 제게서 모든 것을 빼앗아 가는군요.
+[name="노쇠한 노인"]이 몸은 이미 빈 껍데기입니다. 저를 지탱해 주는 건 당신이 말한 그 불뿐이죠.
+[charslot(slot="m",name="avg_450_necras_1#14$1",focus="m")]
+[name="붉은 용"]그래서 난 이제 그 불을 회수하려고 해. 네 생각은 어때?
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]언젠간 이런 날이 찾아올 줄 알고 있었습니다.
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+노인은 두 눈을 감고 붉은 용의 창끝으로 향했다.
+[Dialog]
+[PlaySound(key="$d_avg_firecut", volume=0.7)]
+[CameraShake(duration=1.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+노인은 여태껏 자신을 지탱해 온 슬픔과 분노의 불꽃이 붉은 용의 손을 통해 빠져나가는 것, 그리고 자신의 혼탁한 의식 역시 육신에서 떨어져 나가고 있는 것을 느꼈다.
+그는 죽음이 가까워졌음을 직감했다. 하지만 그의 삶은 이미 멈춰있었기에 죽음이 두렵진 않았다.
+[Dialog]
+[PlaySound(key="$firemag_n",volume=0.6)]
+[delay(time=1)]
+하지만 그 순간, 불꽃이 멈췄다.
+[charslot(slot="m",name="avg_npc_1254_1#1$1",focus="m")]
+[name="노쇠한 노인"]왜죠? 왜 저를 죽이지 않는 겁니까?
+[charslot(slot="m",name="avg_450_necras_1#13$1",focus="m")]
+[name="붉은 용"]죽지 않아도 되기 때문이야.
+[name="붉은 용"]어떤 망령이 내게 말했어, 생명은 죽음의 불꽃에 물들어버린 자를 더 이상 돌보지 않는다고. 지금 보니 그 말이 맞는 것 같네.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snowconutryinside",screenadapt="coverall", block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=false)]
+[delay(time=1)]
+[name="신비한 여인"]“지금 보니 그 말이 맞는 것 같네”. 붉은 용은 차가운 목소리로 답했다.
+[name="신비한 여인"]결말은 이렇게 하는 게 어때? 난 그 노인의 입에서 이런 이야기를 들었어, 그리고 거기에 약간의 상상력을 추가했지. 아마 네 이야기에 넣어도 어색하지 않을 것 같은데.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]이야기에 전설 속 추방된 왕의 망령과 관련된 소재를 넣는다는 건가요……?
+[name="작가"]그렇게 해도 되겠네요, 근데 정말 제 이야기에 결말이 필요하다고 생각하나요?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]네가 보는 것과 내가 보는 건 달라. 난 네 관점에서 보고 싶고, 듣고 싶어.
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="작가"]설마 당신도 '진실 맞추기' 같은 걸 좋아하는 그런 부류인가요?
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="신비한 여인"]아니, 난 한 번도 그런 생각한 적 없어.
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="작가"]훗, 적어도 우리 둘 다 그곳에서 살아나온 것으로 봐선, 저의 관찰과 영감, 그리고 집필 과정에서 버렸던 내용을 몽땅 당신에게 줘도 될 것 같네요.
+[name="작가"]하지만 그 이야기들의 결말이 어떻게 될지는 저도 장담할 수 없어요.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="작가"]마침 방금 붉은 용에 대해서 얘기했으니까…… 저도 거기서 시작해 보는 건 어떨까요?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_drinkswllw")]
+[PlaySound(key="$d_avg_drinkswllw",loop=false,channel="1",delay=1.2)]
+[delay(time=2)]
+작가는 또다시 맥주 반 잔을 마셨고, 약간은 도발적인 눈빛으로 눈앞의 여성을 본 후 이야기를 시작했다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=false)]
+[delay(time=1)]
+만약 당신이 붉은 용이 나 시어셔라 부르는 둥지에 가본 적이 있다면, 설령 며칠이라는 짧은 시간이라 할지라도, 당신은 그 검은 숲을 절대 잊지 못할 것이다.
+그곳은 어둡고 습한 데다, 검은 안개로 자욱한 곳이다. 그곳엔 인간을 농락하려는 페이로 가득하기까지 하다. 마치 캄캄한 미궁처럼.
+검은 숲이 허락하지 않은 한, 그곳에 발을 들인 자는 그 누구도 빠져나올 수 없었다고 한다.
+하지만 검은 숲이 통행을 허락하고 기꺼이 문을 열어준다면, 설령 인간을 농락하려는 페이가 잘못된 길을 알려주면서 당신의 우둔함을 비웃는다 할지라도, 결국엔 당신을 놓아줄 것이다. 그리고……
+[Dialog]
+[delay(time=2)]
+[Image(image="59_i01", xScale=1.1, yScale=1.1,fadetime=0,y=-30)]
+[background]
+[ImageTween(yFrom=-30, yTo=0, xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=0.85, yScaleTo=0.85, duration=35, block=false)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+그 순간은 마치 이 세상에 존재해서는 안 될 아름다운 한 폭의 그림 같을 것이다.
+그러나 붉은 용은 자신과 함께 온 사람들을 데리고 망설임 없이 둥지의 경계로 들어갔다. 아름다운 광경은 뒤로한 채.
+[Dialog]
+[delay(time=1)]
+[name="붉은 용"]나 시어셔. 타라의 마음. '붉은 용의 둥지'……
+[Dialog]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="네? '어느 붉은 용'이냐고요?", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="아무래도 당신은 정말 '진실 맞추기'를 좋아하는 것 같군요. 설령 제가 아무것도 모르는 당신에게 일부러 잘못 알려준다고 해도 말이죠. 안 그렇습니까?", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="그렇게 많이 알고 있다면, 저 역시 빙빙 돌려 말할 필요 없겠네요.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0.7, amount=0, block=true)]
+[delay(time=2)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[name="로흐시니"]나 시어셔. 타라의 마음. '붉은 용의 둥지'…… 드디어 도착했어.
+[name="타라 유랑민"]세상에, 스카타나 들판에서 이곳까지 오다니. 정말 길고 긴 꿈을 꾼 것 같아…… 내가 정말 이곳에 정착할 수 있을까?
+[name="로흐시니"]이곳도 마냥 평화롭지만은 않을 거야.
+[name="로흐시니"]타라의 주도가 런디니움 전쟁에 직접적으로 개입하지 않은 건 확실하지만, 나 시어셔 인근에서는 저강도의 침투와 귀족들의 반란이 끊이지 않고 있어.
+[name="로흐시니"]특히, 붉은 용이 군대를 이끌고 런디니움에 진군한 이후…… 이곳에서 국지전이 벌어졌다 해도 과언은 아니지.
+[name="타라 유랑민"]리드, 미안해. 난 그냥 기뻐서 그래, 다른 뜻이 있는 건 아니야!
+[name="로흐시니"]아니야, 집에 간다는 건…… 기뻐해야 할 일이야.
+[name="타라 유랑민"]모란, 이 도시와 검은 숲에 관한 노래를 들어 본 적 있어?
+[name="모란"]들어보긴 했는데, 이런 상황에 맞지는 않는……
+[name="타라 유랑민"]불러봐, 모란!
+[name="모란"]동이 트면 검은 숲으로 가 안개를 부르네♪
+[name="모란"]전장으로 향하는 길에 오르자♪
+[name="모란"]피리 소리도, 북소리도 들리지 않는다네♪
+[name="모란"]등 뒤의 종소리만이 안개 속 물방울을 가르네♪
+[name="모란"]돌아오는 길에 이 노래에 가사를 덧붙이고 싶었는데 아무런 영감도 떠오르지 않았어요.
+[name="로흐시니"]……
+[name="모란"]리드 씨, 걱정이 더 많아진 것 같아요. 이 노래가 너무 슬퍼서 그런가요?
+[name="로흐시니"]아냐, 노래랑은 아무 상관 없어. 좋은 노래네.
+[name="로흐시니"]난 단지……
+[Dialog]
+로흐시니는 말을 잇지 않았다.
+그녀의 뒤로 유랑민들이 줄지어 검은 숲으로 걸어갔다.
+찬란하게 빛나는 아름다운 경치와 비교하면, 눈앞의 나 시어셔는 초라하고 칙칙했다. 하지만 로흐시니를 제외한 그 누구도 이것을 신경 쓰진 않았다.
+그들이 알고 있는 건, 결국 이 긴 여정을 마쳤다는 것과, 마침내 여정의 종착점에 도달했다는 것뿐이었다.
+[Dialog]
+[delay(time=1)]
+집으로 돌아왔다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[Background(image="59_g7_blackforest_d",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_728_1#6$1")]
+[charslot(slot="r",name="avg_1020_reed2_1#9$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_728_1#6$1",focus="l")]
+[name="모란"]이제 우린 어떻게 하죠?
+[charslot(slot="r",name="avg_1020_reed2_1#9$1",focus="r")]
+[name="로흐시니"]우리를 마중 나온 사람이 있을 거야. 그들을 만나면……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[musicvolume(volume=0.3, fadetime=2.5)]
+[delay(time=2)]
+로흐시니는 도시 쪽에서 천천히 걸어오는 사람의 모습을 보았다.
+그들을 마중하러 나온 사람, 그 사람은 지난번에 로흐시니를 죽이려 했던 자였다.
+로흐시니는 무의식적으로 두 팔을 벌려 옆에 있는 모란을 보호했다.
+[Dialog]
+[charslot(slot="m",name="avg_npc_723_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]……네가 왜 여기 있지?
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'교관'"]당신을 모시러 왔습니다.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]뭐?
+[Dialog]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'교관'"]나 시어셔까지 모셔다드리겠습니다. 에블라나 전하와 만날 때까지 함께해 드리죠.
+[name="'교관'"]그다음, 만약 필요한 일이 생기지 않는다면 저와 만날 일은 없을 겁니다.
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]확실히. 나와 언니가 얼굴을 보지 않고 해결할 수 있는 문제들은 '가스트렐'호에서 이미 해결했지.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'교관'"]저를 따라오시죠. 나머지 사람들은…… 안전상 따로 조치하겠습니다.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]안 돼. 저 사람들은 전부 타라의 동포야. 저들은 나와 함께 도시로 가야 해. 이건 내가 했던 약속이야.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'교관'"]당신이 원하는 대로 해드리고 싶지만, 솔직히 말해 도시에 있는 대부분의 동포는 당신이라는 붉은 용이 있는지도 모르고 있습니다.
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]장담하지, 저 사람들은 비밀을 지킬 거야.
+[charslot(slot="m",name="avg_npc_723_1#2$1",focus="m")]
+[name="'교관'"]이게 바로 전하와 당신의 차이점이군요.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]네 말은, 언니는 저 사람들이 '확실하게' 비밀을 지킬 수 있게끔 한다는 건가?
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'교관'"]……
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="로흐시니"]그게 바로 내가 저 사람들과 함께 나 시어셔로 가려는 이유야.
+[Dialog]
+[charslot]
+[delay(time=1)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.8,channel="step1",loop=false)]
+[stopsound(channel="step1",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1692_1#9$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1692_1#9$1",focus="m")]
+[name="???"]저기…… 어쩌면 제게 양쪽 모두를 만족시킬 방법이 있을 것 같은데, 들어보실래요?
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'교관'"]네가 이곳에 올 수 있었던 건 나 시어셔 주민들의 정착을 책임지고 있기도 하지만, 침묵하는 법에 대해 알고 있기 때문이야. '영혼수호자'.
+[name="'교관'"]네가 말한 양쪽을 모두 만족시키는 방법이 단순한 동정심에서 비롯된 것이 아니었으면 좋겠군. 만약 그게 아니라면 너도 나 시어셔에 발을 들이지 못하게 될 거야.
+[charslot(slot="m",name="avg_npc_1692_1#9$1",focus="m")]
+[name="'영혼수호자'"]알겠습니다.
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[name="'영혼수호자'"]말씀하신 것처럼, 나 시어셔는 동포들에게 곧바로 문을 열지 않을 것입니다.
+[name="'영혼수호자'"]전 내일 영혼수호자의 마을로 가서 제기들을 보내 달라는 요청을 할 예정입니다. 이 동포들이 당장 머물 곳이 없다면, 우선 영혼수호자들의 거처로 데리고 가 그곳에서 머물게 하겠습니다.
+[charslot(slot="m",name="avg_1020_reed2_1#6$1",focus="m")]
+[name="로흐시니"]영혼수호자들의 거처? '영혼수호자'는 전설과 이야기 속에서 따온 일종의 별칭 아닌가?
+[charslot(slot="m",name="avg_npc_1692_1#3$1",focus="m")]
+[name="'영혼수호자'"]제 동족들이 전설로써 전해져 내려온 건 오래되었죠. 그리고 이런 유적지 주변에서 생활할 수 있는 사람들은 다른 땅에 모습을 잘 드러내지 않습니다. 전 무리를 떠난 이단아일 뿐이고요.
+[multiline(name="'영혼수호자'")]그렇기 때문에…… 
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[multiline(name="'영혼수호자'")]음, 눈앞에 있는 이 붉은 용에 관한 어떤 것도 외부인에게 알리지 않을 겁니다.
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]저기, '영혼수호자', 난 정말 널 믿고 싶어. 하지만……
+[charslot(slot="m",name="avg_npc_728_1#3$1",focus="m")]
+[name="모란"]당신이 정말 영혼수호자인가요?
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]모란?
+[charslot(slot="m",name="avg_npc_728_1#1$1",focus="m")]
+[name="모란"]제 증조할머니가 살아계실 적, 할머니는 영혼수호자가 주관하는 전통 장례식을 원한다 하셨어요. 그래서 가족들이 황야 곳곳을 찾았지만 결국 아무것도 찾지 못했고, 그냥 죽음을 앞둔 할머니의 넋두리라고 치부해 버렸죠.
+[name="모란"]하지만 증조할머니께선 현실과 전설을 명확히 구분해 낼 수 있는 분이었어요. 증조할머니는 어떤 것이 실재하는지 제대로 알고 계셨고, 한 번도 틀린 적 없었죠. 게다가 저 역시 영혼수호자들에 대한 이야기를 적지 않게 들었고요.
+[charslot(slot="m",name="avg_npc_728_1#6$1",focus="m")]
+[name="모란"]전 당신을 믿고 싶어요.
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="로흐시니"]부디 저들의 믿음을 저버리지 말아 줘, '영혼수호자'.
+[charslot(slot="m",name="avg_npc_1692_1#9$1",focus="m")]
+[name="'영혼수호자'"]알겠습니다.
+[charslot(slot="m",name="avg_1020_reed2_1#9$1",focus="m")]
+[name="로흐시니"]……좋아.
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[name="'영혼수호자'"]저기, '교관' 씨?
+[charslot(slot="m",name="avg_npc_723_1#2$1",focus="m")]
+[name="'교관'"]좋아, 데려가.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g5_remains_outside",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="근엄한 영혼수호자"]네모스? 이 사람들은 누구야?
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[name="'영혼수호자'"]떠난 뒤에도 계속 폐를 끼쳐버리고 말았네요. 죄송합니다.
+[name="'영혼수호자'"]이들은 돌아갈 곳 없는 타라인입니다. 지금 당장은 나 시어셔에서 이 사람들을 받아주지 않아서요. 혹시……
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="근엄한 영혼수호자"]과거, 영혼수호자는 무리를 떠나는 널 막지 않았지. 그것만으로도 아주 이례적인 일이었어. 근데 지금 와서 네가 데려온 신원 불명의 사람들을 받아달라니, 그럴 이유는 없어.
+[charslot(slot="m",name="avg_npc_728_1#1$1",focus="m")]
+[name="모란"]저기, 어쩌면 저희에겐 영혼수호자의 수용이 필요하지 않을지도 몰라요.
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="'영혼수호자'"]모란 씨?
+[charslot(slot="m",name="avg_npc_728_1#1$1",focus="m")]
+[name="모란"]한때, 전 음유시인이 되는 걸 꿈꿨죠. 전 영혼수호자들의 전설을 수집했고, 당신들의 마을을 찾아다녔고, 당신들의 전설을 전했어요.
+[name="모란"]하지만 음유시인이 되겠다는 꿈도, 영혼수호자들에 관한 꿈도 모두 산산이 부서졌죠. 오직 집에 돌아가겠다는 마음만 남은 지금이 되어서야 우연히 당신들과 만나게 되었네요.
+[name="모란"]전설이 사실이라면 영혼수호자는 고행에 가까운 삶을 살고 있겠죠. 평범한 사람과의 유일한 접점이 있다면, 장례식을 주관하는 것으로 죽은 자의 영혼을 불꽃 속에서 평온히 보내주는 거고요.
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="근엄한 영혼수호자"]……제법이군.
+[charslot(slot="m",name="avg_npc_728_1#3$1",focus="m")]
+[name="모란"]저희는 단지…… 아니, 타라의 각지에서 온 유랑민들이 영혼수호자들에게 받아달라 부탁하다니, 저희에게 그럴 자격은 없어요. 저희가 바라는 건 이곳에서 잠시만 머무르는 거예요.
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="근엄한 영혼수호자"]……
+[charslot(slot="m",name="avg_npc_728_1#3$1",focus="m")]
+[name="모란"]약속드리죠. 저희는 최대한 영혼수호자들의 풍습을 준수할 것이고, 어떠한 폐도 끼치지 않을 거라고요.
+[charslot(slot="m",name="avg_npc_728_1#6$1",focus="m")]
+[name="모란"]그리고, 이제 겨울이 다가오고 있어요, 풍요를 축하하는 기념일이 있지 않았던가요? 만약 도와드릴 것이 있다면 언제든 말씀하세요.
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="근엄한 영혼수호자"]……사윈, 풍요를 기념하는 날이지.
+[charslot(slot="m",name="avg_npc_1691_1#3$1",focus="m")]
+[name="근엄한 영혼수호자"]너희는 확실히 도시 사람들과는 달라 보이는군.
+[name="근엄한 영혼수호자"]유적지 밖에 사람이 살지 않는 오두막이 있어. 일단 그곳을 치워서 머물도록 해.
+[charslot(slot="m",name="avg_npc_728_1#6$1",focus="m")]
+[name="모란"]감사합니다.
+[Dialog]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="mo")]
+[StopSound(channel="mo", fadetime=2)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_242",focus="all")]
+[charslot(slot="r",name="avg_npc_243",focus="all")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.8,channel="stepp",loop=false)]
+[stopsound(channel="stepp",fadetime=2)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_1692_1#8$1",focus="m")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="근엄한 영혼수호자"]네모스, 아직 뭐가 남았나?
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[name="'영혼수호자'"]도시의 더블린이 타라의 광복을 기념하는 축하 행사를 개최할 예정입니다.
+[name="'영혼수호자'"]그리고 영혼수호자에게 제기를 빌려 오겠다고 그들과 약속했습니다. 타라의 단결, 그리고 타라인의 나라가 전통을 중시하는 것을 보여주기 위해서……
+[charslot(slot="m",name="avg_npc_1691_1#3$1",focus="m")]
+[name="근엄한 영혼수호자"]이제 곧 사윈이야, 우리에게도 여분의 제기가 있을 리 없잖아. 잊었어? 여분이 있다고 해도 주지 않을 거야.
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="'영혼수호자'"]전통을 중요하게 생각하기 때문에, 더블린이 제기를 빌려주길 바라는 겁니다……
+[charslot(slot="m",name="avg_npc_1691_1#3$1",focus="m")]
+[name="근엄한 영혼수호자"]그렇다면 이른바 독립 이후 지금까지, 어째서 단 한 명의 나 시어셔 사람도 도시의 고인을 위해 전통 장례식을 부탁하지 않았지?
+[name="근엄한 영혼수호자"]잊었다가 다시 떠올리는 것, 그리고 들어본 걸로 그럴듯하게 말하는 것은 명확하게 구분할 수 있어.
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="근엄한 영혼수호자"]만약 그냥 돌아가기에 면목이 없을 것 같다면, 피리라도 갖고 가.
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="'영혼수호자'"]이건 그냥 너무 평범한 피리잖아요……
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="근엄한 영혼수호자"]이건 우리가 최대한으로 보여줄 수 있는 그들에 대한 존중이야.
+[name="근엄한 영혼수호자"]영혼수호자는 산 자와 함께하지 않고, 산 자의 존중도 필요 없어. 죽은 후라면 이야기가 달라지겠지만.
+[name="근엄한 영혼수호자"]이게 바로 더블린이 마땅히 지켜야 할 전통이야.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[stopsound(channel="read1")]
+[charslot]
+[Image]

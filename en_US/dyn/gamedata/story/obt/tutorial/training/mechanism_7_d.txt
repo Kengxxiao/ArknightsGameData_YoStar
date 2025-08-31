@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 造成元素损伤d
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[PopupDialog(dialogHead="$avatar_kaitou")] I have arrived, as per our agreement.
+[PopupDialog(dialogHead="$avatar_kaitou")] I am a <@tu.kw>Primal Caster</>, and can deal more damage to enemies when they are under the burst effect of Necrosis Damage.
+[Battle.EnsureMinSp(charId="char_499_kaitou", sp=100)]
+[InputBlocker(blockInput=true, validX=0, validY=100, validWidth=110, validHeight=110)]
+[Tutorial(focusX=0, focusY=100, focusWidth=110, focusHeight=110, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", anchor="Center", \
+          protectTime=0.5, dialogHead="$avatar_kaitou")] By your command.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_kaitou")]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_sys")] Operator Diamante's skill can deal extra Elemental damage on enemies when they are under the burst effect of Necrosis Damage.
+[PopupDialog(dialogHead="$avatar_sys")] So, you may activate Valarqvin's skill to complement Diamante's abilities for better results in combat.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
