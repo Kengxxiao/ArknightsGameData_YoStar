@@ -1,0 +1,31 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+This is a <@tu.kw>High Ground Material Box</> that can be turned into a <@tu.kw>Hydraulic Platform</>.
+[Tutorial(dialogHead="$avatar_stward")]It needs to be processed twice before it becomes available.
+[Tutorial(dialogHead="$avatar_stward")]You can deploy ranged Operators on <@tu.kw>Hydraulic Platforms</>, or use them to change the enemy's route.
+[CooperateBattle.CameraFocusTo(offsetX=11, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+That facility in front...
+[Tutorial(dialogHead="$avatar_stward")]That's a <@tu.kw>Roadblock Material Box</>. It only needs to be processed once before use.
+[Tutorial(dialogHead="$avatar_stward")]Once complete, it will turn into a <@tu.kw>Concrete Roadblock</> that can obstruct the enemy's advance.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]You and your partner can build structures together.
+[Tutorial(dialogHead="$avatar_stward")]The workshop that we built has brought us more builders. I'll leave you to finish the rest of the buildings.
+[CooperateBattle.CameraFocusTo(offsetX=10, offsetY=4, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

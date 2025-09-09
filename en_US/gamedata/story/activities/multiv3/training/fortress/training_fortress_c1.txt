@@ -1,0 +1,26 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学c1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=5, scale=1.2, time=1.5)]
+[Delay(time=1)]
+[Tutorial(focusX=160, focusY=185, focusWidth=210, focusHeight=210, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_stward", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+In addition to normal builders, <@tu.kw>Expert Facility Builders</> may appear at the start of each wave, trapped in rubble.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=4)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]Defeat the surrounding guards to rescue trapped expert builders.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=2.5, offsetY=5.5, scale=0.8, time=0.5)]
+[Delay(time=1)]
+[CooperateBattle.LockCamera(enable=false)]
+[Tutorial(dialogHead="$avatar_stward")]Deploy expert builders on a <@tu.kw>Rank I</> structure to <@tu.kw>upgrade</> it, improving its effect.
+[Tutorial(dialogHead="$avatar_stward")]For example, upgrading <@tu.kw>Portable Exercise Rack</> to Rank III will boost both your Operators' ATK and SP recovery.
+[CooperateBattle.CameraFocusTo(offsetX=6, offsetY=4, scale=1, time=1)]
+[Delay(time=1)]
+[Tutorial(dialogHead="$avatar_stward")]Let's prepare to face the final wave!
+[CooperateBattle.LockCamera(enable=true)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]

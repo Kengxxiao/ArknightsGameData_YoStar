@@ -1,0 +1,526 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[name="Loughshinny"]I've checked every inhabited street, and found no sign of Theo anywhere. All I saw were the flames on the townsfolk growing even stronger, as if a sudden gale had swept through.
+[name="Loughshinny"]What's more, everyone just seems used to it at this point. Getting rid of the flames would only terrify them. They'd only have numbness in their body.
+[name="Loughshinny"]Does this mean it's too late for the people of Na Saoirsí?
+[name="Loughshinny"]...No. I can't think that way. My first priority is to find Theo. I should go find that nomad named Brigid, the one Nemos mentioned.
+[name="Loughshinny"]But... would anyone really be willing to pitch a tent outside the city, just because they can't get into the Dark Woods?
+[Dialog]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1)]
+[name="Loughshinny"]'Walk out along the right side of the guard outpost, then wade through the creek'...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_campsite_d",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]Ah. I think this is it.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="Loughshinny"]A Perro with blonde hair. Tall, yet agile.
+[name="Loughshinny"]This must be the Brigid Nemos mentioned—
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",posfrom="200,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="Brigid"]You know me?
+[charslot(slot="l",name="avg_npc_1694_1#9$1",focus="l")]
+[name="Loughshinny"]No, I don't believe we've met before. Nemos asked me to come find you. My name is Reed.
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="Brigid"]You...
+[Dialog]
+[charslot(slot = "r", posfrom="0,0", posto="-100,0", duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_catsmell", volume=1)]
+[Delay(time=1)]
+Brigid leans in slightly and twitches her nose twice but does not otherwise react. Loughshinny takes this to be the way the nomads greet each other.
+[Dialog]
+[charslot(slot = "r", posfrom="-100,0", posto="0,0", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1694_1#9$1",focus="r")]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="Brigid"]You're not the red dragon from the city.
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="Loughshinny"]What? I'm not a red dragon at all, I'm just—
+[charslot(slot="r",name="avg_4177_brigid_1#8$1",focus="r")]
+[name="Brigid"]You're not the one from the city—you're a different one. A second dragon returning to the city... just like the old stories.
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="Loughshinny"]And you can tell with single sniff?
+[charslot(slot="r",name="avg_4177_brigid_1#9$1",focus="r")]
+[name="Brigid"]Sure can. Your flames smell different.
+[name="Brigid"]But that's none of my business. What can I do for you, Reed?
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="Loughshinny"]Theo's gone missing. Nemos told me you might have an idea where he is. I've heard you often chat with him when you're in town.
+[charslot(slot="r",name="avg_4177_brigid_1#5$1",focus="r")]
+[name="Brigid"]He's missing?!
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="Loughshinny"]He went out this morning and never came home, and the city's in chaos today. We searched all over Na Saoirsí, both Nemos and I, but there was no sign of him anywhere.
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="Brigid"]But I saw him just before I left the city! He was doing fine—
+[charslot(slot="r",name="avg_4177_brigid_1#8$1",focus="r")]
+[name="Brigid"]No, I can't say he was 'fine'...
+[name="Brigid"]Anyhow, I went to the citadel after that, then left town. Haven't seen him since.
+[charslot(slot="r",name="avg_4177_brigid_1#7$1",focus="r")]
+[name="Brigid"]Where the heck could he be?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_ltstrongpoint",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="Brigid"]Theo! Theo!
+[charslot(slot="m",name="avg_4177_brigid_1#7$1",focus="m")]
+[name="Brigid"]Should've knocked him out and carried him back with me when I had the chance.
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="Brigid"]Say something, Theo! This time you're coming with me, you hear?!
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="Loughshinny"]Um, where are we, Brigid?
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="Brigid"]This plate was dragged out during the war, supposedly to appease some noble or other. But when they brought it back, it was left like this, barely clinging on to Na Saoirsí. And no one's bothered fixing it up.
+[name="Brigid"]Theo always hides out here when he's feeling wronged.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]Could he have left the city?
+[charslot(slot="m",name="avg_4177_brigid_1#8$1",focus="m")]
+[name="Brigid"]...I've only seen one person leaving the gates—Emma from Lagran Street. Theo sure wasn't with her.
+[name="Brigid"]What's more, she was taking a cartful of who-knows-what to the entrance of the forest, all by her lonesome. She met up with someone there, they took the goods, then she came back by herself.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]And she didn't notice you?
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="Brigid"]The cityfolk don't see too well. Or hear. Or smell. Besides, I was pretty far from her.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]So she delivered a large shipment and returned by herself... Where did all those goods come from?
+[name="Loughshinny"]What does this Emma do for a living?
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="Brigid"]Runs a grain shop. I've delivered letters to her before.
+[charslot(slot="m",name="avg_npc_1694_1#8$1",focus="m")]
+[name="Loughshinny"]So a shopkeeper... left the city... and now keep close at home...
+[charslot(slot="m",name="avg_npc_1694_1#7$1",focus="m")]
+[name="Loughshinny"]Seeing how this is the only lead we have, we should hurry over to Lagran Street.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g1_citystreets_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",duration=0.7)]
+[delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Brigid? Reed?
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="Loughshinny"]Hello. You wouldn't happen to have seen Theo around, would you?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Theo? Did Nemos send you to find him?
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="Loughshinny"]That's right.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Nope, haven't seen him. Heavens knows where that boy has run off to. I hope he didn't skip town along with the spies that set the ag plate on fire.
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="Brigid"]How can you—
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]Brigid. We need to find him.
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="Loughshinny"]How about Emma, then? Have you seen her anywhere?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]She closed up shop early today. Actually, I came to see if she might be willing to reopen for me, but... I guess I wasted the trip.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",duration=0.5)]
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",focus="r")]
+[name="Brigid"]*Sighs* There it is again, that cold burnt smell. It's been everywhere in Na Saoirsí lately.... I can't stand it.
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="Loughshinny"]I've been meaning to ask: are you able to smell purple flames?
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",focus="r")]
+[name="Brigid"]Yeah. The scorched stench of the red dragon's flames. Lately, even the cityfolk have been reeking of it.
+[charslot(slot="l",name="avg_npc_1694_1#7$1",focus="l")]
+[name="Loughshinny"]It's not just the smell... The fire itself has spread to them.
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="Brigid"]What? How? I don't see any flames on 'em.
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="Loughshinny"]So you can't <i>see</i> them either?
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="Brigid"]I was gonna ask the same thing. You saying you can see the flames?
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",focus="r")]
+[name="Brigid"]Then again... *Sighs* Makes sense. You being a dragon too, and all.
+[name="Brigid"]The cityfolk live so close to the other one, even worship her like a god—guess it was only a matter of time before they got burned.
+[Dialog]
+[charslot]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="Brigid"]Emma, it's me. Brigid.
+[Dialog]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="Brigid"]Emma!
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="Loughshinny"]Is she not in?
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="Brigid"]With that purple flame stench comin' out of the keyhole? Must be <i>someone</i> in there. So what now? Break in?
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]...I don't see any other options.
+[Dialog]
+[PlaySound(key="$d_avg_originiumcastshort",volume=1)]
+[PlaySound(key="$firemag_n",volume=0.4,delay=1)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1,r=0.95, g=0.95, b=0.95, fadetime=0.3, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#5$1",focus="m")]
+[name="Brigid"]Whoa, so dragon-fire can burn through locks, too?
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]...Let's save that conversation for later. We need to get in there.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g6_noblelivingroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0.6)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="bse")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]Here, Officer, have a drink. We may not have a proper feast, but there's more than enough booze to go around.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Cruel Officer'"]Cheers.
+[Dialog]
+[charslot]
+[PlaySound(key="$clink", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]Oh, if it isn't our resident Wakewoman. The Leader invited you too?
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]I'm here... to present the sacred instruments to the red dragon on behalf of the wakemen.
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]Ooh, offerings from the wakemen? Let's see what you've got... a whistle? And what else?
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]Samhain is almost upon us. The wakemen do not have much left to offer. This is all they could spare.
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]That's it?
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]My sincerest apologies.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Cruel Officer'"]Weren't you the one swearing to us you'd bring in those ritual doodads to give this celebration the dignity it deserves?
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]I'm sorry, I didn't think it through...
+[charslot(slot="m",name="avg_npc_247",focus="m")]
+[name="'The Singer'"]Who cares? It wasn't Nemos's idea, anyway.
+[name="'The Singer'"]I was against it from the start. What's so auspicious about offerings from people who deal with ghosts and corpses all day? We should be glad they only gave us a whistle.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Ombudsman'"]Of course <i>you'd</i> take her side—she saved your life. But we can't just laugh this off! Tell us, Wakewoman, how do you plan to take responsibility for this?
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="Nemos"]...
+[Dialog]
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="'The Brigadier'"]Quiet!
+[Dialog]
+[SoundVolume(volume=0, channel="bse",fadetime=1.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="'The Brigadier'"]This was not solely her responsibility. If you truly wish to hold the wakemen accountable for disrespecting The Leader, we can revisit the matter later.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]Set aside the matter of the ritual objects for now. The Leader sent me ahead to make sure everyone is enjoying themselves.
+[name="'The Brigadier'"]These are difficult times, so we're keeping things simple—there will be no feast for the ceremony. But feel free to go and relax until she arrives.
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]Not you, Wakewoman. I expect you to provide Her Highness an explanation for your failure.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1749_1#1$1",focus="all")]
+[charslot(slot="r",name="avg_npc_234",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_247",focus="all")]
+[charslot(slot="r",name="avg_npc_246",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw1")]
+[stopsound(fadetime=2, channel="nw1")]
+[PlaySound(key="$d_gen_walk_n",volume=0.7,delay=0.3)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]Perhaps you could take this chance to curry favor with the other officials. They could put in a good word for you later.
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]I'll... pass on that, thank you.
+[charslot(slot="m",name="avg_npc_723_1#7$1",focus="m")]
+[name="'The Brigadier'"]Quite the righteous one, I see.
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="Nemos"]Brigadier, sir, these fellows, have they always been like this?
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]Ha. Always?
+[name="'The Brigadier'"]The Bureaucrat once exhausted himself managing logistics for the Silverrock Bluffs front. He went days without sleep, until he was so worn out that he nearly collapsed on the Na Saoirsí agricultural plate.
+[name="'The Brigadier'"]The Cruel Officer is a cold-hearted scoundrel, to be sure. But during the war, the wealthy merchants and nobles hoarding grain near Na Saoirsí would tremble at the mere mention of his name.
+[name="'The Brigadier'"]The Torturer I've seen take pleasure in others wailing and screaming. But I've also seen him charge into the enemy ranks like a rabid tuskbeast.
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="'The Brigadier'"]Now, though? Had Her Highness not vetoed it, they'd probably be enjoying a lavish banquet right now, even with the city as it is.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1692_1#8$1",focus="m")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_723_1#6$1",focus="m")]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=1)]
+[SoundVolume(volume=0.4, channel="bse",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]*Sighs* Will our dear Brigadier ever remove that stick from his arse?
+[name="'The Torturer'"]You look like you're in a bit of a mood too, Bureaucrat. What's wrong?
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]What's wrong is that the city's almost out of grain, and I'm responsible.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Ombudsman'"]Well, what can you do? It was a poor harvest.
+[name="'The Ombudsman'"](*whispers*) Besides, didn't I tell you to pin it on the Victorians? That Emma girl said exactly what you told her to, and the townsfolk took the bait, so what's the problem?
+[name="'The Ombudsman'"](*whispers*) Even if there <i>is</i> a famine, these people treat The Leader like a god. They'd never turn on us, never.
+[name="'The Ombudsman'"](*whispers*) Or are you afraid Emma will spill the beans?
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"](*whispers*) No. She's been on edge since she got back, but she follows instructions to the letter. I'm not worried about that.
+[name="'The Bureaucrat'"](*whispers*) What worries me is the merchant who met with her—there's been no word from him. Normally, we'd have heard something by this morning.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Ombudsman'"](*whispers*) So there's a little delay, what's the big deal?
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]What are you two muttering about over there?
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]Oh, uh...
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Ombudsman'"]We were discussing that hero, Culann.
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]Oh? What about him?
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Ombudsman'"]At the time, he told us he took out a whole squad of Victorian scouts in the Dark Woods by himself. Four or five men, by using the terrain to his advantage. Said there was one child left behind, but he couldn't bring himself to finish the job. Sound about right?
+[name="'The Ombudsman'"]But think about it. Why would a scout squad bring a child with them?
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="'The Torturer'"]Huh? The Wakewoman already explained that. The scouts had taken hostages—a group of merchants who'd travel between Tara and Victoria—and forced them to guide them through the forest.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Ombudsman'"]Sure, I buy that there was a caravan, but the <i>scouts</i>? *sighs* I don't know about that...
+[Dialog]
+[stopmusic(fadetime=2)]
+[stopSound(channel="bse", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snowconutryinside",screenadapt="coverall", block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=2)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="Writer"]'but the scouts? I don't know about that...'
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_bottlecollide", volume=0.6)]
+[delay(time=1)]
+His throat getting dry, the writer grabs his mug, only to find it devoid of beer.
+[name="Mysterious Woman"]I'll go get you some more.
+[Dialog]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+The mysterious woman stands up and heads to the bar. The writer leans back in his chair.
+As has been his habit for many years, he sets about planning how to make the next part of his story captivating. However, as he thinks it through, a sudden tightness grips his heart.
+Even if this woman is also a survivor, and even if she knows a thing or two about what happened, he cannot simply lay everything out there like he has been, at least not for this next part.
+Heavens knows what she would have to say about it.
+This is just a story. A shadow cast on the wall, not the fire itself. A storyteller must always remember this, or they will find themselves consumed by the flames.
+[Dialog]
+[PlaySound(key="$d_avg_glassclink", volume=0.7)]
+[delay(time=1)]
+[name="Mysterious Woman"]Here you are, your beer.
+[Dialog]
+[PlaySound(key="$d_avg_drinkswllw")]
+[PlaySound(key="$d_avg_drinkswllw",loop=false,channel="1",delay=1.2)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="Writer"]Thank you kindly. Now where were we?
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="n")]
+[name="Mysterious Woman"]The Dublinner's ugliness at the celebration banquet.
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="Writer"]Oh, right.
+[name="Writer"]Well then. The true star of the party is about to make her entrance...
+[Dialog]
+[charslot]
+[focusout(duration=1.5, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g6_noblelivingroom",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+The true star of the party is about to make her entrance.
+But until then, Dublinn's ugly visage will remain, so hideous that no one can face it directly.
+[Dialog]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[playMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="bse1")]
+[SoundVolume(volume=0.5, channel="bse1",fadetime=4)]
+[musicvolume(volume=0.6, fadetime=3)]
+[CameraEffect(effect="Grayscale", fadetime=2.5, keep=true, initamount=0.8, amount=0, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]*sighs* Well, I—
+[name="'The Bureaucrat'"]Tch.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Cruel Officer'"]What is it?
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]Is there something crawling on my head?
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Cruel Officer'"]Ha. It may be freezing here in Na Saoirsí, but at least there are still bugs. Don't move. I'll grab it.
+[name="'The Cruel Officer'"]W-Wait...
+[Dialog]
+[charslot]
+[stopmusic(fadetime=3)]
+[stopSound(channel="bse1", fadetime=2)]
+[delay(time=1)]
+The banquet hall suddenly quiets down.
+Everyone is staring at The Bureaucrat's head, where a beetle is perched.
+A solid gold beetle.
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="'The Cruel Officer'"]...Uh, one of the decorations fell down. Go on, put it back.
+[Dialog]
+[charslot]
+The Officer removes the gold beetle from The Bureaucrat's head and places it in his palm.
+[PlaySound(key="$d_avg_insectfly")]
+The Bureaucrat lets out a sigh of relief. He is about to place the beetle back in its original spot when it flutters its diamond-encrusted wings, flies a short distance towards the door, and lands in the center of the hall.
+[Dialog]
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=0.5)]
+[Delay(time=0.7)]
+He takes a few steps forward, and the beetle, as if tempting him, crawls a little further ahead.
+[Dialog]
+[PlaySound(key="$d_avg_higheldshosfts", volume=1)]
+[charslot(slot="m",name="avg_450_necras_1#13$2",duration=1)]
+[Delay(time=1.5)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Such enthusiasm, Mr. Bureaucrat!
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]Your Highness?!
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.3)]
+[name="'The Bureaucrat'"]I-I just wanted to catch this stray beetle for you!
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Of course. Why would I blame you for that?
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]O-Oh, alright then.
+[name="'The Bureaucrat'"]By the way, about the sacred instruments I reported to you about...
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]A trifling matter.
+[name="Eblana"]What is truly important is that my faithful servants be rewarded for this victory.
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_insectfly")]
+[Delay(time=1)]
+Eblana picks up the beetle from the ground and flattens her palm. The beetle buzzes as it flies toward the door.
+[Dialog]
+[charslot(slot="m",name="avg_450_necras_1#1$2",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]Ladies and gentlemen, we are in the very hall where the treasures of the ancient King Gaeil were once displayed.
+[name="Eblana"]The furnishings had all been looted by the Victorians, as they are wont to do, but we have finally returned most of them to their rightful places.
+[name="Eblana"]That beetle you were chasing was awarded personally to a capable official. He was praised for his tireless work in gathering ever last grain of the harvest and storing it in the treasury.
+[name="Eblana"]And now, you are worthy of the same. Without you, our army would likely have collapsed from hunger a hundred times over.
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Go chase it down, for it is yours. As long as it is willing to land on you, you will always have the right to collect our grain.
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="'The Bureaucrat'"]Yes... Thank you!
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]Now then...
+[Dialog]
+[charslot]
+Eblana scans the room.
+Some stare intently at The Bureaucrat's back, wondering what rewards they will receive, while others cannot help but glance at the other treasures in the room.
+The sword that enforces the law, the cloudbeast that listens to appeals, the knot that records history, the crystal teardrops that symbolize compassion...
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]It seems none of you can stand to wait any longer.
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]How about this, then: everyone, feel free to take whatever in this room you desire.
+[Dialog]
+[charslot]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_armour", volume=1)]
+[PlaySound(key="$d_avg_fsmetal", volume=1,delay=0.2)]
+[PlaySound(key="$d_avg_fsmetal", volume=1, loop=false, channel="1",delay=0.4)]
+[PlaySound(key="$d_avg_swordquake",volume=0.7,loop=false, channel="2",delay=0.7)]
+[PlaySound(key="$d_avg_metalroll",volume=0.6,loop=false, channel="3",delay=0.5)]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+In an instant, it is as if all the treasures come to life, moving on their own.
+The cloudbeast statue starts running, the crystals start rolling, the knot begins to twist, and even the ceremonial sword studded with Sargonian jewels breaks free from its stand, hopping comically toward the door.
+[charslot(slot="m",name="avg_450_necras_1#16$2",focus="m")]
+[name="Eblana"]Go, my servants. These are my rewards for your loyalty.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=1.5)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.8)] 
+[CameraShake(duration=2, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+It is unclear who takes the first step, but once he does, the tide is unstoppable.
+The crowd chases after the treasures, surging out of the banquet hall.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

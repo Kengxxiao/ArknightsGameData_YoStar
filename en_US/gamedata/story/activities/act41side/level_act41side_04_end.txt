@@ -1,0 +1,422 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[stopsound(channel="read2")]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_weaamonologue_2", channel="read2", loop=false)]
+[Subtitle(text="<i>Once there was a red dragon of pride, who snubbed all companions, talking only to herself in the mirror from time to time.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>Once, at Samhain, she was to host a grand banquet and her mirrored self was to help. But the two could not appear together before the guests, or the reflection would perish.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>The reflection had no choice but to obey the dragon's will. She went and fetched the wakeman for the banquet. The wakeman rejected their invitation and told the reflection to desert.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>Still, the reflection returned to the lair on her own, only to find the banquet had already begun. The reflection hurried to hide in darkness beyond the bonfire.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>As the banquet went on, the guests somehow began to vanish, one by one. And the red dragon found and dragged her mirrored self out of the darkness, forcing the reflection to dance with her.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>The two kept dancing, so relentlessly that the reflection could not feel her toes. She asked for a little rest, but the red dragon was never satisfied.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[SoundVolume(volume=0, fadetime=3,channel="read2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[focusout(duration=0.1, type="char", from=0, to=1, block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[stopsound(channel="read2", fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Here, Loughshinny. 
+The book you wanted. The sequel to the Steam Knights adventures.
+[Dialog]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Background(image="21_G7_decisivebattlealley_d",screenadapt="coverall", fadetime=2.5,block=true)]
+[delay(time=1)]
+'Why', you ask?
+Do I need a reason to do something for my beloved sister?
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1685_1#1$1", bstart=0.2,bend=0.7, duration=1.5)]
+[delay(time=2.5)]
+But, do you really need to read it?
+Do you really need to read a book you have no interest in at all, but feel pressured by others our age to read?
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[focusout(duration=0.5, type="char", from=1, to=0)]
+[focusout(duration=1, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1684_1#22$1", focus="m")]
+[name="Loughshinny"]I <i>do</i> want to read it.
+[charslot(slot = "m", name = "avg_npc_1685_1#1$1",focus="m")]
+[name="Eblana"]Didn't you tell Father you didn't want anyone asking you why a Victorian wouldn't enjoy stories about the Steam Knights?
+[charslot(slot = "m", name = "avg_npc_1684_1#12$1", focus="m")]
+[name="Loughshinny"]This book... did Dad ask you to buy it for me?
+[charslot(slot = "m", name = "avg_npc_1685_1#8$1",focus="m")]
+[name="Eblana"]Why do you ask?
+[charslot(slot = "m", name = "avg_npc_1684_1#8$1", focus="m")]
+[name="Loughshinny"]Because... how did you know?
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="Eblana"]You're backing away from me, Loughshinny.
+[name="Eblana"]I don't want you to be scared of me like everyone else.
+[charslot(slot = "m", name = "avg_npc_1684_1#3$1", focus="m")]
+[name="Loughshinny"]No, I...
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="Eblana"]If me knowing what you told Father is so scary, how about we dance together to calm you down? Hm?
+[charslot(slot = "m", name = "avg_npc_1684_1#13$1", focus="m")]
+[name="Loughshinny"]A... dance? Really?
+[charslot(slot = "m", name = "avg_npc_1685_1#8$1",focus="m")]
+[name="Eblana"]Why not?
+[Dialog]
+[charslot]
+With those words, Eblana gracefully extends a hand towards her sister.
+But in Loughshinny's memories, even when her parents put on their favorite music, even when Father shook his head to the melody, even when Mother tapped her fingers to the beat...
+Her sister would only sit perfectly still while bearing an icy smile.
+She had never moved her body to any tune. Not even once.
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="Eblana"]Once you can keep up with me, you'll no longer have to worry about any book, request, or even friends our age.
+[charslot(slot = "m", name = "avg_npc_1684_1#25$1",focus="m")]
+[name="Loughshinny"]...
+[Dialog]
+[charslot]
+[PlaySound(key="$book_close",volume=1)]
+The unopened knight novel falls to the ground, and the pleasant new book smell is now drowned by muddy water.
+She was still young then. She never imagined that achieving her desires could feel so heavy and bitter. She only remembers stumbling, turning away, ignoring what was reaching out to her...
+A soft and cold hand.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Loughshinny.
+[name="Eblana"]The crowd is gone. You need no longer hide your identity.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Do you still think of them as alive, even now?
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]I only know that every Taran's heart burns with a similar flame. And that ever since our ancestors first bent the knee to the Victorians, that flame has never gone out.
+[name="Loughshinny"]That goes for all the townsfolk, as well as those who followed me back here. They all have the same fire, except that theirs has never been tainted by the shade of death.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]What a wonderful analogy, Loughshinny.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]Then let me ask you again: what will you do?
+[name="Eblana"]Dye these flames in your own hue? I imagine you must have tried already.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]...
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]No matter who they are, once tainted by death, your flames can only render them into ash.
+[name="Eblana"]So I have a proposal, Loughshinny. Kill me.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]And everyone in the city as well?
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]If it bothers you how this will be recorded in history, then you can just say that <i>I</i> killed them, and that you merely laid them to rest.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]The people of Na Saoirsí are still alive.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Even if what animates their bodies is not life, but death?
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]If they were truly devoid of even the faintest spark of life, they would have long since become one of those hollow, shambling corpses you have wandering about.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Oh, they will. Eventually.
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]No, they won't.
+[name="Loughshinny"]I'd rather see the purple flames in them as a plague, one instigated by you.
+[charslot(slot = "m", name = "avg_450_necras_1#15$2",focus="m")]
+[name="Eblana"]And you plan to find a cure for it?
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]That's right.
+[name="Loughshinny"]I want to cure you of it as well, Eblana.
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="Eblana"]How wonderful.
+[charslot(slot = "m", name = "avg_1020_reed2_1#11$1",focus="m")]
+[name="Loughshinny"]...Wonderful?
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="Eblana"]Yes. That's absolutely wonderful.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]Did you not notice?
+[name="Eblana"]You aren't trying to run from me anymore. You're trying to <i>cure</i> me, of all things.
+[Dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[image(image="59_i05",screenadapt="coverall",xScale=1.2,yScale=1.2,fadetime=2)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[delay(time=1.5)]
+[name="Eblana"]Come, dance with me, Loughshinny. The same dance I've always invited you to, the one you always ran from.
+[name="Loughshinny"]What... did you say?
+[name="Eblana"]I asked you to dance with me.
+[name="Eblana"]But before the final bar, be sure to pierce my heart with your spear. This plague is lethal, and there is no cure. I do not question your resolve, but your efforts will be in vain.
+[name="Eblana"]You've run from your fate long enough... From Na Saoirsí's fate, and ours too.
+[name="Eblana"]It is not yet Samhain, but the boundary between life and death is more ambiguous than it has been in all of Taran history.
+[name="Eblana"]Do you truly wish for Tara to become a kingdom of death?
+[Dialog]
+[delay(time=1)]
+Loughshinny subconsciously turns her head away.
+The fierce purple flames still rage in the skeleton the hero dragged all the way here. Culann, now taken over by purple flames, briefly stands up before sinking back down to kneel.
+She cannot bear another look at him, so she turns her gaze back to her sister's eyes—and the hand she's been offered for so many years.
+It is unclear if it is her imagination or a side effect of the purple flames depriving everything they touch of vitality, but the hand before her seems so pale and bloodless compared to the one in her memories.
+[name="Loughshinny"]We speak of a city and the lives of countless people, Eblana. You cannot sum this up as a matter as simple as 'fate'.
+[name="Eblana"]Are you finished? I believe we've spent enough time talking past each other.
+[name="Loughshinny"]...Eblana!
+[name="Eblana"]Oh, but feel free to continue. If you so desire, I shall wait here for as long as you need me to.
+[name="Eblana"]But do try not to take <i>too</i> long. You can afford to wait, yet that may not be true for others.
+[name="Loughshinny"](Breathes deeply) You're right. <i>You</i> can afford to wait, but that may not be true for others.
+[name="Loughshinny"]Alright. I'll dance your dance. Until one of us falls and can dance no more.
+[name="Loughshinny"]But I will not follow your lead. Absolutely not.
+[name="Eblana"]As you please.
+[name="Eblana"]Though you seem to have misunderstood something, my dear Loughshinny.
+[name="Eblana"]The one who cannot afford to wait is standing before you now.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+'Cannot afford to wait'?
+Loughshinny scrutinizes her sister's face as she suddenly realizes something entirely unrelated to their conversation.
+The offered hand is indeed pale, and it is not just her imagination.
+Purple flames seem to weave together into an omnipresent cloak, giving Eblana her beautiful yet terrifying appearance. Yet they also fail to conceal the malady which seems to consume her beneath her pale white skin.
+She shouldn't be like this. She was never like this before.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#6$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#6$1",focus="m")]
+[name="Loughshinny"]Eblana, are you...
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Hm?
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="Loughshinny"]You...
+[name="Loughshinny"]Are you... alright, Sister?
+[Dialog]
+[charslot]
+A smile spreads across Eblana's face. The same old ice-cold smile is always found there.
+This time, it seems to bear some warmth, but this only highlights her conspicuous paleness.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]I appreciate your concern. Really, I do.
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="Eblana"]After all those apathetic partings and painful reunions, to only now hear you asking if I'm well... It has truly been so long.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="Eblana"]Incidentally, I really do want a dance with you.
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",focus="m")]
+[name="Loughshinny"]...I will, once I find a way to heal you.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="Eblana"]Very well. Then I shall await you here.
+[Dialog]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.6, loop=true, channel="awalk")]
+[StopSound(channel="awalk", fadetime=2.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+Eblana strides towards the citadel, her footsteps so faint that they seem almost frail.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=2)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="Brigid"]Phew...
+[charslot(slot = "m", name = "avg_4177_brigid_1#5$1",focus="m")]
+[name="Brigid"]Hoo... Red dragon! Nemos!
+[name="Brigid"]There was no one at the gates when I got back! I thought something must've happened! What's going on in the square—
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",duration=0.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[delay(time=1.5)]
+[name="Loughshinny"]...
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="Brigid"]Red dragon... what's that...?
+[Dialog]
+[charslot]
+Loughshinny is holding a small box in her arms. The dim night lights seem to make it harder than usual to see.
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",focus="m")]
+[name="Loughshinny"]I couldn't save Culann. I...
+[name="Loughshinny"]This was the only way for him to rest in peace. So he'd no longer have to suffer from the flames in the square.
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="Brigid"]...
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+The nomad is silent for a long time, until she finds a stone on the ground.
+She hurls it with all her strength towards the citadel.
+But the darkness of the night swallows it up, and it fails to even make a sound.
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]It's already past curfew. Nemos, Brigid, let's just—
+[charslot(slot = "m", name = "avg_npc_1692_1#2$1",focus="m")]
+[name="Nemos"]No...
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]No.
+[Dialog]
+[charslot]
+Nemos reaches out to the wooden box, as if trying to brush nonexistent dust off the lid.
+She suddenly recalls being rejected by her own people a few days ago, and the superfluous words she heard then.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g5_remains_outside",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[delay(time=0.5)]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="Solemn Wakewoman"]The wakemen do not stand with the living, nor do we require their reverence. Until, of course, they are dead.
+[name="Solemn Wakewoman"]<i>That</i> is the tradition Dublinn should be honoring.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]Still, I'm grateful you were at least willing to give me this whistle... I'll be going now.
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="Solemn Wakewoman"]Wait, Nemos. You knew well that Samhain approaches and the wakemen would be lacking sacred instruments. Yet you still came.
+[name="Solemn Wakewoman"]Did the Dublinners force you to?
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]No, I came here of my own—
+[charslot(slot="m",name="avg_npc_1691_1#3$1",focus="m")]
+[name="Solemn Wakewoman"]Nemos, you haven't changed one bit.
+[name="Solemn Wakewoman"]You wait, mediate, and reconcile... Are you also like this in Na Saoirsí? Do you also serve the Red Dragon like this?
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="Nemos"]I just... don't want to see a situation that could be improved deteriorate any further. Or people who could have cooperated fighting each other.
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="Solemn Wakewoman"]If conflict is inevitable, you will only ever sink deeper into the mire.
+[name="Solemn Wakewoman"]The city has tainted you with its darkness, Nemos.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]So, The Leader—the Red Dragon—
+[name="Nemos"]Eblana will never give Na Saoirsí true life? Is that right, Loughshinny?
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="Loughshinny"]She said she couldn't. She... actually doesn't like to lie, unless there are other circumstances...
+[charslot(slot = "m", name = "avg_npc_1692_1#4$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Nemos"]She's The Leader of Tara, the one and only Red Dragon, what could possibly be tying her hands?!
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="Nemos"]I...
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="Brigid"]What's wrong, Nemos? You seem... different...
+[playMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="Nemos"]I get it. I finally get it, Your Highness Loughshinny.
+[name="Nemos"]It seems that that fire can in fact infect the living.
+[charslot(slot = "m", name = "avg_1020_reed2_1#11$1",focus="m")]
+[name="Loughshinny"]Nemos?!
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="Nemos"]The people I once depended on turned out to be a swarm of selfish parasites.
+[name="Nemos"]The Leader I once believed in turned out to be an evil dragon who doesn't care if anyone else lives or dies.
+[name="Nemos"]The people I once put my life on the line to protect... became the reason my closest friend died.
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="Nemos"]I can't even imagine what they would have done to him if that wicked dragon hadn't lit him up with her flames.
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="Nemos"]Culann was right to ask what we would do once Samhain is over. What <i>should</i> I do?
+[name="Nemos"]Other than revenge, there's nothing left for me either.
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_deathfire", volume=0.4)]
+[avgdisplay(id = "1", style = "bgeffect", name = "$eb_purple_fire", slot = "bgover",x=20,y=-20,layer = 1)]
+[Delay(time=3)]
+As she utters these words, Loughshinny sees a flame ignite within the final Na Saoirsían left untainted by the purple fire.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[avgdisplay(id = "1")]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]Your Highness, will you regard me the same as the rest of the residents—a servant of Eblana?
+[charslot(slot = "m", name = "avg_1020_reed2_1#13$1",focus="m")]
+[name="Loughshinny"]No. This deadly disease... It has ultimately infected even the last person in the city.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]If so, Your Highness, then I swear to you that I will aid you in this dance that's been forced on you. Until the very end...
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="Nemos"]Until the wicked dragon falls.
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="Loughshinny"]...I have heard your vow.
+[name="Loughshinny"]Now, I must leave the city for a while. Come with me, Nemos.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]To the wakemen?
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]Mhm. I have no hope of curing the flame here, so I thought we should seek aid from anyone who might be able to help.
+[charslot(slot = "m", name = "avg_npc_1692_1#2$1",focus="m")]
+[name="Nemos"]No, I can't go with you. I have no right to be there anymore.
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="Nemos"]I'll stay in the city. As long as the Red Dragon doesn't realize what's going on and tear me apart... I'll try my best to keep the situation from deteriorating.
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="Nemos"]Though, I'd appreciate it if you could return this whistle for me.
+[name="Nemos"]And... Culann too. Please give him a proper funeral.
+[name="Nemos"]A proper funeral requires eulogies from friends and family, so... I'll write one. Could you read it for me there?
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="Loughshinny"]...Alright.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_writerub", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]Here. It's done.
+[charslot(slot = "m", name = "avg_4177_brigid_1#10$1",focus="m")]
+[name="Brigid"]I'll go with Reed. The Dark Woods aren't lettin' anyone in or out, but it should be smoother with us two.
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="Nemos"]No, Brigid. You should stay too. I need your help.
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="Brigid"]Reed?
+[charslot(slot = "m", name = "avg_1020_reed2_1#9$1",focus="m")]
+[name="Loughshinny"]I'll be fine by myself.
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="Brigid"]That works, but... Nemos, you're so different now.
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="Nemos"]...I guess this is what vengeance does to a person.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[stopsound(channel="read2")]
+[charslot]
+[Image]

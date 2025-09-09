@@ -1,0 +1,15 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 活动act1sandbox教学关1_b
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=600, focusY=-300, focusWidth=250, focusHeight=250, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+In real games, you will need to select one out of five playing styles to enter. Each style provides a special support device that you can deploy.
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Battle.LockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startX=-130, startY=60, startAnchor="BottomRight", endAnchor="Center", endX=0, endY=100)] \
+The support device for the Basic style is the <@tu.kw>Cheerleader</>, which <@tu.kw>increases the ATK</> of your Operators and that of your partner's.
+[Battle.UnlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]Now, let's defeat five Junkmen and reach the Advanced Goal!

@@ -1,0 +1,575 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="crun")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="Newsboy's Voice"]Extra! Extra! Read all about it!
+[name="Newsboy's Voice"]The Victorians are retreating, not fighting!
+[name="Newsboy's Voice"]Tara has gotten back all its territory!
+[name="Newsboy's Voice"]Peace will be restored to all of Tara by Samhain!
+[Dialog]
+[stopsound(channel="crun", fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g1_citystreets_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$tara_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_wheelscree", channel="wh",loop=true,volume=0.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_carriagebell",volume=1)]
+[delay(time=1)]
+[name="Woman's Voice"]Stop the cart.
+[name="Soldier's Voice"]I've been ordered to escort you directly to meet Her Highness, with no delays.
+[name="Woman's Voice"]Before I meet her, I need to see it with my own eyes—my sister's city, post-war Tara, the survivors and civilians—have their new lives finally begun?
+[name="Soldier's Voice"]...If you insist.
+[name="Soldier's Voice"]But the people are not yet prepared for two red dragons—
+[name="Woman's Voice"]Of course I know that.
+[Dialog]
+[stopsound(channel="wh", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g1_citystreets_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]Just—just take these!
+[name="Anxious Resident"]These knives, axes, and bowls are all made of iron. They'll make for good materials.
+[name="Anxious Resident"]I beg you, Culann, take them... even if you have to melt them down and make some eyes for our statue.
+[Dialog]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="Autumn is almost over, and mornings in Na Saoirsí are cold and damp.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="A pair of scarred, weathered hands rub against the cold and dry metal goods—much like a soldier running their fingers over a medal of valor in wartime.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="The people yell out his name, hoping the broken tools in their hands will be accepted, smelted, and used by the hero to forge the statue.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="The hero... yes, the hero... Every story needs a hero like that.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#6$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#6$1",focus="m")]
+[name="Culann"]Theo! Theo! Come help carry this stuff into the workshop.
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#1$1",focus="m")]
+[name="Culann"]I mean now, Theo! I'll help you sharpen your knife tonight.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]What a lazy brat. This is what you get for pampering him too much.
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]...
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]No, uh, I mean, doesn't matter if that boy's around, just take everything, please!
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]I can't take <i>everything</i>. We all need these tools to get by. And that goes double for your prosthetic leg.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[multiline(name="Anxious Resident")]I—
+[PlaySound(key="$d_avg_stickknock",volume=0.4)]
+[PlaySound(key="$d_avg_stickknock", volume=0.4, loop=false, channel="knock",delay=0.4)]
+[multiline(name="Anxious Resident")]I'm standing up fine, aren't I?
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]That wooden leg Nemos made is only temporary. Once better craftsmen arrive in town, they can repair your iron one.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]But you're making a statue to commemorate our victory in the war—one that'll be displayed in the main square during Samhain!
+[name="Anxious Resident"]Frankly, it'd be an honor for my rusty old leg to be a part of that.
+[charslot(slot="m",name="avg_npc_1697_1#2$1",focus="m")]
+[name="Culann"]No means no.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Just take it, already. It's all old stuff we'd have thrown out while cleaning anyway—no one's got any use for them.
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]What's wrong with these bowls? They look perfectly fine to me.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]We can use clay ones instead. As for the axes, we'll just share the few we've got left.
+[name="Friendly Resident"]The war just ended, and the city's short on everything. If we don't help you, how will the statue ever be finished?
+[charslot(slot="m",name="avg_npc_1697_1#2$1",focus="m")]
+[name="Culann"]...
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]Still, I can't accept used prosthetics, no matter what.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]You're a great man, my hero, but you can be so stubborn!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.7,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1694_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+Loughshinny slowly walks into the crowd.
+For some reason, she feels as though there's something separating her from them. As if she's looking at them from the other side of a bonfire.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]Excuse me, what are you all doing?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]A new face in town? Haven't seen many of those lately! Where are you from, Vouivre?
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]I've returned to Tara from a place far, far away.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]See, Culann? If you'd just taken everything without a fuss, you wouldn't have embarrassed yourself in front of our countryman from afar.
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="Culann"]My answer is still no. Not the prosthetic leg. The other stuff... fine.
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="Loughshinny"]Why are people donating their pots, pans, and prosthetics?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Because we all want to erect a statue in the square for Samhain, to celebrate Tara's rebirth.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]It's to celebrate Samhain?
+[name="Loughshinny"]I've only ever come across the festival in Taran folklore. It's held after the autumn harvest and before winter, yes? And it's meant to connect this shore to the next.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]You know your stuff, Vouivre!
+[name="Friendly Resident"]We used to just celebrate the harvest every year. It was the Dublinners who told us about the festival's historical origins.
+[name="Friendly Resident"]So we sweep our houses, prepare feasts for our guests, and most importantly, light bonfires! On the day when life and death intertwine, we welcome all visitors to the banquet... There's so much to do!
+[name="Friendly Resident"]And since this is the first Samhain since Tara's rebirth, it should be even more grand.
+[name="Friendly Resident"]Good thing, too. Otherwise, Culann would never accept our old pots even if he had to tear down his own house instead.
+[name="Friendly Resident"]Speaking of, do you have any iron of your own you'd like to donate, so the hero can add it to the statue?
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]All I have on me is a bookmark. I <i>think</i> it's made of iron. Will that do?
+[charslot(slot="m",name="avg_npc_1697_1#1$1",focus="m")]
+[name="Culann"]You don't need to listen to her, Taran from afar.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Haha...
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]So what sort of statue are you making?
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]A red dragon, to celebrate Tara's rebirth.
+[charslot(slot="m",name="avg_npc_1694_1#8$1",focus="m")]
+[name="Loughshinny"]A red dragon...
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]I'm telling you, Culann, if you don't take my prosthetic leg, I—I won't leave until you do!
+[charslot(slot="m",name="avg_npc_1697_1#1$1",focus="m")]
+[name="Culann"]Then I suppose I'll have to pick you up and carry you back myself.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]Ugh! You and your gigantic muscles! By the time Samhain is over and the statue has been erected, we'll all be living the good life. We'll be able to make as many prosthetics as we want!
+[name="Anxious Resident"]Just imagine: a massive dragon statue standing tall in the night. Even through winter, its flames will remain lit, just like in the legends. Why it'd be enough to drive off the man-eating mist...
+[name="Anxious Resident"]And we wouldn't have to obey that blasted curfew anymore—
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="Culann"]The curfew is an order approved by the Red Dragon, put in place to ensure our safety.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]I know that. Of course I know that!
+[Dialog]
+[charslot]
+As they speak, more and more people begin to gather around them, until the alley is completely blocked. They each carry all manner of things meant to be melted down for the statue.
+Culann patiently receives each new visitor as the objects at his feet begin to pile up. He's quite a large man, but even he can't carry all of them at once.
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="Loughshinny"]Allow me to help you, Culann.
+[charslot(slot="m",name="avg_npc_1697_1#1$1",focus="m")]
+[name="Culann"]Oh, no need for that. My apprentice, Theo—
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Can you really count on Theo, though? We have no idea where that rascal ran off to! He talks a good game, but slacks off when no one's watching—typical Victorian!
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="Culann"]And how old was he when his parents died? Does he even remember Victoria?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]...
+[name="Friendly Resident"]So what's your name, friend?
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="Loughshinny"]Reed.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Have you found a place to stay yet? You're welcome to stay at my place for the night—you wouldn't want to be wandering the streets during curfew, that's for sure.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]I think I do. But... a curfew? You mean the city has a lights-out bell?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Not quite. Victoria used lights-out bells to suppress the Tarans. Na Saoirsí's curfew is to safeguard us.
+[name="Friendly Resident"]The black mist lingers in the Dark Woods, shielding all of Na Saoirsí from outsiders, but at times, it also drifts into the city streets.
+[name="Friendly Resident"]The curfew is meant to prevent anyone from encountering the mist. It permits no trespass—anyone who enters without permission will never return.
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="Loughshinny"]You mean the mist really eats people?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]...Listen to yourself. You come all this way, and <i>this</i> is what you ask about? Look, things will be better soon, just you wait.
+[name="Friendly Resident"]Now come with me. I'll show you around Na Saoirsí.
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="Loughshinny"]What about the man building the statue? Culann, was it? What is he going to do? I know a bit of Arts. Perhaps I could help him.
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Oh, don't worry about him! He's a genuine hero! He once dispatched an entire Victorian scout team in the Dark Woods. Unfortunately, he was a bit of a softy at the last moment. He's the only one willing to put up with Theo's nonsense.
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="Loughshinny"]All by himself? Really?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]Well, in the woods. The forest has always been on the Tarans' side—Ugh! Stop changing the subject, Reed!
+[name="Friendly Resident"]Just come with me and have some ale and stewed meat. It'll warm you right up!
+[name="Friendly Resident"]You must know that you've come home at the perfect time.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g1_citystreets_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_240",duration=0.5)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="???"]Phew. Well, at least there are still potatoes in the store...
+[name="???"]Damn! Look at the time! I'm late!
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_punchsp3",volume=1)]
+[CameraShake(duration=0.7, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]Who's the one charging through here like a wrecking ball—?
+[name="Anxious Resident"]Theo?
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Theo"]Sorry, sorry. I'm just in a hurry to get back. I didn't mean to bump into you, sir. Here. Let me wipe that off for you.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]...You dare to disrespect me, too?
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Theo"]What? No, no. Maybe I misspoke. I was just wondering if you needed help—
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=12, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Anxious Resident"]Stay away from me!
+[Dialog]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_frmrwkhrd", volume=0.6)]
+[PlaySound(key="$d_avg_punchsp1", volume=0.9,delay=0.2)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.3)]
+[PlaySound(key="$d_avg_puddlesplash", volume=0.9)]
+[charslot(duration=0.5)]
+[Delay(time=1)]
+The man raises his cane and strikes Theo hard on the chest, knocking him away.
+The morning mist has long since gathered in the uneven crevices of the stone pavement, forming murky puddles. Caught off guard, Theo stumbles backward and falls straight into one.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]You Victorian scoundrel! Who do you think you are? How dare you offer me charity?!
+[Dialog]
+[charslot]
+[name="Theo"]Urgh...!
+[name="???"]Put that cane away! What's going on here?
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#7$1",focus="m")]
+[name="???"]Are you okay, Theo?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(slot="m",name="avg_npc_240",duration=1)]
+[charslot(slot = "m", action="shake",random=true, power=5, times=35,duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="Theo"]I'm fine, Brigid, I'm fine. I crashed into him first.
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]A rootless nomad and a Victorian mongrel—couldn't ask for a more perfect pair of lowlives.
+[name="Anxious Resident"]You're not exactly making your ancestors proud, Brigid.
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="Brigid"]What's that supposed to mean?
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="Anxious Resident"]Hmph. Forget the Victorian mongrel. What about you?
+[name="Anxious Resident"]You're descended from the Exiled King, from the very clan that's supposed to warn the Tarans of impending Catastrophes—yet here you are, mingling with the likes of <i>him</i>.
+[name="Anxious Resident"]Even during the war, you never cared whether your own people won or lost, you'd just coldly toss those battle reports into the citadel, then go door to door delivering those meaningless personal letters...
+[name="Anxious Resident"]Are you lot even fit to call yourselves Tarans?
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_ltstrongpoint",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_4177_brigid_1#11$1")]
+[charslot(slot="r",name="avg_npc_240")]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_4177_brigid_1#11$1",focus="l")]
+[name="Brigid"]So, this is the only place you have to go? Why not just go back to Culann?
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Theo"]I... I need to wash my clothes first. Should be quick. You don't need to worry about me, Brigid.
+[charslot(slot="l",name="avg_4177_brigid_1#9$1",focus="l")]
+[name="Brigid"]Of course I'm worried. I came here just to see you, after all.
+[charslot(slot="l",name="avg_4177_brigid_1#11$1",focus="l")]
+[name="Brigid"]Hmph. How is a place wrecked by war and left to rot any better than Culann's workshop? At least there you'd have the forge keeping you warm, and hot meals.
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Theo"]No, it's just that... I don't want to cause him any more trouble. Please—don't tell Culann about what happened today. Okay? I'll be on my way as soon as my clothes dry.
+[charslot(slot="l",name="avg_4177_brigid_1#10$1",focus="l")]
+[name="Brigid"]I'm not here for him, Theo. I'm here for <i>you</i>, to take you away.
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Theo"]Take me way? Did he say something to you?
+[charslot(slot="l",name="avg_4177_brigid_1#7$1",focus="l")]
+[name="Brigid"]Just what sort of relationship do you have with him, anyway?
+[name="Brigid"]If I hadn't shown up today, were you going to take the beating without fighting back? My instincts are never wrong: if you stay in the city, they'll just keep finding new ways to push you around.
+[name="Brigid"]Today, they shoved you into a puddle and beat you with a cane. Tomorrow, who knows?
+[charslot(slot="l",name="avg_4177_brigid_1#10$1",focus="l")]
+[name="Brigid"]Anyhow, just come with me. I can take you to the plains, or anywhere else you fancy. Up to you.
+[name="Brigid"]You and me, we don't belong here. And if you've got nowhere else to go, you can always head to Nemos's old place and stay with the wakemen for a while.
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Theo"]I <i>do</i> want to see them, after all the stories Nemos has told me...
+[name="Theo"]But I can't leave, not unless Culann asks me to.
+[name="Theo"]Nemos has no time to look after him, and the dragon statue isn't finished yet. What would he do if I just up and left?
+[name="Theo"]But still, thanks Brigid.
+[charslot(slot="l",name="avg_4177_brigid_1#10$1",focus="l")]
+[name="Brigid"]If you say so. Then I'll take you back to the city before I leave.
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Theo"]No, don't bother. It's cold out, so my clothes won't be dry for a while. I'll go back then.
+[name="Theo"]And if all else fails, I can always take shelter in that abandoned home. Someone left a quilt and bedsheets there, and I've stayed there before. It'll be fine.
+[charslot(slot="l",name="avg_4177_brigid_1#8$1",focus="l")]
+[name="Brigid"]...If you <i>really</i> don't want to come with, well, I suppose it's safer here than risking a trip to another city.
+[charslot(slot="l",name="avg_4177_brigid_1#11$1",focus="l")]
+[name="Brigid"]So not even Culann looks after you all the time, huh?
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="Theo"]He has more important things to do. I should be making things easier on him, not giving him something else to worry about.
+[charslot(slot="l",name="avg_4177_brigid_1#6$1",focus="l")]
+[name="Brigid"]...
+[name="Brigid"]Well, goodbye then. Take care of yourself, you hear?
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]We're here!
+[name="Friendly Resident"]Like I said, you've come at the perfect time. Today we have fresh ale, stew, and oatmeal... if only we had a bonfire.
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="Loughshinny"]Shouldn't you save that for Samhain?
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="Friendly Resident"]According to the old customs, we can actually light it a few days before Samhain.
+[name="Friendly Resident"]Then again, the war just ended, so we really don't have much in the way of firewood. We can't just start chopping down trees, either, because of the curfew.
+[name="Friendly Resident"]At any rate, it's still light out. The sun can be our bonfire today!
+[name="Friendly Resident"]But that's enough chit-chat—take a seat. I'll have them make room for you.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[delay(time=1)]
+Loughshinny steps forward. In the damp, chilly air, each dish in the lavish spread on the table has the same familiar scent.
+[stopmusic(fadetime=2)]
+Warm, rustic, and simple, yet not what it seems.
+[PlaySound(key="$d_avg_dishes", volume=1)]
+She looks around, concealing her surprise, only to find that no one else finds any of this unusual.
+[name="Loughshinny"]...Is this stewed meat?
+[name="Friendly Resident"]Yeah. This here is the meat, these are grilled fins, and your cup is full of ale. Oh, right, and we also have oatmeal. I'll go grab you a bowl.
+[name="Loughshinny"]But...
+[Dialog]
+[delay(time=1)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+All the dishes appear to be made of the same thing.
+They're all made of potatoes, right?
+Their statue is bowls. Their bonfire is the sun. Their feast is... potatoes.
+As the friendly resident goes to fetch a bowl of 'oatmeal', Loughshinny stands up and walks toward the cart-and-burdenbeast that has been waiting for her the whole time.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g11_castlecorridor_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]Her Highness will return very soon. Please wait here.
+[charslot(slot="m",name="avg_1020_reed2_1#11$1",focus="m")]
+[name="Loughshinny"]And this place is...?
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]Na Saoirsí citadel. The highest point in the city is just up the steps beside you. This is also where Her Highness lingers most, when she's in the city.
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]I'm glad to see you aren't filling the halls with candlelight, musicians, and lavish feasts.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]I've already told you: the primary reason the city is short on supplies is because trade between Victoria and Tara has not yet fully resumed. We're working as hard as we can to resolve the issue.
+[charslot(slot="m",name="avg_npc_723_1#2$1",focus="m")]
+[name="'The Brigadier'"]The residents are very understanding of the situation. They hold nothing but goodwill and genuine love for Tara.
+[charslot(slot="m",name="avg_npc_723_1#4$1",focus="m")]
+[name="'The Brigadier'"]Your Highness Eblana!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_higheldshosfts", volume=1)]
+[charslot(slot = "m", name = "avg_450_necras_1#15$2", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_450_necras_1#15$2", focus="m")]
+[name="Eblana"]Leave us.
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="'The Brigadier'"]At once!
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.8)]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+[charslot(slot = "m", name = "avg_450_necras_1#1$2", focus="m")]
+[name="Eblana"]Loughshinny.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]Just what is going on in this city, Sister?
+[name="Loughshinny"]Everyone's celebrating Samhain, except there's no harvest, no bonfire, and the feast is nothing but potatoes!
+[charslot(slot = "m", name = "avg_450_necras_1#1$2", focus="m")]
+[name="Eblana"]If you came here to make me repeat what the Brigadier has already told you, well, I suppose I can play along. I wouldn't want to spoil our long overdue reunion.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]...
+[charslot(slot = "m", name = "avg_450_necras_1#1$2", focus="m")]
+[name="Eblana"]I'm more worried about your spear. Where is it now?
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]My spear?
+[name="Loughshinny"]If you're talking about the spear you gave me, it's being stored in a warehouse on Rhodes Island. I no longer need it.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]How can someone with no weapon claim any sort of power? Or forget power—even survival would be a struggle.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]I said 'the spear you gave me.'
+[charslot(slot = "m", name = "avg_450_necras_1#15$2", focus="m")]
+[name="Eblana"]...
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]Also, you won't kill me. At least, not yet.
+[name="Loughshinny"]As a puppet that has only just regained its soul, you wouldn't want to break me before you've had a chance to play with your new toy.
+[charslot(slot = "m", name = "avg_450_necras_1#7$2", focus="m")]
+[name="Eblana"]Your words are... quite hurtful.
+[name="Eblana"]Anyone can be made a puppet, Loughshinny, anyone except you. You are my dance partner, yet you'd rather stand in my shadow than join me on the floor.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]Until about a year ago. You finally got bored of me, didn't you?
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]...I don't recall what you're referring to.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]As for power, I'm not here for power. That power rightly belongs to you.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]Oh?
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]You've been setting fires all across Tara. Those fires have melted the chains that once bound the Tarans. That much is true.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]Then why have you returned?
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]To bear witness.
+[name="Loughshinny"]If you're truly willing to use your power to give the Tarans a new beginning, then I will do everything I can to support you.
+[name="Loughshinny"]Say, for example, that you're too busy to deal with the supply shortages in the city right now. If so, I would be willing to help with that.
+[name="Loughshinny"]Whether I step forward as a second red dragon, or hide my identity as before, it makes no difference to me.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]As noble as ever, my dear sister.
+[charslot(slot="m",name="avg_1020_reed2_1#12$1",focus="m")]
+[name="Loughshinny"]But I can't say whether...
+[name="Loughshinny"]...you would truly be satisfied with that.
+[name="Loughshinny"]The sister I knew wasn't someone who sought power simply to live a life of indulgence. She wanted more than that.
+[charslot(slot="m",name="avg_1020_reed2_1#2$1",focus="m")]
+[name="Loughshinny"]But so far, every step you've taken has been paved with bones and blood.
+[name="Loughshinny"]I can only pray that's because you've had no other choice.
+[name="Loughshinny"]I sincerely hope I will never have reason to collect my spear and come searching for you.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]Not bad. Not bad at all.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2", focus="m")]
+[name="Eblana"]It seems your life of wandering has taught you far more than you ever learned while acting as my shadow.
+[charslot(slot="m",name="avg_1020_reed2_1#1$1",focus="m")]
+[name="Loughshinny"]Let's not beat around the bush. I've made my intentions clear, and you've invited me back. So what is it you want from me?
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]You'll find out, soon enough.
+[charslot(slot = "m", name = "avg_450_necras_1#1$2", focus="m")]
+[name="Eblana"]Until you do, though, why not come with me? I'll show you around the Red Dragon's Lair.
+[Dialog]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.4, loop=true, channel="swalk")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=0.5, loop=true, channel="wwalk",delay=0.4)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g13_castlebalcony",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[soundvolume(channel="swalk",volume=0.6,fadetime=2.5)]
+[soundvolume(channel="wwalk",volume=0.7,fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+Legend has it that the architect deliberately shaped the plate with uneven elevations to mirror the old Taran capital.
+Legend has it that Tara's stonemasons showcased their finest craftsmanship in every building they made—save for one. They refused to add even a single ornament to the citadel, knowing it would be inhabited by a puppet king.
+Loughshinny has heard many stories like this, but no story can tell you whether it is itself a true flame, or merely its shadow cast on the wall.
+And so, she follows her sister up the steps and looks down at the city with her own eyes.
+She sees the empty pedestal in the square below. It seems to be waiting for something massive to be placed upon it.
+She sees the winding, undulating cobblestone roads stretching from the square, and the humble stone houses, so simple they inspire a sense of affection.
+But after she focuses her gaze and takes a harder look, she finally sees the thing she had sensed before, the thing that had separated her from the other residents.
+It is something that definitely does not belong in the city.
+[Dialog]
+[stopSound(channel="swalk", fadetime=2)]
+[stopSound(channel="wwalk", fadetime=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[delay(time=1.5)]
+[name="Loughshinny"]Flames?!
+[Dialog]
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+Flames.
+At a closer look, there are tiny sparks of fire scattered across the city—all the residents, whether talking, rushing to and fro, yelling, or resting, are surrounded by flickering flames.
+Purple flames.
+[Dialog]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[image(image="59_i02",screenadapt="coverall",xScale=1.2,yScale=1.2,fadetime=1,y=50,block=true)]
+[delay(time=2)]
+[ImageTween(yFrom=50,yTo=0,xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[name="Loughshinny"]What did you do to these people? You've made them into walking corpses, haven't you?!
+[name="Eblana"]You just got back from town. You met them yourself. You should know better than I do.
+[name="Loughshinny"]...
+[name="Eblana"]The flames will spread.
+[name="Loughshinny"]Your flames of death should not be spread to the living.
+[name="Eblana"]It is an unfortunate reality, but wherever man resides, so too does death. Whether on the battlefield or in a bustling city. The flames merely hasten the inevitable.
+[name="Eblana"]But I must admit, it doesn't sit right with me either.
+[name="Eblana"]The dead wander the wilderness, driven by the desires they held in life. While those tainted by the flames of death can never truly start anew... Life and death cannot remain entangled like this, each defiling the other.
+[name="Loughshinny"]But... haven't you been their chief defiler?
+[name="Eblana"]No. Death should be mine to command. I cannot have it expanding beyond the boundaries I set.
+[name="Loughshinny"]...
+[name="Eblana"]Well then, my dear sister, what would you like Tara to become? I want your opinion.
+[name="Eblana"]Should the living endure and the dead rest in peace? Or should all of Tara become a kingdom of death?
+[name="Loughshinny"]Why ask a question you already know the answer to?
+[name="Eblana"]Then it is clear what you must do.
+[name="Eblana"]Kill me, Loughshinny.
+[Dialog]
+[Image(fadetime=1.5)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_1020_reed2_1#6$1",focus="m")]
+[name="Loughshinny"]What?!
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]While you've been trudging through the crowds, I've been busy preparing.
+[name="Eblana"]The moment the tip of your spear pierces my heart, heralding death's embrace, everything tainted by my deathly flames shall leave this realm along with me.
+[name="Eblana"]Then, you will become the first and only true leader Tara has seen in decades.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]...I will not be your shadow anymore, and we red dragons will not be the monsters they claim us to be—slaughtering our own kin in madness.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]Sometimes—often, even—kinslaying can be a virtuous act.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]What about those touched by the your fire—can they really start their lives anew, as you promised?
+[charslot(slot = "m", name = "avg_450_necras_1#1$2", focus="m")]
+[name="Eblana"]I have promised nothing about life, Loughshinny, not even for those untouched by my flames.
+[name="Eblana"]As for the cityfolk, they have already been entangled by the violet flames. They will gradually become walking corpses, and eventually leave here with me. This much is certain.
+[charslot(slot="m",name="avg_1020_reed2_1#4$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Loughshinny"]They are living, breathing people! They fought under your command and won your war for you—they have the right to start anew!
+[charslot(slot = "m", name = "avg_450_necras_1#15$2", focus="m")]
+[name="Eblana"]An unfortunate fate, to be sure, but their fate nonetheless.
+[charslot(slot="m",name="avg_1020_reed2_1#7$1",focus="m")]
+[name="Loughshinny"]No, Eblana. It shall not be their fate.
+[charslot(slot = "m", name = "avg_450_necras_1#13$2", focus="m")]
+[name="Eblana"]What will you do, then?
+[Dialog]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.4, loop=true, channel="swalk")]
+[StopSound(channel="swalk", fadetime=3)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[PlaySound(key="$d_avg_drtywndblw", volume=0.7)]
+Loughshinny has more to say, but Eblana has already turned around and started walking down the long corridor. Her footsteps are so soft that Loughshinny did not even realize she had left.
+After her sister's figure disappears completely into the darkness, Loughshinny turns her gaze back to the city.
+How she wishes it were all just one of Eblana's tricks... but the flames are real.
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+She clenches her fists, pulls up her hood, and turns to descend the steps.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
