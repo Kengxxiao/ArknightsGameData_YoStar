@@ -1,0 +1,26 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学c1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=5, scale=1.2, time=1.5)]
+[Delay(time=1)]
+[Tutorial(focusX=160, focusY=185, focusWidth=210, focusHeight=210, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_stward", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+일반 시설 건축공 외에도, 웨이브가 시작할 때마다 무너진 잔해에 갇혀 구조를 기다리는 <@tu.kw>고급 시설 건축공</>이 나타날 수도 있어.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=4)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]주변에 지키고 있는 적을 처치하면 고급 시설 건축공을 구할 수 있어.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=2.5, offsetY=5.5, scale=0.8, time=0.5)]
+[Delay(time=1)]
+[CooperateBattle.LockCamera(enable=false)]
+[Tutorial(dialogHead="$avatar_stward")]고급 시설 건축공은 <@tu.kw>1급</> 시설을 <@tu.kw>업그레이드</>해서 더 강력한 효과를 가져다줄 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]예를 들어, <@tu.kw>휴대용 운동기구</>를 3급으로 업그레이드하면 양측 오퍼레이터의 공격력과 SP 회복 속도를 증가시켜.
+[CooperateBattle.CameraFocusTo(offsetX=6, offsetY=4, scale=1, time=1)]
+[Delay(time=1)]
+[Tutorial(dialogHead="$avatar_stward")]이제, 마지막 웨이브를 막아보자!
+[CooperateBattle.LockCamera(enable=true)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]

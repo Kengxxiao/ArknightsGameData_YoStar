@@ -1,9 +1,0 @@
-[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess穿装备
-[Battle.LockAutoChessHud]
-[InputBlocker(blockInput=true)]
-[Battle.AutoChessOnlyAllow(reqConditionKey="wear_equip_not_replace",bindKey="wear_equip_not_replace", hint="우선 튜토리얼을 완료해 주세요.")]
-[Delay(time=0.2)]
-[Battle.SwitchToDefaultUIState]
-[Delay(time=0.2)]
-[InputBlocker(blockInput=false)]
-[Tutorial(waitForSignal="act1vautochess_battle_field_equip_wear_putdown", dialogHead="$avatar_amiya", animStyle="Drag",           startBattleTarget="tile_first_hand_equip_chess", endBattleTarget="tile_battle_char_chess")] 장비를 오퍼레이터한테 드래그하면 즉시 장착되며, 오퍼레이터마다 최대 <@tu.kw>2개</>의 장비를 장착할 수 있어요. 장착한 장비는 해당 오퍼레이터에 <@tu.kw>귀속</>되어 일시적으로 해제할 수는 없어요.

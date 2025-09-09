@@ -1,0 +1,31 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+이게 바로 <@tu.kw>플랫폼 원료 상자</>군요. 작업하면 <@tu.kw>유압식 플랫폼</>이 되는 거고요.
+[Tutorial(dialogHead="$avatar_stward")]맞아, 2번 작업해야 사용할 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]<@tu.kw>유압식 플랫폼</>은 원거리 오퍼레이터를 배치할 수 있을 뿐만 아니라, 적의 진격로도 변경할 수 있어.
+[CooperateBattle.CameraFocusTo(offsetX=11, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+그럼, 저 시설은……
+[Tutorial(dialogHead="$avatar_stward")]<@tu.kw>바리케이드 원료 상자</>야. 1번만 작업하면 바로 사용할 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]작업이 끝나면 <@tu.kw>콘크리트 바리케이드</>가 되어 적을 저지할 수 있어.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]물론, 협력자도 함께 시설을 작업할 수 있어.
+[Tutorial(dialogHead="$avatar_stward")]전에 작업 완료했던 건축 공구실이 더 많은 시설 건축공을 데려왔어. 나머지 시설의 작업은 박사한테 맡길게!
+[CooperateBattle.CameraFocusTo(offsetX=10, offsetY=4, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

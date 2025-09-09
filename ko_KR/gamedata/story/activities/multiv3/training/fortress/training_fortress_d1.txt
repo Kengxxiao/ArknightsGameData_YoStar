@@ -1,0 +1,18 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b2
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=1.2, time=1.5)]
+[Battle.Delay(time=0.5)]
+[Battle.pause]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=0.6, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=160, focusY=120, focusWidth=240, focusHeight=240, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+최종 웨이브가 되면 전장에 강력한 적 <@tu.kw>시련의 트로피</>가 등장해!
+[Tutorial(dialogHead="$avatar_stward")]이 녀석에게 입힌 대미지는 최종 경기 성적에 반영되니까……
+[Tutorial(dialogHead="$avatar_stward")]제한된 시간 내에 최대한 많은 대미지를 뽑아내야 해.
+[CooperateBattle.CameraFocusTo(offsetX=8, offsetY=4, scale=1, time=1.5)]
+[Delay(time=1)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

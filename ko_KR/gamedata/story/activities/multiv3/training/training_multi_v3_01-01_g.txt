@@ -1,0 +1,15 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 活动act1sandbox教学关1_b
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=600, focusY=-300, focusWidth=250, focusHeight=250, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+실전에서는 5가지 특수 버프 중 1개를 선택해 경기를 진행할 수 있는데, 버프마다 지원 장치 1개를 제공해 전투에서 사용할 수 있습니다!
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Battle.LockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startX=-130, startY=60, startAnchor="BottomRight", endAnchor="Center", endX=0, endY=100)] \
+이것은 경기 스타일 '기초'의 지원 장치인 <@tu.kw>경기장 응원단</>입니다. 전장에 배치하면 양측의 <@tu.kw>공격력이 증가</>해요!
+[Battle.UnlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]자, 그럼 함께 부랑자 5명을 쓰러뜨려 상급 목표에 도전해 보시죠!

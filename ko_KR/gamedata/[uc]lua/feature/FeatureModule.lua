@@ -21,7 +21,8 @@ require "Feature/Activity/PrayOnly/PrayOnlyActDefines"
 
 require "Feature/Activity/ActFlip/ActFlipMainDlg"
 
-require "Feature/Activity/CheckinAccess/ActCheckinAccessMainDlg"
+require "Feature/Activity/CheckinAccess/CheckinAccessDefine"
+require "Feature/Activity/CheckinAccess/CheckinAccessMainDlg"
 
 require "Feature/Activity/LuaActivityUtil"
 
@@ -71,7 +72,6 @@ require "Feature/Operation/Returnning/ReturnMainDlg"
 require "Feature/Operation/Returnning/ReturnWelcomeDlg"
 require "Feature/Operation/Returnning/ReturnRewardsDlg"
 
-require "Feature/Operation/ActFun/ActFunModule"
 
 require "Feature/Activity/SwitchOnly/SwitchOnlyDefine"
 require "Feature/Activity/SwitchOnly/SwitchOnlyDlg"
