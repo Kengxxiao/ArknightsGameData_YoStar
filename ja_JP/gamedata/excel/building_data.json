@@ -13488,6 +13488,96 @@
           ]
         }
       ]
+    },
+    "char_450_necras": {
+      "charId": "char_450_necras",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "train_spd&profession2[052]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "train_spd&profession2[650]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "train_cost&profession[350]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4171_wulfen": {
+      "charId": "char_4171_wulfen",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd&limit&cost[300]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_limit&cost[1020]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4177_brigid": {
+      "charId": "char_4177_brigid",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "hire_spd_cost[220]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "hire_spd_cost[230]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": []
+        }
+      ]
     }
   },
   "buffs": {
@@ -13501,7 +13591,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全製造所の製造効率<@cc.vup>+2%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全製造所の製造効率<@cc.vup>+2%</>（同種の効果は高いほうのみ適用）"
     },
     "control_prod_fraction[000]": {
       "buffId": "control_prod_fraction[000]",
@@ -13525,7 +13615,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、<@cc.kw>2</>台以上の<$cc.tag.op><@cc.kw>作業用プラットフォーム</></>が<@cc.kw>発電所</>に配置されている時、全製造所の製造効率<@cc.vup>+2%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、<@cc.kw>2</>台以上の<$cc.tag.op><@cc.kw>作業用プラットフォーム</></>が<@cc.kw>発電所</>に配置されている時、全製造所の製造効率<@cc.vup>+2%</>（同種の効果は高いほうのみ適用）"
     },
     "control_token_prod_spd2[000]": {
       "buffId": "control_token_prod_spd2[000]",
@@ -13537,7 +13627,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "<$cc.tag.mh><@cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全製造所の製造効率<@cc.vup>+2%</>（同種の効果は高いほうのみ適応）"
+      "description": "<$cc.tag.mh><@cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全製造所の製造効率<@cc.vup>+2%</>（同種の効果は高いほうのみ適用）"
     },
     "control_token_tra_spd[000]": {
       "buffId": "control_token_tra_spd[000]",
@@ -13549,7 +13639,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "<$cc.tag.mh><@cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+      "description": "<$cc.tag.mh><@cc.kw>アイルーと愉快な仲間たち</></>所属オペレーターと共に制御中枢に配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適用）"
     },
     "control_bd_spd[000]": {
       "buffId": "control_bd_spd[000]",
@@ -13585,7 +13675,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適用）"
     },
     "control_tra_spd[010]": {
       "buffId": "control_tra_spd[010]",
@@ -13597,7 +13687,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適用）"
     },
     "control_tra_spd[020]": {
       "buffId": "control_tra_spd[020]",
@@ -13609,7 +13699,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適用）"
     },
     "control_tra_spd[030]": {
       "buffId": "control_tra_spd[030]",
@@ -13621,7 +13711,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全貿易所の受注効率<@cc.vup>+7%</>（同種の効果は高いほうのみ適用）"
     },
     "control_tra_limit&spd[000]": {
       "buffId": "control_tra_limit&spd[000]",
@@ -13657,7 +13747,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+25%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+25%</>（同種の効果は高いほうのみ適用）"
     },
     "control_upMeetingSpeed[100]": {
       "buffId": "control_upMeetingSpeed[100]",
@@ -13669,7 +13759,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+15%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、応接室の手がかり捜索速度<@cc.vup>+15%</>（同種の効果は高いほうのみ適用）"
     },
     "control_meeting&ord[000]": {
       "buffId": "control_meeting&ord[000]",
@@ -14209,7 +14299,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適用）"
     },
     "control_dorm_rec[001]": {
       "buffId": "control_dorm_rec[001]",
@@ -14221,7 +14311,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適用）"
     },
     "control_dorm_rec[002]": {
       "buffId": "control_dorm_rec[002]",
@@ -14233,7 +14323,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、全ての宿舎内のオペレーターの1時間ごとの体力回復量<@cc.vup>+0.05</>（同種の効果は高いほうのみ適用）"
     },
     "control_train_spd[010]": {
       "buffId": "control_train_spd[010]",
@@ -14245,7 +14335,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、訓練室で訓練を行っているオペレーターがいる場合、当該オペレーターの訓練速度<@cc.vup>+5%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、訓練室で訓練を行っているオペレーターがいる場合、当該オペレーターの訓練速度<@cc.vup>+5%</>（同種の効果は高いほうのみ適用）"
     },
     "control_train_spd[011]": {
       "buffId": "control_train_spd[011]",
@@ -14257,7 +14347,7 @@
       "textColor": "#ffffff",
       "buffCategory": "FUNCTION",
       "roomType": "CONTROL",
-      "description": "制御中枢配置時、訓練室で訓練を行っているオペレーターがいる場合、当該オペレーターの訓練速度<@cc.vup>+5%</>（同種の効果は高いほうのみ適応）"
+      "description": "制御中枢配置時、訓練室で訓練を行っているオペレーターがいる場合、当該オペレーターの訓練速度<@cc.vup>+5%</>（同種の効果は高いほうのみ適用）"
     },
     "control_tra_limit&spd[010]": {
       "buffId": "control_tra_limit&spd[010]",
@@ -14545,7 +14635,7 @@
       "textColor": "#ffffff",
       "buffCategory": "OUTPUT",
       "roomType": "POWER",
-      "description": "発電所配置時、ドローンの上限数<@cc.vup>10</>につき、ドローンの回復速度<@cc.vup>+1%</>"
+      "description": "発電所配置時、ドローンの上限数<@cc.vup>10</>につき、ドローンの回復速度<@cc.vup>+1%</>（最大<@cc.vup>+25%</>まで）"
     },
     "power_count[000]": {
       "buffId": "power_count[000]",
@@ -15123,6 +15213,18 @@
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、保管上限<@cc.vup>+16</>、1時間ごとの体力消費量<@cc.vup>-0.25</>"
     },
+    "manu_prod_limit&cost[1020]": {
+      "buffId": "manu_prod_limit&cost[1020]",
+      "buffName": "収納の達人",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_limit&cost3",
+      "sortId": 3552,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、保管上限<@cc.vup>+16</>、1時間ごとの体力消費量<@cc.vup>-0.25</>"
+    },
     "manu_formula_cost[000]": {
       "buffId": "manu_formula_cost[000]",
       "buffName": "Vlog",
@@ -15255,6 +15357,18 @@
       "roomType": "MANUFACTURE",
       "description": "製造所配置時、製造効率<@cc.vup>+25%</>、保管上限<@cc.vup>+6</>"
     },
+    "manu_prod_spd&limit&cost[300]": {
+      "buffId": "manu_prod_spd&limit&cost[300]",
+      "buffName": "行動派",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd&limit6",
+      "sortId": 3657,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "製造所配置時、製造効率<@cc.vup>+20%</>、保管上限<@cc.vdown>-8</>"
+    },
     "manu_prod_limit&cost[021]": {
       "buffId": "manu_prod_limit&cost[021]",
       "buffName": "掘削作業",
@@ -15289,7 +15403,7 @@
       "textColor": "#333333",
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
-      "description": "製造所配置時、配属オペレーター各自の保管上限増加値が<@cc.vup>16</>以下の場合、増加値が1につき、製造効率<@cc.vup>+1%</>。保管上限増加値が<@cc.vup>16</>を超える場合、増加値1につき、製造効率<@cc.vup>+3%</>（<$cc.m.var1><@cc.rem>「再利用」</></>の効果より優先適応、重複不可）"
+      "description": "製造所配置時、配属オペレーター各自の保管上限増加値が<@cc.vup>16</>以下の場合、増加値が1につき、製造効率<@cc.vup>+1%</>。保管上限増加値が<@cc.vup>16</>を超える場合、増加値1につき、製造効率<@cc.vup>+3%</>（<$cc.m.var1><@cc.rem>「再利用」</></>の効果より優先適用、重複不可）"
     },
     "manu_prod_spd_variable2[000]": {
       "buffId": "manu_prod_spd_variable2[000]",
@@ -18207,6 +18321,18 @@
       "roomType": "TRAINING",
       "description": "訓練室で協力者として配置時、<@cc.kw>術師</>の訓練速度<@cc.vup>+50%</>"
     },
+    "train_spd&profession2[052]": {
+      "buffId": "train_spd&profession2[052]",
+      "buffName": "術師エキスパートα",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_caster1",
+      "sortId": 9401,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、<@cc.kw>術師</>の訓練速度<@cc.vup>+30%</>"
+    },
     "train_spd&profession[060]": {
       "buffId": "train_spd&profession[060]",
       "buffName": "補助エキスパートα",
@@ -18735,6 +18861,18 @@
       "roomType": "TRAINING",
       "description": "訓練室で協力者として配置時、<@cc.kw>狙撃</>の訓練速度<@cc.vup>+30%</>。特化ランク<@cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<@cc.vup>+65%</>"
     },
+    "train_spd&profession2[650]": {
+      "buffId": "train_spd&profession2[650]",
+      "buffName": "死炎の導き",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train3_caster2",
+      "sortId": 9451,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で協力者として配置時、<@cc.kw>術師</>の訓練速度<@cc.vup>+30%</>。特化ランク<@cc.vup>3</>への訓練をサポートする場合、訓練速度がさらに<@cc.vup>+65%</>"
+    },
     "train_spd&profession2[660]": {
       "buffId": "train_spd&profession2[660]",
       "buffName": "同化",
@@ -18794,6 +18932,18 @@
       "buffCategory": "FUNCTION",
       "roomType": "TRAINING",
       "description": "訓練室で<@cc.kw>狙撃</>の特化ランク<@cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<@cc.vdown>+1</>"
+    },
+    "train_cost&profession[350]": {
+      "buffId": "train_cost&profession[350]",
+      "buffName": "安らぎなどいらず",
+      "buffIcon": "training",
+      "skillIcon": "bskill_train_necras",
+      "sortId": 9452,
+      "buffColor": "#7d0022",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "TRAINING",
+      "description": "訓練室で<@cc.kw>術師</>の特化ランク<@cc.vup>3</>への訓練の協力者として配置時、体力消費が1時間ごと<@cc.vdown>+1</>"
     },
     "train_cost&profession[360]": {
       "buffId": "train_cost&profession[360]",
@@ -18913,7 +19063,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single[1010]": {
       "buffId": "dorm_rec_single[1010]",
@@ -18925,7 +19075,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single[000]": {
       "buffId": "dorm_rec_single[000]",
@@ -18937,7 +19087,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.65</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.65</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single[001]": {
       "buffId": "dorm_rec_single[001]",
@@ -18949,7 +19099,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.65</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.65</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_bd_n1_n3[000]": {
       "buffId": "dorm_rec_bd_n1_n3[000]",
@@ -18961,7 +19111,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.65</>（同種の効果は高いほうのみ適応）、配置宿舎のレベル1につき、<$cc.bd_a1_a3><@cc.rem>小節</></><@cc.vup>+1</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.65</>（同種の効果は高いほうのみ適用）、配置宿舎のレベル1につき、<$cc.bd_a1_a3><@cc.rem>小節</></><@cc.vup>+1</>"
     },
     "dorm_rec_bd_n1[100]": {
       "buffId": "dorm_rec_bd_n1[100]",
@@ -18985,7 +19135,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.7</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.7</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single[031]": {
       "buffId": "dorm_rec_single[031]",
@@ -18997,7 +19147,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.7</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.7</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single[032]": {
       "buffId": "dorm_rec_single[032]",
@@ -19009,7 +19159,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.7</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.7</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single[020]": {
       "buffId": "dorm_rec_single[020]",
@@ -19021,7 +19171,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.75</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.75</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single_P[000]": {
       "buffId": "dorm_rec_single_P[000]",
@@ -19033,7 +19183,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<@cc.kw>セイロン</>の場合、更に<@cc.vup>+0.45</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）。対象が<@cc.kw>セイロン</>の場合、更に<@cc.vup>+0.45</>"
     },
     "dorm_rec_single_P[001]": {
       "buffId": "dorm_rec_single_P[001]",
@@ -19045,7 +19195,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<@cc.kw><$cc.gvial>ガヴィル</></>の場合、更に<@cc.vup>+0.45</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）。対象が<@cc.kw><$cc.gvial>ガヴィル</></>の場合、更に<@cc.vup>+0.45</>"
     },
     "dorm_rec_single_P[002]": {
       "buffId": "dorm_rec_single_P[002]",
@@ -19057,7 +19207,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、オペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<@cc.kw>アズリウス</>の場合、更に<@cc.vup>+0.45</>"
+      "description": "配置宿舎内、オペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）。対象が<@cc.kw>アズリウス</>の場合、更に<@cc.vup>+0.45</>"
     },
     "dorm_rec_all[000]": {
       "buffId": "dorm_rec_all[000]",
@@ -19069,7 +19219,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_bd_n1_n2[000]": {
       "buffId": "dorm_rec_bd_n1_n2[000]",
@@ -19081,7 +19231,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）、配置宿舎のレベル1につき、<$cc.bd_a1_a2><@cc.rem>夢</></><@cc.vup>+1</>"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）、配置宿舎のレベル1につき、<$cc.bd_a1_a2><@cc.rem>夢</></><@cc.vup>+1</>"
     },
     "dorm_rec_bd_n1[000]": {
       "buffId": "dorm_rec_bd_n1[000]",
@@ -19117,7 +19267,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[011]": {
       "buffId": "dorm_rec_all[011]",
@@ -19129,7 +19279,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[012]": {
       "buffId": "dorm_rec_all[012]",
@@ -19141,7 +19291,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[013]": {
       "buffId": "dorm_rec_all[013]",
@@ -19153,7 +19303,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[014]": {
       "buffId": "dorm_rec_all[014]",
@@ -19165,7 +19315,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[017]": {
       "buffId": "dorm_rec_all[017]",
@@ -19177,7 +19327,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[020]": {
       "buffId": "dorm_rec_all[020]",
@@ -19189,7 +19339,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[021]": {
       "buffId": "dorm_rec_all[021]",
@@ -19201,7 +19351,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[022]": {
       "buffId": "dorm_rec_all[022]",
@@ -19213,7 +19363,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[027]": {
       "buffId": "dorm_rec_all[027]",
@@ -19225,7 +19375,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&tag[000]": {
       "buffId": "dorm_rec_all&tag[000]",
@@ -19237,7 +19387,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）。対象が<$cc.tag.dungeon><@cc.kw>【ライオスパーティー】</></>所属オペレーターの場合、更に<@cc.vup>+0.15</>"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）。対象が<$cc.tag.dungeon><@cc.kw>【ライオスパーティー】</></>所属オペレーターの場合、更に<@cc.vup>+0.15</>"
     },
     "dorm_rec_all&unfull[000]": {
       "buffId": "dorm_rec_all&unfull[000]",
@@ -19249,7 +19399,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&unfull[001]": {
       "buffId": "dorm_rec_all&unfull[001]",
@@ -19261,7 +19411,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>。同時に体力が最大ではないオペレーター<@cc.kw>1</>名ごとに、更に<@cc.vup>+0.01</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>。同時に体力が最大ではないオペレーター<@cc.kw>1</>名ごとに、更に<@cc.vup>+0.01</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&single[000]": {
       "buffId": "dorm_rec_all&single[000]",
@@ -19273,7 +19423,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、体力が満タンではない全員の1時間ごとの体力回復量が合計で<@cc.vup>+0.8</>になる（単体/複数オペレーターに有効となる時、同種の効果はそれぞれ高いほうのみ適応）"
+      "description": "配置宿舎内、体力が満タンではない全員の1時間ごとの体力回復量が合計で<@cc.vup>+0.8</>になる（単体/複数オペレーターに有効となる時、同種の効果はそれぞれ高いほうのみ適用）"
     },
     "dorm_powToRecAll[000]": {
       "buffId": "dorm_powToRecAll[000]",
@@ -19285,7 +19435,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>、発電所<@cc.kw>1</>箇所につき、更に<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>、発電所<@cc.kw>1</>箇所につき、更に<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適用）"
     },
     "dorm_powToRecAll[010]": {
       "buffId": "dorm_powToRecAll[010]",
@@ -19297,7 +19447,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>、発電所<@cc.kw>1</>箇所につき、更に<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>、発電所<@cc.kw>1</>箇所につき、更に<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適用）"
     },
     "dorm_hireToRecAll[000]": {
       "buffId": "dorm_hireToRecAll[000]",
@@ -19309,7 +19459,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single&oneself[000]": {
       "buffId": "dorm_rec_single&oneself[000]",
@@ -19321,7 +19471,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.4</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.4</>"
     },
     "dorm_rec_single&oneself[001]": {
       "buffId": "dorm_rec_single&oneself[001]",
@@ -19333,7 +19483,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.25</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.5</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.25</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.5</>"
     },
     "dorm_rec_single&oneself[010]": {
       "buffId": "dorm_rec_single&oneself[010]",
@@ -19345,7 +19495,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.3</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.3</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.3</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.3</>"
     },
     "dorm_rec_single&oneself[011]": {
       "buffId": "dorm_rec_single&oneself[011]",
@@ -19357,7 +19507,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.35</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.35</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.35</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.35</>"
     },
     "dorm_rec_single&oneself[012]": {
       "buffId": "dorm_rec_single&oneself[012]",
@@ -19369,7 +19519,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.35</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.35</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.35</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.35</>"
     },
     "dorm_rec_single&oneself[020]": {
       "buffId": "dorm_rec_single&oneself[020]",
@@ -19381,7 +19531,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.4</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.2</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.4</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.2</>"
     },
     "dorm_rec_single&oneself[021]": {
       "buffId": "dorm_rec_single&oneself[021]",
@@ -19393,7 +19543,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.5</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.25</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.5</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.25</>"
     },
     "dorm_hireToRecAll[001]": {
       "buffId": "dorm_hireToRecAll[001]",
@@ -19405,7 +19555,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<@cc.vup>+0.05</>（重複後の最終値を基に同種の効果は高いほうのみ適用）"
     },
     "dorm_hireToRecAll[021]": {
       "buffId": "dorm_hireToRecAll[021]",
@@ -19417,7 +19567,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<@cc.vup>+0.1</>（重複後の最終値を基に同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>、公開求人の最大同時求人可能数が2より1多いごとに、体力回復量が追加で<@cc.vup>+0.1</>（重複後の最終値を基に同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_single&oneself[030]": {
       "buffId": "dorm_rec_single&oneself[030]",
@@ -19429,7 +19579,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.5</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.25</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.5</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.25</>"
     },
     "dorm_rec_single&oneself[040]": {
       "buffId": "dorm_rec_single&oneself[040]",
@@ -19441,7 +19591,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.4</>（同種の効果は高いほうのみ適応）。自身の1時間ごとの体力回復量<@cc.vup>+0.4</>"
+      "description": "配置宿舎内、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.4</>（同種の効果は高いほうのみ適用）。自身の1時間ごとの体力回復量<@cc.vup>+0.4</>"
     },
     "dorm_rec_single_power[000]": {
       "buffId": "dorm_rec_single_power[000]",
@@ -19453,7 +19603,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎配置時、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適応）。対象が<$cc.g.sm><@cc.kw>サーミ</></>オペレーターの場合、更に<@cc.vup>+0.45</>"
+      "description": "宿舎配置時、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）。対象が<$cc.g.sm><@cc.kw>サーミ</></>オペレーターの場合、更に<@cc.vup>+0.45</>"
     },
     "dorm_rec_all&oneself[000]": {
       "buffId": "dorm_rec_all&oneself[000]",
@@ -19465,7 +19615,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&oneself[001]": {
       "buffId": "dorm_rec_all&oneself[001]",
@@ -19477,7 +19627,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.25</>（同種の効果は高いほうのみ適応）"
+      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vdown>-0.1</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.25</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&oneself[010]": {
       "buffId": "dorm_rec_all&oneself[010]",
@@ -19501,7 +19651,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&oneself[012]": {
       "buffId": "dorm_rec_all&oneself[012]",
@@ -19513,7 +19663,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&oneself[021]": {
       "buffId": "dorm_rec_all&oneself[021]",
@@ -19525,7 +19675,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&oneself[042]": {
       "buffId": "dorm_rec_all&oneself[042]",
@@ -19537,7 +19687,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&group[000]": {
       "buffId": "dorm_rec_all&group[000]",
@@ -19549,7 +19699,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、基地に配置された（補佐と活動室利用者を除く）<$cc.g.sui><@cc.kw>歳</></>オペレーター1人につき、全員の1時間ごとの体力回復量<@cc.vup>+0.06</>（最大<@cc.kw>4</>人まで、同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、基地に配置された（補佐と活動室利用者を除く）<$cc.g.sui><@cc.kw>歳</></>オペレーター1人につき、全員の1時間ごとの体力回復量<@cc.vup>+0.06</>（最大<@cc.kw>4</>人まで、同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&oneself[022]": {
       "buffId": "dorm_rec_all&oneself[022]",
@@ -19561,7 +19711,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>。配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&profession[000]": {
       "buffId": "dorm_rec_all&profession[000]",
@@ -19573,7 +19723,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、基地に配置された（補佐と活動室利用者を除く）<@cc.kw>放浪医</>オペレーター1人につき、全員の1時間ごとの体力回復量<@cc.vup>+0.06</>（最大<@cc.kw>4</>人まで、同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、基地に配置された（補佐と活動室利用者を除く）<@cc.kw>放浪医</>オペレーター1人につき、全員の1時間ごとの体力回復量<@cc.vup>+0.06</>（最大<@cc.kw>4</>人まで、同種の効果は高いほうのみ適用）"
     },
     "dorm_exchangeAp[000]": {
       "buffId": "dorm_exchangeAp[000]",
@@ -19621,7 +19771,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[024]": {
       "buffId": "dorm_rec_all[024]",
@@ -19633,7 +19783,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[025]": {
       "buffId": "dorm_rec_all[025]",
@@ -19645,7 +19795,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all[026]": {
       "buffId": "dorm_rec_all[026]",
@@ -19657,7 +19807,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_bd_num[000]": {
       "buffId": "dorm_bd_num[000]",
@@ -19681,7 +19831,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>。<$cc.bd_B><@cc.rem>静かなる共鳴</></><@cc.vup>5</>ごとに、配置宿舎内の全員の1時間ごとの体力回復量が追加で<@cc.vup>+0.01</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.2</>。<$cc.bd_B><@cc.rem>静かなる共鳴</></><@cc.vup>5</>ごとに、配置宿舎内の全員の1時間ごとの体力回復量が追加で<@cc.vup>+0.01</>（同種の効果は高いほうのみ適用）"
     },
     "dorm_rec_all&tired[000]": {
       "buffId": "dorm_rec_all&tired[000]",
@@ -19693,7 +19843,7 @@
       "textColor": "#ffffff",
       "buffCategory": "RECOVERY",
       "roomType": "DORMITORY",
-      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>。同時に体力<@cc.vup>18</>以下のオペレーターの1時間ごとの体力回復量が追加で<@cc.vup>+0.1</>（同種の効果は高いほうのみ適応）"
+      "description": "配置宿舎内、全員の1時間ごとの体力回復量<@cc.vup>+0.15</>。同時に体力<@cc.vup>18</>以下のオペレーターの1時間ごとの体力回復量が追加で<@cc.vup>+0.1</>（同種の効果は高いほうのみ適用）"
     },
     "hire_spd[000]": {
       "buffId": "hire_spd[000]",
@@ -19826,6 +19976,30 @@
       "buffCategory": "FUNCTION",
       "roomType": "HIRE",
       "description": "事務室配置時、事務連絡速度<@cc.vup>+50%</>、1時間ごとの体力消費量<@cc.vdown>+0.5</>"
+    },
+    "hire_spd_cost[220]": {
+      "buffId": "hire_spd_cost[220]",
+      "buffName": "ノマドの流儀α",
+      "buffIcon": "hire",
+      "skillIcon": "bskill_hire_skgoat3",
+      "sortId": 8901,
+      "buffColor": "#565656",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "HIRE",
+      "description": "事務室配置時、事務連絡速度<@cc.vup>+30%</>、1時間ごとの体力消費量<@cc.vdown>+1</>"
+    },
+    "hire_spd_cost[230]": {
+      "buffId": "hire_spd_cost[230]",
+      "buffName": "ノマドの流儀β",
+      "buffIcon": "hire",
+      "skillIcon": "bskill_hire_skgoat4",
+      "sortId": 8911,
+      "buffColor": "#565656",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "HIRE",
+      "description": "事務室配置時、事務連絡速度<@cc.vup>+45%</>、1時間ごとの体力消費量<@cc.vdown>+1</>"
     },
     "hire_spd_cost[100]": {
       "buffId": "hire_spd_cost[100]",
@@ -80252,6 +80426,646 @@
         "enableRoomType": 4112,
         "quantity": 1
       },
+      "furni_tarahouse_hangingcarpet_01": {
+        "id": "furni_tarahouse_hangingcarpet_01",
+        "sortId": 1859,
+        "name": "リネンのタペストリー",
+        "iconId": "furni_tarahouse_hangingcarpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILING",
+        "subType": "DECORATION_C",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_4",
+        "width": 1,
+        "depth": 4,
+        "height": 7,
+        "comfort": 120,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "ターラーの伝統模様が絞り染めされているタペストリー。薄手のリネン生地を手作業で仕上げている。\n冷たい隙間風や強烈な日差しを防ぐのに使えるが、使い続けても色褪せず、くたびれることもない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_candletray_01": {
+        "id": "furni_tarahouse_candletray_01",
+        "sortId": 1860,
+        "name": "石造りの燭台",
+        "iconId": "furni_tarahouse_candletray_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_4",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 125,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "石と鋼が共に燭台を支えている様は、自然と人工物の見事な融合と言える。\n周りを取り囲む乾いた棘の鋭さは、この小さな光を守り続けるには十分だ。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_column_01": {
+        "id": "furni_tarahouse_column_01",
+        "sortId": 1861,
+        "name": "組紐模様の柱",
+        "iconId": "furni_tarahouse_column_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COLUMN",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_1",
+        "width": 2,
+        "depth": 2,
+        "height": 10,
+        "comfort": 200,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "組紐の結び目模様が彫られた柱。木材とレンガが両側から足りない分の高さを補っている。\nそのおかげで、この柱は家屋を支えると同時に、その周囲に野草が育つスペースを確保できている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_table_01": {
+        "id": "furni_tarahouse_table_01",
+        "sortId": 1862,
+        "name": "木と石の長机",
+        "iconId": "furni_tarahouse_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_1",
+        "width": 10,
+        "depth": 3,
+        "height": 10,
+        "comfort": 645,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "変わったデザインの多機能テーブル。氷のように冷たく堅い大理石が、その上に置かれたインテリアのぬくもりを強調してくれる。\nここにはいつも花か手紙、もしくは今にも飛び立ちそうな彫刻が置かれている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_chair_01": {
+        "id": "furni_tarahouse_chair_01",
+        "sortId": 1863,
+        "name": "木製チェア（正面）",
+        "iconId": "furni_tarahouse_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_1",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 125,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "ターラーで一般的に使われている木製チェア。背もたれに彫刻が施されており、木の棒が間に挿しこまれている。\nほかの物より安定性に優れているため、いつも踏台代わりにされており、椅子として使われることは滅多にない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_chair_02": {
+        "id": "furni_tarahouse_chair_02",
+        "sortId": 1864,
+        "name": "木製チェア（横）",
+        "iconId": "furni_tarahouse_chair_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_1",
+        "width": 2,
+        "depth": 2,
+        "height": 4,
+        "comfort": 125,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "ターラーで一般的に使われている木製チェア。既定の様式通りに作られており、座ると思わず背筋が伸びる。\nいつも暖炉の近くに置かれているため、常に温かみのある木の香りを漂わせている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_shield_01": {
+        "id": "furni_tarahouse_shield_01",
+        "sortId": 1865,
+        "name": "小さな丸盾",
+        "iconId": "furni_tarahouse_shield_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "ORTHER_D",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_2",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 130,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "未完成の木の盾。表面には植物性の塗料が使われている。\n未完成のまま放置されたのは、出番がなくなったせいかもしれない。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_wallhanger_01": {
+        "id": "furni_tarahouse_wallhanger_01",
+        "sortId": 1866,
+        "name": "金属製ラック",
+        "iconId": "furni_tarahouse_wallhanger_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ORTHER_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_1",
+        "width": 3,
+        "depth": 1,
+        "height": 6,
+        "comfort": 135,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "ごく普通の壁掛けラック。特に飾れる物がないせいで、物語の中で描写される際は大抵、何も置かれていない。\n椅子の上に立って、旗と花輪を高く掲げよう。いつかやってくる勝利のために、二度と枯れ果てることなき人生のために。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_stove_01": {
+        "id": "furni_tarahouse_stove_01",
+        "sortId": 1867,
+        "name": "「永久に消えぬもの」",
+        "iconId": "furni_tarahouse_stove_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "WARM",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_2",
+        "width": 6,
+        "depth": 3,
+        "height": 6,
+        "comfort": 330,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "普通のレンガ造りの暖炉。上に飾られた花は枯れることはなく、炉の中の炎はいつまでも燃え続ける。\nリードはよく、この暖炉の前で立ち止まっている。「すべての人が、冷たい夜を一筋の炎と共に過ごせるように――それが、私の願い。」",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_pot_01": {
+        "id": "furni_tarahouse_pot_01",
+        "sortId": 1868,
+        "name": "「大収穫」",
+        "iconId": "furni_tarahouse_pot_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "COOKING",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_2",
+        "width": 4,
+        "depth": 2,
+        "height": 10,
+        "comfort": 275,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "キノコと野菜がいっぱいに詰まっている鍋。食材も用意したし、薪も完璧に乾かしておいた。あとは、ほんの小さな火花さえあればいい。\n「どう考えても、臨死体験はターラーの生活設計の一部だとは思えないんだけど、本当に本にそう書いてあったの？」と、ハーモニーはコメントしていた。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_stool_01": {
+        "id": "furni_tarahouse_stool_01",
+        "sortId": 1869,
+        "name": "クッション付き足置き",
+        "iconId": "furni_tarahouse_stool_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "STOOL",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": true,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_3",
+        "width": 2,
+        "depth": 2,
+        "height": 2,
+        "comfort": 100,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "大量生産された木製の足置き。「クッション」は、台の表面を覆うだけの布でしかないため、座ることは想定されていない。\nこの「クッション」がなければ、この台は周りの石壁と同じくらい冷たく固かっただろう。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 2,
+        "enableRoomType": 4112,
+        "quantity": 2
+      },
+      "furni_tarahouse_stonecutoff_01": {
+        "id": "furni_tarahouse_stonecutoff_01",
+        "sortId": 1870,
+        "name": "石彫の仕切り",
+        "iconId": "furni_tarahouse_stonecutoff_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "PARTITION",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_2",
+        "width": 2,
+        "depth": 4,
+        "height": 8,
+        "comfort": 235,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "奇妙な形をした石彫の仕切り。上のほうが苔むした石彫の小屋は、高い地形と低い地形が入り混じるナ・シアーシャを再現したものである。\n真ん中の空洞部分と側面には燭台が取り付けられている。何も見えないより、明るいほうがずっといい。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_ceilinglight_01": {
+        "id": "furni_tarahouse_ceilinglight_01",
+        "sortId": 1871,
+        "name": "鈴のついた照明",
+        "iconId": "furni_tarahouse_ceilinglight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_2",
+        "width": 4,
+        "depth": 4,
+        "height": 4,
+        "comfort": 160,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "質素で古風な円形の照明。燭台のほかに、鈴が三つついている。\nその鈴の音を聞いた者はいない。燭台の火を吹き消せるのは、鈴を鳴らせるほど強い風だけだ。",
+        "obtainApproach": "購買部期間限定",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_wallshelf_01": {
+        "id": "furni_tarahouse_wallshelf_01",
+        "sortId": 1872,
+        "name": "手作りの壁掛け棚",
+        "iconId": "furni_tarahouse_wallshelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "SHELF",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_3",
+        "width": 5,
+        "depth": 2,
+        "height": 4,
+        "comfort": 155,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "枝と木の板で作った壁掛け棚。シンプルな見た目からもわかるように、作るのは至って簡単だ。\n設計士は、ナ・シアーシャの湿度のせいで木材に芽が生えてしまう現象を、木彫りの枝と葉で再現しようとした。創作活動において、合理性に囚われる必要はない。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_bartable_01": {
+        "id": "furni_tarahouse_bartable_01",
+        "sortId": 1873,
+        "name": "「廃墟の上より」",
+        "iconId": "furni_tarahouse_bartable_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_3",
+        "width": 7,
+        "depth": 2,
+        "height": 5,
+        "comfort": 275,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "一見すると、単なるぼろぼろの壁であり、補強を施してから適当に木の板を置いて、即興のバーカウンターに仕立て上げたようにしか思えない。\nネクラスはかつて､この地に足跡を残した。「いなくなった者の空白を補う必要などない。死とは常に、新しき生を伴うものなのだ。それで、学者。お前は一体何を伝えようとしている？」",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_bookcase_01": {
+        "id": "furni_tarahouse_bookcase_01",
+        "sortId": 1874,
+        "name": "レトロな収納棚",
+        "iconId": "furni_tarahouse_bookcase_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_3",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 140,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "時代遅れなデザインの原木の収納棚。カウンター、本棚、収納棚が一体となっている。\n底にキャスターを取り付けずとも、それは部屋のあらゆる場所に現れる。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_carpet_01": {
+        "id": "furni_tarahouse_carpet_01",
+        "sortId": 1875,
+        "name": "カラフルなニットラグ",
+        "iconId": "furni_tarahouse_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_1",
+        "width": 12,
+        "depth": 8,
+        "height": 1,
+        "comfort": 135,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "様々な彩度の赤で編まれたラグ。靴底の汚れすらもその一部と化している。\n長旅の疲れは、すべてここに残されている。今までも、これからも。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_carpet_02": {
+        "id": "furni_tarahouse_carpet_02",
+        "sortId": 1876,
+        "name": "組紐のついたラグ",
+        "iconId": "furni_tarahouse_carpet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_3",
+        "width": 7,
+        "depth": 6,
+        "height": 1,
+        "comfort": 95,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "縁にターラーの伝統的な組紐があしらわれた小さなラグ。\n組紐を解けば、混沌とした色彩が現れる。このラグには何か別の役割があったのだろうか？あるいは、やはり単なるラグでしかないのだろうか？",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_wallpaper_01": {
+        "id": "furni_tarahouse_wallpaper_01",
+        "sortId": 1877,
+        "name": "「自身の奥底」",
+        "iconId": "furni_tarahouse_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "WALL",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_4",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 225,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "黒き森の怪しい景色を映したウォールディスプレイ。木々が空を覆いつくしているにも関わらず、月明かりが夜闇に纏わりついている。\n「ナ・シアーシャの人全員が源石ランプを持って森に入りでもしないと、ここまで明るくはならないよ。こんなのは黒き森じゃない。でも、だとしたらどこなんだろう？」とブリギッドは言った",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_tarahouse_floor_01": {
+        "id": "furni_tarahouse_floor_01",
+        "sortId": 1878,
+        "name": "鱗模様の石タイル",
+        "iconId": "furni_tarahouse_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FLOOR",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_tarahouse",
+        "groupId": "furni_set_tarahouse_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 225,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "ナ・シアーシャの広場の地面を再現したもの。鱗模様のタイルの中央と、四隅の隙間部分には、異なる大きさと濃さの端材がはめ込まれている。\nきっと今より良い毎日がやって来る――彼らはそう信じ、待ち続けている。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -83580,6 +84394,38 @@
         "enableRoomType": 4112,
         "quantity": 0
       },
+      "furni_animation_projector_03": {
+        "id": "furni_animation_projector_03",
+        "sortId": 10249,
+        "name": "「記憶を映すもの」",
+        "iconId": "furni_animation_projector_03",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 3,
+        "depth": 3,
+        "height": 5,
+        "comfort": 120,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "アニメの放送終了を記念して特別に制作された映写機。\n夜の焔が灰燼に帰し、曙光がついに顔を覗かせた。記憶という長き川を遡れば、景色は次第に霞んでいく。そこに今も残っているのは、どのような人々の面影だろうか。",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 0
+      },
       "furni_dropS001_theLittleMermaid_01": {
         "id": "furni_dropS001_theLittleMermaid_01",
         "sortId": 11001,
@@ -86588,6 +87434,38 @@
         "enableRoomType": 4144,
         "quantity": 0
       },
+      "furni_terracommericials_BarrensTequila_01": {
+        "id": "furni_terracommericials_BarrensTequila_01",
+        "sortId": 11096,
+        "name": "パネル『リフレッシュ』",
+        "iconId": "furni_terracommericials_BarrensTequila_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする。また、応接室に飾ることもできる。",
+        "description": "太陽がさんさんと照らすビーチで日光浴する時、何が必要になるだろうか？",
+        "obtainApproach": "イベント報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4144,
+        "quantity": 0
+      },
       "furni_contract_s0_01": {
         "id": "furni_contract_s0_01",
         "sortId": 12001,
@@ -87890,6 +88768,38 @@
         "comfort": 105,
         "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
         "description": "炎国壬午号水田での殲滅作戦を完了し、その報告をするともらえる記念品。壬午号水田の余韻がまだ耳元でこだましているようだ。",
+        "obtainApproach": "殲滅作戦報酬",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 0
+      },
+      "furni_annihilation_s27_01": {
+        "id": "furni_annihilation_s27_01",
+        "sortId": 13025,
+        "name": "リターニアの残響（広場）",
+        "iconId": "furni_annihilation_s27_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ANNIHILATION",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 4,
+        "comfort": 105,
+        "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+        "description": "リターニア選帝侯広場での殲滅作戦を完了し、その報告をするともらえる記念品。選帝侯広場の余韻がまだ耳元でこだましているようだ。",
         "obtainApproach": "殲滅作戦報酬",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -106078,6 +106988,170 @@
           "furni_villagemanor_floor_01"
         ]
       },
+      "furni_set_tarahouse": {
+        "id": "furni_set_tarahouse",
+        "enableRoomType": 4112,
+        "sortId": 107,
+        "name": "「ナ・シアーシャの夕べ」",
+        "themeType": "EVENT",
+        "desc": "とある作家が書いたナ・シアーシャの民家を参考に再現した、ターラー伝統の石造りの家。暖炉の炎はいつまでも燃え盛っている。物語の中の古びた家は、時に置き去りにされたかのように、今なお家主が去った時と変わらぬ姿を保っている。",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_tarahouse_hangingcarpet_01",
+            "pos0": 3,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_candletray_01",
+            "pos0": 4,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_column_01",
+            "pos0": 7,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_table_01",
+            "pos0": 7,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_chair_01",
+            "pos0": 11,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_chair_02",
+            "pos0": 17,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_shield_01",
+            "pos0": 22,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_wallhanger_01",
+            "pos0": 9,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_stove_01",
+            "pos0": 18,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_pot_01",
+            "pos0": 14,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_stool_01",
+            "pos0": 28,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_stool_01",
+            "pos0": 27,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_stonecutoff_01",
+            "pos0": 24,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_ceilinglight_01",
+            "pos0": 19,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_wallshelf_01",
+            "pos0": 29,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_bartable_01",
+            "pos0": 24,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_bookcase_01",
+            "pos0": 32,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_carpet_01",
+            "pos0": 2,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_carpet_02",
+            "pos0": 25,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_tarahouse_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_tarahouse_1",
+          "furni_set_tarahouse_2",
+          "furni_set_tarahouse_3",
+          "furni_set_tarahouse_4"
+        ],
+        "furnitures": [
+          "furni_tarahouse_hangingcarpet_01",
+          "furni_tarahouse_candletray_01",
+          "furni_tarahouse_column_01",
+          "furni_tarahouse_table_01",
+          "furni_tarahouse_chair_01",
+          "furni_tarahouse_chair_02",
+          "furni_tarahouse_shield_01",
+          "furni_tarahouse_wallhanger_01",
+          "furni_tarahouse_stove_01",
+          "furni_tarahouse_pot_01",
+          "furni_tarahouse_stool_01",
+          "furni_tarahouse_stonecutoff_01",
+          "furni_tarahouse_ceilinglight_01",
+          "furni_tarahouse_wallshelf_01",
+          "furni_tarahouse_bartable_01",
+          "furni_tarahouse_bookcase_01",
+          "furni_tarahouse_carpet_01",
+          "furni_tarahouse_carpet_02",
+          "furni_tarahouse_wallpaper_01",
+          "furni_tarahouse_floor_01"
+        ]
+      },
       "furniM_set_basicRoom": {
         "id": "furniM_set_basicRoom",
         "enableRoomType": 32,
@@ -112394,6 +113468,66 @@
           "furni_villagemanor_shelf_01",
           "furni_villagemanor_plantshelf_01",
           "furni_villagemanor_floor_01"
+        ]
+      },
+      "furni_set_tarahouse_1": {
+        "id": "furni_set_tarahouse_1",
+        "sortId": 1,
+        "name": "「日々の暮らし」",
+        "themeId": "furni_set_tarahouse",
+        "comfort": 330,
+        "count": 6,
+        "furniture": [
+          "furni_tarahouse_column_01",
+          "furni_tarahouse_table_01",
+          "furni_tarahouse_wallhanger_01",
+          "furni_tarahouse_chair_01",
+          "furni_tarahouse_chair_02",
+          "furni_tarahouse_carpet_01"
+        ]
+      },
+      "furni_set_tarahouse_2": {
+        "id": "furni_set_tarahouse_2",
+        "sortId": 2,
+        "name": "「ぬくもりの在り処」",
+        "themeId": "furni_set_tarahouse",
+        "comfort": 265,
+        "count": 5,
+        "furniture": [
+          "furni_tarahouse_pot_01",
+          "furni_tarahouse_stove_01",
+          "furni_tarahouse_shield_01",
+          "furni_tarahouse_ceilinglight_01",
+          "furni_tarahouse_stonecutoff_01"
+        ]
+      },
+      "furni_set_tarahouse_3": {
+        "id": "furni_set_tarahouse_3",
+        "sortId": 3,
+        "name": "「過去の印」",
+        "themeId": "furni_set_tarahouse",
+        "comfort": 200,
+        "count": 5,
+        "furniture": [
+          "furni_tarahouse_stool_01",
+          "furni_tarahouse_wallshelf_01",
+          "furni_tarahouse_bartable_01",
+          "furni_tarahouse_bookcase_01",
+          "furni_tarahouse_carpet_02"
+        ]
+      },
+      "furni_set_tarahouse_4": {
+        "id": "furni_set_tarahouse_4",
+        "sortId": 4,
+        "name": "「静けさの中へと」",
+        "themeId": "furni_set_tarahouse",
+        "comfort": 150,
+        "count": 4,
+        "furniture": [
+          "furni_tarahouse_hangingcarpet_01",
+          "furni_tarahouse_candletray_01",
+          "furni_tarahouse_wallpaper_01",
+          "furni_tarahouse_floor_01"
         ]
       }
     },

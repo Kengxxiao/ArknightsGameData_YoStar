@@ -1,0 +1,866 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[delay(time=1)]
+[Dialog]
+[playMusic(intro="$drift_intro",key="$drift_loop", volume=0.6)]
+[Delay(time=2)]
+――えっ、ホントに？　騎士になったら帰ってきてくれるの？
+――……約束だよ。あなたが立派になって帰ってくるのを待ってるね。そうなったらあちこちに宣伝して回るよ、ここは騎士ユスティナの故郷だって！
+[dialog]
+[Background(image="bg_county_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_430_fartth_1",duration=1)]
+[delay(time=2)]
+[name="ユスティナ"]私の……故郷。
+[charslot]
+[dialog]
+[delay(time=1)]
+[charslot(slot="r",name="avg_430_fartth_1",focus="all")]
+[delay(time=2)]
+[PlaySound(key="$rungeneral", volume=0.9,channel="run")]
+[charslot(slot="l",name="avg_npc_240",afrom=0,ato=1,duration=0.3)]
+[charslot(slot="l",posfrom="-80,0",posto="150,0",duration=0.5)]
+[delay(time=0.5)]
+[stopsound(channel="run")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[PlaySound(key="$d_avg_punch", volume=0.6)]
+[charslot(slot="l",posfrom="150,0",posto="0,0",duration=0.7)]
+[charslot(slot="r",posfrom="0,0",posto="20,0",duration=0.4)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_430_fartth_1",focus="r")]
+[name="ユスティナ"]気をつけて。
+[charslot(slot="l",name="avg_npc_240",focus="l")]
+[name="無邪気な子供"]ごめんなさい、お姉さん。
+[name="無邪気な子供"]お姉さん、よそから来たの？
+[charslot(slot="r",name="avg_430_fartth_1",focus="r")]
+[name="ユスティナ"]私はこの村で生まれて、大騎士領に行ったんだ。
+[charslot(slot="l",name="avg_npc_240",focus="l")]
+[name="無邪気な子供"]大騎士領！　もしかして、お姉さんって騎士さんなの？
+[name="無邪気な子供"]きっとそうだよね。その鎧、ヒューバートが木で作ったのよりずっときれいだもん。
+[name="無邪気な子供"]クロスボウ、見せてほしいなー。
+[charslot]
+[name="優しい村人"]ミレン！　しつこくしちゃダメよ！
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="avg_npc_243",duration=1)]
+[delay(time=1.5)]
+[name="優しい村人"]本当にごめんなさいね。この子ったら最近騎士小説に夢中で、知らない人に会うと質問ばかりしちゃうんです。
+[charslot(slot="m",name="avg_npc_243")]
+[name="優しい村人"]あら？　あなた、どこかで会ったような……
+[charslot]
+[charslot(slot="l",name="avg_npc_243",focus="r")]
+[charslot(slot="r",name="avg_430_fartth_1",focus="r")]
+[name="ユスティナ"]ダンカおばさん。
+[charslot(slot="l",name="avg_npc_243",focus="l")]
+[name="ダンカおばさん"]……ユスティナなの？　本当に帰ってきたのね……いえ、今は「遠牙騎士」って呼んだほうがいいかしら。
+[name="ダンカおばさん"]あなたが称号をもらったって新聞で見て、みんな喜んでたわ。
+[name="ダンカおばさん"]コールおじさんのこと覚えてる？　あの人ったら、あなたのニュースを全部切り抜いて壁に貼ってるのよ。
+[name="ダンカおばさん"]あなたが勝つたびに、お祝いとか言ってお酒を一本追加で開けちゃうの――みんな、お酒を飲むための口実にしてるだけだって思ってるけどね。
+[name="ダンカおばさん"]それにしても……
+[dialog]
+[charslot]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="婦人の視線が、何かの手がかりや痕跡を探るかのようにユスティナの身体を恐る恐るなぞる。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ユスティナはその目つきをよく知っていた。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="かつて対戦相手、観衆、記者……大騎士領でも無数の視線が彼女にそそぎ、彼女の身体を探った。その理由はただ一つ――", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]病気になったのよね……それも新聞で見たわ。村のみんなが心配してるわよ。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]病状は落ち着いてる。
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]あぁ、そうなのね。安心したわ。
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]あら？　ミレン、何を持ってるの？
+[charslot(slot="m",name="avg_npc_240")]
+[name="ミレン"]騎士のお姉さんの矢筒だよ。
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]触っちゃいけません！
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]……遠牙騎士さんに返しなさい。とても大切なものなのよ。
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]それに、人を傷つけないとしても危険なの。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]私の配慮が足りなかった。
+[charslot(slot="m",name="avg_npc_243")]
+[name="ダンカおばさん"]じゃあ……遠牙騎士さん、村でゆっくりしていくの？　みんなあなたがいなくなって寂しいの。でも、そういうことなら先にみんなに知らせないと……準備があるから。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]私は……
+[charslot]
+[stopmusic(fadetime=2)]
+[name="イヴォナ"]遠牙騎士、なにぼーっとしてんだよ。
+[dialog]
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[Background(image="bg_23_G10",screenadapt="coverall",fadetime=2)]
+[delay(time=3.5)]
+[charslot(slot="m",name="avg_430_fartth_1")]
+[delay(time=1.5)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[charslot(slot="m",name="avg_496_wdmane_1#9")]
+[name="イヴォナ"]感染者の移動が終わったら、まず人数確認だろ？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……二班は全員揃ってるよ。
+[charslot(slot="m",name="avg_496_wdmane_1#7")]
+[name="イヴォナ"]（いつ数えたんだ……？　ぼーっと立ってただけなのに。）
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_626_1#1$1",duration=1)]
+[delay(time=1)]
+[name="焦る男性"]誰かゾラを見なかったか？　一体どこに行ったんだ！？
+[charslot(slot="m",name="avg_npc_122#6")]
+[name="ソーナ"]ファロン先生、どうかしましたか？
+[charslot(slot="m",name="avg_npc_626_1#1$1")]
+[name="ファロン"]新しい居住エリアが気になって探検に出ただけだと思っていたんだが、まだ帰らないんだ。
+[charslot(slot="m",name="avg_npc_123#2")]
+[name="グレイナティ"]第九住宅エリアからの移動中に、誰も彼女を見ていないのですか？
+[charslot(slot="m",name="avg_npc_626_1#1$1")]
+[name="ファロン"]私は……あの時はまだ夜が明けてなかったんです。足を負傷した同郷人を先導していて……
+[charslot(slot="m",name="avg_npc_122#1")]
+[name="ソーナ"]心配しないでください、あたしたちが見つけますから。でも、まずは捜索範囲を絞らないといけませんね。二つのエリアの間には建物や施設がたくさんあるので。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]ソーナ……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]分かるかも、その子の居場所。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_oldwarehouse_d",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+一日前
+[charslot(slot="m",name="avg_npc_002")]
+[name="明るい感染者"]また会ったな、友よ。
+[charslot(slot="m",name="avg_npc_220")]
+[name="感染者騎士"]この半年で何回目だ？
+[charslot(slot="m",name="avg_npc_002")]
+[name="明るい感染者"]四回目だな。
+[charslot(slot="m",name="avg_npc_002")]
+[name="明るい感染者"]この廃工場は長くもってるな。前に移動してから丸三ヶ月も経ってる。
+[charslot(slot="m",name="avg_npc_002")]
+[name="明るい感染者"]足を休めて何日もしないうちに無冑盟が来たこともあったよな。あれからいつでも逃げ出せるように、風呂敷二枚分の荷物しか持たないことにしたよ。
+[charslot(slot="m",name="avg_npc_220")]
+[name="感染者騎士"]はぁ……ソーナも長く住めるような場所を探してくれてはいるんだがな。今は君たちにつらい思いをしてもらうしかない。
+[charslot(slot="m",name="avg_npc_002")]
+[name="明るい感染者"]お前たちのせいじゃないさ。俺たちが今でも大騎士領で生活できているのは、全部レッドパイン騎士団が助けてくれるおかげだ。そもそも、感染者に足を伸ばせる場所なんてないんだからな。
+[charslot(slot="m",name="avg_npc_002")]
+[name="明るい感染者"]俺たちは移動区画の端っこをあてどなく彷徨ってたからこういうのは慣れっこだが、ゾラはまだちょっと機嫌が悪いみたいでな。今朝ファロン先生と喧嘩してたよ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]	
+[charslot(slot="m",name="avg_npc_122#7")]
+[name="ソーナ"]……商業連合会の掃討作戦はどんどん過激になってるし、商業エリアだけじゃなくて、居住エリアも前ほど安全ではなくなったわ。
+[charslot(slot="m",name="avg_npc_123#2")]
+[name="グレイナティ"]この前、近くの通りで無冑盟が巡回した形跡を見つけた者がいたらしい。人数は多くないそうだが、警戒したほうがいいだろう。
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]あたしに言わせりゃ、巡回小隊なんざ直接始末して「ここはレッドパイン騎士団の縄張りだ！」って、あの理事会の連中に宣言してやりゃいいと思うけどな。
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]それでここが手薄になった隙に、奴らに工場を爆破されるのか？
+[charslot(slot="m",name="avg_npc_122#7")]
+[name="ソーナ"]ユスティナ、あなたはどう思う？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……ここはただの廃工場だよ。
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]だよな！　そん時はまた近くで別の場所を探しゃ――
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]……家じゃない。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]みんなの家はもう天災で壊された。もっと安全な場所に移動して、たくさんの人が生きていけるようにした方がいい。
+[charslot(slot="m",name="avg_496_wdmane_1#7")]
+[name="イヴォナ"]おい、遠牙！
+[charslot(slot="m",name="avg_npc_122#2")]
+[name="ソーナ"]あたしたちにはまだ、表立って商業連合会と事を構える力はない。いつかは自分たちの区画を持って、大騎士領の全ての感染者が帰る家を作ってあげられるかもしれないけど。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……
+[charslot(slot="m",name="avg_npc_122#8")]
+[name="ソーナ"]明日の朝一で出発しましょ。カイちゃんとあたしはルート決定が得意だから、あたしたちで隊を先導するわ。イヴォナは障害の除去、ユスティナは偵察と援護をお願い。
+[charslot(slot="m",name="avg_npc_122#2")]
+[name="ソーナ"]今日の夜は――
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]私が見張りする。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-1280)]
+[largebgtween(duration = 80,yFrom = 0, yTo = 300,block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[Subtitle(text="エネルギー不足になった移動区画の外縁。第五、第十一商業エリアの地下。第九住宅エリアの廃工場……", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="レッドパイン騎士団に加入してから、ユスティナはその辺りの流民と何度も関わってきた。庇護を受けた感染者の中でも移動頻度が最も高い彼らは、いつも自分たちの運の悪さを自嘲している。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ユスティナは、彼らが天災で故郷を失ってからどれだけ経つかを知らない。ソーナが言うには、前回移動した時に作物の種を持っていた老人が、最近会った時にはもうその包みを捨てていたそうだ。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="しかし……村が天災で破壊されていなかったとしても、そこはまだ哀れな彼らの家なのだろうか？", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「じゃあ……遠牙騎士さん、村でゆっくりしていかれますか？」", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ユスティナは故郷の曲を吹き、大騎士領のけたたましい風は悲しげに耳元で唸る。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=3)]
+[name="ユスティナ"]あれは……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[charslot]
+[Background(image="bg_oldwarehouse_n",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=2)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_430_fartth_1#3")]
+[name="ユスティナ"]……ゾラ？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_23_G05",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[charslot(slot="r",name="avg_npc_216",duration=1)]
+[charslot(slot="l",name="avg_npc_216",duration=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[charslot(duration=1)]
+[delay(time=4)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=2)]
+[name="ゾラ"]何日か前まで、この小道は黒服の人が巡回してなかったのに……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]だめだ、また遠回りしたら遅れちゃう。仕方ないけど……
+[dialog]
+[charslot]
+[name="？？？"]何してるの？
+[dialog]
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[charslot(slot="r",name="avg_430_fartth_1#7",afrom=0,ato=1,duration=0.5)]
+[charslot(slot="r",name="avg_430_fartth_1#7",posfrom="30,0",posto="-40,0",duration=0.5)]
+[name="ゾラ"]うぅ――
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",afrom=1,ato=0,posfrom="0,0",posto="100,0",duration=0.5)]
+[charslot(slot="r",afrom=1,ato=0,posfrom="-40,0",posto="100,0",duration=0.5)]
+[dialog]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_216",duration=1)]
+[delay(time=1)]
+[name="無冑盟の刺客"]？
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[name="ユスティナ"]夜に居住区を離れたらだめだよ、危険だから。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ユスティナお姉さん……
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[name="ユスティナ"]帰ろう。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ううん、だめ。リタが待ってるの！
+[charslot(slot="m",name="avg_430_fartth_1#3")]
+[name="ユスティナ"]リタ？
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ファロン先生には言わないでね。私が居住エリアの子と友達だって知ったら、きっと怒るから。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]でもリタはほんとに悪い人じゃないんだ。私の病気を気にしたりしないし、絵が上手だって褒めてくれたし……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ユスティナお姉さん、私たちはどうして何回もほかの場所に移動しなきゃいけないの？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]肌を隠したら、普通の人と変わらないよ。リタがお店に連れていってくれた時も、私が病気なことに誰も気づかなかったもん。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]もうどこにも行きたくない……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]村がなくなってからずっと荒野をぐるぐるしてて、残りの食べ物もだんだん減っていってた。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]それからファロン先生がソーナお姉さんを見つけてくれたおかげで、私たちは大騎士領に入ることができた。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]でも私たちは相変わらずぐるぐる彷徨ってる。場所が地面の上から下に変わっただけ。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]村の入り口の茂みに何のベリーがなってたか、ちょっとずつ忘れてきちゃった。昔は大好きだったのに……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]まだ村があったら、こんな生活にならなかったのにな……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]感染者に、帰るところなんて……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ユスティナお姉さんの家も天災に壊されちゃったの？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]いや、あの村が天災に襲われたことはないよ。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]いいなぁ……どこにあるの？　きれいなところ？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]北の森と平原の境にある。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]あの村は……うん、きれいな所だね。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]教えて、ユスティナお姉さん！　お姉さんの故郷はどんな所なの？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]また今度にしよう。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_216",duration=1)]
+[delay(time=1.5)]
+[stopmusic(fadetime=2)]
+[name="無冑盟の刺客"]そこにいるのは誰だ！
+[dialog]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_avg_arrowshot")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_216")]
+[delay(time=1)]
+[dialog]
+[charslot(duration=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[name="ユスティナ"]……第三巡回小隊？
+[dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget")]
+[name="通信機の声"]……巡回小隊、応答せよ……増援が必要か……
+[dialog]
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[playsound(key="$d_avg_singleblunt",channel="1")]
+[Delay(time=0.3)]
+[playsound(key="$d_avg_maskbreakk",channel="1")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]行かないと。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]でも……！
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]リタとお別れもしてないのに……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_23_G10",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[charslot(slot="m",name="avg_npc_626_1#1$1")]
+[name="ファロン"]感染者ではない子供とは遊ぶなと注意していたのに……！
+[charslot(slot="m",name="avg_npc_122#7")]
+[name="ソーナ"]居住区には同い年の子がいませんし、友達が欲しいと思うのも無理はないですよ。
+[charslot(slot="m",name="avg_npc_220")]
+[name="感染者騎士"]無冑盟は相手が子供でもお構いなしだぞ。
+[charslot(slot="m",name="avg_npc_220")]
+[name="感染者騎士"]あの子は感染者だ。奴らにしてみれば、感染者の子供は可愛くて無邪気な存在ではなく、ただ「片づけやすい」相手でしかない。
+[charslot(slot="m",name="avg_npc_626_1#1$1")]
+[name="ファロン"]……！
+[charslot(slot="m",name="avg_npc_123")]
+[name="グレイナティ"]ユスティナ、ゾラの居場所の予想はついているか？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……確信は持てない。
+[charslot(slot="m",name="avg_npc_220")]
+[name="感染者騎士"]第九エリアから撤退した時、俺たちはすでに警戒されていた。恐らく倉庫はもう無冑盟に押さえられていて、偵察員も突撃隊も、あの時より増員しているだろう。
+[charslot(slot="m",name="avg_npc_220")]
+[name="感染者騎士"]このエリアの感染者のほかに、別の被災者も護送しなきゃならないんだ。今日大騎士領の周辺に移動してきたばかりの奴らで、俺たちの救援を待っている。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……
+[Dialog]
+[stopmusic(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_oldwarehouse_d",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$frontline_intro", key="$frontline_loop", volume=0.6)]
+[Delay(time=2)]	
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="r",name="avg_npc_216",duration=1)]
+[charslot(slot="l",name="avg_npc_216",duration=1)]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_216",focus="r")]
+[name="無冑盟の刺客A"]あの貯蔵室から物音がしたな。中を見てみるか？
+[charslot(slot="l",name="avg_npc_216",focus="l")]
+[name="無冑盟の刺客B"]別にいいだろ。廃倉庫なんて、汚ねぇ小動物がいてもおかしくないんだから。
+[dialog]
+[charslot]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_216")]
+[charslot(slot="l",name="avg_npc_216")]
+[delay(time=1)]
+[dialog]
+[charslot(duration=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_430_fartth_1#3")]
+[name="ユスティナ"]貯蔵室……ゾラが前に絵を描いてた場所だ！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_towerinside",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]緑色と……赤いリボン……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]うん……あと黄色、お姉さんの瞳の色……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]……矢筒は模様があって……中にはピカピカな矢がいっぱい……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]お姉さんの正確な矢は……たった一発で……く、黒服の人をやっつけちゃうよー……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]怖くない……怖くない……
+[charslot]
+[name="ユスティナ"]照準器の位置が違うよ。
+[name="ユスティナ"]そんな前にあったら、狙いを定められなくなる。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_430_fartth_1",duration=2)]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ユスティナお姉さん！
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]うぅ……ごめんなさい……リタに渡すお別れのプレゼントを探したかっただけなの……
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]渡せなくても、せめて自分で持っておきたくて……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]また会えるよ。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]まずはここから出よう……まだ歩ける？
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]隠れた時に足をひねっちゃった……お姉さん、ごめんね……私、怖いよ……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]大丈夫、謝らないでいい。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……目を閉じて。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]でも……
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]昨日、私の故郷がどんな所かって聞いたよね。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]教えてあげる。目を閉じて。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="31_g3_mini12_farmland",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_wind", volume=1)]
+[Subtitle(text="わらの香り。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="地面に寝転ぶと、澄み渡る空だけが広がっている。まだ刈り取られていない茎で、背中が少しちくちくする。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="麦畑が波打つ音。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="羽ばたく小さな虫――", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]]
+[PlaySound(key="$swordtsing1", volume=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[delay(time=0.7)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[dialog]
+[Delay(time=1)]
+[dialog]
+[charslot]
+[PlaySound(key="$e_atk_arrow_h")]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Delay(time=0.4)]
+[PlaySound(key="$e_atk_arrow_h")]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=2)]
+[name="ゾラ"]な、何の音……
+[name="ゾラ"]ユスティナお姉さん、大丈夫！？
+[name="ユスティナ"]大丈夫。まだ目は瞑ってて。
+[name="ユスティナ"]羽のついた小さな虫が穂に止まっていて、収穫の鎌が振り下ろされると、虫は土の中に飛び込む。
+[name="ユスティナ"]風――
+[name="ユスティナ"]コールおじさんが吹く、風に乗った旋律は、耳元を優しく撫でてくれる。
+[name="ユスティナ"]これが、私の……家。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_oldwarehouse_d",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[charslot(slot="r",name="avg_npc_216",duration=1)]
+[charslot(slot="l",name="avg_npc_216",duration=1)]
+[delay(time=3)]
+[charslot]
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[name="ユスティナ"]（敵の応援が早すぎる、ゾラを連れたまま正面突破するのは難しいな……）
+[charslot(slot="m",name="avg_npc_216")]
+[name="無冑盟の刺客"]何の音だ？
+[dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget")]
+[name="通信機の声"]襲撃を受けた。ここはあの感染者騎士どもが難民を匿っていた拠点だからな。警戒を強めろ！
+[dialog]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[charslot(slot="r",name="avg_npc_216",duration=1)]
+[charslot(slot="l",name="avg_npc_216",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[name="ユスティナ"]（……何とかしないと。一対多は、団体戦の時と同じ……）
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_land_impact", volume=1)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.2, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_496_wdmane_1#8",duration=0.7)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_430_fartth_1#3")]
+[name="ユスティナ"]……野鬃（やそう）？
+[charslot(slot="m",name="avg_496_wdmane_1#9")]
+[name="イヴォナ"]廃倉庫を守るのにこんな大規模な暗殺小隊を配備してんのか？　ったく、商業連合会はいつから赤字経営をやるようになったんだ？
+[charslot(slot="m",name="avg_npc_216")]
+[name="無冑盟の刺客"]一人で我々全員を相手にする気か……
+[dialog]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_496_wdmane_1#6",focus="m")]
+[charslot(slot="m",name="avg_npc_123#6",focus="m",duration=0.3)]
+[delay(time=0.3)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_216")]
+[name="無冑盟の刺客"]ふん、助っ人ひとり増えたところで――
+[dialog]
+[charslot]
+[PlaySound(key="$e_skill_skulsrsword",volume=0.5,block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_216")]
+[delay(time=1)]
+[dialog]
+[charslot(duration=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_122#8",duration=2)]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_123#5")]
+[name="グレイナティ"]突っ込みすぎだ、野鬃！
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]戦術ってやつだ！　ランスの使命は、敵陣深くに切り込んで戦場を分断することだからな！
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]じゃあ何のために計画を立てたんだ？
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]計画だけじゃ、予想外のことに対応できないだろ。
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]カイちゃんは、イヴォナが陣形から離れ過ぎたら、盾で守ってあげられないって言いたいのよ。
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]……そうは言ってない！
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]おいおい、あたしらは仲間を迎えに来たんだろ。ユスティナはどこいるんだ？
+[dialog]
+[charslot]
+[dialog]
+[charslot]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]あっちね。
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_700_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_430_fartth_1#7",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]ユスティナ、ゾラは見つかったのか。お前の予想通りだったな。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]みんな……ありがとう。
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]水臭いわね、ユスティナ。
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]他の騎士たちは新しい仲間の救助のほうに行ったけど、あたしたちは元々こっちに来るつもりだったのよ。
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]まさかお前があたしより先に突っ走るなんてな。
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]あんまり話したことなかったけど、お前のこと結構気に入ったぜ！
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[charslot(slot="r",name="avg_npc_216",duration=1)]
+[charslot(slot="l",name="avg_npc_216",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_496_wdmane_1#9")]
+[name="イヴォナ"]十一時と二時の方向から敵が来る。
+[charslot(slot="m",name="avg_npc_122#8")]
+[name="ソーナ"]カイちゃん――
+[charslot(slot="m",name="avg_npc_123#6")]
+[name="グレイナティ"]相手の位置が分散しすぎている。私の弾薬も多くない。
+[charslot(slot="m",name="avg_430_fartth_1#7")]
+[name="ユスティナ"]任せて。
+[dialog]
+[charslot]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_216")]
+[charslot(slot="l",name="avg_npc_216")]
+[delay(time=1)]
+[dialog]
+[charslot(slot="l",afrom=1,ato=0,duration=1)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_216")]
+[name="無冑盟の刺客"]敵にスナイパーがいるぞ！　各個撃破されないように、一箇所に集まれ！
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]感謝する。
+[dialog]
+[charslot]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_avg_land_impact", volume=1)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]ナイス！
+[charslot(slot="m",name="avg_496_wdmane_1#9")]
+[name="イヴォナ"]工場を守る無冑盟の刺客は全員おねんねしたな。じゃ、開いてる正面出口から出ようぜ。
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]通信機も対処してある。当面の間、追っ手は来ないはずだ。
+[dialog]
+[charslot]
+[delay(time=1)]
+おかしい。
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]ゾラ、もう目を開けて大丈夫だ。せっかくド派手に決めたのに、見逃すなんてもったいねぇな。ま、ガキにはまだ早ぇか。
+[dialog]
+[charslot]
+[delay(time=1)]
+風が聞こえない。
+[charslot(slot="m",name="avg_npc_122#5")]
+[name="ソーナ"]ユスティナ？　どうしたの？
+[dialog]
+[charslot]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_216")]
+[name="無冑盟の刺客"]ぐはっ――
+[dialog]
+[charslot(duration=0.5)]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=3)]
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]……うわっ、あっぶね。
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]上の階にスナイパーがいたなんて全く気づかなかったぜ。
+[charslot(slot="m",name="avg_npc_123#5")]
+[name="グレイナティ"]ユスティナ、どうやって気づいたんだ？
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]風の音が聞こえなかった。
+[charslot(slot="m",name="avg_npc_123#5")]
+[name="グレイナティ"]何だって？
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]うん……あそこに窓がある。風が吹いたら、矢の軌道に影響を与えるから。
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]……
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]グレイナティ、分かってないのアタシだけじゃないよな？
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]あはは……ちょっと変わった話し方だけど、そのうち慣れるよ。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]ゾラ。
+[charslot(slot="m",name="avg_npc_700_1#1$1")]
+[name="ゾラ"]ユスティナお姉さん……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]もう大丈夫。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]家に帰ろう。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=2)]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-1280)]
+[largebgtween(duration = 80,yFrom = 0, yTo = 300,block = false)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Subtitle(text="ユスティナが展望台に登る。風が街角を回り、下水管の隙間を抜けて、頼りない足場を軽く揺らした。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="居住区に帰ると、ファロンは帰ってきた子供を叱った。ファロンの口元が恐怖に震えているのを見て、ゾラは言い訳を我慢して両親の手をぎゅっと握る。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="いま、彼らは共に夢の中を漂い、次の移動がいつ訪れるかなど考えず、寄る辺のない生活に終わりがあるのかと尋ねもしない。段ボールに布切れを重ねたベッドで共に眠っている。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="彼女は、もう一度草笛を手に取る。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ぴゅぅー――", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[name="？？？"]“Di-di”――
+[name="ユスティナ"]誰？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[charslot]
+[Background(image="bg_oldwarehouse_n",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[charslot(slot="m",name="avg_4000_jnight_1#8",duration=1)]
+[delay(time=1)]
+[name="「ジャスティスナイト」"]“Di-di”？
+[charslot(slot="m",name="avg_430_fartth_1#3")]
+[name="ユスティナ"]これは野鬃の……ペット？
+[charslot(slot="m",name="avg_4000_jnight_1#4")]
+[name="「ジャスティスナイト」"]“Di-di”！
+[charslot(slot="m",name="avg_4000_jnight_1#5")]
+[name="「ジャスティスナイト」"]“Di-di”！！
+[charslot(slot="m",name="avg_430_fartth_1#4")]
+[name="ユスティナ"]し、静かにして……みんなが起きないように。
+[charslot(slot="m",name="avg_430_fartth_1#4")]
+[name="ユスティナ"]スイッチ……スイッチはどこ……
+[dialog]
+[charslot]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="機械の操作に不慣れなリーベリは、“Di-di”と鳴るロボットの機体を慌てて探り、草笛を脇に落とす。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ジャスティスナイトは相手が困っていることを察したように、気を利かせた様子で振り返ってサーチライトをつけた。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="いや、それは眩しすぎる……そう思ったユスティナは体で光を遮ろうとするが、ジャスティスナイトの機体は彼女が隠せるような大きさではなかった。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]スイッチは遮蔽板の後ろだ。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]……ありがとう。
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]けどジャスティスナイトのスイッチを切るのはお勧めしねぇな。急に周りの情報を得られなくなったら、こいつは寂しがっちまう。
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]人間と一緒にいたいだろ？
+[charslot(slot="m",name="avg_4000_jnight_1#4")]
+[name="「ジャスティスナイト」"]“Di-di”！
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]ん？　ユスティナ、その音は何だ……？　初めて聴く音色だな……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……草笛だよ。
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]お前、笛が吹けんのか？
+[charslot(slot="m",name="avg_496_wdmane_1#10")]
+[name="イヴォナ"]いや……そういうことか。
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]誰かに草笛を聴いてほしくて、ジャスティスナイトに人を呼ばせたんだろ？
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]あたしが来てよかったな！　音楽はあんまわかんねぇけど、聴き手としては優秀だからな。
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]さあ始めてくれ、遠牙騎士。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……えっと……
+[charslot(slot="m",name="avg_npc_123#3")]
+[name="グレイナティ"]お前は賑やかなのが好きなだけだろう。
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]グレイナティ？
+[charslot(slot="m",name="avg_496_wdmane_1#5")]
+[name="イヴォナ"]お前もジャスティスナイトに起こされたのか？
+[charslot(slot="m",name="avg_npc_123#3")]
+[name="グレイナティ"]起こしたのはお前だ。
+[charslot(slot="m",name="avg_496_wdmane_1#1")]
+[name="イヴォナ"]ならあたしに感謝しな。ユスティナが今から曲を演奏してくれるみたいだぜ。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]ユスティナを困らせるな……ん、それは草笛か？
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]故郷の知人に、足の悪いお婆さんがいてな。彼女はいつも家でこういう手作りの笛を吹いていた。
+[charslot(slot="m",name="avg_npc_123#1")]
+[name="グレイナティ"]ああ、昔よく聴いた民謡が懐かしくなってきたな……
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]……
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]ちょっとちょっと。あたしに内緒で、こっそり屋上でパーティーしてるわけ？
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]救助活動で疲れただろうから、ゆっくり寝させてあげようと思ってたのに。
+[charslot(slot="m",name="avg_npc_123#5")]
+[name="グレイナティ"]なんだ、お前も起こされたのか？
+[charslot(slot="m",name="avg_npc_122#2")]
+[name="ソーナ"]ゾラのことを考えてたの。
+[charslot(slot="m",name="avg_npc_122#2")]
+[name="ソーナ"]イヴォナが前に言ってた通り、地下に隠れてても根本的には何も解決しないわ。
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]みんな放浪生活に慣れてしまったせいで、感染者にも自分の家があるべきって考えをだんだん忘れてきてる。
+[charslot(slot="m",name="avg_npc_122")]
+[name="ソーナ"]みんな起きてるなら、下で話に付き合ってよ。新しいアイデアがあるの。
+[charslot(slot="m",name="avg_430_fartth_1")]
+[name="ユスティナ"]分かった。
+[charslot(slot="m",name="avg_496_wdmane_1#6")]
+[name="イヴォナ"]おい、じゃあ草笛は……
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]今度にしよう、イヴォナ。
+[charslot(slot="m",name="avg_430_fartth_1#2")]
+[name="ユスティナ"]また今度、私の故郷の曲を聴かせてあげるよ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

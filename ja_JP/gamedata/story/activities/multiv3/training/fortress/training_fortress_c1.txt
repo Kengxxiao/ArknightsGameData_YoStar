@@ -1,0 +1,26 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学c1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=5, scale=1.2, time=1.5)]
+[Delay(time=1)]
+[Tutorial(focusX=160, focusY=185, focusWidth=210, focusHeight=210, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_stward", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+通常の作業員の以外にも、各WAVEの開始時にガレキの山に閉じ込められ、救助を待っている<@tu.kw>上級施設建設作業員</>が出現することもあるんだ。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=4)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]周りにいる敵を倒せば、閉じ込められた上級施設建設作業員をい救出できるよ。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=2.5, offsetY=5.5, scale=0.8, time=0.5)]
+[Delay(time=1)]
+[CooperateBattle.LockCamera(enable=false)]
+[Tutorial(dialogHead="$avatar_stward")]上級施設建設作業員を<@tu.kw>クラスI</>の施設に配置すれば、<@tu.kw>クラスアップ</>してより強力な効果を発揮してくれるんだ。
+[Tutorial(dialogHead="$avatar_stward")]例えば、<@tu.kw>携帯式健康器</>をクラスIIIにすると、双方のオペレーターの攻撃力とSP自然回復速度が上昇するよ。
+[CooperateBattle.CameraFocusTo(offsetX=6, offsetY=4, scale=1, time=1)]
+[Delay(time=1)]
+[Tutorial(dialogHead="$avatar_stward")]次で最後の進攻だ！　全力で迎え撃とう！
+[CooperateBattle.LockCamera(enable=true)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]

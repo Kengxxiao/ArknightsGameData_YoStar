@@ -1,0 +1,566 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall", block=true)]
+[backgroundTween(xFrom=100, yFrom=0, xTo=-100, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=35, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15,grad = false,fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15,grad = false,fadetime=0.1)]
+[Delay(time=1)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[PlaySound(key="$d_avg_woodcracle", volume=0.8, loop=true, channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+千年以上昔のこと、ターラー人の先祖たちも、秋が終わり冬が始まる頃、荒野にいくつものかがり火を灯していた。
+当時、人々は赤き龍に寄り添うようにして眠っていた。彼らの燃えるような夢は、風砂に削られ節くれだってはいても、互いの身体を温めるだけの温もりを持っていた。
+そして、彼らが目覚めても、かがり火が消えることはなかった。赤き龍は眠らなかったからだ。
+かがり火から静かに立ち昇る夢を――故郷や美酒、自由にまつわる夢を吸い込むだけで、赤き龍は疲れと苦痛の中にひと時の安らぎを得ることができていた。
+そして今日、サウィン祭が再び近付くこの時も、人々は廃墟から木材を引き剥がして、かがり火を灯していた。だが、はるか昔の穏やかで、永遠に続くかに思われた時代はすっかり忘れ去られていた。
+[dialog]
+[StopSound(channel="a", fadetime=2)]
+[curtain(fadetime=1)]
+[delay(time=2)]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]炎の上に手をかざせ。
+[charslot(slot="m",name="avg_npc_1752_1#4$1",focus="m")]
+[name="落ち着かない様子の住民"]腰につけてるランプの色を見てくれよ。俺はターラー人だ、赤き龍の祝福だって受けてる。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]スパイ野郎なら、ランプの色を偽装するくらいできるはずだろ？　いいから早くしろ！
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]ううっ……
+[name="落ち着かない様子の住民"]赤き龍よ、どうかお慈悲を……！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_woodcracle", volume=1, loop=true, channel="b")]
+[StopSound(channel="b", fadetime=3)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]うっ……なんだ……そんなに痛くないな。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]本当にか？
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]見てくれ、火傷の痕すらほとんど残ってないだろ。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]だったらお前はスパイじゃないな。周りにこれを試してない奴はいないか？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Background(image="59_g3_dragonsquare_d",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="寡黙な住民"]……
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]おい、そこのあんた、炎には手をかざしたか？
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="寡黙な住民"]……
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]何か言えよ、そんな汚い組紐いじってないでこっちに来い！
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="落ち着かない様子の住民"]来いって言ってるだろ！　紐を放せ――
+[Dialog]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]なっ――殴りやがったな！？
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="寡黙な住民"]よくも……私の組紐を……
+[charslot(slot="m",name="avg_npc_1752_1#1$1",focus="m")]
+[name="落ち着かない様子の住民"]わかったよ、紐は取らないからついてこいって。あんたがヴィクトリアのスパイじゃないかを確かめるんだ！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[Delay(time=2)]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_crowdtalk_fear", loop=true, channel="bgs",volume=0.8)]
+[PlaySound(key="$d_avg_woodcracle", volume=0.6, loop=true, channel="c")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+寡黙な住民は黙って立ち上がると、ぎこちない足取りでかがり火のほうへ向かっていった。
+今や広場は完全な混乱状態に陥っていた。
+だが、その混乱の半分は疑念と憎しみ、そして何の意味もない怒りから来るもので、もう半分は彼らの絶望の眼差しと、死にも等しい静けさから来るものだった。
+[Dialog]
+[StopSound(channel="bgs", fadetime=3.5)]
+[StopSound(channel="c", fadetime=3.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_reddragonstatue",volume=0.3)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=0.3, loop=false, channel="red",delay=2)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=0.6, loop=false, channel="red1",delay=4)]
+[delay(time=2.5)]
+その時、遠くからかすかに何かを引きずるような物音が聞こえてきた。
+[PlaySound(key="$d_avg_reddragonstatue",volume=1)]
+その音は次第に大きくなっていき、やがて喧噪と混乱のすべてを飲み込んだ。
+巨大な何かが引きずられてくる物音が全員の耳に届き、音は徐々に近づいてくる。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Image(image="59_i04",screenadapt="coverall",fadetime=0,block=true)]
+[Delay(time=1)]
+[ImageTween(xFrom=180, yFrom=-60, xTo=0, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[playMusic(intro="$ghosthunter_intro",key="$ghosthunter_loop", volume=0.6)]
+[PlaySound(key="$d_avg_reddragonstatue",volume=0.6)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=0.8, loop=false, channel="reda",delay=3)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=1, loop=false, channel="redb",delay=6)]
+[PlaySound(key="$d_avg_reddragonstatue", volume=1, loop=false, channel="redc",delay=9)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=2)]
+一瞬にして、その他のあらゆる音が静まり返り、あとにはただ震える鋼鉄と、歯車の振動だけが残った。
+じめじめとした薄霧の中に、冷たく巨大な彫像の輪郭が透けて見えている。
+英雄の手で鋳造され、未完成のままだと誰もが思っていた、赤き龍の先祖の彫像――死にゆく太陽の烈光を纏って現れたターラーへの貢物は、空を覆い尽くさんばかりに巨大だった。
+[Dialog]
+[Delay(time=1)]
+[name="落ち着かない様子の住民"]赤き龍の像が……蘇った？
+[name="狂気的な住民"]あれは――クランか！？
+[name="落ち着かない様子の住民"]クラン、あんたもヴィクトリア人を探し出すのを手伝いに来てくれたのか？
+[name="狂気的な住民"]その前に、奴自身がそうでないことを証明させるべきだろう！
+[name="落ち着かない様子の住民"]こっちに来てくれよ、クラン。ヴィクトリア人じゃなければ、炎に焼かれたって痛くなんか――
+[name="狂気的な住民"]聞こえないのか！　こっちへ来いと言っているんだ！
+[name="落ち着かない様子の住民"]待った、あいつ……
+[name="落ち着かない様子の住民"]たった一人であの像を引っ張ってきたのか！？
+[Dialog]
+[Delay(time=1)]
+人々はついに、鎖を腕に巻き付けた彼の姿を目の当たりにした。一重、二重、三重にも巻かれた鎖を以て、その彫像の重みは、広く大きくも、一凡人である彼の肩にのしかかっていたのだ。
+周りから名を呼ばれながら、英雄は動じることなく前進していく。その肩からは血が流れ、筋肉は張り裂ける寸前で、骨は悲鳴を上げていたが、彼はひたすら前へと進んだ。
+彫像の前を行く若き英雄は、その像の巨大さを前に、己がちっぽけに見えることなど恐れなかった。ただ一歩、また一歩と、重く確かな足取りで、阻む者なき前方へと足を踏み出していく。
+[Dialog]
+[PlaySound(key="$d_avg_reddragonstatue",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_land_impact",volume=0.7)]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+英雄は広場中央の空地に彫像を横たえると、苦しげに振り返り、群衆を見据えた。
+鋼の骨格は、まるですべての始まりの時からそこでそうしていたかのように、冷たい美しさをまとって、翼を広げ飛び立たんとするその瞬間で静止した姿をしていた。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="59_g3_dragonsquare_d",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]もうよせ、同胞たちよ。
+[name="クラン"]これ以上同胞を手にかける前に、やめるんだ。
+[Dialog]
+[charslot]
+[Delay(time=1)]
+その瞬間、誰もが声を上げることを躊躇った。
+憎しみも疑念も未だそこに存在しており、痛みは今も人々を生ける屍の如く力なく前進させている。
+だが、そこに立つ彼は英雄だった。彼はナ・シアーシャを守った人物なのだ。祝福も呪いもここまで引きずってきた彼の背後にそびえる像は、その一言一句に十分な威厳を添えている。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]誰が同胞を殺したと？
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]今は火で炙るだけでも、それでスパイが見つからなければ、次はどうするつもりなんだ？
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_1692_1#5$1",duration=0.5)]
+[charslot(slot="r",name="avg_npc_1694_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_1692_1#5$1",focus="l")]
+[name="ネモス"]クランさん、本当に像を引きずってくるなんて……
+[charslot(slot="l",name="avg_npc_1692_1#10$1",focus="l")]
+[name="ネモス"]どうしましょう？　彼を……止めるべきでしょうか？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]それに、食糧は戻ってきただろう？　戦争だって、とっくに終わってる。
+[name="クラン"]本当にスパイがいたとして、どうしてそんな卑怯なスパイのために街の全員が互いを傷つけ合わなければならないんだ？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[charslot(slot="l",name="avg_npc_1692_1#10$1")]
+[charslot(slot="r",name="avg_npc_1694_1#12$1")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="r",name="avg_npc_1694_1#12$1",focus="r")]
+[name="ラフシニー"]今は、最後まで……話させてあげよう。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]もう一度言おう。戦争は終わったんだ。
+[name="クラン"]戦争が終わったばかりの時、俺はごく単純にこう考えていた。俺よりも腕の立つ鍛冶師が来たら、その人のもとで学びたいと。自分で打ったものくらい自分で直せるようになりたいと思ったんだ。
+[charslot(slot="m",name="avg_npc_1697_1#2$1",focus="m")]
+[multiline(name="クラン")]だが、鍛冶師など……
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[multiline(name="クラン")]来はしなかったし、何一つ学ぶこともできなかった。それどころか俺は、皆の生活に必要なものまで彫像のために鋳溶かしてしまった。
+[name="クラン"]こんなことをすべきじゃなかったんだ。今のナ・シアーシャには何もかもが足りていないと言うのに……空の椀でも雨水くらいは貯められるんだぞ。こんな像にして光らせておくだけなんて無駄だ。
+[name="クラン"]それに、食糧の件もだ。昨日の俺は本気で焦っていた。備蓄不足はもう手遅れの状況なんじゃないかと思ってな。だが、赤き龍の慈悲か、あるいはどこかに豊作の畑があったのか、食糧は帰ってきた。
+[name="クラン"]つまりは、生きてさえいれば、何とか乗り越えられるんだ。そうだろう？
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="クラン"]だが、テオは……あの子はもういない。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]お前はまだあのヴィクトリアのクズなんぞを憐れんでいるのか！？
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="クラン"]俺はあいつが不憫でならないんだ。テオが死んだと聞いた時、俺は皆を恨んだ。俺自身も含めて、全員をな。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]ヴィクトリア人が何をしたか、俺たちよりもお前のほうが、よくわかっているはずだろう！
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="クラン"]あのヴィクトリア人は、最後の力を振り絞ってテオを庇い、俺に頼んできたんだ。この子を連れて行ってくれと。
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]……
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]俺はお前たちが憎い。テオを見殺しにした奴ら全員に復讐したいとさえ思ったほどだ。
+[name="クラン"]だが、復讐には理由がいるものだろう？　俺たちは、一体何のために復讐しようとしているんだ？
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="狂気的な住民"]あの頃奴らがそうしたように、奴らからすべて奪ってやればいい！
+[charslot(slot="m",name="avg_npc_1697_1#4$1",focus="m")]
+[name="クラン"]斧の一本すら鋳溶かした今のナ・シアーシャが、ヴィクトリア人の手から穀物一粒でも奪えると思うのか？
+[charslot(slot="m",name="avg_npc_1689_1#1$1",focus="m")]
+[name="寡黙な住民"]あのクズどもに私たちが受けた苦痛を味わわせてやらないと。
+[charslot(slot="m",name="avg_npc_1697_1#4$1",focus="m")]
+[name="クラン"]そうだな。俺が今、お前たちに路地裏で死ぬ苦しみを味わわせてやりたいと思っているのと同じように。
+[name="クラン"]だが、かつて同胞たちは俺たちを生き延びさせるために命を賭したというのに――生かされた俺たちが、他人に苦痛を与えるためだけに、この命を捨てていいと思うのか？
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]お前は奴らを愛せと言うのか？　俺たちの収穫を奪い、家族を殺した連中を？
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="クラン"]いいや、敵を愛する必要などない。
+[charslot(slot="m",name="avg_npc_1697_1#2$1",focus="m")]
+[name="クラン"]俺はただ、生きている人を……お前たち自身を愛してほしいと思っているだけだ。
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="クラン"]なんなら、誰かを愛することさえしなくてもいい。代わりに一つだけ聞かせてほしいことがある。
+[name="クラン"]明日が来て、サウィン祭が終わり、戦争の影が俺たちの頭上を去る時が来たら……お前たちは何をするつもりだ？
+[name="クラン"]俺は、像を完成させて、自分の名前を刻めたらと思っていた。だが今は、腕の立つ鍛冶師を見つけて、義足の直し方を教わりたいとだけ思っている。
+[Dialog]
+[charslot]
+[name="沈黙する群衆"]……
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]今日はやけに弁が立つな、クラン。だが、俺は明日のことも戦争のこともどうでもいい。ヴィクトリア人さえ死ねばそれでいいんだ。
+[name="狂気的な住民"]ヴィクトリア人の肩を持つのなら、お前にも死んでもらうぞ。
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]……
+[name="クラン"]いいだろう。
+[Dialog]
+[charslot(duration=0.7)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_twohandedblunt", volume=1)]
+クランはその彫像のすべてを鍛えた大槌を振り上げると、巨龍の頭に突きつけた。
+しかし、その像は心血を注いで造り上げてきたものであり、大槌を振り上げた瞬間彼にも迷いが生じて、それ以上振り下ろすことはできなかった。
+それを何かの儀式だと勘違いした群衆は、彼が次にしようとしていることがすぐには理解できなかった。
+[Dialog]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[delay(time=2)]
+しかし、それが儀式ではなく、破壊を試みてのことだと気付いた瞬間、誰よりも生ける屍に近しかった者さえも思わず叫び声を上げ、群衆は瞬く間にクランのもとへと殺到し、彼を取り囲んだ。
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_1692_1#5$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_1692_1#5$1",focus="m")]
+[name="ネモス"]クランさん、早まらないでください！
+[Dialog]
+[charslot]
+ネモスの悲鳴は群衆の叫びにかき消されていったが、クランのよく通る声は依然はっきりと響いていた。
+ラフシニーはクランのもとへ駆け寄ろうとしたものの、怒り狂う群衆に行く手を阻まれてしまった。彼女は唇を噛んで炎を操り、群衆を追い払おうと、大声を出して注意を引こうとした。
+しかしこの瞬間、人々は感覚を失ったかのように、それには反応しなかった……
+あるいは彼らは、本当に感覚を失っていたのかもしれない。
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]俺は、お前たちから渡された生活をお前たちに返すためにこそ、この像を壊しに来た。
+[Dialog]
+[charslot]
+[name="怒り狂う群衆"]なんだって！？
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]この像の骨一つ一つが何で出来ているか、俺はよく覚えている。背骨は斧に、肋骨は食器に、頭は机や椅子に鋳直して、お前たちのもとに返そう。
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="怒り狂う群衆"]この裏切り者！　お前は英雄だろう！　どうしてそんな真似をするんだ！？
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]誰かの生活を奪うことに痛みを感じる者が裏切り者であるのなら、俺は初めから英雄なんかじゃなく、裏切り者だったんだろう。
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="怒り狂う群衆"]屁理屈を言うな！
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]そんなことをする気はないさ。
+[name="クラン"]クランという人間が何者なのかを教えてやろう。奴は英雄などではなく、虚栄心にまみれた嘘つきだ。
+[name="クラン"]黒き森でヴィクトリアの斥候部隊を倒したという話は嘘だ。実際にヴィクトリア人と会ったのは黒き森じゃなく、もっと遠くでのことだった……
+[name="クラン"]そのヴィクトリア人も斥候なんかじゃない。哀れにもどこぞの軍に蹂躙されたキャラバンの連中だったんだ。
+[name="クラン"]クランは何とかしてその全員を救おうとしたが、結局助けられたのは子供一人――ヴィクトリア人の子供だけだった。奴はどうしていいかわからなくなった。
+[charslot(slot="m",name="avg_npc_1697_1#10$1",focus="m")]
+[name="クラン"]そして結局、ほかに打つ手がなかったせいか、あるいは虚栄心に駆られたせいか、奴はヴィクトリア人の首を落とし、「斥候部隊を仕留めた」と同胞に伝えることにしたんだ。
+[name="クラン"]そうして、クランは英雄となり、街で最も尊敬を集める市民となった。奴はこれで、街の人々のために多くを成すことができると思っていた。
+[charslot(slot="m",name="avg_npc_1697_1#7$1",focus="m")]
+[name="クラン"]そして、あの子を育てることは、「英雄」の示すささやかな慈悲の表れともなった。
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="怒り狂う群衆"]なっ……！？
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[name="クラン"]そんな哀れな嘘つきでさえ、本当の自分はただの鍛冶師で、戦争が終われば何かを学ばねばならないということを理解しているんだ。
+[name="クラン"]それに比べてお前たちは……
+[name="クラン"]お前たちはどうだ？
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="友好的な住民"]あなたは――あなたはクランじゃない！　クランのフリをした嘘つきに違いないわ！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_punch02",volume=1)]
+[CameraShake(duration=1, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.7)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=0.5)]
+[name="クラン"]ぐっ……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1695_1#1$1",focus="m")]
+[name="狂気的な住民"]そうだ、お前はクランじゃない！　俺たちの英雄は、ヴィクトリアの斥候部隊じゃ敵わないような豪傑なんだぞ！　偽物め、お前は一体何者だ！？
+[Dialog]
+[charslot]
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[name="クラン"]ハッ……
+[name="クラン"]この彫像をここまで運んできた今……
+[name="クラン"]俺に残された時間が……あとどれだけあると思っている？
+[Dialog]
+[focusout(duration=2, type="bg", from=0, to=1, block=false)]
+[delay(time=1)]
+それが最期の言葉だったかのように、クランの口と鼻からは鮮血が流れ出す。
+彼は慈悲や期待がこもった眼差しを周りの同胞へと向けた。彼らの顔に、憎しみ以外の感情が表れていることを願いながら。
+しかし、彼はふと、そこには紫の炎しか見えないと感じた。炎の向こうに見える表情は、遠い昔どこかの遺跡の外で出会った、安らぎを得られぬ死者の如くぼやけていた。
+彼は遠くを見やった。
+[CameraShake(duration=0.7, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="クラン"]げほっ……ごほっ！
+広場の片隅、曲がり角に小さな影が見える。
+まだ探しにも行けていなかったテオの遺体が、その瞬間、はっきりと見える紫の炎をまとって、ぼんやりとクランを見つめていた。
+[name="クラン"]テオ……？　なぜお前まで……！？
+[name="クラン"]ごほっ……
+[name="クラン"]全部、無駄だ……無駄だったんだ……
+[Dialog]
+[focusout(duration=2, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot="m",name="avg_npc_1697_1#8$1",duration=1)]
+[CameraShake(duration=1,ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_twohandedblunt", volume=1)]
+[CameraShake(duration=1, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+クランはよろよろと立ち上がると、鉄の大槌を拾い、振り上げた。
+[Dialog]
+[charslot]
+群衆はじっと彼を見つめ、大槌が己の頭に振り下ろされるのではないかと怯えながらも、その場から離れられずにいた。
+そして、クランは最後の力を振り絞り……
+[Dialog]
+[PlaySound(key="$d_avg_hammersmash_statue", volume=1)]
+[CameraShake(duration=1.5, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+巨龍の頭を思い切り打ち叩いた。
+誰かのための弔鐘を鳴らすかのように。
+[Dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=1.5)]
+[Background(image="47_g15_eveningglow_L2",screenadapt="showall",fadetime=2,block=true)]
+[delay(time=1)]
+英雄の身体は巨龍の前に崩れ落ち、群衆は突然魂を抜き取られたかのように呆然と立ち尽くした。
+そこでようやくラフシニーの声が辺りに響き、彼女の炎が夕陽の如く燃え盛ったが、誰一人気に留める者はいなかった。
+[Dialog]
+[Background(image="59_g3_dragonsquare_d",screenadapt="showall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_deathfire", volume=1)]
+[bgeffect(name="$eb_eblana_attack",layer = 1)]
+[delay(time=0.7)]
+[bgeffect(name="$eb_deathburning",y=-50,layer = 2)]
+[PlaySound(key="$burningloop1", volume=1, loop=true, channel="fire")]
+[delay(time=1)]
+その時、彫像と、その前に静かに横たわっていたクランが突如として天を照らすばかりの紫の炎に包まれて、群衆は本能的に後ずさった。
+炎の中でクランの身体がゆっくりと起き上がり、巨大な彫像は翼を広げ飛び立たんとしている。
+[Dialog]
+[bgeffect(name="$eb_deathburning",y=20,layer = 3)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.5, channel="b",fadetime=1)]
+[delay(time=1.5)]
+[Dialog]
+[playsound(key="$d_avg_chimerawings",volume=0.8)]
+[playsound(key="$d_avg_chimerawings",volume=1,channel="f",delay=1.5)]
+やがてクランが立ち上がると、赤き龍の彫像も巨大な翼で羽ばたいて、広場中央の、彫像のために用意されていた台座に向かって飛んで行った。
+[Dialog]
+[stopsound(channel="fire", fadetime=2)]
+[stopsound(channel="b", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+群衆は呆気に取られていたのか、あるいは敬意からか、そのすべてを黙って見守っていた。
+そうして、要塞の方角からかすかな足音が近づいてきた。
+[Dialog]
+[charslot(slot="m",name="avg_450_necras_1#7$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_450_necras_1#7$1",focus="m")]
+[name="エブラナ"]なんということだ、私は遅れてしまったようだな。この街に残された最後の英雄よ。
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_450_necras_1#15$1",focus="m")]
+[name="エブラナ"]では、ナ・シアーシャの民よ、お前たちの英雄が彫像のために身を捧げ、夜の帳が降りようとしているこの時――
+[name="エブラナ"]まだ赤き龍の意志に従うつもりがあるのなら……
+[name="エブラナ"]家に戻るべき頃だろう。
+[Dialog]
+[focusout(duration=1.5, type="char", from=0, to=1, block=false)]
+[focusout(duration=1.5, type="bg", from=0, to=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background(image="bg_snowconutryinside",screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[focusout(duration=0.1, type="char", from=1, to=0, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clapsolo", volume=1)]
+[Delay(time=1)]
+[name="謎の女性"]「クランは最後の力を振り絞り、巨龍の頭を思い切り打ち叩いた。誰かのための弔鐘を鳴らすかのように」……
+[name="謎の女性"]あなたは本当にクランのことがお好きなのですね。とても悲しい結末なのに、美しい「創作」が為されていますもの。
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]恐縮です。
+[name="作家"]けれど、あの鍛冶師と顔を合わせたことはほとんどありませんでした。彼はあの街の混乱における最初の犠牲者にすぎません――テオを除けばの話ですが。
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="謎の女性"]そういえば、一つ気になることが。暗闇に足を踏み入れたダブリンの人々ですが、彼らの身体にあなたの語る「紫の炎」は灯っていたと思いますか？
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]ごめんなさい、その質問にはお答えできません。
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="謎の女性"]あなたの物語を聞く限り、きっと灯ってはいなかったのでしょう。汚職に密輸、権力の濫用……彼らは未来に多くの野望を持っていましたからね。
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]……
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="作家"]これだけ多くをお話ししたのですから、そろそろあなたがこの物語に結末を与えることもできるでしょう。
+[Dialog]
+[charslot]
+[name="謎の女性"]街で起きた出来事は一つではありませんでした。あなたも仰った通り、彼は最初の犠牲者にすぎないのです。
+[name="謎の女性"]けれど、どうしてもここでお話を終わらせたいと仰るのなら……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="<i>赤き龍は、死の炎に侵された人々を救う手立てはもはやないことを確信していた。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>ゆえに彼女は人々に告げた。この地は間もなく死の国と化し、民は皆我が追従者となって、共に死出の旅路へ踏み出すのだと。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>生ける屍の如き群衆には、同意する力も拒絶する力も残されてはいない。その夜は天を衝く火明かりが原野中を照らし、以来赤き龍とその追従者を見た者はいなかった。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]うーむ……
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="謎の女性"]どうされました？
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]何でもありません。さあ、もう行っていいですよ。
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="謎の女性"]ですが、まだ仰りたいことがおありなのでは？
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]……
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]その後、本当に赤き龍を見た者はいなかったんでしょうか？
+[Dialog]
+[charslot]
+作家は酒場の隅の新聞ラックを見やった。そこに放り込まれた今日の新聞の一面には、「リーダー」の写真が載っており、見出しによると「オークグローブ郡で何らかの儀式に参加している」そうだ。
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]それに、「共に死出の旅路へ踏み出す」など……赤き龍がいつそんなことを？
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="謎の女性"]物語とは自由なものですから。
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]確かにそうですが、自由だからと思い付きで好きに語っておいて、それを笑い話で済ませていいわけではありません。
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="謎の女性"]それがなぜいけないのですか？
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]あなたも、私も、ターラー人ですから。我々の物語はどんなに歪められたものであっても、我々自身を映し出すものです。
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="n")]
+[name="謎の女性"]今もなお、自分はターラー人だと認めると？
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="作家"]初めてシェイマス・ウィリアムズという詩人の綴る言葉を読んだ時からずっと、私はターラー人です。
+[name="作家"]そうでなければ、なぜ私がカイシャー郡の文学サロンの温かなアームチェアを捨て、ターラーへ来て、一人の――
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]……
+[Dialog]
+[charslot]
+「今もなお、自分はターラー人だと認めると？」
+作家の脳裏に、ふと極めて不吉な考えがよぎったが、彼はすぐにそれを否定した。
+彼はもう一度ラックを見やった。新聞とは、事実のみを報道するものだ。いかに切り取られたものであろうと、それが事実であることに変わりはない。
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]単刀直入に聞きましょう。誰の命令で来たのですか？
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="謎の女性"]誰の命も受けてはいませんよ。あなたが仰っていた通り、私はあなたの物語と、「真実の継ぎはぎ」に関心を寄せる一読者に過ぎません。
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]それをどう証明するおつもりで？
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="n")]
+[name="謎の女性"]難しい注文ですね。誰かの命令で来た場合には、それを証明するのは簡単でしょう。ですが、そんな人間は存在しないと証明するにはどうすればいいのでしょうか？
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_drinkswllw", volume=1)]
+[Delay(time=1)]
+作家は再び酒を呷ると、気落ちした様子で頭を抱えた。すぐには逃げられそうにないと悟ったのだ。
+けれど、まだチャンスは残されている。賢く立ち回ることができれば……
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="作家"]考えてみれば、その通りですね。たかが物語に、神経質になりすぎていたようです。すみません。
+[Dialog]
+[charslot]
+[name="謎の女性"]気にしないでください。それに、あなたの未完の物語はまだ残っていますよね。
+[name="謎の女性"]それを繋ぎ合わせていけば、あの頃のナ・シアーシャに――あなたの心の中のターラーに相応しい結末が得られるかもしれません。
+[name="謎の女性"]ご準備が整ったら、次の物語へ進みましょう。あの鏡の中のダンスについて語っていただけますか？
+[charslot(slot="m",name="avg_npc_1698_1#7$1",focus="m")]
+[name="作家"]鏡の中のダンス……ですか？
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=1)]
+――いや、大切なのは「賢く」立ち回ることではない。
+「慎重に」立ち回り、炎が映し出す物語の影を操り、形を変えることができれば、きっと自分は無事でいられるはずだ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

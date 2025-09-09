@@ -1,0 +1,18 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b2
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=1.2, time=1.5)]
+[Battle.Delay(time=0.5)]
+[Battle.pause]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=4, scale=0.6, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=160, focusY=120, focusWidth=240, focusHeight=240, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+すべてのWAVEが完了すると、より強力な敵である<@tu.kw>試練記念碑</>が出現します！
+[Tutorial(dialogHead="$avatar_stward")]そいつに与えたダメージが、最終的な試合スコアとして記録されるんだ。
+[Tutorial(dialogHead="$avatar_stward")]制限時間内にできるだけ高いダメージを与えてみて。それで今回の訓練は終わりだよ。
+[CooperateBattle.CameraFocusTo(offsetX=8, offsetY=4, scale=1, time=1.5)]
+[Delay(time=1)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

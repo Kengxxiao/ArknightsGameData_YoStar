@@ -1,0 +1,15 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 活动act1sandbox教学关1_b
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=600, focusY=-300, focusWidth=250, focusHeight=250, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+本番では、試合前に五つの特殊効果から一つを選択することになります。試合中は、選んだ特殊効果に応じた支援装置が一種類支給され、会場内に配置することができます！
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Battle.LockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startX=-130, startY=60, startAnchor="BottomRight", endAnchor="Center", endX=0, endY=100)] \
+これは基本特別効果の支援装置<@tu.kw>競技応援団</>です。配置することで、双方のオペレーターの<@tu.kw>攻撃力が上昇</>します！
+[Battle.UnlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]それでは、一緒に流れ者を五体倒し、チャレンジ目標達成を目指しましょう！

@@ -1,0 +1,31 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学b1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="CARD_LIST")]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Battle.Delay(time=1)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=9, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+これは<@tu.kw>高台材料ボックス</>です。建設を行うことで<@tu.kw>油圧式高台</>として利用できます。
+[Tutorial(dialogHead="$avatar_stward")]油圧式高台を完成させるには、二回建設を行う必要があるよ。
+[Tutorial(dialogHead="$avatar_stward")]あ、それと<@tu.kw>油圧式高台</>は遠距離オペレーターを配置できるだけでなく、敵の進行ルートを遮ることもできるからね。
+[CooperateBattle.CameraFocusTo(offsetX=11, offsetY=4.5, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Tutorial(focusX=0, focusY=0, focusWidth=240, focusHeight=480, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_adnach", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ではあの施設は……
+[Tutorial(dialogHead="$avatar_stward")]<@tu.kw>防壁材料ボックス</>だね。一回の建設で展開できるよ。
+[Tutorial(dialogHead="$avatar_stward")]メンテナンスすると<@tu.kw>コンクリ防壁</>が展開されて、敵の進行を妨害してくれるんだ。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]ちなみに、ドクターと協力者はどちらも作業員を配置することができるよ。
+[Tutorial(dialogHead="$avatar_stward")]さっき展開した作業員倉庫が、新しい作業員を連れてきてくれたみたい。それじゃあ、残りの建設はドクターに任せたよ！
+[CooperateBattle.CameraFocusTo(offsetX=10, offsetY=4, scale=1, time=0.5)]
+[Delay(time=0.5)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.unlockFunction(mask="CARD_LIST")]

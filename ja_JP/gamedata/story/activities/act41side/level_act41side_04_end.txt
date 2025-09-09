@@ -1,0 +1,422 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[stopsound(channel="read2")]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_weaamonologue_2", channel="read2", loop=false)]
+[Subtitle(text="<i>傲慢な赤き龍は友を持とうとはせず、時折鏡の中の自分とのみ話をしていた。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>ある年のサウィン祭の日、彼女は宴を開くべく、鏡の中の人物に手伝いを頼んだ。しかし、二人は同時に人前には出られない。そんなことをすれば、鏡の中の人物が消えてしまうからだ。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>鏡の中の人物はやむを得ず赤き龍の命令に従い、謎に包まれた霊の守人を招待するべく訪ねて行った。しかし守人は宴への誘いを断り、さらには、もう巣には戻るなと忠告してきた。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>それでも、鏡の中の人物は、一人で赤き龍の巣に戻ることにした。すると宴はすでに始まっており、彼女は慌ててかがり火の外の暗闇に隠れた。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>その後いつの間にか、宴を訪れた人は次々と姿を消していった。そうして、赤き龍は無理やり鏡の中の人物を暗闇から引っ張り出すと、共に踊れと命令した。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>二人は踊り、踊り、踊り続けて、鏡の中の人物は足が千切れそうなほどの疲れを覚え始めた。彼女は一休みしたいと思ったが、赤き龍は決して踊るのを止めなかった。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[SoundVolume(volume=0, fadetime=3,channel="read2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[focusout(duration=0.1, type="char", from=0, to=1, block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[stopsound(channel="read2", fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+ほら、ラフシニー。
+お前が読みたいと言っていた、蒸気騎士の冒険譚の続きだ。
+[Dialog]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Background(image="21_G7_decisivebattlealley_d",screenadapt="coverall", fadetime=2.5,block=true)]
+[delay(time=1)]
+「どうしてこれを」？
+理由など必要ないだろう、親愛なる妹よ。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1685_1#1$1", bstart=0.2,bend=0.7, duration=1.5)]
+[delay(time=2.5)]
+しかし、本当にそれが読みたかったのか？
+同い年の子供たちの目を気にしているだけで、実際は少しも興味はないんじゃないのか？
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[focusout(duration=0.5, type="char", from=1, to=0)]
+[focusout(duration=1, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1684_1#22$1", focus="m")]
+[name="ラフシニー"]違うよ、本当に読みたいと思ったの。
+[charslot(slot = "m", name = "avg_npc_1685_1#1$1",focus="m")]
+[name="エブラナ"]だが、父さんに言っていただろう？　「お前はヴィクトリア人なのに、どうして蒸気騎士の物語を少しも読んでいないんだ」と言われるのは嫌だ、と。
+[charslot(slot = "m", name = "avg_npc_1684_1#12$1", focus="m")]
+[name="ラフシニー"]この本……父さんに言われて買ってきてくれたの？
+[charslot(slot = "m", name = "avg_npc_1685_1#8$1",focus="m")]
+[name="エブラナ"]まさか。
+[charslot(slot = "m", name = "avg_npc_1684_1#8$1", focus="m")]
+[name="ラフシニー"]じゃあ……どうして知ってるの？
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="エブラナ"]そう後ずさるな、ラフシニー。
+[name="エブラナ"]お前にまで、ほかの者のように私を恐れてほしくはない。
+[charslot(slot = "m", name = "avg_npc_1684_1#3$1", focus="m")]
+[name="ラフシニー"]違うよ、私は……
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="エブラナ"]まあいい、私にすべてを知られたくはないというのなら、共に踊って緊張を和らげてみるのはどうだ？
+[charslot(slot = "m", name = "avg_npc_1684_1#13$1", focus="m")]
+[name="ラフシニー"]本当に……踊るだけ？
+[charslot(slot = "m", name = "avg_npc_1685_1#8$1",focus="m")]
+[name="エブラナ"]それではダメか？
+[Dialog]
+[charslot]
+そう言うと、エブラナは優雅にさえ見える手つきで妹に手を差し伸べた。
+だが、ラフシニーの記憶の中の姉は――両親が家族の好きな音楽を流して、父が頭を揺らし、母が指でテーブルを叩いてリズムを取っている時にも……
+ただ冷ややかに笑って、じっと座ったままでいた。
+姉は音楽に合わせて身体を動かしたことなど、ただの一度もないのだ。
+[charslot(slot = "m", name = "avg_npc_1685_1#11$1",focus="m")]
+[name="エブラナ"]私のステップに着いてこられるようになったら、本のことも、願いごとも、あるいは同年代の友人のことも、悩む必要はなくなるぞ。
+[charslot(slot = "m", name = "avg_npc_1684_1#25$1",focus="m")]
+[name="ラフシニー"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$book_close",volume=1)]
+未開封の騎士小説は地面に落ち、新しい本の心地よい香りが泥水に覆われてしまった。
+彼女はまだ幼すぎて、望みが叶うということがこれほど重く苦しいものだとは思ってもみなかった。覚えているのは、ふらふらと踵を返してその場を離れたことと、自分に向けて差し伸べられた――
+あの柔らかく冷たい手を、握り返せなかったことだけだった。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]ラフシニー。
+[name="エブラナ"]群衆は散った。もはや己の身分を偽る必要はない。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]お前はまだ、今も彼らは生きていると思うのか？
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="ラフシニー"]私にわかるのは、ターラー人なら誰しも心の中にああいう炎を燃やしているということだけ。私たちの先祖がヴィクトリア人に頭を垂れたその時から、炎が消えたことは一度もないんだ。
+[name="ラフシニー"]街の人たちも、私と共に帰ってきた人たちもそれは同じ。後者の炎はまだ死の色に染まっていないというだけだよ。
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]なかなかうまい喩えだな。
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]では、もう一度聞かせてもらおう。お前はどうするつもりだ？
+[name="エブラナ"]お前の色で炎を塗り替えてでもみるか？　恐らくはもう試したのだろうがな。
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="ラフシニー"]……
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]誰であれ、ひとたび死に染まれば最後、お前の炎ではその人間を灰に変えることしかできない。
+[name="エブラナ"]だから、私を殺せ。ラフシニー。
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="ラフシニー"]そうして街の人も全員殺せと言うの？
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]この件がどう記されるかを気にしているのなら、こう伝えても構わんぞ。彼らを殺したのは私であり、あくまでお前は埋葬をしただけだとな。
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="ラフシニー"]ナ・シアーシャの人たちはまだ生きている。
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]その身体を動かしているのが死であって、生ではないのだとしてもか？
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="ラフシニー"]命の火種が本当に少しも残っていなければ、彼らはとっくに彷徨うだけの生ける屍になっているはず。
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]いずれはそうなる。
+[charslot(slot = "m", name = "avg_1020_reed2_1#7$1",focus="m")]
+[name="ラフシニー"]いいえ、そうはさせない。
+[name="ラフシニー"]私は、彼らが宿した紫の炎は疫病だと――姉さんが起こした疫病みたいなもので、まだ治ると思いたいんだ。
+[charslot(slot = "m", name = "avg_450_necras_1#15$2",focus="m")]
+[name="エブラナ"]では、その疫病の治療薬を探しに行くつもりか？
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="ラフシニー"]そうだよ。
+[name="ラフシニー"]私は、その薬で姉さんのことも治したいと思っているんだ。
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="エブラナ"]素晴らしいな。
+[charslot(slot = "m", name = "avg_1020_reed2_1#11$1",focus="m")]
+[name="ラフシニー"]えっ……？
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="エブラナ"]ああ、素晴らしいよ。
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]自分でも気づいていないのか？
+[name="エブラナ"]お前はもう、私からどう逃げるかではなく、私をどう治すかを考えるようになったんだ。
+[Dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[image(image="59_i05",screenadapt="coverall",xScale=1.2,yScale=1.2,fadetime=2)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[delay(time=1.5)]
+[name="エブラナ"]さあ踊ろう、ラフシニー。私はずっとお前と踊りたいと思っていたのに、お前はいつも逃げ続けていたな。
+[name="ラフシニー"]どういう……こと？
+[name="エブラナ"]私は踊ろうと言ったんだ。
+[name="エブラナ"]最後の小節が来る前に、その槍で私の心臓を貫いてくれ。死に至る病に薬などない。お前の意志がどれほど固くとも、いずれその試みは単なる徒労に終わるだろう。
+[name="エブラナ"]来るんだ。これ以上……ナ・シアーシャと、我らの宿命から逃げるのはよせ。
+[name="エブラナ"]サウィン祭はまだ先だが、生と死の境がターラーの歴史上どの瞬間よりも曖昧になっている今、事を成す以外に手立てはない。
+[name="エブラナ"]それともお前は、本当にターラーを死の国に変えたいのか？
+[Dialog]
+[delay(time=1)]
+ラフシニーは反射的に顔を背けた。
+紫の炎は今も、英雄がここまで引きずってきた骨格の上で燃え盛っている。そして先ほど炎に飲まれて立ち上がったクランの身体は、今や地面にくずおれていた。
+それ以上見ていられなくなったラフシニーは視線を戻し、姉の両目と、幾年もの時を経て再び自分に差し伸べられたその手を真っすぐに見つめた。
+錯覚だろうか。あるいは、紫の炎に包まれた物は全て生気を失ってしまうからだろうか。姉の手は、記憶にあるよりも青白く見えた。
+[name="ラフシニー"]一つの都市のことは、無数の人々の命のことは、宿命なんて二文字で軽々しく括っていいものじゃない。
+[name="エブラナ"]話はそれで終わりか？　お互い、それぞれの立場で十分語り合ってきたように思うが。
+[name="ラフシニー"]……エブラナ！
+[name="エブラナ"]お前が望むなら話し続けても構わない。私はここで待っていよう。
+[name="エブラナ"]だが急いだほうがいいぞ。お前に時間があったとしても、ほかの者もそうだとは限らない。
+[name="ラフシニー"]（深呼吸をする）……そうだね。姉さんは待つことができても、ほかの人もそうとは限らない。
+[name="ラフシニー"]わかった、ダンスに付き合おう。私たちのどちらかが倒れるまで。
+[name="ラフシニー"]だけど、私は姉さんのステップに合わせはしない。絶対に。
+[name="エブラナ"]好きにするといい。
+[name="エブラナ"]だが、一つだけ誤解があるな。親愛なる妹よ。
+[name="エブラナ"]お前の目の前にいる者こそが、待つことのできない人間だ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+それって……
+ラフシニーは姉の顔をじっと見つめて、ふと今話していたことには関係のない、ある事実に気付いた。
+その手が青白いと感じたのは、錯覚ではなかった。
+天地を覆うマントの如く編み上げられた紫の炎は、エブラナを美しくも恐ろしく見せていたが、その肌の奥から滲み出る、身体を蝕む病魔のような蒼白さを隠し切れてはいなかった。
+こんなことがあるはずはない。ラフシニーは、姉のこんな姿を一度として見たことがなかった。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#6$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#6$1",focus="m")]
+[name="ラフシニー"]エブラナ……
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]どうした？
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="ラフシニー"]姉さん……
+[name="ラフシニー"]……大丈夫なの？
+[Dialog]
+[charslot]
+エブラナは笑顔を見せた。いつも浮かべているような冷ややかな笑みを。
+今彼女が見せた笑みには、どこか温かみが感じられたが、それゆえにかえって青白いその顔がより痛々しく見えた。
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]お前の気遣いに感謝しよう。
+[charslot(slot = "m", name = "avg_450_necras_1#16$2",focus="m")]
+[name="エブラナ"]冷たい別れと苦しい再会の果てに、お前からそんな言葉が聞けるとは。本当に……久しぶりのことだな。
+[charslot(slot = "m", name = "avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]ついでに言っておくと、お前と踊ってみたかったのは本当なんだ。
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",focus="m")]
+[name="ラフシニー"]……姉さんを治す方法が見つかったら、踊ってあげる。
+[charslot(slot = "m", name = "avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]それはいい。では、私はこの地で待つとしよう。
+[Dialog]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.6, loop=true, channel="awalk")]
+[StopSound(channel="awalk", fadetime=2.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+エブラナは要塞へゆっくりと歩いていったが、その足音は消え入りそうなほど弱々しく聞こえた。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=2)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="ブリギッド"]はぁ……
+[charslot(slot = "m", name = "avg_4177_brigid_1#5$1",focus="m")]
+[name="ブリギッド"]はぁ……二人とも！
+[name="ブリギッド"]都市の入り口まで行ったけど誰もいなくて！　きっと何かあったんでしょ、広場で一体――
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",duration=0.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[delay(time=1.5)]
+[name="ラフシニー"]……
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="ブリギッド"]ねえ、それって……？
+[Dialog]
+[charslot]
+ラフシニーは小さな箱を抱えていた。夜の薄明かりの下では、すべてがいつもよりぼやけて見える。
+[charslot(slot = "m", name = "avg_1020_reed2_1#2$1",focus="m")]
+[name="ラフシニー"]私はクランを救えなかった。できたのは、ただ……
+[name="ラフシニー"]……彼がこれ以上死の炎に苦しめられずに済むように、こんな方法で安らぎを与えることだけ。
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="ブリギッド"]……
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+ノマドはしばし黙り込んだ後、地面から石を拾い上げた。
+そうして思い切り力を籠めると、力いっぱいその石を要塞のほうへ投げつけた。
+しかし、その石は何の音も立てることなく、夜闇に飲まれて消えていった。
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="ラフシニー"]もう外出禁止の時間だ。ネモス、ブリギッド、まずは――
+[charslot(slot = "m", name = "avg_npc_1692_1#2$1",focus="m")]
+[name="ネモス"]こんなの……
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]間違ってます……
+[Dialog]
+[charslot]
+ネモスは木箱に手を伸ばすと、存在しない埃を払うかのようにそれをそっと撫でた。
+彼女はふと、数日前かつての同族に拒まれた際に言われたことを思い出していた。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g5_remains_outside",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[delay(time=0.5)]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="生真面目な霊の守人"]霊の守人は生者と団結することはないし、生者からの敬意も必要ない。彼らが死者とならぬ限りはな。
+[name="生真面目な霊の守人"]それこそがダブリンが重んじて然るべき伝統というものだ。
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]どうあれ、この笛を渡していただけることに感謝します……では、これでお暇しますね。
+[charslot(slot="m",name="avg_npc_1691_1#4$1",focus="m")]
+[name="生真面目な霊の守人"]待て。お前は、サウィン祭が迫る今、守人が祭器を渡すことを嫌がるとわかっていて、ここへ来たのだろう。
+[name="生真面目な霊の守人"]ダブリンの連中に強要されたのか？
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]いえ、自分の意思で――
+[charslot(slot="m",name="avg_npc_1691_1#3$1",focus="m")]
+[name="生真面目な霊の守人"]ネモス、お前は相変わらずだな。
+[name="生真面目な霊の守人"]忍耐を重ね、間を取り持ち、調和をもたらす……ナ・シアーシャでも、あの赤き龍の下でも、そんなことにこだわっているのか？
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="ネモス"]私はただ……上手く行くはずの状況が悪化するのも、協力し合うべき人たちが争うのも見たくないだけなんです。
+[charslot(slot="m",name="avg_npc_1691_1#2$1",focus="m")]
+[name="生真面目な霊の守人"]その争いが元より避けられぬものだとしたら、お前はその中へどこまでも沈み込むばかりだぞ。
+[name="生真面目な霊の守人"]そのままでは街に染まっていくばかりだろう。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]つまりリーダーは……赤き龍は……
+[name="ネモス"]エブラナは、ナ・シアーシャにあるべき生活をもたらすことはないということなんですね？
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="ラフシニー"]姉さんは、できないと言っていた。あの人は……本当は、嘘をつくのなんて好きじゃないんだ。何かに縛られていない限りは……
+[charslot(slot = "m", name = "avg_npc_1692_1#4$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ネモス"]彼女は今やターラーすべてのリーダーで、並ぶ者なき赤き龍だというのに、そんな人を縛れるものなどあると思いますか！？
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="ネモス"]私は……
+[charslot(slot = "m", name = "avg_4177_brigid_1#6$1",focus="m")]
+[name="ブリギッド"]ネモス、どうしたの？　なんだか……様子が変だよ……
+[playMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="ネモス"]わかったんです。今、急に。
+[name="ネモス"]どうやらあの炎は本当に、生きている人間にも燃え移るようだと。
+[charslot(slot = "m", name = "avg_1020_reed2_1#11$1",focus="m")]
+[name="ラフシニー"]ネモス！？
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="ネモス"]私が頼りにしていた人たちは、本当は私腹を肥やす害虫で――
+[name="ネモス"]信じていたリーダーは、他人の正死を顧みない悪しき龍だった。
+[name="ネモス"]そして、私が命を懸けて守ってきた人々のせいで……親友は命を落としました。
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="ネモス"]それどころか、あの悪しき龍が紫の炎で彼を燃やしていなければ、人々に何をされていたかわからないほどです……
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="ネモス"]クランさんの問いはもっともでした。サウィン祭が終わったら、何をするつもりか――
+[name="ネモス"]私にはもう、復讐以外にできることなんてありません。
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_deathfire", volume=0.4)]
+[avgdisplay(id = "1", style = "bgeffect", name = "$eb_purple_fire", slot = "bgover",x=20,y=-20,layer = 1)]
+[Delay(time=3)]
+彼女がその言葉を発した瞬間、ラフシニーは見た。ナ・シアーシャで唯一、紫の炎に侵されていなかった住民の身体に、炎が灯ったのを。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[avgdisplay(id = "1")]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]ラフシニー殿下、あなたは今の私を、街の人々の同類だと――エブラナの臣下だとお思いになりますか？
+[charslot(slot = "m", name = "avg_1020_reed2_1#13$1",focus="m")]
+[name="ラフシニー"]ううん。ただ、死に至るその病が……街に残された最後の一人に伝染しただけのことだよ。
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]ならば誓いましょう。あなたが強要されたダンスを、共に踊り続けることを。いつまでも、いつまでも……
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="ネモス"]あの邪悪な赤き龍が倒れるまで。
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="ラフシニー"]……キミの誓いは聞き届けた。
+[name="ラフシニー"]この後、私はしばらくナ・シアーシャを離れないといけないんだ。キミも一緒に行こう。
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]霊の守人の集落へ行くんですね？
+[charslot(slot = "m", name = "avg_1020_reed2_1#1$1",focus="m")]
+[name="ラフシニー"]うん。この街にはもう、あの炎を癒す希望はないから……協力してくれそうな人を探しにいかないと。
+[charslot(slot = "m", name = "avg_npc_1692_1#2$1",focus="m")]
+[name="ネモス"]でしたら、私はやめておきます。あそこへ戻る資格はありませんしね。
+[charslot(slot = "m", name = "avg_npc_1692_1#7$1",focus="m")]
+[name="ネモス"]その間は、町で待機していましょう。赤き龍に気付かれ、始末されでもしない限りは……これ以上事態が悪化しないよう、努力をしてみます。
+[charslot(slot = "m", name = "avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]私の代わりに、この笛を返しておいていただけますか？
+[name="ネモス"]それと……クランさんのことも、よろしくお願いします。どうか、きちんとした葬儀をしてあげてください。
+[name="ネモス"]その際には親しい人の弔辞が必要になるのですが、私が……私が書いておきますので、それを読んでいただけませんか？
+[charslot(slot = "m", name = "avg_1020_reed2_1#12$1",focus="m")]
+[name="ラフシニー"]……わかった。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="59_g4_dragonsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_writerub", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]できました。こちらです。
+[charslot(slot = "m", name = "avg_4177_brigid_1#10$1",focus="m")]
+[name="ブリギッド"]わたしはリードと一緒に行くね。今の黒き森は誰も出入りさせてくれないけど、二人なら少しは上手く行くかもしれないし。
+[charslot(slot = "m", name = "avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]いえ、ブリギッドさんは残ってください。あなたの助けが必要なんです。
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="ブリギッド"]うーん、でも……
+[charslot(slot = "m", name = "avg_1020_reed2_1#9$1",focus="m")]
+[name="ラフシニー"]私一人で大丈夫だよ。
+[charslot(slot = "m", name = "avg_4177_brigid_1#11$1",focus="m")]
+[name="ブリギッド"]ならいいけど……ネモス、なんだからしくないよ。
+[charslot(slot = "m", name = "avg_npc_1692_1#8$1",focus="m")]
+[name="ネモス"]……あるいはこれが、復讐は人を変える、ということなのかもしれませんね。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[stopsound(channel="read2")]
+[charslot]
+[Image]

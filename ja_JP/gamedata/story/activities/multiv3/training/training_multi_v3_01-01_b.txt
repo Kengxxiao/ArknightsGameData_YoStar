@@ -1,0 +1,32 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 联机教学关1b
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]試合は二つのステージに分かれていて、それぞれに目標が設定されています。これも前回と一緒ですね。
+[Tutorial(target="panel_cooperate_normal_and_fortress_status",\
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+この試合のステージ１の目標は<@tu.kw>生存</>なので、制限時間終了まで敵の侵攻を食い止める必要があります。
+[PopupDialog(dialogHead="$avatar_amiya")]また、ドクターと私は同じ会場上にはいますが、防衛する目標地点は異なります。
+[Tutorial(focusX=-50, focusY=-70, focusWidth=130, focusHeight=130, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ドクターの防衛目標は青の目標地点です。敵が青の目標地点に入ると、ドクターの耐久値が減少してしまいます。
+[Tutorial(focusX=60, focusY=-70, focusWidth=130, focusHeight=130, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+緑の目標地点は協力者――つまり、私の防衛目標です。敵が緑の目標地点に入ると、私の耐久値が減少します。
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=55, focusY=85, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+なお、協力者が配置したオペレーターは別の色で表示されるため、混同の心配はありません。
+[Tutorial(focusX=-50, focusY=170, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+前回と異なり、今回の競技には<@tu.kw>共通敵</>が存在しています。
+[Tutorial(focusX=-15, focusY=200, focusWidth=120, focusHeight=120, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+このマークがついている<@tu.kw>共通敵</>がどちらかの目標地点に入ると、私たち両方の耐久値が減少してしまいます。

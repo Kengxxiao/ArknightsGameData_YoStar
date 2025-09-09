@@ -1,0 +1,526 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[name="ラフシニー"]人の住む通りを全部回っても、テオの行方は掴めなかった。それなのに、街の人の炎は……ますます強くなってる。強い風にでも煽られたみたいに……
+[name="ラフシニー"]しかも、みんなそれを当然のように受け入れていて、炎を取り除こうとするとパニックを起こしてしまう。彼らは、炎のついていない部分が自分のものではなくなってしまうように感じるみたい……
+[name="ラフシニー"]まさか本当に、ナ・シアーシャの人たちはもう……
+[name="ラフシニー"]……ううん、今はそれを考えてる場合じゃない。あの子のことが先だ。ネモスが言ってたノマドのブリギッドという人に会いに行かないと。
+[name="ラフシニー"]でも……黒き森に入れないからって、都市の外にテントを建てる人なんて本当にいるのかな？
+[Dialog]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1)]
+[name="ラフシニー"]「哨戒所沿いに右へ進んで、小川を渡る……」
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_campsite_d",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]ここみたい。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="ラフシニー"]金髪のペッローで、背は高いけど、すばしっこい人って話だったよね。
+[name="ラフシニー"]それなら、あの人がネモスの言ってた「ブリギッド」――
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",posfrom="200,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="ブリギッド"]前に会ったことあったっけ？
+[charslot(slot="l",name="avg_npc_1694_1#9$1",focus="l")]
+[name="ラフシニー"]ううん、会ったことはないと思うけど、ネモスから聞いてここへ来たんだ。私はリード。
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="ブリギッド"]君……
+[Dialog]
+[charslot(slot = "r", posfrom="0,0", posto="-100,0", duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_catsmell", volume=1)]
+[Delay(time=1)]
+ラフシニーは、ブリギッドが近づいてくるなり、鼻をひくひくと動かしたのを見て、これはノマドの挨拶か何かだろうかと思った。
+[Dialog]
+[charslot(slot = "r", posfrom="-100,0", posto="0,0", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1694_1#9$1",focus="r")]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="ブリギッド"]君は街にいるあの赤き龍じゃないね。
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="ラフシニー"]何の話？　私は赤き龍じゃなくて、ただの――
+[charslot(slot="r",name="avg_4177_brigid_1#8$1",focus="r")]
+[name="ブリギッド"]街にいるほうじゃないほうの赤き龍でしょ。もう一人の赤き龍が街に帰ってきた、なんて……聞き覚えがある話だね。
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="ラフシニー"]少し嗅いだだけで……？
+[charslot(slot="r",name="avg_4177_brigid_1#9$1",focus="r")]
+[name="ブリギッド"]うん。君の身体からは、街にいる赤き龍とは全然違う炎のにおいがするから。
+[name="ブリギッド"]でも、そんなのどうでもいいよね。わたしに何の用？
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="ラフシニー"]テオがいなくなったんだ。それで、キミは街へ帰ってきた時によく彼と話していたから、行方を知らないかってネモスが。
+[charslot(slot="r",name="avg_4177_brigid_1#5$1",focus="r")]
+[name="ブリギッド"]テオがいなくなったって！？
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="ラフシニー"]今朝出かけてから戻ってきていないらしいんだ。今日は街中が混乱してるから、早く見つけないと。ネモスも私も、ナ・シアーシャ中を何度も探したけど、行方が掴めなくて。
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="ブリギッド"]でも、ナ・シアーシャを出る直前に会った時はまだ元気そうで――
+[charslot(slot="r",name="avg_4177_brigid_1#8$1",focus="r")]
+[name="ブリギッド"]ううん、あの時も元気とは言えなかったかな。
+[name="ブリギッド"]とにかく、テオに会ったあと要塞に向かって、その後街を出て以来一度も会ってないよ。
+[charslot(slot="r",name="avg_4177_brigid_1#7$1",focus="r")]
+[name="ブリギッド"]ああもう、どこに行っちゃったんだろ？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_ltstrongpoint",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="ブリギッド"]テオ！　――テオ！
+[charslot(slot="m",name="avg_4177_brigid_1#7$1",focus="m")]
+[name="ブリギッド"]こんなことなら、あの時気絶させて担いででも連れていくべきだった……
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="ブリギッド"]テオ、返事して！　今度こそ絶対一緒に来てもらうよ！
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="ラフシニー"]ブリギッド、ここは……？
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="ブリギッド"]この区画は戦時中に、ターラーから切り離されたことがあるんだって。どこかの貴族を平定するためとか。その後戻されてからはナ・シアーシャにくっつけられて、ずっと放置されっぱなしでね。
+[name="ブリギッド"]テオは辛いことがあった時よくここに来るんだ。
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]街を出て行ったという可能性は？
+[charslot(slot="m",name="avg_4177_brigid_1#8$1",focus="m")]
+[name="ブリギッド"]……わたしが見た限りでは、街を出た人はラグラン通りのエマだけだった。
+[name="ブリギッド"]それに、彼女は一人でたくさんの荷物を押してた。黒き森の外で誰かと会って、荷物を受け渡したあとはまた一人で帰ってきてたよ。
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]向こうはキミに気付かなかったの？
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="ブリギッド"]街の人たちは目も耳も鼻も鈍いから。それに、お互いかなり離れてたしね。
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]大量の荷物を運び出した後、一人で帰ってきた……？　その荷物って一体何なんだろう？
+[name="ラフシニー"]エマの仕事は？
+[charslot(slot="m",name="avg_4177_brigid_1#10$1",focus="m")]
+[name="ブリギッド"]食料品店の店主だよ。お店に手紙を届けたこともある。
+[charslot(slot="m",name="avg_npc_1694_1#8$1",focus="m")]
+[name="ラフシニー"]そんな人が、街を出て戻った後に……店を閉めてる……
+[charslot(slot="m",name="avg_npc_1694_1#7$1",focus="m")]
+[name="ラフシニー"]今はほかに手がかりがないし、急いで向かってみよう。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="59_g1_citystreets_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",duration=0.7)]
+[delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="友好的な住民"]あらブリギッド、それにリードじゃない。
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="ラフシニー"]こんにちは。テオを見なかった？
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="友好的な住民"]テオ？　ネモスから頼まれたの？
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="ラフシニー"]うん。
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="友好的な住民"]そう。でも、あの子供がどこへ行ったかなんて知らないわ。農作地を焼き払ったスパイと一緒に逃げたわけじゃなきゃいいけどね。
+[charslot(slot="m",name="avg_4177_brigid_1#4$1",focus="m")]
+[name="ブリギッド"]ちょっと！
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]ブリギッド、あの子を探すのが先だよ。
+[charslot(slot="m",name="avg_npc_1694_1#9$1",focus="m")]
+[name="ラフシニー"]じゃあエマのことは見かけてない？
+[charslot(slot="m",name="avg_npc_1688_1#1$1",focus="m")]
+[name="友好的な住民"]彼女なら、とっくに店を閉めちゃってたわ。私もまだやってないかと思って見に来たんだけど……無駄足だったわね。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_1694_1#1$1",duration=0.5)]
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",focus="r")]
+[name="ブリギッド"]はぁ、またこのにおい……冷たくて焦げ臭い、嫌なにおいだ。最近はナ・シアーシャのそこら中からこのにおいがして……ほんと嫌になっちゃうよ。
+[charslot(slot="l",name="avg_npc_1694_1#1$1",focus="l")]
+[name="ラフシニー"]ずっと聞きたかったんだけど……キミは紫の炎のにおいを嗅ぎ取れるの？
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",focus="r")]
+[name="ブリギッド"]そうだよ。あっちの赤き龍から出てる紫の炎は、焦げ臭いにおいがするけど、最近は街の人にまでそのにおいが染みついちゃってさ。
+[charslot(slot="l",name="avg_npc_1694_1#7$1",focus="l")]
+[name="ラフシニー"]においだけの話じゃない……炎はもう、街の人の間に広がっているんだよ。
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="ブリギッド"]えっ？　でも、わたしには炎なんて見えないけど。
+[charslot(slot="l",name="avg_npc_1694_1#11$1",focus="l")]
+[name="ラフシニー"]やっぱりキミにも見えないんだね。
+[charslot(slot="r",name="avg_4177_brigid_1#11$1",focus="r")]
+[name="ブリギッド"]むしろ聞きたいのはこっちだって。君には見えてるの？
+[charslot(slot="r",name="avg_4177_brigid_1#6$1",focus="r")]
+[name="ブリギッド"]……あーでも、それもそっか。君も赤き龍だもんね。
+[name="ブリギッド"]街の人たちはあっちの赤き龍のすぐそばに居続けてるし、あの人を神様みたいに崇めてるから、身体に火が点くのも時間の問題だったんだと思うよ。
+[Dialog]
+[charslot]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="ブリギッド"]エマ、わたしだよ、ブリギッド。
+[Dialog]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="ブリギッド"]エマ！
+[charslot(slot="m",name="avg_npc_1694_1#11$1",focus="m")]
+[name="ラフシニー"]いないの？
+[charslot(slot="m",name="avg_4177_brigid_1#11$1",focus="m")]
+[name="ブリギッド"]鍵穴から紫の炎のにおいがするから、誰かいるはずだと思う。どうしようか、無理やり入っちゃう？
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]……そうするしかなさそうだね。
+[Dialog]
+[PlaySound(key="$d_avg_originiumcastshort",volume=1)]
+[PlaySound(key="$firemag_n",volume=0.4,delay=1)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1,r=0.95, g=0.95, b=0.95, fadetime=0.3, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4177_brigid_1#5$1",focus="m")]
+[name="ブリギッド"]赤き龍の炎って鍵まで焼き切れるの？
+[charslot(slot="m",name="avg_npc_1694_1#1$1",focus="m")]
+[name="ラフシニー"]……とにかく、まずは中へ入ろう。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g6_noblelivingroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0.6)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="bse")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]「暴政者」殿、一杯どうだ？　宴席はないが、酒ならいくらでもあるからな。
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「暴政者」"]いただこう。
+[Dialog]
+[charslot]
+[PlaySound(key="$clink", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]誰かと思えば、我らが「霊の守人」じゃないか。あんたもリーダーの招待を受けたのか？
+[charslot(slot="m",name="avg_npc_1692_1#1$1",focus="m")]
+[name="ネモス"]私は……霊の守人より、赤き龍への祭器を捧げに参りました。
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]どれどれ、どんなに素晴らしい贈り物なのやら……笛が一つか、このほかは？
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]サウィン祭が近付く今、霊の守人のもとに余分な祭器は残っておりませんでした。ですので、持参できたのはこの笛だけです……
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]これだけだと？
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]本当に申し訳ありません……
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「暴政者」"]祭器を持参して祝典を盛り上げると、自信ありげに約束したのはお前自身だろう？
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]考えが至らず、申し訳ない限りです……
+[charslot(slot="m",name="avg_npc_247",focus="m")]
+[name="「吟遊家」"]まあまあ、この件自体はネモスさんが言い出したことではないですし。
+[name="「吟遊家」"]私は最初から言っていたでしょう。一日中死者や魂と向き合っている人々の贈り物など、縁起が悪いと。笛の一本で済んだほうがむしろいいじゃないですか。
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「監察官」"]お前は「霊の守人」に救われたことがあるから、彼女を庇うんだろう！　この件はこれで手打ちにはできん！　「霊の守人」よ、どう責任を取るつもりだ？
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="ネモス"]……
+[Dialog]
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="「将校」"]静まれ！
+[Dialog]
+[SoundVolume(volume=0, channel="bse",fadetime=1.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="「将校」"]これは彼女一人で責任を負えるようなものではない。本気で追及するつもりなら、霊の守人によるリーダーへの不敬な態度については後ほど考えるとしよう。
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="「将校」"]それより、皆思う存分この時間を楽しむようにというのがリーダーのご命令だ。
+[name="「将校」"]困難な時期に行う以上、なるべく簡略化した形にする方針で、本祝典に宴席は設けていない。リーダーが到着されるまで、各自好きなようにくつろいでくれ。
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="「将校」"]「霊の守人」、君はひとまずここに残れ。リーダーがいらしたら、この事態についてあの方に説明してもらわねばならないのでな。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1749_1#1$1",focus="all")]
+[charslot(slot="r",name="avg_npc_234",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_247",focus="all")]
+[charslot(slot="r",name="avg_npc_246",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw1")]
+[stopsound(fadetime=2, channel="nw1")]
+[PlaySound(key="$d_gen_walk_n",volume=0.7,delay=0.3)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="「将校」"]あるいは、今の内に幹部たちに取り入って、後で口添えしてもらうというのも手かもしれんが。
+[charslot(slot="m",name="avg_npc_1692_1#6$1",focus="m")]
+[name="ネモス"]そんなことは……できません。
+[charslot(slot="m",name="avg_npc_723_1#7$1",focus="m")]
+[name="「将校」"]正直な奴だ。
+[charslot(slot="m",name="avg_npc_1692_1#10$1",focus="m")]
+[name="ネモス"]「将校」さん……この人たちは、昔からこうなんですか？
+[charslot(slot="m",name="avg_npc_723_1#1$1",focus="m")]
+[name="「将校」"]ハッ、そんなわけがあるか。
+[name="「将校」"]「官僚」――奴はかつて、シルバーロックブラフス前線の後方支援に死力を尽くし、何日も寝ずに働き続けていた。危うくナ・シアーシャの農作地で倒れかけたこともあるほどだ。
+[name="「将校」"]「暴政者」――奴は冷酷無比な悪党だが、戦時中ナ・シアーシャ周辺で食糧を貯め込んでいた豪商や貴族たちは、奴の名を聞くだけで膝を震わせていたという。
+[name="「将校」"]「拷問者」――奴が他人の悲鳴や絶叫を楽しむ様を見たことは確かにある。その一方で、狂える牙獣の如く敵陣に突撃する姿を目にしたこともあった……
+[charslot(slot="m",name="avg_npc_723_1#5$1",focus="m")]
+[name="「将校」"]だが今では……殿下のご命令がなければ、街がこれほど困窮している時であるにもかかわらず、奴らは豪勢な晩餐会を期待していたことだろう。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1692_1#8$1",focus="m")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_723_1#6$1",focus="m")]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Delay(time=1)]
+[SoundVolume(volume=0.4, channel="bse",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]やれやれ、我らが「将校」さんは相変わらず付き合いが悪いな。
+[name="「拷問者」"]まあいい、それより「官僚」、あんたどうしたんだ？　乗り気じゃなさそうだが。
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]今の食料不足は、私にも責任があるからな。
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「監察官」"]何を言う。凶作とあれば仕方がないだろう？
+[name="「監察官」"]（小声）それに、助言もしたじゃないか。ヴィクトリア人に罪をなすり付ければいいと。あのエマという女もお前の指示通り動いているし、街の連中もそうと信じ込んでいる今、何を慌てている？
+[name="「監察官」"]（小声）連中はどんなに腹が空いても、リーダーをあれほど崇めている。我々に刃向かうこともあるまい。
+[name="「監察官」"]（小声）まさかエマの奴が裏切るとでも思うのか？
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]（小声）それはない。戻ってから落ち着かない様子ではあるが、あの女はおとなしく我々の言う通りに動いている。心配することはないだろう。
+[name="「官僚」"]（小声）それよりも今案じているのは、エマが接触したあの商人から音沙汰がまるでないことだ。今までは、午前までには連絡があったはずだからな。
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「監察官」"]（小声）単に遅れているだけだろう――
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]何をこそこそ話してるんだ？
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]いや、その……
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「監察官」"]英雄クランのことを話していたのさ。
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]クラン？　奴がどうした？
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「監察官」"]奴は当時、黒き森の地形を活かしてヴィクトリアの斥候部隊を全滅させたと言っていただろう。相手は四、五人だったが、最後に残った子供だけは手を下せなかったと。
+[name="「監察官」"]だが考えてもみろ。部隊に子供などいるはずがあるまい。
+[charslot(slot="m",name="avg_npc_1749_1#1$1",focus="m")]
+[name="「拷問者」"]その点は「霊の守人」が説明していただろう。相手の斥候部隊は、ターラーとヴィクトリアを行き来していたキャラバンを捕らえて、黒き森を案内させていたと……
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「監察官」"]確かにキャラバンが随行していた可能性は高い。だが、本当に斥候部隊だったのかについては……フッ、何とも言えんところだな。
+[Dialog]
+[stopmusic(fadetime=2)]
+[stopSound(channel="bse", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_snowconutryinside",screenadapt="coverall", block=true)]
+[focusout(duration=0.1, type="bg", from=0, to=1, block=true)]
+[delay(time=2)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]「だが、本当に斥候部隊だったのかについては……フッ、何とも言えんところだな。」
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_bottlecollide", volume=0.6)]
+[delay(time=1)]
+話し続ける内に喉の渇きを覚えた作家は、グラスを持ち上げあおろうとしたが、ビールはすでに空だった。
+[name="謎の女性"]もう一杯頼んできましょう。
+[Dialog]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+女性が立ち上がり、カウンターへ向かう。作家はそのまま椅子にもたれかかった。
+長年の習慣で、彼は次にどう話を展開すれば聞き手が一番引き込まれてくれるかを考えていた。しかし、それを考える中で、作家はふとある懸念を抱いた。
+この女性は、一応自分と同じ苦難を共にした仲間と言える存在で、それなりに事情を知ってもいるようだ。とはいえこの先の話は、これまでのようにすべてを打ち明けるべきではないだろう。
+彼女が外でそれを言い触らさないとは限らないのだから。
+これはあくまで物語だ。物語とは、炎が壁に投げかけた影であり、炎そのものではないという点を肝に銘じておかなければ、語り手はその身を焼かれることになる。
+[Dialog]
+[PlaySound(key="$d_avg_glassclink", volume=0.7)]
+[delay(time=1)]
+[name="謎の女性"]はい、どうぞ。
+[Dialog]
+[PlaySound(key="$d_avg_drinkswllw")]
+[PlaySound(key="$d_avg_drinkswllw",loop=false,channel="1",delay=1.2)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="m")]
+[name="作家"]ありがとうございます。さて、どこまで話しましたかね？
+[charslot(slot="m",name="avg_npc_1698_1#6$1",focus="n")]
+[name="謎の女性"]祝賀会でのダブリンの醜い振る舞いについて、までですね。
+[charslot(slot="m",name="avg_npc_1698_1#1$1",focus="m")]
+[name="作家"]おっと、そうでした。
+[name="作家"]では、そろそろ祝賀会の真の主役の登場ですね……
+[Dialog]
+[charslot]
+[focusout(duration=1.5, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g6_noblelivingroom",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+祝賀会の真の主役の登場が近付いている。
+だが、それまでの間もダブリンの醜い振る舞いは続き、見るに堪えない有様だった。
+[Dialog]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+[playMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="bse1")]
+[SoundVolume(volume=0.5, channel="bse1",fadetime=4)]
+[musicvolume(volume=0.6, fadetime=3)]
+[CameraEffect(effect="Grayscale", fadetime=2.5, keep=true, initamount=0.8, amount=0, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]はぁ、私は――
+[name="「官僚」"]チッ。
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「暴政者」"]どうした？
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]頭の上を何かが這ってるような……
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「暴政者」"]ハッ、こうも冷え込んでるのに、ナ・シアーシャにはまだ虫がいるのか。動くなよ、今捕まえてやる――
+[name="「暴政者」"]待てよ、こいつは……
+[Dialog]
+[charslot]
+[stopmusic(fadetime=3)]
+[stopSound(channel="bse1", fadetime=2)]
+[delay(time=1)]
+宴会場がふと静まり返った。
+「官僚」の頭上に全員の視線が注がれる。そこには、一匹の甲虫が止まっていた。
+それは純金の甲虫だった。
+[charslot(slot="m",name="avg_npc_234",focus="m")]
+[name="「暴政者」"]……なるほど、後ろの調度品から落ちてきたんだな。ほら、自分で元に戻しておけ。
+[Dialog]
+[charslot]
+「暴政者」は「官僚」の頭から甲虫を取ると、「官僚」の手のひらに置いた。
+[PlaySound(key="$d_avg_insectfly")]
+「官僚」がほっと息をつき、甲虫を元の場所に戻そうとした時、それはびっしりと宝石がはめ込まれた羽を震わせたかと思うと、出入口に向かって飛び出して、ホールの中央に降り立った。
+[Dialog]
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=0.5)]
+[Delay(time=0.7)]
+彼は数歩前に出て追いかけたが、甲虫はまるで彼を誘うように、さらに前へと這い進んでいく。
+[Dialog]
+[PlaySound(key="$d_avg_higheldshosfts", volume=1)]
+[charslot(slot="m",name="avg_450_necras_1#13$2",duration=1)]
+[Delay(time=1.5)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]随分と楽しそうだな、「官僚」よ。
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]殿下！？
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.3)]
+[name="「官僚」"]す、すみません！　私はこの逃げ出した虫を捕まえて差し上げなければと思っただけなのです！！
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]もちろん、お前を責めるような真似などしないさ。
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]気を悪くされていなければ何よりです……
+[name="「官僚」"]ところで、以前ご報告した祭器の件ですが――
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]そのような些事はどうでもいい。
+[name="エブラナ"]真に重要なのは、我が忠実なる臣下たちのことだ……お前たちはこの勝利の褒美を受け取るに相応しい。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_insectfly")]
+[Delay(time=1)]
+エブラナが床から甲虫を拾い上げ、己の手のひらに置くと、甲虫は羽音を立てて出入口に向け飛び立った。
+[Dialog]
+[charslot(slot="m",name="avg_450_necras_1#1$2",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]今我々は、かつてゲル王が財宝を展示していた広間にいる。
+[name="エブラナ"]ここにあった調度品は、すべてヴィクトリア人に奪われた。だが今や、ついにその多くが元あった場所に取り戻されている。
+[name="エブラナ"]「官僚」よ、先に見た甲虫こそ、まさにゲル王が有能な臣下に賜った褒美だ。あれは甲虫の如く疲れを知らず、穀物の一粒一粒を国庫へ収めた者の働きを称える証なのだ。
+[name="エブラナ"]お前は確かに、それに見合う働きをした。お前がいなければ、我が軍隊は幾度飢えで壊滅していたかわからぬほどだ。
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]あれを追って捕まえるといい。お前の物だ。甲虫がお前のそばに留まらんとする限り、お前には穀物の徴収を司る権利が与えられる。
+[charslot(slot="m",name="avg_npc_246",focus="m")]
+[name="「官僚」"]は……はい！
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]次は……
+[Dialog]
+[charslot]
+エブラナは室内の人々を見渡した。
+「官僚」の背をじっと見つめて、自分が何を授かるのかを思い描く者もいれば、室内にあるほかの財宝から目を離せずにいる者たちもいる。
+法の執行を司る宝剣、訴えに耳を傾ける雲獣、歴史を記す組紐、憐憫を象徴する水晶の涙……
+[charslot(slot="m",name="avg_450_necras_1#1$2",focus="m")]
+[name="エブラナ"]皆待ちきれない様子だな。
+[charslot(slot="m",name="avg_450_necras_1#13$2",focus="m")]
+[name="エブラナ"]ではこうしよう。各自、遠慮なく自分が望む品を手に取るがいい。
+[Dialog]
+[charslot]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_armour", volume=1)]
+[PlaySound(key="$d_avg_fsmetal", volume=1,delay=0.2)]
+[PlaySound(key="$d_avg_fsmetal", volume=1, loop=false, channel="1",delay=0.4)]
+[PlaySound(key="$d_avg_swordquake",volume=0.7,loop=false, channel="2",delay=0.7)]
+[PlaySound(key="$d_avg_metalroll",volume=0.6,loop=false, channel="3",delay=0.5)]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+瞬く間に、財宝すべてが命を宿したかのように動き出した。
+雲獣は駆け回り、水晶は転げ回り、組紐は身をよじらせ、サルゴンの宝石が散りばめられた儀式用の剣ですらも棚から飛び出して、些か滑稽な様子で外に向かって飛び跳ねていく。
+[charslot(slot="m",name="avg_450_necras_1#16$2",focus="m")]
+[name="エブラナ"]行け、我が忠実なる臣下たちよ。これがお前たちへの褒美だ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=1.5)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.8)] 
+[CameraShake(duration=2, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+最初の一歩を踏み出したのが誰かは判然としない。だが、その一歩が踏み出された瞬間、すべては制御不能となった。
+人々は財宝を追って、宴会場から一斉に駆け出した。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
