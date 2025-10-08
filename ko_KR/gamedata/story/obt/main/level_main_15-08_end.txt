@@ -1,0 +1,570 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[Background(image="60_g4_rhodesabyss_w",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[playsound(key="$d_avg_labamb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Delay(time=2)]
+[Sticker(id="st1", multi = true, text="관리자 권한이 확인되었습니다.",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n휴면 재부팅 프로세스 준비 중, 3…… 2…… 1……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS 재부팅 자가 진단 완료……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="<color=#ff0000>경고: 제3의 불법 내장 프로그램이 감지되었습니다. 초기 설정으로 복원하시겠습니까?</color>",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="관리자의 사고 암호화 키 인증 완료. 복원 중……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n생명 징후 감지 모듈 활성화, 자동으로 복구 모듈을 로드합니다. 복구 중……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n예상 진도: ■ ■ ■",block = true)]
+[Sticker(id="st1", duration=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[name="???"]……
+[name="???"]박사님……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;……아미야?", values="1;2")]
+[Predicate(references="1;2")]
+[focusout(duration=3, type="bg", from=1, to=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2",duration=1)]
+[Delay(time=2)]
+[name="아미야"]박사님, 다행이에요……
+[name="아미야"]드디어 깨어나셨군요.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="깨어났다고?;……내가 얼마나 오래 기절했지?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]저희의 사고가 너무 갑자기 끊겨 버렸고, 거기다 경계의 정보 충격으로 인해 저도 안정적인 상태를 유지하기 힘들었어요. 그래서 철수하는 과정이 순탄치 않았어요.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="아미야, 네 상태는 어때?;아미야…… 내 현재 상태는 어때?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="아미야"]저도 방금 의식을 회복했어요.
+[name="아미야"]하지만 박사님, 걱정하실 필요는 없어요. 테레시아 씨가 지켜준 덕분에, 제 상태는 그리 심각하지 않았어요.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="아미야"]저도 정확히는 모르겠지만……
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]자세한 내용은 켈시 선생님이 전반적인 검사를 한 후에야 알 수 있을 거예요.
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]박사님이 방금까지도 계속 제 손을 놓지 않아서 다행이에요. 아니었으면 더 걱정했을 거예요.
+[name="아미야"]박사님, 아직 움직이면 안 돼요. 지금은 켈시 선생님이 만든 응급 관찰 구역에서만 머물러야 해요.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="켈시?;응급 관찰 구역?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]작전이 시작되고 얼마 지나지 않아, 켈시 선생님이 우리와 로도스 아일랜드의 안전을 위해 주변 지역을 완전히 격리하고, 본인이 직접 지켰어요.
+[name="아미야"]켈시 선생님은 우리가 '문명의 존속'에 깊숙이 들어가 있는 동안, 어떠한 돌발 상황도 발생하지 않길 바랐으니까요.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="역시 알고 있었구나……;켈시가 보이지 않는데……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[name="가까워지는 소리"]너희가 깨어나는 걸 확인하자마자 나는 사고 기준선 테스트를 준비하러 갔어.
+[name="가까워지는 소리"]너와 아미야의 초기 진단은 모두 끝났어, 뚜렷한 손상은 없는 것 같아.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="켈시"]하지만 사고의 상태는 생물 조직처럼 쉽게 판별되는 게 아니야. 더 확인을 해봐야 해.
+[name="켈시"]돌아온 걸 환영해, 박사.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="너 굉장히…… 피곤해 보이네.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]너희가 '문명의 존속'에 들어가 있는 동안, 내가 처리해야만 했던 작은 사건이 발생했어. 이따가 현재 상황을 공유해 줄게.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="우리도 쓸만한 정보를 찾은 것 같아.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]지금은 네 안전이 최우선이다.
+[name="켈시"]검은 왕관을 통한 사고의 공유는 아주 위험해. 하지만 너희가 '경계'를 넘을 거라고 믿고 있었어.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="맞아.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]그렇다면, 네 사고의 안정과 신체 건강을 확인하는 게 내가 당장 해야 할 가장 중요한 일이야.
+[name="켈시"]나는 과거의 실수가 다시 벌어지는 것도, 너의 생명에 위협적인 잠재적 위험이 남아 있는 것도 용납할 수 없어.
+[name="켈시"]{@nickname} 박사, 이제 날 따라와.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;화, 화났어?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]아미야, 너도 사고 기준선 테스트를 받아야 해.
+[name="켈시"]하지만 지금은 푹 쉬고 있어.
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="아미야"]네, 알겠어요, 켈시 선생님.
+[dialog]
+[charslot]
+[Decision(options="아미야랑 같이 가면 안 돼?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]그건 내 계획에 없어. 박사, 너의 테스트가 끝나는 대로 아미야의 테스트를 준비할게.
+[name="켈시"]가자.
+[dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="아미야"]……
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="이게 테스트 장치인가?;왜 이 장치에 대한 기억이 전혀 없지?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]의료부에서 개발한 프로토타입이야. 초기에 테레시아랑 같이 설계하고 연구했어.
+[name="켈시"]하지만 우리의 사고와 인지에 관한 연구 수준에는 한계가 있어서, 이 사고의 안정성을 측정하기 위한 기술이 정식으로 사용되진 않았어.
+[name="켈시"]박사, 지금은 특수한 상황이고, 우리에게 더 효과적인 검사 방법은 없어.
+[name="켈시"]옆에 있는 격리실로 들어가. 긴장하지 말고, 직접 테스트해 봤는데 몸에 특별한 부담을 주지는 않았어.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Image(image="60_i06",screenadapt="coverall", xScale=1.1, yScale=1.1,x=60)]
+[ImageTween(xTo=-60, duration=120, block=false)]
+[cgitem(image="cgitem_60_i06_1", style="cg",sfrom = 1, sto = 1.1, sduration = 0,pfrom = "-30,0",pto = "0,0",pduration = 120,layer = 2)]
+[cgitem(image="cgitem_60_i06_2", style="cg",pfrom = "-90,0",pto = "-180,0",pduration = 120,layer = 1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[dialog]
+[Decision(options="또 주의해야 할 점이 있어?", values="1")]
+[Predicate(references="1")]
+[name="켈시"]없어, 내 지시만 따라주면 돼. 먼저 장치를 교정해야 하니까, 긴장 풀고 내 안내를 따라줘. 주저하지 말고.
+[name="켈시"]박사, 네 이름을 다시 한번 말해 줘.
+[dialog]
+[Decision(options="{@nickname}.;……{@nickname}?", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="켈시"]그래, 좋은 시작이야.
+[Predicate(references="2")]
+[name="켈시"]긴장할 필요 없어, 박사. 이건 교정 과정일 뿐이니까.
+[Predicate(references="1;2")]
+[name="켈시"]내 뒤에 있는 시간 측정기 보여? 마음속으로 조용히 숫자를 세면서 측정기에 있는 숫자에 최대한 속도를 맞춰봐.
+[dialog]
+[Decision(options="(속으로 숫자를 세면서 시간이 흘러감을 느낀다);이렇게 하는 이유를 모르겠어, 켈시……", values="1;2")]
+[Predicate(references="1;2")]
+[name="켈시"]이렇게 하면 현실을 인지하는 데 도움이 될 거야. 20초 지났는데, 불편한 곳은 없어?
+[dialog]
+[Decision(options="없어.;……뭐라고 해야 할지 모르겠네.;장치에 이상 수치가 나왔어?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="켈시"]계속 교정할게.
+[name="켈시"]지금 네 사고 속에서 아직도 아미야의 존재가 감지돼?
+[dialog]
+[Decision(options="맞아.;아니.", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="켈시"]아마 연결됐던 사고가 잘못 끊기면서 생긴 잔상일 거야.
+[Predicate(references="2")]
+[name="켈시"]좋아, 이제 이 프로세스에 익숙해지고 있어.
+[Predicate(references="1;2")]
+[name="켈시"]교정을 계속하지. 너는 로도스 아일랜드의 이념에 동의하나?
+[dialog]
+[Decision(options="동의해.;동의하지 않아.", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="켈시"]깔끔하네. 교정이 거의 끝났어.
+[Predicate(references="2")]
+[name="켈시"]흥미로운 대답이지만, 이건 거짓말 탐지기가 아니야. 아니면, 여전히 더 극적인 결과를 기대하고 있는 건가, {@nickname} 박사?
+[Predicate(references="1;2")]
+[name="켈시"]계속한다. 너는 사고의 경계에서 그녀를 봤지?
+[dialog]
+[Decision(options="봤어.;누구?", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="켈시"]예상대로야. 다만, 생각했던 것보다 더 침착하네.
+[Predicate(references="2")]
+[name="켈시"]내게 숨길 필요 없어, 박사. 나를 믿어도 돼.
+[Predicate(references="1;2")]
+[name="켈시"]마지막 교정이야. 박사, 너를 닮은 사람한테 의문이 들지 않았어?
+[dialog]
+[Decision(options="들었어.;전혀.", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="켈시"]당연한 감정이야. 하지만 나는 어떠한 방식 혹은 입장으로도 너의 의문에 대답해 줄 순 없어. 답은 결국 너 스스로 찾아야 해.
+[name="켈시"]어쩌면, 네 마음속에 주관적인 추측이 있을지도 모르지. 내가 관여할 일은 아니지만, 나는 박사가 로도스 아일랜드의 이익을 해치지 않을 거라고 믿어.
+[Predicate(references="2")]
+[name="켈시"]네 마음속엔 이미 확신의 추측이 있구나. 그것에 대해 난 아무런 평가도 하지 않을게.
+[Predicate(references="1;2")]
+[name="켈시"]끝났어, 박사.
+[name="켈시"]사고 기준선 테스트 결과, 너의 사고는 대체로 안전한 임계치 범위 내에 있어. 남은 건 부수적인 절차일 뿐이야.
+[dialog]
+[Decision(options="잠깐, 교정이 아니었어?", values="1")]
+[Predicate(references="1")]
+[name="켈시"]더 정확한 데이터를 얻기 위한 필요 조치였다고 보면 돼.
+[name="켈시"]네 능력이라면 충분히 내 의도를 포착하고, 역으로 교묘하게 위장하고도 남았을 거라 믿어.
+[name="켈시"]이 프로토타입 장치를 속이는 건 너에게 어렵진 않으니까.
+[dialog]
+[Decision(options="다, 당연하지!;……저기, 켈시, 아직도 검사 중이야?", values="1;2")]
+[Predicate(references="1;2")]
+[name="켈시"]{@nickname} 박사, 남은 검사는 자동으로 완료될 거야. 그동안 네가 가진 의문들에 대해 내가 대답해 줄게.
+[name="켈시"]하지만, 일부 의문들에 대해서는 나도 대답할 수 없어. 이건 너도 충분히 인지하고 있을 거야.
+[dialog]
+[Decision(options="……'로도스 아일랜드'의 유래?;넌 어떻게 우리가 들어간다는 걸 예상했지?", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="켈시"]이 함선을 말하는 거라면, 함선이 존재한 시간은 내가 겪어온 역사보다 훨씬 더 길어.
+[name="켈시"]어떤 의미에서 보면, 이 함선은 희망을 짊어지고 있어. 그 때문에 가장 완벽한 보안과 방어 설계를 갖췄고, 이는 우리가 이 대지에서 진행하는 모든 작전을 뒷받침해 주기에 충분하지.
+[name="켈시"]가장 혹독한 재난을 여러 번 겪으면서 핵심적인 기본 프레임을 여전히 보존할 수 있는 것도, 최초의 설계 덕분이야.
+[name="켈시"]박사, 우리는 지금까지도 이 함선의 모든 잠재력을 전부 발굴해 내지 못했어.
+[name="켈시"]하지만 로도스 아일랜드의 완전 개발에 대해서, 나의 태도는 여전히 아주 신중한 상태야.
+[Predicate(references="2")]
+[name="켈시"]내가 경계에 남긴 단서들을 말하는 거야? 그 단서들을 풀어낼 사람이 꼭 너희라고 장담할 수는 없어.
+[name="켈시"]내겐 일어나지도 않은 일을 예측하는 능력도 없고, 내가 그렇게 준비한 건 다른 이유가 있으니까……
+[name="켈시"]내가 존경하는 사람이 미래에 일어날 수 있는 여러 가지 가능성을 계산했고, 난 그 사람의 말을 잊을 수 없을 뿐이지.
+[name="켈시"]어쩌면 나도 모르는 사이에 영향을 받은 걸지도 몰라.
+[Predicate(references="1;2")]
+[dialog]
+[Decision(options="네가 긴장하는 게 느껴져, 켈시.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="네가 긴장하는 건 지금의 불확실한 상황 때문만은 아니겠지.", values="1")]
+[Predicate(references="1")]
+[name="켈시"]……
+[dialog]
+[Decision(options="이런 괴이한 직감을 어떻게 설명해야 할지 모르겠어.;너한테서 그런 복잡한 감정을 느껴본 적이 없어.", values="1;2")]
+[Predicate(references="1;2")]
+[name="켈시"]내가 검사받는 게 아니야……
+투명한 방호창에 비친 당신의 그림자는, 마치 켈시와 함께 서 있는 것처럼 보였다.
+유리에 비친 자신을 바라보며, 당신은 무심코 경계 안에서 봤던, 곁에 있던 이상한 구조체를 다정하게 대하던 그 사람이 떠올랐다.
+그리고 당신의 시선은 어느새 켈시에게로 옮겨졌다.
+[name="켈시"]{@nickname} 박사, 왜 그렇게 쳐다봐?
+[dialog]
+[Decision(options="너도 나를 굳게 믿었어?", values="1")]
+[Predicate(references="1")]
+[name="켈시"]지금도 여전히 믿고 있어. 너는 자신을 증명했으니까.
+[name="켈시"]{@nickname} 박사, 네가 경계 안에서 무엇을 봤건, 그건 흘러간 과거일 뿐이야.
+[name="켈시"]너와 로도스 아일랜드는 여전히 올바른 길을 가고 있어, 그거면 충분해. 우리의 관계에 대한 거라면, 각자 주체적으로 결정할 수 있는 권한이 있으니까.
+[name="켈시"]내가 너를 어떻게 생각하는지 신경 쓸 필요는 없어. 과거도, 현재도, 미래도 똑같아. 나 역시 우리의 협력관계에 대한 너의 이해를 존중해.
+[dialog]
+[Decision(options="미안해, 켈시.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="나와 아미야의 경솔한 행동에 대한 사과야.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="이제 뭘 하면 될지 잘 알겠어.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="켈시, 의문이 하나 더 있어.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="(미지의 언어) “어쩌면 그게 우리의 축복이자”……", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="(미지의 언어) “마지막으로 선물 받은 희망일지도 몰라.”", values="1")]
+[Predicate(references="1")]
+[name="켈시"]……
+[dialog]
+[Decision(options="이 말의 의미를 모르겠어.;말하는 사람의 선의가 느껴져.", values="1;2")]
+[Predicate(references="1;2")]
+[name="켈시"]그 말은 '축복'과 '선물'을 의미해.
+[dialog]
+[Decision(options="우리가 그 사람을 만나도록 네가 인도했잖아.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="그게 누구든, 네 믿음은 결코 거짓이 아니야.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="그렇다면, 우리가 앞으로 해야 할 일이 많겠군.", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[image]
+[focusout(duration=0, type="bg", from=0, to=1, block=true)]
+[hidecgitem(image="cgitem_60_i06_1")]
+[hidecgitem(image="cgitem_60_i06_2")]
+[Background(image="60_g4_rhodesabyss_w",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_stonegrowing")]
+공간 속에 규칙적인 오리지늄 결정이 나타났다.
+오리지늄 결정체의 뾰족한 모서리에 짧은 곡선이 생겼고,
+곡선은 곡면으로 펴지더니, 이내 절대적으로 매끄러운 구체가 되었다.
+그것은 공간을 관찰하는 눈동자였다. 눈동자는 보이는 모든 것을 기록만 할 뿐, 판단을 내리는 기관은 아직 오리지늄에서 완전히 분리되지 않았다.
+지금까지.
+[dialog]
+[PlaySound(key="$d_avg_icecrystlncrse")]
+[charslot(slot="m",name="avg_npc_1727_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[name="오리지늄 결정체"](묵묵히 느낀다)
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[focusout(duration=0, type="bg", from=0, to=0, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$escape_intro",key="$escape_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2",duration=1)]
+[Delay(time=2)]
+[name="아미야"]박사님, 켈시 선생님이 제 사고의 상태도 큰 문제가 없다고 했어요.
+[name="아미야"]그런데 저희가 사고를 공유할 때, 제가 무슨 자극을 받지 않았는지 계속 신경 쓰더라고요.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="아마 걱정되는 부분이 있는 거겠지.", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="켈시"]아미야, 지금 당장 너희가 가져온 공식을 분석해야 해.
+[name="켈시"]말했다시피, PRTS의 이상 현상은 여전히 있어. 단시간 내에 더 많은 돌발 상황이 일어날 가능성이 매우 높아.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="아직도 완전히 복구되지 않았어?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]클로저가 계속 시도하고 있지만, 희망적이지 않아.
+[name="켈시"]이미 예비용 지휘 시스템을 세팅해 뒀어. 하지만 모든 장비와 인원들에게 동기화하려면 시간이 필요해.
+[name="켈시"]그리고 너희가 경계에서 가져온 정보는, 내가 해독을 도와줄 수 있어.
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="아미야"]켈시 선생님, 그 정보의 의미를 이해했나요?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]완전한 공식을 봐야 알 수 있을 것 같아.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+당신과 아미야는 기억을 더듬으며 그 복도의 유리에 그려진 문자와 공식을 하나하나 채워 나갔지만, 그 언어에 대해서는 전혀 이해할 수 없었다.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]앞뒤의 흐름으로 추측해 볼 때, 여기 애매한 부분은 아마 이럴 거야. 내가 채울게.
+[name="켈시"]이쪽은 대체적으로 맞지만, 세부적인 문자는 잘못 기억한 것 같아. 수정하면 이렇게 되겠네.
+[Dialog]
+[charslot]
+[Decision(options="마치 퍼즐 맞추는 것 같아.", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="아미야"]박사님께서 마지막에 제가 미처 외우지 못한 부분을 기억해 주셔서 다행이에요.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이러면 될 거다.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="켈시, 여기에 담긴 의미를 이해할 수 있겠어?", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이건 아직 이름조차 없는 모델이야. 최초의 유래는 '안면교'라는 프로젝트로 거슬러 올라가야 해……
+[name="켈시"]이 급진적인 프로젝트는 자율 변환이 가능한 모델을 사용해, 모든 가능성이 있는 현실과 물질계의 유기 생명을 하나의 '메타 리얼리티'로 융합하려 했어.
+[name="켈시"]최종 결과는 안 좋았지만, 물질의 데이터화 실험은 후속 연구에 많은 영감을 줬어. 이 모델이 바로 그중 하나고.
+[name="켈시"]이 모델은 메타 정보가 특수 매개체를 통해 전송될 때 발생하는 정보 손실을 줄여, 데이터의 전송 효율을 놀라울 정도로 높였지.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="정보?;오리지늄?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]{@nickname} 박사, 핵심을 알아챘구나.
+[name="켈시"]오리지늄은 정보 수집을 위한 매개체야. 오리지늄은 정보를 재편집할 수 있고, 자신의 사명을 다할 때까지 끊임없이 증식해.
+[name="켈시"]오리지늄 자체도 이 모델을 사용했을 가능성이 높아. 우리가 잘 활용한다면, 아마 오리지늄 연구와 광석병 치료 영역에서 돌파구를 찾을 수 있을 거야.
+[name="켈시"]이 자료는 내가 번역해서 절대 기밀로 보관할게.
+[name="켈시"]하지만 그 위험성과 용도를 완전히 파악하기 전까지는, 현실에 존재하는 그 어떤 설계도나 정보 저장 매개체에 나타나서는 안 돼.
+[Dialog]
+[charslot]
+[Decision(options="최대한 빨리 번역해 줄 수 있어?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]박사님, 계획이 있으신 건가요?
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="'오리지늄 커브', 기억나?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="아미야"]빅토리아 전쟁이 끝나고, 로고스 씨와 메커니스트 씨가 제안한 프로젝트 말씀인가요?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]외부 장비를 통해, 오리지늄 과다 환경에서 정예 오퍼레이터의 적응력과 전투력을 향상시키는 프로젝트지. 과감한 발상이지만, 그만큼 어려워.
+[name="켈시"]현재 버전은 2년 전에 만들어졌지만, 우리가 최적화할 수 있는 것도 한계에 다다랐지.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="하지만 새로운 가능성이 생겼잖아.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]이번이 확실히 좋은 기회긴 해. 적어도 오리지늄으로 인한 위협에 대응할 때, 정예 오퍼레이터들이 더 여유롭게 대처할 수 있으니까.
+[name="켈시"]박사, 내가 번역을 끝낼 수 있게 도와줘.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_explo_n")]
+[CameraShake(duration=1, xstrength=10, ystrength=8, vibrato=30, randomness=90, fadeout=false)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_521_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="메커니스트"]콜록, 네 보호막 덕분이야.
+[name="메커니스트"]아까 그 오리지늄 회로 말인데, 정확한 거 맞아? 세 번이나 확인했는데 실패할 리가 없잖아……
+[charslot(slot="m",name="avg_4133_logos_1#1$1")]
+[name="로고스"]의미에는 편차가 없고, 회로도 시뮬레이션과 일치했다.
+[name="로고스"]오류가 나타났으면 안 됐지.
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="메커니스트"]……음, 우리의 잘못이 아닐 가능성도 있지 않을까?
+[charslot(slot="m",name="avg_4133_logos_1#1$1")]
+[name="로고스"]박사와 닥터 켈시의 원본에는 전혀 오류가 없다. 주문의 시뮬레이션도 확실히 효과가 있었고.
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="메커니스트"]내 말은, 오리지늄 커브 자체의 재료에 문제가 생긴 건 아니냐는 거야!
+[name="메커니스트"]클로저가 창고에 좋은 걸 숨겨 놓은 걸로 기억하는데……
+[charslot(slot="m",name="avg_4133_logos_1#8$1")]
+[name="로고스"]좋은 생각은 아니군, 엔지니어링부가 이미 우리 때문에 엉망이 된 상태야.
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="메커니스트"]하하, 이건 박사와 닥터 켈시의 명령이야.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="아미야"]하지만 효과가 있는지를 어떻게 확인하죠?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]절대적인 안전이 보장된다면, 테스트에 적합한 사람이 있어.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_trainingcom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_017_huang_1#1$2",duration=1)]
+[Delay(time=2)]
+[name="블레이즈"]음, 강도는 크게 달라진 것 같지 않은데.
+[name="블레이즈"]꼬마 고양이, 힘을 더 줘봐.
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="로즈몬티스"]이건 내가 완전히 조절할 수 있는 게 아니야. 라이디언?
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="라이디언"]실험 규정에 따라, 오리지늄 커브와 로즈몬티스의 동기화율은 단계별로 해제하는 수밖에 없어.
+[name="라이디언"]블레이즈, 이건 널 보호하는 것뿐만 아니라, 로즈몬티스도 보호하는 거야.
+[charslot(slot="m",name="avg_017_huang_1#11$2")]
+[name="블레이즈"]헤헤, 나도 당연히 알고 있지.
+[name="블레이즈"]닥터 켈시가 시간이 촉박하다고 해서 빠르게 최대치를 측정하고 싶은 것뿐이야. 넌 어때, 꼬마 고양이?
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="로즈몬티스"]난 제어할 수 있어.
+[charslot(slot="m",name="avg_npc_249_1$1")]
+[name="터치"]괜찮습니다, 제가 위험을 통제할게요.
+[name="터치"]라이디언, 언제든지 오리지늄 회로에 덮어쓸 준비를 하고, 로즈몬티스의 제어를 차단할 준비를 해주세요.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="라이디언"]……윽, 사람 걱정하게 하는 데에는 진짜 일가견이 있구나 다들.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="아미야"]켈시 선생님, 모든 준비를 끝내려면 대략 얼마나 걸릴까요?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]모든 전제는 나와 박사가 최대한 빠르게 번역을 끝내고 유효한 기술 원본을 분리해 내는 거야.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="36시간.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]너무 촉박해.
+[name="켈시"]이 기술에는 우리가 구현해 낼 가능성이 거의 없는 핵심 노드가 많아.
+[Dialog]
+[charslot]
+[Decision(options="하기 나름이지.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]저도 도울 수 있어요. 검은 왕관이 있으니, 저도 도움이 될 거예요.
+[name="아미야"]켈시 선생님, 활용할 수 있는 모든 힘은 로도스 아일랜드에 더 많은 이득을 가져올 거예요. 어쩌면 그 힘이 머지않은 미래에 판도를 뒤바꿀지도 몰라요.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro",key="$drift_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1719_1#3$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+카우투스는 오랫동안 잠들어 있던 것 같았다.
+그녀의 시선은 우주의 별들 속에서 방향을 잃었고, 고향으로 돌아가는 단서는 그 어디에도 없었다. 하지만 그녀는 포기하고 싶지 않았다. 지쳐서 잠들기 전까지는.
+[dialog]
+[charslot(slot="m",name="avg_npc_1719_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+이후, 밝은 빛이 그녀를 깨웠고, 그녀는 눈을 떴다.
+곁에는 아무도 없었다.
+[name="차가운 목소리"](미지의 언어) 길을 잃었군.
+[charslot(slot="m",name="avg_npc_1719_1#9$1")]
+[name="힐다"]……?!
+[charslot(slot = "m", focus = "n")]
+[name="차가운 목소리"](미지의 언어) 여긴 오랫동안 새로운 손님이 오지 않았다.
+[name="차가운 목소리"](미지의 언어) 아니면, 네가 바로 그 폐허가 된 행성의 마지막 생존자인가?
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="힐다"]……굴광자의 음성? 그런데 왜……
+[charslot(slot = "m", focus = "n")]
+[name="차가운 목소리"](미지의 언어) 어쨌든, 환영해.
+[name="차가운 목소리"](미지의 언어) 날 만나러 와.
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="힐다"]……
+[charslot(slot = "m", focus = "n")]
+그녀는 이 광경을 기억하고 있었다. 붕괴 후 자신은 원래 죽어야 했으나, 빛이 다시 그녀의 눈으로 밀려 들어왔다.
+그녀는 이곳에, 신의 나라에 왔다…… 모든 일이 다시 일어났다.
+[charslot(slot="m",name="avg_npc_1719_1#6$1")]
+[name="힐다"]어, 어떻게 이럴 수가?
+[dialog]
+[charslot(duration=1)]
+그녀는 겁에 질린 채 창밖을 바라보았고, 그 죽은 행성을 보게 되었다.
+[dialog]
+[playsound(key="$rungeneral",volume=0.6)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+그녀는 함선에서 또다시 '굴광자'라 불리는 자를 만났고, 우주 속에서 외롭게 죽음을 바라보는 그 유령도 보았다……
+하지만 그녀가 이곳에서 생활했던 모든 흔적은 사라지고 없었다.
+[dialog]
+[charslot(slot="m",name="avg_npc_1719_1#6$1",duration=0.5)]
+[Delay(time=1)]
+[name="힐다"]아니…… 아니…… 아니야……
+[name="힐다"]아직 꿈인가?
+[charslot(slot = "m", focus = "n")]
+[name="다정한 목소리"]꿈이 아니야.
+[name="다정한 목소리"]하지만 현실이라고 할 수도 없지.
+[name="다정한 목소리"]나를 계속 찾고 있었잖아?
+[charslot(duration=1)]
+카우투스는 자기 앞으로 뻗은, 자신의 손을 부드럽게 잡은 손을 보았다……
+마치 붕괴의 순간에 자신을 잡은 그 손처럼.
+카우투스는 '신'을 만났다.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

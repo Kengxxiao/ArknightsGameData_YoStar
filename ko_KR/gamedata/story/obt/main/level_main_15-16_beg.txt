@@ -1,0 +1,498 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlayMusic(key="$m_bat_act37d0d0_01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+방금 벌어진 일들을 생각할 틈도 없이, 켈시는 당신의 시야에서 완전히 사라져버렸다……
+갑판에는 그녀의 겉옷만 남겨져 있었다.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"](고통스러운 듯) 크르르르르……!
+켈시가 사라지면서 Mon3tr의 거대하던 몸집도 서서히 수축했고, 결정 모양의 검은색 '고치'로 변했다.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#2$1", duration=1.5, isblock=true)]
+[name="프리스티스"]AMa-10도 한때 내가 자랑하던 창조물이었지.
+[name="프리스티스"]이건 내가 기대했던 결과가 아니야.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그녀에겐 이름이 있어.;그녀의 이름은 '켈시'야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1718_1#3$1")]
+[name="프리스티스"]이미 코드네임이 있는데, 이름을 다시 지은 이유를 모르겠네.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+프리스티스는 갑판에 남아 있는 고치 형태의 물체에 다가갔다.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="아미야"]……박사님, 물러나세요! 제가 Mon3tr를 지킬게요!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_spelldfns_1", volume=1)]
+[Blocker(a=0, r=255,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=255,g=0, b=0, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_spellattack_2", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2,block=false)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spiritwhoosh")]
+[PlaySound(key="$p_aoe_nmag_h")]
+[delay(time=0.3)]
+[PlaySound(key="$p_imp_amiyamag_h", volume=0.9)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.5)]
+[PlaySound(key="$b_char_defboost", volume=0.5, Delay=0.4)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.2, Delay=0.7)]
+[PlaySound(key="$flashback", volume=0.2, Delay=0.7)]
+[PlaySound(key="$d_avg_attack_heavy", volume=0.9)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, block=false)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.1, r=1, g=0.4, b=0.1, afrom=1, rfrom=1, gfrom=0.4, bfrom=0.4, fadetime=0.2, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0.8, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.3, block=true)]
+[Blocker(a=0.1, fadetime=2, block=true)]
+실이 아미야의 아츠 스태프에서 퍼져 나와 다가서는 프리스티스를 막으려 했다……
+하지만 바닥의 오리지늄은 계속해서 교묘한 각도로 자라나며, 아미야의 모든 아츠를 흡수했다.
+당신은 힘겨워하는 아미야를 보았다.
+눈앞에는 대항이 거의 불가능한 프리스티스와 켈시가 유일하게 남긴 물건이 있었다……
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="프리스티스"]얘를 구하고 싶은 거야?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1718_1#8$1")]
+[name="프리스티스"]나도 얘를 수리하고 싶어, 당신처럼.
+[name="프리스티스"]AMa-10은 우리가 함께 품은 기대를 담고 있을 뿐만 아니라, 나에게 아주 중요한 기록도 보관하고 있어.
+[charslot]
+당신은 여전히 좀 전의 충격에서 벗어나지 못했다.
+그러나 눈앞의 위협에 당신은 슬퍼할 여유조차 없었다.
+프리스티스는 어떤 행동을 할까? 당신은 또 어떻게 아미야를 지켜야 할까……
+프리스티스는 당신의 생각을 눈치챈 듯했다……
+[charslot(slot = "m", name = "avg_npc_1718_1#6$1")]
+[name="프리스티스"]{@nickname} 박사, 당신이…… 왜 나를 두려워해?
+[charslot]
+그녀가 점점 다가오고 있었다.
+[dialog]
+[Decision(options="(……방법을 찾아야 해.);(얼른 방법을 찾아야 해!)", values="1;2")]
+[Predicate(references="1;2")]
+당신과 아미야는 발밑에 퍼진 오리지늄에 붙잡혀 옴짝달싹할 수 없었다.
+당신은 처음 이렇게 가까이서 프리스티스를 보았다.
+[dialog]
+[stopmusic(fadetime=0.5)]
+[StopSound(channel="d", fadetime=0.5)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_graduate",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="대체 뭘 하려는 거야?!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]……널 지키려는 거다.
+[name="켈시"]내가 약속했던 것처럼.
+[name="켈시"]난 아미야를 지키고, 널 지킬 거라고 약속했다.
+[name="켈시"]네 목숨이 다하는 순간까지 지켜주지, 박사. 그게 바로 내 일이니까.
+[name="켈시"]하지만 난 널 계속 미워할 거다. 내겐 로즈몬티스를 가르치고 지적할 힘이 없어. 왜냐면 나도 모르게 네게 복수할까 겁이 나거든.
+[dialog]
+[charslot]
+[Decision(options="……너……", values="1")]
+[Predicate(references="1")]
+비슷한 장면과 비슷한 말, 서로 다른 감정과 시대가 당신의 기억의 공간에 다리를 놓았다.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="켈시"]……
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="켈시"]너…… 뭔가 생각난 건가?
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Image(image="avg_8_9", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+'프리스티스'.
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+아니, 이번엔 당신이 먼저 그녀를, 켈시를 떠올렸다.
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[Image(image="avg_ac8mi_melancholic_kalts", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+당신이 믿었던 그 의사는 아직도 이곳에 있는 것 같았다.
+당신은 자신의 사고가 '문명의 존속'에서 켈시가 남긴 단서를 찾던 순간이 떠올랐고……
+모든 단서가 이어졌을 때, 켈시가 당신에게 남긴 그 말이 떠올랐다……
+“나는 잊은 적 없어.”
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-50)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=20, block=false)]
+[focusout(type="bg", id="60_g1_rhodescorridor_bc", from=0, to=1, duration=0.1, block=false)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.3, channel="d",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="예언가"](희미해진 미지의 언어) 네가 우주의 어느 구역에서 왔든, 만약 우리의 문명이 잠들었다면, 나 대신 우리가 남긴 표식을 찾아봐 줘.
+[name="예언가"](희미해진 미지의 언어) 어쩌면 그게 우리의 축복이자…… 마지막으로 선물 받은 희망일지도 몰라.
+지금 당신은 그 사람이 정말로 시간을 넘어 당신을 바라보고 있다는 걸 확신했다.
+[dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[focusout(type="bg", id="60_g13_rhodesdeck_origin", from=1, to=0, duration=0, block=false)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=0.5)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="(그 공식들……);(그 선물……)", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(channel="d", fadetime=1)]
+[PlayMusic(key="$m_bat_theresa_loop", volume=0.6)]
+[Decision(options="아미야, 공식!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$3")]
+[name="아미야"]공식이요……?!
+[name="아미야"]켈시 선생님이 그게 메타 정보가 특수한 매개체를 통해 전송될 때 발생하는 손실을 줄인다고 했었어요……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="뒤집어.", values="1")]
+[Predicate(references="1")]
+[Decision(options="정보가 오리지늄에서 전송되는 걸 막아!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="아미야"]어떻게 하면 되죠?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="내 사고에 연결해!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$3")]
+[PlaySound(key="$d_avg_magic_1", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot(duration=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+망설일 시간이 없었다. 아미야는 바로 행동에 나섰다.
+당신은 한 번 더 아미야와 당신의 사고를 공유했다. 당신이 연구한 모든 것이 다시 머릿속에 떠올랐다.
+직감과 지금까지의 연구 결과를 바탕으로, 당신은 그 공식들을 분해하고, 전환하고, 뒤집기 시작했다……
+설령 이 방법으론 완벽한 효과를 얻지 못한다는 걸 알고 있어도, 당신은 지금 이게 효과가 있기를 기도하는 수밖에 없었다……
+켈시를 위해서.
+[dialog]
+[Decision(options="내 머릿속에 있는 것들을 기억해, 아미야!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="아미야"]알겠습니다, 박사님!
+[name="아미야"]로고스 씨가 가르쳐 준 대로, 이것들을 내 아츠에 엮어 넣고……
+[name="아미야"]그다음……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="아미야"]멈춰!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_icecrystlncrse", volume=1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[charslot]
+[background]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=0)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+아미야의 아츠에서 나온 파장이 당신과 아미야를 가두려던 오리지늄을 부쉈다.
+[name="프리스티스"]이건……?
+당신과 아미야를 다시 가두려는 오리지늄은 더 이상 접근하지 못했다. 수많은 오리지늄 결정의 표면에 아미야의 모습이 반사되고 있었다.
+[dialog]
+[Decision(options="통한 건가!?", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_scrystalroad", volume=1, loop=true, channel="sc")]
+[delay(time=1.5)]
+[StopSound(channel="sc", fadetime=6)]
+[name="아미야"]……지금 최선을 다해서 버티고 있어요……
+[name="아미야"]하지만 오리지늄이 다가오는 속도가 빨라지고 있어요……
+[name="아미야"]제, 제가 더 노력할게요! 할 수 있어요!
+아미야의 눈빛은 단호했지만, 당신의 마음속에는 여전히 깊은 불안이 도사리고 있었다.
+[name="프리스티스"]너는 지금 네가 무슨 힘을 다루고 있는지 모르는구나.
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[name="아미야"]아마 지금 제 아츠는 저것들을 막을 수 있을뿐만 아니라, 프리스티스의 상태도 느낄 수 있는 것 같아요……
+[name="아미야"]제가 생각했던 것만큼 강한 상대는 아닌 것 같아요……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[PlaySound(key="$d_gen_surfacefrozen", volume=0, loop=true, channel="sur")]
+[SoundVolume(volume=0.6, channel="sur",fadetime=2)]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200)]
+[ImageTween(xFrom=-300, xTo=-380, duration=8, block=false)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200, fadetime=2)]
+[ImageTween(xFrom=-320, xTo=-380, duration=6, block=false)]
+[delay(time=1)]
+[name="프리스티스"]내가 너무 일찍 깨어나긴 했지. 오리지늄이 이 행성을 동화시키는 속도가 내 생각보다 느리더라고.
+[name="프리스티스"]그 두 테라인이 무모한 짓까지 하는 바람에, 오리지늄을 계획했던 것처럼 활용할 수는 없게 됐어……
+[name="프리스티스"]하지만, 우리가 개발한 기술을 그렇게 무모하게 사용한다고 해도 이미 정해진 사실은 바꿀 수 없어.
+[dialog]
+[Decision(options="아미야!", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_spellattack_1", volume=1)]
+[PlaySound(key="$d_avg_crystalmagic_intro", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, x=-380, y=-200, fadetime=0.5)]
+[ImageTween(xFrom=-380, xTo=100, duration=0.5, block=false)]
+[delay(time=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_crystalmagic_loop", volume=1, loop=true, channel="a")]
+[SoundVolume(volume=1, channel="sur",fadetime=2)]
+[Image(image="60_i13_2", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[cgitem(image="cgitem_60_i13_2", style="cg", sfrom=1.2, sto=1, sduration=30, layer = 1)]
+[cgitem(image="cgitem_60_i13_1", style="cg", sfrom=1, sto=1.5, sduration=30, layer = 2)]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1, channel="1")]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1, channel="2")]
+[PlaySound(key="$d_avg_land_impact", volume=1, channel="3")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+분홍색 실이 아미야의 아츠 스태프에서 뿜어져 나와 오리지늄으로 막혀 있는 공간을 날아다녔다.
+하지만 당신은 아미야가 엄청난 압박감을 견디고 있다는 걸 확실하게 느낄 수 있었다.
+프리스티스의 형체도 오리지늄에 완전히 가려졌다……
+모든 오리지늄 결정의 표면에서 프리스티스의 눈이 선명하게 보였다.
+마치 프리스티스가……
+[dialog]
+[Decision(options="어디에나…… 있는 것 같아.", values="1")]
+[Predicate(references="1")]
+[name="아미야"]박사님, 테레시아 씨가 저에게 이 새로운 아츠를 어떻게 더 효율적으로 시전할 수 있는지 알려주고 있어요!
+[name="아미야"]제가 프리스티스의 오리지늄에 대한 지배를 일시적으로 약화시킨 게 확실해요. 아마 한동안은 붙잡아둘 수 있을 거예요……
+[dialog]
+아미야의 아츠가 완전히 폭발한 그 순간, 당신의 머릿속에는 고무적인 목소리가 울려 퍼졌다.
+[SoundVolume(volume=0.2, channel="a",fadetime=2)]
+[SoundVolume(volume=0.2, channel="sur",fadetime=2)]
+[name="만트라"]박사, 아미야, 우리는 어비스에 진입했다. 아까 그 짧은 순간에 오리지늄의 방해가 확실히 약해졌어.
+[name="아미야"]……아까 그……
+[name="만트라"]라이디언이 연락을 빠르게 복구해 줬지만, 까다로운 상황인지라 내가 오리지늄 아츠로 가까스로 라이디언을 돕고 있다.
+[name="만트라"]그리고 라이디언이 닥터 켈시의 생체 신호를 찾지 못했다고 하더군.
+[name="만트라"]어디지? 상황은 어떤가?
+[dialog]
+[Decision(options="로도스 아일랜드의 갑판에 있어!", values="1")]
+[Predicate(references="1")]
+[Decision(options="프리스티스를 마주쳤어!", values="1")]
+[Predicate(references="1")]
+[Decision(options="와파린에게 연락해.", values="1")]
+[Predicate(references="1")]
+[Decision(options="본함에 있는 모든 인원을 즉시 철수시키라고.", values="1")]
+[Predicate(references="1")]
+[StopSound(channel="sur", fadetime=2)]
+[StopSound(channel="a", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[hidecgitem(image="cgitem_60_i13_2")]
+[hidecgitem(image="cgitem_60_i13_1")]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Delay(time=0.1)]
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="와파린"]박사가 전한 말, 모두 다 들었지?
+[name="와파린"]무서워하지 마. Lancet-2가 너희의 데이터 모니터링에 협조할 거야.
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]알겠습니다! 실망시키지 않을게요, 와파린 선생님!
+[charslot(slot = "m", name = "avg_171_bldsk_1#5$1")]
+[name="와파린"]잊지 마. 철수한 후에는 켈시의 원래 계획대로 이상한 것들이 밖으로 새어 나가지 않도록 외부에 새로운 격리 구역을 설치하는 거야!
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]와파린 선생님은 저희랑 같이 안 가시나요?
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[name="와파린"]내 환자가 아직 여기 남아있어. 내가 직접 데리고 철수할게.
+[name="와파린"]내 걱정은 하지 마.
+[charslot(slot = "m", name = "avg_171_bldsk_1#10$1")]
+[name="와파린"](켈시, 왜 네 소식이 안 들리는 거지……)
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Decision(options="……치지직…… 본함을 포기한다.", values="1")]
+[Predicate(references="1")]
+[Decision(options="모든 데이터를 백업…… 치지직……", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="클로저"]이미 하는 중이야. 거의 다 됐어!
+[name="클로저"]그리고 더 중요한 일이 있어. PRTS를 끄고 나서 반드시 핵심 데이터를 다운로드 받아야 해……
+[name="클로저"]켈시가 미리 백도어를 심어놨어.
+[name="클로저"]그게 본함의 위협을 완전히 차단할 수 있는 결정적인 역할을 할 거야.
+[charslot(slot = "m", focus="n")]
+[name="만트라"]메커니스트가 확인했다.
+[name="만트라"]우린 어비스 안에서 작전 중이다.
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="클로저"]부탁할게!
+[charslot(slot = "m", name = "avg_npc_1723_1#11$1")]
+[name="클로저"]박사, 켈시가 다친 거야?
+[name="클로저"]왜 아무런 기척도 들리지 않는 거지?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……;모두를 위해 전력으로 시간을 끌고 있어.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="나랑 아미야도 끝까지 버틸 거야.", values="1")]
+[Predicate(references="1")]
+[Decision(options="로도스 아일랜드를……", values="1")]
+[Predicate(references="1")]
+[Decision(options="부탁할게.", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$transmission", volume=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Background(image="60_g15_rhodesabyss_off",screenadapt="coverall")]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="en")]
+[SoundVolume(volume=0.8, channel="en",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=4)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>어비스 내부</><p=2>같은 시각</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="라이디언"]박사와의 연락은 이미 복구했어.
+[name="라이디언"]원래 계획대로 계속 진행하자.
+[charslot(slot = "m", name = "avg_391_rosmon_1#1$2")]
+[name="로즈몬티스"]적이 더 이상 감지되지 않아.
+[charslot(slot = "m", name = "avg_npc_1730_1#2$1")]
+[name="라이디언"]나도 PRTS 코어에서 발생하는 새로운 데이터 전송이 감지되지 않아.
+[charslot(slot = "m", name = "avg_4133_logos_1#7$1")]
+[name="로고스"]너무 조용하군.
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="아스카론"]라이디언, 코어 위치를 공유해 줘.
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="라이디언"]동기화했어.
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="아스카론"]코어 방향으로 가서 코어의 작동을 해제해 볼게.
+[charslot(slot = "m", name = "avg_017_huang_1#11$2")]
+[name="블레이즈"]내가 앞장설게! PRTS가 분명 새로운 적들로 우리를 막으려고 할 거야!
+[charslot(slot = "m", name = "avg_npc_521_1#1$1")]
+[name="메커니스트"]코어 해제는 나한테 맡겨.
+[charslot(slot = "m", name = "avg_4133_logos_1#3$1")]
+[name="로고스"]'오로라'.
+[name="로고스"]은은한 빛이 앞길을 비추리라……
+[dialog]
+[PlaySound(key="$d_avg_magic_2", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[background]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[name="로고스"]……?
+[name="메커니스트"]왜 그래, 로고스?
+[name="로고스"]저건 내 빛이 아니야……
+[dialog]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1, sto = 1.5, sduration = 0.01, pfrom = "0,0",pto = "-55,-300", pduration = 0.01, rfrom=-11, rto=-11, rduration=0.1, afrom = 0, ato = 1, aduration = 0.5, layer = 1)]
+[Delay(time=2)]
+어둠 속에서, 허공에 걸려 있는 마름모 모양의 광륜이 미세하게 움직였다.
+마치 차가운 눈동자가 그 자리의 모든 이들을 내려다보는 것처럼.
+[name="아스카론"]경계해……
+[name="블레이즈"]……닥터 켈시가 말했던 '프리스티스'인가?
+[name="라이디언"]아닌 것 같아.
+[name="라이디언"]복잡하면서도 익숙한 신호가 갑자기 대량으로 감지됐어.
+[name="라이디언"]로도스 아일랜드에서 오는 신호들이야.
+[dialog]
+[StopSound(channel="en", fadetime=4)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.5, sto = 1.2, sduration = 4, pfrom = "-55,-300",pto = "-70,-45", pduration = 4, rfrom=-11, rto=0, rduration=4, layer = 1)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_systemstart_weird", volume=1)]
+[Delay(time=1)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.2, sto = 1, sduration = 22, pfrom = "-70,-45",pto = "-55,0", pduration = 22, layer = 1)]
+[Image(image="60_i16", screenadapt="coverall", xScale=1.2, yScale=1.2, y=-50, fadetime=0.5)]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, yFrom=-50, yTo=0, duration=20, block=false)]
+[Delay(time=1)]
+[name="미저리"]저건…… 뭐지?
+거대한 기계 구조물이 끝없는 백색 소음 속에서 모두의 앞에 천천히 모습을 드러냈다……
+본체를 구성한 것은 현장의 모두에게 익숙한 부품이었다.
+전에 클로저가 모두에게 로도스 아일랜드의 다양한 모듈을 개조할 때 사용했던 부품들을 여러 번 보여준 적이 있었다. 심지어 일부 특수 부품들은 정예 오퍼레이터들이 제작한 것이었다.
+[name="터치"]PRTS가 로도스 아일랜드의 장치를 무기로 재조합했어요.
+[name="터치"]그런데…… 저 부품들이 어디서 나온 거죠? 어비스 안에는 분명 없었는데……
+[name="아스카론"]오리지늄이야.
+오리지늄 결정들이 불규칙한 패턴으로 이 독특한 기계를 뒤덮고 있었다.
+그것들은 더 이상 단순히 집어삼키는 것뿐이 아닌, 창조를 시작했다.
+[name="미저리"]잠깐, 오리지늄이 로도스 아일랜드의 물건을 재현할 수 있다는 거야?
+로고스는 융합 우주 속의 그 고탑, 그리고 전하가 떠올랐다.
+[name="로고스"]그렇게 단순하지 않다.
+[name="로고스"]PRTS는 오리지늄 데이터를 해독할 능력이 없어. 분명 누군가가 개입한 거겠지.
+[name="아스카론"]프리스티스.
+[name="라이디언"]저 기계의 데이터는 지금 내가 알지 못하는 방식으로 PRTS의 코어와 연결되어 있어. 전에 봤던 오리지늄 결정체들과 달라!
+[name="블레이즈"]어찌 됐든, 한판 붙어야겠네.
+[name="스톰아이"]확실히 다른 방법은 없는 것 같군.
+[name="스톰아이"]여러분?
+[dialog]
+[PlaySound(key="$d_avg_attack_ready", volume=1)]
+[Delay(time=1.5)]
+[name="로즈몬티스"]시작해도 돼.
+그 순간, 마름모의 눈에서 나오는 빛이 더 강해졌다.
+PRTS가 만든 의태 기계가 에너지를 모으기 시작했다……
+[dialog]
+[PlaySound(key="$d_avg_energygather", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="목표, 제한 없음. 전투 스타일 분석 완료.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n에너지 조달, 제한 없음.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS 최종 제거 프로토콜 로딩 완료……",block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

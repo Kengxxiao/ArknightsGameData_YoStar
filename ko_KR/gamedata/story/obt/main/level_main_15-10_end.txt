@@ -1,0 +1,753 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="60_g11_rhodescanteen_origin",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playsound(key="$alarmenter",volume=0.5)]
+[Blocker(a=0.4, r=0.5,g=0.1,b=0.1, fadetime=0.7, block=true)]
+[Blocker(a=0.5, r=0,g=0,b=0, fadetime=0.7, block=true)]
+[playsound(key="$alarmenter",volume=0.5)]
+[Blocker(a=0.4, r=0.5,g=0.1,b=0.1, fadetime=0.7, block=true)]
+[Blocker(a=0.5, r=0,g=0,b=0, fadetime=0.7, block=true)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_167",duration=0.5)]
+[Delay(time=1)]
+[name="스톰아이"]예비 전력 시스템은 아직인가?
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]배선 박스가 부서졌어. 우선 손상된 전선을 끊어봐. 합선 보호기가 아직 작동할지도 몰라.
+[name="샤프"]발밑 조심.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]나도 알아.
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$d_avg_bowstring_tightened", loop=true, channel="a",volume=1)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowstring_rebound")]
+[Delay(time=1)]
+[playsound(key="$d_avg_shockbody")]
+[Blocker(a=0.3, r=0, g=0, b=0, afrom=0.5, rfrom=0, gfrom=0, bfrom=0, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.4, rfrom=0, gfrom=0, bfrom=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]운이 좋군.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]이 오리지늄 결정들은 갑자기 튀어나온 것 같은데.
+[name="스톰아이"]아직도 다른 사람들이랑 연락이 안 되나?
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]통신 장애는 여전해. 비상 주파수도 사용할 수 없고.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]더 나쁜 소식이 있어. 이유는 모르겠지만, 로도스 아일랜드가 지금 최대 속력으로 북서 쪽으로 항행 중이야.
+[name="스톰아이"]이대로라면, 항로에 있는 이동식 채굴 플랫폼과 충돌할 수도 있어.
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]항로에서 발생할 수 있는 돌발 요소를 반드시 제거해야 해. 무고한 사람이 휘말리지 않도록 밖에서 본함을 보호해야겠군.
+[name="샤프"]먼저 이곳을 벗어나자. '나쁜 녀석들'호의 선실로 가서 차량 상태를 확인해야겠어.
+[name="샤프"]주변의 공간 구조가 바뀌기 시작했어. 기존의 경로는 더 이상 믿을 수 없으니, 나를 잘 따라와.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"](갑자기 멈춘다)
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]무슨 문제라도?
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]놈들이 또 왔다.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_arrow")]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+말이 끝나기도 바쁘게 화살이 허공을 가르는 소리가 울려 퍼졌다.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.4, rfrom=0, gfrom=0, bfrom=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]……실패했나?
+[charslot]
+그러나 돌아오는 대답은 없었다.
+[dialog]
+[playsound(key="$d_avg_gateopen")]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n",channel="2")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]……스톰아이?
+[charslot]
+샤프가 뒤를 홱 돌아봤으나, 뒤에 있던 식당 출입구는 어느샌가 오리지늄이 자라난 금속 벽으로 변해 있었다.
+[dialog]
+[charslot(slot="m",name="avg_npc_1728_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+하지만 뒤에 서 있는 건 스톰아이가 아니었다……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="오리지늄 결정체"](조용히 다가온다)
+[dialog]
+[Effect(name="$e_magic_hit_02",layer = 1,x = -200)]
+[playsound(key="$d_avg_spellattack_1")]
+[Delay(time=0.2)]
+[Effect(name="$e_magic_hit_02",layer = 1,x = 200)]
+[playsound(key="$d_avg_spellattack_2",channel="2")]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_mechadown",volume=0.5)]
+[Delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_mechadown",volume=0.5,channel="5")]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_095",duration=0.5)]
+[Delay(time=1)]
+[name="피스"]이걸로 해결인가?
+[dialog]
+[charslot]
+[playsound(key="$transmission")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = false, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[Delay(time=1.5)]
+[interlude(channel = 3, clear = true,tsduration = 0.5,tsfrom = "1,1", tsto="0,1")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_095")]
+[name="피스"]통신은 여전히 먹통이네.
+[name="피스"]다른 사람들은 괜찮으려나.
+[charslot(slot = "m", focus = "n")]
+피스는 손에 있는 통신기를 조용히 바라보며, 미간을 잔뜩 찌푸렸다.
+[charslot(slot = "m", focus = "m")]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+발걸음 소리가 멀어졌다.
+[dialog]
+[playsound(key="$d_avg_stonegrowing")]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.5)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+그러나 쓰러졌던 오리지늄 결정체들은 다시 일어나, 완전히 똑같은 동작으로 움직이며 발밑의 부서진 통신 장비를 넘어갔다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[name="부서진 통신 장치"]“……치지직…… 통신이 들리는 모든…… 오퍼레이터들은 잘 듣길 바란다……”
+[name="부서진 통신 장치"]“……믿지 마라…… 치지직…… 통신이 먹통……”
+[name="부서진 통신 장치"]“치지직…… 로도스 아일랜드…… 깨어나……”
+[dialog]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_rhodescorner",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_235",duration=0.5)]
+[Delay(time=1)]
+[name="미저리"]“깨어나”?
+[charslot(slot = "m", focus = "n")]
+[name="아스카론"]옆을 조심해.
+[dialog]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=0.3,posfrom = "200,0", posto = "-100,0")]
+[playsound(key="$d_avg_swrdclave")]
+[Effect(name="$e_slash_01_s",layer = 1,x = 0,rox=-30,roy=70)]
+[Delay(time=0.2)]
+[playsound(key="$d_avg_runstop",channel="3")]
+[charslot(slot="m",duration=0.3,posfrom = "0,0", posto = "-300,0",afrom=1,ato=0)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_daggerexsheath")]
+[Blocker(a=0.15, r=1, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="r",duration=0.3,posfrom = "-100,0", posto = "-100,-100",afrom=1,ato=0)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=20, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown1",channel="4")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_glassbroken")]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_4132_ascln_1#8$1",duration=0.5)]
+[Delay(time=1)]
+[name="아스카론"]기괴해, 죽질 않아.
+[charslot]
+아스카론의 암살검이 튀어나와 멀지 않은 곳에서 일렁이는 그림자를 향했다.
+겹겹의 실루엣이 마치 유령처럼 그림자 속에서 끝없이 쏟아져 나왔다. 발을 내디딜 때마다 결정이 부서지는 소리가 함께 울려 퍼졌다.
+[charslot(slot="m",name="avg_npc_235")]
+[name="미저리"]저 옷차림은…… 리유니온? 그리고 나흐체러르잖아…… 이제 누굴 봐도 이상하지 않겠네.
+[charslot(slot="m",name="avg_4132_ascln_1#8$1")]
+[name="아스카론"]저 녀석들의 몸은 오리지늄으로 되어있어. 이전의 경험으로 판단하는 건 금물이야.
+[charslot(slot="m",name="avg_npc_235")]
+[name="미저리"]알겠어, 그럼 임기응변으로.
+[charslot(slot="m",name="avg_4132_ascln_1#1$1")]
+[name="아스카론"]계속 여기 머물 순 없어. 이것들이 어디서 오는지부터 찾아야 해.
+[charslot(slot="m",name="avg_npc_235")]
+[name="미저리"]지금은 적들의 목적을 알 수 없어. 박사 쪽 상황도 알 수 없는데, 만약……
+[charslot(slot="m",name="avg_4132_ascln_1#1$1")]
+[name="아스카론"]박사 곁에는 아미야가 있으니, 걱정 마.
+[name="아스카론"]우리는 임무를 계속한다…… 이변의 근원을 찾아야 해.
+[charslot(slot="m",name="avg_4132_ascln_1#3$1")]
+[name="아스카론"]만약 이게 켈시가 줄곧 경계하던 상황이 맞다면, 이것들은 분명 어떤 알 수 없는 의지에 따라 움직이고 있다는 건데……
+[dialog]
+[charslot]
+[playsound(key="$transmission")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_235")]
+[name="미저리"]통신도 차단돼서 다른 사람들이랑 연락이 안 돼.
+[name="미저리"]다른 정예 오퍼레이터들은……
+[name="미저리"]아스카론……
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", focus = "n")]
+오리지늄 결정을 지나치던 미저리는 예리한 눈으로 여러 결정의 표면을 빠르게 스쳐 지나가는 그림자를 포착했다.
+[charslot(slot="m",name="avg_npc_235")]
+[name="미저리"]방금 아웃캐스트를 본 것 같은데?
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+쩌적……
+날카로운 발톱이 오리지늄 결정의 표면을 뚫고 나오더니, 뒤이어 구불거리는 뿔, 앙상한 몸과 가시로 뒤덮인 긴 꼬리가 모습을 드러냈다.
+이런 생물이 로도스 아일랜드의 작전기록에 한두 번 등장한 게 아니지만, 어떠한 기록을 봐도 순수하게 오리지늄만으로 만들어진 것은 없었다.
+[CameraShake(duration=0.2, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowstring_rebound")]
+난생처음 보는 이 생명체가 첫발을 내디디려는 순간, 화살 한 발이 날아와 그것의 목을 뚫고 머리를 부숴버렸다.
+[dialog]
+[charslot(slot="m",name="avg_npc_167",duration=1)]
+[Delay(time=2)]
+[name="스톰아이"]……당분간은 안전하겠군.
+[dialog]
+[PlaySound(key="$blooddrop")]
+[Delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+스톰아이는 벽에 기댄 채, 한동안 거칠게 숨을 몰아쉬더니, 급히 자신의 상처를 치료했다.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]다행이다…… 전투에 지장이 있을 정도는 아니네.
+[dialog]
+[playsound(key="$transmission")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+[name="통신기 소리"](시끄러운 잡음)
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]샤프, 샤프, 들려?
+[name="스톰아이"]식별 가능한 신호를 남겨. 내가 합류할게.
+[charslot(slot = "m", focus = "n")]
+[name="통신기 소리"](시끄러운 잡음)
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]……젠장……
+[charslot(slot = "m", focus = "n")]
+[name="통신기 소리"]치지직…… 스톰…… 스톰아이…… 조심…… 치지직……
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]샤프?! 위치를 동기화해!
+[charslot(slot = "m", focus = "n")]
+[name="통신기 소리"]치지직…… 적이 온다…… 화이트스미스…… 멈춰……
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]……? 기다려.
+[dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot = "m",posfrom = "0,0", posto = "350,0",duration = 1,afrom=1,ato=0)]
+[Delay(time=2.5)]
+[charslot(slot = "r",posfrom = "-200,0", posto = "0,0",duration = 1,name="avg_npc_1726_1#2$1")]
+[Delay(time=1)]
+[playsound(key="$d_avg_productdu_attack")]
+[charslot(slot = "l",posfrom = "-200,0", posto = "0,0",duration = 1,name="avg_npc_1726_1#2$1")]
+[Delay(time=1.5)]
+[name="오리지늄에 침식된 기계"]……지원……
+[charslot]
+폭주한 기계들이 복도 양쪽에서 잔뜩 밀려 나왔다. 그것들의 눈에 있는 빛은 같은 주기로 깜빡였다.
+그들의 조잡한 발성 장치는 마치 설계의 한계를 넘어선 듯, 반복해서 구조 요청을 외쳤다.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]지금은 아니야!
+[charslot]
+[dialog]
+[charslot(slot = "r",name="avg_npc_1726_1#2$1")]
+[charslot(slot = "l",name="avg_npc_1726_1#2$1")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_arrowtarget")]
+[playsound(key="$d_avg_arrowtarget",channel="2",delay=0.2)]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_shockbody")]
+[charslot(slot ="l", action="shake", power=7, times=50, duration=0.5)]
+[charslot(slot ="r", action="shake", power=7, times=50, duration=0.5)]
+[Delay(time=0.8)]
+[charslot(duration=1)]
+[Delay(time=1.8)]
+스톰아이가 쏜 활이 폭주하는 두 기계의 코어에 정확히 꽂혔다. 뒤이어 그는 뒤도 돌아보지 않고 왔던 길로 뛰기 시작했다.
+[Dialog]
+[playsound(key="$rungeneral")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]적어도…… 30개.
+[name="스톰아이"]앞에 있는 갈림길이……
+[charslot(slot = "m", focus = "n")]
+스톰아이의 눈앞에 똑같이 생긴 복도 두 개가 끝없이 펼쳐져 있었다.
+로도스 아일랜드의 내부 통로는 이미 무질서하게 변해버렸고, 이제 막 나타난 복도들이 어떤 운명으로 이어졌는지는 아무도 알 수 없었다.
+게다가 그의 뒤에는 폭주하는 기계들이 쫓아오고 있었다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="npc_10002",duration=0.5)]
+[Delay(time=1)]
+[playsound(key="$p_skill_Mon3trburst")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mon3tr"](분노한 듯) 크르르르!!!
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="켈시"]돌발 상황이 예상보다 일찍 발생했네. 로도스 아일랜드는 아직 준비가 덜 됐는데.
+[name="켈시"]어떤 준비도 그녀 상대로는 완벽할 순 없겠지만.
+[charslot(slot="m",name="npc_10002")]
+[name="Mon3tr"](경계하듯) 크르르르르……
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="켈시"]하지만 그녀에게도 문제가 있는 건 확실해. 그게 아니라면, 이렇게 비효율적인 방법을 사용할 리가 없을 테니까.
+[name="켈시"]어쩌면 지금이 우리가 우위를 점할 수 있는 마지막 기회일지도 몰라.
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1727_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1728_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="오리지늄 결정체"](조용히 다가온다)
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#6$1")]
+[name="켈시"]Mon3tr, 통로 하나만 뚫어줘. 싸움에 연연하지 말고.
+[name="켈시"]위기 상황이니까 서둘러야 해.
+[charslot(duration=1)]
+켈시 앞의 통로가 다시 급변해 그녀의 진로를 방해하기 시작했다.
+하지만 공간의 괴이한 변화는 켈시에게 아무런 영향이 없었다. 그녀는 여전히 그곳을…… {@nickname} 박사의 석관을 감지할 수 있었다.
+그건 켈시의 기억에 깊숙이 각인된 정보였다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",duration=1)]
+[Delay(time=2)]
+[name="켈시"]Mon3tr, 석관에 접근하는 모든 위험 대상을 막아줘. 네가 시간을 벌어줘야 해.
+[charslot(slot="m",name="npc_10002")]
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"](흥분한 듯) 크르르르르……
+[charslot]
+켈시는 다시금 익숙한 석관 앞에 섰다.
+한때 그녀는 그 안에서 잠자는 희망을 깨웠지만, 결국 지울 수 없는 고통을 얻었다.
+이제 이것은 마지막 희망이기도 했다.
+[charslot(slot="m",name="avg_003_kalts_1#5$1")]
+[name="켈시"]이게 효과가 있을 거라고 장담할 순 없어, Mon3tr.
+[name="켈시"]하지만 작은 기회라도 내 손에서 빠져나가는 걸 보고만 있을 순 없어.
+[charslot(duration=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+켈시는 석관으로 걸어가 하얀 꽃 한 송이를 그 위에 올려두었다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[image(image="49_i22",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="켈시"]이건 그녀가 남긴 선물이야. 그때, 그녀는 이게 '신'으로부터 훔쳐 온 불씨란 걸 몰랐어.
+[name="켈시"]……우리는 더 높은 존재에 맞서 싸워야 했고, 그래야만 한 줄기의 희망이라도 얻을 수 있었어.
+[name="Mon3tr"](긴장한 듯) 크르르르르……
+[name="켈시"]Mon3tr, 나한테 무슨 일이 생기면 앞으로는 너 스스로 판단하고 행동해.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+켈시는 석관으로 들어갔다.
+[dialog]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1",duration=1)]
+[Delay(time=2)]
+[name="라이디언"]윽, 방해가 너무 심해.
+[name="라이디언"]아무 신호도 안 잡히는 데다, 여긴 내 오리지늄 아츠까지 억누르고 있잖아.
+[name="라이디언"]방법을 찾아야 하는데…
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_signlntrfrnc", volume=1)]
+[Delay(time=1.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="“라이디언……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="라이디언"]이 신호는……?! PRTS?
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="라이디언"]클로저인가? 설마…… 분명 단말기는 아직 차단 상태로 나오는데.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="“내 신호를……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+그 희미한 신호를 따라간 라이디언은 전혀 예상치 못한 인물을 발견했다.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="라이디언"]닥터 켈시?!
+[name="라이디언"]이럴 수가, 네 상태가…… 네가 이걸 어떻게 했는진 모르겠지만, 반드시……
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="라이디언"]……아니, 이미 멈출 수 없는 상태인가.
+[name="라이디언"]고마워, 닥터 켈시.
+[name="라이디언"]이제 어떻게 해야 할지 알겠어.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+[Subtitle(text="“여긴 라이디언이다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“특별한 도움 덕분에, 함선 전체를 커버하는 전자기 통신 환경을 임시로 구축했다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“닥터 켈시의 정보에 따르면, 오늘 발생한 이상 현상은 모두 로도스 아일랜드의 어비스라는 핵심 구역에서 시작된 것이다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“어비스의 기본 정보를 모두에게 동기화해 주겠다. 이제부터 각 정예 오퍼레이터는 자신의 안전을 확보한 후, 어비스의 위치를 파악해 주길 바란다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“반복한다. 어비스의 위치를 파악해 주길 바란다. 하지만 접근은 안 된다. 연락 가능 상태를 계속 유지하길 바란다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“모든 정예 오퍼레이터는 계속 임무를 수행해 주길 바란다……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“닥터 켈시가 우리의 눈이 되어 줄 것이다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[charslot]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$rebel_intro",key="$rebel_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_095",duration=0.5)]
+[Delay(time=1)]
+[name="피스"]……켈시? 고마워.
+[name="피스"]아직 싸울 수 있는 로도스 아일랜드의 오퍼레이터들, 나는 피스다. 너희들의 현재 상황을 나한테 보고해라.
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$transmission")]
+[name="알라나"]지금 우린 아직도 이 끝없이 쏟아져 나오는 것들을 막고 있어!
+[name="알라나"]하지만 끝이 보이질 않아!
+[charslot(slot="m",name="avg_npc_095")]
+[name="피스"]우리에겐 아직 이 오리지늄 적을 처리할 수 있는 효과적인 수단이 없어. 자신을 보호하는 걸 최우선 목표로 하길 바란다.
+[name="피스"]부상자는 싸움을 멈추고, 즉시 터치에게 지원을 요청하도록!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_171_bldsk_1#10$1",duration=0.5)]
+[Delay(time=1)]
+[name="와파린"]켈시…… 또 무슨 짓을 한 거지?
+[charslot(slot="m",name="avg_npc_243")]
+[name="클로에"]와파린 선생님, 조심하세요!
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="와파린"]이 이상한 것들은 아직 위협이 되진 않아, 하지만 수량이 너무 많아서 너희를 지키는 건 확실히 어려울지도 모르겠어.
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="와파린"]방금 라이디언이 동기화해준 자료를 보니, 죽지 않는 녀석들이라고 하네.
+[charslot(slot="m",name="avg_npc_243")]
+[name="클로에"]“죽다”니요…… 와파린 선생님, 저것들에…… 생명이 있다고 할 수 있나요?
+[name="클로에"]터치 선생님과 켈시 선생님도 이 괴물들을 만난 거 아니에요?
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="와파린"]네 걱정이나 해. 우리는 네 생각만큼 그렇게 약하지 않아……
+[dialog]
+[charslot(slot = "left", name = "avg_npc_1727_1#1$1",duration = 0.3)]
+[charslot(slot = "left",posfrom = "-100,0", posto = "-100,0",duration = 0.5)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_171_bldsk_1#5$1",posfrom = "0,0", posto = "100,0",duration = 0.3)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_1", volume=1)]
+[Blocker(a=0.5, r=1, g=0, b=0, fadetime=0.3, block=true)]
+[charslot(slot = "left",posfrom = "-100,0", posto = "-250,0",duration = 0.5,afrom=1,ato=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[charslot(slot = "r", name = "avg_npc_1728_1#1$1",duration = 0.2)]
+[PlaySound(key="$e_skill_skulsrsword",volume=0.5,block=true)]
+[charslot(slot = "r",posfrom = "400,0", posto = "200,0",duration = 0.4)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[charslot(slot="m",posfrom = "100,0", posto = "-450,0",duration = 0.5)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_2", volume=1)]
+[Blocker(a=0.3, r=1, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot = "r",posfrom = "200,0", posto = "200,-120",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[Delay(time=0.8)]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="와파린"]*살카즈 비속어*!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.5)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="와파린"]너희를 전부 해체해 보고 싶네, 과연 정말 죽지 않는지 보고 싶거든……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="와파린"]클로에, 비켜!
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_1", volume=1)]
+끊임없이 밀려오는 오리지늄 결정체는 계속해서 와파린을 향해 돌진했고, 그녀가 방심한 틈에 두 녀석이 방어를 뚫고 들어왔다.
+놈들은 클로에 앞까지 다가왔고, 손을 번쩍 들었다……
+[dialog]
+[delay(time=1)]
+그리고는 움직임을 멈췄다. 공격하는 것이 아니라, 오히려 초대하는 것 같았다. 죽음을 목전에 둔 이 환자를……
+[dialog]
+[charslot(slot = "left", name = "avg_npc_243",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left",focus="l")]
+[name="클로에"]……
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]……?!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_243",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="r")]
+[name="오리지늄 결정체"](조용히 응시한다)
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="와파린"]물러나! 닿으면 안 돼!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_243",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="l")]
+[name="클로에"]하, 하지만 이 사람의…… 울부짖음이 들려요. 고통스러워하는 목소리가 제 머릿속에 새겨지는 것 같아요……
+[name="클로에"]우리, 우리는 닮았어요…… 아주 많이……
+[dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "100,0",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+오리지늄 결정체의 손을 붙잡은 클로에의 눈에는 슬픔이 가득했다.
+[charslot(slot = "left", name = "avg_npc_243",focus="l")]
+[name="클로에"]왜…… 저를 해치지 않나요……
+[name="클로에"]……동류?
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#10$1")]
+[name="와파린"]……네 감염 때문인가? 네 몸에서 발견된 건 우리도 지금까지 본 적이 없는 증상이었어…… 오리지늄이 변하고 있어.
+[name="와파린"]……그래서 네 광석병 경과가 우리의 예상을 벗어났던 거고!
+[charslot]
+[charslot(slot = "l", name = "avg_npc_243",posfrom = "100,0", posto = "100,0")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="l")]
+[name="클로에"]……와파린 선생님, 그러면 이 괴물들을 상대하는 데 제가 도움을 드릴 수 있다는 의미인가요?
+[name="클로에"]저는 해보고 싶어요, 도와드리고 싶어요.
+[name="클로에"]선생님이 실망하시는 것도, 터치 선생님과 켈시 선생님이 다치는 것도 싫어요……
+[dialog]
+[charslot(slot = "right",focus="all")]
+[PlaySound(key="$d_avg_blodmgic_2", volume=1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",afrom=1,ato=0,duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_171_bldsk_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+와파린은 클로에와 마주 보고 있던 오리지늄 결정체를 물리치고, 이 불쌍한 환자를 지켰다.
+[charslot(slot = "right", name = "avg_171_bldsk_1#1$1",focus="r")]
+[name="와파린"]그 약속이 뭘 의미하는지 알아?
+[charslot(slot = "l", name = "avg_npc_243",posfrom = "100,0", posto = "100,0",focus="l")]
+[name="클로에"](미소를 지으며) 잘 모르겠지만, 두렵진 않아요.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g11_rhodescanteen_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1728_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.3)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=1)]
+[Effect(name="$e_slash_02_l",x = 200,y=-150,rox=20,roz=-40,layer = 2)]
+[playsound(key="$e_skill_skulsrsword",volume=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Delay(time=0.3)]
+[charslot(slot="l",name="avg_npc_1728_1#1$1",duration=0.5,posfrom = "0,0", posto = "0,-80",afrom=1,ato=0)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown3",volume=1)]
+[Delay(time=0.3)]
+[Effect(name="$e_fist_hit_01",x = 250,y=50,rox=20,roz=-40,layer = 2)]
+[playsound(key="$d_avg_arrowtarget",volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=0.5,posfrom = "0,0", posto = "0,-80",afrom=1,ato=0)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown3",volume=1)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]허풍을 떤 만큼 빠르진 않군, 스톰아이.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]지형 변화가 너무 심해, 시간이 좀 지체됐어.
+[name="스톰아이"]닥터 켈시와 라이디언이 통신을 복구해 줘서 다행이야. 아니었다면 무슨 일이 벌어졌을지 모르겠군.
+[name="스톰아이"]너, 통신에서 화이트스미스 얘기를 하지 않았어?
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]……
+[name="샤프"]방금까지만 해도 화로 앞에서 술 마시며 춤추자고 손짓했는데, 순식간에 흔적도 없이 사라졌어. 그 후 대장간 화로에서 오리지늄에 오염된 기계들만 기어나와 나를 공격했지.
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]환각 아니야?
+[charslot(slot="m",name="avg_npc_252")]
+[name="샤프"]나도 진짜랑 가짜는 구별해, 스톰아이. 하지만 조금 전 상황은 내 인지 범위를 완전히 넘어섰어.
+[name="샤프"]이런 이상한 일을 겪은 게 나뿐만은 아닐 거야.
+[charslot]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+오리지늄 결정 군집이 눈에 띄는 속도로 자라나고 있었다. 그들에게 생소한 돌은 아니었지만, 지금 그 결정의 표면은 마치 그들의 사고마저 빨아들이려는 것처럼 느껴졌다.
+[dialog]
+[PlaySound(key="$d_avg_tinnitus", volume=1,channel="2")]
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]……?
+[charslot(slot = "m", focus = "n")]
+스톰아이는 눈을 가늘게 떴다. 분명 샤프가 말하는 게 보였지만, 귀에는 아무 소리도 들리지 않았다.
+모든 것이 조용해졌다. 잠시 후, 그는 자신의 심장 소리마저 들을 수 없었다.
+그리고 그는 샤프의 표정이 변한 것을 보았다.
+[stopmusic(fadetime=2)]
+다음 순간, 모든 소리가 로도스 아일랜드에서 사라졌다. 라이디언이 구축한 전자기 통신 채널에도 적막만이 흘렀다.
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“스톰아이, 얼른 따라와.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+그는 몇몇 익숙한 모습을 보았다. 한때는 형제처럼 가까웠던 사람들이었다……
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"]……?!
+[charslot(slot = "m", focus = "n")]
+그는 함께 고생했던 형제들과 재회했다. 하지만 이들은…… 전부 죽었는데?
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“방금 뺏어온 맥주야. 지금 바로 안 마시면 미지근해진다고. 뭘 걱정하는 거야?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_npc_167")]
+[name="스톰아이"](소리 없는 말)
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“그러게, 돌멩이가 벌써 목 안까지 자랐더군. 그래도 혀까지 오지만 않으면 술 마시는 데는 아무 문제 없어.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“설마 저 사람들을 따라가게? 훗, 가고 싶으면 가. 네가 로도스 아일랜드인지 뭔지 하는 데서 죽어도 난 눈물 한 방울 흘리지 않을 테니.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“하지만…… 그 전에 모닥불 앞에 좀 더 앉아 있다 가. 곧 달도 뜰 텐데, 보고 싶지 않아?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+과거 스톰아이는 이 형제들과 담담하게 작별할 수 있길 간절히 바랐다. 하지만 지금 그가 느끼는 건 분노뿐이었다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+같은 시각, 로도스 아일랜드의 다른 곳.
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“어디 가?”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_4132_ascln_1#6$1")]
+[name="아스카론"]……
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“아스카론, 이미 날 봤잖아.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“앞으로 안 가도 돼.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=50, randomness=90, fadeout=true, block=true)]
+[Effect(name="$e_spark_01_mid",x=0,y=50,rox=-180,roy=50,roz=-40,layer = 2)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, fadetime=2, block=false)]
+미저리가 제때 밀쳐준 덕분에 아스카론은 폭발한 오리지늄 결정 군집을 겨우 피할 수 있었다.
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“미저리, 나랑 했던 내기가 아직 안 끝났잖아. ”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“뭘 넋 놓고 있어. 봐, 내 총에 탄약이 아직 네 발 남았어.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_235")]
+[name="미저리"]……
+[charslot]
+주변에 오리지늄이 갑자기 솟아났고, 정체불명의 결정체 적도 점점 더 자주 나타났다. 시선을 빼앗길 수밖에 없는 '환영'과 함께……
+주변에 발생한 모든 일은 이 구역이 온 힘을 다해 그들을 쫓아내고 있다는 뜻이었다.
+“어비스의 대략적인 위치를 파악했어.” 아스카론은 이 소식을 라이디언에게 전하고 싶었지만……
+오리지늄이 모두의 목소리를 삼켜버렸다.
+이 죽음과도 같은 적막은 거대한 수수께끼이자, 납으로 주조된 무덤이었다. 그리고 이것은 로도스 아일랜드를 도망칠 수 없는 심연으로 끌어들이려 했다……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Subtitle(text="“여긴 만트라다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“닥터 켈시와 연락이 닿았다. 추억과 감정이 모독당하는 건 절대 참을 수 없다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+만트라의 목소리가 로도스 아일랜드 오퍼레이터 모두의 머릿속에 울려 퍼졌다. 그것은 만트라의 오리지늄 아츠였다. 모두가 그 속의 분노와 감정을 느낄 수 있었다.
+[dialog]
+[PlaySound(key="$d_avg_stkmyer")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_phntsmbrek")]
+[Delay(time=1)]
+[playMusic(intro="$indust_intro",key="$indust_loop", volume=0.6)]
+[Subtitle(text="“놈은 침묵으로 우리를 막으려고 한다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“그렇다면 내가 모두를 연결해 주는 목청이 되어주지……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“자, 이제 모두에게 목소리를 돌려주겠다.”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[dialog]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",duration=0.5)]
+[Delay(time=1)]
+[name="아미야"]만트라 씨예요!
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="아미야"]만트라 씨가 지금까지 모든 사람이 수집한 정보를 우리한테 동기화해주고 있어요.
+[name="아미야"]아스카론 씨와 미저리 씨는 거의 어비스에 근접했다네요.
+[name="아미야"]그들이 어비스의 특징 신호를 라이디언 씨에게 동기화했어요. 이제 공간이 뒤틀려도 위치를 찾을 수 있게 됐어요.
+[name="아미야"]지금 두 사람은 그 구역을 지키면서, 라이디언 씨와 협력하여 자신들의 생체 신호를 기반으로 한 정보 고정점을 구축하기로 했어요.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="너무 위험해.;지원이 필요할 텐데.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="아미야"]블레이즈 씨와 로즈몬티스 씨가 간다고 했어요. 너무 늦어지진 않을 거예요.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="아미야"]박사님, 저도 켈시 선생님이 걱정돼요.
+[name="아미야"]라이디언 씨의 정보에 따르면, 현재 켈시 선생님의 상황이 좋지는 않다는데……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="아스카론과 미저리가 있는 위치에 모여서 재정비하자.", values="1")]
+[Predicate(references="1")]
+[Decision(options="그리고 함께 어비스를 뚫을 방법을 찾아보자.", values="1")]
+[Predicate(references="1")]
+[Decision(options="켈시를 오래 기다리게 하진 않을 거야.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="아미야"]네. 지금은 라이디언 씨와 만트라 씨의 오리지늄 아츠 덕분에 통신 시스템이 작동되고 있지만, 오리지늄 아츠가 두 분의 몸에 큰 부담을 줄 거예요.
+[name="아미야"]시간이 없어요, 박사님. 저희도 얼른 가요.
+[charslot(duration=1)]
+[playsound(key="$d_avg_brokencrystal_fts")]
+당신은 아미야의 손을 잡고 조심스럽게 오리지늄 결정 군집 사이를 지나갔다. 결정이 폭발할 위치와 시간을 정밀하게 계산할 수 있기에 충분히 유리했다.
+하지만 집중해서 나아가던 당신은 방금 지나친 거대한 오리지늄 결정 위에 있던 미세한 부분을 놓치고 말았다.
+[stopmusic(fadetime=2)]
+오리지늄 결정의 매끄러운 표면은 당신들을 비추고 있었지만, 위에 비친 건 당신들의 모습이 아니었다.
+등을 돌리고 있는 카우투스 소녀, 그리고 그녀의 가냘픈 손을 잡고 있는 다른 사람, 마치 지금의 당신과 아미야 같았다.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image]
+[charslot]

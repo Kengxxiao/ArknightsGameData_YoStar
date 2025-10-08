@@ -1,0 +1,257 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",duration=1)]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="아미야"]박사님, 만트라 씨 일행도 본함으로 복귀했어요.
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="아미야"]박사님의 추측이 맞았어요. 누군가 저희의 임무를 노리고 있었어요.
+[name="아미야"]……이 기기는…… 에기르에서 온 건가요?
+[charslot]
+[charslot(slot="m",name="avg_npc_1401_1#1$1",focus="n")]
+[name="망가진 '조력자'"]……
+[charslot]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="아미야"]켈시 선생님, 남은 부품에서 뭔가 알아낼 수 있을까요?
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]아니. 에기르 기술원은 아마 이 정교한 기기에 엄청난 심혈을 기울였을 거야. 자부심 강한 그들은 절대 다른 연구자가 조력자를 해독하도록 두지 않았을 거고.
+[name="켈시"]하지만 조력자의 등장은 충분히 많은 걸 설명해.
+[name="켈시"]박사, 해륙 연합 방어선을 기억해?
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="당연하지.;네가 협력의 성사를 위해 에기르의 집정관을 만났잖아.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]이베리아와 림 빌리턴은 공식적으로 우리의 요청에 응했어. 문제는 협력이 성사되면 이후에 벌어질 사태의 양상이 우리의 예상을 벗어날 가능성이 크다는 거지.
+[name="켈시"]최근 에기르의 함대는 이베리아에 항구를 건설했을 뿐만 아니라, 림 빌리턴의 남쪽 해안선에도 상륙 항구를 만들었어.
+[name="켈시"]심해에서 온 에기르인들은 서둘러 육지로 올라오지 않았고, 기술 지원이라는 명목으로 단시간 내에 수문 측량 제도를 포함한 여러 활동을 진행했지.
+[name="켈시"]게다가 용병 고용과 공식 협력을 통해서 '육지 순찰대'를 빠르게 조직했고, 더 중립적인 입장을 가진 대리인을 통해 육지와의 협력을 더 수월하게 했어.
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="그 말은 '육지 순찰대'가 습격자라는 거네.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]추측과 가설일 뿐이지만, 현재까지의 단서들을 봤을 때 '육지 순찰대'만이 유일하게 이 많은 조건에 부합해.
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="아미야"]켈시 선생님, 일부 집정관들이 클레멘티아의 이념에 완전히 동의하지는 않는다는 걸 알고는 있지만, 그렇다고 다른 지역에서 동시에 발생한 사고까지 전부 에기르의 소행이라고 할 수는 있을까요?
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]아니, 나는 오히려 누군가 에기르 내부의 갈등을 이용했다고 생각해.
+[name="켈시"]이베리아 국경의 '육지 순찰대', 림 빌리턴에서 인수인계한 채굴선, 카즈델 국경의 용병들……
+[name="켈시"]상대의 작전 범위가 넓고 로도스 아일랜드의 기밀 임무에 대해서도 잘 알고 있어, 이건 주모자는 절대 에기르가 아니라는 걸 충분히 보여주고 있지.
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="아미야"]……하지만 로도스 아일랜드 내부에 배신자가 있을 리 없어요.
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="나도 믿지 않아.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]박사, 우리 말고 로도스 아일랜드에서 누가 이런 일을 할 수 있다고 생각해?
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="……;없지.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]그래, 없어.
+[dialog]
+[charslot(slot="r",name="avg_1037_amiya3_1#3$2")]
+[charslot(slot="l",name="avg_003_kalts_1#14$1")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="아미야"]켈시 선생님, 지금 로도스 아일랜드가 직면한 위협은 예측할 수 없어요.
+[name="아미야"]와파린 선생님도 우리가 돌보고 있는 특수 환자들의 병세가 통제 불가능한 상태로 발전하고 있다며, 여러 번 경고했고요.
+[name="아미야"]환자들을 구하기 위해서든, 잠재적 위기에 대비하기 위해서든, 더 적극적인 대비책이 필요해요.
+[name="아미야"]테레시아 씨가 검은 왕관에 남긴 자료를 읽어봤어요. 테레시아 씨 역시 '문명의 존속'을 통해서 눈부신 업적을 이뤘죠.
+[name="아미야"]전 '문명의 존속'에 들어가 잠재적인 지원 요소를 찾을 수 있어요. 예전에 테레시아 씨가 그랬던 것처럼요.
+[charslot(slot="l",name="avg_003_kalts_1#14$1",focus="l")]
+[name="켈시"]아미야, 거기에 있는 위험에 대해서는 신중하게 평가해야 해.
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="아미야, 확신이 있어?;켈시, 더 효과적인 방법이 있어?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#8$2",focus="r")]
+[name="아미야"]박사님, 확실하게 대답할 수는 없어요.
+[name="아미야"]하지만 저는 시도할 가능성은 포기하지 않을 거예요. 제가 얻어낼 수 있는 아주 작은 우세라도 로도스 아일랜드가 더 멀리 나아가는 데 도움이 될 수 있으니까요.
+[name="아미야"]전 해보고 싶어요.
+[Predicate(references="2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]……상황이 불명확한 지금, 나도 더 좋은 방법을 제시할 수는 없어.
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]하지만 무턱대고 '문명의 존속'에 들어간다고 우리가 원하는 결과를 얻는다는 보장은 없어, 박사.
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="내가 아미야랑 함께 들어갈게.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#5$2",focus="r")]
+[name="아미야"]……?!
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="켈시"]박사, 그렇게 위험한 행동에는 동의할 수 없어.
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="'문명의 존속'에 내 사고를 연결할 수 있어?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="아미야"]……박사님, 이건 너무 위험해요. 누구도 시도한 적 없다고요! 저도 켈시 선생님과 같은 의견이에요. 위험을 무릅쓰지 마세요.
+[charslot(slot="m",focus="n")]
+켈시는 갑자기 소중한 친구가 겪었던 과거의 일이 떠올랐다. 다시는 떠올리고 싶지 않은 기억이었다.
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]'문명의 존속'이라면 할 수 있어.
+[charslot(slot="l",name="avg_003_kalts_1#2$1",focus="l")]
+[name="켈시"]그녀가 한 적 있으니까.
+[charslot(slot="r",name="avg_1037_amiya3_1#5$2",focus="r")]
+[name="아미야"]……?!
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="……;테레시아.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="켈시"]박사, 네 사고는 아주 복잡해. 그 안에서의 위험은 너 자신에게서 비롯되는 데서 그치지 않고, 아미야도 똑같이 예측할 수 없는 충격에 노출될 수 있어.
+[name="켈시"]나는 이 황당한 결정에 찬성할 수 없어.
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="아미야"]켈시 선생님……
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="켈시"]아미야, 이건 내 의견일 뿐이야. 너와 박사가 이 일에 내리는 최종 결정에 내가 간섭할 수는 없겠지만, 내 입장도 이해해 줬으면 좋겠어.
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_003_kalts_1#5$1",afrom=1,ato=0,duration=1)]
+[Delay(time=2)]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="아미야, 나는 너에게 내 사고를 다 보여줄 수 있어.;한 번에 성공할 필요 없어. 여러 번 시도하면 되니까.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="아미야"]하지만 켈시 선생님은……
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="다 끝나고 함께 사과하러 가자.;켈시는 이 계획 자체를 반대하는 게 아니야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="아미야"]박사님 말씀을 따를게요.
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="언제 중단할지는 네가 판단해.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="방어 임무 배치가 끝나면 바로 시작하자.", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$storyendjp_intro",key="$storyendjp_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="r",name="npc_10002",duration=1)]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[playsound(key="$Mon3tr_n")]
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"](나지막하게) 크르르르르……
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]날 걱정해 주는 거야? 나 화 안 났어.
+[name="켈시"]우린 결국 또 새로운 전환점에 도착했어. 하지만 바벨은 내가 가장 원치 않았던 결말로 향했지.
+[name="켈시"]내가 모든 일을 이상적으로만 흘러가게끔 할 수 없다는 게 사실로 증명된 거야, Mon3tr.
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"](발을 들어 올린다)
+[name="Mon3tr"](부드럽게 비빈다)
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]우리 스스로가 가진 한계는 이미 더 중요한 일에서 있을 우리의 역할에 영향을 미치기 시작했어.
+[name="켈시"]아무리 우리가 은하의 변천을 목격할 수 있을지라도, 진정한 위기가 닥치게 되면 우리도 이 대지의 다른 생명들과 별다른 차이가 없어.
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"](불만인 듯) 크르르르르……
+[charslot(slot="l",name="avg_003_kalts_1#11$1",focus="l")]
+[name="켈시"]위로해 줘서 고마워, 네 마음이 느껴져.
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"](초조한 듯) 크르르르르……
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]맞아, 분명 아미야와 박사는 '문명의 존속'에 들어갈 준비를 시작했을 거야.
+[name="켈시"]아미야의 결정에 간섭할 생각은 없어. 아미야도 이제 가장 올바른 판단을 내릴 정도로 충분히 성장했으니까.
+[name="켈시"]박사…… 박사도 이젠 많이 달라졌지.
+[name="켈시"]어쩌면 내 마음속엔 여전히 일말의 희망이 남아있을지도 몰라. 어쩌면, 이번 결말은 정말 다를지도 모르고.
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"](풀이 죽은 듯 몸을 웅크린다)
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]……확실히, 이성은 여전히 경고를 보내고 있어.
+[name="켈시"]'문명의 존속'을 이용해 박사의 사고를 다시 건드리는 건 결코 안전하지 않아. 하지만 아미야의 말도 맞아, 우리에게 남은 선택지는 많지 않아.
+[playsound(key="$Mon3tr_n")]
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"](격양된 듯) 크르르르르……
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="켈시"]내가 박사와 아미야를 지킬게, Mon3tr.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.17, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.17, fadetime=0.1)]
+[Image(image="60_i03", xScale=1.5, yScale=1.5,screenadapt="coverall",y=150)]
+[ImageTween(duration=20, block=false,yTo=80)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$act18d0d0_intro",key="$act18d0d0_loop", volume=0.6)]
+[Delay(time=3)]
+Mon3tr는 지금 이 순간 켈시의 아주 미세한 감정까지도 느낄 수 있었다.
+켈시가 다시 깨어난 후로, Mon3tr는 그녀의 곁을 떠난 적이 없었다.
+Mon3tr는 켈시의 동행자이자, 그녀가 직접 이끄는 공생체이며…… 그녀 자신이기도 했다.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[Delay(time=0.2)]
+[Image(image="60_i03", xScale=1, yScale=1,screenadapt="coverall")]
+[dialog]
+[bgeffect(name="$eb_steam_kal",layer=1)]
+[playsound(key="$d_avg_kwriterecord_loop", loop=true, channel="c",volume=0)]
+[SoundVolume(volume=0.7, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Mon3tr"](다정하게) 크르르르르……
+[name="켈시"]틀렸어. 나는 절망을 느낀 게 아니야, Mon3tr.
+[name="켈시"]나는 에인션츠가 엘더즈의 통치를 무너뜨려서 기뻤고, 루갈샤르거스가 신생 문명에 시간의 기점을 세워준 것에 감격하기도 했어.
+[name="켈시"]나 역시 오만함 때문에 실수한 적도 있고, 친구를 만나 다시 믿음을 되찾기도 했어.
+[name="켈시"]어쩌면 너와 난 이 대지의 다른 생물들과 구조적으로 다를지도 모르겠지. 하지만 그게 혼자 쓸쓸히 걸어가야 한다는 것을 뜻하진 않아.
+[name="켈시"]나는 내가 속할 곳을 찾았어. 로도스 아일랜드에서, 이 대지에서.
+[name="켈시"]나는 그 사람의 바람을 이루었어. Mon3tr, 난 사랑하는 법을 배웠고, 나 자신을 찾았지.
+[name="Mon3tr"](혼란스러운 듯 움직인다)
+[name="Mon3tr"](꼬리로 켈시를 휘감는다)
+[name="켈시"]난 아미야와 박사를 지켜야만 해.
+[name="켈시"]진정한 변수를 지키는 것…… 그건 나조차도 완벽히 볼 수 없는 미래니까.
+[name="켈시"]나도 '문명의 존속'과 소통한 적이 있지만, 결국 나의 한계를 깨진 못했어.
+[name="켈시"]하지만 아미야는 할 수 있어. 나와 테레시아 모두 잘 알고 있어.
+[name="켈시"]아미야가 복잡하고 방대한 정보 속에서 핵심을 찾아낼 거라고 확신해. 테레시아의 축복이 있으니까…… 해낼 수 있을 거야.
+[name="켈시"]아미야잖아, 성장 과정을 내가 직접 지켜본 리더니까.
+[name="켈시"]내가 걸어온 길을 따라가면, 아미야는 아마 그 사람이 남긴 한마디 말이라도 찾을 수 있을지 몰라.
+[name="켈시"]오리지늄이 아직 만들어지지 않은 과거, 수많은 천재가 앞다투어 시대와 의견을 나누고 토론하던 시절, 생명을 칭송하고 구원하려는 마음에서 시작된 기발한 생각은 여태까지 사라진 적 없어……
+[name="켈시"]희망은 사라진 적 없어, Mon3tr. 테라엔 아직 그 희박한 가능성을 이어갈 기회가 있어……
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"](흥분한 듯) 크르르르르……
+[name="켈시"]나? 아니, Mon3tr. 내가 잘하는 건 기억이야. 내가 목격했지만, 시간에 의해 사라진 역사를 기억하는 것 말이지.
+[name="켈시"]난 특별하지 않아.
+켈시는 침착하게 중요한 정보들을 끊임없이 Mon3tr의 척수에 새겨 넣었다.
+[name="켈시"]내가 가장 바라지 않는 상황이 정말 발생한다면, 가장 만나고 싶지 않은 그 사람이 다시 우리 앞에 나타난다면……
+[name="켈시"]박사를 지키고, 아미야를 지켜줘.
+[name="켈시"]나는 이 명령만 너의 기본 행동 원칙에 각인할 거야.
+[name="Mon3tr"](흥분한 듯) 크르르르르……
+[name="켈시"]자, Mon3tr, 우리에겐 아직 할 일이 많아.
+[name="켈시"]위험이 정말로 닥쳐오면, 나는 로도스 아일랜드를 테라가 위기에 맞서는 전초 기지로 만들 거야.
+[name="켈시"]……그리고 난 모두의 마지막 보험이 될 거고.
+[Dialog]
+[Delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

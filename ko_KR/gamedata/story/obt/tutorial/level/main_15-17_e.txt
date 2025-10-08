@@ -1,0 +1,11 @@
+[header(is_skippable=false, is_autoable=false, is_tutorial=true)]主线15-17演出关story_e
+[battle.lockfunction(mask="SYSTEM_MENU_INTERACT")]
+[inputblocker(blockInput=true)]
+[battle.delay(time=2.2)]
+[battle.pause]
+[battle.ensuremincost(cost=18)]
+[inputblocker(blockInput=false)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=8, endTileY=5, charId="char_510_amedic")]
+[tutorial(animStyle="Drag", dialogHead="$avatar_amedic", waitForSignal="select_direction", startTileX=8, startTileY=5, endTileX=8, endTileY=6)]박사님, 이 지시가 확실한가요? 다시 확인 부탁드립니다!
+[battle.unlockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=false)]

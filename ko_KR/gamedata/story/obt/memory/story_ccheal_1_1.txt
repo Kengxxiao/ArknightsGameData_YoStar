@@ -1,0 +1,636 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_deserttownD",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[charslot]
+[name="빈민가 주민"]고마워요, 가비알 선생님.
+[charslot]
+[name="빈민가 주민"]조금 나아진 것 같아요.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]……내가 할 수 있는 건 이 정도뿐이야.
+[charslot]
+[name="빈민가 주민"]괜찮아요. 어차피 광석병은 치료할 수 없으니, 조금이라도 더 살 수 있으면 그걸로 된 거죠.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]내가 여기는 처음 와 봐서 그런데, 이 도시에 혹시 광석병을 연구하는 의사가 있어?
+[charslot]
+[name="빈민가 주민"]……
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]왜 그래?
+[charslot]
+[name="빈민가 주민"]그게, 몇 달 전에 살카즈 의사가 와서 서쪽의 폐허를 사들였어요.
+[charslot]
+[name="빈민가 주민"]그리고는, 광석병을 치료할 수 있는 특별한 사탕이 있다고 소문을 내더라고요.
+[charslot]
+[name="빈민가 주민"]피를 조금만 뽑게 해주면, 그 사탕을 준대요.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……그런 말을 믿는 사람이 있어?
+[charslot]
+[name="빈민가 주민"]처음엔 아무도 믿지 않았어요. 그런데 어떤 사람이 지푸라기라도 잡는 심정으로 아이를 보냈는데, 증세가 진짜로 나아졌대요. 그 이후로 점점 더 많은 사람이 믿기 시작했어요.
+[charslot]
+[name="빈민가 주민"]원래는 여기서 끝났을 일이지만……
+[charslot]
+[name="빈민가 주민"]최근 빈민가에서 한 아이가 실종되었다는 소문이 돌고 있어요.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]실종이라…… 그 의사를 의심하는 거야?
+[charslot]
+[name="빈민가 주민"]아이를 마지막으로 본 사람이, 아이가 그 의사에게 갔다고 하더군요.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]그럼 왜 바로 그 의사를 찾아가지 않은 거야?
+[charslot]
+[name="빈민가 주민"]……감히 그럴 수 없었어요. 거기에 가봤던 사람들 말로는, 그 의사의 방에 혈액팩이 가득한 데다……
+[charslot]
+[name="빈민가 주민"]그 의사의 태도도 엄청 사나워서, 수틀리면 언제든지 사람을 해칠 것처럼 보였다고 하더군요.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]왜 아미르에게 말하지 않았지?
+[charslot]
+[name="빈민가 주민"]……실종된 건 고작 갈 곳 없는 고아 한 명일 뿐이잖아요. 귀족들은 그런 일에 신경도 안 쓰니까요.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]그렇다면, 내가 가볼게.
+[charslot]
+[name="빈민가 주민"]정말 가시려고요?
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]……우선 그 의사가 정말로 광석병을 치료할 수 있는지 확인해볼 거야.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]만약 그게 거짓말인 데다 아이까지 납치한 거라면, 내가 반드시 처벌받게 하겠어.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_storehouse",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="char_187_ccheal_1#2",duration=1.5)]
+[delay(time=2)]
+[charslot]
+살카즈 의사가 거주하는 건물은 매우 허름했다. 발을 막 들여놓았을 때, 가비알은 자신이 잘못 찾아온 게 아닐까 하는 의심까지 들었다.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]잠깐, 이 냄새는……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]이건……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]피 냄새야.
+[charslot]
+그녀가 발걸음을 내딛자마자, 무언가 발에 걸렸다.
+고개를 숙여 보니……
+그것은 신발 한 짝이었다. 크기를 보니 분명 어린아이의 것이었다.
+그리고 신발 옆에는 한 무더기의 핏자국이 있었다.
+그녀는 문득 등골이 오싹해졌다.
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]……여기서, 도대체 무슨 일이 있었던 거지?
+[charslot]
+그녀는 쪼그리고 앉아 핏자국의 냄새를 자세히 맡았다.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]이건 진짜 피잖아.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]설마 정말로 아이가 여기서 죽은 걸까……
+[charslot]
+그녀는 바로 핏자국 옆 사탕 하나를 발견했다.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]이게 그 의사가 아이들에게 준 사탕인가?
+[dialog]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot="m",posfrom="0,0",posto="0,-30",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]이건…… 그냥 평범한 사탕이잖아.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]고작 이런 사탕으로 아이들을 속이다니……
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]누구야?
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1497_1#1$1",duration=1)]
+[delay(time=2)]
+[name="감염자 아이"]……
+[dialog]
+[charslot]
+가비알이 고개를 들어보니, 2층 계단 입구에 한 여자아이가 멍하니 서서 그녀를 바라보고 있었다.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……!
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]꼬마야, 여기서 무슨 일이 있었는지 말해줄 수 있을까?
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]……!
+[dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]잠깐만!
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]쳇……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]도대체 뭐가 어떻게 된 거야!
+[Dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_1497_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_171_bldsk_1#1$1",bstart=0.2,bend=0.7,duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_171_bldsk_1#1$1",bstart=0.2,bend=0.7,focus="r")]
+[name="???"]왜 또 돌아온 거야?
+[charslot]
+[dialog]
+[Dialog]
+[Character]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[PlaySound(key="$char_emp", volume=0.9)]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="char_187_ccheal_1#2",duration=1)]
+[delay(time=2)]
+[name="가비알"]잠깐만.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]꼬마야, 무서워하지 마. 난 널 구하러 온 거야!
+[charslot(slot="m",name="avg_171_bldsk_1#1$1",bstart=0.2,bend=0.7)]
+[name="???"]……그렇게 된 거로군.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]너…… 네가 여기 의사야?
+[Dialog]
+[Character]
+[charslot(slot="m",name="avg_171_bldsk_1#1$1",duration=2)]
+[delay(time=3)]
+가비알은 방 안에 걸려 있는 혈액팩을 보고 놀랄 겨를도 없었다. 왜냐하면, 그녀 바로 앞에 백발과 붉은 눈을 가진 살카즈가 서 있었기 때문이다.
+가비알은 문득 교양서적에서 읽었던 뱀파이어에 대한 내용이 떠올랐다.
+그들은 살카즈 아종 중 하나로, 매우 강력했지만 그만큼 악명이 자자했다.
+그들은 그림자 속을 거닐며 타인의 피를 마셨고, 살인을 일삼았으며, 온갖 악행을 저질렀다……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]너는…… 뱀파이어?!
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]그렇군. 네가 사탕으로 도시 아이들을 유인했던 건, 네 먹이로 삼으려는 거였구나!
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="사악한 뱀파이어"]……
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="사악한 뱀파이어"]넌 누구지?
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]내 이름은 가비알, 의사지. 오늘, 네 악랄한 음모를 밝히러 왔다!
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]지금은 너를 상대할 시간 없으니까 잠깐 자고 있어.
+[dialog]
+[PlaySound(key="$d_avg_magic_3",volume=1,loop=false,channel="log",delay=0.3)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="가비알"]너…… 나한테…… 무슨 짓을 한 거야……
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]혈액순환을 살짝 조정했을 뿐이야.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]얌전히 잠이나 자.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]윽…… 몸이 타들어 가는 거 같아……
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="사악한 뱀파이어"]응? 내 오리지늄 아츠를 맞고도 바로 쓰러지지 않다니.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]재미있네.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]넌 누구야?
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]말했잖아…… 가비알이라고……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]나는…… 의사야……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]이 아이를 구하러 왔어…… 하앗!
+[dialog]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[PlaySound(key="$char_emp", volume=0.9)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="사악한 뱀파이어"]빠져나오기까지 하다니, 이거 참……
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]점점 더 흥미로워지는데.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]어떻게 해야 저 여자의 피를 얻을 수 있을까……
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]그 아이를 놔줘!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]하하…… 그럼 이렇게 하지.
+[Dialog]
+[Character]
+뱀파이어가 여자아이의 머리를 살짝 쓰다듬었다. 그러자 여자아이는 그대로 의식을 잃고 천천히 뱀파이어의 발치에 쓰러졌다.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]그 아이에게 무슨 짓을 한 거야!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]저 아이는 식량으로 이곳에 보관될 거야. 걱정하지 마, 고통은 느끼지 않을 테니.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]이, 이 망할 자식!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]만약 아이를 구하고 싶다면, 너랑 교환하자. 어때?
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]교환?
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]그래. 그 아이 대신 네 피를 뽑게 해준다면 아이를 풀어줄게, 어때?
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]좋아.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]오? 시원시원하군.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]여기서 너랑 크게 붙었다간, 아이가 다칠 수도 있으니까.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]하지만 약속은 지켜, 아이는 풀어줘야 해.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]……그렇지 않으면, 내가 오늘 여기서 죽는 한이 있더라도 절대 너를 가만두지 않을 테니까!
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="사악한 뱀파이어"]어떻게 가만두지 않는다는 거지? 그대는 곧 죽을 텐데 말이야.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]부족의 제사장 할아버지는 아카후알라의 용사가 죽으면, 영혼이 아카후알라의 호수로 돌아간다고 말했거든.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]“내 영혼은 호수에 씻겨 숲 속 바람에 녹아들고, 하늘의 비가 될 것이다.”
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]두려워해야 할 건 오히려 너다, 이 사악한 뱀파이어야.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]바람이 네 얼굴을 스치고, 비가 네 어깨를 적실 때마다, 너는 나를 떠올리게 될 거니까!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]사르곤의 부족에는 정말 흥미로운 전승이 많네.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]하지만, 넌 뱀파이어를 모르는 것 같아.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]바람은 내 근처에서 나는 피 냄새에 흩어지고, 비는 머리 위에서 피로 변해 내게 스며들겠지.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]아마 네 영혼은 내게 조금도 상처를 입히지 못할 거야.
+[Dialog]
+[Character]
+가비알은 분노에 찬 채 눈을 감고, 제 죽음을 받아들일 준비를 했다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+가비알은 정글을 떠나기 전까지, 눈을 가장 따갑게 하는 것은 태양이라고 생각했다.
+한 번은 용기를 내어 태양을 정면으로 바라보다 눈에 화상을 입는 바람에, 며칠 동안 물체가 겹쳐서 보인 적도 있었다.
+그때 그녀는 태양보다 따가운 것은 없을 것이라고 생각했다.
+하지만 정글을 떠나고 나서야, 그녀는 자신이 틀렸다는 걸 깨달았다.
+사실 가장 따가운 것은 다른 사람의 시선…… 다른 사람이 그녀의 몸에 있는 오리지늄 결정을 바라보는 시선이었다.
+그녀는 그 시선 속에 담긴 악의를 두려워하지 않았다. 하지만 그 시선을 마주하려 할 때마다 사람들은 먼저 시선을 돌렸다.
+그녀는 시간이 지난 뒤에야 깨달았다. 자신이 걸린 병이 '돌멩이병'이 아니라 '광석병'이라고 불리는 것이며, 자신 같은 사람은 '감염자'라고 불린다는 것을.
+광석병은 불치병으로 여겨진다는 것을.
+감염자의 삶은 대부분 힘들다는 것을.
+정글에서는 이런 구분이 전혀 없었고, 누구도 광석병에 걸린 사람을 차별하지 않았다.
+아무리 생각해도 이유는 알 수 없었지만, 한 가지는 알았다. 불치병이라 하더라도 광석병 환자의 증세를 완화할 수 있다면, 환자들의 삶을 조금이나마 나아지게 만들 수 있을지도 모른다는 것이다.
+그래서 그녀는 광석병에 대처할 수 있다고 자칭하는 의사들을 여기저기 찾아다니며 그들에게서 방법을 구하고자 했다.
+하지만 결국 매번 얻는 것은 실망뿐이었다.
+어떤 이들은 그저 명성만을 좇았고, 또 어떤 이들은 감염자 치료라는 명목하에 불법 행위를 저질렀다.
+가비알은 단지 그 점을 지적했을 뿐이었지만, 오히려 그들이 가비알에게 누명을 씌웠기에 한때 지명 수배자가 되기도 했었다.
+왜일까?
+…………
+그녀는 주삿바늘이 팔에 꽂힐 때 느껴지는 약간의 통증과 함께, 피가 뽑혀 나가는 상실감이 느껴졌다.
+아, 맞아. 아카후알라의 동료들은 아직 그녀에게 무슨 일이 일어났는지 모를 텐데.
+이럴 줄 알았으면, 미리 한 번 만나고 올 걸.
+상실감은 금방 지나갔다.
+그리고는 고요해졌다.
+이게 바로 죽음인가?
+뱀파이어가 사람을 죽이는 방법은 원래 별로 아프지 않은 거였구나……
+………………
+…………
+……
+아니 잠깐, 안 죽었잖아?!
+[dialog]
+[Background(image="bg_indoor_u",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[playMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="사악한 뱀파이어"]음…… 혈액 속의 오리지늄 결정 밀도는 낮지 않지만, 의외로 혈액 상태가 아주 건강하네.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="사악한 뱀파이어"]역시, 네 신체 능력은 보통 사람을 훨씬 뛰어넘는구나.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]날 왜 안 죽인 거야?
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]내가 왜 너를 죽여야 하는데? 내가 말한 건 아이 대신 피를 뽑게 해달라는 거였잖아?
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]하지만 넌 뱀파이어잖아…… 피를 뽑는다는 건…… 사람을 죽인다는 거 아니야?
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="사악한 뱀파이어"]뭐, 확실히 동족 중에는 그런 짓을 즐기는 자도 많긴 하지만, 최소한 나는 그런 거에 흥미 없어.
+[charslot(slot="m",name="char_187_ccheal_1#4")]
+[name="가비알"]그럼 도대체 왜 이런 짓을 한 거야?!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]방금 넌 네 의지만으로 내 오리지늄 아츠에서 빠져나왔잖아? 그래서인지 네 피에 엄청 관심이 생겼어.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]하지만 그렇다고 너랑 싸우자니, 그건 조금 번거로울 거라고 생각했어. 그래서 임시방편으로 이런 방법을 떠올린 거야.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="사악한 뱀파이어"]협조해 줘서 고마워.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……넌 대체 누구야?
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]와파린, 의사야.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]꼬마야, 일어나.
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]음…… 응?
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]언니도 병을 치료하러 왔어요?
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]난 널 찾으러 온 거야.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]밖에서는 네가 실종된 걸로 알고 있거든.
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]아닌데.
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]의사 선생님이 나보고 너무 약해졌으니 우선 쉬라고 해서, 그래서 밖에 나가지 않은 것뿐인데요.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]그럼 정말 거짓말이 아니었다고……?
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]누군가는 뱀파이어가 의사가 될 수 있다는 것조차 믿지 않더라고. 굳이 그런 사람을 설득해서 자기 상상을 넘어서는 일까지 믿게 할 순 없어.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]너…… 그러면 해명은 안 할 거야?
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]난 이미 몇백 년 전부터 다른 사람의 시선은 신경 쓰지 않고 살아왔어.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]그런 일에 시간을 쓸 바에야, 차라리 혈액 연구를 더 하겠어.
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]의사 선생님, 감사해요. 이제 많이 좋아진 것 같아요.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]피를 받고 약을 준 것이잖아, 각자 필요한 걸 얻었을 뿐이야.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]그럼 이제 둘 다 돌아가 줘. 연구에 방해되니까.
+[charslot(slot="m",name="avg_npc_1497_1#1$1")]
+[name="감염자 아이"]네, 의사 선생님, 안녕히 계세요!
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]잠깐, 그 사탕들은……
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]그건 그냥 평범한 사탕이야.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]하지만 환자가 효과가 있다고 믿는다면, 효과가 생기는 법이지.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]의학 용어로는 '플라시보 효과'라고 불러.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]하지만 그건 거짓말이랑 다를 게 없잖아?
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="와파린"]그렇다면 넌 특효약을 줄 수 있어?
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……아니.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]광석병은 불치병이야. 만약 환자를 속여서라도 조금이나마 더 오래 살게 할 수 있다면, 그렇게 하지 않을 이유는 없지.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]치료의 목적은 환자의 고통을 덜어주는 거야. 그 목적만 달성할 수 있다면, 속이는 건 물론이고, 기꺼이 악마도 될 수 있어.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]……
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]흥, 네가 내 생각을 이해할 거란 기대는 하지도 않았어.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]가봐. 다시는 방해하지 말라고.
+[charslot(slot="m",name="char_187_ccheal_1#5")]
+[name="가비알"]그렇네, 정말 일리가 있는 말이잖아!
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]응? 믿는다고?
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]그래, 일리가 있잖아?
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]혹시 또 나를 속이고 있는 거야?
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]……내가 말한 건 모두 진짜야, 단지 믿는 사람이 적을 뿐이지.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]왜? 난 네 말이 맞다고 생각하는데.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]의사가 초인도 아니고, 설령 미움을 받더라도 환자를 치료할 수만 있다면 난 그걸로 만족해.
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]……네가 그 정도로 분별력 있는 사람이었을 줄은 생각도 못 했어.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]와파린 의사, 아니 와파린 선생! 난 줄곧 당신처럼 진짜 의술을 전수해 줄 수 있는 의사를 찾고 있었어.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]나한테 의술을 전수해 줄 수 있어?
+[charslot(slot="m",name="avg_171_bldsk_1#8$1")]
+[name="와파린"]……
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]모처럼 이해해 주는 사람을 만났는데, 의술 정도야 가르쳐 주지 못할 것도 없지.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]하지만, 혈액 연구를 방해받고 싶지는 않아.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]내 혈액에 관심 있는 거 아니야?
+[charslot(slot="m",name="char_187_ccheal_1#5")]
+[name="가비알"]피를 맘껏 뽑게 해줄게! 얼마든지 연구해도 돼!
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]그럴 필요 없어. 방금 뽑은 피로도 충분하니까.
+[charslot(slot="m",name="char_187_ccheal_1#5")]
+[name="가비알"]그럼 해결해야 할 문제가 있으면, 내가 도와줄게!
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]그렇게까지 말한다면…… 실은 한 가지 있긴 한데.
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]뭔데?
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]샘플이 부족해.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]사탕으로 피를 교환하는 걸 믿는 사람은 결국 소수야.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]아직도 많은 감염자는 나를 믿고 있지 않아.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]게다가 그대가 말했듯 내 소문이 이미 퍼진 이상, 앞으로는 더더욱 오려고 하지 않겠지.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]네가 오기 전까지만 해도, 난 사실 정체를 공개하고 주민들에게 겁을 줘서 피를 뽑을 계획이었거든.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]그 방법은 별로려나?
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]음, 조금 많이 느릴 것 같은데.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]나까지 둘이라고 해도, 그 많은 사람의 피를 뽑는다는 게 쉽진 않을 거 같아.
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]일리가 있는 말이네.
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]……알았다!
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="와파린"]뭐?
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]이 일은 나한테 맡기라고, 와파린 선생!
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]내가 이 문제를 해결하면, 나한테 의술을 가르쳐 줄 거야?
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]좋아, 그렇게 할게.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_storehouse",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+며칠 후
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]가비알이 간 지 벌써 며칠이나 지났는데 아직도 안 돌아오다니.
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]혹시 무슨 문제라도 생긴 건가?
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]딱히 이 문제를 해결하지 못해도 의술을 가르쳐 줄 생각이었는데.
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]역시 찾으러 가봐야겠군.
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="char_187_ccheal_1#5",duration=1)]
+[delay(time=2)]
+[name="가비알"]와파린 선생!
+[charslot(slot="m",name="avg_171_bldsk_1#10$1")]
+[name="와파린"]왜 이제야 왔어?
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]이거 봐봐.
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]……이 혈액팩들은 또 뭐야?
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]난 평소에 빈민가에서 무료 진료를 하는데, 거기 있는 사람들은 내 말을 잘 들어주거든.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]그 사람들한테 네 연구에 혈액이 필요하다고 말했더니, 힘닿는 데까지 헌혈을 해주겠다는 거야.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]아, 맞다, 너에 대한 소문도 내가 해명해 뒀으니까 안심해도 돼.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]어때, 이 정도면 연구하는 덴 충분하겠지?
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]충분해.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]네가 참고하라고 준 샘플에 맞춰서 기록을 다 작성해 뒀어.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]이게 그 기록부니까, 한 번 확인해 봐.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]……흠, 잘 기록했군.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]그럼 이제 의술을 전수해 줄 거지?
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]이런 곳에서 마음도 잘 통하면서 이 몸이 못하는 일을 해낼 수 있는 사람을 만나게 될 줄이야, 정말 생각도 못 했어.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]너를 좀 더 일찍 만났더라면, 샘플이 부족할 걱정은 하지 않아도 됐을 텐데!
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]헤헤, 이제 나한테 맡겨줘!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]가비알, 결정했어.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]앞으로 함께 여행하면서, 각지의 감염자들 혈액 상태를 연구해 보자.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]넌 혈액을 모아줘, 난 연구를 할 테니까.
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]그리고 내가 아는 의술은 모두 전수해 줄게.
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]좋아!
+[dialog]
+[charslot]
+[name="???"]어디로 가려고, 와파린?
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m",duration=2)]
+[delay(time=3)]
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]어…… 켈시?!
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]어떻게 여기까지 찾아온 거지?!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]네가 이 일대에 잠복해 있다는 건 이미 어느 정도 확신하고 있었거든.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]그런데 이곳의 의사 하나가 사람들을 치료해 주면서, 다른 뱀파이어 의사를 홍보한다더군.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]제 발로 굴러들어 온 소식이었지.
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]……큭, 네가 정보에 밝다는 걸 깜빡했어.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]너 벌써 3개월 동안이나 자리를 비웠어.
+[charslot(slot="m",name="avg_171_bldsk_1#10$1")]
+[name="와파린"]연구 결과는 매달 보냈으니까, 자리를 비웠다고 할 순 없지!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]네가 자리에 있어야만 추진할 수 있는 일들이 있어.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]이제는 돌아와야 해.
+[charslot(slot="m",name="avg_171_bldsk_1#10$1")]
+[name="와파린"]……
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]누구?
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]켈시, 와파린의 동료야. 와파린을 데리러 왔어, 너는 누구지?
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]나는 가비알이라고 해, 의사야!
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]와파린이 자기를 도와주면, 나한테 의술을 가르쳐 주겠다고 했어.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]와파린을 데려가려는 거야? 하지만 우린 이제 막 떠나려고 하던 참인데……
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="와파린"]그래! 난 가비알과 이제 막 여행을 시작하려고 했다고!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]약속했던 혈액창고를 짓기 시작했어, 근데 네가 직접 감독하겠다고 하지 않았나?
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]……뭐?!
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]일찍 말해줬으면 진작에 돌아갔지!
+[charslot(slot="m",name="avg_171_bldsk_1#1$1")]
+[name="와파린"]……가비알, 아무래도 우리의 여행은 잠시 보류해야 할 것 같아.
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]그럼 난 어떡해?
+[charslot(slot="m",name="avg_171_bldsk_1#7$1")]
+[name="와파린"]미안……
+[charslot(slot="m",name="char_187_ccheal_1#2")]
+[name="가비알"]……너희가 말한 로도스 아일랜드는 어떤 곳이야?
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]로도스 아일랜드는 광석병 치료를 위해 힘쓰고 있는 제약 회사야.
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]그럼 거기엔 와파린처럼 나한테 의술을 가르쳐줄 사람이 많아?!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]당연하지.
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]저기, 혹시 와파린이 돌아갈 때 나도 같이 가면 안 될까? 나도 로도스 아일랜드에 들어가고 싶어!
+[charslot(slot="m",name="avg_171_bldsk_1#9$1")]
+[name="와파린"]……그것도 방법이겠군. 켈시, 내가 보장하지. 가비알은 정말 귀중한 인재야!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]……
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]이 혈액팩들은 네가 모은 거야?
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]맞아.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]이 기록부는……
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="와파린"]언제 가져갔지?!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]음, 아주 상세한 데이터네. 필기와 요약도 모두 잘 되어 있어.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]로도스 아일랜드에 들어오려면 테스트를 거쳐야 하지만, 이 기록만으로도 사무직 자리 정도는 얻을 수 있을 거 같네.
+[charslot(slot="m",name="char_187_ccheal_1#1")]
+[name="가비알"]하지만 난 의술을 배우고 싶어!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]로도스 아일랜드에 오기만 한다면, 그런 기회는 넘쳐날 거야.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]하지만 그 전에, 질문이 하나 있어.
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]왜 로도스 아일랜드에 들어오려는 거지?
+[charslot(slot="m",name="char_187_ccheal_1#3")]
+[name="가비알"]당연히 광석병에 걸린 모든 사람을 치료하고 싶어서지!
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="켈시"]그렇다면, 로도스 아일랜드는 너를 환영할 거야.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[Image]
