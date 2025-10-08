@@ -1,0 +1,457 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2",duration=1)]
+[Delay(time=2)]
+[name="Amiya"]I've never tried to use the Black Crown to access your thoughts before, Doctor—
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Don't worry, Amiya.;I've opened up my heart and mind for you.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]...Thank you.
+[charslot(duration=1)]
+She looks to her side, at the beam of bright, warm light gently tugging at her hand.
+She shuts her eyes, and slowly lets out a sigh of relief.
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'We're in this together, Amiya.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]I don't know where this journey of ours will lead us, Doctor, but I'll protect you.
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'I'll protect you too, Amiya.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+Under the watchful eye of Civilight Eterna, she gives your brow a light touch—
+[dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$2")]
+[focusout(duration=3, type="bg", from=0, to=1, block=true)]
+[name="Amiya"]Your memories and emotions flow towards me.
+[name="Amiya"]...It's strange.
+[name="Amiya"]They billow so gently as they flow, and the memories' edge is close at hand...
+[name="Amiya"]What did Theresa see back then—
+[charslot(slot = "m", focus = "n")]
+Amiya sees you, and Kal'tsit, and herself, and the many people aboard Rhodes Island.
+As she walks deeper, the boundary of that one memory comes within reach. Curiosity and concern nearly cause her to forget her mission. She wants to reach out to touch it...
+Touch upon the start of your memories. Chernobog, the Sarcophagus, and you, weakly stretching out your hand—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusout(duration=0, type="bg", from=1, to=0, block=true)]
+[charslot]
+[Image(image="avg_0_1", fadetime=2,block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'Doctor... Take my hand!!'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="Amiya"]......
+[name="Amiya"]It looks like there's other memories too? Why are they so blurred?
+[dialog]
+[Delay(time=2)]
+[MusicVolume(volume=0, fadetime=1)]
+[PlaySound(key="$d_avg_signlntrfrnc", volume=1)]
+[bgeffect(name="$eb_signalInterference",layer=1)]
+[Delay(time=1)]
+[focusout(duration=0, type="cg", from=0, to=1)]
+[Image(image="avg_8_9", fadetime=0,block=true)]
+[bgeffect(name="$eb_signalInterference",layer=2)]
+[Delay(time=0.5)]
+[focusout(duration=0, type="cg", from=1, to=0)]
+[Image(image="avg_0_1", fadetime=0,block=true)]
+[Delay(time=1.5)]
+[name="Amiya"]—?!
+[name="Amiya"]Who was—
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'Amiya!'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[image]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "m", focus = "n")]
+You grab ahold of Amiya.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="...Were you lost?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="Amiya"]I-I don't know. This is the first time I've ever dived so deep into someone else's mind. It's a very... odd feeling.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Good thing you pulled it off.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]Thankfully, yes. Now, I can sense even the faintest of your thoughts.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I can sense yours too.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#11$2")]
+[name="Amiya"]Aha, you sure are relaxed right now!
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I've got nothing to worry about with you around.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="So, what should we do next?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]Hold my hand tight, Doctor.
+[name="Amiya"]I'll protect you on the road ahead. Theresa taught me everything about the role of King that day.
+[name="Amiya"]'She' awaits us, at the start of that path.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$desolate_loop", volume=0.6)]
+[Subtitle(text="......", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=0.5)]
+[Sticker(id="st1",multi = true,text="I get what you're saying, but I cannot provide what you're asking for, as your request violates the underlying logic of DWDB-221E.", x=250,y=300, alignment="left", size=24, delay=0.04, width=820,block=true)]
+[Sticker(id="st1",multi = true, text="\nBut I do have a way to circumvent its limits, Kal'tsit—", alignment="left", size=24, delay=0.04,block=true)]
+[Sticker(id="st1", multi = true,text="\n'Deep Dive'.",  alignment="left", duration=1, size=24, delay=0.04,block=true)]
+[Sticker(id="st1", multi = true,text="\nUnfortunately, not even Theresa was able to penetrate this deeply. The risk was far beyond what she could bear—", size=24, delay=0.04,block=true)]
+[Sticker(id="st1", multi = true,text="\nYou're not here for answers? Then why are you so insistent I access this data that is useless to you?",  size=24, delay=0.04,block=true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_signlntrfrnc", volume=1)]
+[bgeffect(name="$eb_signalInterference",layer=1)]
+[Delay(time=3)]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1",duration=2)]
+[Delay(time=3)]
+[name="Civilight Eterna"]'I have no way of knowing if there will come a day that Amiya asks you the same question. But I hope that, in the darkness, she will find the way I lit for her.'
+[name="Civilight Eterna"]That was Kal'tsit's answer to me, Amiya.
+[charslot(slot = "m", focus = "n")]
+[name="Amiya"]...Could I ask you to look through all of Dr. Kal'tsit's access records for us?
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1")]
+[name="Civilight Eterna"]I would be happy to.
+[name="Civilight Eterna"]Her every doubt, her every insistence, each and every time she left in disappointment. I will show it all to you, unreserved.
+[name="Civilight Eterna"]You have dove into the Civilight Eterna before, Amiya, but this time, what you seek lies far beyond your limits.
+[name="Civilight Eterna"]It is a place where life on Terra cannot tread, for the time being, but perhaps you will find the chance to touch upon this knowledge that is not yours.
+[name="Civilight Eterna"]Because you have someone who walks alongside you. Dr. {@nickname}.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Of me?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1")]
+[name="Civilight Eterna"]You will quickly understand what I mean, Dr. {@nickname}.
+[name="Civilight Eterna"]Follow me, Amiya. Follow me to—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g6_crownboundary",screenadapt="coverall",xScale=1.3, yScale=1.3,x=60)]
+[backgroundTween( duration=30, xTo=-20,block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+'Civilization's Singularity'.
+A great hallway of pure white circles around a central point that defies comprehension. The Singularity.
+An unending stream of complex information flows from it, but the strands you manage to snatch hold of are still within your understanding.
+Amiya cannot see the way you entered, but after an interminably long time walking down the corridor, she finds herself back where she started.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="60_g6_crownboundary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="Civilight Eterna"]You noticed, Amiya.
+[name="Civilight Eterna"]The stagnation of civilization does not mean it stands still. It continues onwards on time's linear flow, unable to turn back.
+[name="Civilight Eterna"]But all that life discovers and creates is doomed to fall into an inextricable cycle.
+[name="Civilight Eterna"]Mathematics, physics, philosophy, theology... These theories and practicalities, among others, cannot inspire hope as they once did.
+[name="Civilight Eterna"]The ascending spiral has failed. Life squanders its future as it stumbles blindly in the dark.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]So... this is as far as we can go?
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1")]
+[name="Civilight Eterna"]Only as defined by Terra's current knowledge. It serves as a limit, yes, but it is also a safeguard.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]A safeguard?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Some kind of cognitive barrier...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="Amiya"]Cognitive?
+[Dialog]
+[charslot]
+[Decision(options="Like how we can't make sandbeasts calculate wave dynamics.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Decision(options="Even if we gave them all the data and formulae...", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="All forcing it will do is hurt their brains.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1")]
+[name="Civilight Eterna"]As keen an intuition as ever, Doctor, but not entirely correct.
+[charslot(slot="m",name="avg_4134_cetsyr_1#7$1")]
+[name="Civilight Eterna"]DWDB-221E enlightens life at a steady pace to bring it forward. It does not simply reveal fragments of the future to the seeker to create evolutionary leaps that violate the laws of nature and ethics.
+[name="Civilight Eterna"]Knowledge cannot be unlearned, Amiya. The dreamers who glimpsed the true sky are no longer happy to slumber in ignorance on the ground.
+[name="Civilight Eterna"]Information beyond civilization's cognitive limits will simply blind them to reality, a deadly poison luring them into annihilation's embrace, throwing their civilization into the abyss.
+[name="Civilight Eterna"]And so, this boundary was born.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]But why does it... look so much like a prison made from some giant data server?
+[charslot(slot="m",name="avg_4134_cetsyr_1#7$1")]
+[name="Civilight Eterna"]It appears in a form your mind can comprehend, like how DWDB-221E appears as a black crown in the material world when accompanying you.
+[name="Civilight Eterna"]To a minuscule ant, it is an ouroboric river, forever unable to flow to the sea.
+[name="Civilight Eterna"]But to a celestial body whose lifespan stretch to the trillions, it is a gravitational field that will stay with them their entire life, unfathomable, inescapable.
+[charslot]
+[playsound(key="$d_gen_walk_n", volume=0.7)]
+You walk towards a section but one step away from the void. The distant singularity at the core calls to you.
+Information washes past you like gentle waves, showing you glimpses of many fascinating sights.
+They are fleeting shadows of your past, a life you have lost and forgotten.
+Stray visions of an 'unfamiliar' era.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]Be careful, Doctor!
+[charslot(slot = "m", focus = "n")]
+Amiya tugs on your hand.
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]We don't know what will happen if you fall off this boundary—
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="Amiya"]Are these... what you saw...?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="...Our minds are as one...;...What I see, you see...", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="Amiya"]—'The Originium slug egg' 'went through the bridge between stars'—
+[charslot(slot="m",name="avg_1037_amiya3_1#9$2")]
+[name="Amiya"]...So all those stories really did happen.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="'The Originium slug egg'?;'Went through the bridge between stars'?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]......
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]When I was really, really young, I met someone who was incredibly caring.
+[name="Amiya"]That care was matched with a great weakness, but also a stubborn insistence in carrying me across a road laden with Originium shards.
+[name="Amiya"]When I was dizzy with fever, yet too scared of nightmares to sleep, a patient voice regaled me with stories I had never heard before.
+[name="Amiya"]In a dark and cramped cave, difficult-to-find ore samples were smashed without the slightest hesitation—
+[name="Amiya"]And the shining stones were scattered across the walls, and used to tell me tales of the stars, and the heavenly paradise above the clouds.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]Would you like to hear one of those stories, Doctor?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......;I would be happy to.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]There was once someone who drove a mysterious vehicle shaped like an Originium slug egg on their lonesome, who went through the bridge between stars.
+[name="Amiya"]On the most quiet of nights, guides would borrow glowing clouds from old stars and make round mirrors out of them to light the way.
+[name="Amiya"]On the other side of the bridge, spires faded in and out of the clouds, and the stars wore crowns of flowers.
+[name="Amiya"]When descending on that crown, you'll see that it's a really, really big playground, one where lovely little children gather to play.
+[name="Amiya"]But it was hard for the vehicle's driver to stop...
+[name="Amiya"]The driver changed over to the most miraculous vehicle on hand, and drove it for many, many years...
+[name="Amiya"]But the years came to an end, and nobody was left.
+[charslot(slot="m",name="avg_1037_amiya3_1#2$2")]
+[name="Amiya"]Nobody but the driver.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Do you mean... me?;Is the person in your story... me?", values="1;2")]
+[Predicate(references="1;2")]
+Amiya grips your hand tightly.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]Yes.
+[name="Amiya"]Thanks to my infection, it's hard for me to remember much from that time, and there's a lot from those stories I don't understand.
+[name="Amiya"]But I will do everything I can to remember every single one of your stories.
+[name="Amiya"]Because they are my stories. Tales you told to me.
+[name="Amiya"]I don't want to forget them.
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]I never thought today would be the day I finally get to share your gift to me with you, Doctor.
+[name="Amiya"]This time, we witnessed it together, you and I. We got to know this past life of yours once more.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Thank you, Amiya...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]Do you long for this kind of life, Doctor?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I do.;I don't.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]I'm not surprised. I'm very much the same. When I first thought of such wonders, I longed for it too.
+[name="Amiya"]It's the kind of life I could never truly have for myself.
+[name="Amiya"]I couldn't help myself from sharing them with Theresa, and the two of us would add many wondrous details of our own imagining—
+[name="Amiya"]Until it changed beyond recognition, flying ever further out of reach...
+[name="Amiya"]But now that I've had a glimpse with my own eyes, I don't think I'm <i>that</i> far away from your past life.
+[name="Amiya"]Do you believe that one day, this great land will be just as beautiful, Dr. {@nickname}?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I believe.;That day will come.;Perhaps it will be even more beautiful...", values="1;1;1")]
+[Predicate(references="1;1;1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]It will, and we'll be there to greet it.
+[name="Amiya"]Rhodes Island will be there to see the light of dawn.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="Amiya"]You don't? Strange, it was such a beautiful life.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]One without the pain of Oripathy, without conflict or war, where children could live their lives in joy...
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Maybe I didn't want to show you the crueler side of things.;There's always two sides to life, Amiya.", values="2;2")]
+[Predicate(references="2;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$2")]
+[name="Amiya"]Maybe you're right. The cruelty behind the happiness, the joy behind the suffering. We've experienced it all ourselves.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]I'll admit, I shared these wondrous stories with Theresa, and she was just as amazed as I was.
+[name="Amiya"]She always hoped that everyone in Kazdel... no, in all the lands would have the chance to experience such a life. She did her best to see it come true.
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]We can't let things slide back, Doctor.
+[name="Amiya"]There may come a day that Rhodes Island will be able to see this beauty flourish across the land.
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Decision(options="So, what next?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1")]
+[name="Civilight Eterna"]'Deep Dive'.
+[name="Civilight Eterna"]The intact data stored within DWDB-221E is decoded by the singularity and exported in a moderated and suitable format as information.
+[name="Civilight Eterna"]However, Amiya on her own will not be able to break through the limits of the baseline logic.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="...Am I a special case, then?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1")]
+[name="Civilight Eterna"]I am not certain, but the possibility is there.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]But how are we supposed to get close to the information once it's exported?
+[charslot(slot="m",name="avg_4134_cetsyr_1#10$1")]
+[name="Civilight Eterna"]Forgive me, Amiya, but I have no further information on this topic.
+[name="Civilight Eterna"]I will search through the clues Kal'tsit left behind, and sort anything that may be of use to you so that it is easier to find.
+[Dialog]
+[charslot]
+[Decision(options="Perhaps we could build a bridge?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]A bridge?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="A bridge to the singularity.;A bridge to knowledge.;Hasn't Kal'tsit already pointed the way for us?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]Has anyone done something like that before?
+[charslot(slot="m",name="avg_4134_cetsyr_1#7$1")]
+[name="Civilight Eterna"]There is no precedent in the records.
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]...It's worth a try, either way.
+[charslot(slot="m",name="avg_4134_cetsyr_1#10$1")]
+[name="Civilight Eterna"]Then you must be aware of the risks. The closer you get to the singularity, the denser the information will become. You may possibly experience it gaining mass.
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="Amiya"]Information with mass?
+[charslot(slot="m",name="avg_4134_cetsyr_1#10$1")]
+[name="Civilight Eterna"]It is possible here, yes.
+[name="Civilight Eterna"]It is also possible that information not yet fully decoded will flood into your mind and destroy it.
+[charslot(slot="m",name="avg_4134_cetsyr_1#3$1")]
+[name="Civilight Eterna"]And a destroyed mind means...
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Death.", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[Background(image="60_g2_rhodeslivingroom_bc",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot="m",focus="n")]
+[name="Voice From Within"](Unknown language) Don't mind me, traveler. I'm simply watching yet another bout of destruction is all.
+[name="Voice From Within"](Unknown language) Hierda. That's your name, right?
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="Hierda"]Did you just say my name?
+[name="Hierda"]I don't know whatever language you're speaking in at all. Also, how'd you know—
+[charslot(slot = "m", focus = "n")]
+As the Cautus passes by the porthole, she sees the figure out in the darkness of space slowly approach the ship, then disappear from her sights.
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="Hierda"]Who is that, Raydistorter?
+[dialog]
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[charslot(slot = "m", action="jump",posto = "0,0",power=50,times=1,duration = 0.8)]
+[Delay(time=1)]
+[name="Raydistorter"](Fervent singing) ♪—♪—♪—
+[charslot(slot="m",name="avg_npc_1719_1#9$1")]
+[name="Hierda"]—Is something wrong?!
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="Raydistorter"]There's not many of us who like her!
+[name="Raydistorter"]Sorry, traveler, I simply can't handle being in the same room as her.
+[name="Raydistorter"]If my friends saw this, they'd give me the cold shoulder because of it too.
+[dialog]
+[charslot(slot = "m",posfrom = "0,0", posto = "-200,0",duration = 1)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot]
+When the bewildered Cautus snaps out of it, she finds herself the only person in the cabin. Upon foreseeing the arrival of an unwelcome soul, everyone else had made themselves scarce.
+[dialog]
+[charslot(slot="m",name="avg_npc_1720_1#1$1",duration=1.5)]
+[Delay(time=1)]
+[playsound(key="$d_avg_cosmicelfvoice")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+Then the Cautus sees her.
+[charslot(slot="m",name="avg_npc_1720_1#2$1")]
+[name="Mysterious Elf"]No need to look so amazed. I learned how to communicate using long-distance resonance a while ago.
+[name="Mysterious Elf"]At the very least, before destroying that odd race, I kept the unique language patterns they had evolved.
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="Hierda"]...D-Destroying?
+[charslot(slot="m",name="avg_npc_1720_1#1$1")]
+[name="Mysterious Elf"](Sighs)
+[name="Mysterious Elf"]Do you detest destruction as well, our newly-come guest?
+[charslot(slot="m",name="avg_npc_1719_1#4$1")]
+[name="Hierda"]I... am not too sure what happened, to be honest.
+[charslot(slot="m",name="avg_npc_1720_1#1$1")]
+[name="Mysterious Elf"]It's nothing too complicated. My people once ate stars to live. Others may hate us for it, but it's simply our survival instinct at work.
+[name="Mysterious Elf"]But now, that past only exists in horror stories passed around the metaphorical campfire.
+[name="Mysterious Elf"]My people are on the brink of extinction. I fear I may be the last of my kind, in fact.
+[name="Mysterious Elf"]We destroy to live, but when true destruction finally bears down upon us, we are powerless in the face of it...
+[name="Mysterious Elf"]From that point onwards, I have become nothing more than a beggar. With the aid of some geniuses, I have changed the method I use to obtain the energy I need to live—
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="Hierda"]It sounds like... You've been trying to blend in with other lifeforms too.
+[name="Hierda"]So when you were out in space looking at that dead planet, were you reminiscing about the destruction you experienced?
+[charslot(slot="m",name="avg_npc_1720_1#1$1")]
+[name="Mysterious Elf"]Reminiscing?
+[name="Mysterious Elf"]Haha, nothing of the sort.
+[charslot(slot="m",name="avg_npc_1720_1#3$1")]
+[name="Mysterious Elf"]Everyone here has accepted the ruination chasing us with serenity and hope in their hearts.
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="Hierda"]—?!
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

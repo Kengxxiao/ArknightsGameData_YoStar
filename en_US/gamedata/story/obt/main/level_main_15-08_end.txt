@@ -1,0 +1,570 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[Background(image="60_g4_rhodesabyss_w",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[playsound(key="$d_avg_labamb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Delay(time=2)]
+[Sticker(id="st1", multi = true, text="Administrator permission found.",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPreparing reboot process from hibernation. 3... 2... 1...",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS reboot diagnosis complete—",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="<color=#ff0000>Warning: Unauthorized 3rd-party plugin found. Restore default settings?</color>",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="Administrator key cognition signal verified. Restoring...",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nVital sign detection module activated. Automatically loading repair module. Repairing...",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nProgress: ■ ■ ■",block = true)]
+[Sticker(id="st1", duration=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[name="???"]......
+[name="???"]Doctor...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......;...Amiya?", values="1;2")]
+[Predicate(references="1;2")]
+[focusout(duration=3, type="bg", from=1, to=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2",duration=1)]
+[Delay(time=2)]
+[name="Amiya"]Doctor! I'm so relieved...
+[name="Amiya"]You're finally awake.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Awake?;How long have I been out?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]The evacuation hasn't been smooth. Our neural link was abruptly severed, and it's hard to maintain stability due to the information impact at the boundaries.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="How are you feeling, Amiya?;What is my current condition, Amiya?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]I just woke up myself.
+[name="Amiya"]Don't worry about me. I'm doing much better, thanks to Theresa's protection.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="Amiya"]I'm not entirely sure.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]You should get a full check-up from Dr. Kal'tsit.
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]Good thing you never let go of my hand, or I would be even more worried.
+[name="Amiya"]Don't go off on your own, Doctor. We need to stay in the emergency observation area that Dr. Kal'tsit set up.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Kal'tsit?;Emergency observation area?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]Soon after we began, Dr. Kal'tsit cleared out an area that she is personally protecting, in order to ensure our safety and Rhodes Island's.
+[name="Amiya"]She didn't want any accidents to happen when we entered Civilight Eterna.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="She knew...;I didn't see her—", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[name="Approaching Voice"]I started preparing cognition baseline tests as soon as I confirmed that you're awake.
+[name="Approaching Voice"]Initial testing showed no obvious signs of damage for either of you.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="Kal'tsit"]Diagnosing thought isn't quite as simple as diagnosing biological tissue, though. Further analysis will be required.
+[name="Kal'tsit"]Welcome back, Doctor.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You look... tired.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]A bit of distraction happened during your operation. I'll update you on the latest developments later.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="We found potentially useful information.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]The first priority is to make sure that you're safe.
+[name="Kal'tsit"]Establishing a neural link through the Black Crown is extremely risky. I take it you've long crossed the 'boundary'.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Yes.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Then, my first duty must be to ensure your cognitive stability and biological health.
+[name="Kal'tsit"]I won't allow the mistakes of the past to be repeated, nor will I allow the continued existence of any potential threat to your life and safety.
+[name="Kal'tsit"]Follow me, Dr. {@nickname}.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......;A-Are you angry?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]You'll need to do the cognition baseline test too, Amiya.
+[name="Kal'tsit"]First, though, get some rest.
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="Amiya"]A-Alright, Dr. Kal'tsit.
+[dialog]
+[charslot]
+[Decision(options="Can't Amiya come with me?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]That's not part of my plans, Doctor. I'll arrange for Amiya to be tested as soon as your tests are complete.
+[name="Kal'tsit"]Let's go.
+[dialog]
+[charslot]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="Amiya"]......
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="This is the testing equipment?;I don't remember it at all.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]A prototype that the Medical Department developed. Theresa and I designed it together.
+[name="Kal'tsit"]But the limitations of our understanding of cognition and perception have prevented it from being put into service as a way to measure cognitive stability.
+[name="Kal'tsit"]Under current circumstances, however, it's the most effective method available.
+[name="Kal'tsit"]Go inside the isolation pod, Doctor. Relax. I've tried it myself, and it won't cause any significant physical distress.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Image(image="60_i06",screenadapt="coverall", xScale=1.1, yScale=1.1,x=60)]
+[ImageTween(xTo=-60, duration=120, block=false)]
+[cgitem(image="cgitem_60_i06_1", style="cg",sfrom = 1, sto = 1.1, sduration = 0,pfrom = "-30,0",pto = "0,0",pduration = 120,layer = 2)]
+[cgitem(image="cgitem_60_i06_2", style="cg",pfrom = "-90,0",pto = "-180,0",pduration = 120,layer = 1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[dialog]
+[Decision(options="Anything else I need to know?", values="1")]
+[Predicate(references="1")]
+[name="Kal'tsit"]No. Just follow my instructions. I'll need to calibrate the machine first. Relax and do as I say, but do not hesitate.
+[name="Kal'tsit"]Tell me your name, Doctor.
+[dialog]
+[Decision(options="{@nickname}.;...{@nickname}?", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="Kal'tsit"]A good start.
+[Predicate(references="2")]
+[name="Kal'tsit"]Relax, Doctor. We're just calibrating.
+[Predicate(references="1;2")]
+[name="Kal'tsit"]See the chronometer behind me? Count the time in silence and try to synchronize your counting with the ticking of its numbers.
+[dialog]
+[Decision(options="(You silently count and feel the passage of time);I'm not sure what the point of this is, Kal'tsit...", values="1;2")]
+[Predicate(references="1;2")]
+[name="Kal'tsit"]It helps reinforce your perception of reality. It's been twenty seconds. Are you feeling any discomfort?
+[dialog]
+[Decision(options="No.;...It's hard to say.;Is the machine showing something abnormal?", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="Kal'tsit"]Let's continue the calibration.
+[name="Kal'tsit"]Are you able to continue to perceive Amiya in your consciousness?
+[dialog]
+[Decision(options="Yes.;No.", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="Kal'tsit"]Likely residue perception from the neural link being severed improperly.
+[Predicate(references="2")]
+[name="Kal'tsit"]Good, we're getting used to the flow.
+[Predicate(references="1;2")]
+[name="Kal'tsit"]Continuing with the calibration. Do you agree with Rhodes Island's ideals?
+[dialog]
+[Decision(options="Yes.;No.", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="Kal'tsit"]Good. We're almost done with the calibration.
+[Predicate(references="2")]
+[name="Kal'tsit"]An interesting answer, Dr. {@nickname}, but this is not a lie detector. Unless you were expecting a more dramatic outcome.
+[Predicate(references="1;2")]
+[name="Kal'tsit"]Continue. You saw her at the cognitive boundary.
+[dialog]
+[Decision(options="Yes.;Saw who?", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="Kal'tsit"]As I expected. You're calmer than I thought you would be, though.
+[Predicate(references="2")]
+[name="Kal'tsit"]No need to hide it from me, Doctor. You can trust me.
+[Predicate(references="1;2")]
+[name="Kal'tsit"]Final question. Do you have doubts about the one who is like you?
+[dialog]
+[Decision(options="Yes.;No.", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="Kal'tsit"]A reasonable emotion, but I cannot resolve your doubts in any way or capacity. You will find the answer, sooner or later.
+[name="Kal'tsit"]Maybe you've already formed your subjective opinion. It's not my place to interfere with it, but I trust you will not act contrary to Rhodes Island's interests.
+[Predicate(references="2")]
+[name="Kal'tsit"]Looks like you've formed your opinion. I will not comment on it.
+[Predicate(references="1;2")]
+[name="Kal'tsit"]We're done, Doctor.
+[name="Kal'tsit"]Cognition baseline testing indicates that your cognitive stability remains within safe values. The rest of it is secondary.
+[dialog]
+[Decision(options="Wait, I thought that was the calibration.", values="1")]
+[Predicate(references="1")]
+[name="Kal'tsit"]It was necessary to ensure that the data collected is accurate.
+[name="Kal'tsit"]I trust that you're capable of perceiving my thinking and camouflaging yourself accordingly.
+[name="Kal'tsit"]It would not be hard for you to fool this prototype.
+[dialog]
+[Decision(options="Of course!;...Is this part of the test too, Kal'tsit?", values="1;2")]
+[Predicate(references="1;2")]
+[name="Kal'tsit"]The remaining checks will be complete soon, Dr. {@nickname}. I have time to answer a few questions.
+[name="Kal'tsit"]You understand, of course, that there are certain questions that I am not in a position to answer.
+[dialog]
+[Decision(options="...What are the origins of Rhodes Island?;How were you able to predict our movements ahead of time?", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="Kal'tsit"]If you're referring to this ship, it's even older than the history known to me.
+[name="Kal'tsit"]In a sense, it's the carrier of hope, hence the comprehensive protective systems capable of supporting our every operation on Terra.
+[name="Kal'tsit"]It is thanks to the initial design that it has survived the most brutal challenges with its core structure intact.
+[name="Kal'tsit"]We have yet to discover its full potential.
+[name="Kal'tsit"]However, I remain cautious about trying to unlock this potential in its entirety.
+[Predicate(references="2")]
+[name="Kal'tsit"]You mean the hints that were left behind at the boundary? There was no guarantee that it would be you who would solve them.
+[name="Kal'tsit"]Nor am I able to predict things that have yet to come to pass. It was for another reason that I made such preparations...
+[name="Kal'tsit"]Someone I respected very much had computed all the possibilities that could occur in the future. Someone whose words I will never forget.
+[name="Kal'tsit"]Perhaps I have been quietly influenced too.
+[Predicate(references="1;2")]
+[dialog]
+[Decision(options="You seem nervous, Kal'tsit.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="The current uncertainty is not the only reason why you're nervous.", values="1")]
+[Predicate(references="1")]
+[name="Kal'tsit"]......
+[dialog]
+[Decision(options="I can't describe this strange intuition.;I've never sensed such complex emotions from you.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Kal'tsit"]I'm not the one getting tested—
+You see your reflection in the window, almost as though you were still standing with Kal'tsit.
+You look at your own reflected image, but cannot help recalling the figure at the boundary, who treated the construct with such kindness...
+Your gaze turns towards Kal'tsit.
+[name="Kal'tsit"]Why are you looking at me like this, Dr. {@nickname}?
+[dialog]
+[Decision(options="Did you also put your utter trust in me?", values="1")]
+[Predicate(references="1")]
+[name="Kal'tsit"]I still do. You've proven yourself.
+[name="Kal'tsit"]Whatever you see at the boundary, Dr. {@nickname}, belongs to a past that is dead and gone.
+[name="Kal'tsit"]It is enough that you and Rhodes Island are walking on the proper path. You and I, we both have the right to our subjective definition of this relationship that exists between us.
+[name="Kal'tsit"]You don't need to be concerned about how I view you, not before, not now, not ever. I respect your understanding of our cooperation—
+[dialog]
+[Decision(options="I'm sorry, Kal'tsit.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="I'm apologizing for my and Amiya's reckless actions.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="I know what to do next.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="I just have one more question, Kal'tsit.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="(Unknown language) 'Perhaps it will be our blessing'...", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="(Unknown language) 'And the final gift of hope.'", values="1")]
+[Predicate(references="1")]
+[name="Kal'tsit"]......
+[dialog]
+[Decision(options="I don't understand what it means.;I seem to sense good intentions behind the words.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Kal'tsit"]It means 'blessing' and 'gift'.
+[dialog]
+[Decision(options="You guided us to that one.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="Whoever it was, there is nothing fake about your trust.", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="Then we have a lot of work to do.", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[image]
+[focusout(duration=0, type="bg", from=0, to=1, block=true)]
+[hidecgitem(image="cgitem_60_i06_1")]
+[hidecgitem(image="cgitem_60_i06_2")]
+[Background(image="60_g4_rhodesabyss_w",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_stonegrowing")]
+A regular-shaped Originium crystal emerges in the space.
+A short curved line appears on the corner of the crystal.
+Line expands into surface, then into a perfectly smooth sphere.
+It is an eye that observes this dimension. All it does is record all that it sees; the organ that makes decisions has not fully escaped the Originium.
+Until now.
+[dialog]
+[PlaySound(key="$d_avg_icecrystlncrse")]
+[charslot(slot="m",name="avg_npc_1727_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[name="Originium Entity"](Perceives silently)
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[focusout(duration=0, type="bg", from=0, to=0, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$escape_intro",key="$escape_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2",duration=1)]
+[Delay(time=2)]
+[name="Amiya"]Doctor, Dr. Kal'tsit has determined that there is no major issue with me.
+[name="Amiya"]But she was concerned about whether I was subject to any shock during the neural link.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="She must have her concerns.", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="Kal'tsit"]We should get on with analyzing the formulas that you retrieved.
+[name="Kal'tsit"]Like I said, the abnormalities of PRTS persist. It's very likely that we'll be getting even more anomalies in short order.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="It hasn't been restored?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Closure has been trying, to little avail.
+[name="Kal'tsit"]Deployment of the backup command system has begun, but it will take time to synchronize it across all equipment and individuals.
+[name="Kal'tsit"]As for the information you brought back from the boundary, I can help you decipher it.
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="Amiya"]Do you understand its meaning?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]I'll have to see the formulas in their entirety to be sure.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+You and Amiya attempt to reconstruct the words and formulas written upon the glass of the corridor by memory, written in a language that you do not understand.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Based on the context, I believe I can fill in the blanks here.
+[name="Kal'tsit"]Largely accurate, but there are small errors here and there. Let me fix them.
+[Dialog]
+[charslot]
+[Decision(options="It is like putting together a jigsaw puzzle.", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="Amiya"]Thankfully you were able to remember the last parts that I didn't have time to.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]That should do.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="Do you understand the meaning, Kal'tsit?", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]It's a heretofore unnamed model, the origins of which may be traced to a project by the name of 'Slumber Bridge'.
+[name="Kal'tsit"]It was a radical project that attempted to employ a self-transcoding model in order to combine all possible realities and tangible, organic life into a single 'meta-reality'.
+[name="Kal'tsit"]The project was ultimately a failure, but the experiments on digitizing matter were the predecessor to various subsequent research, including this model.
+[name="Kal'tsit"]It has proven to be incredibly efficient at reducing the loss of meta-information during transmission through special mediums, and increasing data transmission efficiency.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="Information?;Originium?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Now you're getting to the heart of the matter, Dr. {@nickname}.
+[name="Kal'tsit"]Originium is the medium used for information collection. It reformats the information and continues to propagate until its mission is accomplished.
+[name="Kal'tsit"]This model, likely the one used by Originium itself, could lead to major breakthroughs in Originium research and Oripathy treatment.
+[name="Kal'tsit"]I will decipher this information for classified archiving.
+[name="Kal'tsit"]Until its risks and uses are ascertained, however, it must not appear in any blueprint or storage medium that exists in reality.
+[Dialog]
+[charslot]
+[Decision(options="Can you get it done as soon as possible?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]Do you have something in mind, Doctor?
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="Do you remember the 'Originium Arc'?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="Amiya"]The project that Logos and Mechanist proposed after the war in Victoria?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Boosting the adaptability and combat ability of elite operators in high-Originium environments with the use of external equipment. A radical idea, and a difficult one to achieve.
+[name="Kal'tsit"]The current version, developed two years ago, represents the limit of what we are able to achieve.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="Now, we've discovered a new possibility.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]It's an excellent opportunity. At the very least, it will allow elite operators to deal with the Originium threat with greater ease.
+[name="Kal'tsit"]I will need your help in the decipherment process, Doctor.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_explo_n")]
+[CameraShake(duration=1, xstrength=10, ystrength=8, vibrato=30, randomness=90, fadeout=false)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_521_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="Mechanist"]*cough* *cough* Thanks for the barrier. A life-saver.
+[name="Mechanist"]Are you sure that Originium circuit has been properly set? I've checked it three times. It shouldn't fail...
+[charslot(slot="m",name="avg_4133_logos_1#1$1")]
+[name="Logos"]No semantical deviation. The circuit conforms to the simulations.
+[name="Logos"]There should not have been any error.
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="Mechanist"]How about another possibility... it's not we who are wrong?
+[charslot(slot="m",name="avg_4133_logos_1#1$1")]
+[name="Logos"]There are no flaws in the blueprint produced by the Doctor and Dr. Kal'tsit. The incantation simulation is effective.
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="Mechanist"]What I mean is that there's something wrong with the material used in the Originium Arc itself!
+[name="Mechanist"]I seem to remember that Closure kept some good stuff in the warehouse—
+[charslot(slot="m",name="avg_4133_logos_1#8$1")]
+[name="Logos"]Bad idea. We've made enough of a mess in the Engineering Department as it is.
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="Mechanist"]Well, we're doing it on the orders of the Doctor and Dr. Kal'tsit!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="Amiya"]But how do we validate its effectiveness?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Assuming that safety is assured, there is one ideal candidate for testing.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_trainingcom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_017_huang_1#1$2",duration=1)]
+[Delay(time=2)]
+[name="Blaze"]Doesn't feel like there's been any real change in strength.
+[name="Blaze"]How about you go harder, kitten?
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="Rosmontis"]It's not entirely up to me. Raidian?
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]According to the statute of experiment, I can only increase the synchronization between the Originium Arc and Rosmontis in steps.
+[name="Raidian"]It's not just to protect you, Blaze. It's to protect Rosmontis as well.
+[charslot(slot="m",name="avg_017_huang_1#11$2")]
+[name="Blaze"]Hehe, of course. I know.
+[name="Blaze"]I just wanted to test its limits as soon as possible, because Dr. Kal'tsit said this was urgent. How about you, kitten?
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="Rosmontis"]I can control it.
+[charslot(slot="m",name="avg_npc_249_1$1")]
+[name="Touch"]No problem. I'll keep the risks in check.
+[name="Touch"]Raidian, be ready to overwrite the Originium circuit at any moment and disconnect Rosmontis's control.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]...Nothing keeps one on edge like working with you.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="Amiya"]How long will it take to finish the preparations, Dr. Kal'tsit?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Assuming that the Doctor and I complete the decipherment as quickly as possible, and isolate a functional technical blueprint...
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="36 hours.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]It's cutting things too tight.
+[name="Kal'tsit"]There are numerous key points in this technology that are virtually impossible for us to achieve.
+[Dialog]
+[charslot]
+[Decision(options="The surest way to fail is to not try.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]With the Black Crown, I should be able to help.
+[name="Amiya"]We must explore any avenue to gain an advantage for Rhodes Island. Perhaps it will make an impact in the not-so-distant future.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro",key="$drift_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1719_1#3$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+The Cautus feels like she has slept for a long time.
+Her gaze is lost in the stars of deep space, but they offer no guidance as to where home is. She refuses to give up until she falls asleep from exhaustion.
+[dialog]
+[charslot(slot="m",name="avg_npc_1719_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+Then, the light rouses her, and she opens her eyes.
+There is no one around her.
+[name="Cold Voice"](Unknown language) You are lost.
+[charslot(slot="m",name="avg_npc_1719_1#9$1")]
+[name="Hierda"]...?!
+[charslot(slot = "m", focus = "n")]
+[name="Cold Voice"](Unknown language) It has been a long time since this place has seen a new visitor.
+[name="Cold Voice"](Unknown language) Or are you the last survivor of the ruined planet?
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="Hierda"]The voice of Raydistorter? But why—
+[charslot(slot = "m", focus = "n")]
+[name="Cold Voice"](Unknown language) In any case, welcome.
+[name="Cold Voice"](Unknown language) Come. Seek me.
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="Hierda"]......
+[charslot(slot = "m", focus = "n")]
+She remembers this scene. She should have died after disintegrating, but light rushed into her eyes again.
+She came to this place, the domain of the gods... it all happened again.
+[charslot(slot="m",name="avg_npc_1719_1#6$1")]
+[name="Hierda"]H-How could this be?
+[dialog]
+[charslot(duration=1)]
+She looks out of the porthole in terror, and sees the dead planet.
+[dialog]
+[playsound(key="$rungeneral",volume=0.6)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Roaming through the ship, she encounters that being by the name of Raydistorter once again, and the Presence that gazes upon death, alone in deep space...
+Every trace that she was ever here has disappeared.
+[dialog]
+[charslot(slot="m",name="avg_npc_1719_1#6$1",duration=0.5)]
+[Delay(time=1)]
+[name="Hierda"]No... no... no...
+[name="Hierda"]Am I still dreaming?
+[charslot(slot = "m", focus = "n")]
+[name="Gentle Voice"]This is not a dream.
+[name="Gentle Voice"]But it's not reality either.
+[name="Gentle Voice"]You were looking for me, weren't you?
+[charslot(duration=1)]
+The Cautus sees a hand reach towards her and take hers—
+Like the hand that held hers when she disintegrated.
+She saw 'God'.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

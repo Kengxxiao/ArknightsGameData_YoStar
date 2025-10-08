@@ -13578,11 +13578,114 @@
           "buffData": []
         }
       ]
+    },
+    "char_4179_monstr": {
+      "charId": "char_4179_monstr",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "control_mp_cost[012]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "control_prod_spd[1000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_4178_alanna": {
+      "charId": "char_4178_alanna",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "manu_token_prod_spd[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            },
+            {
+              "buffId": "manu_token_prod_spd[010]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "manu_prod_spd_double[000]",
+              "cond": {
+                "phase": "PHASE_2",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "char_445_wscoot": {
+      "charId": "char_445_wscoot",
+      "maxManpower": 8640000,
+      "buffChar": [
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd&clue[000]",
+              "cond": {
+                "phase": "PHASE_0",
+                "level": 1
+              }
+            }
+          ]
+        },
+        {
+          "buffData": [
+            {
+              "buffId": "meet_spd_notOwned&exchange[000]",
+              "cond": {
+                "phase": "PHASE_1",
+                "level": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   },
   "buffs": {
     "control_prod_spd[000]": {
       "buffId": "control_prod_spd[000]",
+      "buffName": "Highest Authority",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_p_spd",
+      "sortId": 1603,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+2%</> (only the most effective one will take effect when assigned Operators have the same skill effect)"
+    },
+    "control_prod_spd[1000]": {
+      "buffId": "control_prod_spd[1000]",
       "buffName": "Highest Authority",
       "buffIcon": "control",
       "skillIcon": "bskill_ctrl_p_spd",
@@ -13968,6 +14071,18 @@
     "control_mp_cost[011]": {
       "buffId": "control_mp_cost[011]",
       "buffName": "Art of Defense",
+      "buffIcon": "control",
+      "skillIcon": "bskill_ctrl_cost",
+      "sortId": 1112,
+      "buffColor": "#005752",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "CONTROL",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
+    },
+    "control_mp_cost[012]": {
+      "buffId": "control_mp_cost[012]",
+      "buffName": "New to the Job",
       "buffIcon": "control",
       "skillIcon": "bskill_ctrl_cost",
       "sortId": 1112,
@@ -15728,6 +15843,42 @@
       "buffCategory": "OUTPUT",
       "roomType": "MANUFACTURE",
       "description": "When this Operator is assigned to a Factory, for each <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>3</>), <@cc.kw>Precious Metal</> productivity <@cc.vup>+2%</> and Morale consumed per hour <@cc.vup>-0.15</>"
+    },
+    "manu_token_prod_spd[000]": {
+      "buffId": "manu_token_prod_spd[000]",
+      "buffName": "Master of Machines α",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_token_spd1",
+      "sortId": 3734,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+5%</> for <@cc.vup>every</> <$cc.tag.op><@cc.kw>Operation Platform</></> assigned to a Power Plant"
+    },
+    "manu_token_prod_spd[010]": {
+      "buffId": "manu_token_prod_spd[010]",
+      "buffName": "Master of Machines β",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_token_spd2",
+      "sortId": 3734,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+10%</> for <@cc.vup>every</> <$cc.tag.op><@cc.kw>Operation Platform</></> assigned to a Power Plant"
+    },
+    "manu_prod_spd_double[000]": {
+      "buffId": "manu_prod_spd_double[000]",
+      "buffName": "'Here to Help!'",
+      "buffIcon": "manufacture",
+      "skillIcon": "bskill_man_spd_double",
+      "sortId": 3735,
+      "buffColor": "#ffd800",
+      "textColor": "#333333",
+      "buffCategory": "OUTPUT",
+      "roomType": "MANUFACTURE",
+      "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+15%</> when <@cc.kw>Warmy</> is assigned to the same Factory"
     },
     "manu_formula_spd[200]": {
       "buffId": "manu_formula_spd[200]",
@@ -20960,6 +21111,30 @@
       "buffCategory": "FUNCTION",
       "roomType": "MEETING",
       "description": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhodes Island Pharmaceuticals</> clue is <@cc.kw>guaranteed</> next."
+    },
+    "meet_spd&clue[000]": {
+      "buffId": "meet_spd&clue[000]",
+      "buffName": "Making Friends",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spd_clue",
+      "sortId": 6114,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "When this Operator is assigned to the Reception Room, every Recruit slot (Default slots do not count) increases Clue search speed by <@cc.vup>5%</>"
+    },
+    "meet_spd_notOwned&exchange[000]": {
+      "buffId": "meet_spd_notOwned&exchange[000]",
+      "buffName": "On the Alert",
+      "buffIcon": "meeting",
+      "skillIcon": "bskill_meet_spd_notOwned_exchange",
+      "sortId": 6115,
+      "buffColor": "#dd653f",
+      "textColor": "#ffffff",
+      "buffCategory": "FUNCTION",
+      "roomType": "MEETING",
+      "description": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board"
     }
   },
   "workshopBonus": {
@@ -81066,6 +81241,582 @@
         "enableRoomType": 4112,
         "quantity": 1
       },
+      "furni_kaltsroom_ceilinglight_01": {
+        "id": "furni_kaltsroom_ceilinglight_01",
+        "sortId": 1879,
+        "name": "Triangle Shadowless Lamp",
+        "iconId": "furni_kaltsroom_ceilinglight_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_1",
+        "width": 2,
+        "depth": 3,
+        "height": 5,
+        "comfort": 95,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Shadowless lamp recreated from Mon3tr's memory, commonly seen in Rhodes Island surgical rooms. The coldest light has once illuminated the hottest pulse.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_sample_01": {
+        "id": "furni_kaltsroom_sample_01",
+        "sortId": 1880,
+        "name": "Originium Sample Table",
+        "iconId": "furni_kaltsroom_sample_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_1",
+        "width": 3,
+        "depth": 4,
+        "height": 4,
+        "comfort": 225,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Sample table recreated from Mon3tr's memory, displaying the Originium samples collected by Kal'tsit. Scattered hints converge upon this place. Has the seeker found the salvation they sought?",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_cabinet_01": {
+        "id": "furni_kaltsroom_cabinet_01",
+        "sortId": 1881,
+        "name": "Ventilated Equipment Cabinet",
+        "iconId": "furni_kaltsroom_cabinet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_1",
+        "width": 6,
+        "depth": 2,
+        "height": 10,
+        "comfort": 360,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Equipment cabinet recreated from Mon3tr's memory, used to store medical and experiment equipment. Equipped with a special ventilation system that ensures a germ-free storage environment.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_clock_01": {
+        "id": "furni_kaltsroom_clock_01",
+        "sortId": 1882,
+        "name": "'Time of Calibration'",
+        "iconId": "furni_kaltsroom_clock_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "ORTHER_WD",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_2",
+        "width": 2,
+        "depth": 1,
+        "height": 4,
+        "comfort": 80,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "A set of clocks recreated from Mon3tr's memory. Kal'tsit once calibrated them personally. The first shows the local time at Rhodes Island's current location. The second shows the time elapsed on the journey. The third has stopped moving.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_display_01": {
+        "id": "furni_kaltsroom_display_01",
+        "sortId": 1883,
+        "name": "'Rhythm of Life'",
+        "iconId": "furni_kaltsroom_display_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_2",
+        "width": 4,
+        "depth": 1,
+        "height": 5,
+        "comfort": 155,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Display screen recreated from Mon3tr's memory, once used by Kal'tsit to monitor the subject's movement. Images from past experiments continue to play back repeatedly, but the vital rhythm that pulsates within will never waver again.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_sofa_01": {
+        "id": "furni_kaltsroom_sofa_01",
+        "sortId": 1884,
+        "name": "'Command: Rest'",
+        "iconId": "furni_kaltsroom_sofa_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "SOFA",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_1",
+        "width": 8,
+        "depth": 4,
+        "height": 3,
+        "comfort": 360,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Guest sofa recreated from Mon3tr's memory. The master of the office rests here as well. Slow your breathing, close your eyes, and dream well. May your slumber be temporary.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_carpet_01": {
+        "id": "furni_kaltsroom_carpet_01",
+        "sortId": 1885,
+        "name": "'Undistorted'",
+        "iconId": "furni_kaltsroom_carpet_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_1",
+        "width": 11,
+        "depth": 6,
+        "height": 1,
+        "comfort": 130,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Floor mat previously placed in the surgical room. The complex patterns prevent slipping and make the viewer dizzy. Mon3tr has recreated it perfectly, perhaps demonstrating that her memory has never faded.",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_ceilinglight_02": {
+        "id": "furni_kaltsroom_ceilinglight_02",
+        "sortId": 1886,
+        "name": "Surgical Lighting",
+        "iconId": "furni_kaltsroom_ceilinglight_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CEILINGLAMP",
+        "subType": "NONE",
+        "location": "CEILING",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_2",
+        "width": 14,
+        "depth": 4,
+        "height": 4,
+        "comfort": 290,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Lighting array recreated from Mon3tr's memory, illuminating the most complex surgeries. 'We remain certain that the vector of time is not necessarily the same as the vector of light. We can hope to meet again in the faded past.'",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_shelf_01": {
+        "id": "furni_kaltsroom_shelf_01",
+        "sortId": 1887,
+        "name": "Dustproof Equipment Cabinet",
+        "iconId": "furni_kaltsroom_shelf_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_2",
+        "width": 6,
+        "depth": 2,
+        "height": 7,
+        "comfort": 290,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Medical equipment cabinet recreated from Mon3tr's memory, with a transparent cover to prevent contamination. They lie here in silence, until the death-filled battlefield calls upon them again.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_carpet_02": {
+        "id": "furni_kaltsroom_carpet_02",
+        "sortId": 1888,
+        "name": "Medical Marked Carpet",
+        "iconId": "furni_kaltsroom_carpet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CARPET",
+        "subType": "NONE",
+        "location": "CARPET",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_3",
+        "width": 4,
+        "depth": 3,
+        "height": 1,
+        "comfort": 40,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Small, light carpet with the Rhodes Island Medical Department logo on it. For the operators, returning here was their longest journey.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_cart_01": {
+        "id": "furni_kaltsroom_cart_01",
+        "sortId": 1889,
+        "name": "Medical Department Trolley",
+        "iconId": "furni_kaltsroom_cart_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "STORAGE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_3",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 175,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Double-decker trolley used by Medical to carry medicine and equipment. Kal'tsit once accidentally left one carrying samples in her office after a particularly nerve-wracking surgery. It has since gained many traces of her life.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_table_01": {
+        "id": "furni_kaltsroom_table_01",
+        "sortId": 1890,
+        "name": "'Progress'",
+        "iconId": "furni_kaltsroom_table_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "TABLE",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_3",
+        "width": 10,
+        "depth": 3,
+        "height": 5,
+        "comfort": 445,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Experiment table recreated from Mon3tr's memory, once used by Kal'tsit as her office table. Its administrator has been active since it was rebuilt, and its surface once again holds the progress of Rhodes Island's projects.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_light_01": {
+        "id": "furni_kaltsroom_light_01",
+        "sortId": 1891,
+        "name": "'Projection of Life'",
+        "iconId": "furni_kaltsroom_light_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLLAMP",
+        "subType": "NONE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_4",
+        "width": 7,
+        "depth": 1,
+        "height": 9,
+        "comfort": 245,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "A set of displays recreated from Mon3tr's memory, showing a snippet from an experiment. Every conversation between her and Mon3tr is recorded here. It is a gentle behest, and an unmovable oath.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_chair_01": {
+        "id": "furni_kaltsroom_chair_01",
+        "sortId": 1892,
+        "name": "Medical Swivel Chair",
+        "iconId": "furni_kaltsroom_chair_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "SEATING",
+        "subType": "CHAIR",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_3",
+        "width": 3,
+        "depth": 2,
+        "height": 3,
+        "comfort": 175,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Swivel chair commonly found in the Rhodes Island Medical Department. A familiar jacket hangs from its back. Someone has washed the jacket and left it here. It waits for its master.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_cabinet_02": {
+        "id": "furni_kaltsroom_cabinet_02",
+        "sortId": 1893,
+        "name": "Sample Archive",
+        "iconId": "furni_kaltsroom_cabinet_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "CABINET",
+        "subType": "NONE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_4",
+        "width": 3,
+        "depth": 4,
+        "height": 10,
+        "comfort": 340,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Sample cabinet recreated from Mon3tr's memory, providing a temperature-controlled environment for storing experiment samples. During the crisis, Kal'tsit's contingency plan preserved much of Rhodes Island's medical data, now stored here.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_sample_02": {
+        "id": "furni_kaltsroom_sample_02",
+        "sortId": 1894,
+        "name": "'Life Slices'",
+        "iconId": "furni_kaltsroom_sample_02",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "DECORATION",
+        "subType": "DEVICE",
+        "location": "FLOOR",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": true,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_4",
+        "width": 2,
+        "depth": 2,
+        "height": 5,
+        "comfort": 175,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "An unusual cabinet that holds bio-samples from different phases of Mon3tr's life. 'You have a... unique way of keeping your childhood photos.'",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_wallpaper_01": {
+        "id": "furni_kaltsroom_wallpaper_01",
+        "sortId": 1895,
+        "name": "'Domain of Civilization'",
+        "iconId": "furni_kaltsroom_wallpaper_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLPAPER",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_4",
+        "width": 34,
+        "depth": 1,
+        "height": 10,
+        "comfort": 240,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Holographic display recreated from Mon3tr's memory, seeming to show vast plains from before the beginning of history. The wilds were yet uninhabited, and the seeds of civilization about to sprout. This was her first glimpse of these lands.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
+      "furni_kaltsroom_floor_01": {
+        "id": "furni_kaltsroom_floor_01",
+        "sortId": 1896,
+        "name": "'Dust of Remnant'",
+        "iconId": "furni_kaltsroom_floor_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "FLOOR",
+        "subType": "NONE",
+        "location": "NONE",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "furni_set_kaltsroom",
+        "groupId": "furni_set_kaltsroom_4",
+        "width": 34,
+        "depth": 10,
+        "height": 1,
+        "comfort": 240,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+        "description": "Medical Department flooring recreated from operators' memories. The same anti-bacterial coating has been applied to it, and the familiar color is reassuring. This place carries the dream of healing the land.",
+        "obtainApproach": "Purchased from the Limited Furniture Store",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4112,
+        "quantity": 1
+      },
       "furni_oct1st_deckChair_01": {
         "id": "furni_oct1st_deckChair_01",
         "sortId": 9998,
@@ -87424,6 +88175,38 @@
         "comfort": 75,
         "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory, or decorate the Reception Room.",
         "description": "What do you need when sunbathing on a sunny beach?",
+        "obtainApproach": "Event Reward",
+        "processedProductId": "3401",
+        "processedProductCount": 0,
+        "processedByProductPercentage": 0,
+        "processedByProductGroup": [],
+        "canBeDestroy": false,
+        "isOnly": 1,
+        "enableRoomType": 4144,
+        "quantity": 0
+      },
+      "furni_terracommericials_Extra_PungentCoffeeBeans_01": {
+        "id": "furni_terracommericials_Extra_PungentCoffeeBeans_01",
+        "sortId": 11097,
+        "name": "Plaque - Luxury",
+        "iconId": "furni_terracommericials_Extra_PungentCoffeeBeans_01",
+        "interactType": "NONE",
+        "musicId": "",
+        "type": "WALLDECO",
+        "subType": "PLAQUE",
+        "location": "WALL",
+        "category": "FURNITURE",
+        "validOnRotate": false,
+        "enableRotate": false,
+        "rarity": 2,
+        "themeId": "",
+        "groupId": "",
+        "width": 4,
+        "depth": 1,
+        "height": 2,
+        "comfort": 75,
+        "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory, or decorate the Reception Room.",
+        "description": "Do coffee beans that have been eaten and defecated by fowlbeasts have a richer flavor? This is a controversial topic amongst connoisseurs and researchers alike.",
         "obtainApproach": "Event Reward",
         "processedProductId": "3401",
         "processedProductCount": 0,
@@ -107056,6 +107839,150 @@
           "furni_tarahouse_floor_01"
         ]
       },
+      "furni_set_kaltsroom": {
+        "id": "furni_set_kaltsroom",
+        "enableRoomType": 4112,
+        "sortId": 108,
+        "name": "'As the Last Breath Lingers'",
+        "themeType": "EVENT",
+        "desc": "An office rebuilt from the memory of Mon3tr and other operators. This restoration is not a part of Kal'tsit's contingency plan, but Mon3tr believes it to be where the rebuilding process should begin.",
+        "quickSetup": [
+          {
+            "furnitureId": "furni_kaltsroom_ceilinglight_01",
+            "pos0": 5,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_sample_01",
+            "pos0": 0,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_cabinet_01",
+            "pos0": 3,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_clock_01",
+            "pos0": 9,
+            "pos1": 6,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_display_01",
+            "pos0": 10,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_sofa_01",
+            "pos0": 5,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_carpet_01",
+            "pos0": 3,
+            "pos1": 2,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_ceilinglight_02",
+            "pos0": 15,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_shelf_01",
+            "pos0": 16,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_carpet_02",
+            "pos0": 22,
+            "pos1": 5,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_cart_01",
+            "pos0": 27,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_table_01",
+            "pos0": 17,
+            "pos1": 3,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_light_01",
+            "pos0": 24,
+            "pos1": 1,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_chair_01",
+            "pos0": 24,
+            "pos1": 7,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_cabinet_02",
+            "pos0": 31,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_sample_02",
+            "pos0": 32,
+            "pos1": 4,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_wallpaper_01",
+            "pos0": 0,
+            "pos1": 0,
+            "dir": 0
+          },
+          {
+            "furnitureId": "furni_kaltsroom_floor_01",
+            "pos0": 0,
+            "pos1": 10,
+            "dir": 0
+          }
+        ],
+        "groups": [
+          "furni_set_kaltsroom_1",
+          "furni_set_kaltsroom_2",
+          "furni_set_kaltsroom_3",
+          "furni_set_kaltsroom_4"
+        ],
+        "furnitures": [
+          "furni_kaltsroom_ceilinglight_01",
+          "furni_kaltsroom_sample_01",
+          "furni_kaltsroom_cabinet_01",
+          "furni_kaltsroom_clock_01",
+          "furni_kaltsroom_display_01",
+          "furni_kaltsroom_sofa_01",
+          "furni_kaltsroom_carpet_01",
+          "furni_kaltsroom_ceilinglight_02",
+          "furni_kaltsroom_shelf_01",
+          "furni_kaltsroom_carpet_02",
+          "furni_kaltsroom_cart_01",
+          "furni_kaltsroom_table_01",
+          "furni_kaltsroom_light_01",
+          "furni_kaltsroom_chair_01",
+          "furni_kaltsroom_cabinet_02",
+          "furni_kaltsroom_sample_02",
+          "furni_kaltsroom_wallpaper_01",
+          "furni_kaltsroom_floor_01"
+        ]
+      },
       "furniM_set_basicRoom": {
         "id": "furniM_set_basicRoom",
         "enableRoomType": 32,
@@ -113433,6 +114360,64 @@
           "furni_tarahouse_wallpaper_01",
           "furni_tarahouse_floor_01"
         ]
+      },
+      "furni_set_kaltsroom_1": {
+        "id": "furni_set_kaltsroom_1",
+        "sortId": 1,
+        "name": "'Calibrating Temperature'",
+        "themeId": "furni_set_kaltsroom",
+        "comfort": 280,
+        "count": 5,
+        "furniture": [
+          "furni_kaltsroom_ceilinglight_01",
+          "furni_kaltsroom_sample_01",
+          "furni_kaltsroom_cabinet_01",
+          "furni_kaltsroom_carpet_01",
+          "furni_kaltsroom_sofa_01"
+        ]
+      },
+      "furni_set_kaltsroom_2": {
+        "id": "furni_set_kaltsroom_2",
+        "sortId": 2,
+        "name": "'Synchronizing Pulse'",
+        "themeId": "furni_set_kaltsroom",
+        "comfort": 200,
+        "count": 4,
+        "furniture": [
+          "furni_kaltsroom_clock_01",
+          "furni_kaltsroom_display_01",
+          "furni_kaltsroom_shelf_01",
+          "furni_kaltsroom_ceilinglight_02"
+        ]
+      },
+      "furni_set_kaltsroom_3": {
+        "id": "furni_set_kaltsroom_3",
+        "sortId": 3,
+        "name": "'Restoring Consciousness'",
+        "themeId": "furni_set_kaltsroom",
+        "comfort": 185,
+        "count": 4,
+        "furniture": [
+          "furni_kaltsroom_table_01",
+          "furni_kaltsroom_carpet_02",
+          "furni_kaltsroom_chair_01",
+          "furni_kaltsroom_cart_01"
+        ]
+      },
+      "furni_set_kaltsroom_4": {
+        "id": "furni_set_kaltsroom_4",
+        "sortId": 4,
+        "name": "'Reconstructing Memory'",
+        "themeId": "furni_set_kaltsroom",
+        "comfort": 275,
+        "count": 5,
+        "furniture": [
+          "furni_kaltsroom_light_01",
+          "furni_kaltsroom_cabinet_02",
+          "furni_kaltsroom_sample_02",
+          "furni_kaltsroom_wallpaper_01",
+          "furni_kaltsroom_floor_01"
+        ]
       }
     },
     "types": {
@@ -115720,6 +116705,145 @@
       ],
       "requireStages": []
     },
+    "66": {
+      "sortId": 1998,
+      "formulaId": "66",
+      "rarity": 0,
+      "itemId": "30165",
+      "count": 1,
+      "goldCost": 400,
+      "apCost": 2880000,
+      "formulaType": "F_EVOLVE",
+      "buffType": "W_EVOLVE",
+      "extraOutcomeRate": 0.1,
+      "extraOutcomeGroup": [
+        {
+          "weight": 71,
+          "itemId": "30014",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "30024",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "30034",
+          "itemCount": 1
+        },
+        {
+          "weight": 47,
+          "itemId": "30044",
+          "itemCount": 1
+        },
+        {
+          "weight": 47,
+          "itemId": "30054",
+          "itemCount": 1
+        },
+        {
+          "weight": 35,
+          "itemId": "30064",
+          "itemCount": 1
+        },
+        {
+          "weight": 61,
+          "itemId": "30074",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "30084",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "30094",
+          "itemCount": 1
+        },
+        {
+          "weight": 47,
+          "itemId": "30104",
+          "itemCount": 1
+        },
+        {
+          "weight": 61,
+          "itemId": "31014",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "31024",
+          "itemCount": 1
+        },
+        {
+          "weight": 47,
+          "itemId": "31034",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "31044",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "31054",
+          "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31064",
+          "itemCount": 1
+        },
+        {
+          "weight": 53,
+          "itemId": "31074",
+          "itemCount": 1
+        },
+        {
+          "weight": 50,
+          "itemId": "31084",
+          "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31094",
+          "itemCount": 1
+        }
+      ],
+      "costs": [
+        {
+          "id": "31094",
+          "count": 2,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "31084",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "31074",
+          "count": 1,
+          "type": "MATERIAL"
+        }
+      ],
+      "requireRooms": [
+        {
+          "roomId": "WORKSHOP",
+          "roomLevel": 3,
+          "roomCount": 1
+        }
+      ],
+      "requireStages": [
+        {
+          "stageId": "main_15-08",
+          "rank": 2
+        }
+      ]
+    },
     "62": {
       "sortId": 1999,
       "formulaId": "62",
@@ -115820,6 +116944,11 @@
         {
           "weight": 50,
           "itemId": "31084",
+          "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31094",
           "itemCount": 1
         }
       ],
@@ -115955,6 +117084,11 @@
           "weight": 50,
           "itemId": "31084",
           "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31094",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -116089,6 +117223,11 @@
           "weight": 50,
           "itemId": "31084",
           "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31094",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -116218,6 +117357,11 @@
           "weight": 50,
           "itemId": "31084",
           "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31094",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -116342,6 +117486,11 @@
           "weight": 50,
           "itemId": "31084",
           "itemCount": 1
+        },
+        {
+          "weight": 57,
+          "itemId": "31094",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -116369,6 +117518,145 @@
         }
       ],
       "requireStages": []
+    },
+    "65": {
+      "sortId": 2094,
+      "formulaId": "65",
+      "rarity": 0,
+      "itemId": "31094",
+      "count": 1,
+      "goldCost": 300,
+      "apCost": 1440000,
+      "formulaType": "F_EVOLVE",
+      "buffType": "W_EVOLVE",
+      "extraOutcomeRate": 0.1,
+      "extraOutcomeGroup": [
+        {
+          "weight": 50,
+          "itemId": "30013",
+          "itemCount": 1
+        },
+        {
+          "weight": 42,
+          "itemId": "30023",
+          "itemCount": 1
+        },
+        {
+          "weight": 42,
+          "itemId": "30033",
+          "itemCount": 1
+        },
+        {
+          "weight": 36,
+          "itemId": "30043",
+          "itemCount": 1
+        },
+        {
+          "weight": 36,
+          "itemId": "30053",
+          "itemCount": 1
+        },
+        {
+          "weight": 25,
+          "itemId": "30063",
+          "itemCount": 1
+        },
+        {
+          "weight": 42,
+          "itemId": "30073",
+          "itemCount": 1
+        },
+        {
+          "weight": 36,
+          "itemId": "30083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "30093",
+          "itemCount": 1
+        },
+        {
+          "weight": 25,
+          "itemId": "30103",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31013",
+          "itemCount": 1
+        },
+        {
+          "weight": 36,
+          "itemId": "31023",
+          "itemCount": 1
+        },
+        {
+          "weight": 36,
+          "itemId": "31033",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31043",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31053",
+          "itemCount": 1
+        },
+        {
+          "weight": 28,
+          "itemId": "31063",
+          "itemCount": 1
+        },
+        {
+          "weight": 28,
+          "itemId": "31073",
+          "itemCount": 1
+        },
+        {
+          "weight": 25,
+          "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
+        }
+      ],
+      "costs": [
+        {
+          "id": "31093",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "31083",
+          "count": 1,
+          "type": "MATERIAL"
+        },
+        {
+          "id": "30023",
+          "count": 1,
+          "type": "MATERIAL"
+        }
+      ],
+      "requireRooms": [
+        {
+          "roomId": "WORKSHOP",
+          "roomLevel": 3,
+          "roomCount": 1
+        }
+      ],
+      "requireStages": [
+        {
+          "stageId": "main_15-08",
+          "rank": 2
+        }
+      ]
     },
     "64": {
       "sortId": 2095,
@@ -116470,6 +117758,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -116605,6 +117898,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -116738,6 +118036,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -116873,6 +118176,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -117006,6 +118314,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -117141,6 +118454,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -117274,6 +118592,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -117409,6 +118732,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -117543,6 +118871,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -117671,6 +119004,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -117801,6 +119139,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -117929,6 +119272,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -118177,6 +119525,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -118423,6 +119776,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -118671,6 +120029,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -118917,6 +120280,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],
@@ -119165,6 +120533,11 @@
           "weight": 25,
           "itemId": "31083",
           "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
+          "itemCount": 1
         }
       ],
       "costs": [
@@ -119411,6 +120784,11 @@
         {
           "weight": 25,
           "itemId": "31083",
+          "itemCount": 1
+        },
+        {
+          "weight": 31,
+          "itemId": "31093",
           "itemCount": 1
         }
       ],

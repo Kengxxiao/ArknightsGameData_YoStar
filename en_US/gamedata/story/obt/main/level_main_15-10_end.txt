@@ -1,0 +1,753 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="60_g11_rhodescanteen_origin",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playsound(key="$alarmenter",volume=0.5)]
+[Blocker(a=0.4, r=0.5,g=0.1,b=0.1, fadetime=0.7, block=true)]
+[Blocker(a=0.5, r=0,g=0,b=0, fadetime=0.7, block=true)]
+[playsound(key="$alarmenter",volume=0.5)]
+[Blocker(a=0.4, r=0.5,g=0.1,b=0.1, fadetime=0.7, block=true)]
+[Blocker(a=0.5, r=0,g=0,b=0, fadetime=0.7, block=true)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_167",duration=0.5)]
+[Delay(time=1)]
+[name="Stormeye"]Is the backup power online yet?
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]The junction box broke. Try cutting off that damaged circuit. Maybe short-circuit protection is still kicking in.
+[name="Sharp"]Watch your feet.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]I can see.
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$d_avg_bowstring_tightened", loop=true, channel="a",volume=1)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowstring_rebound")]
+[Delay(time=1)]
+[playsound(key="$d_avg_shockbody")]
+[Blocker(a=0.3, r=0, g=0, b=0, afrom=0.5, rfrom=0, gfrom=0, bfrom=0, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.4, rfrom=0, gfrom=0, bfrom=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]We're in luck.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]The Originium crystals all appeared in an instant.
+[name="Stormeye"]Still no word from anyone else?
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]Comms are still jammed. Even the emergency frequencies are out.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]I have even worse news. For some reason, Rhodes Island is currently headed northwest at maximum speed.
+[name="Stormeye"]At this rate, it's only a matter of time before we collide with a mobile mining platform.
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]We must eliminate all possible dangers along the course. Protect the ship from the outside, and prevent collateral damage.
+[name="Sharp"]Let's get out of here and check our vehicle inventory in the <i>Bad Guy's</i> cabin.
+[name="Sharp"]Space around here has been transformed. Existing maps are no longer reliable. Stay close to me.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"](Comes to a sudden stop)
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]Is something wrong?
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]They're coming again.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_arrow")]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+Hardly had he finished when an arrow whooshed through the air.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.4, rfrom=0, gfrom=0, bfrom=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]Missed?
+[charslot]
+There is no answer.
+[dialog]
+[playsound(key="$d_avg_gateopen")]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n",channel="2")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]Stormeye?
+[charslot]
+Sharp turns around to see that the door to the restaurant has turned into a metal wall crawling with Originium.
+[dialog]
+[charslot(slot="m",name="avg_npc_1728_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+But it is not Stormeye standing behind him—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="Originium Entity"](Approaches soundlessly)
+[dialog]
+[Effect(name="$e_magic_hit_02",layer = 1,x = -200)]
+[playsound(key="$d_avg_spellattack_1")]
+[Delay(time=0.2)]
+[Effect(name="$e_magic_hit_02",layer = 1,x = 200)]
+[playsound(key="$d_avg_spellattack_2",channel="2")]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_mechadown",volume=0.5)]
+[Delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_mechadown",volume=0.5,channel="5")]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_095",duration=0.5)]
+[Delay(time=1)]
+[name="Pith"]Is that it?
+[dialog]
+[charslot]
+[playsound(key="$transmission")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = false, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[Delay(time=1.5)]
+[interlude(channel = 3, clear = true,tsduration = 0.5,tsfrom = "1,1", tsto="0,1")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_095")]
+[name="Pith"]Communications are still out.
+[name="Pith"]I wonder how the others are doing.
+[charslot(slot = "m", focus = "n")]
+Pith gazes at the communicator silently with a furrowed brow.
+[charslot(slot = "m", focus = "m")]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+The footsteps disappear into the distance.
+[dialog]
+[playsound(key="$d_avg_stonegrowing")]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.5)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+But the fallen Originium entities rise again, moving in perfect unison, striding over the damaged communicator on the ground.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[name="Broken Communicator"]'—*Bzzt* All operators... receiving this message...'
+[name="Broken Communicator"]'Do not... trust... communications blocked...'
+[name="Broken Communicator"]'*Bzzt*... Rhodes Island... awake...'
+[dialog]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_rhodescorner",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_235",duration=0.5)]
+[Delay(time=1)]
+[name="Misery"]'Awake'?
+[charslot(slot = "m", focus = "n")]
+[name="Ascalon"]Watch the sides.
+[dialog]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=0.3,posfrom = "200,0", posto = "-100,0")]
+[playsound(key="$d_avg_swrdclave")]
+[Effect(name="$e_slash_01_s",layer = 1,x = 0,rox=-30,roy=70)]
+[Delay(time=0.2)]
+[playsound(key="$d_avg_runstop",channel="3")]
+[charslot(slot="m",duration=0.3,posfrom = "0,0", posto = "-300,0",afrom=1,ato=0)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_daggerexsheath")]
+[Blocker(a=0.15, r=1, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="r",duration=0.3,posfrom = "-100,0", posto = "-100,-100",afrom=1,ato=0)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=20, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown1",channel="4")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_glassbroken")]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_4132_ascln_1#8$1",duration=0.5)]
+[Delay(time=1)]
+[name="Ascalon"]Very strange. These things won't die.
+[charslot]
+Ascalon points her sleeve-blade towards a wavering shadow not far away.
+Silhouettes manifest from the shadows like ghosts, every step accompanied by the sound of crystal cracking.
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]The clothes they wear—Reunion? And Nachzehrers too... nothing can surprise me now.
+[charslot(slot="m",name="avg_4132_ascln_1#8$1")]
+[name="Ascalon"]Their bodies are composed entirely of Originium. We cannot rely on past experience.
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]Guess we'll have to improvise.
+[charslot(slot="m",name="avg_4132_ascln_1#1$1")]
+[name="Ascalon"]We can't just stay here. We have to find where these things came from.
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]The intention of these enemies is unclear, as is the situation on the Doctor's side. If...
+[charslot(slot="m",name="avg_4132_ascln_1#1$1")]
+[name="Ascalon"]Amiya is with the Doctor. No need to worry.
+[name="Ascalon"]We continue with our mission—ascertaining the source of the abnormal events.
+[charslot(slot="m",name="avg_4132_ascln_1#3$1")]
+[name="Ascalon"]If this is what Kal'tsit was guarding against, then these things must follow the command of some unknown actor...
+[dialog]
+[charslot]
+[playsound(key="$transmission")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]Communications are still out. We can't reach anyone else.
+[name="Misery"]I wonder if the other elite operators—
+[name="Misery"]Ascalon...
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", focus = "n")]
+As they pass by the Originium crystals, Misery catches a glimpse of a fleeting image in the multi-faceted reflections of the crystals.
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]Did I just see Outcast?
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+Clack, clack—
+A sharp claw separates itself from the surface of the Originium crystal, then curled horns, rugged silhouette, and spiked tail.
+This creature is not unfamiliar to Rhodes Island's battle records, but never has it been composed solely of Originium.
+[CameraShake(duration=0.2, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowstring_rebound")]
+As the never-before-seen form of life takes its first step, an arrow impales its throat and shatters its skull.
+[dialog]
+[charslot(slot="m",name="avg_npc_167",duration=1)]
+[Delay(time=2)]
+[name="Stormeye"]—Safe. For now.
+[dialog]
+[PlaySound(key="$blooddrop")]
+[Delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+Stormeye leans against the wall and pauses to catch his breath, before tending to his wounds.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]At least it won't hinder me in battle.
+[dialog]
+[playsound(key="$transmission")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+[name="Communicator"](Static)
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]Sharp. Come in, Sharp. Can you hear me?
+[name="Stormeye"]If you hear me, leave a sign somewhere, any way you can. I'll come and find you.
+[charslot(slot = "m", focus = "n")]
+[name="Communicator"](Static)
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]...Dammit—
+[charslot(slot = "m", focus = "n")]
+[name="Communicator"]*Bzzt*—Stor...Stormeye—Careful—*bzzt—
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]Sharp?! What's your location?
+[charslot(slot = "m", focus = "n")]
+[name="Communicator"]*Bzzt*—Engaging—Whitesmith—Stop—
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]...? Wait for me!
+[dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot = "m",posfrom = "0,0", posto = "350,0",duration = 1,afrom=1,ato=0)]
+[Delay(time=2.5)]
+[charslot(slot = "r",posfrom = "-200,0", posto = "0,0",duration = 1,name="avg_npc_1726_1#2$1")]
+[Delay(time=1)]
+[playsound(key="$d_avg_productdu_attack")]
+[charslot(slot = "l",posfrom = "-200,0", posto = "0,0",duration = 1,name="avg_npc_1726_1#2$1")]
+[Delay(time=1.5)]
+[name="Originium-Infested Machine"]...Assist...
+[charslot]
+More rampaging machines rush into the corridor, the light in their eyes flashing in sync.
+Their simple voice units repeat a call for help, defying the limitations of their design.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]Not now!
+[charslot]
+[dialog]
+[charslot(slot = "r",name="avg_npc_1726_1#2$1")]
+[charslot(slot = "l",name="avg_npc_1726_1#2$1")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_arrowtarget")]
+[playsound(key="$d_avg_arrowtarget",channel="2",delay=0.2)]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_shockbody")]
+[charslot(slot ="l", action="shake", power=7, times=50, duration=0.5)]
+[charslot(slot ="r", action="shake", power=7, times=50, duration=0.5)]
+[Delay(time=0.8)]
+[charslot(duration=1)]
+[Delay(time=1.8)]
+Stormeye's arrow pierces the cores of two of the machines with unerring accuracy. Then he makes a run for it, not pausing to look back.
+[Dialog]
+[playsound(key="$rungeneral")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]At least... thirty.
+[name="Stormeye"]A fork...
+[charslot(slot = "m", focus = "n")]
+Two virtually identical corridors extend as far as Stormeye's eye could see.
+The pathways within Rhodes Island are undergoing constant, haphazard changes. No one knows to which fates the diverging corridors lead.
+The rampaging machines are catching up.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="npc_10002",duration=0.5)]
+[Delay(time=1)]
+[playsound(key="$p_skill_Mon3trburst")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mon3tr"](Furious howl)
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Faster than expected. Rhodes Island is not ready.
+[name="Kal'tsit"]If there is such a thing as being ready for her.
+[charslot(slot="m",name="npc_10002")]
+[name="Mon3tr"](Alerted growl)
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="Kal'tsit"]However, something is clearly not right with her as well. She would not resort to such inefficient means otherwise.
+[name="Kal'tsit"]This may be our last chance to gain the upper hand.
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1727_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1728_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="Originium Entity"](Approaches silently)
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#6$1")]
+[name="Kal'tsit"]Clear a way, Mon3tr. Don't get stuck in a fight.
+[name="Kal'tsit"]Time is of the essence.
+[charslot(duration=1)]
+The passage before Kal'tsit changes again, in an attempt to lead her astray.
+But the warping of space does not affect Kal'tsit. She can still sense her target—the Sarcophagus of Dr. {@nickname}.
+The information is etched into the bottommost layer of her memory.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",duration=1)]
+[Delay(time=2)]
+[name="Kal'tsit"]Mon3tr. Eliminate all threats that approach the Sarcophagus. Buy me time.
+[charslot(slot="m",name="npc_10002")]
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"](Excited howling)
+[charslot]
+Once again, she stands before the familiar Sarcophagus.
+Once, she awoke the hope that slumbered within, only to find pain that could not be easily wiped away.
+Now, it is their last hope.
+[charslot(slot="m",name="avg_003_kalts_1#5$1")]
+[name="Kal'tsit"]I can't guarantee that this is going to work, Mon3tr.
+[name="Kal'tsit"]But I won't just sit around and watch a fighting chance slip away.
+[charslot(duration=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+Kal'tsit walks towards the Sarcophagus and places a white flower on top of it.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[image(image="49_i22",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Kal'tsit"]This is her legacy. Little did she know at the time that it was fire stolen from the 'gods'.
+[name="Kal'tsit"]...We must all challenge those higher beings and fight for a chance to live.
+[name="Mon3tr"](Nervous growl)
+[name="Kal'tsit"]If something goes wrong, Mon3tr, act on your own discretion.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+She enters the Sarcophagus.
+[dialog]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1",duration=1)]
+[Delay(time=2)]
+[name="Raidian"]The interference is really bad.
+[name="Raidian"]Not only am I not getting any signals, my Originium Arts are also being suppressed by the environment.
+[name="Raidian"]Think, think—
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_signlntrfrnc", volume=1)]
+[Delay(time=1.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="'Raidian...'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]This signal profile—PRTS?!
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]Closure? But the terminal still shows disconnected.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="'Track me...'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+Raidian tracks the faint signal to an unexpected source.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]Dr. Kal'tsit?!
+[name="Raidian"]How? But you're—no matter how you did it, you need to—
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]...No, you can't stop now.
+[name="Raidian"]Thank you, Dr. Kal'tsit.
+[name="Raidian"]I know what to do now.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+[Subtitle(text="'This is Raidian speaking.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'With assistance, I have been able to establish a temporary electromagnetic communications environment.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Intel provided by Dr. Kal'tsit indicates that the abnormal events currently occurring on Rhodes Island originated from the core area known as the Abyss.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'You are now receiving a briefing about the Abyss. All elite operators are asked to locate the Abyss, while making every effort to ensure your own safety.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'I repeat. Locate the Abyss, but do not approach without permission. Maintain constant communication at all times.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Do your duty, elite operators—'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Dr. Kal'tsit will be your eyes.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[charslot]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$rebel_intro",key="$rebel_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_095",duration=0.5)]
+[Delay(time=1)]
+[name="Pith"]...Kal'tsit? Thanks.
+[name="Pith"]This is Pith calling to all combat-effective operators. Report.
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$transmission")]
+[name="Alanna"]We're still trying to stop these... things!
+[name="Alanna"]But they just keep coming!
+[charslot(slot="m",name="avg_npc_095")]
+[name="Pith"]We lack the means to completely neutralize these hostile Originium entities. Survival is your first priority.
+[name="Pith"]Any injured personnel are to immediately disengage and seek assistance from Touch.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_171_bldsk_1#10$1",duration=0.5)]
+[Delay(time=1)]
+[name="Warfarin"]Kal'tsit... what have you done THIS time?
+[charslot(slot="m",name="avg_npc_243")]
+[name="Chloe"]Dr. Warfarin! Look out!
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="Warfarin"]These things can't hurt me for now. But there are too many of them. It's not easy trying to protect everyone.
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="Warfarin"]Raidian's intel indicates that these things can't be killed.
+[charslot(slot="m",name="avg_npc_243")]
+[name="Chloe"]'Kill'... are these things even alive?
+[name="Chloe"]Have Dr. Touch and Dr. Kal'tsit run into these monsters too?
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="Warfarin"]Protect yourself. We're not as weak as you think—
+[dialog]
+[charslot(slot = "left", name = "avg_npc_1727_1#1$1",duration = 0.3)]
+[charslot(slot = "left",posfrom = "-100,0", posto = "-100,0",duration = 0.5)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_171_bldsk_1#5$1",posfrom = "0,0", posto = "100,0",duration = 0.3)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_1", volume=1)]
+[Blocker(a=0.5, r=1, g=0, b=0, fadetime=0.3, block=true)]
+[charslot(slot = "left",posfrom = "-100,0", posto = "-250,0",duration = 0.5,afrom=1,ato=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[charslot(slot = "r", name = "avg_npc_1728_1#1$1",duration = 0.2)]
+[PlaySound(key="$e_skill_skulsrsword",volume=0.5,block=true)]
+[charslot(slot = "r",posfrom = "400,0", posto = "200,0",duration = 0.4)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[charslot(slot="m",posfrom = "100,0", posto = "-450,0",duration = 0.5)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_2", volume=1)]
+[Blocker(a=0.3, r=1, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot = "r",posfrom = "200,0", posto = "200,-120",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[Delay(time=0.8)]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="Warfarin"]*Sarkaz expletive*!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.5)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="Warfarin"]What I wouldn't do for a chance to take you apart, piece by piece, to find out for sure whether you monsters can die—
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Warfarin"]Get clear, Chloe!
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_1", volume=1)]
+The Originium entities continue to rush towards Warfarin. Two successfully penetrate her defenses.
+They raise their hands towards Chloe—
+[dialog]
+[delay(time=1)]
+Then stop. Their motion is not one of aggression, more like an invitation to the patient in front of them, one who is so close to death's door—
+[dialog]
+[charslot(slot = "left", name = "avg_npc_243",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left",focus="l")]
+[name="Chloe"]......
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="Warfarin"]——?!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_243",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="r")]
+[name="Originium Entity"](Gazes silently)
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="Warfarin"]Get back! Don't touch them!
+[charslot]
+[charslot(slot = "left", name = "avg_npc_243",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="l")]
+[name="Chloe"]B-But I can hear him... screaming? It's like those pained voices are etched into my mind...
+[name="Chloe"]W-We're very... alike...
+[dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "100,0",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+Chloe takes the hand of the Originium entity. Her eyes are filled with sorrow.
+[charslot(slot = "left", name = "avg_npc_243",focus="l")]
+[name="Chloe"]Why... why don't you hurt me?
+[name="Chloe"]...Are we the same?
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#10$1")]
+[name="Warfarin"]Is it because of your infection? The symptoms we've never seen before... Originium is changing.
+[name="Warfarin"]—That's why your condition progressed quicker than expected!
+[charslot]
+[charslot(slot = "l", name = "avg_npc_243",posfrom = "100,0", posto = "100,0")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="l")]
+[name="Chloe"]Does this mean I can help you find a way to deal with them?
+[name="Chloe"]I want to try. I want to help you.
+[name="Chloe"]I don't want to disappoint you, or let Dr. Touch or Dr. Kal'tsit get hurt...
+[dialog]
+[charslot(slot = "right",focus="all")]
+[PlaySound(key="$d_avg_blodmgic_2", volume=1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",afrom=1,ato=0,duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_171_bldsk_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+Warfarin repels the Originium entity in front of Chloe and stands before her patient in a defensive posture.
+[charslot(slot = "right", name = "avg_171_bldsk_1#1$1",focus="r")]
+[name="Warfarin"]Do you understand what it is you're offering?
+[charslot(slot = "l", name = "avg_npc_243",posfrom = "100,0", posto = "100,0",focus="l")]
+[name="Chloe"](Smiles) I don't. But I'm not afraid.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g11_rhodescanteen_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1728_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.3)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=1)]
+[Effect(name="$e_slash_02_l",x = 200,y=-150,rox=20,roz=-40,layer = 2)]
+[playsound(key="$e_skill_skulsrsword",volume=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Delay(time=0.3)]
+[charslot(slot="l",name="avg_npc_1728_1#1$1",duration=0.5,posfrom = "0,0", posto = "0,-80",afrom=1,ato=0)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown3",volume=1)]
+[Delay(time=0.3)]
+[Effect(name="$e_fist_hit_01",x = 250,y=50,rox=20,roz=-40,layer = 2)]
+[playsound(key="$d_avg_arrowtarget",volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=0.5,posfrom = "0,0", posto = "0,-80",afrom=1,ato=0)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown3",volume=1)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]Not as fast as you say, Stormeye.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]I got sidetracked by the changes to the deck plan.
+[name="Stormeye"]Luckily, Dr. Kal'tsit and Raidian were able to reestablish communications. Who knows what else I would've run into.
+[name="Stormeye"]You mentioned Whitesmith over the radio?
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]......
+[name="Sharp"]One instant she was inviting me to drink and dance in front of her fire. The next instant she was gone, leaving only a bunch of Originium-polluted machines crawling out of the furnace to attack me.
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]A hallucination?
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]I can tell what's real and what's not, Stormeye. But what's happening here is beyond anything I can comprehend.
+[name="Sharp"]Not that I'm the only one who's seeing strange things.
+[charslot]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+Originium formations are growing at a visible pace. They thought they knew Originium well enough, but now the facets of the crystals threaten to draw their very minds in.
+[dialog]
+[PlaySound(key="$d_avg_tinnitus", volume=1,channel="2")]
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]...?
+[charslot(slot = "m", focus = "n")]
+Stormeye narrows his eyes. He sees Sharp's mouth moving, but his ears hear nothing.
+All is quiet. Soon, he cannot even hear his own heartbeat.
+The expression he sees on Sharp's face changes.
+[stopmusic(fadetime=2)]
+The next instant, all sound disappears from Rhodes Island, leaving only dead silence in the communications channel that Raidian established.
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'Don't fall behind, Stormeye.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+He sees familiar figures, men who were once brothers to him...
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]——?!
+[charslot(slot = "m", focus = "n")]
+He has been reunited with the brothers from his wandering days. But they died long ago...
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'That beer we looted is gonna get warm if you don't drink it quick. What are you so worried about?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"](Soundless words)
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'Yeah, the rocks have gotten to my throat, but I can still drink. Haven't gotten my tongue yet.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'You really want to go with those people? Suit yourself. Won't shed any tears for you if you die on that Rhodes Island.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'But... sit a while longer by the fire before you go. The moons are almost up. Don't you want to see them?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+He had yearned for a peaceful parting with his brothers, but right now all Stormeye feels is anger.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+At the same time, on the other side of Rhodes Island...
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'Where are you going?'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_4132_ascln_1#6$1")]
+[name="Ascalon"]......
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'You've already found me, Ascalon.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'There's no need to go any further.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=50, randomness=90, fadeout=true, block=true)]
+[Effect(name="$e_spark_01_mid",x=0,y=50,rox=-180,roy=50,roz=-40,layer = 2)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, fadetime=2, block=false)]
+Only a timely push by Misery saved Ascalon from the flying Originium shrapnel.
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'We haven't settled our bet yet, Misery.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Don't get distracted. Look, I still have four rounds left in my gun.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]......
+[charslot]
+Originium is growing rampant, and the appearances of the mysterious Originium enemies are ever more frequent, accompanied by 'illusions' that they cannot help but be distracted by—
+The very place itself is trying to drive them out.
+Ascalon wants to reach Raidian, to tell her that the Abyss has been located...
+But the Originium drowns out all sound.
+The deathly silence is a mystery, a tomb made of lead, threatening to drag Rhodes Island into an abyss from which there is no escape—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Subtitle(text="'This is Mantra'.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'I've spoken to Dr. Kal'tsit. I will not suffer this mockery of memory and emotion.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+Every operator on Rhodes Island hears Mantra's voice in their head. It is her Originium Arts, the power and fury of which all of them can sense.
+[dialog]
+[PlaySound(key="$d_avg_stkmyer")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_phntsmbrek")]
+[Delay(time=1)]
+[playMusic(intro="$indust_intro",key="$indust_loop", volume=0.6)]
+[Subtitle(text="'If it tries to stop us with silence—'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'—Then I will be the voice that connects us.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'Now, I return your voices to you.'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[dialog]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",duration=0.5)]
+[Delay(time=1)]
+[name="Amiya"]It's Mantra!
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]She's sharing the information that the others have collected.
+[name="Amiya"]Ascalon and Misery are close to the Abyss.
+[name="Amiya"]They've sent over the Abyss's signal profile to Raidian, who will be able to trace it, even if the spatial environment changes again.
+[name="Amiya"]They are currently holding position, helping Raidian establish an information anchor based on their own biosignals.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="It's too dangerous.;They need reinforcements.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]Blaze and Rosmontis are on their way. It won't take long.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="Amiya"]I'm worried about Dr. Kal'tsit too, Doctor.
+[name="Amiya"]Raidian's information indicates that Dr. Kal'tsit is in a dangerous predicament...
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Regroup at Ascalon and Misery's position.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Then, we'll work together to find a way through the Abyss.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We won't make Kal'tsit wait too long.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="Amiya"]Yeah. We're able to maintain communications thanks to Raidian and Mantra's Arts, but this puts a lot of stress on both of them.
+[name="Amiya"]Time is of the essence, Doctor. Let's go.
+[charslot(duration=1)]
+[playsound(key="$d_avg_brokencrystal_fts")]
+You carefully lead Amiya through a forest of Originium shards. Your ability to precisely predict when and where explosions will occur is a major advantage.
+Focused on the path ahead, you fail to notice a little detail on the massive crystal formation that you just passed.
+[stopmusic(fadetime=2)]
+It is not your figures that are reflected in the smooth surface of the Originium crystal.
+A Cautus girl with her back to you, her thin, fragile hand held by another, just like you and Amiya right now.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image]
+[charslot]

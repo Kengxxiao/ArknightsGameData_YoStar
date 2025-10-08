@@ -1,0 +1,498 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlayMusic(key="$m_bat_act37d0d0_01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+Kal'tsit has disappeared from your vision, before you even have a chance to process what has happened.
+The only thing left on the deck is a jacket.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"](Pained wail)
+Next, Mon3tr's massive frame begins to contract, shrinking into a black, crystalline cocoon.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#2$1", duration=1.5, isblock=true)]
+[name="Priestess"]AMa-10 was one of my proud creations.
+[name="Priestess"]This was not the result I had hoped for.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="She had a name.;Her name was Kal'tsit.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1718_1#3$1")]
+[name="Priestess"]It had its own code name. I do not recognize any significance in the renaming.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+Priestess walks towards the cocoon on the deck.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="Amiya"]Step back, Doctor! I must protect Mon3tr!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_spelldfns_1", volume=1)]
+[Blocker(a=0, r=255,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=255,g=0, b=0, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_spellattack_2", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2,block=false)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spiritwhoosh")]
+[PlaySound(key="$p_aoe_nmag_h")]
+[delay(time=0.3)]
+[PlaySound(key="$p_imp_amiyamag_h", volume=0.9)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.5)]
+[PlaySound(key="$b_char_defboost", volume=0.5, Delay=0.4)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.2, Delay=0.7)]
+[PlaySound(key="$flashback", volume=0.2, Delay=0.7)]
+[PlaySound(key="$d_avg_attack_heavy", volume=0.9)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, block=false)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.1, r=1, g=0.4, b=0.1, afrom=1, rfrom=1, gfrom=0.4, bfrom=0.4, fadetime=0.2, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0.8, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.3, block=true)]
+[Blocker(a=0.1, fadetime=2, block=true)]
+Threads emerge from Amiya's staff, attempting to stall Priestess's steps.
+But Originium continues to grow from the ground in strange angles, assimilating Amiya's Arts.
+You can tell that Amiya is struggling.
+Priestess, whose powers seem impossible to resist, and Kal'tsit's only legacy—
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="Priestess"]You want to save it?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1718_1#8$1")]
+[name="Priestess"]I want to fix it too.
+[name="Priestess"]Not only does AMa-10 carry our hopes, it has also preserved a record that is very important to me.
+[charslot]
+You have yet to recover from the shock.
+You do not even have the luxury of sorrow in the face of the threat before you.
+What will Priestess do next? How should you protect Amiya?
+Priestess apparently notices your thought process—
+[charslot(slot = "m", name = "avg_npc_1718_1#6$1")]
+[name="Priestess"]Why... are you afraid of me, Dr. {@nickname}?
+[charslot]
+She approaches you.
+[dialog]
+[Decision(options="(Think... think of something...);(Think of something!)", values="1;2")]
+[Predicate(references="1;2")]
+The Originium spreading under your feet has immobilized you and Amiya.
+You see <i>her</i> up close for the first time.
+[dialog]
+[stopmusic(fadetime=0.5)]
+[StopSound(channel="d", fadetime=0.5)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_graduate",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="Just what are you trying to do?!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]...I'm trying to protect you.
+[name="Kal'tsit"]Just like what I promised to do.
+[name="Kal'tsit"]I promised to protect both you and Amiya.
+[name="Kal'tsit"]Until the moment you breathe your last breath, Doctor. That's my responsibility.
+[name="Kal'tsit"]But I will never stop hating you. I am in no position to educate or criticize Rosmontis. After all, I might not be able to hold myself back from taking revenge.
+[dialog]
+[charslot]
+[Decision(options="...You...", values="1")]
+[Predicate(references="1")]
+There was a similar scenery and a similar conversation. There were different emotions during different eras. All of which are working together to bridge that large gap in your memories.
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]......
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="Kal'tsit"]What... did you just remember?
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Image(image="avg_8_9", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+'Priestess'.
+[dialog]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+No. This time, you remembered her first. You remembered Kal'tsit.
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[Image(image="avg_ac8mi_melancholic_kalts", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+The physician whom you trusted so deeply still seems to be here.
+You recall searching for the clues Kal'tsit left behind in Civilight Eterna...
+You recall the words Kal'tsit left for you, when all the links are connected—
+'I never forgot.'
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-50)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=20, block=false)]
+[focusout(type="bg", id="60_g1_rhodescorridor_bc", from=0, to=1, duration=0.1, block=false)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.3, channel="d",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="Oracle"](Whispering in unknown language) No matter where in this vast universe you came from, I bid you to witness the beacons we left behind, remnants of a civilization now gone to eternal rest.
+[name="Oracle"](Whispering in unknown language) Perhaps it will be our blessing... and the final gift of hope.
+You are certain that those eyes now see you, across the vast reaches of time.
+[dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[focusout(type="bg", id="60_g13_rhodesdeck_origin", from=1, to=0, duration=0, block=false)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=0.5)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="(The formulas...);(The gift...)", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(channel="d", fadetime=1)]
+[PlayMusic(key="$m_bat_theresa_loop", volume=0.6)]
+[Decision(options="Amiya! The formulas!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$3")]
+[name="Amiya"]Formulas?!
+[name="Amiya"]Dr. Kal'tsit mentioned that it reduces the loss of meta-information during transmission through special mediums...
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Reverse it.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Obstruct the transmission of information through Originium!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="Amiya"]What should I do?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Link to my mind!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$3")]
+[PlaySound(key="$d_avg_magic_1", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot(duration=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+There is no time to hesitate, Amiya acts.
+Once again, you share your thoughts with Amiya. All the memories of your researches come back to you.
+Relying on intuition and prior research, you begin to decipher the formulas, convert, then reverse...
+You understand that it will not be completely effective. But you must pray that it works—
+For Kal'tsit.
+[dialog]
+[Decision(options="Remember the things in my mind, Amiya!", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Amiya"]Got it, Doctor!
+[name="Amiya"]Just weave it in my Arts, as Logos taught me—
+[name="Amiya"]Then—
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="Amiya"]STOP!
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_icecrystlncrse", volume=1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[charslot]
+[background]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=0)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+Shockwaves from Amiya's Arts repel the Originium that surrounds you.
+[name="Priestess"]This is...?
+The Originium attempting to trap you again is unable to progress any further. Amiya's silhouette is reflected on the countless crystalline surfaces.
+[dialog]
+[Decision(options="It's working?!", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_scrystalroad", volume=1, loop=true, channel="sc")]
+[delay(time=1.5)]
+[StopSound(channel="sc", fadetime=6)]
+[name="Amiya"]I'm trying to hold on—
+[name="Amiya"]But the Originium is pressing in even faster now...
+[name="Amiya"]I... I need to work harder! I can do it!
+Amiya's eyes are resolute. You can't help but feel worried for her.
+[name="Priestess"]You do not understand the powers that you are toying with.
+[dialog]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[name="Amiya"]It seems my Arts aren't just stopping them, it's also detecting her status...
+[name="Amiya"]She's not as invincible as I thought—
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[PlaySound(key="$d_gen_surfacefrozen", volume=0, loop=true, channel="sur")]
+[SoundVolume(volume=0.6, channel="sur",fadetime=2)]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200)]
+[ImageTween(xFrom=-300, xTo=-380, duration=8, block=false)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200, fadetime=2)]
+[ImageTween(xFrom=-320, xTo=-380, duration=6, block=false)]
+[delay(time=1)]
+[name="Priestess"]Indeed, I've been roused too soon. The rate at which Originium has assimilated this planet falls below my expectations.
+[name="Priestess"]In addition, the reckless behavior of those two Terrans have prevented me from utilizing Originium as I planned...
+[name="Priestess"]But that does not mean you can change the inevitable with your clumsy usage of our technology.
+[dialog]
+[Decision(options="Amiya!", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_spellattack_1", volume=1)]
+[PlaySound(key="$d_avg_crystalmagic_intro", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, x=-380, y=-200, fadetime=0.5)]
+[ImageTween(xFrom=-380, xTo=100, duration=0.5, block=false)]
+[delay(time=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_crystalmagic_loop", volume=1, loop=true, channel="a")]
+[SoundVolume(volume=1, channel="sur",fadetime=2)]
+[Image(image="60_i13_2", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[cgitem(image="cgitem_60_i13_2", style="cg", sfrom=1.2, sto=1, sduration=30, layer = 1)]
+[cgitem(image="cgitem_60_i13_1", style="cg", sfrom=1, sto=1.5, sduration=30, layer = 2)]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1, channel="1")]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1, channel="2")]
+[PlaySound(key="$d_avg_land_impact", volume=1, channel="3")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+Pink threads fly out from Amiya's staff, dancing in the space enclosed by Originium.
+But you sense that Amiya is facing tremendous pressure.
+And Priestess's figure has become completely obstructed by Originium...
+You can see Priestess's eyes in every Originium fragment, every facet.
+It is as though...
+[dialog]
+[Decision(options="She is everywhere.", values="1")]
+[Predicate(references="1")]
+[name="Amiya"]Theresa is teaching me how to cast these new Arts more efficiently, Doctor!
+[name="Amiya"]I think I've weakened Priestess's control over Originium. I should be able to delay her—
+[dialog]
+As Amiya's Arts run wild, you hear a reassuring voice in your head.
+[SoundVolume(volume=0.2, channel="a",fadetime=2)]
+[SoundVolume(volume=0.2, channel="sur",fadetime=2)]
+[name="Mantra"]Doctor, Amiya, we're in the Abyss. The Originium interference was weakened for a moment.
+[name="Amiya"]It was...
+[name="Mantra"]Raidian has reestablished communications, but the situation is rough. I can barely use my Arts to help Raidian maintain the link.
+[name="Mantra"]Also, she can not detect Dr. Kal'tsit's biosignal.
+[name="Mantra"]Where are you? What's the situation?
+[dialog]
+[Decision(options="We're on the deck of Rhodes Island!", values="1")]
+[Predicate(references="1")]
+[Decision(options="We're confronting Priestess!", values="1")]
+[Predicate(references="1")]
+[Decision(options="Get in touch with Warfarin.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Evacuate the ship immediately.", values="1")]
+[Predicate(references="1")]
+[StopSound(channel="sur", fadetime=2)]
+[StopSound(channel="a", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[hidecgitem(image="cgitem_60_i13_2")]
+[hidecgitem(image="cgitem_60_i13_1")]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Delay(time=0.1)]
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Warfarin"]You heard the Doctor.
+[name="Warfarin"]Don't worry, Lancet-2 will help monitor your status.
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]I will not let you down, Dr. Warfarin!
+[charslot(slot = "m", name = "avg_171_bldsk_1#5$1")]
+[name="Warfarin"]Once you're out of the ship, establish an isolation zone around the ship according to Kal'tsit's original plan. Don't let any of those things get out!
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]You are not coming with us, Dr. Warfarin?
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[name="Warfarin"]My patients are still here. I'll lead their evacuation myself.
+[name="Warfarin"]Don't worry about me.
+[charslot(slot = "m", name = "avg_171_bldsk_1#10$1")]
+[name="Warfarin"](Why am I not hearing from you, Kal'tsit?)
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Decision(options="—Bzzt—Abandon ship, repeat, abandon ship.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Back up all data—Bzzt—", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="Closure"]I'm working on it! Give me some time!
+[name="Closure"]More importantly, once PRTS is shut down, its core data must be downloaded—
+[name="Closure"]Kal'tsit has set up a backdoor.
+[name="Closure"]It will be the key to eliminating the threat, once and for all.
+[charslot(slot = "m", focus="n")]
+[name="Mantra"]Mechanist acknowledges.
+[name="Mantra"]We are moving through the Abyss.
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="Closure"]Counting on you!
+[charslot(slot = "m", name = "avg_npc_1723_1#11$1")]
+[name="Closure"]Is Kal'tsit hurt, Doctor?
+[name="Closure"]Why am I not hearing from her?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="......;She's buying time for us.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Amiya and I will fight to the bitter end.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Rhodes Island...", values="1")]
+[Predicate(references="1")]
+[Decision(options="Is in your hands.", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$transmission", volume=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Background(image="60_g15_rhodesabyss_off",screenadapt="coverall")]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="en")]
+[SoundVolume(volume=0.8, channel="en",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=4)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Inside the Abyss</><p=2>At the same time</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]We have restored communications with the Doctor.
+[name="Raidian"]We stick to the plan.
+[charslot(slot = "m", name = "avg_391_rosmon_1#1$2")]
+[name="Rosmontis"]I'm not detecting any more enemies.
+[charslot(slot = "m", name = "avg_npc_1730_1#2$1")]
+[name="Raidian"]Nor any new data transmission from the PRTS core.
+[charslot(slot = "m", name = "avg_4133_logos_1#7$1")]
+[name="Logos"]It's too quiet.
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="Ascalon"]Location of the core, Raidian?
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]Here you go.
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="Ascalon"]Continue to push towards the core and attempt to deactivate it.
+[charslot(slot = "m", name = "avg_017_huang_1#11$2")]
+[name="Blaze"]I'll take point! PRTS will definitely come up with new waves of enemies to meet us.
+[charslot(slot = "m", name = "avg_npc_521_1#1$1")]
+[name="Mechanist"]I'll take charge of analyzing the core.
+[charslot(slot = "m", name = "avg_4133_logos_1#3$1")]
+[name="Logos"]'Aurora.'
+[name="Logos"]This little light will guide our way—
+[dialog]
+[PlaySound(key="$d_avg_magic_2", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[background]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[name="Logos"]—?
+[name="Mechanist"]What is it, Logos?
+[name="Logos"]This is not my light...
+[dialog]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1, sto = 1.5, sduration = 0.01, pfrom = "0,0",pto = "-55,-300", pduration = 0.01, rfrom=-11, rto=-11, rduration=0.1, afrom = 0, ato = 1, aduration = 0.5, layer = 1)]
+[Delay(time=2)]
+A rhombus-shaped halo hangs in the darkness, swaying gently.
+It is like a cold eye, gazing upon all present.
+[name="Ascalon"]Alert...
+[name="Blaze"]Is this the 'Priestess' that Dr. Kal'tsit was talking about?
+[name="Raidian"]I don't think so.
+[name="Raidian"]I just detected a large amount of haphazard but familiar signals.
+[name="Raidian"]They come from Rhodes Island itself.
+[dialog]
+[StopSound(channel="en", fadetime=4)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.5, sto = 1.2, sduration = 4, pfrom = "-55,-300",pto = "-70,-45", pduration = 4, rfrom=-11, rto=0, rduration=4, layer = 1)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_systemstart_weird", volume=1)]
+[Delay(time=1)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.2, sto = 1, sduration = 22, pfrom = "-70,-45",pto = "-55,0", pduration = 22, layer = 1)]
+[Image(image="60_i16", screenadapt="coverall", xScale=1.2, yScale=1.2, y=-50, fadetime=0.5)]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, yFrom=-50, yTo=0, duration=20, block=false)]
+[Delay(time=1)]
+[name="Misery"]What... is this?
+A massive machine emerges in the endless white noise—
+All present are familiar with the components that make up its frame.
+Closure has often showed off the parts that she used to modify Rhodes Island's modules. Some of them were made by the elite operators themselves.
+[name="Touch"]PRTS has repurposed and weaponized Rhodes Island's facilities.
+[name="Touch"]But where did they come from? They weren't supposed to be in the Abyss...
+[name="Ascalon"]Originium.
+Originium shards scatter irregularly across the unusual machine.
+No longer do they simply consume; now, they are creating.
+[name="Misery"]Are you telling me Originium can recreate the stuff that's on Rhodes Island?
+Logos is reminded of the tower in the Assimilated Universe, and of 'her'.
+[name="Logos"]It's not that simple.
+[name="Logos"]PRTS does not have the capability to decode Originium data. Someone else is intervening.
+[name="Ascalon"]Priestess.
+[name="Raidian"]Its data is connected to the core of PRTS in a way that I can't understand. These things are different from the Originium entities that we faced!
+[name="Blaze"]Looks like we're in for a fight.
+[name="Stormeye"]I see no other way.
+[name="Stormeye"]Ready?
+[dialog]
+[PlaySound(key="$d_avg_attack_ready", volume=1)]
+[Delay(time=1.5)]
+[name="Rosmontis"]Ready.
+The rhombus-shaped eye glows even brighter.
+Controlled by PRTS, the mimic machine charges up.
+[dialog]
+[PlaySound(key="$d_avg_energygather", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="No target restrictions. Combat style analysis complete.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nNo power restrictions.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS final cleanup protocol loaded—",block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]
