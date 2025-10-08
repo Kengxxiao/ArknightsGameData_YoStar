@@ -1,0 +1,498 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlayMusic(key="$m_bat_act37d0d0_01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+たった今起きた出来事を理解する間もなく、ケルシーはあなたの視界から完全に消え去った……
+甲板には、ただ彼女の外套だけがぽつんと残されていた。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"]（苦しげな雄たけび）
+ケルシーの消失に続き、Mon3trの巨大な体も収縮を始め、黒い結晶状の「繭」となった。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#2$1", duration=1.5, isblock=true)]
+[name="プリースティス"]AMa-10も、私にとって自慢の作品だったわ。
+[name="プリースティス"]これは決して私の期待していた結果ではないの。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="彼女には名前がある。;彼女は、「ケルシー」だ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1718_1#3$1")]
+[name="プリースティス"]すでにコードネームがあるでしょう。さらに名前を付けることに意味があるとは思えないわ。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+プリースティスが甲板に残された繭状の物体に近付く。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="アーミヤ"]――ドクター下がってください！　Mon3trは私が守ります！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_spelldfns_1", volume=1)]
+[Blocker(a=0, r=255,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=255,g=0, b=0, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_spellattack_2", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2,block=false)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spiritwhoosh")]
+[PlaySound(key="$p_aoe_nmag_h")]
+[delay(time=0.3)]
+[PlaySound(key="$p_imp_amiyamag_h", volume=0.9)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.5)]
+[PlaySound(key="$b_char_defboost", volume=0.5, Delay=0.4)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.2, Delay=0.7)]
+[PlaySound(key="$flashback", volume=0.2, Delay=0.7)]
+[PlaySound(key="$d_avg_attack_heavy", volume=0.9)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, block=false)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.1, r=1, g=0.4, b=0.1, afrom=1, rfrom=1, gfrom=0.4, bfrom=0.4, fadetime=0.2, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0.8, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.3, block=true)]
+[Blocker(a=0.1, fadetime=2, block=true)]
+糸がアーミヤのアーツユニットから散り、プリースティスの歩みを阻もうとする……
+しかし地面の源石がおかしな角度から生えてきて、アーミヤのあらゆるアーツを吸収する。
+あなたにはアーミヤが非常に苦しんでいるのが見て取れた。
+目の前に二つの存在があった。あまりにも強大で抗う術も見当たらないプリースティスと、そしてケルシーが唯一残したもの――
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="プリースティス"]AMa-10を助けたいの？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1718_1#8$1")]
+[name="プリースティス"]私もあれを直したいわ。あなたと同じようにね。
+[name="プリースティス"]AMa-10は、私たち二人の期待を背負っていたのに加えて、私にとって極めて重要な記録も保存していたから。
+[charslot]
+先ほどの衝撃は強く、あなたはまだ回復していない。
+目の前の脅威に対して、悲しむ余力すら残っていない。
+プリースティスはこれからどのような行動を取るのだろうか？　そして、あなたはアーミヤを守るためにどうするべきか……
+プリースティスがあなたの心中を察しているのは明らかだ――
+[charslot(slot = "m", name = "avg_npc_1718_1#6$1")]
+[name="プリースティス"]ねえDr.{@nickname}、どうして……私を恐れているの？
+[charslot]
+彼女があなたに近付いてくる。
+[dialog]
+[Decision(options="（……何か方法を思いつかないと。）;（思いつけ！）", values="1;2")]
+[Predicate(references="1;2")]
+あなたとアーミヤは足元に広がる源石のせいで身動きが取れない。
+プリ―スティスが近付いてくる。これほどの至近距離から彼女を見るのは初めてだった。
+[dialog]
+[stopmusic(fadetime=0.5)]
+[StopSound(channel="d", fadetime=0.5)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_graduate",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="君は一体何がしたいんだ！？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]……君を守る。
+[name="ケルシー"]私が約束したように。
+[name="ケルシー"]私はアーミヤを守る、そして君を守ると約束した。
+[name="ケルシー"]君の命が尽きるまで守り抜くことが私の責務だ、ドクター。
+[name="ケルシー"]しかし、私は君を恨み続ける。私にはロスモンティスを教育する資格はない……ましてや批判するなどもっての外だ。私自身、いずれ耐えきれなくなり君に復讐してしまう可能性を恐れているからだ。
+[dialog]
+[charslot]
+[Decision(options="……君は……", values="1")]
+[Predicate(references="1")]
+同じような光景、同じような言葉……しかし今とは異なる感情、時代が、あなたの記憶の空白に橋を架けた。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]……
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]何を……思い出した？
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Image(image="avg_8_9", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+「プリースティス」。
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+いいや。今回、あなたがまず思い出したのはケルシーだ。
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[Image(image="avg_ac8mi_melancholic_kalts", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+あなたが信頼する医者は、まだここにいるような気がする。
+あなたは、ケルシーが残した手がかりを「文明の存続」の中で探索していた時のことを思い出した――
+全ての鍵を繋げた後に明かされた、ケルシーがあなた宛てに残した言葉を――
+「私は忘れたことがない。」
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-50)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=20, block=false)]
+[focusout(type="bg", id="60_g1_rhodescorridor_bc", from=0, to=1, duration=0.1, block=false)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.3, channel="d",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="オラクル"]（小声の未知の言語）君が宙の果てのどの地域からの来訪者かはわからないが、その時にこの文明が眠りについていたなら、自分の代わりに我々の残したビーコンを見に行ってくれ。
+[name="オラクル"]（小声の未知の言語）それは我々の祝福……そして最後に贈る希望となるかもしれない。
+あなたは今や確信を抱いている――あの人物は、確かに時を超えてあなたのことを見つめていたのだ。
+[dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[focusout(type="bg", id="60_g13_rhodesdeck_origin", from=1, to=0, duration=0, block=false)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=0.5)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="（あの公式……）;（あの贈り物……）", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(channel="d", fadetime=1)]
+[PlayMusic(key="$m_bat_theresa_loop", volume=0.6)]
+[Decision(options="アーミヤ、公式だ！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$3")]
+[name="アーミヤ"]公式――！？
+[name="アーミヤ"]ケルシー先生が、あれは特殊媒体の伝送時におけるメタ情報のロスを減らすものだと言っていました……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="それを逆転させるんだ。", values="1")]
+[Predicate(references="1")]
+[Decision(options="源石の中で起きている情報伝達を阻害するんだ！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="アーミヤ"]私は何をすればいいんでか？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="自分の思考を繋げてくれ！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$3")]
+[PlaySound(key="$d_avg_magic_1", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot(duration=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+躊躇っている暇などはない。アーミヤはその言葉を聞いた瞬間に行動に出ていた。
+あなたは再びアーミヤと思考を共有した。あなたがかつて行った全ての研究が、再び脳内に浮かび上がる。
+直感と、すでに得た研究成果を頼りに、あなたは例の公式たちを分解し、変換し、そして逆転させた……
+その行為が問題を完全に解決するものではないと知っていてなお、今この瞬間、あなたはそれが役に立つと祈るしかなかった――
+ケルシーのために。
+[dialog]
+[Decision(options="こちらの頭の中にあるものを覚えるんだ、アーミヤ！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="アーミヤ"]わかりました、ドクター！
+[name="アーミヤ"]Logosさんから教わったように、ドクターの頭の中にあるものを私のアーツの中に編み込んで――
+[name="アーミヤ"]それから――
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="アーミヤ"]止まって！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_icecrystlncrse", volume=1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[charslot]
+[background]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=0)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+アーミヤのアーツの余波があなたたちを封じ込めようとする源石を弾いた。
+[name="プリースティス"]これは……？
+あなたたちの動きを再び制限すべく迫ってきていた源石がアーツに阻まれる。結晶の無数の面が、アーミヤの姿を映し出した。
+[dialog]
+[Decision(options="効いている！？", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_scrystalroad", volume=1, loop=true, channel="sc")]
+[delay(time=1.5)]
+[StopSound(channel="sc", fadetime=6)]
+[name="アーミヤ"]……できるだけ持ちこたえます――
+[name="アーミヤ"]ですが源石が押し寄せてくるスピードが上がっています……
+[name="アーミヤ"]もっと、頑張ればきっと！　私ならできます！
+あなたはアーミヤの揺るぎない眼差しを見たが、それでも心には大きな懸念があった。
+[name="プリースティス"]あなたは、自分がどのような力を扱っているのかをわかっていないわ。
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]私のアーツは源石の進攻を抑えるだけではなく、彼女の状態も感知できるようです……
+[name="アーミヤ"]彼女は想像していたほど無敵の存在ではありません――
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[PlaySound(key="$d_gen_surfacefrozen", volume=0, loop=true, channel="sur")]
+[SoundVolume(volume=0.6, channel="sur",fadetime=2)]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200)]
+[ImageTween(xFrom=-300, xTo=-380, duration=8, block=false)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200, fadetime=2)]
+[ImageTween(xFrom=-320, xTo=-380, duration=6, block=false)]
+[delay(time=1)]
+[name="プリースティス"]確かに私は早く目覚めすぎたわ。源石がこの星を同化する速度が私の当初の想定よりも遅かったの。
+[name="プリースティス"]加えてあの二人のテラ人の無謀な行動のせいで、予想通りに源石を扱うこともできないし……
+[name="プリースティス"]とはいえ、私たちが開発した技術が軽率に使われたところで、すでに定まった事実を変えられるわけではないけれど。
+[dialog]
+[Decision(options="アーミヤ！", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_spellattack_1", volume=1)]
+[PlaySound(key="$d_avg_crystalmagic_intro", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, x=-380, y=-200, fadetime=0.5)]
+[ImageTween(xFrom=-380, xTo=100, duration=0.5, block=false)]
+[delay(time=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_crystalmagic_loop", volume=1, loop=true, channel="a")]
+[SoundVolume(volume=1, channel="sur",fadetime=2)]
+[Image(image="60_i13_2", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[cgitem(image="cgitem_60_i13_2", style="cg", sfrom=1.2, sto=1, sduration=30, layer = 1)]
+[cgitem(image="cgitem_60_i13_1", style="cg", sfrom=1, sto=1.5, sduration=30, layer = 2)]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1, channel="1")]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1, channel="2")]
+[PlaySound(key="$d_avg_land_impact", volume=1, channel="3")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+ピンク色の糸がアーミヤのアーツユニットから噴き出し、源石に封じられた空間の中で舞う。
+あなたには、アーミヤが今まさに大きな圧力に耐えていることが手に取るように理解できる。
+プリースティスの姿も源石に完全に遮られた……
+源石の欠片一つ一つに、そして源石結晶の面一つ一つに、はっきりとプリースティスの目が映っている。
+まるで……
+[dialog]
+[Decision(options="彼女が……そこかしこに存在しているかのようだ。", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]ドクター、新しいアーツをより効率的に使う方法をテレジアさんが教えてくれています！
+[name="アーミヤ"]一時的に彼女の源石に対する支配を弱めることができていると思います。もうしばらくは足止めできるはずです――
+[dialog]
+アーミヤのアーツが出力全開で解き放たれた瞬間、あなたを奮い立たせる声が脳内で響いた。
+[SoundVolume(volume=0.2, channel="a",fadetime=2)]
+[SoundVolume(volume=0.2, channel="sur",fadetime=2)]
+[name="Mantra"]ドクター、アーミヤ、我々はすでにAbyssに入っている。今、我々に対する源石の干渉が瞬きにも満たぬ間だけ弱まった。
+[name="アーミヤ"]……今ので……
+[name="Mantra"]Raidianが我々の間の接続を迅速に再確立したが、油断ならない状況であり、今は辛うじてアーツでRaidianをサポートしている。
+[name="Mantra"]それと、彼女がケルシー医師の生体反応を検知できないらしい。
+[name="Mantra"]今どこにいる？　そちらはどういった状況だ？
+[dialog]
+[Decision(options="ロドスの甲板だ！", values="1")]
+[Predicate(references="1")]
+[Decision(options="プリースティスに遭遇した！", values="1")]
+[Predicate(references="1")]
+[Decision(options="ワルファリンに繋いでくれ。", values="1")]
+[Predicate(references="1")]
+[Decision(options="艦内の全員を直ちに避難させるんだ。", values="1")]
+[Predicate(references="1")]
+[StopSound(channel="sur", fadetime=2)]
+[StopSound(channel="a", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[hidecgitem(image="cgitem_60_i13_2")]
+[hidecgitem(image="cgitem_60_i13_1")]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Delay(time=0.1)]
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="ワルファリン"]ドクターの話は聞こえたな。
+[name="ワルファリン"]恐れるでない、Lancet-2がそなたらのデータ測定を支援する。
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]かしこまりました、ワルファリン先生！　ご期待に沿えるよう努めます！
+[charslot(slot = "m", name = "avg_171_bldsk_1#5$1")]
+[name="ワルファリン"]忘れるでないぞ。艦外に退避した後は、ケルシーの当初の計画に従い周囲に新たな隔離帯を設けるのだ！　決してよく分からぬものが外に漏れ出すことのないようにな！
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]ワルファリン先生は一緒に行かれないのですか？
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[name="ワルファリン"]妾の患者はまだここにおる。妾自ら彼らを率いて撤退する。
+[name="ワルファリン"]こちらの心配はいらぬ。
+[charslot(slot = "m", name = "avg_171_bldsk_1#10$1")]
+[name="ワルファリン"]（ケルシー、なぜそなたの消息がないのだ……）
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Decision(options="――ジジ――本艦放棄の用意を。", values="1")]
+[Predicate(references="1")]
+[Decision(options="全てのデータをバックアップし――ジジ――", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="クロージャ"]もうやってるって。あとほんのちょっと時間が必要なだけ！
+[name="クロージャ"]それと、もういっこ大事なことだけど、PRTSを停止させたら必ずコアデータをダウンロードして――
+[name="クロージャ"]ケルシーが事前にPRTSにバックドアを設置してるから。
+[name="クロージャ"]それが本艦を脅かすものを完全に断ち切る鍵になるはず。
+[charslot(slot = "m", focus="n")]
+[name="Mantra"]その件はMechanistが承知した。
+[name="Mantra"]我々は目下Abyssにて行動している。
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="クロージャ"]頼んだよ！
+[charslot(slot = "m", name = "avg_npc_1723_1#11$1")]
+[name="クロージャ"]ドクター、ケルシーは？
+[name="クロージャ"]声が聞こえないけど、怪我でもしたの？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……;彼女は皆のために全力で時間を稼いでくれている。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="自分とアーミヤも最後まで持ちこたえるつもりだ。", values="1")]
+[Predicate(references="1")]
+[Decision(options="ロドスは……", values="1")]
+[Predicate(references="1")]
+[Decision(options="君たちに任せた。", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$transmission", volume=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Background(image="60_g15_rhodesabyss_off",screenadapt="coverall")]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="en")]
+[SoundVolume(volume=0.8, channel="en",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=4)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Abyss内</><p=2>同時刻</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]ドクターとの通信はすでに回復したよ。
+[name="Raidian"]当初の計画通り行動を続けよう。
+[charslot(slot = "m", name = "avg_391_rosmon_1#1$2")]
+[name="ロスモンティス"]ほかに敵は感知できないよ。
+[charslot(slot = "m", name = "avg_npc_1730_1#2$1")]
+[name="Raidian"]こちらもPRTSのコアが新たにデータ伝送を行った形跡は捉えていない。
+[charslot(slot = "m", name = "avg_4133_logos_1#7$1")]
+[name="Logos"]静かすぎる。
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="アスカロン"]Raidian、コアの位置を共有してくれ。
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]共有してあるよ。
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="アスカロン"]このままコアの位置へと進もう。稼働の解除を試みる。
+[charslot(slot = "m", name = "avg_017_huang_1#11$2")]
+[name="ブレイズ"]私が前を歩くよ！　PRTSはきっと新たな敵を使って私たちを阻むはず。
+[charslot(slot = "m", name = "avg_npc_521_1#1$1")]
+[name="Mechanist"]コアの解析作業は私に任せてくれ。
+[charslot(slot = "m", name = "avg_4133_logos_1#3$1")]
+[name="Logos"]「極光」。
+[name="Logos"]微かな光が進む先を照らさん――
+[dialog]
+[PlaySound(key="$d_avg_magic_2", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[background]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[name="Logos"]――？
+[name="Mechanist"]どうした、Logos？
+[name="Logos"]あれは我の光ではない……
+[dialog]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1, sto = 1.5, sduration = 0.01, pfrom = "0,0",pto = "-55,-300", pduration = 0.01, rfrom=-11, rto=-11, rduration=0.1, afrom = 0, ato = 1, aduration = 0.5, layer = 1)]
+[Delay(time=2)]
+暗闇の中、高い位置に懸かる菱形の光の輪がわずかに揺れ動いている。
+まるで冷ややかな目が、この場にいる全員を見下ろしているかのようだ。
+[name="アスカロン"]警戒しろ……
+[name="ブレイズ"]……ケルシー先生が言ってた「プリースティス」なの？
+[name="Raidian"]恐らく違うね。
+[name="Raidian"]つい今しがた急に、乱雑だけどよく知る信号を大量に探知した。
+[name="Raidian"]この信号はロドスそのものから発せられている。
+[dialog]
+[StopSound(channel="en", fadetime=4)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.5, sto = 1.2, sduration = 4, pfrom = "-55,-300",pto = "-70,-45", pduration = 4, rfrom=-11, rto=0, rduration=4, layer = 1)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_systemstart_weird", volume=1)]
+[Delay(time=1)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.2, sto = 1, sduration = 22, pfrom = "-70,-45",pto = "-55,0", pduration = 22, layer = 1)]
+[Image(image="60_i16", screenadapt="coverall", xScale=1.2, yScale=1.2, y=-50, fadetime=0.5)]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, yFrom=-50, yTo=0, duration=20, block=false)]
+[Delay(time=1)]
+[name="Misery"]これは……何だ？
+終わりのないホワイトノイズが辺りを包む中で、巨大な機械構造物が皆の前にゆっくりと姿を現した――
+その主要部分を構成する部品は、その場の全員がよく知っていた。
+クロージャはかつて何度も、ロドスの様々なモジュールを改造する際に使用した部品を皆に見せたことがある。その中には、エリートオペレーターによって作られた特殊な部品まであった。
+[name="Touch"]PRTSがロドスの設備を武器として再構築したのです。
+[name="Touch"]ですが……これらの部品はどこから？　Abyssの中にあるはずが……
+[name="アスカロン"]源石だ。
+源石のクラスターがこの独特な形状の機械に不規則に散らばっている。
+源石はもはや呑み込むだけではなく、創造を始めたのだ。
+[name="Misery"]待ってくれ、源石はロドスのものを複製できるのか？
+Logosは内なる宇宙でのあの塔を、そして殿下を思い出した。
+[name="Logos"]そう単純な話ではない。
+[name="Logos"]PRTSに源石データを解析する能力はなく、何者かによる介入があるのは間違いない。
+[name="アスカロン"]プリースティスだ。
+[name="Raidian"]この機械のデータは私には理解できない方法でPRTSのコアと接続している。これまでの源石結晶体とは違うよ！
+[name="ブレイズ"]何にせよ、やり合うしかないみたいだね。
+[name="Stormeye"]確かにほかに方法はないようです。
+[name="Stormeye"]では皆さん？
+[dialog]
+[PlaySound(key="$d_avg_attack_ready", volume=1)]
+[Delay(time=1.5)]
+[name="ロスモンティス"]いけるよ。
+その瞬間、菱形の目がさらに輝きを増した。
+PRTSにより作成された擬態機械がエネルギーをチャージし始める……
+[dialog]
+[PlaySound(key="$d_avg_energygather", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="ターゲット、制限なし。戦闘スタイル解析済み。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nエネルギー使用、無制限。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS最終処理プロトコルがロードされました――",block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

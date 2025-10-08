@@ -1,0 +1,427 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g13_rhodesdeck_origin", screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(key="$m_bat_wdslm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$char_Mon3tr")]
+[charslot(slot = "m", name = "npc_10002")]
+[name="Mon3tr"]（興奮した咆哮）
+[charslot(slot = "m", name = "avg_npc_1718_1#2$1")]
+[name="プリースティス"]……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_scrystalroad", volume=1, loop=true, channel="sc")]
+[delay(time=1.5)]
+[StopSound(channel="sc", fadetime=2)]
+Mon3trがあなたの前に現れる。その身のこなしは普段といくらか異なった。
+[dialog]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$char_Mon3tr")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_rockbreakout", volume=1)]
+[delay(time=1)]
+ケルシーの命令を待たずして、Mon3trは凄まじい勢いで敵に飛びかかった。しかし源石結晶が床から盛り上がり、黒い怪物を完全に包み込んだ。
+[dialog]
+[Decision(options="ケルシー！　危ない――", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="プリースティス"]あなたにはとても驚いたわ、AMa-10。
+[name="プリースティス"]自身の双生循環システムを切断することを代償として私の支配から逃れたのね。それであなたの命がひどく脆弱になるとしても、実行した。
+[name="プリースティス"]だけど、本当にその方法で私を殺すつもりなの？
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]君の意識がとうの昔に源石の情報の海と同化していることはわかっている。
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Image(image="50_i16", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Image]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Background(image="60_g13_rhodesdeck_origin", screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="ケルシー"]その状況下で、君を本当の意味で殺すことは、すでに不可能だ。
+[name="ケルシー"]だがテレジアとテレシスの成したことが一つ確信させてくれた。
+[name="ケルシー"]源石に対する君の支配は決して揺るぎのないものではない。君の源石への権限を制限する手段は依然として存在する。
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="プリースティス"]あなたの言った二人だけど、確かに源石の内部で会ったわ。
+[name="プリースティス"]彼らの努力は予想を超えたものよ。驚くべき足掻きだったわ。
+[charslot(slot = "m", name = "avg_npc_1718_1#10$1")]
+[name="プリースティス"]それで？　ここで私を殺すことが無駄な行為ではないと、どうして確信できるの？
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]Mon3trが攻撃した時、君は防御を選択した。
+[charslot(slot = "m", name = "avg_npc_1718_1#2$1")]
+[name="プリースティス"]……
+[name="プリースティス"]……どうやったの？
+[charslot(slot = "m", name = "avg_003_kalts_1#11$1")]
+[name="ケルシー"]どうやら気付いたようだな。
+[name="ケルシー"]テレジアの源石の研究に基づき、また君がDr.{@nickname}に施した罠を模倣して、君のいた目覚めの部屋にいくつか仕掛けを加えた。
+[name="ケルシー"]あの場所で目覚めさえすれば、君の意識はその体に閉じ込められ、源石の内にある情報の海に戻ることはできない。
+[charslot(slot = "m", name = "avg_npc_1718_1#3$1")]
+[name="プリースティス"]……？
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]いずれはこの制限も突破されるかもしれない。君は依然として源石を操作する権限を有しているからな。しかし今この瞬間、君もただの人間だ。
+[charslot(slot = "m", name = "avg_npc_1718_1#7$1")]
+[name="プリースティス"]私に反抗するために、そこまでするなんて――
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]プリースティス、君はテラの創造主などではない。この大地のあらゆる生命には、君の意志に従う義務は存在しない。
+[charslot(slot = "m", name = "avg_003_kalts_1#7$1")]
+[name="ケルシー"]……これは私の君に対する報復であり、最後の反抗だ。
+[charslot]
+あなたは向かい合っている女性の顔に少しの躊躇いが浮かぶのが見えたが、すぐに源石が彼女を取り囲み始めた。
+[dialog]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_icecrystlncrse", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]……もう遅い。
+[dialog]
+[charslot]
+[Decision(options="アーミヤ！　ケルシーを助けるんだ！", values="1")]
+[Predicate(references="1")]
+[Effect(name="$e_amiya_atk_01", layer = 1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=90, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1.5)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$char_Mon3tr")]
+[charslot(slot = "m", name = "npc_10002")]
+[name="Mon3tr"]（激高するような雄たけび）
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="アーミヤ"]ケルシー先生……今度は私が守る番です……
+[charslot]
+黒いアーツの乱流が源石クラスターを砕く。Mon3trは抜け出すと、唯一の標的に向かって再び襲い掛かる。
+源石クラスターが再度集まり始めたが、Mon3trの爪を阻むほどの厚みを形成するのは間に合わなかった。
+あなたはプリースティスの強張った表情を見た。自身の創造物に対しての恐怖の感情が漏れている。
+[charslot(slot = "m", name = "avg_npc_1718_1#7$1")]
+[name="プリースティス"]……！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1, loop=true, channel="sur")]
+[Delay(time=2)]
+[StopSound(channel="sur", fadetime=6)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+プリースティスは、自分が今脅威に直面していることをついに認めたかのようだった。甲板全体の源石が彼女の意識に反応して急激に成長する。
+Mon3trはすでに自身の獲物に迫っていた。
+[dialog]
+[StopSound(channel="d", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g15_rhodesabyss_off",screenadapt="coverall")]
+[PlaySound(key="$swordtsing4")]
+[Effect(name="$e_slash_01_l",x = 68.2, y = 13.3,rox =73.1, roy =5.6, roz =-75.4, layer = 1)]
+[Delay(time=0.8)]
+[PlaySound(key="$swordtsing5")]
+[Effect(name="$e_slash_01_l",x = -86.9, y = -27.5,rox =-74.9, roy =-15.2, roz =118.3, layer = 2)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m", name="avg_npc_521_1#1$1")]
+[name="Mechanist"]右の五名、停止を確認。
+[charslot(slot="m", name="avg_4133_logos_1#1$1")]
+[name="Logos"]「死せよ」。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_boneflute_low", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m", name="avg_017_huang_1#4$2")]
+[name="ブレイズ"]一見異様だけど、結局私たちが今までに倒した敵を引っ張り出してきてるだけで、大したことないじゃん。
+[charslot(slot="m", name="avg_017_huang_1#5$2")]
+[name="ブレイズ"]もういっちょ喰らえ――
+[dialog]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "m", posfrom="0,0", posto="-200,40", afrom=1, ato=0, duration=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot = "r", name = "avg_npc_1727_1#1$1")]
+[charslot(slot = "l", name = "avg_npc_1728_1#1$1")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$e_atk_saw_n_2", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[PlaySound(key="$e_atk_saw_n_1", volume=1)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_shdwblwvr", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot="m", name="avg_017_huang_1#4$2")]
+[name="ブレイズ"]気のせいかな？　敵の出現速度が遅くなってるような？
+[charslot(slot="m", name="avg_npc_1730_1#3$1")]
+[name="Raidian"]ここはPRTSのコアシステムで、初めから私たちが過去に対面した敵のデータを読み取って複製している。
+[name="Raidian"]でも今はデータベースの読み込みが遅くなった。何か障害を受けているみたい……
+[name="Raidian"]どうやらドクターの方の行動がうまくいっているようだね。
+[charslot(slot = "m", name = "avg_4132_ascln_1#4$1")]
+[name="アスカロン"]このチャンスを逃すな。一気に突破するぞ。
+[name="アスカロン"]Abyssの深部へと向かう……我々を待っている者たちがいるんだ。
+[dialog]
+[stopmusic(fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[name="ケルシー"]Mon3tr、メルトダウン。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[delay(time=0.3)]
+[PlaySound(key="$b_char_fireharm", volume=1)]
+[delay(time=0.3)]
+[PlaySound(key="$b_char_fireharm", volume=1)]
+[delay(time=0.3)]
+[PlaySound(key="$b_char_fireharm", volume=1)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+黒いアーツとレーザーが交互に前方の入り組んだ源石クラスターに向けて放たれる。源石の広がりを抑えるほどの猛攻が続く。
+やがて、アーツの光がプリースティスの姿を覆い隠した。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=false)]
+[effect(name="$e_sand_transition", layer=3)]
+[PlaySound(key="$d_avg_sand_lp", volume=1, loop=true, channel="sa")]
+[delay(time=3)]
+[Background(image="60_g13_rhodesdeck_origin", screenadapt="coverall")]
+[StopSound(channel="sa", fadetime=2)]
+[delay(time=3)]
+煙が晴れると、残っているのは辺り一面の源石の屑。
+そしてぼろぼろの白いコートだけだった。
+[dialog]
+[Decision(options="……倒したのか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#3$1")]
+[name="ケルシー"]……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$3")]
+[name="アーミヤ"]生命の痕跡も……感情も、何も感じられません……
+[name="アーミヤ"]もしかして……
+[charslot]
+その時があまりに唐突に訪れたため、あなたは目の前の一連の出来事を実感する間もなかった。
+あなたはその目で、極めて恐ろしい敵が跡形もなく消えるのを目撃した。
+だが、少しも安堵することはできなかった。
+[name="？？？"]おふざけはこの辺で終わりでいいかしら？
+[dialog]
+[PlayMusic(intro="$m_act1mainss_bat1_intro", key="$m_act1mainss_bat1_loop", volume=0.6)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1", duration=1.5, isblock=true)]
+[delay(time=2)]
+[charslot(slot = "m", focus="n")]
+[Decision(options="どういうことだ……！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$3")]
+[name="アーミヤ"]そんな――
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_003_kalts_1#7$1")]
+[name="ケルシー"]ドクター、アーミヤ、退がれ！
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="プリースティス"]力強い反抗ね、AMa-10。あなたの計画は功を奏したわ。
+[name="プリースティス"]確かにあなたの言う通り、今なら私を殺すチャンスはあるでしょう……
+[charslot(slot = "m", name = "avg_npc_1718_1#10$1")]
+[name="プリースティス"]けど、たかが源石で作り出した身代わりごときに対して、そんなに慌てふためくの？
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="ケルシー"]……！
+[charslot(slot = "m", name = "avg_npc_1718_1#10$1")]
+[name="プリースティス"]AMa-10、あなたが信仰する価値観について議論するつもりはないわ。
+[name="プリースティス"]あなたがこれまでずっと大事に抱えてきたものは、あまりにちっぽけすぎて、その意味を評価するための信頼できる論理的枠組みさえ見つけることができないわ。
+[name="プリースティス"]だけど実験中に生じた些細なエラーが最終的に大きな障害を引き起こすようなケースはままあるものよ。私もこのような結果は受け入れざるを得ない。
+[name="プリースティス"]とても残念よ。あなたをそういうエラーとして、抹消しなくちゃいけないの。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_crystalrise", volume=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=0.4, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[delay(time=4)]
+プリースティスが腕を上げた。
+源石が再び成長し始める。結晶でできた鋭い枝があなたとアーミヤを囲むと、またたく間にあなたたちを呑み込もうとする。
+アーミヤがアーツを使用して全力で周囲の源石を打ち砕くが、結晶の成長速度には遠く及ばない。
+[dialog]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$3")]
+[name="アーミヤ"]ドクター！　私の後ろへ――
+[charslot(slot = "m", name = "avg_003_kalts_1#4$1")]
+[name="ケルシー"]――！
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_003_kalts_1#7$1")]
+[name="ケルシー"]Mon3tr――
+[dialog]
+[charslot]
+[Effect(name="$e_amiya_atk_01", layer = 1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[delay(time=1)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+全てが一瞬の間に起きた。
+源石クラスターが至近距離で爆発し、アーミヤがあなたを守ろうとしたが、あまりに突然の出来事で何もできずに終わったのを、あなたは見た。
+あなたは見た。黒い怪物がその一瞬の間にあなたとアーミヤのそばへと駆け寄ると、大きく頑丈な体を用いてあなたたちを源石クラスターから守る壁になった。
+あなたは見た。ケルシーが……
+[charslot(slot = "m", name = "avg_npc_1718_1#8$1")]
+[name="プリースティス"]残念だわ。
+[dialog]
+[StopSound(channel="d", fadetime=1)]
+[stopmusic(fadetime=1)]
+[charslot(duration=1.5)]
+[CameraShake(duration=6, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_scrystalroad", volume=1, loop=true, channel="sc")]
+[delay(time=3)]
+[StopSound(channel="sc", fadetime=0.5)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Background]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Image(image="avg_ac8mi_melancholic_kalts", screenadapt="coverall", xScale=1.1, yScale=1.1)]
+[ImageTween(xFrom=50, xTo=-50, duration=20, block=false)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=false)]
+ドクター、君は己の存在意義を疑うことはあるか？　私はある。
+私は己の使命について明確な認識を有している。たとえそれに苦難が伴うとしても、私はその意義を認めている。
+未来に関して、君になら答えが見つかる――私にはそう願い続けることしかできない。
+私のことならあまり気にかけなくていい。どのみちロドスは、誰かが欠けた程度で止まるほど弱くあるべきではないのだから。
+[dialog]
+[Delay(time=1)]
+私の願い？
+それは、君とアーミヤの願いを守ることだ。
+自らの誓いに背くようなことはしないさ。「守る」の定義の違いこそあれ、私は最後までここに立ち続けるつもりだ。
+我々に過去を忘却することはできないが、君にはまた違った未来が待っているはずだ。
+[dialog]
+[Image(image="avg_ac8mi_sidebyside_dusk", screenadapt="coverall", fadetime=2)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=10, block=false)]
+[Delay(time=2)]
+私はすでに自らの生命の意義を見つけた。
+ロドスを率いて……
+歩み続けてくれ。
+{@nickname}。
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[musicvolume(volume=0.2, fadetime=3)]
+[playMusic(intro="$m_sys_act1mainss_intro", key="$m_sys_act1mainss_loop", volume=0)]
+[musicvolume(volume=0.6, fadetime=4)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[image]
+[Delay(time=1)]
+[Subtitle(text="いつの間にか、誰かがそばにいて自分を助け、導いてくれることに慣れてしまったようだ。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="今になって、ようやく自分がやらねばならないことがはっきりした。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="何があろうと、自分はこの道を歩み続ける。決して希望を捨てはしない。", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="だが……", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……君は？", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[musicvolume(volume=0.6, fadetime=2)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Background(image="60_g13_rhodesdeck_origin", screenadapt="coverall")]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="アーミヤ"]ケルシー先生――！
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……ケルシー……？", values="1")]
+[Predicate(references="1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_kaltswhoosh", volume=1)]
+[gridbg(imagegroup="60_i12_1_L1/60_i12_1_R1/60_i12_1_L2/60_i12_1_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-640, y=360, fadetime=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[largebgtween(duration = 2,xScaleFrom=1.2, xScaleTo=1, yScaleFrom=1.2, yScaleTo=1, ease="InQuart", block = false)]
+[Delay(time=2)]
+[focusout(type="lbg", from=0, to=1, duration=1.5)]
+[largebgtween(duration = 1.5,xScaleFrom=1, xScaleTo=0.5, yScaleFrom=1, yScaleTo=0.5, block = false)]
+[focusout(type="cgitem", id="cgitem_60_i12_2", from=0, to=0.75, duration=1.5)]
+[cgitem(image="cgitem_60_i12_2", style="cg", sfrom=3, sto=1, sduration=1.5, pfrom = "-900,-600", pto = "-200,-130", pduration = 1.5, layer = 1)]
+[Delay(time=0.3)]
+[focusout(type="cgitem", id="cgitem_60_i12_1", from=0, to=0.8, duration=1.2)]
+[cgitem(image="cgitem_60_i12_1", style="cg", sfrom=3.5, sto=1.2, sduration=1.2, pfrom = "1200,-400", pto = "230,-100", pduration = 1.2, layer = 2)]
+[Delay(time=0.8)]
+[cgitem(image="cgitem_60_i12_3", style="cg", sfrom=3, sto=1.8, sduration=0.4, pfrom = "80,-500", pto = "80,-250", pduration = 0.4, afrom = 0, ato = 1, aduration = 0.1, layer = 3)]
+[Delay(time=1.5)]
+[cgitem(image="cgitem_60_i12_3", style="cg", sto=1.8, pfrom = "80,-250", pto = "80,-300", pduration = 0.5, afrom = 1, ato = 0, aduration = 0.8, layer = 3)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[focusout(type="cg", id="60_i12", from=1, to=0, duration=0.1)]
+[hidecgitem(image="cgitem_60_i12_1")]
+[hidecgitem(image="cgitem_60_i12_2")]
+[hidecgitem(image="cgitem_60_i12_3")]
+[Image(image="60_i12_2", screenadapt="coverall", xScale=1.05, yScale=1.05, fadetime=0)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_smkedspte", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+突然の出来事だった。だが、何が起きたかをあなたが理解するには十分だった。
+あなたたちが立ち向かっているのは常識で理解し得る敵ではない。彼女は全ての源石を操る権限を有しているのだ。
+ケルシーの右肩に僅かに存在する源石結晶は、彼女が人として生きた証であり、彼女の命を奪った根源でもある。
+源石結晶は急速に成長を始め、彼女の体を全て呑み込み、砕けて、風に散った――あなたの目が全ての過程を捉える暇すらなかった。
+強くなればなるほど、同時に脆さをも内包してしまう。
+長く生きた者の命が、ここに終わった。
+彼女は己の約束を果たした。
+[dialog]
+[stopmusic(fadetime=4)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[charslot]
+[Background]
+[Image]

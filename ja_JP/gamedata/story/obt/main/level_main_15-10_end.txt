@@ -1,0 +1,753 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="60_g11_rhodescanteen_origin",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playsound(key="$alarmenter",volume=0.5)]
+[Blocker(a=0.4, r=0.5,g=0.1,b=0.1, fadetime=0.7, block=true)]
+[Blocker(a=0.5, r=0,g=0,b=0, fadetime=0.7, block=true)]
+[playsound(key="$alarmenter",volume=0.5)]
+[Blocker(a=0.4, r=0.5,g=0.1,b=0.1, fadetime=0.7, block=true)]
+[Blocker(a=0.5, r=0,g=0,b=0, fadetime=0.7, block=true)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_167",duration=0.5)]
+[Delay(time=1)]
+[name="Stormeye"]まだ予備の電力システムに接続できませんか？
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]接続盤が落ちて壊れている。損傷した回路を切断してみろ、ショート保護スイッチがまだ作動しているかもしれない。
+[name="Sharp"]足元に注意しろ。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]よく見えています。
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$d_avg_bowstring_tightened", loop=true, channel="a",volume=1)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowstring_rebound")]
+[Delay(time=1)]
+[playsound(key="$d_avg_shockbody")]
+[Blocker(a=0.3, r=0, g=0, b=0, afrom=0.5, rfrom=0, gfrom=0, bfrom=0, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.4, rfrom=0, gfrom=0, bfrom=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]運が良いな。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]この辺りの源石結晶はほぼ同時に突然現れました。
+[name="Stormeye"]やはり、ほかの人には連絡は取れませんか？
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]通信はまだ影響を受けている。緊急チャンネルも通常のように使用できない。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]もっと悪いニュースがありますよ。なぜかはわかりませんが、ロドスは現在限界速度で北西方向に航行しています。
+[name="Stormeye"]このままでは、道中にある移動式採鉱プラットフォームと衝突する恐れがあります。
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]どうにかして想定される航路上の危険を未然に排除して本艦を外部から守り、罪なき者たちが巻き込まれないようにしなければならない。
+[name="Sharp"]ひとまずここを離れて「バッドガイ」号のある船室に向かい、機内装備の状況を確認しよう。
+[name="Sharp"]付近の空間構造は変化しているから元のルートマップは役に立たない。俺にしっかりついてこい。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]（突然止まる）
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]何か問題でもあるか？
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]奴らがまた来ました。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_arrow")]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+Stormeyeが言い終えた瞬間、空を切る矢の音が響いた。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.4, rfrom=0, gfrom=0, bfrom=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]……外したか？
+[charslot]
+返事をする者はいない。
+[dialog]
+[playsound(key="$d_avg_gateopen")]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n",channel="2")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]……Stormeye？
+[charslot]
+Sharpがとっさに振り返ると、背後のレストランの出口はいつの間にか成長した源石に覆われた金属の壁に変わっていた。
+[dialog]
+[charslot(slot="m",name="avg_npc_1728_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+しかし彼の後ろに立っているのは、Stormeyeではない――
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="源石結晶体"]（音もなく迫る）
+[dialog]
+[Effect(name="$e_magic_hit_02",layer = 1,x = -200)]
+[playsound(key="$d_avg_spellattack_1")]
+[Delay(time=0.2)]
+[Effect(name="$e_magic_hit_02",layer = 1,x = 200)]
+[playsound(key="$d_avg_spellattack_2",channel="2")]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_mechadown",volume=0.5)]
+[Delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=0.5,afrom=1,ato=0)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=15, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_mechadown",volume=0.5,channel="5")]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_095",duration=0.5)]
+[Delay(time=1)]
+[name="Pith"]この程度で終わりか？
+[dialog]
+[charslot]
+[playsound(key="$transmission")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = false, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[Delay(time=1.5)]
+[interlude(channel = 3, clear = true,tsduration = 0.5,tsfrom = "1,1", tsto="0,1")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_095")]
+[name="Pith"]通信は未だ妨害を受けている。
+[name="Pith"]他の者の状況はどうなっているだろうか。
+[charslot(slot = "m", focus = "n")]
+Pithは持っていた通信機を黙って見つめる。眉間の皺が時と共にきつくなった。
+[charslot(slot = "m", focus = "m")]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+足音が遠ざかる。
+[dialog]
+[playsound(key="$d_avg_stonegrowing")]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.5)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+そして倒れた複数の源石結晶体は再び立ち上がると、一糸乱れぬ動きで、足元の壊れた通信機を踏み越えていった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$transmission")]
+[name="破損した通信機"]「――ジジッ……受信可能な……オペレーター全員に……」
+[name="破損した通信機"]「……信じないで……ジジッ……通信が妨害され……｣
+[name="破損した通信機"]｢ジジッ……ロドスが……目覚めた……｣
+[dialog]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_rhodescorner",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_235",duration=0.5)]
+[Delay(time=1)]
+[name="Misery"]「目覚めた」？
+[charslot(slot = "m", focus = "n")]
+[name="アスカロン"]側面に気をつけろ。
+[dialog]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=0.3,posfrom = "200,0", posto = "-100,0")]
+[playsound(key="$d_avg_swrdclave")]
+[Effect(name="$e_slash_01_s",layer = 1,x = 0,rox=-30,roy=70)]
+[Delay(time=0.2)]
+[playsound(key="$d_avg_runstop",channel="3")]
+[charslot(slot="m",duration=0.3,posfrom = "0,0", posto = "-300,0",afrom=1,ato=0)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_daggerexsheath")]
+[Blocker(a=0.15, r=1, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="r",duration=0.3,posfrom = "-100,0", posto = "-100,-100",afrom=1,ato=0)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=20, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown1",channel="4")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_glassbroken")]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_4132_ascln_1#8$1",duration=0.5)]
+[Delay(time=1)]
+[name="アスカロン"]妙だ。こいつらは死なない。
+[charslot]
+アスカロンの仕込み刀が飛び出し、ほど近くの揺れ動く影を指している。
+幾重も重なった人影が幽霊のように浮かび上がり、影の中からあふれ出す。絶えず湧き出る影が一歩踏み出すごとに、結晶の砕ける音が伴う。
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]こいつらの格好――レユニオンか？　それにナハツェーラーもいる……こうなると誰に遭遇しようと不思議ではないな。
+[charslot(slot="m",name="avg_4132_ascln_1#8$1")]
+[name="アスカロン"]あれらは完全に源石でできている。今までにない相手だ。これまでの経験から判断するな。
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]了解。では臨機応変にいくとしよう。
+[charslot(slot="m",name="avg_4132_ascln_1#1$1")]
+[name="アスカロン"]ここに留まっていては後手に回るだけだ。まずはこいつらの出所を探し出さねば。
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]現時点では敵の目的を特定することはできない。ドクターの方の状況も不明だ。万が一……
+[charslot(slot="m",name="avg_4132_ascln_1#1$1")]
+[name="アスカロン"]ドクターにはアーミヤがついている、心配無用だ。
+[name="アスカロン"]我々の任務を続けるぞ――異変の出所を突き止める。
+[charslot(slot="m",name="avg_4132_ascln_1#3$1")]
+[name="アスカロン"]もしこの状況がケルシーがずっと警戒していたものであるなら、こいつらは何かしらの未知の意志の指揮に従っているに違いない……
+[dialog]
+[charslot]
+[playsound(key="$transmission")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]通信も遮断された。まだ誰にも連絡が取れない。
+[name="Misery"]他のエリートオペレーターは――
+[name="Misery"]アスカロン……
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "m", focus = "n")]
+源石結晶の傍を通り過ぎた時、Miseryは鋭敏な感覚で結晶の複数の面から一つの人影を捉えた。
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]……今のは、Outcast？
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+パキ、パキ――
+鋭い爪が源石結晶の表面から剥がれ落ちると、続けて曲がった角、骨ばった体と棘で満ちた長い尾が現れる。
+このような生物はかつてロドスの作戦記録に何度となく現れているが、記録にあるのはどれも純粋な源石で作られたものではない。
+[CameraShake(duration=0.2, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_bowstring_rebound")]
+これまで見たことのない源石の生命体が第一歩を踏み出そうとした時、不意に飛んできた矢がそれの喉を貫き、頭を砕いた。
+[dialog]
+[charslot(slot="m",name="avg_npc_167",duration=1)]
+[Delay(time=2)]
+[name="Stormeye"]――ひとまず安全だ。
+[dialog]
+[PlaySound(key="$blooddrop")]
+[Delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+Stormeyeは壁に寄りかかって、暫く大きな呼吸を繰り返すと、ようやく急いで傷口の手当てをした。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]幸いなことに……戦闘には影響しない。
+[dialog]
+[playsound(key="$transmission")]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+[name="通信の声"]（乱雑なノイズ）
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]もしもし、Sharpさん、通信を受け取れますか？
+[name="Stormeye"]何か識別可能な印を残してみてください、私がそれを頼りに向かいます。
+[charslot(slot = "m", focus = "n")]
+[name="通信の声"]（乱雑なノイズ）
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]……くそ――
+[charslot(slot = "m", focus = "n")]
+[name="通信の声"]ジジッ――Stor……Stormeye――警戒し――ジジッ――
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]Sharpさん！？　現在地を共有してください！
+[charslot(slot = "m", focus = "n")]
+[name="通信の声"]ジジッ――接敵――Whitesmith――止まれ――
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]……？　すぐ行きます。
+[dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot = "m",posfrom = "0,0", posto = "350,0",duration = 1,afrom=1,ato=0)]
+[Delay(time=2.5)]
+[charslot(slot = "r",posfrom = "-200,0", posto = "0,0",duration = 1,name="avg_npc_1726_1#2$1")]
+[Delay(time=1)]
+[playsound(key="$d_avg_productdu_attack")]
+[charslot(slot = "l",posfrom = "-200,0", posto = "0,0",duration = 1,name="avg_npc_1726_1#2$1")]
+[Delay(time=1.5)]
+[name="源石に侵食された機械"]……援助……
+[charslot]
+暴走した機械造物が廊下の両側から追加でわらわらと湧いてくる。それらの目に点る光は全て同じ頻度で点滅していた。
+粗末な発声ユニットが構造の限界を超えているかのように、助けを求める叫び声を繰り返し上げている。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]あなたたちに付き合ってる暇はない！
+[charslot]
+[dialog]
+[charslot(slot = "r",name="avg_npc_1726_1#2$1")]
+[charslot(slot = "l",name="avg_npc_1726_1#2$1")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_arrowtarget")]
+[playsound(key="$d_avg_arrowtarget",channel="2",delay=0.2)]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_shockbody")]
+[charslot(slot ="l", action="shake", power=7, times=50, duration=0.5)]
+[charslot(slot ="r", action="shake", power=7, times=50, duration=0.5)]
+[Delay(time=0.8)]
+[charslot(duration=1)]
+[Delay(time=1.8)]
+Stormeyeが放った矢が暴走した二台の機械造物のコアを的確に破壊する。彼はそのまま振り返ることなく来た道へと駆けていく。
+[Dialog]
+[playsound(key="$rungeneral")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]少なくとも……三十はいる。
+[name="Stormeye"]分かれ道だ……
+[charslot(slot = "m", focus = "n")]
+見た目の変わらない二本の廊下がStormeyeの目の前で伸び続けていた。
+ロドス内部の通路配置は見る影もなく変化していた。そこに秩序はなく、たった今現れたこの廊下が各々どのような運命に通じているか誰にもわからない。
+そして、背後では、暴走した機械の群れが間近に迫ってきていた。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="npc_10002",duration=0.5)]
+[Delay(time=1)]
+[playsound(key="$p_skill_Mon3trburst")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mon3tr"]（怒ったような雄たけび）
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]変事は我々の想定よりも早く発生した。ロドスはまだ対処する準備ができていない。
+[name="ケルシー"]とはいえ彼女に直面するのであれば、どのような準備をしたところで決して万全とは言えないだろうがな。
+[charslot(slot="m",name="npc_10002")]
+[name="Mon3tr"]（警戒するように低く唸る）
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="ケルシー"]しかし、彼女の方にも何かしらの問題が発生していることは明らかだ。そうでなければ、このように非効率的な手段を用いるはずがない。
+[name="ケルシー"]今が恐らく我々が優位に立てる最後の機会だろう。
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1727_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1728_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="源石結晶体"]（無言で迫る）
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#6$1")]
+[name="ケルシー"]Mon3tr、通路を一つ突破するだけでいい。戦いにはこだわるな。
+[name="ケルシー"]一刻を争う状況だ、急がねばならない。
+[charslot(duration=1)]
+ケルシーの目の前の通路が再び変化して、彼女の前進を阻もうとする。
+しかし空間の奇妙な変化はケルシーには何の影響も与えていなかった。彼女は今もあの場所――Dr.{@nickname}の石棺を感知できている。
+それは彼女の記憶の奥底に刻まれた情報だった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",duration=1)]
+[Delay(time=2)]
+[name="ケルシー"]Mon3tr、何者も石棺に近付かせるな。私のために時間を稼いでくれ。
+[charslot(slot="m",name="npc_10002")]
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"]（興奮した雄たけび）
+[charslot]
+彼女は、今一度この見慣れた石棺の前に立った。
+かつて彼女は石棺の内に眠る希望を呼び起こしたが、その時に得た結末は拭い去り難い苦痛だった。
+そして今この瞬間、この石棺は最後の希望だ。
+[charslot(slot="m",name="avg_003_kalts_1#5$1")]
+[name="ケルシー"]私の行動が必ず機能するという保証はできない、Mon3tr。
+[name="ケルシー"]しかし、僅かな可能性が手の中から零れ落ちていくのを黙って見ているつもりはない。
+[charslot(duration=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+ケルシーは石棺に一歩近付き、白い花をその上に置いた。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[image(image="49_i22",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="ケルシー"]これは彼女が遺した贈り物だ。あの時の彼女は、これが「神」から盗み取った火種であることをまだ知らなかった。
+[name="ケルシー"]……我々は、必ずより高次の存在に挑まねばならないんだ。そうすることでしか、生存する権利を自分の手に握ることはできない。
+[name="Mon3tr"]（緊張したように低く唸る）
+[name="ケルシー"]Mon3tr、もし何か予期せぬことが発生した場合、今後は君が自分で行動ポリシーを決定する必要がある。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+彼女が石棺の中に入った。
+[dialog]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1",duration=1)]
+[Delay(time=2)]
+[name="Raidian"]はぁ、干渉がひどすぎる。
+[name="Raidian"]何の信号も受信できないだけじゃない。ここの環境は、私のアーツまで抑制している。
+[name="Raidian"]どうにかしないと――
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_signlntrfrnc", volume=1)]
+[Delay(time=1.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="「Raidian……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]この信号の特徴は――！？　PRTS？
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]クロージャから？　そんなのありえない……まだ端末上では通信切断って表示されてるのに。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="「私の信号を追跡……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+Raidianがその微弱な信号を追うと、全く予想外の人物を特定するのだった。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]ケルシー先生！？
+[name="Raidian"]そんな、一体なんでそんなことに――どうやったにせよ、今すぐやめないと――
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]いや……あなたはもう止まらないね。
+[name="Raidian"]ありがとう、ケルシー先生。
+[name="Raidian"]これから自分がすべきことはわかったよ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+[Subtitle(text="「こちらRaidian。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「特殊な助力を得て、全艦をカバーする臨時電磁通信環境を確立したよ。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「ケルシー先生の情報よると、今起きている一連の異常な状態の出所はロドスのAbyssと呼ばれるエリア。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「今からAbyssの基本情報を全員に共有するね。各エリートオペレーターは自分の安全を確保しつつ、Abyssの位置を特定してほしい。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「繰り返す。Abyssの位置を特定して。ただし、むやみに近付かず、常に連絡を取り合うように。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「全エリートオペレーターは引き続き任務を遂行して――」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「ケルシー先生が、あなたたちの目になるから。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[charslot]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$rebel_intro",key="$rebel_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_095",duration=0.5)]
+[Delay(time=1)]
+[name="Pith"]……ケルシーが？　感謝する。
+[name="Pith"]まだ戦闘可能なロドスオペレーター各員に告ぐ、こちらPith。お前たちの現在の状況を報告しろ。
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$transmission")]
+[name="アランナ"]こっちはまだ無限に湧き出る怪物を止めてるよ！
+[name="アランナ"]けどきりがない！
+[charslot(slot="m",name="avg_npc_095")]
+[name="Pith"]我々には、いまだこうした源石の敵に直接対抗する有効的手段がない。全ての戦略は自己防衛を最終目的とする。
+[name="Pith"]負傷者は即刻Touchに助けを求めろ！　戦闘に固執するな！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_171_bldsk_1#10$1",duration=0.5)]
+[Delay(time=1)]
+[name="ワルファリン"]ケルシー……今度は何をしたんだ。
+[charslot(slot="m",name="avg_npc_243")]
+[name="クロエ"]ワルファリン先生、危ない！
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="ワルファリン"]この化け物どもはひとまず妾を傷つけることはできぬ。ただ数があまりに多い。そなたらが怪我をせぬように守るには確かにちと手を焼く。
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="ワルファリン"]しかし先ほどRaidianが共有したデータによると、こやつらは殺せぬようだ。
+[charslot(slot="m",name="avg_npc_243")]
+[name="クロエ"]「殺す」……ワルファリン先生、この化け物は……生き物と言えるのですか？
+[name="クロエ"]Touch先生やケルシー先生も、これに遭遇しているのでしょうか？
+[charslot(slot="m",name="avg_171_bldsk_1#5$1")]
+[name="ワルファリン"]そなたは己の身を守っておれ。妾たちはそなたが思うほど弱くはない――
+[dialog]
+[charslot(slot = "left", name = "avg_npc_1727_1#1$1",duration = 0.3)]
+[charslot(slot = "left",posfrom = "-100,0", posto = "-100,0",duration = 0.5)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_171_bldsk_1#5$1",posfrom = "0,0", posto = "100,0",duration = 0.3)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_1", volume=1)]
+[Blocker(a=0.5, r=1, g=0, b=0, fadetime=0.3, block=true)]
+[charslot(slot = "left",posfrom = "-100,0", posto = "-250,0",duration = 0.5,afrom=1,ato=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[charslot(slot = "r", name = "avg_npc_1728_1#1$1",duration = 0.2)]
+[PlaySound(key="$e_skill_skulsrsword",volume=0.5,block=true)]
+[charslot(slot = "r",posfrom = "400,0", posto = "200,0",duration = 0.4)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[charslot(slot="m",posfrom = "100,0", posto = "-450,0",duration = 0.5)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_2", volume=1)]
+[Blocker(a=0.3, r=1, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot = "r",posfrom = "200,0", posto = "200,-120",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[Delay(time=0.8)]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="ワルファリン"]*サルカズスラング*！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.5)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1727_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="ワルファリン"]そなたらをズタズタにして、それでも死なぬかどうか見てやりたいものだ――
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ワルファリン"]クロエ、避けよ！
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_blodmgic_1", volume=1)]
+源石結晶体がワルファリンに向かって押し寄せ続け、彼女に余裕がなくなった瞬間、二体の源石結晶体が防御を突破していた。
+結晶体はクロエの前までやってきて、腕を上げ――
+[dialog]
+[delay(time=1)]
+――止まった。攻撃するのではなく、むしろ招待するかのように、死に触れかけているこの病人を招いている――
+[dialog]
+[charslot(slot = "left", name = "avg_npc_243",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left",focus="l")]
+[name="クロエ"]……
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#3$1")]
+[name="ワルファリン"]――！？
+[charslot]
+[charslot(slot = "left", name = "avg_npc_243",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="r")]
+[name="源石結晶体"]（静かに凝視する）
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#6$1")]
+[name="ワルファリン"]下がれ！　そやつらに触れるな！
+[charslot]
+[charslot(slot = "left", name = "avg_npc_243",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="l")]
+[name="クロエ"]で、ですが聞こえるんです、彼は……泣き叫んでいる？　苦しみの声が、私の頭の中に刻み込まれているみたい……
+[name="クロエ"]わ、私たちは似ている……とても似ています……
+[dialog]
+[charslot(slot = "l",posfrom = "0,0", posto = "100,0",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+クロエが源石結晶体の手を握る。その目は悲しみに満ちていた。
+[charslot(slot = "left", name = "avg_npc_243",focus="l")]
+[name="クロエ"]どうして……私を傷つけないの……
+[name="クロエ"]……同類だから？
+[charslot]
+[charslot(slot="m",name="avg_171_bldsk_1#10$1")]
+[name="ワルファリン"]……そなたの感染が原因か？　そなたの体に起きておる前例のない症状……源石は変化しておる。
+[name="ワルファリン"]――ゆえに、そなたの鉱石病症状の進行は妾たちの予想を超えておる！
+[charslot]
+[charslot(slot = "l", name = "avg_npc_243",posfrom = "100,0", posto = "100,0")]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",focus="l")]
+[name="クロエ"]……ワルファリン先生、それってつまりこの化け物たちへの対処法を見つける手伝いが私にできるということですよね？
+[name="クロエ"]試してみたいです。先生たちの力になりたいんです。
+[name="クロエ"]あなたを失望させたくないし、Touch先生とケルシー先生に傷ついてほしくもありません……
+[dialog]
+[charslot(slot = "right",focus="all")]
+[PlaySound(key="$d_avg_blodmgic_2", volume=1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1727_1#1$1",afrom=1,ato=0,duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_171_bldsk_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+ワルファリンは、クロエと目を合わせている源石結晶体を追い払うと、哀れな患者の前に立った。
+[charslot(slot = "right", name = "avg_171_bldsk_1#1$1",focus="r")]
+[name="ワルファリン"]その約束が何を意味するか理解しておるのか？
+[charslot(slot = "l", name = "avg_npc_243",posfrom = "100,0", posto = "100,0",focus="l")]
+[name="クロエ"]（微笑む）わかりません。ですが怖くもありません。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g11_rhodescanteen_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot ="l", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="l",name="avg_npc_1728_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=0.3)]
+[charslot(slot ="r", action="shake", power=6, times=100, duration=1)]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=1.5,posfrom = "0,-50", posto = "0,0")]
+[Delay(time=1)]
+[Effect(name="$e_slash_02_l",x = 200,y=-150,rox=20,roz=-40,layer = 2)]
+[playsound(key="$e_skill_skulsrsword",volume=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Delay(time=0.3)]
+[charslot(slot="l",name="avg_npc_1728_1#1$1",duration=0.5,posfrom = "0,0", posto = "0,-80",afrom=1,ato=0)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown3",volume=1)]
+[Delay(time=0.3)]
+[Effect(name="$e_fist_hit_01",x = 250,y=50,rox=20,roz=-40,layer = 2)]
+[playsound(key="$d_avg_arrowtarget",volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Delay(time=0.3)]
+[charslot(slot="r",name="avg_npc_1728_1#1$1",duration=0.5,posfrom = "0,0", posto = "0,-80",afrom=1,ato=0)]
+[Delay(time=0.2)]
+[playsound(key="$bodyfalldown3",volume=1)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]言うほど早くなかったな、Stormeye。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]地形の変化があまりに大きくて時間がかかってしまいました。
+[name="Stormeye"]ケルシー先生とRaidianさんが通信を再度確立してくれて助かりました。そうでなければ何に遭遇していたかわかりません。
+[name="Stormeye"]ところで通信でWhitesmithさんの話をしていたようですが？
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]……
+[name="Sharp"]つい先ほどまで、彼女に酒でも飲んで踊ろうと言われて遠くから炉に招かれていたんだ。だが次の瞬間には姿が消えて、源石に汚染された機械が鍛造炉から這い出てきて攻撃してきた。
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]幻覚ですか？
+[charslot(slot="m",name="avg_npc_252")]
+[name="Sharp"]何が真実で何がそうでないかの判別はつく、Stormeye。だが先ほどの状況は確実に俺の認識を超えていた。
+[name="Sharp"]こういう奇妙な現象に遭遇したのは俺だけではないはずだ。
+[charslot]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+源石クラスターはみるみるうちに成長していた。彼らにとってこれらの石は見知らぬ存在ではない。しかし今、その結晶の面はまるで彼らの思考までも吸い取ろうとしているかのようだった。
+[dialog]
+[PlaySound(key="$d_avg_tinnitus", volume=1,channel="2")]
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]……？
+[charslot(slot = "m", focus = "n")]
+Stormeyeが目を細める。彼にはSharpが口を開いて話しているのがはっきりと見えているはずなのに、相手の声や周りの音が全く聞こえない。
+辺りは静まり返り、次第に、自身の心音すらも聞こえなくなった。
+そして、Sharpの表情にも変化が生じたのを見るのだった。
+[stopmusic(fadetime=2)]
+次の瞬間、あらゆる音がロドスから消え失せた。Raidianが確立した電磁通信路にも静寂だけが残った。
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「Stormeye、早くついてこい。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+彼はいくつかの見覚えある人影を見た。彼らもまた、かつての同胞だった……
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]――！？
+[charslot(slot = "m", focus = "n")]
+彼はかつて共に放浪した兄弟と再会を果たした。しかし……彼らはとっくの昔に死んでいるはずだ。
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「さっき奪ったビール、早く飲まないとぬるくなっちまうぜ。何を心配しているんだ？」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_npc_167")]
+[name="Stormeye"]（声なき言葉）
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「そうだぜ、石はもう俺の喉まで成長してるが、舌がカチコチにならない限り、酒を飲むのに支障はねぇ。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「まさか本当にあいつらについていくつもりか？　ふっ、なら行けよ。もしお前がロドスとかいう場所で死んでも、涙なんか流してやらねぇからな。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「だが……出発する前に、もう少したき火を囲もうぜ。月がもうすぐで出るんだぞ、見てぇだろ？」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+Stormeyeはかつてこの兄弟たちと穏やかに別れを迎えることができることを望んでいたが、彼がこの瞬間に感じたのは怒りだけだった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+同時刻、ロドスの反対側にて。
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「どこへ行く？」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot(slot="m",name="avg_4132_ascln_1#6$1")]
+[name="アスカロン"]……
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「アスカロン、お前は私に会えたのだ。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「これ以上先へ進む必要はない。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=50, randomness=90, fadeout=true, block=true)]
+[Effect(name="$e_spark_01_mid",x=0,y=50,rox=-180,roy=50,roz=-40,layer = 2)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, fadetime=2, block=false)]
+Miseryが即座に揺さぶり起こしたおかげで、アスカロンはなんとか破裂する源石クラスターから逃れた。
+[dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「Misery、前の賭けがまだ終わっていないのを忘れちゃいないだろうね。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「ぼうっとしていないで集中しろ。ほら、私の銃にはまだ弾が四発残っているよ。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[bgeffect]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_235")]
+[name="Misery"]……
+[charslot]
+周囲の源石は突然成長し、正体不明の結晶の敵が現れる間隔はどんどん短くなっていく。そして彼らの気を逸らせる「幻影」――
+全ての出来事が、このエリアが何としても彼らを追い出そうとしていることを意味していた。
+「Abyssの大体の位置は特定した」、アスカロンはこの情報をRaidianに伝えようとした……
+しかし、源石があらゆる者の声を呑み込んだ。
+この死のごとき静寂は、それ自体が巨大な謎であり、鉛で鋳造された墓だ。それは今、ロドスを逃れられぬ深淵へと引きずり込もうとしている――
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Subtitle(text="「こちらMantra。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「ケルシー医師から連絡があった。私は記憶と感情が冒涜されることを容認できない。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+Mantraの声がロドス艦内にいるオペレーター全員の頭の中で響く。これは彼女のアーツだ。その中の力を、そして怒りの感情を皆が感じ取った。
+[dialog]
+[PlaySound(key="$d_avg_stkmyer")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_phntsmbrek")]
+[Delay(time=1)]
+[playMusic(intro="$indust_intro",key="$indust_loop", volume=0.6)]
+[Subtitle(text="「奴は沈黙を用いて我々を阻もうとしている。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「ならば私が各方面を繋ぎ、皆の喉となろう――」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「各位。これより、お前たちに声を返してやる。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[dialog]
+[charslot]
+[Delay(time=1)]
+[Background(image="60_g10_rhodescorridor_origin",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",duration=0.5)]
+[Delay(time=1)]
+[name="アーミヤ"]Mantraさんです！
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="アーミヤ"]みなさんが集めてくれた情報を彼女が共有してくれています。
+[name="アーミヤ"]アスカロンさんとMiseryさんがすでにAbyssの近くを特定しています。
+[name="アーミヤ"]二人がAbyssの特殊信号をRaidianさんに共有してくれました。たとえ空間の構造が折り重なって変化したとしても、RaidianさんがAbyssの位置を再度追跡できます。
+[name="アーミヤ"]現在二人はそのエリアに暫く滞在し、Raidianさんと協力してご本人の生体信号を軸とした情報の基点を築くことにしたようです。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="危険すぎる。;彼らには増援が必要だ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="アーミヤ"]ブレイズさんとロスモンティスさんが応答をしていました。すぐに増援に向かうはずです。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]ドクター、ケルシー先生も心配です。
+[name="アーミヤ"]Raidianさんの情報によると、ケルシー先生の現在の状況は予断を許さないと……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="アスカロンたちの位置に集合し部隊を再編しよう。", values="1")]
+[Predicate(references="1")]
+[Decision(options="その後Abyssを突破する方法をみんなで見つける。", values="1")]
+[Predicate(references="1")]
+[Decision(options="ケルシーをあまり長くは待たせない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="アーミヤ"]はい。今はRaidianさんとMantraさんのアーツによって通信システムが一時的に使用できます。ですが、彼女たちのアーツは体に大きな負担をかけます。
+[name="アーミヤ"]時間に余裕はありません。ドクター、急ぎましょう。
+[charslot(duration=1)]
+[playsound(key="$d_avg_brokencrystal_fts")]
+あなたはアーミヤの手を取り慎重に源石クラスターの中を進む。あなたは源石の爆発する位置と時間を正確に算出することができるため、極めて有利な状態だ。
+しかし前進することに集中していたため、あなたはつい先ほど通った巨大な源石結晶の細部に気付かなかった。
+[stopmusic(fadetime=2)]
+源石結晶の滑らかな面があなたに向いているが、そこに映っているのはあなたたちの姿ではない。
+あなたたちに背を向けた一人のコータスの少女。彼女の痩せ細った手はもう一人の手に引かれている。ちょうど今この瞬間の、あなたとアーミヤのように。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image]
+[charslot]

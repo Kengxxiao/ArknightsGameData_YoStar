@@ -1,0 +1,335 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Image(image="avg_ac8mi_Pre",screenadapt="coverall", fadetime=0)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Delay(time=2)]
+その光景はあなたたちの目の前にあるにもかかわらず、どうやっても近付くことができない。
+[name="アーミヤ"]ドクター、あの人と話しているのは……ドクターですか？
+[dialog]
+[Decision(options="……;断言はできない。", values="1;2")]
+[Predicate(references="1;2")]
+[name="プリースティス"]（未知の言語）私一人の力で、究極の答えを述べ表すに足る言語を創造できるとは思っていないわ。
+[name="プリースティス"]（未知の言語）少なくとも、同胞たちが共有した各領域における最先端の研究成果は、すでに深く掘り下げていくための基盤を作ってくれた。
+[name="オラクル"]（未知の言語）たとえ、最終的に得るものは何もなかったとしてもか？
+[name="プリースティス"]（未知の言語）ええ、どうせこれが初めてではないもの。
+[name="プリースティス"]（未知の言語）暗闇に呑み込まれていくのを静かに待つこの日々では、これ以上良い方法はないように思えるわ。違う？
+[name="プリースティス"]（未知の言語）それに、あなたは私を拒絶しないでしょう。{@nickname}。
+[name="オラクル"]……
+[name="オラクル"]（未知の言語）どこから研究を始めるつもりだ？
+プリースティスは答えず、空の果てを微かに彩る朝焼けをじっと見ている。隣にいるその人物も、彼女の邪魔をしようとはしない。
+二人はただ、そうして甲板に立っている。
+あなたは彼女の後ろ姿を見て、無意識に自分にこう言った。「彼女は、また考えている。」――
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+なぜ唐突にそう思ったのだろうか？
+[name="アーミヤ"]ドクター、どうしたんですか？
+[dialog]
+[Decision(options="何でもない、ただぼうっとしていただけだ。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="ここにはもう重要な手がかりはないように思う。", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]ケルシー先生が気に留めていた情報はここにはないんですか？
+[dialog]
+[Decision(options="これは源石が誕生する前の歴史の破片のはずだ。", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]……！？
+[dialog]
+[Decision(options="自分の内なる宇宙における経験を踏まえた推測だ。", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]つまり、私たちが今捉えているこの光景はドクターの……
+[dialog]
+[Decision(options="恐らくそれだけではない。", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]――まさか、空に浮かぶあの巨大な船と砕けた壮大な球体も……
+[dialog]
+[Decision(options="自分とこれらの情報にどう繋がりがあるかわからない。", values="1")]
+[Predicate(references="1")]
+[name="アーミヤ"]いずれわかる時がきますよ、ドクター。
+[name="アーミヤ"]ですが、ここは私たちにとって重要ではないとおっしゃるなら、前へ進みましょう。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Image(image="60_i04",screenadapt="coverall")]
+[ImageTween( xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2,duration=100)]
+[CameraShake(duration=-1, xstrength=3, ystrength=2, vibrato=20, randomness=60, fadeout=true, block=false)]
+[playMusic(intro="$shatterpoint_02_intro",key="$shatterpoint_02_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="アーミヤ"]特異点は目の前ですが、構築した通路にも限界が迫っています。
+[name="アーミヤ"]情報の密度が非常に高いので、進み続けようとすると深い川に溺れているみたいに感じます。
+[name="アーミヤ"]……これらの無秩序な情報の中からどうやって必要な情報を見分けたらいいんでしょうか。
+[dialog]
+[Decision(options="任せてくれ。", values="1")]
+[Predicate(references="1")]
+あなたたちの思考が特異点に限りなく近付いていくのと同時に、実体に近い膨大な情報があなたたちを押し潰そうとしている……
+あなたはこの圧力に適応できている一方で、アーミヤが苦しげに耐え忍んでいるのを感じる。
+あなたたちに残された時間は多くない。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraShake(duration=0, xstrength=3, ystrength=2, vibrato=20, randomness=60, fadeout=true, block=false)]
+[Image(image="60_i05",screenadapt="coverall")]
+[bgeffect(name="$eb_confusion_centra",layer=1)]
+[bgeffect(name="$eb_confusion_loop",layer=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+あなたは内なる宇宙で「プリースティス」という人物が述べていたキーワードを全て抽出し、ケルシーが残した手がかりの一つ一つを素早くそれに結びつけた。
+新たな結果を高速で計算し、新たな条件を入力する……必要な情報だけを分離できるまで、それを絶えず繰り返して進み続ける。
+あなたの思考は、果てしのない積み木の海に沈み込んでいるようなものであり、あなたがやらねばならないことは最初から複雑ではない。
+色が異なる異類を見つける。そこにはケルシーがあなたに残した言葉が整然と刻まれていた――
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="「私は忘れたことがない。」", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[dialog]
+[Decision(options="アーミヤ、成功したようだ。", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[image]
+[bgeffect]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",duration=1)]
+[Delay(time=2)]
+[name="アーミヤ"]……ここは、どこですか？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ロドスだ。;過去のロドスだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="アーミヤ"]――！？
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="アーミヤ"]でも、ここは私たちのロドスとは――
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="まるで異なる。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="アーミヤ"]ケルシー先生の話では、この船はもともとレム・ビリトンで発掘されたもので、修繕を経てようやく使えるようになったそうです。
+[name="アーミヤ"]それならば……ロドスは一体何を経験したんでしょう？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="自分にも全く見当がつかない。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[name="？？？"]（未知の言語）今日は元気そうだ。我々の努力は、報われたようだな。
+[dialog]
+[charslot(slot="m",name="avg_npc_1360_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="オラクル"]（未知の言語）実験室に一人でいるのは怖いか？
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（誇らしげな振動音）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）ちょうどいい。今特殊媒体におけるメタ情報のロスを減らすためのモデルをシミュレートしていたんだ。演算を手伝ってもらえるか？
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（焦りながら震える）
+[dialog]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）十分だ。すでに君のプロセスは、強制的に終了させた。
+[name="オラクル"]（未知の言語）いついかなる時であろうと、自身のコアアセンブリを傷つけてはいけない。たとえそれが自分や彼女の命令だったとしても。
+[name="オラクル"]（未知の言語）自身を守るんだ、AMa-10。生存こそ生命が誕生した時から備える本能だ。
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（悔しそうな振動音）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）はは。少なくとも君が感情モジュールのセルフアップデートをする速度は早いな。
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="アーミヤ"]ドクター、この言語を理解できますか？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="できない。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="あの人物と奇妙な造物に気を取られる必要はない。;鍵は別の場所にある。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]そうですね。私たちなら鍵を見つけられるとケルシー先生が信じているからには、言語の壁もきっと彼女の想定の範囲内のはずです。
+[name="アーミヤ"]ドクター、あの人のそばのガラスを見てみてください。たくさんの文字が書かれています。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="あれは、公式か？", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）源石についての研究の進捗が芳しくないことが残念だ。
+[name="オラクル"]（未知の言語）我々は今まさに、これまで探知したことのない領域に触れようとしている。他の者がついてくるのは困難だろう。
+[name="オラクル"]（未知の言語）彼女との議論の頻度はどんどん高くなっているが、実験の進捗は遅くなっている。
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（熱心に慰める）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）我々の心配はいらない。目の前のこのモデルの運用効率が当初の期待に応えるものとなれば、源石開発の進捗は飛躍を迎えるかもしれない。
+[name="オラクル"]（未知の言語）そういえば、紺碧の樹も珍しく革新的な進歩があったと、ルゥがメッセージを送ってきた。すぐに彼女がまた会いに来てくれるはずだ。
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（心から喜ぶ）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）君は彼女をかなり好いているようだな。
+[dialog]
+[charslot]
+[Decision(options="アーミヤ、あの公式を覚えておく必要がある！", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="アーミヤ"]今覚えてい――
+[stopmusic(fadetime=1)]
+[dialog]
+[charslot]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.4, block=true)]
+[bgeffect]
+[curtain(direction = 2,fillfrom = 0,fillto = 0.15, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0,fillto = 0.15, fadetime=2)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=2, ystrength=1, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playMusic(intro="$snowmonster_intro",key="$snowmonster_loop", volume=0.6)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="何が起きた？;通路が脅かされているのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="アーミヤ"]「文明の存続」の基底ロジックが穴を排除しようとしていると、テレジアさんが警告してくれています！
+[name="アーミヤ"]私たちが限界を越えた情報をコピーしているせいです。
+[name="アーミヤ"]ドクター、あの公式に用いられている文字の意味がまだ理解できません――
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="理解しようとしなくていい！;記憶しておくだけでいい！;自分もできる限り暗記する！", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.8)]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[curtain(direction = 2,fillfrom = 0.15,fillto = 0.25, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.15,fillto = 0.25, fadetime=2)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=2, ystrength=1, vibrato=30, randomness=90, fadeout=true, block=false)]
+境界の情報が新たな再構築フェーズに入った。穴は修復され、あなたたちに見えている光景も急速に薄れつつある。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）AMa-10、彼女と共に作成したこのモデルは必ず成功する予感がするんだ。
+[name="オラクル"]（未知の言語）件の言語が本当に創り出される日を心待ちにしている――
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（優しく注意する）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="オラクル"]（未知の言語）DWDB-221Eの同期が終わっていない？　ああ、もちろん認識している。だからこの通り落ち着いているだろう？
+[charslot(slot="m",afrom=1,ato=0.5,duration=1)]
+話している人物が薄れゆく。
+[charslot(slot="m",name="avg_npc_1360_1#1$1",afrom=0.5,ato=0.5)]
+[name="オラクル"]（小声の未知の言語）君が宙の果てのどの地域からの来訪者かはわからないが、その時にこの文明が眠りについていたなら、自分の代わりに我々の残したビーコンを見に行ってくれ。
+[name="オラクル"]（小声の未知の言語）それは我々の祝福……そして最後に贈る希望となるかもしれない。
+[charslot(slot = "m", focus = "n")]
+その人物が……あなたを見ている？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……！？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", focus = "n")]
+[name="原始構造体"]（焦ったように低く唸る）
+[charslot(slot="m",name="avg_npc_1360_1#1$1",afrom=0.5,ato=0.5)]
+[name="オラクル"]（未知の言語）……我々は目にするはずだ、AMa-10。自分は信じている。
+[dialog]
+[charslot]
+[curtain(direction = 2,fillfrom = 0.25,fillto = 0.35, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.25,fillto = 0.35, fadetime=2)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=2, ystrength=1, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アーミヤ"]公式の映った景色も消え始めています！
+[dialog]
+[Decision(options="通路が崩壊しないうちに撤退しよう。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[name="アーミヤ"]ですがまだ――
+[dialog]
+[Decision(options="自分がいる！;二人でなら復元できる。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[Dialog]
+[curtain(direction = 2,fillfrom = 0.35,fillto = 1, fadetime=1)]
+[curtain(direction = 6,fillfrom = 0.35,fillto = 1, fadetime=1)]
+[stopmusic(fadetime=2)]
+[CameraShake(duration=3, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain]
+[Delay(time=0.5)]
+[bgeffect]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_white",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+次の瞬間、あなたの思考は大きな衝撃を受け、落下する感覚を覚えた。
+あなたの最後の意識は、アーミヤをできるだけ特異点から遠ざけようとしている自分と、見覚えのある姿を認識したところで止まった――
+[Dialog]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="シヴィライト・エテルナ"]アーミヤがここまで来る手伝いをしてくれてありがとう。あとは……
+[name="シヴィライト・エテルナ"]ここを離れて。
+[charslot]
+あなたとアーミヤが共有していた思考の繋がりはこの瞬間に切れ、あなたの思考はその後に起きた出来事など何も覚えていられないほど疲弊していた。
+あなたたちは「文明の存続」から抜け出した。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+特異点から噴き出す情報は止まらない。その中の最も取るに足らない光景は、記録されて以来一度もアクセスされたことがない――
+静寂な深宇宙の中、一筋の光が一帯の星域を照らすと同時に暗闇をもたらし、また紛れもない絶望をもたらした。
+数千万光年離れた探知機がその星域の遥か遠い過去の映像を受信した時、画面の中で恒星に照らされた星はすでに墓場と廃墟に満ちていた。
+神はすでに訪れた。
+[dialog]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="レイディストーター"]♫~♫~
+[name="レイディストーター"]そういう風に弁護するよう幽霊に言われたの？
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="ヒアダ"]いいえ、レイディストーターさん。幽霊さんに頼まれてやっているわけではありません。
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="レイディストーター"]彼女を警戒するんだ。惑わされてはいけないよ。
+[name="レイディストーター"]……彼女の魅力に対して警戒を緩めたら、君は危険な目に遭う可能性がある。魅力は、彼女たちの種族が捕食のために身に着けた天性だ。
+[name="レイディストーター"]それと君が探している人、この船の主、プリースティスに関しては……
+[name="レイディストーター"]現在行われている重要な研究のために、彼女の意識は恐らくこの星域の異なる科学研究地点を行き来しているだろう。
+[name="レイディストーター"]本人が望まない限り、彼女に時間を割いてもらうのは難しい。
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="ヒアダ"]……
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="レイディストーター"]ヒアダ、君がそんなにも彼女に会いたいと思うのは、救けてくれたことへの感謝だけが目的なのか？
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="ヒアダ"]今はそれが全てではなくなったんです。
+[name="ヒアダ"]私が今いる場所は「宇宙」という名の奇妙な場所であること、そしてここは死後にたどり着く場所ではないことは理解しました……
+[name="ヒアダ"]私の故郷であるテラも、宇宙の中に存在するかもしれないという、少し大胆な予想もしてます。
+[name="ヒアダ"]でもより多くの知識はより多くの疑問をもたらすだけ。それで彼女に聞きたいんです――
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="ヒアダ"]なぜ私は死んでいないのか？
+[name="ヒアダ"]テラ、私の故郷は、どこにあるのか？
+[charslot]
+コータスは、喪失感に包まれながら船窓から遠くの深宇宙の星々を眺める。
+コータスを未だに気にかけている司教や修道士が、彼女だけの大地で、彼女のためにいまだ祈りを捧げているかもしれない。しかしヒアダはもうそれに応えることはできない。
+彼女は廊下の壁際に縮こまり、恒星の光がさっと顔を横切っても気に留めなかった。
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="ヒアダ"]失われていく時間も、肉眼で見えるものなのね。
+[charslot(duration=1)]
+彼女はこの船でたくさんの人に遭遇した。実験室に籠りきりで皆が畏敬の念を抱くフードの天才、破滅の中から生存し宇宙を旅し続ける探検家……
+彼らの前向きさと善意により、ヒアダは最初の恐怖を捨てていた。しかし彼女は、自分は永遠にこの不思議な船に溶け込むことはできないとはっきりとわかっていた。
+「テラが恋しい。」
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

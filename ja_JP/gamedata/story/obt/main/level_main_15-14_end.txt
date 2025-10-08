@@ -1,0 +1,731 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", multi = true, text="「生命」という概念は空疎だけど私たちにとっては致命的な魅力に満ちているわ。", x=250,y=250, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n我々はすでに、私たちと似た思考モデルを有する個体を生命と見なすことに慣れている。「彼らがどれほど私たちに似ているか」というだけの理由で……", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n私たちは皆、生存のするために、一切の代償をも惜しまず死と戦うというだけの理由でね。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Sticker(id="st2", multi = true, text="だけどこれは一種の傲慢よ、{@nickname}。", x=250,y=350, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st2", duration=2, block = false)]
+[StopSound(channel="en", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$normal02_intro", key="$normal02_loop", volume=0.6)]
+[PlaySound(key="$d_avg_enemyappear_weird", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1727_1#1$1", duration = 1.5)]
+[delay(time=2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_arrowtarget", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_shdwblwvr", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot = "r", name = "avg_npc_167", posfrom="200,0", posto="0,0", duration=1, isblock=true)]
+[delay(time=0.5)]
+[name="Stormeye"]ターゲット排除。
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[charslot(slot = "r", focus="n")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "-250,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "-250,0", pto="-250,0", name = "avg_npc_1723_1#1$1", duration = 0)]
+[delay(time=0.5)]
+[name="クロージャ"]Stormeyeちゃん、四時の方向へ二連射して。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "r", focus="r")]
+[name="Stormeye"]壁の支柱に？
+[interlude(channel = 3, clear = true)]
+[charslot]
+Stormeyeは不思議に思ったが、躊躇うことなく矢を二本続けて射った。
+[dialog]
+[PlaySound(key="$d_avg_spirlstrsndlss", volume=0.6, loop=true, channel="sp")]
+[StopSound(channel="sp", fadetime=5)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_arrowtarget", volume=0.5)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=0.3)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_arrowtarget", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=0.3)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1", tsduration = 0, switch = true, style = 0,offset = "-250,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "-250,0", pto="-250,0", name = "avg_npc_1723_1#1$1", duration = 0)]
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "r", name = "avg_npc_167", focus="r")]
+[name="Stormeye"]放った瞬間に地形が変化して障害物がタイミングよく消え、敵に命中した……
+[name="Stormeye"]クロージャさん、一体どうやったんですか！？
+[charslot(slot = "r", focus="n")]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "-250,0", pto="-250,0", name = "avg_npc_1723_1#9$1", duration = 0)]
+[name="クロージャ"]へへ、あたしじゃなくて、ZOOTが計算したんだよ。
+[name="クロージャ"]今度は六時の方向だよ。そのまま飛び込んで。空洞の下の源石クラスターに怖がる必要はないから。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "r", name = "avg_npc_167", focus="r")]
+[name="Stormeye"]ハッ。
+[dialog]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsfrom="1,1", tsto ="0,1", tsduration = 0.5)]
+[delay(time=1)]
+[playsound(key="$d_avg_clothmovement",volume=1)]
+[charslot(slot = "r", posfrom="0,0", posto="80,15", afrom=1, ato=0, duration=0.2, isblock=true)]
+[CameraShake(duration=5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_spirlstrsndlss", volume=1, loop=true, channel="sp")]
+[StopSound(channel="sp", fadetime=5)]
+[delay(time=2)]
+彼が真っ直ぐ飛び込むと、地形が再び変化した。終わりのない落下を始めるも、呪文で編まれたロープが彼を引くのだった。
+[dialog]
+[playsound(key="$d_avg_magic_1",volume=1)]
+[playsound(key="$d_avg_strngspllstght",volume=1)]
+[charslot(slot = "m", name = "avg_4133_logos_1#1$1", duration=1, isblock=true)]
+[delay(time=0.5)]
+[name="Logos"]クロージャの計算は正確である。
+[name="Logos"]ここで長らく待っておったぞ。
+[charslot(slot = "m", focus="n")]
+[name="Stormeye"]ではこれからは？
+[charslot(slot = "m", name = "avg_4133_logos_1#3$1")]
+[name="Logos"]指示に耳を傾け、目を閉じ前進する。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Sticker(id="st1", multi = true, text="私たちは争う勇気を賞賛し、抗う美徳を喧伝する。", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nそうして、同じ思考パターンに従う生命はその希望の見えない隊列に加わる。", block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[delay(time=0.5)]
+[Sticker(id="st2", multi = true, text="しかし本当の神の前では、あるいは……", x=250,y=250, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st2", multi = true, text="\n\nあらゆる抵抗は神にしてみれば、自然界で一番取るに足らない変化のようなものなのかもしれない。", block = true)]
+[Sticker(id="st2", multi = true, text="\n\nあるいは、神は我々に気付いてすらいないのかもしれない。", block = true)]
+[Sticker(id="st2", duration=0.5, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Effect(name="$e_sandfall_01",layer = 1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=3, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=3)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_391_rosmon_1#1$2",duration=1, isblock=true)]
+[name="ロスモンティス"]視界範囲内の敵は全部排除したよ。
+[name="ロスモンティス"]隔離エリアの防衛線は確立できた。
+[charslot(slot="m", name="avg_017_huang_1#12$2")]
+[name="ブレイズ"]やるぅ、小猫ちゃん！
+[name="ブレイズ"]うーん、でも私にもっと残しておいてくれてもよかったけどね。
+[charslot(slot="m", name="avg_017_huang_1#1$2")]
+[name="ブレイズ"]次はどうしたらいい？
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "0,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "avg_npc_1723_1#1$1", duration = 0)]
+[delay(time=0.5)]
+[name="クロージャ"]あと三十秒後。
+[name="クロージャ"]敵が正面から現れるから、全力で排除して。
+[name="クロージャ"]そっちの方向でドクターが通らなきゃいけない道に通じる新しい通路が開くから。
+[interlude(channel = 3, clear = true)]
+[charslot(slot="m", name="avg_017_huang_1#11$2")]
+[name="ブレイズ"]オッケー！　これで諸悪の根源にもう一回悔しい思いをさせてやれるね！
+[name="ブレイズ"]小猫ちゃん、今回は私に先にやらせてよね？
+[dialog]
+[charslot(duration=0.5, isblock=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", multi = true, text="あなたは私に賛同しないのよね？　{@nickname}。", x=250,y=250, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nこれが真相を読み解く鍵である確証はない。ただ、その予見可能な絶望が私たちの今までのあらゆる努力を無にすると確定した後――", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n手の届く希望をしっかりと自分の手に握り締めるしかないわ。", block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[delay(time=0.5)]
+[Sticker(id="st2", multi = true, text="私は生命の奇跡にあまりに多くの愛を注いだ。そのために、我々には捨てることのできない軟弱さと欠陥が次第にはっきりと見えるようになった。", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st2", multi = true, text="\n\nなら私の愛する人たちをどう信じればいいの？　あなたを……どう信じればいいの？", block = true)]
+[Sticker(id="st2", duration=0.5, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m", name="avg_npc_521_1#1$1")]
+[name="Mechanist"]だめだ！　クロージャ！
+[name="Mechanist"]周囲の建築構造が収縮し始めた。押し潰そうとしてきている！
+[name="Mechanist"]放ったドローンも通行可能なルートを発見できず、補強設備も長くは持たない。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "0,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "avg_npc_1723_1#6$1", duration = 0)]
+[delay(time=0.5)]
+[name="クロージャ"]今計算してるとこ！
+[name="クロージャ"]ZOOTが膨大な情報を同時に処理してるから、もうちょっと待ってあげて！
+[name="クロージャ"]6、5、4、3、2……1！
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "avg_npc_1723_1#7$1", duration = 0)]
+[name="クロージャ"]Mechanistちゃん、上見て！
+[interlude(channel = 3, clear = true)]
+[charslot(slot="m", name="avg_npc_521_1#1$1")]
+[name="Mechanist"]……？
+[dialog]
+[CameraShake(duration=5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_bldwhoosh", volume=1)]
+[Effect(name="$e_bladeline_01_small", x = 0, y = -26, rox = 0, roy = 0, roz = -58, layer = 1)]
+[delay(time=0.5)]
+影の中の天井が歪み始め、冷たい光を放つ切っ先が、未知に通ずる通路を切り開いた。
+するとそこから手が伸びてきた。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Background(image="60_g8_rhodeslowerdeck_origin",screenadapt="coverall")]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Miseryの声"]あんたが助けを求めていると聞いた。
+[name="Miseryの声"]時間がなくて、非常手段を用いるしかなかったんだ。
+[name="Miseryの声"]しっかり掴まってくれ、Mechanist！
+[name="Miseryの声"]皆があんたを待っているぞ。
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="ene")]
+[SoundVolume(volume=0.6, channel="ene", fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", multi = true, text="私たちの次の再会がいつになるか正確な予測はできなかった――", x=250,y=250, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\nだけど、その時私たちはすでに今持っている全てを失っていると断言できるわ。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n永遠に死を迎えない生命はなく、時間の果てで再会できる死者もいない。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nだけどそれでも、その時あなたに会えることを願っているわ……{@nickname}。", block = true)]
+[Sticker(id="st1", duration=2, block = false)]
+[SoundVolume(volume=0.8, channel="en", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_enemyappear_weird", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1727_1#1$1")]
+[charslot(slot = "l", name = "avg_npc_1728_1#1$1")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$firestorm", volume=1, loop=true, channel="fire")]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=2, block=false)]
+[StopSound(channel="fire", fadetime=6)]
+[StopSound(channel="f", fadetime=2)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_shdwblwvr", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$char_Mon3tr")]
+[charslot(slot = "m", name = "npc_10002", duration=0.5, isblock=true)]
+[name="Mon3tr"]（怒ったような雄たけび）
+[name="Mon3tr"]（咆哮）
+[dialog]
+[PlaySound(key="$d_avg_energygather", volume=0.5, loop=true, channel="en")]
+[StopSound(channel="en", fadetime=2)]
+[name="Mon3tr"]（エネルギーを溜める）
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$b_char_fireharm", volume=1)]
+[name="Mon3tr"]（焼けつく光線を放つ）
+[dialog]
+[charslot]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+激しく放たれた光線は源石結晶体が集まってできた包囲網に巨大な突破口を作ると、そのまま遠くまで伸び……さらに多くの源石結晶体を倒す――
+しかし突然、それは何かの力に遮られた。
+[dialog]
+[PlaySound(key="$d_avg_metallicclick", volume=1)]
+[name="？？？"]すっごい力だね！
+[dialog]
+[charslot(slot = "m", name = "avg_017_huang_1#1$2", duration=1)]
+[delay(time=1.5)]
+[name="ブレイズ"]でもドクターを傷つけないようにね、Mon3tr。
+[charslot(slot="m", name="avg_391_rosmon_1#1$2")]
+[name="ロスモンティス"]みんな位置についたよ。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=2)]
+[delay(time=1.5)]
+あなたが皆を率いて暗闇の中から現れる。
+[dialog]
+[Decision(options="ケルシーはここにいる。", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$Mon3tr_n")]
+[charslot(slot = "m", name = "npc_10002")]
+[name="Mon3tr"]（嬉しそうに体を揺らす）
+[dialog]
+[charslot]
+[Decision(options="Mon3trの支援を。;石棺周囲の敵を排除するんだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="アスカロン"]随時私に合わせられるようにしてくれ。
+[charslot(slot = "m", name = "avg_npc_235")]
+[name="Misery"]安心しろ。
+[charslot(slot = "m", name = "avg_4133_logos_1#1$1")]
+[name="Logos"]呪文が随行する。
+[charslot(slot = "m", name = "avg_npc_521_1#1$1")]
+[name="Mechanist"]あれが……石棺か？　本艦内にずっと隠されていたのか？
+[Dialog]
+[charslot]
+[Decision(options="自分が最初に目覚めた場所……", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "0,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "avg_npc_1723_1#6$1", duration = 0)]
+[delay(time=0.5)]
+[name="クロージャ"]ケルシーの信号が弱まってるのをZOOTが検出したよ！
+[name="クロージャ"]急いで確認しないと。
+[interlude(channel = 3, clear = true)]
+[charslot(slot = "m", name = "avg_npc_249_1$1")]
+[name="Touch"]ケルシーさんが中に？
+[name="Touch"]Raidianさんによれば、彼女の状態はあまり楽観視できないようです。
+[charslot(slot = "m", name = "avg_npc_1730_1#7$1")]
+[name="Raidian"]Dr.{@nickname}、できるだけすぐに彼女をそこから出してあげないと。
+[name="Raidian"]このままだと……彼女の身が心配だよ。
+[charslot(slot = "m", name = "avg_npc_1310_1#1$1")]
+[name="Pith"]軽率な行動はできない。ケルシーと石棺の状況をしっかり把握できているわけではないんだ。
+[name="Pith"]当時の作戦記録によると、チェルノボーグにおいても石棺に接触した者がおり、最終的に我々の想定していなかった異変が起きた。
+[dialog]
+[charslot]
+[Decision(options="ケルシーは違う。", values="1")]
+[Predicate(references="1")]
+[Decision(options="ここは任せてくれ。;援護してくれ。", values="1;2")]
+[Predicate(references="1;2")]
+あなたは何一つ躊躇うことなく石棺へと向かう。
+[dialog]
+[delay(time=1)]
+あなたは冷たい石棺に触れた。それは……あなたに応えている。
+いや、ケルシーが応えているのだ。
+[dialog]
+[Decision(options="まだまだ、これからも我々は共に進まねばならない。", values="1")]
+[Predicate(references="1")]
+[StopSound(channel="ene", fadetime=2)]
+[PlaySound(key="$d_avg_stonegateopen", volume=1, loop=true, channel="sn")]
+[StopSound(channel="sn", fadetime=3)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$3")]
+[name="アーミヤ"]……
+[name="アーミヤ"]ケルシー先生――
+[charslot]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[name="弱々しい声"]……ちょうどいいタイミングに来たな。
+[name="弱々しい声"]ロドスは……どうなった……
+[dialog]
+あなたは石棺の中の人物に手を伸ばした。
+[dialog]
+[Decision(options="みんな無事だ。;君の努力のおかげだ。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="おかえり、ケルシー。", values="1")]
+[Predicate(references="1")]
+彼女があなたの手を握る。あなたはかつてないほど彼女が弱っているのを感じた。
+[dialog]
+[Decision(options="調子が悪そうだ。;何が起きたんだ？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#4$1", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[name="ケルシー"]私を気にかける必要はない……
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]石棺を通じてPRTSに介入することは困難だった。だが思いがけずある贈り物を受け取った。
+[name="ケルシー"]PRTSとプリースティスに関するさらなる情報を、すぐに君たちに共有する。
+[PlaySound(key="$Mon3tr_n")]
+[charslot(slot="m", name="npc_10002")]
+[name="Mon3tr"]（緊張した雄たけび）
+[charslot(slot = "m", name = "avg_003_kalts_1#11$1")]
+[name="ケルシー"]恐れることはない、Mon3tr。私はまだ君の前に立っている。
+[name="ケルシー"]君を置いていきはしない。
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="ケルシー"]Dr.{@nickname}、Abyssに通じる道はすでに見つけた。
+[name="ケルシー"]この混乱を終わりにしよう。
+[name="ケルシー"]ここは干渉が非常に強い。Abyssのかなり近くまで来ている。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$3")]
+[name="アーミヤ"]ですがここには道がありません。Abyssは完全に隠れてしまっています――
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]この距離ならば、Abyssの位置ははっきりと推測できる。
+[charslot]
+ケルシーは最も奥深くにある壁の前に立ち、しっかりと息を吸い込んだ。
+彼女はここまで奥に来たことはない――
+[charslot(slot="m", name="npc_10002")]
+[name="Mon3tr"]（焦ったように低く唸る）
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=1)]
+[Decision(options="心配いらない、Mon3tr。;自分が彼女のそばにいる。", values="1;2")]
+[Predicate(references="1;2")]
+あなたはケルシーの傍に歩み寄った。
+[dialog]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$3")]
+[name="アーミヤ"]私もいますよ、ケルシー先生。
+[dialog]
+[charslot]
+[Decision(options="ロドスは共に脅威に立ち向かう。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#2$1")]
+[name="ケルシー"]……今回は、本当に違う結末になるかもしれないな。
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="ケルシー"]石棺を通じて一部の権限を残しておいた。私が道を開こう。
+[charslot]
+ケルシーがあなたたちとAbyssとを隔てる壁に触れた。
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=8, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=8)]
+[PlaySound(key="$d_avg_rockfall", volume=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=8, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=8)]
+[PlaySound(key="$d_avg_rockfall", volume=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_aircraftalarm", volume=1, loop=true, channel="c")]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.4, block=true)]
+[Sticker(id="st1", multi = true, text="警告：異常なエネルギー源の急変を検知しました。", x=180,y=170, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[Sticker(id="st2", multi = true, text="警告：予備エネルギー不足。", x=180,y=240, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[Sticker(id="st3", multi = true, text="警告：エンジン動力エネルギー不足。エンジン停止。", x=180,y=310, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[Sticker(id="st4", multi = true, text="警告：エネルギー動力エリアオフライン。", x=180,y=380, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[Sticker(id="st5", multi = true, text="警告：最上甲板オフライン。", x=180,y=450, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[Sticker(id="st6", multi = true, text="警告：通信システムオフライン。", x=180,y=520, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[Sticker(id="st7", multi = true, text="警告：コアアセンブリに修復不能な損傷を検知しました。", x=180,y=590, alignment="left", size=24, delay=0.04, width=800, block = false)]
+[delay(time=0.6)]
+[StopSound(channel="c", fadetime=2)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Sticker(id="st2", duration=0.5, block = false)]
+[Sticker(id="st3", duration=0.5, block = false)]
+[Sticker(id="st4", duration=0.5, block = false)]
+[Sticker(id="st5", duration=0.5, block = false)]
+[Sticker(id="st6", duration=0.5, block = false)]
+[Sticker(id="st7", duration=0.5, block = false)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", multi = true, text="申し訳ございません、ク――クロー――", x=180,y=170, alignment="left", size=24, delay=0.04, width=800, block = true)]
+[Sticker(id="st1", duration=3, block = false)]
+[PlaySound(key="$d_avg_machinedeath", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="クロージャ"]「ゼロスオーダーオイルタンク」……ありがとね。
+[name="クロージャ"]本艦もついに止まったよ。
+[dialog]
+[charslot]
+[Background]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Delay(time=1)]
+[playMusic(intro="$kaltsitteam_intro", key="$kaltsitteam_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="ケルシー"]Mon3tr、ドクターを守れ。
+[name="ケルシー"]今後全ての行動はドクターの状況を鑑みて独自に判断していい。未知の敵の脅威からドクターを守るんだ……
+[name="ケルシー"]またドクター自身に何か異常が起こった場合にも、君はドクターを止める必要がある。
+[charslot(slot="m",name="npc_10002")]
+[playsound(key="$char_Mon3tr",volume=1)]
+[name="Mon3tr"]（信頼するように低く唸る）
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="ケルシー"]アーミヤ、Dr.{@nickname}の状態に常に気を払っておいてくれ。
+[name="ケルシー"]ひとたびAbyssに入れば、現実に対する我々のあらゆる認識に衝撃が与えられる恐れがある。
+[name="ケルシー"]常に危険と隣り合わせであるが、君とドクターの安全が最優先事項だ。最終的な脅威に対応できるのは、君たちだけなのだから。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$3")]
+[name="アーミヤ"]はい……気をつけます。
+[dialog]
+[charslot]
+[Decision(options="ほかに注意すべきことはあるか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]君の本心を信じていればいい。
+[name="ケルシー"]Dr.{@nickname}、この局面がこんなにも早く訪れるとは思っていなかった。
+[charslot(slot = "m", name = "avg_003_kalts_1#2$1")]
+[name="ケルシー"]しかし内なる宇宙とトリマウンツでの経験で、私は多くのことを考え直した。君はすでに別の可能性を見せてくれたからだ。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]これから起こる全てが君にとって、私にとって、またロドスの全員にとって未知数だ。
+[name="ケルシー"]だから、Dr.{@nickname}、教えてくれ――
+[name="ケルシー"]直面するであろう危険に対して、君にはまだ躊躇いがあるか？
+[dialog]
+[charslot]
+[Decision(options="ある。;ない。", values="1;2")]
+[Predicate(references="1")]
+[Decision(options="だがこの先の危険を恐れてはいない。", values="1")]
+[Predicate(references="1")]
+[Decision(options="君はまだ緊張と躊躇いを隠そうとしている。", values="1")]
+[Predicate(references="1")]
+[Decision(options="一人で全ての重荷に耐える必要はない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="npc_10002")]
+[name="Mon3tr"]（同意してケルシーをつつく）
+[dialog]
+[charslot]
+[Decision(options="今回、自分もロドスも君の傍にいる。", values="1")]
+[Predicate(references="1")]
+[Predicate(references="2")]
+[Decision(options="君たちがいるから、待ち受けるものを恐れてはいない。", values="2")]
+[Predicate(references="2")]
+[Decision(options="むしろ君の方が心配だ。", values="2")]
+[Predicate(references="2")]
+[Decision(options="このエリアに入ってから君は極度に緊張している。", values="2")]
+[Predicate(references="2")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$Mon3tr_n")]
+[charslot(slot="m",name="npc_10002")]
+[name="Mon3tr"]（不安げに低く唸る）
+[dialog]
+[charslot]
+[Decision(options="ケルシー……", values="2")]
+[Predicate(references="2")]
+[Decision(options="信じてくれ、自分とロドスが君と共にある。", values="2")]
+[Predicate(references="2")]
+[Predicate(references="1;2")]
+[Decision(options="次に何をすべきか教えてくれ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]Abyssを開くためのプログラムはすでにアクティベートし、船室を起動するために必要なエネルギーも準備は整っている。
+[name="ケルシー"]しかし私はAbyssに入るための完全な権限を持ち合わせていない。
+[charslot(slot="m", name="avg_017_huang_1#7$2")]
+[name="ブレイズ"]えっ？
+[name="ブレイズ"]じゃあじゃあこじ開けなきゃいけないの？　それならMiseryが何とかできるかも。
+[charslot(slot = "m", name = "avg_003_kalts_1#2$1")]
+[name="ケルシー"]（首を横に振る）
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]Abyssの秘匿性と安全性はテラ全体においても最高レベルだと言える。現状ここを開くことのできる権限を持つのは一人だけだ。
+ケルシーの視線が自身に向けられているのをあなたは感じた。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$3")]
+[name="アーミヤ"]……ドクター？
+[dialog]
+[charslot]
+[Decision(options="……自分の力が必要であれば。;決して退かない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="ケルシー"]十七年前、ようやく「ロドス・アイランド」号を見つけた時、そのほとんどの構造が長い歳月の中で侵食により破壊されていた。
+[name="ケルシー"]唯一コアに位置するAbyssとその周囲のエリアのみが完璧なまま保たれていた。
+[name="ケルシー"]Abyssの中の未知のエネルギーによって、PRTSは止まることなく稼働し続け、その後我々が頼りとする指揮システムの根底たるフレームワークとなった。
+[charslot(slot = "m", name = "avg_003_kalts_1#2$1")]
+[name="ケルシー"]しかしAbyssは誰にも開かれたことがなく、今ではもう……万年を超える。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="60_i11_1R", screenadapt="coverall",x=-250)]
+[BackgroundTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="ケルシー"]三年前、「アナンナ」が完全に降臨して以来、危機が訪れる速度はすでに予想を超えていると私は悟った。
+[name="ケルシー"]あの混乱は我々の多くが身をもって体験した。あの時に感じた遺憾と悲痛が、あの出来事を今も記憶を新しいものとしている。
+[name="アスカロン"]……
+アスカロンが黙したまま仕込み刀を構え、あらゆる突発的な危機に備える。
+Raidianがアスカロンのわずかな異常を察知し、いつものようにアーツでアスカロンを、そしてその場の同僚一人一人をなだめた。
+[name="ケルシー"]ここ三年、我々は本艦の防御を強化し続け、ロドスを内部から瓦解させようとする脅威にいかに対処するかの訓練を行ってきた。
+[name="ケルシー"]各オペレーターが一丸となって協力したおかげで、予期せぬ事態が発生した際、危機の根源を迅速に特定できるようになった。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="60_i11_1L", screenadapt="coverall",x=250)]
+[BackgroundTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ケルシー"]しかしながら、我々はすでに濃霧の縁に来ており、この先は完全なる未知だ。
+[name="ケルシー"]私にも躊躇いはあった。しかしドクターの言う通りだ。これまでそうしてきたように、我々であればこの危機を解決できる。
+[name="ケルシー"]なぜならば我々は常に共にあるからだ。
+Logosは骨筆を軽く振り、言葉が彼の口から出ると、庇護がそれに続いた。
+[name="Mechanist"]ここまで足並み揃えて行動するのは随分と久しぶりだな。どんな気分だ、Logos？
+[name="Logos"]集中せよ。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[Background(image="60_i11_1M",screenadapt="coverall")]
+[BackgroundTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1.05, yScaleTo=1.05, duration=20, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="アーミヤ"]これまでの情報から判断するに、AbyssにあるのはPRTSのコアアセンブリだけではないはずです。
+[name="アーミヤ"]その中の石棺にて「プリースティス」という名の個体が休眠している可能性が極めて高いです。
+[name="ケルシー"]もしプリースティスが目覚めたなら、彼女を最速で排除することに全力を注いでほしい。
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[name="ケルシー"]これは想定外の事態を避ける最善の方法だ、Dr.{@nickname}。
+[name="ケルシー"]目覚めた瞬間こそが彼女の最も弱っている時だ……今の環境に適応するにも時間を要するだろう。
+[name="アーミヤ"]ドクター……？
+目の前の壁に触れたあなたは、不思議な感触に鼓動が早まる。
+あなたには直感があった。この場所はあなたを待っている。あるいは……この場所はそもそもあなたのために存在していると言うべきかもしれない。
+壁が震えている。警報音が聞こえた気がした。それは鼓膜を突き破ろうとしているかのように思えた。
+あなたは一瞬ぼんやりとする。その耳障りの音は現在からやってきているのか、それとも過去からか？
+[name="アーミヤ"]Abyssが変化しています！
+壁面が不規則に動き始め、一本の亀裂が生まれた。
+[dialog]
+[PlaySound(key="$d_avg_spirlstrsndlss", volume=1, loop=true, channel="sp")]
+[StopSound(channel="sp", fadetime=4)]
+[Background(image="60_i11_2M",screenadapt="coverall", xScale=1.05, yScale=1.05, fadetime=2)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_wind", volume=1)]
+[delay(time=2)]
+そこから気流が噴き出した。
+[name="Logos"]「ベール」。
+[dialog]
+[PlaySound(key="$d_avg_magicwrite", volume=0.6,loop=true,channel="logos")]
+[StopSound(channel="logos", fadetime=6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.4, r=255, g=255, b=255, fadetime=1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+バンシーの呪文が形なきバリアとなり、荒れ狂う気流を遮った。
+[name="アスカロン"]下がれ、ドクター。
+[name="アスカロン"]全員警戒しろ。
+[dialog]
+[PlaySound(key="$d_avg_attack_ready", volume=1)]
+[delay(time=1)]
+[CameraShake(duration=0.8, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$Mon3tr_n",volume=1)]
+[name="Mon3tr"]（高ぶった雄たけび）
+[dialog]
+[BackgroundTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=6, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.33, fadetime=6)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.33, fadetime=6)]
+[delay(time=4)]
+[largebg(imagegroup="60_i11_2L/60_i11_2R", solidwidth="1920/1920", solidheight=720, x=-950, fadetime=4)]
+[largebgtween(duration = 4, xScaleFrom=0.36, xScaleTo=0.34, yScaleFrom=0.36, yScaleTo=0.34, block = false)]
+[delay(time=5)]
+[Background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="……Dr.{@nickname}……", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n……まさか、今度は私が手を放したくないだなんて。", block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st2", multi = true, text="<color=#888888>ケルシー</color>", hidelog=true, x=400, y=158, alignment="right", duration=0.01, size=28, delay=0, width=200, block = false)]
+[Sticker(id="st3", multi = true, text="アーミヤ、ドクターを守れ。", x=660, y=160, alignment="left", size=24, delay=0.04, width=350)]
+[Sticker(id="st3", block=false)]
+[Sticker(id="st2", block=false)]
+[Sticker(id="st4", multi = true, text="<color=#888888>アーミヤ</color>", hidelog=true, x=400, y=520, alignment="right", duration=0.01, size=28, delay=0, width=200, block = false)]
+[Sticker(id="st5", multi = true, text="はい。", x=660, y=522, alignment="left", size=24, delay=0.04, width=200)]
+[Sticker(id="st4", block=false)]
+[Sticker(id="st5", block=false)]
+[PlaySound(key="$d_avg_crystalmagic_loop", volume=0, loop=true, channel="cr")]
+[SoundVolume(volume=0.6, channel="cr",fadetime=2)]
+ピンク色の糸がアーツユニットから渦を巻いて昇り、黒い王冠が彼女の頭上に浮かび上がる。
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1)]
+[Sticker(id="st2", text="<color=#888888>Raidian</color>", hidelog=true, x=470, y=158, alignment="center", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st3", multi = true, text="電磁通信場を確立したわ。", x=900, y=160, alignment="center", size=24, delay=0.04, width=300)]
+[Sticker(id="st3", block=false)]
+[Sticker(id="st2", block=false)]
+Mantraの声もあなたの心の中で響く――
+[dialog]
+[Sticker(id="st4", multi = true, text="<color=#888888>Mantra</color>", hidelog=true, x=470, y=520, alignment="center", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st5", multi = true, text="助けが必要ならば、心の中で念じろ。我々がついている。", x=930, y=522, alignment="center", size=24, delay=0.04, width=300)]
+[Sticker(id="st5", block=false)]
+[Sticker(id="st4", block=false)]
+[Sticker(id="st6", multi = true, text="<color=#888888>Stormeye</color>", hidelog=true, x=70, y=158, alignment="left", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st7", multi = true, text="側面の援護を頼めますか、Sharpさん？", x=240, y=160, alignment="left", size=24, delay=0.04, width=750)]
+[Sticker(id="st6", block=false)]
+[Sticker(id="st7", block=false)]
+[Sticker(id="st8", multi = true, text="<color=#888888>Sharp</color>", hidelog=true, x=70, y=520, alignment="left", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st9", multi = true, text="ならお前の弓をしっかりと握っているんだな。", x=200, y=525, alignment="left", size=24, delay=0.04, width=750)]
+[Sticker(id="st8", block=false)]
+[Sticker(id="st9", block=false)]
+[StopSound(channel="cr", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="Dr.{@nickname}。私たちの絆は、時空さえ超えられるって信じてる。", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n暗闇の中、星の光で彩られた文明の果てで私たちは再会する……きっと。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nその日を待つわ。", block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st6", multi = true, text="<color=#888888>ブレイズ</color>", hidelog=true, x=300, y=158, alignment="right", duration=0.01, size=28, delay=0, width=200, block = false)]
+[Sticker(id="st7", multi = true, text="小猫ちゃん、助けが必要になったら呼んでね！", x=550, y=160, alignment="left", size=24, delay=0.04, width=300)]
+[Sticker(id="st6", block=false)]
+[Sticker(id="st7", block=false)]
+[Sticker(id="st4", multi = true, text="<color=#888888>ロスモンティス</color>", hidelog=true, x=550, y=520, alignment="right", duration=0.01, size=28, delay=0, width=250, block = false)]
+[Sticker(id="st5", multi = true, text="うん。", x=850, y=522, alignment="left", size=24, delay=0.04, width=200)]
+[Sticker(id="st5", block=false)]
+[Sticker(id="st4", block=false)]
+[Sticker(id="st6", multi = true, text="<color=#888888>Pith</color>", hidelog=true, x=170, y=158, alignment="center", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st7", multi = true, text="周囲の環境が我々のアーツを制限している。だがオリジニウムアークはまだ効果があるようだ。", x=640, y=160, alignment="center", size=24, delay=0.04, width=550)]
+[Sticker(id="st6", block=false)]
+[Sticker(id="st7", block=false)]
+[Sticker(id="st8", multi = true, text="<color=#888888>Touch</color>", hidelog=true, x=70, y=520, alignment="center", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st9", multi = true, text="心置きなく大胆に行動してください。", x=530, y=522, alignment="center", size=24, delay=0.04, width=350)]
+[Sticker(id="st8", block=false)]
+[Sticker(id="st9", block=false)]
+[Sticker(id="st6", multi = true, text="<color=#888888>Misery</color>", hidelog=true, x=0, y=158, alignment="center", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st7", multi = true, text="ドクター、俺が先行して状況確認を行おうか――", x=450, y=160, alignment="center", size=24, delay=0.04, width=350)]
+[Sticker(id="st6", block=false)]
+[Sticker(id="st7", block=false)]
+[Decision(options="いいや、予感がする……", values="1")]
+[Predicate(references="1")]
+[Decision(options="ここには何も脅威がない。", values="1")]
+[Predicate(references="1")]
+[Sticker(id="st2", multi = true, text="<color=#888888>ケルシー</color>", hidelog=true, x=400, y=158, alignment="right", duration=0.01, size=28, delay=0, width=200, block = false)]
+[Sticker(id="st3", multi = true, text="だがそれはむしろ空恐ろしくなるな。", x=660, y=160, alignment="left", size=24, delay=0.04, width=350)]
+[Sticker(id="st3", block=false)]
+[Sticker(id="st2", block=false)]
+[Decision(options="自分が先に入る。ついてきてくれ。", values="1")]
+[Predicate(references="1")]
+[Sticker(id="st4", multi = true, text="<color=#888888>アーミヤ</color>", hidelog=true, x=400, y=520, alignment="right", duration=0.01, size=28, delay=0, width=200, block = false)]
+[Sticker(id="st5", multi = true, text="一緒に行きます。", x=660, y=522, alignment="left", size=24, delay=0.04, width=200)]
+[Sticker(id="st4", block=false)]
+[Sticker(id="st5", block=false)]
+[playsound(key="$char_Mon3tr",volume=1)]
+[Sticker(id="st6", multi = true, text="<color=#888888>Mon3tr</color>", hidelog=true, x=170, y=158, alignment="center", duration=0.01, size=28, delay=0, width=750, block = false)]
+[Sticker(id="st7", multi = true, text="（揺るぎのない低い唸り）", x=630, y=160, alignment="center", size=24, delay=0.04, width=200)]
+[Sticker(id="st6", block=false)]
+[Sticker(id="st7", block=false)]
+[Sticker(id="st2", multi = true, text="<color=#888888>ケルシー</color>", hidelog=true, x=400, y=158, alignment="right", duration=0.01, size=28, delay=0, width=200, block = false)]
+[Sticker(id="st3", multi = true, text="各位、備えろ。ロドスの存亡は我々の手にかかっている。", x=660, y=160, alignment="left", size=24, delay=0.04, width=350)]
+[Sticker(id="st3", block=false)]
+[Sticker(id="st2", block=false)]
+[Decision(options="共に行こう。", values="1")]
+[Predicate(references="1")]
+あなたたちは亀裂の向こうの空間に踏み込んだ。
+[dialog]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=3)]
+[curtain(direction = 0, fillfrom = 0.33, fillto = 0.33, a=0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.33, fillto = 0.33, a=0, fadetime=2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot]
+[largebg]
+[Sticker(id="st1", multi = true, text="<color=#000000>何があってもその日を待ち続ける。だからあなたも待っていて。</color>", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="<color=#000000>\n\n私のことも、待っていてね。</color>", block = true)]
+[Sticker(id="st1", duration=2, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[subtitle]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

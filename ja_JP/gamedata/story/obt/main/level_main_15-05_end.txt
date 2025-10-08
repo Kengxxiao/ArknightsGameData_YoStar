@@ -1,0 +1,257 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",duration=1)]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="アーミヤ"]ドクター、Mantraさんたちも本艦に帰ってきました。
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="アーミヤ"]ドクターの予想通り、何者かが私たちの任務を標的に行動しているようです。
+[name="アーミヤ"]……この機械は……壊れていますね。エーギルのものですか？
+[charslot]
+[charslot(slot="m",name="avg_npc_1401_1#1$1",focus="n")]
+[name="「リトル・ハンディ」"]……
+[charslot]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="アーミヤ"]ケルシー先生、残った部品から何か調べられませんか？
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]不可能だ。この精密な機械は、エーギルの技術アカデミーが多大な心血を注いだ代物だからな。彼らほど傲慢な者たちが、他の研究者にリトル・ハンディを解析される可能性を残すはずがない。
+[name="ケルシー"]しかし、リトル・ハンディを解析することはできずとも、この機械の出現自体が多くの問題を説明している。
+[name="ケルシー"]ドクター、陸海共同防衛線を覚えているか？
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="もちろんだ。;君がエーギルの執政官と接触し協力を促した。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]イベリアとレム・ビリトンの政府はいずれも我々の呼びかけに応じた。しかし問題は一度協力が成立すると、その後の展開については我々の予想を超える可能性が極めて高いということだ。
+[name="ケルシー"]最近ではエーギルの艦隊はイベリアに港を建設しただけでなく、レム・ビリトン南方の海岸線にも上陸港を建設した。
+[name="ケルシー"]深海からやってきたエーギルは、陸へ上がることを急がず、まずは技術支援の名目で短期間で水路測量を含む一連の行動をとった。
+[name="ケルシー"]彼らはさらに、雇用や公的機関との連携を通じて迅速に「陸巡隊」を設立し、より中立的な立場を持つ代理人を介して陸とうまく協力をしている。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="つまり、襲撃者は「陸巡隊」ということか。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]あくまで推論と臆測にすぎない。しかし現時点で我々が保有する手がかりから考えた時に、対象となる相手の条件を満たしているのは「陸巡隊」だけだ。
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="アーミヤ"]ケルシー先生、クレメンティアさんの理念に賛同していない執政官がいるのは知っています。ですが、だからと言って同時多発的に起きた事件が全てエーギルの仕業であると言い切れるのでしょうか？
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]いいや、エーギル内部の対立を利用している者がいると考えた方が妥当だろう。
+[name="ケルシー"]イベリア国境近くの「陸巡隊」、レム・ビリトンに渡した採掘艦、カズデル国境の傭兵……
+[name="ケルシー"]相手の行動が広範囲にわたること、またロドスの極秘任務の内容をかなり詳細に了解していることからも、首謀者が決してエーギルではないのは明らかだ。
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="アーミヤ"]……ですがロドス内部に裏切り者がいるはずありません。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="自分も信じていない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]ドクター、我々以外の誰かで、ロドスにこれを成せる者がいると思うか？
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="……;いない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]そうだ、いない。
+[dialog]
+[charslot(slot="r",name="avg_1037_amiya3_1#3$2")]
+[charslot(slot="l",name="avg_003_kalts_1#14$1")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="アーミヤ"]ケルシー先生、今ロドスが直面している脅威は全く予測が立たないものです。
+[name="アーミヤ"]ワルファリン先生も、担当されている特殊な患者さんたちの病状のコントロールが上手くいかなくなっていると何度も警告していました。
+[name="アーミヤ"]患者さんを救うためにも、あるいは潜在的な危険に対処するためにも、私たちは今よりもリスクの高い手段をとらねばなりません。
+[name="アーミヤ"]テレジアさんが黒い王冠に残した資料を見ましたが、彼女もかつて「文明の存続」によって大きな突破口を得たようです。
+[name="アーミヤ"]テレジアさんが当時行ったように、私も「文明の存続」を訪ねて潜在的な助力を求めることができます。
+[charslot(slot="l",name="avg_003_kalts_1#14$1",focus="l")]
+[name="ケルシー"]その手段をとる場合のリスクは慎重に評価する必要がある、アーミヤ。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="アーミヤ、自信はあるのか？;ケルシー、現時点でほかにより有効な手段はあるか？", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#8$2",focus="r")]
+[name="アーミヤ"]ドクター、今ははっきりと頷くことはできません。
+[name="アーミヤ"]ですが、やってみる前に諦めるつもりもありません。王冠からほんの少しでも何かを得られれば、それはロドスがより遠くへと歩む力になるかもしれませんから。
+[name="アーミヤ"]試してみたいんです。
+[Predicate(references="2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]……状況が不透明な現時点において、私はアーミヤの提案よりも有効な手段を提示することはできない。
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]しかし、不用意に「文明の存続」へと踏み込むのであれば、その先にあるものは、必ずしも我々の望む結末であるとは限らない。
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="自分もアーミヤと一緒に入ろう。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#5$2",focus="r")]
+[name="アーミヤ"]――！？
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="ケルシー"]ドクター、君がそのように危険な行為に及ぶのは同意しかねる。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="「文明の存続」を自分の思考に繋げることはできるか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="アーミヤ"]……ドクター、危険すぎます。誰もそんなことをしたことがありません！　ケルシー先生の意見に同意です、ドクターが危険を冒すべきではありません。
+[charslot(slot="m",focus="n")]
+ケルシーは親友のかつての経験を思い出した。それは彼女が思い出したくない記憶だった。
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]「文明の存続」を個人の思考に繋げることは可能だ。
+[charslot(slot="l",name="avg_003_kalts_1#2$1",focus="l")]
+[name="ケルシー"]彼女が以前、やったことがある。
+[charslot(slot="r",name="avg_1037_amiya3_1#5$2",focus="r")]
+[name="アーミヤ"]……！？
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="……;テレジア。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="ケルシー"]ドクター、君の思考は極めて複雑だ。「文明の存続」を接続した際のリスクは君自身から生じるだけではない。アーミヤも同様に全く未知の衝撃に直面する可能性がある。
+[name="ケルシー"]繰り返すが、そのような危険な行動に賛同はできない。
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="アーミヤ"]ケルシー先生……
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="ケルシー"]アーミヤ、これは私の意見だ。君とドクターが最終的に下す判断に干渉することはできないが、私が本件をどう捉えているかだけは理解してほしい。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_003_kalts_1#5$1",afrom=1,ato=0,duration=1)]
+[Delay(time=2)]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="アーミヤ、自分は君に思考を完全に開くことができる。;一度で成功する必要はない。何度か試みよう。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="アーミヤ"]ですがケルシー先生が……
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="終わったら、一緒に謝りに行こう。;彼女はこの計画そのものに反対しているわけではない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="アーミヤ"]わかりました。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="中止のタイミングの判断は君に任せる。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="防衛任務の手配が終わったら開始しよう。", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$storyendjp_intro",key="$storyendjp_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="r",name="npc_10002",duration=1)]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[playsound(key="$Mon3tr_n")]
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（低い雄たけび）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]心配してくれているのか？　私は怒っているわけではない。
+[name="ケルシー"]結局のところ、我々は新たな転換点へとやってきたのだ。前回の転換点では、バベルは私の最も見たくなかった結末に向かってしまった。
+[name="ケルシー"]全ての出来事を理想的な軌道の上に乗せることはできない。それは事実が証明しているんだ、Mon3tr。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（爪を寄せる）
+[name="Mon3tr"]（優しくすりすりする）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]我々の限界が、より重要な事柄において我々が持つ役割に影響を与え始めている。
+[name="ケルシー"]星の海が荒野と化すまでの推移を見届けることができる我々であっても、本当の危機の前では、この大地の他の生命と同じ立場でしかない。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（不満そうに低く唸る）
+[charslot(slot="l",name="avg_003_kalts_1#11$1",focus="l")]
+[name="ケルシー"]慰めてくれて感謝する。君の気持ちは受け取った。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（焦ったように低く唸る）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]その通りだ。きっとアーミヤとドクターはすでに「文明の存続」の奥深くへと入る準備をしている。
+[name="ケルシー"]私はアーミヤの決定に強く干渉するつもりはない。彼女はすでに最も正しい判断を下せるほどに成長した。
+[name="ケルシー"]ドクターは……ドクターも以前とは違う。
+[name="ケルシー"]あるいは……私は心のどこかでまだ一縷の望みを捨てきれずにいるのかもしれない。あるいは、今回の結末は本当に異なるのかもしれない。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（落ち込んだように伏せる）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]……確かにな、理性は依然として私に警告し続けている。
+[name="ケルシー"]「文明の存続」の力を借りて再びドクターの思考に触れるという決断は、穏当とは程遠いものだ。しかしアーミヤは正しい。我々に残された選択の余地は多くない。
+[playsound(key="$Mon3tr_n")]
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（激高した雄たけび）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="ケルシー"]Mon3tr、私がドクターとアーミヤを守る。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.17, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.17, fadetime=0.1)]
+[Image(image="60_i03", xScale=1.5, yScale=1.5,screenadapt="coverall",y=150)]
+[ImageTween(duration=20, block=false,yTo=80)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$act18d0d0_intro",key="$act18d0d0_loop", volume=0.6)]
+[Delay(time=3)]
+Mon3trは、この瞬間ケルシーの内で揺れる感情を仔細に感じ取ることができた。
+ケルシーが再び目覚めて以来、Mon3trは彼女のそばを離れたことがない。
+Mon3trは彼女の同行者であり、彼女が導く共生体であり……彼女自身である。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[Delay(time=0.2)]
+[Image(image="60_i03", xScale=1, yScale=1,screenadapt="coverall")]
+[dialog]
+[bgeffect(name="$eb_steam_kal",layer=1)]
+[playsound(key="$d_avg_kwriterecord_loop", loop=true, channel="c",volume=0)]
+[SoundVolume(volume=0.7, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Mon3tr"]（親密そうに低く唸る）
+[name="ケルシー"]違う、Mon3tr。私は絶望を感じているわけではない。
+[name="ケルシー"]私は先民が神民の統治を覆したことに喜び、ルガサルグスが新たな文明に時間の起点を定めたことにも奮い立った。
+[name="ケルシー"]かつて自分の傲慢さから過ちを犯したことがある。そして、友との出会いによって自信を取り戻したことも。
+[name="ケルシー"]君と私の基礎的な構造は、この大地にとっては異質であるかもしれないが、それは我々の歩む果てに待つものが孤独であると決定付ける要素にはならない。
+[name="ケルシー"]私は、自らの居場所を見つけたんだ。このロドスで、この大地で。
+[name="ケルシー"]Mon3tr、私はあの人の期待に応えたんだ。今や私は愛することを学び、自分自身を見つけた。
+[name="Mon3tr"]（困惑しつつ動く）
+[name="Mon3tr"]（尻尾をケルシーに絡ませる）
+[name="ケルシー"]私は、アーミヤとドクターを守らねばならない。
+[name="ケルシー"]二人を、本当の変数を……私ですら完全には見通すことのできない未来を守る。
+[name="ケルシー"]私もかつて「文明の存続」にアクセスをしたことはあるが、結局は自身の制限を突破することができなかった。
+[name="ケルシー"]だがアーミヤであれば、それが可能だ。それは私もテレジアも理解していた。
+[name="ケルシー"]彼女ならば、膨大で無秩序な情報の中から鍵となるものを見つけることができると確信している。テレジアの祝福を受けた彼女なら……きっと成し遂げられる。
+[name="ケルシー"]何せ、彼女はアーミヤなのだ。私がこの目でずっと成長を見届けてきたリーダーだ。
+[name="ケルシー"]私の過去の足跡をたどれば、アーミヤはあの人が残したわずかな言葉を見つけられるかもしれない。
+[name="ケルシー"]源石がいまだ形を成していなかった頃、天才たちが時代そのものと論争を繰り広げたあの時代においても、命を讃え、救おうという意識から生まれる発想は決して途絶えることはなかった……
+[name="ケルシー"]希望は、一度も途絶えたことはないんだ、Mon3tr。テラは依然僅かな可能性を存続させるチャンスがある――
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"]（高ぶった雄たけび）
+[name="ケルシー"]私か？　いや、Mon3tr、私は記憶する能力の方が高い。かつてこの目で見届けながらも、時の流れの中で風化していった歴史は全て記憶している。
+[name="ケルシー"]私は決して特別ではない。
+ケルシーは、重要な情報をMon3trの脊髄へと静かに刻み込み続ける。
+[name="ケルシー"]もしも決して見たくない状況が本当に発生したら、会いたくないあの人が再び我々の前に立ったら――
+[name="ケルシー"]ドクターを、アーミヤを守るんだ。
+[name="ケルシー"]私はこの指令を、君の基本的な行動ポリシーに刻み込むだけだ。
+[name="Mon3tr"]（興奮した雄たけび）
+[name="ケルシー"]さあ、Mon3tr、我々には目下のところ、果たすべき仕事が数多くある。
+[name="ケルシー"]脅威が本当に訪れたなら、このロドスを、テラが危機に対抗するための最前線にせねばならない。
+[name="ケルシー"]……私が、君たちの最後の保険になるだろう。
+[Dialog]
+[Delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

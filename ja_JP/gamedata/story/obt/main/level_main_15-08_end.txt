@@ -1,0 +1,570 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[Background(image="60_g4_rhodesabyss_w",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[playsound(key="$d_avg_labamb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Delay(time=2)]
+[Sticker(id="st1", multi = true, text="管理者権限を検出しました。",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nスリープ再起動プロセス準備中、3……2……1……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS再起動セルフチェック完了――",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="<color=#ff0000>警告：違法な第三者による埋め込みが検出されました。初期設定に戻しますか？</color>",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="管理人キーの思考信号認証を確認。回復中……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nバイタルサイン測定モジュール起動済み。修復モジュールを自動ロードします。修復中……",x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n推定進捗状況：■ ■ ■",block = true)]
+[Sticker(id="st1", duration=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[name="？？？"]……
+[name="？？？"]ドクター……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;……アーミヤ？", values="1;2")]
+[Predicate(references="1;2")]
+[focusout(duration=3, type="bg", from=1, to=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2",duration=1)]
+[Delay(time=2)]
+[name="アーミヤ"]ドクター、よかった……
+[name="アーミヤ"]目覚めてくれて。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="目覚めてくれて？;……自分は長い間意識を失っていたのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]はい。撤退の作業は決して順調だとは言えないものでしたから。思考共有の切断が突然だったことに加えて、境界の情報による衝撃もあり、私自身も安定した状態を維持するのが難しかったんです。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="アーミヤ、君の状態はどうだ？;アーミヤ……自分の今の状態はどうなっている？", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="アーミヤ"]私もつい先ほど完全に意識を取り戻したところです。
+[name="アーミヤ"]ですが、心配しなくて大丈夫ですよ。テレジアさんが守ってくれているおかげで、ドクターよりも影響は小さいですから。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="アーミヤ"]私にもよくわかりません。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]ケルシー先生がドクターの全面的な検査をしてからでないと具体的な状況の判断はできません。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]ドクターがずっと私の手を離さずにいてくれてよかったです。でなければ、もっと心配しているところでした。
+[name="アーミヤ"]ドクター、勝手に動いたらダメですからね。私たちはひとまずケルシー先生が建てた緊急観察エリアにいなければなりません。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ケルシー？;緊急観察エリア？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]私たちとロドスの安全を確保するために、ケルシー先生は付近のエリアを片付けて、ずっとドクターと私を見守っていたんです。
+[name="アーミヤ"]ケルシー先生は私たちが「文明の存続」に入っている間、想定外の出来事が起こることを望んでいませんでした。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="彼女はやはりわかっていたのか……;彼女が見当たらないが――", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[name="接近する声"]君たちが目覚めたのを確認した後、すぐに認知機能ベースラインテストの準備をしに行っていた。
+[name="接近する声"]君とアーミヤに対してすでに簡易な診断を行ったが、明らかな損傷は見られなかった。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="ケルシー"]しかしながら、思考の変化状況は生体組織とは異なって容易く判別できるものではない。さらなる確認が必要だ。
+[name="ケルシー"]おかえり、ドクター。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="なんだか……疲れているようだな。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]君たちが「文明の存続」に入っている間、予期せぬ事態が発生して私が処理をしていた。後ほど現在の状況を共有しよう。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我々も役に立つかもしれない情報を見つけた。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]目下の急務は、君が無事であるかを確認することだ。
+[name="ケルシー"]黒い王冠を通じて思考共有を行うこと自体が極めて危険な行為だ。そのうえ、君たちは「境界」を越えるという過激な行動をとっただろう。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="そうだ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]であれば、やはり君の思考が安定しているかそして、身体的健康は保たれているかの確認こそが私の今の最も重要な責任だ。
+[name="ケルシー"]過去の過ちを再度起こすことを私は決して許さない。君の命の安全に影響を及ぼす危険が存在し続けることも当然認められない。
+[name="ケルシー"]Dr.{@nickname}、ついてきてくれ。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;き、君は怒っているのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]アーミヤ、君も認知機能ベースラインテストを受ける必要がある。
+[name="ケルシー"]だが、今はゆっくり休んでくれ。
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="アーミヤ"]わ、わかりました、ケルシー先生。
+[dialog]
+[charslot]
+[Decision(options="アーミヤにもついてきてもらってはいけないか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]それは私の段取りにはない。アーミヤの検査には君の検査が終わり次第、取り掛かる。
+[name="ケルシー"]行こう。
+[dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="アーミヤ"]……
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="これがテストの機械か？;こんな機械があったのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]医療部が開発した原型機で、元々は私とテレジアで設計し開発したものだ。
+[name="ケルシー"]だが思考と認知に対する我々の研究には限りがあり、被験者の思考の安定性を測定するこの技術を正式に現場で使用することはなかった。
+[name="ケルシー"]しかしドクター、今は状況が特殊だ。これ以外に有効な検査方法がない。
+[name="ケルシー"]隣の隔離室に入ってくれ。楽にして、緊張する必要はない。私がテストしたが、身体にそれとわかる負担はなかった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Image(image="60_i06",screenadapt="coverall", xScale=1.1, yScale=1.1,x=60)]
+[ImageTween(xTo=-60, duration=120, block=false)]
+[cgitem(image="cgitem_60_i06_1", style="cg",sfrom = 1, sto = 1.1, sduration = 0,pfrom = "-30,0",pto = "0,0",pduration = 120,layer = 2)]
+[cgitem(image="cgitem_60_i06_2", style="cg",pfrom = "-90,0",pto = "-180,0",pduration = 120,layer = 1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[dialog]
+[Decision(options="ほかに注意すべきことはあるか？", values="1")]
+[Predicate(references="1")]
+[name="ケルシー"]ない。私の指示に従ってくれ。まず機器の調整をする必要があるから、肩の力を抜いて私の指示を聞いてくれればいい。ただし、決してためらわないことだ。
+[name="ケルシー"]ドクター、君の名前をもう一度教えてくれ。
+[dialog]
+[Decision(options="{@nickname}。;……{@nickname}？", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="ケルシー"]よし、いいスタートだ。
+[Predicate(references="2")]
+[name="ケルシー"]緊張しなくていい。ただの調整だ。
+[Predicate(references="1;2")]
+[name="ケルシー"]私の後ろにある時計が見えるか？　心の中で時間を数え、できるだけ実際の時間と同期させるんだ。
+[dialog]
+[Decision(options="（黙って数えて、時間の流れを感じる）;このようなことをする意味が理解できない……", values="1;2")]
+[Predicate(references="1;2")]
+[name="ケルシー"]これは現実の認知を強化するのに役立つ。すでに二十秒が経過したが、どこか不快感はあるか？
+[dialog]
+[Decision(options="ない。;……何とも言えない。;計器に異常な数値は出たか？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="ケルシー"]まずは調整を続けるとしよう。
+[name="ケルシー"]今も思考の中でアーミヤの存在を感知できるか？
+[dialog]
+[Decision(options="できる。;できない。", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="ケルシー"]恐らく誤った切断による思考共有の名残だろう。
+[Predicate(references="2")]
+[name="ケルシー"]よし、この方法に慣れてきたな。
+[Predicate(references="1;2")]
+[name="ケルシー"]調整を続けよう。君はロドスの理念に同意しているか？
+[dialog]
+[Decision(options="している。;していない。", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="ケルシー"]即答か。調整は間もなく終了する。
+[Predicate(references="2")]
+[name="ケルシー"]面白い回答だ。だがこれは嘘発見器ではない。それとも、より一層ドラマチックな結果を期待しているのか、Dr.{@nickname}？
+[Predicate(references="1;2")]
+[name="ケルシー"]続けるとしよう。ドクター、君は思考の境界で彼女を見た。
+[dialog]
+[Decision(options="そうだ。;誰のことだ？", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="ケルシー"]驚くことではないが、想像していたよりも冷静だな。
+[Predicate(references="2")]
+[name="ケルシー"]私に隠す必要はない、ドクター。無条件に信じてくれて構わない。
+[Predicate(references="1;2")]
+[name="ケルシー"]最後の調整だ。ドクター、君によく似たあの人物に対して疑問を抱いたか？
+[dialog]
+[Decision(options="ああ。;全く。", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="ケルシー"]当然の感情だ。しかし、いかなる方法や立場でもってしても疑問に答えてやることはできない。君はいずれ自分で答えを見つけるだろう。
+[name="ケルシー"]あるいは、すでに君には主観的な推測があるのかもしれないな。これに関して私に干渉する権利はないが、君がロドスの利益を損なうことはないと信じている。
+[Predicate(references="2")]
+[name="ケルシー"]どうやら、君はすでに確信に近い推測があるようだ。私はそれに対して何の意見もするつもりはない。
+[Predicate(references="1;2")]
+[name="ケルシー"]終了だ、ドクター。
+[name="ケルシー"]認知機能ベースラインテストの結果、君の思考の安定性は依然として概ね安全な閾値内にあることを示している。残りは副次的なプロセスだけだ。
+[dialog]
+[Decision(options="待て、これは調整じゃなかったのか？", values="1")]
+[Predicate(references="1")]
+[name="ケルシー"]より正確なデータを得るために講じた必要な手段だ。
+[name="ケルシー"]君の能力であれば、私の考えをより微細に捉え、偽装することもできただろう。
+[name="ケルシー"]君がこの原型機を騙そうと思うのなら、それは決して難しいことではない。
+[dialog]
+[Decision(options="それはもちろんだ！;……その、我々はまだ検査中なのか、ケルシー？", values="1;2")]
+[Predicate(references="1;2")]
+[name="ケルシー"]Dr.{@nickname}、残りの検査は間もなく自動的に終わる。私には君の疑問に答える時間がある。
+[name="ケルシー"]しかし申し訳ないが、一部の質問に対しては君に答えを与えることはできない。このことに関しては、君もすでに明確に認識しているはずだ。
+[dialog]
+[Decision(options="……「ロドス」の来歴についてはどうだ？;どうして我々が行動する可能性を事前に予知していた？", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="ケルシー"]もしこの船のことを言っているのであれば、この船が存在した時間は、私がこれまで経てきた歴史よりも長い。
+[name="ケルシー"]ある意味において、この船は希望を担っており、またそのために比類なく完璧な安全防護設計を備え、この大地における我々のあらゆる行動をサポートし得る。
+[name="ケルシー"]この船が数々の過酷な災いを無事に乗り越えて、いまだに核となる構造を保っているのも、最初の設計によるものだ。
+[name="ケルシー"]ドクター、この船には未だ我々の引き出し切れていない潜在能力がある。
+[name="ケルシー"]だが、ロドスを完全に開発することについて、私が依然として極めて慎重な態度を保っている。これは認めざるを得ない。
+[Predicate(references="2")]
+[name="ケルシー"]境界に残した手がかりのことを言っているのか？　あれらの手がかりを解くのが君たちになる保証はなかった。
+[name="ケルシー"]それに、私は発生していないことを予測する能力を備えているわけではない。あのような用意をしたのには別の理由がある……
+[name="ケルシー"]私の尊敬する人物が、未来に起こり得る数々の出来事を演算していた。私がその人物の言葉を忘れることはない。
+[name="ケルシー"]知らず知らずの内に、私もその影響を受けているのかもしれない。
+[Predicate(references="1;2")]
+[dialog]
+[Decision(options="緊張しているようだな、ケルシー。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="君の緊張は不透明な局面のみによるものではない。", values="1")]
+[Predicate(references="1")]
+[name="ケルシー"]……
+[dialog]
+[Decision(options="この奇妙な直感は名状しがたい。;君からこのように複雑な感情を感じ取るのは初めてだ。", values="1;2")]
+[Predicate(references="1;2")]
+[name="ケルシー"]検査を受けているのは私ではない――
+あなたの姿が透き通った防護窓に映る。まるであなたとケルシーが今もまだ共に立っているかのように。
+ガラスに映った自分の姿を見て、あなたはふと、境界で傍らの奇妙な構造体に優しく接していた人物を思い出すのだった……
+あなたの視線が無意識にケルシーへと転じた。
+[name="ケルシー"]なぜそんな目で見てくる、Dr.{@nickname}？
+[dialog]
+[Decision(options="君もかつて、自分のことを何よりも信頼していたのか？", values="1")]
+[Predicate(references="1")]
+[name="ケルシー"]それに関しては、今もそうだ。君が信頼に足る人物であるという証明はされた。
+[name="ケルシー"]Dr.{@nickname}、君が境界で何を目撃したにせよ、それはすでに失われた過去にすぎない。
+[name="ケルシー"]君とロドスはいまだに正しい道を歩んでいる、それだけで十分だ。君と私との関係については、私たちの双方が主観的に決定する権利を持っている。
+[name="ケルシー"]私の君に対する考えを気にする必要はない。過去そうであったように、現在そうであるように、未来も変わらず。もちろん、我々の協力関係を君がどう考えているかも尊重している――
+[dialog]
+[Decision(options="申し訳なかった、ケルシー。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="これは自分とアーミヤの軽率な行動に対する謝罪だ。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="これから何をすべきかはよく理解している。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="ケルシー、あと一つ疑問がある。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="（未知の言語）「それは我々の祝福」……", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="（未知の言語）「そして最後に贈る希望かもしれない」", values="1")]
+[Predicate(references="1")]
+[name="ケルシー"]……
+[dialog]
+[Decision(options="この言葉の意味が理解できない。;話していた人物からは善意が感じられた。", values="1;2")]
+[Predicate(references="1;2")]
+[name="ケルシー"]その言葉は「祝福」、そして「贈る」を意味する。
+[dialog]
+[Decision(options="君は我々を導き、あの人物に会わせた。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="あれが誰であれ、君の信頼は絶対に偽りではない。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="ならば、我々がせねばならないことはたくさんある。", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[image]
+[focusout(duration=0, type="bg", from=0, to=1, block=true)]
+[hidecgitem(image="cgitem_60_i06_1")]
+[hidecgitem(image="cgitem_60_i06_2")]
+[Background(image="60_g4_rhodesabyss_w",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_stonegrowing")]
+規則的な源石結晶が空間の中から出現した。
+源石結晶の先端に、短い弧が現れた。
+その弧は円を描くように伸び、そのまま滑らかで完璧な球体を形成した。
+それはこの空間を観察するための目であり、見たもの全てを記録する。意思決定を担う器官は、いまだ源石から完全には分離していない。
+この時……までは。
+[dialog]
+[PlaySound(key="$d_avg_icecrystlncrse")]
+[charslot(slot="m",name="avg_npc_1727_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[name="源石結晶体"]（無言で周囲の環境を感じる）
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[focusout(duration=0, type="bg", from=0, to=0, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$escape_intro",key="$escape_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2",duration=1)]
+[Delay(time=2)]
+[name="アーミヤ"]ケルシー先生は私の思考状態にも特に問題は発生していないと判断されました。
+[name="アーミヤ"]ですが、私たちが思考を共有した時、何か衝撃を受けていないかを気にしていました。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="彼女なりの懸念があるのだろう。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="ケルシー"]アーミヤ、我々はすぐにでも君たちが持ち帰った公式の分析に着手すべきだ。
+[name="ケルシー"]以前も話した通り、PRTSには依然として異常が発生している。そのため短期間の間にさらなる予想外の出来事が起きる可能性は十分考えられる。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="PRTSはまだ問題のない状態へ回復していないのか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]クロージャが試みているが、期待はできない。
+[name="ケルシー"]すでに任務に先立って予備の指揮システムの配備は始めているが、全ての設備と個人に共有させるには時間が必要だ。
+[name="ケルシー"]それと、君たちが境界から持ち帰った情報については、私が解読に協力できる。
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="アーミヤ"]ケルシー先生は公式の意味を理解できるんですか？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]それに答えるためには、完全な公式を見る必要がある。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+あなたとアーミヤは記憶を頼りに、廊下のガラスに書かれていた文字や公式を少しずつ復元していくが、それに用いられている言語と思しきものは全く理解できなかった。
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]前後のロジックから、ここの曖昧な部分が推測できる。私が埋めよう。
+[name="ケルシー"]この部分はおおよそ正しいが、文字の細かい箇所に誤りがある。正しくは、恐らくこうだろう。
+[Dialog]
+[charslot]
+[Decision(options="まるでパズルのようだ。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$2")]
+[name="アーミヤ"]私が覚え切れなかった部分を、最後にドクターが暗記してくれて助かりました。
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]恐らくこれでいいだろう。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="ケルシー、意味が分かるか？", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]これは未だ正式な命名がなされていないモデルであり、その起源は「眠りの橋」という名のプロジェクトにまで遡ることができる――
+[name="ケルシー"]自律変換可能なモデルを利用して、起こり得る全ての現実と物質界の有機生命を単一の「メタ現実」に融合するという、極めて冒険的なプロジェクトだった。
+[name="ケルシー"]最終的な結果は芳しいものではなかったが、このプロジェクトに含まれる物質データ化に関する実験は、その後の一連の研究群に示唆を与えた。このモデルはそのうちの一つだ。
+[name="ケルシー"]特殊媒体の伝送時におけるメタ情報のロスを減らし、データ送信の効率を向上させることに関して、このモデルの貢献は目を見張るものがあった。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="情報？;源石？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]Dr.{@nickname}、肝心なところに気付いたな。
+[name="ケルシー"]源石はまさに情報収集のための媒質だ。使命を果たすまで、情報を再編集し、成長し続けることができる。
+[name="ケルシー"]したがって源石がこのモデルを採用している可能性は極めて高い。これを適切に用いれば、源石研究と鉱石病治療は新たな段階へと進めるだろう。
+[name="ケルシー"]この資料は翻訳し、極秘のものとして保存する。
+[name="ケルシー"]だが危険性と用途を完全に解明するまでは、現実に存在する設計図や情報記憶媒体にこのモデルの存在が記されることはあってはならない。
+[Dialog]
+[charslot]
+[Decision(options="できるだけ早く翻訳を終わらせられるか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]ドクター、何か計画があるんですか？
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="「オリジニウムアーク」を覚えているか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="アーミヤ"]ヴィクトリアでの戦争の後にLogosさんとMechanistさんが提案したプロジェクトですよね？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]外部デバイスを用いることで源石に富んだ環境下でのエリートオペレーターの適応力と戦闘力とを大幅に向上させる。過激な発想であり、難易度も高い。
+[name="ケルシー"]現在用いられているものは、二年前に実用化されたもので、最適化できる限界でもある。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="しかし今、我々には新たな可能性ができた。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]これが良い機会であるのは間違いない。少なくとも源石がもたらす脅威への対処において、エリートオペレーターたちには更なる余裕が生まれるだろう。
+[name="ケルシー"]ドクター、公式の翻訳には君の協力が必要だ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_explo_n")]
+[CameraShake(duration=1, xstrength=10, ystrength=8, vibrato=30, randomness=90, fadeout=false)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_521_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="Mechanist"]ごほごほ、君のバリアがあってよかった。
+[name="Mechanist"]今の源石回路は本当に正しいものだったのか？　三回もチェックしたのに失敗するはずがないのだが……
+[charslot(slot="m",name="avg_4133_logos_1#1$1")]
+[name="Logos"]語意に齟齬はなく、回路はシミュレーションに合致しておる。
+[name="Logos"]本来エラーなど発生せぬはずだ。
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="Mechanist"]……なあ、ミスをしているのは我々ではない可能性はないか？
+[charslot(slot="m",name="avg_4133_logos_1#1$1")]
+[name="Logos"]ドクターとケルシー医師の設計図に誤りはなく、呪文のシミュレーションに効果があることも確認しておる。
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="Mechanist"]そうじゃない。オリジニウムアーク自体の材料に問題があるんじゃないかと言っているんだ！
+[name="Mechanist"]たしか、クロージャが倉庫に上等な品を隠していたはずだが――
+[charslot(slot="m",name="avg_4133_logos_1#8$1")]
+[name="Logos"]良案とは言い難いな。エンジニア部は、我々のせいでとうに混沌の渦に叩き込まれておる。
+[charslot(slot="m",name="avg_npc_521_1#1$1")]
+[name="Mechanist"]ははっ、だがこれはドクターとケルシー医師の命令だぞ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="アーミヤ"]ですが、どうやって効果を検証するんですか？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]絶対的な安全を確保できる前提の下で、テストを完了するのに適した人物がいる。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_trainingcom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_017_huang_1#1$2",duration=1)]
+[Delay(time=2)]
+[name="ブレイズ"]うーん、強度も別にそんな変化がないような気がするけど？
+[name="ブレイズ"]小猫ちゃん、もっと力入れてみてよ。
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="ロスモンティス"]これ、私の制御を完全に受けてるわけじゃないから。Raidian？
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]実験規約に基づくと、私もオリジニウムアークとロスモンティスとの同期率は段階的に解除することしかできないよ。
+[name="Raidian"]ブレイズ、これはあなたを守るためだけじゃなくて、ロスモンティスを守るためでもあるんだ。
+[charslot(slot="m",name="avg_017_huang_1#11$2")]
+[name="ブレイズ"]もちろんわかってるって。
+[name="ブレイズ"]ただケルシー先生が時間がないって言ってたから、なるべく早く限界を測定したいんだよね。どう思う、小猫ちゃん？
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="ロスモンティス"]私、うまく制御できるよ。
+[charslot(slot="m",name="avg_npc_249_1$1")]
+[name="Touch"]解除して構いません。私がリスクを管理します。
+[name="Touch"]Raidianさん、いつでも源石回路を上書きし、ロスモンティスさんの制御を切断できるよう用意しておいてください。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]……はぁ、あなたたちったらほんと世話が焼けるんだから。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="アーミヤ"]ケルシー先生、全ての準備が整うまでに大体どれくらいの時間が必要ですか？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]私とドクターが最短時間で翻訳を完了させ、効果的な技術設計図を製作することが全ての前提となるが……
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="三十六時間だ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]余裕はない。
+[name="ケルシー"]この技術の実現における重要なポイントのほとんどが、我々には再現不能だ。
+[Dialog]
+[charslot]
+[Decision(options="我々の努力にかかっている。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="アーミヤ"]私も手伝えます。黒い王冠があれば、力になれるはずです。
+[name="アーミヤ"]ケルシー先生、利用できる力はなんであれロドスにとってより良い可能性を引き寄せてくれます。近い将来、状況を変えられるかもしれません。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro",key="$drift_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1719_1#3$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+コータスはとても長い間眠っていたように感じた。
+彼女の視線は深宇宙の星々の間で迷い、故郷にどう戻るかに関する手がかりは全くない。疲れ果て眠りにつくまで、彼女は諦めようとしなかった。
+[dialog]
+[charslot(slot="m",name="avg_npc_1719_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", focus = "n")]
+その後、彼女は光に起こされ、瞼を開いた。
+周りには誰もいない。
+[name="冷たい声"]（未知の言語）迷子かな。
+[charslot(slot="m",name="avg_npc_1719_1#9$1")]
+[name="ヒアダ"]……！？
+[charslot(slot = "m", focus = "n")]
+[name="冷たい声"]（未知の言語）新しいお客さんが来るなんて、いつぶりだろう。
+[name="冷たい声"]（未知の言語）それとも、君があの廃墟となった惑星の最後の生存者かな？
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="ヒアダ"]……レイディストーターさんの声？　でもどうして――
+[charslot(slot = "m", focus = "n")]
+[name="冷たい声"]（未知の言語）いずれにしても、君の訪問を歓迎しよう。
+[name="冷たい声"]（未知の言語）私に会いにおいで。
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="ヒアダ"]……
+[charslot(slot = "m", focus = "n")]
+彼女はこの光景を覚えていた。本来は崩壊の後に死ぬはずであった彼女の目に、光が差し込んだのだ。
+彼女はこの場所、神のような人たちの国にやってきた……その一連の出来事が再び発生したのだ。
+[charslot(slot="m",name="avg_npc_1719_1#6$1")]
+[name="ヒアダ"]そ、そんなはずは？
+[dialog]
+[charslot(duration=1)]
+彼女が恐る恐る船窓の外を覗くと、あの死した星があった。
+[dialog]
+[playsound(key="$rungeneral",volume=0.6)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+船の中を歩いていると、再びあの「レイディストーター」と呼ばれる存在と、深宇宙の中で孤独に死を眺める幽霊に出会った……
+この場所にあるはずの彼女の痕跡は全て消え去っていた。
+[dialog]
+[charslot(slot="m",name="avg_npc_1719_1#6$1",duration=0.5)]
+[Delay(time=1)]
+[name="ヒアダ"]いや……いや……いや……
+[name="ヒアダ"]まだ夢を見ているの？
+[charslot(slot = "m", focus = "n")]
+[name="優しい声"]この場所は夢なんかではないわ。
+[name="優しい声"]だけど、現実とも言えないわね。
+[name="優しい声"]あなたはずっと私を探していたのではないの？
+[charslot(duration=1)]
+目の前へと手が伸びてきて、自分の手がそっと握られるのをコータスは見た――
+崩壊した時に、自分を握ったあの手のように。
+彼女は「神」とまみえた。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
