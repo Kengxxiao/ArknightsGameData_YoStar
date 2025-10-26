@@ -1,0 +1,678 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_light",screenadapt="coverall")]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[Subtitle(text="愛するランドールへ。あなたがラテラーノを離れてから、私もお父さんもあなたに一度も連絡を取ったことがなかったわね。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="仕事は忙しいし、プレッシャーもあるけど、私もお父さんも仕事は嫌いじゃないわ。でもそれを、本当に大切なものから目を背ける理由にすべきではなかった。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="あなたが意地になって留学を申し出た時、そう簡単に了承すべきではなかったのかもしれない。実際に体験して気づいたのだけれど、片道の移動時間だけでどれだけ仕事が片付けられるのやら！", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="そう、私たちはあなたに会うためにリターニアへと向かう道中でこの手紙を書いているの。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="あなたがこの手紙を受け取る頃には、もう到着しているかもしれないわね。だから返信は大丈夫よ。滞在予定のホテルの住所を書いておいたから、あなたに会えるのをすごく楽しみにしている。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="私たちが冷たい態度を取っていたことに、あなたがまだ腹を立てているとしても、私とお父さんはホテルで待っているわ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="44_g5_spiralstairs",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]ランドール・ホフスタッターくん、手紙だよ。
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]ふーん、これは珍しい。僕に手紙を書いてくれるような友達がいた覚えはないんだけど。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]人の心は空模様みたいにコロコロ変わるものさ。ちょうど数日前に降った豪雨みたいにね。おかげで手紙も全部ずぶ濡れ。差出人のところがにじんで読めなくなってるけど、中身は問題ないかい？
+[Dialog]
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Delay(time=1)]
+[name="ランドール"]……
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]はい、問題ありません。これは故郷にいる母からの手紙です。届けてくれてありがとうございます。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]それならよかった。じゃあ、良い一日を。
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_1132_1#1$1", bstart=0.2,bend=0.7, duration=2)]
+[delay(time=3)]
+[dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="44_g6_towerterrace",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="傲慢な学生"]ペイン！　ちゃんと俺の言う通りにやってきたか？
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ひねくれた学生"]ほら見て、あのおろおろしてる感じ。ほんとに腰抜けね。
+[charslot]
+[charslot(slot="r",name="avg_npc_1131_1#1$1",focus="l")]
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]は、はい……ヴィクターさん。
+[charslot(slot="r",name="avg_npc_1131_1#1$1",focus="r")]
+[name="ヴィクター"]ほらな、ブリトニー？　ペインは俺たちの「友情」を裏切ったりしないって。で？　やつの反応はどうだった？
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]どうだろう……たぶんランドールくんは僕が適当に書いたことなんて信じないんじゃないかな……やっぱりやめたほうが――
+[charslot(slot="r",name="avg_npc_1131_1#1$1",focus="r")]
+[name="ヴィクター"]それじゃあ、お前が大変なことになっちまうな、ペイン。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]うっ……
+[charslot(slot="r",name="avg_npc_1131_1#1$1",focus="r")]
+[name="ヴィクター"]たった一人でリターニアに留学なんて、なかなかできることじゃない。俺はお前のアーツの素質と真面目さには一目置いてるんだぞ。
+[name="ヴィクター"]たしかに、学校が設立した奨学金は、すべての知識を求める生徒が受け取って然るべきものだ。だけど、審査結果が出るまでは何がどうなるか、誰にもわからない。
+[name="ヴィクター"]奨学生は厳しい審査の末に選ばれる。まあ、お前なら期末試験で優秀な成績を収めるのは余裕だろうな。ただ、それでも最終的な決定権は選考委員会にあるんだ。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]選考委員会には、ヴィクター様……君の叔父さんもいるんだよね……
+[charslot]
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]奨学生認定者が正式に発表されるのは一週間後よ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]僕……ランドールくんが必ず約束の場所に行くようにするから。
+[charslot]
+[charslot(slot="l",name="avg_npc_1129_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1131_1#1$1",focus="r")]
+[name="ヴィクター"]ああ、そうこなくちゃな。
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1129_1#1$1")]
+[charslot(slot="r",name="avg_npc_1131_1#1$1")]
+[delay(time=0.5)]
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="44_g5_spiralstairs",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.2, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]おっと、すごい量の本を抱えてるね。前見えてる？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ご、ごめん、ランドールくん。
+[charslot(slot="m",name="avg_271_arene_1#6$1")]
+[name="ランドール"]僕のことを知ってるの？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]お、同じ選択授業を取ってるから……
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]正解。ペイン先輩の「既存のアーツユニットにおける対応すべきエネルギー変換タイプ」についての考え方はすごく斬新だったよ。エドウィン教授、顔を真っ赤にして怒ってたね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]コホン……教授がテストの採点に私情を持ち込むような人じゃなくて助かったよ。
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]それに比べて僕はあまり運がよくなかったなあ。でもまあ、理論系の科目って元々あんまり好きじゃないんだよね。だって、あと五、六十年経っても、そういう概念ってあまり進歩しないでしょ？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]毒性学の講義室は別棟にあるから、もう移動しないと。じゃあまたね、先輩。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="44_g5_spiralstairs",screenadapt="showall")]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_271_arene_1#1$1",duration=2)]
+[delay(time=2)]
+[name="ランドール"]ペイン先輩、最近よく会うね。何か企んでるんじゃないかって疑っちゃうな。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]……！
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]ハハ、面白い反応をするね。
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]異国の地で話の合う人に出会えるなんて、なかなかないことだよ。ましてや僕たちは二人揃って留学生だし。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]そうだね……もうずっと家に帰ってないから、家族の顔も忘れてしまったよ。実家から……手紙が来ることもめったにないし。
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]手紙、ね……そういえば最近、母親から手紙が来たんだ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]それ、読んでてどうだった？　いや……えっと、何が書いてあったの？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]僕に会いに来るんだって。でも、僕は親に会いたいかどうか正直わからないんだよね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]絶対に会ったほうがいいよ！　えっと……どんなことがあっても、ご両親はいつも君のことを気にかけてくれてるんだから。
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]先輩は、僕を家族と会わせたいの？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]そんなことないよ！　決めるのはあくまでも君自身だから！
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]それならじっくり考えなくちゃ。そうだな……しばらくしたら二人に返事の手紙でも出そうか。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ランドールくん、ご両親に……会わないなんてことないよね？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]なんで先輩のほうが僕よりも焦ってるのさ。あくまでも僕が決めることなんだって、今自分で言ったばかりなのに。
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]まずい。もしランドールくんが行かなかったら……ヴィクターさんになんて言えば！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="44_g3_ludwigsuniv_outside",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_271_arene_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="m",posfrom="0,0",posto="-90,0",focus="all",afrom=1,ato=0,duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1132_1#1$1", bstart=0.2,bend=0.7, duration=1)]
+[delay(time=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]トランスポーターさん！
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_417_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="トランスポーター"]やあ、ランドールくん。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]この前の手紙に何か問題でもあったのかい？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]いえ、母からの便りを届けてくれてありがとうございました。ただ家族とは長い間連絡を取っていなかったので、口では言いにくいこともあって。母は返事はいらないと言っていたのですが……
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]ああ、わかるよ。家と疎遠になっていると、いざ家族に会えるとなるとそわそわするものさ。君の手紙は必ず送り届ける……と言っても、どこに送ればいいのかな？
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]母はリターニアでの滞在先の住所を書いてくれていました。この宛先に届けてもらえれば大丈夫です。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]なら大丈夫だね。ご両親と楽しい時間を過ごせるといいね。
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]ありがとうございます、きっと楽しい時間になるはずです。
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]はあ、遠くから留学に来てる子たちは大変だね。まあトランスポーターの仕事も楽じゃないけどさ。さて次は――
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ま、待ってください！
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]おや、ペインくんじゃないか！
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]ようやく手紙を出すことにしたのかい？　ランドールくんにペインくん、二人とも家族と団らんできることを願ってるよ！
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]いえ、そういうわけじゃ……その、ランドールくんの手紙は僕に預けてくれませんか？　代わりに届けてきますので。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]それはダメだ。学生を使いっ走りにして給料をもらうなんてあり得ない！
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]大丈夫です。僕はバッハ区には詳しいので、送り先を間違えたりなんかもしませんし。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]手紙に書いてあった住所を知ってるのかい？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]あっ……その……、ぼ、僕とランドールくんは親友なんです！　彼のご両親はもうリターニアに到着していて、でもその……そうだ……事情があって滞在先を変更したので、そこの住所を聞いてて……
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]昨日、街中で偶然ランドールくんのご両親と会って話を聞いたんです！　手紙に書いてある住所に届けてもランドールくんの真心のこもった手紙が二人に届かないと思うと――
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]ちょ、ストップ。慌てすぎだよ、ペインくん。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]そうか、ランドールくんはきっと君にとって大切な友達なんだ。だからご家族との再会に手違いがあってほしくないんだね？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]はい……
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]君は本当にいい子だ。なら、この手紙はお願いするよ。次はペインくんの家族宛ての手紙を届けさせてほしいな。
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[name="トランスポーター"]君と初めて会った日からもう三年も経った。ためらうのはもうナシだ。前にどんなことがあったって、親は子供から手紙をもらったら喜ぶに決まってるんだから。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ありがとうございます。もう少し……考えてみますね。
+[dialog]
+[charslot(slot="m",name="avg_npc_417_1#1$1")]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]お願い……行かないとか書いてありませんように……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_paper1")]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]よ、よかった！　明日の夜、時間通りに約束の場所に行ってくれるみたい。ヴィクターさんとブリトニーさんに準備しておくよう伝えなくっちゃ……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_paper2")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]そっか、ランドールくんはご両親とうまくいってなかったんだね。研究の仕事……ははっ、やっぱりご両親の仕事が原因で……
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]「あまり今回の再会に期待を抱かないでください。もちろん二人に会えることを嬉しく思っています。ただ、見慣れないリターニアの街並みが、いつも僕に思い出させるんです。僕は孤独なんだと。」
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]そうだよね、ランドールくんもひとりぼっちなんだ、でも……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Subtitle(text="審査結果が出るまでは何がどうなるか、誰にもわからない……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……最終的な決定権は選考委員会にあるんだ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ヴィクターさんは絶対に見逃してくれない。なんとしてでもやらなきゃ、なんとしてでも――
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]やっぱりもう少し考えないと……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="44_g2_marigold_n",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]そろそろ時間だぜ、ブリトニー。
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]ほんと、人使いが荒いわね。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_windmagic", volume=1)]
+[delay(time=2)]
+[charslot]
+[name="ヴィクター"]俺たちの新しいおもちゃにちょっとした敬意ってやつを払わなきゃだろ？　これから長い付き合いになるんだから。
+[name="ヴィクター"]おい、あいつ本当に来るんだろうな？　俺たちは貴重な時間を割いてここに来てんだ。もし約束通りに現れなかったら――
+[name="ペイン"]僕は奨学金と、残り一年の平穏な学校生活とはお別れしなくちゃならない。
+[name="ペイン"]わかってるよ、ヴィクターさん。何回も言わなくても大丈夫。
+[name="ヴィクター"]……
+[name="ブリトニー"]数日会わなかっただけで、ずいぶんと生意気な口を利くようになったのね。まあ、こっちのほうが可愛げがあるけど。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[name="ヴィクター"]シッ、誰か来た。ペイン、アーツユニットを準備しとけよ、俺が合図したら……
+[dialog]
+[charslot(slot="m",name="avg_npc_1132_1#1$1",duration=2)]
+[PlaySound(key="$d_avg_windmagic", volume=0.6)]
+[delay(time=2)]
+[charslot]
+[name="ヴィクター"]おいバカ、何してんだ！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_271_arene_1#1$1",duration=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_271_arene_1#3$1")]
+[name="ランドール"]フーガ通り二番地は……ここかな？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]もしかして、ランドール・ホフスタッターくんですか？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]はい、そうですけど。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]私はバッハ区のトランスポーターです。あるサンクタの夫婦から、ここであなたを待つように言われました。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="44_g2_marigold_n",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]おいおい、いつから平然と嘘をつけるようになったんだ？　事故に手術費って、あいつもよく信じたな。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]留学生はすぐに家と連絡を取れるわけじゃないから、短い間に真偽を確かめることはできないからね。同じように、僕たちの気持ちや心配、そして後悔も……すぐに伝えることはできないんだ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]その弱点を握れば、これからの数年間、彼はヴィクターさんのもっとも「従順」な友達になってくれるよ。
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]ああ……その通りだ。
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]その箱にあいつが持ってる一番の金目のものが入ってるのか？　もしあいつの親が本当に天災に遭遇してしまったら、それだけじゃ治療費の足しにもならないぞ。
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]チビのサンクタが高価なものなんて持ってるわけないでしょう？　新しいアーツの実験体にでもしたほうがよほど有意義よ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ランドールくんの両親は、ラテラーノ銃の研究をしている学者なんだ。二人が在籍している研究所は行政から支援もされているし、経済的にも裕福なはずだよ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]もしこの箱に銃に関する研究成果が入っていれば、二人のお父さんもきっと喜ぶんじゃないかな？
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]いつの間にあいつについてそんなに詳しくなったの？
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]やっとだな、ペイン！　三年かけてやっとモノになってきたじゃないか！　お前が来年で卒業してしまうのが残念でならないよ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]僕もだよ、ヴィクターさん。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="44_g2_marigold_n",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]おい、なんていうか……箱から淡い香りがしないか？
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]香水でも入ってるのかしら？　人を騙して手に入れたものだし、プレゼント代わりにもらう気にもならないけど……
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[delay(time=1.5)]
+[Dialog]
+[Character]
+[CameraShake(duration=1.5, xstrength=20, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[PlaySound(key="$d_avg_magic_1")]
+[PlaySound(key="$d_avg_explosion", volume=0.3)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=5, block=false)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]ゴホッ、ゴホゴホッ……
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]ゴホッ……ほんとだ、匂ってきたわ。あれ？　この箱空っぽじゃない！　チッ、あのサンクタめ、私たちを騙したのね……あらヴィクター、あんたってそんなに変な顔だったっけ？
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]はあ？　お前だってろくな顔じゃ……おい、なんだこれ、何かが足から這い上がってきてる！　いや……俺が沈んでる？　地形を変えるアーツでも食らったのか？
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]地面がぐらぐら揺れているわ……ヴィクター、手を貸して――なにこれ、緑のネバネバした液体が……私の指輪に付いて……いや、いや！　指がない！　私、もしかして……
+[dialog]
+[charslot]
+[name="ランドール"]溶けてるよ。
+[dialog]
+[charslot(slot="m",name="avg_271_arene_1#2$1",duration=2)]
+[delay(time=2)]
+[name="ランドール"]二人とも、僕を友達のいない留学生だと思ってたみたいだけど、僕が自分から他人と関わらないようにしていたとは考えもしなかったみたいだね。
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]腐蝕、分解、溶解。これが僕のアーツであり、小さい頃から備わっていた素質でもあるのさ。
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]こんな話、人にはめったにしないんだけどね。破壊と死の原理を知りたい人も、あんまりいないし。どう？　今の僕なら、あんたたちの「新しい友達」にふさわしい？
+[dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1132_1#1$1",duration=2)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]ペイン、てめぇ！
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]クソッ！　異邦人どもが、グルで俺たちを騙しやがったな。裏切者め！　待ってろよ、この代償は高くつくぞ！
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]心配には及ばないよ。君たちのいたずらに加担した時点で、僕はもう一番高い代償を払う定めなんだから。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="bg_leithanienroom",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]いたずら？
+[charslot]
+[charslot(slot="r",name="avg_271_arene_1#4$1",focus="l")]
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]本当にごめん、ランドールくん！　君が受け取ったご両親からの手紙、あれ……実は僕が書いたんだ。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]一人で異国にやって来た留学生同士なのに、貴族に言われるがままに、あんな手紙を書いて嫌がらせに加担しちゃったんだ……明日、約束の場所には絶対に行かないで！
+[charslot(slot="r",name="avg_271_arene_1#4$1",focus="r")]
+[name="ランドール"]手紙が偽物なのは、最初からわかってたよ。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]え……
+[charslot(slot="r",name="avg_271_arene_1#8$1",focus="r")]
+[name="ランドール"]押印や署名もなければ、ラテラーノ銃のオイルのにおいもしなかったからね。それに、僕がリターニアへの留学を決めた時、あの二人は少しも躊躇いを見せなかった。
+[charslot(slot="r",name="avg_271_arene_1#8$1",focus="r")]
+[name="ランドール"]二人は心底ホッとした顔をしてたよ。まるで、僕の選択が彼らが直面していた難題を一つ解決してくれたみたいにね。今も昔も、あの二人にとって一番手を焼きたい「子供」は研究のほうだったのさ。
+[charslot(slot="r",name="avg_271_arene_1#4$1",focus="r")]
+[name="ランドール"]リターニアに来たあとも、両親の注目を一身に集めてる「兄さん」のせいで、僕は落ち着いた暮らしを送れやしないんだ。
+[charslot(slot="r",name="avg_271_arene_1#2$1",focus="r")]
+[name="ランドール"]今回みたいに、貪欲で無能なライバルたちが、僕を通して研究の秘密を騙し取ろうとしてくるからね。僕は舐められてるんだ。そんなヤツらを放っておくはずがないだろう？
+[charslot(slot="r",name="avg_271_arene_1#2$1",focus="r")]
+[name="ランドール"]知識を求めるためにリターニアを訪れる人の大半は、アーツに秘められた素晴らしい奥義を探るために来てる。僕だってそうさ。
+[charslot(slot="r",name="avg_271_arene_1#11$1",focus="r")]
+[name="ランドール"]でも、時には毒性学を使ってさっさと解決すべき「面倒事」だってある――ちょっと特殊なインクを使うだけで、奴らが垂涎する甘美な文字を、命を奪う記号に変えられるってわけ。
+[charslot(slot="r",name="avg_271_arene_1#11$1",focus="r")]
+[name="ランドール"]だけど僕も、研究所を離れてもまだ学者の皮を被っている政治屋どもが、こんなお粗末な偽造をするはずがないって気付くべきだったな。
+[charslot(slot="r",name="avg_271_arene_1#8$1",focus="r")]
+[name="ランドール"]あーあ、てっきりこの手紙もそういう類いの「面倒事」だと思ってたのに。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]待って、命を奪う記号って……まさか！
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]残念だね。どうやら僕たちの間にはちょっとした誤解があったみたい。
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]でも、先にふっかけてきたのはそっちだから謝らないよ。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]は……はは……あの二人の共犯者になった時点から、報いを受ける覚悟はできてたんだ。僕みたいなのは捨て駒にするくらいしか使い道がないからね。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]でも、こんなのはさすがに……
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]すぐには受け入れられないよね。寮に戻ってこの悲しい現実を少しずつ噛みしめるといいよ。
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]それとも僕に復讐でもする？　別にいいけど、今度はもっと賢い方法でやるんだね。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]僕にはあとどれくらいの時間が残されてるの……？
+[charslot(slot="r",name="avg_271_arene_1#10$1",focus="r")]
+[name="ランドール"]今までの経験からすると、短くて三日、長くても一週間かな。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]ヴィクターさんたちは、明日君が約束の場所に行くことを知ってるよ。
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]うん、あれは僕が撒いた餌だからね。今回の件をそう簡単に終わらせるわけにはいかないのさ。
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]あんたが僕のドアをノックした時、ちょうどあいつらへのお返しの準備をしていたんだ。期末試験の復習ついでに、新しく開発した薬を試してみようと思って。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]僕も仲間にいれてよ。
+[charslot(slot="r",name="avg_271_arene_1#1$1",focus="r")]
+[name="ランドール"]へぇ？　敵に寝返るような人は信用できないなぁ。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]僕が留学を決めたのは、たしかに家族から逃げるためでもあったけど、この学校を選んだのは知識を得るためであって、貴族の下僕になるためじゃない。
+[charslot(slot="l",name="avg_npc_1132_1#1$1",focus="l")]
+[name="ペイン"]僕の敵は、最初からあいつらだけだよ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Delay(time=1)]
+[Background(image="44_g2_marigold_n",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]裏切者め！
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]コイツってこれしか言えないの？　なんでこんなつまんなくてしょぼいやつに、三年間もこき使われてきたわけ？
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]人をアゴで使うクズにしたって、イタズラのレベルが低すぎる――古臭くて、効率が悪くて、しかも創造性に欠けている。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]今となっては、僕にもわからないんだ。たぶん最初はただ平穏な学校生活を送るためだったと思う。でも大人しく従ってたせいでもっと厄介なことになるとはね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]こいつら、もう立ってるのもままならないね。
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]は、はやくこのアーツを止めろ！　医務室の先生も呼んで来い！　でなきゃ、お前らどっちも許さないぞ！　ペイン！　奨学金はもういいのか！？
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]お前もだランドール！　学校では攻撃的なアーツを人に使うことは禁止されてる！　退学させて、リターニアから追い出してやる！　どうせもうラテラーノにも戻れないんだろ？
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]あんたたちは、自分の置かれた状況を理解してもいなければ、僕のアーツの本質もわかってないようだね。そもそもそれはアーツなんかじゃなくて、僕が配合した薬が引き起こした幻覚だよ。
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]……幻覚だと？　そんなわけあるか！　だって痛みがもう腰まで這い上がって……はやく止めろ！　騙そうったって、そうはいかないぞ！
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]いたずらの原理を説明するのは嫌いなんだ。もうちょっと賢くなって、自力で理解してくれない？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]傍から見たら、君たちはただ転んで、そのあと自分の髪を引っ張ったり、足をかきむしったりしながら大騒ぎしてるだけだよ。僕は何も直接的な危害は加えていない。
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]体が溶けるイメージについては、僕のちょっとした趣味さ。この学校、校則が堅すぎるから、それを溶かしちゃえたらなって小さな願望を幻覚に盛り込んでみたんだ。
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]化け物が……
+[charslot(slot="m",name="avg_271_arene_1#11$1")]
+[name="ランドール"]お褒めにあずかり、どうも。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ランドールくんの「いたずら」は何も痕跡を残さない。だから、君たちも今夜のことを誰かに言ったりなんかしないよね？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]もし大好きな叔父さんに何か吹き込もうとしてるのなら、いつでも死にかける幻覚を見る覚悟をしておいてよ。太っ腹なことに、ランドールくんはこの薬の配合レシピを僕にも教えてくれたんだ。
+[charslot(slot="m",name="avg_npc_1129_1#1$1")]
+[name="ブリトニー"]ヴィクター、はやく返事しなさいよ！　私、もう足の感覚がないのよ……ねえ、はやく！
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]わかったよ！
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]ペイン、それとランドール、今夜の件は誰にも言わない……だ、だから頼む！　俺たちを見逃してくれ！
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]それで、また「新しい友達」を探すの？
+[charslot(slot="m",name="avg_npc_1131_1#1$1")]
+[name="ヴィクター"]いや、こんなことはもう絶対にしない！　お前たちも含めて、二度と誰にも迷惑は掛けない！
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ランドールくん。
+[charslot(slot="m",name="avg_271_arene_1#11$1")]
+[name="ランドール"]実験は成功といったところかな。いい悲鳴も聞かせてもらったし、いい実験台になってくれたことに免じて、もう行っていいよ。
+[charslot]
+[dialog]
+[PlaySound(key="$d_avg_magic_4",volume=0.8)]
+[PlaySound(key="$d_avg_magic_5",volume=0.8,channel="1")]
+[CameraShake(duration=1, xstrength=30, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=2)]
+[Dialog]
+[Character]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=3)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]こんなにあっさり……三年間も振り払えなかった暗雲が、一瞬で消えちゃうなんて。
+[charslot(slot="m",name="avg_271_arene_1#8$1")]
+[name="ランドール"]もともと大した問題じゃなかったからね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]イジメも、計画失敗の落とし前もなくなって……奨学金だって無事……
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]なんだ、反抗するのってこんなに簡単なことだったんだ。なんで今頃になって気づいたんだろう。だって僕はもう……
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]それでも謝るつもりはないよ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]はあ……君には謝る必要なんてないよ。これは僕の自業自得だ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ランドールくん、ひとつお願いをしてもいいかな？　僕の代わりに出してほしい手紙があるんだ。
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]もしかして、両親宛の手紙かな？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]うん。僕の両親は、僕の留学に反対だったんだ。二人とも商人で、代々同族経営の会社を切り盛りしててね。一人っ子の僕は、当然のように会社の跡取りにされた。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]一人ぼっちの子供時代を一緒に過ごしてくれたのは、アーツの本だけだった。両親はアーツなんてまったく興味がなくて、ただ僕の趣味に適当に合わせてくれてただけだった。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]だから、どんな理不尽な目に遭おうと、二人に頭を下げたくなかった。助けてほしいなんて言いたくなかった。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]それでも毎日、両親からの手紙は来てないか郵便局に確認しにいってたよ。もし二人のほうから僕に心配の言葉を送ってくれたら、迷わず返事を出すのに……なんて考えながらね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]だけど、もう意地を張り続けても意味ないでしょ。実は、母さんが作るジャムパイが恋しいんだ。店で売ってるパイを焼いただけだけど、母さんオリジナルの香辛料がかかっててさ。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]僕は甘いモノが嫌いだけどね。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]でも、食べたいんなら家に帰ればいいでしょ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]はは……君は冗談がうまいね。ねえ、僕に残された時間はあとどれくらい？　二日？　それとも五日くらいはあるの？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]事故とか病気がなければ、あと数十年ってとこだね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]……ランドールくん、それは冗談じゃないよね？
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]残念ながらホントの話。返事を書く時に使ったインクは、命を奪うようなものじゃないからね。あんたにはまだ、そのおいしくなさそうなパイを食べるチャンスが残されてる。
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]あれはただのでまかせ。脅して追っ払おうと思ってたんだ。でも、あんたは簡単にビビるようなガリ勉じゃなかった……どう？　がっかりした？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ううん……うぅ……こんなに嬉しく思ったのは生まれて初めてだよ……
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]ほら、涙を拭きなよ。こんな反応は期待してなかったな。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ありがとう、ランドールくん。はは、ほら見てよ……泣きすぎて手まで言うことを聞かなくなっちゃった……
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]あれ？　僕の……手……
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]命を奪うようなものじゃないとは言ったけど、毒じゃないなんて一言も言ってないでしょ？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]安心して、ただ腫れてるだけだから。七十二時間程で効果が切れるよ。その間は指が動かせないと思うけど、命を奪われるよりはずっと軽い罰だよね。いや、ちょっと待って――
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]あぁ！　これだとちょうど期末試験の最初のテストを受けられなくなっちゃうね。結局奨学金はパーってわけだ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ははは……君らしいというかなんというか……
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]「果たし状」を書いた本人が、僕の「お返し」リストに入ってるのは当然でしょ？　それに、あの二人の言いなりになっておどおどしてた君、見てて不快だったから。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]もう二度と人の言いなりにはならないよ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]はあ、ランドール君……とにかく君のおかげで面倒事は解決できたけど、また新たな面倒事に頭を悩ませることになりそうだね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]来年の学費はどうすればいいんだろう？
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]親に相談してみたら？
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]手紙はもう書いてあるし、ちょっと直せばすぐに出せるでしょ？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]……
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]僕がなんであの手紙が偽物だって気付いたのかわかる？
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]僕の書いた手紙が粗末だったからじゃないの？
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]そもそもあの二人は、僕に手紙なんて書かないからさ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]え？
+[charslot(slot="m",name="avg_271_arene_1#8$1")]
+[name="ランドール"]便箋、言葉遣い、におい、ミステリー小説にありがちな些細な手がかりを、証拠にする必要すらないんだ。だってそもそも、手紙そのものがあり得ないからね。
+[charslot(slot="m",name="avg_271_arene_1#8$1")]
+[name="ランドール"]あの二人は、面と向かってる時ですら思いやりのある言葉をかけやしない。ましてやあんなこそばゆい手紙なんか――まあ僕も、もともと親には何も期待してないからいいけど。
+[charslot(slot="m",name="avg_271_arene_1#8$1")]
+[name="ランドール"]あの手紙は、あんたが自分の親からかけてほしい言葉なんでしょ。
+[charslot(slot="m",name="avg_271_arene_1#8$1")]
+[name="ランドール"]家にいた頃は、親からあんなふうに気にかけてもらってたんだね。だから、自分が今でも親から大切に思われてる証明がほしかった。事前に返事まで用意しちゃってさ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]バカみたいだよね。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]そうだね。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]手紙を書いたからじゃない。書いた手紙を出さなかったのがバカだなって思ってる。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]頭を下げろとまでは言わないよ。あんたは正しい決断をしたと思うし、親もたくさんの間違いを犯しただろうから。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]もし親がその手紙を読んで、弱音を吐いても助けないなんて返信してきたら、がっかりして、怒って、手紙をズタズタに引き裂いて、二人に「そうじゃない」って言ってやりなよ。
+[charslot(slot="m",name="avg_271_arene_1#10$1")]
+[name="ランドール"]思ったことをやればいいよ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ランドールくん、どうして君はいつも自分の選択に、そんなに自信を持てるの？
+[charslot(slot="m",name="avg_271_arene_1#8$1")]
+[name="ランドール"]誰にも間違ってるって言われないからだよ。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ははっ……うん、ちゃんと考えてみるね。
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]いや、手が直ったらすぐに手紙を出すよ！
+[charslot(slot="m",name="avg_npc_1132_1#1$1")]
+[name="ペイン"]ありがとう、ランドールくん。
+[Dialog]
+[charslot(duration=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_271_arene_1#1$1")]
+[name="ランドール"]だから、そんな反応は期待してないって。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_firemagic", volume=0.6)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]よし、これで僕が書いた手紙も処分したし、このいたずらもいよいよおしまいだ。さて、ペインが書いたこの偽物の手紙は……
+[charslot(slot="m",name="avg_271_arene_1#4$1")]
+[name="ランドール"]うん、どう見たってあの二人が言いそうにない言葉だ。
+[dialog]
+[PlaySound(key="$d_avg_paper2")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_271_arene_1#2$1")]
+[name="ランドール"]でもまあ、記念に取っておいてもいいかな。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[charslot]
+[Image]

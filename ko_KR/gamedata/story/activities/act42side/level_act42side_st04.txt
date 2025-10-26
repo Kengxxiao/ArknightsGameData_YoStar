@@ -1,0 +1,758 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[delay(time=1)]
+당신은 마침내 확신했다. 현실 속 그 대단했던 이주가 끝났다는 것을.
+이주의 결과는 당신들이 있는 공간에도 투영되었다…… 마치 재앙이 쓸고 지나간 것만 같은 거대한 틈이 대성당 앞을 가로지르고 있었고, 틈 옆에는 더 눈에 띄는 구덩이가 있었다.
+그것들은 고요해야 마땅한 도시에 생긴 흉측한 흉터 같았다.
+그리고 고리 모양의 기계가 그 안에서 침묵하고 있었다……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]……
+[Dialog]
+[charslot]
+[Decision(options="PCS 시스템이…… 다운된 건가?", values="1")]
+[Predicate(references="1")]
+당신은 프리스티스를 바라봤다. 하지만 그녀는 침착했다. 마치 이 돌발 상황이 아무렇지도 않은 것처럼.
+당신은 불안함을 느꼈다.
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]분석 끝났어! 10초 전에, 대성당 광장에서 엄청난 폭발이 적어도 2번은 일어났어.
+[name="Mon3tr"]실행자는 엑시아, 이그제큐터, 은발의 산크타로 특정됐어. 폭발 지점 주변에서 계속 깜빡이는 정지 화면들이 그걸 증명하고 있고.
+[Dialog]
+[charslot]
+[Decision(options="엑시아한테 만들어 준 프로그램 폭탄이 효과적이었어.;하지만 저 기계의 구조가 그렇게 약하지는 않을 텐데.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]아직 축하할 때가 아니야, 박사!
+[name="Mon3tr"](프리스티스가 아직 다음 행동을 하지 않았어.)
+[name="Mon3tr"](상황을 바꾸지 못하게 막아야 해.)
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]맞아. 기계의 구조는 천사들이 만들어낼 수 있는 모든 충격 에너지를 견딜 수 있게 설계돼 있어. 애초에 더 혹독한 환경에서도 작동할 수 있도록 만들어진 거니까.
+[name="Mon3tr"](프리스티스가 PCS 시스템을 재가동할 수 있어. 막아야 해.)
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]하아. 미안해, 박사.
+[name="Mon3tr"]이번에는 나 혼자 와야 했었어. 박사가 최대한 개입되지 않게끔 해야 했는데……
+[Dialog]
+[charslot]
+[Decision(options="이미 내 앞에 서 있는 게 익숙하잖아, Mon3tr.", values="1")]
+[Predicate(references="1")]
+[Decision(options="(미소 짓는다);고마워.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]어?
+[Dialog]
+[charslot]
+[Decision(options="어쩌면 네가 생각하는 것만큼 나쁜 상황은 아닐지도 몰라.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="이제 나는 프리스티스의 상태를 알 수 있어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]프리스티스의…… 상태?
+[Dialog]
+[charslot]
+당신이 Mon3tr를 지나쳐 프리스티스에게 걸어가려는 순간, Mon3tr는 긴장하며 팔을 움켜잡았다.
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]박사!
+[Dialog]
+[charslot]
+[Decision(options="괜찮아.;날 믿어.", values="1;2")]
+[Predicate(references="1;2")]
+Mon3tr는 잠시 주저하다가 팔을 놓았다. 하지만 당신의 옆에 바짝 붙어 떨어지지 않았다.
+당신은 프리스티스와 나란히 섰다.
+[Dialog]
+[charslot]
+[Decision(options="도시의 상처들이 조화롭지 않아.;넌 이 불필요한 파라미터들이 네 데이터에 섞이는 걸 내버려뒀어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]{@nickname}, 그 하찮아 보이는 문자들이 결국 프로그램 전체를 마비시킨 거야…… 한 언어가 영원히 완벽하게 작동된다고 장담할 수 없어.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]당신이 무슨 말을 하고 싶은지 알아. 우리가 만든 언어에도 한계는 있어. 비록 오리지늄이 있다고 해도 말이야.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]적응과 자가 개선에 더 많은 시간이 필요해.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]가끔은 별생각이 다 들어. 오리지늄이 완벽한 형태로 진화하는 걸 막는 요소는 어쩌면 그 자체의 설계적 결함이 아니라…… 우리가 아닐까.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]인간의 감성이나 이성이, 언어의 발전에 족쇄를 묶을 수도 있으니까.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]오리지늄을 만들던 시절에, 우리도 이 주제를 두고 수없이 논쟁했지만, 끝내 결론을 내진 못했지.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]그래도 우리 둘 다 오리지늄 안에 이런 불확실성이 있다는 걸 받아들였어.
+[Dialog]
+[charslot]
+[Decision(options="……무슨 말인지 모르겠어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="프리스티스"]……기억이 손상되면서 사고 확장 능력에도 문제가 생긴 거야?
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="프리스티스"]그래도 {@nickname} 당신이 혼란스러워하는 모습을 보니까 즐겁네. 예전에 당신이랑 하던 대화 방식과는 전혀 달라.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]완벽이라는 건 확정된 한계를 의미해. 하지만 결함은 더 나아갈 가능성이 있다는 뜻이지. 이건 {@nickname}, 당신의 주장이었고.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]우리가 해결해야 할 위기가 밝혀지지 않은 상황에서, 완벽이라는 건 제 무덤을 파는 행위에 불과하겠지.
+[Dialog]
+[charslot]
+[Decision(options="아니야. 그건 지금 상황이랑 아무런 상관이 없어.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="넌…… 절대로 상황을 바꾸지 못해.;이번엔 갑판에서 처음 마주쳤을 때와 달라.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="프리스티스"]……
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="프리스티스"]언제부터 알았어?
+[Dialog]
+[charslot]
+[Decision(options="방금.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="……넌 프로그램이 터지는 걸 막을 수 있었어.;……넌 오리지늄으로 그 틈을 메울 수 있었어.;……넌 성도들을 영원히 미궁에 가둘 수 있었어.", values="1;2;3")]
+[Predicate(references="1")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Image(image="61_i20", fadetime=2,screenadapt="coverall")]
+[delay(time=2)]
+[image(fadetime=2)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="2")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall",fadetime=2, block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="3")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g6_pcsderivativemaze",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot]
+[Decision(options="네게는 식은 죽 먹기겠지.;네가 깨어날 때 로도스 아일랜드에 가져온 재난처럼.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="심지어 넌 처음부터 나와 Mon3tr를 어떻게 하지도 않았어.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="분명 네게 무슨 문제가 생긴 거야.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]당신이라면 그 정도는 금방 눈치챌 수 있어, {@nickname}.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]하지만 지금이 되어서야 내 옆에 설 용기가 생겼구나.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]난 지금 내 곁에 서 있는 사람이, 오랜 잠 속에서 마음 깊숙이 뿌리내린 그 고독을 나와 함께 나눴으면 했는데.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]……하지만 안타깝게도, 지금의 당신은 할 수 없는 일이네.
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]우리의 상태는 예전 같지 않아. 많은 일이 있었잖아?
+[Dialog]
+[charslot]
+[Decision(options="너는 확실히 나한테 숨기는 게 없구나.;너는, 음…… 더 수수께끼 같아졌어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="프리스티스"]나한테 궁금한 게 더 많아진 거야?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]지금의 'Mon3tr'는 아무런 제약을 받고 있지 않아. 네 의문 중 일부는 대답해 줄 수 있을 거야.
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]AMa-10, 혹시 너희 {@nickname} 박사가 진실을 알게 될까 봐 두려운 거야?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]하지만 난 {@nickname} 박사가 직접 날 찾아와줬으면 좋겠어, 아까처럼 말이야.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]석관에 있던 시간은 고통스러웠어. 생각은 마치 끈적한 늪을 떠다니는 것 같았고, 난 시간의 흐름에 대한 감각을 빼앗겼지.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]우리의 사고 속에 끊임없이 각인된 논쟁이 아주 가끔 위안으로 작용하긴 했지만, 그건 우리가 함께 세운 비전을 확신하기 위해서가 아니었어……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]나는 내 길을 단 한 번도 의심한 적 없어.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]왜냐하면 '논쟁'은 그 사람과 다시 대화할 수 있는 유일한 기회였으니까……
+[Dialog]
+[charslot]
+[Decision(options="……;나는……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]내가 생각하는 걸 지금 바로 이해해 주길 바라진 않을게. 마지막 날이 오기 전까지 당신이 믿는 길을 걸어가도 좋아.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]우리 사이의 갈등은 계속될 수밖에 없어. 그때 그 사람이 나를 반대하던 이유가 무엇인지 더 이상 기억하지 못하더라도 말이야.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]당신이 사랑하는 테라가 또 내게 어떻게 증명해 보일지 정말 기대되네. 당신들의 몸부림은 여전히 가치가 있으니까…… 조금 전의 라테라노 사람들처럼.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]하지만, 나도 확신하고 있어. 예언가는 돌아올 거야.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]그러니까 {@nickname}, 난 당신을 기다릴 거야.
+[Dialog]
+[charslot]
+프리스티스는 생기 없는 도시를 바라보며 한숨을 쉬었다.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]가끔은 저들이 우리랑 너무 닮았다는 생각이 들어. 만약 당신에게 시간이 충분했다면, 어쩌면……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]……
+[Dialog]
+[charslot]
+프리스티스의 형체가 희미해지기 시작했다.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]맞다, 내가 확실히 AMa-10를 고칠 수 있어.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]결심을 했으면 오리지늄에 소원을 빌어봐, {@nickname}.
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="프리스티스"]나는 당신의 목소리를 들을 수 있으니까.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=2)]
+[delay(time=2)]
+프리스티스의 형체는 완전히 사라졌고, 당신들은 목표를 잃었다.
+고요, 절대적인 고요 속에서 당신과 Mon3tr만이 이 빛바랜 죽음의 도시에 갇혀 있었다.
+[Dialog]
+[charslot]
+[Decision(options="떠났어……", values="1")]
+[Predicate(references="1")]
+[PlayMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.4)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]음, 그러면 이제 끝난 건가?
+[Dialog]
+[charslot]
+[Decision(options="아마도.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="산크타들은 스스로 위기를 넘겼어.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="나도 프리스티스의 현재 상태를 확인했고.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="오리지늄의 통제권을 예상보다 더 많이 잃은 것 같아.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]박사, 그거 엄청 중요한 정보네!
+[name="Mon3tr"]프리스티스가 정상으로 돌아오기까지 얼마나 더 걸릴지는 모르겠지만, 적어도 막을 가능성이 보여.
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]맞다. 아까 말한…… 켈시는……
+[Dialog]
+[charslot]
+[Decision(options="Mon3tr, 나는 프리스티스를 믿지 않아.;우리는 오리지늄에 소원을 빌어선 안 돼. 켈시를 위해서라고 해도……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]……알아. 나도 프리스티스가 말한 방법으로 켈시를 되찾고 싶지 않아.
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]프리스티스는 로도스 아일랜드와 라테라노에 지울 수 없는 상처를 남겼어. 게다가 나타날 때마다 우리의 인식을 뒤흔들고 더 예측 불가능한 위협을 말하고 있어…… 무슨 생각을 하는지 전혀 모르겠어.
+[Dialog]
+[charslot]
+[Decision(options="우리는 오랫동안 연구해 왔어……", values="1")]
+[Predicate(references="1")]
+[Decision(options="우리에겐 우리만의 방법이 있어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]앞으로 가야 할 길은 아주 긴 여정이 되겠지?
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+당신은 그제야 Mon3tr의 이상함을 포착했다. 적은 이미 사라졌고 위기도 해결된 뒤였지만, 평소 활달했던 Mon3tr는 미소를 짓지 않고 있었다……
+Mon3tr의 표정은 오히려 굳어있었다.
+Mon3tr가 재구성된 건 얼마 전이다. 그렇기에 당신도 Mon3tr의 모습에 완벽히 적응한 것은 아니었다. 게다가 Mon3tr 또한 자신에게 벌어진 변화와 뼛속까지 사무친 상실감에 적응할 틈이 없었다……
+하지만 Mon3tr는 로도스 아일랜드 재건과 라테라노 구조 등의 임무에 너무 빨리 투입됐다…… 어쩌면 이제야 Mon3tr에게 말할 기회가 생긴 걸지도 몰랐다.
+[Dialog]
+[charslot]
+[Decision(options="그렇게 비관적으로 생각하지 마, Mon3tr……;포기하지 마, Mon3tr……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]켈시를 데려올 거야!
+[name="Mon3tr"]아미야랑 박사도 지킬 거야!
+[Dialog]
+[charslot]
+Mon3tr는 고개를 들어 당신을 바라보며 말을 끊었다.
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]켈시가 내게 한 말을 잊지 않을 거야!
+[Dialog]
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[image(image="60_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="켈시"]내가 가장 바라지 않는 상황이 정말 발생한다면, 가장 만나고 싶지 않은 그 사람이 다시 우리 앞에 나타난다면……
+[name="켈시"]박사를 지키고, 아미야를 지켜줘.
+[name="켈시"]나는 이 명령만 너의 기본 행동 원칙에 각인할 거야.
+……
+……
+영원한 생명은 필연적으로 외로워. 나는 이미 충분히 맛보았어.
+……너도 이제 스스로 나아갈 수 있을 거다……
+Mon3tr.
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Decision(options="내 말 들어 봐, Mon3tr.", values="1")]
+[Predicate(references="1")]
+당신은 Mon3tr를 바라보며 천천히 입을 열었다.
+[Dialog]
+[charslot]
+[Decision(options="네 몸이 재구성된 지 얼마 안 됐어……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="너무 너 자신을 몰아붙이지 마.;켈시도 자신의 희망이 족쇄가 되는 건 바라지 않을 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]음…… 아무래도 오해가 있는 것 같아, 박사.
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]물론 내가 막 깨어났을 때, 박사는 “어서 와”라고 말한 뒤, 바로 돌아서서 가버린 걸 기억하고 있지만……
+[Dialog]
+[charslot]
+[Decision(options="으윽……;미안해, Mon3tr.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]괜찮아. 나는 수천 년을 함께해온 공생체의 소멸에 익숙해질 시간이 필요했고, 박사 역시 오랜 시간 곁에서 함께 싸워온 동료의 부재를 받아들일 시간이 필요했을 테니까……
+[name="Mon3tr"]그리고 지금 우리는 마주 보고 있잖아.
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#12$2",focus="m")]
+[name="Mon3tr"]박사, 우리는 오랫동안 함께 지냈잖아?
+[name="Mon3tr"]런디니움의 포화 속에서, 살카즈의 비밀이 잠든 동굴 깊은 곳에서, 트리마운츠의 그 고리 모양 구조물이 솟구칠 때 뿜어낸 화염 속에서, 밀리아리움의 투지장에서……
+[name="Mon3tr"]켈시가 항상 있었듯, 나도 항상 있었어.
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]켈시가 떠난 후부터 내가 켈시의 명령을 따르기 시작한 것도 아니고, 그때가 되어서야 박사와 로도스 아일랜드를 이해하기 시작한 것도 아니야.
+[name="Mon3tr"]로도스 아일랜드의 오퍼레이터가 되어 창조주에 맞서 싸우고, 아미야랑 널 지키는 것도…… 내 선택이었어……
+[name="Mon3tr"]늘 하고 있는 일이기도 하고 말이야.
+[Dialog]
+[charslot]
+침묵이 흘렀다.
+당신은 Mon3tr를 바라봤다. 침묵이 두 사람을 잇고 있었다.
+[Dialog]
+[charslot]
+[Decision(options="나도 그래, Mon3tr.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="우리는 켈시를 되찾을 거야.;우리는 그 길고 긴 미지의 길을 끝까지 갈 거야.", values="1;2")]
+[Predicate(references="1;2")]
+영원한 생명은 필연적으로 외롭겠지만, 다행히도 모든 여정에서 우리는 결코 혼자가 아니었다. 설령 생명이 빛을 잃더라도, 설령 만물이 멸망하더라도……
+……우리는 함께, 그리고 반드시 앞으로 나아가야만 한다.
+그녀는 그렇게 바라고 있었다.
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]흐음……
+[Dialog]
+[charslot]
+[Decision(options="왜 그래?;무슨 문제라도 있어?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]표정이 왜 그래?
+[name="Mon3tr"]자, 지휘관, 심리 상담은 이제 끝났어! 드디어 이 이상한 곳에서 빠져나갈 방법이 떠올랐거든…… 박사의 도움이 필요해!
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]프리스티스의 말에 따르면, 여긴 그 기계가 오리지늄에 연결하고 연산해 낸 공간이야. 일종의 미래를 기반으로 한 시뮬레이션이지.
+[Dialog]
+[charslot]
+[Decision(options="그래서 오리지늄의 특성이랑도 관련이 있는 건가.", values="1")]
+[Predicate(references="1")] 
+[Dialog]
+[charslot]
+[Decision(options="어쩌면 그 비정상적인 노드들을 돌파하면 될지도 몰라.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]비정상적인 노드? 파괴의 흔적이 투영된 곳들을 말하는 건가……
+[Dialog]
+[charslot]
+[Decision(options="너랑 그 기계의 연결 제한은 사라졌겠지?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]응. 기계의 신호가 빠르게 약해지고 있는 게 느껴져.
+[multiline(name="Mon3tr")]연결을 복구해 볼게…… 
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[multiline(name="Mon3tr")]그 다음은? 
+[Dialog]
+[charslot]
+[Decision(options="비정상 노드의 재구성 요청을 계속 보내봐.;연산력을 한계까지 소진시키는 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]프리스티스만 개입하지 않으면 별로 복잡하지 않은 일이야.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="a")]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="…………", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="도시 통신 기둥을 통해 포트에 역으로 접속……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="특별 권한, AMa-10.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="임시 접근 인증, ELCARO-001…… ORACLE. 디코딩 완료, 인증 통과되었습니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="PCS 시스템에 연결되었습니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="곧 연산 전파 링크를 동기화합니다……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="경고: 코어 주파수가 너무 낮습니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="자가 점검이 끝났습니다. 비정상 노드가 재, 재, 재구성됩니다……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopSound(channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$b_enemy_dead_h")]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+색이 바랜 죽음의 도시에서 색깔이 흘러나왔다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g11_laterano_alley",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=1)]
+계시의 석탑 우측에 있는 거리를 시작으로, 미카엘리온 구역의 공증소와 크고 작은 총기 공방, 그리고 세인트 마르솔 구역의 일몰 예배당을 지나 성당 광장까지……
+시끄러운 소리가 신성한 도시로 돌아왔다.
+그건 라테라노인이 생명을 위해 기도하는 소리였다.
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]색깔이…… 돌아왔어?!
+[Dialog]
+[charslot]
+[Decision(options="가자, Mon3tr.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]엑시아랑 인사 안 해?
+[Dialog]
+[charslot]
+[Decision(options="가족, 친구들과의 시간을 방해하지 말자.;이번 라테라노 사태를 얼른 본함에 알려야 해.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="프리스티스는 잠시 사라진 것뿐이야……;프리스티스는 곧 새로운 움직임을 보일 거야.;우리의 임무는 아직 끝나지 않았어.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=3)]
+[PlaySound(key="$alarmenter",volume=0.8,channel="1")]
+[delay(time=3)]
+[dialog]
+[stopSound(channel="1")]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Subtitle(text="전환 프로그램이 중지되었습니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="권한 보유자가 생성한 임무 시퀀스가 종료됐습니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="시스템 종료 카운트다운이 시작됩니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Image(image="61_i22_2", fadetime=0,screenadapt="coverall",block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="프리스티스"](미지의 언어) 네 코어 코드를 검증해 봤어. 내가 다시 손본 부분을 제외하면, 짧은 시간 안에 자가 업데이트를 더 많이 했더라.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 그래도 자신의 결함을 복구하지 못한 거야?
+[charslot]
+[Dialog]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="부정.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="결함은 이미 복구되었고, 모순은 수정되었습니다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$b_enemy_dead_h")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 너의 자가 업데이트 결과에 큰 흥미를 느끼고 있었는데.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 지금 보니까, 너는 너 자신을 결함이자 모순으로 착각하고 있었구나.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 초과 연산의 부작용인가? 아니면 관리가 부족한 환경에서 장기간 산크타랑 데이터를 교환하다 보니 데이터베이스가 오염된 건가?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 데이터가 더 많아지면 답을 찾을 수 있을지도 모르겠네.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 안타깝게도…… 지금 동원 가능한 자원으로는 너를 완벽하게 다시 가동하는 건 무리야.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 지휘 시스템이 대상의 의지로 인해 스스로를 부정하는 현상이라면, 그 어떤 연구자도 PCS 시스템에 흥미를 느꼈을 텐데.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) ……만약 우리가 아직 천재들이 사상과 주장을 서로 부딪치며 팽팽하게 맞서던 그 시대에 있었다면 말이지.
+[charslot]
+[Dialog]
+고리 모양의 기계는 더 이상 응답하지 않았다. 프리스티스는 아쉬움을 느꼈다.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 다른 방법으로 계속 프로젝트를 진행해야겠네……
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="l")]
+[StopSound(channel="l", fadetime=4)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"]……
+[charslot]
+[Dialog]
+수많은 기계 블록으로 이루어진 고리 모양의 연산 매트릭스, 그것은 기계의 핵심 부품이었다. 그리고 그 핵심 부품은 침묵에 빠져 있었다.
+하지만 갑자기, 그중 하나가 진동하기 시작하더니, 표면에 금속의 빛이 흐르기 시작했다.
+뒤이어 희미하게 반짝이는 광륜이 떠오르기 시작했다.
+폐허가 된 PCS 시스템에서 새로운 '천사'가 탄생했다.
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="프리스티스"](미지의 언어) ……다시 가동됐나?
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="프리스티스"](미지의 언어) 아니네. 나한테 전혀 반응을 못 하고, PCS 시스템 작동 로직에도 안 맞고.
+[charslot]
+[Dialog]
+'천사'는 프리스티스를 무시한 채, 위에 난 틈으로 솟구쳐 오르더니, 순식간에 사라졌다.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) '천사'의 '원형체'?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 하지만 이 시스템은 '천사'의 특성을 본뜬 것일 뿐이잖아. 심지어 만들 때 '천사 원형체'의 샘플을 이식하지도 않았는데.
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="프리스티스"](미지의 언어) 새로 탄생한 '천사'?! 어떻게……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[Image(image="61_i22_1", fadetime=2.5,screenadapt="coverall",block=true)]
+[delay(time=1)]
+[charslot]
+[name="???"]르무엘, 지금 손에 들고 있는 건 뭐죠?
+[charslot]
+[name="???"]헤헤, 스프레이야.
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="프리스티스"]……
+[dialog]
+[charslot(duration=1.5)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[image]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="라인 랩 직원 A"]차단층 구멍의 최신 탐지 데이터는 이미 사리아 주임께 보고했지만, 너무 궁금한 게 하나 있어서요……
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="라인 랩 직원 A"]보세요. 이상한 비행 물체 같지 않나요?
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="라인 랩 직원 B"]컴포넌트 총괄과가 분석에 들어갔으니, 곧 결과가 나올 겁니다.
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="라인 랩 직원 B"]어쩌면 중요한 발견일지도 모르겠네요. 차단층 고도에서 머무를 수 있는 비행 물체라니……
+[dialog]
+[charslot]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-640, fadetime=4)]
+[largebgtween(duration = 100,yFrom = 720, yTo = 0,block = false)]
+[delay(time=3)]
+'천사'는 차단층의 구멍 앞에 머물러 있었다. 별들 사이에 흩어져 있는 개체와 연결을 시도했지만 아무런 소득이 없었다.
+천사가 포착할 수 있었던 건 깊은 우주에서 활발하게 움직이던 에너지체들이 죽고 남긴 파문뿐이었다.
+결국, '천사'는 영원한 유성처럼 이 대지를 둘러싸고 비행을 계속했다……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="bg_forest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$leaveshake")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="유령"](미지의 언어) 생명의 기운.
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="유령"](미지의 언어) 아직은 어린 대지…… 이건 파멸 끝에 찾아온 새 생명일까, 아니면 죽음이 아직 오지 않은 것뿐일까?
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="유령"](미지의 언어) 난 분명 그 빛에 삼켜졌을 텐데……?
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="프리스티스"](미지의 언어) 오리지늄이 네 정보를 기록해 뒀어.
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="유령"](미지의 언어) ……'오리지늄'?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 그 빛이 오기 전까진, 끝을 알 수 없어. 오리지늄은 우리의 희망이 되어줄 거야.
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="유령"](미지의 언어) 여기는?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) '테라'.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="프리스티스"](미지의 언어) 동포여, 우린 외롭지 않을 거야.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_school",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[Delay(time=1)]
+[charslot]
+[name="당황한 청년"]선생님, 오늘 신문 보셨어요?
+[charslot]
+[name="당황한 청년"]많은 광산이 가동을 멈췄고, 도시 곳곳에도 계엄령이 떨어졌어요.
+[charslot]
+[name="당황한 청년"]저희 부모님도 심문을 받으러 가셨어요…… 뵙지도 못하는 상황이에요.
+[dialog]
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="코셀나"]학생은 교실에 남아 있으세요.
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="코셀나"]제가 대신 알아보죠. 저도 무슨 일인지 알고 싶으니까요.
+[dialog]
+[charslot]
+코셀나는 겁먹은 학생을 달래곤, 학생이 들고 있던 신문을 정리했다.
+불과 며칠 사이에 온갖 소문이 도시 전역에 퍼졌다. 그중 가장 충격적인 내용은……
+“사라진 우리의 오리지늄 광맥. 만약 대지 어머니에게 에너지를 얻을 수 없다면, 다가올 겨울을 버틸 수 있을까?”
+[charslot(slot="m",name="avg_npc_415_1#7$1",focus="m")]
+[name="코셀나"]오리지늄…… 내가 밝혀내고 말겠어.
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="코셀나"]우르수스가 겨울을 이겨낼 수 있는 힘은, 우리 가슴속에서 불타오르는 이 피밖에 없어.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m",duration=1)]
+[delay(time=1)]
+[name="감염자"]힐다, 여길 정리해서 모두의 새로운 정착지로 삼으면 될 것 같아.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="힐다"]도와줘서 고마워요!
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]수도원에 있는 네 동포들이 물자를 가져온 덕분에 정착 작업도 순조로웠어.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]힐다, 걱정했어. 네가 수도원에 돌아간 이후…… 우리를 버린 줄 알았거든……
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="힐다"]아, 죄송해요. 돌아오는 길이 너무 험난했거든요. 그사이에 믿기 힘든 소식도 들었어요.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]믿기 힘들긴 했지. 광맥, 라테라노……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]수도원의 산크타들이 네가 돌아왔을 때의 광경을 생생하게 말해주더라!
+[charslot(slot="m",name="avg_npc_1719_1#9$1",focus="m")]
+[name="힐다"]네?
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]그 산크타들, 원래는 재이가 발생하자마자 라테라노로 돌아가고 싶었지만, 재앙 때문에 발이 묶였잖아.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]광륜은 부서졌고, 그곳에 머무르며 기도할 수밖에 없었다고 해. 자신과, 이미 떠난 친구들을 위해서……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]그러다 네가 갑자기 눈앞에 나타난 거야…… 3년 동안 소식이 끊겼던 사람이 나타난 거지!
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]네가 그들에게 희망을 준 거야, 힐다!
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="힐다"]후우, 그런가요?
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="힐다"]저는 모두의 희망이 헛되지 않길 바라고 있어요…… 안정적인 피난처가 있으면 더 많은 사람을 도울 수 있을지도 몰라요.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]하지만 반드시 있어야 할 보안 대책도 필요해.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]우리가 이렇게 대대적으로 움직이면 분명 악의를 가진 사람들도 몰려들겠지. 네가 위험해질 거야.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]근데 솔직히 더 나은 방법을 찾을 수 있을지는 모르겠어……
+[dialog]
+[charslot]
+힐다는 고개를 저었다.
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="힐다"]저는 그분을 뵙고 싶어요.
+[name="힐다"]분명 이 땅 어딘가에 계실 거예요……
+힐다는 끝없는 황야가 아무런 대답을 주지 않을 걸 알면서도 고개를 들어 먼 곳을 바라봤다.
+그때 희미하게 하늘을 가로지르는 무언가가 눈에 들어왔다.
+그건 유성이었을까?
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="힐다"]……어쨌든, 오리지늄이 우리가 절망하는 이유가 되어선 안 돼요.
+[name="힐다"]고통받고 있는 모든 감염자를 위해 기도하고 싶어요……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="감염자"]음, 기도가…… 정말로 효과가 있을까?
+[charslot(slot="m",name="avg_npc_1719_1#3$1",focus="m")]
+[name="힐다"]없을 수도 있겠죠.
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="힐다"]하지만 기도할 때 우리는 서로를 생각하잖아요.
+[name="힐다"]우리가 서로 이어져 있다면, 적어도 외롭진 않을 거예요.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="32_RL2_cliffnight",screenadapt="coverall")]
+[Delay(time=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[dialog]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[delay(time=2)]
+이베리아 해안선, 어느 절벽
+한 시본이 날카로운 바위에 바짝 붙어 있었다.
+멀리서 함선의 포화 소리가 바닷바람을 타고 들려왔지만, 시본은 전혀 동요하지 않고 열심히 위로 올라가기만 했다.
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="시본"](흥분한 듯 막질 날개를 퍼덕인다)
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="시본"](흥분한 듯 주름을 폈다)
+[dialog]
+[charslot]
+마침내 시본은 절벽 꼭대기에 다다랐다.
+그를 맞이한 건 드넓은 육지와 밤하늘을 스쳐 지나간 한 줄기 빛이었다.
+그건 유성이었을까?
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="시본"]……
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="시본"]……
+[dialog]
+[charslot]
+시본은 순간 넋을 잃었고, 의아한 듯 몸을 움직이던 시본의 촉수에 무언가가 닿았다……
+반짝이는 검은색 돌이 절벽에서 굴러떨어져 바다에 빠졌다.
+시본은 그것을 자세히 보려 했으나, 이미 파도 속으로 완전히 사라진 후였다.
+[stopSound(fadetime=2,channel="sea")]
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

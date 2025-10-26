@@ -1,0 +1,1163 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="70,0",posto="0,0",duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[name="Mon3tr"]박사, 이쪽이야.
+[name="Mon3tr"]안으로 좀 들어가. 디저트 차량이 앞으로 가게.
+[Dialog]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="m",name="avg_npc_1794_1#1$1",duration=1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crowdrun", volume=0.8)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[delay(time=1.2)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.6)]
+[charslot(slot="l",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[charslot(slot="r",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[delay(time=1.2)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="50,0",posto="-70,0",afrom=0,ato=1,duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="50,0",posto="100,0",afrom=0,ato=1,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#3$1",focus="l")]
+[name="Mon3tr"]드디어 숨을 좀 돌릴 수 있겠네.
+[Dialog]
+[charslot]
+[Decision(options="고생했어.;이 디저트 차량은 누구 거지?", values="1;2")]
+[Predicate(references="1;2")]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="이가 빠진 소녀"]언니도 의식에 참여하러 오신 거죠!
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="이가 빠진 소녀"]제, 제가 만든 아이스크림 드셔 보실래요?
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="n")]
+Mon3tr가 거절할 새도 없이, 소녀는 기쁜 얼굴로 아이스크림콘을 손에 쥐여주었다.
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="이가 빠진 소녀"]라, 라테라노 어디에서도 맛볼 수 없는 신메뉴예요……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",focus="l")]
+[name="Mon3tr"](아무도 눈치채지 못하게 제압할 수 있어.)
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="n")]
+Mon3tr는 경계를 풀지 않은 채로 제안하면서, 무의식적으로 아이스크림을 한입 물었다.
+[charslot(slot="l",name="avg_4179_monstr_1#8$1",focus="l")]
+[name="Mon3tr"]맛있잖아……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[delay(time=1)]
+[Dialog]
+[charslot]
+[Decision(options="크흠, 얘야. 이름이 뭐야?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_1793_1#3$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="r",name="avg_npc_1794_1#1$1",posfrom="-100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1793_1#10$1",focus="l")]
+[name="이가 빠진 소녀"]얘가 저 대신 대답했어요, 고해사님.
+[charslot(slot="l",name="avg_npc_1793_1#11$1",focus="l")]
+[name="이디다"]띠다띠띠다, 제 이름은 이디다입니다.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]이름을 이 디저트 차량 효과음으로 한 거야?
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="이디다"]설마요. 당연히 제 이름으로 안내 음성을 설정한 거죠!
+[Dialog]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="n")]
+[Decision(options="이디다, 아까 지나간 호위대를 알아?;이디다, 이 언니가 무섭지 않아?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1793_1#5$1",focus="m")]
+[name="이디다"]우와. 고해 차량에서 이런 목소리가 나오는 거 처음 들어 봐요!
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="m")]
+[name="Mon3tr"]최신 모델이야.
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="n")]
+[Decision(options="(한숨);전혀 눈치채지 못한 것 같아.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#12$1",focus="m")]
+[name="Mon3tr"]이디다, 아까는 엄호해 준 거야?
+[charslot(slot="m",name="avg_npc_1793_1#10$1",focus="m")]
+[name="이디다"]네…… 라테라노에는 변화가 필요하니까요!
+[name="이디다"]두 분도 그렇게 생각하시는 거죠?!
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]……
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="이디다"]서, 설마 제 착각이었나요? 제 무설탕 소다 맛 아이스크림이 맛있다고 해준 사람은 언니가 처음이란 말이에요!
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"](……그래서 갈증이 해소된 거였구나.)
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="이디다"]엄마, 아빠의 말처럼 어려운 길이었지만…… 드디어 조그마한 성과를 이뤘어요!
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]무슨…… 말이야?
+[charslot(slot="m",name="avg_npc_1793_1#6$1",focus="m")]
+[name="이디다"]“디저트는 모든 라테라노인을 연결하는 매개체다.”라는 말이 있지만…… 단 걸 너무 많이 먹으면 충치가 생길 뿐만 아니라, 머리 위에 있는 광륜도 조금씩 썩게 돼요!
+[name="이디다"]치과의사인 저희 아빠가 늘 하는 말이지만, 다들 병원 광고인 줄 알고 있죠.
+[charslot(slot="m",name="avg_npc_1793_1#9$1",focus="m")]
+[multiline(name="이디다")]그런데 요즘 머리 위에 있는 광륜이 얼마 전에 뺀 충치처럼 뭔가 아픈 것 같아요…… 
+[charslot(slot="m",name="avg_npc_1793_1#12$1",focus="m")]
+[multiline(name="이디다")]분명 이건 주님께서 주신 계시예요!
+[charslot(slot="m",name="avg_npc_1793_1#11$1",focus="m")]
+[name="이디다"]그래서 제가 직접 라테라노 사람들의 식습관을 조금씩 바꿔주려고 해요. 무설탕 아이스크림을 널리 보급해서 서로를 다시 이어줄 거예요.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",focus="m")]
+[playsound(key="$d_avg_robotwalk", volume=1)]
+[delay(time=1.5)]
+[charslot]
+[Decision(options="위대한 일을 하는구나, 이디다.;손님, 이 시민의 꿈을 지지하시나요?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#3$1",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]조금만 더 같이 걸어도 될까? 광륜과 충치에 대해서…… 더 듣고 싶어.
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="이디다"]네! 좋아요!
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"](이 아이와 함께 있으면, 당분간은 우리를 쫓는 사람들을 피할 수 있을 거야. 박사, 엑시아와 최대한 빨리 연락해야 해.)
+[Dialog]
+[charslot]
+[Decision(options="지금 하는 중이야.", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "엑시아", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="엑시아"]안녕, 리더!
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[name="엑시아"]원격 통신이 되는 걸 보니까, 정보 통제 어쩌고가 드디어 좀 풀렸나 보네!
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="마냥 기뻐할 일은 아니야, 엑시아.", values="1")]
+[Predicate(references="1")]
+[Decision(options="이건 '꿈'의 차원에 있는 모든 게 급속도로 무너지고 있다는 뜻이야.;이건 현실 속 재이가 급속도로 악화하고 있다는 뜻이야.", values="1;2")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="엑시아"]쳇. 어쩐지.
+[name="엑시아"]그 녀석들이 산크타가 아닌 사람들 대부분을 양육 신전으로 불러들였어. 더 성대한 탄생 의식을 치르려는 거야.
+[name="엑시아"]아버비스트한테 광륜이 생기더니, 이제는 모두에게 광륜을 준대……
+[name="엑시아"]어떻게 하려는 건진 모르겠지만, 너무 갑작스럽고 비상식적인 변화야.
+[name="엑시아"]리더 말처럼 꿈에서 발생한 일이 결국 현실이 되는 걸까?
+[Predicate(references="2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="엑시아"]쳇. 어쩐지.
+[name="엑시아"]리더 말대로라면, 정말로 라테라노 한복판에 저 높고 못생긴 건물이 우뚝 서 있다는 거야? 광륜이 달린 괴물들이 사람들을 막 쫓아다니고?
+[name="엑시아"]꿈보다 더 무시무시한 일이 현실에서 벌어지고 있는 것처럼 들리는데……
+[Predicate(references="1;2")]
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="네가 말한 대로고, 내가 본 대로야, 엑시아.", values="1")]
+[Predicate(references="1")]
+[Decision(options="하지만 사람들이 하나둘씩 깨어나고 있어.;현실의 변수 때문에 '꿈'이 원래 필요했던 순서를 건너뛰고 있어.", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="엑시아"]……
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="엑시아"]으아앗. 너무 복잡해, 리더. 그것만 말해줘. 최악의 결말은 뭐야?
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="라테라노가 사라질지도 몰라.", values="1")]
+[Predicate(references="1")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#6$1", duration = 0)]
+[name="엑시아"]이야…… 그건 정말 큰 일인데!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="엑시아"]어쨌든 내가 할 수 있는 건 제일 나쁜 녀석을 찾아내서 모두를 가짜 '라테라노'에서 벗어나게 하는 거잖아, 그렇지?
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="네가 제정신을 유지하게 하는 것만으로도 이미 우리의 한계야.;나랑 Mon3tr는 여전히 제한을 받고 있어.;나랑 Mon3tr는 다른 단서를 찾고 있어.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[interlude(channel = 3, switch = true)]
+[name="엑시아"]알겠어! 라테라노의 문제는 라테라노인이 해결할게!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#5$1", duration = 0)]
+[name="엑시아"]아…… 목소리를 좀 줄여야겠어. 조금 있으면 탄생 의식이야. 규모가 어마어마하더라. 겨우 숨어들어 왔어. 헤헤.
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="나랑 Mon3tr가 계속 길거리에서 소란을 피워줄게.;나랑 Mon3tr가 계속 사람들의 시선을 끌어줄게.", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="엑시아"]참. 우리가 어떻게 알게 됐더라?
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#2$1", duration = 0)]
+[name="엑시아"]소라의 발표회? 텍사스의 생일파티? 펭귄 로지스틱스가 블러드 해머의 일을 망치고 쫓기다가 잘못해서 용문 사무소 문을 박차고 들어갔을 때?
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="엑시아"]아, 그때였구나. 병든 경주 버든비스트 몇 마리를 훔치러 갔는데, 마침 리더가 나타나서 대신 돈을 내줬었잖아?
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="어쨌든 용문에서 알게 됐어.;다 아닌 것 같은데.", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="엑시아"]적어도…… 5년은 됐지?
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#3$1", duration = 0)]
+[name="엑시아"]이번에도 멋지게 해보자, 리더.
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="약속이야, 엑시아.;조심해, 엑시아.", values="1;2")]
+[Predicate(references="1;2")]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g1_nurserytemplesquare", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_avg_dreamrite_intro", key="$m_avg_dreamrite_loop", volume=0.6)]
+[playsound(key="$d_avg_comfortbell", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_soldiersstep",channel="step2",loop=false, volume=0.7)]
+[stopsound(channel="step2",fadetime=4)]
+[PlaySound(key="$d_avg_armour", volume=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_358_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(duration=0.3)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="총기사"]파트리치온 님, 모두 도착했습니다.
+[name="총기사"]이제부터 저희는 성당 순찰대와 함께 주변 거리를 정리하고, 계획 밖의 인원이 들어오지 않도록 모든 길을 통제하겠습니다.
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="파트리치온"]수고하게나.
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="총기사"]총기사 전원을 소집하고, 탄약 배급 및 발포 제한 해제도 전부 끝났습니다…… 총기사가 생긴 이래로 이런 대규모 작전은 처음 아닙니까?
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="파트리치온"]이번 탄생 의식은 라테라노에게 아주 큰 의미가 있다네.
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="파트리치온"]사미의 빙하 위에 쌓인 검은 눈, 라이타니엔 상공의 균열, 그리고 해안을 덮친 거대한 파도까지 모두 계시 속의 진정한 재이를 뜻한다네.
+[name="파트리치온"]얼마나 끔찍한 재난이겠는가?
+[name="파트리치온"]그날이 오면, 200명이 넘는 총기사가 전부 투입된다고 해도…… 계란으로 바위 치는 격에 지나지 않겠지.
+[name="파트리치온"]천 년을 버틴 신성한 도시의 색도, 그때가 되면 바래버릴지도 모른다네.
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="총기사"]……
+[name="총기사"]호위대와 공증소는 아직도 르무엘과 그 일행을 뒤쫓고 있습니다.
+[name="총기사"]그리고 아셔야 할 것이 있습니다…… 모스티마와 피아메타를 안내하던 보육사가 방금 습격을 받았습니다.
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="파트리치온"]……!
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="총기사"]직접 보러 가시겠습니까?
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="파트리치온"]……
+[name="파트리치온"]……아닐세.
+[name="파트리치온"]내 자리는…… 여기라네.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="보육사"]시간이 다 됐어요.
+[name="보육사"]리베리 여러분은 계성의 전당으로 이동하시죠.
+[charslot(slot="m",name="avg_npc_370_1#1$1",focus="m")]
+[name="긴장한 수녀"]……
+[charslot(slot="m",name="avg_npc_1784_1#3$1",focus="m")]
+[name="힐데가르트"]……
+[charslot(slot="m",name="avg_npc_1781_1#3$1",focus="m")]
+[name="파가니니"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="-100,0",posto="-100,0")]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0")]
+[charslot(slot="m",name="avg_npc_1787_1#1$1")]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1787_1#1$1",focus="m")]
+[name="보육사"]시간이 다 됐어요.
+[name="보육사"]이쪽으로 오세요. 다른 종족들에게 광륜이 생기면, 대주교님께서 타천사들이 다시 동포와 교감할 수 있도록 광륜과 날개를 고쳐 주실 겁니다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="a")]
+[SoundVolume(volume=0.4, channel="a",fadetime=2)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1, loop=true, channel="c")]
+[StopSound(channel="c", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]대주교님, 시작됐습니다.
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]수고했어요. 성당이 세워진 이후로 다들 거의 쉬질 못했군요.
+[name="대주교"]저번 탄생 의식 이후로 예상치 못한 일들이 연이어 일어난 탓에, 계획을 앞당길 수밖에 없었어요. 이 성당의 사명이 하루빨리 완수되어야 합니다.
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]대주교님. 이미 여기까지 왔습니다. 그건 각오하고 있던 바입니다.
+[name="보육사"]참. 오늘의 의식은 분명 산크타가 아닌 이들에게 광륜을 부여하는 건데, 어째서 여전히 '탄생'이라 하는 거죠?
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]그것보다 더 정확한 표현이 있을까요?
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]……
+[Dialog]
+[charslot]
+보육사들이 각 종족을 인솔하고 계성의 전당으로 들어왔다. 짐승들이 떼 지어 이동하듯, 엄청난 인파가 중앙으로 모여들었다. 하지만 사람들은 모두 조용했다……
+오직 무수히 많은 위로의 종이 규칙적으로 흔들리고 있었다.
+대주교는 무언가를 감지한 듯, 고개를 들어 사람들을 바라보았다.
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]이제부터 신성한 도시의 가호를 받는 모든 이가 운명을 함께할 것이며, 하나가 될 것입니다. 그게 바로 라테라노의 '새로운 탄생'이지요……
+[Dialog]
+[musicvolume(volume=0,fadetime=1)]
+[Delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$glass", volume=0.6)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.5,delay=0.6)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_sunshine_upperedge",layer=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]……!
+[Dialog]
+[charslot]
+[musicvolume(volume=0.6,fadetime=1.5)]
+[delay(time=1)]
+유리가 깨지는 날카로운 소리가 안정을 주던 위로의 종소리를 깨뜨렸다.
+그건 라이플 탄환이었다. 어디서 날아왔는지 모를 탄환은 대주교의 실명한 눈을 향하고 있었다……
+눈 부신 햇빛이 쏟아져 들어왔다.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="26_g12_laterano_office", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=1)]
+[musicvolume(volume=0.2,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="르무엔"]문 앞에 있는 저 이상한 부부는……
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="공증소 직원"]룰렛으로 저녁 메뉴를 고르는 것 같아. 재밌지?
+[Dialog]
+[charslot]
+[name="르무엔"]응. 저 사람들이 바로……
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="공증소 직원"]널 입양하고 싶어 하시는 분들이란다.
+[Dialog]
+[charslot]
+[name="르무엔"]왜 직접 들어와서 나랑 이야기하지 않는 걸까……
+[name="르무엔"]아, 알았다. 나한테 너무 부담을 주고 싶지 않아서구나.
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="공증소 직원"]왜 그렇게 생각하니?
+[Dialog]
+[charslot]
+[name="르무엔"]총을 돌리면서 이쪽을 힐끗힐끗 쳐다보고 있거든.
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="공증소 직원"]하하하. 역시 널 속일 수 없구나…… 내가 연락했던 거란다.
+[name="공증소 직원"]너희 부모님에게 생긴 그 카라반 습격 사건은…… 지난 반년 동안, 공증소는 여러 가정에 연락했지만, 계속 성사되지 않았어.
+[name="공증소 직원"]르무엔, 넌 내가 본 아이 중에 가장 씩씩한 아이지만, 네겐 아직 시간이 너무 많아. 아직 이렇게 어린데, 벌써부터 혼자 살 수는 없어……
+[Dialog]
+[charslot]
+[name="르무엔"]언니, 나도 다 알고 있어.
+[name="르무엔"]난 싫은 게 아니야…… 단지, 단지 누군가에게 호의를 받으면, 나도 잘해야 하잖아. 그건 정말로 중요한 일이거든!
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="공증소 직원"]어쨌든, 저분들이 네가 정말 마음에 든다고 전해달라더구나.
+[Dialog]
+[charslot]
+[name="르무엔"]나도 저 사람들이…… 혹시, 일주일, 아니, 사흘만 더 시간을 달라고 부탁해도 될까? 잘 생각해 볼게.
+[name="르무엔"]결정하면 절대 바꾸지 않을 테니까!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g12_firearmsworkshop", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="파가니니"]……느낌이 온 게냐? 이 총이라는 느낌이?
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="르무엔"]응.
+[charslot(slot="m",name="avg_npc_1798_1#1$1",focus="m")]
+[multiline(name="르무엘")]아~ 라이플이네, 나라면 절대 그걸 선택하지 않을 건데…… 
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[multiline(name="르무엘")]아니지. 몇 년 후에 내 차례가 오면 엄청 많이 고를 거야!
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="르무엔"]하하, 그래.
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="파가니니"]음, 이 녀석은 만들어진 지 오래됐지만 아무도 가져가지 않았단다. 잘 생각해 보렴.
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="르무엔"]음, 확실히 조용하네.
+[charslot(slot="m",name="avg_npc_1781_1#1$1",focus="m")]
+[name="파가니니"]아니, 내 말은 이 총이 다른 총이랑 다르다는 말이란다. 사실 이런 총은 너희처럼 활달한 산크타에게 별로 적합하지 않지.
+[name="파가니니"]막상 전장에선 쏠 기회가 별로 없어, 한 발 한 발이 소중하거든.
+[name="파가니니"]이걸로 무언가를 지키든, 파괴하든, 더 많이 봐야 하고, 생각해야 하지. 더 많은 위험과 대가도 감수해야 해……
+[name="파가니니"]방아쇠를 당기든, 방아쇠를 에서 손을 떼든, 그 순간부터는 망설일 자격은 사라진다.
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="르무엔"]……
+[Dialog]
+[charslot]
+오늘은 르무엔의 생일이었다. 생일에 수호총을 고르는 건, 본래 산크타에게 중요했던 순간에 또 하나의 의미가 더해지는 일이었다.
+제총사는 진지하게 말하고 있었고, 뒤에 서 있던 부모님과 함께 온 친구도 말없이 지켜보고 있었다. 늘 시끄럽던 르무엘조차 얌전히 있었다.
+하지만 르무엔은 모두가 자신을 바라보고 있다는 걸 알고 있었다.
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="르무엔"]마스터 파가니, 이걸로 할게. 다른 부품도 보여줘.
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[name="르무엘"]앗싸!
+[name="르무엘"]마스터 파가니, 이 총을 쏠 기회가 별로 없다고 걱정할 필요는 없어. 이렇게 커다란 개머리판으로 사람을 때릴 수도 있잖아. 우리 언니 힘이 얼마나 센데!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cave_5", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="안도아인"]……!
+[name="안도아인"]새카만 오염도 성스러운 순백으로 정화할 수 있고, 가장 흉악한 괴물도 간절한 믿음으로 진흙탕에서 벗어날 수 있다……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_frdrgnld", volume=1)]
+[Delay(time=1)]
+[name="르무엔"]……후우……
+[name="르무엔"]그거 내려놔, 대장. 널 조준하고 있으니까.
+[name="르무엔"]네가 지금 매우 불안한 상태라는 게 느껴져…… 진정해. 그 물건이 네 감정을 건드려서 라테라노에 대한 실망을 떠올리게 한 거야.
+[name="르무엔"]떠나기 전에 사직서 낸 거 알고 있어…… 네가 정말로 황무지로 돌아간다고 해도, 우리는 아직 동료잖아.
+[name="르무엔"]출발하기 전에 함께 먹었던 치즈 튀김을 생각해 봐. 피아메타가 네게 선물한 복슬복슬한 파울비스트 모자도……
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="안도아인"]라테라노에 대한 실망…… 아니, 아니야…… 오히려 반대야! 그 사람은 라테라노가 모두를 구원할 수 있다는 걸 보여줬어.
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="n")]
+[name="르무엔"]네가 본 게 현실인지, 진리인지, 환영인지, 거짓인지 확신할 수 있는 사람은 없어…… 모스티마가 곧 올 거야, 그리고 그걸 회수할 수도 있겠지.
+[name="르무엔"]그다음에 물건의 비밀을 다 같이 연구해 보자, 어때?
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="안도아인"]다음은 없어. 그 장면이 희미해지고 있다고! 붙잡아야 해…… 르무엔, 이건 환영이 아니야, 거짓은 더더욱 아니지. 알고 있잖아!
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="m")]
+[PlaySound(key="$d_avg_originiumcast", volume=1)]
+[name="안도아인"]지하 궁전에 있는 사람들, 시간 밖에 갇혀버린 사람을 봤잖아. 그 사람들은 죽은 것도, 산 것도 아닌 상태야.
+[name="안도아인"]너도 그 미쳐버린 살카즈가 자기 그림자에 대고 하는 말을 들었잖아……“미래엔 비밀이 없다”라고.
+[name="안도아인"]그렇다면 우리가 찾은 게 시간의 열쇠란 걸 너도 알 수 있겠지. 내가 본 건 계시야. 가장 흉측한 괴물조차 구원받을 수 있는…… 미래지.
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="n")]
+[name="르무엔"]네 오리지늄 아츠가 흘러넘치고 있어, 안도아인. 저게 널 잠식하고 있다고……
+[charslot(slot="m",name="avg_npc_1800_1#5$3",focus="m")]
+[name="안도아인"]그런 미래가 존재한다면, 난 그곳으로 이어지는 길을 봐야겠어.
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="안도아인"]난 놓지 않을 거야. 더 많은 걸 알아야겠어!
+[Dialog]
+[charslot]
+안도아인은 독특하게 생긴 아츠 스태프를 꽉 움켜쥐었다. 빛이 응축되어 실체를 가진 에너지로 변했고, 동굴 전체를 휘감았다.
+르무엔은 생각했다, 방아쇠를 당길 기회는 많다고.
+하지만 휘몰아치는 감정의 소용돌이 속에서, 르무엔은 상대에게서 희미하게 남아있는 이성을 겨우 포착할 수 있었다.
+두 사람이 알게 되고, 서로 이해하게 되고, 서로의 목숨을 맡긴 그 순간부터, 그들의 교감은 그 누구보다도 강렬했다.
+마지막 순간, 르무엔은 자신의 전우가 정체불명의 혼돈에 잠식되지 않았음을 확신했다.
+결국, 르무엔은 방아쇠에서 손가락을 뗐다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_keeprunning",volume=1,channel="step",loop=true)]
+[stopsound(channel="step",fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="모스티마"]젠장. 르무엔, 조심해!
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.9)]
+[PlayMusic(key="$m_act42side_bat2_loop", volume=0.6)]
+[CameraShake(duration=0.7, xstrength=20,ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i14", screenadapt="coverall",fadetime=0, xScale=1.7, yScale=1.7, x=-420)]
+[ImageTween(image="61_i14", fadetime=0.5, xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1.7, yScaleTo=1.7, xTo=420,duration=30)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[delay(time=4)]
+[PlaySound(key="$d_avg_cartridgepopup", volume=1)]
+[name="르무엔"]흐읍……!
+[name="르무엔"]양육 신전의 대주교 케프…… 명중.
+[Dialog]
+[delay(time=1)]
+옥상에 부는 바람이 저격수의 뺨을 스치고 지나갔지만, 그녀는 눈 한번 깜빡이지 않았고, 손을 떨지도 않았다.
+르무엔은 듣고, 보고, 생각하고, 판단했다.
+쏠 기회는 많지 않다. 한 발 한 발이 소중하다.
+방아쇠를 당기든, 방아쇠를 에서 손을 떼든, 그 순간부터는 망설일 자격은 사라진다.
+그때까진 르무엔과 총 모두 침묵했다……
+[Dialog]
+[Image(image="61_i14", screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+'침묵의 르무엔'.
+르무엔은 조준경 너머를 다시 확인했다. 그건 그녀가 방아쇠를 당겼다는 증거였다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i06", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.3,fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="대주교"]바깥의 드넓은 땅과 비교하자면, 라테라노 곳곳에서 볼 수 있는 성상이 훨씬 난해합니다, 추기경.
+[name="대주교"]낙원은 특별하다 못해 어딘가 왜곡된 우리의 경건함을 빚어냈습니다.
+[name="대주교"]재앙과 고난 속에서 허덕이며 살아가는 생명들이 생존을 위해 기도하는 것…… 그게 신앙의 본래 모습이죠.
+[Dialog]
+[delay(time=1)]
+아니다. 라테라노에는 반듯하고 따분한 조각상 같은 건 있었던 적이 없었다.
+신앙이란 삶을 통해 만들어지는 것이다. 총을 든 성도가 거리에 서 있다고 해서 재난과 고통을 얕보는 게 아니다. 우리는 그것을 다른 자세로 받아들이기로 했을 뿐이었다.
+르무엔은 조준경 너머로 볼 수 있었다. 성당 안의 고개를 숙이고 두 손을 모은 성상들은 오직 그 경건한 대주교만을 향해 기도하고 있었다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i14", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="르무엔"]만약…… 케프가 그 정도로 무시무시한 괴물이라면, 이 총알로는 제대로 공격할 수 없을지도 몰라.
+[name="르무엔"]그래도 최소한 성당 안에 있는 사람들이 뭔가 이상함을 눈치챈다면, 너에게도 조금은 기회가 생길지도 모르지…… 엘.
+[name="르무엔"]남은 건 네게 맡길게!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[Background(image="26_g10_laterano_roof", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.4)]
+[PlaySound(key="$pistol", volume=0.3,delay=0.5)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.8)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="르무엔"]……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="르무엔"]아모스?
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[name="아모스"]……르무엔 씨, 위치가 노출됐습니다.
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="m")]
+[name="르무엔"]곧 지원하러 갈게.
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="n")]
+[name="아모스"]아니, 아닙니다.
+[name="아모스"]성당 순찰대가 이미 도착했습니다. 그, 그리고 총기사랑…… 다른 사람들도 많아요!
+[name="아모스"]이쪽 길은 제가 맡겠습니다. 건물이 완전히 포위되기 전에 얼른 빠져나가세요……
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="르무엔"]너는?
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="n")]
+[name="아모스"]이미 늦었습니다.
+[Dialog]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.2,channel="z")]
+[name="아모스"]저들은 저에게 바로 발포했습니다. 우리의 추측이 맞았던 모양이에요. 여기가 어떻게 아이를 낳는 곳입니까……
+[name="아모스"]참, 목표는 해치웠나요?
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="m")]
+[name="르무엔"]응, 한 방에 맞췄지.
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="n")]
+[name="아모스"]그렇다면 정말 다행입니다, 하하. 적어도 누군가를 구했고, 어떤 일을 막았으니, 그렇게 무능했던 건 아니네요.
+[name="아모스"]그럼, 또 뵙죠. 가서 해야 하는 일을 하세요, 르무엔 씨.
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_recorderglitch",volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="르무엔"]……
+[Dialog]
+[charslot]
+[name="아모스"]사실, 궁금한 게 하나 있습니다…… 듣는 사람이 없다고 생각하니 겨우 말할 용기가 생기네요.
+통신에 문제가 있었던 걸까, 통신은 완전히 끊기지 않았다. 하지만 남자는 혼자서 말을 이어갔다.
+르무엔은 잠시 망설였지만, 침묵했다.
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[name="아모스"]저는 정말로 쓸모없는 놈일까요?
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="르무엔"]……
+[Dialog]
+[charslot]
+[name="아모스"]예전엔 이런 생각을 하지 않았습니다. 열심히 노력해서 결국 제7청의 평범한 조사관이 되었고, 10년이 넘도록 꾸준히 자리를 지켜왔죠……
+[name="아모스"]근데 라테라노 사람은 절대로 이런 걸로 자신을 의심하지 않는 것 같더군요. 즐겁게 생활하고 스스로 만족하는 방법을 태어나면서부터 수도 없이 많이 알고 있는 것 같았습니다.
+[name="아모스"]제가 아는 종이 막대 사탕 장인은 각양각색의 종이로 다양한 색깔의 종이 막대기를 만들었습니다…… 돈벌이가 되진 않았지만, 아이들이 좋아한다는 건 알고 있었습니다.
+[name="아모스"]하지만 아우렐라가 라테라노에서 추방당한 뒤, 아무것도 할 수 없다는 걸 알게 되었을 때부터, 전 그 어떤 방법으로도 나 자신을 채울 수 없었습니다. 단 한 순간도요.
+[name="아모스"]그때 이런 생각이 들더군요, “아모스, 넌 정말 쓸모없구나.”…… 이런 감정이 순식간에 저를 집어삼켰습니다…… 마치 형편없는 디저트를 처음 먹었던 순간처럼 잊을 수 없었습니다. 하하.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="르무엔"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$pistol", volume=0.3)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=0.3)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.4)]
+[name="아모스"]그래서 생각했습니다. 몇 년만 더 버티면서 경력을 쌓으면, 만국 전달자가 되어 볼리바르에 가볼 수 있지 않을까…… 라고.
+[name="아모스"]제가 라테라노를 대표해서 아우렐라를 구원할 자격은 없습니다. 저조차도 아우렐라가 한 짓을 용서할 수 없으니까요. 그냥 한 번이라도 다시 만나서 다퉜던 일에 대해 사과하고 싶을 뿐입니다……
+[name="아모스"]그 오랜 시간을 기다려서 겨우 기회를 얻었는데…… 그냥 꿈에 불과한 거였다니……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="르무엔"]……
+[Dialog]
+[charslot]
+[name="아모스"]꿈이라도 좋습니다.
+[name="아모스"]꿈이라면 망설일 필요가 없죠. 총에 맞는다 한들, 현실로 돌아오면 아무런 일도 없었던 게 되니까요!
+[name="아모스"]젊었을 때, 저는 제7청 신입사원 사격 대회에서 5등까지 했습니다!
+[name="아모스"]아우렐라와 처음 만났던 곳도 그 사격장이었죠……
+[name="아모스"]정말 아쉽습니다. 서로의 구원이 될 수 없었다는 게.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.3)]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.5,delay=0.3,channel="z")]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.5)]
+[Delay(time=2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[playsound(key="$d_gen_transmissionget", volume=0.4)]
+[Delay(time=1)]
+[name="르무엔"]아모스, 그래도 넌 괜찮은 조사관이야.
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="n")]
+[name="아모스"]르무엔 씨, 듣고 계셨군요……
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1,delay=1)]
+[Delay(time=2)]
+[playsound(key="$transmission", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[name="르무엔"]……
+[charslot(slot = "m", name = "avg_npc_1811_1#2$1",focus="m")]
+[name="르무엔"]이제 꿈에서 깨어나야지.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="안도아인"]……
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="보육사"]안도아인 선배님, 장례식은 끝났나요?
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="안도아인"]응.
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="보육사"]계성의 전당은 이쪽이에요…… 반대로 가고 계신 것 같네요.
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="안도아인"]그런가?
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="보육사"]탄생 의식이 이미 시작됐습니다. 대주교님께서 선배님을 기다리고 계신데, 어딜 가시는 거죠?
+[name="보육사"]선배님의 감정이…… 많이 불안정하네요.
+[charslot(slot="m",name="avg_npc_1800_1#12$1",focus="m")]
+[name="안도아인"]아니야. 나는 어느 때보다 또렷해. 길도 똑바로 가고 있고.
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="보육사"]……
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.7)]
+[charslot(slot="l",name="avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",duration=1)]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",duration=1)]
+[delay(time=2.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="보육사"]안도아인 선배님, 저와 함께 대주교님께 가시죠.
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[PlaySound(key="$d_avg_gunload", volume=1,delay=0.1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="안도아인"]……
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[PlaySound(key="$d_avg_punch", volume=0.6,delay=0.6)]
+[PlaySound(key="$d_avg_punch02",volume=0.6,delay=1)] 
+[PlaySound(key="$bodyfalldown1", volume=1,delay=2)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[charslot(slot="l", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="r", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="m", afrom=1,ato=0,duration=0.7)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[delay(time=0.2)]
+[playsound(key="$d_avg_punchsp1",volume=1)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[Dialog]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",duration=1)]
+[charslot(slot = "r", name = "avg_300_phenxi_1#9$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",focus="l")]
+[name="모스티마"]아무래도 딱 맞춰서 온 것 같네.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="안도아인"]모스티마, 피아메타, 너희……
+[charslot(slot = "m", name = "avg_300_phenxi_1#10$1",focus="m")]
+[name="피아메타"]지금쯤 나도 다른 리베리처럼 거세게 항의하다가 성당 순찰대에 끌려가고 있어야 했나?
+[charslot(slot = "m", name = "avg_300_phenxi_1#9$1",focus="m")]
+[name="피아메타"]아니면, 머리 위에 자라날 광륜이 네모일지 동그라미일지 잔뜩 기대하고 있어야 할까?
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="모스티마"]근데 있잖아, 타천사의 광륜을 어떻게 고치려고 했던 건지 궁금하긴 해……
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="피아메타"]모스티마!
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="모스티마"]본론으로 돌아가지. 안도아인, 우리에게 설명해 줘.
+[charslot(slot = "m", name = "avg_213_mostma_1#9$1",focus="m")]
+[name="모스티마"]산크타가 아닌 종족들의 신체를 강제로 개조하려 하다니…… 솔직히 이런 짓은 컬럼비아의 정신 나간 녀석들이 모여있는 첨단 과학기술 회사에서나 할 줄 알았는데 말이야.
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="피아메타"]이게 네가 말한 '미래와 라테라노의 가능성'이야?
+[name="피아메타"]이게 너희 대주교가 한 약속이었어?
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="안도아인"]……
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="안도아인"]잘못된 길을 걸었던 건 부정하지 않겠어.
+[name="안도아인"]우린 라테라노가 만든 달콤한 꿈에 너무 깊이 빠졌고, 너무 늦게 깨어났어.
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="피아메타"]안도아인, 지금 이 상황에서도 그런 헛소리가 나와?
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_comfortbell",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="안도아인"]다른 순찰대가 곧 올 거야.
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="피아메타"]젠장. 모스티마, 우리가 이 자식을 인질로 잡으면 대주교한테 접근할 수 있지 않을까?
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="모스티마"]어쩌면? 대주교는 안도아인을 꽤 신뢰하고 있으니까. 안 그러면 전부 엘에게 맡겨야 하는데, 솔직히 조금 불안해.
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="안도아인"]……
+[name="안도아인"]느껴져…… 점점 더 채워지는 감정들이. 성당 안에 교감할 수 있는 사람들이 많아지고 있다는 거야……
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="안도아인"]탄생 의식은 이미 시작됐어. 지금 대주교를 제압해 봤자 소용없어.
+[name="안도아인"]아직 우리가 할 수 있는 일을 해야 해.
+[name="안도아인"]있어서는 안 됐던 이 의식에 대한 건, 내가 방법을 생각해 볼게.
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="안도아인"]하지만 어쩌면 큰 혼란이 일어날 수도 있어…… 어쩌면 그땐 너희가 동포들을 대피시킬 시간이 생길지도 모르겠네.
+[charslot(slot = "m", name = "avg_300_phenxi_1#3$1",focus="m")]
+[name="피아메타"]……
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="모스티마"]……
+[name="모스티마"]뭘 하려는 거야?
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="피아메타"]안도아인, 왜 우리가 널 믿을 거라고 생각하는 거지? 전우를 공격하고, 헛소리나 해대던 미치광이가 모두를 구할 수 있다고?
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="안도아인"]날 믿지 않아도 돼.
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="안도아인"]연민으로는 세상을 구할 수 없어. 내겐 그런 능력도 없고.
+[name="안도아인"]집념에 사로잡혀 길을 잘못 든 사람이 할 수 있는 건, 자기 자신을 구하는 것뿐이야.
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="모스티마"]안도아인, 잠시만. 이걸 받아.
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="안도아인"]……폭탄?
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="모스티마"]엘이 줬어, 호위병의 시선을 끄는 용도야.
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[multiline(name="모스티마")]정말 네 말처럼, 있어서는 안 됐던 의식을 막으러 가는 거라면…… 
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[multiline(name="모스티마")]우리보다 네게 더 필요하겠지.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=4)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+안도아인은 두 사람을 지나 양육 신전의 안쪽으로 걸어 들어갔다.
+걸음이 빠른 건 아니었지만, 피아메타는 붙잡지 않았다.
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="모스티마"]그냥 이렇게 보내게?
+[charslot(slot = "m", name = "avg_300_phenxi_1#8$1",focus="m")]
+[name="피아메타"]쟤가 쓸데없는 말 없이 몇 마디만 할 땐, 제법 믿을 만했잖아.
+[charslot(slot = "m", name = "avg_213_mostma_1#10$1",focus="m")]
+[name="모스티마"]그건 그래.
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="피아메타"]지금 상황은 너무 말도 안 되잖아, 당장은 우리도 별다른 방법이 없기도 하고.
+[Dialog]
+[PlaySound(key="$d_gen_soldiersrun",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_213_mostma_1#8$1",focus="m")]
+[name="모스티마"]누가 오고 있어. 꽤 많은 것 같은데…… 안도아인을 쫓는 것 같아.
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="피아메타"]막아주자…… 빚은 이번 일이 끝나고 다시 받아야겠어.
+[Dialog]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+성당의 첫 번째 육아실.
+한때 안도아인은 이곳에서 희망을 가득 품은 채로 불행한 어미를 돌봤다.
+지금, 그 어미가 남긴 아이는 위로의 종에 매달려 방금 씻은 날개를 펼치고 있었다. 영롱한 물방울이 조명을 따라 회전하는 모습이 몽환적이었다.
+아버비스트는 양육자의 지난번 실수를 신경 쓰지 않는 듯, 평소처럼 즐겁게 지저귀며 안도아인에게 놀자고 했다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]사소한 일과 세상을 뒤흔들만한 일은 겨우 종이 한 장, 일순간의 생각 차이에 불과합니다. 오랜 세월을 들여 어렵게 여기까지 오신 것이잖습니까, 그런 무의미한 차이 때문에 멈추면 안 됩니다.
+[name="대주교"]이제부터는 기운을 차리고 이 어미와 새끼를 잘 돌보는 일 말고도 더 많은 일을 해주세요……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+보잘것없는 보육사, 그리고 하늘을 가리는 성당.
+보육사는 이를 악물고 이 작은 짐승을 뿌리칠 수 있겠지만, 그런 사소한 반항만으로는 성당을 뒤흔들 수 없었다.
+[charslot(slot="m",name="avg_npc_1800_1#13$1",focus="m")]
+[name="안도아인"]더 많은 걸 해야 해…… 더 많을 걸 해야 한다고!
+[name="안도아인"]어떻게 하면 이 성당을 뒤흔들 수 있지? 어떻게 해야 이미 발생한 기적을 없앨 수 있을까?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]양육 신전…… 이 구름에 닿을 듯한 거대한 구조물은 하루아침에 만들어진 게 아닙니다. 양육 신전도 지극히 평범한 육아실에서 시작됐습니다.
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="안도아인"]우리의 육아실……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]우리가 처음부터 그 거대한 성당의 설계도를 가지고 있었나요? 아닙니다. 우리는 그저 그 어미를 위한 안전하고 편안한 공간이 필요했을 뿐이었습니다……
+[name="대주교"]하지만 결국 걷잡을 수 없이 커져 지금의 모습이 되었지요.
+[name="대주교"]그렇다면, 모든 이가 구원받는 미래도 우리의 신앙에서 시작될 수 있습니다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="안도아인"]여기가 바로 양육 신전의 첫 번째 육아실이자, 이 거대한 구조물의 시작점이야.
+[name="안도아인"]우리의 신앙을 맡긴 곳이기도 하고.
+[charslot(slot="m",name="avg_npc_1800_1#15$1",focus="m")]
+[name="안도아인"]그렇다면, 케프, 내 손으로 이 신앙을 갈기갈기 찢어버리겠어.
+[Dialog]
+[charslot]
+안도아인은 모스티마가 준 폭탄을 유심히 봤다. 다양한 생필품들이 상상도 못 할 방식으로 조합되어 있었고, 그 위에는 눈에 띄는 낙서가 있었다.
+이 폭탄을 만든 소녀의 얼굴이 떠오르지 않았다. 만난 적 있을지도, 만난 적 없을지도 모른다. 단지 르무엔이 이 사람의 이야기를 계속 말했던 것만 기억났다.
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="안도아인"]……길을 찾는 고된 여정은 나만 감당하고 있던 게 아니었나?
+[Dialog]
+[charslot]
+안도아인은 망설임 없이 도화선을 연결했다.
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_1",volume=1)]
+[name="아버비스트"](신나게 지저귄다)
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="안도아인"]넌 더 이상 슬퍼하지도, 고통스러워하지도 않는구나. 하지만 여긴 곧 폭발할 거야, 위험을 전혀 느낄 수 없니?
+[name="안도아인"]……아니면 전혀 신경 쓰지 않는 거니?
+[name="안도아인"]라테라노는 우리의 두려움조차 필요 없어진 걸까?
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_2",volume=1)]
+[name="아버비스트"](의아한 듯 지저귄다)
+[Dialog]
+[charslot]
+아버비스트가 바닥으로 내려앉더니, 궁금한 듯 안도아인의 바짓가랑이에 몸을 비볐다.
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="안도아인"]인생에서 일어나는 모든 일에 그리움, 두려움, 고통을 느끼지 않는다면, 어떻게 인생을 경외할 수 있을까?
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="안도아인"]나는 네게 이걸 물어야 했어.
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="안도아인"]하지만 널 이곳으로 데려온 건 나야. 네가 태어난 건 내 소망에 응답하기 위한 것이라 말할 수도 있겠지.
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="안도아인"]……이건 우리 둘의 수련이자 과제야.
+[Dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+안도아인은 허리를 숙여 아버비스트를 품에 안았다.
+[Dialog]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[Delay(time=1)]
+[name="안도아인"]이 총소리는……
+[name="안도아인"]르무엔, 네 총소리를 듣게 돼서 정말 기뻐.
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$e_skill_explodebris",volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=4, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i13",screenadapt="coverall",fadetime=0,block=true)]
+[PlaySound(key="$firestorm", volume=1)] 
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.4, channel="b",fadetime=3)]
+[PlayMusic(intro="$m_bat_martyr_intro", key="$m_bat_martyr_loop", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+[Delay(time=2)]
+불꽃이 육아실에서 마구 터져 나왔다. 거대한 위로의 종이 떨어져 커다란 소리가 났고, 폭발은 방 안에 있던 아름다운 빛과 그림자를 집어삼켰다.
+[Dialog]
+[name="안도아인"]이건 꿈일까, 아니면 우리의 집념일까?
+[name="안도아인"]한때, 네 뒤를 따르던 형제자매들이 있었지. 그들은 외면당했고, 상처 입었고, 모욕과 무시를 당했어…… 널 선도자라 부르며, 먼 길을 함께했지.
+[name="안도아인"]하지만 넌 네가 평등하고 공정하다고 믿었던 라테라노에서 그들을 잊었어. 그렇다면……
+[name="안도아인"]넌 종족이 어떤 모습으로 빚어지길 바란 거지?
+[name="안도아인"]넌 신성한 도시가 어떻게 재건되길 바란 걸까?
+[name="안도아인"]안도아인, 네가 걷는 길은 대체 어떤 길이고, 그 끝이 가리키는 답은 뭐지?
+[name="안도아인"]……
+[name="안도아인"]이게 꿈이라면 깨어나. 집념이라면 깨부숴야 해.
+[name="안도아인"]그리고 다시 구원을 논하는 거야.
+[Dialog]
+[PlaySound(key="$d_avg_explosion", volume=0.9)]
+[playsound(key="$d_avg_explosion_stone", volume=0.8,delay=0.8)]
+[PlaySound(key="$d_avg_statuecollapse",volume=0.6,delay=0.4)]
+[CameraShake(duration=4, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[image]
+불길이 육아실을 뒤덮자, 아버비스트는 힘껏 날갯짓했다. 춤을 추려는 것처럼 보이는 그것의 눈에는 두려움이 담겨 있지 않았다.
+그럼에도 안도아인은 무의식적으로 아버비스트의 눈을 가렸다.
+[Dialog]
+[stopmusic(fadetime=3)]
+[StopSound(channel="b", fadetime=2)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_churchbell", volume=1)]
+[Delay(time=2)]
+마지막 순간, 안도아인의 귀에 또렷한 종소리가 들렸다.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", y=40,xScale=1.3, yScale=1.3,block=true)]
+[delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[PlaySound(key="$d_avg_explosion", volume=0.4,delay=0.2)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]……!
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]대주교님, 괜찮으십니까?
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]으윽……
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]의식이 중단됐습니다. 양육 신전 전체가 흔들리고 있어요. 방금 그 폭발 때문에……
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0.4)]
+[stopsound(channel="bgs",fadetime=6)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]동포들이 빠져나가고 있나요?
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]네…… 호위대 제복을 입은 리베리와 타천사가 안내하고 있습니다.
+[name="보육사"]아직 광륜을 절반밖에 만들지 못했습니다. 즉시 순찰대를 동원해 붙잡……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_explosion", volume=0.4)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.2)]
+[playsound(key="$d_avg_statueshake", volume=0.6,delay=0.7)]
+[CameraShake(duration=1.5, xstrength=25,ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+마치 대나무가 쪼개지는 소리 같은 폭발음은 양육 신전의 깊숙한 곳에서 울려 퍼졌다. 어디선가 들려오는 종소리는 위로의 종소리를 삼켜버렸고, 아수라장이 된 양육 신전에서 수많은 사람들이 밖으로 몰려 나가고 있었다.
+우뚝 솟은 건물이 흔들렸다. 폭발의 충격이 마침내 계성의 전당을 덮친 것이다……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]떠나게 두세요.
+[name="대주교"]억지로 붙잡아두면, 되돌릴 수 없는 상처를 남기게 될 거예요.
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]대주교님, 성당이 무너지고 있습니다……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]아뇨. 지금 무너지고 있는 건 성당뿐만이 아니에요. 우리가 이곳을 통해 찾으려 했던 해답도 함께 무너지고 있어요.
+[name="대주교"]다른 보육사들을 모으세요. 다들 서둘러 빠져나가죠.
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="보육사"]대주교님께 순찰대를 붙이겠습니다.
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="대주교"]……
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+대주교가 계성 단상에서 내려왔다.
+[Dialog]
+[PlaySound(key="$d_avg_strongwind", volume=0.7)]
+[delay(time=1)]
+바람 소리가 났다. 소란 속, 머리 위로 부는 바람 소리가 또렷하게 들렸다. 그곳엔 기도하는 성상과 깨끗한 스테인드글라스만이 있어야 할 곳이었다.
+[name="???"]헤헤. 여기야, 여기!
+[name="???"]넌 아직 못 가!
+[Dialog]
+[backgroundTween(yFrom=40, yTo=-80, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=3)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[charslot]
+[Image(image="61_i15", screenadapt="coverall",fadetime=0)]
+[delay(time=1)]
+[PlayMusic(intro="$m_bat_act26side_intro", key="$m_bat_act26side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cnstrctnck", volume=0.7)]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=0.6,delay=0.4)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+대주교는 고개를 들었다. 다가오는 이가 누구인지 볼 수 없었지만, 상대의 목소리에 이끌려 저절로 손을 내밀었다.
+[name="엑시아"]스테인드글라스 위에 두 시간이나 엎드려 있었거든. 네가 단상에서 조금만 더 늦게 내려온 게 아니었다면 내 팔이 어떻게 됐을지도 몰라!
+엑시아가 대주교를 꽉 붙잡았다. 하늘과 땅이 빙빙 돌더니, 둘이 동시에 바닥으로 쓰러졌다.
+하지만 그곳은 딱딱한 바닥이 아니었다. 짙은 안개 같기도, 수면 같기도 한 이곳은 묘하게 푹신했다.
+엑시아는 거대한 힘이 자신을 밖으로 밀어내는 걸 느꼈다. 단순한 폭발의 충격은 아니었다. 그런데 연약해 보이는 여성이 이 정도의 힘을 낼 수 있었던가?
+엑시아는 힘껏 눈을 떴다. 어느새 자신이 붙잡고 있던 팔은 짐승의 투박한 팔로 변해 있었고, 온화했던 대주교의 얼굴은 수면 저 너머로 가라앉은 듯했다……
+둘은 허구와 현실 사이에서 마주 보고 있었다. 계시의 석탑에서 울리는 종소리가 자신이 있는 쪽에서 또렷하게 들렸다.
+[name="엑시아"]……
+[name="엑시아"]네가 좋은 녀석이 아닌 건 진작 알았지만, 이 정도일 줄은 상상도 못 했어. 《에인션트 포지》도 이렇게는 안 찍거든!
+[name="엑시아"]그래도 팔을 부러뜨렸을까 봐 걱정할 필요는 없겠네!
+[name="엑시아"]친구들이 어렵게, 어렵게 만들어 준 기회야……
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=1)]
+[CameraShake(duration=2, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[name="엑시아"]나와! 네가 뭔데 꿈에 숨어 있는 거야. 네가 뭔데 우리 라테라노에…… 숨어있는 거냐고!
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken", volume=1)]
+[Delay(time=0.3)]
+[CameraShake(duration=2.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[Dialog]
+[image]
+[Background(image="bg_black",screenadapt="coverall")]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]

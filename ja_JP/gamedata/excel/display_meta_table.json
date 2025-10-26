@@ -401,7 +401,7 @@
       {
         "avatarId": "avatar_special_49",
         "avatarType": "SPECIAL",
-        "avatarIdSort": 40,
+        "avatarIdSort": 41,
         "avatarIdDesc": "アークナイツ【焔燼曙明/\nRISE FROM EMBER】\n放送終了記念イベント\n「地平曙光」",
         "avatarItemName": "「地平曙光」",
         "avatarItemDesc": "彼女と肩を並べ、地平の彼方に登る希望の朝焼けを望む。",
@@ -1070,6 +1070,50 @@
         "dynAvatarId": null
       },
       {
+        "avatarId": "avatar_activity_ED_1",
+        "avatarType": "ACTIVITY",
+        "avatarIdSort": 61,
+        "avatarIdDesc": "【デュエルチャンネル：グリーングラスシティ】観戦報酬プラン\n「返せ！」",
+        "avatarItemName": "「返せ！」",
+        "avatarItemDesc": "「ALL」を選ぶ前に、この結末を想定しておくべきだった。",
+        "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+        "obtainApproach": "デュエルチャンネル：グリーングラスシティ報酬",
+        "dynAvatarId": null
+      },
+      {
+        "avatarId": "avatar_dyn_01",
+        "avatarType": "DYNAMIC",
+        "avatarIdSort": 1,
+        "avatarIdDesc": "【累計ログイン】報酬\n「組織」",
+        "avatarItemName": "「組織」",
+        "avatarItemDesc": "あなたはロドスの一員。",
+        "avatarItemUsage": "個性を表すためのプレミアムアイコン。",
+        "obtainApproach": "累計ログイン報酬",
+        "dynAvatarId": "assets_avatar_dyn_01"
+      },
+      {
+        "avatarId": "avatar_dyn_02",
+        "avatarType": "DYNAMIC",
+        "avatarIdSort": 2,
+        "avatarIdDesc": "【累計ログイン】報酬\n「感情」",
+        "avatarItemName": "「感情」",
+        "avatarItemDesc": "あなたはアーミヤの守護者。",
+        "avatarItemUsage": "個性を表すためのプレミアムアイコン。",
+        "obtainApproach": "累計ログイン報酬",
+        "dynAvatarId": "assets_avatar_dyn_02"
+      },
+      {
+        "avatarId": "avatar_dyn_03",
+        "avatarType": "DYNAMIC",
+        "avatarIdSort": 3,
+        "avatarIdDesc": "パック購入して獲得\n「色褪せた記憶」",
+        "avatarItemName": "「色褪せた記憶」",
+        "avatarItemDesc": "あの色褪せてしまった時の中で、私たちが抱いた最も純粋無垢な願いを、あなたはまだ覚えているでしょうか。",
+        "avatarItemUsage": "個性を表すためのプレミアムアイコン。",
+        "obtainApproach": "特殊報酬",
+        "dynAvatarId": "assets_avatar_dyn_03"
+      },
+      {
         "avatarId": "avatar_def_01",
         "avatarType": "DEFAULT",
         "avatarIdSort": 1,
@@ -1248,7 +1292,11 @@
         "avatarType": "DYNAMIC",
         "typeName": "アニメ",
         "sortId": 2,
-        "avatarIdList": []
+        "avatarIdList": [
+          "avatar_dyn_01",
+          "avatar_dyn_02",
+          "avatar_dyn_03"
+        ]
       },
       "SPECIAL": {
         "avatarType": "SPECIAL",
@@ -1357,7 +1405,8 @@
           "avatar_activity_FD",
           "avatar_activity_FC",
           "avatar_activity_ARC1",
-          "avatar_activity_RL4_3"
+          "avatar_activity_RL4_3",
+          "avatar_activity_ED_1"
         ]
       },
       "DEFAULT": {
@@ -1658,6 +1707,19 @@
         "unlockDesList": [
           "[統合戦略]サルカズの炉辺奇談報酬"
         ]
+      },
+      {
+        "bgId": "bg_kalts_1",
+        "bgSortId": 12,
+        "bgStartTime": 1760407200,
+        "bgName": "足跡",
+        "bgMusicId": "music_bg_office",
+        "bgDes": "ただ荒茫たる時空の片隅に残された足跡。過去はこの場に折り重なり、未来はここより広がる。",
+        "bgUsage": "一枚の写真、ひと時の思い出、テラの大地でのある瞬間が凝縮されている。",
+        "obtainApproach": "特典",
+        "unlockDesList": [
+          "アークナイツ公式世界観設定資料集"
+        ]
       }
     ],
     "themeList": [
@@ -1805,6 +1867,18 @@
       }
     ],
     "backgroundLimitData": {
+      "bg_kalts_1": {
+        "bgId": "bg_kalts_1",
+        "limitInfos": [
+          {
+            "limitInfoId": "bg_kalts_1#1",
+            "startTime": 1760407200,
+            "endTime": 1765418400,
+            "invalidObtainDesc": "現在入手できません",
+            "displayAfterEndTime": false
+          }
+        ]
+      },
       "bg_rainbowsix_1": {
         "bgId": "bg_rainbowsix_1",
         "limitInfos": [
@@ -2971,7 +3045,7 @@
         "dateDelta": -1,
         "senderId": "penguin_logistics",
         "title": "カジミエーシュからの連絡⑦",
-        "content": "ドクター\n　グラニの報告によると、今回の任務ではやはりレユニオン部隊の痕跡が見られたとのことです。この部隊はレユニオンから完全に独立したチームのようで、命令や指示を受けている様子は全くありませんでした。なので真の脅威にはなりませんでしたが……レユニオンの影響は一体どこまで広がっているのでしょうか？\n\nロドス連絡員",
+        "content": "ドクターへ\n グラニの報告によると、今回の任務ではやはりレユニオン部隊の痕跡が見られたとのことです。この部隊はレユニオンから完全に独立したチームのようで、命令や指示を受けている様子は全くありませんでした。なので真の脅威にはなりませんでしたが……レユニオンの影響は一体どこまで広がっているのでしょうか？\n\nロドス連絡員",
         "rewardList": [
           {
             "id": "ap_item_CaH_200",
@@ -3367,7 +3441,7 @@
         "dateDelta": -1,
         "senderId": "char_1035_wisdel",
         "title": "ウィシャデルからの手紙",
-        "content": "ハロー、残業する気分はどう？ 書類の山に埋もれてずいぶん楽しそうじゃない。ハッ、なんで知ってるのかって間抜けズラね。あたしは見てるって言ったでしょ。\n子ウサギがね、テレジアの道を進みたいって言ったの。それがかなうかどうかは知ったこっちゃないけど、あの子はそれなりに頑張ってるわ。だからせいぜい死ぬ気であの子のことを助けなさい。さもなくば、あんたが今突っ伏してる机にあたしが何したか知ることになるわよ。\nまっ、前置きはこれくらいにしましょ。あたしもわざわざこんなこと言うためにあくせく書くほど暇じゃないのよ。\nプレゼントを用意したの。子ウサギも今頃受け取ってるわ。あんたには焼き飯よ。\n警戒するなら別に捨ててもいいわよ。溶炉の老いぼれたちの炎で炒めて、あたしのとっておきの調味料を入れた特製で、サルカズ中を探してもこれだけしかないけど。ハハッ！\n【手紙には書き直した痕跡がいくつもあったが、彼女の文字を書く技術は明らかに進歩していた。】",
+        "content": "ハロー、残業する気分はどう？ 書類の山に埋もれてずいぶん楽しそうじゃない。ハッ、なんで知ってるのかって間抜けヅラね。あたしは見てるって言ったでしょ。\n子ウサギがね、テレジアの道を進みたいって言ったの。それがかなうかどうかは知ったこっちゃないけど、あの子はそれなりに頑張ってるわ。だからせいぜい死ぬ気であの子のことを助けなさい。さもなくば、あんたが今突っ伏してる机にあたしが何したか知ることになるわよ。\nまっ、前置きはこれくらいにしましょ。あたしもわざわざこんなこと言うためにあくせく書くほど暇じゃないのよ。\nプレゼントを用意したの。子ウサギも今頃受け取ってるわ。あんたには焼き飯よ。\n警戒するなら別に捨ててもいいわよ。溶炉の老いぼれたちの炎で炒めて、あたしのとっておきの調味料を入れた特製で、サルカズ中を探してもこれだけしかないけど。ハハッ！\n【手紙には書き直した痕跡がいくつもあったが、彼女の文字を書く技術は明らかに進歩していた。】",
         "rewardList": [
           {
             "id": "ap_supply_lt_100_2025_1",
@@ -3445,6 +3519,60 @@
             "id": "ap_supply_lt_100_2025_5",
             "count": 1,
             "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_anniversary_2025_1": {
+        "id": "mail_anniversary_2025_1",
+        "type": "NORMAL",
+        "sortId": 49,
+        "displayReceiveTs": 1759842000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_103_angel",
+        "title": "エクシアからの報告書",
+        "content": "やっほー、リーダー！人事部が決めた外勤関係のフローがややこしいから、こっちで直接近況報告させてちょ！\n実は先月、エピック級の実績を達成しちゃってさ。左手で『レコポリー』をプレイしながら、右手に持ったライトガンで射的をして、それで同時にボスとテキサスに勝ったの！だから、リーダーにもこの喜びを共有しとこうと思って！\nそれと、さっきペンギン急便で溜めてた有給を全部使うって申請してきたんだ。一回帰省しようと思って……あ、そういえば、前にラテラーノの「甘さ普通」のアイスを食べてみたいって言ってなかった？",
+        "rewardList": [
+          {
+            "id": "itempack_gold_1",
+            "count": 1,
+            "type": "ITEM_PACK"
+          }
+        ]
+      },
+      "mail_anniversary_2025_2": {
+        "id": "mail_anniversary_2025_2",
+        "type": "NORMAL",
+        "sortId": 50,
+        "displayReceiveTs": 1759842000,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "penguin_logistics",
+        "title": "公式生放送記念プレゼント",
+        "content": "アークナイツ公式生放送「秋の大感謝祭スペシャル」をご視聴いただいたドクターの皆様、ありがとうございました！\n公式生放送記念プレゼントを配布させていただきます。\n今後とも『アークナイツ』をよろしくお願いいたします。",
+        "rewardList": [
+          {
+            "id": "ap_supply_lt_120_2025_2",
+            "count": 1,
+            "type": "AP_SUPPLY"
+          }
+        ]
+      },
+      "mail_cdk_story_1": {
+        "id": "mail_cdk_story_1",
+        "type": "NORMAL",
+        "sortId": 51,
+        "displayReceiveTs": 1760425200,
+        "year": 0,
+        "dateDelta": -1,
+        "senderId": "char_003_kalts",
+        "title": "ケルシーからのメッセージ",
+        "content": "これまで私が収集し、整理してきた全てを君に託す。事によるとこの行為は、私の存在意義が遂に明示されることを意味するかもしれない。しかし、深く考える必要はない。君にとってはごく一般的な引き継ぎのひとつに過ぎないのだから。\nこれは私の手を離れ、独立してもなお保存され残されるに足り、君もまた、これを開く術を心得ているはずだ。\n受け取ってくれ、ドクター。",
+        "rewardList": [
+          {
+            "id": "bg_kalts_1",
+            "count": 1,
+            "type": "HOME_BACKGROUND"
           }
         ]
       }
@@ -3649,6 +3777,62 @@
         "sortId": 2003,
         "picId": "pic_sorry_battle",
         "desc": "ごめんなさい！"
+      },
+      "duel_battle_left": {
+        "id": "duel_battle_left",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 1,
+        "picId": "pic_left",
+        "desc": null
+      },
+      "duel_battle_right": {
+        "id": "duel_battle_right",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 2,
+        "picId": "pic_right",
+        "desc": null
+      },
+      "duel_battle_hello": {
+        "id": "duel_battle_hello",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 3,
+        "picId": "pic_hello",
+        "desc": null
+      },
+      "duel_battle_happy": {
+        "id": "duel_battle_happy",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 4,
+        "picId": "pic_happy",
+        "desc": null
+      },
+      "duel_battle_think": {
+        "id": "duel_battle_think",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 5,
+        "picId": "pic_think",
+        "desc": null
+      },
+      "duel_battle_sad": {
+        "id": "duel_battle_sad",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 6,
+        "picId": "pic_sad",
+        "desc": null
+      },
+      "duel_battle_what": {
+        "id": "duel_battle_what",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 7,
+        "picId": "pic_what",
+        "desc": null
+      },
+      "duel_battle_clown": {
+        "id": "duel_battle_clown",
+        "type": "ENEMYDUEL_BATTLE",
+        "sortId": 8,
+        "picId": "pic_clown",
+        "desc": null
       }
     },
     "emoticonThemeDataDict": {
@@ -3701,6 +3885,16 @@
         "multiv3_battle_nice_work",
         "multiv3_battle_thanks",
         "multiv3_battle_sorry"
+      ],
+      "emticon_duel_basic": [
+        "duel_battle_right",
+        "duel_battle_left",
+        "duel_battle_hello",
+        "duel_battle_happy",
+        "duel_battle_think",
+        "duel_battle_sad",
+        "duel_battle_what",
+        "duel_battle_clown"
       ]
     }
   },

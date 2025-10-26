@@ -994,6 +994,7 @@
     "vc.attention": "<color=#FFD800>{0}</color>",
     "act.missiontips": "<color=#d9bd6a>{0}</color>",
     "lv.hdbg": "<color=#7ba61f>{0}</color>",
+    "vecbreakv2.highlight": "<color=#d8741a>{0}</color>",
     "duel.ping.low": "<color=#7fa826>{0}</color>",
     "duel.ping.medium": "<color=#ec7a00>{0}</color>",
     "duel.ping.high": "<color=#ff3d3d>{0}</color>",
@@ -1063,7 +1064,7 @@
   "commonPotentialLvlUpCount": 4,
   "weeklyOverrideDesc": "",
   "voucherDiv": 5,
-  "recruitPoolVersion": 20,
+  "recruitPoolVersion": 21,
   "v006RecruitTimeStep1Refresh": 1577169000,
   "v006RecruitTimeStep2Check": 1577151000,
   "v006RecruitTimeStep2Flush": 1577646000,
@@ -1161,7 +1162,7 @@
     "ba.buffres": {
       "termId": "ba.buffres",
       "termName": "レジスト",
-      "description": "<$ba.stun>スタン</>、<$ba.cold>寒冷</>、<$ba.frozen>凍結</>などの状態異常の継続時間が50%減少(同名の状態は重複不可)"
+      "description": "<$ba.stun>スタン</>、<$ba.cold>寒冷</>、<$ba.frozen>凍結</>などの状態異常の継続時間が50%減少。<$ba.palsy>麻痺</>などの効果回数が5秒ごとに1回分減少（同名の状態は重複不可）"
     },
     "ba.invisible": {
       "termId": "ba.invisible",
@@ -1373,6 +1374,21 @@
       "termName": "対物理脆弱",
       "description": "物理の被ダメージが効果値分上昇（同名の状態は効果値が高いほうのみ適用）"
     },
+    "ba.dt.neural2": {
+      "termId": "ba.dt.neural2",
+      "termName": "神経損傷・味方",
+      "description": "損傷が一定値（通常の敵及び【エリート】は1000、敵【ボス】は2000）蓄積すると爆発し、対象は即時に6000の元素ダメージを受け、かつ<$ba.palsy>麻痺</>効果が3回分付与される。効果発動後、10秒後再発動可能になる"
+    },
+    "ba.palsy": {
+      "termId": "ba.palsy",
+      "termName": "麻痺",
+      "description": "通常攻撃時に1回分消費され、その攻撃をキャンセルする。最大3回分まで重複可能で、消費されない限り消えない。レジストを持つユニットは5秒ごとに1回分減少"
+    },
+    "ba.addbullet": {
+      "termId": "ba.addbullet",
+      "termName": "補弾",
+      "description": "他オペレーターの弾薬消費系スキルの弾薬を補充する。対象が一度の弾薬消費系スキル発動中に受けられる給弾数は、累計でそのスキルの弾薬上限と同数まで"
+    },
     "cc.bd_A_1": {
       "termId": "cc.bd_A_1",
       "termName": "念力",
@@ -1583,6 +1599,11 @@
       "termName": "シラクーザ",
       "description": "対象オペレーター：\nアンジェリーナ、ラップランド、プロヴァンス、ヴァーミル、ブローカ、シャマレ、スズラン、キアーベ、アオスタ、ペナンス、ルナカブ、ヴィジェル、アロマ、ウルピスフォリア、フィグリーノ、荒蕪ラップランド"
     },
+    "cc.g.laterano": {
+      "termId": "cc.g.laterano",
+      "termName": "ラテラーノ",
+      "description": "対象オペレーター：\nプリュム、アドナキエル、イグゼキュター、モスティマ、アンブリエル、アレーン、アルケット、フィアメッタ、エンフォーサー、スプリア、インサイダー、ヴィルトゥオーサ、レミュアン、サンクタ・ミキサー、CONFESS-47"
+    },
     "cc.c.abyssal2_1": {
       "termId": "cc.c.abyssal2_1",
       "termName": "特殊効果",
@@ -1686,7 +1707,7 @@
     "cc.tag.op": {
       "termId": "cc.tag.op",
       "termName": "作業用プラットフォーム",
-      "description": "対象オペレーター：\nLancet-2、Castle-3、THRM-EX、ジャスティスナイト、Friston-3、PhonoR-0"
+      "description": "対象オペレーター：\nLancet-2、Castle-3、THRM-EX、ジャスティスナイト、Friston-3、PhonoR-0、CONFESS-47"
     },
     "cc.tag.knight": {
       "termId": "cc.tag.knight",
@@ -1713,6 +1734,11 @@
       "termName": "ガヴィル",
       "description": "対象オペレーター：\n百錬ガヴィル、ガヴィル"
     },
+    "cc.angel": {
+      "termId": "cc.angel",
+      "termName": "エクシア",
+      "description": "対象オペレーター：\n新約エクシア、エクシア"
+    },
     "cc.tra.pepe": {
       "termId": "cc.tra.pepe",
       "termName": "特別独占オーダー",
@@ -1720,14 +1746,14 @@
     }
   },
   "storyReviewUnlockItemLackTip": "事象の欠片の数が足りません。購買資格証ショップあるいはイベントショップで購入してください",
-  "dataVersion": "45.3.0",
-  "resPrefVersion": "60d4d0",
+  "dataVersion": "46.2.0",
+  "resPrefVersion": "61d0d0",
   "announceWebBusType": "ak_announcement",
   "videoPlayerWebBusType": "ak_video_player",
   "gachaLogBusType": "ak_gacha_log",
-  "defaultMinContinuousBattleTimes": 1,
-  "defaultMaxContinuousBattleTimes": 6,
-  "continuousActionOpen": true,
+  "defaultMinMultipleBattleTimes": 1,
+  "defaultMaxMultipleBattleTimes": 6,
+  "multipleActionOpen": true,
   "subProfessionDamageTypePairs": {
     "notchar1": "NONE",
     "notchar2": "NONE",
@@ -1798,7 +1824,8 @@
     "alchemist": "PHYSICAL",
     "primprotector": "PHYSICAL",
     "skywalker": "PHYSICAL",
-    "soulcaster": "MAGICAL"
+    "soulcaster": "MAGICAL",
+    "primguard": "PHYSICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",

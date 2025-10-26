@@ -1,0 +1,779 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_churchbell",loop=true, channel="bell", volume=1)]
+[StopSound(channel="bell", fadetime=6)]
+[Delay(time=2)]
+A bell tolls.
+Its unending peals echo across the entire city. It rings clear and steady, guiding stray souls towards it.
+Legend has it that after their long and arduous journey, the saints built the tower and used the ringing of its bell to ward off the devils. Then there rose the Lateran City, its walls of purest white standing fast against the elements, while the bell in the tower fell silent for millennia.
+Now it cries out once more, a scant two years since it last did so in response to a mixed-blood Sankta girl's song.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="26_g10_laterano_roof", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1801_1#2$1")]
+[charslot(slot="r",name="avg_npc_1802_1#2$1")]
+[Delay(time=1)]
+[bgeffect(name="$eb_dim_openeye",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[bgeffect]
+[charslot(slot="l",name="avg_npc_1801_1#2$1",focus="n")]
+[name="Andoain"]Urgh...
+[charslot(slot="l",name="avg_npc_1801_1#2$1",focus="l")]
+[name="Panicking Child"]*sobs* Senior Nurturer...
+[charslot(slot="r",name="avg_npc_1802_1#2$1",focus="r")]
+[name="Fearful Child"]A-Are you hurt?
+[Dialog]
+[charslot]
+[name="???"]Don't move. It was hard enough getting you bandaged up.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1800_1#2$2 ",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1800_1#2$2 ",focus="m")]
+[name="Andoain"]Patia?
+[Dialog]
+[charslot]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_357_1#5$1 ",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_357_1#5$1 ",focus="m")]
+[name="Patia"]You were pretty much half-dead by the time we got to the Shrine of Nurtury. We only had time to get you and these kids searching for you out of there.
+[charslot(slot="m",name="avg_npc_1800_1#6$2 ",focus="m")]
+[name="Andoain"]Don't cry, Giselle, Romya... It was all just a nightmare. We're finally awake.
+[charslot(slot="m",name="avg_npc_357_1#10$1 ",focus="m")]
+[name="Patia"]A nightmare? Wounds in nightmares don't follow you to real life.
+[charslot(slot="m",name="avg_npc_1800_1#10$2 ",focus="m")]
+[name="Andoain"]Where are the other brothers and sisters?
+[charslot(slot="m",name="avg_npc_357_1#1$1 ",focus="m")]
+[name="Patia"]Keeping watch nearby. Guess you finally got your memories back. What, want to hear them call you 'Guide' again?
+[charslot(slot="m",name="avg_npc_1800_1#2$2 ",focus="m")]
+[name="Andoain"]Sorry, Patia.
+[name="Andoain"]It's clear you were just trying to wake a man who had lost his way again.
+[charslot(slot="m",name="avg_npc_357_1#6$1 ",focus="m")]
+[name="Patia"]Why did you abandon the Pathfinders, Andoain?
+[name="Patia"]We rested in the wilds for a bit after leaving Sanctilaminium Ambrosii. According to our original plan, we would've passed the Iberian border soon after, back to the land where you came from.
+[name="Patia"]We even made contact with the Inquisition, but then you disappeared, all of a sudden.
+[charslot(slot="m",name="avg_npc_1800_1#3$2 ",focus="m")]
+[name="Andoain"]That was when the dream began for me.
+[charslot(slot="m",name="avg_npc_357_1#10$1 ",focus="m")]
+[name="Patia"]What do you mean?
+[charslot(slot="m",name="avg_npc_1800_1#6$2 ",focus="m")]
+[name="Andoain"]It's just an idea, one without any evidence behind it.
+[name="Andoain"]It told me to turn away, to cast aside all my plans and return to Laterano.
+[charslot(slot="m",name="avg_npc_357_1#10$1 ",focus="m")]
+[name="Patia"]So you're saying you never actually met that blind lady, and you didn't go back to Laterano with her for that baby's sake. Like you were... enticed by something?
+[charslot(slot="m",name="avg_npc_357_1#6$1 ",focus="m")]
+[name="Patia"]<i>Nugae.</i> This is starting to sound like something a crackpot charlatan would say.
+[charslot(slot="m",name="avg_npc_1800_1#3$2 ",focus="m")]
+[name="Andoain"]...
+[charslot(slot="m",name="avg_npc_1800_1#6$2 ",focus="m")]
+[name="Andoain"]I know this is hard to understand. Even I don't fully get it—
+[charslot(slot="m",name="avg_npc_357_1#2$1 ",focus="m")]
+[name="Patia"]I'll say. There's way too much 'hard to understand' stuff at play here.
+[charslot(slot="m",name="avg_npc_357_1#6$1 ",focus="m")]
+[name="Patia"]You, and that shrine! You wanted to plop halos on everyone's heads and turn us all into freaks who can't even decide what emotions to feel!
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_357_1#6$1 ",focus="m")]
+[name="Patia"]Whatever, you managed to wake yourself up in the end. If you hadn't made such a ruckus by blowing up the Nativity, all of Laterano would probably still be dreaming.
+[Dialog]
+[charslot]
+[name="???"]With the boundary between the two sides so blurred, his deeds in the dream should be taken into full account during adjudication.
+[Dialog]
+[charslot(slot="m",name="avg_1032_excu2_1#1$1 ",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_1032_excu2_1#1$1 ",focus="m")]
+[name="Federico"]Executor Federico of the Notarial Hall. I have read your file, Andoain Agathangelos.
+[charslot(slot="m",name="avg_npc_357_1#10$1 ",focus="m")]
+[name="Patia"]Aga... Is that your surname, Andoain?
+[charslot(slot="m",name="avg_npc_1800_1#1$2 ",focus="m")]
+[name="Andoain"]...
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]After the chaos you caused during the first Summit of Nations, the Curia banished you from Laterano. Now you have returned in secret, and were involved in plotting the so-called 'Nativity' ceremony.
+[name="Federico"]You are partially responsible for the current turmoil troubling the city, and must accept a joint investigation by the First, Fifth, Sixth, and Seventh Tribunals.
+[charslot(slot="m",name="avg_npc_1800_1#3$2 ",focus="m")]
+[name="Andoain"]...
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="r",name="avg_npc_357_1#6$1", posfrom = "-100,-50", posto = "-100,-50",afrom=0,ato=0,duration=0,focus="r")]
+[charslot(slot="r",name="avg_npc_357_1#6$1",action="zoom",poszoom="0.5,0.5",duration=0,focus="r",isblock=true)]
+[charslot(slot="r",afrom=0,ato=1,duration=0.7,focus="r",isblock=true)]
+[Delay(time=0.5)]
+[name="Patia"]Hey, can't you see he's hurt real bad?
+[name="Patia"]Besides, I'm sure you've got more important things to worry about right now!
+[Dialog]
+[charslot]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_1782_1#12$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]You need a hand, executor? Get us into the city and we'll help you fight.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#3$2 ",focus="r")]
+[charslot(slot="r",name="avg_npc_357_1#10$1", posfrom = "-100,-50", posto = "-100,-50",afrom=0,ato=0,duration=0,focus="r")]
+[charslot(slot="r",name="avg_npc_357_1#10$1",action="zoom",poszoom="0.5,0.5",duration=0,focus="r",isblock=true)]
+[charslot(slot="r",afrom=0,ato=1,duration=0,focus="r",isblock=true)]
+[name="Patia"]And you are...?
+[Dialog]
+[charslot(duration=0.3)]
+[Delay(time=0.4)]
+[charslot(slot="m",name="avg_4187_graceb_1#17$1",focus="m")]
+[name="Nueda"]Th-That—
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]What is it, Nueda?
+[charslot(slot="m",name="avg_4187_graceb_1#3$1",focus="m")]
+[name="Nueda"]Look over there!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="'Getting your patron firearm means you've moved on to a new stage of life, El!'", x=300,y=330, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n'Yeah! Come quick, sis, we're taking a photo in front of the statue.'",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="'I need to go to Lungmen... I need to get a proper explanation from Mostima.'", x=300,y=330, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n'Let's send Lemuel off on her next adventure with a bang!'",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="'The passage of time will bind people together, regardless of what they think about it.'", x=300,y=330, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n'As long as your lives intertwine at some point, you'll have nothing to worry about.'",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="'Safe travels home, Exusiai.'", x=300,y=370, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Delay(time=1.5)]
+She feels herself moving, but she cannot open her eyes.
+Her back is cupped by something rough, while her mind sinks into a bottomless softness, where even the pain running throughout her body is dulled...
+Her thoughts flow into a boundless ocean of faith.
+She opens her eyes.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="61_i24_2",screenadapt="coverall",fadetime=0,block=true)]
+[bgeffect(name="$eb_dim_openeye",layer=1)]
+[Delay(time=1)]
+[playMusic(intro="$m_avg_grandpilgrimage_intro",key="$m_avg_grandpilgrimage_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[bgeffect]
+[Image(image="61_i24_3",screenadapt="coverall",fadetime=2,block=true)]
+[Delay(time=1)]
+[name="'Matriarch'"]You've awakened, child.
+[name="'Matriarch'"]You are gravely wounded. Only by accompanying me... will you stay lucid during the Transfiguration. While it was you... who caused its interruption... we will not abandon you.
+[name="'Matriarch'"]Much as we once leaned on one another to traverse the devastation of Catastrophe.
+[name="Exusiai"]The Transfiguration...?
+[name="Exusiai"]Do you mean that dream?
+[name="Exusiai"]I'm definitely awake, though... Why do you have a—*cough*—halo on your head? What kind of... monster... are you...?
+[name="'Matriarch'"]All Sanktas have halos, child.
+[name="'Matriarch'"]So that we could forget from whence we came, so that we could embrace our new lives, we named ourselves thusly. Thankfully, the passage of thousands of years has reshaped your appearances and ways of life.
+[name="'Matriarch'"]Perhaps you can follow those tome-bound accounts and call me... 'Saint'.
+[name="Exusiai"]...
+[name="'Saint'"]Of course, my flesh and spirit both have long become one with the soil beneath Laterano's white walls.
+[name="'Saint'"]What you see now is simply a snippet of code from His boundless program, a specter bearing countless memories.
+[name="'Saint'"]As He sees it, the path of the Sankta began with the 'Saints', and so it should continue with the 'Saints', who should lead you beyond calamity and into the future.
+[name="Exusiai"]Err... I don't get a word of what you're saying.
+[name="Exusiai"]Where exactly are you taking me?
+[name="'Saint'"]It is not a question of you and I, child... but of all Laterans.
+Exusiai strains her neck backwards—
+[Dialog]
+[Delay(time=0.5)]
+[Image(image="61_i24_1", screenadapt="coverall",fadetime=2.5, xScale=1.2, yScale=1.2, x=100,y=-40)]
+[ImageTween(xFrom=100, xTo=0, yFrom=-40, yTo=0, xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=25, block=false)]
+[delay(time=5)]
+The monster that calls herself 'Saint' cradles Exusiai. Following close behind are Sankta, as well as haloed Liberi, Felines... and a host of creatures the likes of which she has never seen before.
+It is a grand procession, meandering into the distance, its end far out of sight.
+Exusiai can sense that these are no shambling husks. Their empathy has not faded. No, it is even stronger than it has ever been—
+The faith of the countless masses has condensed into a vast sea. They follow behind the 'Saint', to a destination clear in their minds.
+Not even <i>The Saints' Travels</i> wrote of a sight so bizarre.
+[Dialog]
+[delay(time=1)]
+[name="'Saint'"]Across millennia has He granted revelation to His chosen few, so that they may question, analyze and deduce, so that they may point Laterano in the right direction.
+[name="'Saint'"]But it would prove far too slow a process this time.
+[name="'Saint'"]He has never been this restless and uneasy. The master of all things has awoken. Threats nip at our heels. He must carry out His original duty.
+[name="'Saint'"]...Because in this calculated future, there is no place for the Sankta.
+[name="'Saint'"]There is only time for Him to directly impose what He has sensed on every one of us, to force the only solution He knows into being—
+[name="'Saint'"]An even more cohesive community of 'Sankta'. Laterano as it should be.
+[name="Exusiai"]Geh... Listening to all this makes my head feel like it's about to pop...
+[name="Exusiai"]Heaven's sake, all this He Him His stuff... Who are you even talking about?
+[name="'Saint'"]We are on our way to meet Him. The foundation of faith. The prime mover.
+[name="'Saint'"]Even the deepest nightmare pales in comparison to cruel reality, child.
+[name="'Saint'"]And with the collapse of the Transfiguration, I fear His actions have been noticed. There is not much time. Perhaps He and I... no, perhaps <i>we</i> still have time to ensure the future of the Sankta.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_245_cello_1#5$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_245_cello_1#9$1",focus="m")]
+[name="Arturia"]A march? A migration? Or perhaps a pilgrimage?
+[name="Arturia"]A grand procession of newborn 'Sanktas', traversing the streets of the Holy City with a vigor the Sankta have not had in centuries... How should we describe such a sight?
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]—!
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]What do you see, Aurela?
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]There's halos on the... street lamps? And the trees, the dessert carts, the confessionals... Am I hallucinating, or is my scope fogged up?
+[charslot(slot="m",name="avg_1032_excu2_1#4$1 ",focus="m")]
+[name="Federico"]That is no hallucination.
+[name="Federico"]The Shrine of Nurtury still exists in reality. These iridescent projections originate from it.
+[name="Federico"]Where the pilgrims go, the projections follow. Where they fall, even inorganic matter will sprout halos.
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]These projections are like a form of unliving 'executor', redefining 'Sankta' in the name of the Law all over.
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]All this time, we're told that whosoever stains the purity of the Sankta shall be mercilessly cast out by the Law, and now it turns out the purest Sankta He so favors are actually streetlights and trees?!
+[name="Aurela"]Hah... Haha! Can't believe I'm starting to think my Fall was a good thing.
+[name="Aurela"]If that gaggle wants to redefine 'Sankta' into something nobody can understand, I have half a mind to leave them be.
+[Dialog]
+[charslot(slot="m",name="avg_1032_excu2_1#4$1 ",focus="m")]
+[PlaySound(key="$bullet_loading", volume=1)]
+[Delay(time=1.5)]
+[name="Federico"]...
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]Don't worry, executor. There's still some of them I want to kill. I agreed to help you fight, and I'll have that fight no matter what.
+[charslot(slot="m",name="avg_245_cello_1#9$1",focus="m")]
+[name="Arturia"]It seems like they really do want to remodel the entire city.
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]If their aim is to remodel the city via those projections, then forming a mass of people is a highly inefficient method.
+[name="Federico"]Yet they still choose to gather together, even after the dream's collapse... Perhaps spreading those projections around isn't the only way they have.
+[name="Federico"]They must have an additional method in mind. In order to use it, they must reach a common endpoint.
+[charslot(slot="m",name="avg_npc_1800_1#2$2 ",focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="Andoain")]*cough* *cough*—
+[charslot(slot="m",name="avg_npc_1800_1#10$2 ",focus="m")]
+[multiline(name="Andoain")]If their aim is to turn all of Laterano on its head, then I might know where they're headed.
+[charslot(slot="m",name="avg_npc_1800_1#6$2 ",focus="m")]
+[name="Andoain"]The Basilica.
+[name="Andoain"]I had a discussion with Pope Yvangelista XI there once, and I was able to glimpse certain entities, to realize some truths.
+[charslot(slot="m",name="avg_1032_excu2_1#1$1 ",focus="m")]
+[name="Federico"]...
+[charslot(slot="m",name="avg_npc_1800_1#6$2 ",focus="m")]
+[name="Andoain"]You do not need to doubt me, Senior—
+[charslot(slot="m",name="avg_1032_excu2_1#1$1 ",focus="m")]
+[name="Federico"]I do not. Your file was signed and sealed by the Pope himself.
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]I will bring you there, Andoain.
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]Hold on, Federico—
+[charslot(slot="m",name="avg_npc_357_1#6$1 ",focus="m")]
+[name="Patia"]The whole city's gone mad, and nobody knows what the hell's going on. Why should we trust you?
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]Hey, that's my line!
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]If what you are concerned about is who shall hold authority in this situation... Considering nearly all present have violated the Law to some degree, as an executor, I have the right to press you all into my temporary control.
+[name="Federico"]If it is the current calamity that is causing you to panic and deprive yourselves of sound judgment or action...
+[name="Federico"]I, Federico Giallo, am the first Saint from outside the ranks of the popes.
+[name="Federico"]I do not believe this title has any special meaning, but if you require a reason, then there is none better.
+[charslot(slot="m",name="avg_npc_357_1#6$1 ",focus="m")]
+[name="Patia"]...
+[charslot(slot="m",name="avg_npc_1782_1#12$1",focus="m")]
+[name="Aurela"]...
+[charslot(slot="m",name="avg_npc_1800_1#6$2 ",focus="m")]
+[name="Andoain"]The procession will pass through here first as they move from the Shrine of Nurtury to the Basilica.
+[name="Andoain"]Keph—or rather, the monster—has unusually strong empathy. Even the bell of the Tower of Revelations can do nothing about her influence towards you.
+[charslot(slot="m",name="avg_npc_1800_1#1$2 ",focus="m")]
+[name="Andoain"]Patia, take the other Pathfinders and these errari away from here. Go in the opposite direction.
+[charslot(slot="m",name="avg_npc_357_1#10$1 ",focus="m")]
+[name="Patia"]You staying by yourself?
+[charslot(slot="m",name="avg_npc_1800_1#1$2 ",focus="m")]
+[name="Andoain"]Trust in me, my brothers and sisters. This is the path I must walk.
+[charslot(slot="m",name="avg_npc_357_1#1$1 ",focus="m")]
+[name="Patia"]At least change out of those clothes, you look godawful. Or do you <i>like</i> walking around with blood all over your robe?
+[charslot(slot="m",name="avg_npc_1800_1#1$2 ",focus="m")]
+[name="Andoain"]...I don't own many outfits, and I don't know where my old cassock's gone.
+[Dialog]
+[charslot(slot="m",name="avg_npc_357_1#1$1 ",focus="m")]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_357_1#1$1 ",focus="m")]
+[name="Patia"]Here.
+[charslot(slot="m",name="avg_npc_1800_1#7$2 ",focus="m")]
+[name="Andoain"]This... You kept it, all this time?
+[charslot(slot="m",name="avg_npc_357_1#1$1 ",focus="m")]
+[name="Patia"]Not like it took up much bag space. I... I don't know. I just felt like... this wasn't something I should throw away. Go on, take it.
+[charslot(slot="m",name="avg_npc_1800_1#1$2 ",focus="m")]
+[name="Andoain"]...
+[charslot(slot="m",name="avg_npc_1800_1#11$2 ",focus="m")]
+[name="Andoain"]Thank you, Patia, for all these many years.
+[charslot(slot="m",name="avg_npc_1800_1#1$2 ",focus="m")]
+[name="Andoain"]However, we must try to find shelter for these children who have just escaped the dream...
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="Arturia"]...
+[charslot(slot="m",name="avg_1032_excu2_1#1$1 ",focus="m")]
+[name="Federico"]Arturia, you and Andoain will require special supervision. I will keep the two of you within my sight at all times.
+[charslot(slot="m",name="avg_245_cello_1#4$1",focus="m")]
+[name="Arturia"]I haven't even said anything, <i>Your Beatitude.</i>
+[charslot(slot="m",name="avg_4187_graceb_1#16$1",focus="m")]
+[name="Nueda"]M-Maybe you can leave the children to me?
+[charslot(slot="m",name="avg_4187_graceb_1#12$1",focus="m")]
+[name="Nueda"]I may not be a Sankta, or a Lateran, but I am... rather experienced in looking after children.
+[charslot(slot="m",name="avg_1032_excu2_1#10$1 ",focus="m")]
+[name="Federico"]Very well. Move out.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_1041_angel2_1#7$2 ",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1041_angel2_1#7$2 ",focus="m")]
+[name="Exusiai"]Hrrm... The foundation of the Sankta? The Sankta's future?
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]Do you not trust my words?
+[charslot(slot="m",name="avg_1041_angel2_1#10$2 ",focus="m")]
+[name="Exusiai"]Why should I?
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]You have no reason to, true.
+[name="'Saint'"]Much as how when we first gained the name 'Sankta', we could never have imagined our community would become one of explosions and desserts after all these years.
+[name="'Saint'"]Halos, empathy, guns, walls of purest white... Do you believe the Law innate, child? Do you believe the Sankta have always been unique in these ways?
+[charslot(slot="m",name="avg_1041_angel2_1#10$2 ",focus="m")]
+[name="Exusiai"]Why would I doubt it?
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]You love it... as do I.
+[name="'Saint'"]Faith is shaped by the experiences of countless generations, the ravages of time, and the footprints of the teeming masses. It should not, must not, be swayed again by the first of the faithful.
+[name="'Saint'"]But once more do the people face down the crossroads of destiny. I have no choice but to do this.
+[charslot(slot="m",name="avg_1041_angel2_1#10$2 ",focus="m")]
+[name="Exusiai"]...
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]We have not sown lies, my child. We have merely hidden some truths, then allowed the rest to become inspirational tales and parables of saints.
+[name="'Saint'"]These texts tell of how the devils' arrival left all things desolate, and how none saw the light of the sun. But for the Sankta, they had radiance bestowed upon them by the Law.
+[name="'Saint'"]But the angels were born from devils, child, and as for this so-called 'bestowment'...
+[name="'Saint'"]It was naught but a chance encounter.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]...
+[name="'Saint'"]In that age, the King sent out his warriors to seek a new beginning for their people.
+[name="'Saint'"]In that age, monsters that crawled the earth longed for a 'homeland', and so were named 'Teekaz', a race yet young.
+[name="'Saint'"]In that age, Hegemons who could command raging flames, blinding thunderbolts, wild winds, and frigid snow descended upon the land alongside their myriad servants, here to seize the Teekaz's precious home.
+[name="'Saint'"]The flames they threw could melt the skulls of Wendigos, the howling gales they summoned could shatter the wings of Gargoyles. Even if Vampires sucked them dry, they would be reborn from eggs of fire.
+[Dialog]
+[charslot(slot="m",name="avg_1041_angel2_1#11$2 ",focus="m")]
+[name="Exusiai"]Wow, that's like... that would be like...
+[charslot(slot="m",name="avg_1041_angel2_1#7$2 ",focus="m")]
+[name="Exusiai"]Man, might be because I'm dead tired, but I can't get my imagination working at all.
+[Dialog]
+[charslot(duration=0.3)]
+[delay(time=0.5)]
+The colossus cups the wounded Sankta in her hand, continuing onwards with a shambling yet steady gait. Her voice is as gentle as it was in her guise as the Matriarch.
+And so she tells her ancient, unprovable tale, like a saint who has stopped to rest her feet, taking the chance to preach to a stranger she met along the road.
+Exusiai knows she's not the only one hearing this story, though.
+The winding procession follows, all while countless people pour in from every corner of the city, leaving the buildings painted iridescent, joining the ocean of faith.
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]I shall share the portion of the truth hidden from you, child.
+[name="'Saint'"]Once we arrive at the Basilica, the past will be made clear, and all shall know it!
+[name="'Saint'"]It is then that the term 'Sankta' shall be redefined.
+[charslot(slot="m",name="avg_1041_angel2_1#10$2 ",focus="m")]
+[name="Exusiai"]...
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]The King's might could not slow the decline of the Teekaz. His weary gaze scanned the land for countless days and countless nights, before finally falling upon the ancient silver mounts.
+[name="'Saint'"]And so, his warriors set forth, seeking out these never-before-seen argent mountains beneath the earth. With the language conferred onto them by the King, they would conquer them, and command them to rout the foes of the Teekaz.
+[name="'Saint'"]To grant the Teekaz the chance to truly become 'those with a homeland'.
+[name="'Saint'"]Before they left, the King took the blood of a burdenbeast, and anointed the head of every warrior with a crimson circle, symbolizing the mission they all shouldered together.
+[name="'Saint'"]The warriors strode across the land, crossing the most barren of wastes, where not even the hardiest of plants could take root, where not even the most tenacious of beasts could survive.
+[name="'Saint'"]But with their twisted limbs did they aid one another. Not even the weakest of their number would be abandoned before they breathed their last.
+[name="'Saint'"]For the King had taught them this: 'Kin shall not eat kin. Kin shall aid kin.'
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Exusiai"]Wha?
+Exusiai can barely believe what she is seeing. A scene unfolds before her in an extraordinary way, and the next second, she catches a glimpse of the amazement spreading out across the sea of faces.
+There is no doubt. Through empathy beyond empathy, the monster is sharing what she sees with all present.
+[Dialog]
+[delay(time=1)]
+[name="'Saint'"]Finally, after many days and nights, numbered beyond reckoning, they arrived at the edge of a great rift in the earth...
+[name="'Saint'"]And then, they saw...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Image(image="61_i17_1",screenadapt="coverall",fadetime=0,xScale=1.5, yScale=1.5,y=150,block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+There, floating above the floor of the valley, was a new beginning, one that should not exist in this desolate waste—
+The pale, petrified forms of plants and beasts dance among mud, spinning about to some rhythm beyond ken. A string of boulders draws them along as they go, coming together to form a great ring.
+[name="'Saint'"]The fragments of the ring pulsed faintly with light. At first, they thought it was fire, but they sensed no heat, and it seemed untangible.
+[name="'Saint'"]In that age, the warriors of the Teekaz knew they had found the slumbering silver mounts.
+[Dialog]
+[ImageTween(yFrom=150, yTo=0, xScaleFrom=1.5, yScaleFrom=1.5, xScaleTo=1, yScaleTo=1, duration=15, block=false)]
+[delay(time=4)]
+[name="'Saint'"]In that age, the warriors encircled the ring. They attempted to call out to it, to appease it, to command it, to persuade it...
+[name="'Saint'"]They cried out until they could cry out no more, their throats hoarse and bleeding, but to no avail. The ring remained silent.
+[name="'Saint'"]They were trapped in that wasteland, with no way forward and no way back. Time passed, until an ordinary Teekaz could not stand it any longer, and stood up.
+[name="'Saint'"]She looked at her near-mad, emaciated companions, and realized that they all would die of hunger and thirst before the silver mounts awoke from their slumber.
+[name="'Saint'"]Instinct overtook her. The stone lance in her hand pierced one of her dying fellows, and she began to devour his flesh.
+[name="Exusiai"]...
+[Dialog]
+[delay(time=1)]
+[name="'Saint'"]The Teekaz had no fear of eating the flesh of other Teekaz, but it was the Farchaser, exiled for refusing to partake, who returned with the Black Crown and became the first King.
+[name="'Saint'"]Since then, eating our kin has become the strictest of taboos.
+[name="'Saint'"]But at that moment, one of the warriors handpicked by the King defied his ban without the slightest hesitation.
+[name="'Saint'"]Only through this act could she live. As for... As for whether she lived so as to complete the mission they were entrusted with, that is a tale for another time.
+[stopmusic(fadetime=1.5)]
+[name="'Saint'"]But at that time...
+[Dialog]
+[playsound(key="$d_avg_labamb",volume=0.7)]
+[delay(time=0.5)]
+[playsound(key="$alarmenter",volume=0.8)]
+[playsound(key="$alarmenter",volume=0.8,channel="a",delay=1.2)]
+[playsound(key="$d_avg_labamb",volume=0.7,delay=0.5)]
+[PlaySound(key="$d_avg_scan", volume=1,delay=1.5)]
+[playsound(key="$b_enemy_dead_h",channel="b",delay=2.6)]
+[delay(time=4)]
+A strange noise comes from above her head.
+Exusiai, no, all the people behind the monster lift their heads, and together with the Teekaz of history, they look toward the sky, welcoming that one fateful moment—
+[Dialog]
+[PlayMusic(key="$m_avg_mechdeath_loop", volume=0.6)]
+[Image(image="61_i17_2",screenadapt="coverall",fadetime=2.5,block=true)]
+[delay(time=1)]
+In an instant, the surfaces of the boulders within the ring begin to split and peel away, revealing a metal that glows with a crimson light.
+In an instant, bright halos and wings of light sprout from the black bodies of each and every Teekaz present. It is as though they have always been there, revealed from the dust with a swipe of the hand of the creator above.
+[name="'Saint'"]The warriors did not have the time to ponder this strange change, as boundless vitality poured into their exhausted frames like the surging tide.
+[name="'Saint'"]With the greatest of joys did they touch one another and embrace one another, like newborn babes.
+[name="'Saint'"]As for the Teekaz with the stone lance, its point still painted in blood, she looked up at that alien metal and remained silent for a while.
+[name="'Saint'"]She did not understand why it remained aloof to the words the King had imparted upon them to appease the silver mounts, yet deigned to respond the moment she ate of the kinflesh.
+[name="'Saint'"]Then, comprehension dawned on her. Perhaps... Perhaps the metal would not respond to the King's dignified appeals nor the pleas to smite their enemies...
+[name="'Saint'"]But rather it answered the simplest and purest of ideas, a quiet 'prayer'...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="For <i>survival.</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Exusiai"]Was that Teekaz... you?
+[name="Exusiai"]The silver mountains are in Laterano? And you want to take everyone to go see them?
+[name="'Saint'"]Do you understand now, child?
+[name="'Saint'"]Before faith became faith, before the first brick of this Paradise of tolerance, equality, mercy, and joy was laid...
+[name="'Saint'"]This was the origin of it all.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g7_pcsserverroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_labamb", volume=0.6)]
+[PlayMusic(intro="$suspenseful_intro", key="$suspenseful_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", multi = true, text="Return to start.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="Interactive simulation 26: complete.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPrior emergency response mechanisms: expired.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nNew emergency response mechanism: unmaterialized.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nSimulation result... failure.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n......Compulsory Transfiguration of Laterano......",block = true)]
+[delay(time=1)]
+[Sticker(id="st1", multi = true, text="\n\nContinuing operation.",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_356_1#7$1 ",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_356_1#7$1 ",focus="m")]
+[name="Yvangelista XI"]—!
+[name="Yvangelista XI"]It's that vision again. Our discussion's gone right back to square one.
+[charslot(slot="m",name="avg_npc_356_1#12$1 ",focus="m")]
+[name="Yvangelista XI"]*cough* Truth be told, I'd really like to head upstairs and enjoy some guava juice and an ice cream cone, or at the very least take a nap on the sofa...
+[name="Yvangelista XI"]I-I can barely feel my lips anymore... or my knees...
+[name="Yvangelista XI"]...
+[name="Yvangelista XI"]How long has it been since you started acting oddly and I rushed over to find a solution?
+[name="Yvangelista XI"]What caused the calamity to speed up so, to the point you needed to throw out all your old emergency response mechanisms and instead force everyone to directly synchronize data with you? You've forced Laterano to go through...
+[charslot(slot="m",name="avg_npc_356_1#8$1 ",focus="m")]
+[name="Yvangelista XI"]Such radical change.
+[name="Yvangelista XI"]In time, the spiritual light of the Sankta will be stripped away. In time, will Laterano still be considered Laterano...?
+[charslot(slot="m",name="avg_npc_356_1#7$1 ",focus="m")]
+[name="Yvangelista XI"]The sitting pope, Yvangelista XI, requests a twenty-seventh interactive simulation.
+[Dialog]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[Sticker(id="st1", multi = true, text="Yvangelista XI has refused to help bring the Transfiguration to completion.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nNow conferring judgment on request for interactive simulation...",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[StopSound(channel="a", fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]...
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_sealangel", volume=1)]
+[charslot(slot="m",name="avg_npc_1791_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1791_1#1$1",focus="m")]
+[name="Enlightened Creature A"](Cry of prostration)
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_dogangel_2", volume=1)]
+[charslot(slot="m",name="avg_npc_1792_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1792_1#1$1 ",focus="m")]
+[name="Enlightened Creature B"](Low prayer)
+[Dialog]
+[PlaySound(key="$d_avg_sandnmlfts", volume=1)]
+[charslot(duration=0.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_1041_angel2_1#10$2 ",focus="m")]
+[name="Exusiai"]These monsters...
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]Neither Sankta nor the others at the Nativity can escape the influence of the Transfiguration's sudden termination.
+[name="'Saint'"]All I can do now is to call everyone to my side and keep your minds steady and free of collapse ere we meet Him.
+[name="'Saint'"]As for those you call 'monsters', they too are 'Sanktas', and the Law shelters them as well.
+[name="'Saint'"]They are newly born, pious and plain. They will aid the people in sweeping away all obstacles along the path.
+[name="'Saint'"]This path will take us past the Tower of Revelations in Pagus Ecclesia, past the Notarial Hall and gunsmithies in Pagus Michaelion, past the Sunset Chapel in Pagus Saint Marcel...
+[name="'Saint'"]Before finally arriving at the Basilica.
+[charslot(slot="m",name="avg_1041_angel2_1#10$2 ",focus="m")]
+[name="Exusiai"]This route...
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]A familiar one, yes? It is the order the street lamps light up as night falls on Laterano. He has laid out a most convenient path for us.
+[name="'Saint'"]And so I beg you sleep a while, child.
+[name="'Saint'"]We will have arrived once you awake, and there we shall rekindle hope for the continuation of our race.
+[charslot(slot="m",name="avg_1041_angel2_1#2$2 ",focus="m")]
+[name="Exusiai"]Ngh—
+[Dialog]
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.9)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[delay(time=1)]
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_1041_angel2_1#8$4 ",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]—
+[name="'Saint'"]I see now... You have been looking for an opportunity ever since you awoke?
+[name="'Saint'"]You are still unwilling to accept it.
+[name="'Saint'"]The tales we left behind became the chains that bound later generations...
+[name="'Saint'"]The texts that speak of the majesty of the saints and the ugliness of the devils have been etched deep into your hearts. You need only witness my countenance to raise your gun against me.
+[name="'Saint'"]But no matter, child.
+[name="'Saint'"]You will come to understand who is named hero and who is named monster, who is named kin and who is named Alienus. You shall all understand.
+[charslot(slot="m",name="avg_1041_angel2_1#7$4 ",focus="m")]
+[name="Exusiai"]I Fell...? That's... a real nasty feeling...
+[charslot(slot="m",name="avg_1041_angel2_1#7$4 ",focus="m")]
+[multiline(name="Exusiai")]*cough*...
+[charslot(slot="m",name="avg_1041_angel2_1#9$4 ",focus="m")]
+[multiline(name="Exusiai")] Awesome, never thought there'd be a way to turn that light out.
+[name="Exusiai"]I dunno if I'm going to miss it later, but right now, it's not too bad having it off! My head's a lot clearer now that I don't have to deal with all your emotions!
+[charslot(slot="m",name="avg_npc_1778_1#1$1 ",focus="m")]
+[name="'Saint'"]Clear? No, child. Even though you now know my history, the history of our race, you still wish to make an enemy of me. How can you consider your mind clear?
+[charslot(slot="m",name="avg_1041_angel2_1#12$4 ",focus="m")]
+[name="Exusiai"]What can I say? It's clearer than ever!
+[name="Exusiai"]You say I've been trapped by those dusty old books you left behind, but they never said anything about having to listen to Your Ancient Beatitude's ideas!
+[charslot(slot="m",name="avg_1041_angel2_1#9$4 ",focus="m")]
+[name="Exusiai"]I've been listening to you go on and on for ages already. Did you ever plan on asking us what we think?
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2 ",focus="m")]
+[multiline(name="Mon3tr")]The good news is the monsters chasing us have retreated.
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="m")]
+[multiline(name="Mon3tr")] The bad news is they're joining that weird procession over there.
+[charslot(slot="m",name="avg_4179_monstr_1#5$2 ",focus="m")]
+[name="Mon3tr"]Good thing we talked Idida into staying somewhere safe. Will Exusiai be able to handle herself, Doctor?
+[Dialog]
+[charslot]
+[Decision(options="I believe in her.;She's still buying time for us.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="The procession is heading for that machine.;The machine is waiting for that monster.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2 ",focus="m")]
+[name="Mon3tr"]That monster looks really familiar for some reason... No matter how much she changes herself to look like a living thing, I can tell she's just a program.
+[name="Mon3tr"]The collapse of the dream must have cut off her connection with the machine, and as a program, all she can do is try to reestablish that connection... to restart the dream.
+[name="Mon3tr"]Passing that field of irises a minute ago, I saw halos blooming above the flowers, one after another. That's completely unprecedented.
+[charslot(slot="m",name="avg_4179_monstr_1#4$2 ",focus="m")]
+[name="Mon3tr"]The goal of that machine and that program is more extreme than we thought. Everything, organic, inorganic, will be defined as 'Sankta'...
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="m")]
+[name="Mon3tr"]This thing's crazier than when PRTS went haywire.
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="n")]
+[Decision(options="This also gives us an opportunity.;Can you figure out its weak points, Mon3tr?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="m")]
+[name="Mon3tr"]Not on my own, but...
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="n")]
+[Decision(options="Kal'tsit should have had some understanding of that machine...;Can we find a way if we search Kal'tsit's memories?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2 ",focus="m")]
+[name="Mon3tr"]...Kal'tsit.
+[name="Mon3tr"]Ever since it all went down, you've been avoiding saying her name to me, Doctor.
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2 ",focus="n")]
+[Decision(options="Sorry...;I...", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2 ",focus="m")]
+[name="Mon3tr"]In any case, thanks for putting your trust in me. Amiya was so worried before we left—
+[charslot(slot="m",name="avg_4179_monstr_1#10$2 ",focus="m")]
+[name="Mon3tr"]Never mind. At least I managed to get a decent amount out of this operation.
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#2$2 ",focus="m")]
+[name="Mon3tr"]That machine is special, Doctor.
+[name="Mon3tr"]We've tried to approach it in the past, but the more the Law of Laterano was gradually refined, the more difficult it became to try and figure out its nature.
+[name="Mon3tr"]Kal'tsit did come up with a plan, but even she admitted it was a bit too daring.
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#2$2 ",focus="n")]
+[Decision(options="...?!;So what was the plan?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2 ",focus="m")]
+[name="Mon3tr"]It's a really crude one. She never let me do it before.
+[name="Mon3tr"]But my nature <i>does</i> give me a talent that ordinary people lack. To some extent.
+[name="Mon3tr"]Of course, we should also thank our creator's open-minded attitude toward technology exchange—Whew, okay, this is the first time I'm trying this...
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2 ",focus="n")]
+[Decision(options="...Technology exchange?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2 ",focus="m")]
+[name="Mon3tr"]Stand back a bit, Doctor.
+[Dialog]
+[charslot(duration=0.5)]
+[Delay(time=0.7)]
+[PlaySound(key="$d_avg_mechalock", volume=0.8)]
+[Delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="............", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Routing through city communication post backdoor access port...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Special privileges: AMa-10.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Temporary access credentials: ELCARO-001... ORACLE. Decoding complete. Authentication passed.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Connected to PCS system.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Syncing computational radiation link...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Updating permission log...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2 ",focus="m")]
+[name="Mon3tr"]If it wants to speed up the changes happening across Laterano, it'll have to remove all of its underlying restrictions and break through its computational limits over and over.
+[name="Mon3tr"]Which means that machine should've left itself wide open to me. It won't have the time to limit my actions—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_aircraftalarm", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.3, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.3, block=true)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.3, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.3, block=true)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.3, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.3, block=true)]
+[delay(time=0.2)]
+[Dialog]
+[Decision(options="Wait!;Mon3tr!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="m")]
+[name="Mon3tr"]I'm trying to stop it—No, I'm not in control of the process anymore!
+[stopmusic(fadetime=1)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_lnswhitnois", volume=1)]
+[CameraEffect(effect="Grayscale", fadetime=0.7, keep=true, initamount=0, amount=0.6, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=0.7, keep=true, initamount=0.6, amount=0, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_lnswhitnois", volume=1, channel="slide1")]
+[stopsound(channel="slide1", fadetime=1)]
+[CameraEffect(effect="Grayscale", fadetime=0.3, keep=true, initamount=0, amount=0.8, block=true)]
+[delay(time=0.7)]
+[CameraEffect(effect="Grayscale", fadetime=0.3, keep=true, initamount=0.8, amount=0, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_beamamb", volume=1)]
+[PlaySound(key="$d_avg_tinnitus",volume=1,delay=1.2)]
+[delay(time=0.7)]
+[Background(image="61_g10_fadedbalcony",fadetime=0.7,block=true)]
+[delay(time=1)]
+The flow of information does not come rushing in as you imagined. The clamor of computation has faded away at some point. You and Mon3tr feel a peculiar feeling wash over the both of you.
+You seem to have stopped at a fork in the road. An old friend appears. Has she been walking alongside you the whole time, or is it a chance encounter? In short, you see her.
+The color begins to drain out of your surroundings. It is as if time stands still. This is the stage built for your reunion.
+[Dialog]
+[Decision(options="...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2 ",focus="m")]
+[name="Mon3tr"]...
+[playMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1718_1#1$1 ",focus="m")]
+[name="Priestess"](Unknown language) Thank you for your hard work, 'AMa-10'.
+[name="Priestess"](Unknown language) We meet again, {@nickname}.
+[name="Priestess"](Unknown language) Our reunion has come much sooner than I imagined... Just as I had hoped.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

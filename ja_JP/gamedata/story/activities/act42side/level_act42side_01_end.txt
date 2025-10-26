@@ -1,0 +1,491 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="26_g11_laterano_alley",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1811_1#8$2",duration=1.5)]
+[delay(time=2.5)]
+[name="レミュアン"]路地は一通り確認した？
+[charslot(slot="m",name="avg_npc_366_1#1$1",focus="m")]
+[name="第七庁調査員"]はい、容疑者は見当たりませんでした。
+[name="第七庁調査員"]周辺の住民にも聞き込みを行いましたが、特に有力な情報はありません。
+[charslot(slot="m",name="avg_npc_1811_1#5$2",focus="m")]
+[name="レミュアン"]……
+[name="レミュアン"]湿気が強いと柱にキノコが生えることはあるけど、爆弾が生えてくることなんてないわよね？
+[charslot(slot="m",name="avg_npc_366_1#1$1",focus="m")]
+[name="第七庁調査員"]ですが……どうやってこんなことを？
+[name="第七庁調査員"]教皇庁か育児聖堂の職員でもない限り、爆発物の携帯は、公証人役場による常時監視の対象になる事案です。
+[name="第七庁調査員"]ラテラーノではもう何年も、爆発どころか、予定外の発砲音さえ聞いたことがありません。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1811_1#5$2",focus="m")]
+[delay(time=1.5)]
+[charslot(slot="m",posfrom="0,0",posto="0,-20",duration=1.5,focus="m")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1811_1#5$2",focus="none")]
+レミュアンはしゃがみ込むと、半壊した石柱から爆弾の破片を取り出した。
+[Dialog]
+[charslot(slot="m",posfrom="0,-20",posto="0,0",duration=1.5,focus="m")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1811_1#5$2",focus="m")]
+[name="レミュアン"]精密な構造ね……このタイプの爆弾に通常の爆薬を使っていれば、柱一本程度の被害では済まなかったはずよ。
+[charslot(slot="m",name="avg_npc_366_1#1$1",focus="m")]
+[name="第七庁調査員"]というと……もしかして、自作したものということですか？　何のために？　イタズラでしょうか？
+[charslot(slot="m",name="avg_npc_1811_1#5$2",focus="m")]
+[name="レミュアン"]ラテラーノの火器武装管理リストは、教皇庁で一番経験豊富な爆発物の専門家が編纂したものだけど、そこには爆発を起こし得る物質がほぼすべて記載されている……
+[name="レミュアン"]そのリストに記載のない材料を使って、こんな爆弾を作るなんて、並大抵の労力じゃないはずよ。単なるイタズラでここまでするとは思えないわ。
+[charslot(slot="m",name="avg_npc_1811_1#11$2",focus="m")]
+[name="レミュアン"]何より、今は第二回万国サミットが開かれている。こんな特別な時を狙うなんて……
+[Dialog]
+[charslot(slot="m",name="avg_npc_1811_1#11$2",focus="none")]
+レミュアンは先刻見た赤色を思い出し、一抹の不安と、それ以上の疑念を抱いた。
+[charslot(slot="m",name="avg_npc_1811_1#14$2",focus="m")]
+[name="レミュアン"]ヨヴィータ通りの――いえ、ステファン区全体の人口移動関係記録を見せてちょうだい。直近のものを確かめたいの。
+[charslot(slot="m",name="avg_npc_366_1#1$1",focus="m")]
+[name="第七庁調査員"]……
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="m")]
+[name="レミュアン"]どうかした？
+[name="レミュアン"]こういう明らかに有用な資料は、指示を受けた時点で速やかに用意する手はずでしょう。担当者はどこ？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="none")]
+[CameraShake(duration=0.3, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="？？？"]すみません、ここにいます！
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[charslot(slot="m",name="avg_npc_1783_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="？？？"]（胸を押さえる）ハァ――ハァ――
+[name="？？？"]お待たせして申し訳ありません、レミュアン枢機卿。こちらが資料です。
+[name="アモス"]私は、第七庁調査員のアモスと申します。今後、あなたの補佐官を担当させていただきます。
+[charslot(slot="m",name="avg_npc_1811_1#5$2",focus="m")]
+[name="レミュアン"]……
+[charslot(slot="m",name="avg_npc_1811_1#2$2",focus="m")]
+[name="レミュアン"]遅かったわね、アモス補佐官。
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="m")]
+[name="レミュアン"]パトリツィオさんの話では、私の現場到着から10分後には応援が来るはずだったけど……もう30分近く経ってるわ。
+[charslot(slot="m",name="avg_npc_1783_1#4$1",focus="m")]
+[name="アモス"]本当に申し訳ない限りです。歓迎会のお茶菓子を用意していたもので。まさかここまで急ぎの用事だとは……
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="m")]
+[name="レミュアン"]シッ……
+[charslot(slot="m",name="avg_npc_1811_1#13$2",focus="m")]
+[name="レミュアン"]私の補佐官として任命されたからには、私について少しは聞いているはずよね？
+[charslot(slot="m",name="avg_npc_1783_1#4$1",focus="m")]
+[name="アモス"]ち、沈黙のレミュアンと……
+[charslot(slot="m",name="avg_npc_1811_1#2$2",focus="m")]
+[name="レミュアン"]そう。仕事に言い訳はいらないわ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="26_g9_laterano_street",screenadapt="showall")]
+[Delay(time=2)]
+[PlayMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_1032_excu2_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_372_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_1032_excu2_1#1$1",focus="l")]
+[name="フェデリコ"]……
+[charslot(slot="r",name="avg_npc_372_1#1$1",focus="r")]
+[name="リケーレ"]フェデリコ、アイスでもどうだ？　俺の奢りだぜ。
+[charslot(slot="l",name="avg_1032_excu2_1#3$1",focus="l")]
+[name="フェデリコ"]任務中にスイーツを口にする習慣はありませんので。
+[charslot(slot="l",name="avg_1032_excu2_1#1$1",focus="l")]
+[name="フェデリコ"]加えてお伝えすると、公証人役場を出る前に食べてきました。
+[charslot(slot="r",name="avg_npc_372_1#4$1",focus="r")]
+[name="リケーレ"]休憩室に残ってたのを食べちまったのは、お前だったのか……
+[charslot(slot="r",name="avg_npc_372_1#1$1",focus="r")]
+[name="リケーレ"]それを内緒にしておく代わりに、教えてくれないか。役場を急に飛び出してきたのは何のためだ？
+[name="リケーレ"]もう10分くらいここに突っ立ってるが、この路地にはどう見たって何もないよな。
+[charslot(slot="l",name="avg_1032_excu2_1#1$1",focus="l")]
+[name="フェデリコ"]私的なタスクについて同僚に共有する義務はありません。
+[charslot(slot="r",name="avg_npc_372_1#2$1",focus="r")]
+[name="リケーレ"]さっきは「任務中」とか言ってたくせに……
+[Dialog]
+[charslot(slot="r",name="avg_npc_372_1#2$1",focus="none")]
+[playsound(key="$d_avg_hastybell", volume=1)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_npc_372_1#3$1",focus="r")]
+[multiline(name="リケーレ")]ん、この音は……
+[charslot(slot="r",name="avg_npc_372_1#10$1",focus="r")]
+[multiline(name="リケーレ",end=true)]なるほど、告解ロボを待ってたのか！
+[charslot(slot="r",name="avg_npc_372_1#9$1",focus="r")]
+[name="リケーレ"]珍しいな、お前が自主的に懺悔したがるとは。確かにお前は、公証人役場のクレーム率ナンバーワンを誇る執行人で、色々と「罪」を貯めこんじゃいるが……
+[charslot(slot="r",name="avg_npc_372_1#1$1",focus="r")]
+[name="リケーレ"]まあいい、ほら、これ。
+[Dialog]
+[charslot(slot="r",posfrom="0,0",posto="-100,0",duration=1.5,focus="r")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="r",posfrom="-100,0",posto="0,0",duration=1.5,focus="r")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_1032_excu2_1#1$1",focus="l")]
+[name="フェデリコ"]何ですか？
+[charslot(slot="r",name="avg_npc_372_1#10$1",focus="r")]
+[name="リケーレ"]前にサルゴンでの外勤任務の経費を精算した時に、黄金都市文化ブラインドボックスの購入費を含めて申請しちゃってさ。そしたら、実際任務で使った費用の倍以上に膨れ上がっちまって……
+[name="リケーレ"]正直罪悪感があったんだ。そんな時、外に出てみたら……ちょうど告解ロボが通りかかったもんで、ついでに年パス作っといたんだよな。これ、使っていいぞ。
+[Dialog]
+[charslot]
+[name="機械の警告音"]間もなく到着いたします。
+[name="機械の警告音"]自律式告解ロボット、コード「ELCARO-001」がただいま参ります。告解を希望される公民の皆様は、列に並んでお待ちください。
+[name="機械の警告音"]「迷える人のすべてに、主が救いをもたらさんことを。」
+[Dialog]
+[PlaySound(key="$d_avg_hastybell", volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1,channel="2")]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",afrom=0,ato=1,duration=1.5,isblock=false)]
+[charslot(slot="m",posfrom="200,0",posto="0,0",duration=3.5,isblock=true)]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",focus="m")]
+[name="自律式告解ロボット"]――
+[Dialog]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",focus="none")]
+ゆっくりと二人の視界に入ってきた告解ロボットに向けて、フェデリコは手を伸ばした。
+[Dialog]
+[charslot(slot="m",focus="m")]
+[PlaySound(key="$d_avg_hastybell", volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1,channel="2")]
+[charslot(slot="m",afrom=1,ato=0,duration=1,isblock=false)]
+[charslot(slot="m",posfrom="0,0",posto="-200,0",duration=2.5,isblock=true)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="l",name="avg_1032_excu2_1#9$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_372_1#10$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_1032_excu2_1#9$1",focus="l")]
+[name="フェデリコ"]……
+[name="フェデリコ"]？
+[charslot(slot="r",name="avg_npc_372_1#10$1",focus="r")]
+[name="リケーレ"]わっはははははははははははは！
+[name="リケーレ"]お前にメンタルのサポートなんか必要ないってのは、ロボットにでもわかるらしいな！
+[charslot(slot="l",name="avg_1032_excu2_1#10$1",focus="l")]
+[name="フェデリコ"]ラテラーノ人のほとんどは日常的に告解ロボットに触れています。ある意味では、このロボットは公証人役場の資料以上に多様で詳細なデータを取り扱っていると言えるでしょう。
+[name="フェデリコ"]このデータは自然に作り上げられた資料であり、異常はその中に現れています。
+[charslot(slot="l",name="avg_1032_excu2_1#4$1",focus="l")]
+[name="フェデリコ"]……これである程度の結論は得られました。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[charslot(slot="l",afrom=1,ato=0,duration=1,isblock=false)]
+[charslot(slot="l",posfrom="0,0",posto="-200,0",duration=2.5,isblock=true)]
+[charslot(slot="r",name="avg_npc_372_1#4$1",focus="r")]
+[name="リケーレ"]あー……ちょっと待て、その結論を教えろとは言わないが、お前は何を調べてるんだ？
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[charslot(slot="r",afrom=1,ato=0,duration=1,isblock=false)]
+[charslot(slot="r",posfrom="0,0",posto="-200,0",duration=2.5,isblock=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="26_g11_laterano_alley",screenadapt="showall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_hastybell", volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1,channel="2")]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",afrom=0,ato=1,duration=1.5,isblock=false)]
+[charslot(slot="m",posfrom="200,0",posto="0,0",duration=3.5,isblock=true)]
+[charslot(slot="m",focus="none")]
+信仰を持つ者にとって、自省は日々の務めである。聖都全体を見渡せば、教会の延長たる告解ロボットの数は、恐らくデザートショップのキッチンカーよりわずかに少ないくらいだろう。
+この可動式公共設備はラテラーノの隅々まで駆け回り、ラテラーノ公民にとって最初の感情のはけ口となっている。
+彼らはその小さな秘密の空間で、聖像と銃と美しい音楽を前に、電子告解師に向けてすべてを打ち明けるのだ――
+糖分を摂りすぎていることへの羞恥心から、同胞を裏切り、同族を傷つけたことへの罪悪感に至るまで。
+フェデリコの乗車を拒んだ自律式告解ロボット「ELCARO-001」は、路地の奥で停車した。そのドアが開くと、秘密の客人が中に飛び込んでいく。
+[Dialog]
+[charslot(slot="m",focus="m")]
+[playsound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="61_i03_1",block=false,screenadapt="coverall",fadetime=0)]
+[Delay(time=2)]
+[PlayMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「遅かったな、エクシア。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[name="エクシア"]くれぐれも慎重にって言ったのはキミでしょ？
+[name="エクシア"]尾行されてないかはちゃんと確認したし、キミだってあの鉄仮面男に手を出す暇は与えてなかったじゃん。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「彼の観察力であれば、こちらの異常に気づいているかもしれない。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[name="エクシア"]捕まってバラされないように祈っててあげるね。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[name="エクシア"]どうかした？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「服を着替えたのか。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image(image="61_i03_4",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]ペンギン急便の制服でラテラーノを駆け回ってたら、メチャクチャ目立つでしょ。
+[name="エクシア"]これはあたしが自分でデザインした礼服なんだけど、卒業式で一回着たきりになってたからちょうどいいと思ってさ！
+[name="エクシア"]ていうか、見た目違うのはそっちこそでしょ！　キミの声が告解ロボのスピーカーから聞こえてくるの、すっごい気味悪いんだけど！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「本題に戻ろう。実験は失敗か？」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image(image="61_i03_3",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]いやあ、認めたくはないんだけど――失敗しちゃったね。
+[name="エクシア"]代替素材を探すのには苦労したんだよ？　市場にパン屋、遊園地、それから学校にある秘密の売店まで……知ってるところは全部回ったんだから。
+[name="エクシア"]だけど、頑張って作ったのに結局柱一本も吹き飛ばせなくてさ！　そのうえ、少しでも使えそうな素材は全部管理下に置かれてるの。誰に聞いても理由はわからないって言われたし……
+[name="エクシア"]まさか、今やってる万国サミットのためじゃないよね？
+[name="エクシア"]ドラマチックで芸術的な爆発が万国サミットの脅威になるなんて考える人がラテラーノのどこかにいるなら、それは絶対あたしじゃなくてラテラーノに問題があるでしょ！
+[name="エクシア"]っていうか、その万国サミットだけど、さっき最後のプログラムが発表されたんだ――あの聖堂で「降誕の儀式」をやるんだって。
+[name="エクシア"]街中どこからでも見えるような建物建てといて、それがスイーツ博物館じゃなくて、公開出産のための場所ってどーゆーこと！？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「君は自らの望み通り、故郷の異変をその目で確かめたというわけだ。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「見ての通り、ここは君の知るラテラーノではない。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image(image="61_i03_5",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]へへっ、キミの言うこと全部を信じるわけにはいかないな。だって今のキミは「電子告解師」なんだから。
+[name="エクシア"]でも、それについては信じてあげる。
+[Dialog]
+[Image(image="61_i03_1",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]ラテラーノには……何かとんでもない変化が起きてるんだ。なのに誰もそれに気付いてないのが超最悪！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「すべての異変が、あの聖堂と例の儀式を指し示しているなら……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image(image="61_i03_2",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]どうにかしてぶち壊しにしてやらなくちゃ、だよね？
+[name="エクシア"]もし、キッチンにある材料だけであの聖堂を丸ごと吹っ飛ばせるような爆弾を作れたら、ラテラーノ中の大学があたしに終身名誉賞をくれたっていいと思わない？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「彼らの爆発への情熱を再度呼び起こせるのならな。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image(image="61_i03_5",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]ラテラーノ人の爆発愛をわざわざ呼び起こさなきゃいけない日が来るなんて、悪い夢みたい。銃工房に半日も放り込んでおけば済みそうなもんなのに。
+[name="エクシア"]そっか、銃工房だ！　工房が閉鎖されても、中の人まで消えるわけじゃないはずだよね！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「待て、エクシア。」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image(image="61_i03_6",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]言いたいことはわかってるって。何かあった時、真っ先に調べが入るのは銃工房だから危なすぎる！　でしょ？
+[name="エクシア"]大丈夫、用心するから。キミも誰かに壊されないようにね。これが終わったら、あたしがちゃんとバラしてあげるから！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="「……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Image(image="61_i03_4",block=false,screenadapt="coverall",fadetime=0.5)]
+[Delay(time=1)]
+[name="エクシア"]何はともあれ……ようこそ、ラテラーノへ！
+[Dialog]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="26_g10_laterano_roof",screenadapt="showall")]
+[Delay(time=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1811_1#1$2",duration=1.5)]
+[delay(time=2.5)]
+[name="レミュアン"]調査はこれで終了よ。みんな、お疲れ様。
+[charslot(slot="m",name="avg_npc_1811_1#10$2",focus="m")]
+[name="レミュアン"]記録の確認と署名が済んだら、第七庁へ戻って構わないわ。歓迎会のお茶菓子がまだ冷めていないようなら、みんなにそれを片付けてもらおうかしら？
+[charslot(slot="m",name="avg_npc_1811_1#1$2",focus="m")]
+[name="レミュアン"]ああそれと、アモス補佐官、あなたは私と一緒に、銃騎士のもとへ来てもらうわよ。
+[charslot(slot="m",name="avg_npc_1783_1#4$1",focus="m")]
+[name="アモス"]ええと……
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="m")]
+[name="レミュアン"]何か問題でも？
+[charslot(slot="m",name="avg_npc_1783_1#1$1",focus="m")]
+[name="アモス"]その銃騎士というのがパトリツィオ殿のことでしたら、あの……私の代わりにヨリールに行ってもらうことはできないでしょうか。
+[charslot(slot="m",name="avg_npc_1811_1#11$2",focus="m")]
+[name="レミュアン"]理由は？
+[charslot(slot="m",name="avg_npc_1783_1#5$1",focus="m")]
+[name="アモス"]……
+[name="アモス"]十数年前、ある移動修道院が囚人をラテラーノへ護送していた際に騒動が起き、とある女性の銃騎士が同僚と激しくぶつかり合ったことがありました……
+[charslot(slot="m",name="avg_npc_1783_1#5$1",focus="m")]
+[name="アモス"]教皇庁から人員が到着した時には、すでに現場では大勢の死傷者が出ており、その銃騎士も堕天してしまっていました。
+[name="アモス"]その後、彼女はラテラーノを追放され、それきり音沙汰もありません。
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="m")]
+[name="レミュアン"]その事件なら聞いたことがあるわ。
+[charslot(slot="m",name="avg_npc_1783_1#5$1",focus="m")]
+[name="アモス"]追放された銃騎士は私の妻でした。そして、部隊を率いて事後処理に当たり、最終的に彼女の追放を決めたのが、パトリツィオ殿だったのです。
+[charslot(slot="m",name="avg_npc_1811_1#2$2",focus="m")]
+[name="レミュアン"]アモス補佐官、あなたは私よりも長く第七庁に在籍しているのだから、私たちと銃騎士の役目については今更説明する必要がないと思うけど――
+[charslot(slot="m",name="avg_npc_1783_1#4$1",focus="m")]
+[name="アモス"]ああいえ、そうではありません。
+[charslot(slot="m",name="avg_npc_1783_1#5$1",focus="m")]
+[name="アモス"]あの件は完全に、妻に非があることでした。
+[name="アモス"]同胞に守護銃を向けたサンクタは、誰であれ法の裁きを受け、楽園から追放されねばなりません。
+[charslot(slot="m",name="avg_npc_1783_1#10$1",focus="m")]
+[name="アモス"]ですから、パトリツィオ殿を責める資格など私にはないのです……ただ、どうしても顔を合わせることができなくて。
+[charslot(slot="m",name="avg_npc_1811_1#8$2",focus="m")]
+[name="レミュアン"]これまでに銃騎士とのやりとりが必要になった時も、代役で対処していたの？
+[charslot(slot="m",name="avg_npc_1783_1#7$1",focus="m")]
+[name="アモス"]その……すみません、そうです。
+[charslot(slot="m",name="avg_npc_1811_1#2$2",focus="m")]
+[name="レミュアン"]……はぁ。
+[charslot(slot="m",name="avg_npc_1783_1#4$1",focus="m")]
+[name="アモス"]申し訳ありません！　五分ほど時間をいただけますか。気持ちの整理さえできれば……
+[charslot(slot="m",name="avg_npc_1811_1#6$2",focus="m")]
+[name="レミュアン"]あなたを責めてるわけじゃないわ。でも、第七庁の仕事ってそういうものじゃないかしら。
+[name="レミュアン"]会いたくない人にばかり会って、会いたい人には会えない。それどころか――肝心の会いたい人には、望まない形で会うことになるかもしれない。
+[charslot(slot="m",name="avg_npc_1811_1#1$2",focus="m")]
+[name="レミュアン"]私も、モスティマたちに上から仕事の指示を出すのは好きじゃないの。
+[charslot(slot="m",name="avg_npc_1783_1#1$1",focus="m")]
+[name="アモス"]あなたはご自分から第七庁の仕事に志願されたと伺いましたが……
+[charslot(slot="m",name="avg_npc_1811_1#1$2",focus="m")]
+[name="レミュアン"]それは、このポストにつけば、できることがたくさんあるからよ。
+[charslot(slot="m",name="avg_npc_1811_1#10$2",focus="m")]
+[name="レミュアン"]あなたもね、アモス。
+[charslot(slot="m",name="avg_npc_1783_1#1$1",focus="m")]
+[name="アモス"]ありがとうございます。ですが私は本当に向上心に欠けた人間でして。妻がいた頃からそうだったのですが、いなくなってからはなおさら……
+[charslot(slot="m",name="avg_npc_1811_1#1$2",focus="m")]
+[name="レミュアン"]第七庁には、あなたの手を借りたい仕事がまだまだ山積みになってるの。たとえば、ファボール区には処理に際して人手が必要な銃工房がまだいくつかあったはずよね？
+[name="レミュアン"]今はその件が最優先よ。銃工房の接収が確実に不備なく行われないと、今日のような爆発事件に繋がるかもしれないもの。
+[charslot(slot="m",name="avg_npc_1811_1#10$2",focus="m")]
+[name="レミュアン"]だからそっちはあなたに任せるわ。ちゃちゃっと済ませてきてね。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="31_g3_mini12_farmland",screenadapt="showall")]
+[Delay(time=2)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_avg_walkmeadow",volume=1)]
+[charslot(slot="m",name="avg_npc_370_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="忙しそうなシスター"]そろそろお疲れなのでは？
+[name="忙しそうなシスター"]早朝からずっと、もう六列分も麦を刈り取っておられますよね。藁山のそばで一休みされては……
+[name="忙しそうなシスター"]アルトリアさん。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_245_cello_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="アルトリア"]大丈夫よ、そこまでひ弱じゃないから。それに……
+[charslot(slot="m",name="avg_npc_370_1#1$1",focus="m")]
+[name="忙しそうなシスター"]それに？
+[charslot(slot="m",name="avg_245_cello_1#2$1",focus="m")]
+[name="アルトリア"]何でもないわ。ただ、どうしても見てみたいの。この麦畑の果てをね。
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="アルトリア"]なんだか、私の奏でる音色でさえ届かないほど果てしなく続いているような気がするから。
+[Dialog]
+[charslot]
+[name="？？？"]それなら、もっと頑張らないといけませんね！
+[Dialog]
+[playsound(key="$d_avg_walkmeadow",volume=1)]
+[charslot(slot="m",name="avg_npc_1784_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="アルトリア"]こんにちは、シスター・ヒルデガルト。
+[charslot(slot="m",name="avg_npc_1784_1#1$1",focus="m")]
+[name="ヒルデガルト"]ごきげんよう、アルトリアさん。
+[charslot(slot="m",name="avg_npc_1784_1#14$1",focus="m")]
+[name="ヒルデガルト"]ランチをお届けしに来たんです。パンに、アイスクッキー、それとジョッキ一杯のクラフトビールを併せてどうぞ！
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="アルトリア"]ありがとう。それで、頑張らないと、と仰ったのは？
+[charslot(slot="m",name="avg_npc_1784_1#1$1",focus="m")]
+[name="ヒルデガルト"]我々には、まだまだ仕事が残っていますからね。
+[charslot(slot="m",name="avg_npc_1784_1#4$1",focus="m")]
+[name="ヒルデガルト"]見てください、この幾重にも波打つ金色の麦穂を……ラテラーノはまた豊作の年を迎えました。
+[charslot(slot="m",name="avg_npc_1784_1#14$1",focus="m")]
+[name="ヒルデガルト"]私たちの食べる分を差し引いても、今年のランデン修道院は例年の倍の食糧を、ミルクパンとクラフトビールの製作用に回せるでしょう。そうすれば、大きな利益になりますよ！
+[charslot(slot="m",name="avg_245_cello_1#11$1",focus="m")]
+[name="アルトリア"]……
+[charslot(slot="m",name="avg_npc_1784_1#5$1",focus="m")]
+[name="ヒルデガルト"]なぜ笑っていらっしゃるのですか？
+[charslot(slot="m",name="avg_245_cello_1#11$1",focus="m")]
+[name="アルトリア"]あなたたちの暮らしの話を聞いていたら、この監獄がますます好きになってきたからよ。
+[charslot(slot="m",name="avg_npc_1784_1#1$1",focus="m")]
+[name="ヒルデガルト"]この監獄を尊重してくださるあなたのことを、私もますます好きになってきましたよ。
+[name="ヒルデガルト"]ちょっとお聞きしたいんですが、あなたは一体どんな罪を犯したんですか？　他のシスターが言うには、あなたの奏でる音色はとても感動的で、とても危険だという話でしたが。
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="アルトリア"]私からも、一つ伺いたいわ。
+[name="アルトリア"]確か、ランデン修道院の設立目的は、教皇やラテラーノ教会の重要な聖職者を保護することだったと思うけれど……
+[name="アルトリア"]ここはいつから「監獄」として機能するようになったの？
+[charslot(slot="m",name="avg_npc_1784_1#10$1",focus="m")]
+[name="ヒルデガルト"]特別な立場にある人を監視下に置くことも……ええと、重要な聖職者を保護し、ラテラーノの平和を守ることに繋がるからでは？
+[charslot(slot="m",name="avg_npc_1784_1#12$1",focus="m")]
+[name="ヒルデガルト"]初めからずっと、ランデン修道院の持つ意義は変わってなどいませんよ。
+[name="ヒルデガルト"]それに、聖都にとって重要な存在になればなるほど、この修道院は破産から遠ざかりますからね。
+[charslot(slot="m",name="avg_245_cello_1#9$1",focus="m")]
+[name="アルトリア"]ふぅん……
+[name="アルトリア"]リーベリであるあなたが、そこまで早くこの場所に馴染めるなんてね。
+[charslot(slot="m",name="avg_npc_1784_1#1$1",focus="m")]
+[name="ヒルデガルト"]ええと、どういう意味でしょう？
+[name="ヒルデガルト"]私はここで育ちましたから、馴染むも何も。
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="アルトリア"]……そう、なるほど。
+[charslot(slot="m",name="avg_npc_1784_1#1$1",focus="m")]
+[name="ヒルデガルト"]あっ、忘れるところでした。これ、昨日頼まれていた本です。借りてきましたよ。
+[charslot(slot="m",name="avg_245_cello_1#1$1",focus="m")]
+[name="アルトリア"]ありがとう。
+[charslot(slot="m",name="avg_npc_1784_1#1$1",focus="m")]
+[name="ヒルデガルト"]それにしても、どうして急に『聖徒行記』を読みたいとお思いに？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_245_cello_1#8$1",focus="m")]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_245_cello_1#10$1",focus="m")]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_245_cello_1#10$1",focus="none")]
+アルトリアは遠くを見つめた。
+彼女の背後には少々寂れた修道院があり、目の前には金色に輝く麦の波が広がっている。麦畑は聖都の端に接しており、さらにどこまでも彼方へと、果てしなく続いているように見えた。
+風が麦の間を吹き抜けても、余計な音一つ立たず、ラテラーノは静かに眠りに就いているかのようだ。
+[Dialog]
+[charslot(slot="m",name="avg_245_cello_1#2$1",focus="m")]
+[delay(time=1.5)]
+[name="アルトリア"]……もちろん告解のためよ。私は囚人だもの。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]

@@ -1,0 +1,483 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+ファボール区　ボルゴス通り　銃工房
+[Dialog]
+[playsound(key="$dooropenquite", volume=1)]
+[Delay(time=1.5)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1783_1#1$1",posfrom="200,0",posto="200,0",duration=1.5)]
+[delay(time=2.5)]
+[name="アモス"]……こんにちは、どなたかおられませんか？
+[Dialog]
+[charslot]
+さほど広くないその工房の中には、棚の代わりに聖徒の像が無造作に並べられており、想像を絶するポーズで客に向けて銃をアピールしていた。
+だがアモスが見る限り、客の姿はまるでない。ここまで歩いてくる間にも、自分以外に工房の入り口で立ち止まる者はいなかった。「寂れている」というのが第一印象だ。
+アモスは薄暗い明かりに照らされた聖徒像を見ながら、まさか工房の主まで不在ということはないだろう、と思った。工房に対して、彼が次に抱いた印象は、「不気味だ」というものだった。
+[charslot(slot="l",name="avg_npc_1783_1#1$1",posfrom="200,0",posto="200,0",focus="l")]
+[name="アモス"]パガニーニさん、いらっしゃいますか？
+[charslot(slot="l",name="avg_npc_1783_1#10$1",posfrom="200,0",posto="200,0",focus="l")]
+[name="アモス"]（銃工房のマスターにしては、可愛らしい響きの名前だな……）
+[Dialog]
+[charslot(slot="l",posfrom="200,0",posto="220,0",duration=1.5,focus="l")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[playsound(key="$bodyfalldown2",volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+辺りを見回していたアモスは、不意に何かにぶつかった。
+[Dialog]
+[charslot(slot="r",name="avg_npc_1781_1#1$1",duration=1.5)]
+[Background(image="61_g12_firearmsworkshop",screenadapt="coverall",fadetime=1.5)]
+[delay(time=2.5)]
+勢いよく振り返れば、大きく澄んだ目と視線が合う。その目は影の中から、じっとこちらを見つめていた。
+[charslot(slot="r",name="avg_npc_1781_1#1$1",focus="r")]
+[name="大きな目の持ち主"]……
+[charslot(slot="l",name="avg_npc_1783_1#4$1",posfrom="220,0",posto="220,0",focus="l")]
+[name="アモス"]た、たすけ……
+[charslot(slot="r",name="avg_npc_1781_1#1$1",focus="r")]
+[CameraShake(duration=0.3, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="大きな目の持ち主"]*ラテラーノスラング*、誰だあんたは！　勝手に縄張りに入ってきやがって――眼鏡を取ってくるから待ってろ！
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(slot="l",posfrom="220,0",posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[PlayMusic(intro="$darkness02_intro", key="$darkness02_loop", volume=0.6)]
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="大きな目の持ち主"]どれ……あんた、公務員か？
+[name="大きな目の持ち主"]悪かったな、近頃は仕事がないもんで奥で寝ていたんだ。まさかそこに、公人様が訪ねていらっしゃるとは。
+[charslot(slot="l",name="avg_npc_1783_1#10$1",focus="l")]
+[name="アモス"]枢機卿補佐官のアモスと申します。銃工房の接収について確認を取りに来ました。あなたが……
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]可愛らしい名前のパガニーニだよ。
+[charslot(slot="l",name="avg_npc_1783_1#4$1",focus="l")]
+[name="アモス"]……
+[name="アモス"]あれっ、リーベリですよね？
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]これがサンクタに見えるか？
+[charslot(slot="l",name="avg_npc_1783_1#1$1",focus="l")]
+[name="アモス"]あっ、すみません、そういう意味ではなく、この仕事に就いているリーベリには初めてお会いしたものですから。なにしろ、守護銃というのはサンクタだけが――
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]何か問題でも？
+[name="パガニーニ"]自分で作った料理を食わないコックなんざ、山ほどいるだろう。それと同じで、俺も自分が作った武器を自分では扱えないってだけのことだ。
+[name="パガニーニ"]銃器製造資格証の確認でもするか？　だが、俺の手で作られた守護銃はラテラーノ中にわんさかあるぞ。あんたが持ってるそいつだって、もしかすると……
+[charslot(slot="l",name="avg_npc_1783_1#10$1",focus="l")]
+[name="アモス"]――
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]これはこれは。一目で「一流」の仕事だとわかる代物だな。俺にはこんな技術とてもじゃないがありゃしねえ。
+[charslot(slot="l",name="avg_npc_1783_1#1$1",focus="l")]
+[name="アモス"]……
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]まあ、今更どうでもいいことだがな。どうせここは、じきに潰れるんだ。
+[name="パガニーニ"]直近の注文も全部キャンセルにしてあるし、新しく仕上げた銃は、公証人役場の連中にそのまま引き渡してくれればいい。
+[charslot(slot="l",name="avg_npc_1783_1#4$1",focus="l")]
+[name="アモス"]も、もう準備を終えていらしたんですね。私はてっきり……
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]面倒なことになると思ったか？　扱い辛そうな相手だと？
+[charslot(slot="l",name="avg_npc_1783_1#4$1",focus="l")]
+[name="アモス"]そ、そんなつもりは。
+[name="アモス"]ただ、この銃工房は百年以上の歴史を誇ると登記情報にありましたので。リーベリのあなたが、守護銃を作る道を選んだからには、ここはあなたにとってさぞ特別な場所なのだろうと――
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]もういいんだ。銃工房が過去の遺物になることは、ここ数年でみんなが気付いてた。今までその時を待ってただけさ。
+[name="パガニーニ"]本音はどうかと聞かれれば、もちろん嫌に決まってるがな。ここんとこ寝付けずに苦しんでた話でも聞いていくか？
+[charslot(slot="l",name="avg_npc_1783_1#1$1",focus="l")]
+[name="アモス"]言葉にしたいことがおありでしたら、告解ロボットを呼びましょうか。告解費は第七庁が負担いたしますので。
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]告解が必要になるのは、あんたのほうだと思うがね。
+[name="パガニーニ"]俺はもう引退間近のジジイだが、俺の弟子――ヴァンニーニはそうじゃない。あいつはまだ、自分の手で守護銃を一丁も作れちゃいないんだ。
+[name="パガニーニ"]銃工房をなくすからには、あいつの今後についてはあんたらが責任持って面倒を見てやってくれ。
+[charslot(slot="l",name="avg_npc_1783_1#1$1",focus="l")]
+[name="アモス"]もちろんです。銃工房の閉鎖は、銃の製造工程をよりルールに則った形にし、効率化するためのことですので。あなたやお弟子さんのような職人が貴重な人材であることに変わりはありません。
+[name="アモス"]生活関係の行政を管轄する第六庁に報告を上げておきますよ。ヴァンニーニさんが、ミカエレオン区に近日設立される製銃聖堂での仕事を得られるよう、推薦してほしいと。
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]「製銃聖堂」ね……フン。製造を始めたあとに、御大層な名前をつけたことを後悔しなけりゃいいんだがな。
+[charslot(slot="l",name="avg_npc_1783_1#5$1",focus="l")]
+[name="アモス"]私は無論、ラテラーノという国を信じて……
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]はいはい、そういうたわ言は聞き飽きてんだよ。
+[charslot(slot="l",name="avg_npc_1783_1#7$1",focus="l")]
+[name="アモス"]……では、問題がなければ、稼働停止への同意書類にサインをお願いします、パガニーニさん。
+[name="アモス"]ただいまをもって、こちらの銃工房はすべての業務を停止するものとします。今後の具体的な段取りについては、中庭公証人役場が担当いたします。
+[Dialog]
+[charslot(slot="r",posfrom="0,0",posto="-100,0",duration=1.5,focus="r")]
+[Delay(time=2)]
+[playsound(key="$d_avg_writerub",volume=1)]
+[Delay(time=2.5)]
+[charslot(slot="r",posfrom="-100,0",posto="0,0",duration=1.5,focus="r")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1783_1#7$1",focus="l")]
+[name="アモス"]それでは、また。
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]ああ。
+[Dialog]
+[playsound(key="$dooropenquite", volume=1)]
+[charslot(slot="l",afrom=1,ato=0,duration=1,isblock=false)]
+[charslot(slot="l",posfrom="0,0",posto="-200,0",duration=1.5)]
+[delay(time=2.5)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="26_g9_laterano_street",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1041_angel2_1#1$5",duration=1.5)]
+[delay(time=2.5)]
+[name="エクシア"]ファボール区、ボルゴス通り……超懐かしいなあ。
+[charslot(slot="m",name="avg_1041_angel2_1#9$5",focus="m")]
+[name="エクシア"]あはっ、ここだ！
+[Dialog]
+[charslot(slot="r",name="avg_npc_1783_1#1$1",posfrom="800,0",posto="800,0")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1,channel="1")]
+[charslot(slot="m",posfrom="0,0",posto="600,0",duration=5.5,isblock=false)]
+[charslot(slot="r",posfrom="800,0",posto="-100,0",duration=6,isblock=false)]
+[delay(time=3)]
+[playsound(key="$dooropenquite", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[delay(time=4)]
+[charslot(slot="r",name="avg_npc_1783_1#7$1",posfrom="-100,0",posto="-100,0")]
+[name="アモス"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="39_g1_monasteryentrance",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_696_1#1$1",focus="m")]
+[name="ループス"]やっと接続が済んだのか？
+[charslot(slot="m",name="avg_npc_001",focus="m")]
+[name="クランタ"]た、多分な。
+[name="クランタ"]こっちは外縁部で二日も待たされたんだ、早く外の空気が吸いたいよ！
+[charslot(slot="m",name="avg_npc_418_1#1$1",focus="m")]
+[name="フェリーン"]放浪中の私たちを移動修道院に招いたのはあのラテラーノ人たちのほうなのに、着いた途端に放置されるなんてね。
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=0.4)]
+[charslot(slot="m",name="avg_npc_369_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[name="忙しそうなシスター"]皆様、お待たせして申し訳ありません。
+[name="忙しそうなシスター"]現在、十二の移動修道院が立て続けにラテラーノへ到着しておりますことに加えて、万国サミットの期間中で人手が足りず……どうかご理解いただけますと幸いです。
+[name="忙しそうなシスター"]このあとですが、公証人役場がアンブロシウス区に短期滞在用の住宅をご用意しています。そちらに落ち着かれ次第、第六庁が戸籍や社会福祉関連の手続きを進めて参ります。
+[charslot(slot="m",name="avg_npc_696_1#1$1",focus="m")]
+[name="ループス"]ま、待った。つまりそれって、俺たち異種族もラテラーノに住んでいいってことか？
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]第二回万国サミットを契機として、ラテラーノはあらゆる種族に門戸を開きますので……
+[name="忙しそうなシスター"]ここは今や「あなたたちの都市」でもあるのですよ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="1")]
+[name="？？？"]ちょっと、オマケ、大丈夫？
+[name="？？？"]すぐに医者を呼んでもらってくるからね！
+[name="？？？"]やめて！
+[name="？？？"]あのサンクタたちに見つかったら……
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]失礼、通してくださいますか。
+[charslot(slot="m",name="avg_npc_001",focus="m")]
+[name="クランタ"]心配しないでくれ、シスター。
+[charslot(slot="m",name="avg_npc_418_1#1$1",focus="m")]
+[name="フェリーン"]こっちでどうにかできるわ。あなたのほうは忙しいんでしょう？
+[Dialog]
+[charslot]
+[stopsound(channel="1",fadetime=1)]
+[charslot(slot="m",name="avg_npc_1807_1#4$1",duration=1.5)]
+[delay(time=2.5)]
+[name="オマケ"]くっ――
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]そちらのサルカズさん……妊娠されているんですか？
+[charslot(slot="m",name="avg_npc_1807_1#6$1",focus="m")]
+[name="オマケ"]修道院にみんなを招き入れた時はサルカズも拒まなかったくせに、今更文句でも言うつもり？
+[name="オマケ"]だったら今すぐ出て行くわ！　サンクタの助けなんていらない！
+[charslot(slot="m",name="avg_npc_1807_1#5$1",focus="m")]
+[name="オマケ"]だから私たちに手を出さないで！
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]……
+[Dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[name="？？？"]皆様、誤解があるようですね。修道院の通常の対応規定には、妊婦の受け入れ方まで書かれておりませんから、シスター・アンジーも咄嗟の判断ができなかったのでしょう。
+[name="？？？"]シスター・アンジー、あとは私が引き受けます。彼女を育児聖堂へ送り届けてきますよ。
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]ですが、育児聖堂はまだ正式には対外開放されておりませんし、規定違反になってしまいますよ。
+[name="忙しそうなシスター"]それに、どうしてこちらにいらっしゃるのですか？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",duration=1.5)]
+[delay(time=2.5)]
+[PlayMusic(intro="$m_avg_dreamrite_intro", key="$m_avg_dreamrite_loop", volume=0.6)]
+[name="？？？"]主が、私をあるべき場所へと遣わしてくださったのです。
+[name="？？？"]規定など形だけのもの。育児聖堂が病気の母親を見捨てるなどあってはならないことですよ。
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]……わかりました。
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]……
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]始めまして、私はケファと申します。ラテラーノ育児聖堂の総主教……言うなれば責任者といったところです。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="none")]
+金髪の女性はゆっくりとサルカズのほうを向いた。その柔らかくもはっきりとした声色は、慎重に何かを探っているかのようだ。
+サルカズの視線は、彼女の頭に生えた二本の黒い角へ向けられ、続けてその目元へと移った。両目の位置を覆うマスクについた複雑な模様の奥には、ただ虚無だけが広がっている。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]あんたは一体……？　サルカズなの、サンクタなの？　それに、目が見えてないみたいだけど。
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]本来、サルカズやサンクタといった言葉で、隔たりを強調する必要などないのです。私とあなたはとてもよく似ていると思いますよ……どちらも、かけがえのない命を育んでいるのですから。
+[name="総主教"]ゆえに私はこの目が盲いていようと、あなたとそのお腹にいる新たな命を感じ取ることができるのです……その子は、あなたにどれほどの不安と喜びをもたらしたことでしょうね。
+[charslot(slot="m",name="avg_npc_1807_1#2$1",focus="m")]
+[name="オマケ"]サルカズはそんな喋り方なんてしないものよ。あんたやっぱりサンクタね。子持ちの変わったサンクタよ。
+[charslot(slot="m",name="avg_npc_1807_1#7$1",focus="m")]
+[name="オマケ"]さっき言ってた育児なんとかいうのって、どういう場所？　あんたはそこで子供を育ててるわけ？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]我々は今、その「育児聖堂」の陰に立っているのですよ。あれは、新たな命が生まれ、育まれる場所です。
+[charslot(slot="m",name="avg_npc_1807_1#10$1",focus="m")]
+[name="オマケ"]「聖堂」って……子供を育てるためだけの？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]新たな命の誕生というのは、神聖なものです。命がそうして芽吹けばこそ、ラテラーノの信仰は受け継がれ、我々が未来を形作ることもできるのですよ。
+[charslot(slot="m",name="avg_npc_1807_1#2$1",focus="m")]
+[name="オマケ"]言ってる意味がよくわからないんだけど。
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]荒野を彷徨い続けたあなたは、妊娠中に適切な処置を受けられず、きっと弱っておいででしょう……それはその子も同じことです。
+[name="総主教"]だというのに、聖都を離れ、荒野へ戻るおつもりなのですか？
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]私は……
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]……
+[name="総主教"]先ほど聞こえてきたのですが、「オマケ」というのがあなたのお名前なのですか？
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]そうよ、悪い？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]サルカズの困窮と苦難は想像がつきます……サルカズの母親の中には、我が子に思い付きで「オマケ」と名付け、自らの人生のおまけとして扱う者もいるのでしょうね。
+[charslot(slot="m",name="avg_npc_1807_1#7$1",focus="m")]
+[name="オマケ"]この名前は母さんが付けたものじゃない。私がこの子を身ごもった後に自分でつけたのよ。私がこの子のオマケなのか、この子が私のオマケなのかなんて、誰にもはっきり言い切れないでしょ？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]ああ……
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]文句でもあるの？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]……あなたはその子との繋がりをとても大切にしているのですね。自らの人生に小さな同行者が加わったことを、誇りを持って皆に伝えるための名前なのでしょう。
+[name="総主教"]その素晴らしい想いを前にして、種族の違いや憎しみなど関係ありません。
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]……
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]あなたが何を案じていらっしゃるかは理解できます。
+[name="総主教"]今、この修道院にいるすべての人が――サンクタ、フェリーン、クランタ、ループス、ヴァルポ、その全員が、証人となってくれるでしょう。
+[name="総主教"]どうか安心してください。万国サミットが開かれている今は、多くの異種族がラテラーノに集っています。この国も、衆人環視の中で妊婦に手を出すような真似はいたしません。
+[charslot(slot="m",name="avg_npc_418_1#1$1",focus="m")]
+[name="フェリーン"]……
+[charslot(slot="m",name="avg_npc_001",focus="m")]
+[name="クランタ"]（うなずく）
+[charslot(slot="m",name="avg_npc_696_1#1$1",focus="m")]
+[name="ループス"]（目配せする）
+[charslot(slot="m",name="avg_npc_369_1#1$1",focus="m")]
+[name="忙しそうなシスター"]……
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]私も保証いたしますので。
+[charslot(slot="m",name="avg_npc_1807_1#1$1",focus="m")]
+[name="オマケ"]わかったわ。
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]ご理解に感謝いたします。
+[name="総主教"]ラテラーノに誕生するこの新たな命を共に迎えましょう。それは隔たりを越え、まったく新しい意味を持つことになります。此度の出産は一つの偉業となるでしょう。
+[name="総主教"]私はそのためにこそ……主によってここへ遣わされたのです。
+[name="総主教"]遅ればせながら、ようこそ、ラテラーノへ……今まさに、この国は皆様を必要としています。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g12_firearmsworkshop",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]……
+[name="パガニーニ"]どうあれ、力にはなれんぞ。
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[name="エクシア"]ちょっと、まだ何も言ってないでしょ！
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]なら聞くが、お嬢ちゃんは守護銃をメンテナンスしてほしいか？　それとも弾薬を注文したいのか？
+[name="パガニーニ"]どっちにせよ、工房を出て左へ曲がりな。あの公務員どもより早く着ければ、ミカエレオン区内にまだ閉鎖されてない銃工房が三、四軒くらいは残ってるかもな。
+[name="パガニーニ"]俺は10分前、第七庁の接収書類にサインしたんだ。今ここで何かしたら、そいつは違法行為になる……
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[name="エクシア"]街全体を揺るがすような大爆発を起こしたいって言ったら？
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]興味ないな。
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[name="エクシア"]お願い！　「銃工房の王」パガ先生様！　みんなが爆発に興味なくしてたって、先生だけはそれじゃダメでしょ！
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]……即興の二つ名つけておだてるのはよせ。
+[charslot(slot="l",name="avg_1041_angel2_1#9$1",focus="l")]
+[name="エクシア"]パガ先生の事情はあたしもわかってるよ。
+[name="エクシア"]ただ、今のラテラーノの状況を理解するために、ちょっと手伝ってほしいだけなんだ――たとえばここの設備や、先生の知識を貸してもらうとかさ！
+[name="エクシア"]悪いんだけど、実はあたし、すっごく急いでて。
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[name="エクシア"]うちのボスはいつも言ってるんだ。何があろうと、ペンギン急便の任務達成もその後のパーティーも阻むことはできないってね！
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]うーむ……
+[charslot(slot="l",name="avg_1041_angel2_1#9$1",focus="l")]
+[name="エクシア"]先生が直接何かする必要はないんだよ。それなら法に触れたりしないでしょ？
+[charslot(slot="r",name="avg_npc_1781_1#3$1",focus="r")]
+[name="パガニーニ"]その守護銃を俺のコレクションに向けるんじゃない。
+[name="パガニーニ"]*ラテラーノスラング*、しかもその銃は俺の作ったもんじゃないか――
+[charslot(slot="l",name="avg_1041_angel2_1#9$1",focus="l")]
+[name="エクシア"]あはっ、気付いちゃった？
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[name="エクシア"]じゃあこれの威力も知ってるよね！
+[Dialog]
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="none")]
+[playsound(key="$dooropenquite", volume=1)]
+[Delay(time=1.5)]
+[name="？？？"]師匠！　パオラ先生に頼んで、師匠の新しい眼鏡を作ってもらいましたよ！　でも随分お小言を言ってました。あんな古臭い眼鏡を使い続けるなんて、自分をいじめてるようなものだって……
+[name="？？？"]とにかく、早く試してみてください！
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1779_1#3$2",duration=1.5)]
+[Delay(time=2)]
+[name="？？？"]――って、師匠、どうしたんですか！？　この方は！？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_1041_angel2_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1779_1#3$2",focus="l")]
+[name="エクシア"]あれっ？　キミ、昔はあんまり喋れなかったよね！　いつからそんなに喋れるようになったの？
+[name="エクシア"]名前はなんて言ったっけ。ヴァンリム？　ヴァニス？　じゃなくて――
+[charslot(slot="r",name="avg_npc_1779_1#11$2",focus="all")]
+[name="エクシア＆ヴァンニーニ"]――ヴァンニーニ！
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[name="エクシア"]あたしたち、今も息ぴったりみたいだね！
+[charslot(slot="r",name="avg_npc_1779_1#6$2",focus="r")]
+[name="ヴァンニーニ"]思い出しました……エル姉ですよね！　昔、初めての守護銃を買いに工房に来た……
+[name="ヴァンニーニ"]お店にお客さんが来る時はいつも、邪魔をしないようにと師匠から言われてたんですが……あの日は外がすごく騒がしかったので、どうしても好奇心を押さえられなくて……
+[name="ヴァンニーニ"]結局、師匠に見つかっちゃったんですよね。ただ、怒られるのが怖かったので、それ以外のことはよく覚えていないんです……ごめんなさい！
+[charslot(slot="l",name="avg_1041_angel2_1#1$1",focus="l")]
+[name="エクシア"]そうだったの？　あの時って、キミ怖がってたっけ……？
+[charslot(slot="r",name="avg_npc_1779_1#4$2",focus="r")]
+[name="ヴァンニーニ"]（うなずく）
+[charslot(slot="l",name="avg_1041_angel2_1#1$1",focus="l")]
+[name="エクシア"]おかしいなぁ、楽しそうにしてたと思ったんだけど。
+[charslot(slot="r",name="avg_npc_1779_1#1$2",focus="r")]
+[name="ヴァンニーニ"]ところで、今日はどんなご用事でいらしたんですか？
+[charslot(slot="l",name="avg_1041_angel2_1#9$1",focus="l")]
+[name="エクシア"]（まばたきして視線を送る）
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1781_1#3$1",focus="m")]
+[name="パガニーニ"]ヴァニー。
+[name="パガニーニ"]さっき第七庁の人が来てな。この工房はもう……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_1041_angel2_1#9$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1779_1#11$2",focus="r")]
+[name="ヴァンニーニ"]私はまだ正式な製銃士ではないですし、この工房の職人というわけでもないですから、法に触れることはないですよね。
+[Dialog]
+[charslot(slot="l",name="avg_1041_angel2_1#3$1",focus="l")]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_npc_1779_1#11$2",focus="r")]
+[name="ヴァンニーニ"]師匠、こちらのお客さんの対応、私に任せてもらえませんか？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1802_1#1$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1801_1#1$2",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_npc_1801_1#1$2",focus="r")]
+[name="頑固な子"]先生みーつけた！
+[charslot(slot="l",name="avg_npc_1802_1#1$2",focus="l")]
+[name="うぬぼれ屋の子"]どこ行ってたの？　先生はわたしたちに見つからないように隠れてるんだってロミアは言うけど、そうなの？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#11$1",focus="m")]
+[name="アンドアイン"]……
+[charslot(slot="m",name="avg_npc_1800_1#12$1",focus="m")]
+[name="アンドアイン"]いいや、まさか。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1802_1#1$2",focus="r")]
+[charslot(slot="r",name="avg_npc_1801_1#1$2",focus="r")]
+[name="頑固な子"]じゃあ一緒に「光輪ゲーム」しよ！
+[Dialog]
+[charslot(slot="l",name="avg_npc_1802_1#1$2",focus="none")]
+[name="？？？"]アンドアインおじさんは用事があるから、今日は私が遊んであげましょう。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1780_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1800_1#11$1",focus="m")]
+[name="アンドアイン"]ヴェルリヴ閣下。
+[name="アンドアイン"]少し個人的な用事を済ませたら、すぐに戻りますので。
+[charslot(slot="m",name="avg_npc_1780_1#1$1",focus="m")]
+[name="ヴェルリヴ"]そう固くならないで。あなたの休職申請は受け取ってるから。それよりあなた、休暇中にまでここで子供たちと遊んでいるの？
+[charslot(slot="m",name="avg_npc_1800_1#11$1",focus="m")]
+[name="アンドアイン"]……「光輪ゲーム」をするだけなら、そう時間はかかりませんからね。
+[charslot(slot="m",name="avg_npc_1780_1#3$1",focus="m")]
+[name="ヴェルリヴ"]だけど、そのあとは？　子供たちがゲームだけであなたを帰してくれると思う？
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="アンドアイン"]……どうにかします。
+[charslot(slot="m",name="avg_npc_1780_1#1$1",focus="m")]
+[name="ヴェルリヴ"]聞いた話だと、あなたは子供たちの頼みを絶対に断れないそうね。
+[charslot(slot="m",name="avg_npc_1780_1#8$1",focus="m")]
+[name="ヴェルリヴ"]その真面目さと敬虔さを総主教に買われ、直々に育成された最初の保育士が……かつては法を犯した罪人だったなんてこと、誰に想像できるかしら？
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="アンドアイン"]閣下、私はただ、友人のホームパーティーに参加しに行くだけですよ。これが久しぶりの再会なのです。
+[charslot(slot="m",name="avg_npc_1780_1#1$1",focus="m")]
+[name="ヴェルリヴ"]固くならないでって言ったでしょ。あなたが風船を膨らませたり、ケーキを焼いたりしている時に、ついでにラテラーノを爆破してしまうんじゃないか、なんて思ってないわ。
+[name="ヴェルリヴ"]ただ不思議なだけよ。総主教の目に映るあなたと、教皇庁の記録に残されているあなたは、まるで別人みたいだから。
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="アンドアイン"]……総主教は、私の罪を無視なさってもいなければ、否定なさってもいません。単に、あの方に対する私の理解のほうを重視してくださっただけです。
+[charslot(slot="m",name="avg_npc_1800_1#11$1",focus="m")]
+[name="アンドアイン"]我々が出会った当時、あの方はまだ総主教ではありませんでした。私は打ち棄てられた移動修道院の中で天災をやり過ごしていて、そこで偶然あの方と出会ったのです。
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]総主教は目の不自由な方ですが、代わりにとても鋭い聴覚をお持ちです。あの時、源石の波が遠くの山へと打ち付ける轟音が響いている中で、あの方は地下室からの泣き声にお気付きになりました。
+[name="アンドアイン"]地下へ向かえば、そこには母親が一人、血だらけで息も絶え絶えになりながらうずくまっていました。彼女は総主教を威嚇して我が子を守ろうとしながらも、ただ苦痛に表情を歪めるばかりでした。
+[charslot(slot="m",name="avg_npc_1780_1#4$1",focus="m")]
+[name="ヴェルリヴ"]それって、あなたと総主教が最初に聖都へ連れ帰ってきたあの母親のことよね？　彼女の怪我は、指折りの医師ですら手を引くような状態だったと記憶しているわ。
+[name="ヴェルリヴ"]そんな状態の彼女が、どうして助かると思ったの？
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]私個人としては、あの夜を生き延びることさえ不可能だと思っていましたよ。ですが、総主教は当然のように、奇跡を信じておられました。
+[charslot(slot="m",name="avg_npc_1800_1#12$1",focus="m")]
+[name="アンドアイン"]そして、あの不憫な母親を私たちの手で救うことができると、私にも信じさせようとしたのです。
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="アンドアイン"]結果として、彼女は助かりました……当時、医療知識に乏しかった私は、ただできる限り彼女の心を感じ取り、彼女に寄り添い、面倒を見ることしかできませんでしたが。
+[charslot(slot="m",name="avg_npc_1780_1#9$1",focus="m")]
+[name="ヴェルリヴ"]あなたたちが荒野で座礁した修道院に三ヶ月も滞在していたのは、そんなたった一つの「奇跡」を起こすためだと？
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="アンドアイン"]……ラテラーノには奇跡が必要でしたから。
+[charslot(slot="m",name="avg_npc_1780_1#8$1",focus="m")]
+[name="ヴェルリヴ"]あなたたちって、思っていたよりもずっと理性的なのね。評価を改めるべきなのかも。
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="アンドアイン"]……それで教皇庁が育児聖堂の活動を支援してくださるのなら。
+[charslot(slot="m",name="avg_npc_1780_1#1$1",focus="m")]
+[name="ヴェルリヴ"]そういうところ、理性的すぎて少し退屈なくらいね。
+[name="ヴェルリヴ"]さて、それじゃあ急いで行ってきなさい、アンドアイン。私もせめて、降誕の儀式が無事に執り行われるところくらいは見届けたいから。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]

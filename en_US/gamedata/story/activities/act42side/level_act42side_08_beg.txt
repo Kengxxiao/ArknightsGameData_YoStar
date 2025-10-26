@@ -1,0 +1,1163 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="70,0",posto="0,0",duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[name="Mon3tr"]Over here, Doctor.
+[name="Mon3tr"]Squeeze in a bit, so this dessert cart's in front.
+[Dialog]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="m",name="avg_npc_1794_1#1$1",duration=1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crowdrun", volume=0.8)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[delay(time=1.2)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.6)]
+[charslot(slot="l",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[charslot(slot="r",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[delay(time=1.2)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="50,0",posto="-70,0",afrom=0,ato=1,duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="50,0",posto="100,0",afrom=0,ato=1,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#3$1",focus="l")]
+[name="Mon3tr"]Finally, a chance to catch my breath.
+[Dialog]
+[charslot]
+[Decision(options="Thanks for going through all that.;Whose dessert cart is this?", values="1;2")]
+[Predicate(references="1;2")]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="Gap-Toothed Girl"]You must be here for the ceremony, seniora!
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="Gap-Toothed Girl"]W-Would you like to try my ice cream?
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="n")]
+Before Mon3tr can even refuse, the little girl gleefully shoves a cup of ice cream into her hands.
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="Gap-Toothed Girl"]I-It's not a flavor you can get anywhere else in Laterano—
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",focus="l")]
+[name="Mon3tr"](I can take her out. Nobody would notice.)
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="n")]
+As Mon3tr gives you this paranoid suggestion, she plops a spoonful of ice cream into her mouth without thinking about it.
+[charslot(slot="l",name="avg_4179_monstr_1#8$1",focus="l")]
+[name="Mon3tr"]Wow. That's really good...
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[delay(time=1)]
+[Dialog]
+[charslot]
+[Decision(options="*ahem* Could you tell me your name, kid?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_1793_1#3$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="r",name="avg_npc_1794_1#1$1",posfrom="-100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1793_1#10$1",focus="l")]
+[name="Gap-Toothed Girl"]It's got my answer for me, confessor.
+[charslot(slot="l",name="avg_npc_1793_1#11$1",focus="l")]
+[name="Idida"]Dadadeedeeda, I'm called Idida.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]You named yourself after the dessert cart's music?
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="Idida"]Don't be silly! I customized it to sound like my name!
+[Dialog]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="n")]
+[Decision(options="Did you know those Guards, Idida—;Aren't you scared of this lady, Idida—", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1793_1#5$1",focus="m")]
+[name="Idida"]Wow! I've never heard a confessional speak like that before!
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="m")]
+[name="Mon3tr"]It's the latest model.
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="n")]
+[Decision(options="(Sighs);Looks like she buys that explanation.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#12$1",focus="m")]
+[name="Mon3tr"]Were you helping cover for us just now, Idida?
+[charslot(slot="m",name="avg_npc_1793_1#10$1",focus="m")]
+[name="Idida"]Yep... Because all of Laterano needs to change!
+[name="Idida"]That's what you think too, right?!
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]...
+[Dialog]
+[charslot]
+[Decision(options="...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="Idida"]W-Was I just imagining things? You're the first person to say my sugar-free carbonated-water-flavored ice cream was tasty, seniora!
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"](Well, that explains why it's so refreshing.)
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="Idida"]Mamma and Tata were right, this is a rocky road I walk... But I've finally found a little bit of success!
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]Mind... explaining a bit more?
+[charslot(slot="m",name="avg_npc_1793_1#6$1",focus="m")]
+[name="Idida"]'Desserts connect every Lateran'—but if you eat too much sugar, not only are you gonna get bad teeth, even your halo will start getting cavities!
+[name="Idida"]Tata's a dentist. Every time he says that, people think he's just trying to get more business for his clinic.
+[charslot(slot="m",name="avg_npc_1793_1#9$1",focus="m")]
+[multiline(name="Idida")]But right now, my halo, err, kinda feels like the rotten tooth I just lost. It's making me feel... not so good...
+[charslot(slot="m",name="avg_npc_1793_1#12$1",focus="m")]
+[multiline(name="Idida")] I believe it's the Lord giving me a revelation!
+[charslot(slot="m",name="avg_npc_1793_1#11$1",focus="m")]
+[name="Idida"]So I'm gonna practice what I preach! I'll change Laterano's eating habits, and rebuild our connections with the power of sugar-free ice cream!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",focus="m")]
+[playsound(key="$d_avg_robotwalk", volume=1)]
+[delay(time=1.5)]
+[charslot]
+[Decision(options="That's a grand dream you got there, Idida.;Would you support this young citizen's vision, madam?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#3$1",focus="m")]
+[name="Mon3tr"]...
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]Mind if we take a walk together? I'd like to hear more about this... connection between halos and tooth decay.
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="Idida"]O-Okay!
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"](We should be able to avoid the guys chasing us with this kid around. You need to get in touch with Exusiai ASAP, Doctor.)
+[Dialog]
+[charslot]
+[Decision(options="I'm trying.", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Exusiai", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="Exusiai"]Hey there, Leader!
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[name="Exusiai"]Sounds like you were able to loosen that comms control thingy, since we're having a long-distance call and all.
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="It's not entirely a good thing, Exusiai.", values="1")]
+[Predicate(references="1")]
+[Decision(options="This means everything in the dream is collapsing faster.;This means the calamity in reality is getting worse.", values="1;2")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="Exusiai"]Ugh. Yeah, I figured as much.
+[name="Exusiai"]These guys have nearly all the non-Sankta holed up in the Shrine of Nurtury. They want to put on an even bigger Nativity.
+[name="Exusiai"]First time around, an arborbeast got a halo. This time, they want to give <i>everyone</i> halos...
+[name="Exusiai"]I dunno how they're gonna do it, but this kind of change is a bit too quick and crazy.
+[name="Exusiai"]The way you explained it, Leader, whatever happens in this dream will eventually become reality?
+[Predicate(references="2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="Exusiai"]Ugh. Yeah, I figured as much.
+[name="Exusiai"]The way you explained it, Leader, this big, ugly building really is poking up out of Laterano's streets, and it's spewing out haloed monsters to chase people around?
+[name="Exusiai"]Sounds like reality's a lot scarier than the dream...
+[Predicate(references="1;2")]
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="What you said is what I saw, Exusiai.", values="1")]
+[Predicate(references="1")]
+[Decision(options="But some people are starting to awaken.;Variables in reality are making the dream skip some steps.", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="Exusiai"]...
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="Exusiai"]Man, this is WAY too complicated for me. Just tell me: what's the worst thing that might happen?
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="Laterano might stop existing entirely.", values="1")]
+[Predicate(references="1")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#6$1", duration = 0)]
+[name="Exusiai"]Whew, yeah, that's a REALLY big deal!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="Exusiai"]Well, no matter the situation, I can still find the jerk behind all this and free everyone from 'fake Laterano', right?
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="We're limited to keeping you clear-headed and free to move around.;The restrictions Mon3tr and I are under haven't been lifted yet.;Mon3tr and I are still looking into other leads.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[interlude(channel = 3, switch = true)]
+[name="Exusiai"]Got it! Leave Laterano's troubles to a Lateran like me!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#5$1", duration = 0)]
+[name="Exusiai"]Oops, gotta keep my voice down. The <i>grand</i> Nativity's about to start, and it wasn't easy finding a chance to sneak in, heheh.
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="Mon3tr and I will keep tearing up the streets.;Mon3tr and I will keep eyes off of you.", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="Exusiai"]Say, how <i>did</i> the two of us meet again?
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#2$1", duration = 0)]
+[name="Exusiai"]One of Sora's releases? Texas's birthday party? That time Penguin Logistics crashed into the Lungmen office while cracking down on the Bloodhammer gang?
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="Exusiai"]Oh, or was it that time I was planning on stealing a few sick old racing beasts when I ran into you on your way to buy their freedom?
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="We definitely met in Lungmen, at least.;I don't think it was any of those.", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="Exusiai"]Must've been... what, five years ago now?
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#3$1", duration = 0)]
+[name="Exusiai"]Well, here's to yet another beautiful partnership, Leader.
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="Likewise, Exusiai.;Stay safe, Exusiai.", values="1;2")]
+[Predicate(references="1;2")]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g1_nurserytemplesquare", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_avg_dreamrite_intro", key="$m_avg_dreamrite_loop", volume=0.6)]
+[playsound(key="$d_avg_comfortbell", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_soldiersstep",channel="step2",loop=false, volume=0.7)]
+[stopsound(channel="step2",fadetime=4)]
+[PlaySound(key="$d_avg_armour", volume=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_358_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(duration=0.3)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="Gun-Knight"]Everyone is in position, Reverend Patrizion.
+[name="Gun-Knight"]Next, we will coordinate with the shrine patrol to clear the surrounding streets, lock down the intersections, and ensure nobody is wandering about.
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="Patrizion"]Gratias.
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="Gun-Knight"]Every gun-knight gathered together, our ammunition allocations and fire restrictions fully lifted... There's never been so big an event in the history of our order, has there?
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="Patrizion"]The Nativity is of great significance to Laterano.
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="Patrizion"]The black snow on the ice of Sami, the hole in the sky above Leithanien, even the raging tides that dash against the coast, are all in alignment with the true calamity that has been prophesied.
+[name="Patrizion"]Imagine how terrifying such a disaster would be.
+[name="Patrizion"]When that time comes, two-hundred-odd gun-knights taking to the field would be like a child throwing stones into the sea.
+[name="Patrizion"]I fear our holy city, which has stood tall for millennia, will fade away.
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="Gun-Knight"]...
+[name="Gun-Knight"]The Pontifica Cohors and the Notarial Hall are still pursuing Lemuel and her co-conspirators.
+[name="Gun-Knight"]There is something else you must know... The nurturer who was guiding Mostima and Fiammetta was just attacked.
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="Patrizion"]—!
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="Gun-Knight"]Would you like to go and check the scene, Reverend?
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="Patrizion"]...
+[name="Patrizion"]...No.
+[name="Patrizion"]My post... is here.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="Nurturer"]The time has come.
+[name="Nurturer"]All our Liberi brethren, please go to the Hall of Enlightenment.
+[charslot(slot="m",name="avg_npc_370_1#1$1",focus="m")]
+[name="Nervous Nun"]...
+[charslot(slot="m",name="avg_npc_1784_1#3$1",focus="m")]
+[name="Hildegard"]...
+[charslot(slot="m",name="avg_npc_1781_1#3$1",focus="m")]
+[name="Paganini"]...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="-100,0",posto="-100,0")]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0")]
+[charslot(slot="m",name="avg_npc_1787_1#1$1")]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1787_1#1$1",focus="m")]
+[name="Nurturer"]The time has come.
+[name="Nurturer"]Over here, please. Once the other races have been bestowed their halos, the Matriarch shall mend the broken halos and wings of the fallen angels, so that we may all regain empathy with our people.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="a")]
+[SoundVolume(volume=0.4, channel="a",fadetime=2)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1, loop=true, channel="c")]
+[StopSound(channel="c", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]It has begun, Matriarch.
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]I thank you all. You have forsaken nearly all rest since the establishment of this shrine.
+[name="Matriarch"]There have been many mishaps since the last Nativity. We must advance our plans. This shrine's mission must be seen to completion as quickly as possible.
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]To this day, we have walked the same path, Matriarch. This is something we realized long ago.
+[name="Nurturer"]Oh, yes, there was one other thing on my mind. Today's ceremony is all about bestowing halos on the non-Sankta rather than a birth, so why are we still using the name 'Nativity'?
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Is there a better term for it?
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]...
+[Dialog]
+[charslot]
+The nurturers lead the peoples of various races into the Hall of Enlightenment, converging toward its center. The grand procession is like a herd of migratory beasts, yet none speak a word.
+There is only the rhythmic tinkling of countless comfort bells.
+As if in response, the Matriarch lifts her head toward the crowd.
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Henceforth, all who are sheltered by the holy city shall share one destiny, entwined into a singular whole. Can this be called anything but the rebirth of Laterano?
+[Dialog]
+[musicvolume(volume=0,fadetime=1)]
+[Delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$glass", volume=0.6)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.5,delay=0.6)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_sunshine_upperedge",layer=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]——!
+[Dialog]
+[charslot]
+[musicvolume(volume=0.6,fadetime=1.5)]
+[delay(time=1)]
+The crack of shattering glass cuts through the calming chimes of the comfort bells.
+A bullet from a sniper rifle. Its source is unknown, but it flies straight for the Matriarch's sightless eyes—
+Blinding sunlight seeps in.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="26_g12_laterano_office", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=1)]
+[musicvolume(volume=0.2,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="Lemuen"]That strange couple at the door...
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="Notarial Hall Employee"]Looks like they're deciding where to go to dinner using a roulette wheel. Interesting idea, isn't it?
+[Dialog]
+[charslot]
+[name="Lemuen"]Mhm. So they're the ones...
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="Notarial Hall Employee"]...who wish to adopt you.
+[Dialog]
+[charslot]
+[name="Lemuen"]But why won't they come in and tell me that themselves...?
+[name="Lemuen"]Oh, I get it. They don't want to put too much pressure on me.
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="Notarial Hall Employee"]Now why do you think that?
+[Dialog]
+[charslot]
+[name="Lemuen"]Because they're pretending to fiddle with their guns while actually looking our way.
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="Notarial Hall Employee"]Haha, nothing ever gets past you, does it? Yes, I reached out to them before they came here.
+[name="Notarial Hall Employee"]Your parents were in that caravan raid... and the Notarial Hall's been trying to arrange things with a few families for the better part of a year now, but nobody's bitten yet.
+[name="Notarial Hall Employee"]You're the strongest child I've ever met, En, but you've still got a long way to go, and we can't let a kid live all by herself.
+[Dialog]
+[charslot]
+[name="Lemuen"]I know, seniora.
+[name="Lemuen"]I'm not annoyed or anything, it's just... If I'm going to accept the kindness of others, I'm going to have to be a good kid myself! It's really, really important!
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="Notarial Hall Employee"]Well, the long and short of it is, they wanted me to tell you that they really like you.
+[Dialog]
+[charslot]
+[name="Lemuen"]I also think they're really... Can I have a week, no, three days? I'll think things over.
+[name="Lemuen"]Once I make a decision, I won't go back on it!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g12_firearmsworkshop", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="Paganini"]Is this the one that feels right for you?
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="Lemuen"]Mhm.
+[charslot(slot="m",name="avg_npc_1798_1#1$1",focus="m")]
+[multiline(name="Lemuel")]Whoa, a sniper rifle. If it was me, I would never choose that one...
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[multiline(name="Lemuel")] No, when it's my turn in a few years, I'll pick lots and lots and lots of guns!
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="Lemuen"]Haha, sounds good.
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="Paganini"]Well, I have to remind you that this fellow's been sitting here a few years now. Never been picked. Best think it over.
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="Lemuen"]Hmm... It's really quiet.
+[charslot(slot="m",name="avg_npc_1781_1#1$1",focus="m")]
+[name="Paganini"]No, no, what I meant was, this sort of gun's different from the others. Truth be told, it's not very suited to you lively Sanktas.
+[name="Paganini"]When you're on the battlefield, you won't get many chances to fire it. You'll have to make every shot count.
+[name="Paganini"]Whether you're trying to protect something or destroy it, you'll need to have a sharper eye, a sharper mind, and take on more risks and costs...
+[name="Paganini"]Because you can pull the trigger, or let it go, but you can't afford to hesitate.
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="Lemuen"]...
+[Dialog]
+[charslot]
+Today is Lemuen's birthday. Today, she chooses her patron firearm, giving even more meaning to this already extremely important day to the Sankta.
+The gunsmith speaks with all seriousness. Her mother and father behind her and all her friends are silent. Even the ever-vivacious Lemuel keeps her mouth closed like a good girl for once.
+Despite the silence, Lemuen knows they are all looking right at her.
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="Lemuen"]This is the one, Master Pag. Please guide me through selecting the other parts.
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[name="Lemuel"]Nice!
+[name="Lemuel"]You don't need to worry about it not having the chance to fire, Master Pag. You could smack people real hard with a gun this big, and my sis is super strong!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cave_5", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="Andoain"]—!
+[name="Andoain"]Through the spiritual light, even the darkest stain can be cleansed. With a pious heart, even a savage monster can wade out of the mud.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_frdrgnld", volume=1)]
+[Delay(time=1)]
+[name="Lemuen"]—Hah—
+[name="Lemuen"]Put that down, Captain. I've got you in my sights.
+[name="Lemuen"]You're unstable, I can sense it. Calm down. That thing's affecting your mind. It's evoking your disappointment in Laterano.
+[name="Lemuen"]I know you submitted your resignation before we left... But even if you're determined to return to the wilderness, right now, you're still one of us.
+[name="Lemuen"]Think about the fried cheese we ate before we left, okay? Think about that fowlbeast hat Fiammetta got you, the soft and downy one.
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="Andoain"]My disappointment in Laterano... No, no... Far from it! He showed me how Laterano can save everyone.
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="n")]
+[name="Lemuen"]None of us know if what you're seeing is the truth of reality, or illusions and lies. Mostima will be here soon. She has a way to get that thing off you.
+[name="Lemuen"]We can start looking into its secrets <i>afterwards</i>. Alright?
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="Andoain"]There is no 'afterwards'! It's fading away! I must hold onto it... You know it's no illusion, Lemuen! It's certainly not lies!
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="m")]
+[PlaySound(key="$d_avg_originiumcast", volume=1)]
+[name="Andoain"]You saw those people locked in stasis, outside of time, down in the underground palace. Those who do not die yet do not live.
+[name="Andoain"]You heard what that mad Sarkaz said to his shadow: 'The future shall have no secrets.'
+[name="Andoain"]So you should understand. What we've found is the key to time itself. What I saw was a revelation. A future where even the most savage of monsters can be saved...
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="n")]
+[name="Lemuen"]Your Arts are running haywire, Andoain. That thing's eating away at you—
+[charslot(slot="m",name="avg_npc_1800_1#5$3",focus="m")]
+[name="Andoain"]If that future exists, I must find the path that leads to it.
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Andoain"]I won't let go! I need to know more!
+[Dialog]
+[charslot]
+Andoain keeps his grasp on the oddly-shaped staff. Light condenses into solid form, and engulfs the entire cave.
+I have a lot of chances to pull the trigger, Lemuen thinks.
+But amidst the chaotic, roiling waves of emotion, Lemuen finally finds the thread of rationality running through Andoain's mind.
+They have broken bread with one another. They have built bonds with one another. They understood one another, entrusted their lives to one another. Their empathic link was stronger than any other.
+In that final moment, Lemuen confirms her friend has not been swept away in that unfathomable chaos.
+She loosens her finger on the trigger.
+[Dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_keeprunning",volume=1,channel="step",loop=true)]
+[stopsound(channel="step",fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Mostima"]Dammit! Look out, Lemuen!
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.9)]
+[PlayMusic(key="$m_act42side_bat2_loop", volume=0.6)]
+[CameraShake(duration=0.7, xstrength=20,ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i14", screenadapt="coverall",fadetime=0, xScale=1.7, yScale=1.7, x=-420)]
+[ImageTween(image="61_i14", fadetime=0.5, xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1.7, yScaleTo=1.7, xTo=420,duration=30)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[delay(time=4)]
+[PlaySound(key="$d_avg_cartridgepopup", volume=1)]
+[name="Lemuen"]Haah—
+[name="Lemuen"]Keph, Matriarch of the Shrine of Nurtury... Hit.
+[Dialog]
+[delay(time=1)]
+The rooftop wind whips wildly at the sniper's cheek. She does not blink. Her hand doesn't move in the slightest.
+She hears. She sees. She thinks. She judges.
+She doesn't have many chances to fire. She has to make every shot count.
+She can pull the trigger, or let it go, but she can't afford to hesitate.
+Before that crucial moment, she and her gun do not speak.
+[Dialog]
+[Image(image="61_i14", screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+<i>Lemuen the Silent.</i>
+She looks through her scope once more, double-checking what she sees in her sights. It is proof she pulled the trigger.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i06", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.3,fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="Matriarch"]Compared to the ones in the vast lands, the statues oft seen in Laterano are the more incomprehensible, Cardinal.
+[name="Matriarch"]Paradise has shaped our faith, so peculiar that it has become somewhat distorted.
+[name="Matriarch"]The souls of the living praying for survival, as they traverse Catastrophe and suffering... such is the most basic face of faith.
+[Dialog]
+[delay(time=1)]
+No, there's never a dull statue in Laterano.
+By life is faith shaped. Gun-wielding saints towering over the streets do not represent disdain for calamity and suffering. We have simply chosen to take up a different mindset when confronting them.
+Through her scope, from far in the distance, Lemuen can finally see that all the statues in the shrine, their heads bowed and their hands clasped, are facing only the pious Matriarch as they pray.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i14", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="Lemuen"]Keph... If she really is a horrible monster, then it's unlikely a bullet will do any real damage.
+[name="Lemuen"]But at the very least, it'll let the people in the shrine see what's so unnatural about her, and create an opportunity for you... El.
+[name="Lemuen"]The rest, I leave to you!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[Background(image="26_g10_laterano_roof", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.4)]
+[PlaySound(key="$pistol", volume=0.3,delay=0.5)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.8)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="Lemuen"]...
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="Lemuen"]Senior Amos?
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[name="Amos"]Seniora Lemuen... my location has been compromised.
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="m")]
+[name="Lemuen"]I'll come back you up right away.
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="n")]
+[name="Amos"]N-No need.
+[name="Amos"]The shrine patrol is already here, a-and the gun-knights, too... There's a lot of them!
+[name="Amos"]I'll hold down the street corner. Get yourself out of the building before they surround the place.
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="Lemuen"]What about you?
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="n")]
+[name="Amos"]It's too late for me.
+[Dialog]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.2,channel="z")]
+[name="Amos"]They've started firing. Looks like our deduction was right. This cannot be a place just for birthing babies...
+[name="Amos"]Anyway, did you take care of the target?
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="m")]
+[name="Lemuen"]Yes. Got her in one.
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="n")]
+[name="Amos"]That's good, that's good, haha. At least this way, I managed to save a few people, stop a few things that needed to be stopped. Can't be useless forever now, can I?
+[name="Amos"]Well then, <i>vale.</i> Go do what you need to do, Seniora Lemuen.
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_recorderglitch",volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="Lemuen"]...
+[Dialog]
+[charslot]
+[name="Amos"]Actually, I've got a question I wanted to ask you... Funny, it's only once you can't hear it that I finally dare to ask it.
+A glitch in the comms terminal must be keeping the line open. And so, the man goes on at length, chattering into the microphone.
+Lemuen hesitates for a moment, then chooses to be silent.
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[name="Amos"]Was I really <i>that</i> useless?
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="Lemuen"]...
+[Dialog]
+[charslot]
+[name="Amos"]I never thought about it before. Even though it took nearly all I had just to become a small-time investigator for the Seventh Tribunal, and I never got a promotion during my decade or so there...
+[name="Amos"]It seems us Laterans never doubt ourselves on that front. It's like we naturally have a hundred million ways to keep ourselves happy and satisfied.
+[name="Amos"]I know someone who made sticks for lollipops. He'd take several types of paper tape and twist them together into rainbow-colored sticks... Made nearly no money out of it. He did it simply because he knew children loved them.
+[name="Amos"]But ever since I found out Aurela had been banished from Laterano, and there was nothing I could do about it, I haven't been able to feel even a microsecond of satisfaction with myself.
+[name="Amos"]'You're completely useless, Amos.' That's all I could think... Like how you can never forget the taste of the very first terrible dessert you ever ate, haha.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="Lemuen"]...
+[Dialog]
+[charslot]
+[PlaySound(key="$pistol", volume=0.3)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=0.3)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.4)]
+[name="Amos"]I thought that maybe, with a few more years, I could use my seniority to muddle my way to the Legati and go on a trip to Bolívar.
+[name="Amos"]I couldn't save her in the name of Laterano. Not even I can forgive her for what she did. I just want to see her again, and apologize for that argument we had.
+[name="Amos"]After so many long years of waiting, I finally got my chance, but... it was all just a dream...
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="Lemuen"]...
+[Dialog]
+[charslot]
+[name="Amos"]A dream's fine, too.
+[name="Amos"]If it's all a dream, then I don't have to worry about anything. Maybe getting shot here doesn't mean anything in reality!
+[name="Amos"]When I was younger, I got fifth place at the Seventh Tribunal new joiner shooting competition, you know!
+[name="Amos"]I even met Aurela that day at the range...
+[name="Amos"]It's a shame we weren't able to save each other.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.3)]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.5,delay=0.3,channel="z")]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.5)]
+[Delay(time=2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[playsound(key="$d_gen_transmissionget", volume=0.4)]
+[Delay(time=1)]
+[name="Lemuen"]I'd say that, at the very least, you're a great investigator, Amos.
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="n")]
+[name="Amos"]Oh, you were still on the line, Lemuen...
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1,delay=1)]
+[Delay(time=2)]
+[playsound(key="$transmission", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[name="Lemuen"]...
+[charslot(slot = "m", name = "avg_npc_1811_1#2$1",focus="m")]
+[name="Lemuen"]It's time to wake up.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="Andoain"]...
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="Nurturer"]Is the funeral complete, Andoain?
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="Andoain"]It is.
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="Nurturer"]The Hall of Enlightenment is this way. You seem to be going the wrong way.
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="Andoain"]Am I?
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="Nurturer"]The Nativity has begun, and the Matriarch is waiting for you. Where are you planning to go right now?
+[name="Nurturer"]Your emotions are... rather unstable.
+[charslot(slot="m",name="avg_npc_1800_1#12$1",focus="m")]
+[name="Andoain"]No. I've never felt more clear-headed. I'm not going the wrong way, either.
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="Nurturer"]—
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.7)]
+[charslot(slot="l",name="avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",duration=1)]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",duration=1)]
+[delay(time=2.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="Nurturer"]I ask that you accompany me to see the Matriarch, Andoain.
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[PlaySound(key="$d_avg_gunload", volume=1,delay=0.1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="Andoain"]...
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[PlaySound(key="$d_avg_punch", volume=0.6,delay=0.6)]
+[PlaySound(key="$d_avg_punch02",volume=0.6,delay=1)] 
+[PlaySound(key="$bodyfalldown1", volume=1,delay=2)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[charslot(slot="l", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="r", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="m", afrom=1,ato=0,duration=0.7)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[delay(time=0.2)]
+[playsound(key="$d_avg_punchsp1",volume=1)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[Dialog]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",duration=1)]
+[charslot(slot = "r", name = "avg_300_phenxi_1#9$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",focus="l")]
+[name="Mostima"]Looks like we arrived right on time.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="Andoain"]Mostima, Fiammetta, you...
+[charslot(slot = "m", name = "avg_300_phenxi_1#10$1",focus="m")]
+[name="Fiammetta"]What, am I supposed to be like the other Liberi, pushed back into the herd by the guards, no matter how I protest?
+[charslot(slot = "m", name = "avg_300_phenxi_1#9$1",focus="m")]
+[name="Fiammetta"]Or should I be <i>really</i> looking forward to seeing if my halo gets to be a square or a circle?
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="Mostima"]Speaking of, I'm curious how they're going to mend the fallen angels' halos...
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="Fiammetta"]Mostima!
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="Mostima"]Sorry, got sidetracked. You owe us an explanation, Andoain.
+[charslot(slot = "m", name = "avg_213_mostma_1#9$1",focus="m")]
+[name="Mostima"]Gathering up all the non-Sankta, forcing changes on their bodies... I thought this sort of stuff only happened in those shady Columbian tech companies full of mad scientists.
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="Fiammetta"]Is this what you meant when you said it was 'about the future, about a possibility for Laterano'?
+[name="Fiammetta"]Is this what the Matriarch promised you?
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="Andoain"]...
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="Andoain"]I have strayed from my path. That, I cannot deny.
+[name="Andoain"]Laterano wove a beautiful dream for us all. I was trapped too deep, and took too long to awaken.
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="Fiammetta"]Still talking nonsense even now?
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_comfortbell",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="Andoain"]The other guards will be here soon.
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="Fiammetta"]Dammit. Do you think we can get close to the Matriarch if we use him as a hostage, Mostima?
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="Mostima"]Maybe? She <i>does</i> trust him a lot. I'd be a little worried if we left it all up to El.
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="Andoain"]...
+[name="Andoain"]I can sense... a multitude of emotions, growing by the second. The number of people with empathy in this shrine is increasing...
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="Andoain"]The Nativity has begun. It's no use, even if you subdue the Matriarch right now.
+[name="Andoain"]We must go do what we still can.
+[name="Andoain"]I'll think of what to do about this ceremony that should not exist.
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="Andoain"]But it's likely to lead to great chaos... It should buy you the time to evacuate our people.
+[charslot(slot = "m", name = "avg_300_phenxi_1#3$1",focus="m")]
+[name="Fiammetta"]...
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="Mostima"]...
+[name="Mostima"]What's your plan?
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="Fiammetta"]Why do you think we'll trust you, Andoain? Seriously, a babbling lunatic who already betrayed his friend once, saving everyone?
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="Andoain"]You don't need to trust me.
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="Andoain"]Pity will not save the people. I don't have that kind of power.
+[name="Andoain"]All someone who has walked the wrong path of obsession can do is to save himself.
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="Mostima"]Wait, Andoain. Take this.
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="Andoain"]A bomb?
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="Mostima"]El gave it to us to draw the guards' attention.
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[multiline(name="Mostima")]But if you really are going to stop this ceremony that shouldn't exist, like you said...
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[multiline(name="Mostima")] You'll need it more than us.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=4)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+Andoain walks past the pair, heading straight for the depths of the shrine.
+His steps are slow, but Fiammetta makes no move to stop him.
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="Mostima"]You okay with letting him go?
+[charslot(slot = "m", name = "avg_300_phenxi_1#8$1",focus="m")]
+[name="Fiammetta"]He's reliable when he sticks to a handful of words instead of a full-on parable.
+[charslot(slot = "m", name = "avg_213_mostma_1#10$1",focus="m")]
+[name="Mostima"]True, true.
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="Fiammetta"]The situation's too damned weird. Not like we have any better options at the moment.
+[Dialog]
+[PlaySound(key="$d_gen_soldiersrun",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_213_mostma_1#8$1",focus="m")]
+[name="Mostima"]There's a whole lot of people coming this way. Probably chasing Andoain.
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="Fiammetta"]Help buy him some breathing room. I'll get even with him <i>after</i> this is all over.
+[Dialog]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+The shrine's very first nursery.
+Once, with a heart full of hope, it was here he tended to an unfortunate mother, day after day.
+Now, the child she left behind has clambered up onto a comfort bell, the sparkling droplets of water on his freshly-washed wings refracting the lamplight. Just like a dream.
+The arborbeast does not mind his caretaker's prior outburst. He calls out happily as always, inviting Andoain to play with him.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Insignificant trifles and grandiose feats are but a hair's breadth from one another. You have labored for many years over this grueling journey of yours. You should not let such a meaningless difference stay your steps.
+[name="Matriarch"]I will need you to lift your spirits, for aside from caring for this mother and child, there are more deeds that must be done.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+An insignificant nurturer. A heaven-piercing shrine.
+The former could grit his teeth, harden his heart and refuse the young beast's invitation, but this minor act of rebellion would do nothing to shake the foundations of the latter.
+[charslot(slot="m",name="avg_npc_1800_1#13$1",focus="m")]
+[name="Andoain"]I should be doing more... I must do more!
+[name="Andoain"]But how do I shake the pillars of this shrine? How do I erase a miracle that has already occurred?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]The Shrine of Nurtury... This towering edifice was not built in a day. It began as a simple, ordinary nursery.
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="Andoain"]Our nursery...
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Did we start with the blueprints of such an imposing shrine? No. We merely wished for a safe, comfortable room for that mother...
+[name="Matriarch"]And yet, its frenzied evolution led to what it is now.
+[name="Matriarch"]<i>That</i> is how a future where all are saved can sprout from our faith.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="Andoain"]This was the very first nursery in the Shrine of Nurtury. This was the starting point of this grandiose building.
+[name="Andoain"]This is where you and I placed our faith.
+[charslot(slot="m",name="avg_npc_1800_1#15$1",focus="m")]
+[name="Andoain"]And so, Keph, I'll tear my faith apart.
+[Dialog]
+[charslot]
+Andoain examines the bomb Mostima gave him closely. It has been imaginatively cobbled together from all sorts of daily necessities, its face decorated with a bright splash of graffiti.
+He cannot remember what the girl who made this looked like. They might have met once or twice. They might never have met at all. He can only remember Lemuen recounting her deeds countless times over.
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="Andoain"]I was never alone as I sought a way through this trail of thorns, was I?
+[Dialog]
+[charslot]
+Without the slightest hesitation, he lights the fuse.
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_1",volume=1)]
+[name="Arborbeast"](Cheerful chirp)
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="Andoain"]I understand that you are no longer sad and suffering, my child. But do you not sense danger, even as this room is about to explode?
+[name="Andoain"]Or... are you simply uninterested in this as well?
+[name="Andoain"]Does Laterano no longer need us to feel fear?
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_2",volume=1)]
+[name="Arborbeast"](Puzzled chirp)
+[Dialog]
+[charslot]
+The arborbeast flies down to the ground, rubbing against Andoain's trousers in confusion.
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="Andoain"]If we cannot feel fondness, fear or torment for all that life has to offer, how can we speak of revering it?
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="Andoain"]I should have asked you this, my child.
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="Andoain"]But it was I who brought you here. You could even say you were born in answer to my vision.
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="Andoain"]This is our penance. A lesson for the both of us.
+[Dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+Andoain bends over, and cradles the arborbeast into his arms.
+[Dialog]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[Delay(time=1)]
+[name="Andoain"]That gunshot—
+[name="Andoain"]I am so very glad to hear the sound of your gun this time around, Lemuen.
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$e_skill_explodebris",volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=4, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i13",screenadapt="coverall",fadetime=0,block=true)]
+[PlaySound(key="$firestorm", volume=1)] 
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.4, channel="b",fadetime=3)]
+[PlayMusic(intro="$m_bat_martyr_intro", key="$m_bat_martyr_loop", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+[Delay(time=2)]
+Sparks bloom wildly across the nursery. A giant comfort bell clatters as it falls, its sonorous notes adding to the clamor. The explosion engulfs the room, devouring the graceful balance of light and shadow.
+[Dialog]
+[name="Andoain"]Was this realm a dream, or an obsession?
+[name="Andoain"]Once, you had a flock of brothers and sisters following behind you. They were rejected, harmed, insulted, desecrated. They named you Guide, and walked the long path with you.
+[name="Andoain"]Yet here in this Laterano, which you believed equal and selfless, you forgot them. And so I ask...
+[name="Andoain"]How should this community you long for be shaped?
+[name="Andoain"]How should this holy city you yearn for be rebuilt?
+[name="Andoain"]What path is it you walk, Andoain? To what answers does it lead?
+[name="Andoain"]...
+[name="Andoain"]If this is a dream, then I shall wake. If this is obsession, then I shall shatter it.
+[name="Andoain"]Let us only speak of redemption after that.
+[Dialog]
+[PlaySound(key="$d_avg_explosion", volume=0.9)]
+[playsound(key="$d_avg_explosion_stone", volume=0.8,delay=0.8)]
+[PlaySound(key="$d_avg_statuecollapse",volume=0.6,delay=0.4)]
+[CameraShake(duration=4, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[image]
+The flames swallow the entire nursery. The arborbeast flaps his wings furiously. There is no fear in his eyes, as though he is simply dancing.
+Yet Andoain still covers his eyes out of habit.
+[Dialog]
+[stopmusic(fadetime=3)]
+[StopSound(channel="b", fadetime=2)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_churchbell", volume=1)]
+[Delay(time=2)]
+In this final moment, Andoain hears a bell, clear as day.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", y=40,xScale=1.3, yScale=1.3,block=true)]
+[delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[PlaySound(key="$d_avg_explosion", volume=0.4,delay=0.2)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]—!
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]Are you alright, Matriarch?
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Hngh...
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]The ceremony has been interrupted. The entire Shrine is shaking, and that explosion just now...
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0.4)]
+[stopsound(channel="bgs",fadetime=6)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Is an evacuation underway?
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]Y-Yes... There is a Liberi wearing a Pontifica Cohors uniform and a fallen angel leading our people to safety.
+[name="Nurturer"]Only half of the non-Sankta have successfully acquired halos. I will ask the patrol to have them reconvene right away—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_explosion", volume=0.4)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.2)]
+[playsound(key="$d_avg_statueshake", volume=0.6,delay=0.7)]
+[CameraShake(duration=1.5, xstrength=25,ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+Like the cracking of bamboo, the explosion reverberates out from the depths of the shrine. The peal of a bell from parts unknown drowns out the chimes of the comfort bells. Chaos reigns as countless people flock to the exit.
+The towering edifice sways as the blast wave finally reaches the Hall of Enlightenment.
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]Let them leave.
+[name="Matriarch"]Forcing them to stay will only harm them irreparably.
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]The shrine is collapsing, Matriarch...
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]No. What is collapsing is not only the shrine, but also the answer we sought with it.
+[name="Matriarch"]Gather the other nurturers. Everyone must leave at once.
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="Nurturer"]I will have the guards escort you out.
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="Matriarch"]...
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+The Matriarch steps down from the dais.
+[Dialog]
+[PlaySound(key="$d_avg_strongwind", volume=0.7)]
+[delay(time=1)]
+The wind. Amidst the chaos, she hears the sound of the wind clearly from above her head, where there should only be praying statues and spotless stained glass.
+[name="???"]Hey hey hey, over here!
+[name="???"]You're not getting away that easily!
+[Dialog]
+[backgroundTween(yFrom=40, yTo=-80, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=3)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[charslot]
+[Image(image="61_i15", screenadapt="coverall",fadetime=0)]
+[delay(time=1)]
+[PlayMusic(intro="$m_bat_act26side_intro", key="$m_bat_act26side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cnstrctnck", volume=0.7)]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=0.6,delay=0.4)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+The Matriarch lifts her head. She cannot see who is approaching her, but her voice has an infectious quality to it. Almost instinctively, she stretches out her arm.
+[name="Exusiai"]I've been hanging onto this window for two hours already! If you don't get off that stage, my arms are gonna fall off!
+Exusiai holds on tight to the Matriarch. The world spins, and the two of them tumble to the floor.
+What they fall onto is not solid ground, but rather some odd softness. It is like falling into fog, yet also like falling into water.
+Exusiai senses a great force pushing her outwards, one that is definitely not just the explosion. Could this frail-looking woman really be that strong?
+She forces herself to open her eyes. She isn't sure when it happened, but the arm she is holding onto has become the jagged limbs of a beast. The Matriarch's gentle face has disappeared under the water.
+They look at one another across the boundary between truth and lies. On her side of the line, the bell atop the Tower of Revelations rings, clear as can be.
+[name="Exusiai"]...
+[name="Exusiai"]I did figure you weren't as pretty as you looked early on, but my imagination never prepared me for <i>this</i>. Not even <i>Ancient Forge</i> had anything as crazy-looking as you!
+[name="Exusiai"]Well, at least I don't have to worry about ripping your arm off!
+[name="Exusiai"]My friends had to bust their butts to give me this chance...
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=1)]
+[CameraShake(duration=2, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[name="Exusiai"]So get out of there already! You have no right to hide away in a dream! You have no right to hide... in our Laterano!!
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken", volume=1)]
+[Delay(time=0.3)]
+[CameraShake(duration=2.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[Dialog]
+[image]
+[Background(image="bg_black",screenadapt="coverall")]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]

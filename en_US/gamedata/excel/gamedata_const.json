@@ -994,6 +994,7 @@
     "vc.attention": "<color=#FFD800>{0}</color>",
     "act.missiontips": "<color=#d9bd6a>{0}</color>",
     "lv.hdbg": "<color=#7ba61f>{0}</color>",
+    "vecbreakv2.highlight": "<color=#d8741a>{0}</color>",
     "duel.ping.low": "<color=#7fa826>{0}</color>",
     "duel.ping.medium": "<color=#ec7a00>{0}</color>",
     "duel.ping.high": "<color=#ff3d3d>{0}</color>",
@@ -1063,7 +1064,7 @@
   "commonPotentialLvlUpCount": 4,
   "weeklyOverrideDesc": "",
   "voucherDiv": 5,
-  "recruitPoolVersion": 20,
+  "recruitPoolVersion": 21,
   "v006RecruitTimeStep1Refresh": 1577226600,
   "v006RecruitTimeStep2Check": 1577208600,
   "v006RecruitTimeStep2Flush": 1577703600,
@@ -1165,7 +1166,7 @@
     "ba.buffres": {
       "termId": "ba.buffres",
       "termName": "Status Resistance",
-      "description": "Negative Status durations(<$ba.stun>Stun</>, <$ba.cold>Cold</>, <$ba.frozen>Freeze</>, etc.) halved (does not stack with the same effect)"
+      "description": "<$ba.stun>Stun</>, <$ba.cold>Cold</>, and <$ba.frozen>Frozen</> durations halved; <$ba.palsy>Paralysis</> loses 1 stack every 5s (does not stack with the same effect)"
     },
     "ba.invisible": {
       "termId": "ba.invisible",
@@ -1377,6 +1378,21 @@
       "termName": "Physical Fragility",
       "description": "Amplifies all Physical damage taken by the corresponding amount (only the strongest effect of this type applies)"
     },
+    "ba.dt.neural2": {
+      "termId": "ba.dt.neural2",
+      "termName": "Nervous Impairment - Player",
+      "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflicting 3 stacks of <$ba.palsy>Paralysis</>. 10s cooldown."
+    },
+    "ba.palsy": {
+      "termId": "ba.palsy",
+      "termName": "Paralysis",
+      "description": "Each stack of Paralysis can interrupt an enemy when it attempts to perform a normal attack, max 3 stacks; Paralysis has unlimited duration when not consumed, but units with status resistance lose 1 stack every 5s"
+    },
+    "ba.addbullet": {
+      "termId": "ba.addbullet",
+      "termName": "Replenish",
+      "description": "Replenishes ammo for other Operators' ammo-type skills; an ammo-type skill can only be replenished up to its max ammo capacity during a single activation of that skill"
+    },
     "cc.bd_A_1": {
       "termId": "cc.bd_A_1",
       "termName": "Psychokinesis",
@@ -1587,6 +1603,11 @@
       "termName": "Siracusa",
       "description": "Includes the following Operators:\nAngelina, Lappland, Provence, Vermeil, Broca, Shamare, Suzuran, Chiave, Aosta, Penance, Lunacub, Vigil, Aroma, Vulpisfoglia, Figurino, Lappland the Decadenza"
     },
+    "cc.g.laterano": {
+      "termId": "cc.g.laterano",
+      "termName": "Laterano",
+      "description": "Includes the following Operators:\nPlume, Adnachiel, Executor, Mostima, Ambriel, Arene, Archetto, Fiammetta, Enforcer, Spuria, Insider, Virtuosa, Lemuen, Sankta Miksaparato, CONFESS-47"
+    },
     "cc.c.abyssal2_1": {
       "termId": "cc.c.abyssal2_1",
       "termName": "Special Bonus",
@@ -1690,7 +1711,7 @@
     "cc.tag.op": {
       "termId": "cc.tag.op",
       "termName": "Operation Platform",
-      "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, 'Justice Knight', Friston-3, PhonoR-0"
+      "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3, PhonoR-0, CONFESS-47"
     },
     "cc.tag.knight": {
       "termId": "cc.tag.knight",
@@ -1717,6 +1738,11 @@
       "termName": "Gavial",
       "description": "Includes the following Operators:\nGavial the Invincible, Gavial"
     },
+    "cc.angel": {
+      "termId": "cc.angel",
+      "termName": "Exusiai",
+      "description": "Includes the following Operators:\nExusiai the New Covenant, Exusiai"
+    },
     "cc.tra.pepe": {
       "termId": "cc.tra.pepe",
       "termName": "Special Exclusive Order",
@@ -1724,14 +1750,14 @@
     }
   },
   "storyReviewUnlockItemLackTip": "Insufficient Information Fragments. Acquire more from the Purchase Certificates Store or the Event Store.",
-  "dataVersion": "45.3.0",
-  "resPrefVersion": "60d4d0",
+  "dataVersion": "46.2.0",
+  "resPrefVersion": "61d0d0",
   "announceWebBusType": "ak_announcement",
   "videoPlayerWebBusType": "ak_video_player",
   "gachaLogBusType": "ak_gacha_log",
-  "defaultMinContinuousBattleTimes": 1,
-  "defaultMaxContinuousBattleTimes": 6,
-  "continuousActionOpen": true,
+  "defaultMinMultipleBattleTimes": 1,
+  "defaultMaxMultipleBattleTimes": 6,
+  "multipleActionOpen": true,
   "subProfessionDamageTypePairs": {
     "notchar1": "NONE",
     "notchar2": "NONE",
@@ -1802,7 +1828,8 @@
     "alchemist": "PHYSICAL",
     "primprotector": "PHYSICAL",
     "skywalker": "PHYSICAL",
-    "soulcaster": "MAGICAL"
+    "soulcaster": "MAGICAL",
+    "primguard": "PHYSICAL"
   },
   "classicProtectChar": [
     "char_252_bibeak",

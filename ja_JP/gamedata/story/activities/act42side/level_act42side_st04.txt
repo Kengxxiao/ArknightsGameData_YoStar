@@ -1,0 +1,758 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[delay(time=1)]
+あなたは、現実においてあの大きな隊列が止まり、移動が終わったのだとようやく確信した。
+その結果は、あなたたちのいる空間にも反映されていた——大聖堂の前に、天災が通り過ぎた後のような巨大な裂け目が開いていたのだ。そしてその横には、それより目を引く深い穴ができている。
+本来静止しているはずのこの都市では、そうした裂け目は醜い傷跡のように見えた。
+そして、その中には、リング状の機械が沈黙していた——
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]……
+[Dialog]
+[charslot]
+[Decision(options="PCSが……ダウンした？", values="1")]
+[Predicate(references="1")]
+あなたはプリースティスに目を向ける。彼女は依然落ち着き払っており、この不測の事態にも動揺はしていないようだ。
+あなたの心に不安がよぎる。
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]分析完了！　標準時間で10秒前、大聖堂広場で少なくとも二度の大規模な爆発が起きている。
+[name="Mon3tr"]実行者は恐らくエクシア、イグゼキュター、そしてもう一人、銀髪のサンクタだ。爆発地点付近で次々と映し出される静止画が、それを裏付けている。
+[Dialog]
+[charslot]
+[Decision(options="エクシア用に作ったプログラム爆弾が功を奏したか。;だが、あの機械はそう脆くないはずだ。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]とはいえ喜ぶのはまだ早いよ、ドクター！
+[name="Mon3tr"]（小声）プリースティスはまだ次の行動を起こしていない。
+[name="Mon3tr"]（小声）何にせよ、彼女が状況を変えてしまうのをどうにかして止めないと。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]その通り。あれは天使たちに扱いうる程度の衝撃では決して壊れない。何しろ、もっと過酷な環境下での動作にも耐えられるよう設計されているからな。
+[name="Mon3tr"]（小声）プリースティスならPCSを再起動できるはず。彼女を止めないと。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]はぁ、すまない、ドクター。
+[name="Mon3tr"]今回の任務は私一人で遂行すべきだった。君を危険にさらすのは――
+[Dialog]
+[charslot]
+[Decision(options="庇い立つ君の背中も見慣れてきたな、Mon3tr。", values="1")]
+[Predicate(references="1")]
+[Decision(options="（微笑む）;ありがとう。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]えっ？
+[Dialog]
+[charslot]
+[Decision(options="状況は君が思うほど悪くはないかもしれない。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="プリースティスの今の状態は把握した。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]彼女の……状態？
+[Dialog]
+[charslot]
+あなたがMon3trの前に出てプリースティスに歩み寄っていくと、 Mon3trは緊張した様子で、咄嗟にあなたの腕を掴んだ。
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]ドクター！
+[Dialog]
+[charslot]
+[Decision(options="大丈夫だ。;信じてくれ。", values="1;2")]
+[Predicate(references="1;2")]
+しばしためらった後、Mon3trはあなたの腕を放したが、代わりにそばを離れることなくついてきた。
+そうして、あなたはプリースティスの隣に立った。
+[Dialog]
+[charslot]
+[Decision(options="この都市にはあまりに不釣り合いな傷だ。;君はデータへの余分な情報の混入を許している。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]あの目立たなかった文字列が、最終的にはプログラム全体をダウンさせるに至ったのよ、{@nickname}……一つの言語が永遠に完璧に動作し続けるなんてこと、保証はできないものね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]言いたいことはわかってるわ。私たちが作った言語――源石にも限界は存在するのよね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]だから、もっと時間をかけて調整とセルフアップデートをしていかないと。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]私は時々、こう思わずにはいられないの。源石が完璧な形に進化するのを妨げている本当の原因は、設計上の欠陥ではなく……私たち自身にあるのかもしれないって。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]人の感性も、理性も、言語の発展の枷となっている可能性を感じるのよ。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]私たちは源石を作っている間にも、こうした考えについて議論を重ねてきたけれど、結局結論は出なかった。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]幸いにして、私たちはそうした不確定性が源石の中に存在することを受け入れていたのよ。
+[Dialog]
+[charslot]
+[Decision(options="……言っていることがよくわからない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="プリースティス"]……記憶障害があなたの拡散的思考能力にも影響を及ぼしているのかしら？
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="プリースティス"]でも、困惑するあなたが見られてなんだか嬉しいわ。昔の{@nickname}との会話とはまるで違うわね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]完璧なものになるというのは、同時に上限が定められることを意味する。一方で欠陥があるというのは、まだ上限を突破する余地が残されているということだと、あなたは主張していたわ。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]解決せねばならない危機がどんなものかも明らかになっていない段階で、「完璧」なものを作ったところで、それは自分の首を絞めるだけよ。
+[Dialog]
+[charslot]
+[Decision(options="だが、それは現状とは無関係だ。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="君に……状況を変える力はない。;甲板で初めて会ったあの時とは違う。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="プリースティス"]……
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="プリースティス"]いつから気付いていたの？
+[Dialog]
+[charslot]
+[Decision(options="つい先ほどから。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="……君はプログラム爆弾の起動を止められたはずだ。;……君はあの裂け目を源石で塞げたはずだ。;……君は聖徒たちを迷宮に閉じ込めておけたはずだ。", values="1;2;3")]
+[Predicate(references="1")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Image(image="61_i20", fadetime=2,screenadapt="coverall")]
+[delay(time=2)]
+[image(fadetime=2)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="2")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall",fadetime=2, block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="3")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g6_pcsderivativemaze",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot]
+[Decision(options="君にとっては、簡単なことだろう。;目覚めた君が、ロドスに災厄をもたらした時のように。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="そもそも君は、初めから我々を排除すらしなかった。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="君には異常が起きている。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]そのくらい見抜くのは簡単でしょう、{@nickname}。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]だけどあなたは、今になってようやく、私の隣に立つ勇気を持てたみたいね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]できることなら私は、今私の隣に立っている人と、永い眠りの中で心の奥底に根付いた孤独を、穏やかに分かち合いたいと思っていたんだけど。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]……残念ながら、無理そうね。
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]私たちはどちらも、今までとは違う状態にある。だって、色々なことが起きたんだもの。そうでしょう？
+[Dialog]
+[charslot]
+[Decision(options="君は確かに、隠し事はしていないようだな。;君はむしろ……謎そのものに近いな。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="プリースティス"]私のこと、もっと知りたくなった？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]今の「Mon3tr」は何の制限も受けていないし、彼女なら疑問のいくつかに答えてくれると思うわよ。
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]{@nickname}が真実を知ることを恐れているの、AMa-10？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]まあ、私もさっきのように、{@nickname}が自分から私の元へ来てくれるほうが嬉しいけれど。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]石棺で過ごした日々は耐え難いものだったわ。思考が深い泥沼の中に沈んだように、時間の流れを感じることすらできなくて。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]私にとっては、頭の中に刻まれたあなたとの弁論を繰り返すのが数少ない慰めになっていたの。私たちが共に掲げた理想を確かなものにするためにそうしていたわけではないけれどね……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]私は、自分の進む道に疑問を持ったことは一度もないから。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]あの人と再び語り合う手段は、「弁論」だけなのよ――
+[Dialog]
+[charslot]
+[Decision(options="……;自分は——", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]あなたがすぐに私の考えを理解してくれるとは思ってないわ。だから最後の日が来るまで、あなたは自分の信じる道を進んで。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]私たちの間の隔たりは、これからもあり続けることでしょう。あの人がかつて、なぜ私に異を唱えたか、その理由をあなたが忘れていたとしても。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]今のラテラーノ人がそうしたように――あなたたちの抵抗に価値があるということを、あなたの愛するテラがどう証明してくれるか、楽しみにしているわ。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]だけど私は、それと同時に確信もあるの。オラクルがきっと帰ってくるということにね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]だから、{@nickname}、あなたを待っているわ。
+[Dialog]
+[charslot]
+生命の気配がない都市を見渡してから、彼女はため息をついた。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]時々、彼らは私たちとよく似ていると感じることがあるの。あなたに十分な時間があれば、あるいは——
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]……
+[Dialog]
+[charslot]
+彼女の姿が消え始める。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]ところで、AMa-10を修理することは本当に可能よ。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]決心がついたら、源石に向かって願ってちょうだい、{@nickname}。
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="プリースティス"]そうすれば、私の元に声が届くから。
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=2)]
+[delay(time=2)]
+そうして、プリースティスの姿は完全に消え去った。
+静寂が落ちる。絶対的な静けさの中、あなたとMon3trだけがこの色褪せた無人の街に閉じ込められた。
+[Dialog]
+[charslot]
+[Decision(options="行ってしまったか……", values="1")]
+[Predicate(references="1")]
+[PlayMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.4)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]つまり、ひとまずこれで終わりか？
+[Dialog]
+[charslot]
+[Decision(options="そうかもしれない。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="サンクタたちは自力で危機を乗り越えた。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="プリースティスの現状も確認できた。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="予想以上に、彼女は源石に対する権限を失っていた。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]すごく貴重な情報じゃないか、ドクター！
+[name="Mon3tr"]彼女が元の状態に戻るまでに、どれほど時間があるかはわからないが、少なくとも彼女を止めるチャンスはあるということだな。
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]そういえば、さっき彼女が言ってた……ケルシーのことだが……
+[Dialog]
+[charslot]
+[Decision(options="Mon3tr、プリースティスは信用できない。;源石に願ってはいけない。ケルシーのためでも……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]……わかってる。私も、彼女の言うやり方でケルシーを取り戻すのには反対だ。
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]プリースティスはロドスにも、ラテラーノにも、甚大な被害をもたらした。彼女が現れるたびに常識は覆され、更なる未知の危険が示唆される……真意の掴めない人物だ。
+[Dialog]
+[charslot]
+[Decision(options="我々は長らく研究を重ねてきた……", values="1")]
+[Predicate(references="1")]
+[Decision(options="我々には我々のやり方がある。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]これからの道のりは、とても長いものになりそうだな。
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+あなたはそこで、ようやくMon3trの異常に気付いた。敵が去り、危機が片付いたにもかかわらず、いつも活発なこの少女らしからぬことに、あまり笑顔を見せず……
+それどころか、沈んだ表情さえ浮かべている。
+Mon3trが再構築されたのはつい最近のことだ。あなたはまだ今の彼女の姿に慣れておらず、彼女自身も、自分の身に起きた変化や、骨身に染みる喪失に向き合えてはいなかった。
+それでも彼女は早々に、数多の任務に飛び込んでいった。ロドスの再建に、ラテラーノの救援……ゆえに今にしてやっと、何かを言う余裕が生まれたのかもしれない。
+[Dialog]
+[charslot]
+[Decision(options="そう悲観するな、Mon3tr——;諦めるな、Mon3tr——", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]――私は必ずケルシーを取り戻す！
+[name="Mon3tr"]アーミヤも、ドクターのことも、ちゃんと守ってみせる！
+[Dialog]
+[charslot]
+Mon3trは不意に顔を上げるとあなたを見つめ、あなたの言葉を遮った。
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]ケルシーの言葉を忘れはしないよ！
+[Dialog]
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[image(image="60_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ケルシー"]もしも決して見たくない状況が本当に発生したら、会いたくないあの人が再び我々の前に立ったら――
+[name="ケルシー"]ドクターを、アーミヤを守るんだ。
+[name="ケルシー"]私はこの指令を、君の基本的な行動ポリシーに刻み込むだけだ。
+……
+……
+永遠の生命は孤独であるのが定めだ。私はすでに、その味を知った。
+……君も一人で歩いていけるだろう――
+Mon3tr。
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Decision(options="聞いてくれ、Mon3tr。", values="1")]
+[Predicate(references="1")]
+あなたはMon3trを見つめて、ゆっくりと口を開いた。
+[Dialog]
+[charslot]
+[Decision(options="君の身体は再構築されてからまだ日が浅い……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="己にプレッシャーをかけすぎるな。;ケルシーも自分の願いを枷にされることは望むまい。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]ええと……何か誤解があるんじゃないか、ドクター。
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]とはいえ、今も記憶に残ってはいる。私が目覚めた時、君が「おかえり」と言葉をかけてくれたあと、すぐに背を向けて行ってしまったこと……
+[Dialog]
+[charslot]
+[Decision(options="うっ……;すまない、Mon3tr。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]いいんだ。私には、長い間共に過ごしてきた共生体を失くしたことに適応する時間が必要だったし、君にも長年共に戦ってきた仲間の喪失を受け入れる時間が必要だった。それに……
+[name="Mon3tr"]私たちは、今こうして向かい合っているんだから。
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#12$2",focus="m")]
+[name="Mon3tr"]だが、ドクター、私たちはもう長い付き合いだろう？
+[name="Mon3tr"]ロンディニウムでの砲火の中でも、サルカズの隠された洞窟の奥でも、トリマウンツのリング状の巨大構造物が空に炎の尾を引く中でも、ミリアリウムの闘智場でも……
+[name="Mon3tr"]ケルシーは、私はずっと君と一緒にいた。
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]私は、ケルシーが去って初めて彼女の指令を聞き、君を、ロドスを理解するようになったわけではない。
+[name="Mon3tr"]ロドスのオペレーターとなり、私たちの創造主に抗って、アーミヤを、君を守ること——これは、私自身の選択でもあり……
+[name="Mon3tr"]これまでずっとやってきたことでもあるんだ。
+[Dialog]
+[charslot]
+沈黙が流れる。
+あなたはMon3trを見つめる。沈黙が二人を繋いでいた。
+[Dialog]
+[charslot]
+[Decision(options="それなら、こちらも同じだ、Mon3tr。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="ケルシーを取り戻そう。;未知の旅路を共に最後まで歩むんだ。", values="1;2")]
+[Predicate(references="1;2")]
+永遠を生きる命は孤独な定めにある。だが幸いにして、どのような旅路においても我々は一人ではなかった。生命が色褪せようとも、万物が滅びようとも……
+……共に進むことができる。そして、進まねばならないのだ——
+彼女はそう願っているのだから。
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]んー……
+[Dialog]
+[charslot]
+[Decision(options="どうかしたのか？;まだ何かあるのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]何だその表情は？
+[name="Mon3tr"]ほら、指揮官殿、カウンセリングはこれで終わりにしよう！　この妙な場所から出る方法を思いついたんだが……君の助けが必要なんだ！
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]プリースティスの言葉通りなら、ここはあの機械が源石にアクセスしたうえで演算して生み出した空間で、未来のイメージに基づいたシミュレーションであるはずだ。
+[Dialog]
+[charslot]
+[Decision(options="つまり源石の特性とも関係しているのか。", values="1")]
+[Predicate(references="1")] 
+[Dialog]
+[charslot]
+[Decision(options="あの異常ノードから突破できるかもしれない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]異常ノードというと……破壊された痕跡の反映箇所のことかな。
+[Dialog]
+[charslot]
+[Decision(options="君からあの機械への接続制限は解除されたはずだな？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]ああ。信号が急速に弱まってきているのを感じるよ。
+[multiline(name="Mon3tr")]再接続してみよう……
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[multiline(name="Mon3tr")]それで、この後は？
+[Dialog]
+[charslot]
+[Decision(options="異常ノードの再構築を繰り返しリクエストしてくれ。;演算能力を限界まで使わせるんだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]そのくらい、プリースティスの邪魔さえ入らなければ難しくもないさ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="a")]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="..................", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="都市通信柱からポートにリバースアクセスを行います……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="特別権限、AMa-10。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="臨時アクセス認証――ELCARO-001……ORACLE。\nデコード成功。認証完了。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="PCSシステムに接続。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="間もなくラジエーションリンクの同期演算を開始します……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="警告：クロック周波数が低下しています。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="セルフチェック完了、異常ノード再、再、再構築中——", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopSound(channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$b_enemy_dead_h")]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+色褪せた無人の都市に、色彩が溢れだす。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g11_laterano_alley",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=1)]
+啓示の石塔の右側の通りを起点として、ミカエレオン区の公証人役場と大小様々な銃工房、そして聖マルソー区のサンセット礼拜堂を経て、教会広場へと……
+聖都に再び、喧噪が戻ってきた。
+それはラテラーノ人が、生命のために捧げる祈りの声だった。
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]色が……戻ってきた！？
+[Dialog]
+[charslot]
+[Decision(options="行こう、Mon3tr。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]エクシアに挨拶しなくていいのか？
+[Dialog]
+[charslot]
+[Decision(options="家族との団欒を邪魔したくはない。;急ぎ、ラテラーノでの異変を本艦に報告しなくては。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="プリースティスはひとまず姿を消しただけだ……;プリースティスはすぐに次の行動に出るだろう。;我々の任務はまだ終わっていない。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=3)]
+[PlaySound(key="$alarmenter",volume=0.8,channel="1")]
+[delay(time=3)]
+[dialog]
+[stopSound(channel="1")]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Subtitle(text="転化プログラムは中断されました。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="管理者が作成したシークエンスは終了しました。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="システム終了までのカウントダウンを開始します。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Image(image="61_i22_2", fadetime=0,screenadapt="coverall",block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="プリースティス"]（未知の言語）あなたの基盤となるコードを調べてみたけど、私が再調整した部分以外に、より多くのアップデートを短時間のうちに自力で行っていたようね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）それでも、自身の欠陥を修復できなかったということ？
+[charslot]
+[Dialog]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="否定。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="欠陥は修復を完了しました。パラドックスは修正済みです。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="…………", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$b_enemy_dead_h")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）あなたのセルフアップデートの結果には、元々とても興味があったの。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）どうやら、今のあなたは、自分自身をその欠陥、パラドックスだと誤認してしまっているようね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）これはオーバークロックの副作用かしら？　あるいは、メンテナンス不足の環境下で長期的にサンクタとデータを交換し合ったことで、データベースが汚染されたのかしら？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）もっとデータがあれば、答えが見つかるかもしれないわね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）でも、残念ながら——今の私に扱えるリソースではあなたを完全に再起動させることはできないわ。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）本来なら、指揮システムが対象の意志によって自己否定に陥るなんて現象には——どんな研究者であれ、PCSシステムへの興味を再燃させるでしょうにね。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）……天才たちが思想と主張をぶつけ合っていたあの時代がまだ続いていたら、の話だけれど。
+[charslot]
+[Dialog]
+リング状の機械はもはや反応せず、プリースティスはそれを少し惜しいと感じた。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）やっぱり、プロジェクトを進めるには別の手段を講じる必要がありそうね——
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="l")]
+[StopSound(channel="l", fadetime=4)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]……
+[charslot]
+[Dialog]
+リング状の演算基盤を構成する機械のキューブ群は、この機械の中核部だったが、そのすべては今や沈黙していた。
+しかし、突然そのうちの一つが振動し始め、金属の光が再び表面に流れ出す。
+それから続けて、淡い光を放つ光輪が現れた。
+PCSシステムの遺構から、新たな「天使」が誕生したのだ。
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="プリースティス"]（未知の言語）……再起動した？
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="プリースティス"]（未知の言語）いえ、こちらに応答している様子はないし、PCSの動作ロジックとも一致しない動きだわ。
+[charslot]
+[Dialog]
+「天使」はプリースティスには目もくれず、上部に空いた穴から素早く飛んで行き、あっという間に姿を消した。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）「天使」の「プロトタイプ」？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）でも、このシステムは「天使」の特性を模倣して設計されたものであって、建造時に「天使のプロトタイプ」のサンプルすら埋め込んでいないはず。
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="プリースティス"]（未知の言語）新たな「天使」が誕生したということ！？　まさか……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[Image(image="61_i22_1", fadetime=2.5,screenadapt="coverall",block=true)]
+[delay(time=1)]
+[charslot]
+[name="？？？"]レミュエル、何をしてるの？
+[charslot]
+[name="？？？"]へへっ、スプレーアートだよ。
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="プリースティス"]……
+[dialog]
+[charslot(duration=1.5)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[image]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="ライン生命職員A"]阻隔層の空洞に関する最新の測定データをサリア主任に提出したんだが、その中に気になるデータがあってな……
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="ライン生命職員A"]これを見てくれ。奇妙な飛行物体みたいじゃないか？
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="ライン生命職員B"]コンポーネント統括課が分析に関わってるんだから、結果はすぐに出るでしょう。
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="ライン生命職員B"]阻隔層の高度近くに留まれる飛行物体が存在するとしたら、大発見になるかもね。
+[dialog]
+[charslot]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-640, fadetime=4)]
+[largebgtween(duration = 100,yFrom = 720, yTo = 0,block = false)]
+[delay(time=3)]
+「天使」は阻隔層の空洞前に留まったまま、星々に散らばった個体との連絡の回復を試みたが、成果は得られなかった。
+そこで捉えられたのは、深宇宙で活動していたエネルギー体が死後に残したかすかな波紋だけだ。
+ゆえにそれは、この大地の周囲を飛行し続けることにした。永遠に流れる星のように……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="bg_forest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$leaveshake")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="幽霊"]（未知の言語）生命の気配がするわ。
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽霊"]（未知の言語）この土地はまだ若いみたい……これは破滅のあとに新しい命が芽生えたの？　それとも、死がまだ訪れていないだけ？
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽霊"]（未知の言語）あたしは、あの光に飲まれたはずじゃ……？
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="プリースティス"]（未知の言語）源石があなたの情報を記録していたのよ。
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽霊"]（未知の言語）……「源石」？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）あの光が訪れるまでは、結末は確定していない。源石は私たちの希望となるものよ。
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽霊"]（未知の言語）ここはどこ？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）「テラ」。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="プリースティス"]（未知の言語）同胞よ、私たちは孤独ではないわ。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_school",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[Delay(time=1)]
+[charslot]
+[name="慌てる青年"]先生、今日の新聞は読まれましたか？
+[charslot]
+[name="慌てる青年"]鉱山が次々閉鎖されて、街中で戒厳令が敷かれてるんです。
+[charslot]
+[name="慌てる青年"]僕の両親も審査のために呼び出されて……会うこともできません。
+[dialog]
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="コシェルナ"]君は教室に残りなさい。
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="コシェルナ"]私が様子を見てこよう。何が起きているのかは、私も気になっているからな。
+[dialog]
+[charslot]
+彼女は怖がる子供をなだめてから、その子が持ってきた新聞を手に取った。
+都市内には、わずか数日の間に無数の噂が広まっていた。中でも衝撃的だったのは——
+「我らの源石鉱脈が消失した。母なる大地からエネルギーを得られないとなれば、次の冬をどう越せばいいのだろうか？」
+[charslot(slot="m",name="avg_npc_415_1#7$1",focus="m")]
+[name="コシェルナ"]源石か……その真実を突き止めてやろう。
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="コシェルナ"]ウルサスが冬を越す力となるものなど、我らの胸に燃えるこの血潮だけだ。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m",duration=1)]
+[delay(time=1)]
+[name="感染者"]ヒアダ、ここが片付けば、みんなの新しい拠点として使えると思うぞ。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="ヒアダ"]手伝ってくれてありがとうございます！
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]君が修道院の仲間から物資をもらってきてくれたおかげだよ。でなきゃ移住作業もここまでスムーズには進まなかっただろう。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]正直心配だったんだ。修道院に戻った後……君が俺たちを捨てるんじゃないかって——
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="ヒアダ"]ええと、ごめんなさい。帰りの道のりがすごく険しくて、それに、信じがたい知らせばかりを聞いたものですから。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]確かに信じられないよな。鉱脈のことも、ラテラーノのことも……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]っと、そういえば、修道院のサンクタが、君が帰ってきた時の光景を生き生きと語ってくれたんだ！
+[charslot(slot="m",name="avg_npc_1719_1#9$1",focus="m")]
+[name="ヒアダ"]えっ？
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]災厄が起きた時、ラテラーノへ戻ろうとした彼らは、天災に道を塞がれてしまったらしい。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]光輪は砕けているし、自分のために、亡き家族のために、ただその場で祈ることしかできなかったとか……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]そんな時に君が現れたんだ……三年前に消息を絶ったはずの君が！
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]君は、その人たちに希望を与えたんだよ、ヒアダ！
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="ヒアダ"]はぁ、そうでしょうか？
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="ヒアダ"]確かに、皆さんの希望を打ち砕きたくはありませんが……とにかく安定的に提供できる避難所があれば、もっとたくさんの人を救えるかもしれません。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]だが、そうするにも安全対策は必要だろう。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]こんなに目立つ動きを取っていれば、いつかは悪意ある奴が寄ってくる。そうなったら、君が危険な目に遭ってしまう。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]正直なところ、もっといい方法があるんじゃないかと——
+[dialog]
+[charslot]
+ヒアダはそこでかぶりを振った。
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="ヒアダ"]私は彼女に会いたいんです。
+[name="ヒアダ"]きっとこの大地のどこかにいるはずですから……
+ヒアダは遠くを見つめた。果てしない荒野からは、何の答えも返ってはこないとわかっていても。
+するとその時、何かが空を横切るのが見えた気がした。
+流れ星だろうか？
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="ヒアダ"]……どうあれ、源石は私たちの絶望の源であってはなりません。
+[name="ヒアダ"]苦しむすべての感染者のために、祈りを捧げたいと思います――
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]その、祈りってやつには……本当に意味があるのか？
+[charslot(slot="m",name="avg_npc_1719_1#3$1",focus="m")]
+[name="ヒアダ"]意味なんてないかもしれません。
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="ヒアダ"]それでも、人は祈る時、お互いのことを想うものです。
+[name="ヒアダ"]そうして強い絆で繋がっていれば、私たちは孤独じゃありませんから。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="32_RL2_cliffnight",screenadapt="coverall")]
+[Delay(time=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[dialog]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[delay(time=2)]
+イベリア海岸線　とある断崖
+一匹のシーボーンが尖った岩に張り付いている。
+海風が遠くから艦砲の音を運んできても、シーボーンは動じることなく、必死に上を目指して這い上り続けていた。
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="シーボーン"]（翼膜を興奮気味にはためかせる）
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="シーボーン"]（興奮しながら身体を伸ばす）
+[dialog]
+[charslot]
+そうしてついに、シーボーンは断崖の頂に辿り着いた。
+すると出迎えたのは、果てしなく広がる陸地と、空を掠めていく光だった。
+流れ星だろうか？
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="シーボーン"]……
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="シーボーン"]…………
+[dialog]
+[charslot]
+シーボーンは一瞬意識がもうろうとした。混乱と共に身体を揺らした拍子に、触手が何かに触れて——
+黒く輝く石が崖から転がり落ち、そのまま海に落ちていく。
+シーボーンがその正体を気に掛ける頃には、それは波の中に消えていた。
+[stopSound(fadetime=2,channel="sea")]
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

@@ -1,0 +1,1163 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="70,0",posto="0,0",duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[name="Mon3tr"]ドクター、こちらだ。
+[name="Mon3tr"]もう少し奥に詰めて、このキッチンカーの陰に隠れよう。
+[Dialog]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="m",name="avg_npc_1794_1#1$1",duration=1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crowdrun", volume=0.8)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[delay(time=1.2)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.6)]
+[charslot(slot="l",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[charslot(slot="r",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[delay(time=1.2)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="50,0",posto="-70,0",afrom=0,ato=1,duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="50,0",posto="100,0",afrom=0,ato=1,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#3$1",focus="l")]
+[name="Mon3tr"]これでようやく一息つけるな。
+[Dialog]
+[charslot]
+[Decision(options="お疲れ様。;このキッチンカーは誰のだろうか？", values="1;2")]
+[Predicate(references="1;2")]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="歯の欠けた少女"]ねえ、お姉さんも儀式の噂を聞いて来たんでしょ！
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="歯の欠けた少女"]よ、よかったら、あたしのアイス食べてみない？
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="n")]
+断りを入れるより前に、少女は嬉しげにアイスクリームのコーンをMon3trの手中に押し込んだ。
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="歯の欠けた少女"]これね、ラテラーノ以外じゃ絶対食べられない新フレーバーなんだ――
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",focus="l")]
+[name="Mon3tr"]（小声）私が彼女を抑えておこう。他の人間の注意を引くわけにはいかないからな。
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="n")]
+Mon3trは警戒と共にあなたにそう提案しつつ、何の気なしにアイスを一口味見した。
+[charslot(slot="l",name="avg_4179_monstr_1#8$1",focus="l")]
+[name="Mon3tr"]おいしい……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[delay(time=1)]
+[Dialog]
+[charslot]
+[Decision(options="こほん、君のお名前は？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_1793_1#3$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="r",name="avg_npc_1794_1#1$1",posfrom="-100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1793_1#10$1",focus="l")]
+[name="歯の欠けた少女"]この子が答えてくれた通りだよ、告解師さん。
+[charslot(slot="l",name="avg_npc_1793_1#11$1",focus="l")]
+[name="イディダ"]ディダディディダ、って。あたし、イディダっていうの。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]キッチンカーからする音にちなんで、自分の名前を付けたのか？
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="イディダ"]違う違う。あたしの名前に合わせて、この子の調理完了通知音をカスタマイズしたの！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="n")]
+[Decision(options="イディダ、先ほど通った護衛隊を知っているか――;イディダ、このお姉さんが怖くはないのか――", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1793_1#5$1",focus="m")]
+[name="イディダ"]わぁ、告解ロボってこんな声が出るの！？　初めて聞いた！
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="m")]
+[name="Mon3tr"]最新モデルなんだ。
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="n")]
+[Decision(options="はぁ……;まったく気にしていない様子だな。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#12$1",focus="m")]
+[name="Mon3tr"]イディダ、先ほどは私たちを守ってくれたのか？
+[charslot(slot="m",name="avg_npc_1793_1#10$1",focus="m")]
+[name="イディダ"]うん……だって、ラテラーノが丸ごと変わらなきゃダメだと思うから！
+[name="イディダ"]あなたたちもそう思ってるんでしょ！？
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]……
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="イディダ"]あ、あれ、あたしだけ？　お姉さんはあたしの無糖炭酸水味アイスを初めておいしいって言ってくれた人だから、てっきり同じこと考えてると思ったのに！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]（……道理でこれほど喉が潤ったのか。）
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="イディダ"]パパとママの言う通り、確かに険しい道だけど……でも、ようやくちょっとだけ成果を上げられたんだよ！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]と……言うと？
+[charslot(slot="m",name="avg_npc_1793_1#6$1",focus="m")]
+[name="イディダ"]「スイーツはラテラーノ人みんなを繋いでくれる」っていうけど……糖分を摂りすぎたら虫歯にもなるし、頭の上の光輪もどんどん虫に食べられちゃうんだって！
+[name="イディダ"]うちのパパは歯医者さんなんだ。それで、この話をするたびに、みんなからは診療所の宣伝文句だと思われてたんだけど……
+[charslot(slot="m",name="avg_npc_1793_1#9$1",focus="m")]
+[multiline(name="イディダ")]最近あたしの光輪が、えっと、抜けたばっかりの虫歯みたいな感じで、なんだか気持ち悪くて……
+[charslot(slot="m",name="avg_npc_1793_1#12$1",focus="m")]
+[multiline(name="イディダ")]だからこれは、きっと主の啓示だと思ったの！
+[charslot(slot="m",name="avg_npc_1793_1#11$1",focus="m")]
+[name="イディダ"]それで、ラテラーノ人の食事習慣を少しずつ改善するには、あたしが率先して動かなきゃと思ってね。みんなの繋がりを取り戻すために、まずは無糖アイスから始めるんだ！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",focus="m")]
+[playsound(key="$d_avg_robotwalk", volume=1)]
+[delay(time=1.5)]
+[charslot]
+[Decision(options="とても立派だな、イディダ。;そちらの公民、この善良な市民の理想に力を貸す気は？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#3$1",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]もう少し一緒に歩かないか？　詳しく聞きたいんだ。君が言っていた……光輪と虫歯の関係について。
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="イディダ"]うん、いいよ！
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]（小声）この子といれば、しばらくは追っ手を躱せるはずだ。急いでエクシアと連絡を取ろう、ドクター。
+[Dialog]
+[charslot]
+[Decision(options="ああ、今やってみている。", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "エクシア", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="エクシア"]やっほー、リーダー！
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[name="エクシア"]通信が繋がったってことは、キミにかけられた情報統制とかいうやつがようやく解けてきてるんだね！
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="良いことばかりとは限らないぞ、エクシア。", values="1")]
+[Predicate(references="1")]
+[Decision(options="それは「夢」のすべてが崩壊し始めた兆しでもある。;それは現実の災厄が急激に悪化している証左でもある。", values="1;2")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="エクシア"]チッ、まあそうだよね。
+[name="エクシア"]あいつら、サンクタじゃない人をほとんど全員育児聖堂に集めて、もっと大きな降誕の儀式を開こうとしてるみたい。
+[name="エクシア"]手始めに木攀獣の頭に光輪をつけたと思ったら、今度はみんなの頭にまでつけようとしてるし……
+[name="エクシア"]どうやるつもりかは知らないけど、変化が急速すぎて、ちょっと信じられないくらいだね。
+[name="エクシア"]リーダーの話を聞く限り、この夢の中でどんなことが起きても、最終的には現実になっちゃうんだよね？
+[Predicate(references="2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="エクシア"]チッ、まあそうだよね。
+[name="エクシア"]リーダーの話を聞く限り、このでっかくて不細工な建物がラテラーノの大通りにそびえ立ってるのも、光輪のついた化け物がみんなを追い回してるのも、全部本当に起きてることなんでしょ？
+[name="エクシア"]そう聞くと、夢よりよっぽど恐ろしいことが起きてるよね……
+[Predicate(references="1;2")]
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="その通りだ、エクシア。", values="1")]
+[Predicate(references="1")]
+[Decision(options="だが、夢から覚めた人々も次々に現れている。;現実の不確定要素を受けて、夢は段階を飛ばしている。", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="エクシア"]……
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="エクシア"]あーもう、ややこしい話。じゃあ、最悪の場合はどうなるか教えてくれる？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="ラテラーノがラテラーノでなくなる。", values="1")]
+[Predicate(references="1")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#6$1", duration = 0)]
+[name="エクシア"]うひゃあ！　それは一大事だね！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="エクシア"]ま、とりあえずあたしにできるのは、あの一番悪い奴を見つけ出して、みんなをこの偽物の「ラテラーノ」から助け出すことでしょ？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="こちらは君が正気で動けるようにするので手一杯だ。;Mon3trと自分が受けた制限は解除されていない。;こちらもMon3trと、別の手掛かりを探している。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[interlude(channel = 3, switch = true)]
+[name="エクシア"]了解！　ラテラーノの問題は、ラテラーノ人に――あたしに任せてよ！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#5$1", duration = 0)]
+[name="エクシア"]おっと……声を押さえなきゃね。もうちょっとで降誕の儀式が始まるとこなんだ。すんごい大掛かりな儀式でさ、ようやく忍び込めたの。へへっ。
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="引き続きMon3trと街中で騒ぎを起こしてみよう。;引き続きMon3trと共に注意を引き付けてみよう。", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="エクシア"]ところでさ、あたしたちが知り合ったのってどんな時だったっけ？
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#2$1", duration = 0)]
+[name="エクシア"]ソラの記者会見？　テキサスのバースデーパーティー？　あるいはペンギン急便が血槌組の悪事を暴いたら連中に追い回される羽目になって、その途中で間違って龍門の事務所に飛び込んだ時だっけ？
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="エクシア"]あっ、それか、傷だらけでこき使われてた競争駄獣を、あたしが盗んで気楽な暮らしをさせてあげようとしてたところにキミが来て、その子を買って引き取ってくれた時かな？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="いずれにせよ龍門でのことだな。;どれも違うように思う。", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="エクシア"]どうあれ……もう五年の付き合いだよね？
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#3$1", duration = 0)]
+[name="エクシア"]今回も華麗なコンビネーションを見せてやろうよ、リーダー。
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="ああ、約束だ、エクシア。;エクシア、気を付けてくれ。", values="1;2")]
+[Predicate(references="1;2")]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g1_nurserytemplesquare", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_avg_dreamrite_intro", key="$m_avg_dreamrite_loop", volume=0.6)]
+[playsound(key="$d_avg_comfortbell", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_soldiersstep",channel="step2",loop=false, volume=0.7)]
+[stopsound(channel="step2",fadetime=4)]
+[PlaySound(key="$d_avg_armour", volume=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_358_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(duration=0.3)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎士"]パトリツィオ殿、全員配置に着きました。
+[name="銃騎士"]これより、聖堂の巡衛と連携を取り、周囲の街道で人払いを行い、各路地を封鎖して、予定外の人の出入りが起こらないよう対応いたします。
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="パトリツィオ"]ご苦労。
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎士"]全銃騎士が一堂に会し、弾薬が潤沢に配給され、発砲制限も解かれるだなんて……これほどの大規模動員は、銃騎士隊の設立以来初ですよね？
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="パトリツィオ"]此度の降誕の儀式は、ラテラーノにとって意義深いものじゃからのう。
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="パトリツィオ"]サーミ氷原の黒い雪や、リターニア上空の裂け目、そして海岸に打ち付ける荒波までもが、我らの啓示に記された真なる災厄の訪れを裏付けておる。
+[name="パトリツィオ"]となれば、どれほど恐ろしい災厄となることやら……
+[name="パトリツィオ"]いざそれが訪れた時には、二百人余りの銃騎士を全員戦場に投入したところで……大海に小石を投げ込むようなものじゃろう。
+[name="パトリツィオ"]千年もの間そびえ立ってきたラテラーノの輝きでさえ、その時には色褪せることになるのやもしれん。
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎士"]……
+[name="銃騎士"]護衛隊及び公証人役場の人員は、現在もレミュエルとその仲間を追跡しております。
+[name="銃騎士"]加えて、お耳に入れておきたいことが……モスティマとフィアメッタを案内していた保育士が、先ほど襲撃を受けました。
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="パトリツィオ"]――！
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎士"]ご自分で出向かれますか？
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="パトリツィオ"]……
+[name="パトリツィオ"]……いや。
+[name="パトリツィオ"]ワシの持ち場は……ここじゃからな。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育士"]時間です。
+[name="保育士"]同胞たるリーベリの皆様は、啓聖ホールへお進みください。
+[charslot(slot="m",name="avg_npc_370_1#1$1",focus="m")]
+[name="緊張気味のシスター"]……
+[charslot(slot="m",name="avg_npc_1784_1#3$1",focus="m")]
+[name="ヒルデガルト"]……
+[charslot(slot="m",name="avg_npc_1781_1#3$1",focus="m")]
+[name="パガニーニ"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="-100,0",posto="-100,0")]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0")]
+[charslot(slot="m",name="avg_npc_1787_1#1$1")]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1787_1#1$1",focus="m")]
+[name="保育士"]時間です。
+[name="保育士"]こちらへどうぞ。他種族の方が光輪を授かり終え次第、総主教は堕天使の皆様の壊れた光輪と翼の修復を行い、同胞との共感能力の復元を試みてくださいます。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="a")]
+[SoundVolume(volume=0.4, channel="a",fadetime=2)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1, loop=true, channel="c")]
+[StopSound(channel="c", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]総主教、始まりました。
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]ご苦労様です。この聖堂が建てられて以来、あなたたちはほとんど休む間もなく働いてくれていますね。
+[name="総主教"]前回の降誕の儀式のあと、予期せぬ事態が相次いだことで、我々は元の計画を前倒しで進めざるを得なくなってしまいました。この聖堂が担う使命を、早急に果たさなければならないのです。
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]これまで共に歩んで参りましたので、覚悟はできております。
+[name="保育士"]そういえば、本日の儀式はサンクタでない人々に光輪を授けるものですが、なぜ「降誕」という名をそのままお使いになられているのですか？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]それ以上に正確な表現がありますか？
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]……
+[Dialog]
+[charslot]
+保育士たちは様々な種族の人々を啓聖ホールに招き入れ、中央へと誘導していく。群れを成して移動する獣のような大行列となった彼らの中には、誰一人として声を発する者はいなかった……
+そこではただ、無数のモビールの音色だけが、リズミカルに鳴り響いている。
+総主教は何かを感じ取ったように、顔を上げて群衆のほうを見つめた。
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]これより、聖都の庇護を受ける者は皆、運命を分かち合い、本来あるべき姿に――まさしく一つとなるのです。これこそ、新たなラテラーノの「誕生」であり――
+[Dialog]
+[musicvolume(volume=0,fadetime=1)]
+[Delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$glass", volume=0.6)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.5,delay=0.6)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_sunshine_upperedge",layer=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]――――！
+[Dialog]
+[charslot]
+[musicvolume(volume=0.6,fadetime=1.5)]
+[delay(time=1)]
+ガラスが割れる鋭い音が、穏やかなモビールの合奏を引き裂いた。
+どこからともなく飛んできたのは、狙撃銃から放たれた弾丸だ。総主教の光を失った目に向けて、それはまっすぐに飛んで行き――
+まばゆい陽光が降り注ぐ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="26_g12_laterano_office", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=1)]
+[musicvolume(volume=0.2,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="レミュアン"]お部屋の入り口に立ってる、あの変わった夫婦……
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公証人役場職員"]今夜の食事をルーレットで決めているみたいよ。面白いでしょ？
+[Dialog]
+[charslot]
+[name="レミュアン"]うん。それで、あの人たちが……
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公証人役場職員"]あなたを引き取りたいって人たちよ。
+[Dialog]
+[charslot]
+[name="レミュアン"]ええと、どうして直接そう言いに来ないのかな……
+[name="レミュアン"]あ、わかった。きっと私の気持ちを優先してくれてるのね。
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公証人役場職員"]どうしてそう思ったの？
+[Dialog]
+[charslot]
+[name="レミュアン"]だって、銃を回しながらこっちをちらちら見てたから。
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公証人役場職員"]あははっ、ほんとにこのおチビちゃんは何でもお見通しね――二人とは私が話をしておいたわ。
+[name="公証人役場職員"]あなたのご両親が、例の商隊襲撃事件であんなことになって……この半年、公証人役場もいくつかのご家庭にあなたを紹介してみたんだけど、なかなか話がまとまらなくてね。
+[name="公証人役場職員"]レミュアンちゃんは私が見てきた中でも一番強い子だけど、流石にその歳で一人で生きていくわけにもいかないし……
+[Dialog]
+[charslot]
+[name="レミュアン"]わかってるわ、お姉さん。
+[name="レミュアン"]私も嫌なわけじゃないの……ただ、誰かの好意を受け取るからには私もちゃんと応えて頑張らないといけないでしょ。それがとっても大事なことだと思うから！
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公証人役場職員"]そうね。とにかく、二人からの伝言よ。あなたのこと、すっごく気に入ったって。
+[Dialog]
+[charslot]
+[name="レミュアン"]私も、二人のことはすごく……ううん、あと一週間……いいえ、三日だけ待ってもらえない？　ちゃんと考えて決めたいの。
+[name="レミュアン"]一度決めたら、もう変えたりしないから！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g12_firearmsworkshop", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="パガニーニ"]……こいつにピンと来たんだな？
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="レミュアン"]はい。
+[charslot(slot="m",name="avg_npc_1798_1#1$1",focus="m")]
+[multiline(name="レミュエル")]へ～、狙撃銃？　あたしならそれは選ばないけど……
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[multiline(name="レミュエル")]あーでも、あと何年か経ってあたしの番が来たら、目一杯色々選んじゃおっと！
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="レミュアン"]ふふっ、そうして。
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="パガニーニ"]さて、どう伝えたもんか。こいつはもう何年も前に作ったもんなんだが、誰にも選んでもらえなくてな。よくよく考えたほうが良いと思うぞ。
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="レミュアン"]んー、確かにとっても静かな子ですね。
+[charslot(slot="m",name="avg_npc_1781_1#1$1",focus="m")]
+[name="パガニーニ"]ああいや、つまりな、この銃はほかの奴とは違うのさ。正直、根っから元気なお前らサンクタにはあんまり向いてないと思うがな。
+[name="パガニーニ"]実戦では、こいつを撃てるチャンスなんざ多くない。一発一発が貴重になるんだ。
+[name="パガニーニ"]こいつで何かを守るにせよ、壊すにせよ、よく見て、よく考えて、ほかよりもデカいリスクと代償を背負うことになる……
+[name="パガニーニ"]引き金を引くにせよ、指を離すにせよ、その瞬間には躊躇いなんざ許されないからな。
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="レミュアン"]……
+[Dialog]
+[charslot]
+その日は、レミュアンの誕生日だった。そんな日に守護銃を選ぶことは、もとよりサンクタにとって非常に重要な意味を持つその瞬間を、もっと特別なものにしていた。
+製銃士の口ぶりは真剣だ。後ろにいる父母も、付き添いの友達も、誰一人言葉を発さない。いつも落ち着きのないレミュエルでさえ、その時は大人しく口をつぐんでいた。
+それでも、皆が自分を見つめていることを、レミュアンは知っていた。
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="レミュアン"]これにします、パガ先生。他のパーツを選ぶのも手伝っていただけますか？
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[name="レミュエル"]やったね！
+[name="レミュエル"]撃てるチャンスが少ないなんて気にする必要ないよ、パガ先生。こんなに銃床が大きかったら殴るのにだって使えるでしょ。姉ちゃんの力はすごいんだから！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cave_5", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="アンドアイン"]——！
+[name="アンドアイン"]最も黒き穢れが聖霊の純白によって洗い流されれば、最も獰猛な怪物も心から敬虔になり、泥濘を抜け出すことができる……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_frdrgnld", volume=1)]
+[Delay(time=1)]
+[name="レミュアン"]（深呼吸）
+[name="レミュアン"]それを放しなさい、隊長。照準はあなたに合わせたわ。
+[name="レミュアン"]今のあなたが、とても不安定な状態にあることは伝わってきてる……だから落ち着いて。それはあなたの感情をかき乱して、ラテラーノへの失望を引き起こしているの。
+[name="レミュアン"]出発前、あなたが辞表を出したことは知ってるわ……でも、あなたが本気で荒野へ戻ると決めたのだとしても、今はまだ私たちの仲間でしょう。
+[name="レミュアン"]発つ前に一緒に食べたチーズフライを思い出して？　それに、フィアメッタがプレゼントした、ふわふわの羽獣帽子のことも……
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="アンドアイン"]ラテラーノへの失望……いいや、そうじゃない。その逆だ！　これは、ラテラーノであればすべての人を救えると私に示してくれた。
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="n")]
+[name="レミュアン"]あなたが見たものが現実であり真理なのか、あるいは幻や虚構なのかは誰も断言できないけど……モスティマがすぐに来てくれるわ。あの子ならそれを回収できるはず。
+[name="レミュアン"]その後でゆっくり秘密を解き明かせばいいじゃない、ね？
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="アンドアイン"]その後など存在しないんだ。あの光景はすでに消えかけている！　手放すわけにはいかない……レミュアン、あれは幻でも虚構でもないんだ。君にもわかるだろう！
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="m")]
+[PlaySound(key="$d_avg_originiumcast", volume=1)]
+[name="アンドアイン"]君も遺跡の中で、あの時の流れが停滞している者たちを――死ぬこともなければ、生きてさえいない者たちを見たはずだ。
+[name="アンドアイン"]あの狂ったサルカズが、自らの影に語りかけていた言葉だって聞いただろう——「未来は未知ではなくなった」とそう言っていた。
+[name="アンドアイン"]それならば、我々が見つけたのは時間そのものの鍵だということが君にもわかるはずだ。私が見たのは啓示であり、最も獰猛な怪物でさえも救われるはずの……未来なんだよ。
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="n")]
+[name="レミュアン"]アーツが漏れ出しているわよ、アンドアイン。奴があなたを侵蝕しているの——
+[charslot(slot="m",name="avg_npc_1800_1#5$3",focus="m")]
+[name="アンドアイン"]そんな未来が本当に存在するのなら、私はその未来へと続く道を見出さなければならない。
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アンドアイン"]手放すわけにはいかないんだ、もっと多くを知らなくては！
+[Dialog]
+[charslot]
+アンドアインが奇妙な形のアーツユニットを握りしめると、その光は実体を持つエネルギーとなり、洞窟全体を包み込んでいった。
+引き金を引くチャンスは幾度もあったと、レミュアンは思った。
+だが、溢れかえっている感情の渦の中に、かすかに残ったアンドアインの理性を、彼女は感じ取っていたのだ。
+出会い、そして知己の友となって以来、二人は互いを理解し合い、命を預け合ってきた。ゆえにその共感は、ほかよりも強く結ばれていた。
+レミュアンは最後の瞬間に、戦友が未知の混沌に飲まれきってはいないことを確かめたのだ。
+そうして、彼女は引き金から指を離した。
+[Dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_keeprunning",volume=1,channel="step",loop=true)]
+[stopsound(channel="step",fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="モスティマ"]クソッ！　レミュアン、危ない！
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.9)]
+[PlayMusic(key="$m_act42side_bat2_loop", volume=0.6)]
+[CameraShake(duration=0.7, xstrength=20,ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i14", screenadapt="coverall",fadetime=0, xScale=1.7, yScale=1.7, x=-420)]
+[ImageTween(image="61_i14", fadetime=0.5, xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1.7, yScaleTo=1.7, xTo=420,duration=30)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[delay(time=4)]
+[PlaySound(key="$d_avg_cartridgepopup", volume=1)]
+[name="レミュアン"]ふぅ——
+[name="レミュアン"]育児聖堂総主教ケファ——命中確認。
+[Dialog]
+[delay(time=1)]
+屋上の風が狙撃手の頬に容赦なく吹き付けようとも、彼女はまばたき一つせず、その手は微動だにしない。
+音を聞き、場を見つめ、考え、判断を下す。
+チャンスは限られている。一発一発が貴重なものだ。
+引き金を引くにせよ、指を離すにせよ、その瞬間には躊躇いなど許されない。
+その時まで、彼女とその銃は沈黙を貫き続ける——
+[Dialog]
+[Image(image="61_i14", screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+「沈黙のレミュアン」。
+レミュアンは再びスコープの向こうの光景を確認した。そこには、彼女が引き金を引いた証があった。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i06", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.3,fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="総主教"]ボリバルの山やイベリアの海辺にそびえ立つ、いわゆる「ラテラーノ教像」に比すれば、実のところラテラーノでよく見かける聖像はより理解しがたいものなのですよ。
+[name="総主教"]楽園はこれまで、我らの信心をどこか歪んだ特殊な形に作り上げてきました。
+[name="総主教"]天災と苦難の中であえぐ命が、生き延びたいと願ったこと……これこそが、信仰の原点なのです。
+[Dialog]
+[delay(time=1)]
+違う。そもそも、ラテラーノには型にはまった退屈な彫像など存在していた試しはない。
+信仰とは生活によって形作られるものであり、街角に立つ銃を構えた聖徒像は、災厄や苦難を侮っているわけでは決してない。我々はただ、独自の態度でそうしたものに向き合うことを選んだだけだ。
+十分に離れたこの位置から、スコープ越しに見た時に、レミュアンはようやく気が付いた。聖堂内にある、頭を垂れて両手を合わせた聖像はすべて、あの敬虔な総主教に祈りを捧げていたのだと。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i14", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="レミュアン"]ケファ……彼女が恐ろしい怪物だとすれば、この弾丸でダメージを与えることなんてまず難しいでしょうね。
+[name="レミュアン"]だけどそれでも、聖堂にいる人たちに彼女はおかしいと気付かせることはできる。それに、あなたのためのチャンスを作ることもね……
+[name="レミュアン"]エル、あとは任せたわよ！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[Background(image="26_g10_laterano_roof", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.4)]
+[PlaySound(key="$pistol", volume=0.3,delay=0.5)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.8)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="レミュアン"]……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="レミュアン"]アモスさん？
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[name="アモス"]……レミュアンさん、こちらの位置はバレてしまいました。
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="m")]
+[name="レミュアン"]すぐ応援に向かうわ。
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="n")]
+[name="アモス"]いえ、来ないでください。
+[name="アモス"]聖堂の巡衛が来ているんです。そ、それに銃騎士も……大量に！
+[name="アモス"]こちらの通りは私が守ります。完全に包囲される前に、急いでそのビルから脱出してください……
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="レミュアン"]あなたは？
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="n")]
+[name="アモス"]もう間に合いませんよ。
+[Dialog]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.2,channel="z")]
+[name="アモス"]彼らは発砲してきました。やはり、あの推測は間違っていなかったようです。この場所は、子供を産むためだけの施設だとは思えない……
+[name="アモス"]そういえば、ターゲットは片付きましたか？
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="m")]
+[name="レミュアン"]ええ、一撃で命中させたわ。
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="n")]
+[name="アモス"]ははっ、それを聞いて安心しました。これで私は、少なくとも幾人かを救い、いくつか事が起こるのを防げたわけですから、ひどく平凡で無意味な人間からは脱却できたでしょう。
+[name="アモス"]それでは、また。レミュアンさんは、為すべきことを成してください。
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_recorderglitch",volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="レミュアン"]……
+[Dialog]
+[charslot]
+[name="アモス"]――実は一つ、聞きたいことがあるんです……もう聞こえていないでしょうから、口にできることなんですがね。
+機械が故障しているのか、その通信は途切れてはおらず、彼のつぶやきは彼女に届いていた。
+レミュアンはしばしためらった後、沈黙を選んだ。
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[name="アモス"]私は、役立たずでしたか？
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="レミュアン"]……
+[Dialog]
+[charslot]
+[name="アモス"]実は、以前まではそんなふうに思いはしなかったんです。一生懸命努力して、何とか第七庁に入って、平凡な調査員として、十年間も同じ仕事をして……
+[name="アモス"]ラテラーノ人は普通、こういうことで自分に疑問を抱いたりなんてしないみたいですけどね。みんな生まれつき、人生の楽しみ方や、充実感を得る方法を山ほど持ってますし。
+[name="アモス"]たとえば、私の知り合いには、棒付きキャンディーの棒職人がいましてね。彼はいつも、何種類もの紙テープで虹色の棒を作っているんです……大した儲けもないのに、子供たちが喜ぶから、と。
+[name="アモス"]ですが私は……アウレラがラテラーノを追放され、自分には何もできないと知った時から、一瞬の充実感を得る方法すら見つけられなくなってしまいました。
+[name="アモス"]「アモス、お前は本当に役立たずだな。」――そう思って、忌々しい感情に包まれてしまって……まるで、人生で初めて不味いスイーツを口にした時みたいに、それが頭から離れなくて。ははっ。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="レミュアン"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$pistol", volume=0.3)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=0.3)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.4)]
+[name="アモス"]それでも私は、あと何年かすれば、キャリアを積んでレガトゥスになって、ボリバルへ行けるかもしれないと、ずっとそう思って働き続けてきました……
+[name="アモス"]私には、ラテラーノの代表として彼女を救う資格なんてないし、彼女の行いを許したわけでもありません。ただもう一度会って、あの時の口ゲンカについて謝れたらって……
+[name="アモス"]こんなに待ち続けた挙句、やっと訪れたチャンスなのに……結局それが、ただの夢だったなんて……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="レミュアン"]……
+[Dialog]
+[charslot]
+[name="アモス"]でも、夢でもいいんです。
+[name="アモス"]夢なら、何も気にしなくていいわけですから。もしかすると、弾丸を受けても、現実に戻ればなかったことになるかもしれませんし！
+[name="アモス"]私、若い頃には、第七庁の新人射撃大会で五位になったこともあるんですよ！
+[name="アモス"]――アウレラ、私たちもあの日射撃場で出会ったんだったね……
+[name="アモス"]お互いの救いになれなかったこと、本当に残念に思うよ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.3)]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.5,delay=0.3,channel="z")]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.5)]
+[Delay(time=2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[playsound(key="$d_gen_transmissionget", volume=0.4)]
+[Delay(time=1)]
+[name="レミュアン"]少なくとも、あなたは立派な調査員だったわよ、アモスさん。
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="n")]
+[name="アモス"]レミュアンさん、聞こえてたんですね……
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1,delay=1)]
+[Delay(time=2)]
+[playsound(key="$transmission", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[name="レミュアン"]……
+[charslot(slot = "m", name = "avg_npc_1811_1#2$1",focus="m")]
+[name="レミュアン"]夢から覚める時が来たみたいね。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]……
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育士"]アンドアイン先輩、葬儀は終わりましたか？
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]ああ。
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育士"]啓聖ホールはこちらですよ……そちらは反対側です。
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]そうかい？
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育士"]降誕の儀式は始まっています。総主教はあなたをお待ちになっているのですよ。それなのに、こんな時にどこへ行くつもりですか？
+[name="保育士"]感情が……ひどく不安定になっているようですね。
+[charslot(slot="m",name="avg_npc_1800_1#12$1",focus="m")]
+[name="アンドアイン"]いいや、かつてないほど落ち着いているさ。行き先もこちらで間違いない。
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育士"]——
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.7)]
+[charslot(slot="l",name="avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",duration=1)]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",duration=1)]
+[delay(time=2.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育士"]アンドアイン先輩、総主教の元へご同行ください。
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[PlaySound(key="$d_avg_gunload", volume=1,delay=0.1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]……
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[PlaySound(key="$d_avg_punch", volume=0.6,delay=0.6)]
+[PlaySound(key="$d_avg_punch02",volume=0.6,delay=1)] 
+[PlaySound(key="$bodyfalldown1", volume=1,delay=2)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[charslot(slot="l", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="r", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="m", afrom=1,ato=0,duration=0.7)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[delay(time=0.2)]
+[playsound(key="$d_avg_punchsp1",volume=1)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[Dialog]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",duration=1)]
+[charslot(slot = "r", name = "avg_300_phenxi_1#9$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",focus="l")]
+[name="モスティマ"]これはナイスタイミングかな。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="アンドアイン"]モスティマ、フィアメッタ、どうして……
+[charslot(slot = "m", name = "avg_300_phenxi_1#10$1",focus="m")]
+[name="フィアメッタ"]なによ。ほかのリーベリみたいに、猛抗議しながら巡衛に押し戻されてたほうがよかったって言いたいの？
+[charslot(slot = "m", name = "avg_300_phenxi_1#9$1",focus="m")]
+[name="フィアメッタ"]あるいは、光輪が与えられたとして、それが四角かそれとも丸かをワクワクしながら待ってるべきだって？
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="モスティマ"]そういえば、堕天使の光輪をどう直すつもりなのかには割と興味があるんだよね……
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="フィアメッタ"]ちょっと、モスティマ！
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="モスティマ"]はいはい、本題に入ろうか。アンドアイン、説明してくれる？
+[charslot(slot = "m", name = "avg_213_mostma_1#9$1",focus="m")]
+[name="モスティマ"]サンクタ以外の人間をみんな集めて、強制的に身体を改造するなんて……こんなこと、クルビアの狂人だらけのテクノロジー企業でもなければやらないと思ってたけど。
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="フィアメッタ"]あなたが追い求めてる、「未来の可能性」だの「ラテラーノの可能性」だのってこういうこと？
+[name="フィアメッタ"]これが、総主教があなたに約束したものなの？
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="アンドアイン"]……
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="アンドアイン"]私は間違った道を歩んでいた。それは否定しないよ。
+[name="アンドアイン"]ラテラーノはすべての人に向けて、甘美な夢を織り上げた。私はその深みにはまっていて、目覚めるのが遅すぎたんだ。
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="フィアメッタ"]この期に及んで、何をくだらないことばっかり言ってるの？
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_comfortbell",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="アンドアイン"]他の巡衛たちがすぐに駆けつけてくるだろう。
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="フィアメッタ"]ああもう……ねえモスティマ、こいつを人質にとれば、総主教に近づけると思う？
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="モスティマ"]可能性はあるかもね。あの人はアンドアインをかなり信頼してるみたいだし。それに、エルだけに全部任せるのはやっぱりちょっと不安だからさ。
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="アンドアイン"]……
+[name="アンドアイン"]感情が、これまで以上に満ちていくのを感じるんだ……それはつまり、この聖堂の中に共感能力を持った人間が増えつつあるということだろう。
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="アンドアイン"]降誕の儀式は始まっている。今更総主教を押さえたところで、もはや手遅れだ。
+[name="アンドアイン"]私たちは、それぞれできることを成すべきなんだよ。
+[name="アンドアイン"]この存在すべきでない儀式は、私が何とかしてみせよう。
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="アンドアイン"]だがそうすれば、大きな混乱を招きかねない……その時までに、君たちが皆を逃がしてやる程度の猶予はまだ残っているはずだ。
+[charslot(slot = "m", name = "avg_300_phenxi_1#3$1",focus="m")]
+[name="フィアメッタ"]……
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="モスティマ"]……
+[name="モスティマ"]どうする気？
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="フィアメッタ"]私たちがあなたを信じるとでも思うの？　戦友を傷つけて、たわ言ばかり口にする狂人が、すべての人を救おうだなんて言うつもり？
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="アンドアイン"]私を信じなくてもいい。
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="アンドアイン"]憐憫だけでは人は救えないし、私にそんな能力はない。
+[name="アンドアイン"]執念に突き動かされるあまり、道を踏み外した人間に、できることなど一つしかない。それは自分自身を救うことだ。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="モスティマ"]アンドアイン、待って。これを持っていきなよ。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="アンドアイン"]……爆弾？
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="モスティマ"]エルがくれたんだ。衛兵の注意を引くのに使えるだろうって。
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[multiline(name="モスティマ")]でも、君が本気でこの儀式を止めようとしてるなら……
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[multiline(name="モスティマ")]これが必要になるのは君のほうでしょ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=4)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+アンドアインは二人のそばを通り過ぎ、育児聖堂の奥へとまっすぐ進んでいった。
+その足取りは決して速くはなかったが、結局フィアメッタは彼を引き留めなかった。
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="モスティマ"]こんなにあっさり行かせちゃっていいの？
+[charslot(slot = "m", name = "avg_300_phenxi_1#8$1",focus="m")]
+[name="フィアメッタ"]あいつって、ぐだぐだ言わずに二言三言で済ませた時は、まあまあ頼りになるのよ。
+[charslot(slot = "m", name = "avg_213_mostma_1#10$1",focus="m")]
+[name="モスティマ"]確かに。
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="フィアメッタ"]それに、今の状況は異常すぎて、現状私たちにも打つ手はないし。
+[Dialog]
+[PlaySound(key="$d_gen_soldiersrun",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_213_mostma_1#8$1",focus="m")]
+[name="モスティマ"]おっと、誰か来たね。それも結構な数だ……多分、アンドアインを追ってるんだろう。
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="フィアメッタ"]足止めしてあげましょうか……全部終わったら、借りは返してもらうけど。
+[Dialog]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+聖堂最初の育児室。
+この場所で、かつて彼は希望を胸に、不幸な母親の世話を日々続けていた。
+そして今、彼女の遺児はモビールの上で羽づくろいしたばかりの翼を広げている。きらきらとした水滴が、明かりと共にくるくると回り、夢のような光景を描き出していた。
+木攀獣は、自身の養育者が前回演じた失態を気にかけてすらいないようだ。楽しげに鳴き声を上げると、いつも通りアンドアインを遊びに誘ってきた。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]取るに足らぬことと天地を揺るがす偉業の間には、ほんのわずかな差しかありません。長年の探求を経てここへ辿り着いたあなたが、その無意味な違いのために足を止めることはないのです。
+[name="総主教"]これからは、この親子の世話のみならず、より多くのことへ力を尽くしていってください……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+取るに足らない存在である保育士と、天をも覆い尽くさんとする巨大な聖堂。
+前者には、歯を食いしばり、心を鬼にして幼獣の遊びの誘いを断ることはできるが、そんなささやかな抵抗では、後者を揺るがせることなどできはしない。
+[charslot(slot="m",name="avg_npc_1800_1#13$1",focus="m")]
+[name="アンドアイン"]もっと……もっと多くを成さなければ！
+[name="アンドアイン"]だが、この聖堂を揺るがすにはどうすればいい？　すでに起きた奇跡を打ち消すにはどうすべきなんだ？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]この天高くそびえる巨大な育児聖堂は、一日にして成ったわけではありません……その始まりは、ごく普通の育児室に過ぎませんでした。
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="アンドアイン"]私たちの育児室……ですね。
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]我らは初めから、この広大な聖堂の設計図を手にしていたでしょうか？　答えはいいえです。我らはただ、あの母親を休ませるための安全で快適な空間を求めていただけでした……
+[name="総主教"]ですがそれは、止めようもなく今のような姿にまで発展していきました。
+[name="総主教"]となれば、あらゆる人が救われる未来もまた、我らの信仰から始まるはずです。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]ここが聖堂最初の育児室であり、この巨大な建物の原点……
+[name="アンドアイン"]私たちが信仰を託した場所だ。
+[charslot(slot="m",name="avg_npc_1800_1#15$1",focus="m")]
+[name="アンドアイン"]ならばケファよ、私は私の信仰を引き裂こう。
+[Dialog]
+[charslot]
+アンドアインはモスティマから手渡された爆弾を見つめた。それは様々な日用品が意外な形で組み合わされてできており、派手な落書きが施されている。
+爆弾を作ったという少女の顔は思い出せない。何度か顔を合わせたことがあるかもしれないし、ないかもしれない。ただレミュアンが彼女の話を何度も飽きずに繰り返していたことだけは覚えていた。
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="アンドアイン"]……求道の旅は、私一人で背負っていたものではなかったのだろうか？
+[Dialog]
+[charslot]
+彼はためらうことなく導火線を繋いだ。
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_1",volume=1)]
+[name="木攀獣"]（嬉しげな鳴き声）
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="アンドアイン"]坊や、君は悲しみも苦しみも感じてはいないようだな。ここはもうすぐ爆破されるというのに、危険を察知していないのか？
+[name="アンドアイン"]……あるいは、それすら気にしていないのか？
+[name="アンドアイン"]ラテラーノは、もはや我々が恐怖を感じることさえも必要としていないのか？
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_2",volume=1)]
+[name="木攀獣"]（不思議そうな鳴き声）
+[Dialog]
+[charslot]
+木攀獣は地面に飛び下りると、不思議そうにアンドアインのズボンに身体をこすりつけた。
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="アンドアイン"]仮に、生きていく中で起こるすべてに、懐かしさも、恐怖も、苦しみも感じないとしたら、どうして人生に畏敬の念など抱けようか？
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="アンドアイン"]私は本来、君にそう問いかけるべきだったのだろう。
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="アンドアイン"]だが、君をここへ連れてきたのは私だ。それどころか君は、私の願いに応えるべく生まれてきたとすら言える。
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="アンドアイン"]……これは我々が共に背負う苦行であり、課題だ。
+[Dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+アンドアインは腰をかがめると、木攀獣を懐に抱いた。
+[Dialog]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[Delay(time=1)]
+[name="アンドアイン"]この音は――
+[name="アンドアイン"]レミュアン。君の銃声を聞けること、嬉しく思うよ。
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$e_skill_explodebris",volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=4, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i13",screenadapt="coverall",fadetime=0,block=true)]
+[PlaySound(key="$firestorm", volume=1)] 
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.4, channel="b",fadetime=3)]
+[PlayMusic(intro="$m_bat_martyr_intro", key="$m_bat_martyr_loop", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+[Delay(time=2)]
+育児室内で爆発音が響き、巨大なモビールがぐらぐらと揺れながら崩れ落ちて、さらなる轟音を立てた。爆発は室内の美しい光も影も飲み込んでいく。
+[Dialog]
+[name="アンドアイン"]これは果たして夢なのか、あるいは我々の執念の表れか……
+[name="アンドアイン"]アンドアイン。かつて、お前の後ろには、仲間たちが付き従っていた。疎まれ、傷つけられ、侮辱され、冒涜されてきた彼らは……お前を先導者と呼んで、共に長い道のりを歩んできた。
+[name="アンドアイン"]だがお前は、ようやく平等で公平な場所になったと信じたこのラテラーノで、彼らのことを忘れてしまった。となれば……
+[name="アンドアイン"]お前は、集団がどのように形成されることを望む？
+[name="アンドアイン"]聖都がどのように再建されることを望む？
+[name="アンドアイン"]アンドアイン、お前が歩むのは、果たしてどのような道で、それはどのような答えに通じている？
+[name="アンドアイン"]……
+[name="アンドアイン"]これが夢なら、目を覚ませ。執念であれば、断ち切るんだ。
+[name="アンドアイン"]救済について語るのはその後だ。
+[Dialog]
+[PlaySound(key="$d_avg_explosion", volume=0.9)]
+[playsound(key="$d_avg_explosion_stone", volume=0.8,delay=0.8)]
+[PlaySound(key="$d_avg_statuecollapse",volume=0.6,delay=0.4)]
+[CameraShake(duration=4, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[image]
+炎が育児室全体を飲み込んでいく。懸命に羽をはばたかせる木攀獣の目に恐怖はなく、その子はただ踊っているだけのように見えた。
+だが、アンドアインは思わず彼の目をふさいだ。
+[Dialog]
+[stopmusic(fadetime=3)]
+[StopSound(channel="b", fadetime=2)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_churchbell", volume=1)]
+[Delay(time=2)]
+最後の瞬間、アンドアインは鐘の音をはっきりと耳にした。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", y=40,xScale=1.3, yScale=1.3,block=true)]
+[delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[PlaySound(key="$d_avg_explosion", volume=0.4,delay=0.2)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]——！
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]総主教、ご無事ですか？
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]ううっ……
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]儀式は中断されました。育児聖堂の全体が震えています。先ほどの爆発は……
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0.4)]
+[stopsound(channel="bgs",fadetime=6)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]同胞たちは避難していますか？
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]は、はい……護衛隊の制服を着たリーベリと、堕天使が彼らを誘導しています。
+[name="保育士"]サンクタでない人々のうち、光輪の付与に成功したのは、わずか半数ほどです。ただちに巡衛を組織して、皆を呼び戻させましょう——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_explosion", volume=0.4)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.2)]
+[playsound(key="$d_avg_statueshake", volume=0.6,delay=0.7)]
+[CameraShake(duration=1.5, xstrength=25,ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+その時、大きな爆発音が育児聖堂の奥から聞こえて、どこからか鳴り響く鐘の音がモビールの音をかき消した。育児聖堂内は混乱に陥り、無数の人々が外へ出ようと駆け出した。
+天高くそびえ立つ建物が揺れている。爆発の衝撃波は、ついに啓聖ホールを包み込もうとしていた……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]皆を退避させてください。
+[name="総主教"]無理に引き留めてしまえば、取り返しのつかない傷を負わせることになるでしょうから。
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]総主教、聖堂が崩壊していきます……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]崩壊しているのは、この聖堂だけではありません。我々がここで探し求めた答えもまた、崩れ去っているのです。
+[name="総主教"]ほかの保育士を呼び集め、すぐにここからお逃げなさい。
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育士"]まずは巡衛を手配して、あなたを安全にお連れします。
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="総主教"]……
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+総主教は啓聖台を降りた。
+[Dialog]
+[PlaySound(key="$d_avg_strongwind", volume=0.7)]
+[delay(time=1)]
+その時、風の音がした。混沌とした騒ぎの中で、風の音が確かに耳に届いたのだ。それも、祈りを捧げる聖像と清らかなステンドグラスしかないはずの、頭上から。
+[name="？？？"]へへっ、こっちこっち！
+[name="？？？"]まだ逃がすわけにはいかないよ！
+[Dialog]
+[backgroundTween(yFrom=40, yTo=-80, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=3)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[charslot]
+[Image(image="61_i15", screenadapt="coverall",fadetime=0)]
+[delay(time=1)]
+[PlayMusic(intro="$m_bat_act26side_intro", key="$m_bat_act26side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cnstrctnck", volume=0.7)]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=0.6,delay=0.4)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+総主教は顔を上げた。近づいてくる相手の姿は見えなかったが、その声があまりにも訴求力に満ちていたため、彼女は思わずそちらに手を伸ばした。
+[name="エクシア"]こっちはステンドグラスの上に二時間も張り付いてたんだから。キミが啓聖台から降りてくれなかったら、腕が折れちゃうところだったよ！
+エクシアは総主教の腕をしっかりと掴んだ。天地がひっくり返り、二人は同時に倒れ込む。
+しかし、二人の下にあるのは固い地面ではなく、何やら妙に柔らかく、霧のようでも、水面のようでもある何かだった。
+エクシアは大きな力で外側へと押し出されているのを感じた。それは決して、爆発の衝撃波だけではない。だが、か弱く見えるこの女性に、そんな力などあるのだろうか？
+必死に目を開けると、握り締めていた総主教の腕は、気付けばざらざらとした動物の脚に変わっている。そして彼女の穏やかな顔は、水面の向こうに沈んでいるかのようにぼやけて見えた……
+虚構と真実の狭間で、二人は向かい合う。啓示の石塔の鐘の音が、こちら側で響き渡るのがはっきりと聞こえた。
+[name="エクシア"]……
+[name="エクシア"]キミがろくでもない奴だってことはとっくに知ってたけど、まさかまだ予想を超えてくるなんてね。『洪炉示歳』にだってこんな展開なかったのに！
+[name="エクシア"]でもこれで、キミの腕を引きちぎっちゃう心配なんていらないね！
+[name="エクシア"]みんなが何とか、力を尽くして作ってくれたチャンスなんだ……
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=1)]
+[CameraShake(duration=2, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[name="エクシア"]隠れてないで出てきなよ！　夢の中から……あたしたちのラテラーノから！
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken", volume=1)]
+[Delay(time=0.3)]
+[CameraShake(duration=2.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[Dialog]
+[image]
+[Background(image="bg_black",screenadapt="coverall")]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]

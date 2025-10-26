@@ -1,0 +1,758 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[delay(time=1)]
+You have determined that the momentous migration has come to a conclusion in reality.
+That conclusion has been mapped onto the space you are in. The rift that looks as if it has been plowed open by a Catastrophe bisects the plaza in front of the Basilica. By the rift, there is an even more eye-grabbing pit.
+Ugly scars in what should have been a city trapped in stasis.
+The ring-shaped machine sits silently within.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]......
+[Dialog]
+[charslot]
+[Decision(options="Did the PCS system... crash?", values="1")]
+[Predicate(references="1")]
+You look at Priestess. She remains calm, as if she does not care about what has happened in the slightest.
+You feel uneasy.
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]Analysis complete! Ten standard seconds ago, at least two massive explosions took place in the Basilica plaza.
+[name="Mon3tr"]I'm certain the instigators were Exusiai, Executor, and a silver-haired Sankta. The constant flickering of the freeze-frames by the explosion point are proof enough.
+[Dialog]
+[charslot]
+[Decision(options="The programmatic bombs we helped Exusiai make worked.;The machine's structure shouldn't have been that weak.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]We can't pat ourselves on the back just yet, Doctor!
+[name="Mon3tr"](Priestess still hasn't made her next move.)
+[name="Mon3tr"](We need a way to stop her from changing the situation, no matter what.)
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]You're right. Its structure would definitely have been able to withstand any attacks the angels can execute. It was designed to operate in even harsher environments, after all.
+[name="Mon3tr"](Priestess should be able to reactivate it. We need to stop her from doing that.)
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]*sigh* Sorry, Doctor.
+[name="Mon3tr"]I should've come alone to carry out this mission. I never should've let you take on this risk—
+[Dialog]
+[charslot]
+[Decision(options="You're used to standing in front of me by now, Mon3tr.", values="1")]
+[Predicate(references="1")]
+[Decision(options="(Smile);Thanks.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]Huh?
+[Dialog]
+[charslot]
+[Decision(options="Things might not be as bad as you think.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="I can verify Priestess's condition now.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]Her... condition?
+[Dialog]
+[charslot]
+You walk past Mon3tr toward Priestess. Mon3tr immediately tenses up, and she pulls on your arm.
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]Doctor!
+[Dialog]
+[charslot]
+[Decision(options="Don't worry.;Trust me.", values="1;2")]
+[Predicate(references="1;2")]
+After a brief moment of hesitation, she lets go, but decides to stick close to you as you walk ahead.
+You stand shoulder-to-shoulder with Priestess.
+[Dialog]
+[charslot]
+[Decision(options="This city's scars are rather inharmonious.;You've allowed these redundant parameters to mix with your data.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]These unremarkable strings ultimately caused the entire program to crash, {@nickname}. There is no guaranteeing a language will operate in eternal perfection.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]I know what you want to say. Even Originium, the language we created together, has limitations.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]It needs more time to adjust and iterate.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]Sometimes I cannot help but wonder if what is truly stopping Originium from reaching perfection is not a design flaw... but us.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]Human emotion and reason are both able to fetter the development of a language.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]We debated this several times during the creation process, but there was never a clear winner.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]Luckily, we both accepted that this uncertainty exists within Originium.
+[Dialog]
+[charslot]
+[Decision(options="...I don't understand your meaning.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="Priestess"]Has memory loss affected your ability for divergent thinking?
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="Priestess"]I'm glad to see you so perplexed, though. It is a marked difference from how I used to communicate with {@nickname}.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]'Perfection' implies a strict upper bound. 'Flaw', on the other hand, means we still have the chance for a breakthrough. This was {@nickname}'s stance on the matter.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]When the crisis we must resolve is still inexplicable, chasing perfection will only lead us to our graves.
+[Dialog]
+[charslot]
+[Decision(options="No, this has nothing to do with the current circumstances.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="You... can't change this situation.;This is different from our first encounter on the deck.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="Priestess"]......
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="Priestess"]When did you figure it out?
+[Dialog]
+[charslot]
+[Decision(options="Just now.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="...You could have stopped the programmatic bombs from detonating.;...You could have used Originium to close the rift.;...You could have left the saints trapped in the maze.", values="1;2;3")]
+[Predicate(references="1")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Image(image="61_i20", fadetime=2,screenadapt="coverall")]
+[delay(time=2)]
+[image(fadetime=2)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="2")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall",fadetime=2, block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="3")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g6_pcsderivativemaze",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot]
+[Decision(options="It would have been easy for you to do that.;It's like when you awakened and ruined Rhodes Island.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="You didn't eliminate Mon3tr and me from the get-go.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="You've got problems of your own.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]That much is obvious, {@nickname}.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]But only now have you mustered up the courage to stand by me.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]I had hoped the one standing by my side could have peacefully shared in the solitude that took root deep in our thoughts, during our long hibernations.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]It's a shame you can't do that.
+[Dialog]
+[charslot]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]We are not as we were in the past. Far too much has happened since, has it not?
+[Dialog]
+[charslot]
+[Decision(options="You really haven't hid anything from me.;You're more like a... riddle.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="Priestess"]Still curious about me?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]This 'Mon3tr' no longer has any limitations on her. She can clear up some of your confusion.
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]......
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]You fear {@nickname} will learn the truth, AMa-10?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]To be honest, I would much rather {@nickname} come to me in person, like earlier.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]My days in the sarcophagus were excruciating. It was as if my thoughts were floating through a fetid morass, wherein I lost all sense of the flow of time.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]My only consolation was the never-ending loop of debates seared into our minds, though not to reassure me of our shared vision.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]I have never once doubted my path.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]Through 'debate', I got my only chance to communicate with a certain someone again—
+[Dialog]
+[charslot]
+[Decision(options="......;I—", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]I'm not demanding you understand everything on my mind right away. Before the final day comes, you can continue to walk the path you believe in.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]Our disagreements are destined to continue, even if you no longer remember that one's reasons for disagreeing with me.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]I look forward to seeing how your beloved Terra can prove to me that your struggle still has some value... the way the people of Laterano just did.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]......
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]But there is something else I am equally certain of. Oracle <i>will</i> return.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]So, {@nickname}, I will wait for you.
+[Dialog]
+[charslot]
+As she looks out at the city devoid of life, she sighs.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]At times, I think they are far too like us. If you had enough time, perhaps...
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]......
+[Dialog]
+[charslot]
+She begins to fade away.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]Ah, yes, I can indeed restore AMa-10.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]If you are determined to see it done, make a wish to Originium, {@nickname}.
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="Priestess"]I will hear your voice.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=2)]
+[delay(time=2)]
+Priestess vanishes without a trace—your target is gone.
+There is only silence, absolute silence. You and Mon3tr are the only ones left trapped inside this colorless ghost town.
+[Dialog]
+[charslot]
+[Decision(options="She's gone...", values="1")]
+[Predicate(references="1")]
+[PlayMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.4)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]Umm... I guess that's it, then?
+[Dialog]
+[charslot]
+[Decision(options="Perhaps.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="The Sanktas resolved their crisis by themselves.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="I've also confirmed Priestess's current condition.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="Her loss of control over Originium is more serious than we thought.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]That's really important information, Doctor!
+[name="Mon3tr"]While we can't be sure how long she'll need to get back to normal, at the very least, we have a chance to stop her.
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]Oh, right, she mentioned... Kal'tsit... earlier...
+[Dialog]
+[charslot]
+[Decision(options="I don't trust her, Mon3tr.;We shouldn't wish upon Originium, even if it's for Kal'tsit.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]I know. I don't approve of using her methods to bring back Kal'tsit either.
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]She inflicted grievous wounds on Rhodes Island and Laterano. Every time she appears, she drops something mind-blowing on us, and then points toward some even more unknowable crisis... I don't understand her at all.
+[Dialog]
+[charslot]
+[Decision(options="We've been researching a long time now.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We have our own methods.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]We're going to be setting out on a really long road, aren't we?
+[Dialog]
+[charslot]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+You finally notice what's odd about Mon3tr. Your enemy has retreated, the crisis has passed, but the young woman, normally so lively and energetic, does not smile like she usually does.
+She even looks somewhat solemn.
+Mon3tr hasn't been reconstructed for very long. You still haven't gotten completely used to her new appearance, nor has she had the time to adapt to the changes in her body, or the loss that cut her to the bone.
+But she has been thrown into mission after mission far too quickly. Rebuilding Rhodes Island, saving Laterano... Perhaps it has taken up until now for her to finally have the chance to speak her mind.
+[Dialog]
+[charslot]
+[Decision(options="No need to be so pessimistic, Mon3tr—;Don't give up, Mon3tr—", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]I'll bring back Kal'tsit!
+[name="Mon3tr"]I'll also protect Amiya, and you too!
+[Dialog]
+[charslot]
+Mon3tr looks up at you all of a sudden, interrupting your train of thought.
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]I haven't forgotten what Kal'tsit told me!
+[Dialog]
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[image(image="60_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Kal'tsit"]If the outcome I fear most does come to pass, if the one I least want to see stands in front of us once more—
+[name="Kal'tsit"]Protect the Doctor. Protect Amiya.
+[name="Kal'tsit"]I will engrave this directive into your basic behavioral strategy matrix.
+......
+......
+Eternal life is destined to be eternally lonely. I have tasted it.
+...You can walk alone—
+Mon3tr.
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Decision(options="Listen to me, Mon3tr.", values="1")]
+[Predicate(references="1")]
+You look at her, and slowly, you begin to speak.
+[Dialog]
+[charslot]
+[Decision(options="You haven't been in your reconstructed body for very long.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="Don't put too much pressure on yourself.;Kal'tsit wouldn't want her hopes to turn into chains.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]Err... I think you're misunderstanding something, Doctor.
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]......
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]I'll always remember how, when I awoke, you just turned around and walked away after giving me a 'welcome back'...
+[Dialog]
+[charslot]
+[Decision(options="Oh...;Sorry, Mon3tr.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]It's fine, it's fine. I needed time to get used to not being in a symbiotic relationship after thousands of years, and you needed time to accept the loss of someone you've fought beside for such a long time. And now...
+[name="Mon3tr"]We're both standing here, right in front of one another.
+[name="Mon3tr"]......
+[charslot(slot="m",name="avg_4179_monstr_1#12$2",focus="m")]
+[name="Mon3tr"]But we've already known each other for quite a while, haven't we, Doctor?
+[name="Mon3tr"]Under the cannon fire of Londinium, deep inside the secret caverns of the Sarkaz, below the tail of that giant ring flying into the sky in Trimounts, in Milliarium's Sophontheatrum...
+[name="Mon3tr"]Kal'tsit was there for all of those, which means I was too.
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]It's not like I only started to follow her orders to understand you and Rhodes Island when she left us.
+[name="Mon3tr"]Becoming a Rhodes Island Operator, putting up a fight against our creator, protecting Amiya, protecting you. These were my decisions as well...
+[name="Mon3tr"]And what I've been doing all along.
+[Dialog]
+[charslot]
+Silence.
+You look at Mon3tr. Silence links the two of you.
+[Dialog]
+[charslot]
+[Decision(options="Then count me in, Mon3tr.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="We'll bring Kal'tsit back.;We'll walk to the end of this uncharted road.", values="1;2")]
+[Predicate(references="1;2")]
+Eternal life is destined to be eternally lonely, but thankfully, we do not walk alone on the journeys we take. Even if all life is sapped of color, even if all things fade away into nothingness...
+We can, must, walk onwards together.
+This is what she hoped for.
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]Oh...
+[Dialog]
+[charslot]
+[Decision(options="What's wrong?;Got another question to ponder?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]What's with the look?
+[name="Mon3tr"]The counseling session is over, commander! No problems here, I had just come up with a way to get out of this blasted place, and I'll need your help!
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]According to Priestess, this should be a space created by that machine after it connected to Originium, some kind of model based on the future.
+[Dialog]
+[charslot]
+[Decision(options="So there's a relation to Originium's properties here.", values="1")]
+[Predicate(references="1")] 
+[Dialog]
+[charslot]
+[Decision(options="We can try cracking those abnormal nodes.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]Abnormal nodes? Ah, you mean the parts with damage mapped onto them.
+[Dialog]
+[charslot]
+[Decision(options="The restriction on the connection between you and the machine should be gone, right?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]Yep, I can sense its signal, though its getting weaker by the second.
+[multiline(name="Mon3tr")]I'll try reestablishing the connection...
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[multiline(name="Mon3tr")] But what then?
+[Dialog]
+[charslot]
+[Decision(options="Keep requesting refactoring of the abnormal nodes.;Use up the last of its computing power.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]Shouldn't be too difficult for me when Priestess isn't meddling with things.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="a")]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="............", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Routing through city communication post backdoor access port...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Special privileges: AMa-10.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Temporary access credentials: ELCARO-001... ORACLE. Decoding complete. Authentication passed.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Connected to PCS system.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Syncing computational radiation link...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="Warning: Core frequency too low.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Diagnostic complete. Re—Re—Refactoring abnormal nodes—", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopSound(channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$b_enemy_dead_h")]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+Color seeps out from the ruins of this colorless ghost town.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g11_laterano_alley",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=1)]
+It starts from the street to the right of the Tower of Revelations, and then through the Notarial Hall and firearms workshops in Pagus Michaelion, to the Sunset Chapel in Pagus Saint Marcel, and then all the way to the chapel square...
+Noise returns to the Holy City.
+It is the sound of Laterans offering a prayer to life.
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]The color's back?!
+[Dialog]
+[charslot]
+[Decision(options="Let's go, Mon3tr.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]Not going to go say hi to Exusiai?
+[Dialog]
+[charslot]
+[Decision(options="No need to hold her up before her reunion with family and friends.;We need to update the ship on what happened here in Laterano.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="Priestess's disappearance will only be temporary.;Priestess will make her next move soon.;Our mission isn't over yet.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=3)]
+[PlaySound(key="$alarmenter",volume=0.8,channel="1")]
+[delay(time=3)]
+[dialog]
+[stopSound(channel="1")]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Subtitle(text="Transfiguration suspended.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Set of directives assigned by personnel with relevant privileges have been completed.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Beginning system shutdown timer.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Image(image="61_i22_2", fadetime=0,screenadapt="coverall",block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="Priestess"](Unknown language) I've checked your low-level code. Aside from the adjustments I made during maintenance, you've performed a lot of self-upgrades and iterations within a short period of time.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) Was this still not enough for your self-repair functions to fix your logic vulnerability?
+[charslot]
+[Dialog]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="Negative.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Vulnerability has been patched. Paradox has been corrected.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="......", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$b_enemy_dead_h")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) I had great interest in the results of your self-iteration.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) It seems you mistakenly identified yourself as that vulnerability, that paradox.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) Was it a side effect of the overclocking? Or did your lack of maintenance, and long-term data transfer with the Sanktas, pollute your database?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) If I had more data, I might be able to find the answer.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) It's a shame the resources I can allocate will not be enough to give you a complete restart.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) Otherwise, a command system's self-negation due to its target's wishes would reignite any researcher's interest in the PCS system.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) ... If only we were still in the era when geniuses used reason and opinion to clash over their views.
+[charslot]
+[Dialog]
+The ring-shaped machine does not respond. Priestess feels a hint of regret.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) It seems I will have to choose other methods to advance the project—
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="l")]
+[StopSound(channel="l", fadetime=4)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"]......
+[charslot]
+[Dialog]
+Many mechanical cubes come together to form an annular computational matrix, the core of the machine. They sit there in stony silence.
+But all of a sudden, one of the cubes begins to vibrate, a metallic gleam roaming its surface once more.
+Soon, a faint, flickering halo begins to form.
+From the ruins of the PCS system, a new 'angel' is born.
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="Priestess"](Unknown language) ...It restarted?
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="Priestess"](Unknown language) It can't be. It didn't respond to me at all, nor does this follow the PCS system's operational logic.
+[charslot]
+[Dialog]
+The 'angel' ignores Priestess, quickly ascending into the gaping hole above it, disappearing without a trace soon after.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) A 'prototype' 'angel'?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) But this system was only built to mimic the properties of 'angels'. There was never any 'angel prototype' sample provided when it was constructed.
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="Priestess"](Unknown language) A newborn 'angel'?! How could this be...?
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[Image(image="61_i22_1", fadetime=2.5,screenadapt="coverall",block=true)]
+[delay(time=1)]
+[charslot]
+[name="???"]What is that in your hand, Lemuel?
+[charslot]
+[name="???"]Hehe. A spray can.
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="Priestess"]......
+[dialog]
+[charslot(duration=1.5)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[image]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="Rhine Staff A"]I've given the report on the latest data from the barrier hole to Director Saria, but there was something I noticed that got me real curious...
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="Rhine Staff A"]Look. Doesn't that look like some kind of strange flying object to you?
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="Rhine Staff B"]Components Control Section is analyzing it right now. We should be hearing from them soon.
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="Rhine Staff B"]A flying object that can maintain altitude close to the barrier hole would be a major discovery—
+[dialog]
+[charslot]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-640, fadetime=4)]
+[largebgtween(duration = 100,yFrom = 720, yTo = 0,block = false)]
+[delay(time=3)]
+The 'angel' hovers in front of the hole in the barrier. It attempts to reestablish a connection with the individuals scattered amongst the stars, but to no avail.
+All it manages to capture are the ripples left behind by energy entities as they die in the depths of space.
+And so, it continues to orbit across the land, like a shooting star destined to never fall...
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="bg_forest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$leaveshake")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="The Presence"](Unknown language) The scent of life.
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="The Presence"](Unknown language) This land is still young. Is it new life flourishing in the wake of ruination, or has death not come for this place yet?
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="The Presence"](Unknown language) Wasn't I... swallowed up by that light...?
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="Priestess"](Unknown language) Originium has recorded your information.
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="The Presence"](Unknown language) ... 'Originium'?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) Before the light comes, the conclusion is still uncertain. Originium will become our hope.
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="The Presence"](Unknown language) Where is this place?
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) 'Terra'.
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="Priestess"](Unknown language) We are not alone, my friend.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_school",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[Delay(time=1)]
+[charslot]
+[name="Frantic Youth"]Did you see the latest news, Miss Koshelna?
+[charslot]
+[name="Frantic Youth"]Lots of mines have shut down, and they've put troops on high alert all across the city.
+[charslot]
+[name="Frantic Youth"]My parents were called in for an inspection... I can't find them.
+[dialog]
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="Koshelna"]Stay in the classroom for now.
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="Koshelna"]I will help ask around for you. I'm also interested in knowing what is going on.
+[dialog]
+[charslot]
+She calms the child down, and then takes the newspaper from their hand.
+Over a few short days, countless rumors have spread across the city, but the most alarming one is—
+'Our Originium vein has disappeared. If we can't get any energy out of Mother Earth, how are we supposed to make it through the winter?'
+[charslot(slot="m",name="avg_npc_415_1#7$1",focus="m")]
+[name="Koshelna"]Originium... I shall unravel this mystery.
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="Koshelna"]Only the blood burning within our breasts can see Ursus through the winter chill.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m",duration=1)]
+[delay(time=1)]
+[name="Infected"]Once we've tidied things up here, it'll do as everyone's new abode, Hierda.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="Hierda"]Thank you all for your help!
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]Good thing you got supplies from our friends at the monastery, otherwise finding a place to stay wouldn't have gone so smoothly.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]We were worried you had... abandoned us after heading back there...
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="Hierda"]Oh, I'm sorry. The road back was rather rough-going, and I heard lots of news I could barely even believe along the way.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]It's mighty hard to imagine, yeah. The Originium veins, Laterano...
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]The Sanktas at the monastery sure had a lot to say about your return! Wouldn't stop telling us all about it!
+[charslot(slot="m",name="avg_npc_1719_1#9$1",focus="m")]
+[name="Hierda"]Huh?
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]When that calamity was going on, they wanted to go back to Laterano, but a Catastrophe stopped them.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]Their halos were shattered, and all they could do was stay here and pray, for themselves, and for their brothers and sisters who had already left...
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]Then you showed up right in front of them, a girl who disappeared without a trace three years ago!
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]You brought them hope, Hierda!
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="Hierda"]Oh my, did I?
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="Hierda"]I really don't want to let everyone down... Maybe now that we have a fixed shelter, we can help even more people.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]But we still need to take some necessary security precautions.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]With us pulling out all the stops for our work, we're bound to attract people up to no good. You'll be in danger.
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]Honestly speaking, we might be able to find a better way to do this—
+[dialog]
+[charslot]
+Hierda shakes her head.
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="Hierda"]I need to see her.
+[name="Hierda"]She must be somewhere here on this land...
+Hierda looks out into the distance, despite knowing the vast wilderness will show her nothing in return.
+She sees something streaking across the sky.
+A shooting star?
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="Hierda"]Anyway, Originium should not be a source of despair.
+[name="Hierda"]I would like to pray for all Infected who suffer—
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="Infected"]Err, will praying... actually do anything?
+[charslot(slot="m",name="avg_npc_1719_1#3$1",focus="m")]
+[name="Hierda"]Maybe not.
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="Hierda"]But when we pray, we will think of each other.
+[name="Hierda"]Our bonds bind us together. We are not alone.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="32_RL2_cliffnight",screenadapt="coverall")]
+[Delay(time=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[dialog]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[delay(time=2)]
+The Iberian coast, a cliff by the sea
+A Seaborn clings tight to the sharp rocks.
+The sound of distant naval barrages is carried over by the sea breeze, but the Seaborn does not care, focusing its efforts on climbing.
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="Seaborn"](Excitedly flaps membranous wings)
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="Seaborn"](Unfolds creases enthusiastically)
+[dialog]
+[charslot]
+The Seaborn finally arrives at the peak of the cliff.
+What greets it is a boundless expanse of dry land, and a flash of light up amidst the heavens.
+A shooting star?
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="Seaborn"]......
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="Seaborn"]......
+[dialog]
+[charslot]
+The Seaborn shifts its body in confusion in response to the momentary distraction, and its appendages brush against something.
+A shining black rock rolls off the cliff, dropping straight down into the ocean.
+The Seaborn tries to see what it was, but it has already been engulfed by the billowing waves.
+[stopSound(fadetime=2,channel="sea")]
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
