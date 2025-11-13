@@ -1,0 +1,221 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="56_g12_saluzzowinery",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=true)]
+[playMusic(intro="$m_dia_street_intro",key="$m_dia_street_loop", volume=0.6)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1257_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="オークショニア"]オークションに初参加の皆様、もし炎国の書画やサルゴンの秘宝を期待されているようでしたら、どうぞお引き取りください。
+[name="オークショニア"]「スクリプト・オークション」は、ランクウッドで最も特別なイベントです。ここでは未完成の脚本のアイデアやプロット、そして関連する著作権のみが競売されます。
+[name="オークショニア"]従来のオークションハウスは競売品の真贋を鑑定をする義務を負いますが、我々は競売品の価値は保証いたしません――
+[name="オークショニア"]商品に市場の需要があるのか、芸術的価値を有するのか。将来的にランクウッドの歴史に名を刻むほど歓迎され、商業的にも成功する傑作となるのか、あるいは赤字を出すだけの駄作に終わるのか……
+[name="オークショニア"]全てはお客様自身の判断に委ねられます。
+[name="オークショニア"]皆様、競売品の知的財産権を保護するため、どうかお手持ちの端末や録音機器の電源をお切りください。では、これより、今宵最初の品をご紹介いたしましょう――
+[name="オークショニア"]『ミズ・デュポンの死』。この作品はクルビアを舞台に、二つの名家の盛衰そして愛憎を時代の流れと共に描いた物語となっております。スタート価格は――10万金券です。
+[name="オークショニア"]10万！　後ろの男性が10万……15！　左側の若く美しいレディーですね、ありがとうございます……ほかにいらっしゃいますか？
+[PlaySound(key="$d_avg_auctionhammer")] 
+[name="オークショニア"]15万、ほかにいらっしゃいませんか……
+[PlaySound(key="$d_avg_auctionhammer",channel="2")] 
+[name="オークショニア"]15万です、ほかにいらっしゃいませんね……
+[charslot(slot = "m", focus = "n")]
+[name="？？？"]60万。
+[Dialog]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1257_1#1$1")]
+[name="オークショニア"]！
+[StopSound(channel="bgs", fadetime=3)]
+[name="オークショニア"]（小声）グレータ様！　オークションを荒らしにいらしたのですか！　一品目からこれほど値を吊り上げてしまっては、この後の場が冷めてしまいます。まだほかの品が残っているんですよ……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1834_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="グレータ"]ルール通りに少しずつ競り上げるのは時間の無駄よ。私は自分が認める価値に見合った値段を提示しただけだわ。
+[charslot(slot="m",name="avg_npc_1257_1#1$1")]
+[name="オークショニア"]脚本に大枚を叩くのは、あなたのいつものやり方ですがね。不経済ですよ……噂によると少し前に投資した映画が立て続けに赤字だったそうではありませんか、懐に余裕などないのでしょう？
+[charslot(slot="m",name="avg_npc_1834_1#1$1")]
+[name="グレータ"]ご忠告ありがとう。でも、まだあなたへの仲介料に事欠くほどではないわ。早くそのハンマーを振り下ろしてちょうだい。
+[name="グレータ"]さっき素晴らしい才能を持つ若者を見つけたから、急いで声をかけに行きたいの。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1834_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="グレータ"]ウイスキー、ストレートでお願い。
+[name="グレータ"]あなたも一緒にいかがかしら？　おごるわ。
+[Dialog]
+[charslot(slot="l",name="char_250_phantom_1#1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="char_250_phantom_1#1",focus="l")]
+[name="ルシアン"]医者から酒は控えるよう言われている。
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]その訛り……サルゴン人かしら？
+[name="グレータ"]面白いわ。冷たくて憂鬱そうで、どう見ても典型的なヴィクトリア人の顔立ちなのに。
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="ルシアン"]（サルゴン語）サルゴンの黄砂を渡ってきたばかりなものでな。
+[name="ルシアン"]（美しい発音のヴィクトリア語）だが確かにヴィクトリア生まれだ。
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]言語の切り替えが非常にスムーズね、アクセントも完璧。だけどあなたからは、サルゴンとヴィクトリア以外の文化の痕跡や習慣が見て取れるわ。
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="ルシアン"]ボリバル、シラクーザ、リターニア、レム・ビリトンを経て……ランクウッドにやって来た。
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]――テラ全土で最も娯楽産業の盛んな移動都市に、快適な気候と日差しに恵まれたロケ地よ。あなたはなぜこの場所へ？
+[name="グレータ"]バカンス、遊学？　それとも評判を聞きつけてやってきて、最終的にエキストラの募集に群がる外の人たちみたいに、仕事の機会を探しているの？
+[charslot(slot="l",name="char_250_phantom_1#2",focus="l")]
+[name="ルシアン"]探しているのは、ある人物だ。
+[charslot(slot="l",name="char_250_phantom_1#7",focus="l")]
+[name="ルシアン"]長い時間の中で、私は彼の影をたどり、多くの場所を訪れた。
+[charslot(slot="r",name="avg_npc_1834_1#3$1",focus="r")]
+[name="グレータ"]へえ？　それは誰？　中心部と移動区画で撮影している制作チームは全て顔見知りよ、もしかしたら力になれるかもしれないわ。
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="ルシアン"]それには及ばない。
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]あら、そう……残念ね……
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="ルシアン"]ほかに用がないのであれば……
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]私はグレータ・ストーン。ランクウッドで映画プロデューサーをやっているわ……この業界では、それなりにニュースへ出てくる名前よ。
+[name="グレータ"]どこぞの貴公子か、運試しに来た映画アカデミーの学生だと思って、あなたを私の制作チームへスカウトするために来たのだけど。
+[name="グレータ"]ランクウッドのスクリプト・オークションに参加する人であれば、多かれ少なかれ芸術に熱意を注いでいるはずよ。それに加えあなたの独特な雰囲気……
+[charslot(slot="l",name="char_250_phantom_1#1",focus="l")]
+[name="ルシアン"]私はかつて、ヴィクトリアのとある小さな劇団で役者をしていた。
+[charslot(slot="r",name="avg_npc_1834_1#2$1",focus="r")]
+[name="グレータ"]ほらやっぱり。私の目に狂いはなかったわ。あなたは生まれつき銀幕に映るべき人なのよ！
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]けど、大事な用事がある人を相手にこんな話をしてもしょうがないわね。今日のところは空振りみたいだわ。
+[charslot(slot="l",name="char_250_phantom_1#1",focus="l")]
+[name="ルシアン"]脚本を見せてもらっても？
+[charslot(slot="r",name="avg_npc_1834_1#2$1",focus="r")]
+[name="グレータ"]ええ、もちろん！
+[Dialog]
+[playsound(key="$d_avg_paper1")]
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[delay(time=2)]
+[charslot(slot="l",name="char_250_phantom_1#4",focus="l")]
+[name="ルシアン"]……
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="グレータ"]この脚本はただの始まりよ。ここから人手、資金、時間をつぎ込んで、この作品を映画史を揺るがす大傑作にするわ。
+[name="グレータ"]どんな端役でも、ほんのワンシーンにしか出演しなくても、輝くことができるでしょう。
+[name="グレータ"]あなたのちょっとした身体的な問題も心配無用よ。ランクウッドでは感染者役者専門の労働保護条例が施行されているから、十分な保険料さえ払っていれば――
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="ルシアン"]ルシアンだ、ミズ・グレータ。
+[name="ルシアン"]考えておくとする。
+[Dialog]
+[stopmusic(fadetime=2)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1, block=true)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="62_g10_dormitory",screenadapt="coverall")]
+[charslot(slot="r",name="avg_npc_1834_1#4$1")]
+[charslot(slot="l",name="avg_npc_1828_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[charslot(slot="r",name="avg_npc_1834_1#4$1",focus="r")]
+[name="グレータ"]改めてお詫びするわ、ルシアン。
+[name="グレータ"]初めての映画撮影で、時間をかけ考えてようやく契約へのサインを決心してくれたのに。本来であれば約束したように、あなたには撮影の楽しさを味わわせてあげないといけなかったのよ。
+[name="グレータ"]でもまさか、ランクウッドでの最初のシーンで、あんなにも恐ろしい事故を経験させてしまうことになるなんて……
+[name="グレータ"]気持ちを整えるのに、時間が必要だったとしても理解できるわ。あなたの次のシーンの撮影時間を変更するようシェリーに言っておくわね。
+[name="グレータ"]けど、もしも契約を破棄してチームを離れようと思っているのなら、それは難しいわ。この移動区画はもう短距離輸送車の使用範囲外まで移動していて、レンタルの期限が来るまで戻らないから……
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="ルシアン"]離れるつもりはない。
+[name="ルシアン"]スケジュールの変更も必要ない。
+[charslot(slot="r",name="avg_npc_1834_1#3$1",focus="r")]
+[name="グレータ"]必要ない？　あの事故によるトラウマ的記憶はあなたの演技に悪影響を与えるかもしれないわ。あなたの生活に影響だって。
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="ルシアン"]舞台の上でのアクシデントは、私にとって馴染みのないことではない。
+[charslot(slot="r",name="avg_npc_1834_1#4$1",focus="r")]
+[name="グレータ"]舞台演劇のやり方に慣れているのでしょうね。あれの不確実性は、カメラの前での演技よりも高いわね。でも、それも所詮は演劇よ。
+[charslot(slot="l",name="avg_npc_1828_1#5$1",focus="l")]
+[name="ルシアン"]「演劇」……かもしれないな。
+[Dialog]
+[charslot(slot = "m", name = "avg_4198_christ_1#1$1",duration = 1,posfrom = "-500,0", posto = "-500,0")]
+[delay(time=1.5)]
+謎めいた優雅な生き物がいつの間にか、再びルシアンの足元に現れた。彼女は人懐こい様子でフェリーンの男の足に体を擦り付け、グレータがいることなど気にも留めていない。
+[charslot(slot="r",name="avg_npc_1834_1#4$1",focus="r")]
+[name="グレータ"]ルシアン、本当にお休みは必要ないの？　ゆっくりとミス・クリスティーンのお相手をしていてもいいのよ。
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="ルシアン"]彼女も私も、これから起こる出来事を楽しみにしている。
+[charslot(slot="r",name="avg_npc_1834_1#6$1",focus="r")]
+[name="グレータ"]今日の事件に対して、思っていたよりもずっと冷静に受け止めているのね……そこまで落ち着いているのなら、これ以上の心配は失礼に当たるわ。
+[name="グレータ"]では明日また現場で会いましょう。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot = "r",posfrom = "0,0", posto = "200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=1.5)]
+[PlaySound(key="$doorclosequite")]
+[delay(time=2)]
+[charslot(slot = "right", focus="m")]
+[name="ミス・クリスティーン"]……
+謎めいた優雅な生き物は自分の毛をとかすと、ルシアンをじっと見つめた。何か思うところがあるようだ。
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="ルシアン"]ミス・クリスティーン？
+[Dialog]
+[charslot(slot = "m", name = "avg_4198_christ_1#2$1",duration=0.3)]
+二本の尻尾が宙で自由に揺れ動き、ぼんやりとした黒い影をいくつか残す。
+[charslot(slot = "m",posfrom = "-500,0", posto = "-400,0",duration = 1)]
+[delay(time=1)]
+[charslot(slot = "m",afrom=1,ato=0,duration = 0.3)]
+[delay(time=0.3)]
+[charslot(slot = "m",name="avg_4198_christ_1#2$1",duration = 0.5,posfrom = "100,0", posto = "100,0")]
+彼女は浮かび上がり、ルシアンの肩を一周する。観察しているようにも、味わっているようにも見える。
+[charslot(slot = "m",name="avg_4198_christ_1#6$1",duration = 0.3)]
+最終的にその美しい生き物はルシアンの膝に降り立ち、片方の足を上げて彼の額にそっと肉球を押しつけた。ルシアンは心地よいぬくもりを感じた。
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="酸っぱくて渋いわ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot = "m", focus = "n")]
+がらんとした部屋に謎めいた声が響いた。ルシアンは声の出所に疑問を抱いた様子もなく、微動だにしないミス・クリスティーンと静かに視線を合わせる。
+それは目の前にいる淑女が自分の頭の中に投げかけてきた言葉だと、彼は知っていた。
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="ルシアン"]君は沈黙と偽装でトラブルを避けることを好んでいて、重要でない時は滅多に口を開かない。
+[name="ルシアン"]私の感情はそれほどまでに口に合わなかったか、ミス・クリスティーン？
+[charslot(slot = "m", name = "avg_4198_christ_1#4$1",focus="m")]
+[name="ミス・クリスティーン"]嫌いではないわ。たとえ好みの味じゃなくても、味わってみたっていいもの。
+[name="ミス・クリスティーン"]あなたは何を考えているの？　さっきのあの口達者な小さな蛇ごときでは、こんな複雑な感情をかき立てることはできないはずよ。
+[charslot(slot="l",name="avg_npc_1828_1#4$1",focus="l")]
+[name="ルシアン"]劇団時代の無数の記憶のうちの一つだ。
+[name="ルシアン"]かつて劇団長は私の飲み込みの早さを見抜き、武器の扱い方を自ら教えた。
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="ルシアン"]今日ナイフを握った時の感覚は、あの日と全く同じだった。
+[charslot(slot = "m", name = "avg_4198_christ_1#1$1",focus="m")]
+[name="ミス・クリスティーン"]後味に残る辛さと甘みがどこからやってきたのかわかったわ。
+[name="ミス・クリスティーン"]あなたが劇団時代に経験した葛藤やもがき、人間が苦痛や悲劇と呼ぶ瞬間の数々は、今では食欲をそそる香りの料理に仕上がっているから、私はとっても好きよ。
+[charslot(slot="l",name="avg_npc_1828_1#5$1",focus="l")]
+[name="ルシアン"]彼を殺した後も、私はいまだ彼を追っているからな。
+[name="ルシアン"]今もなお残っている劇団の信者、辺鄙な村に存在する奇怪な言い伝え、それとあの派手な印……これまで、私はずっと密かに抱えていた臆測の真偽を確かめようと試みてきた……
+[name="ルシアン"]あの人はもしかしたら、すでに死から蘇っているのかもしれないという予想の真偽を。
+[charslot(slot = "m", name = "avg_4198_christ_1#3$1",focus="m")]
+[name="ミス・クリスティーン"]あの小さな蛇が落札した物語は、病みつきになりそうな奇妙な匂いがしていたわ。
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="ルシアン"]教えてくれてありがとう。脚本をめくった時、ページの間に確かに劇団の象徴たる双貌の印が刻まれていた。
+[name="ルシアン"]登場人物に与えられる偶然性は、劇作家が設けた必然性だ。劇団とは無関係に見えるミズ・グレータは我々の案内人となった。
+[name="ルシアン"]だがそれでもまだ確信がない。彼が残した謎は真偽が入り乱れている。過去十年の中で我々はすでに何度もそれを実感してきた。
+[name="ルシアン"]今日ダルトンが私の手で命を落とし、その時に覚えた過去と似たような感覚が記憶を想起させるまで……
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="ルシアン"]これは彼からの招待状だ。
+[name="ルシアン"]ミス・クリスティーン、我々は……見つけたのかもしれない。
+[PlaySound(key="$d_avg_MCcat_2", volume=1)]
+[charslot(slot = "m", name = "avg_4198_christ_1#1$1",focus="m")]
+[name="ミス・クリスティーン"]ニャ～。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

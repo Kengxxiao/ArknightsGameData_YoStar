@@ -1,0 +1,881 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_atmosphere_horror", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+灯火の揺らめく古城、血に染まった師たちの亡骸、暗闇の中の空虚な風音……それらを忘れるのは決して難しいことではなかった。
+暗殺者となったルシアンが、とある夢を見るまでは。
+[dialog]
+[PlayMusic(key="$m_avg_rglk1secretevent_loop", volume=0.6)]
+[Image(image="24_RL03", screenadapt="coverall", xScale=1.05, yScale=1.05, fadetime=0)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+いつもと変わらぬ古城、いつもと同じがらんとしたホール。彼は灯りの下で一人座り、歌を歌っている。その背後には過去の劇団員の姿があった――
+全て、まるで昨日のことのように鮮明だ。
+[dialog]
+[name="劇団長"]ルシアン、人というのは自分の過去を消し去ることはできないものだよ。
+[name="劇団長"]必ずどこかに跡が残る。
+[name="ルシアン"]私が恐れているとでも？
+[name="ルシアン"]いいや、私はただ確認しただけだ。あなたが私の人生に差し込んだページは完全には消えていなかった――あなたはいまだ存在しているのだから。
+[name="ルシアン"]しかしあなたの言う通りだ、「人というのは自分の過去を消し去ることはできないものだよ。必ずどこかに跡が残る。」
+[name="ルシアン"]なればこそ、あなたを殺すために、長い時間の中で、私はあなたの歩いた道を辿って……
+[name="ルシアン"]大地の隅々まで訪れた！
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[bgeffect(name="$eb_whitemask",layer=1)]
+[PlaySound(key="$d_avg_filmprojection")]
+[playsound(key="$d_avg_filmprojection_loop", loop=true, volume=0.4, channel="fi")]
+[focusparam(blur=false, effect="Grayscale")]
+[focusout(duration=1, type="bg", from=0, to=1)]
+[Background(image="21_G8_cammunibase",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="n")]
+[name="ルシアン"]カレー――ガリアのある国境の都市で。
+[name="ルシアン"]同盟国が突然反旗を翻し、カレーは包囲された。しかし強力な都市防衛砲と、「帝国の旗」と称えられる将軍を頼りに、カレーは数ヶ月の間、守り抜かれた。
+[name="ルシアン"]将軍は城壁の上に立ち、不眠不休で、退くことも動じることもなかった。旗がそこにある限り、疲弊しきった兵士も動揺することはなかった……
+[charslot(slot = "r", name = "avg_npc_1828_1#6$1", focus="r")]
+[name="ルシアン"]誰も予想していなかった裏切りが起こるまで。将軍が最も信頼していた副将が城門を開けてしまったのだ。
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]……
+[name="劇団長"]ガリア皇室はすでにカレーを放棄していた。陥落は避けられないものだった。
+[name="劇団長"]帝国の旗は栄光のために、膝を折ることを許さなかった。副将は数十年にわたって共に死線をくぐり抜けてきたように、将軍のお供をすべきだと考えていた。
+[name="劇団長"]しかし、これ以上守っていても死傷者は増えていくばかりで、都市はやがて死の街と化してしまう。
+[charslot(slot = "l", name = "avg_npc_1829_1#3$1", focus="l")]
+[name="劇団長"]苦しんだ軍人はふと思い至ったんだろう……誰もが満足するような選択肢はないが、自分には罪を償う方法があると。
+[name="劇団長"]彼はとうに精根尽きかけていた将軍に休むよう進言した。そして将軍が一息ついていた僅か十分の間に、城門を開けたんだ。
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]敵軍が都市へと入ってくる前に、彼は剣で自身の心臓を突き刺した……この裏切り者は、その戦争で最も悲しき死者となった。
+[name="劇団長"]遠い昔の話だよ、ルシアン。多くの詳細が歴史の川に沈んでしまうほどにね。
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]ヴィクトリア、リターニア……異なる国の十数の都市を数ヶ月の間訪ね回り、私はある年老いた近衛隊の者を見つけた。
+[name="ルシアン"]彼はかつてカレーの天を衝く火明かりを目にし、裏切り者の亡骸に遺されたバッジを見つけた――正反対に向いた二つの顔、激しい笑顔と泣き顔だ。
+[charslot(slot = "r", name = "avg_npc_1828_1#7$1", focus="r")]
+[name="ルシアン"]その印が何を意味するか、あなたも私もよく知っているはずだ、先生。
+[charslot(slot = "l", name = "avg_npc_1829_1#12$1", focus="l")]
+[name="劇団長"]ははっ。
+[name="劇団長"]きっと、ほかにも発見があるんだろう？
+[dialog]
+[charslot(slot = "l", focus="all")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1)]
+[Background(image="26_g1_laterano_cathedralfront",screenadapt="coverall", fadetime=2)]
+[Delay(time=2.5)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]さらに昔のラテラーノにて。
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]……
+[charslot(slot = "r", name = "avg_npc_1828_1#2$1", focus="r")]
+[name="ルシアン"]今から二百年以上前、とある飛び抜けた才を持つ枢機卿が大聖堂前の広場にて、銃騎士に殺された。
+[name="ルシアン"]彼は聡明で慈悲深く、「主に最も近いサンクタ」と呼ばれ、弱冠三十歳にしてすでに民衆の期待を背負う次期教皇だった。
+[charslot(slot = "r", name = "avg_npc_1828_1#5$1", focus="r")]
+[name="ルシアン"]しかし変化はそこで起きた。彼は偏執で過激になり、説教をし、信徒を集め、外国の使者を引き入れて教皇に異議を申し立てようと企図した……
+[name="ルシアン"]……それは全ラテラーノを脅かす宗教クーデターにまで発展した。教皇が重傷を負い、銃騎士が出動するに至って、彼はラテラーノの歴史上、唯一のクーデターで命を落とした枢機卿となった。
+[name="ルシアン"]彼に一体何が起きたのか知る者はいない……とある安魂教会にて、ラテラーノを通りかかったフェリーンに出会っていたことなど、深く調べるに値することではないのだから。
+[charslot(slot = "l", name = "avg_npc_1829_1#12$1", focus="l")]
+[name="劇団長"]そこまで調べ上げるには、きっと相当な苦労をしたんだろうね。
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]本当に手を焼いた。
+[charslot(slot = "l", name = "avg_npc_1829_1#11$1", focus="l")]
+[name="劇団長"]私はただそのサンクタに少しの「真実」を施してやっただけさ――彼はすでに不治の病にかかっているとね。
+[name="劇団長"]凡庸な教皇は経典を解読することしか知らない。一方で限りなく熱い信仰心を抱く自分には余命いくばくもなく、理想を実践して新時代の鐘の音を耳にすることはできないだろうと彼は悟った。
+[name="劇団長"]だけど実はね。彼は教皇に危害を加えたその瞬間に目を覚まし、自身は死に追いつかれてなどいなかったことに気づいたんだよ……
+[charslot(slot = "r", name = "avg_npc_1828_1#8$1", focus="r")]
+[name="ルシアン"]正気こそ狂気。彼は自身の招いた結果を見て、自ら銃口に向かっていったのか？
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]政治的悲劇の縮図だ。劇団の多くの脚本はそこから芽生えた。
+[name="劇団長"]嘆かわしい、そうだろう？
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]……
+[dialog]
+[Background(image="27_g22_goldenboat_hall",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#5$1", focus="r")]
+[name="ルシアン"]イベリアにて。
+[name="ルシアン"]あの黄金に輝く時代、灯台は近づいてくる大船を照らしたが、船には海の奥深くの風音しか載っていないことに人々は気づいた。甲板の上では、双貌が印刷されたショーの半券が舞っていた……
+[name="ルシアン"]姿を消した船乗りが歌う――
+[charslot(slot = "r", focus="n")]
+幼い羽獣をそそのかし、苦痛の果実をついばませる。
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]……
+[dialog]
+[Background(image="44_g3_ludwigsuniv_outside",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]リターニアの高塔の間では、古のアーツが貴族の悲鳴と叫びを記録している。
+[charslot(slot = "r", focus="n")]
+赤子を追放して、喜びの死に至らせる。
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]……
+[dialog]
+[Background(image="40_g5_samitribe",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]分厚い雪に覆われた集落。
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="劇団長"]雑草は常に我が道を行く。
+[name="劇団長"]……
+[dialog]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="ルシアン"]砂漠の奥深くの都市。
+[charslot(slot = "l", name = "avg_npc_1829_1#6$1", focus="l")]
+[name="劇団長"]涙と虚言、そして迷いのおかげで。
+[name="劇団長"]彼は萎れた花びらの寝床を去る。
+[name="劇団長"]……
+[dialog]
+[charslot(slot = "l", focus="all")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1)]
+[charslot(duration=2)]
+[StopSound(channel="fi", fadetime=5)]
+[Effect(name="$e_whitemask",layer = 2)]
+[Delay(time=3)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[focusparam]
+[focusout(duration=0.1, type="bg", from=1, to=0)]
+[Background(image="62_g5_duelscene",screenadapt="coverall")]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.4, channel="c",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1", duration=1, isblock=true)]
+[name="ルシアン"]……あなたはどこにでもいる。
+[name="ルシアン"]私はあなたの歩いた道を辿り、大地全土を渡り歩いた。あらゆる人に近づき、あらゆる物事を探って、ついに真偽の区別がしかねる逸話や古い書物の中に名を見つけた――
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="ルシアン"]「トラゴーディア」。
+[charslot(slot = "m", name = "avg_npc_1829_1#3$1")]
+[name="トラゴーディア"]……
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="ルシアン"]ただ、伝説における「トラゴーディア」は、人々に敬愛される神だ。
+[name="ルシアン"]その神は頭にブドウの蔓で編んだ冠を載せ、他者も自身も醒酔へと引き込んだ。喜びと慈愛を施し、旅の途中で豊作の人々に出会うと、祝祭を催し彼らを野蛮から文明へと導くのだという……
+[name="ルシアン"]しかし真実のトラゴーディアは、詐欺師であり、表現者であり、苦行者であり、陰謀家であり、扇動者であり、歴史をさまよう亡霊であり……
+[name="ルシアン"]定義しようのない長命者だ。
+[dialog]
+[PlaySound(key="$d_avg_clapsolo", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1829_1#12$1")]
+[name="トラゴーディア"]（拍手）
+[name="トラゴーディア"]キミの根気には驚いたよ、ルシアン。かつて演技に見せていた執着をも上回るほどだ。
+[charslot(slot = "m", name = "avg_npc_1829_1#11$1")]
+[name="トラゴーディア"]ただ、私の歩みを遡ったのならば、私の探求をもっと認めるべきではないかな？
+[name="トラゴーディア"]人も物事も曖昧になりつつある中、私は無数の遊歴の中で美の最高の媒体を見つけ、築き上げた――それは劇である。私の命は、この概念の誕生よりも前から在り続けている……
+[name="トラゴーディア"]遂に、私は苦楽を味わい尽くし、何よりも熾烈な感情がどのようなきっかけで迸るのかを悟ったのだ。そして私は劇団を立ち上げ、キミに教えたんだ。
+[charslot(slot = "m", name = "avg_npc_1828_1#2$1")]
+[name="ルシアン"]そうか？
+[name="ルシアン"]それは私の発見と相反している。死はこれまでずっとあなたと共にあった、違うか？
+[name="ルシアン"]あなたがたった今述べた死や破滅を巡る大層な持論は、決して探り当てた理念などではない。君はそれほどまでに確信しているのだ。自分は死や破滅を美と、劇は死や破滅を美とすることを。
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="ルシアン"]窮地に置かれたことによって迸る人間性の輝きや極度の醜悪さといったものはひとまず置いておき、最も根本的な問いに答えてほしい。
+[name="ルシアン"]ラテラーノからガリア、イベリアからサルゴン、古城から今のこの天災に見舞われた区画、あなたは心を揺るがす数々の劇を手掛けてきた……
+[name="ルシアン"]にもかかわらず、なぜそれらが全て歴史の中で失われることをよしとしている？
+[name="ルシアン"]それらが誰かの記憶に刻まれることを望まないのか？
+[name="ルシアン"]なぜ常識を超えた偶然や変化を褒め称えておきながら、破滅が唯一の結末となるに任せている？
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1")]
+[name="トラゴーディア"]キミの答えは何かな、ルシアン。
+[name="トラゴーディア"]キミの導き出した答えを言ってみて。
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="ルシアン"]それは全ての人を、そしてあらゆる出来事を検証不能にしてしまうからだ……劇の中であろうと、外であろうと。
+[name="ルシアン"]それはあなたに権威を与え、自身を証明することを可能にし、いわゆる美に唯一の答えを持たせる。違うか！？
+[dialog]
+[StopSound(channel="c", fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="62_g4_filmset_ruined",screenadapt="coverall")]
+[bgeffect(name="$eb_wind",layer=2)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_equipment_collapse", volume=1)]
+[PlayMusic(intro="$storyendjp_intro", key="$storyendjp_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="グレータ"]スティーヴン……
+[name="グレータ"]スティーヴン！？
+[name="グレータ"]生きてたら返事して！
+[name="？？？"]……グ、グレータ？
+[dialog]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=1)]
+[charslot(slot = "m", name = "avg_npc_1834_1#3$1", posfrom="-200,0", posto="0,0", duration=1, isblock=true)]
+[Delay(time=0.5)]
+[name="グレータ"]ほんとに仕事部屋にこもっていたのね！
+[charslot(slot = "m", focus="n")]
+[name="スティーヴン"]外で……何が起きたんだ？
+[charslot(slot = "m", name = "avg_npc_1834_1#6$1")]
+[name="グレータ"]一言では説明しきれないわ。とにかく、区画が天災目掛けて突っ込んでるところなの。ほかのみんなは動力層へ逃げたわ……あなたは大丈夫なの？
+[charslot(slot = "m", focus="n")]
+[name="スティーヴン"]だ、大丈夫じゃない……落ちてきた天井に足を挟まれて、動けないんだ……ッ――
+[charslot(slot = "m", name = "avg_npc_1834_1#5$1")]
+[name="グレータ"]今助けるわ！
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1834_1#5$1", posfrom="0,0", posto="50,-10", afrom=1, ato=1, duration=1)]
+[Delay(time=1.5)]
+[CameraShake(duration=2, xstrength=5, ystrength=5, vibrato=90, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_woodenladder", volume=1)]
+[Delay(time=2)]
+[name="グレータ"]まったくなんてことなの。ドアが折れた柱で塞がれてる……
+[dialog]
+[charslot(slot = "m", posfrom="50,-10", posto="0,0", afrom=1, ato=1, duration=0.5, isblock=true)]
+[name="グレータ"]重い……もう少し待ってて！　正気を保って、何か話すのよ！
+[dialog]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="bg_undergroud_u_2",screenadapt="coverall")]
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1", posfrom="0,-30", posto="0,-30", duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="スティーヴン"]グレータ、今になってようやくわかったよ。俺は「天才」なんていう言葉とは……無縁だってな……
+[charslot(slot = "m", focus="n")]
+[name="グレータ"]は？
+[charslot(slot = "r", name = "avg_npc_1835_1#7$1")]
+[name="スティーヴン"]「神様」が訪ねてきたんだ……
+[name="スティーヴン"]神は俺を見捨ててなかった。新たなアイデアをくれたんだ。本当は、神様は俺にずっと教えてくれていたんだ……
+[name="スティーヴン"]俺は登場人物の死やあらゆる窮地をうまくいかして、物語に生命力を注ぎ込むべきなんだ――そりゃあ『ミズ・デュポンの死』の中でそれを試みはしたさ。でなきゃこんなタイトルにはしていない。
+[name="スティーヴン"]五年前のローラ、そして今のダルトン、シェリー、マイケルとマリオン……彼らの死はどれもドラマティックで、リアルで、重さを伴っている……
+[name="スティーヴン"]こうした素材は秋の紅葉みたいなんだ。血のごとく赤く、そこら中にあり、一枚一枚が俺の空っぽの頭を染めるのに十分だ……
+[charslot(slot = "r", name = "avg_npc_1835_1#6$1")]
+[name="スティーヴン"]だが、それでも満足のいく結末が書けないんだ！　ミズ・デュポンの死に様がどうしても思い浮かばない！
+[charslot(slot = "r", name = "avg_npc_1835_1#4$1")]
+[name="スティーヴン"]もし死や破滅が劇の神の方法論であり、天才劇作家の必須スキルなのだとしたら、俺は……俺には永遠に習得できないだろう……
+[name="スティーヴン"]俺はただの、ごほごほっ、臆病なクズなんだ……グレータ。
+[dialog]
+[Effect(name="$e_sandfall_01",layer = 1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_collapse", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", focus="n")]
+[name="グレータ"]*ランクウッド現場用語*、あなたみたいなバカがいたなんてね！
+[charslot(slot = "r", name = "avg_npc_1835_1#3$1")]
+[name="スティーヴン"]……え？
+[charslot(slot = "m", focus="n")]
+[name="グレータ"]スティーヴン、スクリプト・オークションが匿名で行われているのは知ってるわよね？
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1")]
+[name="スティーヴン"]……
+[charslot(slot = "m", focus="n")]
+[name="グレータ"]ダルトンにしろ、アブナーにしろ、このチームの他の人選は五年前のあの事件の影響を受けて、あえて集めたものだと言ってもいいわよ……だけどあなただけは例外よ。
+[name="グレータ"]オークションで競り落とした時、それがあなたの作品だなんて知らなかった。
+[name="グレータ"]私はただ、自身の兄の嘘と支配欲に囚われ、三人の崇拝者の欲望に苦しめられる「ミズ・デュポン」が、落札するに値すると心から思っただけよ……
+[name="グレータ"]彼女が生きようが死のうが、素晴らしい物語の主人公であることには変わりないわ！
+[name="グレータ"]私は一度だって自分の見る目を疑ったことがないのよ。
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1")]
+[name="スティーヴン"]……
+[charslot(slot = "m", focus="n")]
+[name="グレータ"]ちょっと、何か言いなさい！　こっちは外で石を運んでるのに、何もせずに何へそを曲げてるの！
+[charslot(slot = "r", name = "avg_npc_1835_1#4$1")]
+[name="スティーヴン"]俺はただ、認められないだけだったんだな……
+[charslot(slot = "m", focus="n")]
+[name="グレータ"]何ですって？
+[charslot(slot = "r", name = "avg_npc_1835_1#6$1")]
+[name="スティーヴン"]俺は、*ランクウッド現場用語*、ただ「神様」のやり方を認められないだけだったんだ。
+[dialog]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_doorbreak", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1.5)]
+[charslot(slot = "l", name = "avg_npc_1834_1#1$1", posfrom = "-200,0", posto = "50,0", duration = 1)]
+[delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1835_1#4$1")]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1834_1#1$1", focus="l")]
+[name="グレータ"]これでよし！
+[charslot(slot = "l", name = "avg_npc_1834_1#6$1", focus="l")]
+[name="グレータ"]今にも崩れそうよ……スティーヴン、こっちへ。支えるから、行きましょう！
+[dialog]
+[charslot(slot = "l", posfrom = "50,0", posto = "100,-10", afrom=1, ato=1, duration = 1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "l", posfrom = "100,-10", posto = "100,0", afrom=1, ato=1, duration = 1)]
+[charslot(slot = "r", posfrom = "0,-30", posto = "0,0", afrom=1, ato=1, duration = 1)]
+[delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", posfrom = "100,0", posto = "-50,0", afrom=1, ato=0, duration = 1.5)]
+[charslot(slot = "r", posfrom = "0,0", posto = "-150,0", afrom=1, ato=0, duration = 1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_wind",layer=1)]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Background(image="62_g8_mobileplotstreet_ruined",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1834_1#6$1", posfrom = "200,0", posto = "100,0", duration = 1.5)]
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1", posfrom = "100,0", posto = "0,0", duration = 1.5)]
+[delay(time=1.6)]
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1", focus="r")]
+[name="スティーヴン"]ま、待ってくれ、グレータ――
+[charslot(slot = "l", name = "avg_npc_1834_1#5$1", focus="l")]
+[name="グレータ"]今度は何？
+[dialog]
+[charslot]
+[StopSound(channel="sn", fadetime=6)]
+グレータはスティーヴンを支えながら立ち止まり、スティーヴンはそばへと目を向けた。
+そこには半分しか残っていない壁があった。スプレーで描かれた鮮やかな文字が、薄暗く汚れた環境の中でひときわ目立っている。
+ティッピがチームのために描いた巨大ポスターだ。砂嵐の中、映画のタイトルは奇跡的にも全く傷ついていなかった――
+『ミズ・デュポンの死』。
+[dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[delay(time=1)]
+スティーヴンは血に染まった腕を上げ、力を込めて最後の二文字を塗りつぶした。
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="62_g8_mobileplotstreet_ruined",screenadapt="coverall")]
+[bgeffect(name="$eb_wind",layer=1)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[PlayMusic(key="$m_avg_epic_loop", volume=0.8)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1843_1#3$1")]
+[name="アブナー"]うわ……なんてこった！
+[charslot(slot = "m", name = "avg_npc_1830_1#3$1")]
+[name="メラニー"]……本当に綺麗ね。
+[name="メラニー"]ランクウッドにどれほど想像力豊かな美術スタッフがいたとしても、こんな光景は作れないわ。天災の下で映画のラストを撮影するのが間違いだと言い切ることはとてもできないわよ……
+[charslot(slot = "m", name = "avg_npc_1830_1#2$1")]
+[name="メラニー"]単なる宣伝のための材料じゃないわね。グレータの度胸にはますます感心してしまうわ。
+[charslot(slot = "m", focus="n")]
+[name="アブナー"]いいから、早く動力層に戻れ。ここは危険すぎる！
+[dialog]
+[PlaySound(key="$d_avg_highheeledshoe_carpet_fts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1.5)]
+[charslot(slot = "m", name = "avg_npc_1843_1#3$1", duration = 1.5)]
+[Delay(time=2)]
+[name="アブナー"]おい、メラニー、大スターさんよ、何前へ進もうとしてるんだ？　イカレちまったのか！？
+[charslot(slot = "m", name = "avg_npc_1830_1#1$1")]
+[name="メラニー"]アブナー、あなたたちは正直なところ、この「大スター」の私が今回の映画で返り咲くことなんてできないってずっと思ってるんでしょ？
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="アブナー"]……
+[charslot(slot = "m", name = "avg_npc_1830_1#1$1")]
+[name="メラニー"]それどころか、映画を撮り終えることなんてできないとすら思ってる……
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="アブナー"]……
+[charslot(slot = "m", name = "avg_npc_1830_1#1$1")]
+[name="メラニー"]正直私もよ。映画の結末すらまだ決まってない上に、区画全体が壊れようとしてるんだもの……
+[charslot(slot = "m", name = "avg_npc_1843_1#9$1")]
+[name="アブナー"]だとしても死に急ぐことはないだろう？
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[bgeffect]
+[Delay(time=1)]
+[bgeffect(name="$eb_darkcloud_thunder",layer=1,x=0,xto=0,yto=-140,y=140, movetime = 25)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=1, loop=true, channel="d")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+天災雲がますます近づいてくる。
+狂風が吹きすさぶ。それは自然の咆哮であり、空一面の雲は、さながら怒れる顔のようだった。
+メラニーが前へと進み、天災雲と見つめ合う。
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[PlaySound(key="$d_avg_tornado_lp", volume=0, loop=true, channel="to")]
+[SoundVolume(volume=1, channel="to",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Image(image="62_i07", screenadapt="coverall")]
+[ImageTween(yFrom=-50, yTo=0, xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=40, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[SoundVolume(volume=0.4, channel="to", fadetime=2)]
+[name="メラニー"]私が死に急いでるって？　誰が決めたの？
+[name="メラニー"]ミズ・デュポンが死に急いでるって？　誰が決めたの？
+[name="メラニー"]ミズ・デュポンが兄の抑圧の下で、三人のロックフェラーの剣の下で、彼女を罵り、辱め、追放しようとする観客たちの手で…
+[name="メラニー"]まるで一つの象徴のように死ぬべきだって、誰が決めたの。
+[name="メラニー"]彼女は誰もが気付かない夜に、こんなふうに激しく無秩序な嵐へと歩いて行き、自分を閉じ込めていた屋敷なんて置き去りにすべきなのよ……
+[name="メラニー"]彼女は絶対に死なない。なぜなら、この嵐は彼女を乗せて自由へと向かうから！
+[name="メラニー"]アブナー、知ってるでしょう。業界に入ってから、私はずっとマリアンナを仮想のライバルとしてきたわ。
+[name="アブナー"]……ああ。
+[name="メラニー"]でもわかっているのよ、私じゃ彼女に追いつけないってね。
+[name="メラニー"]彼女はまごうことなき天才よ。生まれながらにして、あらゆる役に入り込み、運命すら偶然の天災でもって彼女の引退に輝きをもたらしてしまう……
+[name="メラニー"]一方で、私はただの凡人。
+[name="メラニー"]田舎町からランクウッドにやってきた平凡な小娘が、役の一つ一つ、映画の一本一本に頼り、十年以上かけて演技を磨き、経験を積んで、栄誉を勝ち取った……
+[name="メラニー"]だからこそ、私はキャリア、身分、ルール、そして多くの人に鼻で笑われる撮影現場の文化にこれほどこだわるの……それは私の凡人としての、然るべき褒美よ。
+[name="メラニー"]アブナー、この大地は凡人にとって残酷なのよ。
+[name="メラニー"]マリアンナの引退は私をキャリアのピークへと押し上げた。だけどほんの束の間の迷いで、私が培ってきた知恵と経験はたちまち消え去っていったわ……
+[name="メラニー"]私の演技は見る影もなくなり、名声は地に落ちた。全力を尽くしても、昔のように戻すのは難しい……
+[name="メラニー"]なんてバカなんでしょうね。私はずっと認めようとしなかったのよ。マリアンナが引退してなければ、自分は追いつくことが永遠にできなかったって……
+[name="メラニー"]今この瞬間、天災がこの区画を、私の最後の希望を壊しつつある……
+[name="メラニー"]でも、これも運命の恵みじゃないのかしら？
+[name="メラニー"]少なくともようやく、何も考えず、何もこだわらないでいられる……
+[name="メラニー"]少なくとも、ようやく私はこの一歩を踏み出せる。
+[name="メラニー"]さあ――ミズ・デュポン。メラニー・ラザフォードと一緒に、天災と踊りましょう……
+[name="メラニー"]誰も記録していなくとも。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[bgeffect(name="$eb_wind",layer=1)]
+[Background(image="62_g8_mobileplotstreet_ruined",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[Delay(time=1)]
+[SoundVolume(volume=0.2, channel="to", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", focus="n")]
+[name="メラニー"]アブナー、どうしてまだいるの？
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="アブナー"]……
+[charslot(slot = "m", focus="n")]
+[name="メラニー"]早くカメラを確認しなさい。電源は入っていないわよね？
+[charslot(slot = "m", name = "avg_npc_1843_1#9$1")]
+[name="アブナー"]ど、どういう意味だ？
+[charslot(slot = "m", focus="n")]
+[name="メラニー"]もし私がこの嵐にさらわれたら、あなたのカメラはまた図らずも人の死を撮影してしまうことになるでしょ？
+[name="メラニー"]私はあなたの仕事を侮辱したくないし、あなたにその機械を、自分の職業をまた嫌いになってほしくないのよ……
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="アブナー"]……
+[charslot(slot = "m", focus="n")]
+[name="メラニー"]アブナー、実は私、あなたのその考えはバカだなってずっと思ってたの。
+[charslot(slot = "m", name = "avg_npc_1843_1#9$1")]
+[name="アブナー"]他人に何がわかる。
+[charslot(slot = "m", focus="n")]
+[name="メラニー"]あなたがかつて偶然にも撮影した映像は、永遠に拭い去れない罪の証拠であり、同時にローラという女性がこの大地から音もなく消え去ることを防いだ。
+[name="メラニー"]この事実が持つ意義を理解してなお、あなたはまだ自分の持っている機械が嫌いなのかしら。私にはそうは思えないわ……
+[charslot(slot = "m", name = "avg_npc_1843_1#7$1")]
+[name="アブナー"]……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1843_1#8$1")]
+[name="アブナー"]*ランクウッド現場用語*、お前さんの言う通りだ、俺は確かにバカ野郎だ。
+[name="アブナー"]夢を作り出すこの機械が誕生したのは、単に先人たちが、大地を見る目がもっとあってほしいと望んだからにすぎない。
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1843_1#4$1")]
+[name="アブナー"]メラニー、まだいけるか？
+[name="アブナー"]……相棒が壊れてなきゃいいがな。
+[charslot(slot = "m", name = "avg_npc_1843_1#8$1")]
+[name="アブナー"]映画を撮り終えるぞ！
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="d", fadetime=2)]
+[StopSound(channel="to", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[PlayMusic(intro="$m_avg_prts_intro", key="$m_avg_prts_loop", volume=0.6)]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.4, channel="c",fadetime=2)]
+[Background(image="62_g5_duelscene",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="ルシアン"]見えるか、聞こえるか……天災の中でいまだあがく者たちを？
+[name="ルシアン"]無から何かが生み出されることはない。たとえそれがどれほど幻想的な芸術であってもだ。死が迷える者を突如目覚めさせたり、臆病者を一心不乱にさせたりすることはない。
+[name="ルシアン"]彼らはただ、元よりそうする力が備わっていただけだ。
+[charslot(slot = "m", name = "avg_npc_1828_1#8$1")]
+[name="ルシアン"]故に、先ほどの私の問いに答えろ、トラゴーディア。
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1")]
+[name="トラゴーディア"]キミはこう言いたいのだね。死は物語を、ショーを終わらせ、幕を閉じた後で全てが跡形もなく消える……つまり、私が客観的評価や検証から逃げていると。
+[name="トラゴーディア"]私は軟弱な創作家だと。
+[charslot(slot = "m", name = "avg_npc_1829_1#12$1")]
+[name="トラゴーディア"]ルシアン、キミは面白い視点を見つけたようだ。
+[dialog]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1829_1#11$1")]
+[name="トラゴーディア"]もしかしたら一理あるのかもしれない。しかし、キミはすでに書き上げられた結末をどうやって変えるのかな。
+[name="トラゴーディア"]あのティッピという名の娘は映画鑑賞で得た知識で、この移動区画の進路を手動で調整した……
+[name="トラゴーディア"]だがその程度のずれでは不十分で、区画の半分近くは嵐に直接ぶつかるはずだ。
+[name="トラゴーディア"]ルシアン、キミは幼い頃に天災に直面したことがあるから、よくわかっているだろう。そこまで大きくなれば、区画の全てが破壊し尽くされるとね。
+[charslot]
+ルシアンが自身の喉の結晶にそっと触れる。
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[name="ルシアン"]抑制器を外してから、私はいまだ声を上げて歌っていない。
+[dialog]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_sphere", volume=1)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+歌声――クリムゾンソリティアの歌声。
+かつて無数の舞台を熱狂させたその歌声は、最終的に暗い古城にて途絶えた。だが今再びそれは響き渡り、嵐と瓦礫の隙間を抜け、人々の耳に鮮明に届いている。
+[charslot(slot = "m", name = "avg_npc_1829_1#8$1")]
+[name="トラゴーディア"]こんなにも感情を込めて歌を？
+[name="トラゴーディア"]……いや、違う。
+[charslot(slot = "m", name = "avg_npc_1829_1#7$1")]
+[name="トラゴーディア"]幻覚がバリアの役割を果たすとは――ルシアン、キミがアーツを逆用するのは初めて見たよ。
+[name="トラゴーディア"]かつて自身に痛みを、他人に災いをもたらした喉で皆を守ろうというのか？
+[name="トラゴーディア"]一人で天災に立ち向かおうというのか？
+[charslot(slot = "m", name = "avg_npc_1828_1#8$1")]
+[name="ルシアン"]一人？　違うな、あなたと私でだ。
+[name="ルシアン"]杖をしっかりと握っておくんだ、トラゴーディア。
+[name="ルシアン"]あの川から身を起こし、あなたのそばへと引き返してた時、劇団に戻った時、再びあなたの前に立った時……
+[name="ルシアン"]私の目的はいつもたった一つだ。
+[name="ルシアン"]あらゆる悲劇がクライマックスを迎える時に必ず現れるのが痛快な死闘だ。宮殿にて、高く聳える建物にて……あるいはこの様相を変えた天地の間にて――
+[charslot(slot = "m", name = "avg_npc_1828_1#9$1")]
+[name="ルシアン"]この「師殺し」の劇を終わらせるとしよう！
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 0.2)]
+[charslot(duration=0.2)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing6", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1", afrom=0, ato=0, duration = 0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 0)]
+[delay(time=0.1)]
+[charslot(slot = "m", afrom = 0, ato = 1, duration = 1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1, duration = 1.5)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1829_1#12$1")]
+[name="トラゴーディア"]ははっ、私の最愛。誰よりも優れた役者よ。今まさに破滅へと向かう万物がキミを引き立てている。キミが今この瞬間を楽しんでいることを嬉しく思うよ。
+[charslot(slot = "m", name = "avg_npc_1829_1#11$1")]
+[name="トラゴーディア"]私も、我を忘れてしまうほどに！
+[dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing2", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=0.9, duration = 1.5)]
+[charslot(slot = "m", afrom=1, ato=0, duration = 1.5)]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0, ato=0.7, posfrom="150,0", posto="-50,0", duration = 1, end = false)]
+[charslot(slot = "r", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0, ato=0.7, posfrom="-150,0", posto="50,0", duration = 1, end = false)]
+[delay(time=0.8)]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0.7, ato=0, posfrom="-50,0", posto="-250,0", duration = 1, end = false)]
+[charslot(slot = "r", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0.7, ato=0, posfrom="50,0", posto="250,0", duration = 1, end = false)]
+[delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[name="トラゴーディア"]ただ、キミにもよくわかっているはずだ。長命者を殺すことは、無駄で無意味なことだと。
+[dialog]
+[bgeffect(name="$eb_blacksmoke_01", layer=2)]
+[Background(image="62_g5_duelscene", screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[backgroundTween(yFrom=20, yTo=-70, duration=11)]
+[focusout(type="bg", id="62_g5_duelscene", from=0, to=1, duration=0.1, block=false)]
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[charslot(slot = "m", posfrom="0,-100", posto="0,-150", duration=20)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="ルシアン"]私が面白い視点を見つけたと、先ほど言っていたな。
+[charslot(slot = "m", name = "avg_npc_1828_1#3$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="ルシアン"]面白みが足りない、まるで足りない。
+[charslot(slot = "m", focus="n")]
+[name="トラゴーディア"]……
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="ルシアン"]あなたは軟弱な創作家などではなく、ただ他に術がないだけだ。
+[name="ルシアン"]死を必要としているのは私たちでも、観客でも、常識を超えられない凡人でもない……
+[charslot(slot = "m", name = "avg_npc_1828_1#2$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="ルシアン"]トラゴーディア――あなただ。
+[name="ルシアン"]あなたは歴史の中を行き交い、劇団を立ち上げ、闇を用いて夢を作った。絶望を糧に私とシャレムを育て、一人また一人の子供を誘惑し、一人また一人の役者を鞭打った……
+[name="ルシアン"]苦痛を感じることを、罪を学ぶことを、血生臭さに染まることを、破滅を歌うことを私たちに教えた。舞台に立つ時には着飾り、世を渡る時には素性を偽ることを、いわゆる新生を私たちに教えた。
+[charslot(slot = "m", name = "avg_npc_1828_1#4$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="ルシアン"]あなたは物語を作り、観客を惹きつけた。あのラテラーノの枢機卿を、ガリアの副将を、「ズルカマラ」、「ブレイドダンス」、「シャドウ」を、ダルトン、シェリー、モイラを選び……
+[name="ルシアン"]無数の「ルシアン」を選び、死を形作った。
+[name="ルシアン"]あなたは死の形式を極め、死の様式を革新し、死の意味を完全なものとした――
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="ルシアン"]それはただあなたが、死からあまりにも遠いからだ！
+[charslot(slot = "m", focus="n")]
+[name="トラゴーディア"]……
+[dialog]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.5, duration = 0.2)]
+[charslot(duration=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[bgeffect]
+[charslot]
+[Background]
+[curtain]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$swordtsing5",volume=1)]
+[CameraShake(duration=2, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Effect(name="$e_spark_01_mid",x =0, y =0,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =0, y =0,rox =100, roy =100, roz =50, layer = 2)]
+[Effect(name="$e_slash_fold",x=50,layer = 3)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.7, block=true)]
+[PlaySound(key="$swordtsing3",volume=1)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Effect(name="$e_spark_01_mid",x =0, y =0,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =0, y =0,rox =100, roy =100, roz =50, layer = 2)]
+[Effect(name="$e_slash_fold_hit",layer =3)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.3, block=true)]
+[PlaySound(key="$d_avg_thinsword_whoosh",volume=1)]
+[PlaySound(key="$d_avg_tswordlight",volume=1)]
+[Delay(time=0.1)]
+[PlaySound(key="$swordtsing4",volume=1)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Effect(name="$e_spark_01_mid",x =0, y =0,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =0, y =0,rox =100, roy =100, roz =50, layer = 2)]
+[Effect(name="$e_slash_cross_hit",layer =3)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[focusout(type="bg", id="62_g5_duelscene", from=1, to=0, duration=0.1, block=false)]
+[Image(image="62_i09_1", screenadapt="coverall", xScale=1.7, yScale=1.7, y=250, fadetime=0)]
+[ImageTween(xFrom=-200, xTo=-300, duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="トラゴーディア"]……あまりにも遠い、か。
+[name="ルシアン"]長命者よ、死とはあなたでは永遠に到達できない彼岸だ。劇団長よ、死とはあなたでは永遠に成し遂げられないパフォーマンスだ。トラゴーディアよ、死とはあなたでは永遠に証明できぬ芸術だ！
+[name="ルシアン"]あなたの美学、洞察、経験、私たちに押し付けたあらゆる探求は、かつてあなた自身の糧となったことはない！
+[name="ルシアン"]私はかつて、あなたが死を書くことに喜びを覚えるのだと思っていた。しかし、あなたの死ねないという失望は、達成感をはるかに上回っている！
+[name="ルシアン"]もしあなたが劇そのものであるならば、存在自体が論理的に矛盾している！
+[name="ルシアン"]これは簡単に得られる結論だ、違うか？
+[name="ルシアン"]あなたはその矛盾に憎しみや無力さを感じるか？
+[name="ルシアン"]滑稽さや困惑を感じるか？
+[name="ルシアン"]あるいは、それを無視してきたのか？
+[name="ルシアン"]まさかあなたは私のように、苦しんだことがないのか？
+[dialog]
+[Image(image="62_i09_1", screenadapt="coverall", xScale=1.7, yScale=1.7, y=-250, fadetime=2)]
+[ImageTween(xFrom=100, xTo=200, duration=20, block=false)]
+[Delay(time=2)]
+[name="トラゴーディア"]……
+トラゴーディアは珍しく沈黙し、ルシアンの我を忘れた顔を見つめている。
+ルシアンが声を上げて叫んでいる。荒れ狂う嵐でも彼の声を歪めることはない。彼が歌や詩を高らかに歌い、源石結晶は肉眼でも見える速度で彼の首を這い回る。
+[name="トラゴーディア"]ルシアン、痛いんだろう？
+[name="ルシアン"]ッ――
+[name="ルシアン"]ああ、当然だ。
+[name="トラゴーディア"]制限なくアーツを放てば、死んでしまうよ、ルシアン。
+[dialog]
+[Image(image="62_i09_2", screenadapt="coverall", fadetime=2)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=10, block=false)]
+[Delay(time=2)]
+[name="ルシアン"]羨ましいか？
+[name="トラゴーディア"]はははは。
+[name="トラゴーディア"]……かもしれない。だがキミのショーは本当に感動的だよ。
+[dialog]
+ルシアンはトラゴーディアにより一層熱烈な返答をした。高揚した感情が彼にさらなる力を与え、対峙する中でようやく主導権を握る。次の瞬間、杖の先端が相手の体を貫いた――
+[dialog]
+[PlaySound(key="$d_avg_swrdgnlght", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_piercechest", volume=1)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=90, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Image(image="62_i09_3", screenadapt="coverall", fadetime=0.5)]
+[ImageTween(xScaleFrom=1.8, yScaleFrom=1.8, xScaleTo=1, yScaleTo=1, duration=0.2, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=2)]
+[name="ルシアン"]苦しみは私の鋭い刃だ。私は遂にそれを、私に苦しみを与えた者に――
+[name="ルシアン"]あなたに突き刺した！
+[dialog]
+[PlaySound(key="$d_avg_lghtmgc", volume=1)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_ghostsigh", volume=1)]
+[ImageTween(xScaleTo=1.1, yScaleTo=1.1, duration=2)]
+[Image(image="62_i09_4",screenadapt="coverall",fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=1, loop=true, channel="d")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[delay(time=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+全ての劇には終幕が訪れる。
+循環はいわゆる宿命というものを形作るには役立たない。
+……
+ルシアン、ちょうど今、新たなインスピレーションを得たよ。
+続きを紡ぐに値するものだ。
+[dialog]
+[stopmusic(fadetime=4)]
+[charslot]
+[image]
+[Background(image="62_g5_duelscene",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[StopSound(channel="d", fadetime=6)]
+足元の区画はまだ揺れていたが、徐々に落ち着いてきていた。
+やがて、瓦礫の中から顔が現れた。いまだ動悸が止まらぬ中、遠ざかっていく天災雲を見やり、自分がどのような災いを経験したのか信じられない様子だった。
+無数の仮面が落ちては砕け、トラゴーディアがゆっくりと倒れる。
+ルシアンは自分が相手の心臓を砕き、この「師殺し」の劇は完結したと確信した。しかし同時に自身の変化にも気づいた――
+[dialog]
+[PlayMusic(intro="$ghosthunter_intro", key="$ghosthunter_loop", volume=0.6)]
+[PlaySound(key="$d_avg_wtchkgopenftstp", volume=1, loop=true, channel="sn")]
+[StopSound(channel="sn", fadetime=2)]
+[charslot(slot = "m", name = "avg_1042_phatm2_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="ルシアン"]……
+[charslot(slot = "m", name = "avg_1042_phatm2_1#5$1")]
+[name="ルシアン"]この服装、この杖、この冠……
+[name="ルシアン"]あなたが私に新たに施した差し込みか？
+[dialog]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+白銀の裾は風になびき、砂粒が掠める。だが衣装には塵一つない。ルシアンは黙したまま、己の華やかな服装をまじまじと見る――
+きらびやかで精巧で、誂えたように体に合っている。今すぐにでも祭りや舞台に立てそうなほどだ。
+さながら……天災からの贈り物、彼が神殺しを成した褒美にも思えた。
+此度の殺人は「裏切り」がテーマだったはずだ。しかし最後の瞬間に「伝承」となったのか？
+ルシアンは黙ったまま。
+地面に倒れたトラゴーディアはすでに消えていた。死体があった場所には鮮血と仮面だけが残っている。どす黒い赤色の絨毯は、階段に沿って果てしなく伸びている……
+それは自分が歩むべき道であり、もはや行く手を阻むものは何もない。ルシアンはわけもなくそう思った。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[verticalbg(imagegroup="62_i10_1/62_i10_2/62_i10_3/62_i10_4", solidwidth=1280, solidheight="720/720/720/720",y=2160)]
+[largebgtween(duration = 80, yFrom = 2160, yTo = 160, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+そうして、ルシアンは一段ずつ階段を上がる。前を向き、振り返らずに。
+トラゴーディアの声がこの瞬間再び響いた。
+[name="トラゴーディア"]ルシアン、キミは比類なき役者だ。演技の真髄を熟知している――理性で感性の仮面を口にくわえるという技を。
+[name="トラゴーディア"]すでに私の正体を知っている以上、殺すことによって私に終わりを与えようなどと望むべきではない。
+[name="トラゴーディア"]かつて古城で上演された展開に希望を託すべきではない。
+[name="トラゴーディア"]――
+[name="トラゴーディア"]それとも、私がこのように考え、このように決断を下すと確信しているのかな？
+[name="トラゴーディア"]はは、面白い。
+[name="トラゴーディア"]あるいはキミの言う通りなのかもしれない。死とは私では永遠に到達できない彼岸、永遠に成し遂げることのできないパフォーマンス、永遠に証明できぬ芸術……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", multi = true, text="雑草は常に我が道を行き、", x=250,y=190, alignment="center", duration=2, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n涙と虚言、そして迷いのおかげで、", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n彼は萎れた花びらの寝床を去る。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n彼は舞い上がる塵の中に墓碑銘を記し、", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nいつの日か――", block = true)]
+[Sticker(id="st1", multi = true, text="\n\nそれを仰ぎ見る時を待つ。", block = true)]
+[Sticker(id="st1", duration=2, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[name="トラゴーディア"]「死や破滅」、それはキミが私にくれた師への最高の贈り物だ。
+[name="トラゴーディア"]だがキミは考えたことがあるかな？　今キミが否定し、私が打ち捨てたものは、無数にある劇の可能性のうちの一つ、無数にある審美の基準のうちの一つにすぎないと。
+[name="トラゴーディア"]それゆえに、キミが殺したのも、私の無数の存在のうちの一つにすぎないと。
+[name="ルシアン"]続けるといい。
+[name="トラゴーディア"]命はあくせくと動き回るが、劇は存在し続ける。
+[name="トラゴーディア"]劇は破滅せず、審美は絶えず移ろう。だからこそ、私は永遠にあらゆる物事の頂点に立つ。
+[name="ルシアン"]……
+[name="ルシアン"]劇を殺すことはできない、しかし私はあらゆるものに劇の意味を与えることができる。劇で劇に取って代わり、審美で審美を覆すと？
+[name="ルシアン"]私は……新たな劇に――新たなあなたになれるのか？
+[name="ルシアン"]もしそれがあなたと私の唯一のあり方なのであれば――
+[name="ルシアン"]ならば、受け入れるとしよう。
+[name="トラゴーディア"]ルシアン、ほら、私たちはまた意見が一致したよ――ははっ、なんて気が合うんだろうね！
+[name="トラゴーディア"]登るといい、舞台の頂上へ。
+[name="トラゴーディア"]キミは「表現」の冠を戴き、「インスピレーション」の杖を握り、演じ、演じられてきた歳月を身に纏う……
+[name="トラゴーディア"]それはより一層苦しむことが定められた道のりとなるだろう……そしてキミはそれを受け入れるしかない。
+[name="トラゴーディア"]ルシアン、キミは私からの祝福と呪いを背負って歩き続けるだろう。
+[name="トラゴーディア"]初めて会った時にした約束は果たした――私は永遠にキミの妨げに……劇の妨げにはならない。
+[name="トラゴーディア"]これが私からキミへの、最後の贈り物だよ。
+[name="トラゴーディア"]キミはどこまで歩みを進められるかな？
+[name="トラゴーディア"]どう異なる答えを出せるのかな――
+[name="トラゴーディア"]「トラゴーディア」。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[verticalbg(imagegroup="62_i10_1/62_i10_2/62_i10_3/62_i10_4", solidwidth=1280, solidheight="720/720/720/720", y=540, fadetime=0)]
+[largebgtween(duration = 0,xScaleFrom=1, xScaleTo=0.25, yScaleFrom=1, yScaleTo=0.25, block = false)]
+[PlaySound(key="$d_avg_wtchkgopenftstp", volume=1, loop=true, channel="wt")]
+[StopSound(channel="wt", fadetime=4)]
+[curtain(direction = 6,fillfrom = 0.5, fillto = 0.37, fadetime=4)]
+[curtain(direction = 2,fillfrom = 0.5, fillto = 0.37, fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=3)]
+[name="ルシアン"]……
+ルシアンは返事をしなかった。やがて、その声も沈黙した。
+ルシアンが階段の頂に立つ。嵐が目の前で遠ざかっていき、血痕は背後で伸びていた……
+彼はこの寂寥とした光景を、体内のいまだ形を成していない芸術を愛し、あらゆる痛みを受け入れ解き放つ……
+新たなトラゴーディアが声高らかに歌う――
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[verticalbg]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]
