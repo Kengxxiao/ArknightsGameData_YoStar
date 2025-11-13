@@ -1,0 +1,402 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="62_g12_dressingroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4191_tippi_1#2$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",focus="l")]
+[name="Melanie"]I've come up with a few initial concepts for Lady Dupont's finale.
+[name="Melanie"]You're an expert background painter, and quite versatile too. I need you to help me put together the best possible scene.
+[name="Melanie"]Here, these are a few materials I cobbled together. Have a look.
+[Dialog]
+[charslot(slot = "right", name = "avg_4191_tippi_1#2$1",focus="r")]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[Delay(time=1)]
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1",focus="r")]
+[name="Tippi"]Wow, how'd you get all these art references and reference shots?
+[name="Tippi"]Tint, ambience, design philosophy... You even labeled all the details of the buildings and how the lighting would reflect off different materials!
+[charslot(slot = "right", name = "avg_4191_tippi_1#8$1",focus="r")]
+[name="Tippi"]How long have you been doing research for this scene, ma'am?
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",focus="l")]
+[name="Melanie"]A few years at this point. Time is about the only thing I have these days. It takes a lot more than reading the words off a script to make an excellent film.
+[charslot(slot = "right", name = "avg_4191_tippi_1#10$1",focus="r")]
+[name="Tippi"]Director Quay's not even done fixing up the script yet, and you've already come up with so many ideas for the ending!
+[charslot(slot = "left", name = "avg_npc_1830_1#4$1",focus="l")]
+[name="Melanie"]That lad's certainly taking his sweet time with it, yes. I believe that, both as the leading lady of <i>The Death of Lady Dupont</i> and its investor, I have an obligation to take responsibility for this film.
+[charslot(slot = "left", name = "avg_npc_1830_1#2$1",focus="l")]
+[name="Melanie"]As I said before, the revival of my career in Wrankwood will begin once Lady Dupont gets a good, proper death.
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1",focus="r")]
+[name="Tippi"]<i>Lupukarn Holiday</i>, <i>The Portrait of Erin Daz</i>, <i>The Bridges of County March</i>... These mood reference shots are all taken from films starring Marianne Blake, aren't they?
+[charslot(slot = "left", name = "avg_npc_1830_1#3$1",focus="l")]
+[name="Melanie"]Do you... like her work?
+[name="Melanie"]She retired long before you were born.
+[charslot(slot = "right", name = "avg_4191_tippi_1#8$1",focus="r")]
+[name="Tippi"]Er, I mean, like, my dad really loves her films! Besides, the classics are classics for a reason, right?
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",focus="l")]
+[name="Melanie"]Both her acting chops and taste in projects were impeccable.
+[charslot(slot = "right", name = "avg_4191_tippi_1#2$1",focus="r")]
+[name="Tippi"]It's... kinda surprising to hear you say that. I could've sworn you hated her. Everyone's been comparing you guys for years.
+[charslot(slot = "left", name = "avg_npc_1830_1#4$1",focus="l")]
+[name="Melanie"]Indeed. All those years...
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[playMusic(key="$victorianormal_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=true)]
+[charslot(slot="m",name="avg_npc_1840_1#1$1",duration=1)]
+[delay(time=2.5)]
+[PlaySound(key="$skill_flash", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", focus = "n")]
+[name="Reporter"]Congratulations on winning your eighth Best Actress award, Miss Blake!
+[name="Reporter"]Ever since you started your career, you've been at least nominated for an award practically every year. The industry sees you as an insurmountable mountain for fresh new talent to try and climb.
+[name="Reporter"]Are there any particular up-and-comers you think we should keep an eye on?
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="Marianne"]I appreciate the flattery, but I'm hardly an 'insurmountable mountain'. I'm still climbing my way up myself.
+[name="Marianne"]There are always plenty of new faces streaming into Wrankwood, brimming with talent, and it's hard for me to pick any specific name—
+[charslot]
+[name="???"]How about Melanie Rutherford?
+[Dialog]
+[playsound(key="$d_avg_highheelfts")]
+[delay(time=2)]
+[name="Melanie"]I tip my hat to you, Miss Blake.
+[name="Melanie"]Today I received the award for Best Supporting Actress, two years slower than it took you.
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="Marianne"]......
+[charslot(slot = "m", focus = "n")]
+[name="Melanie"]I've seen all your films. As our reporter friend here said, you really are a natural-born performer, the tallest peak in Wrankwood... but only for now.
+[name="Melanie"]Give me some time, and I <i>will</i> overcome you.
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="Marianne"]Well, I'm looking forward to it.
+[stopmusic(fadetime=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="62_g2_setting_rooftop",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[name="Newly-Joined Assistant"]Wow, Melanie and Marianne are really duking it out this scene. Time to get out the popcorn.
+[name="Newly-Joined Assistant"]They've been rivals for a while now, haven't they? It's like they're always racing to get the most awards. So why'd they agree to be in the same project?
+[charslot]
+[name="Melanie"]......
+[charslot]
+[name="Veteran Coordinator"]Shh! Did you forget everything they taught you when you joined the crew, you rude little shit? Go apologize to Miss Rutherford right now!
+[name="Newly-Joined Assistant"]I-I'm really sorry!
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="Marianne"]Let's not be too harsh on the fresh meat, Melanie.
+[charslot(slot = "m", focus = "n")]
+[name="Melanie"]'Our films are built upon rules.' You've been in the industry longer than I have, Miss Blake. You must have experienced why they're so important firsthand.
+[name="Melanie"]'Courtesy towards the leading lady' is something we've had to fight for, role by role, film by film. It's what allowed me, a young girl from the middle of nowhere, to stand in front of you today.
+[name="Melanie"]And without rules, there will be no standards. How else would we know which of us is the greatest film actress of all time?
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="Marianne"]Which reminds me, I still haven't congratulated you for that Best Actress award you got at Leithanien's Spire Film Festival a few days ago.
+[charslot(slot = "m", focus = "n")]
+[name="Melanie"]That was just a small award ceremony. Meanwhile, your latest film swept every single major award in Wrankwood, again.
+[name="Melanie"]I still haven't truly overcome you, Miss Blake.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="62_g1_setting_lobby",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$Tremont_intro",key="$Tremont_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1840_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Marianne"]I would like to thank everyone for coming to this press conference regarding <i>The Eternally Shining Star</i>.
+[name="Marianne"]We appreciate your care and concern during this difficult time. The rumors are true: our film crew really did run into a Catastrophe during our shoot. I was injured, and am still recovering now.
+[name="Marianne"]Thankfully, we didn't return empty handed. We managed to hold onto some of our precious, precious footage.
+[charslot(slot="m",name="avg_npc_1840_1#3$1")]
+[name="Marianne"]But I believe this is Heaven working in mysterious ways. It's trying to tell me that.... it's time for me to bid farewell to the silver screen.
+[name="Marianne"]As both the lead actress of <i>The Eternally Shining Star</i> and its investor, I am hereby announcing that neither the film nor my performance will be submitted for nomination for any awards.
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="Marianne"]It will remain as one last gift from Marianne Blake to her cinephile friends, and nothing more.
+[name="Marianne"]I won't be leaving Wrankwood immediately, of course. Just moving into more of a behind-the-scenes role for now.
+[name="Marianne"]But I doubt I'll be content with that for long. I'm always eager to seek new opportunities, to start a new chapter of my life as 'Jara Booker Wilson'.
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=1)]
+[Delay(time=1.5)]
+[name="Melanie"]......
+[name="Reporter"]Oh, you're here too, Miss Rutherford. Could I request a quick interview?
+[name="Reporter"]Your latest film will be releasing soon, and most were predicting that only you and Miss Blake would be in the running for this year's Best Actress at the Wrankwood Awards.
+[name="Reporter"]So how do you feel about the announcement of her sudden retirement, and the withdrawal of her new movie from the nominations?
+[name="Melanie"]Does this mean...
+[name="Melanie"]I won?
+[Dialog]
+[PlaySound(key="$skill_flash", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[stopmusic(fadetime=2)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1, block=true)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1")]
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1")]
+[Background(image="62_g12_dressingroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1",focus="r")]
+[name="Tippi"]After Jara—err, Miss Blake retired from acting, you got all those roles as brand spokeswoman and lead actress, and even got invited to be on the judging panels for the big film festivals.
+[charslot(slot = "right", name = "avg_4191_tippi_1#9$1",focus="r")]
+[name="Tippi"]But not long after, you suddenly left it all behind because... some personal reasons. And when you came back last time—
+[charslot(slot = "left", name = "avg_npc_1830_1#4$1",focus="l")]
+[name="Melanie"]Nothing was the same anymore.
+[name="Melanie"]Her retirement gave me quite the shock, but I still believed I had won fairly, through my own talent.
+[name="Melanie"]I believed that I, too, could become an 'insurmountable mountain' and a legend of the silver screen. One that outshone even her.
+[name="Melanie"]But in the end, Wrankwood's Best Actress Melanie Rutherford let it all go to her head, swayed by the endless praise of the critics, the flattery of the sponsors, and the applause of the audience.
+[name="Melanie"]Wealth and fame, alcohol and scandal... I lived an... indecent life, those few years.
+[charslot(slot = "right", name = "avg_4191_tippi_1#6$1",focus="r")]
+[name="Tippi"]Yeah, tell me about it. Those tabloids have, like, zero respect for your privacy!
+[name="Tippi"]But once I met you in person, I could tell. Maybe you've made a few mistakes here and there, but your love for acting's the real deal.
+[charslot(slot = "left", name = "avg_npc_1830_1#4$1",focus="l")]
+[name="Melanie"]No need to console me, little Liberi. No one's more acutely aware of my failings than I am.
+[charslot(slot = "left", name = "avg_npc_1830_1#6$1",focus="l")]
+[name="Melanie"]Marianne could switch from a hardened soldier to a poor servant girl and back again at the drop of a hat. A single dress rehearsal was all she needed to figure out the ideal lighting and positions.
+[name="Melanie"]But if I were ever to take a single day off, spend one hour less on studying the script, or arrive at the rehearsal fifteen minutes late, my performance would fall into the gutter.
+[charslot(slot = "left", name = "avg_npc_1830_1#4$1",focus="l")]
+[name="Melanie"]A mere two years of living in indulgence was all it took for me to lose the skills I once picked up with ease. I disappointed both the directors and the fans.
+[name="Melanie"]I had never realized just how many unending waves of new talent were looking up to me. I had never realized what the position in entertainment Marianne had fought so hard to defend actually meant.
+[name="Melanie"]I thought I could afford to be like her, and enjoy the double delights of cinema and life. I thought there'd be no harm in having a little fun after all those chasing and competing.
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",focus="l")]
+[name="Melanie"]It was only then that I finally realized Marianne Blake was a truly infuriating genius... In every sense of the term.
+[name="Melanie"]With her final film, and that chance Catastrophe... Marianne received a revelation to retire from cinema, and all I could do was sigh. Even unknowable Mother Nature was on her side.
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1",focus="r")]
+[name="Tippi"]But now that you're a lead actress again, you've got the chance to win back everyone's trust!
+[name="Tippi"]I mean, you're even getting to film alongside a Catastrophe too!
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",focus="l")]
+[name="Melanie"]You're right. I've spent more than a decade piecing my self-confidence and acting skills back together. I could very well be but a single step away from the top again.
+[name="Melanie"]Greta's offer to give me the part of Lady Dupont couldn't have come at a better time, and now, even her grand ambitions have left me a special little 'gift'.
+[name="Melanie"]Come to think of it, the Lady is a rather fitting role for me.
+[charslot(slot = "left", name = "avg_npc_1830_1#4$1",focus="l")]
+[name="Melanie"]Surely she knows her brother is lying to her? Surely she has doubted her last name once or twice?
+[name="Melanie"]But no, she unconsciously clings to her glamorous life, refusing to accept the mediocrity of her birth. She prays desperately that she is special, that she is talented.
+[charslot(slot = "left", name = "avg_npc_1830_1#6$1",focus="l")]
+[name="Melanie"]......
+[name="Melanie"]I wonder, what sort of ending will she face, amidst the storm?
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1",focus="r")]
+[name="Tippi"]Miss Rutherford.
+[charslot(slot = "left", name = "avg_npc_1830_1#6$1",focus="l")]
+[name="Melanie"]Yes?
+[charslot(slot = "right", name = "avg_4191_tippi_1#11$1",focus="r")]
+[name="Tippi"]We should watch some horror flicks together!
+[charslot(slot = "left", name = "avg_npc_1830_1#3$1",focus="l")]
+[name="Melanie"]Horror flicks...?
+[charslot(slot = "right", name = "avg_4191_tippi_1#1$1",focus="r")]
+[name="Tippi"]If you want to climb your way back to the top, you can't limit yourself to copying Miss Blake, right? Like, you've always had pretty different styles of acting.
+[name="Tippi"]We're gonna put together a finale more powerful than the one in <i>Lupukarn Holiday</i>, and Lady Dupont's name will go down in cinema history!
+[charslot(slot = "left", name = "avg_npc_1830_1#2$1",focus="l")]
+[name="Melanie"]Ha. Very well then.
+[charslot(slot = "right", name = "avg_4191_tippi_1#2$1",focus="r")]
+[name="Tippi"]Also...
+[name="Tippi"]I'm sure you know what happened between you and Miss Blake better than I do, but I bet she meant it when she said you'd surpass 'Marianne Blake' one day.
+[name="Tippi"]She might still think so, even now.
+[charslot(slot = "left", name = "avg_npc_1830_1#1$1",focus="l")]
+[name="Melanie"]......
+[name="Melanie"]You might be right.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="62_g13_directorstudio",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$plot_intro",key="$plot_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1835_1#3$1",duration=1)]
+[Delay(time=1.5)]
+[name="Steven"]You, you're... Are you real, or just a figment of my imagination? Am I really being visited by the god of inspiration?
+[name="Steven"]Don't tell me I've gone crazy from working on this script...
+[Dialog]
+[charslot]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1829_1#1$1",duration=1.5,bstart=0.3,bend=0.6)]
+[Delay(time=2.5)]
+[name="???"]Madness can transform ink on the page into sweet fruit, or allow a stiff mind to wander freely across the wilderness of time and space.
+[name="???"]You cower in the corner of a dark room, forced to chase a deadline even after witnessing a string of brutal murders. Yet, for all your soul-searching and brain-racking, you have come up with only three endings for Lady Dupont.
+[name="???"]Hardly the work of a madman, no?
+[charslot(slot="m",name="avg_npc_1835_1#4$1")]
+[name="Steven"]......
+[name="Steven"]I promised Greta I'd have an ending that'd impress everyone by tonight. The only people left are those insane enough to risk their lives for cinema, and they're waiting for me.
+[name="Steven"]But they bet on the wrong man.
+[name="Steven"]The realm of art only accepts natural-born geniuses, not some dried-up piece of crap slaving away at a typewriter!
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]<i>The Death of Lady Dupont</i>... You already have the most captivating ending for this story just from its title.
+[name="???"]While the shocking brilliance of her death will certainly fade after the film is copied reel after reel...
+[name="???"]But Wrankwood, after all, is a factory hawking such fantasies all across Terra, is it not?
+[name="???"]You are a nation of liars, fooling even yourselves. Even the Columbian dream was born from a promotional film for the Pioneer project, after all.
+[name="???"]Just to be clear, I care for neither political metaphors nor realities, only that you have deeply misunderstood the essence of performance. Drama can change lives, but it would never use such a... mechanical way.
+[name="???"]But by setting death as Lady Dupont's ending, you show you still possess an intuition for drama.
+[charslot(slot="m",name="avg_npc_1835_1#7$1")]
+[name="Steven"]Intuition?
+[charslot(slot="m",name="avg_npc_1835_1#1$1")]
+[name="Steven"]No.
+[name="Steven"]When I was a student, I hated dragging death into the stories I wrote.
+[name="Steven"]I thought of it as a cheap trick, only good for plugging up holes in the plot or squeezing the right emotions out of the audience.
+[name="Steven"]Actually talented writers could give a film a proper climax without it.
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]Then what changed you? A shocking memory, or perhaps some phantom pain you cannot recall?
+[charslot(slot="m",name="avg_npc_1835_1#1$1")]
+[name="Steven"]I had the same problem five years ago when I was working with Greta on another project.
+[name="Steven"]She didn't mince words: she told me the back half of the script was too dull, and audiences would be falling asleep. If I didn't change it, it'd bomb at the box office.
+[name="Steven"]So I shut myself in my office just like I do now, pushing my mind to the brink of collapse but getting nothing out of it...
+[charslot(slot="m",name="avg_npc_1835_1#4$1")]
+[name="Steven"]And then, Laura fell and died.
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]An opportunity straight from Heaven, the perfect plot device.
+[charslot(slot="m",name="avg_npc_1835_1#5$1")]
+[name="Steven"]Just as Greta expected, the rest of the film was panned by critics. But that scene alone became an overnight sensation, to the point that...
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]You started to see death as more than a cheap trick. Rather, as the most sincere form of expression, brimming with artistry.
+[charslot(slot="m",name="avg_npc_1835_1#7$1")]
+[name="Steven"]Yeah...
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]Seeing how you've had that sudden realization, all that has happened on this plate should provide you with nourishment.
+[name="???"]A death while shooting, a deadly hallucination, bodies hanging from beams... With all this to inspire you, why not write them into your story, and let the same drama be performed both on and off the screen?
+[charslot(slot="m",name="avg_npc_1835_1#7$1")]
+[name="Steven"]......
+[name="Steven"]Because they're still not good enough.
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]Then what about turning away from those who have already exhausted their possibilities?
+[charslot(slot="m",name="avg_npc_1835_1#7$1")]
+[name="Steven"]Wh-What do you mean?
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]Who else in your story can ignite a spark in Lady Dupont's bosom? Who is distant enough from all the grudges and resentments, yet still able to bring about the most drama—
+[name="???"]As well as the best of performances?
+[dialog]
+[charslot(slot="m",name="avg_npc_1835_1#3$1")]
+[Delay(time=1.5)]
+[name="Steven"]The Messenger... It's the Messenger who brought the bad news! He's the very trigger for Lady Dupont's new fate!
+[name="Steven"]Vengeance or repentance? Lady Dupont has a new choice to make, and at the same time, the Messenger must contend with the consequences of intervening in another's destiny...
+[charslot(slot="m",name="avg_npc_1835_1#5$1")]
+[name="Steven"]This is it! This is the ending I wanted!
+[name="Steven"]Lucian... Yes... I'll have Lucian be the star of the final scene...
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[Background(image="62_g10_dormitory",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Lucian"]You want me to become the lead actor...
+[charslot(slot = "m", name = "avg_npc_1834_1#1$1")]
+[name="Greta"]That's right.
+[name="Greta"]I can't say I understand you, but I have a feeling that even if I hadn't approached you, you would've come to me anyway.
+[name="Greta"]You have the most potential of any actor I've ever seen.
+[name="Greta"]The Messenger doesn't have much screentime, but your performance added a complex and delicate core to a role that was originally a nothingburger.
+[name="Greta"]And I'm sure that whatever your goal here is, you won't be leaving before the shoot ends.
+[name="Greta"]If so, then why not do me a favor and help me out with this?
+[charslot(slot = "m", name = "avg_npc_1828_1#5$1")]
+[name="Lucian"]......
+[charslot(slot = "m", name = "avg_npc_1834_1#1$1")]
+[name="Greta"]I'll give you time to think it over, of course. So far, it's just a thought I had, and I haven't spoken to Steven about it yet.
+[charslot(slot = "m", name = "avg_npc_1834_1#6$1")]
+[name="Greta"]He promised me the finished script by tonight, but honestly, I'm not optimistic.
+[charslot(slot = "m", name = "avg_npc_1834_1#8$1")]
+[name="Greta"]If only that god of his knocked on his door.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1835_1#2$1")]
+[Background(image="62_g13_directorstudio",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Steven"]I see... Changing the focus to the Messenger was the only way to steer the plot towards brilliance!
+[name="Steven"]I can already imagine the shock on everyone's faces when they read the new ending. Well, once I'm done with it.
+[charslot(slot="m",name="avg_npc_1835_1#7$1")]
+[name="Steven"]But...
+[name="Steven"]I see you've added a lot of direction notes for his lines. Most of them are... <i>quite detailed</i>.
+[name="Steven"]While you were giving me advice on my writing just now, you mentioned the quirks of Lucian's performances, and where he likes to put pauses in dialogue.
+[name="Steven"]You even told me which angle suits him best for close-ups to capture his most subtle expressions, and what kind of lighting best highlights his unique character...
+[name="Steven"]It's like you've known him for a long, long time. Maybe even taught him—
+[name="Steven"]So how did you know all these things about Lucian?
+[charslot(slot="m",name="avg_npc_1829_1#1$1",bstart=0.3,bend=0.6)]
+[name="???"]......
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="24_RL_castlehall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=true)]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_npc_292_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="Playwright"]You called for me, Troupe Leader?
+[charslot(slot="m",name="avg_npc_1829_1#1$1")]
+[name="Troupe Leader"]Come with me, Playwright.
+[charslot(slot="m",name="avg_npc_292_1#1$1")]
+[name="Playwright"]The final act is underway, and as always, the entirety of the audience is enraptured by the 'performance' on-stage.
+[charslot(slot="m",name="avg_npc_292_1#4$1")]
+[name="Playwright"]It's rare for Whiteflower to return to the stage. Will you not toast to her once the performance is over?
+[charslot(slot="m",name="avg_npc_1829_1#4$1")]
+[name="Troupe Leader"]......
+[charslot(slot="m",name="avg_npc_1829_1#1$1")]
+[name="Troupe Leader"]What of Blood Diamond and Abyss?
+[charslot(slot="m",name="avg_npc_292_1#1$1")]
+[name="Playwright"]They are merely supporting roles this time. All their scenes have already concluded.
+[charslot(slot="m",name="avg_npc_292_1#9$1")]
+[name="Playwright"]The rotting stage mechanism has spread the blood of the 'magician's assistant' and the chosen 'lucky audience member' all over the stage. Their corpses have been stuffed into prop boxes, set afloat on the river to disappear forevermore...
+[name="Playwright"]The magician herself completes her final show as she treads on a stage yet slick with blood.
+[charslot(slot="m",name="avg_npc_292_1#1$1")]
+[name="Playwright"]Blood Diamond and Abyss should have chiseled their way out of the boxes by now, and be on their way back to the stage for the curtain call alongside Whiteflower the magician.
+[charslot(slot="m",name="avg_npc_1829_1#1$1")]
+[name="Troupe Leader"]Should they, now?
+[charslot(slot="m",name="avg_npc_1829_1#2$1")] 
+[name="Troupe Leader"]And here I was, thinking those two children have turned performance into reality, disappearing forevermore...
+[charslot(slot="m",name="avg_npc_292_1#4$1")]
+[name="Playwright"]—
+[charslot(slot="m",name="avg_npc_1829_1#2$1")]
+[name="Troupe Leader"]As I recall, this was a new scene you added half a year ago while revising the script... During a night you claimed to have had a revelation?
+[charslot(slot="m",name="avg_npc_292_1#6$1")]
+[name="Playwright"]Leader...
+[charslot(slot="m",name="avg_npc_1829_1#11$1")]
+[name="Troupe Leader"]Come with me, Playwright.
+[name="Troupe Leader"]The show is far from over.
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1.5)]
+[name="???"]He is my favorite leading man.
+[name="???"]He once left me, but in the end, we shall be reunited.
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
