@@ -1,0 +1,881 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_atmosphere_horror", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+등불이 일렁이는 고성, 피로 물든 선생님들의 시신, 어둠 속에서 들리는 공허한 바람 소리…… 그 모든 것을 잊는 건 그리 어렵지 않았다.
+자객이 된 루시안이 어떠한 꿈을 꾸기 전까지.
+[dialog]
+[PlayMusic(key="$m_avg_rglk1secretevent_loop", volume=0.6)]
+[Image(image="24_RL03", screenadapt="coverall", xScale=1.05, yScale=1.05, fadetime=0)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+여전한 고성, 여전히 그 텅 빈 홀에서, 그는 홀로 불빛 아래 앉아 노래를 부르고 있었다. 등 뒤에는 옛 단원들 모두가……
+어제처럼 생생하게 서있었다.
+[dialog]
+[name="극단장"]루시안, 과거를 지울 수 있는 사람은 없어.
+[name="극단장"]그것들은 언제나 흔적을 남기지.
+[name="루시안"]내가 두려워한다고 생각하나?
+[name="루시안"]아니, 나는 그저 네가 내 인생에 집어넣은 쪽대본을 완전히 찢어버리지 못했다는 걸 확인했을 뿐이다. 너는 여전히 존재하니까.
+[name="루시안"]하지만 네 말이 맞다. “과거를 지울 수 있는 사람은 없다. 그것들은 언제나 흔적을 남기지.”
+[name="루시안"]그래서 나는 너를 끝장내려고, 그 오랜 시간 동안 네가 걸은 길을 따라 걸으며……
+[name="루시안"]이 대지 전체를 돌아다녔다!
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[bgeffect(name="$eb_whitemask",layer=1)]
+[PlaySound(key="$d_avg_filmprojection")]
+[playsound(key="$d_avg_filmprojection_loop", loop=true, volume=0.4, channel="fi")]
+[focusparam(blur=false, effect="Grayscale")]
+[focusout(duration=1, type="bg", from=0, to=1)]
+[Background(image="21_G8_cammunibase",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="n")]
+[name="루시안"]칼레, 가울의 변방 도시.
+[name="루시안"]동맹국의 갑작스러운 반란으로 칼레는 포위됐지만, 강력한 수성포와 '제국의 깃발'이라 불리는 장군 덕분에 몇 달 동안이나 굳건하게 버텼지.
+[name="루시안"]장군은 성벽 위에 서서 쉬지도, 물러서지도, 움직이지도 않았다. 깃발이 있는 한, 아무리 지친 병사라도 마음이 흔들릴 일은 없었다……
+[charslot(slot = "r", name = "avg_npc_1828_1#6$1", focus="r")]
+[name="루시안"]그러나 누구도 예상하지 못한 반란이 일어났고, 장군이 가장 신뢰하던 부장군이 성문을 열었다.
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]……
+[name="극단장"]가울 황실은 이미 칼레를 포기했어. 칼레의 함락은 필연이었지.
+[name="극단장"]명예는 제국의 깃발이 쓰러지지 않게 했고, 부장군은 자신도 이 장군과 함께해야 한다고 생각했지. 그들이 수십 년간 생사를 함께했던 것처럼.
+[name="극단장"]하지만 더 이상 버텨봤자 사상자만 늘어날 뿐, 그 도시는 결국 죽음의 도시밖에 되지 않아.
+[charslot(slot = "l", name = "avg_npc_1829_1#3$1", focus="l")]
+[name="극단장"]어쩌면 고통받던 그 군인은 갑작스럽게 깨달았을지도 몰라…… 완벽한 선택은 없지만, 속죄할 방법은 있으니까.
+[name="극단장"]그렇게 그는 이미 체력을 다한 장군을 설득했고, 장군이 잠깐 눈을 붙인 10분 사이에 성문을 열어젖혔지.
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]그리고 동맹국의 군대가 도시에 진입하기 전, 그는 검으로 자신의 심장을 찔렀어…… 이 배신자는 그 전투에서 가장 비참한 사망자가 되었지.
+[name="극단장"]아주 오래된 일이야, 루시안. 대부분의 자세한 사정이 역사의 강물에 씻겨버렸을 정도로.
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]빅토리아, 라이타니엔…… 나는 수개월 동안 여러 나라의 10여 개 도시를 탐방했고, 마침내 한 늙은 가디언을 찾아냈다.
+[name="루시안"]그는 칼레에서 하늘을 치솟는 불길을 목격했고, 그 배신자의 시신에서 휘장 하나를 발견했지…… 등을 맞댄 두 얼굴, 극도의 미소와 눈물이 어우러져 있었다.
+[charslot(slot = "r", name = "avg_npc_1828_1#7$1", focus="r")]
+[name="루시안"]우리 모두 그 표식이 무엇을 의미하는지 알고 있을 거다, 극단장.
+[charslot(slot = "l", name = "avg_npc_1829_1#12$1", focus="l")]
+[name="극단장"]하하하.
+[name="극단장"]이것 말고도, 아마 더 많이 발견했겠지?
+[dialog]
+[charslot(slot = "l", focus="all")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1)]
+[Background(image="26_g1_laterano_cathedralfront",screenadapt="coverall", fadetime=2)]
+[Delay(time=2.5)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]그보다 훨씬 이전의 라테라노.
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]……
+[charslot(slot = "r", name = "avg_npc_1828_1#2$1", focus="r")]
+[name="루시안"]지금으로부터 200여 년 전, 어느 뛰어난 추기경이 대성당 앞 광장에서 총기사에게 사살당했다.
+[name="루시안"]총명하고 인자했던 그 추기경은 '주님과 가장 가까운 산크타'로 불리며, 겨우 서른의 나이임에도 모두의 기대를 받는 차기 교황이었지.
+[charslot(slot = "r", name = "avg_npc_1828_1#5$1", focus="r")]
+[name="루시안"]하지만 그는 갑자기 변했다. 편집적이고 과격하게 변해, 포교하고, 신자를 모으고, 외교 사절과 접촉하며 교황을 문책하려 했다……
+[name="루시안"]……상황은 결국 라테라노 전체를 위협하는 종교 쿠데타로 악화됐지. 교황은 중상을 입었고, 총기사가 출동하고, 그는 라테라노 역사상 유일하게 쿠데타로 사망한 추기경이 되었다.
+[name="루시안"]그에게 무슨 일이 있었는지는 아무도 모른다…… 이건 어느 위령성당에서 라테라노를 지나던 한 필라인을 우연히 만나 알게 된 것이다. 물론 깊이 파헤칠 만한 단서는 아니지만.
+[charslot(slot = "l", name = "avg_npc_1829_1#12$1", focus="l")]
+[name="극단장"]그런 단서들까지 찾아내다니, 애를 많이 썼구나.
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]꽤 번거로웠지.
+[charslot(slot = "l", name = "avg_npc_1829_1#11$1", focus="l")]
+[name="극단장"]나는 그저 그 산크타에게 약간의 '진실'을…… 그가 불치병에 걸렸다는 걸 알려줬을 뿐이야.
+[name="극단장"]교황은 경전을 해석할 줄밖에 모르는 무능한 자였어. 그에 반해 신앙에 무한한 열정을 갖고 있는 그는 남은 시간이 많지 않아, 자신의 이상을 실천으로 옮겨 새로운 시대의 종소리를 들을 수 없을지도 모른다고 생각했지.
+[name="극단장"]하지만 사실, 그는 교황을 공격하던 순간에 정신을 차렸어. 자신이 결코 죽음에 쫓긴 적이 없다는 걸 알게 됐지……
+[charslot(slot = "r", name = "avg_npc_1828_1#8$1", focus="r")]
+[name="루시안"]광기에 사로잡혔지만 정신을 차리고, 자신이 저지른 악행의 결과를 바라보며 스스로 총을 향해 나아간 것인가?
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]정치적 비극의 축소판이야. 극단의 여러 레퍼토리가 거기서 영감을 받았지.
+[name="극단장"]참으로 안타까운 일이야, 안 그래?
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]……
+[dialog]
+[Background(image="27_g22_goldenboat_hall",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#5$1", focus="r")]
+[name="루시안"]이베리아.
+[name="루시안"]황금처럼 찬란했던 그 시대에, 한 등대가 다가오는 커다란 배를 비췄지만, 사람들은 그 배에서 바다 깊은 곳의 바람 소리와, 갑판에서 휘날리는 쌍둥이 얼굴 표식이 찍힌 공연 티켓밖에 발견하지 못했다……
+[name="루시안"]그리고 사라진 선원이 노래하고 있었다……
+[charslot(slot = "r", focus="n")]
+새끼 파울비스트를 부추겨 고통의 열매를 쪼아 먹게 한다.
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]……
+[dialog]
+[Background(image="44_g3_ludwigsuniv_outside",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]라이타니엔 고탑의 고대 술식은 귀족의 비명과 절규를 기록하고 있더군.
+[charslot(slot = "r", focus="n")]
+갓난아이를 내몰아 기쁜 죽음에 닿게 한다.
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]……
+[dialog]
+[Background(image="40_g5_samitribe",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]두꺼운 눈에 뒤덮인 촌락.
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", focus="l")]
+[name="극단장"]잡초는 언제나 제 길을 찾아낸다.
+[name="극단장"]……
+[dialog]
+[Background(image="53_g3_menatmainstreet_river",screenadapt="coverall", fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "r", name = "avg_npc_1828_1#1$1", focus="r")]
+[name="루시안"]사막 깊숙이 있는 도시.
+[charslot(slot = "l", name = "avg_npc_1829_1#6$1", focus="l")]
+[name="극단장"]눈물과 거짓, 그리고 망상 덕분에.
+[name="극단장"]그는 시든 꽃잎으로 엮은 잠자리를 떠났다.
+[name="극단장"]……
+[dialog]
+[charslot(slot = "l", focus="all")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1)]
+[charslot(duration=2)]
+[StopSound(channel="fi", fadetime=5)]
+[Effect(name="$e_whitemask",layer = 2)]
+[Delay(time=3)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[focusparam]
+[focusout(duration=0.1, type="bg", from=1, to=0)]
+[Background(image="62_g5_duelscene",screenadapt="coverall")]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.4, channel="c",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1", duration=1, isblock=true)]
+[name="루시안"]……너는 어디에나 존재했다.
+[name="루시안"]나는 네가 걸은 길을 따라 걸으며, 이 대지 전체를 돌아다녔다. 나는 모든 이에게 다가갔고, 모든 일을 파헤쳤다. 그리고 마침내, 나는 진위를 판별하기 어려운 기이한 이야기와 오랜 문서 속에서, 네 이름을 찾아냈다……
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="루시안"]'트라고디아'.
+[charslot(slot = "m", name = "avg_npc_1829_1#3$1")]
+[name="트라고디아"]……
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="루시안"]다만, 전설 속 '트라고디아'는 존경받는 신이었지.
+[name="루시안"]그는 포도덩굴로 엮은 월계관을 머리에 쓰고, 남을 취하게 하고 스스로도 취했다. 그는 기쁨과 자애를 베풀며, 길에서 수확을 거둔 사람들을 만나 명절과 축제로 그들을 야만에서 문명으로 이끌었다……
+[name="루시안"]하지만 진정한 트라고디아는 사기꾼이자 연기자이고, 고행자이자 권모가이며, 선동가이자 역사를 떠도는 망령……
+[name="루시안"]정의조차 내릴 수 없는 장생자였다.
+[dialog]
+[PlaySound(key="$d_avg_clapsolo", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1829_1#12$1")]
+[name="트라고디아"](박수를 친다)
+[name="트라고디아"]너의 근성은 참으로 놀랍구나, 루시안. 심지어 네가 연기에 쏟아부은 노력을 능가할 지경이야.
+[charslot(slot = "m", name = "avg_npc_1829_1#11$1")]
+[name="트라고디아"]다만, 내가 걸어온 길을 봤다면, 내가 추구하는 바를 좀 더 인정해 줄 수 있지 않을까?
+[name="트라고디아"]인간사는 너무 흐릿해. 나는 수없이 떠도는 여정 속에서 아름다움의 최고 매개체…… 연극을 찾아내고 만들어냈어. 심지어 내 수명은 이 개념이 존재한 시간보다도 더 길지……
+[name="트라고디아"]나는 온갖 고통과 기쁨을 맛보았고, 어떤 계기를 통해야만 가장 뜨거운 감정이 피어날 수 있는지 깨달았어. 그렇게 나는 극단을 설립했고, 널 가르쳤지.
+[charslot(slot = "m", name = "avg_npc_1828_1#2$1")]
+[name="루시안"]그런가?
+[name="루시안"]내가 알아낸 것과는 다르군. 죽음은 줄곧 너와 함께했지, 아닌가?
+[name="루시안"]네가 말한 죽음이나 파멸에 관한 그 거창한 이론은 애초에 네가 탐구해낸 이념 따위가 아니다. 너는 그저 그렇게 믿고 있고, 그걸 아름다움으로, 연극을 아름다움으로 생각할 뿐이지.
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="루시안"]일단 절망 속에서 드러나는 인간성의 찬란함이나 극단적인 추악함은 제쳐두고, 가장 근본적인 질문부터 대답해 봐라.
+[name="루시안"]라테라노에서 가울, 이베리아에서 사르곤, 고성에서 이 재앙 아래의 섹터에 이르기까지, 너는 그렇게나 많은 감동적인 공연을 연출했는데……
+[name="루시안"]왜 그것들을 역사 속에서 그냥 사라지게 한 거지?
+[name="루시안"]사람들에게 기억되기를 바라지 않나?
+[name="루시안"]왜 너는 상식을 뛰어넘는 우연과 변화에는 감탄하면서, 파멸이 유일한 결말이 되는 걸 내버려 두는 거지?
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1")]
+[name="트라고디아"]네 대답은 뭘까, 루시안?
+[name="트라고디아"]네가 찾은 답을 말해주렴.
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="루시안"]왜냐하면, 그게 모든 사람과 모든 일을 검증할 수 없게 만드니까…… 극 중에서든, 극 밖에서든.
+[name="루시안"]그것이 너에게 권위를 부여하고, 너 스스로를 증명하게 하여, 이른바 아름다움에 단 하나의 해답만을 허락하니까?!
+[dialog]
+[StopSound(channel="c", fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="62_g4_filmset_ruined",screenadapt="coverall")]
+[bgeffect(name="$eb_wind",layer=2)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_equipment_collapse", volume=1)]
+[PlayMusic(intro="$storyendjp_intro", key="$storyendjp_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="그레타"]스티븐……
+[name="그레타"]스티븐?!
+[name="그레타"]살아 있으면 소리 좀 내 봐!
+[name="???"]……그, 그레타?
+[dialog]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=1)]
+[charslot(slot = "m", name = "avg_npc_1834_1#3$1", posfrom="-200,0", posto="0,0", duration=1, isblock=true)]
+[Delay(time=0.5)]
+[name="그레타"]정말 작업실에 처박혀 있었네!
+[charslot(slot = "m", focus="n")]
+[name="스티븐"]밖에…… 무슨 일 났어?
+[charslot(slot = "m", name = "avg_npc_1834_1#6$1")]
+[name="그레타"]한두 마디로 설명하기는 힘들어. 결론만 말하자면, 섹터가 곧 재앙에 충돌할 거야. 다들 동력층으로 대피했는데…… 너는 괜찮아?
+[charslot(slot = "m", focus="n")]
+[name="스티븐"]아, 안 괜찮아…… 다리가 천장에 깔려서 움직일 수가 없어…… 큭……
+[charslot(slot = "m", name = "avg_npc_1834_1#5$1")]
+[name="그레타"]내가 구해줄게!
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1834_1#5$1", posfrom="0,0", posto="50,-10", afrom=1, ato=1, duration=1)]
+[Delay(time=1.5)]
+[CameraShake(duration=2, xstrength=5, ystrength=5, vibrato=90, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_woodenladder", volume=1)]
+[Delay(time=2)]
+[name="그레타"]젠장, 부러진 기둥에 문이 막혔어……
+[dialog]
+[charslot(slot = "m", posfrom="50,-10", posto="0,0", afrom=1, ato=1, duration=0.5, isblock=true)]
+[name="그레타"]너무 무거워. 잠깐만 기다려! 정신 차리고, 계속 말해!
+[dialog]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="bg_undergroud_u_2",screenadapt="coverall")]
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1", posfrom="0,-30", posto="0,-30", duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="스티븐"]그레타, 이제야 깨달았어. 나는 '천재'라는 단어와…… 아무런 관련이 없다는 걸……
+[charslot(slot = "m", focus="n")]
+[name="그레타"]어?
+[charslot(slot = "r", name = "avg_npc_1835_1#7$1")]
+[name="스티븐"]'신'이 날 찾아왔어……
+[name="스티븐"]신은 날 포기하지 않았고, 내게 새로운 아이디어를 줬어. 사실, 신이 계속 내게 방법을 알려주고 있었어……
+[name="스티븐"]나는 등장인물의 죽음과 모든 역경을 잘 활용해 이야기에 생명력을 불어넣어야 했어…… 《미스 듀폰의 죽음》에서도 그러려고 시도했고. 그렇지 않았다면 이런 제목을 붙이지도 않았겠지.
+[name="스티븐"]5년 전의 로라, 그리고 이번의 달튼, 셸리, 마이클, 마리온…… 그들의 죽음은 모두 극적이고, 진실했으며, 깊은 인상을 남겼지……
+[name="스티븐"]이 소재들은 마치 가을의 낙엽 같아. 피처럼 붉고, 여기저기 널려 있으며, 모든 조각들이 내 텅 빈 머리에 색을 칠해 줄 수 있어……
+[charslot(slot = "r", name = "avg_npc_1835_1#6$1")]
+[name="스티븐"]하지만 나는, 어떻게든 만족스러운 결말이 떠오르지 않아! 아직도 미스 듀폰이 어떻게 죽어야 할지 모르겠어!
+[charslot(slot = "r", name = "avg_npc_1835_1#4$1")]
+[name="스티븐"]만약 죽음 또는 파멸이 연극 신의 방법론이자, 천재 작가가 반드시 익혀야 할 요령이라면, 나…… 나는 어떻게든 배울 수 없어……
+[name="스티븐"]나는 그저, 콜록콜록, 비겁한 쓰레기야…… 그레타.
+[dialog]
+[Effect(name="$e_sandfall_01",layer = 1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_collapse", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", focus="n")]
+[name="그레타"]이 *랭크우드 촬영장 은어* 같은 녀석!
+[charslot(slot = "r", name = "avg_npc_1835_1#3$1")]
+[name="스티븐"]……뭐?
+[charslot(slot = "m", focus="n")]
+[name="그레타"]스티븐, 시나리오 경매가 익명으로 진행된다는 건 알고 있지?
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1")]
+[name="스티븐"]……
+[charslot(slot = "m", focus="n")]
+[name="그레타"]달튼이든 애브너든, 이 제작팀의 사람들은 모두 5년 전 그 사건의 영향을 받았고, 내가 일부러 한데 모은 거야…… 너만은 예외였지.
+[name="그레타"]이 시나리오를 경매할 때, 나는 그걸 쓴 게 너인지도 몰랐어.
+[name="그레타"]나는 단지 오빠의 거짓말과 지배욕에 구속당하고, 소위 애인이라는 세 사람의 욕망에 고통받고 있는 '미스 듀폰'이 그만큼 낙찰할 가치가 있다고 생각했을 뿐이야……
+[name="그레타"]미스 듀폰이 죽든 말든, 그녀가 이 멋진 이야기의 주인공이라는 사실은 변하지 않아!
+[name="그레타"]나는 내 안목을 의심한 적 없어.
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1")]
+[name="스티븐"]……
+[charslot(slot = "m", focus="n")]
+[name="그레타"]야, 말 좀 해봐! 나는 밖에서 돌을 옮기고 있는데, 너는 안에서 왜 혼자 떼쓰고 있냐고!
+[charslot(slot = "r", name = "avg_npc_1835_1#4$1")]
+[name="스티븐"]난 그저 인정하지 않았던 거네……
+[charslot(slot = "m", focus="n")]
+[name="그레타"]뭐라고?
+[charslot(slot = "r", name = "avg_npc_1835_1#6$1")]
+[name="스티븐"]난 그저 *랭크우드 촬영장 은어* '신'의 방법을 인정하지 않았을 뿐이라고.
+[dialog]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_doorbreak", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1.5)]
+[charslot(slot = "l", name = "avg_npc_1834_1#1$1", posfrom = "-200,0", posto = "50,0", duration = 1)]
+[delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_1835_1#4$1")]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1834_1#1$1", focus="l")]
+[name="그레타"]됐다!
+[charslot(slot = "l", name = "avg_npc_1834_1#6$1", focus="l")]
+[name="그레타"]여긴 곧 무너질 거야…… 내가 부축할 테니, 얼른 나가자!
+[dialog]
+[charslot(slot = "l", posfrom = "50,0", posto = "100,-10", afrom=1, ato=1, duration = 1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "l", posfrom = "100,-10", posto = "100,0", afrom=1, ato=1, duration = 1)]
+[charslot(slot = "r", posfrom = "0,-30", posto = "0,0", afrom=1, ato=1, duration = 1)]
+[delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", posfrom = "100,0", posto = "-50,0", afrom=1, ato=0, duration = 1.5)]
+[charslot(slot = "r", posfrom = "0,0", posto = "-150,0", afrom=1, ato=0, duration = 1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_wind",layer=1)]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Background(image="62_g8_mobileplotstreet_ruined",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1834_1#6$1", posfrom = "200,0", posto = "100,0", duration = 1.5)]
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1", posfrom = "100,0", posto = "0,0", duration = 1.5)]
+[delay(time=1.6)]
+[charslot(slot = "r", name = "avg_npc_1835_1#1$1", focus="r")]
+[name="스티븐"]자, 잠깐만, 그레타……
+[charslot(slot = "l", name = "avg_npc_1834_1#5$1", focus="l")]
+[name="그레타"]또 뭐?
+[dialog]
+[charslot]
+[StopSound(channel="sn", fadetime=6)]
+스티븐을 부축한 그레타는 잠시 멈춰 섰고, 스티븐은 옆을 바라보았다.
+반쯤 남은 벽에 있는 그라피티 글씨가 칙칙하고 더러운 환경 속에서 유난히 눈에 띄었다.
+그건 티피가 제작팀을 위해 만든 대형 홍보용 그림이었다. 공교롭게도 영화 제목만이 흩날리는 모래에 전혀 훼손되지 않았다……
+“미스 듀폰의 죽음”.
+[dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[delay(time=1)]
+스티븐은 피로 물든 팔을 들어 마지막 세 글자를 힘껏 지워버렸다.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="62_g8_mobileplotstreet_ruined",screenadapt="coverall")]
+[bgeffect(name="$eb_wind",layer=1)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[PlayMusic(key="$m_avg_epic_loop", volume=0.8)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1843_1#3$1")]
+[name="애브너"]세상에!
+[charslot(slot = "m", name = "avg_npc_1830_1#3$1")]
+[name="멜라니"]……너무 아름다워.
+[name="멜라니"]랭크우드에서 상상력이 가장 뛰어난 조경사도 이런 장면을 만들 순 없어. 누가 감히 재앙 속에서 영화의 결말을 찍는 게 최고의 결정이 아니라고 말할 수 있을까……
+[charslot(slot = "m", name = "avg_npc_1830_1#2$1")]
+[name="멜라니"]이건 단순한 홍보 수단만은 아니야. 나는 점점 더 그레타의 결단력에 감탄하게 돼.
+[charslot(slot = "m", focus="n")]
+[name="애브너"]됐으니까 빨리 동력층으로 돌아가자. 여긴 너무 위험해!
+[dialog]
+[PlaySound(key="$d_avg_highheeledshoe_carpet_fts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1.5)]
+[charslot(slot = "m", name = "avg_npc_1843_1#3$1", duration = 1.5)]
+[Delay(time=2)]
+[name="애브너"]멜라니, 우리 대스타, 왜 또 앞으로 가는 거야? 미쳤어?!
+[charslot(slot = "m", name = "avg_npc_1830_1#1$1")]
+[name="멜라니"]애브너, 사실 당신들은 한 번도 이 '대스타'가 이번 영화로 재기할 수 있다고 생각한 적 없지?
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="애브너"]……
+[charslot(slot = "m", name = "avg_npc_1830_1#1$1")]
+[name="멜라니"]심지어 이 영화를 끝까지 다 찍을 수 있을 거라고도 생각하지 않았을 테고……
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="애브너"]……
+[charslot(slot = "m", name = "avg_npc_1830_1#1$1")]
+[name="멜라니"]사실 나도 마찬가지야. 영화의 결말은 아직도 정해지지 않았는데, 섹터는 파괴되기 일보 직전이니까……
+[charslot(slot = "m", name = "avg_npc_1843_1#9$1")]
+[name="애브너"]그렇다고 죽을 필요까진 없잖아?
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[bgeffect]
+[Delay(time=1)]
+[bgeffect(name="$eb_darkcloud_thunder",layer=1,x=0,xto=0,yto=-140,y=140, movetime = 25)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=1, loop=true, channel="d")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+재앙 구름이 점점 가까워지고 있었다.
+광풍이 휘몰아쳤다. 그것은 자연의 울부짖음이었고, 구름층은 자연의 분노한 표정이었다.
+그럼에도 멜라니는 앞으로 다가가 자연을 마주했다.
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[PlaySound(key="$d_avg_tornado_lp", volume=0, loop=true, channel="to")]
+[SoundVolume(volume=1, channel="to",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Image(image="62_i07", screenadapt="coverall")]
+[ImageTween(yFrom=-50, yTo=0, xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=40, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[SoundVolume(volume=0.4, channel="to", fadetime=2)]
+[name="멜라니"]누가 죽는대?
+[name="멜라니"]누가 미스 듀폰이 죽음을 바란다고 했지?
+[name="멜라니"]누가 미스 듀폰이 오빠의 억압에, 세 록펠러의 칼날에, 그리고 그녀를 저주하고 모욕하고 내쫓아내려는 구경꾼들의 손에……
+[name="멜라니"]마치 하나의 상징처럼 죽는다고 했지?
+[name="멜라니"]그녀는 누구도 예상하지 못한 밤에, 이렇게 격렬하고 무질서한 폭풍 속으로 걸어가, 자신을 가둔 그 성을 완전히 뒤로해야 돼……
+[name="멜라니"]그녀는 절대 죽지 않아. 왜냐하면, 이 폭풍은 그녀를 태우고 자유를 향해 달려갈 테니까!
+[name="멜라니"]애브너, 당신도 알고 있지? 데뷔이래 나는 줄곧, 마리안을 내 가상의 적으로 생각했어.
+[name="애브너"]……응.
+[name="멜라니"]사실 나도 알아, 내가 그녀를 따라잡을 수 없다는 걸.
+[name="멜라니"]마리안은 자타공인의 천재야. 그녀는 어떤 배역이든 녹아들 수 있고, 심지어 운명조차도 우연한 재앙으로 그녀의 은퇴를 위해 찬란함을 수놓았지……
+[name="멜라니"]하지만 난 그냥 평범한 인간이야.
+[name="멜라니"]작은 도시에서 랭크우드에 올라온 평범한 인간으로서, 나는 십여 년 동안 하나하나의 배역, 한 편 한 편의 영화를 통해 연기를 갈고닦고, 경험을 쌓고, 명예를 얻었어……
+[name="멜라니"]그렇기 때문에 나는 경력, 지위, 규칙처럼 사람들이 코웃음 치는 촬영 현장의 문화를 더 중요시했어…… 그건 평범한 인간으로서 내가 누려야 할 보상이니까.
+[name="멜라니"]애브너, 이 대지는 평범한 인간에게 너무 잔인해.
+[name="멜라니"]마리안의 은퇴로 나는 커리어의 최정상에 올랐지만, 잠깐의 방황만으로도 나는 그동안 쌓아왔던 경험과 지혜를 잃었어……
+[name="멜라니"]내 기량은 심각하게 떨어졌고, 평판도 수직으로 하락했어. 내가 아무리 노력해도 예전으로 돌아가긴 쉽지 않았지……
+[name="멜라니"]얼마나 웃겨. 만약 마리안이 은퇴하지 않았다면, 나는 영원히 그녀를 따라잡을 수 없었을 거라는 사실을 절대 인정하고 싶지 않았을 거야……
+[name="멜라니"]지금 이 순간, 재앙은 이 섹터를 파괴하고, 내 마지막 희망마저 무너뜨리고 있어……
+[name="멜라니"]하지만 이 또한 운명이 내게 내려준 축복 아닐까?
+[name="멜라니"]적어도 내겐 아무것도 생각하지 않고, 아무것도 따지지 않을 용기가 생겼고……
+[name="멜라니"]적어도 내겐 이 한 걸음을 내디딜 용기가 생겼어.
+[name="멜라니"]자…… 미스 듀폰, 이 멜라니 러더퍼드와 함께 재앙 속에서 춤을 추자꾸나……
+[name="멜라니"]설령 이 광경을 기록하는 사람이 없을지라도.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[bgeffect(name="$eb_wind",layer=1)]
+[Background(image="62_g8_mobileplotstreet_ruined",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[Delay(time=1)]
+[SoundVolume(volume=0.2, channel="to", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", focus="n")]
+[name="멜라니"]애브너, 아직 안 갔어?
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="애브너"]……
+[charslot(slot = "m", focus="n")]
+[name="멜라니"]그럼 카메라나 빨리 확인해 봐, 전원 안 켜졌지?
+[charslot(slot = "m", name = "avg_npc_1843_1#9$1")]
+[name="애브너"]무, 무슨 소리야?
+[charslot(slot = "m", focus="n")]
+[name="멜라니"]내가 이대로 폭풍에 휩쓸린다면, 당신의 카메라는 또 우연히 다른 사람의 죽음을 기록해야 되잖아?
+[name="멜라니"]난 당신의 일을 모욕하고 싶지 않아. 당신이 또다시 자신과 기기를, 자신의 직업을 미워할까 봐……
+[charslot(slot = "m", name = "avg_npc_1843_1#1$1")]
+[name="애브너"]……
+[charslot(slot = "m", focus="n")]
+[name="멜라니"]애브너, 사실 나는 항상 당신이 바보 같다고 생각했어.
+[charslot(slot = "m", name = "avg_npc_1843_1#9$1")]
+[name="애브너"]네가 뭘 알아?
+[charslot(slot = "m", focus="n")]
+[name="멜라니"]당신이 그때 우연히 녹화한 장면은 영원히 사라지지 않는 증거가 되었고, 덕분에 그 로라라는 소녀가 이 땅에서 소리 소문도 없이 사라진 게 아니게 되었잖아.
+[name="멜라니"]이 의미만으로도 난 당신의 직업적 완벽주의를 충분히 치유할 수 있다고 생각해……
+[charslot(slot = "m", name = "avg_npc_1843_1#7$1")]
+[name="애브너"]……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1843_1#8$1")]
+[name="애브너"]*랭크우드 촬영장 은어*, 네 말이 맞아. 내가 확실히 멍청했어.
+[name="애브너"]이 꿈을 만드는 기계가 처음 탄생한 건, 단지 선조들이 대지를 바라보는 눈을 하나 더 갖고 싶어 했기 때문이었어.
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1843_1#4$1")]
+[name="애브너"]멜라니, 더 버틸 수 있겠어?
+[name="애브너"]……이 녀석이 나 때문에 망가지진 않았으면 좋겠군.
+[charslot(slot = "m", name = "avg_npc_1843_1#8$1")]
+[name="애브너"]우리가 영화를 완성해 보자고!
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="d", fadetime=2)]
+[StopSound(channel="to", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[PlayMusic(intro="$m_avg_prts_intro", key="$m_avg_prts_loop", volume=0.6)]
+[bgeffect(name="$eb_smoke_01",layer=1)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.4, channel="c",fadetime=2)]
+[Background(image="62_g5_duelscene",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[name="루시안"]보이나, 들리나…… 아직도 재앙 속에서 발버둥 치는 사람들이?
+[name="루시안"]아무리 기이한 예술이라고 해도, 무에서 유를 창조해 낼 순 없고, 아무리 죽음이라고 해도, 방황하는 이를 갑자기 정신 차리게 하거나, 비겁한 이를 담대하게 할 수는 없다.
+[name="루시안"]그들은 원래부터 그랬을 뿐이다.
+[charslot(slot = "m", name = "avg_npc_1828_1#8$1")]
+[name="루시안"]그러니까, 방금 그 질문에 대답해라, 트라고디아.
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1")]
+[name="트라고디아"]지금 나에게 죽음은 이야기를 끝내고, 공연마저 끝내며, 막이 내린 뒤에는 모든 게 흔적도 없이 사라진다고…… 객관적으로 보면 내가 평가와 검증으로부터 도망치고 있다고 말하려는 건가?
+[name="트라고디아"]내가 비겁한 창작자라고 말하고 싶은 건가?
+[charslot(slot = "m", name = "avg_npc_1829_1#12$1")]
+[name="트라고디아"]루시안, 확실히 흥미로운 관점을 찾았군.
+[dialog]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1829_1#11$1")]
+[name="트라고디아"]어쩌면 네 말에 일리가 있을지도 모르겠지만, 그렇다면 이미 쓰인 결말은 어떻게 바꿀 생각이지?
+[name="트라고디아"]그 티피라는 아이는 영화에서 본 것들을 통해, 확실히 이 이동 섹터의 항로를 바꿨어……
+[name="트라고디아"]하지만 그 정도 각도로는 충분하지 않아. 섹터 절반은 여전히 폭풍에 부딪히게 될 거야.
+[name="트라고디아"]루시안, 너는 어릴 때 재앙을 겪어봤으니 잘 알겠지. 그 정도만으로도 섹터의 모든 게 파괴될 거란 사실을.
+[charslot]
+루시안은 자신의 목에 있는 결정을 어루만졌다.
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[name="루시안"]억제기를 푼 이후로, 나는 아직 제대로 노래하지 않았다.
+[dialog]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_sphere", volume=1)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+노랫소리, '블러드 다이아몬드'의 노랫소리.
+한때, 수많은 무대를 뜨겁게 달궜던 노랫소리는 어두운 고성에서 자취를 감췄다. 이제, 그 노랫소리가 다시 울려 퍼지며 폭풍과 폐허를 뚫고 모두의 귀에 울려 퍼졌다.
+[charslot(slot = "m", name = "avg_npc_1829_1#8$1")]
+[name="트라고디아"]이렇게나 온 감정을 담아 노래를……?
+[name="트라고디아"]……아니군.
+[charslot(slot = "m", name = "avg_npc_1829_1#7$1")]
+[name="트라고디아"]꿈을 장벽으로 사용하다니…… 루시안, 네가 오리지늄 아츠를 역으로 사용하는 건 처음 보는구나.
+[name="트라고디아"]과거를 이용해 자신에게 아픔을 주어, 한때 사람들에게 재난을 불어온 그 목소리로 모두를 지키려는 건가?
+[name="트라고디아"]너 혼자 재앙을 상대할 생각이야?
+[charslot(slot = "m", name = "avg_npc_1828_1#8$1")]
+[name="루시안"]혼자? 아니, 우리 둘이다.
+[name="루시안"]지팡이를 꽉 잡아라, 트라고디아.
+[name="루시안"]내가 그 강에서 몸을 일으켜 네게 돌아갔을 때, 내가 극단에 돌아갔을 때, 내가 다시 한번 네 앞에 섰을 때……
+[name="루시안"]나의 목표는 오직 하나뿐이었다.
+[name="루시안"]비극이 절정에 다다르면 꼭 빠지지 않는 게 있다. 바로, 격렬한 싸움. 궁전에서, 빌딩에서…… 혹은 이 변색된 하늘과 땅 사이에서……
+[charslot(slot = "m", name = "avg_npc_1828_1#9$1")]
+[name="루시안"]자, 함께 이 '스승을 시해하는' 연극을 끝마치도록 하지!
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 0.2)]
+[charslot(duration=0.2)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing6", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1", afrom=0, ato=0, duration = 0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 0)]
+[delay(time=0.1)]
+[charslot(slot = "m", afrom = 0, ato = 1, duration = 1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1, duration = 1.5)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1829_1#12$1")]
+[name="트라고디아"]하하하, 내 가장 사랑하는 제자여, 내 가장 뛰어난 배우여, 너는 파멸로 향하는 만물을 네 배경으로 삼았구나. 네가 이 순간을 즐길 수 있어서 나는 너무나도 기쁘단다.
+[charslot(slot = "m", name = "avg_npc_1829_1#11$1")]
+[name="트라고디아"]덕분에 나 역시 주체할 수 없구나!
+[dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing1", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$swordtsing2", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[charslot(slot = "m", name = "avg_npc_1829_1#1$1")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=0.9, duration = 1.5)]
+[charslot(slot = "m", afrom=1, ato=0, duration = 1.5)]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0, ato=0.7, posfrom="150,0", posto="-50,0", duration = 1, end = false)]
+[charslot(slot = "r", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0, ato=0.7, posfrom="-150,0", posto="50,0", duration = 1, end = false)]
+[delay(time=0.8)]
+[charslot(slot = "l", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0.7, ato=0, posfrom="-50,0", posto="-250,0", duration = 1, end = false)]
+[charslot(slot = "r", name = "avg_npc_1829_1#1$1", bstart=0.9, bend=1, afrom=0.7, ato=0, posfrom="50,0", posto="250,0", duration = 1, end = false)]
+[delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[name="트라고디아"]다만, 너도 알겠지만 장생자를 죽이는 건 무의미하고 헛된 일이야.
+[dialog]
+[bgeffect(name="$eb_blacksmoke_01", layer=2)]
+[Background(image="62_g5_duelscene", screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[backgroundTween(yFrom=20, yTo=-70, duration=11)]
+[focusout(type="bg", id="62_g5_duelscene", from=0, to=1, duration=0.1, block=false)]
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[charslot(slot = "m", posfrom="0,-100", posto="0,-150", duration=20)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="루시안"]아까 내가 흥미로운 관점을 찾았다고 말했었지.
+[charslot(slot = "m", name = "avg_npc_1828_1#3$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="루시안"]흥미롭다는 표현으로는 턱없이 부족하다.
+[charslot(slot = "m", focus="n")]
+[name="트라고디아"]……
+[charslot(slot = "m", name = "avg_npc_1828_1#1$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="루시안"]너는 비겁한 창작자가 아니다. 너는 그저 어쩔 수 없을 뿐.
+[name="루시안"]죽음이 필요한 건 우리도, 관객도, 상식을 초월하지 못하는 평범함도 아닌……
+[charslot(slot = "m", name = "avg_npc_1828_1#2$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="루시안"]바로 너…… 트라고디아다.
+[name="루시안"]너는 역사 속을 오가며 극단을 설립하고, 어둠으로 꿈을 만들어, 절망으로 나와 샬렘을 길러냈다. 너는 수많은 아이들을 유혹하고, 수많은 배우를 채찍질했다……
+[name="루시안"]너는 우리에게 고통을 느끼는 법, 죄악을 배우는 법, 피를 물들이는 법, 파멸을 노래하는 법을 가르쳤다. 너는 우리에게 화려한 공연, 위장된 인생, 이른바 '신생'이라는 걸 가르쳤다.
+[charslot(slot = "m", name = "avg_npc_1828_1#4$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="루시안"]너는 이야기를 만들고 관객을 끌어모아, 그 라테라노의 추기경, 가울의 장군, '배풍등', '칼춤', '그림자', 달튼, 셸리, 모이라……
+[name="루시안"]그리고 수많은 '루시안'이라는 배역을 골라 죽음을 만들어냈다.
+[name="루시안"]너는 죽음의 모든 형식을 탐구하려 했고, 그 방식을 혁신하려 했으며, 그 의미를 완성하려 했다……
+[charslot(slot = "m", name = "avg_npc_1828_1#7$1")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.2, duration = 0)]
+[name="루시안"]왜냐하면, 죽음은 너와 너무나도 거리가 멀었으니까!
+[charslot(slot = "m", focus="n")]
+[name="트라고디아"]……
+[dialog]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.5, duration = 0.2)]
+[charslot(duration=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[bgeffect]
+[charslot]
+[Background]
+[curtain]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$swordtsing5",volume=1)]
+[CameraShake(duration=2, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Effect(name="$e_spark_01_mid",x =0, y =0,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =0, y =0,rox =100, roy =100, roz =50, layer = 2)]
+[Effect(name="$e_slash_fold",x=50,layer = 3)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.7, block=true)]
+[PlaySound(key="$swordtsing3",volume=1)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Effect(name="$e_spark_01_mid",x =0, y =0,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =0, y =0,rox =100, roy =100, roz =50, layer = 2)]
+[Effect(name="$e_slash_fold_hit",layer =3)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.3, block=true)]
+[PlaySound(key="$d_avg_thinsword_whoosh",volume=1)]
+[PlaySound(key="$d_avg_tswordlight",volume=1)]
+[Delay(time=0.1)]
+[PlaySound(key="$swordtsing4",volume=1)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=1, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Effect(name="$e_spark_01_mid",x =0, y =0,rox =50, roy =100, roz =50, layer = 1)]
+[Effect(name="$e_spark_02_mid",x =0, y =0,rox =100, roy =100, roz =50, layer = 2)]
+[Effect(name="$e_slash_cross_hit",layer =3)]
+[Blocker(a=0, r=0.95,g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[focusout(type="bg", id="62_g5_duelscene", from=1, to=0, duration=0.1, block=false)]
+[Image(image="62_i09_1", screenadapt="coverall", xScale=1.7, yScale=1.7, y=250, fadetime=0)]
+[ImageTween(xFrom=-200, xTo=-300, duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[name="트라고디아"]너무나도 거리가 멀다……
+[name="루시안"]장생자로서 죽음은 네가 영원히 도달할 수 없는 곳이고, 극단장으로서 죽음은 네가 영원히 완성할 수 없는 공연이며, 트라고디아로서 죽음은 네가 영원히 스스로 증명할 수 없는 예술이다!
+[name="루시안"]너의 미학, 너의 통찰, 너의 경험, 네가 우리에게 부여한 모든 갈구는 단 한 번도 너 자신을 풍요롭게 한 적이 없다!
+[name="루시안"]나는 네가 이 모든 걸 즐기고 있는 줄 알았지만, 너의 허무함은 성취감보다 훨씬 더 컸다!
+[name="루시안"]만약 네가 연극 그 자체라면, 너의 존재야말로 일종의 역설이다!
+[name="루시안"]결론은 이미 눈앞에 있다, 그렇지 않나?
+[name="루시안"]너는 이 사실을 원망하고 있나, 아니면 체념하고 있나?
+[name="루시안"]너는 이 사실이 우스운가, 아니면 의문스러운가?
+[name="루시안"]그것도 아니면, 너는 그저 이 사실을 외면하고 있을 뿐인가?
+[name="루시안"]너는 정말로 나처럼 고통을 느껴본 적이 없나?
+[dialog]
+[Image(image="62_i09_1", screenadapt="coverall", xScale=1.7, yScale=1.7, y=-250, fadetime=2)]
+[ImageTween(xFrom=100, xTo=200, duration=20, block=false)]
+[Delay(time=2)]
+[name="트라고디아"]……
+트라고디아는 드물게 침묵하며, 눈앞의 이 모든 것을 잊은 듯한 얼굴을 바라보았다.
+루시안은 큰 소리로 외쳤다. 거센 폭풍조차도 그의 목소리를 뒤틀 수 없었다. 그는 노래하고, 시를 읊었다. 그리고 오리지늄 결정은 눈에 띌 정도로 빠르게 그의 목덜미를 따라 기어올랐다.
+[name="트라고디아"]루시안, 아프지?
+[name="루시안"]큭……
+[name="루시안"]아프다, 당연히 아프다.
+[name="트라고디아"]오리지늄 아츠를 절제하지 않고 막 사용하면 죽을 수도 있어, 루시안.
+[dialog]
+[Image(image="62_i09_2", screenadapt="coverall", fadetime=2)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=10, block=false)]
+[Delay(time=2)]
+[name="루시안"]부러운가?
+[name="트라고디아"]하하하하.
+[name="트라고디아"]……그럴지도. 하지만 네 연기는 정말 감동적이었어.
+[dialog]
+루시안은 트라고디아에게 더욱 뜨거운 반응을 보였다. 고조된 감정은 그에게 더 큰 힘을 주었고, 마침내 그는 대치 속에서 주도권을 잡았다. 다음 순간, 지팡이의 뾰족한 끝이 상대의 몸을 꿰뚫었다……
+[dialog]
+[PlaySound(key="$d_avg_swrdgnlght", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_piercechest", volume=1)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=90, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Image(image="62_i09_3", screenadapt="coverall", fadetime=0.5)]
+[ImageTween(xScaleFrom=1.8, yScaleFrom=1.8, xScaleTo=1, yScaleTo=1, duration=0.2, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[delay(time=2)]
+[name="루시안"]고통은 나의 칼날이다. 그리고 나는 마침내 그 칼날을, 내게 고통을 안겨준 그자에게 휘둘렀다……
+[name="루시안"]바로, 너에게!
+[dialog]
+[PlaySound(key="$d_avg_lghtmgc", volume=1)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_ghostsigh", volume=1)]
+[ImageTween(xScaleTo=1.1, yScaleTo=1.1, duration=2)]
+[Image(image="62_i09_4",screenadapt="coverall",fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=1, loop=true, channel="d")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[delay(time=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+모든 연극은 결국 막을 내려야 해.
+순환은 숙명을 빚는 데 도움이 되지 않아.
+……
+루시안, 다행히 나는 방금 새로운 영감을 떠올렸단다.
+그 이야기는 여전히 이어질 가치가 있어.
+[dialog]
+[stopmusic(fadetime=4)]
+[charslot]
+[image]
+[Background(image="62_g5_duelscene",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[StopSound(channel="d", fadetime=6)]
+발밑 섹터의 흔들림은 여전했지만, 이제 서서히 안정되고 있었다.
+하나둘씩 폐허 속에서 머리를 내밀어 두려운 듯 멀어져 가는 재앙 구름을 바라보는 사람들은, 자신이 어떤 고난을 겪었는지 믿을 수 없었다.
+무수히 많은 가면이 부서지며 떨어졌고, 트라고디아는 서서히 쓰러졌다.
+루시안은 자신이 상대의 심장을 산산이 부쉈음을 확신했고, 이 '스승을 시해하는' 연극도 드디어 막이 내렸음을 확신했다. 하지만 그는 동시에 자신의 변화도 느꼈다……
+[dialog]
+[PlayMusic(intro="$ghosthunter_intro", key="$ghosthunter_loop", volume=0.6)]
+[PlaySound(key="$d_avg_wtchkgopenftstp", volume=1, loop=true, channel="sn")]
+[StopSound(channel="sn", fadetime=2)]
+[charslot(slot = "m", name = "avg_1042_phatm2_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="루시안"]……
+[charslot(slot = "m", name = "avg_1042_phatm2_1#5$1")]
+[name="루시안"]이 옷, 지팡이, 그리고 관……
+[name="루시안"]이게 네가 날 위해 추가한 쪽대본인가?
+[dialog]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+은빛 옷자락이 바람에 휘날렸고, 모래가 스쳐 지나갔지만 먼지 하나 묻지 않았다. 루시안은 말없이 이 화려한 옷을 훑어보았다……
+화려하고 정교하며 착용감이 좋아, 꼭 맞춤 제작한 것만 같았고, 언제든 이 옷을 입고 축제에 참석하거나 무대에 올라도 좋을 것 같았다.
+마치…… 재앙이 그에게 준 선물, 그가 스승을 시해한 보상과도 같았다.
+하지만 이 시해의 주제는 분명 '배신'이었을 터인데, 끝날 때는 '계승'이 되어버린 것인가?
+루시안은 침묵했다.
+쓰러진 트라고디아는 이미 사라졌고, 시신이 있었던 자리에는 붉은 피와 가면만이 남았다. 검붉은 카펫은 계단을 따라 위로 끝없이 이어져 있었다……
+루시안은 그것이 자신이 가야 할 길이었고, 앞에는 더 이상 아무런 방해도 없다는 생각이 불현듯 들었다.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[verticalbg(imagegroup="62_i10_1/62_i10_2/62_i10_3/62_i10_4", solidwidth=1280, solidheight="720/720/720/720",y=2160)]
+[largebgtween(duration = 80, yFrom = 2160, yTo = 160, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+그렇게 루시안은 계단을 올랐다. 고개를 숙이지도, 뒤돌아보지도 않았다.
+이때 트라고디아의 목소리가 다시 울려 퍼졌다.
+[name="트라고디아"]루시안, 너는 가장 뛰어난 배우야. 너는 연기의 기술…… 이성으로 감성의 가면을 단단히 붙잡는 방법을 잘 알고 있어.
+[name="트라고디아"]네가 내 정체를 알고 있는 이상, 너는 소위 시해 같은 걸로 나를 끝내지 말았어야 했다.
+[name="트라고디아"]너는 고성에서 펼쳐진 적이 있는 플롯에 희망을 걸어서는 안 돼.
+[name="트라고디아"]……
+[name="트라고디아"]아니면, 내가 이렇게 생각하고 이런 선택을 할 거라고 확신했을까?
+[name="트라고디아"]하하, 정말 흥미롭구나.
+[name="트라고디아"]어쩌면 네 말이 맞을지도 몰라. 죽음은 내가 영원히 도달할 수 없는 곳이고, 영원히 완성할 수 없는 공연이며, 영원히 스스로 증명할 수 없는 예술이지……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", multi = true, text="잡초는 언제나 제 길을 찾아낸다.", x=250,y=190, alignment="center", duration=2, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n눈물과 거짓, 그리고 망상 덕분에", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n그는 시든 꽃잎으로 엮은 잠자리를 떠났다.", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n흩날리는 먼지 속에 자신의 묘비명을 새기며,", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n그는 언젠가 사람들에게 경배받는 그날을", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n기다리고 있다.", block = true)]
+[Sticker(id="st1", duration=2, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2)]
+[name="트라고디아"]“죽음, 또는 파멸”은 네가 내게 준 최고의 선물이었어.
+[name="트라고디아"]하지만 지금 네가 부정하는 것과 내가 포기한 것은, 그저 연극의 수많은 가능성 중 하나, 미학의 수많은 기준 중 하나에 불과하다는 생각은 해본 적 없어?
+[name="트라고디아"]그래서 네가 죽인 건 나의 수많은 존재 중 하나일 뿐이라는 걸?
+[name="루시안"]계속해라.
+[name="트라고디아"]생명이 분주하게 움직이는 한, 연극은 언제나 존재해.
+[name="트라고디아"]연극은 파멸하지 않고, 아름다움의 기준은 끊임없이 변해. 그렇기에 나는 항상 모든 것의 정점에 서 있어.
+[name="루시안"]……
+[name="루시안"]연극은 죽일 수 없지만, 나는 모든 것에 의미를 부여해 연극으로 연극을 대체하고, 미학으로 미학을 뒤집을 수 있지 않나?
+[name="루시안"]그렇다면 내가…… 새로운 연극, 새로운 네가 될 수도 있지 않나?
+[name="루시안"]그리고 만약, 이게 유일한 해답이라면……
+[name="루시안"]난, 기꺼이 받아들이지.
+[name="트라고디아"]봐 봐, 루시안, 우리의 뜻이 다시 한번 일치했어…… 하하, 이 얼마나 절묘한 호흡인지!
+[name="트라고디아"]위로 올라가렴, 무대의 가장 높은 곳으로.
+[name="트라고디아"]너는 '연기'라는 관을 머리에 쓰고, '영감'이라는 지팡이를 손에 들고, 공연이라는 세월을 두르게 될 거야……
+[name="트라고디아"]이건 더 고통스러운 과정이 되겠지만…… 그래도 너는 달게 받을 수밖에 없겠지.
+[name="트라고디아"]루시안, 나의 축복과 저주를 가지고 계속 나아가렴.
+[name="트라고디아"]나는 처음 너를 만났을 때 했던 약속…… 나는 결코 너의 걸림돌이…… 연극의 걸림돌이 되지 않을 거라는 약속을 지켰어.
+[name="트라고디아"]이게 내가 너에게 남기는 마지막 선물이야.
+[name="트라고디아"]너는 또 얼마나 멀리 갈까?
+[name="트라고디아"]너는 또 어떠한 해답을 내놓을까……
+[name="트라고디아"]'트라고디아'.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[verticalbg(imagegroup="62_i10_1/62_i10_2/62_i10_3/62_i10_4", solidwidth=1280, solidheight="720/720/720/720", y=540, fadetime=0)]
+[largebgtween(duration = 0,xScaleFrom=1, xScaleTo=0.25, yScaleFrom=1, yScaleTo=0.25, block = false)]
+[PlaySound(key="$d_avg_wtchkgopenftstp", volume=1, loop=true, channel="wt")]
+[StopSound(channel="wt", fadetime=4)]
+[curtain(direction = 6,fillfrom = 0.5, fillto = 0.37, fadetime=4)]
+[curtain(direction = 2,fillfrom = 0.5, fillto = 0.37, fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=3)]
+[name="루시안"]……
+루시안은 대답하지 않았다. 그 목소리도 더는 들리지 않았다.
+루시안은 계단의 꼭대기에 섰다. 폭풍이 그의 앞에서 멀어졌고, 핏자국이 그의 뒤로 길게 이어졌다……
+그는 이 적막한 풍경을 사랑하고, 아직 완성되지 않은 자기 내면의 예술을 사랑한다. 그는 자신의 모든 고통을 떨쳐냈다……
+새로운 트라고디아가 목청껏 노래했다……
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[verticalbg]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

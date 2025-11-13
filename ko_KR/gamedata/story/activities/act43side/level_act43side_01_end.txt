@@ -1,0 +1,221 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="56_g12_saluzzowinery",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=true)]
+[playMusic(intro="$m_dia_street_intro",key="$m_dia_street_loop", volume=0.6)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1257_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="경매사"]본 행사에 처음 참여하시는 여러분, 만약 여러분이 염국의 서화나 사르곤의 보물을 기대하고 오신 거라면 지금 떠나셔도 좋습니다.
+[name="경매사"]'시나리오 경매'는 랭크우드에서 가장 이색적인 행사로, 저희는 미완성 시나리오의 아이디어나 줄거리, 관련된 저작권만 취급합니다.
+[name="경매사"]즉, 저희는 경매품의 진위 감정을 책임지는 기존의 경매장과는 달리, 경매품의 실제 가치를 보장하지 않다는 뜻입니다……
+[name="경매사"]그것이 시장성이 있을지, 예술적 가치가 있을지, 장래에 흥행작이 되어 랭크우드의 역사에 기록될지, 아니면 졸작이 될지는……
+[name="경매사"]전적으로 여러분의 판단에 달렸습니다.
+[name="경매사"]경매품의 지식재산권 보호를 위해, 모두 단말기를 치우시고 녹음 기기를 꺼주시길 바랍니다. 자, 그럼 오늘 밤의 첫 경매품을 소개합니다……
+[name="경매사"]《미스 듀폰의 죽음》. 컬럼비아를 무대로 한 이 이야기는 변화하는 시대 속 두 가문의 성쇠와 애증을 그린 작품입니다. 최저 경매가는…… 10만 수표입니다.
+[name="경매사"]10만! 뒷줄 신사분께서 10만을 제시하셨습니다…… 15만! 왼쪽에 계신 이 아름다운 숙녀분께 감사드립니다…… 다른 입찰자 계십니까?
+[PlaySound(key="$d_avg_auctionhammer")] 
+[name="경매사"]15만, 한 번……
+[PlaySound(key="$d_avg_auctionhammer",channel="2")] 
+[name="경매사"]15만, 두 번……
+[charslot(slot = "m", focus = "n")]
+[name="???"]60만.
+[Dialog]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1257_1#1$1")]
+[name="경매사"]!!
+[StopSound(channel="bgs", fadetime=3)]
+[name="경매사"](작은 목소리로) 그레타 씨! 설마 오늘 경매를 망치러 오신 겁니까? 첫 경매품부터 이렇게 비싸게 팔리면, 뒤로 갈수록 분위기가 식어버린다고요. 다른 경매품은 어떡합니까……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1834_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="그레타"]규칙대로 가격을 올리자니 너무 시간을 낭비하는 것 같아서. 나는 단지 그에 맞는 가격을 제시했을 뿐이야.
+[charslot(slot="m",name="avg_npc_1257_1#1$1")]
+[name="경매사"]거금을 들여 시나리오에 베팅하는 것 역시 당신의 스타일이긴 하지만, 그다지 경제적이진 않습니다…… 그동안 투자하신 영화가 줄줄이 적자라, 여유가 없으실 텐데요?
+[charslot(slot="m",name="avg_npc_1834_1#1$1")]
+[name="그레타"]당신의 수수료라면 충분히 줄 수 있어. 빨리 낙찰이나 해.
+[name="그레타"]여기서 훌륭한 재능을 가진 젊은이를 발견했어. 지금 빨리 만나러 가야 하거든.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_1834_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[name="그레타"]위스키, 스트레이트로.
+[name="그레타"]그쪽도 한 잔 사 드릴까?
+[Dialog]
+[charslot(slot="l",name="char_250_phantom_1#1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="char_250_phantom_1#1",focus="l")]
+[name="루시안"]내 주치의가 음주는 삼가라고 해서.
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]억양이…… 사르곤에서 온 건가?
+[name="그레타"]흥미롭군. 차갑고 우울한 그 얼굴, 아무리 봐도 전형적인 빅토리아 얼굴인데.
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="루시안"](사르곤어) 방금 사르곤의 황사를 막 건너온 터라.
+[name="루시안"](표준 빅토리아어) 하지만 빅토리아 태생인 건 맞다.
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]언어 전환이 매우 자연스럽네, 억양도 흠잡을 데 없고. 하지만 그 두 나라 외에도, 당신에게서 다른 문화의 흔적과 습관도 발견했어.
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="루시안"]볼리바르, 시라쿠사, 라이타니엔, 림 빌리턴…… 그리고 랭크우드에 왔다.
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]……테라 전역에서 오락 산업이 가장 발달한 이동도시, 기후가 쾌적하고 일조량이 충분한 촬영지. 여기는 무슨 일로 왔지?
+[name="그레타"]휴가? 유학? 아니면 랭크우드의 명성을 듣고 왔는데, 결국은 엑스트라 시장에 몰리는 외지인처럼 일자리를 찾고 있는 건가?
+[charslot(slot="l",name="char_250_phantom_1#2",focus="l")]
+[name="루시안"]사람을 찾고 있다.
+[charslot(slot="l",name="char_250_phantom_1#7",focus="l")]
+[name="루시안"]아주 오랜 시간 동안, 그자의 그림자를 따라 많은 곳을 방문했다.
+[charslot(slot="r",name="avg_npc_1834_1#3$1",focus="r")]
+[name="그레타"]오? 누구? 도심부와 이동 섹터에 있는 영화 제작팀이라면 내가 다 알아. 어쩌면 도움을 줄 수도 있겠네.
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="루시안"]그럴 필요 없어.
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]그래, 뭐…… 아쉽네……
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="루시안"]다른 볼일이 없다면……
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]그레타 스톤, 내 이름이야. 랭크우드의 영화 제작자…… 이 업계에서 뉴스가 된 적도 여러 번 있고.
+[name="그레타"]원래는 당신이 어디 귀공자거나, 오디션 보러 온 영화 아카데미 학생인 줄 알고 우리 영화에 캐스팅하려 했는데.
+[name="그레타"]랭크우드 시나리오 경매에 참여할 정도라면, 많든 적든 예술에 대한 열정은 있을 것이고, 무엇보다도 그 독특한 분위기가……
+[charslot(slot="l",name="char_250_phantom_1#1",focus="l")]
+[name="루시안"]예전에 빅토리아의 한 작은 극단에서 연극 생활을 했다.
+[charslot(slot="r",name="avg_npc_1834_1#2$1",focus="r")]
+[name="그레타"]역시 내 눈이 틀렸을 리가 없어. 당신은 태생적으로 스크린에 잘 어울리는 사람이야!
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]하지만 이런 말을 해봤자 소용없겠지. 꼭 해야 할 일이 있다니, 오늘은 빈손으로 돌아가야겠네.
+[charslot(slot="l",name="char_250_phantom_1#1",focus="l")]
+[name="루시안"]시나리오를 좀 볼 수 있을까?
+[charslot(slot="r",name="avg_npc_1834_1#2$1",focus="r")]
+[name="그레타"]그럼!
+[Dialog]
+[playsound(key="$d_avg_paper1")]
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[delay(time=2)]
+[charslot(slot="l",name="char_250_phantom_1#4",focus="l")]
+[name="루시안"]……
+[charslot(slot="r",name="avg_npc_1834_1#1$1",focus="r")]
+[name="그레타"]이 시나리오는 시작에 불과해, 난 더 많은 인력, 자본, 시간을 투자할 거야. 영화사를 뒤흔들만한 걸작을 만들어 보이겠어.
+[name="그레타"]단역을 맡더라도, 심지어 단 한 번만 출연하더라도, 당신이라면 분명 남다른 존재감을 뽐낼 수 있을 거야.
+[name="그레타"]몸에 있는 그 특수한 문제도 걱정할 필요 없어. 랭크우드는 감염자 배우를 위한 노동 보호 규정이 있으니까. 뭐, 보험금만 충분히 지불한다면……
+[charslot(slot="l",name="char_250_phantom_1#6",focus="l")]
+[name="루시안"]루시안이다, 미스 그레타.
+[name="루시안"]제안은 고려해 보지.
+[Dialog]
+[stopmusic(fadetime=2)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1, block=true)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="62_g10_dormitory",screenadapt="coverall")]
+[charslot(slot="r",name="avg_npc_1834_1#4$1")]
+[charslot(slot="l",name="avg_npc_1828_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[charslot(slot="r",name="avg_npc_1834_1#4$1",focus="r")]
+[name="그레타"]다시 한번 사과할게, 루시안.
+[name="그레타"]첫 영화 출연에서, 그것도 오랫동안 심사숙고해서 겨우 계약서에 사인하기로 결심했는데. 원래라면 당신에게 약속한 대로 촬영의 즐거움을 느끼게 해줬어야 했어.
+[name="그레타"]그런데 설마, 랭크우드에서의 첫 장면에서부터 그렇게나 끔찍한 사고를 겪을 줄이야……
+[name="그레타"]안정을 취할 시간이 필요하다면, 충분히 이해해. 셸리에게 다음 장면 촬영 일정을 변경하라고 할게.
+[name="그레타"]하지만 계약을 파기하고 곧장 떠나고 싶다면, 그건 아마 불가능할 거야. 이동 섹터는 이미 단거리 수송차의 운행 범위를 벗어났고, 대여 기한이 만료될 때까지 귀항할 일은 없으니까……
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="루시안"]떠날 생각은 없다.
+[name="루시안"]일정을 바꿀 필요도 없고.
+[charslot(slot="r",name="avg_npc_1834_1#3$1",focus="r")]
+[name="그레타"]그래? 이번 사고로 인한 트라우마는 당신의 연기에 지장을 줄 수 있고, 심지어 생활에 영향을 미칠 수도 있을 텐데?
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="루시안"]무대 위에서의 사고는 내게 낯설지 않은 일이야.
+[charslot(slot="r",name="avg_npc_1834_1#4$1",focus="r")]
+[name="그레타"]무대 공연에 익숙하다면, 그 불확실성은 확실히 카메라 앞에서 연기하는 것보다 더 크겠지. 하지만 그것도 결국은 연극이야.
+[charslot(slot="l",name="avg_npc_1828_1#5$1",focus="l")]
+[name="루시안"]'연극'…… 글쎄.
+[Dialog]
+[charslot(slot = "m", name = "avg_4198_christ_1#1$1",duration = 1,posfrom = "-500,0", posto = "-500,0")]
+[delay(time=1.5)]
+우아하고 신비로운 생물이 어느샌가 루시안의 발치에 나타났다. 그녀는 친근하게 필라인의 다리에 몸을 비볐고, 그레타에게는 아무런 관심도 보이지 않았다.
+[charslot(slot="r",name="avg_npc_1834_1#4$1",focus="r")]
+[name="그레타"]루시안, 정말 안 쉬어도 되겠어? 미스 크리스틴이랑 좀 더 있어도 돼.
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="루시안"]우리 둘 다 이후의 스토리를 기대하고 있다.
+[charslot(slot="r",name="avg_npc_1834_1#6$1",focus="r")]
+[name="그레타"]오늘 그런 일이 있었는데 상상 이상으로 침착하군…… 그렇게 확고하다면, 더 이상의 걱정은 오히려 실례겠지.
+[name="그레타"]그럼 내일 현장에서 다시 만나길.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot = "r",posfrom = "0,0", posto = "200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=1.5)]
+[PlaySound(key="$doorclosequite")]
+[delay(time=2)]
+[charslot(slot = "right", focus="m")]
+[name="미스 크리스틴"]……
+자신의 털을 빗고 있던 우아하고 신비로운 생물은 무언가 생각에 잠긴 듯한 모습의 루시안을 바라보았다.
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="루시안"]미스 크리스틴?
+[Dialog]
+[charslot(slot = "m", name = "avg_4198_christ_1#2$1",duration=0.3)]
+살랑이는 두 꼬리 때문에 희미한 검은 그림자가 몇 개 생겼다.
+[charslot(slot = "m",posfrom = "-500,0", posto = "-400,0",duration = 1)]
+[delay(time=1)]
+[charslot(slot = "m",afrom=1,ato=0,duration = 0.3)]
+[delay(time=0.3)]
+[charslot(slot = "m",name="avg_4198_christ_1#2$1",duration = 0.5,posfrom = "100,0", posto = "100,0")]
+그녀는 허공에 떠올라 루시안의 어깨를 한 바퀴 돌았다. 관찰하는 것 같기도, 맛보는 것 같기도 했다.
+[charslot(slot = "m",name="avg_4198_christ_1#6$1",duration = 0.3)]
+이윽고 아름다운 생물은 루시안의 무릎에 내려와 앞발을 들어 그의 이마에 살짝 댔다. 루시안은 금세 편안한 기분이 들었다.
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="시고, 떫어.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot = "m", focus = "n")]
+텅 빈 방에서 신비로운 목소리가 울려 퍼졌다. 루시안은 애써 그 출처를 찾으려 하지 않고, 차분하게 미동 없는 미스 크리스틴과 눈을 마주했다.
+그는 이게 미스 크리스틴이 자신의 머릿속에 투영해 온 말이라는 걸 알고 있었다.
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="루시안"]너는 침묵과 위장으로 문제를 회피하는 습관이 있어. 중요하지 않을 때는 좀처럼 입을 열지 않고.
+[name="루시안"]내 감정이 그렇게 입맛에 맞지 않나, 미스 크리스틴?
+[charslot(slot = "m", name = "avg_4198_christ_1#4$1",focus="m")]
+[name="미스 크리스틴"]싫은 건 아니야. 선호하는 맛이 아니더라도, 나는 기꺼이 시도를 하지.
+[name="미스 크리스틴"]지금 무슨 생각하고 있어? 방금 그 말재주 좋은 뱀으로는, 네게 이렇게까지 복잡한 감정을 불러일으킬 수는 없을 텐데.
+[charslot(slot="l",name="avg_npc_1828_1#4$1",focus="l")]
+[name="루시안"]극단 생활의 수많은 추억 중 하나.
+[name="루시안"]극단장은 내가 습득이 빠르다는 걸 간파하고, 직접 무기 사용법을 가르쳐 주었다.
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="루시안"]오늘 칼을 잡았을 때의 느낌이 그날과 완전히 똑같았다.
+[charslot(slot = "m", name = "avg_4198_christ_1#1$1",focus="m")]
+[name="미스 크리스틴"]그러면 끝에 남은 매운맛과 단맛이 어디서 왔는지 이해가 되네.
+[name="미스 크리스틴"]네가 극단에서 겪었던 갈등과 몸부림, 인간들이 고통과 비극이라고 부르는 그 순간들이 드디어 식욕을 돋우는 요리로 조리됐어. 아주 마음에 들어.
+[charslot(slot="l",name="avg_npc_1828_1#5$1",focus="l")]
+[name="루시안"]왜냐하면, 그자를 죽인 후에도 나는 여전히 그자를 쫓고 있으니까.
+[name="루시안"]남아 있는 극단의 신도, 외딴 마을의 기괴한 전설, 그리고 그 화려한 표식…… 여기에 이르기까지 나는 계속 내 안에 있는 억측을 확인하려고 시도했다……
+[name="루시안"]어쩌면 그자, 다시 살아났을지도 모른다.
+[charslot(slot = "m", name = "avg_4198_christ_1#3$1",focus="m")]
+[name="미스 크리스틴"]그 뱀이 낙찰받은 이야기에서 중독될 것 같은 기묘한 냄새가 났어.
+[charslot(slot="l",name="avg_npc_1828_1#1$1",focus="l")]
+[name="루시안"]알려줘서 고맙군. 시나리오를 볼 때, 페이지 사이에 극단의 쌍둥이 얼굴 표식이 찍혀 있는 걸 확인했다.
+[name="루시안"]캐릭터의 우연은 곧 작가가 설정한 필연. 극단과는 무관해 보이는 미스 그레타가 우리의 안내자가 되었지.
+[name="루시안"]그래도 아직은 확신할 수 없다. 그자가 남긴 수수께끼는 반은 진실이고 반은 거짓이니까. 지난 10년 동안 우리는 수도 없이 겪어봤지.
+[name="루시안"]그리고 오늘 달튼이 내 칼에 죽었을 때, 비슷한 느낌이 과거의 내 기억을 불러일으켰다……
+[charslot(slot="l",name="avg_npc_1828_1#2$1",focus="l")]
+[name="루시안"]이건 그자의 초대장이야.
+[name="루시안"]미스 크리스틴, 우리가…… 제대로 온 것 같군.
+[PlaySound(key="$d_avg_MCcat_2", volume=1)]
+[charslot(slot = "m", name = "avg_4198_christ_1#1$1",focus="m")]
+[name="미스 크리스틴"]야옹~
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
